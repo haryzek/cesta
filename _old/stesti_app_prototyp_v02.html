@@ -1,0 +1,557 @@
+<!--
+  ŠTĚSTÍ NAPROTI — PROTOTYP v0.2  (sekce Přerámování + Oblíbené)
+  Vlož celý tento kód do HTML elementu na Mioweb stránce.
+  Data se načítají z GitHub Pages (viz konstanta SN_BASE níže).
+  Pro běh musí být na GitHubu tyto soubory:
+    clusters.json, feelings.json,
+    reframings.json, reframing_questions.json, reframing_actions.json
+-->
+
+<div id="sn-root"><div class="sn-loading">Načítám…</div></div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+  #sn-root *, #sn-root *::before, #sn-root *::after { margin:0; padding:0; box-sizing:border-box; }
+
+  #sn-root {
+    --bg:        #0F1116;
+    --surface:   #171A20;
+    --surface-2: #1E2129;
+    --border:    #282D38;
+    --text:      #F4F5F7;
+    --body:      #C7CBD3;
+    --soft:      #868D9A;
+    --accent:    #8B7CF6;   /* fialová — aktivní stavy, akcent */
+    --accent-dim:#8b7cf622;
+    --heart:     #E85D9B;   /* růžová — srdíčko, proužek karty */
+    --radius:    18px;
+    --radius-sm: 13px;
+
+    font-family:'Inter',-apple-system,system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--body);
+    max-width:560px;
+    margin:0 auto;
+    min-height:100vh;
+    padding-bottom:110px;
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .sn-loading, .sn-error {
+    padding:60px 28px; text-align:center; color:var(--soft); font-size:15px; line-height:1.7;
+  }
+  .sn-error strong { color:var(--text); }
+  .sn-error code { color:var(--accent); font-family:ui-monospace,monospace; font-size:13px; }
+
+  /* ===== HEADER ===== */
+  .sn-header { padding:30px 22px 8px; }
+  .sn-header h1 {
+    font-family:'Poppins',sans-serif; font-weight:800; font-size:25px;
+    color:var(--text); letter-spacing:-0.02em; line-height:1.15;
+  }
+  .sn-header h1 .sn-mark { color:var(--accent); }
+  .sn-header p { color:var(--soft); font-size:13.5px; margin-top:5px; }
+
+  /* ===== NAV ===== */
+  .sn-nav { display:flex; gap:8px; padding:18px 22px 6px; }
+  .sn-nav button {
+    background:none; border:1px solid var(--border); color:var(--soft);
+    font-family:inherit; font-size:14px; font-weight:600;
+    padding:8px 18px; border-radius:999px; cursor:pointer; transition:all .15s;
+  }
+  .sn-nav button:hover { color:var(--text); border-color:#3a4150; }
+  .sn-nav button.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .sn-nav .sn-badge {
+    display:inline-block; margin-left:7px; background:var(--heart); color:#fff;
+    font-size:11px; font-weight:700; padding:1px 7px; border-radius:999px; vertical-align:middle;
+  }
+  .sn-nav button.active .sn-badge { background:#ffffff33; }
+
+  /* ===== SEARCH ===== */
+  .sn-search-wrap { padding:14px 22px 4px; position:relative; }
+  .sn-search {
+    width:100%; padding:13px 16px 13px 44px; font-family:inherit; font-size:15px;
+    color:var(--text); background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius-sm); outline:none; transition:border-color .15s, box-shadow .15s;
+  }
+  .sn-search::placeholder { color:var(--soft); }
+  .sn-search:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-dim); }
+  .sn-search-icon {
+    position:absolute; left:36px; top:50%; transform:translateY(-50%);
+    width:18px; height:18px; color:var(--soft); pointer-events:none;
+  }
+  .sn-count-pill {
+    position:absolute; right:34px; top:50%; transform:translateY(-50%);
+    background:var(--surface-2); color:var(--soft); font-size:12px; font-weight:600;
+    padding:3px 10px; border-radius:999px; pointer-events:none;
+  }
+
+  /* ===== FEELING LIST ===== */
+  .sn-list { padding:10px 22px 0; list-style:none; }
+  .sn-feeling {
+    display:flex; align-items:center; gap:13px;
+    padding:13px 16px; background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius-sm); margin-bottom:9px; transition:all .15s;
+  }
+  .sn-feeling:hover { border-color:#3a4150; }
+  .sn-feeling.checked { border-color:var(--accent); background:#8b7cf60d; }
+  .sn-check {
+    flex-shrink:0; width:22px; height:22px; border-radius:7px;
+    border:2px solid var(--border); background:transparent; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; transition:all .15s;
+  }
+  .sn-check.on { background:var(--accent); border-color:var(--accent); }
+  .sn-check svg { width:13px; height:13px; color:#fff; opacity:0; transition:opacity .15s; }
+  .sn-check.on svg { opacity:1; }
+  .sn-feeling-name { flex:1; font-size:16.5px; font-weight:500; color:var(--text); cursor:pointer; }
+  .sn-feeling-go { color:var(--soft); font-size:20px; opacity:.5; cursor:pointer; }
+  .sn-feeling-name:hover ~ .sn-feeling-go, .sn-feeling-go:hover { opacity:.9; }
+
+  .sn-more {
+    width:100%; margin:6px 0 4px; padding:12px; background:transparent;
+    border:1px dashed var(--border); border-radius:var(--radius-sm);
+    color:var(--soft); font-family:inherit; font-size:14px; font-weight:600; cursor:pointer; transition:all .15s;
+  }
+  .sn-more:hover { color:var(--text); border-color:#3a4150; }
+
+  /* ===== FLOATING ACTION ===== */
+  .sn-fab-wrap {
+    position:fixed; left:0; right:0; bottom:0; display:flex; justify-content:center;
+    padding:16px 22px calc(16px + env(safe-area-inset-bottom));
+    pointer-events:none;
+    background:linear-gradient(to top, var(--bg) 55%, transparent);
+  }
+  .sn-fab {
+    pointer-events:auto; max-width:516px; width:100%;
+    background:var(--accent); color:#fff; border:none; border-radius:var(--radius-sm);
+    padding:15px; font-family:inherit; font-size:15.5px; font-weight:700; cursor:pointer;
+    box-shadow:0 8px 24px #8b7cf64d; transition:transform .12s, background .15s;
+  }
+  .sn-fab:hover { background:#7a6af0; }
+  .sn-fab:active { transform:scale(.985); }
+
+  /* ===== DETAIL ===== */
+  .sn-back {
+    display:inline-flex; align-items:center; gap:6px; margin:22px 22px 0;
+    background:none; border:none; color:var(--accent); font-family:inherit;
+    font-size:14px; font-weight:600; cursor:pointer; transition:opacity .15s;
+  }
+  .sn-back:hover { opacity:.7; }
+  .sn-detail-title {
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:23px; color:var(--text);
+    padding:12px 22px 4px; letter-spacing:-0.01em;
+  }
+  .sn-detail-sub { padding:0 22px 4px; color:var(--soft); font-size:13px; }
+
+  .sn-submenu { display:flex; gap:7px; padding:14px 22px 6px; flex-wrap:wrap; }
+  .sn-submenu button {
+    background:var(--surface); border:1px solid var(--border); color:var(--soft);
+    font-family:inherit; font-size:13.5px; font-weight:600; padding:7px 15px;
+    border-radius:999px; cursor:pointer; transition:all .15s;
+  }
+  .sn-submenu button:hover { color:var(--text); }
+  .sn-submenu button.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+
+  /* ===== CONTENT CARDS ===== */
+  .sn-cards { padding:8px 22px 0; list-style:none; }
+  .sn-card {
+    position:relative; background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius); padding:20px 54px 20px 22px; margin-bottom:11px;
+    overflow:hidden;
+  }
+  .sn-card::before {
+    content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+    background:var(--heart); opacity:.85;
+  }
+  .sn-card-text { font-size:16px; line-height:1.72; color:var(--body); font-weight:400; }
+  .sn-card-meta { margin-top:11px; font-size:12px; color:var(--soft); }
+
+  .sn-heart {
+    position:absolute; top:15px; right:14px; background:none; border:none;
+    cursor:pointer; padding:5px; transition:transform .12s;
+  }
+  .sn-heart:hover { transform:scale(1.15); }
+  .sn-heart:active { transform:scale(.9); }
+  .sn-heart svg { width:23px; height:23px; display:block; transition:all .15s; }
+  .sn-heart .he { color:#4a5160; }
+  .sn-heart .hf { color:var(--heart); display:none; filter:drop-shadow(0 1px 3px #e85d9b66); }
+  .sn-heart.on .he { display:none; }
+  .sn-heart.on .hf { display:block; }
+
+  /* ===== FAVORITES ===== */
+  .sn-fav-group { padding:6px 22px 0; }
+  .sn-fav-group h2 {
+    font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; color:var(--text);
+    margin:20px 0 10px; display:flex; align-items:center; gap:9px;
+  }
+  .sn-fav-group h2 .c { color:var(--soft); font-weight:600; font-size:13px; }
+  .sn-empty { text-align:center; padding:64px 36px; color:var(--soft); line-height:1.75; }
+  .sn-empty .e-ic { font-size:38px; opacity:.4; margin-bottom:14px; }
+
+  .sn-more-page {
+    width:calc(100% - 44px); margin:4px 22px 0; padding:13px; background:var(--surface);
+    border:1px solid var(--border); border-radius:var(--radius-sm); color:var(--text);
+    font-family:inherit; font-size:14px; font-weight:600; cursor:pointer;
+  }
+  .sn-more-page:hover { border-color:var(--accent); }
+
+  @keyframes snIn { from{opacity:0; transform:translateY(7px);} to{opacity:1; transform:translateY(0);} }
+  .sn-in { animation:snIn .28s ease forwards; }
+</style>
+
+<script>
+(function(){
+  "use strict";
+
+  // ===================== KONFIGURACE =====================
+  var SN_BASE = "https://bobrerichacz.github.io/stesti_naproti_app/";
+  var FILES = {
+    clusters:  "clusters.json",
+    feelings:  "feelings.json",
+    reframings:"reframings.json",
+    questions: "reframing_questions.json",
+    actions:   "reframing_actions.json"
+  };
+  var TYPES = [
+    { key:"reframings", store:"reframings",          label:"Přerámování" },
+    { key:"questions",  store:"reframing_questions",  label:"Otázky" },
+    { key:"actions",    store:"reframing_actions",    label:"Úkoly" }
+  ];
+  var FAV_KEY = "sn_favorites";
+
+  // ===================== STAV =====================
+  var DB = null;             // načtená data
+  var clusterName = {};      // cluster_id -> name
+  var clusterSort = {};      // cluster_id -> sort_order
+  var byCluster = {};        // typeKey -> { cluster_id -> [items sorted] }
+  var itemIndex = {};        // typeKey -> { id -> item }
+  var contentClusters = [];  // cluster_id, které mají přerámování
+
+  var state = {
+    page: "feelings",        // "feelings" | "detail" | "favorites"
+    showSecondary: false,
+    selected: {},            // feel_id -> {feeling obj}
+    detailClusters: [],      // [{cluster_id, count}] pro zobrazení
+    detailMode: "single",    // "single" | "merged"
+    activeType: "reframings",
+    search: "",
+    pageLimit: 50,
+    favorites: loadFav()
+  };
+
+  // ===================== FAVORITY (localStorage) =====================
+  function loadFav(){
+    try { var d=JSON.parse(localStorage.getItem(FAV_KEY)); if(d) return d; } catch(e){}
+    return { reframings:[], reframing_questions:[], reframing_actions:[] };
+  }
+  function saveFav(){ try{ localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites)); }catch(e){} }
+  function favCount(){
+    return state.favorites.reframings.length
+         + state.favorites.reframing_questions.length
+         + state.favorites.reframing_actions.length;
+  }
+  function isFav(store,id){ return state.favorites[store].indexOf(id) > -1; }
+  function toggleFav(store,id){
+    var arr=state.favorites[store], i=arr.indexOf(id);
+    if(i>-1) arr.splice(i,1); else arr.push(id);
+    saveFav();
+  }
+
+  // ===================== NAČTENÍ DAT =====================
+  function load(){
+    var keys=Object.keys(FILES);
+    Promise.all(keys.map(function(k){
+      return fetch(SN_BASE+FILES[k], {cache:"no-cache"}).then(function(r){
+        if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status);
+        return r.json();
+      });
+    })).then(function(arrs){
+      DB={};
+      keys.forEach(function(k,i){ DB[k]=arrs[i]; });
+      prepare();
+      render();
+    }).catch(function(err){
+      showError(err);
+    });
+  }
+
+  function prepare(){
+    DB.clusters.forEach(function(c){ clusterName[c.id]=c.name; clusterSort[c.id]=c.sort_order; });
+
+    TYPES.forEach(function(t){
+      byCluster[t.key]={}; itemIndex[t.key]={};
+      (DB[t.key]||[]).forEach(function(it){
+        (byCluster[t.key][it.cluster_id] = byCluster[t.key][it.cluster_id]||[]).push(it);
+        itemIndex[t.key][it.id]=it;
+      });
+      Object.keys(byCluster[t.key]).forEach(function(cid){
+        byCluster[t.key][cid].sort(function(a,b){ return a.sort_order-b.sort_order; });
+      });
+    });
+
+    // clustery, které reálně mají přerámování (jen ty pustíme do seznamu pocitů)
+    contentClusters = Object.keys(byCluster.reframings);
+  }
+
+  function showError(err){
+    var root=document.getElementById("sn-root");
+    root.innerHTML =
+      '<div class="sn-error"><strong>Data se nepodařilo načíst.</strong><br><br>'+
+      'Zkontroluj, že na GitHub Pages leží soubory:<br>'+
+      '<code>clusters.json, feelings.json, reframings.json, reframing_questions.json, reframing_actions.json</code><br><br>'+
+      'na adrese <code>'+SN_BASE+'</code><br><br>'+
+      '<span style="opacity:.6">Detail: '+esc(String(err&&err.message||err))+'</span></div>';
+  }
+
+  // ===================== POMOCNÉ =====================
+  function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
+  function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
+  function mainFeelings(){
+    return DB.feelings.filter(function(f){
+      return contentClusters.indexOf(f.cluster_id)>-1 && f.main && f.main!=="0";
+    });
+  }
+  function secondaryFeelings(){
+    return DB.feelings.filter(function(f){
+      return contentClusters.indexOf(f.cluster_id)>-1 && (!f.main || f.main==="0");
+    });
+  }
+  function visibleFeelings(){
+    var list = mainFeelings().concat(state.showSecondary ? secondaryFeelings() : []);
+    if(state.search.trim()){
+      // pokud hledá, prohledej všechny pocity obsahových clusterů
+      list = mainFeelings().concat(secondaryFeelings());
+      var q=deburr(state.search);
+      list=list.filter(function(f){ return deburr(f.name).indexOf(q)>-1; });
+    }
+    list.sort(function(a,b){ return a.sort_order-b.sort_order; });
+    return list;
+  }
+
+  // ===================== INTERLEAVING (merged) =====================
+  // přesně dle README: kola, kvóta = počet vybraných pocitů v clusteru
+  function interleave(typeKey, clustersWithCounts){
+    var counts={}, ids=[];
+    clustersWithCounts.forEach(function(c){ counts[c.cluster_id]=c.count; ids.push(c.cluster_id); });
+    ids.sort(function(a,b){
+      if(counts[b]!==counts[a]) return counts[b]-counts[a];     // víc vybraných pocitů nahoru
+      return (clusterSort[a]||0)-(clusterSort[b]||0);           // remíza: sort_order clusteru
+    });
+    var lists={}, pos={};
+    ids.forEach(function(cid){ lists[cid]=byCluster[typeKey][cid]||[]; pos[cid]=0; });
+    var seen={}, merged=[];
+    function exhausted(){ return ids.every(function(cid){ return pos[cid]>=lists[cid].length; }); }
+    while(!exhausted()){
+      ids.forEach(function(cid){
+        var emitted=0;
+        while(emitted<counts[cid] && pos[cid]<lists[cid].length){
+          var it=lists[cid][pos[cid]]; pos[cid]++;
+          if(seen[it.id]) continue;          // dedup (pojistka), nečerpá kvótu
+          seen[it.id]=1; merged.push(it); emitted++;
+        }
+      });
+    }
+    return merged;
+  }
+
+  function currentList(){
+    if(state.detailMode==="single"){
+      var cid=state.detailClusters[0].cluster_id;
+      return (byCluster[state.activeType][cid]||[]).slice();
+    }
+    return interleave(state.activeType, state.detailClusters);
+  }
+
+  // ===================== RENDER =====================
+  function render(){
+    var root=document.getElementById("sn-root");
+    var h="";
+    h+='<div class="sn-header"><h1>Štěstí <span class="sn-mark">naproti</span></h1>'+
+       '<p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
+
+    h+='<div class="sn-nav">';
+    h+='<button class="'+(state.page!=="favorites"?"active":"")+'" onclick="SN.go(\'feelings\')">Pocity</button>';
+    h+='<button class="'+(state.page==="favorites"?"active":"")+'" onclick="SN.go(\'favorites\')">Oblíbené'+
+       (favCount()>0?'<span class="sn-badge">'+favCount()+'</span>':'')+'</button>';
+    h+='</div>';
+
+    if(state.page==="feelings") h+=viewFeelings();
+    else if(state.page==="detail") h+=viewDetail();
+    else h+=viewFavorites();
+
+    root.innerHTML=h;
+
+    if(state.page==="feelings"){
+      var s=document.getElementById("sn-search");
+      if(s && state.search){ s.value=state.search; }
+    }
+  }
+
+  function viewFeelings(){
+    var feelings=visibleFeelings();
+    var total=mainFeelings().length+secondaryFeelings().length;
+    var h='';
+    h+='<div class="sn-search-wrap">';
+    h+='<svg class="sn-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    h+='<input id="sn-search" class="sn-search" placeholder="Hledej pocit…" oninput="SN.search(this.value)">';
+    h+='<span class="sn-count-pill">'+total+' pocitů</span>';
+    h+='</div>';
+
+    h+='<ul class="sn-list">';
+    if(feelings.length===0){
+      h+='<div class="sn-empty">Žádný pocit neodpovídá hledání.</div>';
+    } else {
+      feelings.forEach(function(f){
+        var on=!!state.selected[f.id];
+        h+='<li class="sn-feeling sn-in '+(on?"checked":"")+'">';
+        h+='<span class="sn-check '+(on?"on":"")+'" onclick="SN.toggleSelect(\''+f.id+'\')">'+
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>';
+        h+='<span class="sn-feeling-name" onclick="SN.openSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
+        h+='<span class="sn-feeling-go" onclick="SN.openSingle(\''+f.cluster_id+'\')">›</span>';
+        h+='</li>';
+      });
+    }
+    h+='</ul>';
+
+    if(!state.search.trim() && !state.showSecondary && secondaryFeelings().length>0){
+      h+='<button class="sn-more" onclick="SN.toggleSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
+    }
+
+    var n=Object.keys(state.selected).length;
+    if(n>0){
+      h+='<div class="sn-fab-wrap"><button class="sn-fab" onclick="SN.openSelected()">'+
+         (n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
+    }
+    return h;
+  }
+
+  function viewDetail(){
+    var h='';
+    h+='<button class="sn-back" onclick="SN.go(\'feelings\')">← Zpět na pocity</button>';
+
+    if(state.detailMode==="single"){
+      h+='<div class="sn-detail-title">'+esc(clusterName[state.detailClusters[0].cluster_id]||"")+'</div>';
+    } else {
+      var names=state.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
+      h+='<div class="sn-detail-title">Vybrané pocity</div>';
+      h+='<div class="sn-detail-sub">'+esc(names.join(" · "))+'</div>';
+    }
+
+    h+='<div class="sn-submenu">';
+    TYPES.forEach(function(t){
+      h+='<button class="'+(state.activeType===t.key?"active":"")+'" onclick="SN.setType(\''+t.key+'\')">'+t.label+'</button>';
+    });
+    h+='</div>';
+
+    var list=currentList();
+    var store=storeOf(state.activeType);
+    var shown=list.slice(0, state.pageLimit);
+
+    h+='<ul class="sn-cards">';
+    shown.forEach(function(it){
+      var on=isFav(store,it.id);
+      h+='<li class="sn-card sn-in">';
+      h+='<div class="sn-card-text">'+esc(it.text)+'</div>';
+      if(state.detailMode==="merged"){
+        h+='<div class="sn-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
+      }
+      h+=heartBtn(store,it.id,on);
+      h+='</li>';
+    });
+    h+='</ul>';
+
+    if(list.length>state.pageLimit){
+      h+='<button class="sn-more-page" onclick="SN.moreItems()">Dalších '+
+         Math.min(50, list.length-state.pageLimit)+'</button>';
+    }
+    return h;
+  }
+
+  function viewFavorites(){
+    if(favCount()===0){
+      return '<div class="sn-empty"><div class="e-ic">♡</div>'+
+             'Zatím tu nic není.<br>Klepni na srdíčko u věty, která tě osloví, a najdeš ji tady.</div>';
+    }
+    var h='';
+    TYPES.forEach(function(t){
+      var ids=state.favorites[t.store];
+      if(ids.length===0) return;
+      h+='<div class="sn-fav-group"><h2>'+t.label+' <span class="c">'+ids.length+'</span></h2>';
+      h+='<ul class="sn-cards" style="padding-left:0;padding-right:0">';
+      ids.slice().reverse().forEach(function(id){
+        var it=itemIndex[t.key][id];
+        if(!it) return;
+        h+='<li class="sn-card sn-in">';
+        h+='<div class="sn-card-text">'+esc(it.text)+'</div>';
+        h+='<div class="sn-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
+        h+=heartBtn(t.store,id,true);
+        h+='</li>';
+      });
+      h+='</ul></div>';
+    });
+    return h;
+  }
+
+  function heartBtn(store,id,on){
+    return '<button class="sn-heart '+(on?"on":"")+'" onclick="SN.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených">'+
+      '<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>'+
+      '<svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
+  }
+
+  function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
+
+  // ===================== HANDLERY =====================
+  window.SN = {
+    go:function(p){ state.page=p; state.search=""; scrollTop(); render(); },
+    search:function(v){
+      state.search=v; render();
+      var s=document.getElementById("sn-search");
+      if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); }
+    },
+    toggleSecondary:function(){ state.showSecondary=!state.showSecondary; render(); },
+    toggleSelect:function(id){
+      if(state.selected[id]) delete state.selected[id];
+      else {
+        var f=DB.feelings.filter(function(x){return x.id===id;})[0];
+        if(f) state.selected[id]=f;
+      }
+      render();
+    },
+    openSingle:function(clusterId){
+      state.detailMode="single";
+      state.detailClusters=[{cluster_id:clusterId, count:1}];
+      enterDetail();
+    },
+    openSelected:function(){
+      var feels=Object.keys(state.selected).map(function(k){return state.selected[k];});
+      var counts={};
+      feels.forEach(function(f){ counts[f.cluster_id]=(counts[f.cluster_id]||0)+1; });
+      var cids=Object.keys(counts);
+      if(cids.length===1){
+        state.detailMode="single";
+        state.detailClusters=[{cluster_id:cids[0], count:counts[cids[0]]}];
+      } else {
+        state.detailMode="merged";
+        state.detailClusters=cids.map(function(c){ return {cluster_id:c, count:counts[c]}; });
+      }
+      enterDetail();
+    },
+    setType:function(t){ state.activeType=t; state.pageLimit=50; scrollTop(); render(); },
+    moreItems:function(){ state.pageLimit+=50; render(); },
+    fav:function(store,id){ toggleFav(store,id); render(); }
+  };
+
+  function enterDetail(){ state.page="detail"; state.activeType="reframings"; state.pageLimit=50; scrollTop(); render(); }
+  function scrollTop(){
+    var r=document.getElementById("sn-root");
+    if(r && r.scrollIntoView) r.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+
+  // ===================== START =====================
+  load();
+})();
+</script>

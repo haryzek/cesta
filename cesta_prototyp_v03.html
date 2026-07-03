@@ -1,0 +1,559 @@
+<!--
+  MOJE CESTA — PROTOTYP v0.2  (sekce Přerámování + Oblíbené)
+  Vlož celý tento kód do HTML elementu na Mioweb stránce.
+  Data se načítají z GitHub Pages (viz konstanta MC_BASE níže).
+  Pro běh musí být na GitHubu tyto soubory:
+    clusters.json, feelings.json,
+    reframings.json, reframing_questions.json, reframing_actions.json
+-->
+
+<div id="mc-root"><div class="mc-loading">Načítám…</div></div>
+
+<style>
+  #mc-root *, #mc-root *::before, #mc-root *::after { margin:0; box-sizing:border-box; }
+  #mc-root ul { padding:0; list-style:none; }
+
+  #mc-root {
+    --bg:        #15120E;
+    --surface:   #201B15;
+    --surface-2: #2A241C;
+    --border:    #3A332A;
+    --text:      #EDE6D8;
+    --body:      #DBD3C3;
+    --soft:      #9A9081;
+    --empty:     #34302A;
+    --done:      #74955E;
+    --missed:    #BC5B43;
+    --accent:    #D9A441;   /* zlatá — akcent, aktivní stavy, srdíčko */
+    --accent-dim:#D9A44120;
+
+    --serif: Georgia,'Times New Roman',ui-serif,serif;
+    --sans:  -apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
+    --mono:  ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
+
+    font-family:var(--sans);
+    background:var(--bg);
+    color:var(--body);
+    max-width:520px;
+    margin:0 auto;
+    min-height:100vh;
+    padding-bottom:104px;
+    line-height:1.55;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .mc-loading, .mc-error {
+    padding:56px 24px; text-align:center; color:var(--soft); font-size:14px; line-height:1.7;
+  }
+  .mc-error strong { color:var(--text); font-family:var(--serif); }
+  .mc-error code { color:var(--accent); font-family:var(--mono); font-size:12px; }
+
+  /* ===== HEADER ===== */
+  .mc-header { padding:26px 18px 6px; }
+  .mc-header h1 {
+    font-family:var(--serif); font-weight:400; font-size:30px;
+    color:var(--text); letter-spacing:-0.01em; line-height:1.1;
+  }
+  .mc-header h1 .mc-mark { color:var(--accent); font-style:italic; }
+  .mc-header p { color:var(--soft); font-size:13px; margin-top:6px; font-family:var(--sans); }
+
+  /* ===== NAV ===== */
+  .mc-nav { display:flex; gap:6px; padding:16px 18px 4px; }
+  .mc-nav button {
+    background:var(--surface); border:1px solid var(--border); color:var(--soft);
+    font-family:var(--sans); font-size:13.5px; font-weight:600;
+    padding:8px 16px; border-radius:8px; cursor:pointer; transition:all .15s ease;
+  }
+  .mc-nav button:hover { color:var(--text); }
+  .mc-nav button.active { background:var(--accent); border-color:var(--accent); color:#15120E; }
+  .mc-nav .mc-badge {
+    display:inline-block; margin-left:7px; background:var(--accent); color:#15120E;
+    font-family:var(--mono); font-size:10px; font-weight:700; padding:1px 6px; border-radius:6px; vertical-align:middle;
+  }
+  .mc-nav button.active .mc-badge { background:#15120E33; color:#15120E; }
+
+  /* ===== SEARCH ===== */
+  .mc-search-wrap { padding:12px 18px 2px; position:relative; }
+  .mc-search {
+    width:100%; padding:11px 14px 11px 40px; font-family:var(--serif); font-size:16px;
+    color:var(--text); background:var(--bg); border:1px solid var(--border);
+    border-radius:10px; outline:none; transition:border-color .15s ease;
+  }
+  .mc-search::placeholder { color:var(--soft); font-style:italic; }
+  .mc-search:focus { border-color:var(--accent); }
+  .mc-search-icon {
+    position:absolute; left:32px; top:50%; transform:translateY(-50%);
+    width:16px; height:16px; color:var(--soft); pointer-events:none;
+  }
+  .mc-count-pill {
+    position:absolute; right:30px; top:50%; transform:translateY(-50%);
+    background:var(--surface-2); color:var(--soft); font-family:var(--mono); font-size:11px; font-weight:600;
+    padding:3px 9px; border-radius:6px; pointer-events:none;
+  }
+
+  /* ===== FEELING LIST ===== */
+  .mc-list { padding:8px 18px 0; list-style:none; }
+  .mc-feeling {
+    display:flex; align-items:center; gap:11px;
+    padding:10px 12px 10px 14px; background:var(--surface); border:1px solid var(--border);
+    border-radius:8px; margin-bottom:5px; transition:border-color .15s ease, background .15s ease;
+  }
+  .mc-feeling.checked { border-color:var(--accent); background:var(--accent-dim); }
+  .mc-check {
+    flex-shrink:0; width:24px; height:24px; border-radius:7px;
+    border:1px solid var(--border); background:var(--surface-2); color:var(--soft); cursor:pointer;
+    display:flex; align-items:center; justify-content:center; transition:all .12s ease;
+  }
+  .mc-check.on { background:var(--accent); border-color:var(--accent); }
+  .mc-check svg { width:14px; height:14px; color:#15120E; opacity:0; transition:opacity .12s ease; }
+  .mc-check.on svg { opacity:1; }
+  .mc-check:active { transform:scale(.92); }
+  .mc-feeling-name { flex:1; font-family:var(--serif); font-size:16px; line-height:1.25; color:var(--text); cursor:pointer; }
+  .mc-feeling-go { font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; cursor:pointer; padding:0 2px; }
+  .mc-feeling-name:hover ~ .mc-feeling-go, .mc-feeling-go:hover { opacity:.9; color:var(--accent); }
+
+  .mc-more {
+    width:100%; margin:5px 0 4px; padding:11px; background:transparent;
+    border:1px dashed var(--border); border-radius:8px;
+    color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease;
+  }
+  .mc-more:hover { color:var(--text); border-color:var(--soft); }
+
+  /* ===== FLOATING ACTION ===== */
+  .mc-fab-wrap {
+    position:fixed; left:0; right:0; bottom:0; display:flex; justify-content:center;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom));
+    pointer-events:none;
+    background:linear-gradient(to top, var(--bg) 58%, transparent);
+  }
+  .mc-fab {
+    pointer-events:auto; max-width:484px; width:100%;
+    background:var(--accent); color:#15120E; border:none; border-radius:12px;
+    padding:14px; font-family:var(--sans); font-size:15px; font-weight:700; cursor:pointer;
+    transition:transform .12s ease, filter .15s ease;
+  }
+  .mc-fab:hover { filter:brightness(1.06); }
+  .mc-fab:active { transform:scale(.98); }
+
+  /* ===== DETAIL ===== */
+  .mc-back {
+    display:inline-flex; align-items:center; gap:5px; margin:22px 18px 0;
+    background:none; border:none; padding:0; color:var(--accent); font-family:var(--sans);
+    font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease;
+  }
+  .mc-back:hover { opacity:.7; }
+  .mc-detail-title {
+    font-family:var(--serif); font-weight:400; font-size:26px; color:var(--text);
+    padding:14px 18px 2px; letter-spacing:-0.01em; line-height:1.15;
+  }
+  .mc-detail-sub { padding:0 18px 2px; color:var(--soft); font-family:var(--mono); font-size:12px; }
+
+  .mc-submenu { display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
+  .mc-submenu button {
+    background:var(--surface); border:1px solid var(--border); color:var(--soft);
+    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px;
+    border-radius:8px; cursor:pointer; transition:all .15s ease;
+  }
+  .mc-submenu button:hover { color:var(--text); }
+  .mc-submenu button.active { background:var(--accent); border-color:var(--accent); color:#15120E; }
+
+  /* ===== CONTENT CARDS ===== */
+  .mc-cards { padding:6px 18px 0; list-style:none; }
+  .mc-card {
+    position:relative; background:var(--surface); border:1px solid var(--border);
+    border-radius:8px; padding:16px 48px 16px 18px; margin-bottom:7px;
+    overflow:hidden;
+  }
+  .mc-card::before {
+    content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+    background:var(--accent); opacity:.7;
+  }
+  .mc-card-text { font-family:var(--serif); font-size:16.5px; line-height:1.6; color:var(--text); }
+  .mc-card-meta { margin-top:9px; font-family:var(--mono); font-size:11px; color:var(--soft); }
+
+  .mc-heart {
+    position:absolute; top:12px; right:11px; background:none; border:none;
+    cursor:pointer; padding:5px; transition:transform .12s ease;
+  }
+  .mc-heart:active { transform:scale(.9); }
+  .mc-heart svg { width:22px; height:22px; display:block; transition:all .12s ease; }
+  .mc-heart .he { color:#4a4338; }
+  .mc-heart .hf { color:var(--accent); display:none; }
+  .mc-heart.on .he { display:none; }
+  .mc-heart.on .hf { display:block; }
+
+  /* ===== FAVORITES ===== */
+  .mc-fav-group { padding:6px 18px 0; }
+  .mc-fav-group h2 {
+    font-family:var(--serif); font-size:18px; font-weight:400; color:var(--text);
+    margin:18px 0 8px; display:flex; align-items:center; gap:8px;
+  }
+  .mc-fav-group h2 .c { color:var(--soft); font-family:var(--mono); font-weight:600; font-size:12px; }
+  .mc-empty { text-align:center; padding:60px 32px; color:var(--soft); line-height:1.7; font-size:14px; }
+  .mc-empty .e-ic { font-size:34px; opacity:.4; margin-bottom:12px; }
+
+  .mc-more-page {
+    width:calc(100% - 36px); margin:4px 18px 0; padding:12px; background:var(--surface);
+    border:1px solid var(--border); border-radius:8px; color:var(--text);
+    font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:border-color .15s ease;
+  }
+  .mc-more-page:hover { border-color:var(--accent); }
+
+  @keyframes snIn { from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
+  .mc-in { animation:snIn .2s ease forwards; }
+</style>
+
+<script>
+(function(){
+  "use strict";
+
+  // ===================== KONFIGURACE =====================
+  var MC_BASE = "https://haryzek.github.io/cesta/";
+  var FILES = {
+    clusters:  "clusters.json",
+    feelings:  "feelings.json",
+    reframings:"reframings.json",
+    questions: "reframing_questions.json",
+    actions:   "reframing_actions.json"
+  };
+  var TYPES = [
+    { key:"reframings", store:"reframings",          label:"Přerámování" },
+    { key:"questions",  store:"reframing_questions",  label:"Otázky" },
+    { key:"actions",    store:"reframing_actions",    label:"Úkoly" }
+  ];
+  var FAV_KEY = "sn_favorites";
+
+  // ===================== STAV =====================
+  var DB = null;             // načtená data
+  var clusterName = {};      // cluster_id -> name
+  var clusterSort = {};      // cluster_id -> sort_order
+  var byCluster = {};        // typeKey -> { cluster_id -> [items sorted] }
+  var itemIndex = {};        // typeKey -> { id -> item }
+  var contentClusters = [];  // cluster_id, které mají přerámování
+
+  var state = {
+    page: "feelings",        // "feelings" | "detail" | "favorites"
+    showSecondary: false,
+    selected: {},            // feel_id -> {feeling obj}
+    detailClusters: [],      // [{cluster_id, count}] pro zobrazení
+    detailMode: "single",    // "single" | "merged"
+    activeType: "reframings",
+    search: "",
+    pageLimit: 50,
+    favorites: loadFav()
+  };
+
+  // ===================== FAVORITY (localStorage) =====================
+  function loadFav(){
+    try { var d=JSON.parse(localStorage.getItem(FAV_KEY)); if(d) return d; } catch(e){}
+    return { reframings:[], reframing_questions:[], reframing_actions:[] };
+  }
+  function saveFav(){ try{ localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites)); }catch(e){} }
+  function favCount(){
+    return state.favorites.reframings.length
+         + state.favorites.reframing_questions.length
+         + state.favorites.reframing_actions.length;
+  }
+  function isFav(store,id){ return state.favorites[store].indexOf(id) > -1; }
+  function toggleFav(store,id){
+    var arr=state.favorites[store], i=arr.indexOf(id);
+    if(i>-1) arr.splice(i,1); else arr.push(id);
+    saveFav();
+  }
+
+  // ===================== NAČTENÍ DAT =====================
+  function load(){
+    var keys=Object.keys(FILES);
+    Promise.all(keys.map(function(k){
+      return fetch(MC_BASE+FILES[k], {cache:"no-cache"}).then(function(r){
+        if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status);
+        return r.json();
+      });
+    })).then(function(arrs){
+      DB={};
+      keys.forEach(function(k,i){ DB[k]=arrs[i]; });
+      prepare();
+      render();
+    }).catch(function(err){
+      showError(err);
+    });
+  }
+
+  function prepare(){
+    DB.clusters.forEach(function(c){ clusterName[c.id]=c.name; clusterSort[c.id]=c.sort_order; });
+
+    TYPES.forEach(function(t){
+      byCluster[t.key]={}; itemIndex[t.key]={};
+      (DB[t.key]||[]).forEach(function(it){
+        (byCluster[t.key][it.cluster_id] = byCluster[t.key][it.cluster_id]||[]).push(it);
+        itemIndex[t.key][it.id]=it;
+      });
+      Object.keys(byCluster[t.key]).forEach(function(cid){
+        byCluster[t.key][cid].sort(function(a,b){ return a.sort_order-b.sort_order; });
+      });
+    });
+
+    // clustery, které reálně mají přerámování (jen ty pustíme do seznamu pocitů)
+    contentClusters = Object.keys(byCluster.reframings);
+  }
+
+  function showError(err){
+    var root=document.getElementById("mc-root");
+    root.innerHTML =
+      '<div class="mc-error"><strong>Data se nepodařilo načíst.</strong><br><br>'+
+      'Zkontroluj, že na GitHub Pages leží soubory:<br>'+
+      '<code>clusters.json, feelings.json, reframings.json, reframing_questions.json, reframing_actions.json</code><br><br>'+
+      'na adrese <code>'+MC_BASE+'</code><br><br>'+
+      '<span style="opacity:.6">Detail: '+esc(String(err&&err.message||err))+'</span></div>';
+  }
+
+  // ===================== POMOCNÉ =====================
+  function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
+  function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
+  function mainFeelings(){
+    return DB.feelings.filter(function(f){
+      return contentClusters.indexOf(f.cluster_id)>-1 && f.main && f.main!=="0";
+    });
+  }
+  function secondaryFeelings(){
+    return DB.feelings.filter(function(f){
+      return contentClusters.indexOf(f.cluster_id)>-1 && (!f.main || f.main==="0");
+    });
+  }
+  function visibleFeelings(){
+    var list = mainFeelings().concat(state.showSecondary ? secondaryFeelings() : []);
+    if(state.search.trim()){
+      // pokud hledá, prohledej všechny pocity obsahových clusterů
+      list = mainFeelings().concat(secondaryFeelings());
+      var q=deburr(state.search);
+      list=list.filter(function(f){ return deburr(f.name).indexOf(q)>-1; });
+    }
+    list.sort(function(a,b){ return a.sort_order-b.sort_order; });
+    return list;
+  }
+
+  // ===================== INTERLEAVING (merged) =====================
+  // přesně dle README: kola, kvóta = počet vybraných pocitů v clusteru
+  function interleave(typeKey, clustersWithCounts){
+    var counts={}, ids=[];
+    clustersWithCounts.forEach(function(c){ counts[c.cluster_id]=c.count; ids.push(c.cluster_id); });
+    ids.sort(function(a,b){
+      if(counts[b]!==counts[a]) return counts[b]-counts[a];     // víc vybraných pocitů nahoru
+      return (clusterSort[a]||0)-(clusterSort[b]||0);           // remíza: sort_order clusteru
+    });
+    var lists={}, pos={};
+    ids.forEach(function(cid){ lists[cid]=byCluster[typeKey][cid]||[]; pos[cid]=0; });
+    var seen={}, merged=[];
+    function exhausted(){ return ids.every(function(cid){ return pos[cid]>=lists[cid].length; }); }
+    while(!exhausted()){
+      ids.forEach(function(cid){
+        var emitted=0;
+        while(emitted<counts[cid] && pos[cid]<lists[cid].length){
+          var it=lists[cid][pos[cid]]; pos[cid]++;
+          if(seen[it.id]) continue;          // dedup (pojistka), nečerpá kvótu
+          seen[it.id]=1; merged.push(it); emitted++;
+        }
+      });
+    }
+    return merged;
+  }
+
+  function currentList(){
+    if(state.detailMode==="single"){
+      var cid=state.detailClusters[0].cluster_id;
+      return (byCluster[state.activeType][cid]||[]).slice();
+    }
+    return interleave(state.activeType, state.detailClusters);
+  }
+
+  // ===================== RENDER =====================
+  function render(){
+    var root=document.getElementById("mc-root");
+    var h="";
+    h+='<div class="mc-header"><h1>Moje <span class="mc-mark">cesta</span></h1>'+
+       '<p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
+
+    h+='<div class="mc-nav">';
+    h+='<button class="'+(state.page!=="favorites"?"active":"")+'" onclick="SN.go(\'feelings\')">Pocity</button>';
+    h+='<button class="'+(state.page==="favorites"?"active":"")+'" onclick="SN.go(\'favorites\')">Oblíbené'+
+       (favCount()>0?'<span class="mc-badge">'+favCount()+'</span>':'')+'</button>';
+    h+='</div>';
+
+    if(state.page==="feelings") h+=viewFeelings();
+    else if(state.page==="detail") h+=viewDetail();
+    else h+=viewFavorites();
+
+    root.innerHTML=h;
+
+    if(state.page==="feelings"){
+      var s=document.getElementById("mc-search");
+      if(s && state.search){ s.value=state.search; }
+    }
+  }
+
+  function viewFeelings(){
+    var feelings=visibleFeelings();
+    var total=mainFeelings().length+secondaryFeelings().length;
+    var h='';
+    h+='<div class="mc-search-wrap">';
+    h+='<svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="SN.search(this.value)">';
+    h+='<span class="mc-count-pill">'+total+' pocitů</span>';
+    h+='</div>';
+
+    h+='<ul class="mc-list">';
+    if(feelings.length===0){
+      h+='<div class="mc-empty">Žádný pocit neodpovídá hledání.</div>';
+    } else {
+      feelings.forEach(function(f){
+        var on=!!state.selected[f.id];
+        h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'">';
+        h+='<span class="mc-check '+(on?"on":"")+'" onclick="SN.toggleSelect(\''+f.id+'\')">'+
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>';
+        h+='<span class="mc-feeling-name" onclick="SN.openSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
+        h+='<span class="mc-feeling-go" onclick="SN.openSingle(\''+f.cluster_id+'\')">›</span>';
+        h+='</li>';
+      });
+    }
+    h+='</ul>';
+
+    if(!state.search.trim() && !state.showSecondary && secondaryFeelings().length>0){
+      h+='<button class="mc-more" onclick="SN.toggleSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
+    }
+
+    var n=Object.keys(state.selected).length;
+    if(n>0){
+      h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="SN.openSelected()">'+
+         (n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
+    }
+    return h;
+  }
+
+  function viewDetail(){
+    var h='';
+    h+='<button class="mc-back" onclick="SN.go(\'feelings\')">← Zpět na pocity</button>';
+
+    if(state.detailMode==="single"){
+      h+='<div class="mc-detail-title">'+esc(clusterName[state.detailClusters[0].cluster_id]||"")+'</div>';
+    } else {
+      var names=state.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
+      h+='<div class="mc-detail-title">Vybrané pocity</div>';
+      h+='<div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
+    }
+
+    h+='<div class="mc-submenu">';
+    TYPES.forEach(function(t){
+      h+='<button class="'+(state.activeType===t.key?"active":"")+'" onclick="SN.setType(\''+t.key+'\')">'+t.label+'</button>';
+    });
+    h+='</div>';
+
+    var list=currentList();
+    var store=storeOf(state.activeType);
+    var shown=list.slice(0, state.pageLimit);
+
+    h+='<ul class="mc-cards">';
+    shown.forEach(function(it){
+      var on=isFav(store,it.id);
+      h+='<li class="mc-card mc-in">';
+      h+='<div class="mc-card-text">'+esc(it.text)+'</div>';
+      if(state.detailMode==="merged"){
+        h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
+      }
+      h+=heartBtn(store,it.id,on);
+      h+='</li>';
+    });
+    h+='</ul>';
+
+    if(list.length>state.pageLimit){
+      h+='<button class="mc-more-page" onclick="SN.moreItems()">Dalších '+
+         Math.min(50, list.length-state.pageLimit)+'</button>';
+    }
+    return h;
+  }
+
+  function viewFavorites(){
+    if(favCount()===0){
+      return '<div class="mc-empty"><div class="e-ic">♡</div>'+
+             'Zatím tu nic není.<br>Klepni na srdíčko u věty, která tě osloví, a najdeš ji tady.</div>';
+    }
+    var h='';
+    TYPES.forEach(function(t){
+      var ids=state.favorites[t.store];
+      if(ids.length===0) return;
+      h+='<div class="mc-fav-group"><h2>'+t.label+' <span class="c">'+ids.length+'</span></h2>';
+      h+='<ul class="mc-cards" style="padding-left:0;padding-right:0">';
+      ids.slice().reverse().forEach(function(id){
+        var it=itemIndex[t.key][id];
+        if(!it) return;
+        h+='<li class="mc-card mc-in">';
+        h+='<div class="mc-card-text">'+esc(it.text)+'</div>';
+        h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
+        h+=heartBtn(t.store,id,true);
+        h+='</li>';
+      });
+      h+='</ul></div>';
+    });
+    return h;
+  }
+
+  function heartBtn(store,id,on){
+    return '<button class="mc-heart '+(on?"on":"")+'" onclick="SN.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených">'+
+      '<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>'+
+      '<svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
+  }
+
+  function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
+
+  // ===================== HANDLERY =====================
+  window.SN = {
+    go:function(p){ state.page=p; state.search=""; scrollTop(); render(); },
+    search:function(v){
+      state.search=v; render();
+      var s=document.getElementById("mc-search");
+      if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); }
+    },
+    toggleSecondary:function(){ state.showSecondary=!state.showSecondary; render(); },
+    toggleSelect:function(id){
+      if(state.selected[id]) delete state.selected[id];
+      else {
+        var f=DB.feelings.filter(function(x){return x.id===id;})[0];
+        if(f) state.selected[id]=f;
+      }
+      render();
+    },
+    openSingle:function(clusterId){
+      state.detailMode="single";
+      state.detailClusters=[{cluster_id:clusterId, count:1}];
+      enterDetail();
+    },
+    openSelected:function(){
+      var feels=Object.keys(state.selected).map(function(k){return state.selected[k];});
+      var counts={};
+      feels.forEach(function(f){ counts[f.cluster_id]=(counts[f.cluster_id]||0)+1; });
+      var cids=Object.keys(counts);
+      if(cids.length===1){
+        state.detailMode="single";
+        state.detailClusters=[{cluster_id:cids[0], count:counts[cids[0]]}];
+      } else {
+        state.detailMode="merged";
+        state.detailClusters=cids.map(function(c){ return {cluster_id:c, count:counts[c]}; });
+      }
+      enterDetail();
+    },
+    setType:function(t){ state.activeType=t; state.pageLimit=50; scrollTop(); render(); },
+    moreItems:function(){ state.pageLimit+=50; render(); },
+    fav:function(store,id){ toggleFav(store,id); render(); }
+  };
+
+  function enterDetail(){ state.page="detail"; state.activeType="reframings"; state.pageLimit=50; scrollTop(); render(); }
+  function scrollTop(){
+    var r=document.getElementById("mc-root");
+    if(r && r.scrollIntoView) r.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+
+  // ===================== START =====================
+  load();
+})();
+</script>

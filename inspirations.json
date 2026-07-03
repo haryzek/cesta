@@ -1,0 +1,233 @@
+[
+  {
+    "id": "inspir_0001",
+    "text": "Kdo má proč žít, snese téměř jakékoli jak.",
+    "author": "Viktor Frankl",
+    "year": "1946",
+    "tags": ["smysl", "utrpení"],
+    "schemas": ["LACKMEAN", "NEGPES", "ABINST"],
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-02"
+  },
+  {
+    "id": "inspir_0002",
+    "text": "Paradoxem je, že když přijmu sám sebe takového, jaký jsem, teprve pak se mohu změnit.",
+    "author": "Carl Rogers",
+    "year": "1961",
+    "tags": ["přijetí", "sebepřijetí", "paradox", "změna"],
+    "schemas": ["DEFSH", "USHYPER", "FAIL"],
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0003",
+    "text": "Dokud neučiníte nevědomé vědomým, bude řídit váš život a vy to budete nazývat osudem.",
+    "author": "Carl Gustav Jung",
+    "year": "1951",
+    "tags": ["sebepoznání", "lidská přirozenost", "moudrost"],
+    "schemas": ["LACKCOH", "NEGPES", "DEPINC"],
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0004",
+    "text": "Život není o tom, abychom našli sami sebe. Život je o tom, abychom sami sebe vytvořili.",
+    "author": "George Bernard Shaw",
+    "year": "1923",
+    "tags": ["autenticita", "smysl života", "motivace", "svoboda"],
+    "schemas": ["ENMUND", "LACKMEAN", "SUBJUG"],
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0005",
+    "text": "Trpíme častěji ve své představivosti než v realitě.",
+    "author": "Seneca",
+    "year": "65",
+    "tags": ["negativní myšlenky", "strach", "úzkost", "přerámování"],
+    "schemas": ["VULILL", "NEGPES", "USHYPER"],
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0006",
+    "text": "Nezralá láska říká: Miluji tě, protože tě potřebuji. Zralá láska říká: Potřebuji tě, protože tě miluji.",
+    "author": "Erich Fromm",
+    "year": "1956",
+    "tags": ["láska", "vztahy", "osobnost", "lidská přirozenost"],
+    "schemas": ["ABINST", "EMODEP", "ENMUND"],
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0007",
+    "text": "Dobrý život je proces, nikoli stav bytí. Je to směr, nikoli cíl.",
+    "author": "Carl Rogers",
+    "year": "1961",
+    "tags": ["smysl života", "změna", "trpělivost", "hodnoty"],
+    "schemas": ["USHYPER", "FAIL", "INDISC"],
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0008",
+    "text": "Člověk nemůže objevit nové oceány, pokud nemá odvahu ztratit břeh z dohledu.",
+    "author": "André Gide",
+    "year": "1925",
+    "tags": ["odvaha", "změna", "sebevědomí", "strach"],
+    "schemas": ["FAIL", "VULILL", "DEPINC"],
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0009",
+    "text": "Nemůžeme se vyhnout utrpení, ale můžeme si vybrat, jak s ním naložíme.",
+    "author": "Irvin D. Yalom",
+    "year": "1980",
+    "tags": ["utrpení", "odpovědnost", "odolnost", "přijetí"],
+    "schemas": ["UNFAIR", "NEGPES", "DEPINC"],
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0010",
+    "text": "Není moudrý ten, kdo ví mnoho, ale ten, kdo ví, co je potřeba.",
+    "author": "Echúlos",
+    "year": "-456",
+    "tags": ["moudrost", "hodnoty", "rozhodování"],
+    "schemas": ["USHYPER", "LACKCOH", "APPREC"],
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0011",
+    "text": "Být plně naživu znamená neustále riskovat, že budeme zraněni.",
+    "author": "Irvin D. Yalom",
+    "year": "2008",
+    "tags": ["autenticita", "odvaha", "emoce", "lidská přirozenost"],
+    "schemas": ["MISAB", "VULILL", "EMOINH"],
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0012",
+    "text": "Velká odvaha spočívá v tom, že se odvážíme vypadat nedokonale a dělat chyby.",
+    "author": "Alfred Adler",
+    "year": "1927",
+    "tags": ["nedokonalost", "odvaha", "sebepřijetí", "stud"],
+    "schemas": ["DEFSH", "USHYPER", "FAIL"],
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0013",
+    "text": "Emoce nevyjádřené mluvením se ukládají v tělesných orgánech a promlouvají nemocí.",
+    "author": "Sigmund Freud",
+    "year": "1895",
+    "tags": ["emoce", "lidská přirozenost", "stres", "autenticita"],
+    "schemas": ["EMOINH", "VULILL", "SUBJUG"],
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0014",
+    "text": "Láska a práce jsou základní kameny naší lidskosti.",
+    "author": "Sigmund Freud",
+    "year": "1930",
+    "tags": ["láska", "smysl života", "vztahy", "produktivita"],
+    "schemas": ["LACKMEAN", "EMODEP", "ISOLAL"],
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0015",
+    "text": "Schopnost být sám je předpokladem pro schopnost milovat.",
+    "author": "Erich Fromm",
+    "year": "1956",
+    "tags": ["samota", "láska", "sebepoznání", "vztahy"],
+    "schemas": ["ENMUND", "ISOLAL", "ABINST"],
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0016",
+    "text": "Největším objevem mí generace je, že lidská bytost může změnit svůj život změnou svých vnitřních postojů.",
+    "author": "William James",
+    "year": "1890",
+    "tags": ["změna", "přerámování", "pozitivní myšlení", "seberegulace"],
+    "schemas": ["NEGPES", "DEPINC", "FAIL"],
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0017",
+    "text": "Nechtějte, aby věci běžely tak, jak si přejete, ale přejte si, aby věci běžely tak, jak běží, a budete šťastní.",
+    "author": "Epiktétos",
+    "year": "125",
+    "tags": ["přijetí", "mindfulness", "přítomnost", "štěstí"],
+    "schemas": ["USHYPER", "INDISC", "ENTGRAND"],
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0018",
+    "text": "Všechno, co nás vytáčí na druhých, nás může dovést k hlubšímu pochopení sebe sama.",
+    "author": "Carl Gustav Jung",
+    "year": "1933",
+    "tags": ["sebepoznání", "hněv", "vztahy", "vnitřní části"],
+    "schemas": ["PUNIT", "MISAB", "LACKCOH"],
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0019",
+    "text": "Jediný způsob, jak pochopit změnu, je ponořit se do ní, plout s ní a zapojit se do tance.",
+    "author": "Alan Watts",
+    "year": "1951",
+    "tags": ["změna", "mindfulness", "přítomnost", "přijetí"],
+    "schemas": ["VULILL", "INDISC", "NEGPES"],
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0020",
+    "text": "Nejsme lidské bytosti, které mají duchovní prožitek. Jsme duchovní bytosti, které mají lidský prožitek.",
+    "author": "Pierre Teilhard de Chardin",
+    "year": "1947",
+    "tags": ["lidská přirozenost", "smysl života", "přerámování"],
+    "schemas": ["LACKMEAN", "DEFSH", "ISOLAL"],
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0021",
+    "text": "Hranice jsou způsob, jakým říkáte ostatním, kdo jste a jak s vámi mají zacházet.",
+    "author": "Virginia Satir",
+    "year": "1972",
+    "tags": ["hranice", "autenticita", "vztahy", "sebeúcta"],
+    "schemas": ["SELFSAC", "SUBJUG", "APPREC"],
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-06-05"
+  }
+]

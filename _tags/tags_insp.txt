@@ -1,0 +1,19 @@
+FLAT SEZNAM (abecedně, pro appku):
+autenticita, citáty, deprese, emoce, hněv, hodnoty, hranice, láska, lidská přirozenost, mindfulness, motivace, moudrost, naděje, nedokonalost, negativní myšlenky, odpovědnost, odpuštění, odvaha, odolnost, osamělost, osobnost, paradox, pozitivní myšlení, pravda, produktivita, přátelství, přerámování, přijetí, přítomnost, radost, rodina, rozhodování, samota, sebeláska, sebepoznání, sebepřijetí, seberegulace, sebeúcta, sebevědomí, smrt, smutek, smysl života, spánek, stárnutí, strach, stres, stud, svoboda, syndrom vyhoření, štěstí, trpělivost, utrpení, úzkost, vděčnost, vina, vnitřní části, vztahy, zdravé návyky, změna
+
+###
+
+KATEGORIZOVANÝ PŘEHLED (pro dokumentaci):
+Emoce a prožívání: strach, smutek, hněv, stud, vina, osamělost, radost, naděje, vděčnost
+Sebepojetí: sebeláska, sebevědomí, sebeúcta, sebepřijetí, autenticita, sebepoznání, osobnost
+Myšlení a postoj: přerámování, negativní myšlenky, pozitivní myšlení, motivace, odvaha, trpělivost, odpuštění, seberegulace
+Životní témata: štěstí, smysl života, změna, ztráta, utrpení, smrt, svoboda, stárnutí, přijetí, odpovědnost
+Vztahy: vztahy, komunikace, hranice, láska, přátelství, rodina, samota
+Duševní zdraví: deprese, stres, syndrom vyhoření, úzkost
+Životní styl a růst: zdravé návyky, produktivita, spánek, mindfulness, odolnost, rozhodování, hodnoty, přítomnost
+Filosofie a perspektiva: moudrost, pravda, lidská přirozenost, paradox, nedokonalost
+Terapeutické koncepty: vnitřní části
+Citáty
+
+
+

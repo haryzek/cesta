@@ -1,0 +1,713 @@
+<!--
+  PSYCHOTERAPEUTICKÁ APPKA — PROTOTYP v0.1
+  Vlož celý tento kód do HTML elementu na Mioweb stránce.
+-->
+
+<div id="app-root"></div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+  /* ====== RESET & BASE ====== */
+  #app-root *,
+  #app-root *::before,
+  #app-root *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #app-root {
+    --color-bg: #FAFAF7;
+    --color-surface: #FFFFFF;
+    --color-text: #2C2C2C;
+    --color-text-soft: #6B6B6B;
+    --color-accent: #C1666B;
+    --color-accent-soft: #C1666B22;
+    --color-border: #E8E6E1;
+    --color-heart: #C1666B;
+    --color-heart-bg: #FFF5F5;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --radius: 12px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+    --transition: 0.2s ease;
+
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    max-width: 540px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ====== HEADER ====== */
+  .app-header {
+    padding: 32px 20px 24px;
+    text-align: center;
+  }
+
+  .app-header h1 {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+
+  .app-header p {
+    font-size: 14px;
+    color: var(--color-text-soft);
+    margin-top: 6px;
+    font-weight: 300;
+  }
+
+  /* ====== NAVIGATION ====== */
+  .app-nav {
+    display: flex;
+    gap: 0;
+    padding: 0 20px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .app-nav button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 12px 0;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-text-soft);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition);
+    position: relative;
+    bottom: -1px;
+  }
+
+  .app-nav button:hover {
+    color: var(--color-text);
+  }
+
+  .app-nav button.active {
+    color: var(--color-text);
+    font-weight: 500;
+    border-bottom-color: var(--color-accent);
+  }
+
+  .app-nav .fav-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 6px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ====== SEARCH ====== */
+  .search-wrap {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 12px 16px 12px 44px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--color-text);
+    background: var(--color-surface);
+    outline: none;
+    transition: border-color var(--transition), box-shadow var(--transition);
+  }
+
+  .search-input::placeholder {
+    color: #B0ADA6;
+  }
+
+  .search-input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent-soft);
+  }
+
+  .search-wrap {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #B0ADA6;
+    pointer-events: none;
+  }
+
+  /* ====== FEELINGS LIST ====== */
+  .feelings-list {
+    padding: 0 20px;
+    list-style: none;
+  }
+
+  .feeling-item {
+    padding: 14px 16px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .feeling-item:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+
+  .feeling-item .feeling-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text);
+  }
+
+  .feeling-item .feeling-arrow {
+    color: var(--color-text-soft);
+    font-size: 18px;
+    opacity: 0.4;
+    transition: opacity var(--transition);
+  }
+
+  .feeling-item:hover .feeling-arrow {
+    opacity: 0.8;
+  }
+
+  /* ====== DETAIL PAGE ====== */
+  .detail-header {
+    padding: 20px 20px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .back-btn {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-accent);
+    cursor: pointer;
+    padding: 6px 0;
+    font-weight: 500;
+    transition: opacity var(--transition);
+  }
+
+  .back-btn:hover {
+    opacity: 0.7;
+  }
+
+  .detail-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text);
+    padding: 0 20px 20px;
+  }
+
+  /* ====== REFRAMING CARDS ====== */
+  .reframings-list {
+    padding: 0 20px;
+    list-style: none;
+  }
+
+  .reframing-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: all var(--transition);
+  }
+
+  .reframing-card:hover {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .reframing-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--color-text);
+    font-weight: 300;
+  }
+
+  .heart-btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform var(--transition);
+    margin-top: 2px;
+  }
+
+  .heart-btn:hover {
+    transform: scale(1.15);
+  }
+
+  .heart-btn:active {
+    transform: scale(0.95);
+  }
+
+  .heart-btn svg {
+    width: 22px;
+    height: 22px;
+    transition: all var(--transition);
+  }
+
+  .heart-btn .heart-empty {
+    color: #CCCAC4;
+  }
+
+  .heart-btn .heart-full {
+    color: var(--color-heart);
+    filter: drop-shadow(0 1px 2px rgba(193, 102, 107, 0.3));
+  }
+
+  .heart-btn.is-fav .heart-empty { display: none; }
+  .heart-btn.is-fav .heart-full { display: block; }
+  .heart-btn:not(.is-fav) .heart-empty { display: block; }
+  .heart-btn:not(.is-fav) .heart-full { display: none; }
+
+  /* ====== FAVORITES ====== */
+  .favorites-empty {
+    text-align: center;
+    padding: 60px 40px;
+    color: var(--color-text-soft);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .favorites-empty .empty-heart {
+    font-size: 40px;
+    margin-bottom: 16px;
+    opacity: 0.3;
+  }
+
+  .fav-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 0 20px 10px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .fav-card .fav-meta {
+    font-size: 12px;
+    color: var(--color-text-soft);
+    margin-top: 8px;
+    font-weight: 300;
+  }
+
+  .fav-card .fav-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* ====== NO RESULTS ====== */
+  .no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--color-text-soft);
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  /* ====== ANIMATIONS ====== */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-in {
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  .animate-in:nth-child(1) { animation-delay: 0.0s; }
+  .animate-in:nth-child(2) { animation-delay: 0.03s; }
+  .animate-in:nth-child(3) { animation-delay: 0.06s; }
+  .animate-in:nth-child(4) { animation-delay: 0.09s; }
+  .animate-in:nth-child(5) { animation-delay: 0.12s; }
+  .animate-in:nth-child(6) { animation-delay: 0.15s; }
+  .animate-in:nth-child(7) { animation-delay: 0.18s; }
+  .animate-in:nth-child(8) { animation-delay: 0.21s; }
+  .animate-in:nth-child(9) { animation-delay: 0.24s; }
+  .animate-in:nth-child(10) { animation-delay: 0.27s; }
+</style>
+
+<script>
+(function() {
+  // ====== DATA ======
+  var DATA = {
+    clusters: [
+      {
+        id: "zbytecnost",
+        feelings: ["zbytečný", "nevyužitý", "neužitečný", "nepotřebný", "marný", "budižkničemu"],
+        reframings: [
+          "Tvůj pocit zbytečnosti je příběh, který ti někdo vyprávěl tak dlouho, až jsi ho začal považovat za fakt — ale příběh a fakt nejsou totéž.",
+          "To, že tě nikdo právě teď nepotřebuje, neznamená, že jsi nepotřebný — znamená to, že jsi volný.",
+          "Když jsi byl malý a nikdo si nevšiml, co umíš, co nabízíš, co v tobě je, naučil ses, že to asi nestojí za nic — ale to nebyla pravda o tobě, to byla pravda o jejich slepotě.",
+          "Žádné dítě na světě není zbytečné. A ty jsi pořád to dítě — jen zavalené hromadou let, ve kterých ti někdo zapomněl říct, že na tobě záleží.",
+          "Vím, že jsi uvnitř. Vidím tě. A ta část tebe, která se cítí zbytečná, nese obrovskou tíhu — ne proto, že by byla slabá, ale proto, že tak dlouho čekala, až si jí někdo všimne.",
+          "Pocit zbytečnosti tě chrání před něčím ještě bolestnějším — před tím, že bys zkusil něco nabídnout a znovu byl odmítnut. Ale ta ochrana tě stojí celý život.",
+          "Říkáš si \"jsem zbytečný\", ale ve skutečnosti říkáš \"nikdo mi neukázal, k čemu jsem\" — a to je zásadní rozdíl.",
+          "Jsem zbytečný zní jako výrok o tobě, ale je to výrok o situaci. Ty nejsi zbytečný — jen jsi v kontextu, který tě neumí použít.",
+          "Zbytečnost předpokládá, že tvá hodnota závisí na tom, zda tě někdo využije. Ale ty nejsi nástroj. Šroubovák je zbytečný, když není šroub. Člověk ne.",
+          "Přesvědčení \"jsem k ničemu\" popírá každý moment, kdy se někdo díky tobě zasmál, kdy ses o někoho postaral, kdy jsi něco vytvořil, i kdyby to nikdo neviděl.",
+          "Přesvědčení o vlastní zbytečnosti popírá i to, že právě teď hledáš cestu ven — a to není čin zbytečného člověka, to je čin někoho, komu na sobě záleží.",
+          "Až budeš umírat, nebudeš měřit, kolik jsi toho vyprodukoval. Budeš se ptát, jestli jsi žil. A to je otázka, kterou si zbytečný člověk neklade.",
+          "Za padesát let bude úplně jedno, kolik jsi toho stihl, vyrobil nebo splnil. Ale bude záležet na tom, jestli ses nechal zastavit pocitem, že nemá smysl to zkoušet.",
+          "Ve vesmíru, který nemá žádný účel, nemůžeš být zbytečný. Zbytečnost existuje jen v systému, který vyžaduje výkon. Vesmír nic nevyžaduje.",
+          "Tvoje budoucí já ti vzkazuje: ten pocit, že jsi k ničemu, nebyl pravda. Byl to jen nejhlasitější hlas v místnosti — ne ten nejchytřejší.",
+          "Všimni si paradoxu — abys mohl tvrdit, že jsi zbytečný, musíš mít dost inteligence, sebereflexe a citlivosti na to, abys o tom přemýšlel. Opravdu zbytečného člověka by to nenapadlo.",
+          "Pocit zbytečnosti je často důkaz opaku — kdo by se trápil tím, že nedává světu dost, kdyby mu na světě nezáleželo?",
+          "Představ si absolutní opak zbytečnosti — člověka, který je neustále vytížený, nepostradatelný, na jehož bedrech všechno stojí. Zní to jako svoboda? Nebo jako jiné peklo?",
+          "Každý člověk na planetě zažívá chvíle, kdy si připadá k ničemu. Není to porucha. Je to daň za to, že jsme bytosti, které potřebují smysl, v kosmu, který jim žádný nedluží.",
+          "Evoluce tě nestvořila, abys byl užitečný. Stvořila tě, abys přežil. Užitečnost je kulturní nálepka, ne biologická pravda.",
+          "Tvůj mozek je naprogramovaný vyhodnocovat tvou hodnotu podle toho, jak moc tě smečka potřebuje. Ale ty už nežiješ ve smečce a pravidla se změnila — jen ti to nikdo neřekl.",
+          "Superego ti říká \"musíš být k něčemu, jinak nemáš právo existovat\". To není tvůj hlas. To je hlas systému, který potřeboval poslušné díly do mašiny.",
+          "Hele, víš co? Úplně každej někdy sedí na gauči a říká si \"k čemu já vlastně jsem\". To není existenciální krize, to je úterý.",
+          "Ty nejsi zbytečnej. Jsi v režimu úspory energie. I pole musí ležet ladem, aby pak něco urodilo.",
+          "Seš přesvědčenej, že jsi zbytečnej, a přitom kdyby ti teď zavolal kdokoli, koho máš rád, a řekl \"je mi blbě\", byl bys tam za deset minut. Tak kde je ta zbytečnost?",
+          "Poslyš, kovboji — já viděl spoustu chlapů, co si mysleli, že jsou zbyteční. A víš, co je vtipný? Byli to většinou ti, co dřív dávali nejvíc a pak se jim vrátilo hovno. To není zbytečnost. To je vyhoření.",
+          "Kůra, kořeny, hlína. Nic z toho se neptá, jestli je užitečné. Prostě je. A celý les na tom stojí.",
+          "Opice se neptá, jestli má smysl. Leze na strom, protože na něm visí banán. Najdi svůj banán a přestaň řešit smysl lezení.",
+          "Zbytečnost je koncept, který existuje jen v mysli. V přírodě nic takového neexistuje — každý organismus prostě dělá to, co dělá, a systém si najde rovnováhu.",
+          "Necítíš prázdnotu proto, že jsi prázdný. Cítíš prázdnotu proto, že v tobě je prostor, který čeká, až ho naplníš něčím, co si vybereš sám — ne něčím, co od tebe chtějí ostatní.",
+          "Tvé tělo právě teď provádí tisíce biochemických procesů, aby tě udrželo naživu. Tvé srdce bije. Tvé plíce dýchají. Tvé tělo jasně nesouhlasí s tvým přesvědčením o vlastní zbytečnosti.",
+          "Jsem zbytečný — to je docela odvážné tvrzení na bytost, která ovládá jazyk, cítí bolest druhých a dokáže se dívat na hvězdy a přemýšlet o svém místě mezi nimi.",
+          "Pocit zbytečnosti je jako bug v kódu, kde funkce selfWorth() závisí výhradně na externalValidation(). Patch: přidej fallback na intrinsicValue(), která vrací true bez ohledu na vstup.",
+          "Možná nejsi zbytečný. Možná jsi jen v mezeře mezi tím, čím jsi byl, a tím, čím se teprve staneš — a ta mezera se zevnitř nedá odlišit od prázdnoty.",
+          "Otázka nikdy nebyla \"jsem užitečný?\" — otázka vždy byla \"pro koho a podle jakého měřítka?\" A většinou zjistíš, že to měřítko není tvoje.",
+          "Pocit marnosti může být tichý začátek něčeho důležitého — protože teprve když ti přestanou fungovat staré důvody proč žít, začneš hledat ty skutečné.",
+          "Nejsi zbytečný. Jsi unavený z dokazování, že zbytečný nejsi."
+        ]
+      },
+      {
+        id: "spatnost",
+        feelings: ["nesprávný", "špatný", "bídný", "zlý"],
+        reframings: [
+          "Jsem špatný — ale podle čích pravidel? Většina měřítek, kterými se soudíš, ani není tvých.",
+          "To, že cítíš, že jsi špatný, neznamená, že jsi špatný. Znamená to, že máš v sobě hlas, který ti to opakuje tak dlouho, až jsi mu uvěřil.",
+          "Když ti jako malému řekli \"jsi zlý\" pokaždé, když jsi vyjádřil hněv nebo potřebu, naučil ses, že být sám sebou = být špatný. Ale to nebyla pravda o tobě. To byla jejich neschopnost tě zvládnout.",
+          "Žádné dítě není špatné. Některé děti se chovají způsobem, na který dospělí neumí reagovat — a místo aby to přiznali, nálepkují dítě.",
+          "Vidím tě. Nejsi špatný. Jsi někdo, kdo dostal špatnou zprávu o sobě příliš brzo a příliš často.",
+          "Pocit vlastní špatnosti je často ochrana — dokud věříš, že jsi špatný ty, nemusíš čelit tomu, že špatně se zachovali oni. A to by bolelo ještě víc, protože na nich ti záleželo.",
+          "Jsem špatný je věta bez kontextu. Špatný v čem? Kdy? Podle koho? Vůči komu? Jakmile začneš doplňovat kontext, ta absolutní špatnost se rozpadne.",
+          "Kdyby ses choval skutečně špatně a bylo ti to jedno, necítil bys vůbec nic. To, že tě ten pocit trápí, je důkaz, že ti na dobru záleží.",
+          "Zlý člověk nepřemýšlí o tom, jestli je zlý. Ty přemýšlíš — a to je přesně to, co tě od zlého člověka odlišuje.",
+          "Představ si absolutní opak — člověka, který je přesvědčený, že je dokonale dobrý ve všem, vždy, bezpodmínečně. Zní to jako svatý? Ne. Zní to jako sociopat. Trocha pochybností o sobě je známka zdraví, ne špatnosti.",
+          "Z tisíců dní, které jsi prožil, si tvůj mozek vybírá ty, kde ses zachoval blbě, a staví z nich tvůj portrét. Ale co ty dny, kdy jsi byl laskavý, vtipný, trpělivý? Ty nepočítáš?",
+          "Za sto let bude úplně jedno, jestli jsi byl dokonalý. Ale bude záležet na tom, jestli ses nechal tím pocitem zastavit, nebo jestli jsi žil dál i s ním.",
+          "Superego ti říká \"musíš být bezchybný, jinak jsi zlý\". To je diktátor, ne rádce. A s diktátory se nevyjednává — ty se svrhávají.",
+          "Evolučně dává smysl, že se bojíš být vyloučen ze skupiny za \"špatnost\". Jenže ty už nejsi v tlupě lovců, kde vyloučení znamenalo smrt. Můžeš být nedokonalý a přežít.",
+          "Tvoje tělo neví, co je \"špatný\". Tvoje srdce bije, plíce dýchají, rány se hojí — tělo se o tebe stará bez morálního soudu.",
+          "Víš, co je sranda? Že pocit \"jsem špatný\" je vlastně neuvěřitelně sebestředný. Jako bys měl takovou moc, že tvá špatnost je kosmicky významná. Vesmír má 13,8 miliardy let a netušení, co je morálka.",
+          "Hele, znám spoustu \"špatných\" lidí. Víš, co mají společného? Že jsou to většinou ti nejcitlivější chlapi v místnosti, kteří si za všechno můžou sami, i když nemůžou.",
+          "Poslyš — já jsem viděl skutečně špatný lidi. Ty mezi ně nepatříš. Skutečně špatný lidi se takhle netrápí.",
+          "Strom nehádá, jestli je dobrý strom nebo špatný strom. Roste. Někdy mu uschne větev. Neřeší to.",
+          "Kdybys vzal všechno \"zlé\", co jsi kdy udělal, a položil to na stůl vedle všeho dobrého — vsadím se, že by ses styděl za to, jak málo toho zlého vlastně je.",
+          "Špatnost je soud, ne fakt. A soudy se dají revidovat.",
+          "Jsem špatný člověk — to je bug, kde se celý systém identifikuje s jednou chybovou hláškou. Patch: odděl self od behavior. Choval ses špatně ≠ jsi špatný.",
+          "Možná nejsi špatný. Možná jsi jen člověk, který udělal pár špatných věcí v životě plném neutrálních a dobrých věcí — a pak si z toho udělal celou identitu.",
+          "Víš, kdo si myslí, že je špatný? Lidi, od kterých se v dětství vyžadovalo, aby byli dokonalí. Špatnost není tvá podstata — je to stín nerealistického nároku.",
+          "Pocit \"jsem bídný člověk\" v sobě skrývá tichou naději — protože kdyby ses opravdu vzdal, přestal bys o tom přemýšlet. To, že to bolí, znamená, že pořád věříš, že můžeš být lepší.",
+          "Celý lidský druh je směs šlechetnosti a svinstva. To není tvůj osobní problém — to je lidská podmínka. Akorát ty sis z toho udělal osobní selhání.",
+          "Co kdybys nebyl špatný, ale jen unavený z pokusu být dobrý podle pravidel, která nikdy nebyla tvoje?"
+        ]
+      }
+    ]
+  };
+
+  // ====== STATE ======
+  var state = {
+    page: "list", // "list" | "detail" | "favorites"
+    currentCluster: null,
+    searchQuery: "",
+    favorites: loadFavorites()
+  };
+
+  // ====== FAVORITES STORAGE ======
+  function loadFavorites() {
+    try {
+      var data = localStorage.getItem("app-favorites");
+      return data ? JSON.parse(data) : [];
+    } catch(e) {
+      return [];
+    }
+  }
+
+  function saveFavorites() {
+    try {
+      localStorage.setItem("app-favorites", JSON.stringify(state.favorites));
+    } catch(e) {}
+  }
+
+  function isFavorite(clusterId, index) {
+    return state.favorites.some(function(f) {
+      return f.clusterId === clusterId && f.index === index;
+    });
+  }
+
+  function toggleFavorite(clusterId, index, text) {
+    var existing = state.favorites.findIndex(function(f) {
+      return f.clusterId === clusterId && f.index === index;
+    });
+    if (existing > -1) {
+      state.favorites.splice(existing, 1);
+    } else {
+      // Find the feeling name for this cluster
+      var cluster = DATA.clusters.find(function(c) { return c.id === clusterId; });
+      var feelingName = cluster ? cluster.feelings[0] : "";
+      state.favorites.push({
+        clusterId: clusterId,
+        index: index,
+        text: text,
+        feeling: feelingName,
+        date: new Date().toISOString()
+      });
+    }
+    saveFavorites();
+    render();
+  }
+
+  // ====== SEARCH / FILTER ======
+  function getAllFeelings() {
+    var result = [];
+    DATA.clusters.forEach(function(cluster) {
+      cluster.feelings.forEach(function(feeling) {
+        result.push({ feeling: feeling, clusterId: cluster.id });
+      });
+    });
+    return result;
+  }
+
+  function filterFeelings(query) {
+    var all = getAllFeelings();
+    if (!query || query.trim() === "") return all;
+    var q = query.toLowerCase().trim();
+    return all.filter(function(item) {
+      return item.feeling.toLowerCase().indexOf(q) > -1;
+    });
+  }
+
+  // ====== RENDER ======
+  function render() {
+    var root = document.getElementById("app-root");
+    var html = "";
+
+    // Header
+    html += '<div class="app-header">';
+    html += '<h1>Jak se cítíš?</h1>';
+    html += '<p>Vyber pocit, který ti je blízký</p>';
+    html += '</div>';
+
+    // Navigation
+    var favCount = state.favorites.length;
+    html += '<nav class="app-nav">';
+    html += '<button onclick="appNav(\'list\')" class="' + (state.page !== "favorites" ? "active" : "") + '">Pocity</button>';
+    html += '<button onclick="appNav(\'favorites\')" class="' + (state.page === "favorites" ? "active" : "") + '">Oblíbené';
+    if (favCount > 0) {
+      html += '<span class="fav-count">' + favCount + '</span>';
+    }
+    html += '</button>';
+    html += '</nav>';
+
+    // Pages
+    if (state.page === "list") {
+      html += renderFeelingsList();
+    } else if (state.page === "detail") {
+      html += renderDetail();
+    } else if (state.page === "favorites") {
+      html += renderFavorites();
+    }
+
+    root.innerHTML = html;
+
+    // Focus search if on list page
+    if (state.page === "list") {
+      var searchEl = document.getElementById("app-search");
+      if (searchEl && state.searchQuery) {
+        searchEl.value = state.searchQuery;
+      }
+    }
+  }
+
+  function renderFeelingsList() {
+    var html = '';
+
+    // Search
+    html += '<div class="search-wrap">';
+    html += '<svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    html += '<input type="text" id="app-search" class="search-input" placeholder="Hledej pocit..." oninput="appSearch(this.value)" />';
+    html += '</div>';
+
+    // Feelings
+    var feelings = filterFeelings(state.searchQuery);
+    html += '<ul class="feelings-list">';
+
+    if (feelings.length === 0) {
+      html += '<div class="no-results">Žádný pocit nenalezen</div>';
+    } else {
+      feelings.forEach(function(item, i) {
+        html += '<li class="feeling-item animate-in" onclick="appOpenCluster(\'' + item.clusterId + '\')">';
+        html += '<span class="feeling-name">' + item.feeling + '</span>';
+        html += '<span class="feeling-arrow">›</span>';
+        html += '</li>';
+      });
+    }
+
+    html += '</ul>';
+    return html;
+  }
+
+  function renderDetail() {
+    var cluster = DATA.clusters.find(function(c) { return c.id === state.currentCluster; });
+    if (!cluster) return '<p>Cluster nenalezen</p>';
+
+    var html = '';
+    html += '<div class="detail-header">';
+    html += '<button class="back-btn" onclick="appNav(\'list\')">← Zpět</button>';
+    html += '</div>';
+    html += '<div class="detail-title">' + cluster.feelings[0] + '</div>';
+
+    html += '<ul class="reframings-list">';
+    cluster.reframings.forEach(function(text, i) {
+      var fav = isFavorite(cluster.id, i);
+      html += '<li class="reframing-card animate-in">';
+      html += '<div class="reframing-text">' + escapeHtml(text) + '</div>';
+      html += '<button class="heart-btn ' + (fav ? 'is-fav' : '') + '" onclick="appToggleFav(\'' + cluster.id + '\',' + i + ')">';
+      html += '<svg class="heart-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+      html += '<svg class="heart-full" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+      html += '</button>';
+      html += '</li>';
+    });
+    html += '</ul>';
+
+    return html;
+  }
+
+  function renderFavorites() {
+    var html = '';
+
+    if (state.favorites.length === 0) {
+      html += '<div class="favorites-empty">';
+      html += '<div class="empty-heart">♡</div>';
+      html += 'Zatím nemáš žádná oblíbená přerámování.<br>Klikni na srdíčko u přerámování, které tě osloví.';
+      html += '</div>';
+      return html;
+    }
+
+    // Show favorites in reverse chronological order
+    var sorted = state.favorites.slice().reverse();
+    sorted.forEach(function(fav, i) {
+      html += '<div class="fav-card animate-in">';
+      html += '<div style="flex:1">';
+      html += '<div class="fav-text">' + escapeHtml(fav.text) + '</div>';
+      html += '<div class="fav-meta">' + fav.feeling + ' · ' + formatDate(fav.date) + '</div>';
+      html += '</div>';
+      html += '<button class="heart-btn is-fav" onclick="appToggleFav(\'' + fav.clusterId + '\',' + fav.index + ')">';
+      html += '<svg class="heart-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+      html += '<svg class="heart-full" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+      html += '</button>';
+      html += '</div>';
+    });
+
+    return html;
+  }
+
+  // ====== HELPERS ======
+  function escapeHtml(text) {
+    var div = document.createElement("div");
+    div.appendChild(document.createTextNode(text));
+    return div.innerHTML;
+  }
+
+  function formatDate(isoString) {
+    try {
+      var d = new Date(isoString);
+      return d.toLocaleDateString("cs-CZ") + " " + d.toLocaleTimeString("cs-CZ", {hour:"2-digit", minute:"2-digit"});
+    } catch(e) {
+      return "";
+    }
+  }
+
+  // ====== GLOBAL HANDLERS ======
+  window.appNav = function(page) {
+    state.page = page;
+    state.searchQuery = "";
+    render();
+    // Scroll to top of app
+    document.getElementById("app-root").scrollIntoView({behavior: "smooth"});
+  };
+
+  window.appOpenCluster = function(clusterId) {
+    state.currentCluster = clusterId;
+    state.page = "detail";
+    render();
+    document.getElementById("app-root").scrollIntoView({behavior: "smooth"});
+  };
+
+  window.appSearch = function(value) {
+    state.searchQuery = value;
+    render();
+    // Re-focus and restore cursor position
+    var searchEl = document.getElementById("app-search");
+    if (searchEl) {
+      searchEl.focus();
+      searchEl.value = value;
+      searchEl.setSelectionRange(value.length, value.length);
+    }
+  };
+
+  window.appToggleFav = function(clusterId, index) {
+    var cluster = DATA.clusters.find(function(c) { return c.id === clusterId; });
+    if (cluster) {
+      toggleFavorite(clusterId, index, cluster.reframings[index]);
+    }
+  };
+
+  // ====== INIT ======
+  render();
+})();
+</script>

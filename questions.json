@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "quest_0001",
+    "text": "Kolik času jsi dnes strávil přemýšlením o sobě?",
+    "tags": [
+      "sebepoznání",
+      "reflexe",
+      "hranice"
+    ],
+    "schemas": [
+      "SELFSAC",
+      "SUBJUG",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0002",
+    "text": "Kdy naposledy jsi řekl(a) 'ano' někomu jinému, i když celé tvoje tělo křičelo 'ne'?",
+    "tags": [
+      "hranice",
+      "autenticita",
+      "seberegulace"
+    ],
+    "schemas": [
+      "SELFSAC",
+      "SUBJUG",
+      "EMOINH"
+    ],
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0003",
+    "text": "Co strašného by se stalo, kdyby se tvoji blízcí museli na chvíli obejít bez tvé péče a pomoci?",
+    "tags": [
+      "odpovědnost",
+      "rodina",
+      "strach"
+    ],
+    "schemas": [
+      "SELFSAC",
+      "APPREC",
+      "ABINST"
+    ],
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0004",
+    "text": "Co nejhoršího by se stalo, kdyby lidé kolem tebe na chvíli uviděli tvou skutečnou únavu nebo slabost?",
+    "tags": [
+      "autenticita",
+      "smutek",
+      "sebeúcta"
+    ],
+    "schemas": [
+      "EMODEP",
+      "DEFSH",
+      "EMOINH"
+    ],
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0005",
+    "text": "Kdo v tvém současném životě by měl jako první slyšet, co doopravdy emočně potřebuješ, ale ty raději mlčíš?",
+    "tags": [
+      "emoce",
+      "vztahy",
+      "pravda"
+    ],
+    "schemas": [
+      "EMODEP",
+      "SUBJUG",
+      "ISOLAL"
+    ],
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0006",
+    "text": "Zkoušíš si občas emočně ulevit jídlem, prací nebo nákupy namísto toho, abys vyhledal(a) lidskou blízkost?",
+    "tags": [
+      "zdravé návyky",
+      "samota",
+      "seberegulace"
+    ],
+    "schemas": [
+      "EMODEP",
+      "INDISC",
+      "ISOLAL"
+    ],
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0007",
+    "text": "Na kom v tvém životě nejvíc visí tvůj pocit bezpečí a co by se stalo, kdyby ten člověk zítra odešel?",
+    "tags": [
+      "osamělost",
+      "strach",
+      "vztahy"
+    ],
+    "schemas": [
+      "ABINST",
+      "DEPINC",
+      "ENMUND"
+    ],
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0008",
+    "text": "Ukončuješ někdy vztahy nebo se emočně odpojuješ dřív, než tě stihne ten druhý opustit?",
+    "tags": [
+      "vztahy",
+      "odvaha",
+      "paradox"
+    ],
+    "schemas": [
+      "ABINST",
+      "MISAB",
+      "EMOINH"
+    ],
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0009",
+    "text": "Kolik tvé současné úzkosti pramení ze strachu, že stabilita, kterou teď prožíváš, je jen ticho před bouří?",
+    "tags": [
+      "úzkost",
+      "negativní myšlenky",
+      "naděje"
+    ],
+    "schemas": [
+      "ABINST",
+      "NEGPES",
+      "VULILL"
+    ],
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0010",
+    "text": "Odkud pramení tvoje přesvědčení, že tě druzí lidé dřív nebo později zradí nebo zneužijou, pokud polevíš v ostražitosti?",
+    "tags": [
+      "strach",
+      "přátelství",
+      "lidská přirozenost"
+    ],
+    "schemas": [
+      "MISAB",
+      "VULILL",
+      "ISOLAL"
+    ],
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0011",
+    "text": "Když ti někdo dává upřímný kompliment nebo tě chválí, jak moc v duchu hledáš jeho skryté, zištné motivy?",
+    "tags": [
+      "přijetí",
+      "stud",
+      "sebeúcta"
+    ],
+    "schemas": [
+      "MISAB",
+      "DEFSH",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0012",
+    "text": "Kdo tě v minulosti tak moc zranil, že kvůli němu dodnes podezříváš i lidi, kteří to s tebou myslí upřímně?",
+    "tags": [
+      "rodina",
+      "odpuštění",
+      "vnitřní části"
+    ],
+    "schemas": [
+      "MISAB",
+      "EMODEP",
+      "PUNIT"
+    ],
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0013",
+    "text": "Čím sytíš svoji iluzi, že tě samota a izolace ochrání před utrpením, když tě ve skutečnosti pomalu zabíjí?",
+    "tags": [
+      "samota",
+      "osamělost",
+      "odolnost"
+    ],
+    "schemas": [
+      "ISOLAL",
+      "EMODEP",
+      "MISAB"
+    ],
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0014",
+    "text": "Kam až sahá tvůj pocit, že nikam nepatříš, do žádné skupiny ani komunity, a že jsi na světě úplně cizí?",
+    "tags": [
+      "osamělost",
+      "lidská přirozenost",
+      "smutek"
+    ],
+    "schemas": [
+      "ISOLAL",
+      "DEFSH",
+      "LACKCOH"
+    ],
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0015",
+    "text": "Zkoušíš občas maskovat svůj pocit odlišnosti tím, že se přehnaně přizpůsobuješ zájmům a názorům ostatních?",
+    "tags": [
+      "autenticita",
+      "přátelství",
+      "sebepoznání"
+    ],
+    "schemas": [
+      "ISOLAL",
+      "SUBJUG",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0016",
+    "text": "Když se ti nedaří, mluvíš se sebou jako s přítelem, nebo jako s někým, koho vyloženě nesnášíš?",
+    "tags": [
+      "stud",
+      "nedokonalost",
+      "sebekritika"
+    ],
+    "schemas": [
+      "DEFSH",
+      "USHYPER",
+      "PUNIT"
+    ],
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0017",
+    "text": "Jaké tajemství o sobě tak úporně tajíš před světem ze strachu, že kdyby ho lidé poznali, okamžitě by se tě zřekli?",
+    "tags": [
+      "stud",
+      "autenticita",
+      "sebeúcta"
+    ],
+    "schemas": [
+      "DEFSH",
+      "EMOINH",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0018",
+    "text": "Jak moc odvozuješ svou lidskou hodnotu od chyb, které jsi udělal(a) v minulosti?",
+    "tags": [
+      "vina",
+      "odpuštění",
+      "sebepřijetí"
+    ],
+    "schemas": [
+      "DEFSH",
+      "FAIL",
+      "PUNIT"
+    ],
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0019",
+    "text": "Komu ve svém okolí nejvíc křivdíš tím, že od něj tajně očekáváš, že ti přečte myšlenky a zachrání tě?",
+    "tags": [
+      "vztahy",
+      "odpovědnost",
+      "rozhodování"
+    ],
+    "schemas": [
+      "DEPINC",
+      "ABINST",
+      "MISAB"
+    ],
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0020",
+    "text": "V jaké životní situaci se raději tváříš jako bezmocná oběť, jen abys nemusel(a) převzít plnou odpovědnost za změnu?",
+    "tags": [
+      "odpovědnost",
+      "motivace",
+      "změna"
+    ],
+    "schemas": [
+      "DEPINC",
+      "SUBJUG",
+      "FAIL"
+    ],
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0021",
+    "text": "Věříš víc rozumu a schopnostem cizích lidí než svým vlastním instinktům a životním zkušenostem?",
+    "tags": [
+      "sebevědomí",
+      "rozhodování",
+      "osobnost"
+    ],
+    "schemas": [
+      "DEPINC",
+      "ENMUND",
+      "LACKCOH"
+    ],
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0022",
+    "text": "Kde bereš jistotu, že tvoje katastrofické scénáře v hlavě jsou předpověď reality a ne jen projev unaveného těla?",
+    "tags": [
+      "negativní myšlenky",
+      "úzkost",
+      "přerámování"
+    ],
+    "schemas": [
+      "VULILL",
+      "NEGPES",
+      "DEPINC"
+    ],
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0023",
+    "text": "Kolik energie denně spálíš neustálou kontrolou věcí, které ze své podstaty vůbec nedokážeš ovlivnit?",
+    "tags": [
+      "stres",
+      "seberegulace",
+      "mindfulness"
+    ],
+    "schemas": [
+      "VULILL",
+      "USHYPER",
+      "FAIL"
+    ],
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0024",
+    "text": "Co tě tvůj strach ze selhání nebo nemoci učí o tom, jak moc lpíš na absolutním bezpečí v nejistém světě?",
+    "tags": [
+      "strach",
+      "moudrost",
+      "přijetí"
+    ],
+    "schemas": [
+      "VULILL",
+      "FAIL",
+      "LACKMEAN"
+    ],
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0025",
+    "text": "Čí život ve skutečnosti žiješ, když se tak úporně snažíš plnit očekávání všech kolem sebe?",
+    "tags": [
+      "autenticita",
+      "rodina",
+      "svoboda"
+    ],
+    "schemas": [
+      "ENMUND",
+      "SUBJUG",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0026",
+    "text": "Kde končí tvoje vlastní identita a kde začínají nálady a potřeby tvého partnera nebo rodičů?",
+    "tags": [
+      "hranice",
+      "vztahy",
+      "sebepoznání"
+    ],
+    "schemas": [
+      "ENMUND",
+      "SELFSAC",
+      "LACKCOH"
+    ],
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0027",
+    "text": "Dokázal(a) bys dnes popsat, kdo doopravdy jsi, kdybychom ze tvého života škrtli tvoje role dítěte, partnera či zaměstnance?",
+    "tags": [
+      "sebepoznání",
+      "autenticita",
+      "osobnost"
+    ],
+    "schemas": [
+      "ENMUND",
+      "LACKCOH",
+      "DEFSH"
+    ],
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0028",
+    "text": "Čí hněv nebo zklamání se snažíš svým neustálým výkonem a dokonalostí už od dětství odvrátit?",
+    "tags": [
+      "rodina",
+      "motivace",
+      "vnitřní části"
+    ],
+    "schemas": [
+      "FAIL",
+      "USHYPER",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0029",
+    "text": "Nezaměňuješ náhodou dělání chyb s pocitem, že ty sám / ty sama jsi jedno velké selhání?",
+    "tags": [
+      "nedokonalost",
+      "sebeúcta",
+      "přerámování"
+    ],
+    "schemas": [
+      "FAIL",
+      "DEFSH",
+      "PUNIT"
+    ],
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0030",
+    "text": "Co by ti zbylo ze tvého sebevědomí, kdybys zítra ztratil(a) status, práci nebo všechny své úspěchy?",
+    "tags": [
+      "hodnoty",
+      "produktivita",
+      "smysl života"
+    ],
+    "schemas": [
+      "FAIL",
+      "USHYPER",
+      "LACKMEAN"
+    ],
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0031",
+    "text": "Kde berete právo domnívat se, že pravidla, která platí pro běžné smrtelníky, pro vás neplatí?",
+    "tags": [
+      "lidská přirozenost",
+      "rozhodování",
+      "paradox"
+    ],
+    "schemas": [
+      "ENTGRAND",
+      "INDISC",
+      "UNFAIR"
+    ],
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0032",
+    "text": "Není tvoje neustálá potřeba mít pravdu a ovládat druhé jen zoufalým štítem před vnitřní bezmocí?",
+    "tags": [
+      "vztahy",
+      "stud",
+      "strach"
+    ],
+    "schemas": [
+      "ENTGRAND",
+      "DEFSH",
+      "VULILL"
+    ],
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0033",
+    "text": "Koho ve svém životě nejvíc zraňuješ svým pocitem, že ti svět dluží zvláštní zacházení?",
+    "tags": [
+      "vztahy",
+      "odpovědnost",
+      "rodina"
+    ],
+    "schemas": [
+      "ENTGRAND",
+      "MISAB",
+      "UNFAIR"
+    ],
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0034",
+    "text": "Co se snažíš v sobě přehlušit tím, že se neustále udržuješ v šíleném pracovním tempu a stresu?",
+    "tags": [
+      "syndrom vyhoření",
+      "zdravé návyky",
+      "emoce"
+    ],
+    "schemas": [
+      "INDISC",
+      "USHYPER",
+      "EMOINH"
+    ],
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0035",
+    "text": "Kolik tvých rozdělaných projektů ztroskotalo jen na tom, že jsi nedokázal(a) vydržet počáteční nudu a frustraci?",
+    "tags": [
+      "trpělivost",
+      "produktivita",
+      "změna"
+    ],
+    "schemas": [
+      "INDISC",
+      "FAIL",
+      "NEGPES"
+    ],
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0036",
+    "text": "Kdy naposledy jsi vědomě odložil(a) okamžitou slast (mobil, alkohol, cukr) ve prospěch svého dlouhodobého zdraví?",
+    "tags": [
+      "zdravé návyky",
+      "seberegulace",
+      "hodnoty"
+    ],
+    "schemas": [
+      "INDISC",
+      "VULILL",
+      "LACKMEAN"
+    ],
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0037",
+    "text": "Kolik ze svých každodenních rozhodnutí děláš jen proto, aby se druzí lidé necítili špatně nebo se nenaštvali?",
+    "tags": [
+      "rozhodování",
+      "hranice",
+      "odpovědnost"
+    ],
+    "schemas": [
+      "SUBJUG",
+      "SELFSAC",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0038",
+    "text": "V čem potlačuješ svůj zdravý vztek a raději volíš tichou, pasivně-agresivní pomstu vůči partnerovi?",
+    "tags": [
+      "hněv",
+      "vztahy",
+      "autenticita"
+    ],
+    "schemas": [
+      "SUBJUG",
+      "USHYPER",
+      "MISAB"
+    ],
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0039",
+    "text": "Před kým v tuhle chvíli hrbíš hřbet a dobrovolně se vzdáváš své svobody ze strachu z konfliktu?",
+    "tags": [
+      "svoboda",
+      "odvaha",
+      "sebeúcta"
+    ],
+    "schemas": [
+      "SUBJUG",
+      "EMOINH",
+      "DEFSH"
+    ],
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0040",
+    "text": "Kdybyty měl stoprocentní jistotu, že tě nikdo neodsoudí, co bys v tuhle chvíli udělal jinak?",
+    "tags": [
+      "autenticita",
+      "svoboda",
+      "sebevědomí"
+    ],
+    "schemas": [
+      "APPREC",
+      "DEFSH",
+      "SUBJUG"
+    ],
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0041",
+    "text": "Sbíráš lajky, pochvaly a uznání zvenčí jen proto, že uvnitř sebe žádné reálné uznání necítíš?",
+    "tags": [
+      "sebeúcta",
+      "sebepoznání",
+      "motivace"
+    ],
+    "schemas": [
+      "APPREC",
+      "EMODEP",
+      "FAIL"
+    ],
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0042",
+    "text": "Jak moc tvoje sociální maska na veřejnosti odpovídá tomu, jak moc zlomený / zlomená se cítíš večer o samotě?",
+    "tags": [
+      "autenticita",
+      "samota",
+      "osobnost"
+    ],
+    "schemas": [
+      "APPREC",
+      "EMOINH",
+      "ISOLAL"
+    ],
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0043",
+    "text": "Jaké tvoje vnitřní kritérium úspěchu je tak přísné, že ho nedokáže splnit žádná lidská bytost na světě?",
+    "tags": [
+      "nedokonalost",
+      "stres",
+      "produktivita"
+    ],
+    "schemas": [
+      "USHYPER",
+      "FAIL",
+      "PUNIT"
+    ],
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0044",
+    "text": "Dokážeš mít ze sebe upřímnou radost, aniž bys za tím hned viděl(a) prostor pro další zlepšení?",
+    "tags": [
+      "radost",
+      "přítomnost",
+      "sebeláska"
+    ],
+    "schemas": [
+      "USHYPER",
+      "EMOINH",
+      "LACKMEAN"
+    ],
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0045",
+    "text": "Není tvoje neustálá kritičnost vůči chybám druhých lidí jen odleskem toho, jak brutálně terorizuješ sám / sama sebe?",
+    "tags": [
+      "vztahy",
+      "nedokonalost",
+      "stud"
+    ],
+    "schemas": [
+      "USHYPER",
+      "PUNIT",
+      "DEFSH"
+    ],
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0046",
+    "text": "Když vidíš někoho selhat, máš tendenci ho hned odsoudit a potrestat, nebo zkoumáš okolnosti jeho příběhu?",
+    "tags": [
+      "odpuštění",
+      "moudrost",
+      "lidská přirozenost"
+    ],
+    "schemas": [
+      "PUNIT",
+      "USHYPER",
+      "MISAB"
+    ],
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0047",
+    "text": "Jak moc věříš tomu, že každá tvoje chyba musí být krutě potrestána, aby ses stal(a) lepším člověkem?",
+    "tags": [
+      "vina",
+      "sebeúcta",
+      "změna"
+    ],
+    "schemas": [
+      "PUNIT",
+      "DEFSH",
+      "FAIL"
+    ],
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0048",
+    "text": "Čí trestající vnitřní hlas (rodiče, učitele) slyšíš v hlavě pokaždé, když si dovolíš obyčejnou radost nebo lenošení?",
+    "tags": [
+      "vnitřní části",
+      "rodina",
+      "radost"
+    ],
+    "schemas": [
+      "PUNIT",
+      "USHYPER",
+      "SELFSAC"
+    ],
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0049",
+    "text": "Kdyby tvůj život neměl žádný předem daný vyšší smysl, jaký malý, pozemský smysl bys mu dokázal dát ty sám dnes odpoledne?",
+    "tags": [
+      "smysl života",
+      "přítomnost",
+      "moudrost"
+    ],
+    "schemas": [
+      "LACKMEAN",
+      "NEGPES",
+      "DEPINC"
+    ],
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0050",
+    "text": "Není tvoje neustálé utápění se v nesmyslnosti věcí jen sofistikovaná obrana před strachem ze selhání v reálném životě?",
+    "tags": [
+      "smysl života",
+      "strach",
+      "paradox"
+    ],
+    "schemas": [
+      "LACKMEAN",
+      "FAIL",
+      "NEGPES"
+    ],
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0051",
+    "text": "Co nejmenšího ti dnes udělalo radost, i když tvoje racionální mysl tvrdí, že na ničem nezáleží?",
+    "tags": [
+      "vděčnost",
+      "přítomnost",
+      "radost"
+    ],
+    "schemas": [
+      "LACKMEAN",
+      "INDISC",
+      "EMODEP"
+    ],
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0052",
+    "text": "Když se na situaci podíváš optikou čisté nespravedlnosti světa, jak moc ti to reálně pomáhá pohnout se z místa?",
+    "tags": [
+      "utrpení",
+      "přerámování",
+      "změna"
+    ],
+    "schemas": [
+      "UNFAIR",
+      "NEGPES",
+      "SUBJUG"
+    ],
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0053",
+    "text": "Kdo ti v dětství namluvil, že život musí být stoprocentně fér, a proč tomu věříš i teď v dospělosti?",
+    "tags": [
+      "rodina",
+      "moudrost",
+      "lidská přirozenost"
+    ],
+    "schemas": [
+      "UNFAIR",
+      "ENTGRAND",
+      "ENMUND"
+    ],
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0054",
+    "text": "Dokážeš unést nespravedlivé chování druhých, aniž by ses sám / sama okamžitě uchyloval(a) k intrikám a zlobě?",
+    "tags": [
+      "hněv",
+      "odolnost",
+      "seberegulace"
+    ],
+    "schemas": [
+      "UNFAIR",
+      "INDISC",
+      "MISAB"
+    ],
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0055",
+    "text": "Kdyby tvůj vnitřní zmatek a chaos byly jen pokusem tvé mysli schovat se před jedním těžkým rozhodnutím, jaké rozhodnutí by to bylo?",
+    "tags": [
+      "rozhodování",
+      "seberegulace",
+      "pravda"
+    ],
+    "schemas": [
+      "LACKCOH",
+      "DEPINC",
+      "INDISC"
+    ],
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0056",
+    "text": "Které své vnitřní části se nejvíc bojíš, že ji držíš pod zámkem v totální izolaci?",
+    "tags": [
+      "vnitřní části",
+      "strach",
+      "sebepoznání"
+    ],
+    "schemas": [
+      "LACKCOH",
+      "MISAB",
+      "EMOINH"
+    ],
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0057",
+    "text": "Jak moc tvoje chování odpovídá tvým skutečným, jádrovým hodnotám, když jsi pod tlakem?",
+    "tags": [
+      "hodnoty",
+      "autenticita",
+      "stres"
+    ],
+    "schemas": [
+      "LACKCOH",
+      "SUBJUG",
+      "APPREC"
+    ],
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0058",
+    "text": "Které emoci se tak strašně vyhýbáš, že raději volíš paralyzující cynismus a chlad?",
+    "tags": [
+      "emoce",
+      "smutek",
+      "hněv"
+    ],
+    "schemas": [
+      "EMOINH",
+      "NEGPES",
+      "DEFSH"
+    ],
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0059",
+    "text": "Co nejhezčího by se stalo ve tvých vztazích, kdybys dnes dovolil(a) svým očím, aby se před někým blízkým zalily slzami?",
+    "tags": [
+      "vztahy",
+      "odvaha",
+      "smutek"
+    ],
+    "schemas": [
+      "EMOINH",
+      "EMODEP",
+      "ABINST"
+    ],
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0060",
+    "text": "Proč je pro tebe bezpečnější projevovat racionální intelekt než prostou, zranitelnou radost z přítomnosti?",
+    "tags": [
+      "radost",
+      "přítomnost",
+      "osobnost"
+    ],
+    "schemas": [
+      "EMOINH",
+      "USHYPER",
+      "LACKMEAN"
+    ],
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0061",
+    "text": "Kolik ze své životní energie dobrovolně obětuješ neustálému očekávání té nejhorší možné varianty vývoje?",
+    "tags": [
+      "negativní myšlenky",
+      "deprese",
+      "stres"
+    ],
+    "schemas": [
+      "NEGPES",
+      "VULILL",
+      "DEPINC"
+    ],
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0062",
+    "text": "Kdyby tvoje pesimistická mysl měla na chvíli dovolenou, jakou drobnou naději bys mohl(a) dnes v sobě nechat vyklíčit?",
+    "tags": [
+      "naděje",
+      "přerámování",
+      "pozitivní myšlení"
+    ],
+    "schemas": [
+      "NEGPES",
+      "LACKMEAN",
+      "FAIL"
+    ],
+    "tier": "free",
+    "sort_order": 62,
+    "added_at": "2026-06-05"
+  },
+  {
+    "id": "quest_0063",
+    "text": "Před jakým zklamáním tě tvůj permanentní skepticismus doopravdy chrání, když tě zároveň odřezává od radosti ze života?",
+    "tags": [
+      "paradox",
+      "utrpení",
+      "sebepoznání"
+    ],
+    "schemas": [
+      "NEGPES",
+      "DEFSH",
+      "EMODEP"
+    ],
+    "tier": "free",
+    "sort_order": 63,
+    "added_at": "2026-06-05"
+  }
+]

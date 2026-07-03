@@ -1,0 +1,3194 @@
+[
+  {
+    "id": "feel_0053",
+    "name": "neviditelný",
+    "cluster_id": "cl_0001",
+    "main": "cl_0001",
+    "tier": "free",
+    "sort_order": 1
+  },
+  {
+    "id": "feel_0132",
+    "name": "přehlížený",
+    "cluster_id": "cl_0001",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 2
+  },
+  {
+    "id": "feel_0149",
+    "name": "zapomínaný",
+    "cluster_id": "cl_0001",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 3
+  },
+  {
+    "id": "feel_0011",
+    "name": "nemilovaný",
+    "cluster_id": "cl_0002",
+    "main": "cl_0002",
+    "tier": "free",
+    "sort_order": 4
+  },
+  {
+    "id": "feel_0012",
+    "name": "nemilovatelný",
+    "cluster_id": "cl_0002",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 5
+  },
+  {
+    "id": "feel_0077",
+    "name": "zanedbávaný",
+    "cluster_id": "cl_0003",
+    "main": "cl_0003",
+    "tier": "free",
+    "sort_order": 6
+  },
+  {
+    "id": "feel_0030",
+    "name": "bez péče",
+    "cluster_id": "cl_0003",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 7
+  },
+  {
+    "id": "feel_0234",
+    "name": "ztrápený",
+    "cluster_id": "cl_0004",
+    "main": "cl_0004",
+    "tier": "free",
+    "sort_order": 8
+  },
+  {
+    "id": "feel_0341",
+    "name": "sebelítostivý",
+    "cluster_id": "cl_0004",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 9
+  },
+  {
+    "id": "feel_0356",
+    "name": "závistivý",
+    "cluster_id": "cl_0005",
+    "main": "cl_0005",
+    "tier": "free",
+    "sort_order": 10
+  },
+  {
+    "id": "feel_0309",
+    "name": "žárlivý",
+    "cluster_id": "cl_0005",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 11
+  },
+  {
+    "id": "feel_0045",
+    "name": "neoblíbený",
+    "cluster_id": "cl_0006",
+    "main": "cl_0006",
+    "tier": "free",
+    "sort_order": 12
+  },
+  {
+    "id": "feel_0013",
+    "name": "nenáviděný",
+    "cluster_id": "cl_0006",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 13
+  },
+  {
+    "id": "feel_0040",
+    "name": "mrtvý",
+    "cluster_id": "cl_0007",
+    "main": "cl_0007",
+    "tier": "free",
+    "sort_order": 14
+  },
+  {
+    "id": "feel_0091",
+    "name": "bez života",
+    "cluster_id": "cl_0007",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 15
+  },
+  {
+    "id": "feel_0236",
+    "name": "zvadlý",
+    "cluster_id": "cl_0007",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 16
+  },
+  {
+    "id": "feel_0238",
+    "name": "apatický",
+    "cluster_id": "cl_0007",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 17
+  },
+  {
+    "id": "feel_0250",
+    "name": "letargický",
+    "cluster_id": "cl_0007",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 18
+  },
+  {
+    "id": "feel_0416",
+    "name": "zbytečný",
+    "cluster_id": "cl_0008",
+    "main": "cl_0008",
+    "tier": "free",
+    "sort_order": 19
+  },
+  {
+    "id": "feel_0010",
+    "name": "nedůležitý",
+    "cluster_id": "cl_0008",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 20
+  },
+  {
+    "id": "feel_0014",
+    "name": "nepotřebný",
+    "cluster_id": "cl_0008",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 21
+  },
+  {
+    "id": "feel_0019",
+    "name": "opuštěný",
+    "cluster_id": "cl_0009",
+    "main": "cl_0009",
+    "tier": "free",
+    "sort_order": 22
+  },
+  {
+    "id": "feel_0063",
+    "name": "osamělý",
+    "cluster_id": "cl_0009",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 23
+  },
+  {
+    "id": "feel_0239",
+    "name": "bez něčí blízkosti",
+    "cluster_id": "cl_0009",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 24
+  },
+  {
+    "id": "feel_0096",
+    "name": "citově závislý",
+    "cluster_id": "cl_0010",
+    "main": "cl_0010",
+    "tier": "free",
+    "sort_order": 25
+  },
+  {
+    "id": "feel_0079",
+    "name": "závislý na vztahu",
+    "cluster_id": "cl_0010",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 26
+  },
+  {
+    "id": "feel_0172",
+    "name": "lpící",
+    "cluster_id": "cl_0010",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 27
+  },
+  {
+    "id": "feel_0210",
+    "name": "propletený",
+    "cluster_id": "cl_0010",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 28
+  },
+  {
+    "id": "feel_0211",
+    "name": "provázaný",
+    "cluster_id": "cl_0010",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 29
+  },
+  {
+    "id": "feel_0407",
+    "name": "zbožňující",
+    "cluster_id": "cl_0010",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 30
+  },
+  {
+    "id": "feel_0115",
+    "name": "nestálý",
+    "cluster_id": "cl_0011",
+    "main": "cl_0011",
+    "tier": "free",
+    "sort_order": 31
+  },
+  {
+    "id": "feel_0188",
+    "name": "nevěrný",
+    "cluster_id": "cl_0011",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 32
+  },
+  {
+    "id": "feel_0209",
+    "name": "promiskuitní",
+    "cluster_id": "cl_0011",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 33
+  },
+  {
+    "id": "feel_0378",
+    "name": "opatrný",
+    "cluster_id": "cl_0012",
+    "main": "cl_0012",
+    "tier": "free",
+    "sort_order": 34
+  },
+  {
+    "id": "feel_0332",
+    "name": "ostražitý",
+    "cluster_id": "cl_0012",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 35
+  },
+  {
+    "id": "feel_0425",
+    "name": "obezřetný",
+    "cluster_id": "cl_0012",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 36
+  },
+  {
+    "id": "feel_0176",
+    "name": "nedůvěřivý",
+    "cluster_id": "cl_0013",
+    "main": "cl_0013",
+    "tier": "free",
+    "sort_order": 37
+  },
+  {
+    "id": "feel_0204",
+    "name": "podezíravý",
+    "cluster_id": "cl_0013",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 38
+  },
+  {
+    "id": "feel_0428",
+    "name": "nikomu nevěřím",
+    "cluster_id": "cl_0013",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 39
+  },
+  {
+    "id": "feel_0280",
+    "name": "sledovaný",
+    "cluster_id": "cl_0014",
+    "main": "cl_0014",
+    "tier": "free",
+    "sort_order": 40
+  },
+  {
+    "id": "feel_0125",
+    "name": "paranoidní",
+    "cluster_id": "cl_0014",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 41
+  },
+  {
+    "id": "feel_0276",
+    "name": "pod dohledem",
+    "cluster_id": "cl_0014",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 42
+  },
+  {
+    "id": "feel_0156",
+    "name": "zrazený",
+    "cluster_id": "cl_0015",
+    "main": "cl_0015",
+    "tier": "free",
+    "sort_order": 43
+  },
+  {
+    "id": "feel_0128",
+    "name": "podvedený",
+    "cluster_id": "cl_0015",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 44
+  },
+  {
+    "id": "feel_0308",
+    "name": "zraněný",
+    "cluster_id": "cl_0016",
+    "main": "cl_0016",
+    "tier": "free",
+    "sort_order": 45
+  },
+  {
+    "id": "feel_0291",
+    "name": "ublížený",
+    "cluster_id": "cl_0016",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 46
+  },
+  {
+    "id": "feel_0084",
+    "name": "zneužitý",
+    "cluster_id": "cl_0017",
+    "main": "cl_0017",
+    "tier": "free",
+    "sort_order": 47
+  },
+  {
+    "id": "feel_0085",
+    "name": "zneužívaný",
+    "cluster_id": "cl_0017",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 48
+  },
+  {
+    "id": "feel_0103",
+    "name": "manipulovaný",
+    "cluster_id": "cl_0017",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 49
+  },
+  {
+    "id": "feel_0144",
+    "name": "vydíraný",
+    "cluster_id": "cl_0017",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 50
+  },
+  {
+    "id": "feel_0229",
+    "name": "využívaný",
+    "cluster_id": "cl_0017",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 51
+  },
+  {
+    "id": "feel_0081",
+    "name": "znásilněný",
+    "cluster_id": "cl_0018",
+    "main": "cl_0018",
+    "tier": "free",
+    "sort_order": 52
+  },
+  {
+    "id": "feel_0025",
+    "name": "vyloučený",
+    "cluster_id": "cl_0019",
+    "main": "cl_0019",
+    "tier": "free",
+    "sort_order": 53
+  },
+  {
+    "id": "feel_0055",
+    "name": "nezačleněný",
+    "cluster_id": "cl_0019",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 54
+  },
+  {
+    "id": "feel_0075",
+    "name": "vyčleněný",
+    "cluster_id": "cl_0019",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 55
+  },
+  {
+    "id": "feel_0057",
+    "name": "odcizený",
+    "cluster_id": "cl_0020",
+    "main": "cl_0020",
+    "tier": "free",
+    "sort_order": 56
+  },
+  {
+    "id": "feel_0037",
+    "name": "izolovaný",
+    "cluster_id": "cl_0020",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 57
+  },
+  {
+    "id": "feel_0058",
+    "name": "oddělený",
+    "cluster_id": "cl_0020",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 58
+  },
+  {
+    "id": "feel_0018",
+    "name": "odmítnutý",
+    "cluster_id": "cl_0021",
+    "main": "cl_0021",
+    "tier": "free",
+    "sort_order": 59
+  },
+  {
+    "id": "feel_0035",
+    "name": "divný",
+    "cluster_id": "cl_0022",
+    "main": "cl_0022",
+    "tier": "free",
+    "sort_order": 60
+  },
+  {
+    "id": "feel_0038",
+    "name": "jiný",
+    "cluster_id": "cl_0022",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 61
+  },
+  {
+    "id": "feel_0046",
+    "name": "nepochopený",
+    "cluster_id": "cl_0022",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 62
+  },
+  {
+    "id": "feel_0062",
+    "name": "opovrhovaný",
+    "cluster_id": "cl_0023",
+    "main": "cl_0023",
+    "tier": "free",
+    "sort_order": 63
+  },
+  {
+    "id": "feel_0146",
+    "name": "vysmívaný",
+    "cluster_id": "cl_0023",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 64
+  },
+  {
+    "id": "feel_0206",
+    "name": "pomlouvaný",
+    "cluster_id": "cl_0023",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 65
+  },
+  {
+    "id": "feel_0076",
+    "name": "zahanbený",
+    "cluster_id": "cl_0024",
+    "main": "cl_0024",
+    "tier": "free",
+    "sort_order": 66
+  },
+  {
+    "id": "feel_0020",
+    "name": "plný studu",
+    "cluster_id": "cl_0024",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 67
+  },
+  {
+    "id": "feel_0027",
+    "name": "zostuzený",
+    "cluster_id": "cl_0024",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 68
+  },
+  {
+    "id": "feel_0066",
+    "name": "ponížený",
+    "cluster_id": "cl_0024",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 69
+  },
+  {
+    "id": "feel_0024",
+    "name": "vadný",
+    "cluster_id": "cl_0025",
+    "main": "cl_0025",
+    "tier": "free",
+    "sort_order": 70
+  },
+  {
+    "id": "feel_0006",
+    "name": "defektní",
+    "cluster_id": "cl_0025",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 71
+  },
+  {
+    "id": "feel_0041",
+    "name": "neadekvátní",
+    "cluster_id": "cl_0025",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 72
+  },
+  {
+    "id": "feel_0044",
+    "name": "nenormální",
+    "cluster_id": "cl_0025",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 73
+  },
+  {
+    "id": "feel_0429",
+    "name": "nepřitažlivý",
+    "cluster_id": "cl_0026",
+    "main": "cl_0026",
+    "tier": "free",
+    "sort_order": 74
+  },
+  {
+    "id": "feel_0059",
+    "name": "odporný",
+    "cluster_id": "cl_0026",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 75
+  },
+  {
+    "id": "feel_0060",
+    "name": "odpudivý",
+    "cluster_id": "cl_0026",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 76
+  },
+  {
+    "id": "feel_0064",
+    "name": "ošklivý",
+    "cluster_id": "cl_0026",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 77
+  },
+  {
+    "id": "feel_0105",
+    "name": "neatraktivní",
+    "cluster_id": "cl_0026",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 78
+  },
+  {
+    "id": "feel_0036",
+    "name": "hloupý",
+    "cluster_id": "cl_0027",
+    "main": "cl_0027",
+    "tier": "free",
+    "sort_order": 79
+  },
+  {
+    "id": "feel_0051",
+    "name": "netalentovaný",
+    "cluster_id": "cl_0027",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 80
+  },
+  {
+    "id": "feel_0118",
+    "name": "nevzdělaný",
+    "cluster_id": "cl_0027",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 81
+  },
+  {
+    "id": "feel_0065",
+    "name": "jako podvodník",
+    "cluster_id": "cl_0028",
+    "main": "cl_0028",
+    "tier": "free",
+    "sort_order": 82
+  },
+  {
+    "id": "feel_0097",
+    "name": "falešný",
+    "cluster_id": "cl_0028",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 83
+  },
+  {
+    "id": "feel_0193",
+    "name": "odhalený",
+    "cluster_id": "cl_0028",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 84
+  },
+  {
+    "id": "feel_0119",
+    "name": "nezajímavý",
+    "cluster_id": "cl_0029",
+    "main": "cl_0029",
+    "tier": "free",
+    "sort_order": 85
+  },
+  {
+    "id": "feel_0122",
+    "name": "nudný",
+    "cluster_id": "cl_0029",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 86
+  },
+  {
+    "id": "feel_0008",
+    "name": "méněcenný",
+    "cluster_id": "cl_0030",
+    "main": "cl_0030",
+    "tier": "free",
+    "sort_order": 87
+  },
+  {
+    "id": "feel_0003",
+    "name": "bezcenný",
+    "cluster_id": "cl_0030",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 88
+  },
+  {
+    "id": "feel_0004",
+    "name": "bezvýznamný",
+    "cluster_id": "cl_0030",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 89
+  },
+  {
+    "id": "feel_0102",
+    "name": "malý",
+    "cluster_id": "cl_0030",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 90
+  },
+  {
+    "id": "feel_0023",
+    "name": "špatný",
+    "cluster_id": "cl_0031",
+    "main": "cl_0031",
+    "tier": "free",
+    "sort_order": 91
+  },
+  {
+    "id": "feel_0033",
+    "name": "bídný",
+    "cluster_id": "cl_0031",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 92
+  },
+  {
+    "id": "feel_0050",
+    "name": "nesprávný",
+    "cluster_id": "cl_0031",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 93
+  },
+  {
+    "id": "feel_0070",
+    "name": "prokletý",
+    "cluster_id": "cl_0031",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 94
+  },
+  {
+    "id": "feel_0080",
+    "name": "zlý",
+    "cluster_id": "cl_0031",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 95
+  },
+  {
+    "id": "feel_0110",
+    "name": "nelidský",
+    "cluster_id": "cl_0031",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 96
+  },
+  {
+    "id": "feel_0021",
+    "name": "sebenenávistný",
+    "cluster_id": "cl_0032",
+    "main": "cl_0032",
+    "tier": "free",
+    "sort_order": 97
+  },
+  {
+    "id": "feel_0002",
+    "name": "bez sebelásky",
+    "cluster_id": "cl_0032",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 98
+  },
+  {
+    "id": "feel_0135",
+    "name": "sebeponížující",
+    "cluster_id": "cl_0032",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 99
+  },
+  {
+    "id": "feel_0094",
+    "name": "bezradný",
+    "cluster_id": "cl_0033",
+    "main": "cl_0033",
+    "tier": "free",
+    "sort_order": 100
+  },
+  {
+    "id": "feel_0028",
+    "name": "ztracený",
+    "cluster_id": "cl_0033",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 101
+  },
+  {
+    "id": "feel_0112",
+    "name": "nesamostatný",
+    "cluster_id": "cl_0034",
+    "main": "cl_0034",
+    "tier": "free",
+    "sort_order": 102
+  },
+  {
+    "id": "feel_0078",
+    "name": "závislý na ostatních",
+    "cluster_id": "cl_0034",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 103
+  },
+  {
+    "id": "feel_0121",
+    "name": "nezvládající běžné povinnosti",
+    "cluster_id": "cl_0034",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 104
+  },
+  {
+    "id": "feel_0240",
+    "name": "bez vedení",
+    "cluster_id": "cl_0034",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 105
+  },
+  {
+    "id": "feel_0274",
+    "name": "ovlivňovaný druhými",
+    "cluster_id": "cl_0034",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 106
+  },
+  {
+    "id": "feel_0017",
+    "name": "nezralý",
+    "cluster_id": "cl_0035",
+    "main": "cl_0035",
+    "tier": "free",
+    "sort_order": 107
+  },
+  {
+    "id": "feel_0242",
+    "name": "dětinský",
+    "cluster_id": "cl_0035",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 108
+  },
+  {
+    "id": "feel_0253",
+    "name": "naivní",
+    "cluster_id": "cl_0035",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 109
+  },
+  {
+    "id": "feel_0409",
+    "name": "důvěřivý",
+    "cluster_id": "cl_0035",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 110
+  },
+  {
+    "id": "feel_0183",
+    "name": "nerozhodný",
+    "cluster_id": "cl_0036",
+    "main": "cl_0036",
+    "tier": "free",
+    "sort_order": 111
+  },
+  {
+    "id": "feel_0109",
+    "name": "nejistý",
+    "cluster_id": "cl_0036",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 112
+  },
+  {
+    "id": "feel_0129",
+    "name": "pochybující",
+    "cluster_id": "cl_0036",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 113
+  },
+  {
+    "id": "feel_0227",
+    "name": "váhavý",
+    "cluster_id": "cl_0036",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 114
+  },
+  {
+    "id": "feel_0340",
+    "name": "rozpačitý",
+    "cluster_id": "cl_0036",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 115
+  },
+  {
+    "id": "feel_0394",
+    "name": "ambivalentní",
+    "cluster_id": "cl_0036",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 116
+  },
+  {
+    "id": "feel_0048",
+    "name": "neschopný",
+    "cluster_id": "cl_0037",
+    "main": "cl_0037",
+    "tier": "free",
+    "sort_order": 117
+  },
+  {
+    "id": "feel_0043",
+    "name": "nekompetentní",
+    "cluster_id": "cl_0037",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 118
+  },
+  {
+    "id": "feel_0179",
+    "name": "neprofesionální",
+    "cluster_id": "cl_0037",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 119
+  },
+  {
+    "id": "feel_0047",
+    "name": "nesebevědomý",
+    "cluster_id": "cl_0038",
+    "main": "cl_0038",
+    "tier": "free",
+    "sort_order": 120
+  },
+  {
+    "id": "feel_0072",
+    "name": "sebepochybující",
+    "cluster_id": "cl_0038",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 121
+  },
+  {
+    "id": "feel_0090",
+    "name": "bez sebedůvěry",
+    "cluster_id": "cl_0038",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 122
+  },
+  {
+    "id": "feel_0093",
+    "name": "bezmocný",
+    "cluster_id": "cl_0039",
+    "main": "cl_0039",
+    "tier": "free",
+    "sort_order": 123
+  },
+  {
+    "id": "feel_0086",
+    "name": "zoufalý",
+    "cluster_id": "cl_0039",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 124
+  },
+  {
+    "id": "feel_0297",
+    "name": "vyhýbavý",
+    "cluster_id": "cl_0040",
+    "main": "cl_0040",
+    "tier": "free",
+    "sort_order": 125
+  },
+  {
+    "id": "feel_0150",
+    "name": "zbabělý",
+    "cluster_id": "cl_0040",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 126
+  },
+  {
+    "id": "feel_0216",
+    "name": "skrývající se",
+    "cluster_id": "cl_0040",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 127
+  },
+  {
+    "id": "feel_0323",
+    "name": "na útěku",
+    "cluster_id": "cl_0040",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 128
+  },
+  {
+    "id": "feel_0272",
+    "name": "ohrožený",
+    "cluster_id": "cl_0041",
+    "main": "cl_0041",
+    "tier": "free",
+    "sort_order": 129
+  },
+  {
+    "id": "feel_0162",
+    "name": "bezbranný",
+    "cluster_id": "cl_0041",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 130
+  },
+  {
+    "id": "feel_0259",
+    "name": "nechráněný",
+    "cluster_id": "cl_0041",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 131
+  },
+  {
+    "id": "feel_0155",
+    "name": "zranitelný",
+    "cluster_id": "cl_0042",
+    "main": "cl_0042",
+    "tier": "free",
+    "sort_order": 132
+  },
+  {
+    "id": "feel_0137",
+    "name": "slabý",
+    "cluster_id": "cl_0042",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 133
+  },
+  {
+    "id": "feel_0170",
+    "name": "křehký",
+    "cluster_id": "cl_0042",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 134
+  },
+  {
+    "id": "feel_0225",
+    "name": "úzkostný",
+    "cluster_id": "cl_0043",
+    "main": "cl_0043",
+    "tier": "free",
+    "sort_order": 135
+  },
+  {
+    "id": "feel_0260",
+    "name": "neklidný",
+    "cluster_id": "cl_0043",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 136
+  },
+  {
+    "id": "feel_0265",
+    "name": "nervózní",
+    "cluster_id": "cl_0043",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 137
+  },
+  {
+    "id": "feel_0324",
+    "name": "napjatý",
+    "cluster_id": "cl_0043",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 138
+  },
+  {
+    "id": "feel_0286",
+    "name": "strachuplný",
+    "cluster_id": "cl_0044",
+    "main": "cl_0044",
+    "tier": "free",
+    "sort_order": 139
+  },
+  {
+    "id": "feel_0270",
+    "name": "obávající se",
+    "cluster_id": "cl_0044",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 140
+  },
+  {
+    "id": "feel_0295",
+    "name": "ustrašený",
+    "cluster_id": "cl_0044",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 141
+  },
+  {
+    "id": "feel_0300",
+    "name": "vystrašený",
+    "cluster_id": "cl_0044",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 142
+  },
+  {
+    "id": "feel_0351",
+    "name": "ustaraný",
+    "cluster_id": "cl_0044",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 143
+  },
+  {
+    "id": "feel_0275",
+    "name": "panikařící",
+    "cluster_id": "cl_0045",
+    "main": "cl_0045",
+    "tier": "free",
+    "sort_order": 144
+  },
+  {
+    "id": "feel_0306",
+    "name": "zděšený",
+    "cluster_id": "cl_0045",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 145
+  },
+  {
+    "id": "feel_0304",
+    "name": "zaseknutý",
+    "cluster_id": "cl_0046",
+    "main": "cl_0046",
+    "tier": "free",
+    "sort_order": 146
+  },
+  {
+    "id": "feel_0148",
+    "name": "zamrznutý",
+    "cluster_id": "cl_0046",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 147
+  },
+  {
+    "id": "feel_0201",
+    "name": "paralyzovaný",
+    "cluster_id": "cl_0046",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 148
+  },
+  {
+    "id": "feel_0302",
+    "name": "zablokovaný",
+    "cluster_id": "cl_0046",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 149
+  },
+  {
+    "id": "feel_0367",
+    "name": "fixovaný",
+    "cluster_id": "cl_0046",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 150
+  },
+  {
+    "id": "feel_0151",
+    "name": "zblázněný",
+    "cluster_id": "cl_0047",
+    "main": "cl_0047",
+    "tier": "free",
+    "sort_order": 151
+  },
+  {
+    "id": "feel_0140",
+    "name": "šílený",
+    "cluster_id": "cl_0047",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 152
+  },
+  {
+    "id": "feel_0100",
+    "name": "kritizovaný",
+    "cluster_id": "cl_0048",
+    "main": "cl_0048",
+    "tier": "free",
+    "sort_order": 153
+  },
+  {
+    "id": "feel_0233",
+    "name": "zkoumaný",
+    "cluster_id": "cl_0048",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 154
+  },
+  {
+    "id": "feel_0246",
+    "name": "hodnocený",
+    "cluster_id": "cl_0048",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 155
+  },
+  {
+    "id": "feel_0430",
+    "name": "nedostatečný",
+    "cluster_id": "cl_0049",
+    "main": "cl_0049",
+    "tier": "free",
+    "sort_order": 156
+  },
+  {
+    "id": "feel_0009",
+    "name": "ne dost dobrý",
+    "cluster_id": "cl_0049",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 157
+  },
+  {
+    "id": "feel_0042",
+    "name": "nedokonalý",
+    "cluster_id": "cl_0049",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 158
+  },
+  {
+    "id": "feel_0131",
+    "name": "průměrný",
+    "cluster_id": "cl_0049",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 159
+  },
+  {
+    "id": "feel_0099",
+    "name": "chybující",
+    "cluster_id": "cl_0050",
+    "main": "cl_0050",
+    "tier": "free",
+    "sort_order": 160
+  },
+  {
+    "id": "feel_0180",
+    "name": "nepřipravený",
+    "cluster_id": "cl_0050",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 161
+  },
+  {
+    "id": "feel_0015",
+    "name": "neúspěšný",
+    "cluster_id": "cl_0051",
+    "main": "cl_0051",
+    "tier": "free",
+    "sort_order": 162
+  },
+  {
+    "id": "feel_0007",
+    "name": "loser",
+    "cluster_id": "cl_0051",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 163
+  },
+  {
+    "id": "feel_0022",
+    "name": "selhávající",
+    "cluster_id": "cl_0051",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 164
+  },
+  {
+    "id": "feel_0067",
+    "name": "poražený",
+    "cluster_id": "cl_0051",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 165
+  },
+  {
+    "id": "feel_0069",
+    "name": "prohrávající",
+    "cluster_id": "cl_0051",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 166
+  },
+  {
+    "id": "feel_0153",
+    "name": "zklamávající",
+    "cluster_id": "cl_0051",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 167
+  },
+  {
+    "id": "feel_0052",
+    "name": "neužitečný",
+    "cluster_id": "cl_0052",
+    "main": "cl_0052",
+    "tier": "free",
+    "sort_order": 168
+  },
+  {
+    "id": "feel_0005",
+    "name": "budižkničemu",
+    "cluster_id": "cl_0052",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 169
+  },
+  {
+    "id": "feel_0039",
+    "name": "marný",
+    "cluster_id": "cl_0052",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 170
+  },
+  {
+    "id": "feel_0054",
+    "name": "nevyužitý",
+    "cluster_id": "cl_0052",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 171
+  },
+  {
+    "id": "feel_0382",
+    "name": "pyšný",
+    "cluster_id": "cl_0053",
+    "main": "cl_0053",
+    "tier": "free",
+    "sort_order": 172
+  },
+  {
+    "id": "feel_0368",
+    "name": "hrdý",
+    "cluster_id": "cl_0053",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 173
+  },
+  {
+    "id": "feel_0431",
+    "name": "chamtivý",
+    "cluster_id": "cl_0054",
+    "main": "cl_0054",
+    "tier": "free",
+    "sort_order": 174
+  },
+  {
+    "id": "feel_0087",
+    "name": "bažící po moci",
+    "cluster_id": "cl_0054",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 175
+  },
+  {
+    "id": "feel_0158",
+    "name": "bažící po slávě",
+    "cluster_id": "cl_0054",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 176
+  },
+  {
+    "id": "feel_0317",
+    "name": "chtivý",
+    "cluster_id": "cl_0054",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 177
+  },
+  {
+    "id": "feel_0243",
+    "name": "dominující",
+    "cluster_id": "cl_0055",
+    "main": "cl_0055",
+    "tier": "free",
+    "sort_order": 178
+  },
+  {
+    "id": "feel_0312",
+    "name": "dominantní",
+    "cluster_id": "cl_0055",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 179
+  },
+  {
+    "id": "feel_0228",
+    "name": "výjimečný",
+    "cluster_id": "cl_0056",
+    "main": "cl_0056",
+    "tier": "free",
+    "sort_order": 180
+  },
+  {
+    "id": "feel_0098",
+    "name": "grandiózní",
+    "cluster_id": "cl_0056",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 181
+  },
+  {
+    "id": "feel_0111",
+    "name": "neporazitelný",
+    "cluster_id": "cl_0056",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 182
+  },
+  {
+    "id": "feel_0120",
+    "name": "nezničitelný",
+    "cluster_id": "cl_0056",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 183
+  },
+  {
+    "id": "feel_0143",
+    "name": "všemocný",
+    "cluster_id": "cl_0056",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 184
+  },
+  {
+    "id": "feel_0230",
+    "name": "vyvolený",
+    "cluster_id": "cl_0056",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 185
+  },
+  {
+    "id": "feel_0104",
+    "name": "nadřazený",
+    "cluster_id": "cl_0057",
+    "main": "cl_0057",
+    "tier": "free",
+    "sort_order": 186
+  },
+  {
+    "id": "feel_0130",
+    "name": "povýšený",
+    "cluster_id": "cl_0057",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 187
+  },
+  {
+    "id": "feel_0212",
+    "name": "přezíravý",
+    "cluster_id": "cl_0057",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 188
+  },
+  {
+    "id": "feel_0273",
+    "name": "opovrhující",
+    "cluster_id": "cl_0058",
+    "main": "cl_0058",
+    "tier": "free",
+    "sort_order": 189
+  },
+  {
+    "id": "feel_0277",
+    "name": "pohrdavý",
+    "cluster_id": "cl_0058",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 190
+  },
+  {
+    "id": "feel_0278",
+    "name": "ponižující",
+    "cluster_id": "cl_0058",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 191
+  },
+  {
+    "id": "feel_0299",
+    "name": "vysmívající se",
+    "cluster_id": "cl_0058",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 192
+  },
+  {
+    "id": "feel_0349",
+    "name": "urážející",
+    "cluster_id": "cl_0058",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 193
+  },
+  {
+    "id": "feel_0399",
+    "name": "neuctivý",
+    "cluster_id": "cl_0058",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 194
+  },
+  {
+    "id": "feel_0217",
+    "name": "sobecký",
+    "cluster_id": "cl_0059",
+    "main": "cl_0059",
+    "tier": "free",
+    "sort_order": 195
+  },
+  {
+    "id": "feel_0187",
+    "name": "nevděčný",
+    "cluster_id": "cl_0059",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 196
+  },
+  {
+    "id": "feel_0420",
+    "name": "labilní",
+    "cluster_id": "cl_0060",
+    "main": "cl_0060",
+    "tier": "free",
+    "sort_order": 197
+  },
+  {
+    "id": "feel_0164",
+    "name": "emočně labilní",
+    "cluster_id": "cl_0060",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 198
+  },
+  {
+    "id": "feel_0167",
+    "name": "hysterický",
+    "cluster_id": "cl_0060",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 199
+  },
+  {
+    "id": "feel_0190",
+    "name": "nevyrovnaný",
+    "cluster_id": "cl_0060",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 200
+  },
+  {
+    "id": "feel_0254",
+    "name": "náladový",
+    "cluster_id": "cl_0060",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 201
+  },
+  {
+    "id": "feel_0313",
+    "name": "emocionální",
+    "cluster_id": "cl_0060",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 202
+  },
+  {
+    "id": "feel_0375",
+    "name": "netrpělivý",
+    "cluster_id": "cl_0061",
+    "main": "cl_0061",
+    "tier": "free",
+    "sort_order": 203
+  },
+  {
+    "id": "feel_0371",
+    "name": "nedočkavý",
+    "cluster_id": "cl_0061",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 204
+  },
+  {
+    "id": "feel_0373",
+    "name": "neposedný",
+    "cluster_id": "cl_0061",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 205
+  },
+  {
+    "id": "feel_0374",
+    "name": "nesoustředěný",
+    "cluster_id": "cl_0062",
+    "main": "cl_0062",
+    "tier": "free",
+    "sort_order": 206
+  },
+  {
+    "id": "feel_0357",
+    "name": "zbrklý",
+    "cluster_id": "cl_0062",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 207
+  },
+  {
+    "id": "feel_0385",
+    "name": "rozptýlený",
+    "cluster_id": "cl_0062",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 208
+  },
+  {
+    "id": "feel_0387",
+    "name": "roztržitý",
+    "cluster_id": "cl_0062",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 209
+  },
+  {
+    "id": "feel_0404",
+    "name": "snící",
+    "cluster_id": "cl_0062",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 210
+  },
+  {
+    "id": "feel_0406",
+    "name": "zapomnětlivý",
+    "cluster_id": "cl_0062",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 211
+  },
+  {
+    "id": "feel_0248",
+    "name": "impulzivní",
+    "cluster_id": "cl_0063",
+    "main": "cl_0063",
+    "tier": "free",
+    "sort_order": 212
+  },
+  {
+    "id": "feel_0160",
+    "name": "bez sebekontroly",
+    "cluster_id": "cl_0063",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 213
+  },
+  {
+    "id": "feel_0177",
+    "name": "nekontrolovaný",
+    "cluster_id": "cl_0063",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 214
+  },
+  {
+    "id": "feel_0178",
+    "name": "neovládající se",
+    "cluster_id": "cl_0063",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 215
+  },
+  {
+    "id": "feel_0235",
+    "name": "bez kontroly",
+    "cluster_id": "cl_0063",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 216
+  },
+  {
+    "id": "feel_0395",
+    "name": "divoký",
+    "cluster_id": "cl_0063",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 217
+  },
+  {
+    "id": "feel_0329",
+    "name": "nezodpovědný",
+    "cluster_id": "cl_0064",
+    "main": "cl_0064",
+    "tier": "free",
+    "sort_order": 218
+  },
+  {
+    "id": "feel_0185",
+    "name": "nespolehlivý",
+    "cluster_id": "cl_0064",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 219
+  },
+  {
+    "id": "feel_0232",
+    "name": "zanedbávající",
+    "cluster_id": "cl_0064",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 220
+  },
+  {
+    "id": "feel_0258",
+    "name": "nedisciplinovaný",
+    "cluster_id": "cl_0065",
+    "main": "cl_0065",
+    "tier": "free",
+    "sort_order": 221
+  },
+  {
+    "id": "feel_0263",
+    "name": "nepořádný",
+    "cluster_id": "cl_0065",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 222
+  },
+  {
+    "id": "feel_0335",
+    "name": "porušující pravidla",
+    "cluster_id": "cl_0065",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 223
+  },
+  {
+    "id": "feel_0336",
+    "name": "prokrastinující",
+    "cluster_id": "cl_0065",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 224
+  },
+  {
+    "id": "feel_0419",
+    "name": "poživačný",
+    "cluster_id": "cl_0066",
+    "main": "cl_0066",
+    "tier": "free",
+    "sort_order": 225
+  },
+  {
+    "id": "feel_0237",
+    "name": "andrenalinový junkie",
+    "cluster_id": "cl_0066",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 226
+  },
+  {
+    "id": "feel_0388",
+    "name": "sebestimulující",
+    "cluster_id": "cl_0066",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 227
+  },
+  {
+    "id": "feel_0403",
+    "name": "rozkošnický",
+    "cluster_id": "cl_0066",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 228
+  },
+  {
+    "id": "feel_0411",
+    "name": "hypersexuální",
+    "cluster_id": "cl_0066",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 229
+  },
+  {
+    "id": "feel_0369",
+    "name": "lehkovážný",
+    "cluster_id": "cl_0067",
+    "main": "cl_0067",
+    "tier": "free",
+    "sort_order": 230
+  },
+  {
+    "id": "feel_0338",
+    "name": "riskující",
+    "cluster_id": "cl_0067",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 231
+  },
+  {
+    "id": "feel_0101",
+    "name": "líný",
+    "cluster_id": "cl_0068",
+    "main": "cl_0068",
+    "tier": "free",
+    "sort_order": 232
+  },
+  {
+    "id": "feel_0174",
+    "name": "mrhající časem",
+    "cluster_id": "cl_0068",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 233
+  },
+  {
+    "id": "feel_0352",
+    "name": "vzdorovitý",
+    "cluster_id": "cl_0069",
+    "main": "cl_0069",
+    "tier": "free",
+    "sort_order": 234
+  },
+  {
+    "id": "feel_0326",
+    "name": "neposlušný",
+    "cluster_id": "cl_0069",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 235
+  },
+  {
+    "id": "feel_0377",
+    "name": "odporující",
+    "cluster_id": "cl_0069",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 236
+  },
+  {
+    "id": "feel_0383",
+    "name": "rebelující",
+    "cluster_id": "cl_0069",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 237
+  },
+  {
+    "id": "feel_0389",
+    "name": "trucovitý",
+    "cluster_id": "cl_0069",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 238
+  },
+  {
+    "id": "feel_0396",
+    "name": "drzý",
+    "cluster_id": "cl_0069",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 239
+  },
+  {
+    "id": "feel_0279",
+    "name": "poslušný",
+    "cluster_id": "cl_0070",
+    "main": "cl_0070",
+    "tier": "free",
+    "sort_order": 240
+  },
+  {
+    "id": "feel_0223",
+    "name": "ustupující",
+    "cluster_id": "cl_0070",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 241
+  },
+  {
+    "id": "feel_0417",
+    "name": "poddajný",
+    "cluster_id": "cl_0070",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 242
+  },
+  {
+    "id": "feel_0205",
+    "name": "podřízený",
+    "cluster_id": "cl_0071",
+    "main": "cl_0071",
+    "tier": "free",
+    "sort_order": 243
+  },
+  {
+    "id": "feel_0198",
+    "name": "sloužící",
+    "cluster_id": "cl_0071",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 244
+  },
+  {
+    "id": "feel_0200",
+    "name": "ovládaný",
+    "cluster_id": "cl_0071",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 245
+  },
+  {
+    "id": "feel_0218",
+    "name": "svázaný",
+    "cluster_id": "cl_0072",
+    "main": "cl_0072",
+    "tier": "free",
+    "sort_order": 246
+  },
+  {
+    "id": "feel_0224",
+    "name": "uvězněný",
+    "cluster_id": "cl_0072",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 247
+  },
+  {
+    "id": "feel_0226",
+    "name": "v pasti",
+    "cluster_id": "cl_0072",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 248
+  },
+  {
+    "id": "feel_0186",
+    "name": "nesvobodný",
+    "cluster_id": "cl_0073",
+    "main": "cl_0073",
+    "tier": "free",
+    "sort_order": 249
+  },
+  {
+    "id": "feel_0197",
+    "name": "omezený",
+    "cluster_id": "cl_0073",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 250
+  },
+  {
+    "id": "feel_0208",
+    "name": "potlačený",
+    "cluster_id": "cl_0073",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 251
+  },
+  {
+    "id": "feel_0245",
+    "name": "dušený",
+    "cluster_id": "cl_0073",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 252
+  },
+  {
+    "id": "feel_0268",
+    "name": "nucený",
+    "cluster_id": "cl_0073",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 253
+  },
+  {
+    "id": "feel_0305",
+    "name": "zavázaný",
+    "cluster_id": "cl_0073",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 254
+  },
+  {
+    "id": "feel_0214",
+    "name": "přizpůsobující se",
+    "cluster_id": "cl_0074",
+    "main": "cl_0074",
+    "tier": "free",
+    "sort_order": 255
+  },
+  {
+    "id": "feel_0401",
+    "name": "ohleduplný",
+    "cluster_id": "cl_0074",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 256
+  },
+  {
+    "id": "feel_0215",
+    "name": "sebeobětující se",
+    "cluster_id": "cl_0075",
+    "main": "cl_0075",
+    "tier": "free",
+    "sort_order": 257
+  },
+  {
+    "id": "feel_0271",
+    "name": "obětovaný",
+    "cluster_id": "cl_0075",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 258
+  },
+  {
+    "id": "feel_0344",
+    "name": "soutěživý",
+    "cluster_id": "cl_0076",
+    "main": "cl_0076",
+    "tier": "free",
+    "sort_order": 259
+  },
+  {
+    "id": "feel_0290",
+    "name": "toužící po úspěchu",
+    "cluster_id": "cl_0076",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 260
+  },
+  {
+    "id": "feel_0175",
+    "name": "neautentický",
+    "cluster_id": "cl_0077",
+    "main": "cl_0077",
+    "tier": "free",
+    "sort_order": 261
+  },
+  {
+    "id": "feel_0181",
+    "name": "nepřirozený",
+    "cluster_id": "cl_0077",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 262
+  },
+  {
+    "id": "feel_0182",
+    "name": "nerespektovaný",
+    "cluster_id": "cl_0078",
+    "main": "cl_0078",
+    "tier": "free",
+    "sort_order": 263
+  },
+  {
+    "id": "feel_0082",
+    "name": "zneuctěný",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 264
+  },
+  {
+    "id": "feel_0083",
+    "name": "zneuznaný",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 265
+  },
+  {
+    "id": "feel_0106",
+    "name": "nedoceněný",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 266
+  },
+  {
+    "id": "feel_0114",
+    "name": "neschválený",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 267
+  },
+  {
+    "id": "feel_0117",
+    "name": "nevážený",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 268
+  },
+  {
+    "id": "feel_0161",
+    "name": "bez uznání",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 269
+  },
+  {
+    "id": "feel_0311",
+    "name": "bez souhlasu",
+    "cluster_id": "cl_0078",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 270
+  },
+  {
+    "id": "feel_0034",
+    "name": "depresivní",
+    "cluster_id": "cl_0079",
+    "main": "cl_0079",
+    "tier": "free",
+    "sort_order": 271
+  },
+  {
+    "id": "feel_0116",
+    "name": "nešťastný",
+    "cluster_id": "cl_0079",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 272
+  },
+  {
+    "id": "feel_0173",
+    "name": "melancholický",
+    "cluster_id": "cl_0079",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 273
+  },
+  {
+    "id": "feel_0432",
+    "name": "hloubající",
+    "cluster_id": "cl_0080",
+    "main": "cl_0080",
+    "tier": "free",
+    "sort_order": 274
+  },
+  {
+    "id": "feel_0283",
+    "name": "ruminující",
+    "cluster_id": "cl_0080",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 275
+  },
+  {
+    "id": "feel_0422",
+    "name": "omílající",
+    "cluster_id": "cl_0080",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 276
+  },
+  {
+    "id": "feel_0423",
+    "name": "přemítající",
+    "cluster_id": "cl_0080",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 277
+  },
+  {
+    "id": "feel_0424",
+    "name": "přežvykující myšlenky",
+    "cluster_id": "cl_0080",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 278
+  },
+  {
+    "id": "feel_0126",
+    "name": "pesimistický",
+    "cluster_id": "cl_0081",
+    "main": "cl_0081",
+    "tier": "free",
+    "sort_order": 279
+  },
+  {
+    "id": "feel_0108",
+    "name": "negativní",
+    "cluster_id": "cl_0081",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 280
+  },
+  {
+    "id": "feel_0342",
+    "name": "skeptický",
+    "cluster_id": "cl_0081",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 281
+  },
+  {
+    "id": "feel_0379",
+    "name": "otrávený",
+    "cluster_id": "cl_0082",
+    "main": "cl_0082",
+    "tier": "free",
+    "sort_order": 282
+  },
+  {
+    "id": "feel_0073",
+    "name": "v marastu",
+    "cluster_id": "cl_0082",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 283
+  },
+  {
+    "id": "feel_0207",
+    "name": "ponurý",
+    "cluster_id": "cl_0082",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 284
+  },
+  {
+    "id": "feel_0370",
+    "name": "mrzutý",
+    "cluster_id": "cl_0082",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 285
+  },
+  {
+    "id": "feel_0032",
+    "name": "bez naděje",
+    "cluster_id": "cl_0083",
+    "main": "cl_0083",
+    "tier": "free",
+    "sort_order": 286
+  },
+  {
+    "id": "feel_0123",
+    "name": "odevzdaný",
+    "cluster_id": "cl_0083",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 287
+  },
+  {
+    "id": "feel_0133",
+    "name": "rezignovaný",
+    "cluster_id": "cl_0083",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 288
+  },
+  {
+    "id": "feel_0296",
+    "name": "uzavřený",
+    "cluster_id": "cl_0084",
+    "main": "cl_0084",
+    "tier": "free",
+    "sort_order": 289
+  },
+  {
+    "id": "feel_0397",
+    "name": "introvertní",
+    "cluster_id": "cl_0084",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 290
+  },
+  {
+    "id": "feel_0189",
+    "name": "nevyjádřený",
+    "cluster_id": "cl_0085",
+    "main": "cl_0085",
+    "tier": "free",
+    "sort_order": 291
+  },
+  {
+    "id": "feel_0113",
+    "name": "neschopný říci názor",
+    "cluster_id": "cl_0085",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 292
+  },
+  {
+    "id": "feel_0288",
+    "name": "tichý",
+    "cluster_id": "cl_0086",
+    "main": "cl_0086",
+    "tier": "free",
+    "sort_order": 293
+  },
+  {
+    "id": "feel_0252",
+    "name": "mlčenlivý",
+    "cluster_id": "cl_0086",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 294
+  },
+  {
+    "id": "feel_0264",
+    "name": "neprojevující se",
+    "cluster_id": "cl_0086",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 295
+  },
+  {
+    "id": "feel_0195",
+    "name": "odtažitý",
+    "cluster_id": "cl_0087",
+    "main": "cl_0087",
+    "tier": "free",
+    "sort_order": 296
+  },
+  {
+    "id": "feel_0107",
+    "name": "nedotknutelný",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 297
+  },
+  {
+    "id": "feel_0124",
+    "name": "odpojený",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 298
+  },
+  {
+    "id": "feel_0147",
+    "name": "vzdálený",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 299
+  },
+  {
+    "id": "feel_0194",
+    "name": "odpoutaný",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 300
+  },
+  {
+    "id": "feel_0282",
+    "name": "rezervovaný",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 301
+  },
+  {
+    "id": "feel_0331",
+    "name": "odmítavý",
+    "cluster_id": "cl_0087",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 302
+  },
+  {
+    "id": "feel_0412",
+    "name": "racionální",
+    "cluster_id": "cl_0088",
+    "main": "cl_0088",
+    "tier": "free",
+    "sort_order": 303
+  },
+  {
+    "id": "feel_0364",
+    "name": "analyzující",
+    "cluster_id": "cl_0088",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 304
+  },
+  {
+    "id": "feel_0526",
+    "name": "hloubavý",
+    "cluster_id": "cl_0088",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 305
+  },
+  {
+    "id": "feel_0171",
+    "name": "lhostejný",
+    "cluster_id": "cl_0089",
+    "main": "cl_0089",
+    "tier": "free",
+    "sort_order": 306
+  },
+  {
+    "id": "feel_0138",
+    "name": "splachovací",
+    "cluster_id": "cl_0089",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 307
+  },
+  {
+    "id": "feel_0314",
+    "name": "flegmatický",
+    "cluster_id": "cl_0089",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 308
+  },
+  {
+    "id": "feel_0168",
+    "name": "chladný",
+    "cluster_id": "cl_0090",
+    "main": "cl_0090",
+    "tier": "free",
+    "sort_order": 309
+  },
+  {
+    "id": "feel_0088",
+    "name": "bez citu",
+    "cluster_id": "cl_0090",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 310
+  },
+  {
+    "id": "feel_0145",
+    "name": "vyprahlý",
+    "cluster_id": "cl_0090",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 311
+  },
+  {
+    "id": "feel_0163",
+    "name": "emočně chladný",
+    "cluster_id": "cl_0090",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 312
+  },
+  {
+    "id": "feel_0199",
+    "name": "otupělý",
+    "cluster_id": "cl_0090",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 313
+  },
+  {
+    "id": "feel_0355",
+    "name": "zatvrzelý",
+    "cluster_id": "cl_0090",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 314
+  },
+  {
+    "id": "feel_0184",
+    "name": "nesoucitný",
+    "cluster_id": "cl_0091",
+    "main": "cl_0091",
+    "tier": "free",
+    "sort_order": 315
+  },
+  {
+    "id": "feel_0029",
+    "name": "bez empatie",
+    "cluster_id": "cl_0091",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 316
+  },
+  {
+    "id": "feel_0092",
+    "name": "bezcitný",
+    "cluster_id": "cl_0091",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 317
+  },
+  {
+    "id": "feel_0257",
+    "name": "necitlivý",
+    "cluster_id": "cl_0091",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 318
+  },
+  {
+    "id": "feel_0418",
+    "name": "vyčerpaný",
+    "cluster_id": "cl_0092",
+    "main": "cl_0092",
+    "tier": "free",
+    "sort_order": 319
+  },
+  {
+    "id": "feel_0405",
+    "name": "unavený",
+    "cluster_id": "cl_0092",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 320
+  },
+  {
+    "id": "feel_0414",
+    "name": "bez energie",
+    "cluster_id": "cl_0092",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 321
+  },
+  {
+    "id": "feel_0269",
+    "name": "nutkavý",
+    "cluster_id": "cl_0093",
+    "main": "cl_0093",
+    "tier": "free",
+    "sort_order": 322
+  },
+  {
+    "id": "feel_0421",
+    "name": "obsesivní",
+    "cluster_id": "cl_0093",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 323
+  },
+  {
+    "id": "feel_0427",
+    "name": "posedlý",
+    "cluster_id": "cl_0093",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 324
+  },
+  {
+    "id": "feel_0203",
+    "name": "pod tlakem",
+    "cluster_id": "cl_0094",
+    "main": "cl_0094",
+    "tier": "free",
+    "sort_order": 325
+  },
+  {
+    "id": "feel_0284",
+    "name": "sebekontrolující",
+    "cluster_id": "cl_0094",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 326
+  },
+  {
+    "id": "feel_0289",
+    "name": "tlačící",
+    "cluster_id": "cl_0094",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 327
+  },
+  {
+    "id": "feel_0281",
+    "name": "přetížený",
+    "cluster_id": "cl_0095",
+    "main": "cl_0095",
+    "tier": "free",
+    "sort_order": 328
+  },
+  {
+    "id": "feel_0301",
+    "name": "přepracovaný",
+    "cluster_id": "cl_0095",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 329
+  },
+  {
+    "id": "feel_0354",
+    "name": "zahlcený",
+    "cluster_id": "cl_0095",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 330
+  },
+  {
+    "id": "feel_0390",
+    "name": "uspěchaný",
+    "cluster_id": "cl_0095",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 331
+  },
+  {
+    "id": "feel_0249",
+    "name": "kontrolující",
+    "cluster_id": "cl_0095",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 332
+  },
+  {
+    "id": "feel_0393",
+    "name": "zodpovědný",
+    "cluster_id": "cl_0096",
+    "main": "cl_0096",
+    "tier": "free",
+    "sort_order": 333
+  },
+  {
+    "id": "feel_0255",
+    "name": "náročný",
+    "cluster_id": "cl_0097",
+    "main": "cl_0097",
+    "tier": "free",
+    "sort_order": 334
+  },
+  {
+    "id": "feel_0142",
+    "name": "věčně nespokojený",
+    "cluster_id": "cl_0097",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 335
+  },
+  {
+    "id": "feel_0402",
+    "name": "plný očekávání",
+    "cluster_id": "cl_0097",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 336
+  },
+  {
+    "id": "feel_0347",
+    "name": "perfekcionistický",
+    "cluster_id": "cl_0098",
+    "main": "cl_0098",
+    "tier": "free",
+    "sort_order": 337
+  },
+  {
+    "id": "feel_0222",
+    "name": "usilující o dokonalost",
+    "cluster_id": "cl_0098",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 338
+  },
+  {
+    "id": "feel_0343",
+    "name": "soudící",
+    "cluster_id": "cl_0099",
+    "main": "cl_0099",
+    "tier": "free",
+    "sort_order": 339
+  },
+  {
+    "id": "feel_0330",
+    "name": "obviňující",
+    "cluster_id": "cl_0099",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 340
+  },
+  {
+    "id": "feel_0327",
+    "name": "nepřátelský",
+    "cluster_id": "cl_0100",
+    "main": "cl_0100",
+    "tier": "free",
+    "sort_order": 341
+  },
+  {
+    "id": "feel_0325",
+    "name": "nenávistný",
+    "cluster_id": "cl_0100",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 342
+  },
+  {
+    "id": "feel_0334",
+    "name": "pomstychtivý",
+    "cluster_id": "cl_0100",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 343
+  },
+  {
+    "id": "feel_0358",
+    "name": "zlomyslný",
+    "cluster_id": "cl_0100",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 344
+  },
+  {
+    "id": "feel_0392",
+    "name": "znechucený",
+    "cluster_id": "cl_0101",
+    "main": "cl_0101",
+    "tier": "free",
+    "sort_order": 345
+  },
+  {
+    "id": "feel_0391",
+    "name": "zhnusený",
+    "cluster_id": "cl_0101",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 346
+  },
+  {
+    "id": "feel_0320",
+    "name": "kritický",
+    "cluster_id": "cl_0102",
+    "main": "cl_0102",
+    "tier": "free",
+    "sort_order": 347
+  },
+  {
+    "id": "feel_0071",
+    "name": "sebekritický",
+    "cluster_id": "cl_0102",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 348
+  },
+  {
+    "id": "feel_0213",
+    "name": "přísný",
+    "cluster_id": "cl_0102",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 349
+  },
+  {
+    "id": "feel_0328",
+    "name": "netolerantní",
+    "cluster_id": "cl_0102",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 350
+  },
+  {
+    "id": "feel_0345",
+    "name": "stěžující si",
+    "cluster_id": "cl_0102",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 351
+  },
+  {
+    "id": "feel_0074",
+    "name": "vinný",
+    "cluster_id": "cl_0103",
+    "main": "cl_0103",
+    "tier": "free",
+    "sort_order": 352
+  },
+  {
+    "id": "feel_0061",
+    "name": "odsouzený",
+    "cluster_id": "cl_0103",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 353
+  },
+  {
+    "id": "feel_0127",
+    "name": "plný výčitek",
+    "cluster_id": "cl_0103",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 354
+  },
+  {
+    "id": "feel_0141",
+    "name": "trestaný",
+    "cluster_id": "cl_0103",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 355
+  },
+  {
+    "id": "feel_0318",
+    "name": "kajícný",
+    "cluster_id": "cl_0103",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 356
+  },
+  {
+    "id": "feel_0316",
+    "name": "hádavý",
+    "cluster_id": "cl_0104",
+    "main": "cl_0104",
+    "tier": "free",
+    "sort_order": 357
+  },
+  {
+    "id": "feel_0319",
+    "name": "konfliktní",
+    "cluster_id": "cl_0104",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 358
+  },
+  {
+    "id": "feel_0337",
+    "name": "provokativní",
+    "cluster_id": "cl_0104",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 359
+  },
+  {
+    "id": "feel_0292",
+    "name": "ubližující",
+    "cluster_id": "cl_0105",
+    "main": "cl_0105",
+    "tier": "free",
+    "sort_order": 360
+  },
+  {
+    "id": "feel_0251",
+    "name": "manipulující",
+    "cluster_id": "cl_0105",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 361
+  },
+  {
+    "id": "feel_0361",
+    "name": "zraňující",
+    "cluster_id": "cl_0105",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 362
+  },
+  {
+    "id": "feel_0169",
+    "name": "krutý",
+    "cluster_id": "cl_0106",
+    "main": "cl_0106",
+    "tier": "free",
+    "sort_order": 363
+  },
+  {
+    "id": "feel_0219",
+    "name": "terorizující",
+    "cluster_id": "cl_0106",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 364
+  },
+  {
+    "id": "feel_0221",
+    "name": "trestající",
+    "cluster_id": "cl_0106",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 365
+  },
+  {
+    "id": "feel_0261",
+    "name": "nelítostný",
+    "cluster_id": "cl_0106",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 366
+  },
+  {
+    "id": "feel_0134",
+    "name": "sebedestruktivní",
+    "cluster_id": "cl_0107",
+    "main": "cl_0107",
+    "tier": "free",
+    "sort_order": 367
+  },
+  {
+    "id": "feel_0136",
+    "name": "sebetrestající",
+    "cluster_id": "cl_0107",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 368
+  },
+  {
+    "id": "feel_0384",
+    "name": "rozhněvaný",
+    "cluster_id": "cl_0108",
+    "main": "cl_0108",
+    "tier": "free",
+    "sort_order": 369
+  },
+  {
+    "id": "feel_0333",
+    "name": "plný hněvu",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 370
+  },
+  {
+    "id": "feel_0339",
+    "name": "rozhořčený",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 371
+  },
+  {
+    "id": "feel_0353",
+    "name": "vzteklý",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 372
+  },
+  {
+    "id": "feel_0362",
+    "name": "zuřivý",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 373
+  },
+  {
+    "id": "feel_0363",
+    "name": "agresivní",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 374
+  },
+  {
+    "id": "feel_0398",
+    "name": "naštvaný",
+    "cluster_id": "cl_0108",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 375
+  },
+  {
+    "id": "feel_0293",
+    "name": "ukřivděný",
+    "cluster_id": "cl_0109",
+    "main": "cl_0109",
+    "tier": "free",
+    "sort_order": 376
+  },
+  {
+    "id": "feel_0191",
+    "name": "obviněný",
+    "cluster_id": "cl_0109",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 377
+  },
+  {
+    "id": "feel_0231",
+    "name": "zahořklý",
+    "cluster_id": "cl_0109",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 378
+  },
+  {
+    "id": "feel_0241",
+    "name": "cynický",
+    "cluster_id": "cl_0109",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 379
+  },
+  {
+    "id": "feel_0350",
+    "name": "uražený",
+    "cluster_id": "cl_0110",
+    "main": "cl_0110",
+    "tier": "free",
+    "sort_order": 380
+  },
+  {
+    "id": "feel_0244",
+    "name": "dotčený",
+    "cluster_id": "cl_0110",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 381
+  },
+  {
+    "id": "feel_0247",
+    "name": "chaotický",
+    "cluster_id": "cl_0111",
+    "main": "cl_0111",
+    "tier": "free",
+    "sort_order": 382
+  },
+  {
+    "id": "feel_0095",
+    "name": "bláznivý",
+    "cluster_id": "cl_0111",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 383
+  },
+  {
+    "id": "feel_0359",
+    "name": "zmatený",
+    "cluster_id": "cl_0111",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 384
+  },
+  {
+    "id": "feel_0365",
+    "name": "dezorientovaný",
+    "cluster_id": "cl_0111",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 385
+  },
+  {
+    "id": "feel_0386",
+    "name": "roztěkaný",
+    "cluster_id": "cl_0111",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 386
+  },
+  {
+    "id": "feel_0001",
+    "name": "bez identity",
+    "cluster_id": "cl_0112",
+    "main": "cl_0112",
+    "tier": "free",
+    "sort_order": 387
+  },
+  {
+    "id": "feel_0016",
+    "name": "nevím, kdo jsem",
+    "cluster_id": "cl_0112",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 388
+  },
+  {
+    "id": "feel_0413",
+    "name": "bez nálady",
+    "cluster_id": "cl_0113",
+    "main": "cl_0113",
+    "tier": "free",
+    "sort_order": 389
+  },
+  {
+    "id": "feel_0089",
+    "name": "bez chuti do života",
+    "cluster_id": "cl_0113",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 390
+  },
+  {
+    "id": "feel_0157",
+    "name": "anhedonický",
+    "cluster_id": "cl_0113",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 391
+  },
+  {
+    "id": "feel_0068",
+    "name": "prázdný",
+    "cluster_id": "cl_0114",
+    "main": "cl_0114",
+    "tier": "free",
+    "sort_order": 392
+  },
+  {
+    "id": "feel_0026",
+    "name": "vymazaný",
+    "cluster_id": "cl_0114",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 393
+  },
+  {
+    "id": "feel_0031",
+    "name": "bez smyslu",
+    "cluster_id": "cl_0115",
+    "main": "cl_0115",
+    "tier": "free",
+    "sort_order": 394
+  },
+  {
+    "id": "feel_0049",
+    "name": "nesmyslný",
+    "cluster_id": "cl_0115",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 395
+  },
+  {
+    "id": "feel_0056",
+    "name": "nihilistický",
+    "cluster_id": "cl_0115",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 396
+  },
+  {
+    "id": "feel_0262",
+    "name": "nemotivovaný",
+    "cluster_id": "cl_0116",
+    "main": "cl_0116",
+    "tier": "free",
+    "sort_order": 397
+  },
+  {
+    "id": "feel_0267",
+    "name": "nezaujatý",
+    "cluster_id": "cl_0116",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 398
+  },
+  {
+    "id": "feel_0360",
+    "name": "znuděný",
+    "cluster_id": "cl_0116",
+    "main": "0",
+    "tier": "premium",
+    "sort_order": 399
+  }
+]
