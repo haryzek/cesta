@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje cesta — Admin</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #1a1a2e;
+  --bg-card: #16213e;
+  --bg-input: #0f3460;
+  --bg-hover: #1a3a6e;
+  --accent: #e94560;
+  --accent-dim: #c73a52;
+  --accent-glow: rgba(233, 69, 96, 0.15);
+  --text: #eee;
+  --text-dim: #8899aa;
+  --text-muted: #556677;
+  --border: #2a3a5e;
+  --success: #4ecdc4;
+  --warning: #f7b731;
+  --radius: 10px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* === NAV === */
+.topbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.topbar-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* === SIDEBAR === */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 53px);
+}
+
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: var(--bg-card);
+  border-right: 1px solid var(--border);
+  padding: 16px 0;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-item:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.sidebar-item.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.sidebar-item .icon {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+}
+
+.sidebar-item .count {
+  margin-left: auto;
+  background: var(--bg-input);
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* === MAIN === */
+.main {
+  flex: 1;
+  padding: 24px;
+  max-width: 900px;
+  overflow-y: auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* === BUTTONS === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+.btn-primary:hover { background: var(--accent-dim); }
+
+.btn-secondary {
+  background: var(--bg-input);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { background: var(--bg-hover); }
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn-danger:hover { background: var(--accent-glow); }
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+.btn-icon:hover { color: var(--text); }
+
+/* === ITEM LIST === */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.15s;
+}
+
+.item-row:hover {
+  border-color: var(--accent);
+}
+
+.item-row.dragging {
+  opacity: 0.5;
+  border-color: var(--accent);
+}
+
+.item-drag {
+  cursor: grab;
+  color: var(--text-muted);
+  font-size: 1rem;
+  user-select: none;
+  touch-action: none;
+}
+.item-drag:active { cursor: grabbing; }
+
+.item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-meta {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.item-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.badge-free { background: var(--success); color: #1a1a2e; }
+.badge-premium { background: var(--warning); color: #1a1a2e; }
+.badge-draft { background: var(--text-muted); color: var(--bg); }
+
+/* === FORM / EDITOR === */
+.editor-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+  overflow-y: auto;
+}
+
+.editor-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 680px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.editor-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.15s;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.form-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+.form-row > .form-group { flex: 1; }
+
+.form-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+/* tags input */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 10px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-height: 42px;
+  cursor: text;
+}
+
+.tags-container:focus-within {
+  border-color: var(--accent);
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}
+
+.tag-chip .remove {
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+.tag-chip .remove:hover { color: var(--accent); }
+
+.tags-input {
+  border: none;
+  background: none;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+  flex: 1;
+  min-width: 80px;
+}
+
+/* === SEARCH === */
+.search-bar {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+/* === TOAST === */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--success);
+  color: var(--bg);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 0.9rem;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === EMPTY STATE === */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+.empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
+.empty-state p { font-size: 0.95rem; }
+
+/* === CONFIRM DIALOG === */
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.confirm-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.confirm-box p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  
+  .sidebar {
+    position: fixed;
+    left: -260px;
+    top: 53px;
+    bottom: 0;
+    z-index: 150;
+    width: 260px;
+    transition: left 0.25s;
+    box-shadow: var(--shadow);
+  }
+  
+  .sidebar.open { left: 0; }
+  
+  .sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 53px;
+    background: rgba(0,0,0,0.4);
+    z-index: 140;
+  }
+  .sidebar-backdrop.show { display: block; }
+  
+  .main { padding: 16px; }
+  
+  .form-row { flex-direction: column; gap: 0; }
+  
+  .editor-overlay { padding: 16px 8px; }
+  .editor-panel { padding: 20px 16px; }
+  
+  .section-header { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <button class="hamburger" onclick="toggleSidebar()">☰</button>
+  <div class="topbar-logo">☀ Moje cesta — Admin</div>
+  <div class="topbar-actions">
+    <button class="btn btn-secondary btn-small" onclick="importJSON()">📥 Import</button>
+    <button class="btn btn-primary btn-small" onclick="exportJSON()">📤 Export JSON</button>
+  </div>
+</div>
+
+<div class="sidebar-backdrop" id="sidebarBackdrop" onclick="toggleSidebar()"></div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-item active" data-section="clusters" onclick="switchSection('clusters')">
+      <span class="icon">🧩</span> Klastry <span class="count" id="count-clusters">0</span>
+    </div>
+    <div class="sidebar-item" data-section="feelings" onclick="switchSection('feelings')">
+      <span class="icon">💭</span> Pocity <span class="count" id="count-feelings">0</span>
+    </div>
+    <div class="sidebar-item" data-section="reframings" onclick="switchSection('reframings')">
+      <span class="icon">🔄</span> Přerámování <span class="count" id="count-reframings">0</span>
+    </div>
+    <div class="sidebar-item" data-section="articles" onclick="switchSection('articles')">
+      <span class="icon">📝</span> Mikročlánky <span class="count" id="count-articles">0</span>
+    </div>
+    <div class="sidebar-item" data-section="symptoms" onclick="switchSection('symptoms')">
+      <span class="icon">🫀</span> Tělo <span class="count" id="count-symptoms">0</span>
+    </div>
+    <div class="sidebar-item" data-section="quotes" onclick="switchSection('quotes')">
+      <span class="icon">💬</span> Citáty <span class="count" id="count-quotes">0</span>
+    </div>
+    <div class="sidebar-item" data-section="questions" onclick="switchSection('questions')">
+      <span class="icon">❓</span> Otázky <span class="count" id="count-questions">0</span>
+    </div>
+    <div class="sidebar-item" data-section="exercises" onclick="switchSection('exercises')">
+      <span class="icon">🧘</span> Cvičení <span class="count" id="count-exercises">0</span>
+    </div>
+    <div class="sidebar-item" data-section="crisis" onclick="switchSection('crisis')">
+      <span class="icon">🆘</span> Krizovka <span class="count" id="count-crisis">0</span>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main" id="mainContent"></main>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- HIDDEN FILE INPUT -->
+<input type="file" id="fileInput" accept=".json" style="display:none" onchange="handleImport(event)">
+
+<script>
+// ============================================================
+// DATA STORE
+// ============================================================
+const STORAGE_KEY = 'cesta_admin_data';
+
+const SECTIONS = {
+  clusters:   { label: 'Klastry',      icon: '🧩', prefix: 'cl' },
+  feelings:   { label: 'Pocity',       icon: '💭', prefix: 'feel' },
+  reframings: { label: 'Přerámování',  icon: '🔄', prefix: 'ref' },
+  articles:   { label: 'Mikročlánky',  icon: '📝', prefix: 'mic' },
+  symptoms:   { label: 'Tělesné příznaky', icon: '🫀', prefix: 'body' },
+  quotes:     { label: 'Citáty',       icon: '💬', prefix: 'quote' },
+  questions:  { label: 'Otázky',       icon: '❓', prefix: 'q' },
+  exercises:  { label: 'Cvičení',      icon: '🧘', prefix: 'ex' },
+  crisis:     { label: 'Krizovka',     icon: '🆘', prefix: 'crisis' },
+};
+
+let data = loadData();
+let currentSection = 'clusters';
+let searchTerm = '';
+
+function loadData() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    try { return JSON.parse(saved); } catch(e) {}
+  }
+  return {
+    clusters: [], feelings: [], reframings: [], articles: [],
+    symptoms: [], quotes: [], questions: [], exercises: [], crisis: []
+  };
+}
+
+function saveData() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  updateCounts();
+}
+
+function nextId(section) {
+  const prefix = SECTIONS[section].prefix;
+  const nums = data[section].map(item => {
+    const match = item.id.match(/_(\d+)$/);
+    return match ? parseInt(match[1]) : 0;
+  });
+  const next = nums.length > 0 ? Math.max(...nums) + 1 : 1;
+  return `${prefix}_${String(next).padStart(3, '0')}`;
+}
+
+function nextSortOrder(section) {
+  const items = data[section];
+  if (items.length === 0) return 1;
+  return Math.max(...items.map(i => i.sort_order || 0)) + 1;
+}
+
+// ============================================================
+// FIELD DEFINITIONS FOR EACH SECTION
+// ============================================================
+function getFields(section) {
+  switch(section) {
+    case 'clusters': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'name', label: 'Název', type: 'text', required: true },
+      { key: 'schemas', label: 'Schémata', type: 'tags', hint: 'EMS kódy oddělené Enterem' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+    ];
+    case 'feelings': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'name', label: 'Název pocitu', type: 'text', required: true },
+      { key: 'cluster_id', label: 'Klastr', type: 'ref', refSection: 'clusters', required: true },
+    ];
+    case 'reframings': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'cluster_ids', label: 'Klastry', type: 'ref_multi', refSection: 'clusters', required: true },
+      { key: 'text', label: 'Text přerámování', type: 'textarea', required: true },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'articles': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'title', label: 'Název', type: 'text', required: true },
+      { key: 'slug', label: 'Slug', type: 'slug', source: 'title' },
+      { key: 'perex', label: 'Perex', type: 'textarea_short', hint: '1-2 věty pro zobrazení v seznamu' },
+      { key: 'body', label: 'Tělo článku', type: 'textarea', hint: 'Markdown: ## nadpis, **tučně**, *kurzíva*' },
+      { key: 'tags', label: 'Tagy', type: 'tags' },
+      { key: 'schemas', label: 'Schémata', type: 'tags', hint: 'EMS kódy' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'published_at', label: 'Datum publikace', type: 'date' },
+      { key: 'reading_time', label: 'Doba čtení (min)', type: 'number', default: 3 },
+      { key: 'status', label: 'Stav', type: 'select', options: ['draft','published'], default: 'draft' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'symptoms': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'name', label: 'Název příznaku', type: 'text', required: true },
+      { key: 'body', label: 'Obsah', type: 'textarea', hint: 'Markdown: popis, psychosomatika, spouštěče, kdy k lékaři' },
+      { key: 'schemas', label: 'Schémata', type: 'tags', hint: 'Volitelné, pro budoucí propojení' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'quotes': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'text', label: 'Citát', type: 'textarea_short', required: true },
+      { key: 'author', label: 'Autor', type: 'text' },
+      { key: 'year', label: 'Letopočet', type: 'text', hint: 'Např. "1946" nebo "4. stol. př. n. l."' },
+      { key: 'schemas', label: 'Schémata', type: 'tags' },
+      { key: 'tags', label: 'Tagy', type: 'tags' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'questions': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'text', label: 'Otázka', type: 'textarea_short', required: true },
+      { key: 'schemas', label: 'Schémata', type: 'tags' },
+      { key: 'tags', label: 'Tagy', type: 'tags' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'exercises': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'name', label: 'Název', type: 'text', required: true },
+      { key: 'duration', label: 'Minutáž', type: 'number', default: 10 },
+      { key: 'schemas', label: 'Schémata', type: 'tags' },
+      { key: 'tags', label: 'Tagy', type: 'tags' },
+      { key: 'tier', label: 'Tier', type: 'select', options: ['free','premium'], default: 'free' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'info', label: 'Info (ℹ️ ikona)', type: 'textarea', hint: 'Markdown: k čemu, mindset, bariéry, deníček' },
+      { key: 'body', label: 'Postup', type: 'textarea', hint: 'Markdown: kroky, nadpisy, odrážky' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+    case 'crisis': return [
+      { key: 'id', label: 'ID', type: 'id' },
+      { key: 'type', label: 'Typ', type: 'select', options: ['grounding','breathing','reframing','contact'], required: true },
+      { key: 'name', label: 'Název', type: 'text', required: true },
+      { key: 'body', label: 'Obsah', type: 'textarea', hint: 'Markdown: stručný postup' },
+      { key: 'sort_order', label: 'Pořadí', type: 'sort_order' },
+      { key: 'added_at', label: 'Přidáno', type: 'auto_date' },
+    ];
+  }
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+function switchSection(section) {
+  currentSection = section;
+  searchTerm = '';
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.section === section);
+  });
+  // close mobile sidebar
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarBackdrop').classList.remove('show');
+  renderList();
+}
+
+function updateCounts() {
+  Object.keys(SECTIONS).forEach(s => {
+    const el = document.getElementById(`count-${s}`);
+    if (el) el.textContent = data[s].length;
+  });
+}
+
+function getDisplayTitle(section, item) {
+  switch(section) {
+    case 'clusters': return item.name;
+    case 'feelings': return item.name;
+    case 'reframings': return item.text ? item.text.substring(0, 80) + (item.text.length > 80 ? '…' : '') : '(prázdné)';
+    case 'articles': return item.title || '(bez názvu)';
+    case 'symptoms': return item.name;
+    case 'quotes': return item.text ? `"${item.text.substring(0, 60)}${item.text.length > 60 ? '…' : ''}"` : '(prázdné)';
+    case 'questions': return item.text ? item.text.substring(0, 80) + (item.text.length > 80 ? '…' : '') : '(prázdné)';
+    case 'exercises': return item.name || '(bez názvu)';
+    case 'crisis': return item.name || '(bez názvu)';
+    default: return item.id;
+  }
+}
+
+function getDisplayMeta(section, item) {
+  const parts = [];
+  parts.push(item.id);
+  
+  if (item.tier) {
+    parts.push(`<span class="badge badge-${item.tier}">${item.tier}</span>`);
+  }
+  if (section === 'articles' && item.status) {
+    parts.push(`<span class="badge ${item.status === 'draft' ? 'badge-draft' : 'badge-free'}">${item.status}</span>`);
+  }
+  if (section === 'feelings' && item.cluster_id) {
+    const cl = data.clusters.find(c => c.id === item.cluster_id);
+    parts.push(cl ? `→ ${cl.name}` : `→ ${item.cluster_id}`);
+  }
+  if (section === 'reframings' && item.cluster_ids) {
+    const names = item.cluster_ids.map(cid => {
+      const cl = data.clusters.find(c => c.id === cid);
+      return cl ? cl.name : cid;
+    });
+    parts.push(`→ ${names.join(', ')}`);
+  }
+  if (section === 'quotes' && item.author) parts.push(item.author);
+  if (section === 'exercises' && item.duration) parts.push(`${item.duration} min`);
+  if (section === 'crisis' && item.type) parts.push(item.type);
+  if (item.schemas && item.schemas.length) parts.push(item.schemas.join(', '));
+  if (item.added_at) parts.push(`📅 ${item.added_at}`);
+  
+  return parts.join(' &nbsp;·&nbsp; ');
+}
+
+function renderList() {
+  const main = document.getElementById('mainContent');
+  const sec = SECTIONS[currentSection];
+  let items = data[currentSection];
+  
+  // sort by sort_order if exists, then by id
+  items = [...items].sort((a, b) => {
+    if (a.sort_order !== undefined && b.sort_order !== undefined) return a.sort_order - b.sort_order;
+    return a.id.localeCompare(b.id);
+  });
+  
+  // filter
+  if (searchTerm) {
+    const term = searchTerm.toLowerCase();
+    items = items.filter(item => {
+      return JSON.stringify(item).toLowerCase().includes(term);
+    });
+  }
+
+  const hasSortOrder = getFields(currentSection).some(f => f.key === 'sort_order');
+  
+  let html = `
+    <div class="section-header">
+      <div class="section-title">${sec.icon} ${sec.label}</div>
+      <button class="btn btn-primary" onclick="openEditor()">+ Přidat</button>
+    </div>
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Hledat v ${sec.label.toLowerCase()}…" 
+             value="${searchTerm}" oninput="searchTerm=this.value; renderList()">
+    </div>
+  `;
+
+  if (items.length === 0) {
+    html += `
+      <div class="empty-state">
+        <div class="icon">${sec.icon}</div>
+        <p>${searchTerm ? 'Nic nenalezeno.' : `Zatím žádné ${sec.label.toLowerCase()}. Přidej první!`}</p>
+      </div>
+    `;
+  } else {
+    html += '<div class="item-list" id="itemList">';
+    items.forEach((item, idx) => {
+      html += `
+        <div class="item-row" draggable="${hasSortOrder}" data-id="${item.id}"
+             ${hasSortOrder ? `ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)" ondragend="onDragEnd(event)"` : ''}>
+          ${hasSortOrder ? '<span class="item-drag" title="Přetáhni">⠿</span>' : ''}
+          <div class="item-info">
+            <div class="item-title">${getDisplayTitle(currentSection, item)}</div>
+            <div class="item-meta">${getDisplayMeta(currentSection, item)}</div>
+          </div>
+          <div class="item-actions">
+            <button class="btn-icon" title="Duplikovat" onclick="duplicateItem('${item.id}')">📋</button>
+            <button class="btn-icon" title="Upravit" onclick="openEditor('${item.id}')">✏️</button>
+            <button class="btn-icon" title="Smazat" onclick="confirmDelete('${item.id}')">🗑️</button>
+          </div>
+        </div>
+      `;
+    });
+    html += '</div>';
+  }
+
+  main.innerHTML = html;
+}
+
+// ============================================================
+// EDITOR
+// ============================================================
+function openEditor(editId) {
+  const section = currentSection;
+  const fields = getFields(section);
+  const isNew = !editId;
+  const item = isNew ? {} : data[section].find(i => i.id === editId);
+  if (!item && !isNew) return;
+
+  let html = `
+    <div class="editor-overlay" onclick="if(event.target===this)closeEditor()">
+      <div class="editor-panel">
+        <div class="editor-title">
+          <span>${isNew ? 'Nový' : 'Upravit'}: ${SECTIONS[section].label}</span>
+          <button class="btn-icon" onclick="closeEditor()" style="font-size:1.3rem">✕</button>
+        </div>
+        <div id="editorForm">
+  `;
+
+  fields.forEach(field => {
+    const val = isNew ? (field.default !== undefined ? field.default : '') : (item[field.key] !== undefined ? item[field.key] : '');
+    
+    if (field.type === 'id') {
+      const idVal = isNew ? nextId(section) : val;
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" value="${idVal}" readonly 
+                 style="opacity:0.6; cursor:not-allowed">
+        </div>
+      `;
+    } else if (field.type === 'sort_order') {
+      const soVal = isNew ? nextSortOrder(section) : val;
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" type="number" value="${soVal}" min="1">
+          <div class="form-hint">Řazení drag & drop automaticky přepočítá</div>
+        </div>
+      `;
+    } else if (field.type === 'text') {
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}${field.required ? ' *' : ''}</label>
+          <input class="form-input" data-key="${field.key}" value="${escHtml(String(val))}" 
+                 ${field.key === 'title' ? 'oninput="autoSlug(this)"' : ''}>
+          ${field.hint ? `<div class="form-hint">${field.hint}</div>` : ''}
+        </div>
+      `;
+    } else if (field.type === 'slug') {
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" value="${escHtml(String(val))}" id="slugField">
+          <div class="form-hint">Generuje se automaticky z názvu</div>
+        </div>
+      `;
+    } else if (field.type === 'number') {
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" type="number" value="${val}" min="0">
+        </div>
+      `;
+    } else if (field.type === 'date') {
+      const dateVal = val || new Date().toISOString().split('T')[0];
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" type="date" value="${dateVal}">
+        </div>
+      `;
+    } else if (field.type === 'auto_date') {
+      const dateVal = val || new Date().toISOString().split('T')[0];
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <input class="form-input" data-key="${field.key}" type="date" value="${dateVal}" readonly
+                 style="opacity:0.6; cursor:not-allowed">
+          <div class="form-hint">Vyplní se automaticky při vytvoření</div>
+        </div>
+      `;
+    } else if (field.type === 'select') {
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}${field.required ? ' *' : ''}</label>
+          <select class="form-select" data-key="${field.key}">
+            ${field.options.map(o => `<option value="${o}" ${val === o ? 'selected' : ''}>${o}</option>`).join('')}
+          </select>
+        </div>
+      `;
+    } else if (field.type === 'textarea' || field.type === 'textarea_short') {
+      const rows = field.type === 'textarea_short' ? 3 : 8;
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}${field.required ? ' *' : ''}</label>
+          <textarea class="form-textarea" data-key="${field.key}" rows="${rows}">${escHtml(String(val))}</textarea>
+          ${field.hint ? `<div class="form-hint">${field.hint}</div>` : ''}
+        </div>
+      `;
+    } else if (field.type === 'tags') {
+      const tags = Array.isArray(val) ? val : [];
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}</label>
+          <div class="tags-container" data-key="${field.key}" onclick="this.querySelector('input').focus()">
+            ${tags.map(t => `<span class="tag-chip">${escHtml(t)}<span class="remove" onclick="removeTag(this)">×</span></span>`).join('')}
+            <input class="tags-input" placeholder="Zadej a stiskni Enter" onkeydown="handleTagKey(event, this)">
+          </div>
+          ${field.hint ? `<div class="form-hint">${field.hint}</div>` : ''}
+        </div>
+      `;
+    } else if (field.type === 'ref') {
+      const options = data[field.refSection] || [];
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}${field.required ? ' *' : ''}</label>
+          <select class="form-select" data-key="${field.key}">
+            <option value="">— vyber —</option>
+            ${options.map(o => `<option value="${o.id}" ${val === o.id ? 'selected' : ''}>${o.name || o.id} (${o.id})</option>`).join('')}
+          </select>
+        </div>
+      `;
+    } else if (field.type === 'ref_multi') {
+      const options = data[field.refSection] || [];
+      const selected = Array.isArray(val) ? val : [];
+      html += `
+        <div class="form-group">
+          <label class="form-label">${field.label}${field.required ? ' *' : ''}</label>
+          <div class="tags-container" data-key="${field.key}" data-type="ref_multi" data-ref="${field.refSection}">
+            ${selected.map(sid => {
+              const ref = options.find(o => o.id === sid);
+              const label = ref ? (ref.name || ref.id) : sid;
+              return `<span class="tag-chip" data-value="${sid}">${escHtml(label)}<span class="remove" onclick="removeTag(this)">×</span></span>`;
+            }).join('')}
+          </div>
+          <select class="form-select" style="margin-top:6px" onchange="addRefTag(this, '${field.key}')">
+            <option value="">+ Přidat klastr…</option>
+            ${options.map(o => `<option value="${o.id}">${o.name || o.id} (${o.id})</option>`).join('')}
+          </select>
+        </div>
+      `;
+    }
+  });
+
+  html += `
+        </div>
+        <div class="form-footer">
+          <button class="btn btn-secondary" onclick="closeEditor()">Zrušit</button>
+          <button class="btn btn-primary" onclick="saveItem('${section}', ${isNew ? 'null' : `'${editId}'`})">
+            ${isNew ? 'Vytvořit' : 'Uložit'}
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+function closeEditor() {
+  const overlay = document.querySelector('.editor-overlay');
+  if (overlay) overlay.remove();
+}
+
+function saveItem(section, editId) {
+  const fields = getFields(section);
+  const item = {};
+  
+  fields.forEach(field => {
+    if (field.type === 'tags') {
+      const container = document.querySelector(`[data-key="${field.key}"].tags-container`);
+      if (container) {
+        item[field.key] = [...container.querySelectorAll('.tag-chip')].map(chip => {
+          return chip.textContent.replace('×', '').trim();
+        });
+      } else {
+        item[field.key] = [];
+      }
+    } else if (field.type === 'ref_multi') {
+      const container = document.querySelector(`[data-key="${field.key}"][data-type="ref_multi"]`);
+      if (container) {
+        item[field.key] = [...container.querySelectorAll('.tag-chip')].map(chip => chip.dataset.value);
+      } else {
+        item[field.key] = [];
+      }
+    } else if (field.type === 'number' || field.type === 'sort_order') {
+      const el = document.querySelector(`[data-key="${field.key}"]`);
+      item[field.key] = el ? parseInt(el.value) || 0 : 0;
+    } else {
+      const el = document.querySelector(`[data-key="${field.key}"]`);
+      item[field.key] = el ? el.value : '';
+    }
+  });
+  
+  // validation
+  const required = fields.filter(f => f.required);
+  for (const f of required) {
+    const val = item[f.key];
+    if (!val || (Array.isArray(val) && val.length === 0)) {
+      toast(`Pole "${f.label}" je povinné!`, true);
+      return;
+    }
+  }
+
+  if (editId) {
+    const idx = data[section].findIndex(i => i.id === editId);
+    if (idx !== -1) data[section][idx] = item;
+  } else {
+    data[section].push(item);
+  }
+
+  saveData();
+  closeEditor();
+  renderList();
+  toast(editId ? 'Uloženo ✓' : 'Vytvořeno ✓');
+}
+
+// ============================================================
+// TAGS
+// ============================================================
+function handleTagKey(e, input) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const val = input.value.trim();
+    if (!val) return;
+    const chip = document.createElement('span');
+    chip.className = 'tag-chip';
+    chip.innerHTML = `${escHtml(val)}<span class="remove" onclick="removeTag(this)">×</span>`;
+    input.parentElement.insertBefore(chip, input);
+    input.value = '';
+  } else if (e.key === 'Backspace' && !input.value) {
+    const chips = input.parentElement.querySelectorAll('.tag-chip');
+    if (chips.length) chips[chips.length - 1].remove();
+  }
+}
+
+function removeTag(el) {
+  el.closest('.tag-chip').remove();
+}
+
+function addRefTag(select, key) {
+  const val = select.value;
+  if (!val) return;
+  const container = document.querySelector(`[data-key="${key}"][data-type="ref_multi"]`);
+  if (!container) return;
+  // check duplicate
+  const existing = [...container.querySelectorAll('.tag-chip')].map(c => c.dataset.value);
+  if (existing.includes(val)) { select.value = ''; return; }
+  
+  const refSection = container.dataset.ref;
+  const ref = data[refSection].find(o => o.id === val);
+  const label = ref ? (ref.name || ref.id) : val;
+  
+  const chip = document.createElement('span');
+  chip.className = 'tag-chip';
+  chip.dataset.value = val;
+  chip.innerHTML = `${escHtml(label)}<span class="remove" onclick="removeTag(this)">×</span>`;
+  container.appendChild(chip);
+  select.value = '';
+}
+
+// ============================================================
+// SLUG
+// ============================================================
+function autoSlug(titleInput) {
+  const slugField = document.getElementById('slugField');
+  if (!slugField) return;
+  slugField.value = toSlug(titleInput.value);
+}
+
+function toSlug(str) {
+  const map = {'á':'a','č':'c','ď':'d','é':'e','ě':'e','í':'i','ň':'n','ó':'o','ř':'r','š':'s','ť':'t','ú':'u','ů':'u','ý':'y','ž':'z'};
+  return str.toLowerCase().replace(/[áčďéěíňóřšťúůýž]/g, c => map[c] || c)
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+// ============================================================
+// DRAG & DROP SORT
+// ============================================================
+let draggedId = null;
+
+function onDragStart(e) {
+  draggedId = e.currentTarget.dataset.id;
+  e.currentTarget.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+}
+
+function onDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+}
+
+function onDrop(e) {
+  e.preventDefault();
+  const targetId = e.currentTarget.dataset.id;
+  if (!draggedId || draggedId === targetId) return;
+  
+  const items = data[currentSection];
+  const fromIdx = items.findIndex(i => i.id === draggedId);
+  const toIdx = items.findIndex(i => i.id === targetId);
+  if (fromIdx === -1 || toIdx === -1) return;
+  
+  const [moved] = items.splice(fromIdx, 1);
+  items.splice(toIdx, 0, moved);
+  
+  // recalculate sort_order
+  items.forEach((item, i) => item.sort_order = i + 1);
+  
+  saveData();
+  renderList();
+  toast('Pořadí aktualizováno');
+}
+
+function onDragEnd(e) {
+  e.currentTarget.classList.remove('dragging');
+  draggedId = null;
+}
+
+// ============================================================
+// DUPLICATE / DELETE
+// ============================================================
+function duplicateItem(id) {
+  const item = data[currentSection].find(i => i.id === id);
+  if (!item) return;
+  const newItem = JSON.parse(JSON.stringify(item));
+  newItem.id = nextId(currentSection);
+  if (newItem.sort_order !== undefined) newItem.sort_order = nextSortOrder(currentSection);
+  if (newItem.added_at) newItem.added_at = new Date().toISOString().split('T')[0];
+  if (newItem.name) newItem.name += ' (kopie)';
+  if (newItem.title) newItem.title += ' (kopie)';
+  data[currentSection].push(newItem);
+  saveData();
+  renderList();
+  toast('Duplikováno ✓');
+}
+
+function confirmDelete(id) {
+  const item = data[currentSection].find(i => i.id === id);
+  if (!item) return;
+  const title = getDisplayTitle(currentSection, item);
+  
+  const html = `
+    <div class="confirm-overlay" id="confirmDialog" onclick="if(event.target===this)this.remove()">
+      <div class="confirm-box">
+        <p>Opravdu smazat <strong>${escHtml(title)}</strong>?</p>
+        <div class="confirm-actions">
+          <button class="btn btn-secondary" onclick="document.getElementById('confirmDialog').remove()">Ne</button>
+          <button class="btn btn-danger" onclick="deleteItem('${id}')">Smazat</button>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+function deleteItem(id) {
+  data[currentSection] = data[currentSection].filter(i => i.id !== id);
+  saveData();
+  document.getElementById('confirmDialog')?.remove();
+  renderList();
+  toast('Smazáno');
+}
+
+// ============================================================
+// IMPORT / EXPORT
+// ============================================================
+function exportJSON() {
+  const exportData = {};
+  Object.keys(SECTIONS).forEach(key => {
+    exportData[key] = data[key] || [];
+  });
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `cesta_${new Date().toISOString().split('T')[0]}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('JSON exportován ✓');
+}
+
+function importJSON() {
+  document.getElementById('fileInput').click();
+}
+
+function handleImport(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(evt) {
+    try {
+      const imported = JSON.parse(evt.target.result);
+      // merge: add new items, skip existing IDs
+      let added = 0;
+      Object.keys(SECTIONS).forEach(key => {
+        if (imported[key] && Array.isArray(imported[key])) {
+          const existingIds = new Set(data[key].map(i => i.id));
+          imported[key].forEach(item => {
+            if (!existingIds.has(item.id)) {
+              data[key].push(item);
+              added++;
+            }
+          });
+        }
+      });
+      saveData();
+      renderList();
+      toast(`Import: ${added} nových položek přidáno ✓`);
+    } catch(err) {
+      toast('Chyba při importu! Neplatný JSON.', true);
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// ============================================================
+// UTILS
+// ============================================================
+function escHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function toast(msg, isError) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.style.background = isError ? 'var(--accent)' : 'var(--success)';
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2500);
+}
+
+function toggleSidebar() {
+  const sb = document.getElementById('sidebar');
+  const bd = document.getElementById('sidebarBackdrop');
+  sb.classList.toggle('open');
+  bd.classList.toggle('show');
+}
+
+// ============================================================
+// INIT
+// ============================================================
+updateCounts();
+renderList();
+</script>
+</body>
+</html>

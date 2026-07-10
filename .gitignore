@@ -1,0 +1,10 @@
+# nástroje
+.claude/
+
+# osobní / lokální bordýlek
+_*/
+*.bak
+
+# systémové smetí
+.DS_Store
+Thumbs.db

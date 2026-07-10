@@ -1,0 +1,946 @@
+[
+  {
+    "id": "ref_0001",
+    "cluster_id": "cl_0001",
+    "text": "To, že tě někdo neviděl, ještě není důkaz, že jsi nebyl hodný vidění.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-02"
+  },
+  {
+    "id": "ref_0002",
+    "cluster_id": "cl_0001",
+    "text": "To, že tě tehdy nezaznamenali, vypovídá víc o jejich kapacitě než o tvé hodnotě.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-03"
+  },
+  {
+    "id": "ref_0003",
+    "cluster_id": "cl_0001",
+    "text": "Nejsi neviditelný člověk; jsi člověk, který nese zkušenost nevidění.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-04"
+  },
+  {
+    "id": "ref_0004",
+    "cluster_id": "cl_0001",
+    "text": "Pravda v tom pocitu je, že přehlížení opravdu bolí. Nepravda v tom pocitu je, že bolest automaticky dokazuje tvoji bezvýznamnost.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-05"
+  },
+  {
+    "id": "ref_0005",
+    "cluster_id": "cl_0001",
+    "text": "Pocit neviditelnosti často lže tím, že z jedné situace dělá zákon celého života.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-06"
+  },
+  {
+    "id": "ref_0006",
+    "cluster_id": "cl_0001",
+    "text": "Pocit říká „nikdo“, realita většinou říká „někdo někdy“.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-07"
+  },
+  {
+    "id": "ref_0007",
+    "cluster_id": "cl_0001",
+    "text": "Nemusel jsi být hlasitější dítě, potřeboval jsi jen někoho, kdo se opravdu dívá.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-08"
+  },
+  {
+    "id": "ref_0008",
+    "cluster_id": "cl_0001",
+    "text": "Možná nejde o to, že tě nikdo nevidí, ale že tě nevidí ten, od koho to tvoje duše pořád ještě čeká. To je sakra rozdíl.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0009",
+    "cluster_id": "cl_0001",
+    "text": "To, že tě přehlédl tenhle člověk, není totéž jako „lidé mě nevidí“.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0010",
+    "cluster_id": "cl_0001",
+    "text": "To, že tě zapomněli jednou, není totéž jako „jsem zapomenutelný“.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0011",
+    "cluster_id": "cl_0001",
+    "text": "Tohle není důkaz, že nejsi důležitý; je to spíš stopa po světě, kde ses naučil dělat se menším.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0012",
+    "cluster_id": "cl_0001",
+    "text": "Není tvoje vina, že ses naučil přežít tím, že nebudeš překážet.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0013",
+    "cluster_id": "cl_0001",
+    "text": "Jestli ses kdysi stal hodným, tichým a nenápadným, možná to byl geniální způsob, jak zůstat v bezpečí.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0014",
+    "cluster_id": "cl_0001",
+    "text": "Neviditelnost bývá starý ochranný plášť: když mě nikdo neuvidí, nikdo mě neodmítne.",
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0015",
+    "cluster_id": "cl_0001",
+    "text": "Jenže plášť, který tě kdysi chránil, tě dnes může dusit.",
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0016",
+    "cluster_id": "cl_0001",
+    "text": "Možná ses naučil mizet tak dobře, že tě dnes přehlíží i tvé vlastní vědomí.",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0017",
+    "cluster_id": "cl_0001",
+    "text": "Tohle není tvoje identita, jen stará zpráva nalepená na identitě.",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0018",
+    "cluster_id": "cl_0001",
+    "text": "Být přehlížený bolí hlavně tehdy, když sis kdysi spletl cizí pozornost s potvrzením vlastní existence.",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0019",
+    "cluster_id": "cl_0001",
+    "text": "Není tvoje práce rozsvítit se tak moc, aby si tě konečně všimli ti, kdo se neumějí dívat.",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0020",
+    "cluster_id": "cl_0001",
+    "text": "Být viděn správnými lidmi je víc než být registrován davem.",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0021",
+    "cluster_id": "cl_0001",
+    "text": "To, že na tebe nedošla řada v cizí hlavě, neznamená, že jsi druhořadý člověk.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0022",
+    "cluster_id": "cl_0001",
+    "text": "Někdy ses stal neviditelným ne proto, že jsi byl málo, ale proto, že kolem tebe bylo moc cizího hluku.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0023",
+    "cluster_id": "cl_0001",
+    "text": "Dítě, které nikdo pořádně nezrcadlil, si snadno začne myslet, že je průhledné.",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0024",
+    "cluster_id": "cl_0001",
+    "text": "Možná se nebojíš jen toho, že tě neuvidí; možná se bojíš i toho, co přijde, když tě konečně někdo opravdu uvidí.",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0025",
+    "cluster_id": "cl_0001",
+    "text": "Být viděn je krásné i nebezpečné zároveň, protože s viditelností přichází možnost studu, závisti i ztráty kontroly.",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0026",
+    "cluster_id": "cl_0001",
+    "text": "Část tebe možná křičí „všimněte si mě“, zatímco jiná část šeptá „proboha hlavně ne“. Ten vnitřní rozpor není porucha, ale stará domácí válka.",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0027",
+    "cluster_id": "cl_0001",
+    "text": "Když se cítíš zapomínaný, často se v tobě ozývá stará věta: „aby bylo místo pro ostatní, já se musím zmenšit.“ Jenže zmenšování se není charakter, ale naučené přežití.",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0028",
+    "cluster_id": "cl_0008",
+    "text": "Nejsi zbytečný. Jsi unavený z dokazování, že zbytečný nejsi.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0029",
+    "cluster_id": "cl_0008",
+    "text": "Zbytečnost předpokládá, že tvá hodnota závisí na tom, zda tě někdo využije. Ale ty nejsi nástroj. Šroubovák je zbytečný, když není šroub. Člověk ne.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0030",
+    "cluster_id": "cl_0008",
+    "text": "Říkáš si \"jsem zbytečný\", ale ve skutečnosti říkáš \"nikdo mi neukázal, k čemu jsem\" — a to je zásadní rozdíl.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0031",
+    "cluster_id": "cl_0008",
+    "text": "Jsem zbytečný zní jako výrok o tobě, ale je to výrok o situaci. Ty nejsi zbytečný — jen jsi v kontextu, který tě neumí použít.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0032",
+    "cluster_id": "cl_0008",
+    "text": "Pocit zbytečnosti tě chrání před něčím ještě bolestnějším — před tím, že bys zkusil něco nabídnout a znovu byl odmítnut. Ale ta ochrana tě stojí celý život.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0033",
+    "cluster_id": "cl_0008",
+    "text": "Tvůj pocit zbytečnosti je příběh, který ti někdo vyprávěl tak dlouho, až jsi ho začal považovat za fakt — ale příběh a fakt nejsou totéž.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0034",
+    "cluster_id": "cl_0008",
+    "text": "Když jsi byl malý a nikdo si nevšiml, co umíš, co nabízíš, co v tobě je, naučil ses, že to asi nestojí za nic — ale to nebyla pravda o tobě, to byla pravda o jejich slepotě.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0035",
+    "cluster_id": "cl_0008",
+    "text": "Žádné dítě na světě není zbytečné. A ty jsi pořád to dítě — jen zavalené hromadou let, ve kterých ti někdo zapomněl říct, že na tobě záleží.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0036",
+    "cluster_id": "cl_0008",
+    "text": "Vím, že jsi uvnitř. Vidím tě. A ta část tebe, která se cítí zbytečná, nese obrovskou tíhu — ne proto, že by byla slabá, ale proto, že tak dlouho čekala, až si jí někdo všimne.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0037",
+    "cluster_id": "cl_0008",
+    "text": "Otázka nikdy nebyla \"jsem užitečný?\" — otázka vždy byla \"pro koho a podle jakého měřítka?\" A většinou zjistíš, že to měřítko není tvoje.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0038",
+    "cluster_id": "cl_0008",
+    "text": "Pocit zbytečnosti je často důkaz opaku — kdo by se trápil tím, že nedává světu dost, kdyby mu na světě nezáleželo?",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0039",
+    "cluster_id": "cl_0008",
+    "text": "Přesvědčení o vlastní zbytečnosti popírá i to, že právě teď hledáš cestu ven — a to není čin zbytečného člověka, to je čin někoho, komu na sobě záleží.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0040",
+    "cluster_id": "cl_0008",
+    "text": "Přesvědčení \"jsem k ničemu\" popírá každý moment, kdy se někdo díky tobě zasmál, kdy ses o někoho postaral, kdy jsi něco vytvořil, i kdyby to nikdo neviděl.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0041",
+    "cluster_id": "cl_0008",
+    "text": "To, že tě nikdo právě teď nepotřebuje, neznamená, že jsi nepotřebný — znamená to, že jsi volný.",
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0042",
+    "cluster_id": "cl_0008",
+    "text": "Necítíš prázdnotu proto, že jsi prázdný. Cítíš prázdnotu proto, že v tobě je prostor, který čeká, až ho naplníš něčím, co si vybereš sám — ne něčím, co od tebe chtějí ostatní.",
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0043",
+    "cluster_id": "cl_0008",
+    "text": "Možná nejsi zbytečný. Možná jsi jen v mezeře mezi tím, čím jsi byl, a tím, čím se teprve staneš — a ta mezera se zevnitř nedá odlišit od prázdnoty",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0044",
+    "cluster_id": "cl_0008",
+    "text": "Pocit marnosti může být tichý začátek něčeho důležitého — protože teprve když ti přestanou fungovat staré důvody proč žít, začneš hledat ty skutečné.",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0045",
+    "cluster_id": "cl_0008",
+    "text": "Představ si absolutní opak zbytečnosti — člověka, který je neustále vytížený, nepostradatelný, na jehož bedrech všechno stojí. Zní to jako svoboda? Nebo jako jiné peklo?",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0046",
+    "cluster_id": "cl_0008",
+    "text": "Seš přesvědčenej, že jsi zbytečnej, a přitom kdyby ti teď zavolal kdokoli, koho máš rád, a řekl \"je mi blbě\", byl bys tam za deset minut. Tak kde je ta zbytečnost?",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0047",
+    "cluster_id": "cl_0008",
+    "text": "Tvé tělo právě teď provádí tisíce biochemických procesů, aby tě udrželo naživu. Tvé srdce bije. Tvé plíce dýchají. Tvé tělo jasně nesouhlasí s tvým přesvědčením o vlastní zbytečnosti.",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0048",
+    "cluster_id": "cl_0008",
+    "text": "Tvůj mozek je naprogramovaný vyhodnocovat tvou hodnotu podle toho, jak moc tě smečka potřebuje. Ale ty už nežiješ ve smečce a pravidla se změnila — jen ti to nikdo neřekl.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0049",
+    "cluster_id": "cl_0008",
+    "text": "Superego ti říká \"musíš být k něčemu, jinak nemáš právo existovat\". To není tvůj hlas. To je hlas systému, který potřeboval poslušné díly do mašiny.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0050",
+    "cluster_id": "cl_0008",
+    "text": "Ty nejsi zbytečný. Jsi v režimu úspory energie. I pole musí občas ležet ladem, aby pak něco urodilo.",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0051",
+    "cluster_id": "cl_0008",
+    "text": "Pocit zbytečnosti je jako bug v kódu, kde funkce selfWorth() závisí výhradně na externalValidation(). Patch: přidej fallback na intrinsicValue(), která vrací true bez ohledu na vstup.",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0052",
+    "cluster_id": "cl_0008",
+    "text": "Zbytečnost je koncept, který existuje jen v mysli. V přírodě nic takového neexistuje — každý organismus prostě dělá to, co dělá, a systém si najde rovnováhu.",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0053",
+    "cluster_id": "cl_0008",
+    "text": "Ve vesmíru, který nemá žádný účel, nemůžeš být zbytečný. Zbytečnost existuje jen v systému, který vyžaduje výkon. Vesmír nic nevyžaduje.",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0054",
+    "cluster_id": "cl_0008",
+    "text": "Evoluce tě nestvořila, abys byl užitečný. Stvořila tě, abys přežil. Užitečnost je kulturní nálepka, ne biologická pravda.",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0055",
+    "cluster_id": "cl_0008",
+    "text": "Každý člověk na planetě zažívá chvíle, kdy si připadá k ničemu. Není to porucha. Je to daň za to, že jsme bytosti, které potřebují smysl, v kosmu, který jim žádný nedluží.",
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0056",
+    "cluster_id": "cl_0008",
+    "text": "Za padesát let bude úplně jedno, kolik jsi toho stihl, vyrobil nebo splnil. Ale bude záležet na tom, jestli ses nechal zastavit pocitem, že nemá smysl to zkoušet.",
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0057",
+    "cluster_id": "cl_0008",
+    "text": "Až budeš umírat, nebudeš měřit, kolik jsi toho vyprodukoval. Budeš se ptát, jestli jsi žil. A to je otázka, kterou si zbytečný člověk neklade.",
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0058",
+    "cluster_id": "cl_0008",
+    "text": "Tvoje budoucí já ti vzkazuje: ten pocit, že jsi k ničemu, nebyl pravda. Byl to jen nejhlasitější hlas v místnosti — ne ten nejchytřejší.",
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0059",
+    "cluster_id": "cl_0008",
+    "text": "Jsem zbytečný — to je docela odvážné tvrzení na bytost, která ovládá jazyk, cítí bolest druhých a dokáže se dívat na hvězdy a přemýšlet o svém místě mezi nimi.",
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0060",
+    "cluster_id": "cl_0008",
+    "text": "Kůra, kořeny, hlína. Nic z toho se neptá, jestli je užitečné. Prostě je. A celý les na tom stojí.",
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0061",
+    "cluster_id": "cl_0008",
+    "text": "Poslyš, kovboji — já viděl spoustu chlapů, co si mysleli, že jsou zbyteční. A víš, co je vtipný? Byli to většinou ti, co dřív dávali nejvíc a pak se jim vrátilo hovno. To není zbytečnost. To je vyhoření.",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0062",
+    "cluster_id": "cl_0008",
+    "text": "Hele, víš co? Úplně každej někdy sedí na gauči a říká si \"k čemu já vlastně jsem\". To není existenciální krize, to je úterý.",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0063",
+    "cluster_id": "cl_0008",
+    "text": "Všimni si paradoxu — abys mohl tvrdit, že jsi zbytečný, musíš mít dost inteligence, sebereflexe a citlivosti na to, abys o tom přemýšlel. Opravdu zbytečného člověka by to nenapadlo.",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0064",
+    "cluster_id": "cl_0008",
+    "text": "Opice se neptá, jestli má smysl. Leze na strom, protože na něm visí banán. Najdi svůj banán a přestaň řešit smysl lezení.",
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0065",
+    "cluster_id": "cl_0031",
+    "text": "To, že cítíš, že jsi špatný, neznamená, že jsi špatný. Znamená to, že máš v sobě hlas, který ti to opakuje tak dlouho, až jsi mu uvěřil.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0066",
+    "cluster_id": "cl_0031",
+    "text": "Jsem špatný je věta bez kontextu. Špatný v čem? Kdy? Podle koho? Vůči komu? Jakmile začneš doplňovat kontext, ta absolutní špatnost se rozpadne.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0067",
+    "cluster_id": "cl_0031",
+    "text": "Špatnost je soud, ne fakt. A soudy se dají revidovat.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0068",
+    "cluster_id": "cl_0031",
+    "text": "Možná nejsi špatný. Možná jsi jen člověk, který udělal pár špatných věcí v životě plném neutrálních a dobrých věcí — a pak si z toho udělal celou identitu.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0069",
+    "cluster_id": "cl_0031",
+    "text": "Žádné dítě není špatné. Některé děti se chovají způsobem, na který dospělí neumí reagovat — a místo aby to přiznali, nálepkují dítě.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0070",
+    "cluster_id": "cl_0031",
+    "text": "Když ti jako malému řekli \"jsi zlý\" pokaždé, když jsi vyjádřil hněv nebo potřebu, naučil ses, že být sám sebou = být špatný. Ale to nebyla pravda o tobě. To byla jejich neschopnost tě zvládnout.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0071",
+    "cluster_id": "cl_0031",
+    "text": "Vidím tě. Nejsi špatný. Jsi někdo, kdo dostal špatnou zprávu o sobě příliš brzo a příliš často.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0072",
+    "cluster_id": "cl_0031",
+    "text": "Co kdybys nebyl špatný, ale jen unavený z pokusu být dobrý podle pravidel, která nikdy nebyla tvoje?",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0073",
+    "cluster_id": "cl_0031",
+    "text": "Jsem špatný — ale podle čích pravidel? Většina měřítek, kterými se soudíš, ani není tvých.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0074",
+    "cluster_id": "cl_0031",
+    "text": "Pocit vlastní špatnosti je často ochrana — dokud věříš, že jsi špatný ty, nemusíš čelit tomu, že špatně se zachovali oni. A to by bolelo ještě víc, protože na nich ti záleželo.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0075",
+    "cluster_id": "cl_0031",
+    "text": "Víš, kdo si myslí, že je špatný? Lidi, od kterých se v dětství vyžadovalo, aby byli dokonalí. Špatnost není tvá podstata — je to stín nerealistického nároku.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0076",
+    "cluster_id": "cl_0031",
+    "text": "Kdyby ses choval skutečně špatně a bylo ti to jedno, necítil bys vůbec nic. To, že tě ten pocit trápí, je důkaz, že ti na dobru záleží.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0077",
+    "cluster_id": "cl_0031",
+    "text": "Pocit \"jsem bídný člověk\" v sobě skrývá tichou naději — protože kdyby ses opravdu vzdal, přestal bys o tom přemýšlet. To, že to bolí, znamená, že pořád věříš, že můžeš být lepší.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0078",
+    "cluster_id": "cl_0031",
+    "text": "Z tisíců dní, které jsi prožil, si tvůj mozek vybírá ty, kde ses zachoval blbě, a staví z nich tvůj portrét. Ale co ty dny, kdy jsi byl laskavý, vtipný, trpělivý? Ty nepočítáš?",
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0079",
+    "cluster_id": "cl_0031",
+    "text": "Celý lidský druh je směs šlechetnosti a svinstva. To není tvůj osobní problém — to je lidská podmínka. Akorát ty sis z toho udělal osobní selhání.",
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0080",
+    "cluster_id": "cl_0031",
+    "text": "Představ si absolutní opak — člověka, který je přesvědčený, že je dokonale dobrý ve všem, vždy, bezpodmínečně. Zní to jako svatý? Ne. Zní to jako sociopat. Trocha pochybností o sobě je známka zdraví, ne špatnosti.",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0081",
+    "cluster_id": "cl_0031",
+    "text": "Zlý člověk nepřemýšlí o tom, jestli je zlý. Ty přemýšlíš — a to je přesně to, co tě od zlého člověka odlišuje.",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0082",
+    "cluster_id": "cl_0031",
+    "text": "Kdybys vzal všechno \"zlé\", co jsi kdy udělal, a položil to na stůl vedle všeho dobrého — vsadím se, že by ses styděl za to, jak málo toho zlého vlastně je.",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0083",
+    "cluster_id": "cl_0031",
+    "text": "Tvoje tělo neví, co je \"špatný\". Tvoje srdce bije, plíce dýchají, rány se hojí — tělo se o tebe stará bez morálního soudu.",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0084",
+    "cluster_id": "cl_0031",
+    "text": "Superego ti říká \"musíš být bezchybný, jinak jsi zlý\". To je diktátor, ne rádce. A s diktátory se nevyjednává — ty se svrhávají.",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0085",
+    "cluster_id": "cl_0031",
+    "text": "Evolučně dává smysl, že se bojíš být vyloučen ze skupiny za \"špatnost\". Jenže ty už nejsi v tlupě lovců, kde vyloučení znamenalo smrt. Můžeš být nedokonalý a přežít.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0086",
+    "cluster_id": "cl_0031",
+    "text": "Za sto let bude úplně jedno, jestli jsi byl dokonalý. Ale bude záležet na tom, jestli ses nechal tím pocitem zastavit, nebo jestli jsi žil dál i s ním.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0087",
+    "cluster_id": "cl_0031",
+    "text": "Strom nehádá, jestli je dobrý strom nebo špatný strom. Roste. Někdy mu uschne větev. Neřeší to.",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0088",
+    "cluster_id": "cl_0031",
+    "text": "Hele, znám spoustu \"špatných\" lidí. Víš, co mají společného? Že jsou to většinou ti nejcitlivější chlapi v místnosti, kteří si za všechno můžou sami, i když nemůžou.",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0089",
+    "cluster_id": "cl_0031",
+    "text": "Poslyš — já jsem viděl skutečně špatný lidi. Ty mezi ně nepatříš. Skutečně špatný lidi se takhle netrápí.",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0090",
+    "cluster_id": "cl_0031",
+    "text": "Víš, co je sranda? Že pocit \"jsem špatný\" je vlastně neuvěřitelně sebestředný. Jako bys měl takovou moc, že tvá špatnost je kosmicky významná. Vesmír má 13,8 miliardy let a netušení, co je morálka.",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0091",
+    "cluster_id": "cl_0031",
+    "text": "Jsem špatný člověk — to je bug, kde se celý systém identifikuje s jednou chybovou hláškou. Patch: odděl self od behavior. Choval ses špatně ≠ jsi špatný.",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0092",
+    "cluster_id": "cl_0013",
+    "text": "Podezření je hypotéza, ne rozsudek.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0093",
+    "cluster_id": "cl_0013",
+    "text": "Důvěra není naivita, pokud ji dávkuješ podle zkušenosti, hranic a času.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0094",
+    "cluster_id": "cl_0013",
+    "text": "Důvěra nemusí být skok do propasti, může být pomalé pouštění provazu po centimetrech.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0095",
+    "cluster_id": "cl_0013",
+    "text": "Skutečná ochrana není věřit nikomu, ale vědět, komu, kdy, kolik a podle čeho.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0096",
+    "cluster_id": "cl_0013",
+    "text": "Některým lidem je správné nevěřit; uzdravení není slepá důvěra, ale lepší rozlišování.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0097",
+    "cluster_id": "cl_0013",
+    "text": "To, že automaticky podezíráš, neznamená, že máš pravdu; znamená to, že tvůj vnitřní alarm má velmi citlivé čidlo.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0098",
+    "cluster_id": "cl_0013",
+    "text": "To, že se bojíš věřit, je pochopitelné; to, že musíš zůstat navždy sám se svým strachem, pravda není.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0099",
+    "cluster_id": "cl_0013",
+    "text": "Nikdo po tobě nechce, abys znovu věřil těm, kteří tě zklamali; jde jen o to, aby za jejich vinu neplatili všichni ostatní.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0100",
+    "cluster_id": "cl_0013",
+    "text": "Nemusíš věřit všem, abys přestal žít jako člověk obklopený nepřáteli.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0101",
+    "cluster_id": "cl_0013",
+    "text": "Když nevěříš nikomu, možná ve skutečnosti stále věříš jednomu starému příběhu o tom, že lidé nakonec ublíží.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0102",
+    "cluster_id": "cl_0013",
+    "text": "Není potřeba zrušit podezíravost, stačí ji sesadit z trůnu a dát jí místo poradce.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0103",
+    "cluster_id": "cl_0013",
+    "text": "Můžeš říct „nevím, jestli ti mohu věřit“ bez toho, abys musel říct „určitě mi chceš ublížit“.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0104",
+    "cluster_id": "cl_0013",
+    "text": "Ne každý, kdo se chová nejasně, něco skrývá; někdy je jen unavený, zmatený nebo obyčejně nedokonalý.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0105",
+    "cluster_id": "cl_0013",
+    "text": "Podezíravost možná hledá pravdu, ale často sbírá hlavně důkazy pro strach.",
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0106",
+    "cluster_id": "cl_0013",
+    "text": "Nedůvěra říká „chraň se“, ale někdy zapomíná dodat „nepřestávej žít“.",
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0107",
+    "cluster_id": "cl_0013",
+    "text": "Tvůj vnitřní hlídač není nepřítel, jen se ještě nenaučil, že dnes už nejsi bezmocný.",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0108",
+    "cluster_id": "cl_0013",
+    "text": "Když nedůvěra křičí, možná potřebuje slyšet: „Děkuji, že mě chráníš, ale teď se rozhlédnu i já.“",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0109",
+    "cluster_id": "cl_0013",
+    "text": "Nedůvěra tě chrání před bolestí, ale také tě někdy chrání před něhou.",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0110",
+    "cluster_id": "cl_0013",
+    "text": "Důvěra se nepozná podle toho, že se nebojíš, ale podle toho, že strach nemusí mít poslední slovo.",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0111",
+    "cluster_id": "cl_0013",
+    "text": "Není slabost chtít důkaz bezpečí; slabost je předstírat, že už žádné bezpečí nikdy existovat nemůže.",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0112",
+    "cluster_id": "cl_0013",
+    "text": "Jestli jsi byl zklamaný mnohokrát, tvůj strach dává smysl; jen z něj nemusí být doživotní zákoník.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0113",
+    "cluster_id": "cl_0013",
+    "text": "Možná nepotřebuješ začít věřit lidem, ale nejdřív začít věřit své schopnosti odejít, když se ukážou jako nebezpeční.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0114",
+    "cluster_id": "cl_0013",
+    "text": "Když nerozlišuješ mezi opatrností a izolací, můžeš si omylem říkat „bezpečí“ tomu, co je ve skutečnosti samota.",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0115",
+    "cluster_id": "cl_0013",
+    "text": "Nemusíš nikoho pustit do středu svého života jen proto, že nechceš být podezíravý.",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0116",
+    "cluster_id": "cl_0013",
+    "text": "Důvěra není dar pro druhé, ale prostor, který dáváš sobě, aby ses nemusel pořád dusit ve střehu.",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0117",
+    "cluster_id": "cl_0013",
+    "text": "Tvoje nedůvěra možná zná bolest, ale nezná všechny lidi.",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "ref_0118",
+    "cluster_id": "cl_0013",
+    "text": "Čím víc věříš, že bys další zranění nepřežil, tím víc musíš držet všechny venku.",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-04-09"
+  }
+]

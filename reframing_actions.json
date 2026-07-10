@@ -1,0 +1,426 @@
+[
+  {
+    "id": "refa_0001",
+    "cluster_id": "cl_0001",
+    "text": "Napiš si tři konkrétní situace z posledního měsíce, kdy tě někdo opravdu zaznamenal, i kdyby jen jemně.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0002",
+    "cluster_id": "cl_0001",
+    "text": "Přestaň počítat jen velká gesta; viditelnost často chodí v malých, skoro směšně obyčejných formách.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0003",
+    "cluster_id": "cl_0001",
+    "text": "Jednou denně řekni nahlas jednu věc, kterou chceš, místo abys čekal, že si toho někdo všimne.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0004",
+    "cluster_id": "cl_0001",
+    "text": "V konverzaci aspoň jednou neuhni očima a neshazuj vlastní větu předem.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0005",
+    "cluster_id": "cl_0001",
+    "text": "Když tě něco zasáhne, neříkej automaticky „to nic není“. Zkus jednou říct přesný opak: „hele, tohle se mě dotklo“.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0006",
+    "cluster_id": "cl_0001",
+    "text": "Všímej si, s kým se po setkání cítíš víc živý a s kým víc gumovaný.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0007",
+    "cluster_id": "cl_0001",
+    "text": "Přesuň energii od dokazování k výběru.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0008",
+    "cluster_id": "cl_0001",
+    "text": "Omez kontakt s lidmi, u kterých soustavně mizíš, a přidej kontakt s těmi, u kterých nemusíš řvát, aby tě registrovali.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0009",
+    "cluster_id": "cl_0001",
+    "text": "Procvičuj mikro-viditelnost: jasný pozdrav, krátký vlastní názor, konkrétní preference, nesouhlas bez omluvy.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0010",
+    "cluster_id": "cl_0001",
+    "text": "Každý den si všimni i sebe: co cítíš, co potřebuješ, co nechceš, co tě těší.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0011",
+    "cluster_id": "cl_0001",
+    "text": "Když začne věta „jsem neviditelný“, doplň ji o realitu: „právě teď se tak cítím v téhle konkrétní situaci“. Tohle malé zpřesnění ti může zachránit kus duše.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0012",
+    "cluster_id": "cl_0001",
+    "text": "Najdi jedno místo, kde můžeš být pravidelně viděn ne jako výkon, ale jako člověk.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0013",
+    "cluster_id": "cl_0001",
+    "text": "Nauč se říct „potřebuji, abys mě teď poslouchal“. Nauč se říct „nechci být zase ten, kdo se přizpůsobí“. Nauč se říct „nezapomeň na mě v tomhle“. To nejsou velké revoluce, to jsou malé návraty z vymazání. Jestli tě celý život bolelo být přehlížený, nedělej další kolo tím, že budeš přehlížet vlastní bolest. Ta bolest si nezaslouží výsměch, ale svědka. A tím svědkem můžeš začít být i ty sám.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0014",
+    "cluster_id": "cl_0001",
+    "text": "Vyber jednoho člověka, u kterého předpokládáš, že o tebe nestojí, a tento týden mu napiš nebo řekni něco malého. Ber to jako pokus, ne jako vztahovou sázku — jenom sbíráš data, jak to dopadne ve skutečnosti, ne v hlavě.",
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0015",
+    "cluster_id": "cl_0001",
+    "text": "Až tě příště někdo o něco poprosí a ty automaticky kývneš, počkej tři vteřiny a zkus říct, co bys chtěl ty.",
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0016",
+    "cluster_id": "cl_0001",
+    "text": "Řekni jednou nahlas \"tohle jsem dokázal já\" — bez \"ale\", bez zlehčení, bez převedení řeči jinam. Vydrž to ticho po tom, i když ti bude trapné.",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0017",
+    "cluster_id": "cl_0001",
+    "text": "Až tě někdo příště pochválí nebo si tě všimne, nedělej nic. Žádné odpinkávání, žádné \"ale to nic nebylo\". Jen poděkuj a nech to v sobě deset vteřin ležet.",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0018",
+    "cluster_id": "cl_0001",
+    "text": "Zkus jeden den vědomě zabírat trochu víc místa fyzicky — narovnat se, mluvit o půltón pomalejš a hlasitějc, nesbalit se do sebe v MHD. Všímej si, co to dělá s tím vnitřním pocitem, ne s okolím.",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0019",
+    "cluster_id": "cl_0001",
+    "text": "Vyber jednu skupinu nebo prostředí, kde se chronicky držíš zpátky, a předem si naplánuj jednu konkrétní viditelnou věc, kterou tam uděláš — otázku, názor, nabídku. Připrav si ji jako herec repliku.",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0020",
+    "cluster_id": "cl_0001",
+    "text": "Příště, když budeš čekat, jestli si tě někdo všimne, to otoč: všimni si ty první nahlas něčeho na něm. Sleduj, jestli se tím ta neviditelná zeď nezačne tenčit z tvojí strany.",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0021",
+    "cluster_id": "cl_0001",
+    "text": "Zkus nějakou drobnou věc, u které je reálné riziko, že tě někdo \"uvidí\" i nepříznivě — pošli ten text, ukaž tu písničku, řekni ten nepopulární názor. Cílem není úspěch, ale zjištění, že tě vidět můžou, i když to není dokonalé.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0022",
+    "cluster_id": "cl_0001",
+    "text": "Jednou za den se sám sebe zeptej \"co bych teď udělal, kdyby bylo úplně jedno, jestli si toho někdo všimne?\" — a pak aspoň kousek toho udělej. Trénuješ tím viditelnost, která nepotřebuje publikum.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0023",
+    "cluster_id": "cl_0008",
+    "text": "Požádej někoho o malou věc. Třeba o radu, laskavost, krátkou zprávu, pomoc s něčím jednoduchým. Pak si všimni: opravdu jsem obtěžoval, nebo jsem jen dovolil druhému být se mnou v kontaktu?",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0024",
+    "cluster_id": "cl_0008",
+    "text": "Řekni jednou denně jednu svou drobnou potřebu nahlas. Například: „Dneska bych potřeboval klid“, „Nechci to řešit hned“, „Bylo by mi příjemné, kdybys mi odepsal.“ Cílem není, aby ti všichni vyhověli, ale abys přestal mizet.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0025",
+    "cluster_id": "cl_0008",
+    "text": "Záměrně nebuď užitečný. V jedné situaci se nepřizpůsob, neraď, nezachraňuj, nenabídni pomoc automaticky. Jen zůstaň přítomný. Sleduj, jestli tvoje hodnota opravdu zmizí, když zrovna nic neposkytuješ.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0026",
+    "cluster_id": "cl_0008",
+    "text": "Pošli někomu zprávu jen proto, že chceš kontakt. Ne s omluvou, ne s výkonem, ne s informací. Jen třeba: „Vzpomněl jsem si na tebe.“ Experiment: smím být v kontaktu i bez důvodu?",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0027",
+    "cluster_id": "cl_0008",
+    "text": "Zeptej se blízkého člověka: „Co na mně máš rád, i když pro tebe nic nedělám?“ Cílem není lovit komplimenty, ale získat korektivní zkušenost proti představě „mám cenu jen jako funkce“.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0028",
+    "cluster_id": "cl_0008",
+    "text": "Vrať se v imaginaci k mladší verzi sebe, která se cítila zbytečná. Představ si ji co nejkonkrétněji a řekni jí něco obyčejného, ne patetického: „Vidím tě. Nejsi navíc. Jen tě tehdy nikdo pořádně neviděl.“",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0029",
+    "cluster_id": "cl_0008",
+    "text": "Udělej jednu věc jen pro sebe a nikomu o ní neříkej. Procházka, kafe, hudba, koupel, dobré jídlo, odpočinek. Experiment: má moje potřeba hodnotu, i když za ni nedostanu uznání?",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0030",
+    "cluster_id": "cl_0008",
+    "text": "Zapiš si večer tři místa, kde tvoje existence něco změnila. Klidně mikroskopicky: usmál ses, odpověděl jsi, byl jsi laskavý, nezhroutil ses, něco sis dovolil. Nejde o výkon, ale o stopu: „Byl jsem tady.“",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0031",
+    "cluster_id": "cl_0008",
+    "text": "V jedné situaci zkus neuhnout ze svého místa. Neomlouvej se za svůj názor, neměkči každou větu, neříkej hned „to je jedno“. Experiment: co se stane, když zůstanu přítomný i se svým pohledem?",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0032",
+    "cluster_id": "cl_0008",
+    "text": "Domluv si s někým malý pravidelný kontakt. Třeba krátká zpráva jednou týdně, společná procházka, kafe, telefon. Pocit zbytečnosti často sílí v izolaci; potřebuje opakovanou zkušenost: „Někdo se mnou počítá.“",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0033",
+    "cluster_id": "cl_0031",
+    "text": "Rozliš čin, pocit a identitu. Napiš si tři věty: „Co jsem udělal?“, „Co jsem cítil?“, „Co si o sobě kvůli tomu myslím?“ Cíl je oddělit konkrétní situaci od globální nálepky „jsem špatný“.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0034",
+    "cluster_id": "cl_0031",
+    "text": "Udělej krátký „soudní proces“ s tím pocitem. Na jednu stranu napiš důkazy, že jsi špatný. Na druhou stranu důkazy, že jsi člověk s bolestí, obranami, chybami a potřebami. Nejde o obhajobu za každou cenu, ale o spravedlivější rozsudek.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0035",
+    "cluster_id": "cl_0031",
+    "text": "Řekni si nahlas: „Tohle je stud, ne pravda.“ Ne jako afirmaci, ale jako orientaci v realitě. Stud často mluví absolutně: „Jsem odporný.“ Zkus ho pojmenovat jako stav nervového systému, ne jako objektivní diagnózu duše.",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0036",
+    "cluster_id": "cl_0031",
+    "text": "V imaginaci si představ někoho, kdo tě vidí bez zhnusení. Může to být terapeut, přítel, starší moudrá postava, zvíře, kdokoliv. Jen si zkus na chvíli představit pohled, který říká: „Vidím i tvoje temné věci — a nezavrhuju tě.“",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0037",
+    "cluster_id": "cl_0031",
+    "text": "Svěř jednu malou „špatnou“ věc bezpečnému člověku. Něco přiměřeného, ne nejhlubší jádro hned. Třeba závist, zlost, trapnou myšlenku, selhání. Experiment: opravdu mě druhý odsoudí, když ukážu něco méně hezkého?",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0038",
+    "cluster_id": "cl_0031",
+    "text": "Uděláš-li chybu, oprav ji místo sebemrskačství. Omluv se, naprav škodu, vysvětli, co příště uděláš jinak. Pak vědomě skonči s trestem. Odpovědnost léčí víc než vnitřní bičování.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0039",
+    "cluster_id": "cl_0031",
+    "text": "Zkus jeden den nečíst svoje impulzy jako charakter. Když přijde zlost, závist, sobectví nebo odpor, řekni si: „To je část mě, která něco chrání nebo chce.“ Ne: „To jsem celý já.“ Tohle je malý, ale sakra důležitý posun.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0040",
+    "cluster_id": "cl_0031",
+    "text": "Najdi lidský kontext svého „zlého“ pocitu. Zeptej se: „Před čím mě to chrání? Co mě bolí? Co jsem nedostal? Čeho se bojím?“ Často se pod „jsem špatný“ schovává zraněné „něco jsem potřeboval a nikdo to neunesl“.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0041",
+    "cluster_id": "cl_0031",
+    "text": "Udělej jeden drobný laskavý čin bez vykupování viny. Ne proto, abys dokázal, že jsi dobrý. Jen jako návrat do živého kontaktu se světem. Třeba krátká zpráva, pomoc, úklid společného místa, vlídnost k někomu.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0042",
+    "cluster_id": "cl_0031",
+    "text": "Zaveď větu po každém záchvatu studu: „Co bych teď potřeboval, kdybych nebyl špatný, ale zraněný?“",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0043",
+    "cluster_id": "cl_0031",
+    "text": "Pak udělej jednu malou věc podle odpovědi: napít se, nadechnout, napsat někomu, jít ven, zastavit útok na sebe. Ne odpustit si všechno — jen přestat se ničit.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0044",
+    "cluster_id": "cl_0013",
+    "text": "Vyber jednoho relativně bezpečného člověka a udělej malý test důvěry. Svěř mu něco drobného, požádej o malou pomoc, nebo se na něco osobnějšího zeptej. Pak sleduj, co se opravdu stalo — ne jen co mozek předpovídal.",
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0045",
+    "cluster_id": "cl_0013",
+    "text": "Ve chvíli podezření si napiš tři sloupce: fakta, domněnky, strachy. Například: „Neodepsal“ je fakt. „Ignoruje mě“ je domněnka. „Jsem mu ukradený“ je strach. Tohle pomáhá oddělit realitu od poplachu.",
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0046",
+    "cluster_id": "cl_0013",
+    "text": "Zeptej se přímo, místo aby ses schoval do interpretace. Třeba: „Když jsi neodpověděl, začal jsem si domýšlet, že se něco děje. Jak to bylo?“ Experiment: unesu ověřit realitu bez útoku?",
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0047",
+    "cluster_id": "cl_0013",
+    "text": "Všímej si, kdo je konzistentní. Jeden týden si zapisuj malé známky spolehlivosti: kdo dodržel slovo, kdo byl férový, kdo se omluvil, kdo nezneužil tvoji otevřenost. Důvěra se staví z opakovaných drobných důkazů.",
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0048",
+    "cluster_id": "cl_0013",
+    "text": "Zkus jednu situaci neprověřovat. Neptej se potřetí, nekontroluj tón zprávy, nehledáš skrytý význam, neskenuj každý detail. Jen počkej, co se ukáže. Cíl: zjistit, jestli úzkost klesne i bez kontroly.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0049",
+    "cluster_id": "cl_0013",
+    "text": "Řekni nahlas jednu hranici dřív, než se stáhneš. Například: „Tohle mi není příjemné“, „Potřebuju víc času“, „Nechci o tom teď mluvit.“ Nedůvěřivý člověk často mlčí, sbírá důkazy a pak uteče nebo zaútočí.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0050",
+    "cluster_id": "cl_0013",
+    "text": "V imaginaci si představ svoji ostražitou část jako strážce. Nehádej se s ní. Zeptej se jí: „Před čím mě chráníš? Co bys potřebovala, abys nemusela hlídat úplně všechno?“ Cílem není ji zrušit, ale změkčit.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0051",
+    "cluster_id": "cl_0013",
+    "text": "Dovol někomu malou laskavost a nesplať ji hned. Nech si podržet dveře, přijmi pomoc, kompliment, podporu. Sleduj nutkání okamžitě se vyrovnat, omlouvat nebo zpochybňovat motivy druhého.",
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0052",
+    "cluster_id": "cl_0013",
+    "text": "Uděláš-li negativní závěr o druhém, najdi dvě další možná vysvětlení. „Manipuluje se mnou“ může být jedna možnost. Další: „Je unavený“, „neumí komunikovat“, „má vlastní strach“. Ne proto, abys byl naivní, ale aby mozek neměl monopol na nejhorší výklad.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-04-09"
+  },
+  {
+    "id": "refa_0053",
+    "cluster_id": "cl_0013",
+    "text": "Vytvoř si osobní škálu důvěry místo režimu všechno/nic. Někomu můžeš věřit s praktickou věcí, ale ne s tajemstvím. Jinému s emocemi, ale ne s penězi. Experiment: důvěra nemusí být otevřená brána; může to být několik dveří s různými zámky.",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-04-09"
+  }
+]
