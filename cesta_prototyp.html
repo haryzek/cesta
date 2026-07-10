@@ -183,6 +183,28 @@
   .mc-heart.on .he { display:none; }
   .mc-heart.on .hf { display:block; }
 
+  /* ===== MARKDOWN BODY ===== */
+  .mc-md { font-family:var(--serif); font-size:16.5px; line-height:1.65; color:var(--body); }
+  .mc-md h2, .mc-md h3, .mc-md h4 {
+    font-family:var(--serif); font-weight:400; color:var(--text);
+    line-height:1.25; letter-spacing:-0.01em;
+  }
+  .mc-md h2 { font-size:21px; margin:26px 0 8px; }
+  .mc-md h3 { font-size:17.5px; margin:22px 0 6px; color:var(--accent); }
+  .mc-md h4 { font-size:15px; margin:18px 0 5px; font-family:var(--sans); font-weight:700; }
+  .mc-md > :first-child { margin-top:0; }
+  .mc-md p { margin:0 0 13px; }
+  .mc-md ul, .mc-md ol { margin:0 0 14px; padding-left:22px; }
+  .mc-md ul { list-style:disc; }
+  .mc-md ol { list-style:decimal; }
+  .mc-md li { margin-bottom:6px; padding-left:3px; }
+  .mc-md ol > li { margin-bottom:14px; }
+  .mc-md li > ul, .mc-md li > ol { margin:7px 0 0; }
+  .mc-md li > ul { list-style:circle; }
+  .mc-md li::marker { color:var(--accent); }
+  .mc-md strong { color:var(--text); font-weight:700; }
+  .mc-md em { color:var(--soft); font-style:italic; }
+
   /* ===== FAVORITES ===== */
   .mc-fav-group { padding:6px 18px 0; }
   .mc-fav-group h2 {
@@ -200,8 +222,8 @@
   }
   .mc-more-page:hover { border-color:var(--accent); }
 
-  @keyframes snIn { from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
-  .mc-in { animation:snIn .2s ease forwards; }
+  @keyframes mcIn { from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
+  .mc-in { animation:mcIn .2s ease forwards; }
 </style>
 
 <script>
@@ -222,7 +244,12 @@
     { key:"questions",  store:"reframing_questions",  label:"Otázky" },
     { key:"actions",    store:"reframing_actions",    label:"Úkoly" }
   ];
-  var FAV_KEY = "sn_favorites";
+  // Všechna uživatelská data pod jedním klíčem, verzovaně.
+  var STORE_KEY = "mc_user_v1";
+  // Kategorie oblíbených = názvy datových typů (dle README).
+  var FAV_STORES = ["crisis","body","articles","exercises",
+                    "reframings","reframing_questions","reframing_actions",
+                    "inspirations","questions"];
 
   // ===================== STAV =====================
   var DB = null;             // načtená data
@@ -240,26 +267,43 @@
     detailMode: "single",    // "single" | "merged"
     activeType: "reframings",
     search: "",
-    pageLimit: 50,
-    favorites: loadFav()
+    pageLimit: 50
   };
 
-  // ===================== FAVORITY (localStorage) =====================
-  function loadFav(){
-    try { var d=JSON.parse(localStorage.getItem(FAV_KEY)); if(d) return d; } catch(e){}
-    return { reframings:[], reframing_questions:[], reframing_actions:[] };
+  // ===================== UŽIVATELSKÁ DATA (localStorage) =====================
+  // { favorites: {store: [id]}, read: [id], last_seen: {kat: iso}, profile: {schema: váha} }
+  var USER = loadUser();
+
+  function emptyUser(){
+    var u={ favorites:{}, read:[], last_seen:{}, profile:{} };
+    FAV_STORES.forEach(function(s){ u.favorites[s]=[]; });
+    return u;
   }
-  function saveFav(){ try{ localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites)); }catch(e){} }
+  function loadUser(){
+    var u=emptyUser();
+    try {
+      var d=JSON.parse(localStorage.getItem(STORE_KEY));
+      if(d && typeof d==="object"){
+        FAV_STORES.forEach(function(s){
+          if(Array.isArray(d.favorites&&d.favorites[s])) u.favorites[s]=d.favorites[s];
+        });
+        if(Array.isArray(d.read)) u.read=d.read;
+        if(d.last_seen && typeof d.last_seen==="object") u.last_seen=d.last_seen;
+        if(d.profile && typeof d.profile==="object") u.profile=d.profile;
+      }
+    } catch(e){}
+    return u;
+  }
+  function saveUser(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(USER)); }catch(e){} }
+
   function favCount(){
-    return state.favorites.reframings.length
-         + state.favorites.reframing_questions.length
-         + state.favorites.reframing_actions.length;
+    return FAV_STORES.reduce(function(n,s){ return n + USER.favorites[s].length; }, 0);
   }
-  function isFav(store,id){ return state.favorites[store].indexOf(id) > -1; }
+  function isFav(store,id){ return USER.favorites[store].indexOf(id) > -1; }
   function toggleFav(store,id){
-    var arr=state.favorites[store], i=arr.indexOf(id);
+    var arr=USER.favorites[store], i=arr.indexOf(id);
     if(i>-1) arr.splice(i,1); else arr.push(id);
-    saveFav();
+    saveUser();
   }
 
   // ===================== NAČTENÍ DAT =====================
@@ -311,6 +355,61 @@
   // ===================== POMOCNÉ =====================
   function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
   function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
+  // ===================== MARKDOWN =====================
+  // Podmno\u017eina, kterou re\u00e1ln\u011b pou\u017e\u00edv\u00e1 obsah: nadpisy, odr\u00e1\u017eky, \u010d\u00edslovan\u00e9
+  // seznamy, tu\u010dn\u00e9, kurz\u00edva, odstavce. Vstup se escapuje jako prvn\u00ed, tak\u017ee
+  // do v\u00fdstupu se nedostane \u017e\u00e1dn\u00e9 HTML z dat.
+  function mdInline(s){
+    return esc(s)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
+  }
+  function md(src){
+    var lines=String(src||"").split(/\r?\n/), out=[], para=[];
+    var stack=[];   // otev\u0159en\u00e9 seznamy: {tag, indent}; ka\u017ed\u00fd m\u00e1 pr\u00e1v\u011b jedno otev\u0159en\u00e9 <li>
+
+    function flushPara(){ if(para.length){ out.push("<p>"+mdInline(para.join(" "))+"</p>"); para=[]; } }
+    function closeList(){ out.push("</li></"+stack.pop().tag+">"); }
+    function closeLists(){ while(stack.length) closeList(); }
+
+    // Pr\u00e1zdn\u00fd \u0159\u00e1dek uvnit\u0159 seznamu ho neukon\u010duje (v datech jsou kroky odd\u011blen\u00e9
+    // pr\u00e1zdnou \u0159\u00e1dkou) \u2014 seznam zav\u0159e a\u017e obsah, kter\u00fd do n\u011bj nepat\u0159\u00ed.
+    function item(indent, tag, text){
+      flushPara();
+      while(stack.length && indent < stack[stack.length-1].indent) closeList();
+      var top=stack[stack.length-1];
+      if(!stack.length || indent > top.indent){
+        out.push("<"+tag+">"); stack.push({tag:tag, indent:indent});   // vno\u0159\u00ed se do otev\u0159en\u00e9ho <li>
+      } else {
+        out.push("</li>");
+        if(top.tag!==tag){ out.push("</"+stack.pop().tag+">"); out.push("<"+tag+">"); stack.push({tag:tag, indent:indent}); }
+      }
+      out.push("<li>"+text);
+    }
+
+    lines.forEach(function(raw){
+      var line=raw.replace(/\t/g,"    "), m;
+      var indent=line.match(/^ */)[0].length;
+      line=line.trim();
+
+      if(!line){ flushPara(); return; }
+
+      if((m=line.match(/^(#{1,6})\s+(.*)$/))){
+        flushPara(); closeLists();
+        var lvl=Math.min(Math.max(m[1].length, 2), 4);   // h1 pat\u0159\u00ed str\u00e1nce, ne obsahu
+        out.push("<h"+lvl+">"+mdInline(m[2])+"</h"+lvl+">");
+        return;
+      }
+      if((m=line.match(/^[-*]\s+(.*)$/)))   { item(indent, "ul", mdInline(m[1])); return; }
+      if((m=line.match(/^\d+[.)]\s+(.*)$/))){ item(indent, "ol", mdInline(m[1])); return; }
+
+      closeLists();
+      para.push(line);
+    });
+    flushPara(); closeLists();
+    return out.join("");
+  }
 
   function mainFeelings(){
     return DB.feelings.filter(function(f){
@@ -376,8 +475,8 @@
        '<p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
 
     h+='<div class="mc-nav">';
-    h+='<button class="'+(state.page!=="favorites"?"active":"")+'" onclick="SN.go(\'feelings\')">Pocity</button>';
-    h+='<button class="'+(state.page==="favorites"?"active":"")+'" onclick="SN.go(\'favorites\')">Oblíbené'+
+    h+='<button class="'+(state.page!=="favorites"?"active":"")+'" onclick="MC.go(\'feelings\')">Pocity</button>';
+    h+='<button class="'+(state.page==="favorites"?"active":"")+'" onclick="MC.go(\'favorites\')">Oblíbené'+
        (favCount()>0?'<span class="mc-badge">'+favCount()+'</span>':'')+'</button>';
     h+='</div>';
 
@@ -399,7 +498,7 @@
     var h='';
     h+='<div class="mc-search-wrap">';
     h+='<svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="SN.search(this.value)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.search(this.value)">';
     h+='<span class="mc-count-pill">'+total+' pocitů</span>';
     h+='</div>';
 
@@ -410,22 +509,22 @@
       feelings.forEach(function(f){
         var on=!!state.selected[f.id];
         h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'">';
-        h+='<span class="mc-check '+(on?"on":"")+'" onclick="SN.toggleSelect(\''+f.id+'\')">'+
+        h+='<span class="mc-check '+(on?"on":"")+'" onclick="MC.toggleSelect(\''+f.id+'\')">'+
            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>';
-        h+='<span class="mc-feeling-name" onclick="SN.openSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
-        h+='<span class="mc-feeling-go" onclick="SN.openSingle(\''+f.cluster_id+'\')">›</span>';
+        h+='<span class="mc-feeling-name" onclick="MC.openSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
+        h+='<span class="mc-feeling-go" onclick="MC.openSingle(\''+f.cluster_id+'\')">›</span>';
         h+='</li>';
       });
     }
     h+='</ul>';
 
     if(!state.search.trim() && !state.showSecondary && secondaryFeelings().length>0){
-      h+='<button class="mc-more" onclick="SN.toggleSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
+      h+='<button class="mc-more" onclick="MC.toggleSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
     }
 
     var n=Object.keys(state.selected).length;
     if(n>0){
-      h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="SN.openSelected()">'+
+      h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.openSelected()">'+
          (n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
     }
     return h;
@@ -433,7 +532,7 @@
 
   function viewDetail(){
     var h='';
-    h+='<button class="mc-back" onclick="SN.go(\'feelings\')">← Zpět na pocity</button>';
+    h+='<button class="mc-back" onclick="MC.go(\'feelings\')">← Zpět na pocity</button>';
 
     if(state.detailMode==="single"){
       h+='<div class="mc-detail-title">'+esc(clusterName[state.detailClusters[0].cluster_id]||"")+'</div>';
@@ -445,7 +544,7 @@
 
     h+='<div class="mc-submenu">';
     TYPES.forEach(function(t){
-      h+='<button class="'+(state.activeType===t.key?"active":"")+'" onclick="SN.setType(\''+t.key+'\')">'+t.label+'</button>';
+      h+='<button class="'+(state.activeType===t.key?"active":"")+'" onclick="MC.setType(\''+t.key+'\')">'+t.label+'</button>';
     });
     h+='</div>';
 
@@ -467,7 +566,7 @@
     h+='</ul>';
 
     if(list.length>state.pageLimit){
-      h+='<button class="mc-more-page" onclick="SN.moreItems()">Dalších '+
+      h+='<button class="mc-more-page" onclick="MC.moreItems()">Dalších '+
          Math.min(50, list.length-state.pageLimit)+'</button>';
     }
     return h;
@@ -480,13 +579,15 @@
     }
     var h='';
     TYPES.forEach(function(t){
-      var ids=state.favorites[t.store];
-      if(ids.length===0) return;
-      h+='<div class="mc-fav-group"><h2>'+t.label+' <span class="c">'+ids.length+'</span></h2>';
+      // tichý zmizák: položky, které už v datech nejsou, se přeskočí a nepočítají
+      var items=USER.favorites[t.store].slice().reverse()
+                    .map(function(id){ return itemIndex[t.key][id]; })
+                    .filter(Boolean);
+      if(items.length===0) return;
+      h+='<div class="mc-fav-group"><h2>'+t.label+' <span class="c">'+items.length+'</span></h2>';
       h+='<ul class="mc-cards" style="padding-left:0;padding-right:0">';
-      ids.slice().reverse().forEach(function(id){
-        var it=itemIndex[t.key][id];
-        if(!it) return;
+      items.forEach(function(it){
+        var id=it.id;
         h+='<li class="mc-card mc-in">';
         h+='<div class="mc-card-text">'+esc(it.text)+'</div>';
         h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
@@ -499,7 +600,7 @@
   }
 
   function heartBtn(store,id,on){
-    return '<button class="mc-heart '+(on?"on":"")+'" onclick="SN.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených">'+
+    return '<button class="mc-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených">'+
       '<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>'+
       '<svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
   }
@@ -507,7 +608,7 @@
   function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
 
   // ===================== HANDLERY =====================
-  window.SN = {
+  window.MC = {
     go:function(p){ state.page=p; state.search=""; scrollTop(); render(); },
     search:function(v){
       state.search=v; render();
