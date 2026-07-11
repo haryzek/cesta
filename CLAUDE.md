@@ -35,7 +35,8 @@ Nic není obsahově hotové, ale **struktura všech 11 JSONů je finální a dol
 - Klastry (116) + pocity (399): kompletní mapa s ID a schématy. ✅
 - Triplet přerámování: testovací fáze, zatím jen 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný).
 - Ostatní obsah: jen vzorek pár položek, plní se.
-- Prototyp (`cesta_prototyp.html`): funkční, sekce Přerámování + Oblíbené, coconut téma.
+- Prototyp (`cesta_prototyp.html`): funkční. Obal + **registr sekcí** — jeden `SECTIONS = [...]` řídí úvodní dlaždice, hamburger menu i router. Živé: Přerámování + Oblíbené. Ostatní sekce jsou připravené sloty (`kind:"placeholder"`, „Připravujeme"), dodělají se výměnou rendereru — obal se nesahá. Coconut téma.
+- Předloha ostatních sekcí: `_scratch/01_kompletni/cesta_kompletni.html` má všechny sekce naživo nad všemi 11 JSONy (doclist, filtrované karty, quote karty, about). Slouží jako reference, odkud opsat renderer. Je v `.gitignore` (nepushuje se), takže žije jen lokálně.
 - Admin (`cesta_admin.html`): zastaralý, k přestavbě od základu (viz níže).
 
 ---

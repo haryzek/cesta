@@ -483,11 +483,12 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Datový model všech 11 typů | ✅ finální struktura |
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
-| Prototyp aplikace (sekce Přerámování + Oblíbené) | ✅ funkční, načítá z GitHub Pages |
+| Prototyp — obal + registr sekcí | ✅ funkční, načítá z GitHub Pages |
+| Frontend — Přerámování + Oblíbené | ✅ živé sekce |
 | Přerámování — triplet obsahu | 🔄 testovací fáze, zatím 4 klastry |
 | Ostatní obsah (články, cvičení, inspirace, otázky, krizovka, tělo) | 🔄 vzorek, plní se |
 | Admin nástroj | 🔲 k přestavbě od základu (stávající je zastaralý) |
-| Frontend — ostatní sekce mimo Přerámování | 🔲 čeká |
+| Frontend — ostatní sekce (obsahové) | 🔲 sloty připravené v registru, renderery čekají |
 
 Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný.
 
@@ -498,7 +499,7 @@ Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_
 | Soubor | Účel |
 |--------|------|
 | `index.html` | Rozcestník (prototyp / admin) |
-| `cesta_prototyp.html` | Prototyp aplikace — standalone HTML, coconut téma, sekce Přerámování + Oblíbené |
+| `cesta_prototyp.html` | Prototyp aplikace — standalone HTML, coconut téma, obal + registr sekcí; živé Přerámování + Oblíbené, ostatní připravené sloty |
 | `cesta_admin.html` | Admin nástroj — zastaralý první výplod, k přestavbě |
 | `*.json` | 11 datových souborů |
 | `README.md` | Tento dokument |
