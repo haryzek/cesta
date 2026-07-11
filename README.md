@@ -248,6 +248,52 @@ Reálně používané kódy v datech (21): `ABINST`, `APPREC`, `DEFSH`, `DEPINC`
 
 ---
 
+## Design a chování UI
+
+Rozhodnutá vize rozvržení a interakcí. Vizuální hodnoty (barvy, fonty) žijí v prototypu; tady je struktura a chování.
+
+### Obal aplikace
+
+- **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce.
+- **Úvodní stránka** — dlaždice po párech vedle sebe (První pomoc / Tělesné příznaky, Přerámování / Cvičení, Otázky / Inspirace, Články / O appce). Responzivní, vyplní plochu pod hlavičkou.
+- **Menu** (z hamburgeru) — tytéž sekce jako svislý seznam řádků, vpravo případně badge novinek.
+
+### Vzory obrazovek
+
+Napříč sekcemi se opakují tři tvary:
+
+1. **Seznam** — nadpis sekce + položky pod sebou (buttony nebo boxy).
+2. **Detail** — nadpis a na stejném řádku vpravo u okraje ikony: šipka „Zpět" a (kde dává smysl) srdíčko. Pod tím obsah (markdown nebo boxy). Srdíčko má dva stavy (uloženo / neuloženo).
+3. **Filtrovaný seznam** (obsahové sekce s tagy) — viz níže.
+
+### Filtrování obsahových sekcí (Cvičení, Otázky, Inspirace, Články)
+
+- **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam od nejnovějších; v submenu je zvýrazněné „Nejnovější". Žádná tagová brána, žádné tlačítko „Zobrazit".
+- **Submenu:** Nejnovější / (Redakce — jen Cvičení a Články) / Pro vás (jen když existuje profil) / ikona filtru.
+- **Filtr** je jedna ikona → rozbalí panel: nahoře keyword pole, pod ním tagy (multiple-choice) a `duration` jako samostatný ovladač. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka.
+- **Keyword a tagy se skládají (AND).** Panel drží stav; zavření panelu filtr nemaže. Ikona filtru ukazuje počet aktivních filtrů (keyword se počítá jako jeden).
+- **`quality` není ve filtru** — „ukaž mi to nejlepší" pokrývá submenu Redakce. Quality je kurátorský nástroj, ne uživatelský ovladač.
+- Naznačený řádek doporučených tagů (viz sekce níže) je **budoucí rozšíření**, ne MVP — vyžaduje kurátorskou údržbu, kterou zatím nemáme.
+- `duration` (cvičení) a `reading_time` (články) zůstávají v datech pod svými jmény; v UI se zobrazují jednotně jako čas (ikonka hodin + „X min").
+
+### Navigace a stav
+
+- **Šipka „Zpět" vede tam, odkud jsem přišel**, ne na fixní seznam. Do téhož detailu se dá dojít ze seznamu, z Oblíbených i z „Pro vás"; detail si pamatuje návratový bod.
+- **Výběr pocitů v Přerámování se drží v rámci relace** — přežije přepnutí sekce, ale neukládá se (refresh = čistý stůl). Že něco visí vybráno, je vidět na spodním tlačítku „Zobrazit přerámování (N)".
+- **Tělesné příznaky** se řadí abecedně (ne podle `sort_order`).
+
+### Odchylky u Přerámování
+
+Přerámování se od ostatních sekcí liší: keyword hledá v **pocitech** (vstup do výběru), ne ve výsledném obsahu — proto je search samostatně nahoře, ne v filtračním panelu. Sloučení keyword+tagy se Přerámování netýká. Popisek clusteru pod boxy se zobrazuje jen v merged režimu (víc pocitů); u jednoho pocitu je zbytečný (všechny boxy jsou z jednoho clusteru).
+
+### Budoucí rozšíření (mimo MVP)
+
+- **Připínání „rychlé pomoci"** zamítnuto: srdíčko už plní účel „mít po ruce", druhý mechanismus by jen dělil totéž. Oblíbené zůstávají jediná sbírka, členěná po typech.
+- Naznačený řádek doporučených tagů nad seznamem.
+- Strop diverzity a další ladění doporučování (viz Doporučování obsahu).
+
+---
+
 ## Sekce aplikace a jejich chování
 
 ### Přerámování
@@ -326,7 +372,7 @@ Submenu: Nejnovější / Pro vás. Dva řádky doporučených tagů s rozbalení
 
 ### První pomoc v krizi, Tělesné příznaky
 
-Prostý seznam podle `sort_order` → klik → strukturovaný text → možnost uložit do oblíbených, tlačítko Zpět.
+Prostý seznam → klik → strukturovaný text → možnost uložit do oblíbených, tlačítko Zpět. První pomoc se řadí podle `sort_order`, tělesné příznaky abecedně. Tělesné příznaky mají navíc keyword search.
 
 ### Oblíbené
 
