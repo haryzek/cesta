@@ -2,8 +2,10 @@
 .claude/
 
 # osobní / lokální bordýlek
-_*/
 *.bak
+
+# scratch prototypy — hrací písek, nepatří na web
+_scratch/
 
 # systémové smetí
 .DS_Store

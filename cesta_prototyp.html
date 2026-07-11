@@ -1,8 +1,15 @@
+<meta charset="utf-8">
 <!--
-  MOJE CESTA — PROTOTYP v0.2  (sekce Přerámování + Oblíbené)
+  MOJE CESTA — PROTOTYP v0.3  (obal + registr sekcí)
   Vlož celý tento kód do HTML elementu na Mioweb stránce.
   Data se načítají z GitHub Pages (viz konstanta MC_BASE níže).
-  Pro běh musí být na GitHubu tyto soubory:
+
+  Architektura: jeden registr SECTIONS řídí úvodní dlaždice, hamburger menu
+  i router. Sekce Přerámování a Oblíbené jsou živé; ostatní jsou připravené
+  sloty (kind:"placeholder"), které se dodělají výměnou rendereru — obal se
+  nesahá.
+
+  Pro běh živých sekcí musí být na GitHubu tyto soubory:
     clusters.json, feelings.json,
     reframings.json, reframing_questions.json, reframing_actions.json
 -->
@@ -10,7 +17,7 @@
 <div id="mc-root"><div class="mc-loading">Načítám…</div></div>
 
 <style>
-  #mc-root *, #mc-root *::before, #mc-root *::after { margin:0; box-sizing:border-box; }
+  :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
   #mc-root ul { padding:0; list-style:none; }
 
   #mc-root {
@@ -41,6 +48,7 @@
     line-height:1.55;
     font-size:16px;
     -webkit-font-smoothing:antialiased;
+    position:relative;
   }
 
   .mc-loading, .mc-error {
@@ -49,32 +57,118 @@
   .mc-error strong { color:var(--text); font-family:var(--serif); }
   .mc-error code { color:var(--accent); font-family:var(--mono); font-size:12px; }
 
-  /* ===== HEADER ===== */
-  .mc-header { padding:26px 18px 6px; }
-  .mc-header h1 {
-    font-family:var(--serif); font-weight:400; font-size:30px;
-    color:var(--text); letter-spacing:-0.01em; line-height:1.1;
+  /* ===== TOPBAR (obal — vždy nahoře) ===== */
+  .mc-topbar {
+    position:sticky; top:0; z-index:30;
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:14px 16px; background:var(--bg);
+    border-bottom:1px solid var(--border);
   }
-  .mc-header h1 .mc-mark { color:var(--accent); font-style:italic; }
-  .mc-header p { color:var(--soft); font-size:13px; margin-top:6px; font-family:var(--sans); }
+  .mc-icon-btn {
+    flex-shrink:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+    background:none; border:none; color:var(--soft); cursor:pointer; padding:0;
+    border-radius:9px; transition:color .15s ease, background .15s ease; position:relative;
+  }
+  .mc-icon-btn:hover { color:var(--text); background:var(--surface); }
+  .mc-icon-btn svg { width:22px; height:22px; display:block; }
+  .mc-topbar-title {
+    flex:1; text-align:center; font-family:var(--serif); font-weight:400; font-size:20px;
+    color:var(--text); letter-spacing:-0.01em; cursor:pointer; line-height:1.1;
+  }
+  .mc-topbar-title .mc-mark { color:var(--accent); font-style:italic; }
+  .mc-heart-top.on { color:var(--accent); }
+  .mc-heart-top .hf { display:none; }
+  .mc-heart-top.on .he { display:none; }
+  .mc-heart-top.on .hf { display:block; }
+  /* badge počtu novinek na hamburgeru */
+  .mc-topbadge {
+    position:absolute; top:4px; right:4px; min-width:16px; height:16px; padding:0 4px;
+    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    border-radius:8px; display:flex; align-items:center; justify-content:center; line-height:1;
+  }
 
-  /* ===== NAV ===== */
-  .mc-nav { display:flex; gap:6px; padding:16px 18px 4px; }
-  .mc-nav button {
-    background:var(--surface); border:1px solid var(--border); color:var(--soft);
-    font-family:var(--sans); font-size:13.5px; font-weight:600;
-    padding:8px 16px; border-radius:8px; cursor:pointer; transition:all .15s ease;
+  /* ===== MENU (overlay z hamburgeru) ===== */
+  .mc-menu-backdrop {
+    position:fixed; inset:0; z-index:40; background:#0009;
+    animation:mcFade .18s ease forwards;
   }
-  .mc-nav button:hover { color:var(--text); }
-  .mc-nav button.active { background:var(--accent); border-color:var(--accent); color:#15120E; }
-  .mc-nav .mc-badge {
-    display:inline-block; margin-left:7px; background:var(--accent); color:#15120E;
-    font-family:var(--mono); font-size:10px; font-weight:700; padding:1px 6px; border-radius:6px; vertical-align:middle;
+  .mc-menu {
+    position:absolute; top:0; left:0; bottom:0; width:82%; max-width:340px; z-index:41;
+    background:var(--surface); border-right:1px solid var(--border);
+    padding:14px 0 24px; overflow-y:auto;
+    animation:mcSlide .2s cubic-bezier(.2,.7,.3,1) forwards;
   }
-  .mc-nav button.active .mc-badge { background:#15120E33; color:#15120E; }
+  .mc-menu-head {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:6px 16px 14px; margin-bottom:6px; border-bottom:1px solid var(--border);
+  }
+  .mc-menu-head h2 { font-family:var(--serif); font-weight:400; font-size:19px; color:var(--text); }
+  .mc-menu-head h2 .mc-mark { color:var(--accent); font-style:italic; }
+  .mc-menu-item {
+    display:flex; align-items:center; gap:13px; width:100%;
+    padding:13px 16px; background:none; border:none; cursor:pointer; text-align:left;
+    color:var(--body); font-family:var(--sans); font-size:15px; transition:background .12s ease;
+  }
+  .mc-menu-item:hover { background:var(--surface-2); }
+  .mc-menu-item.active { color:var(--accent); }
+  .mc-menu-item .mi-ic { flex-shrink:0; width:22px; height:22px; color:var(--soft); }
+  .mc-menu-item.active .mi-ic { color:var(--accent); }
+  .mc-menu-item .mi-ic svg { width:22px; height:22px; display:block; }
+  .mc-menu-item .mi-label { flex:1; }
+  .mc-menu-item .mi-badge {
+    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    padding:1px 7px; border-radius:7px;
+  }
+  .mc-menu-sep { height:1px; background:var(--border); margin:6px 16px; }
+
+  /* ===== HOME (dlaždice po párech) ===== */
+  .mc-home-intro { padding:22px 18px 8px; }
+  .mc-home-intro h1 {
+    font-family:var(--serif); font-weight:400; font-size:27px; color:var(--text);
+    letter-spacing:-0.01em; line-height:1.15;
+  }
+  .mc-home-intro p { color:var(--soft); font-size:13.5px; margin-top:7px; }
+  .mc-tiles {
+    display:grid; grid-template-columns:1fr 1fr; gap:9px; padding:10px 14px 0;
+  }
+  .mc-tile {
+    display:flex; flex-direction:column; gap:9px; min-height:118px;
+    padding:16px 15px; background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; cursor:pointer; text-align:left;
+    transition:border-color .15s ease, transform .1s ease, background .15s ease; position:relative;
+  }
+  .mc-tile:hover { border-color:var(--accent); background:var(--surface-2); }
+  .mc-tile:active { transform:scale(.985); }
+  .mc-tile-ic { color:var(--accent); width:26px; height:26px; }
+  .mc-tile-ic svg { width:26px; height:26px; display:block; }
+  .mc-tile-name {
+    margin-top:auto; font-family:var(--serif); font-size:17px; color:var(--text); line-height:1.2;
+  }
+  .mc-tile-badge {
+    position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
+    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    border-radius:9px; display:flex; align-items:center; justify-content:center;
+  }
+
+  /* ===== PLACEHOLDER (připravený slot) ===== */
+  .mc-slot {
+    text-align:center; padding:64px 34px; color:var(--soft); line-height:1.7;
+  }
+  .mc-slot .s-ic { color:var(--accent); opacity:.5; margin-bottom:16px; }
+  .mc-slot .s-ic svg { width:40px; height:40px; }
+  .mc-slot h2 { font-family:var(--serif); font-weight:400; font-size:22px; color:var(--text); margin-bottom:8px; }
+  .mc-slot p { font-size:14px; }
+
+  /* ===== SECTION HEADER (nadpis sekce v těle) ===== */
+  .mc-sec-head { padding:20px 18px 2px; }
+  .mc-sec-head h1 {
+    font-family:var(--serif); font-weight:400; font-size:26px; color:var(--text);
+    letter-spacing:-0.01em; line-height:1.15;
+  }
+  .mc-sec-head p { color:var(--soft); font-size:13px; margin-top:6px; }
 
   /* ===== SEARCH ===== */
-  .mc-search-wrap { padding:12px 18px 2px; position:relative; }
+  .mc-search-wrap { padding:14px 18px 2px; position:relative; }
   .mc-search {
     width:100%; padding:11px 14px 11px 40px; font-family:var(--serif); font-size:16px;
     color:var(--text); background:var(--bg); border:1px solid var(--border);
@@ -138,7 +232,7 @@
 
   /* ===== DETAIL ===== */
   .mc-back {
-    display:inline-flex; align-items:center; gap:5px; margin:22px 18px 0;
+    display:inline-flex; align-items:center; gap:5px; margin:18px 18px 0;
     background:none; border:none; padding:0; color:var(--accent); font-family:var(--sans);
     font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease;
   }
@@ -224,6 +318,8 @@
 
   @keyframes mcIn { from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
   .mc-in { animation:mcIn .2s ease forwards; }
+  @keyframes mcFade { from{opacity:0;} to{opacity:1;} }
+  @keyframes mcSlide { from{transform:translateX(-100%);} to{transform:translateX(0);} }
 </style>
 
 <script>
@@ -251,6 +347,37 @@
                     "reframings","reframing_questions","reframing_actions",
                     "inspirations","questions"];
 
+  // ===================== IKONY (inline SVG, stroke=currentColor) =====================
+  var IC = {
+    crisis:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M12 8v4M12 16h.01"/></svg>',
+    body:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-8.8-1.4 5.5 5.5 0 0 0-8.8 6.6C4.8 13.5 12 20 12 20s7.2-6.5 8.8-9.2a5.5 5.5 0 0 0 0-5.2z"/></svg>',
+    reframing:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>',
+    exercises:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6M8 22l4-8 4 8M6 11h12"/></svg>',
+    questions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
+    inspirations:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M19 5l1.4-1.4M3.6 20.4 5 19"/><circle cx="12" cy="12" r="4"/></svg>',
+    articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>',
+    about:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>',
+    favorites:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>'
+  };
+
+  // ===================== REGISTR SEKCÍ =====================
+  // Jeden zdroj pravdy: řídí úvodní dlaždice, hamburger menu i router.
+  // kind: "reframing" (živé) | "favorites" (živé) | "placeholder" (slot).
+  // Pořadí dlaždic dle README: dvojice řádků. Oblíbené nejsou dlaždice —
+  // vstup je srdíčko v hlavičce (tile:false).
+  var SECTIONS = [
+    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"placeholder", tile:true },
+    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"placeholder", tile:true },
+    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing",   tile:true },
+    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"placeholder", tile:true },
+    { key:"questions",    label:"Otázky",           icon:"questions",    kind:"placeholder", tile:true },
+    { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"placeholder", tile:true },
+    { key:"articles",     label:"Články",           icon:"articles",     kind:"placeholder", tile:true },
+    { key:"about",        label:"O appce",          icon:"about",        kind:"placeholder", tile:true },
+    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites",   tile:false }
+  ];
+  function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
+
   // ===================== STAV =====================
   var DB = null;             // načtená data
   var clusterName = {};      // cluster_id -> name
@@ -260,14 +387,20 @@
   var contentClusters = [];  // cluster_id, které mají přerámování
 
   var state = {
-    page: "feelings",        // "feelings" | "detail" | "favorites"
-    showSecondary: false,
-    selected: {},            // feel_id -> {feeling obj}
-    detailClusters: [],      // [{cluster_id, count}] pro zobrazení
-    detailMode: "single",    // "single" | "merged"
-    activeType: "reframings",
-    search: "",
-    pageLimit: 50
+    page: "home",            // "home" | "section" | "favorites"
+    section: null,           // klíč aktivní sekce (kind řídí renderer)
+    menuOpen: false,
+    // --- podstav sekce Přerámování ---
+    rf: {
+      view: "feelings",      // "feelings" | "detail"
+      showSecondary: false,
+      selected: {},          // feel_id -> feeling obj
+      detailClusters: [],    // [{cluster_id, count}]
+      detailMode: "single",  // "single" | "merged"
+      activeType: "reframings",
+      search: "",
+      pageLimit: 50
+    }
   };
 
   // ===================== UŽIVATELSKÁ DATA (localStorage) =====================
@@ -305,6 +438,10 @@
     if(i>-1) arr.splice(i,1); else arr.push(id);
     saveUser();
   }
+  // Placeholder pro badge novinek — až budou sloty živé, dopočítá se z added_at
+  // proti last_seen. Zatím vrací 0 (nic se nezobrazí).
+  function newsCount(/*sectionKey*/){ return 0; }
+  function newsTotal(){ return 0; }
 
   // ===================== NAČTENÍ DAT =====================
   function load(){
@@ -357,9 +494,9 @@
   function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
 
   // ===================== MARKDOWN =====================
-  // Podmno\u017eina, kterou re\u00e1ln\u011b pou\u017e\u00edv\u00e1 obsah: nadpisy, odr\u00e1\u017eky, \u010d\u00edslovan\u00e9
-  // seznamy, tu\u010dn\u00e9, kurz\u00edva, odstavce. Vstup se escapuje jako prvn\u00ed, tak\u017ee
-  // do v\u00fdstupu se nedostane \u017e\u00e1dn\u00e9 HTML z dat.
+  // Podmnožina, kterou reálně používá obsah: nadpisy, odrážky, číslované
+  // seznamy, tučné, kurzíva, odstavce. Vstup se escapuje jako první, takže
+  // do výstupu se nedostane žádné HTML z dat.
   function mdInline(s){
     return esc(s)
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
@@ -367,20 +504,18 @@
   }
   function md(src){
     var lines=String(src||"").split(/\r?\n/), out=[], para=[];
-    var stack=[];   // otev\u0159en\u00e9 seznamy: {tag, indent}; ka\u017ed\u00fd m\u00e1 pr\u00e1v\u011b jedno otev\u0159en\u00e9 <li>
+    var stack=[];   // otevřené seznamy: {tag, indent}; každý má právě jedno otevřené <li>
 
-    function flushPara(){ if(para.length){ out.push("<p>"+mdInline(para.join(" "))+"</p>"); para=[]; } }
+    function flushPara(){ if(para.length){ out.push("<p>"+para.map(mdInline).join("<br>")+"</p>"); para=[]; } }
     function closeList(){ out.push("</li></"+stack.pop().tag+">"); }
     function closeLists(){ while(stack.length) closeList(); }
 
-    // Pr\u00e1zdn\u00fd \u0159\u00e1dek uvnit\u0159 seznamu ho neukon\u010duje (v datech jsou kroky odd\u011blen\u00e9
-    // pr\u00e1zdnou \u0159\u00e1dkou) \u2014 seznam zav\u0159e a\u017e obsah, kter\u00fd do n\u011bj nepat\u0159\u00ed.
     function item(indent, tag, text){
       flushPara();
       while(stack.length && indent < stack[stack.length-1].indent) closeList();
       var top=stack[stack.length-1];
       if(!stack.length || indent > top.indent){
-        out.push("<"+tag+">"); stack.push({tag:tag, indent:indent});   // vno\u0159\u00ed se do otev\u0159en\u00e9ho <li>
+        out.push("<"+tag+">"); stack.push({tag:tag, indent:indent});
       } else {
         out.push("</li>");
         if(top.tag!==tag){ out.push("</"+stack.pop().tag+">"); out.push("<"+tag+">"); stack.push({tag:tag, indent:indent}); }
@@ -397,7 +532,7 @@
 
       if((m=line.match(/^(#{1,6})\s+(.*)$/))){
         flushPara(); closeLists();
-        var lvl=Math.min(Math.max(m[1].length, 2), 4);   // h1 pat\u0159\u00ed str\u00e1nce, ne obsahu
+        var lvl=Math.min(Math.max(m[1].length, 2), 4);
         out.push("<h"+lvl+">"+mdInline(m[2])+"</h"+lvl+">");
         return;
       }
@@ -411,6 +546,7 @@
     return out.join("");
   }
 
+  // ===================== PŘERÁMOVÁNÍ — pocity =====================
   function mainFeelings(){
     return DB.feelings.filter(function(f){
       return contentClusters.indexOf(f.cluster_id)>-1 && f.main && f.main!=="0";
@@ -422,11 +558,11 @@
     });
   }
   function visibleFeelings(){
-    var list = mainFeelings().concat(state.showSecondary ? secondaryFeelings() : []);
-    if(state.search.trim()){
-      // pokud hledá, prohledej všechny pocity obsahových clusterů
+    var rf=state.rf;
+    var list = mainFeelings().concat(rf.showSecondary ? secondaryFeelings() : []);
+    if(rf.search.trim()){
       list = mainFeelings().concat(secondaryFeelings());
-      var q=deburr(state.search);
+      var q=deburr(rf.search);
       list=list.filter(function(f){ return deburr(f.name).indexOf(q)>-1; });
     }
     list.sort(function(a,b){ return a.sort_order-b.sort_order; });
@@ -460,45 +596,125 @@
   }
 
   function currentList(){
-    if(state.detailMode==="single"){
-      var cid=state.detailClusters[0].cluster_id;
-      return (byCluster[state.activeType][cid]||[]).slice();
+    var rf=state.rf;
+    if(rf.detailMode==="single"){
+      var cid=rf.detailClusters[0].cluster_id;
+      return (byCluster[rf.activeType][cid]||[]).slice();
     }
-    return interleave(state.activeType, state.detailClusters);
+    return interleave(rf.activeType, rf.detailClusters);
   }
 
-  // ===================== RENDER =====================
+  // ===================== RENDER — obal =====================
   function render(){
     var root=document.getElementById("mc-root");
     var h="";
-    h+='<div class="mc-header"><h1>Moje <span class="mc-mark">cesta</span></h1>'+
-       '<p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
 
-    h+='<div class="mc-nav">';
-    h+='<button class="'+(state.page!=="favorites"?"active":"")+'" onclick="MC.go(\'feelings\')">Pocity</button>';
-    h+='<button class="'+(state.page==="favorites"?"active":"")+'" onclick="MC.go(\'favorites\')">Oblíbené'+
-       (favCount()>0?'<span class="mc-badge">'+favCount()+'</span>':'')+'</button>';
-    h+='</div>';
+    h+=viewTopbar();
 
-    if(state.page==="feelings") h+=viewFeelings();
-    else if(state.page==="detail") h+=viewDetail();
-    else h+=viewFavorites();
+    if(state.page==="home")            h+=viewHome();
+    else if(state.page==="favorites")  h+=viewFavorites();
+    else {
+      var sec=sectionByKey(state.section);
+      if(sec && sec.kind==="reframing")      h+=viewReframing();
+      else if(sec && sec.kind==="favorites") h+=viewFavorites();
+      else                                   h+=viewPlaceholder(sec);
+    }
+
+    if(state.menuOpen) h+=viewMenu();
 
     root.innerHTML=h;
 
-    if(state.page==="feelings"){
-      var s=document.getElementById("mc-search");
-      if(s && state.search){ s.value=state.search; }
-    }
+    // po překreslení obnov hodnotu search inputu (Přerámování / pocity)
+    var s=document.getElementById("mc-search");
+    if(s && state.rf.search){ s.value=state.rf.search; }
   }
 
-  function viewFeelings(){
+  function viewTopbar(){
+    var favOn=favCount()>0;
+    var nt=newsTotal();
+    var h='<div class="mc-topbar">';
+    // hamburger + badge novinek
+    h+='<button class="mc-icon-btn" onclick="MC.menu(true)" aria-label="Menu">'+
+       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'+
+       (nt>0?'<span class="mc-topbadge">'+nt+'</span>':'')+'</button>';
+    // název (klik = domů)
+    h+='<div class="mc-topbar-title" onclick="MC.home()">Moje <span class="mc-mark">cesta</span></div>';
+    // srdíčko = vstup do Oblíbených
+    h+='<button class="mc-icon-btn mc-heart-top '+(favOn?"on":"")+' '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')" aria-label="Oblíbené">'+
+       '<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>'+
+       '<svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
+    h+='</div>';
+    return h;
+  }
+
+  // ===================== RENDER — menu =====================
+  function viewMenu(){
+    var h='<div class="mc-menu-backdrop" onclick="MC.menu(false)"></div>';
+    h+='<nav class="mc-menu">';
+    h+='<div class="mc-menu-head"><h2>Moje <span class="mc-mark">cesta</span></h2>'+
+       '<button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít">'+
+       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
+
+    SECTIONS.filter(function(s){ return s.tile; }).forEach(function(s){
+      var active = state.page==="section" && state.section===s.key;
+      var n=newsCount(s.key);
+      h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')">'+
+         '<span class="mi-ic">'+IC[s.icon]+'</span>'+
+         '<span class="mi-label">'+esc(s.label)+'</span>'+
+         (n>0?'<span class="mi-badge">'+n+'</span>':'')+'</button>';
+    });
+
+    h+='<div class="mc-menu-sep"></div>';
+    var fav=sectionByKey("favorites");
+    h+='<button class="mc-menu-item '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')">'+
+       '<span class="mi-ic">'+IC[fav.icon]+'</span>'+
+       '<span class="mi-label">'+esc(fav.label)+'</span>'+
+       (favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'')+'</button>';
+
+    h+='</nav>';
+    return h;
+  }
+
+  // ===================== RENDER — home (dlaždice) =====================
+  function viewHome(){
+    var h='<div class="mc-home-intro"><h1>Vítej na cestě.</h1>'+
+          '<p>Vyber, kudy dnes — a podívej se na to, co prožíváš, jinak.</p></div>';
+    h+='<div class="mc-tiles">';
+    SECTIONS.filter(function(s){ return s.tile; }).forEach(function(s){
+      var n=newsCount(s.key);
+      h+='<button class="mc-tile mc-in" onclick="MC.open(\''+s.key+'\')">'+
+         '<span class="mc-tile-ic">'+IC[s.icon]+'</span>'+
+         '<span class="mc-tile-name">'+esc(s.label)+'</span>'+
+         (n>0?'<span class="mc-tile-badge">'+n+'</span>':'')+'</button>';
+    });
+    h+='</div>';
+    return h;
+  }
+
+  // ===================== RENDER — placeholder slot =====================
+  function viewPlaceholder(sec){
+    var h='<button class="mc-back" onclick="MC.home()">← Domů</button>';
+    h+='<div class="mc-slot"><div class="s-ic">'+(sec?IC[sec.icon]:"")+'</div>'+
+       '<h2>'+esc(sec?sec.label:"")+'</h2>'+
+       '<p>Tahle sekce se připravuje.<br>Brzy tu bude co objevovat.</p></div>';
+    return h;
+  }
+
+  // ===================== RENDER — Přerámování =====================
+  function viewReframing(){
+    return state.rf.view==="detail" ? viewRfDetail() : viewRfFeelings();
+  }
+
+  function viewRfFeelings(){
+    var rf=state.rf;
     var feelings=visibleFeelings();
     var total=mainFeelings().length+secondaryFeelings().length;
-    var h='';
+    var h='<div class="mc-sec-head"><h1>Přerámování</h1>'+
+          '<p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
+
     h+='<div class="mc-search-wrap">';
     h+='<svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.search(this.value)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)">';
     h+='<span class="mc-count-pill">'+total+' pocitů</span>';
     h+='</div>';
 
@@ -507,57 +723,57 @@
       h+='<div class="mc-empty">Žádný pocit neodpovídá hledání.</div>';
     } else {
       feelings.forEach(function(f){
-        var on=!!state.selected[f.id];
+        var on=!!rf.selected[f.id];
         h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'">';
-        h+='<span class="mc-check '+(on?"on":"")+'" onclick="MC.toggleSelect(\''+f.id+'\')">'+
+        h+='<span class="mc-check '+(on?"on":"")+'" onclick="MC.rfToggle(\''+f.id+'\')">'+
            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>';
-        h+='<span class="mc-feeling-name" onclick="MC.openSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
-        h+='<span class="mc-feeling-go" onclick="MC.openSingle(\''+f.cluster_id+'\')">›</span>';
+        h+='<span class="mc-feeling-name" onclick="MC.rfSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span>';
+        h+='<span class="mc-feeling-go" onclick="MC.rfSingle(\''+f.cluster_id+'\')">›</span>';
         h+='</li>';
       });
     }
     h+='</ul>';
 
-    if(!state.search.trim() && !state.showSecondary && secondaryFeelings().length>0){
-      h+='<button class="mc-more" onclick="MC.toggleSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
+    if(!rf.search.trim() && !rf.showSecondary && secondaryFeelings().length>0){
+      h+='<button class="mc-more" onclick="MC.rfSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
     }
 
-    var n=Object.keys(state.selected).length;
+    var n=Object.keys(rf.selected).length;
     if(n>0){
-      h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.openSelected()">'+
+      h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfOpenSelected()">'+
          (n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
     }
     return h;
   }
 
-  function viewDetail(){
-    var h='';
-    h+='<button class="mc-back" onclick="MC.go(\'feelings\')">← Zpět na pocity</button>';
+  function viewRfDetail(){
+    var rf=state.rf;
+    var h='<button class="mc-back" onclick="MC.rfBack()">← Zpět na pocity</button>';
 
-    if(state.detailMode==="single"){
-      h+='<div class="mc-detail-title">'+esc(clusterName[state.detailClusters[0].cluster_id]||"")+'</div>';
+    if(rf.detailMode==="single"){
+      h+='<div class="mc-detail-title">'+esc(clusterName[rf.detailClusters[0].cluster_id]||"")+'</div>';
     } else {
-      var names=state.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
+      var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
       h+='<div class="mc-detail-title">Vybrané pocity</div>';
       h+='<div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
     }
 
     h+='<div class="mc-submenu">';
     TYPES.forEach(function(t){
-      h+='<button class="'+(state.activeType===t.key?"active":"")+'" onclick="MC.setType(\''+t.key+'\')">'+t.label+'</button>';
+      h+='<button class="'+(rf.activeType===t.key?"active":"")+'" onclick="MC.rfType(\''+t.key+'\')">'+t.label+'</button>';
     });
     h+='</div>';
 
     var list=currentList();
-    var store=storeOf(state.activeType);
-    var shown=list.slice(0, state.pageLimit);
+    var store=storeOf(rf.activeType);
+    var shown=list.slice(0, rf.pageLimit);
 
     h+='<ul class="mc-cards">';
     shown.forEach(function(it){
       var on=isFav(store,it.id);
       h+='<li class="mc-card mc-in">';
       h+='<div class="mc-card-text">'+esc(it.text)+'</div>';
-      if(state.detailMode==="merged"){
+      if(rf.detailMode==="merged"){
         h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
       }
       h+=heartBtn(store,it.id,on);
@@ -565,19 +781,20 @@
     });
     h+='</ul>';
 
-    if(list.length>state.pageLimit){
-      h+='<button class="mc-more-page" onclick="MC.moreItems()">Dalších '+
-         Math.min(50, list.length-state.pageLimit)+'</button>';
+    if(list.length>rf.pageLimit){
+      h+='<button class="mc-more-page" onclick="MC.rfMore()">Dalších '+
+         Math.min(50, list.length-rf.pageLimit)+'</button>';
     }
     return h;
   }
 
+  // ===================== RENDER — Oblíbené =====================
   function viewFavorites(){
+    var h='<div class="mc-sec-head"><h1>Oblíbené</h1></div>';
     if(favCount()===0){
-      return '<div class="mc-empty"><div class="e-ic">♡</div>'+
+      return h+'<div class="mc-empty"><div class="e-ic">♡</div>'+
              'Zatím tu nic není.<br>Klepni na srdíčko u věty, která tě osloví, a najdeš ji tady.</div>';
     }
-    var h='';
     TYPES.forEach(function(t){
       // tichý zmizák: položky, které už v datech nejsou, se přeskočí a nepočítají
       var items=USER.favorites[t.store].slice().reverse()
@@ -587,11 +804,10 @@
       h+='<div class="mc-fav-group"><h2>'+t.label+' <span class="c">'+items.length+'</span></h2>';
       h+='<ul class="mc-cards" style="padding-left:0;padding-right:0">';
       items.forEach(function(it){
-        var id=it.id;
         h+='<li class="mc-card mc-in">';
         h+='<div class="mc-card-text">'+esc(it.text)+'</div>';
         h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
-        h+=heartBtn(t.store,id,true);
+        h+=heartBtn(t.store,it.id,true);
         h+='</li>';
       });
       h+='</ul></div>';
@@ -609,46 +825,64 @@
 
   // ===================== HANDLERY =====================
   window.MC = {
-    go:function(p){ state.page=p; state.search=""; scrollTop(); render(); },
-    search:function(v){
-      state.search=v; render();
+    // --- obal ---
+    menu:function(open){ state.menuOpen=!!open; render(); },
+    home:function(){ state.page="home"; state.section=null; state.menuOpen=false; scrollTop(); render(); },
+    open:function(key){
+      state.menuOpen=false;
+      if(key==="favorites"){ state.page="favorites"; state.section=null; }
+      else {
+        state.page="section"; state.section=key;
+        // vstup do sekce = její výchozí pohled; výběr pocitů se drží (README),
+        // ale přistává se na seznamu pocitů, ne v posledním detailu
+        if(key==="reframing") state.rf.view="feelings";
+      }
+      scrollTop(); render();
+    },
+    // --- Přerámování ---
+    rfSearch:function(v){
+      state.rf.search=v; render();
       var s=document.getElementById("mc-search");
       if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); }
     },
-    toggleSecondary:function(){ state.showSecondary=!state.showSecondary; render(); },
-    toggleSelect:function(id){
-      if(state.selected[id]) delete state.selected[id];
+    rfSecondary:function(){ state.rf.showSecondary=!state.rf.showSecondary; render(); },
+    rfToggle:function(id){
+      var sel=state.rf.selected;
+      if(sel[id]) delete sel[id];
       else {
         var f=DB.feelings.filter(function(x){return x.id===id;})[0];
-        if(f) state.selected[id]=f;
+        if(f) sel[id]=f;
       }
       render();
     },
-    openSingle:function(clusterId){
-      state.detailMode="single";
-      state.detailClusters=[{cluster_id:clusterId, count:1}];
-      enterDetail();
+    rfSingle:function(clusterId){
+      state.rf.detailMode="single";
+      state.rf.detailClusters=[{cluster_id:clusterId, count:1}];
+      enterRfDetail();
     },
-    openSelected:function(){
-      var feels=Object.keys(state.selected).map(function(k){return state.selected[k];});
+    rfOpenSelected:function(){
+      var sel=state.rf.selected;
+      var feels=Object.keys(sel).map(function(k){return sel[k];});
       var counts={};
       feels.forEach(function(f){ counts[f.cluster_id]=(counts[f.cluster_id]||0)+1; });
       var cids=Object.keys(counts);
       if(cids.length===1){
-        state.detailMode="single";
-        state.detailClusters=[{cluster_id:cids[0], count:counts[cids[0]]}];
+        state.rf.detailMode="single";
+        state.rf.detailClusters=[{cluster_id:cids[0], count:counts[cids[0]]}];
       } else {
-        state.detailMode="merged";
-        state.detailClusters=cids.map(function(c){ return {cluster_id:c, count:counts[c]}; });
+        state.rf.detailMode="merged";
+        state.rf.detailClusters=cids.map(function(c){ return {cluster_id:c, count:counts[c]}; });
       }
-      enterDetail();
+      enterRfDetail();
     },
-    setType:function(t){ state.activeType=t; state.pageLimit=50; scrollTop(); render(); },
-    moreItems:function(){ state.pageLimit+=50; render(); },
+    rfBack:function(){ state.rf.view="feelings"; scrollTop(); render(); },
+    rfType:function(t){ state.rf.activeType=t; state.rf.pageLimit=50; scrollTop(); render(); },
+    rfMore:function(){ state.rf.pageLimit+=50; render(); },
+    // --- oblíbené ---
     fav:function(store,id){ toggleFav(store,id); render(); }
   };
 
-  function enterDetail(){ state.page="detail"; state.activeType="reframings"; state.pageLimit=50; scrollTop(); render(); }
+  function enterRfDetail(){ state.rf.view="detail"; state.rf.activeType="reframings"; state.rf.pageLimit=50; scrollTop(); render(); }
   function scrollTop(){
     var r=document.getElementById("mc-root");
     if(r && r.scrollIntoView) r.scrollIntoView({behavior:"smooth", block:"start"});
