@@ -1,0 +1,790 @@
+<meta charset="utf-8">
+<!--
+  MOJE CESTA — KOMPLETNÍ PROTOTYP (scratch, jen pro inspiraci)
+  Všech 11 JSON sekcí naživo, aby bylo vidět, jak by mohla vypadat celá appka.
+  NENÍ to ostrá verze — je to hřiště k okoukání vajbu a interakcí.
+
+  Data se tahají lokálně (MC_BASE="./") — soubor běží vedle JSONů ve své
+  scratch složce (python -m http.server). Produkční obal + registr sekcí je
+  převzatý z cesta_prototyp.html; sloty jsou tu nahrazené živými renderery.
+-->
+
+<div id="mc-root"><div class="mc-loading">Načítám…</div></div>
+
+<style>
+  :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
+  #mc-root ul { padding:0; list-style:none; }
+
+  #mc-root {
+    --bg:#15120E; --surface:#201B15; --surface-2:#2A241C; --border:#3A332A;
+    --text:#EDE6D8; --body:#DBD3C3; --soft:#9A9081; --empty:#34302A;
+    --done:#74955E; --missed:#BC5B43; --accent:#D9A441; --accent-dim:#D9A44120;
+    --serif:Georgia,'Times New Roman',ui-serif,serif;
+    --sans:-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
+    --mono:ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
+    font-family:var(--sans); background:var(--bg); color:var(--body);
+    max-width:520px; margin:0 auto; min-height:100vh; padding-bottom:60px;
+    line-height:1.55; font-size:16px; -webkit-font-smoothing:antialiased; position:relative;
+  }
+
+  .mc-loading,.mc-error{ padding:56px 24px; text-align:center; color:var(--soft); font-size:14px; line-height:1.7; }
+  .mc-error strong{ color:var(--text); font-family:var(--serif); }
+  .mc-error code{ color:var(--accent); font-family:var(--mono); font-size:12px; }
+
+  /* ===== TOPBAR ===== */
+  .mc-topbar{ position:sticky; top:0; z-index:30; display:flex; align-items:center; justify-content:space-between;
+    gap:10px; padding:14px 16px; background:var(--bg); border-bottom:1px solid var(--border); }
+  .mc-icon-btn{ flex-shrink:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+    background:none; border:none; color:var(--soft); cursor:pointer; padding:0; border-radius:9px;
+    transition:color .15s ease,background .15s ease; position:relative; }
+  .mc-icon-btn:hover{ color:var(--text); background:var(--surface); }
+  .mc-icon-btn svg{ width:22px; height:22px; display:block; }
+  .mc-topbar-title{ flex:1; text-align:center; font-family:var(--serif); font-weight:400; font-size:20px;
+    color:var(--text); letter-spacing:-0.01em; cursor:pointer; line-height:1.1; }
+  .mc-topbar-title .mc-mark{ color:var(--accent); font-style:italic; }
+  .mc-heart-top.on{ color:var(--accent); }
+  .mc-heart-top .hf{ display:none; }
+  .mc-heart-top.on .he{ display:none; }
+  .mc-heart-top.on .hf{ display:block; }
+  .mc-topbadge{ position:absolute; top:4px; right:4px; min-width:16px; height:16px; padding:0 4px;
+    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    border-radius:8px; display:flex; align-items:center; justify-content:center; line-height:1; }
+
+  /* ===== MENU ===== */
+  .mc-menu-backdrop{ position:fixed; inset:0; z-index:40; background:#0009; animation:mcFade .18s ease forwards; }
+  .mc-menu{ position:absolute; top:0; left:0; bottom:0; width:82%; max-width:340px; z-index:41;
+    background:var(--surface); border-right:1px solid var(--border); padding:14px 0 24px; overflow-y:auto;
+    animation:mcSlide .2s cubic-bezier(.2,.7,.3,1) forwards; }
+  .mc-menu-head{ display:flex; align-items:center; justify-content:space-between; padding:6px 16px 14px;
+    margin-bottom:6px; border-bottom:1px solid var(--border); }
+  .mc-menu-head h2{ font-family:var(--serif); font-weight:400; font-size:19px; color:var(--text); }
+  .mc-menu-head h2 .mc-mark{ color:var(--accent); font-style:italic; }
+  .mc-menu-item{ display:flex; align-items:center; gap:13px; width:100%; padding:13px 16px; background:none;
+    border:none; cursor:pointer; text-align:left; color:var(--body); font-family:var(--sans); font-size:15px;
+    transition:background .12s ease; }
+  .mc-menu-item:hover{ background:var(--surface-2); }
+  .mc-menu-item.active{ color:var(--accent); }
+  .mc-menu-item .mi-ic{ flex-shrink:0; width:22px; height:22px; color:var(--soft); }
+  .mc-menu-item.active .mi-ic{ color:var(--accent); }
+  .mc-menu-item .mi-ic svg{ width:22px; height:22px; display:block; }
+  .mc-menu-item .mi-label{ flex:1; }
+  .mc-menu-item .mi-badge{ background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px;
+    font-weight:700; padding:1px 7px; border-radius:7px; }
+  .mc-menu-sep{ height:1px; background:var(--border); margin:6px 16px; }
+
+  /* ===== HOME ===== */
+  .mc-home-intro{ padding:22px 18px 8px; }
+  .mc-home-intro h1{ font-family:var(--serif); font-weight:400; font-size:27px; color:var(--text);
+    letter-spacing:-0.01em; line-height:1.15; }
+  .mc-home-intro p{ color:var(--soft); font-size:13.5px; margin-top:7px; }
+  .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:9px; padding:10px 14px 0; }
+  .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px; cursor:pointer; text-align:left;
+    transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
+  .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); }
+  .mc-tile:active{ transform:scale(.985); }
+  .mc-tile-ic{ color:var(--accent); width:26px; height:26px; }
+  .mc-tile-ic svg{ width:26px; height:26px; display:block; }
+  .mc-tile-name{ margin-top:auto; font-family:var(--serif); font-size:17px; color:var(--text); line-height:1.2; }
+  .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
+    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    border-radius:9px; display:flex; align-items:center; justify-content:center; }
+
+  /* ===== SECTION HEADER ===== */
+  .mc-sec-head{ padding:20px 18px 2px; }
+  .mc-sec-head h1{ font-family:var(--serif); font-weight:400; font-size:26px; color:var(--text);
+    letter-spacing:-0.01em; line-height:1.15; }
+  .mc-sec-head p{ color:var(--soft); font-size:13px; margin-top:6px; }
+
+  /* ===== SEARCH ===== */
+  .mc-search-wrap{ padding:14px 18px 2px; position:relative; }
+  .mc-search{ width:100%; padding:11px 14px 11px 40px; font-family:var(--serif); font-size:16px; color:var(--text);
+    background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
+  .mc-search::placeholder{ color:var(--soft); font-style:italic; }
+  .mc-search:focus{ border-color:var(--accent); }
+  .mc-search-icon{ position:absolute; left:32px; top:50%; transform:translateY(-50%); width:16px; height:16px;
+    color:var(--soft); pointer-events:none; }
+  .mc-count-pill{ position:absolute; right:30px; top:50%; transform:translateY(-50%); background:var(--surface-2);
+    color:var(--soft); font-family:var(--mono); font-size:11px; font-weight:600; padding:3px 9px; border-radius:6px; pointer-events:none; }
+
+  /* ===== SUBMENU (Nejnovější / Redakce / filtr) ===== */
+  .mc-submenu{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; align-items:center; }
+  .mc-submenu button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
+    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer;
+    transition:all .15s ease; }
+  .mc-submenu button:hover{ color:var(--text); }
+  .mc-submenu button.active{ background:var(--accent); border-color:var(--accent); color:#15120E; }
+  .mc-submenu .mc-filter-btn{ margin-left:auto; display:inline-flex; align-items:center; gap:6px; }
+  .mc-submenu .mc-filter-btn svg{ width:15px; height:15px; }
+  .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px;
+    font-weight:700; padding:0 6px; border-radius:6px; }
+
+  /* ===== FILTER PANEL ===== */
+  .mc-filter{ margin:6px 18px 0; padding:14px; background:var(--surface); border:1px solid var(--border); border-radius:10px; }
+  .mc-filter .fkw{ width:100%; padding:9px 12px; font-family:var(--serif); font-size:15px; color:var(--text);
+    background:var(--bg); border:1px solid var(--border); border-radius:8px; outline:none; margin-bottom:12px; }
+  .mc-filter .fkw:focus{ border-color:var(--accent); }
+  .mc-filter h4{ font-family:var(--sans); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+    color:var(--soft); margin:10px 0 7px; }
+  .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
+  .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
+    font-size:12.5px; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
+  .mc-chip:hover{ border-color:var(--soft); }
+  .mc-chip.on{ background:var(--accent); border-color:var(--accent); color:#15120E; font-weight:600; }
+  .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
+  .mc-filter-clear{ background:none; border:none; color:var(--soft); font-family:var(--sans); font-size:12.5px;
+    cursor:pointer; text-decoration:underline; }
+  .mc-filter-clear:hover{ color:var(--text); }
+
+  /* ===== FLOATING ACTION ===== */
+  .mc-fab-wrap{ position:fixed; left:0; right:0; bottom:0; display:flex; justify-content:center;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom)); pointer-events:none;
+    background:linear-gradient(to top,var(--bg) 58%,transparent); }
+  .mc-fab{ pointer-events:auto; max-width:484px; width:100%; background:var(--accent); color:#15120E; border:none;
+    border-radius:12px; padding:14px; font-family:var(--sans); font-size:15px; font-weight:700; cursor:pointer;
+    transition:transform .12s ease,filter .15s ease; }
+  .mc-fab:hover{ filter:brightness(1.06); }
+  .mc-fab:active{ transform:scale(.98); }
+
+  /* ===== FEELING LIST ===== */
+  .mc-list{ padding:8px 18px 0; list-style:none; }
+  .mc-feeling{ display:flex; align-items:center; gap:11px; padding:10px 12px 10px 14px; background:var(--surface);
+    border:1px solid var(--border); border-radius:8px; margin-bottom:5px; transition:border-color .15s ease,background .15s ease; }
+  .mc-feeling.checked{ border-color:var(--accent); background:var(--accent-dim); }
+  .mc-check{ flex-shrink:0; width:24px; height:24px; border-radius:7px; border:1px solid var(--border);
+    background:var(--surface-2); color:var(--soft); cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:all .12s ease; }
+  .mc-check.on{ background:var(--accent); border-color:var(--accent); }
+  .mc-check svg{ width:14px; height:14px; color:#15120E; opacity:0; transition:opacity .12s ease; }
+  .mc-check.on svg{ opacity:1; }
+  .mc-check:active{ transform:scale(.92); }
+  .mc-feeling-name{ flex:1; font-family:var(--serif); font-size:16px; line-height:1.25; color:var(--text); cursor:pointer; }
+  .mc-feeling-go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; cursor:pointer; padding:0 2px; }
+  .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--accent); }
+  .mc-more{ width:100%; margin:5px 0 4px; padding:11px; background:transparent; border:1px dashed var(--border);
+    border-radius:8px; color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease; }
+  .mc-more:hover{ color:var(--text); border-color:var(--soft); }
+
+  /* ===== NAME LIST (crisis, body) ===== */
+  .mc-namelist{ padding:8px 18px 0; }
+  .mc-name-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
+    padding:14px 16px; background:var(--surface); border:1px solid var(--border); border-radius:8px; margin-bottom:6px;
+    cursor:pointer; text-align:left; transition:border-color .15s ease,background .15s ease; }
+  .mc-name-item:hover{ border-color:var(--accent); background:var(--surface-2); }
+  .mc-name-item .n{ font-family:var(--serif); font-size:16.5px; color:var(--text); line-height:1.25; }
+  .mc-name-item .go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
+
+  /* ===== BACK / DETAIL ===== */
+  .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:18px 18px 0; background:none; border:none;
+    padding:0; color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease; }
+  .mc-back:hover{ opacity:.7; }
+  .mc-detail-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px 18px 2px; }
+  .mc-detail-title{ font-family:var(--serif); font-weight:400; font-size:25px; color:var(--text); letter-spacing:-0.01em; line-height:1.18; }
+  .mc-detail-sub{ padding:0 18px 2px; color:var(--soft); font-family:var(--mono); font-size:12px; }
+  .mc-detail-heart{ flex-shrink:0; background:none; border:none; cursor:pointer; padding:4px; color:#4a4338; transition:transform .12s ease; }
+  .mc-detail-heart:active{ transform:scale(.9); }
+  .mc-detail-heart svg{ width:24px; height:24px; display:block; }
+  .mc-detail-heart .hf{ display:none; color:var(--accent); }
+  .mc-detail-heart.on .he{ display:none; }
+  .mc-detail-heart.on .hf{ display:block; }
+  .mc-detail-meta{ padding:2px 18px 0; font-family:var(--mono); font-size:11.5px; color:var(--soft);
+    display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .mc-detail-meta .m{ display:inline-flex; align-items:center; gap:4px; }
+  .mc-detail-meta svg{ width:13px; height:13px; }
+  .mc-detail-body{ padding:12px 18px 0; }
+
+  .mc-submenu-triplet{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
+  .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
+    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
+  .mc-submenu-triplet button:hover{ color:var(--text); }
+  .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:#15120E; }
+
+  /* ===== CARDS ===== */
+  .mc-cards{ padding:6px 18px 0; list-style:none; }
+  .mc-card{ position:relative; background:var(--surface); border:1px solid var(--border); border-radius:8px;
+    padding:16px 48px 16px 18px; margin-bottom:7px; overflow:hidden; }
+  .mc-card.clickable{ cursor:pointer; transition:border-color .15s ease; }
+  .mc-card.clickable:hover{ border-color:var(--accent); }
+  .mc-card::before{ content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--accent); opacity:.7; }
+  .mc-card-title{ font-family:var(--serif); font-size:18px; color:var(--text); line-height:1.25; margin-bottom:5px; }
+  .mc-card-text{ font-family:var(--serif); font-size:16px; line-height:1.55; color:var(--body); }
+  .mc-card-text.lead{ color:var(--text); font-size:16.5px; }
+  .mc-card-author{ margin-top:9px; font-family:var(--sans); font-size:12.5px; color:var(--accent); }
+  .mc-card-author .yr{ color:var(--soft); }
+  .mc-card-meta{ margin-top:9px; font-family:var(--mono); font-size:11px; color:var(--soft); display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .mc-card-meta .m{ display:inline-flex; align-items:center; gap:4px; }
+  .mc-card-meta svg{ width:12px; height:12px; }
+  .mc-card.read .mc-card-title{ color:var(--soft); }
+
+  .mc-heart{ position:absolute; top:12px; right:11px; background:none; border:none; cursor:pointer; padding:5px; transition:transform .12s ease; }
+  .mc-heart:active{ transform:scale(.9); }
+  .mc-heart svg{ width:22px; height:22px; display:block; transition:all .12s ease; }
+  .mc-heart .he{ color:#4a4338; }
+  .mc-heart .hf{ color:var(--accent); display:none; }
+  .mc-heart.on .he{ display:none; }
+  .mc-heart.on .hf{ display:block; }
+
+  /* ===== MARKDOWN ===== */
+  .mc-md{ font-family:var(--serif); font-size:16.5px; line-height:1.65; color:var(--body); }
+  .mc-md h2,.mc-md h3,.mc-md h4{ font-family:var(--serif); font-weight:400; color:var(--text); line-height:1.25; letter-spacing:-0.01em; }
+  .mc-md h2{ font-size:21px; margin:26px 0 8px; }
+  .mc-md h3{ font-size:17.5px; margin:22px 0 6px; color:var(--accent); }
+  .mc-md h4{ font-size:15px; margin:18px 0 5px; font-family:var(--sans); font-weight:700; }
+  .mc-md > :first-child{ margin-top:0; }
+  .mc-md p{ margin:0 0 13px; }
+  .mc-md ul,.mc-md ol{ margin:0 0 14px; padding-left:22px; }
+  .mc-md ul{ list-style:disc; } .mc-md ol{ list-style:decimal; }
+  .mc-md li{ margin-bottom:6px; padding-left:3px; }
+  .mc-md ol > li{ margin-bottom:14px; }
+  .mc-md li > ul,.mc-md li > ol{ margin:7px 0 0; }
+  .mc-md li > ul{ list-style:circle; }
+  .mc-md li::marker{ color:var(--accent); }
+  .mc-md strong{ color:var(--text); font-weight:700; }
+  .mc-md em{ color:var(--soft); font-style:italic; }
+
+  /* ===== EXERCISE INFO TOGGLE ===== */
+  .mc-info-toggle{ display:inline-flex; align-items:center; gap:6px; margin:16px 18px 0; padding:8px 14px;
+    background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--accent);
+    font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:border-color .15s ease; }
+  .mc-info-toggle:hover{ border-color:var(--accent); }
+  .mc-info-box{ margin:10px 18px 0; padding:2px 16px 14px; background:var(--surface); border:1px solid var(--border);
+    border-left:3px solid var(--accent); border-radius:8px; }
+
+  /* ===== FAVORITES ===== */
+  .mc-fav-group{ padding:6px 18px 0; }
+  .mc-fav-group h2{ font-family:var(--serif); font-size:18px; font-weight:400; color:var(--text); margin:18px 0 8px;
+    display:flex; align-items:center; gap:8px; }
+  .mc-fav-group h2 .c{ color:var(--soft); font-family:var(--mono); font-weight:600; font-size:12px; }
+  .mc-empty{ text-align:center; padding:60px 32px; color:var(--soft); line-height:1.7; font-size:14px; }
+  .mc-empty .e-ic{ font-size:34px; opacity:.4; margin-bottom:12px; }
+
+  .mc-more-page{ width:calc(100% - 36px); margin:4px 18px 0; padding:12px; background:var(--surface);
+    border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:var(--sans); font-size:13px;
+    font-weight:600; cursor:pointer; transition:border-color .15s ease; }
+  .mc-more-page:hover{ border-color:var(--accent); }
+
+  /* ===== ABOUT ===== */
+  .mc-about{ padding:8px 20px 0; font-family:var(--serif); font-size:16.5px; line-height:1.7; color:var(--body); }
+  .mc-about p{ margin:0 0 14px; }
+  .mc-about strong{ color:var(--text); }
+
+  @keyframes mcIn{ from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
+  .mc-in{ animation:mcIn .2s ease forwards; }
+  @keyframes mcFade{ from{opacity:0;} to{opacity:1;} }
+  @keyframes mcSlide{ from{transform:translateX(-100%);} to{transform:translateX(0);} }
+</style>
+
+<script>
+(function(){
+  "use strict";
+
+  // ===================== KONFIGURACE =====================
+  var MC_BASE = "./";   // scratch: data leží vedle souboru
+  var FILES = {
+    clusters:"clusters.json", feelings:"feelings.json",
+    reframings:"reframings.json", questions_rf:"reframing_questions.json", actions:"reframing_actions.json",
+    crisis:"crisis.json", body:"body.json", exercises:"exercises.json",
+    inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json"
+  };
+
+  // triplet přerámování
+  var TYPES = [
+    { key:"reframings",   store:"reframings",          label:"Přerámování" },
+    { key:"questions_rf", store:"reframing_questions", label:"Otázky" },
+    { key:"actions",      store:"reframing_actions",   label:"Úkoly" }
+  ];
+
+  // ploché obsahové typy — jeden config řídí renderery, filtr i oblíbené
+  //  render: "cards" (title/perex + detail) | "quotes" (celý text v kartě) | "doclist" (název → md detail)
+  var CONTENT = {
+    crisis:       { dataKey:"crisis",       store:"crisis",       label:"První pomoc",       render:"doclist", titleField:"name", alpha:false, search:false },
+    body:         { dataKey:"body",         store:"body",         label:"Tělesné příznaky",  render:"doclist", titleField:"name", alpha:true,  search:true  },
+    exercises:    { dataKey:"exercises",    store:"exercises",    label:"Cvičení",           render:"cards",   titleField:"name",  timeField:"duration",     redakce:true, info:true },
+    articles:     { dataKey:"articles",     store:"articles",     label:"Články",            render:"cards",   titleField:"title", timeField:"reading_time", redakce:true, readable:true },
+    inspirations: { dataKey:"inspirations", store:"inspirations", label:"Inspirace",         render:"quotes",  redakce:false },
+    questions:    { dataKey:"questions",    store:"questions",    label:"Otázky",            render:"quotes",  redakce:false }
+  };
+
+  var STORE_KEY = "mc_kompletni_v1";
+  var FAV_STORES = ["crisis","body","articles","exercises",
+                    "reframings","reframing_questions","reframing_actions","inspirations","questions"];
+  // mapování store -> {dataKey, jak zobrazit v oblíbených}
+  var FAV_VIEW = [
+    { store:"crisis",              dataKey:"crisis",       label:"První pomoc",          kind:"name" },
+    { store:"body",                dataKey:"body",         label:"Tělesné příznaky",     kind:"name" },
+    { store:"articles",            dataKey:"articles",     label:"Články",               kind:"title" },
+    { store:"exercises",           dataKey:"exercises",    label:"Cvičení",              kind:"name" },
+    { store:"reframings",          dataKey:"reframings",   label:"Přerámování",          kind:"text" },
+    { store:"reframing_questions", dataKey:"questions_rf", label:"Otázky (přerámování)", kind:"text" },
+    { store:"reframing_actions",   dataKey:"actions",      label:"Úkoly",                kind:"text" },
+    { store:"inspirations",        dataKey:"inspirations", label:"Inspirace",            kind:"quote" },
+    { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"text" }
+  ];
+
+  // ===================== IKONY =====================
+  var IC = {
+    crisis:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M12 8v4M12 16h.01"/></svg>',
+    body:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-8.8-1.4 5.5 5.5 0 0 0-8.8 6.6C4.8 13.5 12 20 12 20s7.2-6.5 8.8-9.2a5.5 5.5 0 0 0 0-5.2z"/></svg>',
+    reframing:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>',
+    exercises:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6M8 22l4-8 4 8M6 11h12"/></svg>',
+    questions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
+    inspirations:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M19 5l1.4-1.4M3.6 20.4 5 19"/><circle cx="12" cy="12" r="4"/></svg>',
+    articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>',
+    about:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>',
+    favorites:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+    filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.5 10 19 14 21 14 12.5 22 3"/></svg>',
+    clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    star:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7.1 14l-5-4.8 6.9-.9z"/></svg>'
+  };
+
+  // ===================== REGISTR SEKCÍ =====================
+  var SECTIONS = [
+    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true },
+    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true },
+    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true },
+    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true },
+    { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true },
+    { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true },
+    { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true },
+    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:true },
+    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false }
+  ];
+  function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
+
+  // ===================== STAV =====================
+  var DB=null, clusterName={}, clusterSort={}, byCluster={}, itemIndex={}, contentClusters=[];
+  var flat={};  // dataKey -> [items sorted by sort_order]
+
+  var state = {
+    page:"home", section:null, menuOpen:false,
+    rf:{ view:"feelings", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50 },
+    sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
+    detail:null     // { type, id, infoOpen }
+  };
+  function secState(key){
+    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], dur:null, search:"" };
+    return state.sec[key];
+  }
+
+  // ===================== UŽIVATELSKÁ DATA =====================
+  var USER=loadUser();
+  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{}}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
+  function loadUser(){
+    var u=emptyUser();
+    try{ var d=JSON.parse(localStorage.getItem(STORE_KEY));
+      if(d&&typeof d==="object"){
+        FAV_STORES.forEach(function(s){ if(Array.isArray(d.favorites&&d.favorites[s])) u.favorites[s]=d.favorites[s]; });
+        if(Array.isArray(d.read)) u.read=d.read;
+        if(d.last_seen&&typeof d.last_seen==="object") u.last_seen=d.last_seen;
+        if(d.profile&&typeof d.profile==="object") u.profile=d.profile;
+      }
+    }catch(e){}
+    return u;
+  }
+  function saveUser(){ try{ localStorage.setItem(STORE_KEY,JSON.stringify(USER)); }catch(e){} }
+  function favCount(){ return FAV_STORES.reduce(function(n,s){ return n+USER.favorites[s].length; },0); }
+  function isFav(store,id){ return USER.favorites[store].indexOf(id)>-1; }
+  function toggleFav(store,id){ var a=USER.favorites[store],i=a.indexOf(id); if(i>-1)a.splice(i,1); else a.push(id); saveUser(); }
+  function isRead(id){ return USER.read.indexOf(id)>-1; }
+  function markRead(id){ if(USER.read.indexOf(id)<0){ USER.read.push(id); saveUser(); } }
+  function newsTotal(){ return 0; }
+
+  // ===================== NAČTENÍ =====================
+  function load(){
+    var keys=Object.keys(FILES);
+    Promise.all(keys.map(function(k){
+      return fetch(MC_BASE+FILES[k],{cache:"no-cache"}).then(function(r){ if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status); return r.json(); });
+    })).then(function(arrs){
+      DB={}; keys.forEach(function(k,i){ DB[k]=arrs[i]; });
+      prepare(); render();
+    }).catch(showError);
+  }
+
+  function prepare(){
+    DB.clusters.forEach(function(c){ clusterName[c.id]=c.name; clusterSort[c.id]=c.sort_order; });
+    TYPES.forEach(function(t){
+      byCluster[t.key]={}; itemIndex[t.key]={};
+      (DB[t.key]||[]).forEach(function(it){
+        (byCluster[t.key][it.cluster_id]=byCluster[t.key][it.cluster_id]||[]).push(it);
+        itemIndex[t.key][it.id]=it;
+      });
+      Object.keys(byCluster[t.key]).forEach(function(cid){ byCluster[t.key][cid].sort(function(a,b){ return a.sort_order-b.sort_order; }); });
+    });
+    contentClusters=Object.keys(byCluster.reframings);
+    Object.keys(CONTENT).forEach(function(key){
+      var dk=CONTENT[key].dataKey;
+      flat[dk]=(DB[dk]||[]).slice().sort(function(a,b){ return a.sort_order-b.sort_order; });
+      itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
+    });
+  }
+
+  function showError(err){
+    document.getElementById("mc-root").innerHTML=
+      '<div class="mc-error"><strong>Data se nepodařilo načíst.</strong><br><br>'+
+      'Scratch verze čte JSONy lokálně (MC_BASE="./"). Spusť ji přes lokální server '+
+      've složce, kde leží všech 11 souborů.<br><br><span style="opacity:.6">Detail: '+esc(String(err&&err.message||err))+'</span></div>';
+  }
+
+  // ===================== POMOCNÉ =====================
+  function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
+  function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+  function minutes(n){ return '<span class="m">'+IC.clock+(n||0)+' min</span>'; }
+
+  // ===================== MARKDOWN ===================== (identický s produkcí)
+  function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
+  function md(src){
+    var lines=String(src||"").split(/\r?\n/), out=[], para=[], stack=[];
+    function flushPara(){ if(para.length){ out.push("<p>"+para.map(mdInline).join("<br>")+"</p>"); para=[]; } }
+    function closeList(){ out.push("</li></"+stack.pop().tag+">"); }
+    function closeLists(){ while(stack.length) closeList(); }
+    function item(indent,tag,text){
+      flushPara();
+      while(stack.length && indent<stack[stack.length-1].indent) closeList();
+      var top=stack[stack.length-1];
+      if(!stack.length || indent>top.indent){ out.push("<"+tag+">"); stack.push({tag:tag,indent:indent}); }
+      else{ out.push("</li>"); if(top.tag!==tag){ out.push("</"+stack.pop().tag+">"); out.push("<"+tag+">"); stack.push({tag:tag,indent:indent}); } }
+      out.push("<li>"+text);
+    }
+    lines.forEach(function(raw){
+      var line=raw.replace(/\t/g,"    "), m; var indent=line.match(/^ */)[0].length; line=line.trim();
+      if(!line){ flushPara(); return; }
+      if((m=line.match(/^(#{1,6})\s+(.*)$/))){ flushPara(); closeLists(); var lvl=Math.min(Math.max(m[1].length,2),4); out.push("<h"+lvl+">"+mdInline(m[2])+"</h"+lvl+">"); return; }
+      if((m=line.match(/^[-*]\s+(.*)$/))){ item(indent,"ul",mdInline(m[1])); return; }
+      if((m=line.match(/^\d+[.)]\s+(.*)$/))){ item(indent,"ol",mdInline(m[1])); return; }
+      closeLists(); para.push(line);
+    });
+    flushPara(); closeLists(); return out.join("");
+  }
+
+  // ===================== PŘERÁMOVÁNÍ — pocity + interleaving =====================
+  function mainFeelings(){ return DB.feelings.filter(function(f){ return contentClusters.indexOf(f.cluster_id)>-1 && f.main && f.main!=="0"; }); }
+  function secondaryFeelings(){ return DB.feelings.filter(function(f){ return contentClusters.indexOf(f.cluster_id)>-1 && (!f.main||f.main==="0"); }); }
+  function visibleFeelings(){
+    var rf=state.rf, list=mainFeelings().concat(rf.showSecondary?secondaryFeelings():[]);
+    if(rf.search.trim()){ list=mainFeelings().concat(secondaryFeelings()); var q=deburr(rf.search); list=list.filter(function(f){ return deburr(f.name).indexOf(q)>-1; }); }
+    list.sort(function(a,b){ return a.sort_order-b.sort_order; }); return list;
+  }
+  function interleave(typeKey,cwc){
+    var counts={},ids=[]; cwc.forEach(function(c){ counts[c.cluster_id]=c.count; ids.push(c.cluster_id); });
+    ids.sort(function(a,b){ if(counts[b]!==counts[a]) return counts[b]-counts[a]; return (clusterSort[a]||0)-(clusterSort[b]||0); });
+    var lists={},pos={}; ids.forEach(function(cid){ lists[cid]=byCluster[typeKey][cid]||[]; pos[cid]=0; });
+    var seen={},merged=[];
+    function exhausted(){ return ids.every(function(cid){ return pos[cid]>=lists[cid].length; }); }
+    while(!exhausted()){ ids.forEach(function(cid){ var e=0; while(e<counts[cid]&&pos[cid]<lists[cid].length){ var it=lists[cid][pos[cid]]; pos[cid]++; if(seen[it.id])continue; seen[it.id]=1; merged.push(it); e++; } }); }
+    return merged;
+  }
+  function currentRfList(){
+    var rf=state.rf;
+    if(rf.detailMode==="single"){ var cid=rf.detailClusters[0].cluster_id; return (byCluster[rf.activeType][cid]||[]).slice(); }
+    return interleave(rf.activeType,rf.detailClusters);
+  }
+  function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
+
+  // ===================== FILTR obsahových sekcí =====================
+  function allTags(dataKey){
+    var set={}; (flat[dataKey]||[]).forEach(function(it){ (it.tags||[]).forEach(function(t){ set[t]=1; }); });
+    return Object.keys(set).sort();
+  }
+  function durationBuckets(){ return [ {label:"do 5 min",max:5}, {label:"6–15 min",min:6,max:15}, {label:"16+ min",min:16} ]; }
+  function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; if(s.dur!=null)n++; return n; }
+  function contentList(key){
+    var cfg=CONTENT[key], s=secState(key), items=(flat[cfg.dataKey]||[]).slice();
+    if(s.mode==="edit" && cfg.redakce){ items=items.filter(function(it){ return it.quality===5; }); shuffle(items); }
+    else { items.sort(function(a,b){ return String(b.added_at||"").localeCompare(String(a.added_at||"")) || b.sort_order-a.sort_order; }); }
+    if(s.kw.trim()){
+      var q=deburr(s.kw);
+      items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex].filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
+    }
+    if(s.tags.length){ items=items.filter(function(it){ var t=it.tags||[]; return s.tags.every(function(tag){ return t.indexOf(tag)>-1; }); }); }
+    if(s.dur!=null && cfg.timeField){
+      var b=durationBuckets()[s.dur];
+      items=items.filter(function(it){ var v=it[cfg.timeField]||0; return (b.min==null||v>=b.min)&&(b.max==null||v<=b.max); });
+    }
+    return items;
+  }
+  function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+
+  // ===================== RENDER — obal =====================
+  function render(){
+    var root=document.getElementById("mc-root");
+    var h=viewTopbar();
+    if(state.detail){ h+=viewContentDetail(); }
+    else if(state.page==="home"){ h+=viewHome(); }
+    else if(state.page==="favorites"){ h+=viewFavorites(); }
+    else {
+      var sec=sectionByKey(state.section);
+      if(sec&&sec.kind==="reframing") h+=viewReframing();
+      else if(sec&&sec.kind==="favorites") h+=viewFavorites();
+      else if(sec&&sec.kind==="about") h+=viewAbout();
+      else if(sec&&sec.kind==="content") h+=viewContent(sec.key);
+      else h+='<div class="mc-empty">—</div>';
+    }
+    if(state.menuOpen) h+=viewMenu();
+    root.innerHTML=h;
+    var s=document.getElementById("mc-search");
+    if(s){ var v=(state.section==="reframing")?state.rf.search:(secState(state.section||"").search); if(v){ s.value=v; } }
+  }
+
+  function viewTopbar(){
+    var favOn=favCount()>0, nt=newsTotal();
+    var h='<div class="mc-topbar">';
+    h+='<button class="mc-icon-btn" onclick="MC.menu(true)" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'+(nt>0?'<span class="mc-topbadge">'+nt+'</span>':'')+'</button>';
+    h+='<div class="mc-topbar-title" onclick="MC.home()">Moje <span class="mc-mark">cesta</span></div>';
+    h+='<button class="mc-icon-btn mc-heart-top '+(favOn?"on":"")+' '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')" aria-label="Oblíbené"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
+    h+='</div>'; return h;
+  }
+
+  function viewMenu(){
+    var h='<div class="mc-menu-backdrop" onclick="MC.menu(false)"></div><nav class="mc-menu">';
+    h+='<div class="mc-menu-head"><h2>Moje <span class="mc-mark">cesta</span></h2><button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
+    SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
+      var active=state.page==="section"&&state.section===s.key;
+      h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span></button>';
+    });
+    h+='<div class="mc-menu-sep"></div>';
+    var fav=sectionByKey("favorites");
+    h+='<button class="mc-menu-item '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')"><span class="mi-ic">'+IC[fav.icon]+'</span><span class="mi-label">'+esc(fav.label)+'</span>'+(favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'')+'</button>';
+    h+='</nav>'; return h;
+  }
+
+  function viewHome(){
+    var h='<div class="mc-home-intro"><h1>Vítej na cestě.</h1><p>Vyber, kudy dnes — a podívej se na to, co prožíváš, jinak.</p></div><div class="mc-tiles">';
+    SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
+      h+='<button class="mc-tile mc-in" onclick="MC.open(\''+s.key+'\')"><span class="mc-tile-ic">'+IC[s.icon]+'</span><span class="mc-tile-name">'+esc(s.label)+'</span></button>';
+    });
+    return h+'</div>';
+  }
+
+  // ===================== RENDER — Přerámování =====================
+  function viewReframing(){ return state.rf.view==="detail"?viewRfDetail():viewRfFeelings(); }
+  function viewRfFeelings(){
+    var rf=state.rf, feelings=visibleFeelings(), total=mainFeelings().length+secondaryFeelings().length;
+    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
+    h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)"><span class="mc-count-pill">'+total+' pocitů</span></div>';
+    h+='<ul class="mc-list">';
+    if(feelings.length===0){ h+='<div class="mc-empty">Žádný pocit neodpovídá hledání.</div>'; }
+    else feelings.forEach(function(f){
+      var on=!!rf.selected[f.id];
+      h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'"><span class="mc-check '+(on?"on":"")+'" onclick="MC.rfToggle(\''+f.id+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="mc-feeling-name" onclick="MC.rfSingle(\''+f.cluster_id+'\')">'+esc(f.name)+'</span><span class="mc-feeling-go" onclick="MC.rfSingle(\''+f.cluster_id+'\')">›</span></li>';
+    });
+    h+='</ul>';
+    if(!rf.search.trim()&&!rf.showSecondary&&secondaryFeelings().length>0) h+='<button class="mc-more" onclick="MC.rfSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
+    var n=Object.keys(rf.selected).length;
+    if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfOpenSelected()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
+    return h;
+  }
+  function viewRfDetail(){
+    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět na pocity</button>';
+    if(rf.detailMode==="single") h+='<div class="mc-detail-title" style="padding-top:14px">'+esc(clusterName[rf.detailClusters[0].cluster_id]||"")+'</div>';
+    else { var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; }); h+='<div class="mc-detail-title" style="padding-top:14px">Vybrané pocity</div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>'; }
+    h+='<div class="mc-submenu-triplet">';
+    TYPES.forEach(function(t){ h+='<button class="'+(rf.activeType===t.key?"active":"")+'" onclick="MC.rfType(\''+t.key+'\')">'+t.label+'</button>'; });
+    h+='</div>';
+    var list=currentRfList(), store=storeOf(rf.activeType), shown=list.slice(0,rf.pageLimit);
+    h+='<ul class="mc-cards">';
+    shown.forEach(function(it){
+      var on=isFav(store,it.id);
+      h+='<li class="mc-card mc-in"><div class="mc-card-text">'+esc(it.text)+'</div>';
+      if(rf.detailMode==="merged") h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>';
+      h+=heartBtn(store,it.id,on)+'</li>';
+    });
+    h+='</ul>';
+    if(list.length>rf.pageLimit) h+='<button class="mc-more-page" onclick="MC.rfMore()">Dalších '+Math.min(50,list.length-rf.pageLimit)+'</button>';
+    return h;
+  }
+
+  // ===================== RENDER — obsahové sekce =====================
+  function viewContent(key){
+    var cfg=CONTENT[key];
+    if(cfg.render==="doclist") return viewDocList(key);
+    return viewCards(key);
+  }
+
+  function viewDocList(key){
+    var cfg=CONTENT[key], s=secState(key);
+    var items=(flat[cfg.dataKey]||[]).slice();
+    if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
+    var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
+    if(cfg.search){
+      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej příznak…" oninput="MC.secSearch(this.value)"></div>';
+      if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
+    }
+    h+='<div class="mc-namelist">';
+    if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá hledání.</div>';
+    else items.forEach(function(it){
+      h+='<button class="mc-name-item mc-in" onclick="MC.detail(\''+cfg.dataKey+'\',\''+it.id+'\')"><span class="n">'+esc(it.name)+'</span><span class="go">›</span></button>';
+    });
+    return h+'</div>';
+  }
+
+  function viewCards(key){
+    var cfg=CONTENT[key], s=secState(key);
+    var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
+    h+='<div class="mc-submenu">';
+    h+='<button class="'+(s.mode==="new"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'new\')">Nejnovější</button>';
+    if(cfg.redakce) h+='<button class="'+(s.mode==="edit"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'edit\')">Redakce</button>';
+    var fc=activeFilterCount(key);
+    h+='<button class="mc-filter-btn '+(s.filterOpen?"active":"")+'" onclick="MC.secFilter(\''+key+'\')">'+IC.filter+'Filtr'+(fc>0?'<span class="fc">'+fc+'</span>':'')+'</button>';
+    h+='</div>';
+    if(s.filterOpen) h+=viewFilterPanel(key);
+    var items=contentList(key);
+    h+='<ul class="mc-cards">';
+    if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
+    else if(cfg.render==="quotes") items.forEach(function(it){ h+=quoteCard(cfg,it); });
+    else items.forEach(function(it){ h+=contentCard(key,cfg,it); });
+    h+='</ul>';
+    return h;
+  }
+
+  function viewFilterPanel(key){
+    var cfg=CONTENT[key], s=secState(key);
+    var h='<div class="mc-filter">';
+    h+='<input class="fkw" placeholder="Klíčové slovo…" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)">';
+    var tags=allTags(cfg.dataKey);
+    if(tags.length){
+      h+='<h4>Štítky</h4><div class="mc-chips">';
+      tags.forEach(function(t){ h+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
+      h+='</div>';
+    }
+    if(cfg.timeField==="duration"){
+      h+='<h4>Délka</h4><div class="mc-chips">';
+      durationBuckets().forEach(function(b,i){ h+='<button class="mc-chip '+(s.dur===i?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
+      h+='</div>';
+    }
+    if(activeFilterCount(key)>0) h+='<div class="mc-filter-foot"><button class="mc-filter-clear" onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button></div>';
+    return h+'</div>';
+  }
+
+  function contentCard(key,cfg,it){
+    var title=it[cfg.titleField]||"";
+    var store=cfg.store, on=isFav(store,it.id), read=cfg.readable&&isRead(it.id);
+    var h='<li class="mc-card clickable mc-in '+(read?"read":"")+'" onclick="MC.detail(\''+cfg.dataKey+'\',\''+it.id+'\')">';
+    h+='<div class="mc-card-title">'+esc(title)+'</div>';
+    if(it.perex) h+='<div class="mc-card-text">'+esc(it.perex)+'</div>';
+    h+='<div class="mc-card-meta">';
+    if(cfg.timeField) h+=minutes(it[cfg.timeField]);
+    if(cfg.redakce&&it.quality===5) h+='<span class="m" style="color:var(--accent)">'+IC.star+'Redakce</span>';
+    h+='</div>';
+    h+=heartBtn(store,it.id,on,true)+'</li>';
+    return h;
+  }
+
+  function quoteCard(cfg,it){
+    var store=cfg.store, on=isFav(store,it.id);
+    var h='<li class="mc-card mc-in"><div class="mc-card-text lead">'+esc(it.text)+'</div>';
+    if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>';
+    h+=heartBtn(store,it.id,on)+'</li>';
+    return h;
+  }
+
+  // ===================== RENDER — obsahový detail =====================
+  function viewContentDetail(){
+    var d=state.detail, item=(itemIndex[d.type]||{})[d.id];
+    var cfg=null; Object.keys(CONTENT).forEach(function(k){ if(CONTENT[k].dataKey===d.type) cfg=CONTENT[k]; });
+    if(!item||!cfg) return '<div class="mc-empty">Položka nenalezena.</div>';
+    var title=item[cfg.titleField]||item.name||"";
+    var store=cfg.store, on=isFav(store,d.id);
+    var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
+    h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
+    var meta=[];
+    if(cfg.timeField&&item[cfg.timeField]) meta.push(minutes(item[cfg.timeField]));
+    if(item.tags&&item.tags.length) meta.push('<span class="m">'+esc(item.tags.join(", "))+'</span>');
+    if(meta.length) h+='<div class="mc-detail-meta">'+meta.join("")+'</div>';
+    h+='<div class="mc-detail-body mc-md">'+md(item.body)+'</div>';
+    if(cfg.info&&item.info){
+      var open=d.infoOpen;
+      h+='<button class="mc-info-toggle" onclick="MC.detailInfo()">'+(open?"▾ Skrýt kontext":"▸ K čemu to je")+'</button>';
+      if(open) h+='<div class="mc-info-box mc-md">'+md(item.info)+'</div>';
+    }
+    if(cfg.readable) markRead(d.id);
+    return h;
+  }
+
+  // ===================== RENDER — Oblíbené =====================
+  function viewFavorites(){
+    var h='<div class="mc-sec-head"><h1>Oblíbené</h1></div>';
+    if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepni na srdíčko u věty, která tě osloví, a najdeš ji tady.</div>';
+    FAV_VIEW.forEach(function(fv){
+      var items=USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean);
+      if(items.length===0) return;
+      h+='<div class="mc-fav-group"><h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2><ul class="mc-cards" style="padding-left:0;padding-right:0">';
+      items.forEach(function(it){
+        h+='<li class="mc-card mc-in">';
+        if(fv.kind==="title") h+='<div class="mc-card-title">'+esc(it.title||"")+'</div>'+(it.perex?'<div class="mc-card-text">'+esc(it.perex)+'</div>':'');
+        else if(fv.kind==="name") h+='<div class="mc-card-title">'+esc(it.name||"")+'</div>';
+        else if(fv.kind==="quote"){ h+='<div class="mc-card-text lead">'+esc(it.text||"")+'</div>'; if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>'; }
+        else { h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; if(it.cluster_id) h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>'; }
+        h+=heartBtn(fv.store,it.id,true)+'</li>';
+      });
+      h+='</ul></div>';
+    });
+    return h;
+  }
+
+  // ===================== RENDER — O appce =====================
+  function viewAbout(){
+    return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
+      '<div class="mc-detail-title" style="padding-top:14px">O aplikaci</div>'+
+      '<div class="mc-about">'+
+      '<p><strong>Moje cesta</strong> je psychoterapeutická appka. Vyber jádrový pocit — a dostaneš přerámování, otázky a úkoly, které ti pomůžou podívat se na to, co prožíváš, jinak.</p>'+
+      '<p>Vedle přerámování tu najdeš <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
+      '<p>Co tě osloví, ulož si srdíčkem do <strong>Oblíbených</strong> — máš to pak po ruce.</p>'+
+      '<p style="color:var(--soft); font-size:14px; font-family:var(--sans)">Autor obsahu: Robert Řeřicha, psychoterapeut.</p>'+
+      '</div>';
+  }
+
+  // ===================== SPOLEČNÉ =====================
+  function heartBtn(store,id,on,stop){
+    var s=stop?'event.stopPropagation();':'';
+    return '<button class="mc-heart '+(on?"on":"")+'" onclick="'+s+'MC.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
+  }
+
+  // ===================== HANDLERY =====================
+  window.MC = {
+    menu:function(open){ state.menuOpen=!!open; render(); },
+    home:function(){ state.page="home"; state.section=null; state.detail=null; state.menuOpen=false; scrollTop(); render(); },
+    open:function(key){
+      state.menuOpen=false; state.detail=null;
+      if(key==="favorites"){ state.page="favorites"; state.section=null; }
+      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="feelings"; }
+      scrollTop(); render();
+    },
+    // Přerámování
+    rfSearch:function(v){ state.rf.search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
+    rfSecondary:function(){ state.rf.showSecondary=!state.rf.showSecondary; render(); },
+    rfToggle:function(id){ var sel=state.rf.selected; if(sel[id]) delete sel[id]; else { var f=DB.feelings.filter(function(x){return x.id===id;})[0]; if(f) sel[id]=f; } render(); },
+    rfSingle:function(cid){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cid,count:1}]; enterRfDetail(); },
+    rfOpenSelected:function(){
+      var sel=state.rf.selected, feels=Object.keys(sel).map(function(k){return sel[k];}), counts={};
+      feels.forEach(function(f){ counts[f.cluster_id]=(counts[f.cluster_id]||0)+1; });
+      var cids=Object.keys(counts);
+      if(cids.length===1){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cids[0],count:counts[cids[0]]}]; }
+      else { state.rf.detailMode="merged"; state.rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:counts[c]}; }); }
+      enterRfDetail();
+    },
+    rfBack:function(){ state.rf.view="feelings"; scrollTop(); render(); },
+    rfType:function(t){ state.rf.activeType=t; state.rf.pageLimit=50; scrollTop(); render(); },
+    rfMore:function(){ state.rf.pageLimit+=50; render(); },
+    // obsahové sekce
+    secMode:function(key,m){ secState(key).mode=m; scrollTop(); render(); },
+    secFilter:function(key){ var s=secState(key); s.filterOpen=!s.filterOpen; render(); },
+    secKw:function(key,v){ secState(key).kw=v; render(); var i=document.querySelector(".mc-filter .fkw"); if(i){ i.focus(); i.value=v; i.setSelectionRange(v.length,v.length); } },
+    secTag:function(key,t){ var s=secState(key),i=s.tags.indexOf(t); if(i>-1)s.tags.splice(i,1); else s.tags.push(t); render(); },
+    secDur:function(key,i){ var s=secState(key); s.dur=(s.dur===i?null:i); render(); },
+    secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.dur=null; render(); },
+    secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
+    // detail
+    detail:function(type,id){ state.detail={ type:type, id:id, infoOpen:false }; scrollTop(); render(); },
+    detailBack:function(){ state.detail=null; scrollTop(); render(); },
+    detailInfo:function(){ if(state.detail) state.detail.infoOpen=!state.detail.infoOpen; render(); },
+    // oblíbené
+    fav:function(store,id){ toggleFav(store,id); render(); }
+  };
+
+  function enterRfDetail(){ state.rf.view="detail"; state.rf.activeType="reframings"; state.rf.pageLimit=50; scrollTop(); render(); }
+  function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
+
+  load();
+})();
+</script>
