@@ -1,12 +1,24 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="theme-color" content="#15120E">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Moje cesta</title>
 <!--
-  MOJE CESTA — KOMPLETNÍ PROTOTYP (scratch, jen pro inspiraci)
-  Všech 11 JSON sekcí naživo, aby bylo vidět, jak by mohla vypadat celá appka.
-  NENÍ to ostrá verze — je to hřiště k okoukání vajbu a interakcí.
+  MOJE CESTA — KOMPLETNÍ PROTOTYP
+  Všech 11 JSON sekcí naživo. Hřiště k proklikání celé appky.
 
-  Data se tahají lokálně (MC_BASE="./") — soubor běží vedle JSONů ve své
-  scratch složce (python -m http.server). Produkční obal + registr sekcí je
-  převzatý z cesta_prototyp.html; sloty jsou tu nahrazené živými renderery.
+  Data se tahají relativně (MC_BASE="./") — soubor běží vedle JSONů v kořeni
+  repa, takže funguje lokálně (python -m http.server) i na GitHub Pages.
+  Obal + registr sekcí je převzatý z cesta_prototyp.html; sloty jsou tu
+  nahrazené živými renderery.
+
+  Meta tagy nahoře jsou pro samostatné spuštění na mobilu (PWA přes
+  „Přidat na plochu" + vypnutá cache, ať se refresh po pushi projeví hned).
+  Uvnitř Miowebu je WordPress ignoruje, nevadí tam.
 -->
 
 <div id="mc-root"><div class="mc-loading">Načítám…</div></div>
