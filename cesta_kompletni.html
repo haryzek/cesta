@@ -5,14 +5,14 @@
 <meta name="theme-color" content="#15120E">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <title>Moje cesta</title>
 <!--
   MOJE CESTA — KOMPLETNÍ PROTOTYP
   Všech 11 JSON sekcí naživo. Hřiště k proklikání celé appky.
 
-  Data se tahají relativně (MC_BASE="./") — soubor běží vedle JSONů v kořeni
-  repa, takže funguje lokálně (python -m http.server) i na GitHub Pages.
+  Data se tahají relativně (MC_BASE="./data/"), takže soubor funguje lokálně
+  (python -m http.server v kořeni) i na GitHub Pages.
   Obal + registr sekcí je převzatý z cesta_prototyp.html; sloty jsou tu
   nahrazené živými renderery.
 
@@ -298,7 +298,7 @@
   "use strict";
 
   // ===================== KONFIGURACE =====================
-  var MC_BASE = "./";   // scratch: data leží vedle souboru
+  var MC_BASE = "./data/";   // JSONy leží v data/ vedle tohohle souboru
   var FILES = {
     clusters:"clusters.json", feelings:"feelings.json",
     reframings:"reframings.json", questions_rf:"reframing_questions.json", actions:"reframing_actions.json",
@@ -440,8 +440,8 @@
   function showError(err){
     document.getElementById("mc-root").innerHTML=
       '<div class="mc-error"><strong>Data se nepodařilo načíst.</strong><br><br>'+
-      'Scratch verze čte JSONy lokálně (MC_BASE="./"). Spusť ji přes lokální server '+
-      've složce, kde leží všech 11 souborů.<br><br><span style="opacity:.6">Detail: '+esc(String(err&&err.message||err))+'</span></div>';
+      'JSONy se čtou relativně z <code>data/</code>. Spusť appku přes lokální '+
+      'server v kořeni repa, ne otevřením souboru z disku.<br><br><span style="opacity:.6">Detail: '+esc(String(err&&err.message||err))+'</span></div>';
   }
 
   // ===================== POMOCNÉ =====================
