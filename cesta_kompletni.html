@@ -158,8 +158,12 @@
     transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
   .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); }
   .mc-tile:active{ transform:scale(.985); }
-  .mc-tile-ic{ color:var(--accent); width:26px; height:26px; }
-  .mc-tile-ic svg{ width:26px; height:26px; display:block; }
+  /* Ikonka v barevném čtverečku, sudé/liché dlaždice střídají accent a teal
+     (mockup). Dřív holá accentová ikona bez podkladu. */
+  .mc-tile-ic{ width:38px; height:38px; border-radius:11px; display:flex; align-items:center; justify-content:center;
+    background:var(--accent-dim); color:var(--accent); }
+  .mc-tile:nth-child(even) .mc-tile-ic{ background:var(--teal-soft); color:var(--teal); }
+  .mc-tile-ic svg{ width:20px; height:20px; display:block; }
   .mc-tile-name{ margin-top:auto; font-family:var(--serif); font-weight:600; font-size:17px;
     font-variation-settings:'opsz' 24; color:var(--text); line-height:1.2; letter-spacing:-0.01em; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
@@ -266,6 +270,7 @@
   .mc-detail-heart.on .he{ display:none; }
   .mc-detail-heart.on .hf{ display:block; }
   .mc-detail-meta{ padding:8px 18px 0; }
+  .mc-detail-perex{ padding:8px 18px 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
   .mc-detail-body{ padding:14px 18px 0; }
 
   .mc-submenu-triplet{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
@@ -305,6 +310,29 @@
   .mc-heart.on .he{ display:none; }
   .mc-heart.on .hf{ display:block; }
 
+  /* ===== TABBAR (Postup / Info) =====
+     Dřív rozbalovací toggle „▸ K čemu to je". Mockup má dva taby, aktivní
+     s tmavým pozadím; Info nese tečku, že tam něco je. */
+  .mc-tabbar{ display:flex; gap:6px; padding:14px 18px 4px; }
+  .mc-tab{ flex:1; text-align:center; padding:11px 0; border-radius:12px; border:none; cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); background:transparent;
+    transition:background .15s ease,color .15s ease; }
+  .mc-tab:hover{ color:var(--text); }
+  .mc-tab.active{ background:var(--text); color:var(--bg); }
+  .mc-tab .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--accent);
+    margin-left:5px; vertical-align:middle; }
+  .mc-tab.active .dot{ background:var(--bg); }
+
+  /* ===== DURATION STRIP ===== */
+  .mc-strip{ display:flex; align-items:center; gap:10px; margin:14px 18px 0; padding:14px 16px;
+    background:var(--surface); border:1px solid var(--border); border-radius:14px; }
+  .mc-strip .s-ic{ flex-shrink:0; width:34px; height:34px; border-radius:10px; background:var(--accent-dim);
+    color:var(--accent); display:flex; align-items:center; justify-content:center; }
+  .mc-strip .s-ic svg{ width:16px; height:16px; }
+  .mc-strip .s-label{ font-family:var(--sans); font-size:11px; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--muted); font-weight:600; margin-bottom:1px; }
+  .mc-strip .s-value{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
+
   /* ===== MARKDOWN ===== */
   .mc-md{ font-family:var(--sans); font-size:15.5px; line-height:1.65; color:var(--body); }
   .mc-md h2,.mc-md h3,.mc-md h4{ font-family:var(--serif); font-weight:600; color:var(--text); line-height:1.25; letter-spacing:-0.01em; }
@@ -317,19 +345,32 @@
   .mc-md ul{ list-style:disc; } .mc-md ol{ list-style:decimal; }
   .mc-md li{ margin-bottom:6px; padding-left:3px; }
   .mc-md ol > li{ margin-bottom:14px; }
+
+  /* ===== KROKY =====
+     Mockup má kroky jako kruh s číslem + vertikální linka. Data jsou ale
+     markdown s číslovaným seznamem, ne strukturovaná pole — datový model se
+     nesahá. Kroky se proto skládají z <ol>, který renderer už vyrábí:
+     counter dělá číslo, ::before kruh, ::after linku k dalšímu kroku.
+     Platí jen na vnořené úrovni 0 (.mc-steps > ol), aby vnitřní seznamy
+     zůstaly normální odrážky. */
+  .mc-steps > ol{ list-style:none; padding-left:0; counter-reset:mcstep; margin:0; }
+  .mc-steps > ol > li{ position:relative; padding-left:48px; padding-bottom:22px; margin-bottom:0;
+    counter-increment:mcstep; }
+  .mc-steps > ol > li::before{ content:counter(mcstep); position:absolute; left:0; top:-4px;
+    width:34px; height:34px; border-radius:50%; background:var(--surface); border:1.5px solid var(--accent);
+    color:var(--accent); display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-weight:600; font-size:15px; font-variation-settings:'opsz' 24; z-index:1; }
+  .mc-steps > ol > li:not(:last-child)::after{ content:''; position:absolute; left:17px; top:34px; bottom:0;
+    width:1px; background:var(--border); }
+  .mc-steps > ol > li > strong:first-child{ display:block; font-family:var(--sans); font-size:16px;
+    font-weight:600; color:var(--text); line-height:1.3; margin-bottom:6px; }
+  .mc-steps > ol > li ul{ margin-top:6px; margin-bottom:0; color:var(--soft); font-size:14.5px; }
+  .mc-steps > ol > li ul li::marker{ color:var(--muted); }
   .mc-md li > ul,.mc-md li > ol{ margin:7px 0 0; }
   .mc-md li > ul{ list-style:circle; }
   .mc-md li::marker{ color:var(--accent); }
   .mc-md strong{ color:var(--text); font-weight:700; }
   .mc-md em{ color:var(--soft); font-style:italic; }
-
-  /* ===== EXERCISE INFO TOGGLE ===== */
-  .mc-info-toggle{ display:inline-flex; align-items:center; gap:6px; margin:16px 18px 0; padding:8px 14px;
-    background:var(--surface); border:1px solid var(--border); border-radius:8px; color:var(--accent);
-    font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:border-color .15s ease; }
-  .mc-info-toggle:hover{ border-color:var(--accent); }
-  .mc-info-box{ margin:10px 18px 0; padding:2px 16px 14px; background:var(--surface); border:1px solid var(--border);
-    border-left:3px solid var(--accent); border-radius:8px; }
 
   /* ===== FAVORITES ===== */
   .mc-fav-group{ padding:6px 18px 0; }
@@ -801,18 +842,34 @@
     if(!item||!cfg) return '<div class="mc-empty">Položka nenalezena.</div>';
     var title=item[cfg.titleField]||item.name||"";
     var store=cfg.store, on=isFav(store,d.id);
+    var hasTabs=!!(cfg.info&&item.info), onInfo=hasTabs&&d.infoOpen;
+
     var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
-    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
-    h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
+    // Pořadí podle mockupu: tag pilulky nad H1, pak titulek, pak perex.
+    // Čas u cvičení nese duration strip pod taby, takže pilulku nedubluje.
     var pills=[];
-    if(cfg.timeField&&item[cfg.timeField]) pills.push(timeTag(item[cfg.timeField]));
+    if(cfg.timeField&&item[cfg.timeField]&&!hasTabs) pills.push(timeTag(item[cfg.timeField]));
     if(item.tags&&item.tags.length) item.tags.forEach(function(t){ pills.push('<span class="mc-tag">'+esc(t)+'</span>'); });
     if(pills.length) h+='<div class="mc-detail-meta"><div class="mc-tag-row">'+pills.join("")+'</div></div>';
-    h+='<div class="mc-detail-body mc-md">'+md(item.body)+'</div>';
-    if(cfg.info&&item.info){
-      var open=d.infoOpen;
-      h+='<button class="mc-info-toggle" onclick="MC.detailInfo()">'+(open?"▾ Skrýt kontext":"▸ K čemu to je")+'</button>';
-      if(open) h+='<div class="mc-info-box mc-md">'+md(item.info)+'</div>';
+
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
+    h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
+    if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
+
+    if(hasTabs){
+      h+='<div class="mc-tabbar">';
+      h+='<button class="mc-tab '+(onInfo?"":"active")+'" onclick="MC.detailTab(0)">Postup</button>';
+      h+='<button class="mc-tab '+(onInfo?"active":"")+'" onclick="MC.detailTab(1)">Info<span class="dot"></span></button>';
+      h+='</div>';
+    }
+    if(onInfo){
+      h+='<div class="mc-detail-body mc-md">'+md(item.info)+'</div>';
+    } else {
+      if(cfg.timeField&&item[cfg.timeField]){
+        h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div>'+
+           '<div class="s-label">Trvání</div><div class="s-value">'+esc(String(item[cfg.timeField]))+' min</div></div></div>';
+      }
+      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(item.body)+'</div>';
     }
     if(cfg.readable) markRead(d.id);
     return h;
@@ -895,6 +952,7 @@
     detail:function(type,id){ state.detail={ type:type, id:id, infoOpen:false }; scrollTop(); render(); },
     detailBack:function(){ state.detail=null; scrollTop(); render(); },
     detailInfo:function(){ if(state.detail) state.detail.infoOpen=!state.detail.infoOpen; render(); },
+    detailTab:function(i){ if(state.detail) state.detail.infoOpen=(i===1); scrollTop(); render(); },
     // oblíbené
     fav:function(store,id){ toggleFav(store,id); render(); },
     // téma
