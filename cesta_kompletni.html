@@ -6,6 +6,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Moje cesta</title>
 <!--
   MOJE CESTA — KOMPLETNÍ PROTOTYP
@@ -27,24 +30,49 @@
   :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
   #mc-root ul { padding:0; list-style:none; }
 
-  /* Samostatné spuštění (Pages / PWA): #mc-root visí přímo pod body a kolem
-     appky prosvítá bílá stránka. Uvnitř Miowebu je #mc-root zanořený ve WP
-     divech, selektor se nechytí a pozadí stránky zůstane na WordPressu. */
-  html:has(> body > #mc-root), body:has(> #mc-root) {
-    margin:0; background:#15120E;
-  }
+  /* ===== PALETA =====
+     Dvě sady, přepínač píše data-theme na #mc-root (ne na <html> — uvnitř
+     Miowebu nad ním nemáme kontrolu). Dark je zapsaný jako výchozí přímo na
+     #mc-root, aby appka měla barvy i kdyby JS nedoběhl.
 
+     Mapování starých názvů na nový design systém:
+       --bg → bg | --surface → card | --surface-2 → card-alt | --text → text
+       --body → text (oba jsou čtený text, nová paleta je sjednocuje)
+       --soft → text-secondary | --accent-dim → accent-soft
+     Nové: --muted (nejtlumenější), --teal + --teal-soft (tag pilulky),
+     --on-accent (text NA accent ploše — v dark tmavý, v light světlý; dřív
+     bylo natvrdo #15120E, což by na světlé terakotě nebylo vidět). */
   #mc-root {
-    --bg:#15120E; --surface:#201B15; --surface-2:#2A241C; --border:#3A332A;
-    --text:#EDE6D8; --body:#DBD3C3; --soft:#9A9081; --empty:#34302A;
-    --done:#74955E; --missed:#BC5B43; --accent:#D9A441; --accent-dim:#D9A44120;
-    --serif:Georgia,'Times New Roman',ui-serif,serif;
-    --sans:-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
+    --bg:#1C1914; --surface:#262119; --surface-2:#2E281E; --border:#3A3226;
+    --text:#F2EBDC; --body:#F2EBDC; --soft:#B5AA96; --muted:#7C7264;
+    --accent:#E08252; --accent-dim:#3D2A1F; --on-accent:#1C1914;
+    --teal:#6FBBA6; --teal-soft:#223832; --teal-deep:#16332F;
+    --empty:#3A3226; --done:#6FBBA6; --missed:#E08252;
+
+    --serif:'Fraunces',Georgia,'Times New Roman',ui-serif,serif;
+    --sans:'Public Sans',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
     --mono:ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
+
     font-family:var(--sans); background:var(--bg); color:var(--body);
     max-width:520px; margin:0 auto; min-height:100vh; padding-bottom:60px;
     line-height:1.55; font-size:16px; -webkit-font-smoothing:antialiased; position:relative;
   }
+
+  #mc-root[data-theme="light"] {
+    --bg:#F6F1E7; --surface:#FFFDF8; --surface-2:#FBF5EA; --border:#E8DFCE;
+    --text:#2B241C; --body:#2B241C; --soft:#6B6053; --muted:#9C9385;
+    --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8;
+    --teal:#3E7266; --teal-soft:#DCEAE5; --teal-deep:#1F4F49;
+    --empty:#E8DFCE; --done:#3E7266; --missed:#B8562E;
+  }
+
+  /* Samostatné spuštění (Pages / PWA): #mc-root visí přímo pod body a kolem
+     appky prosvítá bílá stránka. Uvnitř Miowebu je #mc-root zanořený ve WP
+     divech, selektor se nechytí a pozadí stránky zůstane na WordPressu.
+     Barvy jsou tu natvrdo — body je nad #mc-root, na jeho proměnné nedosáhne. */
+  html:has(> body > #mc-root), body:has(> #mc-root) { margin:0; background:#1C1914; }
+  html:has(> body > #mc-root[data-theme="light"]),
+  body:has(> #mc-root[data-theme="light"]) { background:#F6F1E7; }
 
   .mc-loading,.mc-error{ padding:56px 24px; text-align:center; color:var(--soft); font-size:14px; line-height:1.7; }
   .mc-error strong{ color:var(--text); font-family:var(--serif); }
@@ -66,7 +94,7 @@
   .mc-heart-top.on .he{ display:none; }
   .mc-heart-top.on .hf{ display:block; }
   .mc-topbadge{ position:absolute; top:4px; right:4px; min-width:16px; height:16px; padding:0 4px;
-    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px; font-weight:700;
     border-radius:8px; display:flex; align-items:center; justify-content:center; line-height:1; }
 
   /* ===== MENU ===== */
@@ -87,7 +115,7 @@
   .mc-menu-item.active .mi-ic{ color:var(--accent); }
   .mc-menu-item .mi-ic svg{ width:22px; height:22px; display:block; }
   .mc-menu-item .mi-label{ flex:1; }
-  .mc-menu-item .mi-badge{ background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px;
+  .mc-menu-item .mi-badge{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px;
     font-weight:700; padding:1px 7px; border-radius:7px; }
   .mc-menu-sep{ height:1px; background:var(--border); margin:6px 16px; }
 
@@ -106,7 +134,7 @@
   .mc-tile-ic svg{ width:26px; height:26px; display:block; }
   .mc-tile-name{ margin-top:auto; font-family:var(--serif); font-size:17px; color:var(--text); line-height:1.2; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
-    background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px; font-weight:700;
+    background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px; font-weight:700;
     border-radius:9px; display:flex; align-items:center; justify-content:center; }
 
   /* ===== SECTION HEADER ===== */
@@ -132,10 +160,10 @@
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer;
     transition:all .15s ease; }
   .mc-submenu button:hover{ color:var(--text); }
-  .mc-submenu button.active{ background:var(--accent); border-color:var(--accent); color:#15120E; }
+  .mc-submenu button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
   .mc-submenu .mc-filter-btn{ margin-left:auto; display:inline-flex; align-items:center; gap:6px; }
   .mc-submenu .mc-filter-btn svg{ width:15px; height:15px; }
-  .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:#15120E; font-family:var(--mono); font-size:10px;
+  .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px;
     font-weight:700; padding:0 6px; border-radius:6px; }
 
   /* ===== FILTER PANEL ===== */
@@ -149,7 +177,7 @@
   .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
   .mc-chip:hover{ border-color:var(--soft); }
-  .mc-chip.on{ background:var(--accent); border-color:var(--accent); color:#15120E; font-weight:600; }
+  .mc-chip.on{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:600; }
   .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
   .mc-filter-clear{ background:none; border:none; color:var(--soft); font-family:var(--sans); font-size:12.5px;
     cursor:pointer; text-decoration:underline; }
@@ -159,7 +187,7 @@
   .mc-fab-wrap{ position:fixed; left:0; right:0; bottom:0; display:flex; justify-content:center;
     padding:16px 18px calc(16px + env(safe-area-inset-bottom)); pointer-events:none;
     background:linear-gradient(to top,var(--bg) 58%,transparent); }
-  .mc-fab{ pointer-events:auto; max-width:484px; width:100%; background:var(--accent); color:#15120E; border:none;
+  .mc-fab{ pointer-events:auto; max-width:484px; width:100%; background:var(--accent); color:var(--on-accent); border:none;
     border-radius:12px; padding:14px; font-family:var(--sans); font-size:15px; font-weight:700; cursor:pointer;
     transition:transform .12s ease,filter .15s ease; }
   .mc-fab:hover{ filter:brightness(1.06); }
@@ -174,7 +202,7 @@
     background:var(--surface-2); color:var(--soft); cursor:pointer; display:flex; align-items:center; justify-content:center;
     transition:all .12s ease; }
   .mc-check.on{ background:var(--accent); border-color:var(--accent); }
-  .mc-check svg{ width:14px; height:14px; color:#15120E; opacity:0; transition:opacity .12s ease; }
+  .mc-check svg{ width:14px; height:14px; color:var(--on-accent); opacity:0; transition:opacity .12s ease; }
   .mc-check.on svg{ opacity:1; }
   .mc-check:active{ transform:scale(.92); }
   .mc-feeling-name{ flex:1; font-family:var(--serif); font-size:16px; line-height:1.25; color:var(--text); cursor:pointer; }
@@ -216,7 +244,7 @@
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
   .mc-submenu-triplet button:hover{ color:var(--text); }
-  .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:#15120E; }
+  .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
 
   /* ===== CARDS ===== */
   .mc-cards{ padding:6px 18px 0; list-style:none; }
@@ -353,7 +381,9 @@
     favorites:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
     filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.5 10 19 14 21 14 12.5 22 3"/></svg>',
     clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
-    star:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7.1 14l-5-4.8 6.9-.9z"/></svg>'
+    star:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7.1 14l-5-4.8 6.9-.9z"/></svg>',
+    sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>'
   };
 
   // ===================== REGISTR SEKCÍ =====================
@@ -401,6 +431,24 @@
     return u;
   }
   function saveUser(){ try{ localStorage.setItem(STORE_KEY,JSON.stringify(USER)); }catch(e){} }
+
+  // ===================== TÉMA =====================
+  // Volba přežívá v localStorage; dokud si uživatel nevybere, jede se podle
+  // systému. data-theme se píše na #mc-root, ne na <html> — uvnitř Miowebu
+  // nad ním nemáme kontrolu.
+  var THEME_KEY="mc_theme";
+  function theme(){
+    var t; try{ t=localStorage.getItem(THEME_KEY); }catch(e){}
+    if(t==="light"||t==="dark") return t;
+    try{ if(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches) return "light"; }catch(e){}
+    return "dark";
+  }
+  function applyTheme(){
+    var t=theme(), root=document.getElementById("mc-root");
+    if(root) root.setAttribute("data-theme",t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m) m.setAttribute("content", t==="light"?"#F6F1E7":"#1C1914");
+  }
   function favCount(){ return FAV_STORES.reduce(function(n,s){ return n+USER.favorites[s].length; },0); }
   function isFav(store,id){ return USER.favorites[store].indexOf(id)>-1; }
   function toggleFav(store,id){ var a=USER.favorites[store],i=a.indexOf(id); if(i>-1)a.splice(i,1); else a.push(id); saveUser(); }
@@ -563,6 +611,9 @@
     h+='<div class="mc-menu-sep"></div>';
     var fav=sectionByKey("favorites");
     h+='<button class="mc-menu-item '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')"><span class="mi-ic">'+IC[fav.icon]+'</span><span class="mi-label">'+esc(fav.label)+'</span>'+(favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'')+'</button>';
+    h+='<div class="mc-menu-sep"></div>';
+    var lightNow=theme()==="light";
+    h+='<button class="mc-menu-item" onclick="MC.theme()"><span class="mi-ic">'+(lightNow?IC.moon:IC.sun)+'</span><span class="mi-label">'+(lightNow?"Tmavý režim":"Světlý režim")+'</span></button>';
     h+='</nav>'; return h;
   }
 
@@ -798,12 +849,19 @@
     detailBack:function(){ state.detail=null; scrollTop(); render(); },
     detailInfo:function(){ if(state.detail) state.detail.infoOpen=!state.detail.infoOpen; render(); },
     // oblíbené
-    fav:function(store,id){ toggleFav(store,id); render(); }
+    fav:function(store,id){ toggleFav(store,id); render(); },
+    // téma
+    theme:function(){
+      var next=theme()==="light"?"dark":"light";
+      try{ localStorage.setItem(THEME_KEY,next); }catch(e){}
+      applyTheme(); render();
+    }
   };
 
   function enterRfDetail(){ state.rf.view="detail"; state.rf.activeType="reframings"; state.rf.pageLimit=50; scrollTop(); render(); }
   function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
 
+  applyTheme();
   load();
 })();
 </script>
