@@ -35,8 +35,14 @@ Nic není obsahově hotové, ale **struktura všech 11 JSONů je finální a dol
 - Klastry (116) + pocity (399): kompletní mapa s ID a schématy. ✅
 - Triplet přerámování: testovací fáze, zatím jen 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný).
 - Ostatní obsah: jen vzorek pár položek, plní se.
-- Prototyp (`cesta_prototyp.html`): funkční. Obal + **registr sekcí** — jeden `SECTIONS = [...]` řídí úvodní dlaždice, hamburger menu i router. Živé: Přerámování + Oblíbené. Ostatní sekce jsou připravené sloty (`kind:"placeholder"`, „Připravujeme"), dodělají se výměnou rendereru — obal se nesahá. Coconut téma.
-- Předloha ostatních sekcí: `_scratch/01_kompletni/cesta_kompletni.html` má všechny sekce naživo nad všemi 11 JSONy (doclist, filtrované karty, quote karty, about). Slouží jako reference, odkud opsat renderer. Je v `.gitignore` (nepushuje se), takže žije jen lokálně.
+**Dvě běžící verze appky, obě v kořeni a obě na Pages.** Nepleť si je — vypadají skoro stejně, když je spustíš:
+
+- **`cesta_kompletni.html` — tohle je hlavní věc, na které se pracuje.** Všechny sekce naživo nad všemi 11 JSONy (doclist, filtrované karty, quote karty, about). Stejný obal a `SECTIONS` registr jako prototyp, jen sloty jsou nahrazené živými renderery. `MC_BASE="./"` — data leží vedle ní, takže jede lokálně i na Pages. Má navíc meta hlavičky pro samostatný běh na mobilu (viewport, PWA manifest, vypnutá cache) — uvnitř Miowebu je WordPress ignoruje. Bobovy screeny v `local/_design/Support/` jsou odsud.
+- **`cesta_prototyp.html`** — mladší brácha, produkční obal pro Mioweb (`MC_BASE` míří na Pages absolutní URL). Živé jen Přerámování + Oblíbené, zbytek jsou sloty (`kind:"placeholder"`, „Připravujeme"). Umí míň, ale je čistší.
+
+Obě sdílí **registr sekcí** — jeden `SECTIONS = [...]` řídí úvodní dlaždice, hamburger menu i router. Nová sekce se dodělá výměnou rendereru, obal se nesahá.
+
+Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník (`index.html`) → „Appka — kompletní" → Chrome „Přidat na plochu".
 - Admin (`cesta_admin.html`): zastaralý, k přestavbě od základu (viz níže).
 
 ---
@@ -102,9 +108,15 @@ Když sáhneš do těchhle algoritmů, přečti si v README i „proč" — jsou
 
 ---
 
-## Testování prototypu (headless)
+## Testování (headless)
 
-Ověřený vzorec: zkopíruj HTML do temp složky, přepni `MC_BASE` na `"./"` (např. přes `sed`), nakopíruj vedle potřebné JSONy, spusť `python3 -m http.server` a proti tomu Playwright — vše v jednom bash volání. Bar je: nula chyb v konzoli a správné vykreslení proti reálným datům.
+**`cesta_kompletni.html`** má `MC_BASE="./"` a leží vedle JSONů v kořeni, takže se nic nekopíruje ani nepřepisuje — spusť `python -m http.server 8777` v kořeni a jeď na `http://localhost:8777/cesta_kompletni.html`.
+
+**`cesta_prototyp.html`** má `MC_BASE` na absolutní Pages URL (kvůli Miowebu), takže pro lokální test buď nech tahat data z Pages, nebo si `MC_BASE` dočasně přepni na `"./"`.
+
+Ověřuj přes **JS eval** (`javascript_tool` / Playwright `evaluate`), ne přes screenshot — ten v tomhle setupu nefunguje. Bar je: nula chyb v konzoli a správné vykreslení proti reálným datům.
+
+Než pushneš, zabij server (`taskkill //F //IM python.exe`) — drží složku a `rm -rf` pak spadne na „Device or resource busy".
 
 ---
 
