@@ -92,6 +92,17 @@
   .mc-eyebrow{ font-family:var(--sans); font-size:12px; font-weight:700; text-transform:uppercase;
     letter-spacing:0.08em; color:var(--accent); margin-bottom:14px; }
 
+  /* ===== TAG PILULKY =====
+     Dřív se tagy sázely jako holý text přes čárku (a v seznamu vůbec).
+     Základní pilulka je teal; varianta .time je accentová (čas, trvání). */
+  .mc-tag-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .mc-tag{ font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:0.02em;
+    padding:5px 12px; border-radius:20px; background:var(--teal-soft); color:var(--teal); line-height:1.3; }
+  .mc-tag.time{ background:var(--accent-dim); color:var(--accent);
+    display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-weight:700; }
+  .mc-tag.time svg{ width:12px; height:12px; }
+  .mc-tag.more{ background:transparent; color:var(--muted); padding:5px 4px; }
+
   .mc-loading,.mc-error{ padding:56px 24px; text-align:center; color:var(--soft); font-size:14px; line-height:1.7; }
   .mc-error strong{ color:var(--text); font-family:var(--serif); font-weight:600; }
   .mc-error code{ color:var(--accent); font-family:var(--mono); font-size:12px; }
@@ -143,7 +154,7 @@
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
   .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:9px; padding:10px 14px 0; }
   .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
-    background:var(--surface); border:1px solid var(--border); border-radius:12px; cursor:pointer; text-align:left;
+    background:var(--surface); border:1px solid var(--border); border-radius:16px; cursor:pointer; text-align:left;
     transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
   .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); }
   .mc-tile:active{ transform:scale(.985); }
@@ -212,8 +223,8 @@
 
   /* ===== FEELING LIST ===== */
   .mc-list{ padding:8px 18px 0; list-style:none; }
-  .mc-feeling{ display:flex; align-items:center; gap:11px; padding:10px 12px 10px 14px; background:var(--surface);
-    border:1px solid var(--border); border-radius:8px; margin-bottom:5px; transition:border-color .15s ease,background .15s ease; }
+  .mc-feeling{ display:flex; align-items:center; gap:11px; padding:12px 12px 12px 15px; background:var(--surface);
+    border:1px solid var(--border); border-radius:14px; margin-bottom:6px; transition:border-color .15s ease,background .15s ease; }
   .mc-feeling.checked{ border-color:var(--accent); background:var(--accent-dim); }
   .mc-check{ flex-shrink:0; width:24px; height:24px; border-radius:7px; border:1px solid var(--border);
     background:var(--surface-2); color:var(--soft); cursor:pointer; display:flex; align-items:center; justify-content:center;
@@ -226,14 +237,14 @@
     letter-spacing:-0.01em; line-height:1.25; color:var(--text); cursor:pointer; }
   .mc-feeling-go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; cursor:pointer; padding:0 2px; }
   .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--accent); }
-  .mc-more{ width:100%; margin:5px 0 4px; padding:11px; background:transparent; border:1px dashed var(--border);
-    border-radius:8px; color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease; }
+  .mc-more{ width:100%; margin:6px 0 4px; padding:11px; background:transparent; border:1px dashed var(--border);
+    border-radius:14px; color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease; }
   .mc-more:hover{ color:var(--text); border-color:var(--soft); }
 
   /* ===== NAME LIST (crisis, body) ===== */
   .mc-namelist{ padding:8px 18px 0; }
   .mc-name-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
-    padding:14px 16px; background:var(--surface); border:1px solid var(--border); border-radius:8px; margin-bottom:6px;
+    padding:15px 17px; background:var(--surface); border:1px solid var(--border); border-radius:14px; margin-bottom:8px;
     cursor:pointer; text-align:left; transition:border-color .15s ease,background .15s ease; }
   .mc-name-item:hover{ border-color:var(--accent); background:var(--surface-2); }
   .mc-name-item .n{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24;
@@ -254,11 +265,8 @@
   .mc-detail-heart .hf{ display:none; color:var(--accent); }
   .mc-detail-heart.on .he{ display:none; }
   .mc-detail-heart.on .hf{ display:block; }
-  .mc-detail-meta{ padding:2px 18px 0; font-family:var(--mono); font-size:11.5px; color:var(--soft);
-    display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
-  .mc-detail-meta .m{ display:inline-flex; align-items:center; gap:4px; }
-  .mc-detail-meta svg{ width:13px; height:13px; }
-  .mc-detail-body{ padding:12px 18px 0; }
+  .mc-detail-meta{ padding:8px 18px 0; }
+  .mc-detail-body{ padding:14px 18px 0; }
 
   .mc-submenu-triplet{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
@@ -268,18 +276,23 @@
 
   /* ===== CARDS ===== */
   .mc-cards{ padding:6px 18px 0; list-style:none; }
-  .mc-card{ position:relative; background:var(--surface); border:1px solid var(--border); border-radius:8px;
-    padding:16px 48px 16px 18px; margin-bottom:7px; overflow:hidden; }
-  .mc-card.clickable{ cursor:pointer; transition:border-color .15s ease; }
-  .mc-card.clickable:hover{ border-color:var(--accent); }
-  .mc-card::before{ content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--accent); opacity:.7; }
+  /* Karta podle .ex-card z mockupu: měkčí rádius, bez accentového pruhu vlevo
+     (ten v mockupu patří jen .journal-card), perex v sans a tlumený. */
+  .mc-card{ position:relative; background:var(--surface); border:1px solid var(--border); border-radius:16px;
+    padding:18px 50px 18px 20px; margin-bottom:10px; overflow:hidden; }
+  .mc-card.clickable{ cursor:pointer; transition:border-color .15s ease,background .15s ease; }
+  .mc-card.clickable:hover{ border-color:var(--accent); background:var(--surface-2); }
   .mc-card-title{ font-family:var(--serif); font-weight:600; font-size:18px; font-variation-settings:'opsz' 24;
-    letter-spacing:-0.01em; color:var(--text); line-height:1.25; margin-bottom:5px; }
-  .mc-card-text{ font-family:var(--serif); font-size:16px; line-height:1.55; color:var(--body); }
-  .mc-card-text.lead{ color:var(--text); font-size:16.5px; }
+    letter-spacing:-0.01em; color:var(--text); line-height:1.25; margin-bottom:6px; }
+  .mc-card-text{ font-family:var(--sans); font-size:14.5px; line-height:1.55; color:var(--soft); }
+  /* Citát je display text, ne perex — zůstává ve Fraunces. */
+  .mc-card-text.lead{ font-family:var(--serif); font-weight:400; font-size:17px; line-height:1.5;
+    font-variation-settings:'opsz' 24; color:var(--text); }
   .mc-card-author{ margin-top:9px; font-family:var(--sans); font-size:12.5px; color:var(--accent); }
   .mc-card-author .yr{ color:var(--soft); }
+  .mc-card .mc-tag-row{ margin-top:10px; }
   .mc-card-meta{ margin-top:9px; font-family:var(--mono); font-size:11px; color:var(--soft); display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .mc-card-meta:empty{ display:none; }
   .mc-card-meta .m{ display:inline-flex; align-items:center; gap:4px; }
   .mc-card-meta svg{ width:12px; height:12px; }
   .mc-card.read .mc-card-title{ color:var(--soft); }
@@ -517,6 +530,17 @@
   function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
   function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
   function minutes(n){ return '<span class="m">'+IC.clock+(n||0)+' min</span>'; }
+  // Tag pilulky. V kartách seznamu se řada ořezává (limit), ať karta nenaroste
+  // do plotu — v detailu se ukazují všechny.
+  function tagRow(tags,limit){
+    if(!tags||!tags.length) return "";
+    var show=limit?tags.slice(0,limit):tags, rest=limit?tags.length-show.length:0;
+    var h='<div class="mc-tag-row">';
+    show.forEach(function(t){ h+='<span class="mc-tag">'+esc(t)+'</span>'; });
+    if(rest>0) h+='<span class="mc-tag more">+'+rest+'</span>';
+    return h+'</div>';
+  }
+  function timeTag(n){ return '<span class="mc-tag time">'+IC.clock+(n||0)+' min</span>'; }
 
   // ===================== MARKDOWN ===================== (identický s produkcí)
   function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
@@ -752,6 +776,7 @@
     var h='<li class="mc-card clickable mc-in '+(read?"read":"")+'" onclick="MC.detail(\''+cfg.dataKey+'\',\''+it.id+'\')">';
     h+='<div class="mc-card-title">'+esc(title)+'</div>';
     if(it.perex) h+='<div class="mc-card-text">'+esc(it.perex)+'</div>';
+    if(it.tags&&it.tags.length) h+=tagRow(it.tags,2);
     h+='<div class="mc-card-meta">';
     if(cfg.timeField) h+=minutes(it[cfg.timeField]);
     if(cfg.redakce&&it.quality===5) h+='<span class="m" style="color:var(--accent)">'+IC.star+'Redakce</span>';
@@ -764,6 +789,7 @@
     var store=cfg.store, on=isFav(store,it.id);
     var h='<li class="mc-card mc-in"><div class="mc-card-text lead">'+esc(it.text)+'</div>';
     if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>';
+    if(it.tags&&it.tags.length) h+=tagRow(it.tags,2);
     h+=heartBtn(store,it.id,on)+'</li>';
     return h;
   }
@@ -778,10 +804,10 @@
     var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
-    var meta=[];
-    if(cfg.timeField&&item[cfg.timeField]) meta.push(minutes(item[cfg.timeField]));
-    if(item.tags&&item.tags.length) meta.push('<span class="m">'+esc(item.tags.join(", "))+'</span>');
-    if(meta.length) h+='<div class="mc-detail-meta">'+meta.join("")+'</div>';
+    var pills=[];
+    if(cfg.timeField&&item[cfg.timeField]) pills.push(timeTag(item[cfg.timeField]));
+    if(item.tags&&item.tags.length) item.tags.forEach(function(t){ pills.push('<span class="mc-tag">'+esc(t)+'</span>'); });
+    if(pills.length) h+='<div class="mc-detail-meta"><div class="mc-tag-row">'+pills.join("")+'</div></div>';
     h+='<div class="mc-detail-body mc-md">'+md(item.body)+'</div>';
     if(cfg.info&&item.info){
       var open=d.infoOpen;
