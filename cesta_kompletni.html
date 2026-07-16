@@ -27,6 +27,13 @@
   :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
   #mc-root ul { padding:0; list-style:none; }
 
+  /* Samostatné spuštění (Pages / PWA): #mc-root visí přímo pod body a kolem
+     appky prosvítá bílá stránka. Uvnitř Miowebu je #mc-root zanořený ve WP
+     divech, selektor se nechytí a pozadí stránky zůstane na WordPressu. */
+  html:has(> body > #mc-root), body:has(> #mc-root) {
+    margin:0; background:#15120E;
+  }
+
   #mc-root {
     --bg:#15120E; --surface:#201B15; --surface-2:#2A241C; --border:#3A332A;
     --text:#EDE6D8; --body:#DBD3C3; --soft:#9A9081; --empty:#34302A;
