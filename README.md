@@ -16,12 +16,15 @@ Aplikace běží uvnitř členské sekce webu postaveného na Mioweb (WordPress)
 
 ### Hosting dat
 
-JSON soubory jsou hostované na GitHub Pages. Repozitář slouží zároveň jako záloha a jako prostředí pro práci na dálku; není to veřejně sdílený projekt.
+JSON soubory jsou hostované na GitHub Pages ve složce `data/`. Repozitář slouží zároveň jako záloha a jako prostředí pro práci na dálku; není to veřejně sdílený projekt.
 
 - Repozitář: `https://github.com/haryzek/cesta`
 - GitHub Pages URL: `https://haryzek.github.io/cesta/`
+- Data: `https://haryzek.github.io/cesta/data/*.json`
 
-### Dvě verze aplikace
+Repozitář je veřejný (vyžaduje to Pages) — u prototypových dat je to přijatelné. Až půjde o ostrou verzi, řeší se to jinak.
+
+### Free a Premium
 
 Obě verze jsou technicky tatáž aplikace, liší se pouze rozsahem obsahu. Rozlišení řídí pole `tier` u jednotlivých položek.
 
@@ -250,7 +253,7 @@ Reálně používané kódy v datech (21): `ABINST`, `APPREC`, `DEFSH`, `DEPINC`
 
 ## Design a chování UI
 
-Rozhodnutá vize rozvržení a interakcí. Vizuální hodnoty (barvy, fonty) žijí v prototypu; tady je struktura a chování.
+Rozhodnutá vize rozvržení a interakcí. Vizuální hodnoty (barvy, fonty) žijí v `<style>` bloku `cesta_kompletni.html`; tady je struktura a chování.
 
 ### Obal aplikace
 
@@ -483,12 +486,14 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Datový model všech 11 typů | ✅ finální struktura |
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
-| Prototyp — obal + registr sekcí | ✅ funkční, načítá z GitHub Pages |
-| Frontend — Přerámování + Oblíbené | ✅ živé sekce |
+| Frontend — obal + registr sekcí | ✅ funkční |
+| Frontend — všechny sekce | ✅ živé v `cesta_kompletni.html` nad všemi 11 JSONy |
+| Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
+| Vizuál | 🔄 coconut téma, k výměně za nový design systém (Fraunces + light/dark) |
 | Přerámování — triplet obsahu | 🔄 testovací fáze, zatím 4 klastry |
 | Ostatní obsah (články, cvičení, inspirace, otázky, krizovka, tělo) | 🔄 vzorek, plní se |
+| Embed kompletní verze do Miowebu | 🔲 neověřeno |
 | Admin nástroj | 🔲 k přestavbě od základu (stávající je zastaralý) |
-| Frontend — ostatní sekce (obsahové) | 🔲 sloty připravené v registru, renderery čekají |
 
 Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný.
 
@@ -496,11 +501,41 @@ Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_
 
 ## Soubory
 
-| Soubor | Účel |
-|--------|------|
-| `index.html` | Rozcestník (prototyp / admin) |
-| `cesta_prototyp.html` | Prototyp aplikace — standalone HTML, coconut téma, obal + registr sekcí; živé Přerámování + Oblíbené, ostatní připravené sloty |
-| `cesta_admin.html` | Admin nástroj — zastaralý první výplod, k přestavbě |
-| `*.json` | 11 datových souborů |
-| `README.md` | Tento dokument |
-| `CLAUDE.md` | Pracovní brífink pro práci v Claude Code |
+```
+cesta/
+├── index.html               rozcestník na GitHub Pages
+├── cesta_kompletni.html     ★ hlavní aplikace — všechny sekce naživo
+├── cesta_prototyp.html      starší obal, umí jen Přerámování + Oblíbené
+├── cesta_admin.html         admin — zastaralý, k přestavbě
+├── manifest.json            PWA (spuštění z plochy mobilu)
+├── data/                    11 datových JSONů
+├── assets/                  ikony
+├── README.md                tento dokument
+├── CLAUDE.md                pracovní brífink pro Claude Code
+├── _scratch/                hrací písek (mimo git)
+└── local/                   osobní podklady, screeny, design (mimo git)
+```
+
+Dělení jde podle toho, kdo soubor mění: do `data/` se sahá při plnění obsahu, do `assets/` skoro nikdy. `manifest.json` je konfigurace aplikace, ne obsah — proto zůstává v kořeni, kde ho čekají prohlížeče.
+
+### Dva HTML soubory aplikace
+
+Nejsou to varianty téhož souboru, ale dvě samostatně vzniklé verze (liší se v ~1300 řádcích). **Pracuje se na `cesta_kompletni.html`.**
+
+| | `cesta_kompletni.html` | `cesta_prototyp.html` |
+|---|---|---|
+| Sekce | všechny naživo nad všemi 11 JSONy | jen Přerámování + Oblíbené, zbytek `kind:"placeholder"` |
+| `MC_BASE` | `"./data/"` — relativně | absolutní Pages URL |
+| Mobil | viewport, PWA manifest, vypnutá cache | ne |
+
+Obě sdílí **registr sekcí** — jeden `SECTIONS = [...]` řídí úvodní dlaždice, hamburger menu i router.
+
+Prototyp je fakticky mrtvá větev; jediné, co má navíc, je placeholder slot. Drží se, dokud se neověří embed kompletní verze do Miowebu — pak půjde pryč. **Design ani obsahové změny se do něj nepromítají.**
+
+### Spuštění
+
+**Lokálně:** `python -m http.server 8777` v kořeni → `http://localhost:8777/cesta_kompletni.html`. Otevření souboru z disku nefunguje (fetch potřebuje HTTP).
+
+**Na mobilu:** `https://haryzek.github.io/cesta/` → „Appka — kompletní" → v Chrome „Přidat na plochu". Cache je na HTML i JSONech vypnutá, takže po pushi stačí appku zavřít a znovu otevřít.
+
+Aplikace je **HTML fragment** (bez `<html>`/`<head>`) kvůli vkládání do Miowebu. Meta tagy pro mobil jsou nahoře v souboru — WordPress je ignoruje. Barva pozadí visí na `#mc-root`; při samostatném běhu se `body` obarvuje přes `body:has(> #mc-root)`, což se uvnitř Miowebu (kde je `#mc-root` zanořený ve WP divech) nechytí a pozadí stránky zůstane WordPressu.
