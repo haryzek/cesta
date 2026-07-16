@@ -59,6 +59,8 @@ Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník (`index.html`) →
 
 Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`.
 
+Všech 11 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný obalový objekt). Ikony a statické assety v `assets/`.
+
 Kdo má co:
 - **`schemas`** mají: clusters (5), articles, exercises, inspirations, questions (3). **Nemají**: feelings, crisis, body, triplet.
 - **datum** má většina (`added_at`); articles má navíc `published_at`. **Nemají**: crisis, body (jsou to malé stabilní sady, které se nebudou rozšiřovat — je to záměr, ne opomenutí).
@@ -110,9 +112,11 @@ Když sáhneš do těchhle algoritmů, přečti si v README i „proč" — jsou
 
 ## Testování (headless)
 
-**`cesta_kompletni.html`** má `MC_BASE="./"` a leží vedle JSONů v kořeni, takže se nic nekopíruje ani nepřepisuje — spusť `python -m http.server 8777` v kořeni a jeď na `http://localhost:8777/cesta_kompletni.html`.
+**`cesta_kompletni.html`** má `MC_BASE="./data/"`, takže se nic nekopíruje ani nepřepisuje — spusť `python -m http.server 8777` v kořeni a jeď na `http://localhost:8777/cesta_kompletni.html`.
 
-**`cesta_prototyp.html`** má `MC_BASE` na absolutní Pages URL (kvůli Miowebu), takže pro lokální test buď nech tahat data z Pages, nebo si `MC_BASE` dočasně přepni na `"./"`.
+**`cesta_prototyp.html`** má `MC_BASE` na absolutní Pages URL (kvůli Miowebu), takže pro lokální test buď nech tahat data z Pages, nebo si `MC_BASE` dočasně přepni na `"./data/"`.
+
+Router se dá ovládat z konzole: `MC.open("exercises")`, `MC.home()`, `MC.detail(...)` — rychlejší než klikat.
 
 Ověřuj přes **JS eval** (`javascript_tool` / Playwright `evaluate`), ne přes screenshot — ten v tomhle setupu nefunguje. Bar je: nula chyb v konzoli a správné vykreslení proti reálným datům.
 
