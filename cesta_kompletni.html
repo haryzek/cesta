@@ -845,10 +845,10 @@
   function viewReframing(){ return state.rf.view==="detail"?viewRfDetail():viewRfFeelings(); }
   function viewRfFeelings(){
     var rf=state.rf, feelings=visibleFeelings(), total=mainFeelings().length+secondaryFeelings().length;
-    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
+    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyberte, jak se cítíte — a podívejte se na to jinak.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
     // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
     if(nSel>0) h+='<span class="mc-count-pill">'+nSel+'</span>';
@@ -899,7 +899,7 @@
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
     var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
     if(cfg.search){
-      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej příznak…" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
+      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
     }
     h+='<div class="mc-namelist">';
@@ -1016,7 +1016,7 @@
   // ===================== RENDER — Oblíbené =====================
   function viewFavorites(){
     var h='<div class="mc-sec-head"><h1>Oblíbené</h1></div>';
-    if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepni na srdíčko u věty, která tě osloví, a najdeš ji tady.</div>';
+    if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepněte na srdíčko u věty, která vás osloví, a najdete ji tady.</div>';
     FAV_VIEW.forEach(function(fv){
       var items=USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean);
       if(items.length===0) return;
@@ -1040,9 +1040,9 @@
     return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
       '<div class="mc-detail-title" style="padding-top:14px">O aplikaci</div>'+
       '<div class="mc-about">'+
-      '<p><strong>Moje cesta</strong> je psychoterapeutická appka. Vyber jádrový pocit — a dostaneš přerámování, otázky a úkoly, které ti pomůžou podívat se na to, co prožíváš, jinak.</p>'+
-      '<p>Vedle přerámování tu najdeš <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
-      '<p>Co tě osloví, ulož si srdíčkem do <strong>Oblíbených</strong> — máš to pak po ruce.</p>'+
+      '<p><strong>Moje cesta</strong> je psychoterapeutická appka. Vyberte jádrový pocit — a dostanete přerámování, otázky a úkoly, které vám pomůžou podívat se na to, co prožíváte, jinak.</p>'+
+      '<p>Vedle přerámování tu najdete <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
+      '<p>Co vás osloví, uložte si srdíčkem do <strong>Oblíbených</strong> — máte to pak po ruce.</p>'+
       '<p style="color:var(--soft); font-size:14px; font-family:var(--sans)">Autor obsahu: Robert Řeřicha, psychoterapeut.</p>'+
       '</div>';
   }
