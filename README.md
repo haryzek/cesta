@@ -273,8 +273,9 @@ Napříč sekcemi se opakují tři tvary:
 
 - **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam od nejnovějších; v submenu je zvýrazněné „Nejnovější". Žádná tagová brána, žádné tlačítko „Zobrazit".
 - **Submenu:** Nejnovější / (Redakce — jen Cvičení a Články) / Pro vás (jen když existuje profil) / ikona filtru.
-- **Filtr** je jedna ikona → rozbalí panel: nahoře keyword pole, pod ním tagy (multiple-choice) a `duration` jako samostatný ovladač. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka.
-- **Keyword a tagy se skládají (AND).** Panel drží stav; zavření panelu filtr nemaže. Ikona filtru ukazuje počet aktivních filtrů (keyword se počítá jako jeden).
+- **Filtr** je jedna ikona → rozbalí panel: nahoře keyword pole, pod ním pilulky — nejdřív `duration` (jen Cvičení), pak tagy. Bez nadpisů „Štítky"/„Délka", délku odliší accentový tón a mono písmo. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka. Enter v poli zavře klávesnici (blur) — filtruje se průběžně, není co odesílat.
+- **Tagy i délky se sčítají (OR), keyword se s nimi násobí (AND).** Víc zaškrtnutých tagů = širší výběr, ne užší; položka projde, když sedí na kterýkoli z nich. Původně byly tagy AND, ale u pár tagů na položku to vracelo skoro vždycky prázdno. Keyword zůstává AND — ten zužuje záměrně. Délka je multiple-choice stejně jako tagy.
+- Panel drží stav; zavření panelu filtr nemaže. Ikona filtru ukazuje počet aktivních filtrů (keyword se počítá jako jeden).
 - **`quality` není ve filtru** — „ukaž mi to nejlepší" pokrývá submenu Redakce. Quality je kurátorský nástroj, ne uživatelský ovladač.
 - Naznačený řádek doporučených tagů (viz sekce níže) je **budoucí rozšíření**, ne MVP — vyžaduje kurátorskou údržbu, kterou zatím nemáme.
 - `duration` (cvičení) a `reading_time` (články) zůstávají v datech pod svými jmény; v UI se zobrazují jednotně jako čas (ikonka hodin + „X min").

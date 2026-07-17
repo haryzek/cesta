@@ -48,7 +48,7 @@
   #mc-root {
     --bg:#1C1914; --surface:#262119; --surface-2:#2E281E; --border:#3A3226;
     --text:#F2EBDC; --body:#F2EBDC; --soft:#B5AA96; --muted:#7C7264;
-    --accent:#E08252; --accent-dim:#3D2A1F; --on-accent:#1C1914;
+    --accent:#E08252; --accent-dim:#3D2A1F; --on-accent:#1C1914; --heart:#E08252;
     --teal:#6FBBA6; --teal-soft:#223832; --teal-deep:#16332F;
     --empty:#3A3226; --done:#6FBBA6; --missed:#E08252;
 
@@ -76,7 +76,7 @@
   #mc-root[data-theme="light"] {
     --bg:#F6F1E7; --surface:#FFFFFF; --surface-2:#FBF5EA; --border:#E8DFCE;
     --text:#2B241C; --body:#2B241C; --soft:#6B6053; --muted:#9C9385;
-    --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8;
+    --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8; --heart:#D98763;
     --teal:#3E7266; --teal-soft:#DCEAE5; --teal-deep:#1F4F49;
     --empty:#E8DFCE; --done:#3E7266; --missed:#B8562E;
   }
@@ -136,7 +136,7 @@
   .mc-topbar-title{ flex:1; text-align:center; font-family:var(--serif); font-weight:600; font-size:19px;
     font-variation-settings:'opsz' 36; color:var(--text); letter-spacing:-0.01em; cursor:pointer; line-height:1.1; }
   .mc-topbar-title .mc-mark{ color:var(--accent); font-style:italic; }
-  .mc-heart-top.on{ color:var(--accent); }
+  .mc-heart-top.on{ color:var(--heart); }
   .mc-heart-top .hf{ display:none; }
   .mc-heart-top.on .he{ display:none; }
   .mc-heart-top.on .hf{ display:block; }
@@ -151,7 +151,7 @@
     animation:mcSlide .2s cubic-bezier(.2,.7,.3,1) forwards; }
   .mc-menu-head{ display:flex; align-items:center; justify-content:space-between; padding:6px 16px 14px;
     margin-bottom:6px; border-bottom:1px solid var(--border); }
-  .mc-menu-head h2{ font-size:19px; color:var(--text); font-variation-settings:'opsz' 36; }
+  .mc-menu-head h2{ font-size:19px; color:var(--text); font-variation-settings:'opsz' 36; cursor:pointer; }
   .mc-menu-head h2 .mc-mark{ color:var(--accent); font-style:italic; }
   .mc-menu-item{ display:flex; align-items:center; gap:13px; width:100%; padding:13px 16px; background:none;
     border:none; cursor:pointer; text-align:left; color:var(--body); font-family:var(--sans); font-size:15px;
@@ -179,6 +179,7 @@
      pod velikost obsahu a na nízkém displeji mřížka přeteče. */
   #mc-root[data-page="home"] .mc-tiles{ flex:1; min-height:0;
     grid-template-rows:repeat(4,minmax(0,1fr)); padding-bottom:var(--gutter); }
+  .mc-tiles{ padding-top:0; }
   #mc-root[data-page="home"] .mc-tile{ min-height:72px; overflow:hidden; }
   /* Na nízkém displeji ubereme dlaždici na výšce, ať se všechny čtyři řady
      vejdou bez scrollování. */
@@ -190,6 +191,7 @@
   }
 
   .mc-home-intro{ padding:24px var(--gutter) 14px; }
+  .mc-home-intro h1{ font-size:25px; font-variation-settings:'opsz' 48; }
   .mc-home-intro h1{ color:var(--tone); }
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
   /* Citát dne — velikost jako názvy dlaždic, ale tenký řez. */
@@ -219,16 +221,19 @@
   .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
 
   /* ===== SEARCH ===== */
-  .mc-search-wrap{ padding:20px var(--gutter) 2px; position:relative; }
+  /* Obalovač má nesymetrické odsazení (20px nahoře, 2px dole), takže top:50%
+     u ikon centrovalo vůči němu, ne vůči vstupu — lupa i křížek seděly o 9px
+     výš. Odsazení proto řeší margin a wrap sám těsně obepíná input. */
+  .mc-search-wrap{ margin:20px var(--gutter) 2px; position:relative; display:flex; }
   .mc-search{ width:100%; padding:11px 68px 11px 40px; font-family:var(--sans); font-size:15px; color:var(--text);
     background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
   .mc-search::placeholder{ color:var(--muted); }
   .mc-search:focus{ border-color:var(--accent); }
-  .mc-search-icon{ position:absolute; left:32px; top:50%; transform:translateY(-50%); width:16px; height:16px;
+  .mc-search-icon{ position:absolute; left:12px; top:50%; transform:translateY(-50%); display:block; width:16px; height:16px;
     color:var(--soft); pointer-events:none; }
   /* Nástroje vpravo v hledání — počítadlo vybraných + křížek na vymazání.
      Dřív viselo počítadlo na right:30px, tedy mimo osu ostatního obsahu. */
-  .mc-search-tools{ position:absolute; right:calc(var(--gutter) + 8px); top:50%; transform:translateY(-50%);
+  .mc-search-tools{ position:absolute; right:8px; top:50%; transform:translateY(-50%);
     display:flex; align-items:center; gap:6px; }
   .mc-count-pill{ background:var(--tone); color:var(--on-accent); font-family:var(--mono); font-size:11px;
     font-weight:700; min-width:20px; text-align:center; padding:3px 7px; border-radius:6px; pointer-events:none; }
@@ -238,7 +243,7 @@
   .mc-search-clear svg{ width:13px; height:13px; }
 
   /* ===== SUBMENU (Nejnovější / Redakce / filtr) ===== */
-  .mc-submenu{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; align-items:center; }
+  .mc-submenu{ display:flex; gap:6px; padding:14px var(--gutter) 4px; flex-wrap:wrap; align-items:center; }
   .mc-submenu button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer;
     transition:all .15s ease; }
@@ -313,18 +318,18 @@
   .mc-detail-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px var(--gutter) 2px; }
   .mc-detail-title{ font-family:var(--serif); font-weight:600; font-size:30px; font-variation-settings:'opsz' 72;
     color:var(--tone); letter-spacing:-0.01em; line-height:1.15; }
-  .mc-detail-sub{ padding:0 18px 2px; color:var(--soft); font-family:var(--mono); font-size:12px; }
+  .mc-detail-sub{ padding:2px var(--gutter) 2px; color:var(--soft); font-family:var(--mono); font-size:12px; }
   .mc-detail-heart{ flex-shrink:0; background:none; border:none; cursor:pointer; padding:4px; color:var(--muted); transition:transform .12s ease; }
   .mc-detail-heart:active{ transform:scale(.9); }
   .mc-detail-heart svg{ width:24px; height:24px; display:block; }
-  .mc-detail-heart .hf{ display:none; color:var(--accent); }
+  .mc-detail-heart .hf{ display:none; color:var(--heart); }
   .mc-detail-heart.on .he{ display:none; }
   .mc-detail-heart.on .hf{ display:block; }
   .mc-detail-meta{ padding:10px var(--gutter) 0; }
   .mc-detail-perex{ padding:10px var(--gutter) 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
   .mc-detail-body{ padding:18px var(--gutter) 0; }
 
-  .mc-submenu-triplet{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
+  .mc-submenu-triplet{ display:flex; gap:6px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
   .mc-submenu-triplet button:hover{ color:var(--text); }
@@ -357,7 +362,7 @@
   .mc-heart:active{ transform:scale(.9); }
   .mc-heart svg{ width:22px; height:22px; display:block; transition:all .12s ease; }
   .mc-heart .he{ color:var(--muted); }
-  .mc-heart .hf{ color:var(--accent); display:none; }
+  .mc-heart .hf{ color:var(--heart); display:none; }
   .mc-heart.on .he{ display:none; }
   .mc-heart.on .hf{ display:block; }
 
@@ -485,16 +490,21 @@
   var FAV_STORES = ["crisis","body","articles","exercises",
                     "reframings","reframing_questions","reframing_actions","inspirations","questions"];
   // mapování store -> {dataKey, jak zobrazit v oblíbených}
+  // detail:true = položka má vlastní stránku, na kterou se dá z oblíbených
+  // prokliknout. Přerámování, Inspirace a Otázky detail nemají ani ve svých
+  // sekcích, takže tam odkaz nepatří.
+  // kind musí odpovídat tomu, jak položka vypadá ve své sekci — Podnětné
+  // otázky se tam sázejí jako quote karty, takže i tady.
   var FAV_VIEW = [
-    { store:"crisis",              dataKey:"crisis",       label:"První pomoc",          kind:"name" },
-    { store:"body",                dataKey:"body",         label:"Tělesné příznaky",     kind:"name" },
-    { store:"articles",            dataKey:"articles",     label:"Články",               kind:"title" },
-    { store:"exercises",           dataKey:"exercises",    label:"Cvičení",              kind:"name" },
+    { store:"crisis",              dataKey:"crisis",       label:"První pomoc",          kind:"name",  detail:true },
+    { store:"body",                dataKey:"body",         label:"Tělesné příznaky",     kind:"name",  detail:true },
+    { store:"articles",            dataKey:"articles",     label:"Články",               kind:"title", detail:true },
+    { store:"exercises",           dataKey:"exercises",    label:"Cvičení",              kind:"name",  detail:true },
     { store:"reframings",          dataKey:"reframings",   label:"Přerámování",          kind:"text" },
     { store:"reframing_questions", dataKey:"questions_rf", label:"Otázky (přerámování)", kind:"text" },
     { store:"reframing_actions",   dataKey:"actions",      label:"Úkoly",                kind:"text" },
     { store:"inspirations",        dataKey:"inspirations", label:"Inspirace",            kind:"quote" },
-    { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"text" }
+    { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"quote" }
   ];
 
   // ===================== IKONY =====================
@@ -542,7 +552,7 @@
     detail:null     // { type, id, infoOpen }
   };
   function secState(key){
-    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], dur:null, search:"" };
+    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], durs:[], search:"" };
     return state.sec[key];
   }
 
@@ -713,6 +723,9 @@
       if((m=line.match(/^(#{1,6})\s+(.*)$/))){ flushPara(); closeLists(); var lvl=Math.min(Math.max(m[1].length,2),4); out.push("<h"+lvl+">"+mdInline(m[2])+"</h"+lvl+">"); return; }
       if((m=line.match(/^[-*]\s+(.*)$/))){ item(indent,"ul",mdInline(m[1])); return; }
       if((m=line.match(/^\d+[.)]\s+(.*)$/))){ item(indent,"ol",mdInline(m[1])); return; }
+      // Odsazený řádek, který není odrážka, pokračuje poslední položkou seznamu
+      // (zalomí se v ní). Bez toho by seznam ukončil a text vypadl do odstavce.
+      if(stack.length && indent>0 && para.length===0){ out.push("<br>"+mdInline(line)); return; }
       closeLists(); para.push(line);
     });
     flushPara(); closeLists(); return out.join("");
@@ -748,7 +761,7 @@
     return Object.keys(set).sort();
   }
   function durationBuckets(){ return [ {label:"do 5 min",max:5}, {label:"6–15 min",min:6,max:15}, {label:"16+ min",min:16} ]; }
-  function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; if(s.dur!=null)n++; return n; }
+  function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; return n; }
   function contentList(key){
     var cfg=CONTENT[key], s=secState(key), items=(flat[cfg.dataKey]||[]).slice();
     if(s.mode==="edit" && cfg.redakce){ items=items.filter(function(it){ return it.quality===5; }); shuffle(items); }
@@ -757,10 +770,15 @@
       var q=deburr(s.kw);
       items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex].filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
     }
-    if(s.tags.length){ items=items.filter(function(it){ var t=it.tags||[]; return s.tags.every(function(tag){ return t.indexOf(tag)>-1; }); }); }
-    if(s.dur!=null && cfg.timeField){
-      var b=durationBuckets()[s.dur];
-      items=items.filter(function(it){ var v=it[cfg.timeField]||0; return (b.min==null||v>=b.min)&&(b.max==null||v<=b.max); });
+    // Tagy se sčítají (OR): víc zaškrtnutých = širší výběr, ne užší. Dřív AND,
+    // což u pár tagů vracelo skoro vždycky prázdno.
+    if(s.tags.length){ items=items.filter(function(it){ var t=it.tags||[]; return s.tags.some(function(tag){ return t.indexOf(tag)>-1; }); }); }
+    // Délky se sčítají (OR) stejně jako tagy — položka projde, když padne do
+    // kteréhokoli zaškrtnutého pásma.
+    if(s.durs.length && cfg.timeField){
+      var bs=s.durs.map(function(i){ return durationBuckets()[i]; });
+      items=items.filter(function(it){ var v=it[cfg.timeField]||0;
+        return bs.some(function(b){ return (b.min==null||v>=b.min)&&(b.max==null||v<=b.max); }); });
     }
     return items;
   }
@@ -805,7 +823,7 @@
 
   function viewMenu(){
     var h='<div class="mc-menu-backdrop" onclick="MC.menu(false)"></div><nav class="mc-menu">';
-    h+='<div class="mc-menu-head"><h2>Moje <span class="mc-mark">cesta</span></h2><button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
+    h+='<div class="mc-menu-head"><h2 onclick="MC.home()">Moje <span class="mc-mark">cesta</span></h2><button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
     SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
       var active=state.page==="section"&&state.section===s.key;
       h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span></button>';
@@ -858,8 +876,8 @@
   }
   function viewRfDetail(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět na pocity</button>';
-    if(rf.detailMode==="single") h+='<div class="mc-detail-title" style="padding-top:14px">'+esc(clusterName[rf.detailClusters[0].cluster_id]||"")+'</div>';
-    else { var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; }); h+='<div class="mc-detail-title" style="padding-top:14px">Vybrané pocity</div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>'; }
+    if(rf.detailMode==="single") h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(clusterName[rf.detailClusters[0].cluster_id]||"")+'</div></div>';
+    else { var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; }); h+='<div class="mc-detail-head"><div class="mc-detail-title">Vybrané pocity</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>'; }
     h+='<div class="mc-submenu-triplet">';
     TYPES.forEach(function(t){ h+='<button class="'+(rf.activeType===t.key?"active":"")+'" onclick="MC.rfType(\''+t.key+'\')">'+t.label+'</button>'; });
     h+='</div>';
@@ -928,7 +946,7 @@
     // vysvětlují samy, délku odliší accentový tón.
     var chips='';
     if(cfg.timeField==="duration"){
-      durationBuckets().forEach(function(b,i){ chips+='<button class="mc-chip dur '+(s.dur===i?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
+      durationBuckets().forEach(function(b,i){ chips+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
     }
     var tags=allTags(cfg.dataKey);
     tags.forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
@@ -1014,12 +1032,13 @@
       if(items.length===0) return;
       h+='<div class="mc-fav-group"><h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2><ul class="mc-cards" style="padding-left:0;padding-right:0">';
       items.forEach(function(it){
-        h+='<li class="mc-card mc-in">';
+        h+='<li class="mc-card mc-in'+(fv.detail?' clickable':'')+'"'+
+           (fv.detail?' onclick="MC.detail(\''+fv.dataKey+'\',\''+it.id+'\')"':'')+'>';
         if(fv.kind==="title") h+='<div class="mc-card-title">'+esc(it.title||"")+'</div>'+(it.perex?'<div class="mc-card-text">'+esc(it.perex)+'</div>':'');
         else if(fv.kind==="name") h+='<div class="mc-card-title">'+esc(it.name||"")+'</div>';
         else if(fv.kind==="quote"){ h+='<div class="mc-card-text lead">'+esc(it.text||"")+'</div>'; if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>'; }
         else { h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; if(it.cluster_id) h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>'; }
-        h+=heartBtn(fv.store,it.id,true)+'</li>';
+        h+=heartBtn(fv.store,it.id,true,!!fv.detail)+'</li>';
       });
       h+='</ul></div>';
     });
@@ -1075,8 +1094,8 @@
     secFilter:function(key){ var s=secState(key); s.filterOpen=!s.filterOpen; render(); },
     secKw:function(key,v){ secState(key).kw=v; render(); var i=document.querySelector(".mc-filter .fkw"); if(i){ i.focus(); i.value=v; i.setSelectionRange(v.length,v.length); } },
     secTag:function(key,t){ var s=secState(key),i=s.tags.indexOf(t); if(i>-1)s.tags.splice(i,1); else s.tags.push(t); render(); },
-    secDur:function(key,i){ var s=secState(key); s.dur=(s.dur===i?null:i); render(); },
-    secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.dur=null; render(); },
+    secDur:function(key,i){ var s=secState(key), p=s.durs.indexOf(i); if(p>-1) s.durs.splice(p,1); else s.durs.push(i); render(); },
+    secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
     detail:function(type,id){ state.detail={ type:type, id:id, infoOpen:false }; scrollTop(); render(); },
