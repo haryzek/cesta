@@ -167,6 +167,28 @@
   .mc-menu-sep{ height:1px; background:var(--border); margin:6px 16px; }
 
   /* ===== HOME ===== */
+  /* Úvodka: sloupec na výšku okna, dlaždice si vezmou zbytek. dvh kvůli
+     adresnímu řádku na mobilu — 100vh tam počítá s plochou, která reálně
+     není vidět. */
+  /* height, ne min-height: s min-height se kontejner nafoukne podle obsahu a
+     flexu pak nezbyde co rozdělovat — mřížka si vezme svoje min-content
+     a přeteče. */
+  #mc-root[data-page="home"]{ display:flex; flex-direction:column;
+    height:100vh; height:100dvh; min-height:0; padding-bottom:0; }
+  /* minmax(0,1fr) + min-height:0 — bez nich se řádky ani flex položka nesmrsknou
+     pod velikost obsahu a na nízkém displeji mřížka přeteče. */
+  #mc-root[data-page="home"] .mc-tiles{ flex:1; min-height:0;
+    grid-template-rows:repeat(4,minmax(0,1fr)); padding-bottom:var(--gutter); }
+  #mc-root[data-page="home"] .mc-tile{ min-height:72px; overflow:hidden; }
+  /* Na nízkém displeji ubereme dlaždici na výšce, ať se všechny čtyři řady
+     vejdou bez scrollování. */
+  @media (max-height:700px){
+    #mc-root[data-page="home"] .mc-tile{ gap:6px; padding:12px 13px; }
+    #mc-root[data-page="home"] .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
+    #mc-root[data-page="home"] .mc-tile-ic svg{ width:17px; height:17px; }
+    #mc-root[data-page="home"] .mc-home-intro{ padding-top:16px; padding-bottom:10px; }
+  }
+
   .mc-home-intro{ padding:24px var(--gutter) 14px; }
   .mc-home-intro h1{ color:var(--tone); }
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
@@ -752,6 +774,9 @@
     // odkud se přišlo. Home sama je neutrální (accent).
     var cur=sectionByKey(state.page==="favorites"?"favorites":state.section);
     root.setAttribute("data-tone",(cur&&cur.tone)||"accent");
+    // Úvodka se roztahuje na výšku okna, aby dlaždice vyplnily zbytek plochy
+    // pod citátem — ten má proměnnou délku, takže se to musí počítat samo.
+    root.setAttribute("data-page",(!state.detail&&state.page==="home")?"home":"");
     var h=viewTopbar();
     if(state.detail){ h+=viewContentDetail(); }
     else if(state.page==="home"){ h+=viewHome(); }
