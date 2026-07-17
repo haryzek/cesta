@@ -691,19 +691,6 @@
     return src;
   }
 
-  // Těla cvičení nesou na začátku řádek "**Trvání:** ..." — je to bohatší údaj
-  // než číselné `duration` ("průběžně po dobu 1-2 týdnů" vs "10 min"), takže
-  // ho vytáhneme do duration stripu a z těla zahodíme, ať se neopakuje.
-  function pullDuration(src){
-    if(!src) return { text:null, body:src };
-    var lines=String(src).split(/\r?\n/);
-    for(var i=0;i<lines.length && i<6;i++){
-      var m=lines[i].trim().match(/^\*{0,2}(?:Trvání|Minut[áy]ž?|Délka)\s*:?\*{0,2}\s*:?\s*(.+)$/i);
-      if(m){ var v=m[1].replace(/\*/g,"").trim(); lines.splice(i,1); return { text:v, body:lines.join("\n") }; }
-    }
-    return { text:null, body:src };
-  }
-
   function md(src){
     var lines=String(src||"").split(/\r?\n/), out=[], para=[], stack=[];
     function flushPara(){ if(para.length){ out.push("<p>"+para.map(mdInline).join("<br>")+"</p>"); para=[]; } }
@@ -1009,15 +996,13 @@
     if(onInfo){
       h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(item.info,title))+'</div>';
     } else {
-      var dur=pullDuration(stripDupHeading(item.body,title));
-      // Strip jen tam, kde jsou taby (cvičení). Články nesou čas pilulkou nad
-      // titulkem, jinak by ho měly dvakrát.
-      var durText=hasTabs?(dur.text||(cfg.timeField&&item[cfg.timeField]?item[cfg.timeField]+" min":null)):null;
-      if(durText){
+      // Duration strip jen u cvičení (mají taby). Bere přímo pole `duration` —
+      // jedna performance cvičení. Články nesou čas pilulkou nad titulkem.
+      if(hasTabs && cfg.timeField && item[cfg.timeField]){
         h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div>'+
-           '<div class="s-label">Trvání</div><div class="s-value">'+esc(durText)+'</div></div></div>';
+           '<div class="s-label">Trvání</div><div class="s-value">'+esc(item[cfg.timeField])+' min</div></div></div>';
       }
-      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(dur.body)+'</div>';
+      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(stripDupHeading(item.body,title))+'</div>';
     }
     if(cfg.readable) markRead(d.id);
     return h;
