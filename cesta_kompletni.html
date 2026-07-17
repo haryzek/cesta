@@ -49,6 +49,16 @@
     --teal:#6FBBA6; --teal-soft:#223832; --teal-deep:#16332F;
     --empty:#3A3226; --done:#6FBBA6; --missed:#E08252;
 
+    /* Tón sekce: akční sekce (První pomoc, Tělo, Přerámování, Cvičení) jedou
+       červeně, čtecí (Otázky, Inspirace, Články, O appce) zeleně. Nadpisy,
+       odrážky a ikonky se řídí --tone; data-tone se přepíná na #mc-root podle
+       otevřené sekce. Výchozí = accent. */
+    --tone:var(--accent); --tone-soft:var(--accent-dim);
+
+    /* Jednotná osa zarovnání — dřív si každý blok odsazoval po svém
+       (18/16/14px), takže nic nesedělo na jednu linku. */
+    --gutter:20px;
+
     --serif:'Fraunces',Georgia,'Times New Roman',ui-serif,serif;
     --sans:'Public Sans',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
     --mono:ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
@@ -58,13 +68,18 @@
     line-height:1.55; font-size:16px; -webkit-font-smoothing:antialiased; position:relative;
   }
 
+  /* --surface je čistě bílá, ne krémová jako v handoffu — karty a dlaždice
+     potřebovaly víc kontrastu proti pozadí stránky. */
   #mc-root[data-theme="light"] {
-    --bg:#F6F1E7; --surface:#FFFDF8; --surface-2:#FBF5EA; --border:#E8DFCE;
+    --bg:#F6F1E7; --surface:#FFFFFF; --surface-2:#FBF5EA; --border:#E8DFCE;
     --text:#2B241C; --body:#2B241C; --soft:#6B6053; --muted:#9C9385;
     --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8;
     --teal:#3E7266; --teal-soft:#DCEAE5; --teal-deep:#1F4F49;
     --empty:#E8DFCE; --done:#3E7266; --missed:#B8562E;
   }
+
+  /* Čtecí sekce přebarví tón na zelenou. */
+  #mc-root[data-tone="teal"]{ --tone:var(--teal); --tone-soft:var(--teal-soft); }
 
   /* Samostatné spuštění (Pages / PWA): #mc-root visí přímo pod body a kolem
      appky prosvítá bílá stránka. Uvnitř Miowebu je #mc-root zanořený ve WP
@@ -109,7 +124,7 @@
 
   /* ===== TOPBAR ===== */
   .mc-topbar{ position:sticky; top:0; z-index:30; display:flex; align-items:center; justify-content:space-between;
-    gap:10px; padding:14px 16px; background:var(--bg); border-bottom:1px solid var(--border); }
+    gap:10px; padding:14px calc(var(--gutter) - 8px); background:var(--bg); border-bottom:1px solid var(--border); }
   .mc-icon-btn{ flex-shrink:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;
     background:none; border:none; color:var(--soft); cursor:pointer; padding:0; border-radius:9px;
     transition:color .15s ease,background .15s ease; position:relative; }
@@ -128,7 +143,7 @@
 
   /* ===== MENU ===== */
   .mc-menu-backdrop{ position:fixed; inset:0; z-index:40; background:#0009; animation:mcFade .18s ease forwards; }
-  .mc-menu{ position:absolute; top:0; left:0; bottom:0; width:82%; max-width:340px; z-index:41;
+  .mc-menu{ position:fixed; top:0; left:0; bottom:0; width:82%; max-width:340px; z-index:41;
     background:var(--surface); border-right:1px solid var(--border); padding:14px 0 24px; overflow-y:auto;
     animation:mcSlide .2s cubic-bezier(.2,.7,.3,1) forwards; }
   .mc-menu-head{ display:flex; align-items:center; justify-content:space-between; padding:6px 16px 14px;
@@ -149,20 +164,20 @@
   .mc-menu-sep{ height:1px; background:var(--border); margin:6px 16px; }
 
   /* ===== HOME ===== */
-  .mc-home-intro{ padding:22px 18px 8px; }
-  .mc-home-intro h1{ color:var(--text); }
+  .mc-home-intro{ padding:24px var(--gutter) 10px; }
+  .mc-home-intro h1{ color:var(--tone); }
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
-  .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:9px; padding:10px 14px 0; }
+  .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 var(--gutter); }
   .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
     background:var(--surface); border:1px solid var(--border); border-radius:16px; cursor:pointer; text-align:left;
     transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
   .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); }
   .mc-tile:active{ transform:scale(.985); }
-  /* Ikonka v barevném čtverečku, sudé/liché dlaždice střídají accent a teal
-     (mockup). Dřív holá accentová ikona bez podkladu. */
+  /* Ikonka v barevném čtverečku podle tónu sekce — akční červeně, čtecí
+     zeleně. Dřív se střídalo mechanicky ob jednu, bez významu. */
   .mc-tile-ic{ width:38px; height:38px; border-radius:11px; display:flex; align-items:center; justify-content:center;
     background:var(--accent-dim); color:var(--accent); }
-  .mc-tile:nth-child(even) .mc-tile-ic{ background:var(--teal-soft); color:var(--teal); }
+  .mc-tile[data-tone="teal"] .mc-tile-ic{ background:var(--teal-soft); color:var(--teal); }
   .mc-tile-ic svg{ width:20px; height:20px; display:block; }
   .mc-tile-name{ margin-top:auto; font-family:var(--serif); font-weight:600; font-size:17px;
     font-variation-settings:'opsz' 24; color:var(--text); line-height:1.2; letter-spacing:-0.01em; }
@@ -171,12 +186,12 @@
     border-radius:9px; display:flex; align-items:center; justify-content:center; }
 
   /* ===== SECTION HEADER ===== */
-  .mc-sec-head{ padding:20px 18px 2px; }
-  .mc-sec-head h1{ color:var(--text); }
+  .mc-sec-head{ padding:24px var(--gutter) 2px; }
+  .mc-sec-head h1{ color:var(--tone); }
   .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
 
   /* ===== SEARCH ===== */
-  .mc-search-wrap{ padding:14px 18px 2px; position:relative; }
+  .mc-search-wrap{ padding:20px var(--gutter) 2px; position:relative; }
   .mc-search{ width:100%; padding:11px 14px 11px 40px; font-family:var(--sans); font-size:15px; color:var(--text);
     background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
   .mc-search::placeholder{ color:var(--muted); }
@@ -226,7 +241,7 @@
   .mc-fab:active{ transform:scale(.98); }
 
   /* ===== FEELING LIST ===== */
-  .mc-list{ padding:8px 18px 0; list-style:none; }
+  .mc-list{ padding:20px var(--gutter) 0; list-style:none; }
   .mc-feeling{ display:flex; align-items:center; gap:11px; padding:12px 12px 12px 15px; background:var(--surface);
     border:1px solid var(--border); border-radius:14px; margin-bottom:6px; transition:border-color .15s ease,background .15s ease; }
   .mc-feeling.checked{ border-color:var(--accent); background:var(--accent-dim); }
@@ -246,7 +261,7 @@
   .mc-more:hover{ color:var(--text); border-color:var(--soft); }
 
   /* ===== NAME LIST (crisis, body) ===== */
-  .mc-namelist{ padding:8px 18px 0; }
+  .mc-namelist{ padding:24px var(--gutter) 0; }
   .mc-name-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
     padding:15px 17px; background:var(--surface); border:1px solid var(--border); border-radius:14px; margin-bottom:8px;
     cursor:pointer; text-align:left; transition:border-color .15s ease,background .15s ease; }
@@ -256,12 +271,12 @@
   .mc-name-item .go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
 
   /* ===== BACK / DETAIL ===== */
-  .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:18px 18px 0; background:none; border:none;
+  .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:20px var(--gutter) 0; background:none; border:none;
     padding:0; color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease; }
   .mc-back:hover{ opacity:.7; }
-  .mc-detail-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px 18px 2px; }
+  .mc-detail-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px var(--gutter) 2px; }
   .mc-detail-title{ font-family:var(--serif); font-weight:600; font-size:30px; font-variation-settings:'opsz' 72;
-    color:var(--text); letter-spacing:-0.01em; line-height:1.15; }
+    color:var(--tone); letter-spacing:-0.01em; line-height:1.15; }
   .mc-detail-sub{ padding:0 18px 2px; color:var(--soft); font-family:var(--mono); font-size:12px; }
   .mc-detail-heart{ flex-shrink:0; background:none; border:none; cursor:pointer; padding:4px; color:var(--muted); transition:transform .12s ease; }
   .mc-detail-heart:active{ transform:scale(.9); }
@@ -269,9 +284,9 @@
   .mc-detail-heart .hf{ display:none; color:var(--accent); }
   .mc-detail-heart.on .he{ display:none; }
   .mc-detail-heart.on .hf{ display:block; }
-  .mc-detail-meta{ padding:8px 18px 0; }
-  .mc-detail-perex{ padding:8px 18px 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
-  .mc-detail-body{ padding:14px 18px 0; }
+  .mc-detail-meta{ padding:10px var(--gutter) 0; }
+  .mc-detail-perex{ padding:10px var(--gutter) 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
+  .mc-detail-body{ padding:18px var(--gutter) 0; }
 
   .mc-submenu-triplet{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; }
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
@@ -280,7 +295,7 @@
   .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
 
   /* ===== CARDS ===== */
-  .mc-cards{ padding:6px 18px 0; list-style:none; }
+  .mc-cards{ padding:20px var(--gutter) 0; list-style:none; }
   /* Karta podle .ex-card z mockupu: měkčí rádius, bez accentového pruhu vlevo
      (ten v mockupu patří jen .journal-card), perex v sans a tlumený. */
   .mc-card{ position:relative; background:var(--surface); border:1px solid var(--border); border-radius:16px;
@@ -313,7 +328,7 @@
   /* ===== TABBAR (Postup / Info) =====
      Dřív rozbalovací toggle „▸ K čemu to je". Mockup má dva taby, aktivní
      s tmavým pozadím; Info nese tečku, že tam něco je. */
-  .mc-tabbar{ display:flex; gap:6px; padding:14px 18px 4px; }
+  .mc-tabbar{ display:flex; gap:6px; padding:18px var(--gutter) 4px; }
   .mc-tab{ flex:1; text-align:center; padding:11px 0; border-radius:12px; border:none; cursor:pointer;
     font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); background:transparent;
     transition:background .15s ease,color .15s ease; }
@@ -324,7 +339,7 @@
   .mc-tab.active .dot{ background:var(--bg); }
 
   /* ===== DURATION STRIP ===== */
-  .mc-strip{ display:flex; align-items:center; gap:10px; margin:14px 18px 0; padding:14px 16px;
+  .mc-strip{ display:flex; align-items:center; gap:10px; margin:16px var(--gutter) 0; padding:14px 16px;
     background:var(--surface); border:1px solid var(--border); border-radius:14px; }
   .mc-strip .s-ic{ flex-shrink:0; width:34px; height:34px; border-radius:10px; background:var(--accent-dim);
     color:var(--accent); display:flex; align-items:center; justify-content:center; }
@@ -335,14 +350,17 @@
 
   /* ===== MARKDOWN ===== */
   .mc-md{ font-family:var(--sans); font-size:15.5px; line-height:1.65; color:var(--body); }
-  .mc-md h2,.mc-md h3,.mc-md h4{ font-family:var(--serif); font-weight:600; color:var(--text); line-height:1.25; letter-spacing:-0.01em; }
-  .mc-md h2{ font-size:20px; margin:26px 0 8px; font-variation-settings:'opsz' 36; }
-  .mc-md h3{ font-size:17px; margin:22px 0 6px; color:var(--accent); font-variation-settings:'opsz' 24; }
-  .mc-md h4{ font-size:15px; margin:18px 0 5px; font-family:var(--sans); font-weight:700; }
+  .mc-md h2,.mc-md h3,.mc-md h4{ font-family:var(--serif); font-weight:600; color:var(--tone); line-height:1.25; letter-spacing:-0.01em; }
+  .mc-md h2{ font-size:20px; margin:30px 0 14px; font-variation-settings:'opsz' 36; }
+  .mc-md h3{ font-size:17px; margin:24px 0 11px; font-variation-settings:'opsz' 24; }
+  .mc-md h4{ font-size:15px; margin:20px 0 9px; font-family:var(--sans); font-weight:700; color:var(--text); }
   .mc-md > :first-child{ margin-top:0; }
   .mc-md p{ margin:0 0 13px; }
   .mc-md ul,.mc-md ol{ margin:0 0 14px; padding-left:22px; }
-  .mc-md ul{ list-style:disc; } .mc-md ol{ list-style:decimal; }
+  .mc-md ul{ list-style:none; } .mc-md ol{ list-style:decimal; }
+  .mc-md ul > li{ position:relative; }
+  .mc-md ul > li::before{ content:''; position:absolute; left:-15px; top:0.62em;
+    width:5px; height:5px; border-radius:50%; background:var(--tone); }
   .mc-md li{ margin-bottom:6px; padding-left:3px; }
   .mc-md ol > li{ margin-bottom:14px; }
 
@@ -373,7 +391,7 @@
   .mc-md em{ color:var(--soft); font-style:italic; }
 
   /* ===== FAVORITES ===== */
-  .mc-fav-group{ padding:6px 18px 0; }
+  .mc-fav-group{ padding:6px var(--gutter) 0; }
   .mc-fav-group h2{ font-family:var(--serif); font-size:18px; font-weight:400; color:var(--text); margin:18px 0 8px;
     display:flex; align-items:center; gap:8px; }
   .mc-fav-group h2 .c{ color:var(--soft); font-family:var(--mono); font-weight:600; font-size:12px; }
@@ -386,7 +404,7 @@
   .mc-more-page:hover{ border-color:var(--accent); }
 
   /* ===== ABOUT ===== */
-  .mc-about{ padding:8px 20px 0; font-family:var(--serif); font-size:16.5px; line-height:1.7; color:var(--body); }
+  .mc-about{ padding:14px var(--gutter) 0; font-family:var(--serif); font-size:16.5px; line-height:1.7; color:var(--body); }
   .mc-about p{ margin:0 0 14px; }
   .mc-about strong{ color:var(--text); }
 
@@ -462,16 +480,18 @@
   };
 
   // ===================== REGISTR SEKCÍ =====================
+  // tone: "accent" = akční sekce (zásah, když je zle), "teal" = čtecí (práce
+  // na sobě, volné čtení). Řídí barvu nadpisů, odrážek a ikonky dlaždice.
   var SECTIONS = [
-    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true },
-    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true },
-    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true },
-    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true },
-    { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true },
-    { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true },
-    { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true },
-    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:true },
-    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false }
+    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true, tone:"accent" },
+    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent" },
+    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true, tone:"accent" },
+    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true, tone:"accent" },
+    { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true, tone:"teal" },
+    { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true, tone:"teal" },
+    { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true, tone:"teal" },
+    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:true, tone:"teal" },
+    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent" }
   ];
   function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
 
@@ -585,6 +605,32 @@
 
   // ===================== MARKDOWN ===================== (identický s produkcí)
   function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
+  // Těla v datech začínají nadpisem, který opakuje název položky — ten je ale
+  // už v titulku detailu, takže by se název ukázal dvakrát pod sebou.
+  // Zahodíme první nadpis, jen když se s názvem shoduje.
+  function stripDupHeading(src,title){
+    if(!src||!title) return src;
+    var norm=function(s){ return deburr(String(s).replace(/[*_`#]/g,"")).trim(); };
+    var lines=String(src).split(/\r?\n/), i=0;
+    while(i<lines.length && !lines[i].trim()) i++;
+    var m=lines[i]&&lines[i].trim().match(/^#{1,6}\s+(.*)$/);
+    if(m && norm(m[1])===norm(title)) return lines.slice(i+1).join("\n");
+    return src;
+  }
+
+  // Těla cvičení nesou na začátku řádek "**Trvání:** ..." — je to bohatší údaj
+  // než číselné `duration` ("průběžně po dobu 1-2 týdnů" vs "10 min"), takže
+  // ho vytáhneme do duration stripu a z těla zahodíme, ať se neopakuje.
+  function pullDuration(src){
+    if(!src) return { text:null, body:src };
+    var lines=String(src).split(/\r?\n/);
+    for(var i=0;i<lines.length && i<6;i++){
+      var m=lines[i].trim().match(/^\*{0,2}(?:Trvání|Minut[áy]ž?|Délka)\s*:?\*{0,2}\s*:?\s*(.+)$/i);
+      if(m){ var v=m[1].replace(/\*/g,"").trim(); lines.splice(i,1); return { text:v, body:lines.join("\n") }; }
+    }
+    return { text:null, body:src };
+  }
+
   function md(src){
     var lines=String(src||"").split(/\r?\n/), out=[], para=[], stack=[];
     function flushPara(){ if(para.length){ out.push("<p>"+para.map(mdInline).join("<br>")+"</p>"); para=[]; } }
@@ -660,6 +706,10 @@
   // ===================== RENDER — obal =====================
   function render(){
     var root=document.getElementById("mc-root");
+    // Tón podle otevřené sekce; na home a v detailu se drží tón té sekce,
+    // odkud se přišlo. Home sama je neutrální (accent).
+    var cur=sectionByKey(state.page==="favorites"?"favorites":state.section);
+    root.setAttribute("data-tone",(cur&&cur.tone)||"accent");
     var h=viewTopbar();
     if(state.detail){ h+=viewContentDetail(); }
     else if(state.page==="home"){ h+=viewHome(); }
@@ -706,7 +756,7 @@
   function viewHome(){
     var h='<div class="mc-home-intro"><h1>Vítej na cestě.</h1><p>Vyber, kudy dnes — a podívej se na to, co prožíváš, jinak.</p></div><div class="mc-tiles">';
     SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
-      h+='<button class="mc-tile mc-in" onclick="MC.open(\''+s.key+'\')"><span class="mc-tile-ic">'+IC[s.icon]+'</span><span class="mc-tile-name">'+esc(s.label)+'</span></button>';
+      h+='<button class="mc-tile mc-in" data-tone="'+(s.tone||"accent")+'" onclick="MC.open(\''+s.key+'\')"><span class="mc-tile-ic">'+IC[s.icon]+'</span><span class="mc-tile-name">'+esc(s.label)+'</span></button>';
     });
     return h+'</div>';
   }
@@ -863,13 +913,17 @@
       h+='</div>';
     }
     if(onInfo){
-      h+='<div class="mc-detail-body mc-md">'+md(item.info)+'</div>';
+      h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(item.info,title))+'</div>';
     } else {
-      if(cfg.timeField&&item[cfg.timeField]){
+      var dur=pullDuration(stripDupHeading(item.body,title));
+      // Strip jen tam, kde jsou taby (cvičení). Články nesou čas pilulkou nad
+      // titulkem, jinak by ho měly dvakrát.
+      var durText=hasTabs?(dur.text||(cfg.timeField&&item[cfg.timeField]?item[cfg.timeField]+" min":null)):null;
+      if(durText){
         h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div>'+
-           '<div class="s-label">Trvání</div><div class="s-value">'+esc(String(item[cfg.timeField]))+' min</div></div></div>';
+           '<div class="s-label">Trvání</div><div class="s-value">'+esc(durText)+'</div></div></div>';
       }
-      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(item.body)+'</div>';
+      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(dur.body)+'</div>';
     }
     if(cfg.readable) markRead(d.id);
     return h;
