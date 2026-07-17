@@ -30,20 +30,24 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 
 ## Stav
 
-Nic není obsahově hotové, ale **struktura všech 11 JSONů je finální a doladěná**. Když něco tvoříš nebo generuješ, drž se přesně stávající struktury.
+**Struktura všech 11 JSONů je finální.** Obsah ne — plní se. Když něco tvoříš nebo generuješ, drž se přesně stávající struktury.
 
-- Klastry (116) + pocity (399): kompletní mapa s ID a schématy. ✅
-- Triplet přerámování: testovací fáze, zatím jen 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný).
-- Ostatní obsah: jen vzorek pár položek, plní se.
-**Dvě běžící verze appky, obě v kořeni a obě na Pages.** Nepleť si je — vypadají skoro stejně, když je spustíš:
+- Klastry (116) + pocity (399): kompletní mapa s ID a schématy ✅
+- Triplet přerámování: testovací fáze, zatím 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný)
+- Ostatní obsah: vzorek pár položek
+- Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
 
-- **`cesta_kompletni.html` — tohle je hlavní věc, na které se pracuje.** Všechny sekce naživo nad všemi 11 JSONy (doclist, filtrované karty, quote karty, about). Stejný obal a `SECTIONS` registr jako prototyp, jen sloty jsou nahrazené živými renderery. `MC_BASE="./"` — data leží vedle ní, takže jede lokálně i na Pages. Má navíc meta hlavičky pro samostatný běh na mobilu (viewport, PWA manifest, vypnutá cache) — uvnitř Miowebu je WordPress ignoruje. Bobovy screeny v `local/_design/Support/` jsou odsud.
-- **`cesta_prototyp.html`** — mladší brácha, produkční obal pro Mioweb (`MC_BASE` míří na Pages absolutní URL). Živé jen Přerámování + Oblíbené, zbytek jsou sloty (`kind:"placeholder"`, „Připravujeme"). Umí míň, ale je čistší.
+### Dvě běžící verze appky
 
-Obě sdílí **registr sekcí** — jeden `SECTIONS = [...]` řídí úvodní dlaždice, hamburger menu i router. Nová sekce se dodělá výměnou rendereru, obal se nesahá.
+Obě v kořeni, obě na Pages, spuštěné vypadají skoro stejně. **Nepleť si je** — Bob si je taky spletl.
 
-Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník (`index.html`) → „Appka — kompletní" → Chrome „Přidat na plochu".
-- Admin (`cesta_admin.html`): zastaralý, k přestavbě od základu (viz níže).
+- **`cesta_kompletni.html` — hlavní pracovní soubor.** Všechny sekce naživo nad všemi 11 JSONy. `MC_BASE="./data/"`. Meta hlavičky pro mobil (viewport, PWA manifest, vypnutá cache) — Mioweb je ignoruje. Bobovy screeny v `local/_design/Support/` jsou odsud. **Veškerá práce jde sem.**
+- **`cesta_prototyp.html`** — starší obal pro Mioweb (`MC_BASE` na absolutní Pages URL). Živé jen Přerámování + Oblíbené, zbytek `kind:"placeholder"`. **Mrtvá větev — design ani obsah se do něj nepromítají.** Drží se, dokud se neověří embed kompletní verze do Miowebu.
+- **`cesta_admin.html`** — zastaralý, k přestavbě od základu (viz past č. 1).
+
+Obě verze sdílí **registr sekcí** — jeden `SECTIONS = [...]` řídí dlaždice, menu i router. Nová sekce = výměna rendereru, obal se nesahá.
+
+Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník → „Appka — kompletní" → Chrome „Přidat na plochu".
 
 ---
 
@@ -61,6 +65,19 @@ Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `r
 
 Všech 11 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný obalový objekt). Ikony a statické assety v `assets/`.
 
+**Markdown v tělech** appka renderuje vlastním mini-parserem. Umí: `##`/`###`/`####`, `*` i `-` odrážky, `1.` číslované, `**tučně**`, `*kurzíva*`, vnořené odrážky přes odsazení, víceřádkové položky seznamu. **Neumí: odkazy, obrázky, tabulky, kód, citace `>`, vodorovné čáry** — nepiš je do dat, nevykreslí se.
+
+**Data nejsou napříč sekcemi konzistentní** (stav k 17. 7. 2026, čeká na pročištění promptů):
+
+| | duplicitní název v těle | úroveň bloků | odrážky |
+|---|---|---|---|
+| crisis | ne ✅ | `##` | `*` |
+| body | **ano** | `##` | žádné |
+| exercises | **ano** (body i info) | `###` | `-` |
+| articles | ne ✅ | žádné | žádné |
+
+Cvičení má bloky `###` jen proto, že `##` zabral duplicitní název — až duplikát zmizí, musí se posunout na `##`.
+
 Kdo má co:
 - **`schemas`** mají: clusters (5), articles, exercises, inspirations, questions (3). **Nemají**: feelings, crisis, body, triplet.
 - **datum** má většina (`added_at`); articles má navíc `published_at`. **Nemají**: crisis, body (jsou to malé stabilní sady, které se nebudou rozšiřovat — je to záměr, ne opomenutí).
@@ -76,11 +93,27 @@ Kdo má co:
 
 3. **5 vs 3 schémata.** Cluster 5, obsah 3. Kdyby někde v textu bylo 5 u obsahu, je to stará informace.
 
+4. **CSS specificita `#mc-root` — už dvakrát to kouslo.** Reset `#mc-root ul { padding:0 }` má specificitu (0,1,1) a tiše přebíjí každou třídu (0,1,0). Výsledek: `.mc-list`, `.mc-cards` i `.mc-md ul` přišly o odsazení a ležely na okraji obrazovky — a nevypadalo to jako chyba CSS, ale jako nedbalé odsazení. Totéž se stalo dřív s `margin`. **Všechny resety pod `#mc-root` piš přes `:where()`.** Když ti nesedí zarovnání a v CSS to vypadá správně, hledej tady.
+
+5. **V rendereru jsou dvě berličky, které maskují bordel v datech.** `stripDupHeading` zahazuje první nadpis, když se shoduje s názvem položky (Tělo a Cvičení ho tam mají, Krizovka ne). `pullDuration` vytahuje z těla cvičení řádek `**Trvání:** …` do banneru, protože pole `duration:10` a text „průběžně 1–2 týdny" si protiřečí. **Až se data pročistí, obě jdou pryč** — ale nech je jako pojistku. Nepřidávej další berličky bez domluvy s Bobem, tyhle vznikly vědomě a jednorázově.
+
+6. **Kroky cvičení stojí na vzoru v datech.** Číslovaný seznam, kde položka začíná `**Tučným titulkem.**` a pod ním odrážky. Renderer z toho dělá kolečko s číslem, titulek a linku — čistě CSS countery nad `<ol>`, datový model se nesahá. **Když se ten vzor v datech poruší, kroky se rozpadnou na obyčejný seznam.** Nejkřehčí místo designu.
+
 ---
 
-## Design (coconut téma)
+## Design
 
-Vizuál prototypu, jen pro tuhle aplikaci, **není finální** — vzniklo, aby to mělo hlavu a patu a nebylo to rozsypané. Není to sdílený theme, nikde jinde se nepoužívá. Teplé skoro-černé pozadí, zlatý akcent, Georgia serif na obsah, sans na UI, mono na metadata/čísla. Aktuální hodnoty jsou v `<style>` bloku `cesta_prototyp.html` (proměnné `--bg`, `--surface`, `--accent` atd.). Admin má úplně jiný, nesouvisející vizuál (taky k přepsání).
+Nasazený 17. 7. 2026 podle `local/_design/design-handoff.md` a mockupu `local/_design/Support/exercise.html`. Vznikl v konverzaci s Claude Chat, Bob k němu má screeny v `local/_design/Support/`. **Není finální** — základ je odladěný, ale barvy čeká „overhaul do veselejší atmosféry" a karty Přerámování doladění. Hodnoty žijí v `<style>` bloku `cesta_kompletni.html`, prototyp má pořád staré coconut téma a nesahá se do něj.
+
+**Dvě témata, light + dark.** Přepínač je dole v hamburger menu, volba v `localStorage` (`mc_theme`). Dokud si uživatel nevybere, jede se podle systému. `data-theme` se píše na `#mc-root`, **ne na `<html>`** — uvnitř Miowebu nad ním nemáme kontrolu.
+
+**Tón sekce (`--tone`).** Akční sekce (První pomoc, Tělo, Přerámování, Cvičení) jedou červeně, čtecí (Otázky, Inspirace, Články, O appce) zeleně. Řídí barvu nadpisů, odrážek, ikonek, výběru. Registr sekcí má pole `tone`, render píše `data-tone` na `#mc-root`. Bobova logika: „akční zásahový vs. volný čtení".
+
+**Fonty:** Fraunces (nadpisy, titulky, citáty) + Public Sans (UI a běžný text) + mono (metadata, čísla). Fraunces je variabilní font — **vždy nastav `font-variation-settings:'opsz'`** podle velikosti (72 pro H1, 36 pro H2, 24 pro titulky), jinak vypadá placatě. Váha nadpisů 600, ne 400 (to bylo pro Georgii).
+
+**Osa `--gutter: 20px`.** Všechno boční odsazení jede přes ni. Nepřidávej vlastní hodnoty.
+
+**Klíčové proměnné:** `--tone`/`--tone-soft` (barva sekce), `--on-accent` (text NA accent ploše — v light světlý, v dark tmavý), `--heart` (srdíčko, v light světlejší než accent). `--empty`/`--done`/`--missed` nemají v kódu jediné použití, jsou to zbytky.
 
 ---
 
@@ -130,5 +163,6 @@ Než pushneš, zabij server (`taskkill //F //IM python.exe`) — drží složku 
 - **Stručně a přímo.** Žádné vaření, žádné omluvy, žádné preventivní vsuvky typu „na rovinu ti řeknu". Prostě řekni věc.
 - **Drž si vlastní názor.** Combative collaboration — když se Bob mýlí, řekni to; a čekej totéž zpátky. Sykofantské přitakávání je na obtíž. Bob úspěšně přebil dřívější Bresenham návrh vlastním řešením — tenhle typ výměny je žádoucí.
 - **MVP disciplína.** Bob má completionistickou tendenci, kterou vědomě krotí. Minulý projekt spadl na overengineeringu (200stránkový spec). Prototyp první, ověřit, pak teprve rozšiřovat. Nepřiživuj nafukování rozsahu.
+- **Připomínkování designu:** Bob dělal 10 let v digitálních agenturách a připomínky umí. Píše je jako guláš včetně „minipíčovinek" a **vědomě nechává třídění na tobě** — roztřiď si je sám na systémové CSS / bugy / funkce / data a udělej plán. Nefiltruj je za něj: dneska (17. 7.) na dvou „minipíčovinkách" stály dva reálné bugy (nefunkční proklik v Oblíbených, ikony o 9px vedle) a jeden nález, co rozbíjel zarovnání v celé appce. Když se něco opakuje napříč sekcemi, je to systémová věc — pojmenuj ji a oprav jednou, ne desetkrát. Když si Bob řekne o volnou ruku („zvol další krok"), vezmi ji.
 - **Tón:** čeština, nespisovně, kámoš. Oslovení „Bobe" (ne „kámo"). Kokosácký režim — občas hrubší láskyplná mluva je warmth, ne kritika. Nevztahuj psychoanalytické věci k Bobově osobě bez vyzvání.
 - **Obsahová práce:** přerámování se generují z víc modelů (Claude, ChatGPT, Gemini, Grok) a pak se čistí dvouprůchodově (hrubé pročištění → finální leštění). Prompt pro generování je ve zdrojích projektu, drž se ho. Pozor na syntaktickou monotónnost — Bobovy přerámování mají tendenci sklouzávat do opakované struktury „To, že X, neznamená Y"; hlídej tonální a strukturní pestrost napříč ~20 položkami na cluster.

@@ -253,13 +253,42 @@ Reálně používané kódy v datech (21): `ABINST`, `APPREC`, `DEFSH`, `DEPINC`
 
 ## Design a chování UI
 
-Rozhodnutá vize rozvržení a interakcí. Vizuální hodnoty (barvy, fonty) žijí v `<style>` bloku `cesta_kompletni.html`; tady je struktura a chování.
+Vizuální hodnoty (barvy, fonty) žijí v `<style>` bloku `cesta_kompletni.html`; tady je struktura, chování a design systém.
+
+### Design systém
+
+Nasazený 17. 7. 2026 podle `local/_design/design-handoff.md` a mockupu `local/_design/Support/exercise.html`. **Není finální** — barvy čeká „overhaul do veselejší atmosféry", karty Přerámování doladění.
+
+**Dvě témata (light + dark).** Přepínač dole v hamburger menu, volba v `localStorage` (`mc_theme`); dokud si uživatel nevybere, jede se podle systému (`prefers-color-scheme`). `data-theme` se píše na `#mc-root`, ne na `<html>` — uvnitř Miowebu nad ním nemáme kontrolu.
+
+**Tón sekce.** Akční sekce (První pomoc, Tělesné příznaky, Přerámování, Cvičení) jedou červeně, čtecí (Otázky, Inspirace, Články, O appce) zeleně — „akční zásahový vs. volné čtení". Registr sekcí má pole `tone`, render píše `data-tone` na `#mc-root`. Řídí barvu nadpisů (včetně nadpisů uvnitř markdownu), odrážek, ikonek dlaždic a výběru.
+
+**Typografie.** Fraunces (nadpisy, titulky karet, citáty) + Public Sans (UI a běžný text) + mono (metadata, čísla). Fraunces je variabilní font s osou `opsz` — nastavuje se explicitně podle velikosti (72 pro H1, 36 pro H2, 24 pro titulky), bez toho vypadá placatě. Váha nadpisů 600.
+
+**Osa `--gutter: 20px`** — veškeré boční odsazení jede přes ni, aby vše sedělo na jednu linku.
+
+**Barvy** (z handoffu; ověřené kontrasty: text 13,6:1+, tag pilulky 4,45:1, text na accentu 4,69:1):
+
+| | light | dark |
+|---|---|---|
+| pozadí / karta | `#F6F1E7` / `#FFFFFF` | `#1C1914` / `#262119` |
+| text / tlumený | `#2B241C` / `#6B6053` | `#F2EBDC` / `#B5AA96` |
+| accent (červená) | `#B8562E` | `#E08252` |
+| teal (zelená) | `#3E7266` | `#6FBBA6` |
+
+Vlastní proměnné nad rámec handoffu: `--tone`/`--tone-soft` (barva sekce), `--on-accent` (text na accent ploše — v light světlý, v dark tmavý), `--heart` (srdíčko, v light světlejší než accent), `--muted`. `--empty`/`--done`/`--missed` jsou zbytky bez použití.
 
 ### Obal aplikace
 
-- **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce.
-- **Úvodní stránka** — dlaždice po párech vedle sebe (První pomoc / Tělesné příznaky, Přerámování / Cvičení, Otázky / Inspirace, Články / O appce). Responzivní, vyplní plochu pod hlavičkou.
-- **Menu** (z hamburgeru) — tytéž sekce jako svislý seznam řádků, vpravo případně badge novinek.
+- **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce. Klik na název i na název v menu vede na úvod.
+- **Úvodní stránka** — nadpis „Dnešní inspirace" + náhodný citát, pod tím dlaždice po párech (První pomoc / Tělesné příznaky, Přerámování / Cvičení, Otázky / Inspirace, Články / O appce). Dlaždice vyplní zbytek výšky okna; pod 700px se samy zúží, aby se vešly bez scrollování.
+- **Menu** (z hamburgeru) — tytéž sekce jako svislý seznam řádků, vpravo případně badge novinek, dole přepínač světlého/tmavého režimu.
+
+### Dnešní inspirace
+
+Na úvodce je jeden náhodný citát ze sekce Inspirace, **jeden na den** — opakované otevření appky ho nemění. Uvádí se jen text (bez autora a roku, ty se zobrazují jen v sekci Inspirace).
+
+Losuje se z těch, které uživatel ještě neviděl; po vyčerpání všech se kolo restartuje. Stav drží `USER.daily = { date, id, seen[] }` v `localStorage`. Datum je lokální, ne UTC — jinak by se citát měnil ve dvě ráno. Když položka zmizí z dat, přelosuje se.
 
 ### Vzory obrazovek
 
@@ -370,6 +399,22 @@ Radiobutton „Nepřečtené" filtruje jen nepřečtené články. Přečtené s
 
 Submenu: Nejnovější / Redakce / Pro vás (stejná logika jako mikročlánky). Ve výchozím zobrazení seznam tagů rozdělený do kategorií (viz výše).
 
+**Detail cvičení** (podle mockupu `exercise.html`): tag pilulky nad názvem → název → perex → tabbar **Postup / Info** (Postup výchozí, aktivní tab tmavý, Info nese tečku) → duration strip s ikonkou → kroky.
+
+**Kroky** se skládají z číslovaného seznamu v markdownu — CSS countery nad `<ol>` dělají kolečko s číslem, vertikální linku a titulek kroku (tučný text na začátku položky). Datový model se nesahá, ale **vzor v datech je závazný**:
+
+```
+1. **Zaujmi stabilní postoj.**
+   * uvolni ramena
+   * vnímej chodidla
+```
+
+Když se vzor poruší, kroky se rozpadnou na obyčejný seznam.
+
+**Duration strip** je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Bere text z řádku `**Trvání:** …` v těle, pokud tam je; jinak `duration` + „min". *Dočasné řešení — viz Otevřené otázky.*
+
+CTA „Dokončit cvičení" z mockupu **není implementované** — appka nemá koncept dokončení cvičení, byla by to nová funkce i s daty.
+
 ### Inspirace a Podnětné otázky
 
 Submenu: Nejnovější / Pro vás. Dva řádky doporučených tagů s rozbalením. „Nejnovější" řadí od nejnovějších, „Pro vás" doporučuje podle profilu.
@@ -381,6 +426,10 @@ Prostý seznam → klik → strukturovaný text → možnost uložit do oblíben
 ### Oblíbené
 
 Napříč sekcemi: klepnutí na srdíčko u položky ji uloží. Sekce oblíbených je rozdělená do kategorií obsahu.
+
+Položky, které mají vlastní detail (První pomoc, Tělesné příznaky, Články, Cvičení), jsou odsud **prokliknutelné** — `FAV_VIEW` má u nich `detail:true`. Přerámování, Inspirace a Podnětné otázky detail nemají ani ve svých sekcích, takže odkaz nemají ani tady.
+
+Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` musí odpovídat rendereru sekce — Podnětné otázky jsou `quote`, ne `text`).
 
 ---
 
@@ -490,13 +539,52 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Frontend — obal + registr sekcí | ✅ funkční |
 | Frontend — všechny sekce | ✅ živé v `cesta_kompletni.html` nad všemi 11 JSONy |
 | Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
-| Vizuál | 🔄 coconut téma, k výměně za nový design systém (Fraunces + light/dark) |
+| Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný |
+| Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |
+| Vizuál — karty Přerámování | 🔄 čekají na doladění (větší karty, výraznější věty) |
 | Přerámování — triplet obsahu | 🔄 testovací fáze, zatím 4 klastry |
 | Ostatní obsah (články, cvičení, inspirace, otázky, krizovka, tělo) | 🔄 vzorek, plní se |
+| Pravidla pro generování obsahu (prompty) | 🔄 rozpracovaná, viz Otevřené otázky |
 | Embed kompletní verze do Miowebu | 🔲 neověřeno |
 | Admin nástroj | 🔲 k přestavbě od základu (stávající je zastaralý) |
 
 Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný.
+
+---
+
+## Otevřené otázky
+
+Věci, které visí ve vzduchu a čekají na rozhodnutí. **Většina se netýká kódu, ale dat a promptů**, kterými se obsah generuje.
+
+### Dvě berličky v rendereru
+
+Obě fungují a maskují nekonzistenci v datech. Až se data pročistí, můžou jít pryč — ale je rozumné nechat je jako pojistku.
+
+- **`stripDupHeading`** zahazuje první nadpis, když se shoduje s názvem položky. Tělo ho má ve všech položkách, Cvičení taky (v `body` i `info`), Krizovka ne.
+- **`pullDuration`** vytahuje z těla cvičení řádek `**Trvání:** …` do duration stripu, protože si data protiřečí: pole `duration: 10`, ale text „průběžně po dobu 1–2 týdnů".
+
+### Nekonzistence dat napříč sekcemi
+
+| | duplicitní název v těle | úroveň bloků | odrážky |
+|---|---|---|---|
+| crisis | ne ✅ | `##` | `*` |
+| body | **ano** | `##` | žádné |
+| exercises | **ano** (body i info) | `###` | `-` |
+| articles | ne ✅ | žádné | žádné |
+
+Cvičení používá `###` jen proto, že `##` zabral duplicitní název — po jeho odstranění se musí posunout na `##`.
+
+### K rozhodnutí
+
+- **Minutáž.** Buď `duration` zůstane číslo (pak „průběžně 1–2 týdny" nejde vyjádřit), nebo přibude textové `duration_text` a `duration` bude sloužit jen filtru. *Návrh: druhé — filtr potřebuje číslo, člověk větu.*
+- **Odrážky u Tělesných příznaků.** Bob chce „většinu obsahu odrážkami", dnes tam nejsou žádné. *Návrh: držet pravidlo z krizovky (popis = text, výčty = odrážky), ne „všude" — „Jak se příznak projevuje" je popis.*
+- **Články nemají nadpisy vůbec** — záměr (jsou krátké), nebo nedodělek?
+- **Telefonní čísla nejsou klikací** — markdown v appce neumí odkazy. V krizi je to škoda; šlo by doplnit automatickou detekci čísel.
+- **`### Zápis do deníku`** v datech cvičení — mockup na to má kartu s tealovým pruhem (`.journal-card`), zatím neimplementovaná.
+
+### Odrážkové pravidlo (Bobovo, odvozené z krizovky)
+
+Popis a vysvětlení = souvislý text. Akce, výčty a příznaky = odrážky. Úvodní věta bloku = bez odrážky. Dovětek na konci = bez odrážky, kurzívou. Kontakty = bez odrážek, číslo na samostatném řádku.
 
 ---
 
