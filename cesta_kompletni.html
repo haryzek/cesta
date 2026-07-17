@@ -28,7 +28,10 @@
 
 <style>
   :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
-  #mc-root ul { padding:0; list-style:none; }
+  /* Pozor na specificitu: `#mc-root ul` (0,1,1) přebíjí třídy (0,1,0), takže
+     každé .mc-list/.mc-cards/.mc-md ul tiše přišlo o vlastní padding a leželo
+     na okraji obrazovky. Reset proto přes :where() — nulová specificita. */
+  :where(#mc-root ul) { padding:0; list-style:none; }
 
   /* ===== PALETA =====
      Dvě sady, přepínač píše data-theme na #mc-root (ne na <html> — uvnitř
@@ -195,14 +198,22 @@
 
   /* ===== SEARCH ===== */
   .mc-search-wrap{ padding:20px var(--gutter) 2px; position:relative; }
-  .mc-search{ width:100%; padding:11px 14px 11px 40px; font-family:var(--sans); font-size:15px; color:var(--text);
+  .mc-search{ width:100%; padding:11px 68px 11px 40px; font-family:var(--sans); font-size:15px; color:var(--text);
     background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
   .mc-search::placeholder{ color:var(--muted); }
   .mc-search:focus{ border-color:var(--accent); }
   .mc-search-icon{ position:absolute; left:32px; top:50%; transform:translateY(-50%); width:16px; height:16px;
     color:var(--soft); pointer-events:none; }
-  .mc-count-pill{ position:absolute; right:30px; top:50%; transform:translateY(-50%); background:var(--surface-2);
-    color:var(--soft); font-family:var(--mono); font-size:11px; font-weight:600; padding:3px 9px; border-radius:6px; pointer-events:none; }
+  /* Nástroje vpravo v hledání — počítadlo vybraných + křížek na vymazání.
+     Dřív viselo počítadlo na right:30px, tedy mimo osu ostatního obsahu. */
+  .mc-search-tools{ position:absolute; right:calc(var(--gutter) + 8px); top:50%; transform:translateY(-50%);
+    display:flex; align-items:center; gap:6px; }
+  .mc-count-pill{ background:var(--tone); color:var(--on-accent); font-family:var(--mono); font-size:11px;
+    font-weight:700; min-width:20px; text-align:center; padding:3px 7px; border-radius:6px; pointer-events:none; }
+  .mc-search-clear{ display:flex; align-items:center; justify-content:center; width:22px; height:22px; padding:0;
+    background:none; border:none; cursor:pointer; color:var(--muted); border-radius:50%; transition:color .12s ease; }
+  .mc-search-clear:hover{ color:var(--text); }
+  .mc-search-clear svg{ width:13px; height:13px; }
 
   /* ===== SUBMENU (Nejnovější / Redakce / filtr) ===== */
   .mc-submenu{ display:flex; gap:6px; padding:14px 18px 4px; flex-wrap:wrap; align-items:center; }
@@ -244,22 +255,23 @@
   .mc-fab:active{ transform:scale(.98); }
 
   /* ===== FEELING LIST ===== */
-  .mc-list{ padding:20px var(--gutter) 0; list-style:none; }
-  .mc-feeling{ display:flex; align-items:center; gap:11px; padding:12px 12px 12px 15px; background:var(--surface);
-    border:1px solid var(--border); border-radius:14px; margin-bottom:6px; transition:border-color .15s ease,background .15s ease; }
-  .mc-feeling.checked{ border-color:var(--accent); background:var(--accent-dim); }
-  .mc-check{ flex-shrink:0; width:24px; height:24px; border-radius:7px; border:1px solid var(--border);
+  .mc-list{ padding:20px var(--gutter) 0; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:8px; align-content:start; }
+  .mc-feeling{ display:flex; align-items:center; gap:8px; padding:9px 10px 9px 11px; background:var(--surface);
+    border:1px solid var(--border); border-radius:11px; transition:border-color .15s ease,background .15s ease; min-width:0; }
+  .mc-feeling.checked{ border-color:var(--tone); background:var(--tone-soft); }
+  .mc-check{ flex-shrink:0; width:20px; height:20px; border-radius:6px; border:1px solid var(--border);
     background:var(--surface-2); color:var(--soft); cursor:pointer; display:flex; align-items:center; justify-content:center;
     transition:all .12s ease; }
-  .mc-check.on{ background:var(--accent); border-color:var(--accent); }
-  .mc-check svg{ width:14px; height:14px; color:var(--on-accent); opacity:0; transition:opacity .12s ease; }
+  .mc-check.on{ background:var(--tone); border-color:var(--tone); }
+  .mc-check svg{ width:12px; height:12px; color:var(--on-accent); opacity:0; transition:opacity .12s ease; }
   .mc-check.on svg{ opacity:1; }
   .mc-check:active{ transform:scale(.92); }
-  .mc-feeling-name{ flex:1; font-family:var(--serif); font-weight:600; font-size:16px; font-variation-settings:'opsz' 24;
-    letter-spacing:-0.01em; line-height:1.25; color:var(--text); cursor:pointer; }
-  .mc-feeling-go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; cursor:pointer; padding:0 2px; }
-  .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--accent); }
-  .mc-more{ width:100%; margin:6px 0 4px; padding:11px; background:transparent; border:1px dashed var(--border);
+  .mc-feeling-name{ flex:1; min-width:0; font-family:var(--serif); font-weight:600; font-size:13.5px;
+    font-variation-settings:'opsz' 14; letter-spacing:0; line-height:1.25; color:var(--text); cursor:pointer;
+    overflow-wrap:anywhere; hyphens:auto; }
+  .mc-feeling-go{ flex-shrink:0; font-family:var(--mono); color:var(--soft); font-size:15px; opacity:.45; cursor:pointer; padding:0 1px; }
+  .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--tone); }
+  .mc-more{ width:auto; margin:10px var(--gutter) 4px; padding:11px; background:transparent; border:1px dashed var(--border);
     border-radius:14px; color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease; }
   .mc-more:hover{ color:var(--text); border-color:var(--soft); }
 
@@ -800,7 +812,14 @@
   function viewRfFeelings(){
     var rf=state.rf, feelings=visibleFeelings(), total=mainFeelings().length+secondaryFeelings().length;
     var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
-    h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)"><span class="mc-count-pill">'+total+' pocitů</span></div>';
+    var nSel=Object.keys(rf.selected).length;
+    h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)">';
+    h+='<div class="mc-search-tools">';
+    // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
+    if(nSel>0) h+='<span class="mc-count-pill">'+nSel+'</span>';
+    if(rf.search.trim()) h+='<button class="mc-search-clear" onclick="MC.rfSearch(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>';
+    h+='</div></div>';
     h+='<ul class="mc-list">';
     if(feelings.length===0){ h+='<div class="mc-empty">Žádný pocit neodpovídá hledání.</div>'; }
     else feelings.forEach(function(f){
