@@ -96,7 +96,9 @@ Návody první pomoci v konkrétních situacích (První psychická pomoc, Panic
 
 ### 4. Tělesné příznaky — `body.json`
 
-Psychosomatická encyklopedie. Uživatel klikne na příznak a dostane vysvětlení. Struktura markdownu: jak se příznak projevuje, psychické příčiny, přirozené fyziologické příčiny, kdy vyhledat lékaře. Bez `schemas`, bez data přidání — také spíš stabilní sada.
+Psychosomatická encyklopedie. Uživatel klikne na příznak a dostane vysvětlení. Bez `schemas`, bez data přidání — také spíš stabilní sada.
+
+Tělo markdownu má **pevný skelet 7 bloků** (`##`): Jak se projevuje / Psychické příčiny / Přirozené fyziologické příčiny / Kdy a při čem se zhoršuje / Co přináší úlevu / S čím se to často plete / Kdy konzultovat lékaře. Výkladové bloky jsou souvislý text, výčtové bloky mají úvodní větu s dvojtečkou + odrážky + `*kurzíva dovětek*`. Formátovací pravidla drží prompt `local/_prompty/telesne-priznaky.md`.
 
 ```json
 {
@@ -399,19 +401,21 @@ Radiobutton „Nepřečtené" filtruje jen nepřečtené články. Přečtené s
 
 Submenu: Nejnovější / Redakce / Pro vás (stejná logika jako mikročlánky). Ve výchozím zobrazení seznam tagů rozdělený do kategorií (viz výše).
 
-**Detail cvičení** (podle mockupu `exercise.html`): tag pilulky nad názvem → název → perex → tabbar **Postup / Info** (Postup výchozí, aktivní tab tmavý, Info nese tečku) → duration strip s ikonkou → kroky.
+**Detail cvičení** (podle mockupu `exercise.html`): tag pilulky nad názvem → název → perex → tabbar **Postup / Info** (Postup výchozí, aktivní tab tmavý, Info nese tečku) → duration strip s ikonkou → kroky → journal-card.
 
 **Kroky** se skládají z číslovaného seznamu v markdownu — CSS countery nad `<ol>` dělají kolečko s číslem, vertikální linku a titulek kroku (tučný text na začátku položky). Datový model se nesahá, ale **vzor v datech je závazný**:
 
 ```
-1. **Zaujmi stabilní postoj.**
-   * uvolni ramena
-   * vnímej chodidla
+1. **Zaujmeme stabilní postoj.**
+   * uvolníme ramena
+   * vnímáme chodidla
 ```
 
 Když se vzor poruší, kroky se rozpadnou na obyčejný seznam.
 
-**Duration strip** je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Bere text z řádku `**Trvání:** …` v těle, pokud tam je; jinak `duration` + „min". *Dočasné řešení — viz Otevřené otázky.*
+**Duration strip** je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Bere přímo pole `duration` = jedna performance cvičení.
+
+**Journal-card** — závěrečný blok `## Zápis do deníku` v těle se odděluje (`splitJournal`) a renderuje jako samostatná tealová karta s ikonou deníku, oddělená od červeného postupu. Otázky v ich-formě.
 
 CTA „Dokončit cvičení" z mockupu **není implementované** — appka nemá koncept dokončení cvičení, byla by to nová funkce i s daty.
 
@@ -563,28 +567,19 @@ Obě fungují a maskují nekonzistenci v datech. Až se data pročistí, můžou
 - **`stripDupHeading`** zahazuje první nadpis, když se shoduje s názvem položky. Tělo ho má ve všech položkách, Cvičení taky (v `body` i `info`), Krizovka ne.
 - **`pullDuration`** vytahuje z těla cvičení řádek `**Trvání:** …` do duration stripu, protože si data protiřečí: pole `duration: 10`, ale text „průběžně po dobu 1–2 týdnů".
 
-### Nekonzistence dat napříč sekcemi
+### Stav pročištění obsahu (18. 7. 2026)
 
-| | duplicitní název v těle | úroveň bloků | odrážky |
-|---|---|---|---|
-| crisis | ne ✅ | `##` | `*` |
-| body | **ano** | `##` | žádné |
-| exercises | **ano** (body i info) | `###` | `-` |
-| articles | ne ✅ | žádné | žádné |
+crisis, body, exercises i articles jsou **pročištěné a naformátované** — slouží jako etalon pro prompty v `local/_prompty/`. Duplicitní názvy pryč, cvičení má bloky `##`, tělo pevný skelet 7 bloků, telefonní čísla v krizovce v `**bold**` (renderer je obarví tónem). Formátovací pravidla jednotlivých sekcí drží ty prompty, ne tento dokument.
 
-Cvičení používá `###` jen proto, že `##` zabral duplicitní název — po jeho odstranění se musí posunout na `##`.
+### K rozhodnutí (otevřené)
 
-### K rozhodnutí
-
-- **Minutáž.** Buď `duration` zůstane číslo (pak „průběžně 1–2 týdny" nejde vyjádřit), nebo přibude textové `duration_text` a `duration` bude sloužit jen filtru. *Návrh: druhé — filtr potřebuje číslo, člověk větu.*
-- **Odrážky u Tělesných příznaků.** Bob chce „většinu obsahu odrážkami", dnes tam nejsou žádné. *Návrh: držet pravidlo z krizovky (popis = text, výčty = odrážky), ne „všude" — „Jak se příznak projevuje" je popis.*
-- **Články nemají nadpisy vůbec** — záměr (jsou krátké), nebo nedodělek?
-- **Telefonní čísla nejsou klikací** — markdown v appce neumí odkazy. V krizi je to škoda; šlo by doplnit automatickou detekci čísel.
-- **`### Zápis do deníku`** v datech cvičení — mockup na to má kartu s tealovým pruhem (`.journal-card`), zatím neimplementovaná.
+- **Celková doba a frekvence cvičení.** `duration` zůstává číslo = jedna performance (banner). Celková doba praktikování a frekvence (např. „průběžně 1–2 týdny") čeká na **rozšíření datového modelu** — samostatná volitelná pole, Bob dořeší později. Zatím žije v textu Info (blok „Uvedení do praxe").
+- **Telefonní čísla nejsou klikací** — markdown v appce neumí odkazy. V krizi je to škoda; šlo by doplnit automatickou detekci čísel do `tel:` odkazů.
+- **6 stávajících článků** míchá vykání a „my" — u článků je to **záměrné** (autorská řeč), takže OK; jen ať to nová verze drží citem, ne mechanicky.
 
 ### Odrážkové pravidlo (Bobovo, odvozené z krizovky)
 
-Popis a vysvětlení = souvislý text. Akce, výčty a příznaky = odrážky. Úvodní věta bloku = bez odrážky. Dovětek na konci = bez odrážky, kurzívou. Kontakty = bez odrážek, číslo na samostatném řádku.
+Popis a vysvětlení = souvislý text. Akce, výčty a příznaky = odrážky. Úvodní věta bloku = bez odrážky (končí dvojtečkou, ať za ní fragmenty gramaticky sednou). Dovětek na konci = bez odrážky, kurzívou. Kontakty = bez odrážek, číslo na samostatném řádku. Odrážky jednoúrovňové, marker `*`, bez koncových teček.
 
 ---
 

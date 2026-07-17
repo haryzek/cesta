@@ -34,8 +34,12 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 
 - Klastry (116) + pocity (399): kompletní mapa s ID a schématy ✅
 - Triplet přerámování: testovací fáze, zatím 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný)
-- Ostatní obsah: vzorek pár položek
+- Krizovka (12), Tělesné příznaky (5): obsahově hotové a pročištěné, slouží jako etalon
+- Cvičení (3), Články (6): pročištěné, etalon pro prompty
+- Ostatní obsah: vzorek, plní se
 - Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
+
+**Generování obsahu z promptů:** v `local/_prompty/` (nepushuje se) jsou prompty pro tvorbu JSONů — `telesne-priznaky.md`, `cviceni.md`, `clanky.md`. Popisují, jak přetavit libovolný zdroj do naší struktury a hlasu. Vzory jsou reálné pročištěné JSONy. Bob sbírá cvičení/články z různých zdrojů a přes tyhle prompty (v Coworku) je převádíme do struktury. Přerámování, Otázky a Inspirace půjdou z Bobových Excel seznamů, ne přes textové prompty.
 
 ### Dvě běžící verze appky
 
@@ -67,16 +71,20 @@ Všech 11 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný ob
 
 **Markdown v tělech** appka renderuje vlastním mini-parserem. Umí: `##`/`###`/`####`, `*` i `-` odrážky, `1.` číslované, `**tučně**`, `*kurzíva*`, vnořené odrážky přes odsazení, víceřádkové položky seznamu. **Neumí: odkazy, obrázky, tabulky, kód, citace `>`, vodorovné čáry** — nepiš je do dat, nevykreslí se.
 
-**Data nejsou napříč sekcemi konzistentní** (stav k 17. 7. 2026, čeká na pročištění promptů):
+**Formát obsahu** (stav k 18. 7. 2026 — crisis, body, exercises pročištěné, slouží jako etalon pro prompty v `local/_prompty/`):
 
-| | duplicitní název v těle | úroveň bloků | odrážky |
-|---|---|---|---|
-| crisis | ne ✅ | `##` | `*` |
-| body | **ano** | `##` | žádné |
-| exercises | **ano** (body i info) | `###` | `-` |
-| articles | ne ✅ | žádné | žádné |
+- **crisis** — bloky `##`, odrážky `*`, žádný duplicitní název. Telefonní čísla v `**bold**` (renderer je obarví tónem — viz past č. 7). Kontakty: číslo na samostatném řádku.
+- **body** (Tělesné příznaky) — pevný skelet **7 bloků** (Jak se projevuje / Psychické příčiny / Fyziologické příčiny / Kdy se zhoršuje / Co přináší úlevu / **S čím se to často plete** / Kdy k lékaři). Vzor: text-bloky vs. odrážkové bloky s úvodní větou zakončenou dvojtečkou + `*kurzíva dovětek*`. Blok 6 se jmenuje „S čím se to často plete" (ne „Na co si to lidé pletou").
+- **exercises** — `body` = `## Postup` (+ volitelně `## Příprava`) + `## Zápis do deníku`; `info` = pevných **10 bloků** (Úvod → K čemu → Kdy využít → Jak posílit → Mindset → Na co pozor → Co může bránit → Co mít na paměti → Uvedení do praxe → Co dál?). Kroky postupu = číslovaný seznam, každý krok **tučný titulek + odrážky** (past č. 6).
+- **articles** — souvislý text, **žádné `##` nadpisy** (krátké mikročlánky).
 
-Cvičení má bloky `###` jen proto, že `##` zabral duplicitní název — až duplikát zmizí, musí se posunout na `##`.
+**Odrážky v datech drž jednoúrovňové a markerem `*`** (renderer umí i `-` a vnoření, ale prompty sjednocují na `*` a jednu úroveň).
+
+**Hlas obsahu — tři formy, každá má důvod:**
+- **Appka uživateli vyká** (UI: „Vyberte pocit", perex, placeholdery, O appce). Zdvořilý průvodce.
+- **Obsah je „my"** (cvičení postup i info, tělo). Společná cesta, nepřikazujeme.
+- **Deník je „já"/ich-forma** („Jak jsem se cítil/a?"). Osobní reflexe.
+- **Články** stojí mimo — autorská řeč, kombinace vykání a „my" je tam **záměrná**.
 
 Kdo má co:
 - **`schemas`** mají: clusters (5), articles, exercises, inspirations, questions (3). **Nemají**: feelings, crisis, body, triplet.
@@ -95,9 +103,11 @@ Kdo má co:
 
 4. **CSS specificita `#mc-root` — už dvakrát to kouslo.** Reset `#mc-root ul { padding:0 }` má specificitu (0,1,1) a tiše přebíjí každou třídu (0,1,0). Výsledek: `.mc-list`, `.mc-cards` i `.mc-md ul` přišly o odsazení a ležely na okraji obrazovky — a nevypadalo to jako chyba CSS, ale jako nedbalé odsazení. Totéž se stalo dřív s `margin`. **Všechny resety pod `#mc-root` piš přes `:where()`.** Když ti nesedí zarovnání a v CSS to vypadá správně, hledej tady.
 
-5. **V rendereru jsou dvě berličky, které maskují bordel v datech.** `stripDupHeading` zahazuje první nadpis, když se shoduje s názvem položky (Tělo a Cvičení ho tam mají, Krizovka ne). `pullDuration` vytahuje z těla cvičení řádek `**Trvání:** …` do banneru, protože pole `duration:10` a text „průběžně 1–2 týdny" si protiřečí. **Až se data pročistí, obě jdou pryč** — ale nech je jako pojistku. Nepřidávej další berličky bez domluvy s Bobem, tyhle vznikly vědomě a jednorázově.
+5. **`stripDupHeading` je ponechaná pojistka.** Zahazuje první nadpis těla, když se shoduje s názvem položky. Data jsou teď čistá (nikde duplikát není), takže je nečinná — ale drží se pro fázi generování z promptů, kdyby prompt uklouzl. `pullDuration` (dřívější druhá berlička) je **smazaná** — banner „Trvání" bere přímo pole `duration`. Nepřidávej nové berličky bez domluvy s Bobem.
 
 6. **Kroky cvičení stojí na vzoru v datech.** Číslovaný seznam, kde položka začíná `**Tučným titulkem.**` a pod ním odrážky. Renderer z toho dělá kolečko s číslem, titulek a linku — čistě CSS countery nad `<ol>`, datový model se nesahá. **Když se ten vzor v datech poruší, kroky se rozpadnou na obyčejný seznam.** Nejkřehčí místo designu.
+
+7. **Renderer má tři cílené transformace obsahu** (ne berličky — vědomé komponenty): `mc-tel` obarví tónem `**bold**`, který je čistě telefonní číslo (Krizovka). `splitJournal` oddělí závěrečný `## Zápis do deníku` z těla cvičení a vyrenderuje ho jako tealovou journal-card. Markdown parser umí i **víceřádkové položky seznamu** (odsazený řádek pokračuje poslední odrážkou) — kvůli kontaktům s číslem na dalším řádku.
 
 ---
 
@@ -114,6 +124,8 @@ Nasazený 17. 7. 2026 podle `local/_design/design-handoff.md` a mockupu `local/_
 **Osa `--gutter: 20px`.** Všechno boční odsazení jede přes ni. Nepřidávej vlastní hodnoty.
 
 **Klíčové proměnné:** `--tone`/`--tone-soft` (barva sekce), `--on-accent` (text NA accent ploše — v light světlý, v dark tmavý), `--heart` (srdíčko, v light světlejší než accent). `--empty`/`--done`/`--missed` nemají v kódu jediné použití, jsou to zbytky.
+
+**Detail cvičení** má prvky z mockupu: tabbar Postup/Info, duration strip (bere `duration`), číslované kroky (past č. 6), a **journal-card** — `## Zápis do deníku` se renderuje jako samostatná tealová karta (klidová barva proti červenému postupu). Detail obsahu se sází přes `.mc-detail-head`; nadpis mimo tuhle hlavičku ztratí gutter a přilepí se k okraji (opakovaná chyba).
 
 ---
 
