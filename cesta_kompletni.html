@@ -389,6 +389,18 @@
     color:var(--muted); font-weight:600; margin-bottom:1px; }
   .mc-strip .s-value{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
 
+  /* ===== JOURNAL CARD (Zápis do deníku) =====
+     Reflexe po cvičení — odlišená teal kartou (klidová/čtecí barva) proti
+     červenému postupu. Vzor z mockupu exercise.html. */
+  .mc-journal{ margin:28px var(--gutter) 0; padding:18px 20px; background:var(--surface-2);
+    border:1px solid var(--border); border-left:3px solid var(--teal); border-radius:16px; }
+  .mc-journal-eyebrow{ display:flex; align-items:center; gap:7px; font-family:var(--sans);
+    font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--teal); margin-bottom:12px; }
+  .mc-journal-eyebrow svg{ width:15px; height:15px; }
+  .mc-journal .mc-md{ font-size:15px; }
+  .mc-journal .mc-md ul > li::before{ background:var(--teal); }
+
   /* ===== MARKDOWN ===== */
   .mc-md{ font-family:var(--sans); font-size:15.5px; line-height:1.65; color:var(--body); }
   .mc-md h2,.mc-md h3,.mc-md h4{ font-family:var(--serif); font-weight:600; color:var(--tone); line-height:1.25; letter-spacing:-0.01em; }
@@ -523,7 +535,8 @@
     clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
     star:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7.1 14l-5-4.8 6.9-.9z"/></svg>',
     sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
-    moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>'
+    moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+    journal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16a2 2 0 0 0 2 2h12V2H6a2 2 0 0 0-2 2z"/><path d="M8 2v20M12 7h4M12 11h4"/></svg>'
   };
 
   // ===================== REGISTR SEKCÍ =====================
@@ -694,6 +707,21 @@
     var m=lines[i]&&lines[i].trim().match(/^#{1,6}\s+(.*)$/);
     if(m && norm(m[1])===norm(title)) return lines.slice(i+1).join("\n");
     return src;
+  }
+
+  // Oddělí závěrečný blok "## Zápis do deníku" z těla cvičení — renderuje se
+  // jako samostatná journal-card (teal), ne jako běžný nadpis. Vrací tělo bez
+  // něj a obsah deníku (řádky za nadpisem).
+  function splitJournal(src){
+    if(!src) return { body:src, journal:null };
+    var lines=String(src).split(/\r?\n/);
+    for(var i=0;i<lines.length;i++){
+      var m=lines[i].trim().match(/^#{1,6}\s+(.*)$/);
+      if(m && deburr(m[1]).indexOf("zapis do deniku")>-1){
+        return { body:lines.slice(0,i).join("\n").replace(/\s+$/,""), journal:lines.slice(i+1).join("\n").trim() };
+      }
+    }
+    return { body:src, journal:null };
   }
 
   function md(src){
@@ -1007,7 +1035,12 @@
         h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div>'+
            '<div class="s-label">Trvání</div><div class="s-value">'+esc(item[cfg.timeField])+' min</div></div></div>';
       }
-      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(stripDupHeading(item.body,title))+'</div>';
+      var jr=splitJournal(stripDupHeading(item.body,title));
+      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(jr.body)+'</div>';
+      if(jr.journal){
+        h+='<div class="mc-journal"><div class="mc-journal-eyebrow">'+IC.journal+'Zápis do deníku</div>'+
+           '<div class="mc-md">'+md(jr.journal)+'</div></div>';
+      }
     }
     if(cfg.readable) markRead(d.id);
     return h;
@@ -1038,7 +1071,7 @@
   // ===================== RENDER — O appce =====================
   function viewAbout(){
     return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
-      '<div class="mc-detail-title" style="padding-top:14px">O aplikaci</div>'+
+      '<div class="mc-detail-head"><div class="mc-detail-title">O aplikaci</div></div>'+
       '<div class="mc-about">'+
       '<p><strong>Moje cesta</strong> je psychoterapeutická appka. Vyberte jádrový pocit — a dostanete přerámování, otázky a úkoly, které vám pomůžou podívat se na to, co prožíváte, jinak.</p>'+
       '<p>Vedle přerámování tu najdete <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
