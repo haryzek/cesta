@@ -250,17 +250,16 @@
     font-weight:700; padding:0 6px; border-radius:6px; }
 
   /* ===== FILTER PANEL ===== */
-  .mc-filter{ margin:6px 18px 0; padding:14px; background:var(--surface); border:1px solid var(--border); border-radius:10px; }
-  .mc-filter .fkw{ width:100%; padding:9px 12px; font-family:var(--serif); font-size:15px; color:var(--text);
-    background:var(--bg); border:1px solid var(--border); border-radius:8px; outline:none; margin-bottom:12px; }
-  .mc-filter .fkw:focus{ border-color:var(--accent); }
-  .mc-filter h4{ font-family:var(--sans); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
-    color:var(--soft); margin:10px 0 7px; }
-  .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
+  .mc-filter{ margin:10px var(--gutter) 0; padding:14px; background:var(--surface); border:1px solid var(--border); border-radius:14px; }
+  .mc-filter .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
+    background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:12px; }
+  .mc-filter .fkw:focus{ border-color:var(--tone); }
+    .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
   .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
-    font-size:12.5px; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
+    font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
+  .mc-chip.dur{ background:var(--accent-dim); border-color:transparent; color:var(--accent); font-family:var(--mono); font-weight:700; }
   .mc-chip:hover{ border-color:var(--soft); }
-  .mc-chip.on{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:600; }
+  .mc-chip.on,.mc-chip.dur.on{ background:var(--tone); border-color:var(--tone); color:var(--on-accent); font-weight:700; }
   .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
   .mc-filter-clear{ background:none; border:none; color:var(--soft); font-family:var(--sans); font-size:12.5px;
     cursor:pointer; text-decoration:underline; }
@@ -839,7 +838,7 @@
     var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyber, jak se cítíš — a podívej se na to jinak.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledej pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
     // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
     if(nSel>0) h+='<span class="mc-count-pill">'+nSel+'</span>';
@@ -890,7 +889,7 @@
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
     var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
     if(cfg.search){
-      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej příznak…" oninput="MC.secSearch(this.value)"></div>';
+      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledej příznak…" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
     }
     h+='<div class="mc-namelist">';
@@ -923,18 +922,17 @@
   function viewFilterPanel(key){
     var cfg=CONTENT[key], s=secState(key);
     var h='<div class="mc-filter">';
-    h+='<input class="fkw" placeholder="Klíčové slovo…" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)">';
-    var tags=allTags(cfg.dataKey);
-    if(tags.length){
-      h+='<h4>Štítky</h4><div class="mc-chips">';
-      tags.forEach(function(t){ h+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
-      h+='</div>';
-    }
+    // Enter zavře klávesnici (blur) — na mobilu jinak není jak ji schovat.
+    h+='<input class="fkw" placeholder="Klíčové slovo…" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.searchKey(event)">';
+    // Délka nahoře, štítky pod ní. Nadpisy „Štítky"/„Délka" pryč — pilulky se
+    // vysvětlují samy, délku odliší accentový tón.
+    var chips='';
     if(cfg.timeField==="duration"){
-      h+='<h4>Délka</h4><div class="mc-chips">';
-      durationBuckets().forEach(function(b,i){ h+='<button class="mc-chip '+(s.dur===i?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
-      h+='</div>';
+      durationBuckets().forEach(function(b,i){ chips+='<button class="mc-chip dur '+(s.dur===i?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
     }
+    var tags=allTags(cfg.dataKey);
+    tags.forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
+    if(chips) h+='<div class="mc-chips">'+chips+'</div>';
     if(activeFilterCount(key)>0) h+='<div class="mc-filter-foot"><button class="mc-filter-clear" onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button></div>';
     return h+'</div>';
   }
@@ -1087,6 +1085,9 @@
     detailTab:function(i){ if(state.detail) state.detail.infoOpen=(i===1); scrollTop(); render(); },
     // oblíbené
     fav:function(store,id){ toggleFav(store,id); render(); },
+    // Enter v hledání zavře klávesnici. Na mobilu jinak není jak ji schovat —
+    // filtruje se průběžně, takže není co odesílat.
+    searchKey:function(e){ if(e&&e.key==="Enter"){ e.preventDefault(); if(e.target&&e.target.blur) e.target.blur(); } },
     // téma
     theme:function(){
       var next=theme()==="light"?"dark":"light";
