@@ -429,6 +429,7 @@
   .mc-md li > ul{ list-style:circle; }
   .mc-md li::marker{ color:var(--accent); }
   .mc-md strong{ color:var(--text); font-weight:700; }
+  .mc-md strong.mc-tel{ color:var(--tone); }
   .mc-md em{ color:var(--soft); font-style:italic; }
 
   /* ===== FAVORITES ===== */
@@ -677,7 +678,11 @@
   function timeTag(n){ return '<span class="mc-tag time">'+IC.clock+(n||0)+' min</span>'; }
 
   // ===================== MARKDOWN ===================== (identický s produkcí)
-  function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
+  function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,function(_,t){
+    // Bold, který je čistě telefonní číslo (číslice a mezery, ≥3 cifry),
+    // dostane tón sekce — telefonní čísla v krizovce mají vyčnívat červeně.
+    return /^[\d\s]+$/.test(t)&&(t.replace(/\D/g,"").length>=3) ? '<strong class="mc-tel">'+t+'</strong>' : '<strong>'+t+'</strong>';
+  }).replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
   // Těla v datech začínají nadpisem, který opakuje název položky — ten je ale
   // už v titulku detailu, takže by se název ukázal dvakrát pod sebou.
   // Zahodíme první nadpis, jen když se s názvem shoduje.
