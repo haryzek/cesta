@@ -164,9 +164,12 @@
   .mc-menu-sep{ height:1px; background:var(--border); margin:6px 16px; }
 
   /* ===== HOME ===== */
-  .mc-home-intro{ padding:24px var(--gutter) 10px; }
+  .mc-home-intro{ padding:24px var(--gutter) 14px; }
   .mc-home-intro h1{ color:var(--tone); }
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
+  /* Citát dne — velikost jako názvy dlaždic, ale tenký řez. */
+  .mc-home-intro p.mc-daily{ font-family:var(--serif); font-weight:400; font-size:17px; line-height:1.5;
+    font-variation-settings:'opsz' 24; color:var(--body); margin-top:14px; }
   .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 var(--gutter); }
   .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
     background:var(--surface); border:1px solid var(--border); border-radius:16px; cursor:pointer; text-align:left;
@@ -512,7 +515,7 @@
 
   // ===================== UŽIVATELSKÁ DATA =====================
   var USER=loadUser();
-  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{}}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
+  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{},daily:null}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
   function loadUser(){
     var u=emptyUser();
     try{ var d=JSON.parse(localStorage.getItem(STORE_KEY));
@@ -521,11 +524,38 @@
         if(Array.isArray(d.read)) u.read=d.read;
         if(d.last_seen&&typeof d.last_seen==="object") u.last_seen=d.last_seen;
         if(d.profile&&typeof d.profile==="object") u.profile=d.profile;
+        if(d.daily&&typeof d.daily==="object") u.daily=d.daily;
       }
     }catch(e){}
     return u;
   }
   function saveUser(){ try{ localStorage.setItem(STORE_KEY,JSON.stringify(USER)); }catch(e){} }
+
+  // ===================== DNEŠNÍ INSPIRACE =====================
+  // Jeden citát na den, drží se přes celý den (opakované otevření appky ho
+  // nemění). Pamatuje si, co už padlo — nová inspirace se losuje jen z těch
+  // neviděných; když dojdou všechny, kolo se restartuje.
+  // Lokální datum, ne UTC — jinak by se citát měnil ve dvě ráno.
+  function today(){
+    var d=new Date();
+    return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+  }
+  function dailyInspiration(){
+    var all=(DB&&DB.inspirations)||[];
+    if(!all.length) return null;
+    var d=USER.daily, t=today();
+    if(d&&d.date===t){
+      var cur=(itemIndex.inspirations||{})[d.id];
+      if(cur) return cur;   // položka mohla zmizet z dat → přelosuje se
+    }
+    var seen=(d&&Array.isArray(d.seen))?d.seen:[];
+    var pool=all.filter(function(x){ return seen.indexOf(x.id)<0; });
+    if(!pool.length){ seen=[]; pool=all.slice(); }
+    var pick=pool[Math.floor(Math.random()*pool.length)];
+    USER.daily={ date:t, id:pick.id, seen:seen.concat([pick.id]) };
+    saveUser();
+    return pick;
+  }
 
   // ===================== TÉMA =====================
   // Volba přežívá v localStorage; dokud si uživatel nevybere, jede se podle
@@ -754,7 +784,11 @@
   }
 
   function viewHome(){
-    var h='<div class="mc-home-intro"><h1>Vítej na cestě.</h1><p>Vyber, kudy dnes — a podívej se na to, co prožíváš, jinak.</p></div><div class="mc-tiles">';
+    var insp=dailyInspiration();
+    var h='<div class="mc-home-intro"><h1>Dnešní inspirace</h1>';
+    // Jen text — autor a rok se na úvodce záměrně neuvádí.
+    if(insp) h+='<p class="mc-daily">„'+esc(insp.text)+'“</p>';
+    h+='</div><div class="mc-tiles">';
     SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
       h+='<button class="mc-tile mc-in" data-tone="'+(s.tone||"accent")+'" onclick="MC.open(\''+s.key+'\')"><span class="mc-tile-ic">'+IC[s.icon]+'</span><span class="mc-tile-name">'+esc(s.label)+'</span></button>';
     });
