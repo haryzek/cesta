@@ -617,6 +617,8 @@ Když se vzor poruší, kroky se rozpadnou na obyčejný seznam.
 
 **Duration strip** je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Bere přímo pole `duration` = jedna performance cvičení.
 
+**Praxe (oddílová)** — `## Úvodní motivace` → `## Uvedení do praxe` → *(sem renderer vloží `section.diary_practice`)* → volitelné bloky → závěrečný blok s živým nadpisem („Jak začlenit relaxaci do každodenního života“; SPEC §5 měl jednotné „Začlenění do každodenního života“, 11. 9. 2026 rozhodnuto nechat živé nadpisy a vkládat deník pozičně za druhý blok). Oddílové `theory`/`practice` vykají, Postup je „my“ — záměr, ne chyba.
+
 **Journal-card** — závěrečný blok `## Zápis do deníku` v těle se odděluje (`splitJournal`) a renderuje jako samostatná tealová karta s ikonou deníku, oddělená od červeného postupu. Otázky v ich-formě.
 
 CTA „Dokončit cvičení" z mockupu **není implementované** — appka nemá koncept dokončení cvičení, byla by to nová funkce i s daty.
