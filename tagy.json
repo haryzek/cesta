@@ -96,7 +96,10 @@
       "hranice",
       "rozhodování",
       "motivace",
-      "produktivita"
+      "produktivita",
+      "smrt",
+      "stáří",
+      "ztráta"
     ]
   },
   "tagy": [
@@ -153,6 +156,7 @@
     "sebepoznání",
     "sebevědomí",
     "sex",
+    "smrt",
     "smutek",
     "smysl života",
     "sounáležitost",
@@ -160,6 +164,7 @@
     "strach",
     "stres",
     "stud",
+    "stáří",
     "svoboda",
     "trauma",
     "tvoření",
@@ -179,7 +184,8 @@
     "úspěch",
     "úzkost",
     "štěstí",
-    "žárlivost"
+    "žárlivost",
+    "ztráta"
   ],
   "slouceno": {
     "agorafobie": "fobie",
