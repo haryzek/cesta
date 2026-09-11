@@ -31,10 +31,8 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       věrnost Bobovým formulacím, úplnost postupů, kvalita deníkových otázek
       a tónová pestrost. Strojově to nejde. Doporučené pořadí: oddíl 04 jako
       etalon, pak 05–11. Práce na několik sezení.
-- [ ] **Rozhodnout o `diary_exercise`.** Vyplněný je u 41 cvičení, podklad má
-      ale jen 25 značek. SPEC §17 říká „vlastní deník jen u cvičení s unikátním
-      obsahem". Claude umí těch 16 navíc vypsat — posoudit, jestli nejde o vatu,
-      musí Bob.
+- [x] **`diary_exercise` — 16 navíc proti podkladu ponecháno (11. 9. 2026).** Jsou
+      specifické na cvičení, obecnou část nese oddíl.
 - [ ] **Zadat, jestli projet perexy článků.** U cvičení se to udělalo (8 přepsaných
       z 71). U 112 článků se perexy zatím nikdo nedíval stejným metrem.
 - [x] **Bolístky nasazené (11. 9. 2026).** `pains.json` 175 × ~24 hlášek:
@@ -62,7 +60,8 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       duration stripu (TRVÁNÍ `duration` · PRAXE `frequency` / `training_period` ·
       NÁROČNOST barevná pilulka — návrh `local/_design/box_náročnosti.jpg`); **box
       řetězu** (2/6, chevron → seznam řetězu s proklikem); **box warning**;
-      journal-card = `section.diary_exercise` + `exercise.diary_exercise` slepené;
+      journal-card kreslit z polí `section.diary_exercise` + `exercise.diary_exercise`
+      slepených (v `body` žádný deník není, dnešní `splitJournal` je u cvičení mrtvý);
       `diary_practice` vložit do Praxe mezi „Uvedení do praxe“ a „Začlenění“;
       přílohy (`attachments`, 16 cvičení); `info_extra`/`theory_extra` nad oddílový
       text; nová sekce **Moje cesta** (seznam oddílů s perexem, 01–03 jen theory,
