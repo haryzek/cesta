@@ -20,9 +20,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "úzkost",
       "dýchání",
       "zklidnění",
-      "úzkost",
       "stres",
       "panická ataka"
     ],
@@ -57,11 +57,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "dýchání",
-      "zklidnění",
       "stres",
-      "úzkost",
-      "psychosomatika"
+      "dýchání",
+      "relaxace",
+      "zklidnění",
+      "úzkost"
     ],
     "schemas": [
       "VULILL",
@@ -94,10 +94,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "dýchání",
       "zklidnění",
+      "dýchání",
+      "meditace",
       "mindfulness",
-      "úzkost"
+      "přítomnost"
     ],
     "schemas": [
       "NEGPES",
@@ -130,10 +131,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "panická ataka",
       "dýchání",
       "zklidnění",
-      "úzkost",
-      "panická ataka"
+      "úzkost"
     ],
     "schemas": [
       "VULILL",
@@ -166,9 +167,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "spánek",
       "dýchání",
       "zklidnění",
-      "spánek",
       "úzkost"
     ],
     "schemas": [
@@ -202,8 +203,8 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "dýchání",
       "zklidnění",
+      "dýchání",
       "stres",
       "úzkost"
     ],
@@ -238,11 +239,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "dýchání",
-      "zklidnění",
       "stres",
-      "úzkost",
-      "tělo"
+      "dýchání",
+      "tělo",
+      "zklidnění",
+      "úzkost"
     ],
     "schemas": [
       "VULILL",
@@ -275,11 +276,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "dýchání",
-      "zklidnění",
-      "bezpečí",
       "spánek",
-      "psychosomatika"
+      "dýchání",
+      "bezpečí",
+      "zklidnění",
+      "tělo"
     ],
     "schemas": [
       "VULILL",
@@ -312,11 +313,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "imaginace",
       "bezpečí",
-      "zklidnění",
+      "imaginace",
       "úzkost",
-      "panická ataka"
+      "panická ataka",
+      "zklidnění"
     ],
     "schemas": [
       "VULILL",
@@ -349,11 +350,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "imaginace",
       "bezpečí",
+      "imaginace",
       "zklidnění",
       "úzkost",
-      "vztahy"
+      "hranice"
     ],
     "schemas": [
       "VULILL",
@@ -391,10 +392,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "tělo",
-      "zklidnění",
-      "relaxace",
       "stres",
+      "tělo",
+      "relaxace",
+      "zklidnění",
       "úzkost"
     ],
     "schemas": [
@@ -428,10 +429,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "relaxace",
-      "zklidnění",
-      "imaginace",
       "stres",
+      "relaxace",
+      "imaginace",
+      "tělo",
       "spánek"
     ],
     "schemas": [
@@ -465,10 +466,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "stres",
       "relaxace",
       "tělo",
-      "zklidnění",
-      "stres",
       "úzkost"
     ],
     "schemas": [
@@ -502,10 +502,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "stres",
       "relaxace",
       "tělo",
-      "zklidnění",
-      "stres",
       "úzkost"
     ],
     "schemas": [
@@ -539,10 +538,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "stres",
       "relaxace",
       "tělo",
-      "zklidnění",
-      "stres",
       "úzkost"
     ],
     "schemas": [
@@ -576,10 +574,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "stres",
       "relaxace",
-      "tělo",
-      "zklidnění",
-      "stres"
+      "tělo"
     ],
     "schemas": [
       "VULILL",
@@ -612,9 +609,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "zklidnění",
       "relaxace",
       "tělo",
-      "zklidnění",
       "stres",
       "úzkost"
     ],
@@ -649,9 +646,9 @@
     "difficulty": "střední",
     "warning": null,
     "tags": [
+      "úzkost",
       "relaxace",
       "expozice",
-      "úzkost",
       "panická ataka",
       "stres"
     ],
@@ -686,10 +683,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "meditace",
       "zklidnění",
+      "meditace",
       "mindfulness",
-      "úzkost"
+      "dýchání",
+      "přítomnost"
     ],
     "schemas": [
       "VULILL",
@@ -727,8 +725,8 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "meditace",
       "zklidnění",
+      "meditace",
       "myšlenky",
       "úzkost"
     ],
@@ -763,10 +761,11 @@
     "difficulty": "vysoká",
     "warning": "Meditace není vhodná při akutní krizi nebo těžké depresi.",
     "tags": [
+      "smrt",
       "meditace",
+      "imaginace",
       "smysl života",
-      "hodnoty",
-      "sebepoznání"
+      "hodnoty"
     ],
     "schemas": [
       "LACKMEAN",
@@ -799,10 +798,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "přítomnost",
       "mindfulness",
-      "zklidnění",
-      "úzkost",
-      "stres"
+      "plné prožívání",
+      "zklidnění"
     ],
     "schemas": [
       "EMOINH",
@@ -835,10 +834,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "mindfulness",
-      "zklidnění",
       "stres",
-      "úzkost"
+      "mindfulness",
+      "dýchání",
+      "sebeláska",
+      "zklidnění"
     ],
     "schemas": [
       "USHYPER",
@@ -871,10 +871,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "panická ataka",
       "mindfulness",
-      "zklidnění",
       "úzkost",
-      "panická ataka"
+      "zklidnění",
+      "myšlenky"
     ],
     "schemas": [
       "VULILL",
@@ -907,10 +908,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "mindfulness",
       "myšlenky",
-      "zklidnění",
-      "stres"
+      "mindfulness",
+      "přítomnost"
     ],
     "schemas": [
       "NEGPES",
@@ -943,10 +943,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "přítomnost",
       "mindfulness",
-      "zklidnění",
       "tělo",
-      "stres"
+      "plné prožívání"
     ],
     "schemas": [
       "EMOINH",
@@ -979,10 +979,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "přítomnost",
       "mindfulness",
-      "zklidnění",
-      "emoce",
-      "stres"
+      "plné prožívání",
+      "emoce"
     ],
     "schemas": [
       "EMOINH",
@@ -1015,10 +1015,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "přítomnost",
       "mindfulness",
       "tělo",
-      "zklidnění",
-      "emoce"
+      "emoce",
+      "sebeláska"
     ],
     "schemas": [
       "EMOINH",
@@ -1051,11 +1052,12 @@
     "difficulty": "střední",
     "warning": "Při silné panice cvičení nezahajujeme – nejprve zklidníme dech.",
     "tags": [
-      "mindfulness",
       "úzkost",
-      "panická ataka",
+      "mindfulness",
       "tělo",
-      "emoce"
+      "emoce",
+      "panická ataka",
+      "přijetí"
     ],
     "schemas": [
       "VULILL",
@@ -1094,9 +1096,9 @@
     "warning": null,
     "tags": [
       "myšlenky",
-      "sebepoznání",
+      "psaní",
       "úzkost",
-      "psaní"
+      "sebepoznání"
     ],
     "schemas": [
       "NEGPES",
@@ -1134,10 +1136,10 @@
     "difficulty": "střední",
     "warning": null,
     "tags": [
-      "přerámování myšlenek",
       "myšlenky",
-      "úzkost",
-      "sebepoznání"
+      "přerámování myšlenek",
+      "psaní",
+      "úzkost"
     ],
     "schemas": [
       "NEGPES",
@@ -1181,8 +1183,9 @@
     "tags": [
       "panická ataka",
       "úzkost",
-      "přerámování myšlenek",
-      "myšlenky"
+      "psaní",
+      "afirmace",
+      "přerámování myšlenek"
     ],
     "schemas": [
       "NEGPES",
@@ -1217,6 +1220,7 @@
     "tags": [
       "panická ataka",
       "úzkost",
+      "afirmace",
       "zklidnění",
       "přerámování myšlenek"
     ],
@@ -1251,10 +1255,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "přerámování myšlenek",
       "myšlenky",
-      "úzkost",
-      "zklidnění"
+      "přerámování myšlenek",
+      "zklidnění",
+      "úzkost"
     ],
     "schemas": [
       "NEGPES",
@@ -1287,9 +1291,10 @@
     "difficulty": "střední",
     "warning": "Technika může otevřít bolestivá přesvědčení nebo vzpomínky – při silných emocích ji přerušíme.",
     "tags": [
+      "strach",
       "myšlenky",
+      "psaní",
       "sebepoznání",
-      "expozice",
       "úzkost"
     ],
     "schemas": [
@@ -1323,9 +1328,9 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "myšlenky",
-      "imaginace",
       "úzkost",
+      "imaginace",
+      "myšlenky",
       "zklidnění"
     ],
     "schemas": [
@@ -1360,6 +1365,7 @@
     "warning": null,
     "tags": [
       "spánek",
+      "psaní",
       "myšlenky",
       "úzkost"
     ],
@@ -1397,7 +1403,8 @@
       "spánek",
       "psaní",
       "emoce",
-      "myšlenky"
+      "myšlenky",
+      "stres"
     ],
     "schemas": [
       "EMOINH",
@@ -1438,7 +1445,9 @@
       "sebepoznání",
       "psaní",
       "emoce",
-      "vztahy"
+      "minulost",
+      "vztahy",
+      "dětství"
     ],
     "schemas": [
       "LACKCOH",
@@ -1473,7 +1482,7 @@
     "tags": [
       "sebepoznání",
       "psaní",
-      "smysl života"
+      "minulost"
     ],
     "schemas": [
       "LACKCOH",
@@ -1506,9 +1515,11 @@
     "difficulty": "střední",
     "warning": "Kontakt s vnitřním dítětem může vyvolat silné emoce – dopřejeme si čas a bezpečí.",
     "tags": [
+      "vnitřní dítě",
       "vnitřní části",
       "psaní",
-      "sebepoznání",
+      "dětství",
+      "sebeláska",
       "emoce"
     ],
     "schemas": [
@@ -1542,10 +1553,12 @@
     "difficulty": "střední",
     "warning": null,
     "tags": [
-      "vnitřní části",
       "vztahy",
       "psaní",
-      "emoce"
+      "vnitřní dítě",
+      "vnitřní části",
+      "dětství",
+      "přijetí"
     ],
     "schemas": [
       "EMODEP",
@@ -1583,9 +1596,10 @@
     "difficulty": "střední",
     "warning": "Rozhovor s vnitřním dítětem může otevřít silné emoce – cvičení můžeme kdykoli přerušit.",
     "tags": [
+      "vnitřní dítě",
       "vnitřní části",
       "psaní",
-      "sebepoznání",
+      "dětství",
       "emoce"
     ],
     "schemas": [
@@ -1631,7 +1645,8 @@
       "vztahy",
       "psaní",
       "emoce",
-      "sebepoznání"
+      "minulost",
+      "komunikace"
     ],
     "schemas": [
       "EMOINH",
@@ -1667,6 +1682,7 @@
       "vnitřní části",
       "psaní",
       "sebepoznání",
+      "psychické obrany",
       "emoce"
     ],
     "schemas": [
@@ -1701,9 +1717,11 @@
     "warning": null,
     "tags": [
       "sebepoznání",
-      "vztahy",
+      "psaní",
+      "identita",
       "hodnoty",
-      "psaní"
+      "rodina",
+      "vztahy"
     ],
     "schemas": [
       "LACKCOH",
@@ -1737,8 +1755,9 @@
     "warning": null,
     "tags": [
       "sebepoznání",
-      "myšlenky",
-      "vztahy",
+      "psaní",
+      "dětství",
+      "rodina",
       "hodnoty"
     ],
     "schemas": [
@@ -1777,10 +1796,12 @@
     "difficulty": "střední",
     "warning": "Vybavování zraňujících poselství může bolet – postupujeme laskavě sami k sobě.",
     "tags": [
-      "sebepoznání",
       "myšlenky",
       "přerámování myšlenek",
-      "změna"
+      "dětství",
+      "rodina",
+      "afirmace",
+      "psaní"
     ],
     "schemas": [
       "PUNIT",
@@ -1813,10 +1834,12 @@
     "difficulty": "vysoká",
     "warning": "Cvičení není určeno ke znovuprožití těžkých traumat – při velkém strachu je na místě podpora lékaře či terapeuta.",
     "tags": [
-      "sebepoznání",
       "emoce",
+      "imaginace",
+      "minulost",
+      "dětství",
       "vztahy",
-      "imaginace"
+      "sebepoznání"
     ],
     "schemas": [
       "EMODEP",
@@ -1850,9 +1873,9 @@
     "warning": null,
     "tags": [
       "emoce",
-      "vztahy",
       "imaginace",
-      "zklidnění"
+      "vztahy",
+      "minulost"
     ],
     "schemas": [
       "ENMUND",
@@ -1885,9 +1908,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "strach",
       "expozice",
       "fobie",
-      "úzkost"
+      "úzkost",
+      "odvaha"
     ],
     "schemas": [
       "VULILL",
@@ -1929,9 +1954,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
-      "expozice",
       "fobie",
-      "psaní"
+      "expozice",
+      "psaní",
+      "strach",
+      "úzkost"
     ],
     "schemas": [
       "VULILL",
@@ -1964,8 +1991,10 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "strach",
       "expozice",
       "relaxace",
+      "imaginace",
       "úzkost"
     ],
     "schemas": [
@@ -1999,9 +2028,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "motivace",
       "expozice",
+      "psaní",
       "imaginace",
-      "hodnoty"
+      "strach"
     ],
     "schemas": [
       "VULILL",
@@ -2034,9 +2065,11 @@
     "difficulty": "střední",
     "warning": null,
     "tags": [
-      "expozice",
+      "strach",
       "imaginace",
-      "úzkost"
+      "expozice",
+      "úzkost",
+      "fobie"
     ],
     "schemas": [
       "VULILL",
@@ -2069,9 +2102,12 @@
     "difficulty": "vysoká",
     "warning": "Vhodnost expoziční terapie při tělesném či duševním onemocnění nebo užívání léků konzultujeme s lékařem.",
     "tags": [
-      "expozice",
       "fobie",
-      "úzkost"
+      "expozice",
+      "strach",
+      "úzkost",
+      "psaní",
+      "odvaha"
     ],
     "schemas": [
       "VULILL",
@@ -2109,10 +2145,12 @@
     "difficulty": "vysoká",
     "warning": "Interoceptivní expozici provádíme jen při lékařsky potvrzeném psychosomatickém původu příznaků – vhodnost konzultujeme s lékařem.",
     "tags": [
-      "expozice",
       "panická ataka",
+      "expozice",
       "tělo",
-      "úzkost"
+      "úzkost",
+      "psychosomatika",
+      "dýchání"
     ],
     "schemas": [
       "VULILL",
@@ -2152,8 +2190,9 @@
     "tags": [
       "změna",
       "expozice",
-      "sebepoznání",
-      "vztahy"
+      "psychické obrany",
+      "návyky",
+      "svoboda"
     ],
     "schemas": [
       "USHYPER",
@@ -2187,9 +2226,10 @@
     "warning": null,
     "tags": [
       "vnitřní části",
-      "zklidnění",
       "meditace",
-      "sebepoznání"
+      "zklidnění",
+      "sebepoznání",
+      "přijetí"
     ],
     "schemas": [
       "LACKCOH",
@@ -2228,9 +2268,10 @@
     "warning": null,
     "tags": [
       "tělo",
-      "vnitřní části",
       "mindfulness",
-      "psychosomatika"
+      "vnitřní části",
+      "psychosomatika",
+      "úzkost"
     ],
     "schemas": [
       "EMOINH",
@@ -2269,9 +2310,10 @@
     "warning": null,
     "tags": [
       "tělo",
-      "vnitřní části",
       "imaginace",
-      "psychosomatika"
+      "vnitřní části",
+      "afirmace",
+      "vděčnost"
     ],
     "schemas": [
       "EMOINH",
@@ -2305,9 +2347,9 @@
     "warning": null,
     "tags": [
       "tělo",
-      "emoce",
       "vnitřní části",
-      "psychosomatika"
+      "emoce",
+      "mindfulness"
     ],
     "schemas": [
       "EMOINH",
@@ -2352,6 +2394,7 @@
       "vnitřní části",
       "imaginace",
       "emoce",
+      "psychické obrany",
       "sebepoznání"
     ],
     "schemas": [
@@ -2387,8 +2430,10 @@
     "tags": [
       "trauma",
       "imaginace",
-      "emoce",
-      "vnitřní části"
+      "vnitřní dítě",
+      "vnitřní části",
+      "dětství",
+      "emoce"
     ],
     "schemas": [
       "MISAB",
@@ -2423,8 +2468,10 @@
     "tags": [
       "trauma",
       "emoce",
-      "tělo",
-      "expozice"
+      "expozice",
+      "imaginace",
+      "minulost",
+      "přijetí"
     ],
     "schemas": [
       "EMOINH",
@@ -2463,9 +2510,9 @@
     "warning": null,
     "tags": [
       "štěstí",
+      "psaní",
       "hodnoty",
-      "sebepoznání",
-      "psaní"
+      "sebepoznání"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2499,9 +2546,10 @@
     "warning": null,
     "tags": [
       "smysl života",
+      "imaginace",
       "hodnoty",
-      "štěstí",
-      "imaginace"
+      "smrt",
+      "motivace"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2536,8 +2584,9 @@
     "tags": [
       "štěstí",
       "imaginace",
+      "psaní",
       "hodnoty",
-      "psaní"
+      "volný čas"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2570,10 +2619,11 @@
     "difficulty": "střední",
     "warning": null,
     "tags": [
-      "sebepoznání",
-      "smysl života",
       "hodnoty",
-      "psaní"
+      "psaní",
+      "změna",
+      "sebepoznání",
+      "smysl života"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2606,10 +2656,11 @@
     "difficulty": "nízká",
     "warning": null,
     "tags": [
+      "změna",
       "psaní",
       "imaginace",
       "smysl života",
-      "změna"
+      "motivace"
     ],
     "schemas": [
       "NEGPES",
@@ -2645,7 +2696,7 @@
       "sebepoznání",
       "psaní",
       "smysl života",
-      "štěstí"
+      "identita"
     ],
     "schemas": [
       "LACKCOH",

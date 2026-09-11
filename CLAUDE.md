@@ -54,7 +54,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - Ostatní obsah: vzorek, plní se
 - Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
 
-**Přetagování obsahu (Inspirace i Články hotové 11. 9., zbývají Cvičení):** zadání je v `local/_prompty/tagovani.md` — per sekce jiná logika, protože uživatel kliká na tag s jinou otázkou v hlavě. Načíst na začátku session.
+**Přetagování obsahu — HOTOVO 11. 9. 2026 (Otázky, Inspirace, Články, Cvičení).** Zadání a logika per sekce v `local/_prompty/tagovani.md` (uživatel kliká na tag s jinou otázkou v hlavě). Cvičení: pořadí „k čemu → metoda (vždy aspoň jedna) → tie-break", průměr 4,8 tagu, nový tag `vnitřní dítě` (slovník **97**), `strach` konečně na expozicích, `přítomnost` na mindfulness, `smrt` na meditaci nad smrtí. Singletony `hranice`, `komunikace`, `návyky`, `svoboda`, `vděčnost`, `volný čas` jsou vědomé tie-breaky. **Obsahová díra:** žádné cvičení není na `deprese`, `vyhoření`, `ocd`. Přetagováním se zároveň srovnal drift dávek vs. `data/` (5 cvičení mělo v dávkách `přerámování`, v datech už `přerámování myšlenek`).
 
 **Generování obsahu z promptů:** v `local/_prompty/` (nepushuje se) jsou prompty pro tvorbu JSONů — `telesne-priznaky.md`, `cviceni.md`, `clanky_kraceni_prompt.md` (přetavení zdroje do struktury a hlasu), `bolistky-hlasky.md` (dvoukolová fabrika hlášek, viz Stav) a sklizňové prompty `otazky.md`, `citaty.md` (internetová sklizeň → WIP JSON → Bobovo ruční čištění → tagy ex post z `tagy.json` → konverze do `data/`). Vzory jsou reálné pročištěné JSONy. Přerámování jdou z Bobových Excel seznamů, ne přes prompty.
 
@@ -150,7 +150,7 @@ Kdo má co:
 
 8. **Neupravuj `data/exercises.json` přímo.** Je to výstup buildu ze 17 dávek (viz „Zdrojáky obsahu a rebuild"). Oprava zapsaná do `data/` vypadá, že funguje — a zmizí při prvním rebuildu. Uprav dávku, přebuilduj, prožeň lintem, zkopíruj. Totéž platí pro `data/sections.json` a `data/chains.json`, jen tam je zdrojem JSON v `local/data_wip/`, ne dávky.
 
-9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací a článků 96). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
+9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací, článků a cvičení 97). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
 
 ---
 
