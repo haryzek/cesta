@@ -67,6 +67,7 @@
     "text": "Co všechno jsem přestál(a) a překonal(a), co si málokdy přiznám k dobru?",
     "tags": [
       "identita",
+      "minulost",
       "odolnost",
       "sebevědomí",
       "uznání"
@@ -130,6 +131,7 @@
     "text": "Co jsem se v dětství naučil(a) o tom, jakou má člověk hodnotu?",
     "tags": [
       "identita",
+      "dětství",
       "rodina",
       "hodnoty",
       "sebevědomí"
@@ -251,6 +253,7 @@
     "id": "quest_0021",
     "text": "Za co ve svém životě cítím největší vděčnost?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "hodnoty"
     ],
@@ -379,6 +382,7 @@
     "text": "Jaký byl zatím nejlepší okamžik mého života?",
     "tags": [
       "štěstí",
+      "minulost",
       "plné prožívání"
     ],
     "tier": "free",
@@ -389,6 +393,7 @@
     "id": "quest_0033",
     "text": "Za co z věcí, které mám právě teď kolem sebe, jsem vděčný / vděčná?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "přítomnost"
     ],
@@ -400,6 +405,7 @@
     "id": "quest_0034",
     "text": "Která věc, kterou používám každý den, by si zasloužila poděkování?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "přítomnost"
     ],
@@ -412,6 +418,7 @@
     "text": "Jaká je moje nejcennější vzpomínka?",
     "tags": [
       "štěstí",
+      "minulost",
       "plné prožívání"
     ],
     "tier": "free",
@@ -423,6 +430,7 @@
     "text": "Co se na mém zdraví právě teď daří?",
     "tags": [
       "štěstí",
+      "vděčnost",
       "fyzické zdraví"
     ],
     "tier": "free",
@@ -445,6 +453,7 @@
     "id": "quest_0038",
     "text": "Za jaký objev z posledního roku jsem vděčný / vděčná?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "růst"
     ],
@@ -456,6 +465,7 @@
     "id": "quest_0039",
     "text": "Kdo mi v posledním týdnu usnadnil život?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "vztahy",
       "přínos"
@@ -468,6 +478,7 @@
     "id": "quest_0040",
     "text": "Kdo dělá můj život lepší?",
     "tags": [
+      "vděčnost",
       "štěstí",
       "vztahy",
       "sounáležitost"
@@ -1430,6 +1441,7 @@
     "text": "Jaké byly nejvíc proměňující okamžiky mého života?",
     "tags": [
       "růst",
+      "minulost",
       "změna",
       "sebepoznání"
     ],
@@ -1442,6 +1454,7 @@
     "text": "Co pro mě bylo důležité před pěti lety a dnes už není?",
     "tags": [
       "změna",
+      "minulost",
       "hodnoty",
       "růst"
     ],
@@ -1466,6 +1479,7 @@
     "text": "Jaká byla nejtvrdší životní lekce, kterou jsem se musel(a) naučit?",
     "tags": [
       "růst",
+      "minulost",
       "moudrost",
       "odolnost"
     ],
@@ -1478,6 +1492,7 @@
     "text": "Co jsem vzdal(a) a chtěl(a) bych to zkusit znovu?",
     "tags": [
       "změna",
+      "minulost",
       "motivace",
       "odvaha"
     ],
@@ -1541,6 +1556,7 @@
     "text": "Jakou radu bych dal(a) svému šestnáctiletému já?",
     "tags": [
       "růst",
+      "minulost",
       "moudrost",
       "sebepoznání"
     ],
@@ -1553,6 +1569,7 @@
     "text": "Jaká minulá událost, kterou jsem dřív považoval(a) za selhání, se dnes ukazuje jako dar?",
     "tags": [
       "růst",
+      "minulost",
       "přijetí",
       "moudrost"
     ],
@@ -1674,6 +1691,7 @@
     "text": "Za co můžu svému tělu poděkovat?",
     "tags": [
       "tělo",
+      "vděčnost",
       "fyzické zdraví",
       "přijetí"
     ],
@@ -1870,7 +1888,7 @@
     "id": "quest_0156",
     "text": "Jak voněl dům, ve kterém jsem vyrůstal(a)?",
     "tags": [
-      "rodina",
+      "dětství",
       "sebepoznání"
     ],
     "tier": "free",
@@ -1881,7 +1899,7 @@
     "id": "quest_0157",
     "text": "Kam jsem chodil(a), když jsem chtěl(a) být sám / sama?",
     "tags": [
-      "rodina",
+      "dětství",
       "samota",
       "bezpečí",
       "sebepoznání"
@@ -1894,7 +1912,7 @@
     "id": "quest_0158",
     "text": "V čím domě mi bývalo líp než ve vlastním?",
     "tags": [
-      "rodina",
+      "dětství",
       "bezpečí",
       "sebepoznání"
     ],
@@ -1906,7 +1924,7 @@
     "id": "quest_0159",
     "text": "Co jsem jako dítě dělal(a) s úplně prázdnou sobotou?",
     "tags": [
-      "rodina",
+      "dětství",
       "volný čas",
       "sebepoznání"
     ],
@@ -1918,7 +1936,7 @@
     "id": "quest_0160",
     "text": "Co mi v dětství šlo, aniž si toho někdo všiml?",
     "tags": [
-      "rodina",
+      "dětství",
       "uznání",
       "sebepoznání",
       "tvoření"
@@ -1931,6 +1949,7 @@
     "id": "quest_0161",
     "text": "Které pravidlo u nás doma mi nedávalo žádný smysl?",
     "tags": [
+      "dětství",
       "rodina",
       "hodnoty",
       "svoboda"
@@ -1943,6 +1962,7 @@
     "id": "quest_0162",
     "text": "O čem se u nás doma nesmělo mluvit?",
     "tags": [
+      "dětství",
       "rodina",
       "komunikace",
       "sebepoznání"
@@ -1955,7 +1975,7 @@
     "id": "quest_0163",
     "text": "Kdo byl první dospělý mimo rodinu, který mě bral vážně?",
     "tags": [
-      "rodina",
+      "dětství",
       "uznání",
       "vztahy",
       "sebevědomí"
@@ -1968,6 +1988,7 @@
     "id": "quest_0164",
     "text": "Kdy mi poprvé došlo, že naše rodina není jako ostatní?",
     "tags": [
+      "dětství",
       "rodina",
       "sounáležitost",
       "identita"
@@ -1980,7 +2001,7 @@
     "id": "quest_0165",
     "text": "Čemu jsem o sobě věřil(a), když mi bylo deset?",
     "tags": [
-      "rodina",
+      "dětství",
       "identita",
       "sebepoznání"
     ],
@@ -1992,6 +2013,7 @@
     "id": "quest_0166",
     "text": "Jaká historka o mně se na rodinných sešlostech vypráví pořád dokola?",
     "tags": [
+      "dětství",
       "rodina",
       "identita",
       "sebepoznání"
@@ -2004,7 +2026,7 @@
     "id": "quest_0167",
     "text": "Co jsem si z dětství nechal(a) dodnes — předmět, zvyk nebo slovní obrat?",
     "tags": [
-      "rodina",
+      "dětství",
       "identita",
       "sebepoznání"
     ],
@@ -2016,7 +2038,7 @@
     "id": "quest_0168",
     "text": "Kdybych mohl(a) hodinu sedět se svým osmiletým já, co bych mu řekl(a)?",
     "tags": [
-      "rodina",
+      "dětství",
       "sebeláska",
       "moudrost"
     ],
@@ -2028,7 +2050,7 @@
     "id": "quest_0169",
     "text": "Kvůli čemu jsem si jako dítě dělal(a) v noci starosti?",
     "tags": [
-      "rodina",
+      "dětství",
       "strach",
       "bezpečí",
       "sebepoznání"
@@ -2041,7 +2063,7 @@
     "id": "quest_0170",
     "text": "Co jsem jako dítě miloval(a) a časem toho nechal(a)?",
     "tags": [
-      "rodina",
+      "dětství",
       "štěstí",
       "tvoření",
       "volný čas"
@@ -2054,7 +2076,8 @@
     "id": "quest_0171",
     "text": "Jaká je jedna z mých úplně nejranějších vzpomínek?",
     "tags": [
-      "rodina",
+      "dětství",
+      "minulost",
       "sebepoznání"
     ],
     "tier": "free",
@@ -2065,7 +2088,7 @@
     "id": "quest_0172",
     "text": "Čím jsem chtěl(a) být, až vyrostu?",
     "tags": [
-      "rodina",
+      "dětství",
       "sebepoznání",
       "motivace"
     ],
@@ -2078,6 +2101,7 @@
     "text": "Jaké přesvědčení o sobě si nesu už od dětství, přestože mi možná dávno neslouží?",
     "tags": [
       "rodina",
+      "dětství",
       "identita",
       "myšlenky",
       "změna"
@@ -2090,7 +2114,7 @@
     "id": "quest_0174",
     "text": "Které dětské sny a zájmy jsem opustil(a), i když by pro mě pořád mohly něco znamenat?",
     "tags": [
-      "rodina",
+      "dětství",
       "motivace",
       "tvoření",
       "volný čas"
@@ -2103,6 +2127,7 @@
     "id": "quest_0175",
     "text": "Jakou roli jsem v rodině hrával(a) jako dítě?",
     "tags": [
+      "dětství",
       "rodina",
       "identita",
       "sebepoznání"
@@ -2280,6 +2305,7 @@
     "text": "Kterých nevyužitých příležitostí dodnes lituji?",
     "tags": [
       "svoboda",
+      "minulost",
       "rozhodování",
       "přijetí"
     ],
@@ -2330,6 +2356,7 @@
     "text": "Kterou volbu za mě kdysi udělal někdo jiný a já ji dodnes žiju?",
     "tags": [
       "svoboda",
+      "minulost",
       "rodina",
       "rozhodování",
       "identita"
@@ -2544,6 +2571,7 @@
     "text": "Jak moc odvozuji svoji hodnotu od chyb, které jsem udělal(a)?",
     "tags": [
       "sebeláska",
+      "minulost",
       "vina",
       "přijetí",
       "sebevědomí"
@@ -2660,6 +2688,7 @@
     "text": "Čí hněv nebo zklamání se snažím výkonem a dokonalostí odvracet už od dětství?",
     "tags": [
       "rodina",
+      "dětství",
       "uznání",
       "produktivita",
       "strach"
@@ -2940,6 +2969,7 @@
     "text": "Kdo mi namluvil, že život musí být fér — a proč tomu věřím dodnes?",
     "tags": [
       "přijetí",
+      "dětství",
       "rodina",
       "myšlenky",
       "moudrost"
