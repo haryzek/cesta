@@ -743,7 +743,7 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
 | Frontend — obal + registr sekcí | ✅ funkční |
-| Frontend — všechny sekce | ✅ živé v `cesta.html` nad 13 JSONy; `fears`/`situations`/`pains` appka zatím nezná (přidané 11. 9. 2026, ohýbání sekce Přerámování na tři brány je další krok) |
+| Frontend — všechny sekce | ✅ živé v `cesta.html` nad 11 JSONy (`sections`/`chains` se zatím nenačítají — viz TODO „Cvičení: dotáhnout appku k SPEC“); `fears`/`situations`/`pains` appka zatím nezná (přidané 11. 9. 2026, ohýbání sekce Přerámování na tři brány je další krok) |
 | Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
 | Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný |
 | Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |

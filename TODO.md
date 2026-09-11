@@ -52,9 +52,21 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       +9 tagů do slovníku (`psychoterapie`, `léky`, `perfekcionismus`, `psychické
       obrany`, `tlak na výkon`, `prokrastinace`, `kontrola`, `sebelítost`,
       `sebepoškozování`). Slovník má 96 tagů.
-- [ ] **Přetagovat Cvičení** podle `local/_prompty/tagovani.md` — v dávkách,
-      ne v `data/exercises.json`; před startem zkontrolovat, jestli lint
-      nekontroluje počet tagů natvrdo.
+- [x] **Cvičení přetagovaná (11. 9. 2026).** 71 cvičení, k čemu → metoda → tie-break,
+      nový tag `vnitřní dítě` (slovník 97).
+- [ ] **Cvičení: dotáhnout appku k SPEC.** Data jsou hotová (71 cvičení, 11 oddílů,
+      4 řetězy), appka z nich zobrazuje třetinu. Chybí: načíst `sections.json` +
+      `chains.json` (FILES); fallback `info`/`theory`/`practice` z oddílu (u cvičení
+      jsou vždy null → tab Info se dnes nikdy nezobrazí); tabbar **Postup / Info /
+      Teorie / Praxe** (tab jen když má obsah, tečka); **box náročnosti** místo
+      duration stripu (TRVÁNÍ `duration` · PRAXE `frequency` / `training_period` ·
+      NÁROČNOST barevná pilulka — návrh `local/_design/box_náročnosti.jpg`); **box
+      řetězu** (2/6, chevron → seznam řetězu s proklikem); **box warning**;
+      journal-card = `section.diary_exercise` + `exercise.diary_exercise` slepené;
+      `diary_practice` vložit do Praxe mezi „Uvedení do praxe“ a „Začlenění“;
+      přílohy (`attachments`, 16 cvičení); `info_extra`/`theory_extra` nad oddílový
+      text; nová sekce **Moje cesta** (seznam oddílů s perexem, 01–03 jen theory,
+      04–11 submenu Cvičení/Info/Teorie/Praxe, u cvičení badge náročnosti + warning).
 - [ ] **Zobrazovací vrstva nad slovníkem** — jen kdyby se lišta filtru po
       přetagování cvičení stala nepřehlednou (rozhodnuto 11. 9.: zatím ne).
 - [ ] **Řazení výsledků filtru podle váhy shodných tagů.** Otázky i Inspirace
