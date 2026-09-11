@@ -19,7 +19,13 @@
       "spánek",
       "trauma",
       "psychosomatika",
-      "závislost"
+      "závislost",
+      "perfekcionismus",
+      "tlak na výkon",
+      "prokrastinace",
+      "kontrola",
+      "sebepoškozování",
+      "sebelítost"
     ],
     "Emoce": [
       "emoce",
@@ -48,7 +54,9 @@
       "tělo",
       "vnitřní části",
       "přerámování myšlenek",
-      "pozitivní myšlení"
+      "pozitivní myšlení",
+      "psychoterapie",
+      "léky"
     ],
     "Vztahy": [
       "vztahy",
@@ -103,7 +111,8 @@
       "ztráta",
       "dětství",
       "minulost",
-      "vděčnost"
+      "vděčnost",
+      "psychické obrany"
     ]
   },
   "tagy": [
@@ -126,7 +135,9 @@
     "imaginace",
     "komunikace",
     "konflikty",
+    "kontrola",
     "láska",
+    "léky",
     "meditace",
     "mindfulness",
     "minulost",
@@ -141,9 +152,11 @@
     "odpovědnost",
     "odvaha",
     "panická ataka",
+    "perfekcionismus",
     "plné prožívání",
     "pozitivní myšlení",
     "produktivita",
+    "prokrastinace",
     "přátelství",
     "přerámování myšlenek",
     "přijetí",
@@ -151,7 +164,9 @@
     "přirozenost",
     "přítomnost",
     "psaní",
+    "psychické obrany",
     "psychosomatika",
+    "psychoterapie",
     "relaxace",
     "rodina",
     "rozhodování",
@@ -160,6 +175,8 @@
     "samostatnost",
     "samota",
     "sebeláska",
+    "sebelítost",
+    "sebepoškozování",
     "sebepoznání",
     "sebevědomí",
     "sex",
@@ -175,6 +192,7 @@
     "svoboda",
     "štěstí",
     "tělo",
+    "tlak na výkon",
     "trauma",
     "tvoření",
     "úspěch",

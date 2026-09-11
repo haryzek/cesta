@@ -37,6 +37,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - Krizovka (12): obsahově hotová a pročištěná, slouží jako etalon. Všechny položky `tier: free` (11. 9. 2026 přepnuto z premium — první pomoc v krizi nemá být za paywallem)
 - Tělesné příznaky: **31** (26. 8. 2026) — původních 5 pročištěných (etalon) + 26 nových napsaných podle šablony (neuro/RS, štítná žláza, spánek, derealizace, hormony, váha, intimita…), obsahově zatím neprověřených Bobem. Zdroj výběru: sloupec „Tělesné příznaky" + somatizační index v Bobově monster tabulce (`C:\Users\bobre\Desktop\tab.xlsx`), vytěženo dočista
 - Cvičení (71), Články (112), Oddíly (11), Řetězy (4): nasazené v `data/` (14. 8. 2026). Strukturálně čisté, obsahově neprověřené — viz `TODO.md`.
+- Články: **přetagováno 11. 9. 2026** — logika se otáčí, **Stavy a potíže primární** (uživatel hledá stav jménem), 3–6 tagů podle priority, průměr 4,75. Do slovníku přibylo 9 tagů (`psychoterapie`, `léky`, `perfekcionismus`, `psychické obrany` + rezervy `tlak na výkon`, `prokrastinace`, `kontrola`, `sebelítost`, `sebepoškozování`) — slovník má **96 tagů**. Nepoužité tagy ve slovníku nevadí (filtr staví z dat); zobrazovací vrstva jen kdyby lišta začala být nepřehledná.
 - Podnětné otázky: **nasazeno 11. 9. 2026 — 251 otázek**, univerzální seberozvojovky v ich-formě, **bez `schemas`** (stojí mimo doporučování). 193 ze sklizně + 58 přepsaných z původní schema-sady (zkráceno, kázání uříznuto, 5 dubletů vyhozeno), ID přečíslována od 1. `sklizen.json` v `local/data_wip/questions_wip/` je teď historie.
 
   **Tagování otázek (rozhodnuto 11. 9. 2026):** **3–6 tagů seřazenejch podle priority** (první = téma, 2.–3. nesou váhu, zbytek tie-break). Povolený: „Chci pracovat na" + „Vztahy" + Emoce jen když je emoce jádrem otázky + `tělo`/`přítomnost`/`mindfulness`/`dýchání`. **Stavy a potíže nikdy** (klinickej tag na univerzálce = nasranej uživatel v akutním módu). Strop je vědomej — u OR filtru dělá přesnost málo tagů na položce, ne hodně; 10 tagů by šlo naplnit jen natažením. Appka zatím pořadí nečte, filtr je čistě OR; řazení výsledků podle váhy shodujících se tagů je **nenapsanej algoritmus**, samostatnej budoucí krok. Jedinej singleton v datech je `ztráta` (legit, „Čí ztráta by mě zasáhla nejvíc?").
@@ -53,7 +54,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - Ostatní obsah: vzorek, plní se
 - Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
 
-**Přetagování obsahu (Inspirace hotové 11. 9., zbývají Články a Cvičení):** zadání je v `local/_prompty/tagovani.md` — per sekce jiná logika, protože uživatel kliká na tag s jinou otázkou v hlavě. Načíst na začátku session.
+**Přetagování obsahu (Inspirace i Články hotové 11. 9., zbývají Cvičení):** zadání je v `local/_prompty/tagovani.md` — per sekce jiná logika, protože uživatel kliká na tag s jinou otázkou v hlavě. Načíst na začátku session.
 
 **Generování obsahu z promptů:** v `local/_prompty/` (nepushuje se) jsou prompty pro tvorbu JSONů — `telesne-priznaky.md`, `cviceni.md`, `clanky_kraceni_prompt.md` (přetavení zdroje do struktury a hlasu), `bolistky-hlasky.md` (dvoukolová fabrika hlášek, viz Stav) a sklizňové prompty `otazky.md`, `citaty.md` (internetová sklizeň → WIP JSON → Bobovo ruční čištění → tagy ex post z `tagy.json` → konverze do `data/`). Vzory jsou reálné pročištěné JSONy. Přerámování jdou z Bobových Excel seznamů, ne přes prompty.
 
@@ -149,7 +150,7 @@ Kdo má co:
 
 8. **Neupravuj `data/exercises.json` přímo.** Je to výstup buildu ze 17 dávek (viz „Zdrojáky obsahu a rebuild"). Oprava zapsaná do `data/` vypadá, že funguje — a zmizí při prvním rebuildu. Uprav dávku, přebuilduj, prožeň lintem, zkopíruj. Totéž platí pro `data/sections.json` a `data/chains.json`, jen tam je zdrojem JSON v `local/data_wip/`, ne dávky.
 
-9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56. Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
+9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací a článků 96). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
 
 ---
 

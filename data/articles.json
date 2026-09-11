@@ -8,9 +8,9 @@
     "source_url": "https://stestinaproti.cz/proc-muj-terapeut-nic-nedela/",
     "show_link": true,
     "tags": [
+      "psychoterapie",
       "úzkost",
-      "vztahy",
-      "sebepoznání"
+      "vztahy"
     ],
     "schemas": [
       "ABINST",
@@ -33,10 +33,11 @@
     "source_url": "https://stestinaproti.cz/jak-postupne-menit-zazite-vzorce-chovani/",
     "show_link": true,
     "tags": [
-      "úzkost",
       "změna",
       "expozice",
-      "sebepoznání"
+      "dětství",
+      "perfekcionismus",
+      "návyky"
     ],
     "schemas": [
       "USHYPER",
@@ -59,10 +60,10 @@
     "source_url": "https://stestinaproti.cz/jak-z-psychoterapie-vytezit-maximum/",
     "show_link": true,
     "tags": [
+      "psychoterapie",
       "úzkost",
       "deprese",
-      "sebepoznání",
-      "hodnoty"
+      "léky"
     ],
     "schemas": [
       "DEPINC",
@@ -87,9 +88,8 @@
     "tags": [
       "afirmace",
       "přerámování myšlenek",
-      "myšlenky",
-      "stres",
-      "hodnoty"
+      "hodnoty",
+      "stres"
     ],
     "schemas": [
       "DEFSH",
@@ -112,11 +112,12 @@
     "source_url": "https://stestinaproti.cz/expozicni-terapie-primocara-cesta-skrz-strach/",
     "show_link": true,
     "tags": [
-      "úzkost",
-      "fobie",
       "expozice",
+      "fobie",
+      "úzkost",
       "ocd",
-      "panická ataka"
+      "panická ataka",
+      "strach"
     ],
     "schemas": [
       "VULILL",
@@ -139,10 +140,10 @@
     "source_url": "https://stestinaproti.cz/psychicke-obrany-dil-1-jak-nas-chrani-pred-uzkosti-i-pred-pravdou/",
     "show_link": true,
     "tags": [
+      "psychické obrany",
       "úzkost",
       "sebepoznání",
-      "emoce",
-      "vnitřní části"
+      "emoce"
     ],
     "schemas": [
       "DEFSH",
@@ -165,10 +166,10 @@
     "source_url": "https://stestinaproti.cz/psychicke-obrany-dil-2-pred-cim-se-vlastne-tolik-branime/",
     "show_link": true,
     "tags": [
+      "psychické obrany",
       "úzkost",
-      "emoce",
       "sebepoznání",
-      "stres"
+      "stud"
     ],
     "schemas": [
       "DEFSH",
@@ -191,11 +192,10 @@
     "source_url": "https://stestinaproti.cz/psychicke-obrany-dil-3-kdyz-to-jinak-nejde/",
     "show_link": true,
     "tags": [
+      "psychické obrany",
       "úzkost",
-      "ocd",
-      "panická ataka",
-      "vztahy",
-      "sebepoznání"
+      "sebepoznání",
+      "dětství"
     ],
     "schemas": [
       "DEFSH",
@@ -218,10 +218,10 @@
     "source_url": "https://stestinaproti.cz/psychicke-obrany-dil-4-jak-unest-pravdu-o-sobe-a-o-svete/",
     "show_link": true,
     "tags": [
-      "úzkost",
+      "psychické obrany",
       "emoce",
       "sebepoznání",
-      "hranice"
+      "odolnost"
     ],
     "schemas": [
       "EMOINH",
@@ -244,11 +244,10 @@
     "source_url": "https://stestinaproti.cz/psychicke-obrany-dil-5-vidim-je-ale-co-s-nimi-ted-delat/",
     "show_link": true,
     "tags": [
-      "úzkost",
+      "psychické obrany",
       "sebepoznání",
-      "vnitřní části",
       "mindfulness",
-      "sebeláska"
+      "přijetí"
     ],
     "schemas": [
       "DEFSH",
@@ -272,10 +271,10 @@
     "show_link": true,
     "tags": [
       "deprese",
-      "změna",
-      "expozice",
       "motivace",
-      "návyky"
+      "expozice",
+      "návyky",
+      "změna"
     ],
     "schemas": [
       "FAIL",
@@ -298,11 +297,11 @@
     "source_url": "https://stestinaproti.cz/dechova-cviceni-pri-uzkosti-a-panicke-atace/",
     "show_link": true,
     "tags": [
+      "dýchání",
       "úzkost",
       "panická ataka",
-      "dýchání",
-      "relaxace",
-      "meditace"
+      "zklidnění",
+      "tělo"
     ],
     "schemas": [
       "VULILL",
@@ -326,10 +325,9 @@
     "show_link": true,
     "tags": [
       "úzkost",
-      "deprese",
       "sebepoznání",
-      "myšlenky",
-      "vyhoření"
+      "psychoterapie",
+      "myšlenky"
     ],
     "schemas": [
       "DEFSH",
@@ -352,11 +350,11 @@
     "source_url": "https://stestinaproti.cz/kolaps-organismu-z-pretizeni-kdyz-telo-vypne-driv-nez-to-udelame-my/",
     "show_link": true,
     "tags": [
-      "stres",
       "vyhoření",
-      "úzkost",
-      "emoce",
-      "hranice"
+      "stres",
+      "psychosomatika",
+      "tělo",
+      "tlak na výkon"
     ],
     "schemas": [
       "USHYPER",
@@ -379,11 +377,11 @@
     "source_url": "https://stestinaproti.cz/tres-rukou-a-jeho-priciny/",
     "show_link": true,
     "tags": [
+      "psychosomatika",
       "úzkost",
       "tělo",
-      "mindfulness",
-      "dýchání",
-      "relaxace"
+      "stres",
+      "mindfulness"
     ],
     "schemas": [
       "VULILL",
@@ -406,11 +404,11 @@
     "source_url": "https://stestinaproti.cz/tajemstvi-poklad-nebo-bremeno/",
     "show_link": true,
     "tags": [
+      "stud",
       "sebepoznání",
       "vztahy",
-      "hranice",
-      "úzkost",
-      "sebeláska"
+      "identita",
+      "autenticita"
     ],
     "schemas": [
       "DEFSH",
@@ -433,11 +431,11 @@
     "source_url": "https://stestinaproti.cz/faze-truchleni-jak-dlouho-trva-a-co-s-emocemi-ktere-necitime/",
     "show_link": true,
     "tags": [
+      "ztráta",
+      "smutek",
       "emoce",
-      "deprese",
-      "sebepoznání",
-      "vztahy",
-      "imaginace"
+      "smrt",
+      "rodina"
     ],
     "schemas": [
       "EMOINH",
@@ -461,9 +459,9 @@
     "show_link": true,
     "tags": [
       "úzkost",
+      "víra",
       "smysl života",
-      "hodnoty",
-      "sebepoznání",
+      "smrt",
       "ocd"
     ],
     "schemas": [
@@ -487,11 +485,11 @@
     "source_url": "https://stestinaproti.cz/vnitrni-tres-a-jeho-priciny-od-uzkosti-k-psychosomatice/",
     "show_link": true,
     "tags": [
+      "psychosomatika",
       "úzkost",
-      "emoce",
       "tělo",
-      "mindfulness",
-      "stres"
+      "stres",
+      "trauma"
     ],
     "schemas": [
       "EMOINH",
@@ -515,10 +513,10 @@
     "show_link": true,
     "tags": [
       "spánek",
-      "úzkost",
       "afirmace",
-      "přerámování myšlenek",
-      "sebeláska"
+      "sebeláska",
+      "zklidnění",
+      "přerámování myšlenek"
     ],
     "schemas": [
       "USHYPER",
@@ -543,9 +541,9 @@
     "tags": [
       "panická ataka",
       "úzkost",
-      "stres",
-      "emoce",
-      "sebepoznání"
+      "psychosomatika",
+      "tělo",
+      "přijetí"
     ],
     "schemas": [
       "VULILL",
@@ -570,9 +568,9 @@
     "tags": [
       "panická ataka",
       "úzkost",
-      "myšlenky",
+      "tělo",
       "přerámování myšlenek",
-      "stres"
+      "myšlenky"
     ],
     "schemas": [
       "VULILL",
@@ -597,6 +595,7 @@
     "tags": [
       "úzkost",
       "deprese",
+      "zklidnění",
       "návyky",
       "emoce"
     ],
@@ -623,9 +622,9 @@
     "tags": [
       "vztahy",
       "komunikace",
-      "hranice",
-      "emoce",
-      "sebepoznání"
+      "autenticita",
+      "bezpečí",
+      "strach"
     ],
     "schemas": [
       "SUBJUG",
@@ -649,10 +648,9 @@
     "show_link": true,
     "tags": [
       "vztahy",
-      "komunikace",
-      "emoce",
-      "návyky",
-      "sebepoznání"
+      "závislost",
+      "samota",
+      "komunikace"
     ],
     "schemas": [
       "EMODEP",
@@ -678,8 +676,8 @@
       "úzkost",
       "emoce",
       "sebepoznání",
-      "stres",
-      "hodnoty"
+      "stud",
+      "smysl života"
     ],
     "schemas": [
       "EMOINH",
@@ -704,9 +702,9 @@
     "tags": [
       "úzkost",
       "stres",
+      "identita",
       "smysl života",
-      "návyky",
-      "hodnoty"
+      "přítomnost"
     ],
     "schemas": [
       "USHYPER",
@@ -732,7 +730,7 @@
       "imaginace",
       "relaxace",
       "tělo",
-      "mindfulness",
+      "zklidnění",
       "úzkost"
     ],
     "schemas": [
@@ -756,11 +754,11 @@
     "source_url": "https://stestinaproti.cz/preramovani-myslenek-pri-uzkosti-ukazka-z-knihy-uzkost-me-nezlomi/",
     "show_link": true,
     "tags": [
+      "úzkost",
       "myšlenky",
       "přerámování myšlenek",
-      "úzkost",
       "panická ataka",
-      "deprese"
+      "zklidnění"
     ],
     "schemas": [
       "NEGPES",
@@ -785,8 +783,9 @@
     "tags": [
       "mindfulness",
       "meditace",
+      "přítomnost",
       "úzkost",
-      "sebepoznání"
+      "bezpečí"
     ],
     "schemas": [
       "VULILL",
@@ -811,7 +810,9 @@
     "tags": [
       "úzkost",
       "návyky",
-      "spánek"
+      "fyzické zdraví",
+      "spánek",
+      "duševní pohoda"
     ],
     "schemas": [
       "VULILL",
@@ -836,8 +837,9 @@
     "tags": [
       "úzkost",
       "tělo",
-      "emoce",
-      "sebeláska"
+      "psychosomatika",
+      "sebeláska",
+      "dětství"
     ],
     "schemas": [
       "EMODEP",
@@ -862,9 +864,9 @@
     "tags": [
       "úzkost",
       "motivace",
-      "myšlenky",
-      "sebepoznání",
-      "stres"
+      "odolnost",
+      "návyky",
+      "změna"
     ],
     "schemas": [
       "DEPINC",
@@ -888,9 +890,11 @@
     "show_link": false,
     "tags": [
       "úzkost",
-      "produktivita",
+      "kontrola",
       "rozhodování",
-      "myšlenky"
+      "změna",
+      "perfekcionismus",
+      "prokrastinace"
     ],
     "schemas": [
       "USHYPER",
@@ -913,11 +917,11 @@
     "source_url": "https://stestinaproti.cz/deti-se-daji-vychovavat-spatne-nebo-jeste-hur/",
     "show_link": true,
     "tags": [
-      "vztahy",
-      "sebepoznání",
-      "sebeláska",
-      "hranice",
-      "emoce"
+      "rodina",
+      "dětství",
+      "perfekcionismus",
+      "přijetí",
+      "vztahy"
     ],
     "schemas": [
       "USHYPER",
@@ -942,9 +946,8 @@
     "tags": [
       "vztahy",
       "komunikace",
-      "sebepoznání",
-      "fobie",
-      "úzkost"
+      "láska",
+      "sounáležitost"
     ],
     "schemas": [
       "ISOLAL",
@@ -967,10 +970,10 @@
     "source_url": "https://stestinaproti.cz/osvobozeni-od-tyranie-musim-a-mel-bych/",
     "show_link": true,
     "tags": [
-      "úzkost",
       "stres",
       "myšlenky",
-      "sebepoznání",
+      "svoboda",
+      "autenticita",
       "hodnoty"
     ],
     "schemas": [
@@ -995,10 +998,10 @@
     "show_link": false,
     "tags": [
       "úzkost",
-      "sebepoznání",
-      "hodnoty",
-      "smysl života",
-      "motivace"
+      "svoboda",
+      "autenticita",
+      "úspěch",
+      "smysl života"
     ],
     "schemas": [
       "SUBJUG",
@@ -1048,10 +1051,10 @@
     "source_url": "https://stestinaproti.cz/jak-funguje-dlouhodoba-psychoterapie/",
     "show_link": true,
     "tags": [
+      "psychoterapie",
       "úzkost",
       "deprese",
       "emoce",
-      "sebepoznání",
       "expozice"
     ],
     "schemas": [
@@ -1076,10 +1079,10 @@
     "show_link": true,
     "tags": [
       "sebeláska",
+      "perfekcionismus",
       "vztahy",
-      "vyhoření",
-      "hodnoty",
-      "sebevědomí"
+      "štěstí",
+      "hranice"
     ],
     "schemas": [
       "SELFSAC",
@@ -1103,10 +1106,10 @@
     "show_link": true,
     "tags": [
       "úzkost",
-      "sebepoznání",
       "myšlenky",
-      "emoce",
-      "sebevědomí"
+      "perfekcionismus",
+      "vina",
+      "sebeláska"
     ],
     "schemas": [
       "PUNIT",
@@ -1129,11 +1132,11 @@
     "source_url": "https://stestinaproti.cz/je-vybijeni-vzteku-mytus/",
     "show_link": true,
     "tags": [
+      "hněv",
       "emoce",
-      "stres",
+      "zklidnění",
       "relaxace",
-      "dýchání",
-      "myšlenky"
+      "dýchání"
     ],
     "schemas": [
       "EMOINH",
@@ -1158,9 +1161,9 @@
     "tags": [
       "afirmace",
       "smysl života",
-      "hodnoty",
-      "sebepoznání",
-      "tělo"
+      "štěstí",
+      "tělo",
+      "přijetí"
     ],
     "schemas": [
       "LACKMEAN",
@@ -1183,11 +1186,11 @@
     "source_url": "https://stestinaproti.cz/od-falesneho-ja-zpatky-k-prirozenosti/",
     "show_link": true,
     "tags": [
+      "autenticita",
       "sebepoznání",
+      "přirozenost",
       "hodnoty",
-      "sebeláska",
-      "emoce",
-      "smysl života"
+      "štěstí"
     ],
     "schemas": [
       "ENMUND",
@@ -1211,10 +1214,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "přerámování myšlenek",
       "sebeláska",
+      "přijetí",
       "vztahy",
-      "sebevědomí"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "USHYPER",
@@ -1238,10 +1241,10 @@
     "show_link": true,
     "tags": [
       "úzkost",
-      "panická ataka",
-      "expozice",
+      "bezmoc",
       "imaginace",
-      "změna"
+      "expozice",
+      "panická ataka"
     ],
     "schemas": [
       "VULILL",
@@ -1266,9 +1269,9 @@
     "tags": [
       "afirmace",
       "sebevědomí",
+      "uznání",
       "sebeláska",
-      "přerámování myšlenek",
-      "vztahy"
+      "přijetí"
     ],
     "schemas": [
       "DEFSH",
@@ -1293,9 +1296,10 @@
     "tags": [
       "úzkost",
       "fobie",
-      "panická ataka",
       "expozice",
-      "změna"
+      "strach",
+      "panická ataka",
+      "přerámování myšlenek"
     ],
     "schemas": [
       "VULILL",
@@ -1319,10 +1323,9 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "mindfulness",
-      "úzkost",
-      "hodnoty",
-      "sebepoznání"
+      "přítomnost",
+      "plné prožívání",
+      "svoboda"
     ],
     "schemas": [
       "NEGPES",
@@ -1345,11 +1348,11 @@
     "source_url": "https://stestinaproti.cz/technikou-stop-k-vetsimu-klidu-a-vyssi-produktivite/",
     "show_link": false,
     "tags": [
-      "produktivita",
       "stres",
+      "produktivita",
+      "mindfulness",
       "rozhodování",
-      "změna",
-      "mindfulness"
+      "hodnoty"
     ],
     "schemas": [
       "USHYPER",
@@ -1373,9 +1376,9 @@
     "show_link": false,
     "tags": [
       "afirmace",
+      "přítomnost",
       "pozitivní myšlení",
-      "deprese",
-      "přerámování myšlenek"
+      "deprese"
     ],
     "schemas": [
       "NEGPES",
@@ -1401,8 +1404,8 @@
       "úzkost",
       "deprese",
       "tělo",
-      "pozitivní myšlení",
-      "emoce"
+      "štěstí",
+      "pozitivní myšlení"
     ],
     "schemas": [
       "EMOINH",
@@ -1426,9 +1429,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "vztahy",
       "hranice",
-      "sebeláska"
+      "rodina",
+      "vina",
+      "odpovědnost"
     ],
     "schemas": [
       "SUBJUG",
@@ -1452,9 +1456,9 @@
     "show_link": true,
     "tags": [
       "mindfulness",
-      "meditace",
-      "sebepoznání",
+      "přítomnost",
       "spánek",
+      "sebepoznání",
       "úzkost"
     ],
     "schemas": [
@@ -1479,10 +1483,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "vztahy",
+      "uznání",
       "hranice",
       "sebevědomí",
-      "emoce"
+      "vztahy"
     ],
     "schemas": [
       "APPREC",
@@ -1535,7 +1539,7 @@
       "afirmace",
       "vztahy",
       "komunikace",
-      "sebepoznání"
+      "myšlenky"
     ],
     "schemas": [
       "MISAB",
@@ -1562,7 +1566,7 @@
       "úzkost",
       "deprese",
       "ocd",
-      "myšlenky"
+      "perfekcionismus"
     ],
     "schemas": [
       "DEPINC",
@@ -1586,9 +1590,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
+      "přijetí",
       "sebeláska",
-      "sebevědomí",
-      "přerámování myšlenek"
+      "perfekcionismus",
+      "růst"
     ],
     "schemas": [
       "FAIL",
@@ -1613,8 +1618,9 @@
     "tags": [
       "úzkost",
       "panická ataka",
-      "myšlenky",
-      "sebepoznání"
+      "tělo",
+      "psychosomatika",
+      "myšlenky"
     ],
     "schemas": [
       "VULILL",
@@ -1638,9 +1644,10 @@
     "show_link": true,
     "tags": [
       "motivace",
+      "prokrastinace",
       "produktivita",
-      "přerámování myšlenek",
-      "rozhodování"
+      "přítomnost",
+      "sebevědomí"
     ],
     "schemas": [
       "FAIL",
@@ -1663,9 +1670,9 @@
     "source_url": "https://stestinaproti.cz/dokonalost-je-nepritelem-dobreho/",
     "show_link": false,
     "tags": [
+      "perfekcionismus",
       "afirmace",
-      "pozitivní myšlení",
-      "sebevědomí",
+      "přijetí",
       "sebeláska"
     ],
     "schemas": [
@@ -1693,7 +1700,7 @@
       "relaxace",
       "tělo",
       "návyky",
-      "produktivita"
+      "zklidnění"
     ],
     "schemas": [
       "VULILL",
@@ -1719,8 +1726,8 @@
       "úzkost",
       "deprese",
       "návyky",
-      "dýchání",
-      "relaxace"
+      "zklidnění",
+      "dýchání"
     ],
     "schemas": [
       "VULILL",
@@ -1744,9 +1751,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "sebeláska",
-      "hodnoty",
-      "pozitivní myšlení"
+      "vděčnost",
+      "přijetí",
+      "tělo",
+      "štěstí"
     ],
     "schemas": [
       "USHYPER",
@@ -1769,11 +1777,11 @@
     "source_url": "https://stestinaproti.cz/jak-muze-hrani-tetrisu-pomoci-s-uzkosti-a-traumatem/",
     "show_link": true,
     "tags": [
+      "trauma",
       "úzkost",
-      "panická ataka",
       "imaginace",
-      "změna",
-      "myšlenky"
+      "myšlenky",
+      "expozice"
     ],
     "schemas": [
       "VULILL",
@@ -1797,9 +1805,10 @@
     "show_link": false,
     "tags": [
       "afirmace",
+      "bezmoc",
+      "odpovědnost",
       "pozitivní myšlení",
-      "sebevědomí",
-      "rozhodování"
+      "svoboda"
     ],
     "schemas": [
       "DEPINC",
@@ -1826,7 +1835,7 @@
       "sebepoznání",
       "úzkost",
       "deprese",
-      "vnitřní části"
+      "dětství"
     ],
     "schemas": [
       "NEGPES",
@@ -1853,7 +1862,7 @@
       "deprese",
       "imaginace",
       "přerámování myšlenek",
-      "meditace"
+      "smrt"
     ],
     "schemas": [
       "VULILL",
@@ -1878,9 +1887,9 @@
     "tags": [
       "úzkost",
       "deprese",
+      "samota",
       "vztahy",
-      "emoce",
-      "komunikace"
+      "sounáležitost"
     ],
     "schemas": [
       "DEFSH",
@@ -1903,10 +1912,11 @@
     "source_url": "https://stestinaproti.cz/muzete-si-dovolit-byt-spokojeni/",
     "show_link": false,
     "tags": [
+      "štěstí",
+      "vděčnost",
+      "přítomnost",
       "úzkost",
-      "hodnoty",
-      "smysl života",
-      "přerámování myšlenek"
+      "hodnoty"
     ],
     "schemas": [
       "USHYPER",
@@ -1929,11 +1939,11 @@
     "source_url": "https://stestinaproti.cz/proc-sebelitost-skodi/",
     "show_link": true,
     "tags": [
+      "sebelítost",
       "deprese",
       "úzkost",
-      "sebevědomí",
       "myšlenky",
-      "motivace"
+      "odpovědnost"
     ],
     "schemas": [
       "DEFSH",
@@ -1957,10 +1967,10 @@
     "show_link": true,
     "tags": [
       "úzkost",
-      "panická ataka",
       "myšlenky",
       "imaginace",
-      "ocd"
+      "ocd",
+      "panická ataka"
     ],
     "schemas": [
       "VULILL",
@@ -1985,8 +1995,7 @@
     "tags": [
       "spánek",
       "sebepoznání",
-      "imaginace",
-      "úzkost"
+      "imaginace"
     ],
     "schemas": [
       "LACKCOH",
@@ -2012,8 +2021,9 @@
       "vyhoření",
       "úzkost",
       "sebeláska",
-      "návyky",
-      "hranice"
+      "tělo",
+      "hranice",
+      "tlak na výkon"
     ],
     "schemas": [
       "SELFSAC",
@@ -2037,7 +2047,7 @@
     "show_link": true,
     "tags": [
       "spánek",
-      "úzkost",
+      "zklidnění",
       "návyky",
       "relaxace"
     ],
@@ -2064,7 +2074,7 @@
     "tags": [
       "hodnoty",
       "smysl života",
-      "přerámování myšlenek"
+      "láska"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2089,8 +2099,8 @@
     "tags": [
       "spánek",
       "mindfulness",
-      "úzkost",
       "tělo",
+      "úzkost",
       "stres"
     ],
     "schemas": [
@@ -2114,11 +2124,11 @@
     "source_url": "https://stestinaproti.cz/zlobite-se-na-nekoho-ublizujete-hlavne-sobe/",
     "show_link": true,
     "tags": [
+      "hněv",
       "emoce",
       "vztahy",
-      "komunikace",
-      "stres",
-      "sebepoznání"
+      "odpovědnost",
+      "bezmoc"
     ],
     "schemas": [
       "MISAB",
@@ -2145,6 +2155,7 @@
       "deprese",
       "panická ataka",
       "myšlenky",
+      "zklidnění",
       "emoce"
     ],
     "schemas": [
@@ -2172,7 +2183,7 @@
       "vztahy",
       "komunikace",
       "sebepoznání",
-      "úzkost"
+      "autenticita"
     ],
     "schemas": [
       "EMOINH",
@@ -2224,9 +2235,10 @@
     "tags": [
       "deprese",
       "úzkost",
+      "psaní",
       "pozitivní myšlení",
-      "návyky",
-      "sebeláska"
+      "vděčnost",
+      "návyky"
     ],
     "schemas": [
       "NEGPES",
@@ -2250,10 +2262,10 @@
     "show_link": false,
     "tags": [
       "spánek",
-      "úzkost",
       "afirmace",
       "meditace",
-      "myšlenky"
+      "myšlenky",
+      "úzkost"
     ],
     "schemas": [
       "VULILL",
@@ -2276,11 +2288,11 @@
     "source_url": "https://stestinaproti.cz/verili-byste-nekomu-kdo-se-plete-tak-casto-jako-se-plete-vas-strach/",
     "show_link": false,
     "tags": [
-      "fobie",
+      "strach",
       "úzkost",
-      "panická ataka",
+      "fobie",
       "přerámování myšlenek",
-      "myšlenky"
+      "afirmace"
     ],
     "schemas": [
       "VULILL",
@@ -2304,8 +2316,8 @@
     "show_link": true,
     "tags": [
       "úzkost",
-      "ocd",
       "myšlenky",
+      "ocd",
       "přerámování myšlenek",
       "rozhodování"
     ],
@@ -2333,8 +2345,9 @@
       "dýchání",
       "úzkost",
       "panická ataka",
-      "stres",
-      "tělo"
+      "zklidnění",
+      "tělo",
+      "stres"
     ],
     "schemas": [
       "VULILL",
@@ -2358,9 +2371,10 @@
     "show_link": true,
     "tags": [
       "deprese",
-      "změna",
+      "motivace",
       "sebevědomí",
-      "motivace"
+      "změna",
+      "víra"
     ],
     "schemas": [
       "DEFSH",
@@ -2385,9 +2399,9 @@
     "tags": [
       "deprese",
       "úzkost",
+      "přítomnost",
       "afirmace",
-      "pozitivní myšlení",
-      "smysl života"
+      "pozitivní myšlení"
     ],
     "schemas": [
       "NEGPES",
@@ -2411,7 +2425,8 @@
     "show_link": true,
     "tags": [
       "spánek",
-      "návyky"
+      "návyky",
+      "produktivita"
     ],
     "schemas": [
       "INDISC",
@@ -2461,7 +2476,8 @@
     "show_link": true,
     "tags": [
       "spánek",
-      "návyky"
+      "návyky",
+      "fyzické zdraví"
     ],
     "schemas": [
       "VULILL",
@@ -2484,9 +2500,10 @@
     "source_url": "https://stestinaproti.cz/nejsem-blazen-abych-musel-do-blazince/",
     "show_link": true,
     "tags": [
+      "psychoterapie",
       "deprese",
       "úzkost",
-      "vztahy"
+      "změna"
     ],
     "schemas": [
       "DEFSH",
@@ -2509,10 +2526,11 @@
     "source_url": "https://stestinaproti.cz/ke-cvokarovi-me-nikdo-nedostane/",
     "show_link": true,
     "tags": [
-      "deprese",
+      "psychoterapie",
       "úzkost",
-      "sebepoznání",
-      "vztahy"
+      "deprese",
+      "stud",
+      "strach"
     ],
     "schemas": [
       "DEFSH",
@@ -2535,9 +2553,9 @@
     "source_url": "https://stestinaproti.cz/kdyz-mate-s-terapii-spatnou-zkusenost/",
     "show_link": false,
     "tags": [
+      "psychoterapie",
       "vztahy",
-      "sebepoznání",
-      "deprese"
+      "změna"
     ],
     "schemas": [
       "MISAB",
@@ -2562,8 +2580,9 @@
     "tags": [
       "úzkost",
       "deprese",
-      "změna",
-      "relaxace"
+      "návyky",
+      "relaxace",
+      "odolnost"
     ],
     "schemas": [
       "NEGPES",
@@ -2586,9 +2605,9 @@
     "source_url": "https://stestinaproti.cz/kdyz-do-sebe-nechcete-cpat-chemii/",
     "show_link": false,
     "tags": [
+      "léky",
       "deprese",
-      "úzkost",
-      "návyky"
+      "úzkost"
     ],
     "schemas": [
       "MISAB",
@@ -2611,6 +2630,7 @@
     "source_url": "https://stestinaproti.cz/kdyz-berete-prasky-a-myslite-si-ze-uz-nic-delat-nepotrebujete/",
     "show_link": false,
     "tags": [
+      "léky",
       "deprese",
       "úzkost",
       "návyky"
@@ -2636,6 +2656,7 @@
     "source_url": "https://stestinaproti.cz/tri-situace-ktere-mohou-nastat-pri-uzivani-antidepresiv/",
     "show_link": false,
     "tags": [
+      "léky",
       "deprese",
       "úzkost",
       "panická ataka"
@@ -2661,9 +2682,11 @@
     "source_url": "https://stestinaproti.cz/jsem-jaky-jsem-svou-osobnost-stejne-nezmenim/",
     "show_link": false,
     "tags": [
+      "změna",
       "sebepoznání",
-      "přerámování myšlenek",
-      "motivace"
+      "identita",
+      "psychoterapie",
+      "myšlenky"
     ],
     "schemas": [
       "DEFSH",
@@ -2686,9 +2709,10 @@
     "source_url": "https://stestinaproti.cz/popreni-problemu-prestoze-nas-trapi/",
     "show_link": false,
     "tags": [
-      "přerámování myšlenek",
+      "psychoterapie",
       "úzkost",
       "deprese",
+      "psychické obrany",
       "sebepoznání"
     ],
     "schemas": [
@@ -2715,6 +2739,7 @@
       "stres",
       "úzkost",
       "panická ataka",
+      "zklidnění",
       "přerámování myšlenek"
     ],
     "schemas": [
@@ -2738,10 +2763,12 @@
     "source_url": "https://stestinaproti.cz/v-hlave-to-mam-v-poradku-neposloucha-me-telo/",
     "show_link": true,
     "tags": [
-      "emoce",
+      "psychosomatika",
+      "tělo",
+      "změna",
       "sebeláska",
-      "vnitřní části",
-      "změna"
+      "dětství",
+      "komunikace"
     ],
     "schemas": [
       "EMODEP",
@@ -2766,7 +2793,8 @@
     "tags": [
       "deprese",
       "úzkost",
-      "panická ataka"
+      "panická ataka",
+      "bezpečí"
     ],
     "schemas": [
       "VULILL",
@@ -2789,9 +2817,10 @@
     "source_url": "https://stestinaproti.cz/kdyz-nevite-na-koho-se-obratit-s-psychickymi-problemy/",
     "show_link": true,
     "tags": [
+      "psychoterapie",
       "úzkost",
       "deprese",
-      "panická ataka"
+      "léky"
     ],
     "schemas": [
       "DEPINC",
@@ -2817,7 +2846,7 @@
       "úzkost",
       "deprese",
       "návyky",
-      "změna"
+      "motivace"
     ],
     "schemas": [
       "INDISC",
@@ -2843,8 +2872,8 @@
       "úzkost",
       "deprese",
       "stres",
-      "změna",
-      "návyky"
+      "návyky",
+      "změna"
     ],
     "schemas": [
       "NEGPES",
@@ -2868,10 +2897,10 @@
     "show_link": false,
     "tags": [
       "stres",
+      "tlak na výkon",
       "vyhoření",
-      "produktivita",
-      "hodnoty",
-      "sebeláska"
+      "sebeláska",
+      "hodnoty"
     ],
     "schemas": [
       "SELFSAC",
@@ -2895,9 +2924,9 @@
     "show_link": false,
     "tags": [
       "deprese",
-      "změna",
+      "motivace",
       "návyky",
-      "motivace"
+      "změna"
     ],
     "schemas": [
       "NEGPES",
@@ -2922,9 +2951,10 @@
     "tags": [
       "vyhoření",
       "stres",
+      "tlak na výkon",
       "deprese",
       "úzkost",
-      "návyky"
+      "změna"
     ],
     "schemas": [
       "USHYPER",
@@ -2950,8 +2980,8 @@
       "deprese",
       "úzkost",
       "motivace",
-      "rozhodování",
-      "sebevědomí"
+      "sebevědomí",
+      "odvaha"
     ],
     "schemas": [
       "NEGPES",

@@ -55,7 +55,7 @@ Kanonický slovník tagů leží v **`tagy.json` v kořeni repa a je jediný zdr
 
 **Slovník je společný pro celou appku** — články, cvičení, inspirace i podnětné otázky sdílejí jednu sadu. Tag je pro uživatele téma, ne vlastnost obsahového typu; oddělené slovníky per typ vedly k tomu, že stejná věc měla různá jména (`expozice` u cvičení vs. `expozice strachu` u článků) a uživatel ji přes sekce nenašel.
 
-Prázdné volby to nedělá, protože **filtr nabízí jen tagy, které jsou v dané sekci reálně použité** — staví se z dat (`allTags(dataKey)`), ne ze slovníku.
+Prázdné volby to nedělá, protože **filtr nabízí jen tagy, které jsou v dané sekci reálně použité** — staví se z dat (`allTags(dataKey)`), ne ze slovníku. Proto může slovník nést i tagy bez obsahu (od 11. 9. 2026 např. `sebepoškozování`) — stojí nic. Kdyby se lišta filtru v některé sekci stala nepřehlednou, řešením je zobrazovací vrstva nad slovníkem (omezená sada tagů k zobrazení), ne prořezávání slovníku.
 
 Pravidla:
 
@@ -142,6 +142,8 @@ Krácení řídí prompt `local/_prompty/clanky_kraceni_prompt.md`: originál do
 - **`reading_time`** — v ostré verzi ho počítá admin z délky textu.
 - **`quality`** — kvalita/užitečnost na škále 1–5 (pětky se zobrazují v záložce „Redakce").
 - **`slug`** — v ostré verzi ho admin generuje z titulku.
+
+**Tagování (přetagováno 11. 9. 2026):** logika se oproti otázkám a inspiracím **otáčí** — uživatel v Článcích hledá stav jménem („mám úzkost / paniku / OCD, co si o tom přečíst"), takže **„Stavy a potíže" jsou primární**. Pořadí podle priority: 1. stav/potíž (nebo emoce, když je článek o ní), 2.–3. co článek učí (`přerámování myšlenek`, `expozice`, `tělo`…) nebo cíl z „Chci pracovat na", zbytek tie-break. 3–6 tagů, průměr 4,75. Tag jen když je článek **o tom**, ne když se toho dotýká; tagováno z těla, ne z titulku. Přidané tagy: `psychoterapie` a `léky` (klastr „jít si pro pomoc" — 10 resp. 5 článků, dřív bez klikacího cíle), `perfekcionismus` (8), `psychické obrany` (pětidílný seriál), `tlak na výkon`, `prokrastinace`, `kontrola`, `sebelítost` (rezervy pro budoucí obsah, dnes 1–4 výskyty), `sebepoškozování` (zatím bez obsahu, vědomě).
 - **`published_at`** vs **`added_at`** — datum původního vydání článku vs. datum přidání do aplikace (dvě různá data).
 - **`source_url`** — adresa původního článku na blogu. Vyplňuje se **vždy**, nezávisle na `show_link`.
 - **`show_link`** — jestli se pod článkem nabídne odkaz na plné znění. **Neznamená „máme URL"** (tu má každý článek), ale **„tenhle text je podstatně osekaný"**. Pravidlo pochází z krátícího promptu (`local/_prompty/clanky_kraceni_prompt.md`): originál do 600 slov se nekrátí vůbec → `false`; delší se krátí na 600 slov (u výčtových článků nad 1800 slov na 750) a pokud se odřízlo víc než 20 % původního textu → `true`. Aktuálně 71 článků ze 112 má `true`.

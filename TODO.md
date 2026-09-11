@@ -47,8 +47,15 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       bez `schemas`, tagy 3–6 podle priority, staré 63 přepsané do ich-formy.
 - [x] **Inspirace nasazené (11. 9. 2026).** 202 citátů (21 přetagovaných + 181
       ze sklizně), `schemas` shozeny všem, tagy podle priority, nový tag `přátelství`.
-- [ ] **Přetagovat Články, Cvičení** podle `local/_prompty/tagovani.md`
-      — každá sekce vlastní session, per sekce jiná logika priorit.
+- [x] **Články přetagované (11. 9. 2026).** 112 článků, Stavy a potíže primární,
+      +9 tagů do slovníku (`psychoterapie`, `léky`, `perfekcionismus`, `psychické
+      obrany`, `tlak na výkon`, `prokrastinace`, `kontrola`, `sebelítost`,
+      `sebepoškozování`). Slovník má 96 tagů.
+- [ ] **Přetagovat Cvičení** podle `local/_prompty/tagovani.md` — v dávkách,
+      ne v `data/exercises.json`; před startem zkontrolovat, jestli lint
+      nekontroluje počet tagů natvrdo.
+- [ ] **Zobrazovací vrstva nad slovníkem** — jen kdyby se lišta filtru po
+      přetagování cvičení stala nepřehlednou (rozhodnuto 11. 9.: zatím ne).
 - [ ] **Řazení výsledků filtru podle váhy shodných tagů.** Otázky i Inspirace
       mají tagy seřazené podle priority, appka zatím čte jen OR shodu.
 
