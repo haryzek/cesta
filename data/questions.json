@@ -1,1069 +1,3077 @@
 [
   {
     "id": "quest_0001",
-    "text": "Kolik času jsi dnes strávil přemýšlením o sobě?",
+    "text": "Kdy se cítím nejvíc sám / sama sebou?",
     "tags": [
-      "sebepoznání",
-      "hranice"
-    ],
-    "schemas": [
-      "SELFSAC",
-      "SUBJUG",
-      "APPREC"
+      "identita",
+      "autenticita",
+      "sebepoznání"
     ],
     "tier": "free",
     "sort_order": 1,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0002",
-    "text": "Kdy naposledy jsi řekl(a) 'ano' někomu jinému, i když celé tvoje tělo křičelo 'ne'?",
+    "text": "Co by se změnilo, kdybych věřil(a), že už teď jsem dost?",
     "tags": [
-      "hranice",
-      "autenticita",
-      "zklidnění"
-    ],
-    "schemas": [
-      "SELFSAC",
-      "SUBJUG",
-      "EMOINH"
+      "identita",
+      "přijetí",
+      "sebeláska",
+      "sebevědomí"
     ],
     "tier": "free",
     "sort_order": 2,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0003",
-    "text": "Co strašného by se stalo, kdyby se tvoji blízcí museli na chvíli obejít bez tvé péče a pomoci?",
+    "text": "Nakolik moje sebehodnota závisí na tom, co si o mně myslí druzí?",
     "tags": [
-      "odpovědnost",
-      "rodina",
-      "strach"
-    ],
-    "schemas": [
-      "SELFSAC",
-      "APPREC",
-      "ABINST"
+      "identita",
+      "sebevědomí",
+      "uznání",
+      "nezávislost"
     ],
     "tier": "free",
     "sort_order": 3,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0004",
-    "text": "Co nejhoršího by se stalo, kdyby lidé kolem tebe na chvíli uviděli tvou skutečnou únavu nebo slabost?",
+    "text": "Kdyby o sobě blízký přítel mluvil tak, jako o sobě mluvím já, co bych mu na to řekl(a)?",
     "tags": [
-      "autenticita",
-      "smutek",
-      "sebeláska"
-    ],
-    "schemas": [
-      "EMODEP",
-      "DEFSH",
-      "EMOINH"
+      "identita",
+      "sebeláska",
+      "přijetí"
     ],
     "tier": "free",
     "sort_order": 4,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0005",
-    "text": "Kdo v tvém současném životě by měl jako první slyšet, co doopravdy emočně potřebuješ, ale ty raději mlčíš?",
+    "text": "Jaká očekávání na sebe kladu, která bych nikdy nekladl(a) na někoho, na kom mi záleží?",
     "tags": [
-      "emoce",
-      "vztahy",
-      "autenticita"
-    ],
-    "schemas": [
-      "EMODEP",
-      "SUBJUG",
-      "ISOLAL"
+      "identita",
+      "sebeláska",
+      "hranice",
+      "přijetí"
     ],
     "tier": "free",
     "sort_order": 5,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0006",
-    "text": "Zkoušíš si občas emočně ulevit jídlem, prací nebo nákupy namísto toho, abys vyhledal(a) lidskou blízkost?",
+    "text": "Co všechno jsem přestál(a) a překonal(a), co si málokdy přiznám k dobru?",
     "tags": [
-      "návyky",
-      "samota",
-      "zklidnění"
-    ],
-    "schemas": [
-      "EMODEP",
-      "INDISC",
-      "ISOLAL"
+      "identita",
+      "odolnost",
+      "sebevědomí",
+      "uznání"
     ],
     "tier": "free",
     "sort_order": 6,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0007",
-    "text": "Na kom v tvém životě nejvíc visí tvůj pocit bezpečí a co by se stalo, kdyby ten člověk zítra odešel?",
+    "text": "Na co jsem hrdý / hrdá, i když o tom nikdo jiný neví?",
     "tags": [
-      "samota",
-      "strach",
-      "vztahy"
-    ],
-    "schemas": [
-      "ABINST",
-      "DEPINC",
-      "ENMUND"
+      "identita",
+      "sebevědomí",
+      "uznání"
     ],
     "tier": "free",
     "sort_order": 7,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0008",
-    "text": "Ukončuješ někdy vztahy nebo se emočně odpojuješ dřív, než tě stihne ten druhý opustit?",
+    "text": "Kterým pochvalám je pro mě těžké uvěřit?",
     "tags": [
-      "vztahy",
-      "odvaha",
-      "moudrost"
-    ],
-    "schemas": [
-      "ABINST",
-      "MISAB",
-      "EMOINH"
+      "identita",
+      "uznání",
+      "přijetí",
+      "sebevědomí"
     ],
     "tier": "free",
     "sort_order": 8,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0009",
-    "text": "Kolik tvé současné úzkosti pramení ze strachu, že stabilita, kterou teď prožíváš, je jen ticho před bouří?",
+    "text": "Co se snažím dokázat, a komu?",
     "tags": [
-      "úzkost",
-      "myšlenky",
-      "motivace"
-    ],
-    "schemas": [
-      "ABINST",
-      "NEGPES",
-      "VULILL"
+      "identita",
+      "uznání",
+      "motivace",
+      "sebepoznání"
     ],
     "tier": "free",
     "sort_order": 9,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0010",
-    "text": "Odkud pramení tvoje přesvědčení, že tě druzí lidé dřív nebo později zradí nebo zneužijou, pokud polevíš v ostražitosti?",
+    "text": "Co o sobě předstírám, že nevím?",
     "tags": [
-      "strach",
-      "vztahy",
-      "přirozenost"
-    ],
-    "schemas": [
-      "MISAB",
-      "VULILL",
-      "ISOLAL"
-    ],
-    "tier": "free",
-    "sort_order": 10,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0011",
-    "text": "Když ti někdo dává upřímný kompliment nebo tě chválí, jak moc v duchu hledáš jeho skryté, zištné motivy?",
-    "tags": [
-      "přijetí",
-      "stud",
-      "sebeláska"
-    ],
-    "schemas": [
-      "MISAB",
-      "DEFSH",
-      "APPREC"
-    ],
-    "tier": "free",
-    "sort_order": 11,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0012",
-    "text": "Kdo tě v minulosti tak moc zranil, že kvůli němu dodnes podezříváš i lidi, kteří to s tebou myslí upřímně?",
-    "tags": [
-      "rodina",
-      "přijetí",
-      "vnitřní části"
-    ],
-    "schemas": [
-      "MISAB",
-      "EMODEP",
-      "PUNIT"
-    ],
-    "tier": "free",
-    "sort_order": 12,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0013",
-    "text": "Čím sytíš svoji iluzi, že tě samota a izolace ochrání před utrpením, když tě ve skutečnosti pomalu zabíjí?",
-    "tags": [
-      "samota",
-      "odvaha"
-    ],
-    "schemas": [
-      "ISOLAL",
-      "EMODEP",
-      "MISAB"
-    ],
-    "tier": "free",
-    "sort_order": 13,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0014",
-    "text": "Kam až sahá tvůj pocit, že nikam nepatříš, do žádné skupiny ani komunity, a že jsi na světě úplně cizí?",
-    "tags": [
-      "samota",
-      "přirozenost",
-      "smutek"
-    ],
-    "schemas": [
-      "ISOLAL",
-      "DEFSH",
-      "LACKCOH"
-    ],
-    "tier": "free",
-    "sort_order": 14,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0015",
-    "text": "Zkoušíš občas maskovat svůj pocit odlišnosti tím, že se přehnaně přizpůsobuješ zájmům a názorům ostatních?",
-    "tags": [
-      "autenticita",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "ISOLAL",
-      "SUBJUG",
-      "APPREC"
-    ],
-    "tier": "free",
-    "sort_order": 15,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0016",
-    "text": "Když se ti nedaří, mluvíš se sebou jako s přítelem, nebo jako s někým, koho vyloženě nesnášíš?",
-    "tags": [
-      "stud",
-      "přijetí",
-      "sebeláska"
-    ],
-    "schemas": [
-      "DEFSH",
-      "USHYPER",
-      "PUNIT"
-    ],
-    "tier": "free",
-    "sort_order": 16,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0017",
-    "text": "Jaké tajemství o sobě tak úporně tajíš před světem ze strachu, že kdyby ho lidé poznali, okamžitě by se tě zřekli?",
-    "tags": [
-      "stud",
-      "autenticita",
-      "sebeláska"
-    ],
-    "schemas": [
-      "DEFSH",
-      "EMOINH",
-      "APPREC"
-    ],
-    "tier": "free",
-    "sort_order": 17,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0018",
-    "text": "Jak moc odvozuješ svou lidskou hodnotu od chyb, které jsi udělal(a) v minulosti?",
-    "tags": [
-      "vina",
-      "přijetí",
-      "sebeláska"
-    ],
-    "schemas": [
-      "DEFSH",
-      "FAIL",
-      "PUNIT"
-    ],
-    "tier": "free",
-    "sort_order": 18,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0019",
-    "text": "Komu ve svém okolí nejvíc křivdíš tím, že od něj tajně očekáváš, že ti přečte myšlenky a zachrání tě?",
-    "tags": [
-      "vztahy",
-      "odpovědnost",
-      "rozhodování"
-    ],
-    "schemas": [
-      "DEPINC",
-      "ABINST",
-      "MISAB"
-    ],
-    "tier": "free",
-    "sort_order": 19,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0020",
-    "text": "V jaké životní situaci se raději tváříš jako bezmocná oběť, jen abys nemusel(a) převzít plnou odpovědnost za změnu?",
-    "tags": [
-      "odpovědnost",
-      "motivace",
-      "změna"
-    ],
-    "schemas": [
-      "DEPINC",
-      "SUBJUG",
-      "FAIL"
-    ],
-    "tier": "free",
-    "sort_order": 20,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0021",
-    "text": "Věříš víc rozumu a schopnostem cizích lidí než svým vlastním instinktům a životním zkušenostem?",
-    "tags": [
-      "sebevědomí",
-      "rozhodování",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "DEPINC",
-      "ENMUND",
-      "LACKCOH"
-    ],
-    "tier": "free",
-    "sort_order": 21,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0022",
-    "text": "Kde bereš jistotu, že tvoje katastrofické scénáře v hlavě jsou předpověď reality a ne jen projev unaveného těla?",
-    "tags": [
-      "myšlenky",
-      "úzkost",
-      "přerámování myšlenek"
-    ],
-    "schemas": [
-      "VULILL",
-      "NEGPES",
-      "DEPINC"
-    ],
-    "tier": "free",
-    "sort_order": 22,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0023",
-    "text": "Kolik energie denně spálíš neustálou kontrolou věcí, které ze své podstaty vůbec nedokážeš ovlivnit?",
-    "tags": [
-      "stres",
-      "zklidnění",
-      "mindfulness"
-    ],
-    "schemas": [
-      "VULILL",
-      "USHYPER",
-      "FAIL"
-    ],
-    "tier": "free",
-    "sort_order": 23,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0024",
-    "text": "Co tě tvůj strach ze selhání nebo nemoci učí o tom, jak moc lpíš na absolutním bezpečí v nejistém světě?",
-    "tags": [
-      "strach",
-      "moudrost",
-      "přijetí"
-    ],
-    "schemas": [
-      "VULILL",
-      "FAIL",
-      "LACKMEAN"
-    ],
-    "tier": "free",
-    "sort_order": 24,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0025",
-    "text": "Čí život ve skutečnosti žiješ, když se tak úporně snažíš plnit očekávání všech kolem sebe?",
-    "tags": [
-      "autenticita",
-      "rodina",
-      "svoboda"
-    ],
-    "schemas": [
-      "ENMUND",
-      "SUBJUG",
-      "APPREC"
-    ],
-    "tier": "free",
-    "sort_order": 25,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0026",
-    "text": "Kde končí tvoje vlastní identita a kde začínají nálady a potřeby tvého partnera nebo rodičů?",
-    "tags": [
-      "hranice",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "ENMUND",
-      "SELFSAC",
-      "LACKCOH"
-    ],
-    "tier": "free",
-    "sort_order": 26,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0027",
-    "text": "Dokázal(a) bys dnes popsat, kdo doopravdy jsi, kdybychom ze tvého života škrtli tvoje role dítěte, partnera či zaměstnance?",
-    "tags": [
+      "identita",
       "sebepoznání",
       "autenticita"
     ],
-    "schemas": [
-      "ENMUND",
-      "LACKCOH",
-      "DEFSH"
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0011",
+    "text": "Co jsem se v dětství naučil(a) o tom, jakou má člověk hodnotu?",
+    "tags": [
+      "identita",
+      "rodina",
+      "hodnoty",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0012",
+    "text": "V jakých situacích jsem na sebe nejtvrdší?",
+    "tags": [
+      "identita",
+      "sebeláska",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0013",
+    "text": "Co bych se odvážil(a) zkusit, kdybych si víc věřil(a)?",
+    "tags": [
+      "identita",
+      "sebevědomí",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0014",
+    "text": "Který svůj povahový rys odsuzuji nejvíc?",
+    "tags": [
+      "identita",
+      "přijetí",
+      "sebeláska",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0015",
+    "text": "Jak bych popsal(a) sám / sama sebe někomu úplně cizímu?",
+    "tags": [
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0016",
+    "text": "Co jsem se o sobě naučil(a) za poslední rok?",
+    "tags": [
+      "identita",
+      "sebepoznání",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0017",
+    "text": "Co je pro mě těžké si na sobě přiznat?",
+    "tags": [
+      "identita",
+      "sebepoznání",
+      "přijetí",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0018",
+    "text": "Kdyby mi křišťálová koule mohla říct pravdu o mně nebo mém životě, co bych chtěl(a) vědět?",
+    "tags": [
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0019",
+    "text": "Kdybych se mohl(a) zítra probudit s jednou novou vlastností nebo schopností, jaká by to byla?",
+    "tags": [
+      "identita",
+      "růst",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0020",
+    "text": "Které svoje stránky jsem zanedbal(a) nebo potlačil(a)?",
+    "tags": [
+      "identita",
+      "sebepoznání",
+      "autenticita",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0021",
+    "text": "Za co ve svém životě cítím největší vděčnost?",
+    "tags": [
+      "štěstí",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0022",
+    "text": "Kdy a kde jsem byl(a) nejšťastnější?",
+    "tags": [
+      "štěstí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0023",
+    "text": "Jaká je moje představa dokonalého štěstí?",
+    "tags": [
+      "štěstí",
+      "hodnoty",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0024",
+    "text": "Jak by vypadal můj dokonalý den?",
+    "tags": [
+      "štěstí",
+      "hodnoty",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0025",
+    "text": "Kdy jsem si naposledy zpíval(a) jen tak pro sebe?",
+    "tags": [
+      "štěstí",
+      "plné prožívání",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0026",
+    "text": "Kdo mě v posledních 24 hodinách přiměl k úsměvu?",
+    "tags": [
+      "štěstí",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0027",
+    "text": "Co mi dokáže udělat radost, i když mám špatný den?",
+    "tags": [
+      "štěstí",
+      "odolnost",
+      "sebepoznání"
     ],
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0028",
-    "text": "Čí hněv nebo zklamání se snažíš svým neustálým výkonem a dokonalostí už od dětství odvrátit?",
+    "text": "Jaká drobná chvíle mi dnes přinesla radost?",
     "tags": [
-      "rodina",
-      "motivace",
-      "vnitřní části"
-    ],
-    "schemas": [
-      "FAIL",
-      "USHYPER",
-      "APPREC"
+      "štěstí",
+      "přítomnost",
+      "plné prožívání"
     ],
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0029",
-    "text": "Nezaměňuješ náhodou dělání chyb s pocitem, že ty sám / ty sama jsi jedno velké selhání?",
+    "text": "Kvůli čemu jsem rád / ráda na světě?",
     "tags": [
-      "přijetí",
-      "sebeláska",
-      "přerámování myšlenek"
-    ],
-    "schemas": [
-      "FAIL",
-      "DEFSH",
-      "PUNIT"
+      "štěstí",
+      "smysl života",
+      "hodnoty"
     ],
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0030",
-    "text": "Co by ti zbylo ze tvého sebevědomí, kdybys zítra ztratil(a) status, práci nebo všechny své úspěchy?",
+    "text": "Na co se těším?",
     "tags": [
-      "hodnoty",
-      "produktivita",
-      "smysl života"
-    ],
-    "schemas": [
-      "FAIL",
-      "USHYPER",
-      "LACKMEAN"
+      "štěstí",
+      "motivace"
     ],
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0031",
-    "text": "Kde berete právo domnívat se, že pravidla, která platí pro běžné smrtelníky, pro vás neplatí?",
+    "text": "Kdo je ten nejradostnější člověk, jakého jsem kdy potkal(a)?",
     "tags": [
-      "přirozenost",
-      "rozhodování",
-      "moudrost"
-    ],
-    "schemas": [
-      "ENTGRAND",
-      "INDISC",
-      "UNFAIR"
+      "štěstí",
+      "vztahy"
     ],
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0032",
-    "text": "Není tvoje neustálá potřeba mít pravdu a ovládat druhé jen zoufalým štítem před vnitřní bezmocí?",
+    "text": "Jaký byl zatím nejlepší okamžik mého života?",
     "tags": [
-      "vztahy",
-      "stud",
-      "strach"
-    ],
-    "schemas": [
-      "ENTGRAND",
-      "DEFSH",
-      "VULILL"
+      "štěstí",
+      "plné prožívání"
     ],
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-06-05"
+    "added_at": "2026-09-11"
   },
   {
     "id": "quest_0033",
-    "text": "Koho ve svém životě nejvíc zraňuješ svým pocitem, že ti svět dluží zvláštní zacházení?",
+    "text": "Za co z věcí, které mám právě teď kolem sebe, jsem vděčný / vděčná?",
+    "tags": [
+      "štěstí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0034",
+    "text": "Která věc, kterou používám každý den, by si zasloužila poděkování?",
+    "tags": [
+      "štěstí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0035",
+    "text": "Jaká je moje nejcennější vzpomínka?",
+    "tags": [
+      "štěstí",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0036",
+    "text": "Co se na mém zdraví právě teď daří?",
+    "tags": [
+      "štěstí",
+      "fyzické zdraví"
+    ],
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0037",
+    "text": "Kterou činnost si nejvíc užívám, když jsem sám / sama?",
+    "tags": [
+      "štěstí",
+      "volný čas",
+      "samostatnost"
+    ],
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0038",
+    "text": "Za jaký objev z posledního roku jsem vděčný / vděčná?",
+    "tags": [
+      "štěstí",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0039",
+    "text": "Kdo mi v posledním týdnu usnadnil život?",
+    "tags": [
+      "štěstí",
+      "vztahy",
+      "přínos"
+    ],
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0040",
+    "text": "Kdo dělá můj život lepší?",
+    "tags": [
+      "štěstí",
+      "vztahy",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0041",
+    "text": "Čeho si na přátelství cením nejvíc?",
+    "tags": [
+      "vztahy",
+      "hodnoty",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0042",
+    "text": "Jakou roli hrají v mém životě láska a náklonnost?",
+    "tags": [
+      "vztahy",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0043",
+    "text": "Co bych si přál(a) mít s kým sdílet?",
+    "tags": [
+      "vztahy",
+      "sounáležitost",
+      "samota"
+    ],
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0044",
+    "text": "Co bych nejvíc litoval(a), že jsem někomu nikdy neřekl(a)?",
+    "tags": [
+      "vztahy",
+      "komunikace",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0045",
+    "text": "Kdy jsem naposledy plakal(a) před druhým člověkem?",
+    "tags": [
+      "vztahy",
+      "plné prožívání",
+      "autenticita",
+      "smutek"
+    ],
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0046",
+    "text": "Komu ve svém životě důvěřuji nejvíc?",
+    "tags": [
+      "vztahy",
+      "bezpečí"
+    ],
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0047",
+    "text": "Je v mém životě někdo, kdo by si zasloužil omluvu?",
+    "tags": [
+      "vztahy",
+      "odpovědnost",
+      "komunikace",
+      "vina"
+    ],
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0048",
+    "text": "Jaká je moje představa zdravého vztahu?",
+    "tags": [
+      "vztahy",
+      "láska",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0049",
+    "text": "Co pro mě znamená bezpodmínečná láska?",
+    "tags": [
+      "vztahy",
+      "láska",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0050",
+    "text": "Zamilovávají se lidé proto, že potkali toho pravého člověka, nebo proto, že přišel ten pravý čas?",
+    "tags": [
+      "vztahy",
+      "láska",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0051",
+    "text": "Co je podle mě základem vztahu, který vydrží?",
+    "tags": [
+      "vztahy",
+      "láska",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0052",
+    "text": "Kdo nebo co je největší láska mého života?",
+    "tags": [
+      "vztahy",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0053",
+    "text": "Co by o mně měl vědět člověk, který se má stát mým blízkým přítelem?",
+    "tags": [
+      "vztahy",
+      "autenticita",
+      "komunikace"
+    ],
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0054",
+    "text": "Ve kterých vztazích můžu být úplně sám / sama sebou?",
+    "tags": [
+      "vztahy",
+      "autenticita",
+      "bezpečí"
+    ],
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0055",
+    "text": "Ve kterých vztazích cítím tlak být někým jiným?",
+    "tags": [
+      "vztahy",
+      "autenticita",
+      "hranice"
+    ],
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0056",
+    "text": "Čí ztráta by mě zasáhla nejvíc?",
+    "tags": [
+      "vztahy",
+      "ztráta",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0057",
+    "text": "Kdybych mohl(a) změnit cokoli na tom, jak mě vychovali, co by to bylo?",
+    "tags": [
+      "rodina",
+      "vztahy",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0058",
+    "text": "Kdo mi odpustil chybu, kterou jsem udělal(a)?",
+    "tags": [
+      "vztahy",
+      "přijetí",
+      "vina"
+    ],
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0059",
+    "text": "Co obdivuji na svých blízkých?",
+    "tags": [
+      "vztahy",
+      "láska",
+      "uznání"
+    ],
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0060",
+    "text": "Kdo je člověk, na kterého se můžu vždycky spolehnout?",
+    "tags": [
+      "vztahy",
+      "bezpečí"
+    ],
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0061",
+    "text": "Co bych dělal(a), kdybych věděl(a), že nemůžu selhat?",
+    "tags": [
+      "odvaha",
+      "strach",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0062",
+    "text": "Co odkládám na dobu, až budu mít čas, peníze nebo odvahu?",
+    "tags": [
+      "odvaha",
+      "změna",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 62,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0063",
+    "text": "Kdybych mohl(a) být, dělat nebo mít cokoli na světě, co bych si přál(a)?",
+    "tags": [
+      "odvaha",
+      "hodnoty",
+      "motivace",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 63,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0064",
+    "text": "Co dělají lidé, které nejvíc obdivuji, a já ne?",
+    "tags": [
+      "odvaha",
+      "růst",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 64,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0065",
+    "text": "Jaký malý krok směrem ke svému snu můžu udělat hned teď?",
+    "tags": [
+      "odvaha",
+      "změna",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 65,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0066",
+    "text": "Chrání mě můj strach, nebo mi brání žít život, jaký chci?",
+    "tags": [
+      "odvaha",
+      "strach",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 66,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0067",
+    "text": "Jak pravděpodobné je, že se to, čeho se bojím, opravdu stane?",
+    "tags": [
+      "strach",
+      "myšlenky",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 67,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0068",
+    "text": "Co nejhoršího by se doopravdy stalo, kdyby se můj strach naplnil?",
+    "tags": [
+      "strach",
+      "myšlenky",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 68,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0069",
+    "text": "Nebojím se ve skutečnosti hlavně toho, jak mě posoudí druzí?",
+    "tags": [
+      "strach",
+      "uznání",
+      "autenticita",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 69,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0070",
+    "text": "Jak bych se choval(a), kdybych se přestal(a) bát toho, co si myslí ostatní?",
+    "tags": [
+      "odvaha",
+      "svoboda",
+      "autenticita",
+      "uznání"
+    ],
+    "tier": "free",
+    "sort_order": 70,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0071",
+    "text": "Jaký sen si netroufám sledovat ze strachu, že selžu?",
+    "tags": [
+      "odvaha",
+      "strach",
+      "úspěch"
+    ],
+    "tier": "free",
+    "sort_order": 71,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0072",
+    "text": "Co by se změnilo, kdybych selhání viděl(a) jako krok k úspěchu, a ne jako konec?",
+    "tags": [
+      "odvaha",
+      "přijetí",
+      "růst",
+      "úspěch"
+    ],
+    "tier": "free",
+    "sort_order": 72,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0073",
+    "text": "Kdy jsem si naposledy řekl(a) ne dřív, než to mohl udělat někdo jiný?",
+    "tags": [
+      "odvaha",
+      "hranice",
+      "komunikace"
+    ],
+    "tier": "free",
+    "sort_order": 73,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0074",
+    "text": "Co nejlepšího by se mohlo stát?",
+    "tags": [
+      "odvaha",
+      "myšlenky",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 74,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0075",
+    "text": "V čem jsem dnes projevil(a) odvahu?",
+    "tags": [
+      "odvaha",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 75,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0076",
+    "text": "Co se chci naučit, ale vyhýbám se tomu ze strachu, že mi to nepůjde?",
+    "tags": [
+      "odvaha",
+      "strach",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 76,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0077",
+    "text": "Kdyby byl dnešek posledním dnem mého života, chtěl(a) bych dělat to, co se právě chystám dělat?",
+    "tags": [
+      "smrt",
+      "smysl života",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 77,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0078",
+    "text": "Kdybych dnes zemřel(a), čeho bych litoval(a), že jsem udělal(a) nebo neudělal(a)?",
+    "tags": [
+      "smrt",
+      "smysl života",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 78,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0079",
+    "text": "Jak bych změnil(a) svůj život, kdybych věděl(a), že mi zbývá pět let?",
+    "tags": [
+      "smrt",
+      "změna",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 79,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0080",
+    "text": "Kdybych žil(a) život svých snů, co by stálo v mém nekrologu?",
+    "tags": [
+      "smrt",
+      "smysl života",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 80,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0081",
+    "text": "Žiju život věrný sám / sama sobě, nebo život, který ode mě očekávají druzí?",
+    "tags": [
+      "autenticita",
+      "smrt",
+      "svoboda",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 81,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0082",
+    "text": "Kolik času s lidmi, které mám nejraději, mi ve skutečnosti ještě zbývá?",
+    "tags": [
+      "smrt",
+      "vztahy",
+      "přítomnost",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 82,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0083",
+    "text": "Jak se na to, co mě dnes trápí, budu dívat za deset minut, za deset měsíců a za deset let?",
+    "tags": [
+      "přijetí",
+      "myšlenky",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 83,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0084",
+    "text": "Co bych chtěl(a), aby o mně jednou zaznělo na mém pohřbu?",
+    "tags": [
+      "smrt",
+      "hodnoty",
+      "smysl života"
+    ],
+    "tier": "free",
+    "sort_order": 84,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0085",
+    "text": "Kdyby se můj zbývající čas zkrátil na polovinu, s čím bych okamžitě přestal(a)?",
+    "tags": [
+      "smrt",
+      "hodnoty",
+      "rozhodování"
+    ],
+    "tier": "free",
+    "sort_order": 85,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0086",
+    "text": "Kdyby se můj zbývající čas zdvojnásobil, co bych začal(a)?",
+    "tags": [
+      "smrt",
+      "motivace",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 86,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0087",
+    "text": "Co odkládám jen proto, že předpokládám, že mám ještě dost času?",
+    "tags": [
+      "smrt",
+      "motivace",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 87,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0088",
+    "text": "Co by muselo platit, abych jednou mohl(a) odejít bez lítosti?",
+    "tags": [
+      "smrt",
+      "přijetí",
+      "smysl života"
+    ],
+    "tier": "free",
+    "sort_order": 88,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0089",
+    "text": "Kterou část svého života žiju, jako by to byla jen zkouška nanečisto?",
+    "tags": [
+      "smrt",
+      "přítomnost",
+      "plné prožívání",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 89,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0090",
+    "text": "Co bych přestal(a) předstírat, kdybych věděl(a), že mi zbývá rok?",
+    "tags": [
+      "smrt",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 90,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0091",
+    "text": "Kdyby mi mé budoucí já poslalo vzkaz z posledního týdne mého života, co by v něm stálo?",
+    "tags": [
+      "smrt",
+      "moudrost",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 91,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0092",
+    "text": "Čí život by byl jiný, kdybych nežil(a)?",
+    "tags": [
+      "smrt",
+      "přínos",
+      "smysl života",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 92,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0093",
+    "text": "Jaký rozhovor odkládám s někým, jehož čas je také konečný?",
+    "tags": [
+      "smrt",
+      "vztahy",
+      "komunikace",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 93,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0094",
+    "text": "Kdo v mém životě je starší, než si připouštím?",
+    "tags": [
+      "stáří",
+      "rodina",
+      "vztahy",
+      "smrt"
+    ],
+    "tier": "free",
+    "sort_order": 94,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0095",
+    "text": "Který obyčejný okamžik dneška by mi jednou mohl chybět nejvíc?",
+    "tags": [
+      "přítomnost",
+      "smrt",
+      "plné prožívání",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 95,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0096",
+    "text": "Jaké hodnoty a zásady mě v životě vedou?",
+    "tags": [
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 96,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0097",
+    "text": "Co dělá můj život smysluplným?",
+    "tags": [
+      "smysl života",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 97,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0098",
+    "text": "Za čím si stojím, i když je to nepohodlné nebo nepopulární?",
+    "tags": [
+      "hodnoty",
+      "odvaha",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 98,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0099",
+    "text": "Nedržím se ze zvyku přesvědčení, ze kterých jsem už dávno vyrostl(a)?",
+    "tags": [
+      "hodnoty",
+      "změna",
+      "myšlenky"
+    ],
+    "tier": "free",
+    "sort_order": 99,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0100",
+    "text": "Kdo jsem, když zrovna neplním žádnou ze svých rolí?",
+    "tags": [
+      "identita",
+      "hodnoty",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 100,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0101",
+    "text": "Co pro mě doopravdy znamená úspěch?",
+    "tags": [
+      "úspěch",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 101,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0102",
+    "text": "Jak by vypadal můj život, kdyby odrážel mé pravé já?",
+    "tags": [
+      "autenticita",
+      "hodnoty",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 102,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0103",
+    "text": "Kdy jsem na sebe byl(a) naposledy hluboce hrdý / hrdá?",
+    "tags": [
+      "uznání",
+      "hodnoty",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 103,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0104",
+    "text": "Které ctnosti je v dnešním světě nedostatek?",
+    "tags": [
+      "hodnoty",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 104,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0105",
+    "text": "Co mi nejvíc chybělo v nejtěžším období mého života?",
+    "tags": [
+      "hodnoty",
+      "odolnost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 105,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0106",
+    "text": "Kdybych musel(a) rozdat deset milionů, na co bych je dal(a)?",
+    "tags": [
+      "hodnoty",
+      "přínos"
+    ],
+    "tier": "free",
+    "sort_order": 106,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0107",
+    "text": "Koho obdivuji, ačkoli jeho život bych žít nechtěl(a)?",
+    "tags": [
+      "hodnoty",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 107,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0108",
+    "text": "Jakou těžkou oběť jsem přinesl(a), i když jsem se jí mohl(a) snadno vyhnout?",
+    "tags": [
+      "hodnoty",
+      "odpovědnost",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 108,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0109",
+    "text": "Kdybych měl(a) být zapamatován(a) jen pro jedinou věc, jakou bych si vybral(a)?",
+    "tags": [
+      "smysl života",
+      "hodnoty",
+      "přínos"
+    ],
+    "tier": "free",
+    "sort_order": 109,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0110",
+    "text": "Je rozdíl mezi tím, co říkám, že je pro mě důležité, a tím, jak skutečně trávím čas?",
+    "tags": [
+      "hodnoty",
+      "autenticita",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 110,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0111",
+    "text": "Kdyby smysl života nebylo třeba najít, ale vytvořit, co bych tvořil(a)?",
+    "tags": [
+      "smysl života",
+      "tvoření"
+    ],
+    "tier": "free",
+    "sort_order": 111,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0112",
+    "text": "Kdybych se vzdal(a) hledání jednoho velkého smyslu, jaké malé každodenní smysly by mi stačily?",
+    "tags": [
+      "smysl života",
+      "přijetí",
+      "štěstí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 112,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0113",
+    "text": "Kdo jsem byl(a), než mi svět řekl, kým mám být?",
+    "tags": [
+      "identita",
+      "autenticita",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 113,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0114",
+    "text": "Jakou pravdu o sobě se bojím přiznat ne druhým, ale sám / sama sobě?",
+    "tags": [
+      "autenticita",
+      "sebepoznání",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 114,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0115",
+    "text": "Co bych mohl(a) pustit, aby se mi žilo líp?",
+    "tags": [
+      "změna",
+      "přijetí",
+      "duševní pohoda"
+    ],
+    "tier": "free",
+    "sort_order": 115,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0116",
+    "text": "Jaké riziko bych mohl(a) podstoupit, aby se můj život zlepšil?",
+    "tags": [
+      "změna",
+      "odvaha",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 116,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0117",
+    "text": "Co bude za deset let, jestliže se nezměním?",
+    "tags": [
+      "změna",
+      "motivace",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 117,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0118",
+    "text": "Které možnosti ve mně zatím zůstaly nevyužité?",
+    "tags": [
+      "růst",
+      "změna",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 118,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0119",
+    "text": "Až mi bude osmdesát a ohlédnu se za svým životem, čeho si budu vážit nejvíc?",
+    "tags": [
+      "hodnoty",
+      "stáří",
+      "smysl života",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 119,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0120",
+    "text": "Jaké byly nejvíc proměňující okamžiky mého života?",
+    "tags": [
+      "růst",
+      "změna",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 120,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0121",
+    "text": "Co pro mě bylo důležité před pěti lety a dnes už není?",
+    "tags": [
+      "změna",
+      "hodnoty",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 121,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0122",
+    "text": "Kdy naposledy jsem vykročil(a) ze své komfortní zóny?",
+    "tags": [
+      "změna",
+      "odvaha",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 122,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0123",
+    "text": "Jaká byla nejtvrdší životní lekce, kterou jsem se musel(a) naučit?",
+    "tags": [
+      "růst",
+      "moudrost",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 123,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0124",
+    "text": "Co jsem vzdal(a) a chtěl(a) bych to zkusit znovu?",
+    "tags": [
+      "změna",
+      "motivace",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 124,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0125",
+    "text": "Jaké změně se právě teď bráním?",
+    "tags": [
+      "změna",
+      "přijetí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 125,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0126",
+    "text": "Co pro mě znamená selhání?",
+    "tags": [
+      "úspěch",
+      "přijetí",
+      "růst",
+      "myšlenky"
+    ],
+    "tier": "free",
+    "sort_order": 126,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0127",
+    "text": "Co mi říká můj vnitřní hlas, když udělám chybu?",
+    "tags": [
+      "sebeláska",
+      "přijetí",
+      "myšlenky",
+      "vina"
+    ],
+    "tier": "free",
+    "sort_order": 127,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0128",
+    "text": "Co stojí za to dělat bez ohledu na to, jestli uspěju?",
+    "tags": [
+      "smysl života",
+      "motivace",
+      "hodnoty",
+      "úspěch"
+    ],
+    "tier": "free",
+    "sort_order": 128,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0129",
+    "text": "Jakou radu bych dal(a) svému šestnáctiletému já?",
+    "tags": [
+      "růst",
+      "moudrost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 129,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0130",
+    "text": "Jaká minulá událost, kterou jsem dřív považoval(a) za selhání, se dnes ukazuje jako dar?",
+    "tags": [
+      "růst",
+      "přijetí",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 130,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0131",
+    "text": "Jaká omezení si na sebe kladu sám / sama?",
+    "tags": [
+      "změna",
+      "svoboda",
+      "myšlenky",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 131,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0132",
+    "text": "Co můžu udělat dnes, za co mi moje budoucí já poděkuje?",
+    "tags": [
+      "změna",
+      "motivace",
+      "návyky"
+    ],
+    "tier": "free",
+    "sort_order": 132,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0133",
+    "text": "Čemu bych chtěl(a) říct ano, ale nedokážu to?",
+    "tags": [
+      "změna",
+      "odvaha",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 133,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0134",
+    "text": "Jaké tělesné vjemy právě teď cítím a kde přesně?",
+    "tags": [
+      "tělo",
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 134,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0135",
+    "text": "Kdyby moje tělo umělo mluvit, co by mi dnes řeklo?",
+    "tags": [
+      "tělo",
+      "sebepoznání",
+      "fyzické zdraví"
+    ],
+    "tier": "free",
+    "sort_order": 135,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0136",
+    "text": "Kde v těle se cítím bezpečně a ukotveně?",
+    "tags": [
+      "tělo",
+      "bezpečí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 136,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0137",
+    "text": "Jak se v mém těle projevuje odpočinek?",
+    "tags": [
+      "tělo",
+      "duševní pohoda",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 137,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0138",
+    "text": "Po čem moje tělo v poslední době touží?",
+    "tags": [
+      "tělo",
+      "fyzické zdraví",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 138,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0139",
+    "text": "Co mě stálo odpojení od vlastního těla?",
+    "tags": [
+      "tělo",
+      "sebepoznání",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 139,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0140",
+    "text": "Za co můžu svému tělu poděkovat?",
+    "tags": [
+      "tělo",
+      "fyzické zdraví",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 140,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0141",
+    "text": "Kde dnes můžu povolit — tělesně i emočně?",
+    "tags": [
+      "tělo",
+      "přítomnost",
+      "duševní pohoda"
+    ],
+    "tier": "free",
+    "sort_order": 141,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0142",
+    "text": "Jaký je právě teď můj dech — rychlý, pomalý, mělký, hluboký?",
+    "tags": [
+      "dýchání",
+      "tělo",
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 142,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0143",
+    "text": "Která část mého těla je teď nejuvolněnější a která toho nejvíc drží?",
+    "tags": [
+      "tělo",
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 143,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0144",
+    "text": "Jakých pět věcí právě teď vidím, slyším nebo cítím?",
+    "tags": [
+      "přítomnost",
+      "mindfulness",
+      "tělo"
+    ],
+    "tier": "free",
+    "sort_order": 144,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0145",
+    "text": "Jaký tělesný vjem je právě teď nejvýraznější?",
+    "tags": [
+      "tělo",
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 145,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0146",
+    "text": "O co mě moje tělo právě teď žádá a já to přehlížím?",
+    "tags": [
+      "tělo",
+      "sebepoznání",
+      "fyzické zdraví"
+    ],
+    "tier": "free",
+    "sort_order": 146,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0147",
+    "text": "Kde v těle držím napětí a co mi tím může říkat?",
+    "tags": [
+      "tělo",
+      "mindfulness",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 147,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0148",
+    "text": "Cítím se ve svém těle dobře?",
+    "tags": [
+      "tělo",
+      "přijetí",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 148,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0149",
+    "text": "Kdy naposledy jsem měl(a) své tělo opravdu rád(a)?",
+    "tags": [
+      "tělo",
+      "sebeláska",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 149,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0150",
+    "text": "Jak se v mém těle projevují emoce, když si je dovolím prožít?",
+    "tags": [
+      "tělo",
+      "emoce",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 150,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0151",
+    "text": "Jak to v mém těle vypadá, když přijímám lásku a péči?",
+    "tags": [
+      "tělo",
+      "láska",
+      "přijetí",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 151,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0152",
+    "text": "Kdy naposledy jsem se cítil(a) plně naživu?",
+    "tags": [
+      "plné prožívání",
+      "přítomnost",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 152,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0153",
+    "text": "Jaké prosté radosti všedního dne si dopřávám?",
+    "tags": [
+      "štěstí",
+      "plné prožívání",
+      "přítomnost",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 153,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0154",
+    "text": "Co se ve mně změní po třech pomalých nádeších?",
+    "tags": [
+      "dýchání",
+      "tělo",
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 154,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0155",
+    "text": "Jaký příběh si právě teď vyprávím?",
+    "tags": [
+      "myšlenky",
+      "přítomnost",
+      "mindfulness",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 155,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0156",
+    "text": "Jak voněl dům, ve kterém jsem vyrůstal(a)?",
+    "tags": [
+      "rodina",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 156,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0157",
+    "text": "Kam jsem chodil(a), když jsem chtěl(a) být sám / sama?",
+    "tags": [
+      "rodina",
+      "samota",
+      "bezpečí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 157,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0158",
+    "text": "V čím domě mi bývalo líp než ve vlastním?",
+    "tags": [
+      "rodina",
+      "bezpečí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 158,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0159",
+    "text": "Co jsem jako dítě dělal(a) s úplně prázdnou sobotou?",
+    "tags": [
+      "rodina",
+      "volný čas",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 159,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0160",
+    "text": "Co mi v dětství šlo, aniž si toho někdo všiml?",
+    "tags": [
+      "rodina",
+      "uznání",
+      "sebepoznání",
+      "tvoření"
+    ],
+    "tier": "free",
+    "sort_order": 160,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0161",
+    "text": "Které pravidlo u nás doma mi nedávalo žádný smysl?",
+    "tags": [
+      "rodina",
+      "hodnoty",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 161,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0162",
+    "text": "O čem se u nás doma nesmělo mluvit?",
+    "tags": [
+      "rodina",
+      "komunikace",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 162,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0163",
+    "text": "Kdo byl první dospělý mimo rodinu, který mě bral vážně?",
+    "tags": [
+      "rodina",
+      "uznání",
+      "vztahy",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 163,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0164",
+    "text": "Kdy mi poprvé došlo, že naše rodina není jako ostatní?",
+    "tags": [
+      "rodina",
+      "sounáležitost",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 164,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0165",
+    "text": "Čemu jsem o sobě věřil(a), když mi bylo deset?",
+    "tags": [
+      "rodina",
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 165,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0166",
+    "text": "Jaká historka o mně se na rodinných sešlostech vypráví pořád dokola?",
+    "tags": [
+      "rodina",
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 166,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0167",
+    "text": "Co jsem si z dětství nechal(a) dodnes — předmět, zvyk nebo slovní obrat?",
+    "tags": [
+      "rodina",
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 167,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0168",
+    "text": "Kdybych mohl(a) hodinu sedět se svým osmiletým já, co bych mu řekl(a)?",
+    "tags": [
+      "rodina",
+      "sebeláska",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 168,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0169",
+    "text": "Kvůli čemu jsem si jako dítě dělal(a) v noci starosti?",
+    "tags": [
+      "rodina",
+      "strach",
+      "bezpečí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 169,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0170",
+    "text": "Co jsem jako dítě miloval(a) a časem toho nechal(a)?",
+    "tags": [
+      "rodina",
+      "štěstí",
+      "tvoření",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 170,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0171",
+    "text": "Jaká je jedna z mých úplně nejranějších vzpomínek?",
+    "tags": [
+      "rodina",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 171,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0172",
+    "text": "Čím jsem chtěl(a) být, až vyrostu?",
+    "tags": [
+      "rodina",
+      "sebepoznání",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 172,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0173",
+    "text": "Jaké přesvědčení o sobě si nesu už od dětství, přestože mi možná dávno neslouží?",
+    "tags": [
+      "rodina",
+      "identita",
+      "myšlenky",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 173,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0174",
+    "text": "Které dětské sny a zájmy jsem opustil(a), i když by pro mě pořád mohly něco znamenat?",
+    "tags": [
+      "rodina",
+      "motivace",
+      "tvoření",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 174,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0175",
+    "text": "Jakou roli jsem v rodině hrával(a) jako dítě?",
+    "tags": [
+      "rodina",
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 175,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0176",
+    "text": "Jakému rozhodnutí se právě teď vyhýbám?",
+    "tags": [
+      "rozhodování",
+      "odvaha",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 176,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0177",
+    "text": "Kde ve svém životě volím tím, že nevolím?",
+    "tags": [
+      "svoboda",
+      "rozhodování",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 177,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0178",
+    "text": "Kdyby zítra zmizela všechna moje omezení, co bych udělal(a) jako první?",
+    "tags": [
+      "svoboda",
+      "motivace",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 178,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0179",
+    "text": "Je nejtěžší odpovědnost, kterou nesu, opravdu moje, nebo jsem ji převzal(a) z cizích očekávání?",
+    "tags": [
+      "odpovědnost",
+      "hranice",
+      "svoboda",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 179,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0180",
+    "text": "Kdy jsem si naposledy zvolil(a) něco, co šlo proti očekáváním okolí?",
+    "tags": [
+      "svoboda",
+      "autenticita",
+      "odvaha",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 180,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0181",
+    "text": "Jaká pravidla dodržuji, aniž bych si je kdy zpochybnil(a)?",
+    "tags": [
+      "svoboda",
+      "hodnoty",
+      "myšlenky",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 181,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0182",
+    "text": "Co bych udělal(a), kdybych přestal(a) čekat na svolení?",
+    "tags": [
+      "svoboda",
+      "odvaha",
+      "samostatnost",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 182,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0183",
+    "text": "Jak bych vyprávěl(a) svůj dosavadní příběh, kdyby v něm nesměli být žádní padouši ani oběti?",
+    "tags": [
+      "přijetí",
+      "odpovědnost",
+      "svoboda",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 183,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0184",
+    "text": "Kde předstírám, že nemám na výběr, i když ho ve skutečnosti mám?",
+    "tags": [
+      "svoboda",
+      "odpovědnost",
+      "rozhodování",
+      "bezmoc"
+    ],
+    "tier": "free",
+    "sort_order": 184,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0185",
+    "text": "V čem jdu s davem, i když mi vlastní instinkt říká něco jiného?",
+    "tags": [
+      "nezávislost",
+      "autenticita",
+      "svoboda",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 185,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0186",
+    "text": "Kdy jsem naposledy svedl(a) na okolnosti něco, co byla ve skutečnosti moje volba?",
+    "tags": [
+      "odpovědnost",
+      "svoboda",
+      "rozhodování"
+    ],
+    "tier": "free",
+    "sort_order": 186,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0187",
+    "text": "Kdy jsem naposledy ustoupil(a) od vlastních hodnot, jen abych udržel(a) klid?",
+    "tags": [
+      "hodnoty",
+      "hranice",
+      "konflikty",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 187,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0188",
+    "text": "Co bych si ponechal(a), kdybych mohl(a) svůj život navrhnout znovu od nuly?",
+    "tags": [
+      "svoboda",
+      "hodnoty",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 188,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0189",
+    "text": "Kterých nevyužitých příležitostí dodnes lituji?",
+    "tags": [
+      "svoboda",
+      "rozhodování",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 189,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0190",
+    "text": "Utvářejí mě víc moje volby, nebo moje okolnosti?",
+    "tags": [
+      "svoboda",
+      "odpovědnost",
+      "identita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 190,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0191",
+    "text": "Přináší mi větší svoboda spíš štěstí, nebo spíš úzkost?",
+    "tags": [
+      "svoboda",
+      "strach",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 191,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0192",
+    "text": "Kolik z toho, kdo jsem, utvářeli jiní lidé?",
+    "tags": [
+      "identita",
+      "svoboda",
+      "vztahy",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 192,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0193",
+    "text": "Kterou volbu za mě kdysi udělal někdo jiný a já ji dodnes žiju?",
+    "tags": [
+      "svoboda",
+      "rodina",
+      "rozhodování",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 193,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0194",
+    "text": "Kolik času jsem dnes věnoval(a) přemýšlení o sobě?",
+    "tags": [
+      "sebepoznání",
+      "sebeláska",
+      "hranice"
+    ],
+    "tier": "free",
+    "sort_order": 194,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0195",
+    "text": "Kdy jsem naposledy řekl(a) ano, i když celé moje tělo křičelo ne?",
+    "tags": [
+      "hranice",
+      "autenticita",
+      "tělo"
+    ],
+    "tier": "free",
+    "sort_order": 195,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0196",
+    "text": "Co by se stalo, kdyby se moji blízcí museli chvíli obejít bez mé péče?",
+    "tags": [
+      "hranice",
+      "odpovědnost",
+      "rodina",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 196,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0197",
+    "text": "Co nejhoršího by se stalo, kdyby lidé kolem mě uviděli moji únavu nebo slabost?",
+    "tags": [
+      "autenticita",
+      "sebeláska",
+      "strach",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 197,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0198",
+    "text": "Kdo by měl jako první slyšet, co doopravdy potřebuji — a já raději mlčím?",
+    "tags": [
+      "komunikace",
+      "vztahy",
+      "hranice",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 198,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0199",
+    "text": "Ulevuji si někdy jídlem, prací nebo nákupy místo toho, abych vyhledal(a) blízkost?",
+    "tags": [
+      "návyky",
+      "samota",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 199,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0200",
+    "text": "Na kom visí můj pocit bezpečí — a co by se stalo, kdyby zítra odešel?",
+    "tags": [
+      "bezpečí",
+      "vztahy",
+      "nezávislost",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 200,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0201",
+    "text": "Odpojuji se ze vztahů dřív, než mě stihne někdo opustit?",
+    "tags": [
+      "vztahy",
+      "strach",
+      "bezpečí"
+    ],
+    "tier": "free",
+    "sort_order": 201,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0202",
+    "text": "Kolik mého neklidu pramení z přesvědčení, že klid je jen ticho před bouří?",
+    "tags": [
+      "strach",
+      "myšlenky",
+      "bezpečí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 202,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0203",
+    "text": "Odkud mám přesvědčení, že mě druzí dřív nebo později zradí, když polevím v ostražitosti?",
+    "tags": [
+      "vztahy",
+      "bezpečí",
+      "strach",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 203,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0204",
+    "text": "Když mě někdo chválí, jak moc v duchu hledám jeho skryté motivy?",
+    "tags": [
+      "vztahy",
+      "přijetí",
+      "uznání",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 204,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0205",
+    "text": "Kdo mě kdysi zranil tak, že dodnes podezřívám i lidi, kteří to se mnou myslí dobře?",
+    "tags": [
+      "vztahy",
+      "bezpečí",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 205,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0206",
+    "text": "Čím živím iluzi, že mě samota ochrání před utrpením?",
+    "tags": [
+      "samota",
+      "bezpečí",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 206,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0207",
+    "text": "Kam až sahá můj pocit, že nikam nepatřím?",
+    "tags": [
+      "sounáležitost",
+      "samota",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 207,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0208",
+    "text": "Maskuji svoji odlišnost tím, že se přizpůsobuji zájmům a názorům ostatních?",
+    "tags": [
+      "autenticita",
+      "sounáležitost",
+      "přijetí",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 208,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0209",
+    "text": "Jaké tajemství tajím ze strachu, že by se mě lidé zřekli?",
+    "tags": [
+      "stud",
+      "autenticita",
+      "přijetí",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 209,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0210",
+    "text": "Jak moc odvozuji svoji hodnotu od chyb, které jsem udělal(a)?",
+    "tags": [
+      "sebeláska",
+      "vina",
+      "přijetí",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 210,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0211",
+    "text": "Od koho tajně čekám, že mi přečte myšlenky a zachrání mě?",
+    "tags": [
+      "vztahy",
+      "komunikace",
+      "samostatnost",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 211,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0212",
+    "text": "Kde se tvářím jako oběť, jen abych nemusel(a) převzít odpovědnost za změnu?",
+    "tags": [
+      "odpovědnost",
+      "změna",
+      "bezmoc",
+      "samostatnost"
+    ],
+    "tier": "free",
+    "sort_order": 212,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0213",
+    "text": "Věřím víc úsudku cizích lidí než vlastním instinktům a zkušenostem?",
+    "tags": [
+      "sebevědomí",
+      "samostatnost",
+      "rozhodování",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 213,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0214",
+    "text": "Kde beru jistotu, že katastrofické scénáře v mé hlavě jsou předpověď, a ne jen únava?",
+    "tags": [
+      "myšlenky",
+      "strach",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 214,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0215",
+    "text": "Kolik energie denně spálím kontrolou věcí, které nedokážu ovlivnit?",
+    "tags": [
+      "přijetí",
+      "bezmoc",
+      "myšlenky",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 215,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0216",
+    "text": "Co mě můj strach ze selhání nebo nemoci učí o tom, jak lpím na absolutním bezpečí?",
+    "tags": [
+      "strach",
+      "bezpečí",
+      "přijetí",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 216,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0217",
+    "text": "Čí život vlastně žiju, když se snažím plnit očekávání všech kolem?",
+    "tags": [
+      "autenticita",
+      "svoboda",
+      "hranice",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 217,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0218",
+    "text": "Kde končím já a kde začínají nálady a potřeby mého partnera nebo rodičů?",
+    "tags": [
+      "hranice",
+      "identita",
+      "vztahy",
+      "rodina"
+    ],
+    "tier": "free",
+    "sort_order": 218,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0219",
+    "text": "Čí hněv nebo zklamání se snažím výkonem a dokonalostí odvracet už od dětství?",
+    "tags": [
+      "rodina",
+      "uznání",
+      "produktivita",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 219,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0220",
+    "text": "Nezaměňuji dělání chyb s pocitem, že já sám / sama jsem jedno velké selhání?",
+    "tags": [
+      "sebeláska",
+      "přijetí",
+      "stud",
+      "myšlenky"
+    ],
+    "tier": "free",
+    "sort_order": 220,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0221",
+    "text": "Co by mi zbylo ze sebevědomí, kdybych zítra ztratil(a) práci, status i všechny své úspěchy?",
+    "tags": [
+      "sebevědomí",
+      "identita",
+      "úspěch",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 221,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0222",
+    "text": "Kde si myslím, že pravidla platící pro ostatní pro mě neplatí?",
+    "tags": [
+      "hodnoty",
+      "odpovědnost",
+      "vztahy",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 222,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0223",
+    "text": "Není moje potřeba mít pravdu a mít věci pod kontrolou jen štítem před bezmocí?",
+    "tags": [
+      "bezmoc",
+      "konflikty",
+      "vztahy",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 223,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0224",
+    "text": "Koho zraňuji pocitem, že mi svět dluží zvláštní zacházení?",
     "tags": [
       "vztahy",
       "odpovědnost",
       "rodina"
     ],
-    "schemas": [
-      "ENTGRAND",
-      "MISAB",
-      "UNFAIR"
-    ],
     "tier": "free",
-    "sort_order": 33,
-    "added_at": "2026-06-05"
+    "sort_order": 224,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0034",
-    "text": "Co se snažíš v sobě přehlušit tím, že se neustále udržuješ v šíleném pracovním tempu a stresu?",
+    "id": "quest_0225",
+    "text": "Co se v sobě snažím přehlušit tím, že se držím v šíleném pracovním tempu?",
     "tags": [
-      "vyhoření",
-      "návyky",
-      "emoce"
-    ],
-    "schemas": [
-      "INDISC",
-      "USHYPER",
-      "EMOINH"
-    ],
-    "tier": "free",
-    "sort_order": 34,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0035",
-    "text": "Kolik tvých rozdělaných projektů ztroskotalo jen na tom, že jsi nedokázal(a) vydržet počáteční nudu a frustraci?",
-    "tags": [
-      "přijetí",
       "produktivita",
-      "změna"
-    ],
-    "schemas": [
-      "INDISC",
-      "FAIL",
-      "NEGPES"
+      "emoce",
+      "sebepoznání",
+      "návyky"
     ],
     "tier": "free",
-    "sort_order": 35,
-    "added_at": "2026-06-05"
+    "sort_order": 225,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0036",
-    "text": "Kdy naposledy jsi vědomě odložil(a) okamžitou slast (mobil, alkohol, cukr) ve prospěch svého dlouhodobého zdraví?",
+    "id": "quest_0226",
+    "text": "Kolik mých projektů ztroskotalo jen na tom, že jsem nevydržel(a) počáteční nudu a frustraci?",
+    "tags": [
+      "motivace",
+      "návyky",
+      "produktivita",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 226,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0227",
+    "text": "Kdy jsem naposledy odložil(a) okamžitou slast — mobil, alkohol, cukr — kvůli svému dlouhodobému zdraví?",
     "tags": [
       "návyky",
-      "zklidnění",
-      "hodnoty"
-    ],
-    "schemas": [
-      "INDISC",
-      "VULILL",
-      "LACKMEAN"
+      "fyzické zdraví",
+      "rozhodování"
     ],
     "tier": "free",
-    "sort_order": 36,
-    "added_at": "2026-06-05"
+    "sort_order": 227,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0037",
-    "text": "Kolik ze svých každodenních rozhodnutí děláš jen proto, aby se druzí lidé necítili špatně nebo se nenaštvali?",
+    "id": "quest_0228",
+    "text": "Kolik svých rozhodnutí dělám jen proto, aby se druzí necítili špatně?",
     "tags": [
-      "rozhodování",
       "hranice",
-      "odpovědnost"
-    ],
-    "schemas": [
-      "SUBJUG",
-      "SELFSAC",
-      "APPREC"
-    ],
-    "tier": "free",
-    "sort_order": 37,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0038",
-    "text": "V čem potlačuješ svůj zdravý vztek a raději volíš tichou, pasivně-agresivní pomstu vůči partnerovi?",
-    "tags": [
-      "hněv",
+      "rozhodování",
       "vztahy",
       "autenticita"
     ],
-    "schemas": [
-      "SUBJUG",
-      "USHYPER",
-      "MISAB"
-    ],
     "tier": "free",
-    "sort_order": 38,
-    "added_at": "2026-06-05"
+    "sort_order": 228,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0039",
-    "text": "Před kým v tuhle chvíli hrbíš hřbet a dobrovolně se vzdáváš své svobody ze strachu z konfliktu?",
+    "id": "quest_0229",
+    "text": "Kde potlačuji zdravý vztek a volím raději tichou, pasivně-agresivní pomstu?",
     "tags": [
-      "svoboda",
-      "odvaha",
-      "sebeláska"
-    ],
-    "schemas": [
-      "SUBJUG",
-      "EMOINH",
-      "DEFSH"
+      "hněv",
+      "konflikty",
+      "komunikace",
+      "vztahy"
     ],
     "tier": "free",
-    "sort_order": 39,
-    "added_at": "2026-06-05"
+    "sort_order": 229,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0040",
-    "text": "Kdybyty měl stoprocentní jistotu, že tě nikdo neodsoudí, co bys v tuhle chvíli udělal jinak?",
+    "id": "quest_0230",
+    "text": "Před kým hrbím hřbet a vzdávám se své svobody ze strachu z konfliktu?",
     "tags": [
-      "autenticita",
+      "hranice",
+      "konflikty",
       "svoboda",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 230,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0231",
+    "text": "Sbírám lajky, pochvaly a uznání zvenčí, protože uvnitř žádné necítím?",
+    "tags": [
+      "uznání",
+      "sebeláska",
       "sebevědomí"
     ],
-    "schemas": [
-      "APPREC",
-      "DEFSH",
-      "SUBJUG"
-    ],
     "tier": "free",
-    "sort_order": 40,
-    "added_at": "2026-06-05"
+    "sort_order": 231,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0041",
-    "text": "Sbíráš lajky, pochvaly a uznání zvenčí jen proto, že uvnitř sebe žádné reálné uznání necítíš?",
-    "tags": [
-      "sebeláska",
-      "sebepoznání",
-      "motivace"
-    ],
-    "schemas": [
-      "APPREC",
-      "EMODEP",
-      "FAIL"
-    ],
-    "tier": "free",
-    "sort_order": 41,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0042",
-    "text": "Jak moc tvoje sociální maska na veřejnosti odpovídá tomu, jak moc zlomený / zlomená se cítíš večer o samotě?",
+    "id": "quest_0232",
+    "text": "Jak moc odpovídá moje maska na veřejnosti tomu, jak se cítím večer o samotě?",
     "tags": [
       "autenticita",
       "samota",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 232,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0233",
+    "text": "Jaké moje měřítko úspěchu je tak přísné, že ho nesplní žádný člověk na světě?",
+    "tags": [
+      "úspěch",
+      "přijetí",
+      "sebeláska",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 233,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0234",
+    "text": "Dokážu mít ze sebe radost, aniž bych hned viděl(a) prostor pro další zlepšení?",
+    "tags": [
+      "přijetí",
+      "sebeláska",
+      "štěstí",
+      "úspěch"
+    ],
+    "tier": "free",
+    "sort_order": 234,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0235",
+    "text": "Není moje kritičnost k chybám druhých jen odleskem toho, jak tvrdý / tvrdá jsem na sebe?",
+    "tags": [
+      "přijetí",
+      "sebeláska",
+      "vztahy",
       "sebepoznání"
     ],
-    "schemas": [
-      "APPREC",
-      "EMOINH",
-      "ISOLAL"
-    ],
     "tier": "free",
-    "sort_order": 42,
-    "added_at": "2026-06-05"
+    "sort_order": 235,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0043",
-    "text": "Jaké tvoje vnitřní kritérium úspěchu je tak přísné, že ho nedokáže splnit žádná lidská bytost na světě?",
+    "id": "quest_0236",
+    "text": "Když vidím někoho selhat, odsoudím ho, nebo se ptám na jeho příběh?",
     "tags": [
       "přijetí",
-      "stres",
-      "produktivita"
-    ],
-    "schemas": [
-      "USHYPER",
-      "FAIL",
-      "PUNIT"
-    ],
-    "tier": "free",
-    "sort_order": 43,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0044",
-    "text": "Dokážeš mít ze sebe upřímnou radost, aniž bys za tím hned viděl(a) prostor pro další zlepšení?",
-    "tags": [
-      "štěstí",
-      "přítomnost",
-      "sebeláska"
-    ],
-    "schemas": [
-      "USHYPER",
-      "EMOINH",
-      "LACKMEAN"
-    ],
-    "tier": "free",
-    "sort_order": 44,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0045",
-    "text": "Není tvoje neustálá kritičnost vůči chybám druhých lidí jen odleskem toho, jak brutálně terorizuješ sám / sama sebe?",
-    "tags": [
       "vztahy",
-      "přijetí",
-      "stud"
-    ],
-    "schemas": [
-      "USHYPER",
-      "PUNIT",
-      "DEFSH"
+      "moudrost"
     ],
     "tier": "free",
-    "sort_order": 45,
-    "added_at": "2026-06-05"
+    "sort_order": 236,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0046",
-    "text": "Když vidíš někoho selhat, máš tendenci ho hned odsoudit a potrestat, nebo zkoumáš okolnosti jeho příběhu?",
-    "tags": [
-      "přijetí",
-      "moudrost",
-      "přirozenost"
-    ],
-    "schemas": [
-      "PUNIT",
-      "USHYPER",
-      "MISAB"
-    ],
-    "tier": "free",
-    "sort_order": 46,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0047",
-    "text": "Jak moc věříš tomu, že každá tvoje chyba musí být krutě potrestána, aby ses stal(a) lepším člověkem?",
+    "id": "quest_0237",
+    "text": "Věřím, že každá moje chyba musí být potrestána, abych se stal(a) lepším člověkem?",
     "tags": [
       "vina",
       "sebeláska",
-      "změna"
-    ],
-    "schemas": [
-      "PUNIT",
-      "DEFSH",
-      "FAIL"
+      "přijetí",
+      "růst"
     ],
     "tier": "free",
-    "sort_order": 47,
-    "added_at": "2026-06-05"
+    "sort_order": 237,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0048",
-    "text": "Čí trestající vnitřní hlas (rodiče, učitele) slyšíš v hlavě pokaždé, když si dovolíš obyčejnou radost nebo lenošení?",
+    "id": "quest_0238",
+    "text": "Čí trestající hlas slyším v hlavě, když si dovolím radost nebo lenošení?",
     "tags": [
-      "vnitřní části",
       "rodina",
-      "štěstí"
-    ],
-    "schemas": [
-      "PUNIT",
-      "USHYPER",
-      "SELFSAC"
-    ],
-    "tier": "free",
-    "sort_order": 48,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0049",
-    "text": "Kdyby tvůj život neměl žádný předem daný vyšší smysl, jaký malý, pozemský smysl bys mu dokázal dát ty sám dnes odpoledne?",
-    "tags": [
-      "smysl života",
-      "přítomnost",
-      "moudrost"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "NEGPES",
-      "DEPINC"
-    ],
-    "tier": "free",
-    "sort_order": 49,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0050",
-    "text": "Není tvoje neustálé utápění se v nesmyslnosti věcí jen sofistikovaná obrana před strachem ze selhání v reálném životě?",
-    "tags": [
-      "smysl života",
-      "strach",
-      "moudrost"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "FAIL",
-      "NEGPES"
-    ],
-    "tier": "free",
-    "sort_order": 50,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0051",
-    "text": "Co nejmenšího ti dnes udělalo radost, i když tvoje racionální mysl tvrdí, že na ničem nezáleží?",
-    "tags": [
       "štěstí",
-      "přítomnost"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "INDISC",
-      "EMODEP"
+      "vina",
+      "volný čas"
     ],
     "tier": "free",
-    "sort_order": 51,
-    "added_at": "2026-06-05"
+    "sort_order": 238,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0052",
-    "text": "Když se na situaci podíváš optikou čisté nespravedlnosti světa, jak moc ti to reálně pomáhá pohnout se z místa?",
+    "id": "quest_0239",
+    "text": "Není moje utápění se v nesmyslnosti věcí jen obranou před strachem ze selhání?",
     "tags": [
-      "utrpení",
-      "přerámování myšlenek",
-      "změna"
-    ],
-    "schemas": [
-      "UNFAIR",
-      "NEGPES",
-      "SUBJUG"
-    ],
-    "tier": "free",
-    "sort_order": 52,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0053",
-    "text": "Kdo ti v dětství namluvil, že život musí být stoprocentně fér, a proč tomu věříš i teď v dospělosti?",
-    "tags": [
-      "rodina",
-      "moudrost",
-      "přirozenost"
-    ],
-    "schemas": [
-      "UNFAIR",
-      "ENTGRAND",
-      "ENMUND"
-    ],
-    "tier": "free",
-    "sort_order": 53,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0054",
-    "text": "Dokážeš unést nespravedlivé chování druhých, aniž by ses sám / sama okamžitě uchyloval(a) k intrikám a zlobě?",
-    "tags": [
-      "hněv",
-      "odvaha",
-      "zklidnění"
-    ],
-    "schemas": [
-      "UNFAIR",
-      "INDISC",
-      "MISAB"
-    ],
-    "tier": "free",
-    "sort_order": 54,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0055",
-    "text": "Kdyby tvůj vnitřní zmatek a chaos byly jen pokusem tvé mysli schovat se před jedním těžkým rozhodnutím, jaké rozhodnutí by to bylo?",
-    "tags": [
-      "rozhodování",
-      "zklidnění",
-      "autenticita"
-    ],
-    "schemas": [
-      "LACKCOH",
-      "DEPINC",
-      "INDISC"
-    ],
-    "tier": "free",
-    "sort_order": 55,
-    "added_at": "2026-06-05"
-  },
-  {
-    "id": "quest_0056",
-    "text": "Které své vnitřní části se nejvíc bojíš, že ji držíš pod zámkem v totální izolaci?",
-    "tags": [
-      "vnitřní části",
+      "smysl života",
       "strach",
       "sebepoznání"
     ],
-    "schemas": [
-      "LACKCOH",
-      "MISAB",
-      "EMOINH"
-    ],
     "tier": "free",
-    "sort_order": 56,
-    "added_at": "2026-06-05"
+    "sort_order": 239,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0057",
-    "text": "Jak moc tvoje chování odpovídá tvým skutečným, jádrovým hodnotám, když jsi pod tlakem?",
+    "id": "quest_0240",
+    "text": "Když se na situaci dívám optikou nespravedlnosti světa, jak mi to pomáhá pohnout se z místa?",
+    "tags": [
+      "přijetí",
+      "bezmoc",
+      "změna",
+      "myšlenky"
+    ],
+    "tier": "free",
+    "sort_order": 240,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0241",
+    "text": "Kdo mi namluvil, že život musí být fér — a proč tomu věřím dodnes?",
+    "tags": [
+      "přijetí",
+      "rodina",
+      "myšlenky",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 241,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0242",
+    "text": "Unesu nespravedlivé chování druhých, aniž bych se hned uchýlil(a) k intrikám a zlobě?",
+    "tags": [
+      "hněv",
+      "konflikty",
+      "přijetí",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 242,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0243",
+    "text": "Kdyby můj vnitřní zmatek byl jen způsob, jak se schovat před jedním těžkým rozhodnutím, jaké rozhodnutí by to bylo?",
+    "tags": [
+      "rozhodování",
+      "sebepoznání",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 243,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0244",
+    "text": "Které své části se bojím tak, že ji držím pod zámkem?",
+    "tags": [
+      "sebepoznání",
+      "strach",
+      "přijetí",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 244,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "quest_0245",
+    "text": "Jak moc odpovídá moje chování mým skutečným hodnotám, když jsem pod tlakem?",
     "tags": [
       "hodnoty",
       "autenticita",
-      "stres"
-    ],
-    "schemas": [
-      "LACKCOH",
-      "SUBJUG",
-      "APPREC"
+      "odolnost"
     ],
     "tier": "free",
-    "sort_order": 57,
-    "added_at": "2026-06-05"
+    "sort_order": 245,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0058",
-    "text": "Které emoci se tak strašně vyhýbáš, že raději volíš paralyzující cynismus a chlad?",
+    "id": "quest_0246",
+    "text": "Které emoci se vyhýbám tak, že raději volím cynismus a chlad?",
     "tags": [
       "emoce",
-      "smutek",
-      "hněv"
-    ],
-    "schemas": [
-      "EMOINH",
-      "NEGPES",
-      "DEFSH"
+      "plné prožívání",
+      "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 58,
-    "added_at": "2026-06-05"
+    "sort_order": 246,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0059",
-    "text": "Co nejhezčího by se stalo ve tvých vztazích, kdybys dnes dovolil(a) svým očím, aby se před někým blízkým zalily slzami?",
+    "id": "quest_0247",
+    "text": "Co hezkého by se stalo v mých vztazích, kdybych před někým blízkým dovolil(a) slzy?",
     "tags": [
       "vztahy",
+      "plné prožívání",
       "odvaha",
-      "smutek"
-    ],
-    "schemas": [
-      "EMOINH",
-      "EMODEP",
-      "ABINST"
+      "smutek",
+      "autenticita"
     ],
     "tier": "free",
-    "sort_order": 59,
-    "added_at": "2026-06-05"
+    "sort_order": 247,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0060",
-    "text": "Proč je pro tebe bezpečnější projevovat racionální intelekt než prostou, zranitelnou radost z přítomnosti?",
+    "id": "quest_0248",
+    "text": "Proč je pro mě bezpečnější být chytrý / chytrá než mít prostou, zranitelnou radost?",
     "tags": [
+      "plné prožívání",
       "štěstí",
-      "přítomnost",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "EMOINH",
-      "USHYPER",
-      "LACKMEAN"
+      "bezpečí",
+      "autenticita"
     ],
     "tier": "free",
-    "sort_order": 60,
-    "added_at": "2026-06-05"
+    "sort_order": 248,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0061",
-    "text": "Kolik ze své životní energie dobrovolně obětuješ neustálému očekávání té nejhorší možné varianty vývoje?",
+    "id": "quest_0249",
+    "text": "Kolik energie obětuji neustálému očekávání té nejhorší varianty?",
     "tags": [
       "myšlenky",
-      "deprese",
-      "stres"
-    ],
-    "schemas": [
-      "NEGPES",
-      "VULILL",
-      "DEPINC"
+      "strach",
+      "přítomnost"
     ],
     "tier": "free",
-    "sort_order": 61,
-    "added_at": "2026-06-05"
+    "sort_order": 249,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0062",
-    "text": "Kdyby tvoje pesimistická mysl měla na chvíli dovolenou, jakou drobnou naději bys mohl(a) dnes v sobě nechat vyklíčit?",
+    "id": "quest_0250",
+    "text": "Kdyby moje pesimistická mysl dostala na chvíli dovolenou, jakou drobnou naději bych v sobě nechal(a) vyklíčit?",
     "tags": [
       "motivace",
-      "přerámování myšlenek",
-      "pozitivní myšlení"
-    ],
-    "schemas": [
-      "NEGPES",
-      "LACKMEAN",
-      "FAIL"
+      "myšlenky",
+      "štěstí"
     ],
     "tier": "free",
-    "sort_order": 62,
-    "added_at": "2026-06-05"
+    "sort_order": 250,
+    "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0063",
-    "text": "Před jakým zklamáním tě tvůj permanentní skepticismus doopravdy chrání, když tě zároveň odřezává od radosti ze života?",
+    "id": "quest_0251",
+    "text": "Před jakým zklamáním mě chrání můj skepticismus — a od čeho mě zároveň odřezává?",
     "tags": [
-      "moudrost",
-      "utrpení",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "NEGPES",
-      "DEFSH",
-      "EMODEP"
+      "myšlenky",
+      "štěstí",
+      "plné prožívání",
+      "bezpečí"
     ],
     "tier": "free",
-    "sort_order": 63,
-    "added_at": "2026-06-05"
+    "sort_order": 251,
+    "added_at": "2026-09-11"
   }
 ]

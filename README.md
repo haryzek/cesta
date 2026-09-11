@@ -311,19 +311,18 @@ Citáty, rady, moudra. `author` smí být `null` (lidová moudra, přísloví, v
 
 ### 11. Podnětné otázky — `questions.json`
 
-Otázky k sebereflexi. Sdílí sadu tagů s inspiracemi.
+Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítím nejvíc sám / sama sebou?"). **Bez pole `schemas`** — otázky vědomě stojí mimo doporučování, univerzálky nemají komu cílit. Nasazeno 11. 9. 2026: **251 otázek** = 193 ze sklizně (`local/data_wip/questions_wip/sklizen.json`, prompt `local/_prompty/otazky.md`) + 58 přepsaných z původní schema-sady (zkráceno, ich-forma, 5 dubletů sklizně vyhozeno). ID přečíslována od `quest_0001`.
 
-**Předělávka rozhodnutá 25. 8. 2026:** sekce budou univerzální seberozvojovky v samomluvě/ich-formě („Kdy se cítím nejvíc sám / sama sebou?"). Nový `questions.json` bude **bez pole `schemas`** — otázky vědomě vypadnou z doporučování, univerzálky nemají komu cílit. Stávajících 63 schema-otázek (ukázka níže) se při konverzi skartuje. Sklizeň ~193 otázek čeká v `local/data_wip/questions_wip/sklizen.json` na ruční čištění; prompt: `local/_prompty/otazky.md`.
+**Tagování (rozhodnuto 11. 9. 2026):** 3–6 tagů, typicky 4, **seřazených podle priority** — první tag je téma, ve kterém otázka leží, další dva nesou váhu, zbytek je tie-break. Pouštějí se skupiny „Chci pracovat na" a „Vztahy", z „Emoce" jen když je emoce jádrem otázky (strach, vina, stud…), z „Co se při tom dělá" jen `tělo` / `přítomnost` / `mindfulness` / `dýchání`. „Stavy a potíže" se u otázek nepoužívají vůbec — člověk, který klikne „panická ataka", je v akutním módu a seberozvojovka mu nepomůže. Důvod stropu: u OR filtru dělá přesnost málo tagů na položce, ne hodně; a tag na pozici 7+ nemá v žádném skórování váhu, která by ho odlišila od nuly (stejná logika jako `VAHY_POZIC` u doporučování). Appka zatím pořadí nečte (filtr je čistě OR), řazení výsledků podle váhy shodných tagů je budoucí krok.
 
 ```json
 {
   "id": "quest_0001",
-  "text": "Kolik času jsi dnes strávil přemýšlením o sobě?",
-  "tags": ["sebepoznání"],
-  "schemas": ["EMODEP", "ABINST", "DEFSH"],
+  "text": "Kdy se cítím nejvíc sám / sama sebou?",
+  "tags": ["identita", "autenticita", "sebepoznání"],
   "tier": "free",
   "sort_order": 1,
-  "added_at": "2026-04-02"
+  "added_at": "2026-09-11"
 }
 ```
 
@@ -339,7 +338,7 @@ Otázky k sebereflexi. Sdílí sadu tagů s inspiracemi.
 | exercises | 3 | `added_at` | — |
 | reframings / _questions / _actions | — | `added_at` | `cluster_id` |
 | inspirations | 3 | `added_at` | — |
-| questions | 3 *(po předělávce z 25. 8. 2026 žádná)* | `added_at` | — |
+| questions | — | `added_at` | — |
 
 ---
 
