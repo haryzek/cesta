@@ -43,14 +43,14 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       „Celý můj kalendář jsou povinnosti pro ostatní — kde tam jsem já?", která
       ve zdrojáku `brana4_bolistky.json` není. Doplnit do zdrojáku (pak 175),
       nebo hlášky zahodit.
-- [ ] **Pročistit sklizeň hloubavek.** 193 otázek v samomluvě čeká
-      v `local/data_wip/questions_wip/sklizen.json` (sklizeno 25. 8. 2026).
-      Po Bobově čištění Claude: tagy ex post z `tagy.json`, konverze do nového
-      `questions.json` bez `schemas`, skartace starých 63 schema-otázek.
+- [x] **Hloubavky nasazené (11. 9. 2026).** 251 otázek v `questions.json`
+      bez `schemas`, tagy 3–6 podle priority, staré 63 přepsané do ich-formy.
 - [ ] **Pročistit sklizeň citátů.** Sklizeň ~200 běží od 26. 8. 2026
       (prompt `local/_prompty/citaty.md`, cíl `local/data_wip/inspirations_wip/`).
       Po Bobově čištění stejná linka: tagy ex post, konverze, append do
       `inspirations.json` (`author` smí být `null`, `schemas` se zatím neplní).
+- [ ] **Přetagovat Inspirace, Články, Cvičení** podle `local/_prompty/tagovani.md`
+      — každá sekce vlastní session, per sekce jiná logika priorit.
 
 ### Schémata
 
