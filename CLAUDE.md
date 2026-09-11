@@ -53,6 +53,8 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - Ostatní obsah: vzorek, plní se
 - Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
 
+**Přetagování obsahu (další krok po otázkách):** zadání pro Inspirace, Články a Cvičení je v `local/_prompty/tagovani.md` — per sekce jiná logika, protože uživatel kliká na tag s jinou otázkou v hlavě. Načíst na začátku session.
+
 **Generování obsahu z promptů:** v `local/_prompty/` (nepushuje se) jsou prompty pro tvorbu JSONů — `telesne-priznaky.md`, `cviceni.md`, `clanky_kraceni_prompt.md` (přetavení zdroje do struktury a hlasu), `bolistky-hlasky.md` (dvoukolová fabrika hlášek, viz Stav) a sklizňové prompty `otazky.md`, `citaty.md` (internetová sklizeň → WIP JSON → Bobovo ruční čištění → tagy ex post z `tagy.json` → konverze do `data/`). Vzory jsou reálné pročištěné JSONy. Přerámování jdou z Bobových Excel seznamů, ne přes prompty.
 
 ### Zdrojáky obsahu a rebuild — čti dřív, než sáhneš do `data/`
