@@ -86,7 +86,7 @@
     "show_link": true,
     "tags": [
       "afirmace",
-      "přerámování",
+      "přerámování myšlenek",
       "myšlenky",
       "stres",
       "hodnoty"
@@ -517,7 +517,7 @@
       "spánek",
       "úzkost",
       "afirmace",
-      "přerámování",
+      "přerámování myšlenek",
       "sebeláska"
     ],
     "schemas": [
@@ -571,7 +571,7 @@
       "panická ataka",
       "úzkost",
       "myšlenky",
-      "přerámování",
+      "přerámování myšlenek",
       "stres"
     ],
     "schemas": [
@@ -757,7 +757,7 @@
     "show_link": true,
     "tags": [
       "myšlenky",
-      "přerámování",
+      "přerámování myšlenek",
       "úzkost",
       "panická ataka",
       "deprese"
@@ -1024,7 +1024,7 @@
       "úzkost",
       "panická ataka",
       "afirmace",
-      "přerámování",
+      "přerámování myšlenek",
       "myšlenky"
     ],
     "schemas": [
@@ -1211,7 +1211,7 @@
     "show_link": false,
     "tags": [
       "afirmace",
-      "přerámování",
+      "přerámování myšlenek",
       "sebeláska",
       "vztahy",
       "sebevědomí"
@@ -1267,7 +1267,7 @@
       "afirmace",
       "sebevědomí",
       "sebeláska",
-      "přerámování",
+      "přerámování myšlenek",
       "vztahy"
     ],
     "schemas": [
@@ -1375,7 +1375,7 @@
       "afirmace",
       "pozitivní myšlení",
       "deprese",
-      "přerámování"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "NEGPES",
@@ -1588,7 +1588,7 @@
       "afirmace",
       "sebeláska",
       "sebevědomí",
-      "přerámování"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "FAIL",
@@ -1639,7 +1639,7 @@
     "tags": [
       "motivace",
       "produktivita",
-      "přerámování",
+      "přerámování myšlenek",
       "rozhodování"
     ],
     "schemas": [
@@ -1852,7 +1852,7 @@
       "úzkost",
       "deprese",
       "imaginace",
-      "přerámování",
+      "přerámování myšlenek",
       "meditace"
     ],
     "schemas": [
@@ -1906,7 +1906,7 @@
       "úzkost",
       "hodnoty",
       "smysl života",
-      "přerámování"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "USHYPER",
@@ -2064,7 +2064,7 @@
     "tags": [
       "hodnoty",
       "smysl života",
-      "přerámování"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "LACKMEAN",
@@ -2197,7 +2197,7 @@
     "tags": [
       "deprese",
       "úzkost",
-      "přerámování",
+      "přerámování myšlenek",
       "myšlenky",
       "pozitivní myšlení"
     ],
@@ -2279,7 +2279,7 @@
       "fobie",
       "úzkost",
       "panická ataka",
-      "přerámování",
+      "přerámování myšlenek",
       "myšlenky"
     ],
     "schemas": [
@@ -2306,7 +2306,7 @@
       "úzkost",
       "ocd",
       "myšlenky",
-      "přerámování",
+      "přerámování myšlenek",
       "rozhodování"
     ],
     "schemas": [
@@ -2662,7 +2662,7 @@
     "show_link": false,
     "tags": [
       "sebepoznání",
-      "přerámování",
+      "přerámování myšlenek",
       "motivace"
     ],
     "schemas": [
@@ -2686,7 +2686,7 @@
     "source_url": "https://stestinaproti.cz/popreni-problemu-prestoze-nas-trapi/",
     "show_link": false,
     "tags": [
-      "přerámování",
+      "přerámování myšlenek",
       "úzkost",
       "deprese",
       "sebepoznání"
@@ -2715,7 +2715,7 @@
       "stres",
       "úzkost",
       "panická ataka",
-      "přerámování"
+      "přerámování myšlenek"
     ],
     "schemas": [
       "NEGPES",
