@@ -1,0 +1,3738 @@
+[
+  {
+    "id": "sit_0001",
+    "name": "zkouška",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "test",
+      "zkouškové",
+      "státnice",
+      "maturita"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zkouška měří, co umíš v jednu konkrétní hodinu jednoho dne — ne kdo jsi a ne, jak ti to půjde v životě.",
+      "Tréma před zkouškou je normální mobilizace organismu; mírné napětí soustředění spíš zlepšuje, problém je až zahlcení.",
+      "Drtivou většinu zkoušek jde opakovat — jeden neúspěch je zdržení, ne konec cesty.",
+      "Nejlepší lék na strach ze zkoušky je nudný: rozložená příprava a pár pokusů nanečisto, protože mozek se bojí hlavně toho, co ještě nezažil."
+    ],
+    "fear_ids": [
+      "fear_0086",
+      "fear_0045",
+      "fear_0076",
+      "fear_0060",
+      "fear_0061",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0002",
+    "name": "prezentace",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "veřejné vystoupení",
+      "projev",
+      "přednáška"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Publikum vidí zlomek toho, co uvnitř cítíš; bušení srdce a třes rukou zvenku většinou nikdo nezaznamená.",
+      "Lidi v sále chtějí, aby se ti to povedlo — nikdo nepřišel s nadějí, že to pokazíš, a drobné zaváhání jim spíš připomene, že jsi člověk.",
+      "Strach z veřejného vystupování patří mezi nejrozšířenější strachy vůbec [ověřit], takže nejsi divný, jsi statistický.",
+      "Nervozita bývá nejsilnější prvních pár minut a pak klesá; pomáhá mít pevně naučený začátek a mluvit pomaleji, než ti připadá přirozené.",
+      "Vystupování je dovednost, ne vlastnost — každým opakováním se strach otupuje."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0071",
+      "fear_0045",
+      "fear_0086",
+      "fear_0064",
+      "fear_0070"
+    ],
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0003",
+    "name": "pohovor",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "konkurz",
+      "přijímačky",
+      "casting"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Pohovor není soud, ale oboustranný obchod: oni hledají někoho, kdo jim pomůže, ty zjišťuješ, jestli ti to za to stojí.",
+      "Odmítnutí většinou vypovídá o tom, jak zapadáš do konkrétní díry v jejich týmu, ne o tvé hodnotě — často vyhraje ten, kdo má náhodou přesně tu zkušenost, kterou zrovna potřebují.",
+      "Lidé na druhé straně stolu jsou taky nervózní, často improvizují a mají za sebou vlastní pohovory, které nedopadly.",
+      "Nejvíc pomáhá připravit si tři až čtyři konkrétní příběhy o tom, co jsi zvládl, a zkusit si odpovědi nahlas — nervozita klesá s počtem pokusů.",
+      "Jeden pohovor nerozhoduje o životě; obvykle jich je potřeba víc, a to není selhání, to je norma."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0043",
+      "fear_0076",
+      "fear_0086",
+      "fear_0089",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0004",
+    "name": "meeting",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "porada",
+      "schůzka"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Většina porad je rutina, ve které se lidé hlavně snaží vypadat zaměstnaně; kdo co řekl, si za týden nikdo nepamatuje, pokud to nebylo zásadní.",
+      "Nemusíš se projevit pokaždé; jedna promyšlená věta má větší váhu než pět povinných.",
+      "Pomáhá vědět předem, o čem meeting je, a mít připravený jeden bod nebo otázku — pak to přestává být neznámá situace.",
+      "Když se ti zasekne myšlenka, věta 'ještě si to promyslím a vrátím se k tomu' je naprosto běžná a nikdo se nad ní nepozastaví."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0045",
+      "fear_0074",
+      "fear_0169",
+      "fear_0069",
+      "fear_0089"
+    ],
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0005",
+    "name": "setkání se šéfem",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "hodnotící pohovor",
+      "nadřízený"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Nadřízený je člověk, který má vlastního šéfa, vlastní strachy a spoustu jiných starostí než tebe.",
+      "Hodnotící pohovor je většinou formalita se třemi body: co šlo, co ne a co dál — a to si můžeš připravit dopředu, včetně vlastních otázek.",
+      "Kritika v práci se týká výkonu nebo úkolu, ne tvojí hodnoty jako člověka, i když to zevnitř tak necítíš.",
+      "Když je vztah se šéfem dlouhodobě hlavní zdroj stresu, není problém v tvé odolnosti — je to informace o tom pracovním místě."
+    ],
+    "fear_ids": [
+      "fear_0173",
+      "fear_0045",
+      "fear_0044",
+      "fear_0056",
+      "fear_0061",
+      "fear_0046"
+    ],
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0006",
+    "name": "být vyvolán",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "jít před tabuli",
+      "odpovídat před ostatními"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Před tabulí jde o pár minut, na které si za týden nikdo ze třídy nevzpomene; spolužáci myslí hlavně na to, aby nevyvolali je.",
+      "Nevědět odpověď je normální stav učení — kdyby to všichni věděli, nebylo by co vyučovat.",
+      "Říct nahlas 'nevím' nebo 'můžu si to chvíli promyslet' je dospělá odpověď, ne prohra.",
+      "Zrudnutí a roztřesený hlas vypadají zvenku mnohem míň dramaticky, než jak je cítíš zevnitř."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0071",
+      "fear_0045",
+      "fear_0079",
+      "fear_0064",
+      "fear_0086"
+    ],
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0007",
+    "name": "špatné známky",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "propadnutí",
+      "vyhazov ze školy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Známka hodnotí jeden výkon v jednom předmětu u jednoho učitele — ne inteligenci a ne budoucnost.",
+      "Školní systém je stavěný na opravy: reparát, opakování ročníku, přestup jinam; máloco v něm je definitivní.",
+      "Škola měří jen úzkou část toho, co v životě rozhoduje; spousta lidí s mizerným prospěchem se později uchytila skvěle.",
+      "Nejhorší strategie je to tajit — čím dřív o problému někdo ví, tím víc možností zbývá.",
+      "Když se známky sypou dlouhodobě, bývá pod tím spíš přetížení, úzkost nebo špatně zvolená škola než 'nedostatek rozumu', a to se dá řešit."
+    ],
+    "fear_ids": [
+      "fear_0086",
+      "fear_0087",
+      "fear_0060",
+      "fear_0055",
+      "fear_0061",
+      "fear_0079"
+    ],
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0008",
+    "name": "selhat ve sportu",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "zápas",
+      "závod",
+      "turnaj"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Prohra je vestavěná součást sportu — i špičkoví hráči prohrávají velký podíl svých zápasů a v každém turnaji nakonec vyhraje jeden.",
+      "Tělo pod tlakem zápasu hraje vždycky o něco hůř než na tréninku; to není tvoje chyba, to je fyziologie.",
+      "Sportovní výkon není stabilní vlastnost, kolísá den ode dne, a jeden špatný závod nevypovídá nic o tvé formě.",
+      "Strach z prohry brzdí uvolněný pohyb víc než soupeř; pomáhá zaměřit se na jeden úkol (technika, dech, další míč) místo na výsledek."
+    ],
+    "fear_ids": [
+      "fear_0128",
+      "fear_0086",
+      "fear_0087",
+      "fear_0069",
+      "fear_0076",
+      "fear_0060"
+    ],
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0009",
+    "name": "mluvit cizím jazykem",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "angličtina",
+      "přízvuk",
+      "nerozumět"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Rodilí mluvčí jsou na cizince s chybami zvyklí a většinou jim jde o to, aby si rozuměli, ne o gramatiku.",
+      "Přízvuk není vada; každý, kdo mluví cizím jazykem, nějaký má, a mnoha lidem zní naopak sympaticky.",
+      "Nerozumět se dá vyřešit jednou větou — 'můžete to říct pomaleji?' — a nikdo ji nebere jako selhání.",
+      "Jazyk se učí hlavně mluvením s chybami; kdo mlčí, dokud to nebude perfektní, nezačne nikdy."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0079",
+      "fear_0075",
+      "fear_0064",
+      "fear_0034",
+      "fear_0045"
+    ],
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0010",
+    "name": "zapomenout, co mám říct",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "zaseknout se",
+      "okno",
+      "výpadek"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Výpadek je běžná reakce na stres: mozek pod tlakem dočasně přepne do režimu ohrožení a paměť se na chvíli zasekne — není to známka hlouposti.",
+      "Posluchači okno většinou nezaregistrují, a když ano, obyčejně počkají; pár vteřin ticha, které tobě připadá nekonečné, je pro ně jen pauza.",
+      "Pomáhá mít po ruce záchrannou větu — 'kde jsem to skončil…' nebo krátké shrnutí předchozího bodu — a pár klíčových slov na papíře.",
+      "Zkušení řečníci se zasekávají taky; rozdíl je v tom, že to považují za normální a jedou dál."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0086",
+      "fear_0079",
+      "fear_0159",
+      "fear_0071",
+      "fear_0045"
+    ],
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0011",
+    "name": "nesplnit úkol",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "deadline",
+      "termín",
+      "zadání"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zmeškaný termín je v naprosté většině případů řešitelný: většina úkolů jde dodat později, rozdělit nebo přejednat.",
+      "Nejvíc škody nedělá zpoždění, ale mlčení — včasná věta 'nestíhám, potřebuju do pátku' bývá přijatá překvapivě v klidu.",
+      "Chronické nestíhání často neznamená lenost, ale přetížení nebo nereálná zadání; pomáhá říct si nahlas, co se dá vypustit.",
+      "Jeden nesplněný úkol tě nedefinuje; v každém týmu i škole je to běžná událost, kterou lidé rychle zapomenou."
+    ],
+    "fear_ids": [
+      "fear_0060",
+      "fear_0061",
+      "fear_0086",
+      "fear_0121",
+      "fear_0056",
+      "fear_0094"
+    ],
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0012",
+    "name": "čekání na výsledky",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "rozhodnutí",
+      "verdikt",
+      "zpráva"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Čekání bývá pro mozek horší než samotný špatný výsledek, protože s nejistotou nejde nic dělat, zatímco s výsledkem už ano.",
+      "Výsledek už je rozhodnutý — to, jak moc se trápíš, ho nezmění a přemýšlení ho neurychlí.",
+      "Pomáhá si předem promyslet oba scénáře včetně toho horšího a co bys v něm udělal jako první; strach ztrácí sílu, když má plán.",
+      "Během čekání funguje zaměstnat ruce a tělo — mysl přehrává katastrofy hlavně tehdy, když nemá co jiného dělat."
+    ],
+    "fear_ids": [
+      "fear_0023",
+      "fear_0157",
+      "fear_0134",
+      "fear_0086",
+      "fear_0045",
+      "fear_0043"
+    ],
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0013",
+    "name": "čekání na nevyhnutelné",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "ví se, že to přijde"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Vědět, že něco přijde, a nemoct to zastavit, je jedna z nejtěžších pozic, ve kterých člověk může být.",
+      "Je normální, že se v takové chvíli střídá strach, únava a chvíle, kdy člověk necítí skoro nic."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0119",
+      "fear_0157",
+      "fear_0030",
+      "fear_0019",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0014",
+    "name": "umělá inteligence a moje práce",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "AI",
+      "automatizace",
+      "nahrazení"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Technologické vlny měnily práci vždycky — telefon, počítač, internet — a pokaždé některé činnosti zmizely a jiné se objevily; strach z nahrazení strojem není nový.",
+      "AI zatím nahrazuje spíš jednotlivé úkoly než celá povolání; nejčastěji mění to, jak se práce dělá, ne to, jestli je potřeba člověk.",
+      "Nikdo, včetně expertů, nedokáže spolehlivě říct, jak přesně to dopadne — sebejistá katastrofická předpověď je stejně nepodložená jako sebejistý optimismus.",
+      "Konkrétně pomáhá nástroje zkoušet místo se jich bát: člověk, který AI umí používat, je v lepší pozici než ten, kdo ji ignoruje.",
+      "Když je strach vázaný na konkrétní obor, má smysl se dívat na reálné nabídky práce v tom oboru, ne na titulky."
+    ],
+    "fear_ids": [
+      "fear_0099",
+      "fear_0030",
+      "fear_0096",
+      "fear_0029",
+      "fear_0134",
+      "fear_0023"
+    ],
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0015",
+    "name": "noví lidé",
+    "group": "Sociální situace",
+    "aliases": [
+      "nový kolektiv",
+      "nová třída",
+      "nová práce"
+    ],
+    "mark": "P",
+    "reframings": [
+      "První dny v novém kolektivu jsou nepříjemné skoro pro každého — i pro ty, kteří pak působí jako duše party.",
+      "Nikdo od nováčka nečeká, že hned zapadne; okolí mu prvních pár týdnů automaticky dává víc prostoru na chyby a mlčení.",
+      "Lidé si tě nezařadí podle prvního dojmu navždy — vztahy v kolektivu se tvoří přes opakovaný drobný kontakt, ne přes jeden skvělý vstup.",
+      "Pomáhá si dopředu vybrat jednoho nebo dva lidi, se kterými začneš, místo snahy oslovit celou skupinu najednou."
+    ],
+    "fear_ids": [
+      "fear_0082",
+      "fear_0080",
+      "fear_0043",
+      "fear_0048",
+      "fear_0045",
+      "fear_0028"
+    ],
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0016",
+    "name": "nové prostředí",
+    "group": "Sociální situace",
+    "aliases": [
+      "neznámé místo",
+      "první den"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Napětí v neznámém prostředí je stará orientační reakce: mozek mapuje, kde je východ, kdo je kdo a co se tu smí — a po pár hodinách nebo dnech to samo vyhasne.",
+      "První den je vždycky nejhorší, protože je jediný, kdy nevíš nic; druhý den už máš část mapy.",
+      "Většina 'nového' je nová jen povrchem — pravidla, lidé i rutiny fungují podobně jako všude jinde.",
+      "Pomáhá zmenšit neznámé předem: podívat se na místo na mapě, přijít dřív, mít jednu konkrétní věc, kterou tam uděláš jako první."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0023",
+      "fear_0029",
+      "fear_0090",
+      "fear_0082"
+    ],
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0017",
+    "name": "seznámení",
+    "group": "Sociální situace",
+    "aliases": [
+      "oslovit",
+      "rande",
+      "flirt"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Oslovit někoho je nepříjemné pro drtivou většinu lidí; ten, kdo to dělá s lehkostí, to většinou jen mnohokrát opakoval.",
+      "Druhá strana bývá nervózní úplně stejně a často je spíš ráda, že první krok udělal někdo jiný.",
+      "Odmítnutí při seznámení vypovídá o vkusu, náladě a situaci toho druhého, ne o tvé hodnotě — a je dost pravděpodobné, že si ho za týden nepamatuje.",
+      "Cílem prvního kontaktu není zapůsobit, ale zjistit, jestli si máte co říct; to bere z celé věci tlak na výkon.",
+      "První rande je informace, ne zkouška — obě strany testují, jestli to dává smysl."
+    ],
+    "fear_ids": [
+      "fear_0043",
+      "fear_0069",
+      "fear_0076",
+      "fear_0045",
+      "fear_0071",
+      "fear_0022"
+    ],
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0018",
+    "name": "promluvit s tím, koho tajně miluju",
+    "group": "Sociální situace",
+    "aliases": [
+      "vyznání",
+      "city"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Dlouho tajená zamilovanost bývá po měsících víc o vlastní fantazii než o skutečném člověku; rozhovor ji vrací do reality — v obou směrech.",
+      "Vyznání není žádost o povolení existovat; je to informace, na kterou má druhý právo odpovědět jakkoliv, a ty přežiješ obě odpovědi.",
+      "Nejistota 'co kdyby' dokáže trvat roky, odmítnutí bolí týdny; jasná odpověď je skoro vždycky levnější.",
+      "Nemusí to být velké vyznání — obyčejná věta 'jsi mi hodně sympatický, nechceš zajít na kafe?' nese stejnou informaci s menším rizikem pro oba."
+    ],
+    "fear_ids": [
+      "fear_0043",
+      "fear_0188",
+      "fear_0069",
+      "fear_0190",
+      "fear_0119",
+      "fear_0076"
+    ],
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0019",
+    "name": "telefonování",
+    "group": "Sociální situace",
+    "aliases": [
+      "nepříjemný telefonát",
+      "zavolat cizímu"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z telefonování je dnes velmi rozšířený, zvlášť u lidí zvyklých spíš psát [ověřit] — nejsi výjimka, jsi trend.",
+      "Po telefonu nikdo nevidí, že máš před sebou papír s napsanými větami; připravená první věta a jasný cíl hovoru odstraní většinu nejistoty.",
+      "Druhá strana chce hovor většinou ukončit stejně rychle jako ty — cizí lidé na lince nemají čas ani chuť tě hodnotit.",
+      "Když se zasekneš, 'moment, podívám se' je normální věta, a hovor jde vždycky ukončit a zavolat znovu."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0115",
+      "fear_0172",
+      "fear_0045",
+      "fear_0079",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0020",
+    "name": "sdělit nepříjemnou zprávu",
+    "group": "Sociální situace",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Nepříjemná zpráva nebolí míň, když se odloží — odkládání jen prodlužuje trápení tobě a ubírá druhému čas na reakci.",
+      "Většina lidí si víc váží toho, že jim to někdo řekl přímo a včas, než že to bylo hezky zabalené.",
+      "Neneseš odpovědnost za to, jak se druhý bude cítit; neseš odpovědnost za to, že mu to řekneš slušně a jasně.",
+      "Funguje jednoduchá struktura: krátký úvod, samotná zpráva v jedné větě, a pak ticho, ve kterém má druhý prostor reagovat."
+    ],
+    "fear_ids": [
+      "fear_0059",
+      "fear_0171",
+      "fear_0057",
+      "fear_0060",
+      "fear_0043",
+      "fear_0078"
+    ],
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0021",
+    "name": "návštěva",
+    "group": "Sociální situace",
+    "aliases": [
+      "jít na návštěvu",
+      "mít návštěvu"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Návštěva má jasnou strukturu a konec — na rozdíl od většiny sociálních situací víš, kde jsi, s kým a kdy odejdeš.",
+      "Hostitel i host se stejně bojí, že to bude trapné; oba mají zájem, aby to prošlo hladce, takže se navzájem drží.",
+      "Nikdo nepřišel kontrolovat, jak máš uklizeno nebo co jsi uvařil; lidé si z návštěvy pamatují, jak jim bylo, ne jak vypadala kuchyň.",
+      "Pomáhá si dopředu nastavit délku ('zůstanu tak hodinu') a mít po ruce jednu nebo dvě věci, o kterých se dá mluvit."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0069",
+      "fear_0070",
+      "fear_0071",
+      "fear_0082"
+    ],
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0022",
+    "name": "společenská akce",
+    "group": "Sociální situace",
+    "aliases": [
+      "oslava",
+      "večírek",
+      "svatba",
+      "firemní akce"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Na velké akci nikdo neřeší tebe — každý řeší, jak vypadá on sám, s kým bude stát a kdy může slušně odejít.",
+      "Nemusíš mluvit se všemi; jeden dobrý rozhovor za večer je úspěch, a klidně můžeš část času jen tak stát s pitím v ruce.",
+      "Odejít dřív je legitimní; hostitelé si toho většinou ani nevšimnou, a když ano, oceňují, že jsi přišel.",
+      "Pomáhá mít dopředu 'úkol': někoho, koho pozdravíš, otázku, kterou položíš, a čas, kdy se rozhodneš, jestli zůstaneš."
+    ],
+    "fear_ids": [
+      "fear_0082",
+      "fear_0069",
+      "fear_0071",
+      "fear_0045",
+      "fear_0080",
+      "fear_0074"
+    ],
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0023",
+    "name": "pohřeb",
+    "group": "Sociální situace",
+    "aliases": [],
+    "mark": "E",
+    "reframings": [
+      "Pohřeb je jedno z mála míst, kde se od tebe nečeká nic — jen že tam budeš.",
+      "Nevědět, co říct, a bát se vlastních slz nebo naopak toho, že nepřijdou, je úplně normální."
+    ],
+    "fear_ids": [
+      "fear_0020",
+      "fear_0119",
+      "fear_0145",
+      "fear_0188",
+      "fear_0071"
+    ],
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0024",
+    "name": "svěřit se s problémem",
+    "group": "Sociální situace",
+    "aliases": [
+      "otevřít se",
+      "říct to nahlas"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Říct problém nahlas ho zmenšuje: dokud je jen v hlavě, roste bez omezení; ve chvíli, kdy dostane slova, dostane i hranice.",
+      "Lidé bývají odmítavější k tomu, kdo se drží dál, než k tomu, kdo přizná, že si s něčím neví rady — otevřenost většinou sbližuje.",
+      "Nemusíš říct všechno naráz; stačí jedna věta 'mám něco, s čím si nevím rady' a sledovat, jak druhý reaguje.",
+      "Když se svěříš a druhý to nezvládne, je to informace o něm, ne důkaz, že se svěřovat nemá."
+    ],
+    "fear_ids": [
+      "fear_0191",
+      "fear_0190",
+      "fear_0049",
+      "fear_0043",
+      "fear_0077",
+      "fear_0067"
+    ],
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0025",
+    "name": "říct nepříjemnou pravdu",
+    "group": "Sociální situace",
+    "aliases": [
+      "kritika",
+      "konfrontace"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vztah, který nesnese upřímnost, stojí na vodě už teď, jen to zatím není vidět; ten, který ji snese, se po ní většinou zpevní.",
+      "Kritika bolí tím míň, čím je konkrétnější a čím míň v ní je soudu o člověku — 'tohle mi vadilo' snese skoro každý, 'ty jsi takový' skoro nikdo.",
+      "Druhý často tuší, o co jde, dávno předtím, než to řekneš; tvoje ticho ho neochrání, jen ho nechá v nejistotě.",
+      "Konfrontace nemusí být hlasitá; klidně řečená věta má větší váhu než výbuch, a po ní jde vždycky přidat 'jak to vidíš ty?'"
+    ],
+    "fear_ids": [
+      "fear_0171",
+      "fear_0172",
+      "fear_0059",
+      "fear_0043",
+      "fear_0169",
+      "fear_0014"
+    ],
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0026",
+    "name": "říct ne",
+    "group": "Sociální situace",
+    "aliases": [
+      "odmítnout",
+      "hranice"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Za 'ne' se lidé zlobí mnohem míň, než čekáš; většina ho přijme během vteřiny a jde dál, protože jejich žádost byla otázka, ne nárok.",
+      "Každé 'ano', které nechceš říct, je 'ne' něčemu jinému — vlastnímu času, energii nebo lidem, které máš rád.",
+      "Nemusíš 'ne' zdůvodňovat; krátká věta 'tohle teď nezvládnu' je úplná odpověď a delší vysvětlování naopak zve k vyjednávání.",
+      "Kdo se na tebe kvůli odmítnutí trvale naštve, ti tím říká, že mu šlo o tvou poslušnost, ne o tebe."
+    ],
+    "fear_ids": [
+      "fear_0165",
+      "fear_0170",
+      "fear_0043",
+      "fear_0171",
+      "fear_0106",
+      "fear_0060"
+    ],
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0027",
+    "name": "šikana",
+    "group": "Sociální situace",
+    "aliases": [
+      "mobbing",
+      "bossing"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Šikana není nedorozumění ani tvoje selhání; je to systematické ubližování, za které nese odpovědnost ten, kdo ho dělá.",
+      "Cítit se v tom zahanbený, vzteklý a sám k tomu patří — a nic to nemění na tom, že si to nezasloužíš."
+    ],
+    "fear_ids": [
+      "fear_0068",
+      "fear_0134",
+      "fear_0080",
+      "fear_0012",
+      "fear_0005",
+      "fear_0066"
+    ],
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0028",
+    "name": "obtěžování",
+    "group": "Sociální situace",
+    "aliases": [],
+    "mark": "E",
+    "reframings": [
+      "Obtěžování je hranice, kterou přešel někdo jiný — ne něco, co sis způsobil tím, jak vypadáš nebo jak ses choval.",
+      "Je normální, že se v tom mísí strach, hnus a pochybnost, jestli to nepřeháníš; ten zmatek je součást zásahu, ne důkaz, že se nic nestalo."
+    ],
+    "fear_ids": [
+      "fear_0016",
+      "fear_0154",
+      "fear_0134",
+      "fear_0012",
+      "fear_0001",
+      "fear_0068"
+    ],
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0029",
+    "name": "opustit komfortní zónu",
+    "group": "Sociální situace",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Komfortní zóna není nic špatného; je to místo, kde si mozek šetří energii, a opouštět ji pořád není ani zdravé, ani nutné.",
+      "Nervový systém roste malými kroky: mírně nepříjemné situace zvládnuté opakovaně zónu rozšiřují, velký skok ji často naopak smrští.",
+      "Nemusíš překonávat 'sám sebe', stačí překonat jednu konkrétní situaci — a ta je vždycky menší než abstraktní představa změny.",
+      "Lidé zpětně litují spíš toho, co nezkusili, než toho, co zkusili a nevyšlo [ověřit]; jenže v přítomnosti to vždycky vypadá obráceně."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0029",
+      "fear_0086",
+      "fear_0159",
+      "fear_0126",
+      "fear_0023"
+    ],
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0030",
+    "name": "něco mi unikne",
+    "group": "Sociální situace",
+    "aliases": [
+      "FOMO",
+      "být mimo"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Ve světě je vždycky víc dění, než stihne jeden člověk — něco ti uniká pořád, bez ohledu na to, kolik toho stihneš.",
+      "Pocit, že všichni ostatní zažívají něco lepšího, vzniká z výběru: vidíš cizí vrcholy a svoje všední dny.",
+      "Většina 'nezapomenutelných' akcí je zapomenutá do měsíce; skutečné vztahy nestojí na tom, že jsi byl u každé z nich.",
+      "Pomáhá otázku obrátit: ne 'co mi unikne', ale 'co chci, aby mi neuniklo' — a tomu dát čas."
+    ],
+    "fear_ids": [
+      "fear_0080",
+      "fear_0082",
+      "fear_0100",
+      "fear_0127",
+      "fear_0125",
+      "fear_0022"
+    ],
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0031",
+    "name": "zčervenat, vypadat nervózně",
+    "group": "Sociální situace",
+    "aliases": [
+      "třes",
+      "pocení",
+      "zadrhávání"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zčervenání, třes a pocení jsou automatické reakce, které nejdou ovládnout vůlí — a snaha je potlačit je většinou zesiluje.",
+      "Lidé si nervozity druhých všímají mnohem míň, než si ten nervózní myslí; psychologie tomu říká iluze průhlednosti [ověřit].",
+      "Když si toho někdo všimne, obvykle to bere jako lidské a vyvolá to spíš sympatii než pohrdání.",
+      "Říct nahlas 'jsem trochu nervózní' paradoxně nervozitu zmenšuje — přestává být tajemstvím, které musíš hlídat."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0069",
+      "fear_0067",
+      "fear_0159",
+      "fear_0064",
+      "fear_0077"
+    ],
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0032",
+    "name": "být natáčen, fotografován",
+    "group": "Sociální situace",
+    "aliases": [
+      "kamera",
+      "video",
+      "mikrofon"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Před kamerou ztuhne skoro každý; přirozeně před ní působí hlavně ti, kdo před ní strávili hodně hodin.",
+      "Fotka nebo záznam zachytí zlomek vteřiny, ne tebe — a to, co ti na sobě vadí, ostatní na snímku většinou vůbec nevidí.",
+      "Nahrávka jde smazat, opakovat nebo sestříhat; první pokus nikdy nemusí být poslední.",
+      "Pomáhá dívat se na konkrétní osobu nebo bod místo do objektivu a mluvit, jako bys něco vysvětloval kamarádovi."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0069",
+      "fear_0045",
+      "fear_0149",
+      "fear_0114",
+      "fear_0070"
+    ],
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0033",
+    "name": "mlčení, trapné ticho",
+    "group": "Sociální situace",
+    "aliases": [
+      "small talk",
+      "nevědět co říct"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Ticho v rozhovoru trvá pro toho, kdo se ho bojí, subjektivně mnohem déle než ve skutečnosti; druhý ho často ani nevnímá jako trapné.",
+      "Small talk není zkouška vtipu, je to rituál, který říká 'jsem přátelský' — a k tomu stačí otázka a zájem, ne obsah.",
+      "Nejjednodušší lék na 'nevím, co říct' je ptát se: lidé rádi mluví o tom, co dělají, a rozhovor, kde se jich někdo ptal, si pamatují jako příjemný.",
+      "Pár tichých míst v rozhovoru je normální; přátelské mlčení se od trapného liší jen tím, jestli se ho někdo bojí."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0079",
+      "fear_0045",
+      "fear_0074",
+      "fear_0082",
+      "fear_0101"
+    ],
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0034",
+    "name": "rozchod",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "rozvod",
+      "opuštění partnerem"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Rozchod bolí, i když ho člověk sám chtěl, a ještě víc, když ho nechtěl; nikdo ho nezvládá s grácií.",
+      "Období, kdy se nedá pořádně spát ani myslet na nic jiného, je normální reakce na ztrátu, ne slabost."
+    ],
+    "fear_ids": [
+      "fear_0018",
+      "fear_0022",
+      "fear_0043",
+      "fear_0019",
+      "fear_0076",
+      "fear_0030"
+    ],
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0035",
+    "name": "nevěra partnera",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "podvedení"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Zjistit nevěru je rána, která podkopává nejen vztah, ale i důvěru ve vlastní úsudek — 'jak jsem to mohl nevidět'.",
+      "Vztek, smutek, hnus i touha, aby se to nestalo, se můžou střídat během jedné hodiny, a je to v pořádku."
+    ],
+    "fear_ids": [
+      "fear_0006",
+      "fear_0007",
+      "fear_0018",
+      "fear_0068",
+      "fear_0076",
+      "fear_0230"
+    ],
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0036",
+    "name": "spor s někým blízkým",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "nedorozumění",
+      "napětí"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Spor s blízkým člověkem bolí víc než s cizím právě proto, že na něm záleží — ten strach je známka vztahu, ne jeho selhání.",
+      "Většina sporů mezi blízkými není o tom, o čem se hádají, ale o tom, jestli se cítí slyšení; věta 'chci ti rozumět' obvykle změní tón rychleji než argument.",
+      "Napětí, které se nechá vyhnít, roste; napětí, které se pojmenuje, se většinou zmenší, i když to prvních pár minut nevypadá.",
+      "Nedorozumění se nejlíp řeší otázkou, ne interpretací — 'jak jsi to myslel?' místo 'ty sis myslel, že…'."
+    ],
+    "fear_ids": [
+      "fear_0171",
+      "fear_0019",
+      "fear_0034",
+      "fear_0043",
+      "fear_0059",
+      "fear_0179"
+    ],
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0037",
+    "name": "hádka",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "konflikt",
+      "křik"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Hádka není známka špatného vztahu; vztahy bez hádek jsou často vztahy, kde se někdo bojí něco říct.",
+      "Křik je většinou bezmoc, ne síla — člověk zvyšuje hlas, když má pocit, že ho ten druhý neslyší.",
+      "Uprostřed hádky nikdo nemyslí jasně, to je fyziologie; věta 'dej mi dvacet minut, pak se k tomu vrátíme' není útěk, ale jediný způsob, jak ji dokončit s rozumem.",
+      "Rozhoduje míň, jak hádka proběhla, a víc, co přijde po ní — usmíření a návrat k tématu opraví víc, než hádka pokazila.",
+      "Hádka, ve které někdo ponižuje, vyhrožuje nebo sahá na druhého, už není hádka, a to platí bez výjimky."
+    ],
+    "fear_ids": [
+      "fear_0171",
+      "fear_0014",
+      "fear_0203",
+      "fear_0019",
+      "fear_0059",
+      "fear_0018"
+    ],
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0038",
+    "name": "žárlivost",
+    "group": "Vztahy a rodina",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Žárlivost je běžná emoce, ne charakterová vada; skoro každý ji zná a sama o sobě nic nepoškodí — poškozuje až to, co s ní člověk dělá.",
+      "Žárlivost říká víc o vlastní nejistotě než o tom, co dělá partner; často se objeví právě tehdy, když si člověk připadá málo cenný nebo mimo kontrolu.",
+      "Kontrola (mobil, výslechy, sledování) žárlivost neuklidní, ale živí — každá kontrola potvrdí, že je co hlídat.",
+      "Pomáhá žárlivost pojmenovat nahlas jako svůj pocit ('cítím se ohrožený, když…'), ne jako obvinění; partner se pak spíš přiblíží, než aby se bránil.",
+      "Když žárlivost trvá, roste a řídí život, stojí za to ji řešit s někým — není to ostuda, je to častá věc."
+    ],
+    "fear_ids": [
+      "fear_0006",
+      "fear_0018",
+      "fear_0119",
+      "fear_0076",
+      "fear_0007",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0039",
+    "name": "představit se rodičům partnera",
+    "group": "Vztahy a rodina",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Rodiče partnera tě nehodnotí podle vtipu nebo vzdělání, ale podle jedné otázky: 'je s ním naše dítě šťastné?' — a tu za tebe zodpoví hlavně partner.",
+      "Oni jsou nervózní taky; chtějí udělat dobrý dojem stejně jako ty, protože jde i o jejich vztah s vlastním dítětem.",
+      "První setkání je obřad, ne zkouška; nikdo si z něj nepamatuje detaily, jen jestli bylo v pohodě.",
+      "Pomáhá se předem zeptat partnera na pár věcí o rodičích (co je baví, na co nechodit) a mít dvě otázky, které jim položíš — lidé mají rádi, když se o ně někdo zajímá."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0043",
+      "fear_0076",
+      "fear_0069",
+      "fear_0082",
+      "fear_0173"
+    ],
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0040",
+    "name": "selhat jako rodič",
+    "group": "Vztahy a rodina",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Strach ze selhání jako rodič mají hlavně rodiče, kteří se snaží; ti, kteří selhávají doopravdy, si tu otázku obvykle nekladou.",
+      "Dítě nepotřebuje dokonalého rodiče, potřebuje 'dost dobrého' — takového, který dělá chyby, všímá si jich a opravuje je; to je pojem z vývojové psychologie, ne útěcha.",
+      "Dítě formuje součet tisíců obyčejných dnů, ne jeden špatný večer, kdy jsi křičel nebo neměl sílu.",
+      "Omluva dítěti ('to jsem přehnal, promiň') ho nepoškodí — naučí ho, že vztah vydrží chybu, což je jedna z nejcennějších věcí, které mu můžeš dát.",
+      "Rodič, který o sobě pochybuje, potřebuje často spíš odpočinek a podporu než další rady."
+    ],
+    "fear_ids": [
+      "fear_0059",
+      "fear_0076",
+      "fear_0060",
+      "fear_0057",
+      "fear_0051",
+      "fear_0088"
+    ],
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0041",
+    "name": "selhat jako syn či dcera",
+    "group": "Vztahy a rodina",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Většina rodičů chce od dospělého dítěte víc než výkon: chtějí být součástí jeho života a vědět, že je v pořádku.",
+      "Očekávání rodičů jsou jejich očekávání; můžeš je brát vážně, ale nemáš povinnost je naplnit — dospělost mimo jiné znamená, že se cesty rodičů a dětí rozcházejí.",
+      "Pocit, že rodičům něco dlužíš, se dá splácet do nekonečna a nikdy nesplatit; zdravější je vztah, kde se dává, protože se chce, ne protože se musí.",
+      "Když jde o péči o stárnoucí rodiče, nikdo to nezvládá sám a bez viny — vina tu je skoro vždycky a není důkazem, že děláš málo."
+    ],
+    "fear_ids": [
+      "fear_0060",
+      "fear_0061",
+      "fear_0057",
+      "fear_0110",
+      "fear_0076",
+      "fear_0178"
+    ],
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0042",
+    "name": "problémy v rodině",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "alkohol",
+      "rozvod rodičů",
+      "nemoc v rodině"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Když je problém v rodině, není kam odejít — a přesto to není tvoje vina ani tvoje práce to spravit.",
+      "Být v tom smutný, vzteklý a zároveň se za to stydět je běžná kombinace."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0031",
+      "fear_0027",
+      "fear_0019",
+      "fear_0024",
+      "fear_0121"
+    ],
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0043",
+    "name": "zůstat sám bez partnera",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "nenajít nikoho",
+      "být single"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Být single není mezistav před 'skutečným životem'; velká část dospělých je v každém okamžiku bez partnera a žije plnohodnotně [ověřit].",
+      "Partner není jediný zdroj blízkosti — přátelství, rodina a společenství pokrývají většinu toho, co člověk od vztahu čeká, a špatný vztah samotu naopak zvětšuje.",
+      "'Nenajít nikoho' je předpověď, ne fakt; seznamování se s věkem mění, ale nekončí, a lidé nacházejí partnery v každém věku.",
+      "Strach ze samoty často vede k tomu, že člověk zůstane ve špatném vztahu nebo se vrhne do prvního dalšího — jeho rozpuštění paradoxně zvyšuje šanci na dobrý vztah.",
+      "Stojí za to odlišit dvě věci: samotu, kterou jde vyplnit lidmi, a prázdnotu, která by zůstala i s partnerem — ta druhá se řeší jinak."
+    ],
+    "fear_ids": [
+      "fear_0022",
+      "fear_0042",
+      "fear_0041",
+      "fear_0018",
+      "fear_0076",
+      "fear_0043"
+    ],
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0044",
+    "name": "samota o svátcích a víkendech",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "Vánoce",
+      "Silvestr",
+      "prázdné dny"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Svátky jsou nastavené tak, že samota v nich bolí víc než jindy — všude obrazy rodin a plných stolů, a ticho doma je vedle nich hlasitější.",
+      "Není to tvoje chyba a není to důkaz, že jsi na tom hůř než ostatní; tohle prázdno zná víc lidí, než kolik jich o tom mluví."
+    ],
+    "fear_ids": [
+      "fear_0022",
+      "fear_0018",
+      "fear_0080",
+      "fear_0041",
+      "fear_0042",
+      "fear_0104"
+    ],
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0045",
+    "name": "nahota",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "svlékat se",
+      "šatny",
+      "pláž"
+    ],
+    "mark": "P",
+    "reframings": [
+      "V šatně ani na pláži se na tebe nikdo nedívá tak pozorně, jak si myslíš; každý je zaměstnaný hlavně sebou a tím, jak vypadá on.",
+      "Nahá těla v reálném světě vypadají jinak než na fotkách — záhyby, asymetrie, jizvy a chlupy jsou norma, ne odchylka.",
+      "Stud z nahoty je naučený a dá se odnaučit: lidé, kteří chodí do sauny nebo na nudapláž pravidelně, ho většinou ztratí během pár návštěv.",
+      "Nemusíš to lámat přes koleno; jde jít postupně — ručník, tmavší kout, kratší čas — a nechat tělo, ať si zvykne."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0045",
+      "fear_0069",
+      "fear_0062",
+      "fear_0064",
+      "fear_0067"
+    ],
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0046",
+    "name": "nedostatky vzhledu",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "prsa",
+      "penis",
+      "postava",
+      "obličej",
+      "vlasy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "To, co na sobě vidíš jako hlavní vadu, ostatní většinou vůbec nezaznamenají — vidíš to zblízka, každý den a se soustředěním, jaké ti nikdo jiný nevěnuje.",
+      "Přitažlivost mezi lidmi stojí mnohem víc na chování, hlasu, humoru a pozornosti než na jedné části těla.",
+      "Srovnávat se s tím, co je vidět na obrazovkách, znamená srovnávat se s výběrem, úpravou a světlem, ne s lidmi.",
+      "Velikost prsou nebo penisu má pro spokojenost partnera mnohem menší význam, než se ve strachu zdá — a to platí i podle toho, co říkají partneři sami [ověřit].",
+      "Když se myšlenky na 'vadu' točí celý den a brání ti žít, není to marnivost, ale problém, který se dá dobře léčit — stojí za to o něm někomu říct."
+    ],
+    "fear_ids": [
+      "fear_0062",
+      "fear_0043",
+      "fear_0064",
+      "fear_0076",
+      "fear_0045",
+      "fear_0065"
+    ],
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0047",
+    "name": "ztloustnutí",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "přibírání",
+      "váha"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Váha kolísá u každého — s věkem, ročním obdobím, stresem, spánkem, léky, hormony — a většina těch výkyvů nemá nic společného s vůlí.",
+      "Strach z přibírání bývá často větší brzda než přibírání samo: vede k přísným pravidlům, výčitkám a nakonec k horšímu vztahu k tělu.",
+      "Hodnota člověka a číslo na váze spolu nesouvisí, i když to kultura kolem tvrdí každý den.",
+      "Když se hlídání váhy stane hlavní starostí dne, je to signál, že se má řešit spíš ten strach než ta váha — a s tím umí pomoct odborník."
+    ],
+    "fear_ids": [
+      "fear_0062",
+      "fear_0043",
+      "fear_0159",
+      "fear_0066",
+      "fear_0114",
+      "fear_0045"
+    ],
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0048",
+    "name": "zhubnutí",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "hubnutí",
+      "ztráta váhy"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Když tělo hubne a člověk to nechce, je to nepříjemné a často děsivé — tělo se mění bez dovolení.",
+      "Je v pořádku brát to vážně a nechat si to od někoho vysvětlit."
+    ],
+    "fear_ids": [
+      "fear_0063",
+      "fear_0159",
+      "fear_0134",
+      "fear_0077",
+      "fear_0137",
+      "fear_0147"
+    ],
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0049",
+    "name": "tělesné změny",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "menstruace",
+      "menopauza",
+      "puberta"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Menstruace, puberta i menopauza jsou biologické fáze, kterými prochází polovina lidstva; nepříjemné jsou, nebezpečné většinou ne.",
+      "Většina toho, co v těchto obdobích děsí, děsí proto, že se o tom nemluví — informace od lékaře nebo z dobré knihy zmenší strach víc než cokoli jiného.",
+      "Tělo se mění celý život, ne jen v pubertě a v přechodu; to, co se zdá jako ztráta, bývá spíš přesun — jiná energie, jiné priority, jiné tělo.",
+      "Když obtíže výrazně zasahují do života (bolest, výkyvy nálad, krvácení mimo normu), nemusí se to vydržet — dají se řešit a lékař je od toho."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0063",
+      "fear_0029",
+      "fear_0147",
+      "fear_0062",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0050",
+    "name": "těhotenství",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "porod",
+      "plodnost"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z porodu, z plodnosti nebo z toho, jestli to zvládnu, má naprostá většina žen i partnerů — je to normální součást tak velké změny.",
+      "Porod je v dnešních podmínkách velmi bezpečná událost s propracovanou péčí; komplikace existují, ale zdravotnictví je na ně připravené [ověřit].",
+      "Nejistota ohledně plodnosti se dá vyšetřit, ne jen tušit — a možnosti jsou dnes mnohem širší než před generací.",
+      "Nemusíš na to být připravený 'úplně' — nikdo není; připravenost roste s tím, jak to přichází.",
+      "Pomáhá vědět, co se bude dít, a mluvit o strachu nahlas — s porodní asistentkou, lékařem nebo někým, kdo tím prošel."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0159",
+      "fear_0144",
+      "fear_0121",
+      "fear_0088",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0051",
+    "name": "tělesné příznaky",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "bušení srdce",
+      "závrať",
+      "dušnost",
+      "brnění"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Bušení srdce, závrať, brnění a dušnost jsou typické tělesné projevy úzkosti; tělo se připravuje na útěk nebo boj a spouští je automaticky.",
+      "Jsou hrozně nepříjemné, ale u zdravého člověka nejsou nebezpečné a samy odezní — obvykle během minut.",
+      "Sledování vlastního těla příznaky zesiluje: čím pozorněji hlídáš srdce, tím víc si všímáš každé odchylky, a kruh se roztáčí.",
+      "Jednorázové vyšetření u lékaře má smysl, aby se vyloučila tělesná příčina; opakované vyšetřování stejných příznaků úzkost naopak živí.",
+      "Když se příznaky vracejí a řídí tvůj život, je to dobře léčitelný stav, ne osud."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0159",
+      "fear_0140",
+      "fear_0141",
+      "fear_0063",
+      "fear_0160"
+    ],
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0052",
+    "name": "stárnutí",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "vrásky",
+      "šediny",
+      "tělo se mění"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vrásky a šediny jsou známka toho, že se člověk dožil věku, kdy je má — to není selhání, to je výhra nad alternativou.",
+      "Spokojenost se životem u mnoha lidí po padesátce spíš roste než klesá [ověřit]; tělo slábne, ale nároky, srovnávání a úzkost často taky.",
+      "Na stárnutí těla má vliv i to, co se s ním dělá — pohyb, spánek, vztahy — a to jde ovlivnit v každém věku.",
+      "Strach ze stárnutí je často strach z toho, že tě přestanou vidět; ale lidé, kteří jsou zajímaví ve třiceti, jsou obvykle zajímaví i v sedmdesáti."
+    ],
+    "fear_ids": [
+      "fear_0147",
+      "fear_0145",
+      "fear_0119",
+      "fear_0077",
+      "fear_0130",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0053",
+    "name": "první polibek, první sex",
+    "group": "Tělo a sexualita",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Poprvé to bývá nemotorné pro každého — nikdo se nenarodil s tím, jak se to dělá, a druhý to většinou ví stejně málo.",
+      "Neexistuje správný věk; 'všichni už' je iluze, o sexu se mnohem víc mluví, než kolik se ho děje [ověřit].",
+      "Nejde o výkon, ale o to, jestli je ti s tím člověkem dobře; první sex, který stojí za to, je ten, kdy se oba cítí v bezpečí, ne ten, který byl 'perfektní'.",
+      "Máš právo říct 'ještě ne' nebo 'zastavme' kdykoli, i uprostřed — a ten, kdo to nerespektuje, není ten pravý."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0076",
+      "fear_0043",
+      "fear_0228",
+      "fear_0229",
+      "fear_0144"
+    ],
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0054",
+    "name": "sex",
+    "group": "Tělo a sexualita",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Strach ze sexu je běžnější, než se přiznává; sex je situace, kde je člověk nahý, blízko a bez scénáře — to není maličkost.",
+      "Dobrý sex není výkon, ale komunikace — dvojice, které o něm mluví, bývají spokojenější než ty, které to 'prostě vědí' [ověřit].",
+      "Ne každý touží po sexu stejně často a stejně silně; nízká nebo kolísající chuť je běžná a sama o sobě není porucha.",
+      "Když je strach vázaný na bolest, špatnou zkušenost nebo trauma, dá se s tím pracovat — s odborníkem, ne silou vůle."
+    ],
+    "fear_ids": [
+      "fear_0228",
+      "fear_0229",
+      "fear_0226",
+      "fear_0067",
+      "fear_0076",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0055",
+    "name": "sexuální praktiky",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "anální",
+      "orální",
+      "nezvyklé",
+      "kink"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Mezi dospělými, kteří to oba chtějí, neexistuje 'divná' praktika — jen taková, která vyhovuje oběma, a taková, která ne.",
+      "To, co jeden bere jako nezvyklé, je pro velkou část lidí běžná součást sexu; rozpětí toho, co lidi baví, je mnohem širší, než co je vidět navenek.",
+      "Nemusíš chtít všechno a nemusíš odmítat všechno; jediná pravidla jsou souhlas, možnost kdykoli přestat a respekt k 'ne'.",
+      "Mluvit o tom, co chceš nebo nechceš, není trapné — trapné je až léta se tvářit, že je všechno v pohodě."
+    ],
+    "fear_ids": [
+      "fear_0065",
+      "fear_0043",
+      "fear_0062",
+      "fear_0228",
+      "fear_0159",
+      "fear_0068"
+    ],
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0056",
+    "name": "vlastní sexuální fantazie",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "masturbace",
+      "porno",
+      "parafilie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Fantazie není plán ani přání; mozek si běžně hraje s věcmi, které by člověk nikdy nechtěl doopravdy, a v sexu obzvlášť.",
+      "Masturbace je normální součást sexuality v každém věku i v každém vztahu; nic tím neubíráš sobě ani partnerovi.",
+      "Většina lidí má fantazie, které by nikomu neřekla — pocit 'jen já jsem takový' je nejčastější lež, kterou si o sexu říkáme.",
+      "Hranice není obsah fantazie, ale to, jestli ti ubližuje — nutkavost, stud, který tě izoluje, ztráta kontroly nad časem u porna; v tom případě to jde řešit s někým, kdo to slyšel stokrát.",
+      "Když se fantazie týká něčeho, co by druhému ublížilo nebo co je za hranou souhlasu, je to důvod mluvit s odborníkem, ne důkaz, že jsi špatný člověk."
+    ],
+    "fear_ids": [
+      "fear_0051",
+      "fear_0062",
+      "fear_0065",
+      "fear_0067",
+      "fear_0159",
+      "fear_0063"
+    ],
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0057",
+    "name": "sexuální výkon",
+    "group": "Tělo a sexualita",
+    "aliases": [
+      "erekce",
+      "orgasmus",
+      "předčasná ejakulace"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Selhání erekce, opožděný nebo rychlý orgasmus zažije v životě naprostá většina lidí; nejčastější příčina je stres a strach z toho, že se to stane.",
+      "Tělo nedokáže zároveň hlídat výkon a užívat si — čím víc se soustředíš na to, jestli to 'funguje', tím míň to funguje.",
+      "Partner většinou vnímá zaváhání mnohem míň dramaticky než ty; horší než zaváhání je ticho a odtažení, které po něm přijde.",
+      "Sex se nerovná průnik; je spousta způsobů, jak být spolu blízko, a tlak na jednu konkrétní podobu je často sám o sobě příčina problému.",
+      "Když se to opakuje, má smysl vyšetření — tělesné příčiny existují a jsou dobře léčitelné, stejně jako ty psychické."
+    ],
+    "fear_ids": [
+      "fear_0086",
+      "fear_0076",
+      "fear_0069",
+      "fear_0062",
+      "fear_0043",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0058",
+    "name": "vážná nemoc",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "rakovina",
+      "infarkt",
+      "mrtvice",
+      "hypochondrie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z vážné nemoci je nejčastěji strach z nejistoty, ne z nemoci samé; mozek si vezme každý příznak a dopočítá nejhorší konec.",
+      "Tělo vysílá drobné signály pořád — bolest, bulka, pálení, únava — a drtivá většina z nich má obyčejné vysvětlení.",
+      "Funguje pravidlo: jeden příznak, jedno vyšetření, jedna odpověď — a tu vzít vážně; opakované hledání na internetu a další a další kontroly strach nezmenšují, jen ho živí.",
+      "Když strach z nemoci trvá měsíce, přetrvává i po vyšetřeních a bere ti klid, není to ostuda ani přehánění — je to stav, který se dá dobře léčit.",
+      "Když příznak trvá, mění se nebo se zhoršuje, není to na přerámování, ale na lékaře."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0023",
+      "fear_0134",
+      "fear_0144",
+      "fear_0146",
+      "fear_0157"
+    ],
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0059",
+    "name": "úraz, zranění",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "sport",
+      "nehoda"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Úrazy se stávají, ale mnohem méně, než jak se o nich mluví — zprávy vybírají to výjimečné, ne to obvyklé.",
+      "Lidské tělo je stavěné na opravu; většina zranění se hojí a většina lidí se po nich vrací k životu, i když v jiném tempu.",
+      "Strach z úrazu při sportu tělo zpomaluje a ztužuje, což riziko zvyšuje — uvolněný a připravený člověk se zraní méně.",
+      "Riziko se dá zmenšit rozumně (příprava, ochrana, nepřeceňování se), ale nikdy na nulu; život bez rizika neexistuje a strach ho stejně nezajistí."
+    ],
+    "fear_ids": [
+      "fear_0144",
+      "fear_0134",
+      "fear_0154",
+      "fear_0153",
+      "fear_0159",
+      "fear_0143"
+    ],
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0060",
+    "name": "invalidita",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "postižení",
+      "závislost na péči"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Představa, že bys byl závislý na péči druhých, sahá na něco hodně hlubokého — na důstojnost a na to, kdo jsi bez toho, co dokážeš.",
+      "Bát se toho je lidské a nevypovídá to nic o tom, jak bys život s omezením nesl."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0049",
+      "fear_0077",
+      "fear_0150",
+      "fear_0135",
+      "fear_0095"
+    ],
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0061",
+    "name": "nemoc blízkého",
+    "group": "Zdraví a psychika",
+    "aliases": [],
+    "mark": "E",
+    "reframings": [
+      "Když je nemocný někdo blízký, člověk nese dvě věci najednou — strach o něj a bezmoc, že za něj nemůže nic udělat.",
+      "Je normální být vyčerpaný, mít vztek, chvílemi na to nemyslet a pak se za to stydět."
+    ],
+    "fear_ids": [
+      "fear_0019",
+      "fear_0020",
+      "fear_0134",
+      "fear_0018",
+      "fear_0121",
+      "fear_0133"
+    ],
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0062",
+    "name": "panická ataka",
+    "group": "Zdraví a psychika",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Panická ataka je falešný poplach: tělo spustí reakci na ohrožení, i když žádné není, a všechno, co cítíš — srdce, dech, závrať, pocit, že umíráš — jsou příznaky toho poplachu, ne nemoci.",
+      "Je hrozně nepříjemná, ale sama o sobě není nebezpečná a má vrchol, po kterém opadá — obvykle během několika minut, i když subjektivně trvá věčnost.",
+      "Nejvíc ji prodlužuje boj s ní; nejrychleji odezní, když se jí člověk nebrání a nechá ji proběhnout, i když to zní jako protimluv.",
+      "Strach z další ataky bývá časem horší než ataky samé a vede k vyhýbání se místům a situacím; právě tím se z jedné ataky stává porucha.",
+      "Panická porucha patří k nejlépe léčitelným stavům vůbec — když se ataky opakují, jdi s tím za někým, kdo se tím zabývá."
+    ],
+    "fear_ids": [
+      "fear_0140",
+      "fear_0159",
+      "fear_0145",
+      "fear_0160",
+      "fear_0141",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 62,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0063",
+    "name": "úzkost, zahlcení myšlenkami",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "přemýšlení",
+      "ruminace"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Ruminace je pokus mozku vyřešit problém přemýšlením — jenže úzkost není problém, který se dá vyřešit myšlenkami, a tak se točí v kruhu.",
+      "Myšlenka není fakt; to, že tě něco napadne, neznamená, že je to pravda ani že se to stane.",
+      "Zahlcení klesá, když myšlenky dostanou ven — na papír, do řeči, do pohybu — místo aby se přemílaly uvnitř.",
+      "Pomáhá dát starostem vyhrazený čas ('o tomhle budu přemýšlet v šest') a mimo něj je nechat běžet bez odpovědi; nezmizí, ale přestanou řídit den.",
+      "Když úzkost trvá týdny, brání spánku nebo práci, je to léčitelný stav, ne povaha."
+    ],
+    "fear_ids": [
+      "fear_0141",
+      "fear_0159",
+      "fear_0023",
+      "fear_0157",
+      "fear_0027",
+      "fear_0160"
+    ],
+    "tier": "free",
+    "sort_order": 63,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0064",
+    "name": "deprese",
+    "group": "Zdraví a psychika",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Deprese není slabost ani lenost; je to stav, ve kterém se mění spánek, energie, chuť k životu i schopnost cítit radost — a člověk ho nemůže 'chtít' pryč.",
+      "Mezi špatným obdobím a depresí je rozdíl v délce, hloubce a v tom, jestli se vracejí normální chvíle; smutek je součást života, deprese je stav, který se léčí.",
+      "Deprese lže: říká, že takhle to bude vždycky, že jsi na obtíž a že nic nepomůže — to jsou příznaky, ne pravdy.",
+      "Je to jeden z nejčastějších a nejlépe prozkoumaných stavů; většině lidí léčba pomůže, a čím dřív začne, tím rychleji [ověřit].",
+      "Strach z toho, že bys 'měl depresi', nejlíp rozptýlí rozhovor s lékařem nebo terapeutem, ne testy na internetu."
+    ],
+    "fear_ids": [
+      "fear_0142",
+      "fear_0218",
+      "fear_0134",
+      "fear_0220",
+      "fear_0214",
+      "fear_0049"
+    ],
+    "tier": "free",
+    "sort_order": 64,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0065",
+    "name": "neovládnu se",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "vztek",
+      "výbuch",
+      "afekt"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z vlastního výbuchu mají skoro výhradně lidé, kteří vztek dlouho drží — kdo se neovládá doopravdy, se toho nebojí.",
+      "Vztek je emoce jako každá jiná; nebezpečné není cítit ho, ale to, co se s ním udělá, a mezi pocitem a činem je vždycky mezera, i když malá.",
+      "Afekt má tělesné varování — horko, sevřené zuby, zrychlený dech — a kdo se ho naučí rozpoznat, získá vteřiny, které stačí k odchodu z místnosti.",
+      "Vztek se nedá 'vypustit' křikem, ten ho spíš posiluje; lépe funguje odejít, dýchat, chodit a vrátit se, až se tělo zklidní.",
+      "Když se výbuchy opakují a ubližují lidem kolem, je to důvod na tom pracovat s někým — jde to a není to ostuda."
+    ],
+    "fear_ids": [
+      "fear_0203",
+      "fear_0204",
+      "fear_0159",
+      "fear_0059",
+      "fear_0051",
+      "fear_0057"
+    ],
+    "tier": "free",
+    "sort_order": 65,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0066",
+    "name": "vyhoření, přetížení",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "burnout",
+      "vyčerpání"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vyhoření není osobní selhání; vzniká, když nároky dlouhodobě převyšují to, co má člověk k dispozici — energii, uznání, smysl, odpočinek.",
+      "Prvním příznakem obvykle není vyčerpání, ale cynismus a ztráta smyslu: člověk pracuje dál, ale už mu na tom nezáleží.",
+      "Vyhoření se nedá 'vyspat' za víkend; potřebuje změnu podmínek, ne víc vůle — a pokud podmínky změnit nejdou, je to informace o tom místě.",
+      "Většina lidí se z vyhoření dostane, ale trvá to déle, než by chtěli; hojí se měsíce, ne dny.",
+      "Když nejde vstát z postele, přestává se dařit spát nebo se přidává beznaděj, může to být víc než vyhoření — lékař to umí odlišit."
+    ],
+    "fear_ids": [
+      "fear_0121",
+      "fear_0061",
+      "fear_0077",
+      "fear_0086",
+      "fear_0134",
+      "fear_0214"
+    ],
+    "tier": "free",
+    "sort_order": 66,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0067",
+    "name": "nespavost",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "nemoct usnout",
+      "špatný spánek"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Občasná špatná noc je normální a tělo ji dožene; jedna probdělá noc není katastrofa, i když se tak druhý den cítí.",
+      "Nespavost nejvíc živí strach z nespavosti: sledování hodin, počítání zbývajícího času a snaha usnout 'silou' spánek zahánějí.",
+      "Spánek nejde vynutit, dá se jen umožnit — pravidelnost, klid před spaním a nepolehávat v posteli, když to nejde.",
+      "Chronická nespavost je dobře léčitelná a nemusí se s ní žít; kdo s ní bojuje měsíce, si zaslouží něco lepšího než další rady."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0134",
+      "fear_0140",
+      "fear_0141",
+      "fear_0088",
+      "fear_0142"
+    ],
+    "tier": "free",
+    "sort_order": 67,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0068",
+    "name": "závislost",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "alkohol",
+      "drogy",
+      "mobil",
+      "hazard"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Závislost není slabá vůle; je to změna v mozku, kde se odměna a úleva spojí s látkou nebo činností tak pevně, že rozum je proti tomu slabý.",
+      "Strach 'jsem závislý?' je dobrý strach — kdo si ho položí, je dál než ten, kdo ho odbývá; otázka není 'kolik', ale 'co se stane, když to nemám'.",
+      "Mobil a hazard fungují stejně jako látky — nepravidelná odměna a únik od nepříjemného; to není morální pokles, to je design.",
+      "Ze závislostí se lidé dostávají, ale málokdy sami a málokdy napoprvé; recidiva je součást cesty, ne důkaz, že to nejde.",
+      "Když míru nebo dobu už neřídí tvoje rozhodnutí, je to chvíle na někoho, kdo se tím zabývá — dřív je vždycky snazší."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0203",
+      "fear_0077",
+      "fear_0091",
+      "fear_0051",
+      "fear_0137"
+    ],
+    "tier": "free",
+    "sort_order": 68,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0069",
+    "name": "ztráta paměti, demence",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "zapomínání",
+      "Alzheimer"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zapomínat jména, klíče a proč jsem přišel do kuchyně je normální v každém věku; přetížený nebo nevyspalý mozek zapomíná víc, a to není demence.",
+      "Strach z demence obvykle mají ti, kdo si zapomínání všímají — u demence si člověk svůj deficit často neuvědomuje, spíš ho vidí okolí.",
+      "Většina lidí se demence nedožije ani ve vysokém věku [ověřit] a riziko se dá zčásti ovlivnit tím, jak se žije — pohyb, vztahy, spánek, učení [ověřit].",
+      "Když máš o svou paměť strach, nejlepší je nechat ji jednorázově vyšetřit místo let tichého děsu; vyšetření je jednoduché a většinou uklidní.",
+      "Když zapomínání vidí i okolí, zhoršuje se nebo brání běžným věcem, patří to k lékaři — čím dřív, tím víc možností."
+    ],
+    "fear_ids": [
+      "fear_0221",
+      "fear_0134",
+      "fear_0135",
+      "fear_0147",
+      "fear_0063",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 69,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0070",
+    "name": "zbláznit se",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "psychóza",
+      "ztratit rozum"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze zbláznění je jeden z nejčastějších strachů při úzkosti — a téměř nikdy není znamením, že se to děje.",
+      "Pocit odcizení, nereálnosti, myšlenky, které se zdají cizí — to jsou běžné projevy silné úzkosti nebo vyčerpání, ne začátek psychózy.",
+      "Kdo se ptá 'nezbláznil jsem se?', si zachovává náhled — a právě náhled je to, co se u psychózy ztrácí; sám strach je důkaz, že rozum funguje.",
+      "I skutečné psychotické stavy jsou dnes léčitelné a většina lidí se z nich vrací k životu [ověřit]; 'zbláznit se' už dávno neznamená to, co ve filmech.",
+      "Když se zážitky nereálnosti drží, přidávají se hlasy nebo přesvědčení, kterým okolí nerozumí, je to na vyšetření — bez studu, včas."
+    ],
+    "fear_ids": [
+      "fear_0160",
+      "fear_0159",
+      "fear_0142",
+      "fear_0221",
+      "fear_0063",
+      "fear_0140"
+    ],
+    "tier": "free",
+    "sort_order": 70,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0071",
+    "name": "porucha příjmu potravy",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "jídlo",
+      "anorexie",
+      "bulimie",
+      "záchvaty"
+    ],
+    "mark": "K",
+    "reframings": [],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0062",
+      "fear_0114",
+      "fear_0043",
+      "fear_0221",
+      "fear_0065"
+    ],
+    "tier": "free",
+    "sort_order": 71,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0072",
+    "name": "sebedestruktivní myšlenky",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "sebepoškození",
+      "sebevražda"
+    ],
+    "mark": "K",
+    "reframings": [],
+    "fear_ids": [
+      "fear_0054",
+      "fear_0053",
+      "fear_0218",
+      "fear_0134",
+      "fear_0049",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 72,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0073",
+    "name": "smrt blízkého člověka",
+    "group": "Životní události a změny",
+    "aliases": [],
+    "mark": "E",
+    "reframings": [
+      "Smrt někoho blízkého je ztráta, na kterou se nedá připravit, ani když se ví, že přijde.",
+      "Smutek nemá správnou podobu ani délku — pláč, otupělost, vztek i chvíle, kdy se člověk zasměje a pak se za to stydí, k tomu patří."
+    ],
+    "fear_ids": [
+      "fear_0020",
+      "fear_0019",
+      "fear_0018",
+      "fear_0134",
+      "fear_0022",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 73,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0074",
+    "name": "stěhování",
+    "group": "Životní události a změny",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Stěhování patří mezi nejvíc stresující běžné události [ověřit] — únava a podráždění při něm jsou normální, ne známka, že jsi udělal chybu.",
+      "Nový byt nebo město jsou cizí jen pár týdnů; domov nevzniká nastěhováním, ale opakováním — cesta do práce, pekárna, sousedi, první návštěva.",
+      "Většina toho, co ti na starém místě chybí, nebylo v místě, ale v rutině — a rutina se dá postavit znovu kdekoli.",
+      "Pomáhá si během prvních dnů vybalit jednu 'hotovou' místnost a mít v ní svoje věci; mozek potřebuje jedno bezpečné místo, odkud zvládne zbytek."
+    ],
+    "fear_ids": [
+      "fear_0029",
+      "fear_0028",
+      "fear_0031",
+      "fear_0119",
+      "fear_0022",
+      "fear_0027"
+    ],
+    "tier": "free",
+    "sort_order": 74,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0075",
+    "name": "změna práce",
+    "group": "Životní události a změny",
+    "aliases": [
+      "nová práce",
+      "výpověď"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Nová práce znamená pár týdnů, kdy jsi nejmíň kompetentní člověk v místnosti — to není selhání, to je definice začátku, a všichni kolem tím prošli.",
+      "Rozhodnutí odejít bývá zpětně hodnocené líp, než jak se cítilo v den výpovědi; nejistota před změnou je skoro vždycky horší než změna sama.",
+      "Zaměstnavatel od nováčka prvních pár měsíců nečeká výkon, ale učení; kdo se ptá, působí líp než ten, kdo předstírá, že ví.",
+      "Když se ukáže, že to byla chyba, není to konec — lidé mění práci opakovaně a jedna špatná volba v životopisu nikoho nezajímá."
+    ],
+    "fear_ids": [
+      "fear_0029",
+      "fear_0028",
+      "fear_0089",
+      "fear_0093",
+      "fear_0086",
+      "fear_0082"
+    ],
+    "tier": "free",
+    "sort_order": 75,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0076",
+    "name": "ztráta zaměstnání",
+    "group": "Životní události a změny",
+    "aliases": [
+      "vyhazov",
+      "nezaměstnanost"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vyhazov se v naprosté většině případů týká místa, rozpočtu nebo šéfa, ne tvé hodnoty; propouštějí se i lidé, kteří byli výborní.",
+      "Nezaměstnanost je stav, ne identita; většina lidí si najde novou práci v řádu měsíců, i když to během čekání vypadá jinak [ověřit].",
+      "Existují záchranné sítě — podpora v nezaměstnanosti, odstupné, úřad práce — a využít je není ostuda, ale jejich účel.",
+      "Nejhorší je ticho: kdo o ztrátě práce mluví s lidmi kolem, najde novou rychleji, protože hodně míst se obsazuje přes známé, ne přes inzeráty [ověřit].",
+      "Krátká pauza po vyhazovu — pár dnů bez hledání — není lenost, ale prevence toho, aby se strach přenesl do dalšího pohovoru."
+    ],
+    "fear_ids": [
+      "fear_0138",
+      "fear_0139",
+      "fear_0086",
+      "fear_0095",
+      "fear_0099",
+      "fear_0068"
+    ],
+    "tier": "free",
+    "sort_order": 76,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0077",
+    "name": "střední věk",
+    "group": "Životní události a změny",
+    "aliases": [
+      "krize středního věku",
+      "čtyřicítka",
+      "padesátka"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Krize středního věku není nemoc ani osud; je to okamžik, kdy se poprvé dá dohlédnout na konec a člověk se ptá, jestli žije svůj život — a to je legitimní otázka.",
+      "Většina toho, co se v tom věku zdá 'promeškané', jde ještě udělat; ve čtyřiceti i padesáti je před člověkem obvykle ještě polovina dospělého života.",
+      "Neklid středního věku bývá signál, že něco vyžaduje změnu — ne nutně partnera nebo práci, často jen tempo, smysl nebo vztah k tělu.",
+      "Kdo tímhle obdobím projde vědomě a něco v něm přeskládá, na něj zpětně obvykle nevzpomíná jako na krizi, ale jako na obrat."
+    ],
+    "fear_ids": [
+      "fear_0125",
+      "fear_0214",
+      "fear_0147",
+      "fear_0126",
+      "fear_0145",
+      "fear_0103"
+    ],
+    "tier": "free",
+    "sort_order": 77,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0078",
+    "name": "konec školy",
+    "group": "Životní události a změny",
+    "aliases": [
+      "život po škole",
+      "dospělost"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Konec školy je jedna z mála chvil, kdy se zavře jasná struktura a neotevře hned jiná — prázdno, které při tom cítíš, je normální a dočasné.",
+      "Nikdo v pětadvaceti neví, co chce dělat celý život, a ani to nemusí vědět; první práce je zkouška, ne doživotní rozhodnutí.",
+      "Dospělost není stav, do kterého se vstoupí, ale dovednost, která se učí za pochodu — a všichni dospělí kolem tebe pořád improvizují.",
+      "Pomáhá si vybrat jednu věc na příští rok, ne plán na dvacet let; dlouhé plány se stejně rozpadnou při prvním kontaktu s realitou."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0030",
+      "fear_0215",
+      "fear_0175",
+      "fear_0121",
+      "fear_0216"
+    ],
+    "tier": "free",
+    "sort_order": 78,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0079",
+    "name": "něco končí",
+    "group": "Životní události a změny",
+    "aliases": [
+      "loučení",
+      "konec etapy"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Každý konec, i ten, který jsi sám chtěl, bere kus něčeho — a je v pořádku ho oplakat, i když okolí čeká úlevu nebo radost.",
+      "Smutek na konci etapy je uznání, že měla cenu."
+    ],
+    "fear_ids": [
+      "fear_0119",
+      "fear_0022",
+      "fear_0220",
+      "fear_0018",
+      "fear_0030",
+      "fear_0029"
+    ],
+    "tier": "free",
+    "sort_order": 79,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0080",
+    "name": "něco začíná",
+    "group": "Životní události a změny",
+    "aliases": [
+      "nový začátek",
+      "start"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze začátku je strach z prázdného místa, kde ještě nic není — a to prázdné místo je přesně to, co ti dává svobodu.",
+      "Začátky se skoro nikdy nepovedou napoprvé tak, jak si je člověk představoval; první verze čehokoli je vždycky horší než třetí, a to je v pořádku.",
+      "Nemusíš být 'připravený'; připravenost je pocit, který přichází až po pár krocích, ne před nimi.",
+      "Pomáhá zmenšit první krok tak, aby se nedal nezvládnout — ne 'začnu novou kapitolu', ale 'zítra udělám tohle jedno'."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0086",
+      "fear_0023",
+      "fear_0029",
+      "fear_0115",
+      "fear_0121"
+    ],
+    "tier": "free",
+    "sort_order": 80,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0081",
+    "name": "velké životní rozhodnutí",
+    "group": "Životní události a změny",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Většina velkých rozhodnutí není nevratná; skoro všechno v životě se dá upravit, zastavit nebo zkusit jinak, i když to v okamžiku volby vypadá jako navždy.",
+      "Nejde vybrat správně předem — informace, které bys k tomu potřeboval, přijdou až po rozhodnutí; jde jen vybrat poctivě s tím, co víš teď.",
+      "Nerozhodnost není jistota, ale rozhodnutí nechat rozhodnout okolnosti; často stojí víc než kterákoli z možností.",
+      "Pomáhá si obě varianty představit s odstupem: 'jak to budu vidět za rok?' vyřadí strach z prvních týdnů, který jinak přehluší všechno ostatní.",
+      "Když se rozhodnutí ukáže jako špatné, není to důkaz o tobě — je to informace, se kterou se dělá to další."
+    ],
+    "fear_ids": [
+      "fear_0093",
+      "fear_0092",
+      "fear_0023",
+      "fear_0119",
+      "fear_0121",
+      "fear_0125"
+    ],
+    "tier": "free",
+    "sort_order": 81,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0082",
+    "name": "odchod do důchodu",
+    "group": "Životní události a změny",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Důchod je ztráta struktury a role, ne jen práce — proto bývá první rok těžší, než lidé čekají, a to i u těch, kteří se na něj těšili.",
+      "Práce dávala den, lidi a důvod vstát; nic z toho nezmizí s prací, ale musí se to postavit znovu, a to chvíli trvá.",
+      "Lidé, kterým se v důchodu daří, obvykle nemají 'volno', ale mají něco, co je potřebuje — vnoučata, spolek, zahradu, dobrovolnictví, částečný úvazek.",
+      "Nemusí to být buď–anebo; postupný odchod, práce na část úvazku nebo úplně jiná činnost jsou dnes běžné cesty."
+    ],
+    "fear_ids": [
+      "fear_0095",
+      "fear_0214",
+      "fear_0147",
+      "fear_0097",
+      "fear_0211",
+      "fear_0104"
+    ],
+    "tier": "free",
+    "sort_order": 82,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0083",
+    "name": "odchod dětí z domova",
+    "group": "Životní události a změny",
+    "aliases": [
+      "prázdné hnízdo"
+    ],
+    "mark": "E",
+    "reframings": [
+      "Když děti odejdou, dům ztichne způsobem, na který se nedá připravit — a smutek z toho je v pořádku, i když se všechno povedlo přesně tak, jak mělo.",
+      "Bylo to největší, co jsi dělal, a je normální, že po tom zůstane díra."
+    ],
+    "fear_ids": [
+      "fear_0098",
+      "fear_0022",
+      "fear_0220",
+      "fear_0214",
+      "fear_0021",
+      "fear_0119"
+    ],
+    "tier": "free",
+    "sort_order": 83,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0084",
+    "name": "finanční problémy",
+    "group": "Peníze",
+    "aliases": [
+      "dluhy",
+      "nesplácení",
+      "účty",
+      "exekuce"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Dluh je číslo, ne rozsudek; má strukturu — kolik, komu, do kdy — a jakmile ho člověk napíše na papír, bývá menší a přehlednější, než jak se rozlézá v hlavě.",
+      "Nejvíc škody nedělá dluh, ale vyhýbání se mu: neotevřené obálky a nezvednuté telefony roztáčejí úroky a sankce, zatímco jeden hovor s věřitelem často otevře splátkový kalendář.",
+      "Existují bezplatné dluhové poradny a zákonné cesty, jak z dluhů ven, včetně oddlužení [ověřit]; nejsou pro 'ty úplně na dně', ale pro každého, kdo to sám nezvládá.",
+      "Finanční problémy má v nějaké fázi života velká část lidí, jen se o tom nemluví — stud je největší spojenec dluhu.",
+      "Když ti věřitelé vyhrožují nebo nerozumíš tomu, co po tobě chtějí, nemusíš to řešit sám; poradna nebo právník ti to přeloží."
+    ],
+    "fear_ids": [
+      "fear_0138",
+      "fear_0134",
+      "fear_0139",
+      "fear_0065",
+      "fear_0159",
+      "fear_0056"
+    ],
+    "tier": "free",
+    "sort_order": 84,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0085",
+    "name": "ekonomická krize",
+    "group": "Peníze",
+    "aliases": [
+      "krach burzy",
+      "kolaps",
+      "inflace"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Ekonomické krize přicházejí opakovaně — a opakovaně končí; každá z těch, které se zdály jako konec světa, je dnes kapitola v učebnici.",
+      "Titulky o krachu přeceňují rychlost a podceňují setrvačnost: většina lidí prochází krizí s omezením, ne s katastrofou.",
+      "To, co jde ovlivnit, je málo, ale je to důležité: rezerva, míň dluhů, dovednosti, které mají cenu i v horších časech.",
+      "Sledovat zprávy o ekonomice každou hodinu nezvyšuje bezpečí, jen úzkost; trh se nezmění tím, že ho hlídáš."
+    ],
+    "fear_ids": [
+      "fear_0138",
+      "fear_0157",
+      "fear_0134",
+      "fear_0139",
+      "fear_0023",
+      "fear_0156"
+    ],
+    "tier": "free",
+    "sort_order": 85,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0086",
+    "name": "chudoba",
+    "group": "Peníze",
+    "aliases": [
+      "nemít na nájem",
+      "nemít na jídlo"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Chudoba je stav okolností, ne charakteru; do nouze se lidé dostávají kvůli nemoci, rozvodu, vyhazovu nebo prostě smůle, ne proto, že by byli horší.",
+      "Existují systémy, které mají zabránit tomu nejhoršímu — dávky, sociální bydlení, potravinové banky, poradny [ověřit]; jsou tu proto, aby se používaly, a využít je není selhání.",
+      "Strach z chudoby mají často lidé, kteří chudí nejsou a nebudou — vyrůstali v nedostatku a tělo si to pamatuje, i když účet říká něco jiného.",
+      "Nouze se dá přežít a lidé z ní vycházejí; nejtěžší na ní není nedostatek, ale samota a stud, a s těmi se dá něco dělat i bez peněz."
+    ],
+    "fear_ids": [
+      "fear_0139",
+      "fear_0138",
+      "fear_0134",
+      "fear_0068",
+      "fear_0135",
+      "fear_0137"
+    ],
+    "tier": "free",
+    "sort_order": 86,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0087",
+    "name": "válka",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "jaderný útok",
+      "mobilizace"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z války je odpovídající reakce na to, co je vidět ve zprávách; není to hysterie, je to zdravý instinkt, který se ale spouští častěji, než je třeba.",
+      "Zprávy ukazují nejhorší okamžiky z celého světa najednou; to, že o něčem slyšíš denně, neznamená, že je to blíž.",
+      "Jaderná válka je scénář, kterého se svět bojí desítky let a který se přes všechny krize nestal — ne díky štěstí, ale protože na jeho zabránění pracuje obrovské množství lidí a mechanismů.",
+      "To, co jde ovlivnit, je malé a konkrétní: vědět, co dělat v krizi, mít doma základní věci, nesledovat zprávy v noci — všechno ostatní je mimo tvoje ruce a to je v pořádku přiznat.",
+      "Mobilizace a odvody mají pravidla a výjimky, které jsou veřejně dohledatelné [ověřit]; strach z neznámého bývá větší než strach z toho, co se dá přečíst."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0154",
+      "fear_0134",
+      "fear_0156",
+      "fear_0153",
+      "fear_0019"
+    ],
+    "tier": "free",
+    "sort_order": 87,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0088",
+    "name": "terorismus",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "masová střelba",
+      "útok"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Terorismus funguje tak, že vyvolá strach neúměrný skutečnému riziku — přesně to je jeho cíl, a když ho cítíš, funguje podle plánu.",
+      "Pravděpodobnost, že se člověk stane obětí útoku, je nesmírně nízká ve srovnání s běžnými riziky každodenního života [ověřit].",
+      "Útoky jsou v médiích všude právě proto, že jsou vzácné; běžný den bez útoku zprávou není.",
+      "Nejde tomu úplně zabránit, ale jde si nedovolit, aby to řídilo život — nechodit na koncerty nebo do metra ze strachu je vítězství toho, kdo strach chtěl."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0154",
+      "fear_0134",
+      "fear_0156",
+      "fear_0153",
+      "fear_0026"
+    ],
+    "tier": "free",
+    "sort_order": 88,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0089",
+    "name": "pandemie",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "epidemie",
+      "virus"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Pandemie jsou součástí lidských dějin a lidstvo je všechny přežilo; ta poslední ukázala, že i velká krize se dá zvládnout, i když za cenu.",
+      "To, co se v pandemii dá ovlivnit, je málo, ale funguje — hygiena, informace z důvěryhodných zdrojů, nekonzumovat každou zprávu.",
+      "Strach z nemoci, který po pandemii zůstal, je normální dozvuk; tělo si zapamatovalo ohrožení a potřebuje čas, aby ho odložilo.",
+      "Zprávy o nových virech přicházejí pořád a většina z nich nikdy neopustí odborné články; to, že se o něčem mluví, neznamená, že to přijde."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0145",
+      "fear_0134",
+      "fear_0019",
+      "fear_0026",
+      "fear_0083"
+    ],
+    "tier": "free",
+    "sort_order": 89,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0090",
+    "name": "přírodní katastrofy",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "klima",
+      "povodeň",
+      "zemětřesení"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Většina přírodních katastrof je pro daný kraj a čas předvídatelná — povodňové mapy, varovné systémy a evakuační plány existují a fungují líp než kdy dřív [ověřit].",
+      "Strach z klimatu je racionální; problém není, že ho máš, ale když se z něj stane každodenní tíha, kterou neseš sám — a to se mění tím, že děláš něco konkrétního, i malého.",
+      "V Česku jsou zemětřesení, tsunami nebo hurikány prakticky mimo hru; realistická rizika jsou povodně, sucho a vedra — a na ta se dá připravit.",
+      "Katastrofy z druhého konce světa v telefonu vytvářejí pocit, že se to děje všude a pořád; není to blíž jen proto, že to vidíš."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0156",
+      "fear_0154",
+      "fear_0153",
+      "fear_0157",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 90,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0091",
+    "name": "kolaps společnosti",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "výpadek sítí",
+      "blackout",
+      "nepokoje"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Blackout, výpadek sítí nebo nepokoje se stávají, ale skoro vždycky lokálně a dočasně; společnost je odolnější, než jak vypadá ve filmech o konci světa.",
+      "V krizi si lidé mnohem častěji pomáhají, než aby se rabovalo — výzkumy chování při katastrofách to ukazují opakovaně [ověřit].",
+      "Základní připravenost — voda, světlo, pár dní zásob, hotovost, dohoda s blízkými, kde se sejít — je rozumná, levná a strach zmenšuje; hromadění a bunkr už ho živí.",
+      "Scénáře kolapsu jsou obvykle o pocitu, že nic nedržím v rukou; příprava na to, co jde připravit, ten pocit mění účinněji než další čtení o tom, co všechno může selhat."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0027",
+      "fear_0154",
+      "fear_0156",
+      "fear_0138",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 91,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0092",
+    "name": "násilný trestný čin",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "napadení",
+      "přepadení",
+      "znásilnění"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Většina lidí nikdy nezažije násilné napadení; mediální obraz vytváří pocit, že je to za každým rohem, ale statistiky násilné kriminality tomu neodpovídají [ověřit].",
+      "Strach z napadení je přirozený; kdo ho má, bývá opatrnější, a to není špatně — špatně je až to, když kvůli němu přestane chodit ven.",
+      "Bezpečí dělají jednoduché věci: vnímat okolí, věřit prvnímu nepříjemnému pocitu a odejít, mít u sebe telefon, říct někomu, kde jsi.",
+      "Kdyby se něco stalo, vina nikdy není na tom, kdo byl napaden — bez ohledu na to, kde byl, co měl na sobě nebo co pil.",
+      "Pokud za strachem stojí něco, co už se stalo, nepatří to na přerámování, ale někomu, kdo umí pracovat s traumatem."
+    ],
+    "fear_ids": [
+      "fear_0015",
+      "fear_0017",
+      "fear_0154",
+      "fear_0155",
+      "fear_0012",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 92,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0093",
+    "name": "vloupání",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "krádež",
+      "zloděj"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vloupání se stávají, ale řidčeji, než se zdá, a naprostá většina se odehraje v nepřítomnosti — zloději chtějí věci, ne setkání [ověřit].",
+      "Základní opatření skutečně snižují riziko — dobrý zámek, zavírat, nenechávat byt zjevně prázdný, sousedi, kteří vědí; zloděj hledá snadný cíl.",
+      "Věci jdou nahradit a pojistit; to, co po vloupání bolí nejvíc, je pocit narušeného bezpečí — a ten se dá časem obnovit, zvlášť když se něco změní (zámek, uspořádání, rutina).",
+      "Kontrolovat zámky desetkrát za noc bezpečí nezvyšuje, jen posiluje úzkost; jedna kontrola je opatrnost, desátá je strach."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0152",
+      "fear_0134",
+      "fear_0119",
+      "fear_0153",
+      "fear_0031"
+    ],
+    "tier": "free",
+    "sort_order": 93,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0094",
+    "name": "únik dat",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "krádež identity",
+      "kyberútok",
+      "hacknutí"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Úniky dat se dějí velkým firmám i státům; nejde jim úplně zabránit, ale většina z nich nikomu konkrétnímu neublíží — data se ztratí mezi miliony dalších.",
+      "Nejúčinnější ochrana je nudná a funguje: různá hesla, dvoufázové ověření, neklikat na zprávy, které spěchají; tím se vyřadí drtivá většina útoků.",
+      "Krádež identity je řešitelná — banky, úřady i policie na to mají postupy, a čím dřív se ozveš, tím míň škody vznikne.",
+      "Strach z hacknutí bývá strach z neviditelného; ve chvíli, kdy víš, co konkrétně hlídat, se zmenší na velikost úkolu."
+    ],
+    "fear_ids": [
+      "fear_0001",
+      "fear_0159",
+      "fear_0134",
+      "fear_0154",
+      "fear_0152",
+      "fear_0149"
+    ],
+    "tier": "free",
+    "sort_order": 94,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0095",
+    "name": "sledování",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "vláda",
+      "sociální sítě",
+      "kamery"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Sbírání dat je skutečné — sociální sítě, aplikace i kamery ve městech data sbírají; obava z toho není paranoia, je to popis reality.",
+      "Rozdíl je mezi sběrem dat a zájmem o tebe: většina dat se zpracovává automaticky pro reklamu a statistiku, nikdo konkrétní tě nesleduje.",
+      "Míru sledování jde částečně ovlivnit — nastavení soukromí, méně aplikací, méně sdílení — a to je zdravá pozornost, ne paranoia.",
+      "Když se pocit sledování týká tebe osobně, roste a nedá se zmírnit ani po kontrole, je to spíš na rozhovor s někým než na další zabezpečení."
+    ],
+    "fear_ids": [
+      "fear_0149",
+      "fear_0152",
+      "fear_0148",
+      "fear_0159",
+      "fear_0150",
+      "fear_0154"
+    ],
+    "tier": "free",
+    "sort_order": 95,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0096",
+    "name": "nehoda",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "auto",
+      "havárie",
+      "letadlo"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Létání patří k nejbezpečnějším způsobům dopravy a auta jsou bezpečnější než kdy dřív [ověřit]; strach neodpovídá riziku, odpovídá tomu, jak moc jsi bezmocný pasažér.",
+      "Strach z nehody roste s tím, kolik o nich čteš; jedna havárie ve zprávách se v hlavě rozroste na 'pořád se to děje', i když se za stejnou dobu odehrály miliony cest bez události.",
+      "Bezpečnost jde ovlivnit tam, kde jsi za volantem — rychlost, pás, neřídit unavený — a tam, kde nejsi, ji hlídá spousta lidí a systémů.",
+      "Kdo má nehodu za sebou, má právo na strach, který se vrací; když trvá měsíce a brání cestování, dá se s ním pracovat a jde to poměrně rychle."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0134",
+      "fear_0159",
+      "fear_0144",
+      "fear_0153",
+      "fear_0019"
+    ],
+    "tier": "free",
+    "sort_order": 96,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0097",
+    "name": "otevřené prostory",
+    "group": "Fobie",
+    "aliases": [
+      "davy",
+      "nemožnost úniku",
+      "agorafobie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Agorafobie většinou není strach z prostoru, ale z toho, že se tam něco stane — panika, kolaps — a nebude úniku ani pomoc; strach z místa je až druhotný.",
+      "Tělo se v davu nebo na náměstí cítí ohrožené, protože nemá 'zeď za zády' — je to stará reakce, ne důkaz, že je místo nebezpečné.",
+      "Vyhýbání fobii udržuje: každé místo, které vynecháš, se přidá na seznam a svět se zmenšuje; každé místo, kam se vrátíš, se ze seznamu maže.",
+      "Agorafobie patří mezi nejlépe léčitelné úzkostné stavy; cesta ven vede přes postupné vracení se na místa, ne přes jejich dobývání silou."
+    ],
+    "fear_ids": [
+      "fear_0140",
+      "fear_0159",
+      "fear_0135",
+      "fear_0134",
+      "fear_0069",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 97,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0098",
+    "name": "uzavřené prostory",
+    "group": "Fobie",
+    "aliases": [
+      "klaustrofobie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Klaustrofobie je strach z uvěznění a z nedostatku vzduchu, ne z místa samotného; vzduchu je i v malé místnosti nebo výtahu vždycky dost — pocit dušení je z úzkosti, ne z prostoru.",
+      "Vzácně se stane, že výtah zůstane stát — a i tehdy je to nepříjemné, ne nebezpečné; bývá to otázka desítek minut a pomoc přijde.",
+      "Pomáhá zůstat v prostoru o chvíli déle, než chce strach, a zjistit, že opadá sám; každý únik ho naopak potvrdí.",
+      "Strach z uzavřených prostorů se dá dobře odnaučit postupnými kroky — jde to v řádu týdnů, ne let."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0134",
+      "fear_0135",
+      "fear_0140",
+      "fear_0150",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 98,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0099",
+    "name": "výšky",
+    "group": "Fobie",
+    "aliases": [
+      "pád",
+      "balkon",
+      "rozhledna"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z výšek má v nějaké míře většina lidí; je vestavěný a užitečný — problém je, když se spouští i tam, kde pád není možný.",
+      "Závrať na balkoně nebo rozhledně je zčásti pocit, že tě to 'táhne dolů'; není to přání ani ztráta kontroly, jen zmatek rovnovážného systému, který nemá blízký bod, o který by se opřel.",
+      "Zábradlí, sklo a stavební normy jsou navržené na to, že se o ně opřeš; místa, kam se lidé běžně dostanou, jsou stavěná s velkou rezervou.",
+      "Fobie z výšek se léčí dobře — postupné pobývání ve výšce, kde nic nehrozí, učí tělo, že strach a skutečné riziko jsou dvě různé věci."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0159",
+      "fear_0134",
+      "fear_0144",
+      "fear_0203",
+      "fear_0140"
+    ],
+    "tier": "free",
+    "sort_order": 99,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0100",
+    "name": "tma",
+    "group": "Fobie",
+    "aliases": [
+      "noc",
+      "sám ve tmě"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze tmy je jeden z nejstarších lidských strachů — ve tmě se hůř vidí a mozek doplňuje chybějící obraz tím nejhorším; není to dětinské, je to výchozí nastavení.",
+      "Tma sama nic nedělá; v místnosti je ve tmě to samé, co ve světle, jen to nevidíš — a to je celý problém, ne nebezpečí.",
+      "Pomáhá tmu dávkovat: tlumené světlo místo úplné tmy, pak míň, a nechat tělo zvyknout, místo se nutit do stoprocentní tmy hned.",
+      "Když ve tmě přicházejí špatné vzpomínky nebo myšlenky, není to o tmě — a stojí za to to říct někomu, kdo umí pomoct s tím, co se vrací."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0154",
+      "fear_0155",
+      "fear_0022",
+      "fear_0153",
+      "fear_0135"
+    ],
+    "tier": "free",
+    "sort_order": 100,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0101",
+    "name": "létání",
+    "group": "Fobie",
+    "aliases": [
+      "letadlo",
+      "turbulence"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Létání je statisticky bezpečnější než cesta autem na letiště [ověřit]; strach z něj vzniká z bezmoci a nezvyklých pocitů, ne z rizika.",
+      "Turbulence jsou nepříjemné, ale letadlo je na ně konstruované s obrovskou rezervou; jsou pro něj něco jako kočičí hlavy pro auto — nepohodlí, ne nebezpečí.",
+      "Piloti a posádka létají ten samý úsek stokrát a nejsou sebevrazi; jejich klid během turbulencí je informace.",
+      "Většina zvuků a pohybů, které v letadle lekají — klapky, podvozek, změna otáček — je rutina; kdo se naučí, co znamenají, bojí se míň.",
+      "Fobie z létání se dá dobře zvládnout — existují na to programy včetně těch přímo od leteckých společností [ověřit]."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0134",
+      "fear_0159",
+      "fear_0140",
+      "fear_0156",
+      "fear_0150"
+    ],
+    "tier": "free",
+    "sort_order": 101,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0102",
+    "name": "řízení auta",
+    "group": "Fobie",
+    "aliases": [
+      "dálnice",
+      "zácpa",
+      "vlak"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z řízení má často ten, kdo řídí málo — dovednost, kterou nepoužíváš, přestane být automatická, a mozek to hlásí jako nebezpečí.",
+      "Dálnice je statisticky bezpečnější než okresky [ověřit]: všichni jedou stejným směrem a nic se nekříží; to, co děsí, je rychlost a pocit, že není kam uhnout.",
+      "Zácpa je nepříjemná, ne nebezpečná; nejde z ní ven, ale ani se v ní nic nestane, a každá se rozjede.",
+      "Pomáhá jezdit krátké známé trasy pravidelně a přidávat po kouskách; jeden dlouhý přejezd 'na sílu' fobii spíš posílí.",
+      "Kdo se bojí po nehodě, není zbabělec — tělo si to pamatuje; když strach trvá měsíce, dá se s ním pracovat a jde to dobře."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0134",
+      "fear_0145",
+      "fear_0059",
+      "fear_0086",
+      "fear_0140"
+    ],
+    "tier": "free",
+    "sort_order": 102,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0103",
+    "name": "voda",
+    "group": "Fobie",
+    "aliases": [
+      "utopení",
+      "hlubiny",
+      "moře"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Voda je nebezpečná tam, kde ji člověk podcení; kdo se jí bojí, ji obvykle nepodceňuje — strach tě chrání až moc.",
+      "Lidské tělo ve vodě plave, když se přestane bránit; většina paniky ve vodě vzniká z bojování s ní, ne z vody.",
+      "Plavat se dá naučit v každém věku a existují kurzy přímo pro dospělé, kteří se vody bojí [ověřit]; strach z vody není známka, že to nejde.",
+      "Hloubka a tma pod hladinou děsí představivostí, ne obsahem — v moři nebo přehradě, kde lidé běžně plavou, není pod tebou nic, co by tě chtělo."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0134",
+      "fear_0159",
+      "fear_0028",
+      "fear_0155",
+      "fear_0144"
+    ],
+    "tier": "free",
+    "sort_order": 103,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0104",
+    "name": "bouřka",
+    "group": "Fobie",
+    "aliases": [
+      "hromy",
+      "blesky"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Bouřka je hlasitá a dramatická, ale uvnitř budovy nebo v autě je člověk před bleskem prakticky v bezpečí; riziko zásahu se týká otevřené krajiny a vody.",
+      "Hrom je jen zvuk toho, co se už stalo; ve chvíli, kdy ho slyšíš, ti ten blesk nic neudělá.",
+      "Strach z bouřky má často kořen v dětství, kdy byla bouřka obrovská a člověk malý; tělo si to pamatuje, i když je teď dospělý v bytě ve třetím patře.",
+      "Pomáhá vědět, co dělat venku — nestát pod stromem, jít z vody, do budovy nebo auta — a doma si bouřku nechat prostě proběhnout."
+    ],
+    "fear_ids": [
+      "fear_0153",
+      "fear_0134",
+      "fear_0154",
+      "fear_0145",
+      "fear_0026",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 104,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0105",
+    "name": "oheň",
+    "group": "Fobie",
+    "aliases": [
+      "požár"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Požár v bytě je vzácný a většině se dá předejít nudnými věcmi: hlásič kouře, nenechávat sporák bez dozoru, hasicí sprej v kuchyni.",
+      "Strach z ohně je zdravý instinkt; problém je až, když se z něj stane kontrolování sporáku desetkrát před odchodem — to už není opatrnost, to je úzkost.",
+      "Kdyby se něco stalo, hasiči dorazí rychle a domy jsou stavěné tak, aby se z nich dalo utéct; vědět kudy uklidní víc než další kontrola.",
+      "Kontrola má smysl jednou; každá další strach potvrzuje, místo aby ho uklidnila."
+    ],
+    "fear_ids": [
+      "fear_0153",
+      "fear_0156",
+      "fear_0159",
+      "fear_0145",
+      "fear_0134",
+      "fear_0091"
+    ],
+    "tier": "free",
+    "sort_order": 105,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0106",
+    "name": "pavouci",
+    "group": "Fobie",
+    "aliases": [
+      "hmyz",
+      "brouci",
+      "vosy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z pavouků a hmyzu má hluboké kořeny a snadno se učí — často stačí vidět strach u rodiče; není to známka slabosti.",
+      "V Česku nežije pavouk, který by byl pro člověka nebezpečný [ověřit]; vosy a sršni bolí, ale bez alergie nejsou nebezpečné.",
+      "Pavouk o tebe nemá zájem — jsi pro něj obr, před kterým utíká, a tvůj strach z něj je mnohonásobně větší než jeho význam.",
+      "Fobie ze zvířat se léčí velmi rychle, často během několika hodin postupného přibližování [ověřit]; je to jedna z nejvděčnějších fobií."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0159",
+      "fear_0153",
+      "fear_0134",
+      "fear_0140",
+      "fear_0144"
+    ],
+    "tier": "free",
+    "sort_order": 106,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0107",
+    "name": "hadi",
+    "group": "Fobie",
+    "aliases": [
+      "ještěrky",
+      "plazi"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z hadů je pravděpodobně vrozený nebo velmi snadno naučený — je to jedna z nejčastějších fobií na světě, i u lidí, kteří hada nikdy neviděli.",
+      "V Česku žije jediný jedovatý had, zmije, a její uštknutí je pro zdravého dospělého zřídka nebezpečné [ověřit]; ještěrky a slepýši jsou naprosto neškodní.",
+      "Had před člověkem utíká, útočí jen zahnaný do kouta nebo šlápnutý; kdo se hadů bojí a dává pozor, kam šlape, je před nimi v naprostém bezpečí.",
+      "Stejně jako u pavouků se fobie z hadů léčí rychle a dobře; není nutné s ní žít."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0153",
+      "fear_0145",
+      "fear_0144",
+      "fear_0159",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 107,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0108",
+    "name": "psi",
+    "group": "Fobie",
+    "aliases": [
+      "kočky",
+      "zvířata"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze psů má obvykle konkrétní příčinu — pokousání, útok nebo strach rodiče; je pochopitelný a tělo si ho pamatuje.",
+      "Naprostá většina psů, které potkáš, chce klid; pes, který se přiblíží, většinou zkoumá, ne útočí.",
+      "Pomáhá vědět, jak se chovat: nestát strnule s očima na psovi, neutíkat, nechat ho očichat nebo ho klidně obejít — pes reaguje na tvoje napětí.",
+      "Nejúčinnější je postupný kontakt s klidným psem, ideálně s někým, kdo ho zná; fobie ze zvířat mizí rychle, když tělo dostane novou zkušenost."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0015",
+      "fear_0153",
+      "fear_0144",
+      "fear_0159",
+      "fear_0155"
+    ],
+    "tier": "free",
+    "sort_order": 108,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0109",
+    "name": "žraloci",
+    "group": "Fobie",
+    "aliases": [
+      "mořská zvířata",
+      "medúzy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Útoky žraloků na lidi jsou na celém světě tak vzácné, že se počítají v desítkách ročně [ověřit], a v Evropě jsou prakticky neznámé.",
+      "Strach ze žraloka se z velké části naučil z filmů; žralok o člověka nestojí, neodpovídá jeho kořisti, a naprostá většina druhů je pro lidi neškodná.",
+      "Medúzy pálí, ale v evropských mořích jde o nepříjemnost, ne o ohrožení života [ověřit]; plavčíci a značky varují, když je jich hodně.",
+      "Strach z toho, co je pod hladinou, je strach z neviditelného; v mělké vodě u pláže je pod tebou písek a pár malých ryb, a to platí, i když to nevidíš."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0154",
+      "fear_0028",
+      "fear_0134",
+      "fear_0153",
+      "fear_0144"
+    ],
+    "tier": "free",
+    "sort_order": 109,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0110",
+    "name": "ptáci",
+    "group": "Fobie",
+    "aliases": [
+      "holubi",
+      "netopýři"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z ptáků a netopýrů je častější, než se přiznává — třepotání, náhlé pohyby a nepředvídatelnost dělají přesně to, na co je poplachový systém citlivý.",
+      "Holubi jsou lhostejní a nemotorní; netopýři jsou naopak přesní — narazit do člověka je pro ně skoro nemožné, i když to tak ve tmě vypadá.",
+      "Ptáci nemají zájem na kontaktu; přiblíží se pro jídlo a odletí, jakmile se pohneš.",
+      "Jako u ostatních zvířecích fobií platí: postupné pobývání poblíž a pozorování, jak se chovají, strach zmenšuje rychle."
+    ],
+    "fear_ids": [
+      "fear_0026",
+      "fear_0154",
+      "fear_0159",
+      "fear_0153",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 110,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0111",
+    "name": "krev",
+    "group": "Fobie",
+    "aliases": [
+      "jehly",
+      "injekce",
+      "odběr"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Fobie z krve a jehel je zvláštní tím, že jako jediná často vede k mdlobě — tlak klesne místo toho, aby stoupl; je to tělesný reflex, ne slabost.",
+      "Odběr trvá vteřiny a bolest je menší, než jak ji strach předpovídá; většina nepříjemna je v čekání, ne ve vpichu.",
+      "Zdravotníci vidí strach z jehel každý den; když to řekneš dopředu, dají ti lehnout a počkají — nic z toho je nezaskočí.",
+      "Proti mdlobě existuje jednoduchý trénink, který učí terapeuti i některé odběrové sestry [ověřit]; fobie z jehel se dá dobře zvládnout."
+    ],
+    "fear_ids": [
+      "fear_0144",
+      "fear_0159",
+      "fear_0134",
+      "fear_0069",
+      "fear_0143",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 111,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0112",
+    "name": "zvracení",
+    "group": "Fobie",
+    "aliases": [
+      "emetofobie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze zvracení bývá strach ze ztráty kontroly a z trapnosti, ne z aktu samého; zvracení je krátká ochranná reakce těla.",
+      "Pocit na zvracení se při úzkosti objevuje často a téměř nikdy ke zvracení nevede — nevolnost je příznak strachu, ne signál, že se to stane.",
+      "Emetofobie vede k vyhýbání — cestování, nemocným, těhotenství, restauracím — a tím se udržuje; svět se kvůli ní zmenšuje víc, než kolik zvracení kdy zabralo času.",
+      "Je to známá a léčitelná fobie; není nutné s ní žít, i když se o ní málo mluví."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0069",
+      "fear_0134",
+      "fear_0140",
+      "fear_0203",
+      "fear_0063"
+    ],
+    "tier": "free",
+    "sort_order": 112,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0113",
+    "name": "polykání",
+    "group": "Fobie",
+    "aliases": [
+      "dušení",
+      "zaskočení"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Polykání je reflex, který funguje i ve spánku; strach ho dělá vědomým, a vědomé polykání se zdá těžší, ale nepřestane fungovat.",
+      "Zaskočení je nepříjemné a většinou se vyřeší zakašláním; skutečné dušení je vzácné a postup první pomoci na něj zná i laik [ověřit].",
+      "Sevřené hrdlo, 'knedlík v krku' a pocit, že to neprojde, jsou typické tělesné projevy úzkosti; když trvají, lékař to vyšetří, ale obvykle jsou z napětí.",
+      "Vyhýbání se tuhé stravě strach posiluje; pomáhá jíst v klidu, pomalu a v přítomnosti někoho, komu důvěřuješ."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0159",
+      "fear_0134",
+      "fear_0140",
+      "fear_0144",
+      "fear_0135"
+    ],
+    "tier": "free",
+    "sort_order": 113,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0114",
+    "name": "nečistota",
+    "group": "Fobie",
+    "aliases": [
+      "kontaminace",
+      "bakterie",
+      "choroby"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Bakterie jsou všude a většina z nich je neškodná nebo prospěšná; tělo s nimi spolupracuje od narození a imunitní systém potřebuje kontakt, ne sterilitu.",
+      "Běžná hygiena stačí — přehnané mytí a dezinfekce nechrání víc, jen poškozují kůži a živí strach.",
+      "Strach z kontaminace se udržuje rituály: každé umytí navíc přinese úlevu a tím strach naučí, že byl na místě; čím míň rituálů, tím míň strachu — i když to zpočátku bolí.",
+      "Když mytí, kontrolování nebo vyhýbání zabírá hodiny denně, jde o dobře známý a léčitelný problém — a nejrychleji pomáhá někdo, kdo to zná."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0154",
+      "fear_0153",
+      "fear_0157",
+      "fear_0145",
+      "fear_0057"
+    ],
+    "tier": "free",
+    "sort_order": 114,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0115",
+    "name": "zubař",
+    "group": "Fobie",
+    "aliases": [],
+    "mark": "P",
+    "reframings": [
+      "Strach ze zubaře je jeden z nejčastějších strachů vůbec a zubaři s ním počítají; když to řekneš dopředu, přizpůsobí tempo a domluví se s tebou na znamení, kdy zastavit.",
+      "Dnešní zubařství není to z dětství: znecitlivění funguje, nástroje jsou tišší a většina zákroků je bez bolesti [ověřit].",
+      "Odkládání dělá ze zubů horší zuby a z návštěvy větší návštěvu; jedna kontrola dnes je menší než zákrok za rok.",
+      "Nejhorší část je čekárna, ne křeslo; v křesle se strach obvykle zmenší, protože tělo zjistí, že se nic strašného neděje."
+    ],
+    "fear_ids": [
+      "fear_0144",
+      "fear_0134",
+      "fear_0159",
+      "fear_0069",
+      "fear_0143"
+    ],
+    "tier": "free",
+    "sort_order": 115,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0116",
+    "name": "lékař",
+    "group": "Fobie",
+    "aliases": [
+      "vyšetření",
+      "bílý plášť"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z lékaře bývá strach z toho, co se dozvíš, ne z lékaře; jenže nevědět nemoc nezastaví, jen ubere čas.",
+      "Bílý plášť sám zvedá tlak — je to popsaný jev, který lékaři znají a počítají s ním [ověřit].",
+      "Lékař vidí denně desítky lidí; není tam, aby tě soudil, ale aby řešil; nic, co mu řekneš, ho nezaskočí.",
+      "Pomáhá si napsat, co chceš říct a na co se zeptat, a vzít někoho s sebou; strach klesá, když je vyšetření konkrétní úkol, ne nejistá zkouška."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0134",
+      "fear_0144",
+      "fear_0145",
+      "fear_0067",
+      "fear_0173"
+    ],
+    "tier": "free",
+    "sort_order": 116,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0117",
+    "name": "cizí lidé",
+    "group": "Fobie",
+    "aliases": [
+      "cizinci",
+      "neznámí"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Naprostá většina cizích lidí o tebe nemá zájem — jdou za svým, a když se na tebe podívají, zapomenou to za vteřinu.",
+      "Strach z neznámých je starý instinkt, který dává smysl v tlupě padesáti lidí; ve městě se spouští stokrát denně naprázdno.",
+      "Cizí lidé jsou zároveň zdroj pomoci; když se něco stane, pomáhají většinou právě oni.",
+      "Strach z lidí z jiných zemí je z velké části strach z neznámého; s prvním konkrétním člověkem — sousedem, kolegou, prodavačem — se obvykle rozpustí."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0153",
+      "fear_0028",
+      "fear_0012",
+      "fear_0001",
+      "fear_0005"
+    ],
+    "tier": "free",
+    "sort_order": 117,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0118",
+    "name": "ztráta mobilního signálu",
+    "group": "Fobie",
+    "aliases": [
+      "vybitý mobil",
+      "nomofobie"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Vybitý mobil je nepříjemnost, ne nouze; lidé fungovali bez mobilu celé dějiny a to, co se cítí jako ohrožení, je návyk, ne nebezpečí.",
+      "Strach z toho, že bez telefonu 'nejsem k zastižení', bývá spíš strach, že mi něco unikne nebo že si beze mě někdo poradí — a obojí je v pořádku.",
+      "Pomáhá zkoušet krátké úseky bez mobilu záměrně — procházka, oběd — a zjistit, že se nic nestalo; nervový systém se učí zkušeností.",
+      "Když je potřeba mobilu nutkavá a bez něj přichází panika, je to spíš o úzkosti než o telefonu; řeší se to stejně jako jiné úzkosti."
+    ],
+    "fear_ids": [
+      "fear_0135",
+      "fear_0134",
+      "fear_0159",
+      "fear_0080",
+      "fear_0022",
+      "fear_0023"
+    ],
+    "tier": "free",
+    "sort_order": 118,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0119",
+    "name": "strašidla",
+    "group": "Fobie",
+    "aliases": [
+      "bubáci",
+      "duchové",
+      "horor"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z duchů a bubáků je strach z toho, co nevidíš a nemůžeš ovlivnit; ve tmě mozek doplňuje obraz tím, co nedávno viděl — po hororu je to horor.",
+      "Pro existenci duchů není žádný doklad, a to při miliardách lidí a milionech domů; každý 'jev' zatím dostal obyčejné vysvětlení — průvan, zvuky domu, únava, představivost.",
+      "Strach po hororu je normální a odezní; filmy jsou dělané tak, aby v tobě zůstaly, a to je řemeslo, ne důkaz.",
+      "Pomáhá rozsvítit, něco dělat a nechat mozek zapomenout; hádka s vlastní představivostí o tom, jestli tam něco je, ji jen krmí."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0134",
+      "fear_0154",
+      "fear_0145",
+      "fear_0159",
+      "fear_0022"
+    ],
+    "tier": "free",
+    "sort_order": 119,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0120",
+    "name": "smrt",
+    "group": "Fobie",
+    "aliases": [
+      "umírání",
+      "nebytí"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach ze smrti má každý, kdo si uvědomuje, že je smrtelný; to není porucha, to je součást lidství, a většina lidí s ním žije, aniž by jim řídil dny.",
+      "To, co děsí, obvykle není smrt, ale představa umírání, bolesti nebo nebytí; ty tři se dají oddělit a každá vypadá jinak, když se na ni podíváš zvlášť.",
+      "Nebytí není stav, který by se dal zažít — nebude nikdo, komu by to vadilo; strach z něj je strach z představy, kterou mozek neumí vytvořit, a proto ji nahrazuje tmou a prázdnem.",
+      "Umírání dnes provází medicína, která umí bolest tlumit, a paliativní péče se stará i o strach [ověřit]; scénář 'sám a v bolesti' je ten, kterému se dá nejvíc předejít.",
+      "Kdo se smrti bojí nejvíc, často nejvíc řeší, jestli žije svůj život; ten strach je někdy nejlepší kompas, který má."
+    ],
+    "fear_ids": [
+      "fear_0145",
+      "fear_0146",
+      "fear_0144",
+      "fear_0159",
+      "fear_0103",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 120,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0121",
+    "name": "doprava",
+    "group": "Místa a situace",
+    "aliases": [
+      "MHD",
+      "metro",
+      "autobus",
+      "tramvaj",
+      "loď",
+      "zácpa",
+      "tunel",
+      "most",
+      "lanovka"
+    ],
+    "mark": "P",
+    "reframings": [
+      "MHD, metro a vlak patří mezi nejbezpečnější způsoby, jak se někam dostat; strach v nich není z rizika, ale z toho, že nemůžeš vystoupit, kdy chceš.",
+      "Zastávky jsou blízko sebe — v metru i tramvaji jsi od možnosti vystoupit vždycky jen pár minut; tunel i most mají konec, i když ho zrovna nevidíš.",
+      "Většina lidí kolem tebe je ponořená do telefonu; kdyby se ti udělalo špatně, nikdo tě nesoudí — a pomůže.",
+      "Pomáhá jezdit krátké úseky mimo špičku, sedět u dveří a přidávat zastávky; každá dokončená jízda přepisuje strach."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0135",
+      "fear_0140",
+      "fear_0150",
+      "fear_0134",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 121,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0122",
+    "name": "rychlé sporty",
+    "group": "Místa a situace",
+    "aliases": [
+      "lyže",
+      "snowboard",
+      "kolo",
+      "brusle",
+      "skate",
+      "surf",
+      "kite",
+      "jachting"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Rychlé sporty mají skutečné riziko a strach z něj je zdravý; rozdíl je mezi strachem, který tě drží v mezích, a strachem, který ti zatuhne tělo — ten druhý zraňuje víc.",
+      "Většina úrazů vzniká z přecenění se, únavy a spěchu, ne z rychlosti samé; kdo jede na svou úroveň a odpočívá, má riziko výrazně menší.",
+      "Ochrana funguje — helma, chrániče, správná výbava — a nikdo, kdo umí, ji nepovažuje za ostudu.",
+      "Dovednost se učí postupně a strach s ní klesá; první den na lyžích je strašidelný pro každého a desátý je jiný sport."
+    ],
+    "fear_ids": [
+      "fear_0144",
+      "fear_0159",
+      "fear_0145",
+      "fear_0069",
+      "fear_0086",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 122,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0123",
+    "name": "výtah",
+    "group": "Místa a situace",
+    "aliases": [
+      "kabinka",
+      "WC",
+      "sklep",
+      "místnost bez oken"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Výtah je jedno z nejkontrolovanějších zařízení v domě — pravidelné revize, záložní brzdy, nouzové tlačítko; zůstat stát je vzácné a pád prakticky vyloučený [ověřit].",
+      "V kabince, na WC nebo ve sklepě je vzduchu vždycky dost; pocit dušení je z úzkosti, ne z místa.",
+      "Kdyby výtah zastavil, není to ohrožení, ale čekání — s telefonem, tlačítkem a lidmi, kteří tě slyší.",
+      "Pomáhá jet jedno patro, pak dvě, a nechat tělo zjistit, že to jde; schody jako trvalé řešení fobii jen krmí."
+    ],
+    "fear_ids": [
+      "fear_0150",
+      "fear_0159",
+      "fear_0135",
+      "fear_0134",
+      "fear_0140",
+      "fear_0145"
+    ],
+    "tier": "free",
+    "sort_order": 123,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0124",
+    "name": "přeplněná místa",
+    "group": "Místa a situace",
+    "aliases": [
+      "obchodní centrum",
+      "fronta",
+      "placení u kasy",
+      "koncert"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Dav je nepříjemný proto, že v něm nejde ovládat tempo ani vzdálenost; není nebezpečný, jen zbavuje kontroly — a to tělo hlásí jako hrozbu.",
+      "Fronta a placení u kasy jsou situace, kde jsi 'chycený' na očích; ve skutečnosti se lidé za tebou dívají do telefonu a pokladní vidí stovky lidí denně.",
+      "Z obchodního centra i z koncertu jde vždycky odejít — vědět, kde je východ, uklidní víc než jeho hlídání.",
+      "Pomáhá chodit v době, kdy je míň lidí, a postupně přidávat; jeden krátký nákup je lepší trénink než hodina na sílu."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0071",
+      "fear_0140",
+      "fear_0134",
+      "fear_0069",
+      "fear_0150"
+    ],
+    "tier": "free",
+    "sort_order": 124,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0125",
+    "name": "náměstí",
+    "group": "Místa a situace",
+    "aliases": [
+      "otevřené prostory",
+      "velké plochy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Velká otevřená plocha děsí tím, že není kam se opřít a kde se schovat; je to reakce na chybějící 'zeď za zády', ne na skutečné nebezpečí.",
+      "Na náměstí je vidět daleko — a to znamená i to, že vidíš východy, lidi a pomoc; otevřenost je zároveň bezpečí.",
+      "Strach, že se uprostřed něco stane a všichni to uvidí, počítá s pozorností, kterou lidé v pohybu nemají.",
+      "Pomáhá jít nejdřív po kraji, pak diagonálně, pak se zastavit uprostřed; každý krok přepíše mapu, kterou má strach."
+    ],
+    "fear_ids": [
+      "fear_0140",
+      "fear_0071",
+      "fear_0155",
+      "fear_0159",
+      "fear_0135",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 125,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0126",
+    "name": "zdravotnictví",
+    "group": "Místa a situace",
+    "aliases": [
+      "čekárna",
+      "vyšetření",
+      "odběr",
+      "nemocnice",
+      "psychiatrie",
+      "terapeut"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Nemocnice a čekárny jsou nepříjemné pro každého — cizí zvuky, čekání a nejistota; ten strach neznamená, že tam nepatříš.",
+      "Zdravotníci jsou zvyklí na strach i stud; nic, co uděláš nebo řekneš, není poprvé, a když řekneš, že se bojíš, obvykle to změní tempo.",
+      "Psychiatrie a terapeut nejsou pro 'blázny' — chodí tam lidé se spánkem, stresem, vztahy a smutkem, a většina odchází s úlevou, že to řekla nahlas.",
+      "Strach z toho, co se dozvíš, je horší než vědět; s informací se dá pracovat, s nejistotou ne.",
+      "Pomáhá jít s doprovodem, mít napsané otázky a dovolit si říct 'potřebuju chvilku'."
+    ],
+    "fear_ids": [
+      "fear_0134",
+      "fear_0045",
+      "fear_0144",
+      "fear_0145",
+      "fear_0067",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 126,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0127",
+    "name": "pracovní prostředí",
+    "group": "Místa a situace",
+    "aliases": [
+      "kancelář šéfa",
+      "open space",
+      "zasedačka",
+      "HR"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Kancelář šéfa, zasedačka nebo HR jsou místa s asymetrií moci — nervozita tam je normální, ne známka slabosti.",
+      "Open space vyčerpává tím, že jsi pořád na očích; to není tvoje přecitlivělost, to je známý efekt toho prostoru [ověřit].",
+      "Většina jednání v práci je rutina; lidé na druhé straně stolu mají vlastní seznam úkolů a hodnotí tě mnohem míň, než si myslíš.",
+      "Pomáhá vědět, o čem schůzka je, mít jednu připravenou větu a počítat s tím, že první minuty jsou nejhorší."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0173",
+      "fear_0071",
+      "fear_0056",
+      "fear_0044",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 127,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0128",
+    "name": "škola",
+    "group": "Místa a situace",
+    "aliases": [
+      "třída",
+      "zkouškovka",
+      "ředitelna",
+      "šatny",
+      "jídelna",
+      "tělocvična"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Škola je pro dítě celý svět, a proto v ní strach roste do rozměrů, které zvenku nedávají smysl; brát ho vážně neznamená ho přeceňovat.",
+      "Třída, jídelna, šatny — to všechno jsou místa, kde jsou děti na očích a kde se tvoří pořadí; strach z nich je strach ze srovnávání, ne z místa.",
+      "Ředitelna a zkouškovka jsou nepříjemné, ale mají pravidla a konec; skoro všechno, co se v nich stane, se dá spravit.",
+      "Když se do školy nedá jít týdny a tělo se brání — bolení břicha, nevolnost — nejde o vzdor, ale o úzkost; a ta se řeší s někým, ne přes sílu."
+    ],
+    "fear_ids": [
+      "fear_0045",
+      "fear_0069",
+      "fear_0071",
+      "fear_0080",
+      "fear_0064",
+      "fear_0055"
+    ],
+    "tier": "free",
+    "sort_order": 128,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0129",
+    "name": "úřady",
+    "group": "Místa a situace",
+    "aliases": [
+      "banka",
+      "finanční úřad",
+      "policie",
+      "soud",
+      "exekuce",
+      "pošta"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Úřady působí jako moc, ale ve skutečnosti jsou to procesy s formuláři; úředník má postup a chce, aby se to vyřídilo — nemá z tebe zisk ani radost.",
+      "Většina toho, co se na úřadě zdá hrozivé, je otázka informace: co vzít, co vyplnit, kam jít — a to se dá zjistit předem.",
+      "Policie, soud i exekuce mají pravidla a tvoje práva jsou v nich pevná; kdo jim nerozumí, může mít u sebe někoho, kdo ano — poradnu, právníka, kamaráda.",
+      "Odkládání úřední věci ji zvětšuje; jedna návštěva navíc je skoro vždycky menší než pokuta nebo lhůta za rok."
+    ],
+    "fear_ids": [
+      "fear_0173",
+      "fear_0056",
+      "fear_0134",
+      "fear_0055",
+      "fear_0079",
+      "fear_0150"
+    ],
+    "tier": "free",
+    "sort_order": 129,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0130",
+    "name": "společenské prostory",
+    "group": "Místa a situace",
+    "aliases": [
+      "restaurace",
+      "kavárna",
+      "bar",
+      "kino",
+      "divadlo",
+      "klub"
+    ],
+    "mark": "P",
+    "reframings": [
+      "V restauraci nebo baru je každý u svého stolu ve své bublině; pocit, že tě všichni sledují, je z úzkosti, ne z lidí.",
+      "Kino a divadlo mají výhodu: tma, klid a jasný konec — jsou to jedna z nejsnazších míst, kde se dá být mezi lidmi bez kontaktu.",
+      "Odejít z kavárny nebo klubu je vždycky možné; kdo ví, že může odejít, obvykle zůstane.",
+      "Pomáhá začít krátkými návštěvami v klidné době a se známým člověkem, ne sólo v pátek večer."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0069",
+      "fear_0045",
+      "fear_0082",
+      "fear_0140",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 130,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0131",
+    "name": "sportoviště",
+    "group": "Místa a situace",
+    "aliases": [
+      "posilovna",
+      "bazén",
+      "šatny",
+      "sauna",
+      "sjezdovka"
+    ],
+    "mark": "P",
+    "reframings": [
+      "V posilovně nebo bazénu se každý soustředí na sebe — na svoje dýchání, svoje kilo, svůj rozvrh; nikdo nezkoumá začátečníka.",
+      "Začátečník je v každé posilovně norma; ti, kdo vypadají, že to umí, byli začátečníci taky a většina z nich pomůže, když se zeptáš.",
+      "Šatny a sauna jsou místa, kde se lidé svléknou a jdou po svém; těla tam vypadají obyčejně a nikdo je nehodnotí.",
+      "Pomáhá jít v klidnější hodinu, mít jasný krátký plán a odejít, když je hotovo — sportoviště se stane 'tvoje' po pár návštěvách."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0045",
+      "fear_0069",
+      "fear_0075",
+      "fear_0082",
+      "fear_0062"
+    ],
+    "tier": "free",
+    "sort_order": 131,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0132",
+    "name": "sám doma",
+    "group": "Místa a situace",
+    "aliases": [
+      "noc",
+      "postel",
+      "můj byt",
+      "být sám v bytě"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Být sám v bytě v noci je pro nervový systém neobvyklá situace — tisíce let jsme spali v tlupě; strach z toho není slabost, ale stará výbava.",
+      "Zvuky domu v noci jsou skutečné a mají obyčejné příčiny: trubky, sousedi, vítr, chladnoucí materiál; to, co dělá strach, je chybějící vysvětlení, ne zvuk.",
+      "Byt je zamčený a lidé, kteří by chtěli dovnitř, chtějí prázdný byt, ne obydlený; tvoje přítomnost je ochrana, ne riziko.",
+      "Pomáhá mít rituál — světlo, zvuk, telefon u postele, kontrola jednou a dost; a když je za strachem něco z minulosti, řešit to s někým, ne sám ve tmě."
+    ],
+    "fear_ids": [
+      "fear_0022",
+      "fear_0154",
+      "fear_0155",
+      "fear_0135",
+      "fear_0018",
+      "fear_0028"
+    ],
+    "tier": "free",
+    "sort_order": 132,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0133",
+    "name": "noční město",
+    "group": "Místa a situace",
+    "aliases": [
+      "nebezpečná čtvrť",
+      "podchod",
+      "parkovací dům",
+      "bezdomovci"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Noční město je hlučnější a temnější, ne nutně nebezpečnější; násilí vůči náhodným chodcům je vzácné a týká se hlavně situací, do kterých člověk sám vstoupil [ověřit].",
+      "Lidé bez domova jsou většinou zranitelnější než ty; strach z nich je strach z neznámého a z bídy, ne z reálného ohrožení.",
+      "Bezpečí v noci dělají jednoduché věci: osvětlené ulice, vnímat okolí, nabitý telefon, říct někomu, kde jsi, a věřit prvnímu nepříjemnému pocitu.",
+      "Podchod a parkovací dům jsou místa s kamerami a s koncem; nepříjemný pocit v nich je z ozvěny a špatného světla, ne z toho, co v nich je."
+    ],
+    "fear_ids": [
+      "fear_0154",
+      "fear_0153",
+      "fear_0015",
+      "fear_0155",
+      "fear_0135",
+      "fear_0028"
+    ],
+    "tier": "free",
+    "sort_order": 133,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0134",
+    "name": "příroda",
+    "group": "Místa a situace",
+    "aliases": [
+      "les",
+      "hory",
+      "voda",
+      "divočina",
+      "pod širákem"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Les nebo hory jsou méně nebezpečné než silnice, po které jsi tam přijel; strach v přírodě je strach z ticha, tmy a z toho, že jsi 'mimo dosah', ne z reálné hrozby.",
+      "V české přírodě není zvíře, které by člověka lovilo [ověřit]; nejčastější problém je bloudění, počasí a podcenění — a to všechno se dá připravit.",
+      "Zvuky lesa v noci jsou obyčejné: srnky, kanci, sovy, větve; tělo je čte jako ohrožení, protože je nezná, ne protože jsou nebezpečné.",
+      "Pomáhá vědět, kde jsi — mapa, trasa, čas návratu — říct někomu plán a začít krátce; jedna noc pod širákem u chaty naučí víc než týden četby."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0135",
+      "fear_0154",
+      "fear_0155",
+      "fear_0022",
+      "fear_0153"
+    ],
+    "tier": "free",
+    "sort_order": 134,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0135",
+    "name": "komunikace na dálku",
+    "group": "Místa a situace",
+    "aliases": [
+      "telefonát",
+      "videohovor",
+      "online meeting",
+      "sociální síť"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Videohovor je náročnější než osobní setkání — vidíš sám sebe, ztrácíš řeč těla, mluvíš do zpoždění; únava a nervozita z něj jsou popsané, ne tvoje selhání [ověřit].",
+      "Na online meetingu se většina lidí dívá na svůj obraz nebo na sdílený dokument, ne na tebe.",
+      "Vypnout vlastní náhled, mít připravenou první větu a vědět, že 'zamrzl jsem' se říká bez studu, odstraní většinu strachu.",
+      "Sociální sítě jsou výběr cizích vrcholů; nervozita z toho, co napsat, je nervozita z publika, které ve skutečnosti přejíždí dál."
+    ],
+    "fear_ids": [
+      "fear_0071",
+      "fear_0045",
+      "fear_0069",
+      "fear_0159",
+      "fear_0074",
+      "fear_0034"
+    ],
+    "tier": "free",
+    "sort_order": 135,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0136",
+    "name": "cestování",
+    "group": "Místa a situace",
+    "aliases": [
+      "letiště",
+      "nádraží",
+      "hotel",
+      "zahraničí",
+      "exotika",
+      "expedice",
+      "cestovat sám"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Cestování je nejistota nasměrovaná záměrně; nervozita před cestou je normální i u těch, kdo cestují pořád.",
+      "Letiště a nádraží vypadají chaoticky, ale jsou navržená tak, aby jimi prošel i ten, kdo tam je poprvé — cedule, lidé, informace; není potřeba vědět, stačí se ptát.",
+      "V zahraničí platí totéž co doma: lidé jsou většinou vstřícní, problémy se řeší na místě a ztracené věci jdou nahradit.",
+      "Cestovat sám je zkušenost, která se cení právě proto, že se jí lidé bojí; většina samostatných cestovatelů popisuje první dny jako nejtěžší a zbytek jako nejlepší.",
+      "Pomáhá mít připravené jen první tři kroky — jak se dostat z letiště, kde spát, kde se najíst první večer — a zbytek nechat cestě."
+    ],
+    "fear_ids": [
+      "fear_0028",
+      "fear_0135",
+      "fear_0159",
+      "fear_0022",
+      "fear_0090",
+      "fear_0153"
+    ],
+    "tier": "free",
+    "sort_order": 136,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0137",
+    "name": "intimní prostory",
+    "group": "Místa a situace",
+    "aliases": [
+      "cizí postel",
+      "ložnice partnera"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Cizí postel nebo ložnice partnera jsou místa, kde jsi nejvíc 'bez scénáře' — bez rolí, bez struktury, blízko; nervozita tam je normální, ne signál, že něco není v pořádku.",
+      "Druhý je nervózní taky; ložnice je pro něj stejně obnažené místo jako pro tebe.",
+      "Nemusíš tam nic 'zvládnout'; smyslem intimity je být, ne vykonat, a přiznat nervozitu nahlas ji většinou zmenší.",
+      "Když strach z intimity sahá hlouběji — do minulosti, do těla, do studu — není to na jednu noc, ale na rozhovor s někým, kdo tomu rozumí."
+    ],
+    "fear_ids": [
+      "fear_0229",
+      "fear_0226",
+      "fear_0067",
+      "fear_0143",
+      "fear_0228",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 137,
+    "added_at": "2026-09-11"
+  }
+]

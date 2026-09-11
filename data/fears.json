@@ -1,0 +1,3527 @@
+[
+  {
+    "id": "fear_0001",
+    "name": "Zneužití",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0017",
+      "cl_0013",
+      "cl_0015",
+      "cl_0012",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 1,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0002",
+    "name": "Manipulace",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0017",
+      "cl_0012",
+      "cl_0071",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 2,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0003",
+    "name": "Citové vydírání",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0071",
+      "cl_0075",
+      "cl_0072",
+      "cl_0096"
+    ],
+    "tier": "free",
+    "sort_order": 3,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0004",
+    "name": "Tajnosti",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0019",
+      "cl_0015",
+      "cl_0043",
+      "cl_0080"
+    ],
+    "tier": "free",
+    "sort_order": 4,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0005",
+    "name": "Nepřátelství",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0013",
+      "cl_0012",
+      "cl_0016",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0006",
+    "name": "Nevěra",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0015",
+      "cl_0009",
+      "cl_0002",
+      "cl_0013",
+      "cl_0026"
+    ],
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0007",
+    "name": "Zrada",
+    "group": "Zneužije mě, využije mě, podvede mě",
+    "cluster_ids": [
+      "cl_0015",
+      "cl_0016",
+      "cl_0013",
+      "cl_0009",
+      "cl_0109"
+    ],
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0008",
+    "name": "Nespolehlivost",
+    "group": "Nedůvěřuji v integritu ostatních lidí",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0012",
+      "cl_0096",
+      "cl_0009",
+      "cl_0109"
+    ],
+    "tier": "free",
+    "sort_order": 8,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0009",
+    "name": "Nepoctivost",
+    "group": "Nedůvěřuji v integritu ostatních lidí",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0012",
+      "cl_0015",
+      "cl_0101",
+      "cl_0109"
+    ],
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0010",
+    "name": "Neloajálnost",
+    "group": "Nedůvěřuji v integritu ostatních lidí",
+    "cluster_ids": [
+      "cl_0015",
+      "cl_0013",
+      "cl_0009",
+      "cl_0109",
+      "cl_0019"
+    ],
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0011",
+    "name": "Neupřímnost",
+    "group": "Nedůvěřuji v integritu ostatních lidí",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0015",
+      "cl_0012",
+      "cl_0080",
+      "cl_0020"
+    ],
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0012",
+    "name": "Ublížení",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0016",
+      "cl_0042",
+      "cl_0041",
+      "cl_0012",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0013",
+    "name": "Citové zranění",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0016",
+      "cl_0042",
+      "cl_0012",
+      "cl_0084",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0014",
+    "name": "Agrese",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0042",
+      "cl_0039",
+      "cl_0043",
+      "cl_0040"
+    ],
+    "tier": "free",
+    "sort_order": 14,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0015",
+    "name": "Fyzické napadení",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0042",
+      "cl_0039",
+      "cl_0044",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 15,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0016",
+    "name": "Sexuální obtěžování",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0017",
+      "cl_0042",
+      "cl_0024",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0017",
+    "name": "Znásilnění",
+    "group": "Ublíží mi",
+    "cluster_ids": [
+      "cl_0018",
+      "cl_0041",
+      "cl_0039",
+      "cl_0042",
+      "cl_0017"
+    ],
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0018",
+    "name": "Opuštění",
+    "group": "Zůstanu sám",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0010",
+      "cl_0043",
+      "cl_0002",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0019",
+    "name": "Ztráta blízkého",
+    "group": "Zůstanu sám",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0043",
+      "cl_0004",
+      "cl_0039",
+      "cl_0010"
+    ],
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0020",
+    "name": "Smrt blízkého",
+    "group": "Zůstanu sám",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0039",
+      "cl_0044",
+      "cl_0004",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0021",
+    "name": "Odloučení",
+    "group": "Zůstanu sám",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0010",
+      "cl_0043",
+      "cl_0034",
+      "cl_0004"
+    ],
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0022",
+    "name": "Samota",
+    "group": "Zůstanu sám",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0114",
+      "cl_0002",
+      "cl_0019",
+      "cl_0020"
+    ],
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0023",
+    "name": "Nejistota",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0080",
+      "cl_0036",
+      "cl_0033",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0024",
+    "name": "Nestabilita (Nestálost)",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0011",
+      "cl_0060",
+      "cl_0039",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0025",
+    "name": "Nejistá vazba",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0010",
+      "cl_0013",
+      "cl_0009",
+      "cl_0011"
+    ],
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0026",
+    "name": "Nepředvídatelnost",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0039",
+      "cl_0012",
+      "cl_0041",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0027",
+    "name": "Chaos",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0111",
+      "cl_0095",
+      "cl_0043",
+      "cl_0033",
+      "cl_0045"
+    ],
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0028",
+    "name": "Neznámo",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0044",
+      "cl_0012",
+      "cl_0040",
+      "cl_0033"
+    ],
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0029",
+    "name": "Změna",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0040",
+      "cl_0046",
+      "cl_0012",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0030",
+    "name": "Nejasná budoucnost",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0081",
+      "cl_0033",
+      "cl_0080",
+      "cl_0083"
+    ],
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0031",
+    "name": "Nemít zázemí či domov",
+    "group": "Nejistota, nestabilita",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0041",
+      "cl_0042",
+      "cl_0043",
+      "cl_0020"
+    ],
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0032",
+    "name": "Lhostejnost",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0002",
+      "cl_0003",
+      "cl_0008",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0033",
+    "name": "Nezájem",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0029",
+      "cl_0002",
+      "cl_0021",
+      "cl_0008"
+    ],
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0034",
+    "name": "Nepochopení",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0020",
+      "cl_0022",
+      "cl_0001",
+      "cl_0109",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0035",
+    "name": "Chlad",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0003",
+      "cl_0020",
+      "cl_0009",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0036",
+    "name": "Bezcitnost",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0016",
+      "cl_0003",
+      "cl_0109",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0037",
+    "name": "Zanedbání",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0003",
+      "cl_0001",
+      "cl_0002",
+      "cl_0009",
+      "cl_0008"
+    ],
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0038",
+    "name": "Nevšímavost",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0003",
+      "cl_0029",
+      "cl_0002",
+      "cl_0008"
+    ],
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0039",
+    "name": "Nedostatek empatie",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0020",
+      "cl_0002",
+      "cl_0003",
+      "cl_0109",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0040",
+    "name": "Nebýt vyslyšen",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0078",
+      "cl_0109",
+      "cl_0085",
+      "cl_0086"
+    ],
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0041",
+    "name": "Nedostatek intimity",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0114",
+      "cl_0009",
+      "cl_0020",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0042",
+    "name": "Nemít koho milovat",
+    "group": "Nikdo tu pro mě není",
+    "cluster_ids": [
+      "cl_0114",
+      "cl_0009",
+      "cl_0008",
+      "cl_0115",
+      "cl_0004"
+    ],
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0043",
+    "name": "Odmítnutí",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0021",
+      "cl_0002",
+      "cl_0049",
+      "cl_0074",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0044",
+    "name": "Kritika",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0048",
+      "cl_0049",
+      "cl_0024",
+      "cl_0038",
+      "cl_0098"
+    ],
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0045",
+    "name": "Hodnocení",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0048",
+      "cl_0014",
+      "cl_0049",
+      "cl_0043",
+      "cl_0094"
+    ],
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0046",
+    "name": "Odsouzení",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0021",
+      "cl_0031",
+      "cl_0023",
+      "cl_0024",
+      "cl_0048"
+    ],
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0047",
+    "name": "Pomluvy",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0015",
+      "cl_0013",
+      "cl_0024",
+      "cl_0006"
+    ],
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0048",
+    "name": "Být neoblíbený",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0006",
+      "cl_0021",
+      "cl_0019",
+      "cl_0049",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0049",
+    "name": "Být na obtíž",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0103",
+      "cl_0074",
+      "cl_0075",
+      "cl_0085"
+    ],
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0050",
+    "name": "Obvinění",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0103",
+      "cl_0024",
+      "cl_0012",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0051",
+    "name": "Být špatný člověk",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0031",
+      "cl_0103",
+      "cl_0032",
+      "cl_0025",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0052",
+    "name": "Sebenenávist",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0032",
+      "cl_0031",
+      "cl_0025",
+      "cl_0107",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0053",
+    "name": "Sebepoškození",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0107",
+      "cl_0032",
+      "cl_0004",
+      "cl_0039",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0054",
+    "name": "Sebevražda",
+    "group": "Jsem špatný, nevyhovující",
+    "cluster_ids": [
+      "cl_0083",
+      "cl_0107",
+      "cl_0004",
+      "cl_0079",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0055",
+    "name": "Trest",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0043",
+      "cl_0070",
+      "cl_0041",
+      "cl_0031"
+    ],
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0056",
+    "name": "Postih",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0103",
+      "cl_0012",
+      "cl_0070",
+      "cl_0050"
+    ],
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0057",
+    "name": "Být vinný",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0031",
+      "cl_0096",
+      "cl_0032",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0058",
+    "name": "Výčitky",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0080",
+      "cl_0032",
+      "cl_0096",
+      "cl_0004"
+    ],
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0059",
+    "name": "Ublížit",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0096",
+      "cl_0105",
+      "cl_0012",
+      "cl_0075"
+    ],
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0060",
+    "name": "Zklamat",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0049",
+      "cl_0094",
+      "cl_0075",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0061",
+    "name": "Nesplnit očekávání",
+    "group": "Vina a trest",
+    "cluster_ids": [
+      "cl_0094",
+      "cl_0049",
+      "cl_0103",
+      "cl_0074",
+      "cl_0098"
+    ],
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0062",
+    "name": "Vadnost",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0025",
+      "cl_0024",
+      "cl_0022",
+      "cl_0030",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 62,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0063",
+    "name": "Něco se mnou není v pořádku",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0025",
+      "cl_0022",
+      "cl_0043",
+      "cl_0080",
+      "cl_0047"
+    ],
+    "tier": "free",
+    "sort_order": 63,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0064",
+    "name": "Výsměch",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0023",
+      "cl_0042",
+      "cl_0040",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 64,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0065",
+    "name": "Ostuda",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0023",
+      "cl_0025",
+      "cl_0043",
+      "cl_0040"
+    ],
+    "tier": "free",
+    "sort_order": 65,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0066",
+    "name": "Opovržení",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0023",
+      "cl_0024",
+      "cl_0025",
+      "cl_0030",
+      "cl_0021"
+    ],
+    "tier": "free",
+    "sort_order": 66,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0067",
+    "name": "Odhalení",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0028",
+      "cl_0025",
+      "cl_0024",
+      "cl_0043",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 67,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0068",
+    "name": "Ponížení",
+    "group": "Jsem vadný, divný, nenormální",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0023",
+      "cl_0078",
+      "cl_0110",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 68,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0069",
+    "name": "Ztrapnění se",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0043",
+      "cl_0038",
+      "cl_0014",
+      "cl_0040"
+    ],
+    "tier": "free",
+    "sort_order": 69,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0070",
+    "name": "Co si o mně myslí",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0043",
+      "cl_0080",
+      "cl_0038",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 70,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0071",
+    "name": "Být na očích",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0043",
+      "cl_0024",
+      "cl_0040",
+      "cl_0038"
+    ],
+    "tier": "free",
+    "sort_order": 71,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0072",
+    "name": "Být nápadný",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0022",
+      "cl_0024",
+      "cl_0086",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 72,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0073",
+    "name": "Zviditelnění se",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0043",
+      "cl_0086",
+      "cl_0040",
+      "cl_0085"
+    ],
+    "tier": "free",
+    "sort_order": 73,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0074",
+    "name": "Projevit se",
+    "group": "Sociální expozice, být viděn",
+    "cluster_ids": [
+      "cl_0085",
+      "cl_0086",
+      "cl_0043",
+      "cl_0014",
+      "cl_0038"
+    ],
+    "tier": "free",
+    "sort_order": 74,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0075",
+    "name": "Nedostatečnost",
+    "group": "Jsem nedostatečný, méněcenný",
+    "cluster_ids": [
+      "cl_0049",
+      "cl_0030",
+      "cl_0038",
+      "cl_0037",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 75,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0076",
+    "name": "Nebýt dost dobrý",
+    "group": "Jsem nedostatečný, méněcenný",
+    "cluster_ids": [
+      "cl_0049",
+      "cl_0098",
+      "cl_0038",
+      "cl_0094",
+      "cl_0048"
+    ],
+    "tier": "free",
+    "sort_order": 76,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0077",
+    "name": "Vlastní slabost",
+    "group": "Jsem nedostatečný, méněcenný",
+    "cluster_ids": [
+      "cl_0042",
+      "cl_0030",
+      "cl_0038",
+      "cl_0084",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 77,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0078",
+    "name": "Vlastní zbabělost",
+    "group": "Jsem nedostatečný, méněcenný",
+    "cluster_ids": [
+      "cl_0040",
+      "cl_0024",
+      "cl_0038",
+      "cl_0032",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 78,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0079",
+    "name": "Být za hlupáka",
+    "group": "Jsem nedostatečný, méněcenný",
+    "cluster_ids": [
+      "cl_0027",
+      "cl_0024",
+      "cl_0038",
+      "cl_0030",
+      "cl_0086"
+    ],
+    "tier": "free",
+    "sort_order": 79,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0080",
+    "name": "Vyloučení",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0019",
+      "cl_0021",
+      "cl_0009",
+      "cl_0006",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 80,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0081",
+    "name": "Vyčlenění",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0019",
+      "cl_0022",
+      "cl_0021",
+      "cl_0009",
+      "cl_0109"
+    ],
+    "tier": "free",
+    "sort_order": 81,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0082",
+    "name": "Nezapadnout",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0022",
+      "cl_0019",
+      "cl_0074",
+      "cl_0077",
+      "cl_0020"
+    ],
+    "tier": "free",
+    "sort_order": 82,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0083",
+    "name": "Izolace",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0019",
+      "cl_0114",
+      "cl_0084",
+      "cl_0020"
+    ],
+    "tier": "free",
+    "sort_order": 83,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0084",
+    "name": "Odcizení",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0020",
+      "cl_0114",
+      "cl_0084",
+      "cl_0022",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 84,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0085",
+    "name": "Oddělení",
+    "group": "Nikam nepatřím",
+    "cluster_ids": [
+      "cl_0020",
+      "cl_0009",
+      "cl_0019",
+      "cl_0114",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 85,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0086",
+    "name": "Selhání",
+    "group": "Selžu",
+    "cluster_ids": [
+      "cl_0051",
+      "cl_0049",
+      "cl_0094",
+      "cl_0043",
+      "cl_0024"
+    ],
+    "tier": "free",
+    "sort_order": 86,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0087",
+    "name": "Neúspěch",
+    "group": "Selžu",
+    "cluster_ids": [
+      "cl_0051",
+      "cl_0049",
+      "cl_0030",
+      "cl_0094",
+      "cl_0081"
+    ],
+    "tier": "free",
+    "sort_order": 87,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0088",
+    "name": "Neschopnost",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0037",
+      "cl_0049",
+      "cl_0033",
+      "cl_0038",
+      "cl_0027"
+    ],
+    "tier": "free",
+    "sort_order": 88,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0089",
+    "name": "Nekompetence",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0037",
+      "cl_0028",
+      "cl_0049",
+      "cl_0038",
+      "cl_0094"
+    ],
+    "tier": "free",
+    "sort_order": 89,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0090",
+    "name": "Bezradnost",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0033",
+      "cl_0039",
+      "cl_0034",
+      "cl_0043",
+      "cl_0046"
+    ],
+    "tier": "free",
+    "sort_order": 90,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0091",
+    "name": "Vlastní nezodpovědnost",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0064",
+      "cl_0103",
+      "cl_0035",
+      "cl_0065",
+      "cl_0067"
+    ],
+    "tier": "free",
+    "sort_order": 91,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0092",
+    "name": "Rozhodování",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0036",
+      "cl_0043",
+      "cl_0033",
+      "cl_0080",
+      "cl_0034"
+    ],
+    "tier": "free",
+    "sort_order": 92,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0093",
+    "name": "Špatné rozhodnutí",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0036",
+      "cl_0043",
+      "cl_0080",
+      "cl_0050",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 93,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0094",
+    "name": "Vlastní nespolehlivost",
+    "group": "Neschopnost, nekompetence",
+    "cluster_ids": [
+      "cl_0064",
+      "cl_0103",
+      "cl_0065",
+      "cl_0011",
+      "cl_0038"
+    ],
+    "tier": "free",
+    "sort_order": 94,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0095",
+    "name": "Nemít přínos",
+    "group": "Nemít přínos",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0052",
+      "cl_0049",
+      "cl_0115",
+      "cl_0094"
+    ],
+    "tier": "free",
+    "sort_order": 95,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0096",
+    "name": "Neužitečnost",
+    "group": "Nemít přínos",
+    "cluster_ids": [
+      "cl_0052",
+      "cl_0008",
+      "cl_0049",
+      "cl_0075",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 96,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0097",
+    "name": "Být k ničemu",
+    "group": "Nemít přínos",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0052",
+      "cl_0030",
+      "cl_0032",
+      "cl_0079"
+    ],
+    "tier": "free",
+    "sort_order": 97,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0098",
+    "name": "Nebýt potřebný",
+    "group": "Nemít přínos",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0002",
+      "cl_0075",
+      "cl_0009",
+      "cl_0001"
+    ],
+    "tier": "free",
+    "sort_order": 98,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0099",
+    "name": "Nahraditelnost",
+    "group": "Nemít přínos",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0049",
+      "cl_0029",
+      "cl_0043",
+      "cl_0076"
+    ],
+    "tier": "free",
+    "sort_order": 99,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0100",
+    "name": "Průměrnost",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0029",
+      "cl_0049",
+      "cl_0076",
+      "cl_0030",
+      "cl_0056"
+    ],
+    "tier": "free",
+    "sort_order": 100,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0101",
+    "name": "Obyčejnost",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0029",
+      "cl_0001",
+      "cl_0049",
+      "cl_0056",
+      "cl_0115"
+    ],
+    "tier": "free",
+    "sort_order": 101,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0102",
+    "name": "Bezvýznamnost",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0008",
+      "cl_0115",
+      "cl_0029",
+      "cl_0114"
+    ],
+    "tier": "free",
+    "sort_order": 102,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0103",
+    "name": "Nezanechat odkaz",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0115",
+      "cl_0008",
+      "cl_0051",
+      "cl_0094",
+      "cl_0114"
+    ],
+    "tier": "free",
+    "sort_order": 103,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0104",
+    "name": "Být zapomenut",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0009",
+      "cl_0008",
+      "cl_0002",
+      "cl_0115"
+    ],
+    "tier": "free",
+    "sort_order": 104,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0105",
+    "name": "Nebýt důležitý",
+    "group": "Nemít význam",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0008",
+      "cl_0029",
+      "cl_0002",
+      "cl_0078"
+    ],
+    "tier": "free",
+    "sort_order": 105,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0106",
+    "name": "Být za sobce",
+    "group": "Nemyslet dost na druhé",
+    "cluster_ids": [
+      "cl_0059",
+      "cl_0103",
+      "cl_0075",
+      "cl_0024",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 106,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0107",
+    "name": "Nezúčastněnost",
+    "group": "Nemyslet dost na druhé",
+    "cluster_ids": [
+      "cl_0089",
+      "cl_0087",
+      "cl_0103",
+      "cl_0096",
+      "cl_0075"
+    ],
+    "tier": "free",
+    "sort_order": 107,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0108",
+    "name": "Nesoucit",
+    "group": "Nemyslet dost na druhé",
+    "cluster_ids": [
+      "cl_0091",
+      "cl_0103",
+      "cl_0090",
+      "cl_0075",
+      "cl_0031"
+    ],
+    "tier": "free",
+    "sort_order": 108,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0109",
+    "name": "Bezohlednost",
+    "group": "Nemyslet dost na druhé",
+    "cluster_ids": [
+      "cl_0105",
+      "cl_0103",
+      "cl_0059",
+      "cl_0096",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 109,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0110",
+    "name": "Nevděčnost",
+    "group": "Nemyslet dost na druhé",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0059",
+      "cl_0096",
+      "cl_0075",
+      "cl_0031"
+    ],
+    "tier": "free",
+    "sort_order": 110,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0111",
+    "name": "Nepořádek",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0111",
+      "cl_0093",
+      "cl_0043",
+      "cl_0098",
+      "cl_0095"
+    ],
+    "tier": "free",
+    "sort_order": 111,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0112",
+    "name": "Chyby",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0050",
+      "cl_0098",
+      "cl_0043",
+      "cl_0048",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 112,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0113",
+    "name": "Neudělám to správně",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0098",
+      "cl_0043",
+      "cl_0050",
+      "cl_0049",
+      "cl_0094"
+    ],
+    "tier": "free",
+    "sort_order": 113,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0114",
+    "name": "Nedokonalost",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0098",
+      "cl_0049",
+      "cl_0097",
+      "cl_0025",
+      "cl_0102"
+    ],
+    "tier": "free",
+    "sort_order": 114,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0115",
+    "name": "Nepřipravenost",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0094",
+      "cl_0093",
+      "cl_0098",
+      "cl_0033"
+    ],
+    "tier": "free",
+    "sort_order": 115,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0116",
+    "name": "Neprofesionalita",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0028",
+      "cl_0024",
+      "cl_0098",
+      "cl_0048",
+      "cl_0037"
+    ],
+    "tier": "free",
+    "sort_order": 116,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0117",
+    "name": "Přiznat chybu",
+    "group": "Náročnost, perfekcionismus",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0050",
+      "cl_0053",
+      "cl_0040",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 117,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0118",
+    "name": "Zklamání",
+    "group": "Zklamání, nečekat nic",
+    "cluster_ids": [
+      "cl_0081",
+      "cl_0012",
+      "cl_0040",
+      "cl_0004",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 118,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0119",
+    "name": "Ztráta",
+    "group": "Zklamání, nečekat nic",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0012",
+      "cl_0004",
+      "cl_0039",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 119,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0120",
+    "name": "Předčasná radost",
+    "group": "Zklamání, nečekat nic",
+    "cluster_ids": [
+      "cl_0012",
+      "cl_0081",
+      "cl_0043",
+      "cl_0093",
+      "cl_0080"
+    ],
+    "tier": "free",
+    "sort_order": 120,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0121",
+    "name": "Odpovědnost",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0095",
+      "cl_0094",
+      "cl_0043",
+      "cl_0096",
+      "cl_0040"
+    ],
+    "tier": "free",
+    "sort_order": 121,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0122",
+    "name": "Lenost",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0068",
+      "cl_0103",
+      "cl_0065",
+      "cl_0094",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 122,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0123",
+    "name": "Lajdáctví",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0068",
+      "cl_0103",
+      "cl_0097",
+      "cl_0065",
+      "cl_0094"
+    ],
+    "tier": "free",
+    "sort_order": 123,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0124",
+    "name": "Neefektivita",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0094",
+      "cl_0093",
+      "cl_0061",
+      "cl_0098",
+      "cl_0037"
+    ],
+    "tier": "free",
+    "sort_order": 124,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0125",
+    "name": "Nevyužitý potenciál",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0094",
+      "cl_0046",
+      "cl_0051",
+      "cl_0103",
+      "cl_0049"
+    ],
+    "tier": "free",
+    "sort_order": 125,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0126",
+    "name": "Zůstat na místě",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0046",
+      "cl_0094",
+      "cl_0051",
+      "cl_0076",
+      "cl_0061"
+    ],
+    "tier": "free",
+    "sort_order": 126,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0127",
+    "name": "Ztráta času",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0094",
+      "cl_0061",
+      "cl_0093",
+      "cl_0103",
+      "cl_0095"
+    ],
+    "tier": "free",
+    "sort_order": 127,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0128",
+    "name": "Prohra",
+    "group": "Výkon, workoholismus",
+    "cluster_ids": [
+      "cl_0051",
+      "cl_0076",
+      "cl_0024",
+      "cl_0030",
+      "cl_0108"
+    ],
+    "tier": "free",
+    "sort_order": 128,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0129",
+    "name": "Neocenění",
+    "group": "Neuvidí mě",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0078",
+      "cl_0109",
+      "cl_0008",
+      "cl_0075"
+    ],
+    "tier": "free",
+    "sort_order": 129,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0130",
+    "name": "Nemít pozornost",
+    "group": "Neuvidí mě",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0029",
+      "cl_0003",
+      "cl_0002",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 130,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0131",
+    "name": "Nemít uznání",
+    "group": "Neuvidí mě",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0078",
+      "cl_0049",
+      "cl_0109",
+      "cl_0076"
+    ],
+    "tier": "free",
+    "sort_order": 131,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0132",
+    "name": "Bez podpory",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0039",
+      "cl_0003",
+      "cl_0095",
+      "cl_0096"
+    ],
+    "tier": "free",
+    "sort_order": 132,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0133",
+    "name": "Být bez opory",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0039",
+      "cl_0034",
+      "cl_0042",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 133,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0134",
+    "name": "Bezmoc",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0039",
+      "cl_0046",
+      "cl_0043",
+      "cl_0033",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 134,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0135",
+    "name": "Být bez pomoci",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0039",
+      "cl_0034",
+      "cl_0009",
+      "cl_0042",
+      "cl_0045"
+    ],
+    "tier": "free",
+    "sort_order": 135,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0136",
+    "name": "Problémy a těžkosti",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0095",
+      "cl_0040",
+      "cl_0033",
+      "cl_0081"
+    ],
+    "tier": "free",
+    "sort_order": 136,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0137",
+    "name": "Úpadek",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0081",
+      "cl_0041",
+      "cl_0083",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 137,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0138",
+    "name": "Nezajištěnost",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0041",
+      "cl_0042",
+      "cl_0034",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 138,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0139",
+    "name": "Chudoba",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0041",
+      "cl_0024",
+      "cl_0030",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 139,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0140",
+    "name": "Strach ze strachu",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0045",
+      "cl_0044",
+      "cl_0040",
+      "cl_0080"
+    ],
+    "tier": "free",
+    "sort_order": 140,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0141",
+    "name": "Úzkost",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0044",
+      "cl_0045",
+      "cl_0040",
+      "cl_0095"
+    ],
+    "tier": "free",
+    "sort_order": 141,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0142",
+    "name": "Oslabené duševní zdraví",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0047",
+      "cl_0043",
+      "cl_0025",
+      "cl_0060",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 142,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0143",
+    "name": "Vlastní zranitelnost",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0042",
+      "cl_0084",
+      "cl_0012",
+      "cl_0039",
+      "cl_0038"
+    ],
+    "tier": "free",
+    "sort_order": 143,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0144",
+    "name": "Bolest",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0044",
+      "cl_0040",
+      "cl_0043",
+      "cl_0042",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 144,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0145",
+    "name": "Smrt",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0044",
+      "cl_0043",
+      "cl_0039",
+      "cl_0041",
+      "cl_0115"
+    ],
+    "tier": "free",
+    "sort_order": 145,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0146",
+    "name": "Umírání",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0044",
+      "cl_0039",
+      "cl_0043",
+      "cl_0042",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 146,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0147",
+    "name": "Stáří",
+    "group": "Slabost, nezvládnu to tu sám, nepřežiju",
+    "cluster_ids": [
+      "cl_0042",
+      "cl_0034",
+      "cl_0008",
+      "cl_0081",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 147,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0148",
+    "name": "Být ovládán",
+    "group": "Být ovládán, nesvoboda",
+    "cluster_ids": [
+      "cl_0071",
+      "cl_0073",
+      "cl_0039",
+      "cl_0069",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 148,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0149",
+    "name": "Být sledován",
+    "group": "Být ovládán, nesvoboda",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0013",
+      "cl_0012",
+      "cl_0043",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 149,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0150",
+    "name": "Nesvoboda",
+    "group": "Být ovládán, nesvoboda",
+    "cluster_ids": [
+      "cl_0073",
+      "cl_0072",
+      "cl_0069",
+      "cl_0046",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 150,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0151",
+    "name": "Svázanost",
+    "group": "Být ovládán, nesvoboda",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0073",
+      "cl_0040",
+      "cl_0069",
+      "cl_0095"
+    ],
+    "tier": "free",
+    "sort_order": 151,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0152",
+    "name": "Nemít soukromí",
+    "group": "Být ovládán, nesvoboda",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0084",
+      "cl_0012",
+      "cl_0073",
+      "cl_0087"
+    ],
+    "tier": "free",
+    "sort_order": 152,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0153",
+    "name": "Nebezpečí",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0044",
+      "cl_0012",
+      "cl_0043",
+      "cl_0042"
+    ],
+    "tier": "free",
+    "sort_order": 153,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0154",
+    "name": "Ohrožení",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0041",
+      "cl_0042",
+      "cl_0043",
+      "cl_0012",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 154,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0155",
+    "name": "Bezbrannost",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0042",
+      "cl_0039",
+      "cl_0041",
+      "cl_0034",
+      "cl_0044"
+    ],
+    "tier": "free",
+    "sort_order": 155,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0156",
+    "name": "Katastrofa",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0044",
+      "cl_0043",
+      "cl_0045",
+      "cl_0039",
+      "cl_0081"
+    ],
+    "tier": "free",
+    "sort_order": 156,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0157",
+    "name": "Přihodí se něco špatného",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0081",
+      "cl_0080",
+      "cl_0093",
+      "cl_0044"
+    ],
+    "tier": "free",
+    "sort_order": 157,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0158",
+    "name": "Neštěstí",
+    "group": "Svět je nebezpečný",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0081",
+      "cl_0044",
+      "cl_0039",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 158,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0159",
+    "name": "Ztráta kontroly",
+    "group": "Ztráta kontroly",
+    "cluster_ids": [
+      "cl_0093",
+      "cl_0043",
+      "cl_0045",
+      "cl_0039",
+      "cl_0111"
+    ],
+    "tier": "free",
+    "sort_order": 159,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0160",
+    "name": "Zbláznění se",
+    "group": "Ztráta kontroly",
+    "cluster_ids": [
+      "cl_0047",
+      "cl_0045",
+      "cl_0043",
+      "cl_0111",
+      "cl_0025"
+    ],
+    "tier": "free",
+    "sort_order": 160,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0161",
+    "name": "Neovládnutí se",
+    "group": "Ztráta kontroly",
+    "cluster_ids": [
+      "cl_0063",
+      "cl_0060",
+      "cl_0108",
+      "cl_0103",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 161,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0162",
+    "name": "Nemít souhlas",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0074",
+      "cl_0038",
+      "cl_0021",
+      "cl_0043",
+      "cl_0070"
+    ],
+    "tier": "free",
+    "sort_order": 162,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0163",
+    "name": "Nevěřit si",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0038",
+      "cl_0036",
+      "cl_0049",
+      "cl_0080",
+      "cl_0034"
+    ],
+    "tier": "free",
+    "sort_order": 163,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0164",
+    "name": "Slabé sebevědomí",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0038",
+      "cl_0030",
+      "cl_0049",
+      "cl_0074",
+      "cl_0086"
+    ],
+    "tier": "free",
+    "sort_order": 164,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0165",
+    "name": "Říct ne",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0074",
+      "cl_0075",
+      "cl_0103",
+      "cl_0071",
+      "cl_0070"
+    ],
+    "tier": "free",
+    "sort_order": 165,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0166",
+    "name": "Prosadit se",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0038",
+      "cl_0071",
+      "cl_0086",
+      "cl_0074",
+      "cl_0085"
+    ],
+    "tier": "free",
+    "sort_order": 166,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0167",
+    "name": "Porušení pravidel",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0070",
+      "cl_0103",
+      "cl_0043",
+      "cl_0012",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 167,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0168",
+    "name": "Neposlušnost",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0070",
+      "cl_0103",
+      "cl_0071",
+      "cl_0043",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 168,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0169",
+    "name": "Říct svůj názor",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0085",
+      "cl_0086",
+      "cl_0038",
+      "cl_0074",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 169,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0170",
+    "name": "Nevyhovět",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0074",
+      "cl_0103",
+      "cl_0075",
+      "cl_0070",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 170,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0171",
+    "name": "Konflikt",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0040",
+      "cl_0043",
+      "cl_0074",
+      "cl_0085",
+      "cl_0041"
+    ],
+    "tier": "free",
+    "sort_order": 171,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0172",
+    "name": "Konfrontace",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0040",
+      "cl_0043",
+      "cl_0085",
+      "cl_0041",
+      "cl_0038"
+    ],
+    "tier": "free",
+    "sort_order": 172,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0173",
+    "name": "Autorita",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0071",
+      "cl_0043",
+      "cl_0070",
+      "cl_0038",
+      "cl_0041"
+    ],
+    "tier": "free",
+    "sort_order": 173,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0174",
+    "name": "Nátlak",
+    "group": "Podřídím se, nevymezím se, neprosadím se",
+    "cluster_ids": [
+      "cl_0071",
+      "cl_0039",
+      "cl_0074",
+      "cl_0094",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 174,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0175",
+    "name": "Samostatnost",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0034",
+      "cl_0010",
+      "cl_0033",
+      "cl_0035",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 175,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0176",
+    "name": "Závislost na někom",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0010",
+      "cl_0034",
+      "cl_0039",
+      "cl_0043",
+      "cl_0071"
+    ],
+    "tier": "free",
+    "sort_order": 176,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0177",
+    "name": "Propletení",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0010",
+      "cl_0112",
+      "cl_0072",
+      "cl_0071",
+      "cl_0073"
+    ],
+    "tier": "free",
+    "sort_order": 177,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0178",
+    "name": "Odpoutání",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0010",
+      "cl_0009",
+      "cl_0043",
+      "cl_0034",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 178,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0179",
+    "name": "Odstup",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0043",
+      "cl_0010",
+      "cl_0020",
+      "cl_0002"
+    ],
+    "tier": "free",
+    "sort_order": 179,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0180",
+    "name": "Lpění na druhém",
+    "group": "Závislost na ostatních",
+    "cluster_ids": [
+      "cl_0010",
+      "cl_0043",
+      "cl_0009",
+      "cl_0074",
+      "cl_0034"
+    ],
+    "tier": "free",
+    "sort_order": 180,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0181",
+    "name": "Odpojení",
+    "group": "Odpojení",
+    "cluster_ids": [
+      "cl_0020",
+      "cl_0114",
+      "cl_0007",
+      "cl_0084",
+      "cl_0089"
+    ],
+    "tier": "free",
+    "sort_order": 181,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0182",
+    "name": "Uzavření se",
+    "group": "Odpojení",
+    "cluster_ids": [
+      "cl_0084",
+      "cl_0087",
+      "cl_0020",
+      "cl_0086",
+      "cl_0009"
+    ],
+    "tier": "free",
+    "sort_order": 182,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0183",
+    "name": "Neprožívání",
+    "group": "Odpojení",
+    "cluster_ids": [
+      "cl_0114",
+      "cl_0007",
+      "cl_0089",
+      "cl_0088",
+      "cl_0113"
+    ],
+    "tier": "free",
+    "sort_order": 183,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0184",
+    "name": "Umrtvení",
+    "group": "Odpojení",
+    "cluster_ids": [
+      "cl_0007",
+      "cl_0114",
+      "cl_0113",
+      "cl_0079",
+      "cl_0089"
+    ],
+    "tier": "free",
+    "sort_order": 184,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0185",
+    "name": "Být sám sebou",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0077",
+      "cl_0074",
+      "cl_0085",
+      "cl_0112",
+      "cl_0043"
+    ],
+    "tier": "free",
+    "sort_order": 185,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0186",
+    "name": "Autenticita",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0077",
+      "cl_0074",
+      "cl_0085",
+      "cl_0084",
+      "cl_0028"
+    ],
+    "tier": "free",
+    "sort_order": 186,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0187",
+    "name": "Přirozenost",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0077",
+      "cl_0014",
+      "cl_0038",
+      "cl_0043",
+      "cl_0085"
+    ],
+    "tier": "free",
+    "sort_order": 187,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0188",
+    "name": "Projevit city",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0085",
+      "cl_0084",
+      "cl_0042",
+      "cl_0024",
+      "cl_0088"
+    ],
+    "tier": "free",
+    "sort_order": 188,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0189",
+    "name": "Vlastní emoce",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0085",
+      "cl_0084",
+      "cl_0088",
+      "cl_0042",
+      "cl_0060"
+    ],
+    "tier": "free",
+    "sort_order": 189,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0190",
+    "name": "Otevřít se",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0084",
+      "cl_0042",
+      "cl_0013",
+      "cl_0085",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 190,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0191",
+    "name": "Svěřit se",
+    "group": "Autenticita, sebevyjádření",
+    "cluster_ids": [
+      "cl_0084",
+      "cl_0013",
+      "cl_0042",
+      "cl_0024",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 191,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0192",
+    "name": "Pravidla a povinnosti",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0069",
+      "cl_0073",
+      "cl_0072",
+      "cl_0065",
+      "cl_0057"
+    ],
+    "tier": "free",
+    "sort_order": 192,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0193",
+    "name": "Kázeň",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0069",
+      "cl_0065",
+      "cl_0073",
+      "cl_0063",
+      "cl_0072"
+    ],
+    "tier": "free",
+    "sort_order": 193,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0194",
+    "name": "Podřízení se",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0069",
+      "cl_0057",
+      "cl_0071",
+      "cl_0073",
+      "cl_0110"
+    ],
+    "tier": "free",
+    "sort_order": 194,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0195",
+    "name": "Omezení",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0073",
+      "cl_0072",
+      "cl_0069",
+      "cl_0061",
+      "cl_0108"
+    ],
+    "tier": "free",
+    "sort_order": 195,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0196",
+    "name": "Omezování se",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0073",
+      "cl_0069",
+      "cl_0061",
+      "cl_0066",
+      "cl_0072"
+    ],
+    "tier": "free",
+    "sort_order": 196,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0197",
+    "name": "Poslušnost",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0069",
+      "cl_0071",
+      "cl_0073",
+      "cl_0057",
+      "cl_0110"
+    ],
+    "tier": "free",
+    "sort_order": 197,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0198",
+    "name": "Doprošování se",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0053",
+      "cl_0024",
+      "cl_0110",
+      "cl_0071",
+      "cl_0057"
+    ],
+    "tier": "free",
+    "sort_order": 198,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0199",
+    "name": "Přizpůsobování se",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0069",
+      "cl_0073",
+      "cl_0077",
+      "cl_0056",
+      "cl_0071"
+    ],
+    "tier": "free",
+    "sort_order": 199,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0200",
+    "name": "Nemít moc",
+    "group": "Nadřazenost, nerespekt k pravidlům",
+    "cluster_ids": [
+      "cl_0039",
+      "cl_0055",
+      "cl_0057",
+      "cl_0071",
+      "cl_0110"
+    ],
+    "tier": "free",
+    "sort_order": 200,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0201",
+    "name": "Frustrace",
+    "group": "Sebeovládání, disciplína",
+    "cluster_ids": [
+      "cl_0061",
+      "cl_0082",
+      "cl_0108",
+      "cl_0094",
+      "cl_0040"
+    ],
+    "tier": "free",
+    "sort_order": 201,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0202",
+    "name": "Ovládání se",
+    "group": "Sebeovládání, disciplína",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0073",
+      "cl_0069",
+      "cl_0061",
+      "cl_0066"
+    ],
+    "tier": "free",
+    "sort_order": 202,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0203",
+    "name": "Neovládnout se",
+    "group": "Sebeovládání, disciplína",
+    "cluster_ids": [
+      "cl_0063",
+      "cl_0060",
+      "cl_0108",
+      "cl_0103",
+      "cl_0093"
+    ],
+    "tier": "free",
+    "sort_order": 203,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0204",
+    "name": "Vlastní vztek",
+    "group": "Sebeovládání, disciplína",
+    "cluster_ids": [
+      "cl_0108",
+      "cl_0105",
+      "cl_0103",
+      "cl_0085",
+      "cl_0060"
+    ],
+    "tier": "free",
+    "sort_order": 204,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0205",
+    "name": "Závazek",
+    "group": "Sebeovládání, disciplína",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0073",
+      "cl_0040",
+      "cl_0095",
+      "cl_0036"
+    ],
+    "tier": "free",
+    "sort_order": 205,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0206",
+    "name": "Nemít úctu",
+    "group": "Křivda",
+    "cluster_ids": [
+      "cl_0078",
+      "cl_0030",
+      "cl_0109",
+      "cl_0110",
+      "cl_0023"
+    ],
+    "tier": "free",
+    "sort_order": 206,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0207",
+    "name": "Křivda",
+    "group": "Křivda",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0108",
+      "cl_0016",
+      "cl_0110",
+      "cl_0039"
+    ],
+    "tier": "free",
+    "sort_order": 207,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0208",
+    "name": "Neférovost",
+    "group": "Křivda",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0108",
+      "cl_0013",
+      "cl_0104",
+      "cl_0082"
+    ],
+    "tier": "free",
+    "sort_order": 208,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0209",
+    "name": "Nespravedlnost",
+    "group": "Křivda",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0108",
+      "cl_0039",
+      "cl_0082",
+      "cl_0104"
+    ],
+    "tier": "free",
+    "sort_order": 209,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0210",
+    "name": "Nerovnost",
+    "group": "Křivda",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0005",
+      "cl_0030",
+      "cl_0108",
+      "cl_0076"
+    ],
+    "tier": "free",
+    "sort_order": 210,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0211",
+    "name": "Nuda",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0114",
+      "cl_0061",
+      "cl_0116",
+      "cl_0113",
+      "cl_0066"
+    ],
+    "tier": "free",
+    "sort_order": 211,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0212",
+    "name": "Jednotvárnost",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0046",
+      "cl_0114",
+      "cl_0115",
+      "cl_0061",
+      "cl_0116"
+    ],
+    "tier": "free",
+    "sort_order": 212,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0213",
+    "name": "Nesmyslnost",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0115",
+      "cl_0114",
+      "cl_0116",
+      "cl_0079",
+      "cl_0004"
+    ],
+    "tier": "free",
+    "sort_order": 213,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0214",
+    "name": "Ztráta smyslu",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0115",
+      "cl_0114",
+      "cl_0083",
+      "cl_0079",
+      "cl_0116"
+    ],
+    "tier": "free",
+    "sort_order": 214,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0215",
+    "name": "Bezcílnost",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0116",
+      "cl_0115",
+      "cl_0033",
+      "cl_0046",
+      "cl_0114"
+    ],
+    "tier": "free",
+    "sort_order": 215,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0216",
+    "name": "Bloudění",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0033",
+      "cl_0046",
+      "cl_0112",
+      "cl_0115",
+      "cl_0036"
+    ],
+    "tier": "free",
+    "sort_order": 216,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0217",
+    "name": "Bez perspektivy",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0083",
+      "cl_0081",
+      "cl_0046",
+      "cl_0115",
+      "cl_0079"
+    ],
+    "tier": "free",
+    "sort_order": 217,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0218",
+    "name": "Beznaděj",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0083",
+      "cl_0079",
+      "cl_0039",
+      "cl_0081",
+      "cl_0004"
+    ],
+    "tier": "free",
+    "sort_order": 218,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0219",
+    "name": "Ztráta víry",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0083",
+      "cl_0081",
+      "cl_0114",
+      "cl_0115",
+      "cl_0013"
+    ],
+    "tier": "free",
+    "sort_order": 219,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0220",
+    "name": "Prázdnota",
+    "group": "Smysl",
+    "cluster_ids": [
+      "cl_0114",
+      "cl_0115",
+      "cl_0007",
+      "cl_0113",
+      "cl_0079"
+    ],
+    "tier": "free",
+    "sort_order": 220,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0221",
+    "name": "Ztráta sebe",
+    "group": "Ztráta sebe / identity",
+    "cluster_ids": [
+      "cl_0112",
+      "cl_0074",
+      "cl_0077",
+      "cl_0071",
+      "cl_0114"
+    ],
+    "tier": "free",
+    "sort_order": 221,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0222",
+    "name": "Nejasný sebeobraz",
+    "group": "Ztráta sebe / identity",
+    "cluster_ids": [
+      "cl_0112",
+      "cl_0011",
+      "cl_0038",
+      "cl_0111",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 222,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0223",
+    "name": "Narušená identita",
+    "group": "Ztráta sebe / identity",
+    "cluster_ids": [
+      "cl_0112",
+      "cl_0111",
+      "cl_0060",
+      "cl_0011",
+      "cl_0022"
+    ],
+    "tier": "free",
+    "sort_order": 223,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0224",
+    "name": "Nevím, kdo jsem",
+    "group": "Ztráta sebe / identity",
+    "cluster_ids": [
+      "cl_0112",
+      "cl_0114",
+      "cl_0033",
+      "cl_0077",
+      "cl_0011"
+    ],
+    "tier": "free",
+    "sort_order": 224,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0225",
+    "name": "Ztráta integrity",
+    "group": "Ztráta sebe / identity",
+    "cluster_ids": [
+      "cl_0077",
+      "cl_0112",
+      "cl_0028",
+      "cl_0103",
+      "cl_0074"
+    ],
+    "tier": "free",
+    "sort_order": 225,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0226",
+    "name": "Blízkost",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0084",
+      "cl_0042",
+      "cl_0013",
+      "cl_0087",
+      "cl_0072"
+    ],
+    "tier": "free",
+    "sort_order": 226,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0227",
+    "name": "Láska",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0042",
+      "cl_0084",
+      "cl_0013",
+      "cl_0010",
+      "cl_0012"
+    ],
+    "tier": "free",
+    "sort_order": 227,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0228",
+    "name": "Sex",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0024",
+      "cl_0042",
+      "cl_0026",
+      "cl_0043",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 228,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0229",
+    "name": "Intimita",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0084",
+      "cl_0042",
+      "cl_0024",
+      "cl_0013",
+      "cl_0087"
+    ],
+    "tier": "free",
+    "sort_order": 229,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0230",
+    "name": "Důvěřovat",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0013",
+      "cl_0012",
+      "cl_0015",
+      "cl_0042",
+      "cl_0084"
+    ],
+    "tier": "free",
+    "sort_order": 230,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0231",
+    "name": "Úspěch (vyniknout)",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0014",
+      "cl_0028",
+      "cl_0040",
+      "cl_0024",
+      "cl_0103"
+    ],
+    "tier": "free",
+    "sort_order": 231,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0232",
+    "name": "Svoboda",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0043",
+      "cl_0034",
+      "cl_0033",
+      "cl_0009",
+      "cl_0096"
+    ],
+    "tier": "free",
+    "sort_order": 232,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0233",
+    "name": "Nezávislost",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0034",
+      "cl_0010",
+      "cl_0043",
+      "cl_0009",
+      "cl_0033"
+    ],
+    "tier": "free",
+    "sort_order": 233,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0234",
+    "name": "Stálost",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0046",
+      "cl_0073",
+      "cl_0040",
+      "cl_0114"
+    ],
+    "tier": "free",
+    "sort_order": 234,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "fear_0235",
+    "name": "Zabydlet se",
+    "group": "Obranné",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0046",
+      "cl_0040",
+      "cl_0073",
+      "cl_0011"
+    ],
+    "tier": "free",
+    "sort_order": 235,
+    "added_at": "2026-09-11"
+  }
+]
