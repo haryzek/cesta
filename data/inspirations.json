@@ -6,12 +6,8 @@
     "year": "1889",
     "tags": [
       "smysl života",
-      "utrpení"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "NEGPES",
-      "ABINST"
+      "utrpení",
+      "odolnost"
     ],
     "tier": "free",
     "sort_order": 1,
@@ -25,13 +21,7 @@
     "tags": [
       "přijetí",
       "sebeláska",
-      "moudrost",
       "změna"
-    ],
-    "schemas": [
-      "DEFSH",
-      "USHYPER",
-      "FAIL"
     ],
     "tier": "free",
     "sort_order": 2,
@@ -44,13 +34,8 @@
     "year": "1951",
     "tags": [
       "sebepoznání",
-      "přirozenost",
-      "moudrost"
-    ],
-    "schemas": [
-      "LACKCOH",
-      "NEGPES",
-      "DEPINC"
+      "svoboda",
+      "odpovědnost"
     ],
     "tier": "free",
     "sort_order": 3,
@@ -62,15 +47,10 @@
     "author": "George Bernard Shaw",
     "year": "1923",
     "tags": [
-      "autenticita",
-      "smysl života",
-      "motivace",
-      "svoboda"
-    ],
-    "schemas": [
-      "ENMUND",
-      "LACKMEAN",
-      "SUBJUG"
+      "identita",
+      "tvoření",
+      "svoboda",
+      "smysl života"
     ],
     "tier": "free",
     "sort_order": 4,
@@ -84,13 +64,7 @@
     "tags": [
       "myšlenky",
       "strach",
-      "úzkost",
       "přerámování myšlenek"
-    ],
-    "schemas": [
-      "VULILL",
-      "NEGPES",
-      "USHYPER"
     ],
     "tier": "free",
     "sort_order": 5,
@@ -102,14 +76,9 @@
     "author": "Erich Fromm",
     "year": "1956",
     "tags": [
+      "láska",
       "vztahy",
-      "sebepoznání",
-      "přirozenost"
-    ],
-    "schemas": [
-      "ABINST",
-      "EMODEP",
-      "ENMUND"
+      "nezávislost"
     ],
     "tier": "free",
     "sort_order": 6,
@@ -122,14 +91,8 @@
     "year": "1961",
     "tags": [
       "smysl života",
-      "změna",
-      "přijetí",
-      "hodnoty"
-    ],
-    "schemas": [
-      "USHYPER",
-      "FAIL",
-      "INDISC"
+      "růst",
+      "změna"
     ],
     "tier": "free",
     "sort_order": 7,
@@ -143,13 +106,7 @@
     "tags": [
       "odvaha",
       "změna",
-      "sebevědomí",
       "strach"
-    ],
-    "schemas": [
-      "FAIL",
-      "VULILL",
-      "DEPINC"
     ],
     "tier": "free",
     "sort_order": 8,
@@ -163,13 +120,8 @@
     "tags": [
       "utrpení",
       "odpovědnost",
-      "odvaha",
-      "přijetí"
-    ],
-    "schemas": [
-      "UNFAIR",
-      "NEGPES",
-      "DEPINC"
+      "přijetí",
+      "svoboda"
     ],
     "tier": "free",
     "sort_order": 9,
@@ -182,13 +134,7 @@
     "year": "-456",
     "tags": [
       "moudrost",
-      "hodnoty",
-      "rozhodování"
-    ],
-    "schemas": [
-      "USHYPER",
-      "LACKCOH",
-      "APPREC"
+      "hodnoty"
     ],
     "tier": "free",
     "sort_order": 10,
@@ -200,15 +146,9 @@
     "author": "Irvin D. Yalom",
     "year": "2008",
     "tags": [
-      "autenticita",
+      "plné prožívání",
       "odvaha",
-      "emoce",
-      "přirozenost"
-    ],
-    "schemas": [
-      "MISAB",
-      "VULILL",
-      "EMOINH"
+      "autenticita"
     ],
     "tier": "free",
     "sort_order": 11,
@@ -220,15 +160,10 @@
     "author": "Alfred Adler",
     "year": "1927",
     "tags": [
-      "přijetí",
       "odvaha",
-      "sebeláska",
-      "stud"
-    ],
-    "schemas": [
-      "DEFSH",
-      "USHYPER",
-      "FAIL"
+      "přijetí",
+      "stud",
+      "sebeláska"
     ],
     "tier": "free",
     "sort_order": 12,
@@ -241,14 +176,8 @@
     "year": "1895",
     "tags": [
       "emoce",
-      "přirozenost",
-      "stres",
+      "tělo",
       "autenticita"
-    ],
-    "schemas": [
-      "EMOINH",
-      "VULILL",
-      "SUBJUG"
     ],
     "tier": "free",
     "sort_order": 13,
@@ -260,14 +189,9 @@
     "author": "Sigmund Freud",
     "year": "1930",
     "tags": [
-      "vztahy",
-      "smysl života",
-      "produktivita"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "EMODEP",
-      "ISOLAL"
+      "láska",
+      "přínos",
+      "smysl života"
     ],
     "tier": "free",
     "sort_order": 14,
@@ -280,13 +204,8 @@
     "year": "1956",
     "tags": [
       "samota",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "schemas": [
-      "ENMUND",
-      "ISOLAL",
-      "ABINST"
+      "láska",
+      "nezávislost"
     ],
     "tier": "free",
     "sort_order": 15,
@@ -299,14 +218,8 @@
     "year": "1890",
     "tags": [
       "změna",
-      "přerámování myšlenek",
-      "pozitivní myšlení",
-      "zklidnění"
-    ],
-    "schemas": [
-      "NEGPES",
-      "DEPINC",
-      "FAIL"
+      "myšlenky",
+      "přerámování myšlenek"
     ],
     "tier": "free",
     "sort_order": 16,
@@ -319,14 +232,8 @@
     "year": "125",
     "tags": [
       "přijetí",
-      "mindfulness",
-      "přítomnost",
-      "štěstí"
-    ],
-    "schemas": [
-      "USHYPER",
-      "INDISC",
-      "ENTGRAND"
+      "štěstí",
+      "přítomnost"
     ],
     "tier": "free",
     "sort_order": 17,
@@ -340,13 +247,7 @@
     "tags": [
       "sebepoznání",
       "hněv",
-      "vztahy",
-      "vnitřní části"
-    ],
-    "schemas": [
-      "PUNIT",
-      "MISAB",
-      "LACKCOH"
+      "vztahy"
     ],
     "tier": "free",
     "sort_order": 18,
@@ -359,14 +260,8 @@
     "year": "1951",
     "tags": [
       "změna",
-      "mindfulness",
-      "přítomnost",
-      "přijetí"
-    ],
-    "schemas": [
-      "VULILL",
-      "INDISC",
-      "NEGPES"
+      "přijetí",
+      "přítomnost"
     ],
     "tier": "free",
     "sort_order": 19,
@@ -378,14 +273,9 @@
     "author": "Pierre Teilhard de Chardin",
     "year": "1947",
     "tags": [
-      "přirozenost",
+      "víra",
       "smysl života",
-      "přerámování myšlenek"
-    ],
-    "schemas": [
-      "LACKMEAN",
-      "DEFSH",
-      "ISOLAL"
+      "identita"
     ],
     "tier": "free",
     "sort_order": 20,
@@ -398,17 +288,2495 @@
     "year": "1972",
     "tags": [
       "hranice",
-      "autenticita",
       "vztahy",
-      "sebeláska"
-    ],
-    "schemas": [
-      "SELFSAC",
-      "SUBJUG",
-      "APPREC"
+      "autenticita",
+      "komunikace"
     ],
     "tier": "free",
     "sort_order": 21,
     "added_at": "2026-06-05"
+  },
+  {
+    "id": "inspir_0022",
+    "text": "Chceš-li, aby si tě druzí vážili, je hlavní věc vážit si sám sebe.",
+    "author": "Fjodor Michajlovič Dostojevskij",
+    "year": "1861",
+    "tags": [
+      "sebeláska",
+      "sebevědomí",
+      "uznání"
+    ],
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0023",
+    "text": "Ochota přijmout odpovědnost za vlastní život je pramen, ze kterého vyvěrá sebeúcta.",
+    "author": "Joan Didion",
+    "year": "1968",
+    "tags": [
+      "odpovědnost",
+      "sebeláska",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0024",
+    "text": "Než si diagnostikuješ depresi nebo nízké sebevědomí, ujisti se nejdřív, že nejsi jen obklopený blbci.",
+    "author": "William Gibson",
+    "year": null,
+    "tags": [
+      "sebevědomí",
+      "vztahy",
+      "přerámování myšlenek"
+    ],
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0025",
+    "text": "Kdo si neváží sám sebe, nedokáže si vážit ničeho a nikoho.",
+    "author": "Ayn Rand",
+    "year": "1964",
+    "tags": [
+      "sebeláska",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0026",
+    "text": "Milovat sám sebe — to je začátek románku na celý život.",
+    "author": "Oscar Wilde",
+    "year": "1895",
+    "tags": [
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0027",
+    "text": "Žít je to nejvzácnější na světě. Většina lidí jen existuje.",
+    "author": "Oscar Wilde",
+    "year": "1891",
+    "tags": [
+      "plné prožívání",
+      "smysl života",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0028",
+    "text": "Nemůžeme čekat, že nás přijmou druzí, dokud jsme se nejdřív nepřijali sami.",
+    "author": "Malcolm X",
+    "year": null,
+    "tags": [
+      "přijetí",
+      "sebeláska",
+      "uznání"
+    ],
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0029",
+    "text": "Nikdo ve vás nemůže vyvolat pocit méněcennosti bez vašeho souhlasu.",
+    "author": "Eleanor Rooseveltová",
+    "year": null,
+    "tags": [
+      "sebevědomí",
+      "hranice",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0030",
+    "text": "Výsadou celého života je být tím, kým doopravdy jsi.",
+    "author": "Joseph Campbell",
+    "year": "1991",
+    "tags": [
+      "autenticita",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0031",
+    "text": "Největší věc na světě je umět patřit sám sobě.",
+    "author": "Michel de Montaigne",
+    "year": "1580",
+    "tags": [
+      "nezávislost",
+      "identita",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0032",
+    "text": "Když začneš chápat, kým jsi, aniž by ses to snažil změnit, to, kým jsi, se promění samo.",
+    "author": "Jiddu Krišnamurti",
+    "year": null,
+    "tags": [
+      "sebepoznání",
+      "přijetí",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0033",
+    "text": "Nevím, jestli se mám dodnes pořád ráda. Ale už dávno jsem se naučila jedno: odpouštět si.",
+    "author": "Maya Angelou",
+    "year": null,
+    "tags": [
+      "sebeláska",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0034",
+    "text": "Nebudu slavná ani velká. Půjdu dál — zkoumat, měnit se, otvírat oči i mysl a odmítat nechat se orazítkovat.",
+    "author": "Virginia Woolfová",
+    "year": "1953",
+    "tags": [
+      "identita",
+      "růst",
+      "svoboda",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0035",
+    "text": "Občas narazím na pohrdání. Nezlobí mě to, jen mě to udivuje: jak se někdo může dobrovolně připravit o potěšení z mé společnosti?",
+    "author": "Zora Neale Hurstonová",
+    "year": "1928",
+    "tags": [
+      "sebevědomí",
+      "sebeláska",
+      "přerámování myšlenek"
+    ],
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0036",
+    "text": "Být nikým jiným než sám sebou ve světě, který se dnem i nocí ze všech sil snaží udělat z tebe někoho jiného, znamená bojovat nejtěžší bitvu, jakou člověk vést může — a nikdy nepřestat.",
+    "author": "E. E. Cummings",
+    "year": "1955",
+    "tags": [
+      "autenticita",
+      "identita",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0037",
+    "text": "Staň se tím, kým jsi.",
+    "author": "Pindaros",
+    "year": null,
+    "tags": [
+      "identita",
+      "autenticita",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0038",
+    "text": "Moudří berou sebeúctu jako nesmlouvatelnou — nevymění ji za zdraví, za bohatství, za nic.",
+    "author": "Thomas Szasz",
+    "year": "1973",
+    "tags": [
+      "sebeláska",
+      "hodnoty",
+      "sebevědomí"
+    ],
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0039",
+    "text": "Sebeúcta: hřejivý pocit, že zatím nikdo nemá podezření.",
+    "author": "H. L. Mencken",
+    "year": "1949",
+    "tags": [
+      "sebevědomí",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0040",
+    "text": "Když už člověk jednou je, tak má koukat, aby byl. A když kouká, aby byl, a je, tak má být to, co je, a nemá být to, co není, jak tomu v mnoha případech je.",
+    "author": "Jan Werich",
+    "year": null,
+    "tags": [
+      "identita",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0041",
+    "text": "Uprostřed zimy jsem v sobě objevil nepřemožitelné léto.",
+    "author": "Albert Camus",
+    "year": "1952",
+    "tags": [
+      "odolnost",
+      "utrpení",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0042",
+    "text": "Kdyby jedinou modlitbou tvého života bylo »děkuji«, stačilo by to.",
+    "author": "Mistr Eckhart",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "víra"
+    ],
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0043",
+    "text": "Nekaz si to, co máš, touhou po tom, co nemáš.",
+    "author": "Epikúros",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přijetí",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0044",
+    "text": "Můžeme si stěžovat, že růže mají trny — nebo se radovat, že trní má růže.",
+    "author": "Alphonse Karr",
+    "year": "1855",
+    "tags": [
+      "přerámování myšlenek",
+      "vděčnost",
+      "pozitivní myšlení"
+    ],
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0045",
+    "text": "Nejztracenější ze všech dnů je ten, kdy jsme se nezasmáli.",
+    "author": "Nicolas Chamfort",
+    "year": "1795",
+    "tags": [
+      "štěstí",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0046",
+    "text": "Aby radost byla úplná, musíš mít někoho, s kým se o ni rozdělíš.",
+    "author": "Mark Twain",
+    "year": null,
+    "tags": [
+      "štěstí",
+      "vztahy",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0047",
+    "text": "Nemyslím na všechnu tu bídu, ale na krásu, která ještě zbývá.",
+    "author": "Anne Franková",
+    "year": "1944",
+    "tags": [
+      "pozitivní myšlení",
+      "vděčnost",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0048",
+    "text": "Spal jsem a snil, že život je radost. Probudil jsem se a viděl, že život je služba. Jednal jsem — a hle: služba byla radost.",
+    "author": "Rabíndranáth Thákur",
+    "year": null,
+    "tags": [
+      "smysl života",
+      "přínos",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0049",
+    "text": "Prosím vás jen o jedno: všimněte si, když jste šťastní. A v tu chvíli si zamumlejte nebo zakřičte: Jestli tohle není hezký, tak co teda je?",
+    "author": "Kurt Vonnegut",
+    "year": "2005",
+    "tags": [
+      "štěstí",
+      "přítomnost",
+      "vděčnost"
+    ],
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0050",
+    "text": "Vděčnost není jen největší z ctností, ale matka všech ostatních.",
+    "author": "Cicero",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0051",
+    "text": "Užívej si maličkosti. Jednou se ohlédneš a zjistíš, že to byly ty velké věci.",
+    "author": "Robert Brault",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přítomnost",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0052",
+    "text": "Modlíš se v nouzi a v tísni; kéž by ses modlil i uprostřed plné radosti.",
+    "author": "Chalíl Džibrán",
+    "year": "1923",
+    "tags": [
+      "vděčnost",
+      "víra",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0053",
+    "text": "Doopravdy žijeme jen v těch chvílích, kdy si naše srdce uvědomují své poklady.",
+    "author": "Thornton Wilder",
+    "year": "1930",
+    "tags": [
+      "vděčnost",
+      "přítomnost",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0054",
+    "text": "Moudrý člověk netruchlí pro to, co mu chybí, ale raduje se z toho, co má.",
+    "author": "Epiktétos",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přijetí",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0055",
+    "text": "Vděčnost je štěstí zdvojené úžasem.",
+    "author": "G. K. Chesterton",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0056",
+    "text": "Jaký nádherný život jsem měla! Jen kdybych si to uvědomila dřív.",
+    "author": "Colette",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přítomnost",
+      "stáří"
+    ],
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0057",
+    "text": "Život bez radosti je jako dlouhá cesta bez hospody.",
+    "author": "Démokritos",
+    "year": null,
+    "tags": [
+      "štěstí",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0058",
+    "text": "Dnes jsi dostal darem 86 400 vteřin. Použil jsi aspoň jednu na to, abys řekl děkuji?",
+    "author": "William Arthur Ward",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0059",
+    "text": "Buďme vděční lidem, kteří nás dělají šťastnými. Jsou to laskaví zahradníci, díky nimž kvete naše duše.",
+    "author": "Marcel Proust",
+    "year": null,
+    "tags": [
+      "vděčnost",
+      "přátelství",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0060",
+    "text": "Smutek ti připravuje místo pro radost. Násilím ti vymete z domu všechno, aby nová radost měla kam vejít.",
+    "author": "Rúmí",
+    "year": null,
+    "tags": [
+      "smutek",
+      "přijetí",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0061",
+    "text": "Co je přítel? Jedna duše ve dvou tělech.",
+    "author": "Aristotelés",
+    "year": null,
+    "tags": [
+      "přátelství",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0062",
+    "text": "Bez přátel by nikdo nechtěl žít, i kdyby měl všechno ostatní.",
+    "author": "Aristotelés",
+    "year": null,
+    "tags": [
+      "přátelství",
+      "štěstí",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 62,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0063",
+    "text": "Přátelství dělá štěstí zářivějším a neštěstí lehčím, protože je dělí napůl.",
+    "author": "Cicero",
+    "year": null,
+    "tags": [
+      "přátelství",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 63,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0064",
+    "text": "Přítel je člověk, před kterým můžu myslet nahlas.",
+    "author": "Ralph Waldo Emerson",
+    "year": "1841",
+    "tags": [
+      "přátelství",
+      "autenticita",
+      "komunikace"
+    ],
+    "tier": "free",
+    "sort_order": 64,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0065",
+    "text": "Každý přítel v nás představuje svět. Svět, který se možná narodí až jeho příchodem.",
+    "author": "Anaïs Nin",
+    "year": "1937",
+    "tags": [
+      "přátelství",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 65,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0066",
+    "text": "Přátelství není nutné k přežití, stejně jako filozofie nebo umění. Je to jedna z věcí, kvůli kterým přežití stojí za to.",
+    "author": "C. S. Lewis",
+    "year": "1960",
+    "tags": [
+      "přátelství",
+      "smysl života"
+    ],
+    "tier": "free",
+    "sort_order": 66,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0067",
+    "text": "Raději půjdu s přítelem ve tmě než sama ve světle.",
+    "author": "Helen Kellerová",
+    "year": null,
+    "tags": [
+      "přátelství",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 67,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0068",
+    "text": "Přítel je ten, kdo o tobě ví všechno — a přesto tě má rád.",
+    "author": "Elbert Hubbard",
+    "year": "1927",
+    "tags": [
+      "přátelství",
+      "přijetí",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 68,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0069",
+    "text": "Setkání dvou osobností je jako kontakt dvou chemických látek: dojde-li k reakci, promění se obě.",
+    "author": "Carl Gustav Jung",
+    "year": "1933",
+    "tags": [
+      "vztahy",
+      "změna",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 69,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0070",
+    "text": "Láska spočívá v tom, že se dvě samoty chrání, dotýkají a zdraví.",
+    "author": "Rainer Maria Rilke",
+    "year": "1904",
+    "tags": [
+      "láska",
+      "vztahy",
+      "samota",
+      "nezávislost"
+    ],
+    "tier": "free",
+    "sort_order": 70,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0071",
+    "text": "Být někým plně viděn — a přesto milován. To je nabídka, která hraničí se zázrakem.",
+    "author": "Elizabeth Gilbertová",
+    "year": "2010",
+    "tags": [
+      "láska",
+      "přijetí",
+      "vztahy",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 71,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0072",
+    "text": "Lhostejnost a přehlížení často napáchají víc škody než otevřená nechuť.",
+    "author": "J. K. Rowlingová",
+    "year": "2003",
+    "tags": [
+      "vztahy",
+      "uznání",
+      "komunikace"
+    ],
+    "tier": "free",
+    "sort_order": 72,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0073",
+    "text": "Lidé zapomenou, co jsi řekl, i co jsi udělal. Nikdy ale nezapomenou, jak se s tebou cítili.",
+    "author": "Carl W. Buehner",
+    "year": "1971",
+    "tags": [
+      "vztahy",
+      "komunikace",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 73,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0074",
+    "text": "Každý muž, kterého potkám, mě chce chránit. Nechápu před čím.",
+    "author": "Mae West",
+    "year": null,
+    "tags": [
+      "nezávislost",
+      "vztahy",
+      "samostatnost"
+    ],
+    "tier": "free",
+    "sort_order": 74,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0075",
+    "text": "Největší štěstí života je přesvědčení, že jsme milováni.",
+    "author": "Victor Hugo",
+    "year": "1862",
+    "tags": [
+      "láska",
+      "štěstí"
+    ],
+    "tier": "free",
+    "sort_order": 75,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0076",
+    "text": "Řekni, že má sláva byla v tom, jaké jsem měl přátele.",
+    "author": "William Butler Yeats",
+    "year": "1937",
+    "tags": [
+      "přátelství",
+      "hodnoty",
+      "vděčnost"
+    ],
+    "tier": "free",
+    "sort_order": 76,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0077",
+    "text": "Láska je vzácnější než genialita. A přátelství je vzácnější než láska.",
+    "author": "Charles Péguy",
+    "year": "1943",
+    "tags": [
+      "přátelství",
+      "láska"
+    ],
+    "tier": "free",
+    "sort_order": 77,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0078",
+    "text": "Chceš-li jít rychle, jdi sám. Chceš-li dojít daleko, jděte spolu.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "sounáležitost",
+      "přátelství",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 78,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0079",
+    "text": "Život se smršťuje, nebo rozpíná úměrně tomu, kolik máme odvahy.",
+    "author": "Anaïs Nin",
+    "year": "1969",
+    "tags": [
+      "odvaha",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 79,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0080",
+    "text": "Ne proto se neodvažujeme, že jsou věci těžké. Věci jsou těžké proto, že se neodvažujeme.",
+    "author": "Seneca",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "myšlenky",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 80,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0081",
+    "text": "Co by byl život, kdybychom neměli odvahu něco zkusit?",
+    "author": "Vincent van Gogh",
+    "year": "1881",
+    "tags": [
+      "odvaha",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 81,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0082",
+    "text": "A co když spadnu? Ale zlato — co když poletíš?",
+    "author": "Erin Hanson",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "strach",
+      "přerámování myšlenek"
+    ],
+    "tier": "free",
+    "sort_order": 82,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0083",
+    "text": "Naučil jsem se, že odvaha není nepřítomnost strachu, ale vítězství nad ním.",
+    "author": "Nelson Mandela",
+    "year": "1994",
+    "tags": [
+      "odvaha",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 83,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0084",
+    "text": "Život je buď odvážné dobrodružství, nebo nic.",
+    "author": "Helen Kellerová",
+    "year": "1940",
+    "tags": [
+      "odvaha",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 84,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0085",
+    "text": "Za dvacet let tě budou víc mrzet věci, které jsi neudělal, než ty, které jsi udělal. Tak odraz od břehu a chytej vítr do plachet.",
+    "author": "Mark Twain",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "rozhodování",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 85,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0086",
+    "text": "Celý život jsem se každou chvíli k smrti bála — a nikdy jsem nedovolila, aby mi strach zabránil udělat jedinou věc, kterou jsem udělat chtěla.",
+    "author": "Georgia O'Keeffe",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "strach",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 86,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0087",
+    "text": "Každý den udělej jednu věc, ze které máš strach.",
+    "author": "Eleanor Rooseveltová",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "strach",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 87,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0088",
+    "text": "Chce to odvahu vyrůst a stát se tím, kým doopravdy jsi.",
+    "author": "E. E. Cummings",
+    "year": "1955",
+    "tags": [
+      "odvaha",
+      "identita",
+      "autenticita",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 88,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0089",
+    "text": "Můžeš si vybrat odvahu, nebo pohodlí. Obojí najednou nejde.",
+    "author": "Brené Brown",
+    "year": "2015",
+    "tags": [
+      "odvaha",
+      "rozhodování",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 89,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0090",
+    "text": "Nebát se a nekrást.",
+    "author": "Tomáš Garrigue Masaryk",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 90,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0091",
+    "text": "Nejtěžší je rozhodnout se jednat. Zbytek je jen vytrvalost.",
+    "author": "Amelia Earhart",
+    "year": null,
+    "tags": [
+      "rozhodování",
+      "odvaha",
+      "motivace",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 91,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0092",
+    "text": "Možná jsou všichni draci našeho života princezny, které jen čekají, až nás jednou uvidí jednat s krásou a odvahou.",
+    "author": "Rainer Maria Rilke",
+    "year": "1904",
+    "tags": [
+      "odvaha",
+      "strach",
+      "přerámování myšlenek"
+    ],
+    "tier": "free",
+    "sort_order": 92,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0093",
+    "text": "Nevím, kam odsud půjdu, ale slibuju, že to nebude nuda.",
+    "author": "David Bowie",
+    "year": "1997",
+    "tags": [
+      "odvaha",
+      "svoboda",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 93,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0094",
+    "text": "Sedmkrát spadni, osmkrát vstaň.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "odolnost",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 94,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0095",
+    "text": "Největší nebezpečí pro nás není, že míříme příliš vysoko a mineme, ale že míříme příliš nízko a trefíme se.",
+    "author": "Michelangelo Buonarroti",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "motivace",
+      "úspěch"
+    ],
+    "tier": "free",
+    "sort_order": 95,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0096",
+    "text": "Jeskyně, do které se bojíš vstoupit, skrývá poklad, který hledáš.",
+    "author": "Joseph Campbell",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "strach",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 96,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0097",
+    "text": "Tohle jsem ještě nikdy nezkoušela, takže to určitě zvládnu.",
+    "author": "Astrid Lindgrenová",
+    "year": "1945",
+    "tags": [
+      "odvaha",
+      "sebevědomí",
+      "pozitivní myšlení"
+    ],
+    "tier": "free",
+    "sort_order": 97,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0098",
+    "text": "Potíž je v tom, že když neriskuješ nic, riskuješ ještě víc.",
+    "author": "Erica Jong",
+    "year": null,
+    "tags": [
+      "odvaha",
+      "strach",
+      "rozhodování"
+    ],
+    "tier": "free",
+    "sort_order": 98,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0099",
+    "text": "Není pravda, že máme málo času. Pravda je, že ho spoustu promarníme.",
+    "author": "Seneca",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "smrt",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 99,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0100",
+    "text": "Mohl bys odejít ze života právě teď. Ať tohle určuje, co děláš, co říkáš a co si myslíš.",
+    "author": "Marcus Aurelius",
+    "year": null,
+    "tags": [
+      "smrt",
+      "přítomnost",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 100,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0101",
+    "text": "Váš čas je omezený. Nemarněte ho tím, že žijete cizí život.",
+    "author": "Steve Jobs",
+    "year": "2005",
+    "tags": [
+      "autenticita",
+      "smrt",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 101,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0102",
+    "text": "Nebojím se smrti. Jen u toho nechci být.",
+    "author": "Woody Allen",
+    "year": null,
+    "tags": [
+      "smrt",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 102,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0103",
+    "text": "Tři dny po smrti vám ještě rostou vlasy a nehty. Telefonátů ale ubývá.",
+    "author": "Johnny Carson",
+    "year": null,
+    "tags": [
+      "smrt",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 103,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0104",
+    "text": "Nikdo na smrtelné posteli nelitoval, že nestrávil víc času v kanceláři.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "smrt",
+      "hodnoty",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 104,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0105",
+    "text": "Jak trávíme své dny, tak — samozřejmě — trávíme svůj život.",
+    "author": "Annie Dillard",
+    "year": "1989",
+    "tags": [
+      "přítomnost",
+      "návyky",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 105,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0106",
+    "text": "Řekni, co chceš udělat se svým jediným divokým a vzácným životem?",
+    "author": "Mary Oliver",
+    "year": "1990",
+    "tags": [
+      "smysl života",
+      "přítomnost",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 106,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0107",
+    "text": "Život lze pochopit jen zpětně, ale žít se musí dopředu.",
+    "author": "Søren Kierkegaard",
+    "year": "1843",
+    "tags": [
+      "moudrost",
+      "minulost",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 107,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0108",
+    "text": "Cena každé věci je množství života, které za ni vyměníš.",
+    "author": "Henry David Thoreau",
+    "year": "1854",
+    "tags": [
+      "hodnoty",
+      "rozhodování",
+      "smrt"
+    ],
+    "tier": "free",
+    "sort_order": 108,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0109",
+    "text": "Máme dva životy. Ten druhý začíná ve chvíli, kdy pochopíme, že máme jen jeden.",
+    "author": "Konfucius",
+    "year": null,
+    "tags": [
+      "smrt",
+      "přítomnost",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 109,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0110",
+    "text": "Člověk není mrtvý, dokud se vyslovuje jeho jméno.",
+    "author": "Terry Pratchett",
+    "year": "2004",
+    "tags": [
+      "smrt",
+      "ztráta",
+      "vztahy"
+    ],
+    "tier": "free",
+    "sort_order": 110,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0111",
+    "text": "Užívej dne a co nejméně věř zítřku.",
+    "author": "Horatius",
+    "year": "23 př. n. l.",
+    "tags": [
+      "přítomnost",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 111,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0112",
+    "text": "Nepočítej dny. Postarej se, aby se dny počítaly.",
+    "author": "Muhammad Ali",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "smysl života"
+    ],
+    "tier": "free",
+    "sort_order": 112,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0113",
+    "text": "Všichni umřeme, všichni do jednoho — jaký cirkus! Už jen tohle by nás mělo vést k tomu, abychom se měli rádi. A nevede.",
+    "author": "Charles Bukowski",
+    "year": null,
+    "tags": [
+      "smrt",
+      "láska",
+      "sounáležitost"
+    ],
+    "tier": "free",
+    "sort_order": 113,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0114",
+    "text": "Jsme jako motýli, kteří třepotají křídly jediný den a myslí si, že je to navždy.",
+    "author": "Carl Sagan",
+    "year": "1980",
+    "tags": [
+      "smrt",
+      "přítomnost",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 114,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0115",
+    "text": "Právě to, že už nikdy nepřijde znovu, dělá život tak sladkým.",
+    "author": "Emily Dickinsonová",
+    "year": null,
+    "tags": [
+      "smrt",
+      "plné prožívání",
+      "vděčnost"
+    ],
+    "tier": "free",
+    "sort_order": 115,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0116",
+    "text": "Buď se pustíš do žití, nebo se pustíš do umírání.",
+    "author": "Stephen King",
+    "year": "1982",
+    "tags": [
+      "rozhodování",
+      "smrt",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 116,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0117",
+    "text": "Protože lidé nedokázali vyléčit smrt, rozhodli se na ni raději nemyslet.",
+    "author": "Blaise Pascal",
+    "year": "1670",
+    "tags": [
+      "smrt",
+      "přijetí",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 117,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0118",
+    "text": "Naděje není přesvědčení, že něco dobře dopadne, ale jistota, že má něco smysl — bez ohledu na to, jak to dopadne.",
+    "author": "Václav Havel",
+    "year": "1986",
+    "tags": [
+      "smysl života",
+      "víra",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 118,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0119",
+    "text": "Buď sám sebou. Všichni ostatní už jsou zabraní.",
+    "author": "Oscar Wilde",
+    "year": null,
+    "tags": [
+      "autenticita",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 119,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0120",
+    "text": "Včera jsem byl chytrý, a tak jsem chtěl změnit svět. Dnes jsem moudrý, a tak měním sám sebe.",
+    "author": "Rúmí",
+    "year": null,
+    "tags": [
+      "změna",
+      "moudrost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 120,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0121",
+    "text": "Jsme to, co opakovaně děláme. Dokonalost pak není čin, ale zvyk.",
+    "author": "Will Durant",
+    "year": "1926",
+    "tags": [
+      "návyky",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 121,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0122",
+    "text": "Tajemství lidské existence není v tom pouze žít, ale v tom, pro co žít.",
+    "author": "Fjodor Michajlovič Dostojevskij",
+    "year": "1880",
+    "tags": [
+      "smysl života",
+      "hodnoty"
+    ],
+    "tier": "free",
+    "sort_order": 122,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0123",
+    "text": "Neptej se, co svět potřebuje. Ptej se, co v tobě probouzí život — a běž to dělat. Svět totiž potřebuje lidi, kteří ožili.",
+    "author": "Howard Thurman",
+    "year": null,
+    "tags": [
+      "smysl života",
+      "plné prožívání",
+      "přínos"
+    ],
+    "tier": "free",
+    "sort_order": 123,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0124",
+    "text": "Zjisti, kdo jsi, a dělej to schválně.",
+    "author": "Dolly Parton",
+    "year": "2015",
+    "tags": [
+      "identita",
+      "autenticita",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 124,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0125",
+    "text": "Jsme tím, co předstíráme, že jsme. Proto si musíme dávat velký pozor na to, co předstíráme.",
+    "author": "Kurt Vonnegut",
+    "year": "1961",
+    "tags": [
+      "identita",
+      "autenticita",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 125,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0126",
+    "text": "Správně vidíme jen srdcem. Co je důležité, je očím neviditelné.",
+    "author": "Antoine de Saint-Exupéry",
+    "year": "1943",
+    "tags": [
+      "hodnoty",
+      "láska",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 126,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0127",
+    "text": "Neprozkoumaný život nestojí za to žít.",
+    "author": "Sókratés",
+    "year": "399 př. n. l.",
+    "tags": [
+      "sebepoznání",
+      "smysl života"
+    ],
+    "tier": "free",
+    "sort_order": 127,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0128",
+    "text": "Lidi netrápí věci samy, ale to, jak se na ně dívají.",
+    "author": "Epiktétos",
+    "year": null,
+    "tags": [
+      "myšlenky",
+      "přerámování myšlenek",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 128,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0129",
+    "text": "Přestaň se dohadovat o tom, jaký má být dobrý člověk, a buď jím.",
+    "author": "Marcus Aurelius",
+    "year": null,
+    "tags": [
+      "hodnoty",
+      "odpovědnost",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 129,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0130",
+    "text": "Společnost roste, když staří sázejí stromy, v jejichž stínu nikdy nebudou sedět.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "přínos",
+      "hodnoty",
+      "stáří"
+    ],
+    "tier": "free",
+    "sort_order": 130,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0131",
+    "text": "Ne všechno, čemu se postavíme, se dá změnit. Ale nic se nedá změnit, dokud se tomu nepostavíme.",
+    "author": "James Baldwin",
+    "year": "1962",
+    "tags": [
+      "změna",
+      "odvaha",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 131,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0132",
+    "text": "Nevstoupíš dvakrát do téže řeky.",
+    "author": "Hérakleitos",
+    "year": null,
+    "tags": [
+      "změna",
+      "přijetí",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 132,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0133",
+    "text": "Změna znamená růst. A růst umí bolet.",
+    "author": "Audre Lorde",
+    "year": "1984",
+    "tags": [
+      "změna",
+      "růst",
+      "utrpení"
+    ],
+    "tier": "free",
+    "sort_order": 133,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0134",
+    "text": "Každá změna, i ta nejvytouženější, má svou melancholii.",
+    "author": "Anatole France",
+    "year": "1881",
+    "tags": [
+      "změna",
+      "smutek",
+      "ztráta"
+    ],
+    "tier": "free",
+    "sort_order": 134,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0135",
+    "text": "Přišel den, kdy zůstat sevřená v poupěti bolelo víc než riskovat rozkvět.",
+    "author": "Anaïs Nin",
+    "year": null,
+    "tags": [
+      "změna",
+      "růst",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 135,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0136",
+    "text": "Když už nemůžeme změnit situaci, stojíme před výzvou změnit sami sebe.",
+    "author": "Viktor Frankl",
+    "year": "1946",
+    "tags": [
+      "změna",
+      "přijetí",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 136,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0137",
+    "text": "Nemůžeme změnit nic, co jsme nejdřív nepřijali. Odsudek neosvobozuje — dusí.",
+    "author": "Carl Gustav Jung",
+    "year": "1933",
+    "tags": [
+      "přijetí",
+      "změna",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 137,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0138",
+    "text": "Zkusils. Selhals. Nevadí. Zkus to znovu. Selži znovu. Selži líp.",
+    "author": "Samuel Beckett",
+    "year": "1983",
+    "tags": [
+      "odolnost",
+      "změna",
+      "přijetí",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 138,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0139",
+    "text": "Když se ti něco nelíbí, změň to. Když to změnit nemůžeš, změň svůj postoj.",
+    "author": "Maya Angelou",
+    "year": null,
+    "tags": [
+      "změna",
+      "přerámování myšlenek",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 139,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0140",
+    "text": "Každý přemýšlí, jak změnit svět. Nikdo nepřemýšlí, jak změnit sám sebe.",
+    "author": "Lev Nikolajevič Tolstoj",
+    "year": null,
+    "tags": [
+      "změna",
+      "sebepoznání",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 140,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0141",
+    "text": "Tajemství změny není v boji se starým, ale ve stavbě nového.",
+    "author": "Dan Millman",
+    "year": "1980",
+    "tags": [
+      "změna",
+      "tvoření",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 141,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0142",
+    "text": "Jediná trvalá pravda je změna.",
+    "author": "Octavia Butler",
+    "year": "1993",
+    "tags": [
+      "změna",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 142,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0143",
+    "text": "Protože věci jsou takové, jaké jsou, nezůstanou takové, jaké jsou.",
+    "author": "Bertolt Brecht",
+    "year": null,
+    "tags": [
+      "změna",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 143,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0144",
+    "text": "Nejlepší čas zasadit strom byl před dvaceti lety. Druhý nejlepší je teď.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "změna",
+      "motivace",
+      "přítomnost"
+    ],
+    "tier": "free",
+    "sort_order": 144,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0145",
+    "text": "Svět zlomí každého. A mnozí jsou potom silní právě v místech zlomu.",
+    "author": "Ernest Hemingway",
+    "year": "1929",
+    "tags": [
+      "odolnost",
+      "utrpení",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 145,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0146",
+    "text": "Hodil jsem dolar do automatu na změnu drobných. Nic se nezměnilo.",
+    "author": "George Carlin",
+    "year": null,
+    "tags": [
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 146,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0147",
+    "text": "Zlepšit se znamená změnit se. Být dokonalý znamená měnit se pořád.",
+    "author": "Winston Churchill",
+    "year": "1925",
+    "tags": [
+      "změna",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 147,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0148",
+    "text": "Ve tvém těle je víc moudrosti než v tvé nejhlubší filozofii.",
+    "author": "Friedrich Nietzsche",
+    "year": "1883",
+    "tags": [
+      "tělo",
+      "moudrost"
+    ],
+    "tier": "free",
+    "sort_order": 148,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0149",
+    "text": "Choď, jako bys chodidly líbal zemi.",
+    "author": "Thich Nhat Hanh",
+    "year": "1991",
+    "tags": [
+      "mindfulness",
+      "přítomnost",
+      "tělo"
+    ],
+    "tier": "free",
+    "sort_order": 149,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0150",
+    "text": "Náš pravý domov je přítomný okamžik.",
+    "author": "Thich Nhat Hanh",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 150,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0151",
+    "text": "Je-li něco posvátné, pak je to lidské tělo.",
+    "author": "Walt Whitman",
+    "year": "1855",
+    "tags": [
+      "tělo",
+      "přijetí",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 151,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0152",
+    "text": "Dej si dárek: přítomný okamžik.",
+    "author": "Marcus Aurelius",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "mindfulness"
+    ],
+    "tier": "free",
+    "sort_order": 152,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0153",
+    "text": "Neprodlévej v minulosti, nesni o budoucnosti. Soustřeď mysl na přítomný okamžik.",
+    "author": "Buddha",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "mindfulness",
+      "myšlenky"
+    ],
+    "tier": "free",
+    "sort_order": 153,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0154",
+    "text": "Vlny nezastavíš. Ale můžeš se naučit surfovat.",
+    "author": "Jon Kabat-Zinn",
+    "year": "1994",
+    "tags": [
+      "mindfulness",
+      "přijetí",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 154,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0155",
+    "text": "Když jsme se nenaučili říkat ne, může ho za nás nakonec říct naše tělo.",
+    "author": "Gabor Maté",
+    "year": "2003",
+    "tags": [
+      "tělo",
+      "hranice",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 155,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0156",
+    "text": "Tělo sčítá rány — i ty, na které mysl dávno zapomněla.",
+    "author": "Bessel van der Kolk",
+    "year": "2014",
+    "tags": [
+      "tělo",
+      "minulost",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 156,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0157",
+    "text": "Žij v přítomnosti, vrhni se na každou vlnu, najdi svou věčnost v každém okamžiku.",
+    "author": "Henry David Thoreau",
+    "year": "1859",
+    "tags": [
+      "přítomnost",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 157,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0158",
+    "text": "Všechno neštěstí člověka pramení z jediného: že nedokáže klidně sedět sám v prázdném pokoji.",
+    "author": "Blaise Pascal",
+    "year": "1670",
+    "tags": [
+      "samota",
+      "přítomnost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 158,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0159",
+    "text": "Zatímco odkládáme život na později, život utíká.",
+    "author": "Seneca",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "plné prožívání",
+      "motivace"
+    ],
+    "tier": "free",
+    "sort_order": 159,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0160",
+    "text": "Skoro všechno začne zase fungovat, když to na pár minut vypneš ze zásuvky. Včetně tebe.",
+    "author": "Anne Lamott",
+    "year": "2017",
+    "tags": [
+      "duševní pohoda",
+      "volný čas",
+      "tělo"
+    ],
+    "tier": "free",
+    "sort_order": 160,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0161",
+    "text": "Existuje hlas, který nepoužívá slova. Naslouchej.",
+    "author": "Rúmí",
+    "year": null,
+    "tags": [
+      "tělo",
+      "mindfulness",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 161,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0162",
+    "text": "Nemusíš být dobrý. Stačí nechat měkké zvíře svého těla milovat to, co miluje.",
+    "author": "Mary Oliver",
+    "year": "1986",
+    "tags": [
+      "tělo",
+      "přijetí",
+      "sebeláska",
+      "přirozenost"
+    ],
+    "tier": "free",
+    "sort_order": 162,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0163",
+    "text": "Skutečné tajemství života: být úplně přítomný v tom, co děláš právě teď a tady. A neříkat tomu práce, ale hra.",
+    "author": "Alan Watts",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "plné prožívání",
+      "volný čas"
+    ],
+    "tier": "free",
+    "sort_order": 163,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0164",
+    "text": "Moje babička začala v šedesáti chodit pět mil denně. Teď je jí devadesát sedm a nemáme tušení, kde je.",
+    "author": "Ellen DeGeneres",
+    "year": null,
+    "tags": [
+      "fyzické zdraví",
+      "stáří",
+      "tělo"
+    ],
+    "tier": "free",
+    "sort_order": 164,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0165",
+    "text": "Je třeba si vyprosit zdravého ducha ve zdravém těle.",
+    "author": "Juvenalis",
+    "year": null,
+    "tags": [
+      "fyzické zdraví",
+      "tělo",
+      "duševní pohoda"
+    ],
+    "tier": "free",
+    "sort_order": 165,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0166",
+    "text": "Pták letí, ryba plave, člověk běží.",
+    "author": "Emil Zátopek",
+    "year": null,
+    "tags": [
+      "tělo",
+      "fyzické zdraví",
+      "přirozenost"
+    ],
+    "tier": "free",
+    "sort_order": 166,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0167",
+    "text": "Nemusíš vycházet z domu. Zůstaň u stolu a naslouchej. Svět se ti sám nabídne k odhalení — nemůže jinak, u vytržení se bude svíjet před tebou.",
+    "author": "Franz Kafka",
+    "year": null,
+    "tags": [
+      "přítomnost",
+      "mindfulness",
+      "samota"
+    ],
+    "tier": "free",
+    "sort_order": 167,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0168",
+    "text": "Dítě je otcem člověka.",
+    "author": "William Wordsworth",
+    "year": "1802",
+    "tags": [
+      "dětství",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 168,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0169",
+    "text": "Dětství ukazuje člověka, jako ráno ukazuje den.",
+    "author": "John Milton",
+    "year": "1671",
+    "tags": [
+      "dětství",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 169,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0170",
+    "text": "Všichni dospělí byli nejdřív dětmi. Ale málokdo z nich si na to pamatuje.",
+    "author": "Antoine de Saint-Exupéry",
+    "year": "1943",
+    "tags": [
+      "dětství",
+      "minulost"
+    ],
+    "tier": "free",
+    "sort_order": 170,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0171",
+    "text": "Pocházím ze svého dětství jako z nějaké země.",
+    "author": "Antoine de Saint-Exupéry",
+    "year": "1942",
+    "tags": [
+      "dětství",
+      "minulost",
+      "identita"
+    ],
+    "tier": "free",
+    "sort_order": 171,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0172",
+    "text": "V dětství vždycky přijde okamžik, kdy se otevřou dveře a vpustí dovnitř budoucnost.",
+    "author": "Graham Greene",
+    "year": "1940",
+    "tags": [
+      "dětství",
+      "změna"
+    ],
+    "tier": "free",
+    "sort_order": 172,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0173",
+    "text": "Nic není pro život vyššího, silnějšího a zdravějšího než dobrá vzpomínka, zvlášť ta z dětství, z rodného domu.",
+    "author": "Fjodor Michajlovič Dostojevskij",
+    "year": "1880",
+    "tags": [
+      "dětství",
+      "rodina",
+      "vděčnost"
+    ],
+    "tier": "free",
+    "sort_order": 173,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0174",
+    "text": "Nikdy není pozdě na šťastné dětství.",
+    "author": "Tom Robbins",
+    "year": "1980",
+    "tags": [
+      "dětství",
+      "změna",
+      "sebeláska"
+    ],
+    "tier": "free",
+    "sort_order": 174,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0175",
+    "text": "Když dětství zemře, jeho mrtvolám se říká dospělí.",
+    "author": "Brian Aldiss",
+    "year": "1973",
+    "tags": [
+      "dětství",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 175,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0176",
+    "text": "Kdo přežil vlastní dětství, má zásobu informací o životě na celý zbytek svých dní.",
+    "author": "Flannery O'Connor",
+    "year": "1969",
+    "tags": [
+      "dětství",
+      "moudrost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 176,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0177",
+    "text": "Dítě, které si nehraje, není dítě. Ale dospělý, který si nehraje, navždy ztratil dítě, které v něm žilo.",
+    "author": "Pablo Neruda",
+    "year": null,
+    "tags": [
+      "dětství",
+      "volný čas",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 177,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0178",
+    "text": "Nic nepůsobí na dítě psychologicky silněji než neprožitý život jeho rodičů.",
+    "author": "Carl Gustav Jung",
+    "year": "1932",
+    "tags": [
+      "rodina",
+      "dětství",
+      "plné prožívání"
+    ],
+    "tier": "free",
+    "sort_order": 178,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0179",
+    "text": "Děti nikdy moc neuměly poslouchat své rodiče. Nikdy je ale nepřestaly napodobovat.",
+    "author": "James Baldwin",
+    "year": "1961",
+    "tags": [
+      "rodina",
+      "dětství",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 179,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0180",
+    "text": "Minulost nikdy není mrtvá. Není to dokonce ani minulost.",
+    "author": "William Faulkner",
+    "year": "1951",
+    "tags": [
+      "minulost",
+      "dětství"
+    ],
+    "tier": "free",
+    "sort_order": 180,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0181",
+    "text": "Minulost je cizí země: všechno se tam dělá jinak.",
+    "author": "L. P. Hartley",
+    "year": "1953",
+    "tags": [
+      "minulost",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 181,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0182",
+    "text": "Vaše děti nejsou vašimi dětmi. Můžete jim dát svou lásku, ne však své myšlenky — ony mají své vlastní.",
+    "author": "Chalíl Džibrán",
+    "year": "1923",
+    "tags": [
+      "rodina",
+      "svoboda",
+      "hranice"
+    ],
+    "tier": "free",
+    "sort_order": 182,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0183",
+    "text": "Je snazší vychovat silné děti než opravovat rozbité dospělé.",
+    "author": "Frederick Douglass",
+    "year": null,
+    "tags": [
+      "dětství",
+      "rodina",
+      "odolnost"
+    ],
+    "tier": "free",
+    "sort_order": 183,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0184",
+    "text": "Dětem můžeme odkázat jen dva trvalé dary: kořeny a křídla.",
+    "author": "Hodding Carter",
+    "year": "1953",
+    "tags": [
+      "rodina",
+      "dětství",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 184,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0185",
+    "text": "Jablko nepadá daleko od stromu.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "rodina",
+      "dětství"
+    ],
+    "tier": "free",
+    "sort_order": 185,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0186",
+    "text": "Skutečným domovem člověka je jeho dětství.",
+    "author": "Rainer Maria Rilke",
+    "year": null,
+    "tags": [
+      "dětství",
+      "minulost"
+    ],
+    "tier": "free",
+    "sort_order": 186,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0187",
+    "text": "Na tom být dítětem není nic krásného. Krásné je ve stáří se na dětství dívat zpátky.",
+    "author": "Cesare Pavese",
+    "year": "1945",
+    "tags": [
+      "dětství",
+      "stáří",
+      "minulost"
+    ],
+    "tier": "free",
+    "sort_order": 187,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0188",
+    "text": "Člověk je odsouzen ke svobodě.",
+    "author": "Jean-Paul Sartre",
+    "year": "1946",
+    "tags": [
+      "svoboda",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 188,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0189",
+    "text": "Svoboda je to, co uděláš s tím, co udělali s tebou.",
+    "author": "Jean-Paul Sartre",
+    "year": "1952",
+    "tags": [
+      "svoboda",
+      "odpovědnost",
+      "minulost"
+    ],
+    "tier": "free",
+    "sort_order": 189,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0190",
+    "text": "Člověku lze vzít všechno kromě jediného: poslední z lidských svobod — zvolit si za jakýchkoli okolností vlastní postoj.",
+    "author": "Viktor Frankl",
+    "year": "1946",
+    "tags": [
+      "svoboda",
+      "odolnost",
+      "přijetí"
+    ],
+    "tier": "free",
+    "sort_order": 190,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0191",
+    "text": "Mezi podnětem a reakcí je prostor. A v tom prostoru leží naše svoboda zvolit si odpověď.",
+    "author": null,
+    "year": null,
+    "tags": [
+      "svoboda",
+      "rozhodování",
+      "mindfulness",
+      "emoce"
+    ],
+    "tier": "free",
+    "sort_order": 191,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0192",
+    "text": "Úzkost je závrať ze svobody.",
+    "author": "Søren Kierkegaard",
+    "year": "1844",
+    "tags": [
+      "svoboda",
+      "strach",
+      "rozhodování"
+    ],
+    "tier": "free",
+    "sort_order": 192,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0193",
+    "text": "Svoboda není nic jiného než šance být lepší.",
+    "author": "Albert Camus",
+    "year": null,
+    "tags": [
+      "svoboda",
+      "růst"
+    ],
+    "tier": "free",
+    "sort_order": 193,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0194",
+    "text": "Svoboda znamená odpovědnost. Právě proto se jí většina lidí bojí.",
+    "author": "George Bernard Shaw",
+    "year": "1903",
+    "tags": [
+      "svoboda",
+      "odpovědnost",
+      "strach"
+    ],
+    "tier": "free",
+    "sort_order": 194,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0195",
+    "text": "Svoboda je vůle nést odpovědnost sám za sebe.",
+    "author": "Friedrich Nietzsche",
+    "year": "1889",
+    "tags": [
+      "svoboda",
+      "odpovědnost"
+    ],
+    "tier": "free",
+    "sort_order": 195,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0196",
+    "text": "Svobodný není nikdo, kdo není pánem sebe sama.",
+    "author": "Epiktétos",
+    "year": null,
+    "tags": [
+      "svoboda",
+      "samostatnost",
+      "sebepoznání"
+    ],
+    "tier": "free",
+    "sort_order": 196,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0197",
+    "text": "Člověk se rodí svobodný, a všude je v okovech.",
+    "author": "Jean-Jacques Rousseau",
+    "year": "1762",
+    "tags": [
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 197,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0198",
+    "text": "O tom, kdo doopravdy jsme, rozhodují mnohem víc naše volby než naše schopnosti.",
+    "author": "J. K. Rowlingová",
+    "year": "1998",
+    "tags": [
+      "rozhodování",
+      "identita",
+      "svoboda"
+    ],
+    "tier": "free",
+    "sort_order": 198,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0199",
+    "text": "V lese se přede mnou rozdvojila cesta — a já se vydal po té méně prošlapané. A v tom je celý rozdíl.",
+    "author": "Robert Frost",
+    "year": "1916",
+    "tags": [
+      "rozhodování",
+      "svoboda",
+      "odvaha"
+    ],
+    "tier": "free",
+    "sort_order": 199,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0200",
+    "text": "Když přijdeš na rozcestí, dej se po něm.",
+    "author": "Yogi Berra",
+    "year": "1998",
+    "tags": [
+      "rozhodování"
+    ],
+    "tier": "free",
+    "sort_order": 200,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0201",
+    "text": "Jestli chceš lítat, musíš zahodit krámy, který tě táhnou k zemi.",
+    "author": "Toni Morrisonová",
+    "year": "1977",
+    "tags": [
+      "svoboda",
+      "změna",
+      "hranice"
+    ],
+    "tier": "free",
+    "sort_order": 201,
+    "added_at": "2026-09-11"
+  },
+  {
+    "id": "inspir_0202",
+    "text": "Úspěšný je člověk, který ráno vstane, večer si lehne a mezitím dělá to, co dělat chce.",
+    "author": "Bob Dylan",
+    "year": null,
+    "tags": [
+      "svoboda",
+      "úspěch",
+      "autenticita"
+    ],
+    "tier": "free",
+    "sort_order": 202,
+    "added_at": "2026-09-11"
   }
 ]

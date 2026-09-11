@@ -45,12 +45,12 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       nebo hlášky zahodit.
 - [x] **Hloubavky nasazené (11. 9. 2026).** 251 otázek v `questions.json`
       bez `schemas`, tagy 3–6 podle priority, staré 63 přepsané do ich-formy.
-- [ ] **Pročistit sklizeň citátů.** Sklizeň ~200 běží od 26. 8. 2026
-      (prompt `local/_prompty/citaty.md`, cíl `local/data_wip/inspirations_wip/`).
-      Po Bobově čištění stejná linka: tagy ex post, konverze, append do
-      `inspirations.json` (`author` smí být `null`, `schemas` se zatím neplní).
-- [ ] **Přetagovat Inspirace, Články, Cvičení** podle `local/_prompty/tagovani.md`
+- [x] **Inspirace nasazené (11. 9. 2026).** 202 citátů (21 přetagovaných + 181
+      ze sklizně), `schemas` shozeny všem, tagy podle priority, nový tag `přátelství`.
+- [ ] **Přetagovat Články, Cvičení** podle `local/_prompty/tagovani.md`
       — každá sekce vlastní session, per sekce jiná logika priorit.
+- [ ] **Řazení výsledků filtru podle váhy shodných tagů.** Otázky i Inspirace
+      mají tagy seřazené podle priority, appka zatím čte jen OR shodu.
 
 ### Schémata
 

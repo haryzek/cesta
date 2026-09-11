@@ -293,16 +293,19 @@ Tři seznamy navázané vždy na jeden konkrétní klastr (ne na jednotlivý poc
 
 ### 10. Inspirace — `inspirations.json`
 
-Citáty, rady, moudra. `author` smí být `null` (lidová moudra, přísloví, vlastní výroky bez atribuce) — rozhodnuto 26. 8. 2026. Nový obsah jde ze sklizňového promptu `local/_prompty/citaty.md`; u sklizených položek se `schemas` zatím neplní (citáty jsou lidsky univerzální, doplnění schémat je odložené rozhodnutí).
+Citáty, rady, moudra. `author` smí být `null` (lidová moudra, přísloví, vlastní výroky bez atribuce), `year` smí být `null`. **Bez pole `schemas`** — rozhodnuto 11. 9. 2026: citáty jsou lidsky univerzální, stejná logika jako u otázek; půl na půl (21 se schématy, 181 bez) by dělalo náhodný výběr tvářící se jako cílený. Inspirace tím stojí mimo doporučování.
+
+Nasazeno 11. 9. 2026: **202 citátů** = 21 původních (přetagovaných) + 181 ze sklizně (`local/data_wip/inspirations_wip/sklizen.json`, prompt `local/_prompty/citaty.md`; pole `pole`/`zdroj`/`poznamka` ze sklizně se do dat nepřenáší). ID `inspir_0022`… navazují na původní.
+
+**Tagování:** stejná pravidla jako u otázek — seřazeno podle priority, první tag = téma citátu. Citáty jsou krátké, typicky **2–3 tagy** (průměr 2,8), strop 6. Pouštějí se „Chci pracovat na" + „Vztahy", z „Emoce" jen když je emoce jádrem (strach, smutek, stud…), z „Co se při tom dělá" jen `přítomnost` / `mindfulness` / `tělo`. „Stavy a potíže" nikdy. Kvůli ~12 citátům čistě o kamarádech byl 11. 9. 2026 rozsloučen tag `přátelství` (dřív mapovaný na `vztahy`).
 
 ```json
 {
   "id": "inspir_0001",
   "text": "Kdo má proč žít, snese téměř jakékoli jak.",
-  "author": "Viktor Frankl",
-  "year": "1946",
-  "tags": ["smysl života", "utrpení"],
-  "schemas": ["EMODEP", "ABINST", "DEFSH"],
+  "author": "Friedrich Nietzsche",
+  "year": "1889",
+  "tags": ["smysl života", "utrpení", "odolnost"],
   "tier": "free",
   "sort_order": 1,
   "added_at": "2026-04-02"
@@ -337,7 +340,7 @@ Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítí
 | articles | 3 | `published_at` + `added_at` | — |
 | exercises | 3 | `added_at` | — |
 | reframings / _questions / _actions | — | `added_at` | `cluster_id` |
-| inspirations | 3 | `added_at` | — |
+| inspirations | — | `added_at` | — |
 | questions | — | `added_at` | — |
 
 ---
@@ -542,7 +545,7 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 
 ## Doporučování obsahu
 
-Odpovídá na otázku „který obsah nabídnout na základě toho, co uživatel dlouhodobě prožívá". Platí pro mikročlánky, cvičení, inspirace a podnětné otázky (typy s polem `schemas`). Každý typ se skóruje zvlášť, obsah se mezi typy nemíchá. *Pozn.: po předělávce z 25. 8. 2026 podnětné otázky o `schemas` přijdou a z doporučování vypadnou; nové sklizené inspirace `schemas` zatím nemají — doporučovat se z nich bude jen obsah, který schémata má.*
+Odpovídá na otázku „který obsah nabídnout na základě toho, co uživatel dlouhodobě prožívá". Platí **jen pro články a cvičení** — jediné typy s polem `schemas`. Každý typ se skóruje zvlášť, obsah se mezi typy nemíchá. Podnětné otázky (11. 9. 2026) i inspirace (11. 9. 2026) o `schemas` přišly a z doporučování vypadly: jsou lidsky univerzální a nemají komu cílit.
 
 ### Profil
 
