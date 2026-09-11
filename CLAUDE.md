@@ -30,10 +30,12 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 
 ## Stav
 
-**Struktura všech 13 JSONů je finální.** Obsah ne — plní se. Když něco tvoříš nebo generuješ, drž se přesně stávající struktury.
+**Struktura všech 16 JSONů je finální** (11. 9. 2026 přibyly `fears`, `situations`, `pains`). Obsah ne — plní se. Když něco tvoříš nebo generuješ, drž se přesně stávající struktury.
 
 - Klastry (116) + pocity (399): kompletní mapa s ID a schématy ✅
-- Triplet přerámování: testovací fáze, zatím 4 klastry (`cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný)
+- **Triplet přerámování: KOMPLETNÍ 11. 9. 2026 — 116 klastrů, 5202 R / 3592 Q / 3611 A.** Zdroj = `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sheet per klastr, řádky R/Q/A/E), build `build_triplet.py` + `tykani_opravy.json` (14 vykacích experimentů z cl0001 ručně na tykání). **E = experimenty jdou do úkolů**, žádný čtvrtý soubor. 22 duplikátů zahozeno. **Nepročištěno** — ~10 klastrů má narváno z několika sessions (cl_0001 má 332 R), `cl_0096 Zodpovědný` je smíchaný s „náročný“; čistka po USA v appce.
+- **Strachy (brána 2): nasazeno 11. 9. 2026** — `fears.json` 235 kanonových strachů ve 35 skupinách, každý 5 `cluster_ids`; `situations.json` 137 situací v 10 skupinách, `mark` P/E/K (121/14/2), `aliases`, `fear_ids` 3–6. Zdroj `local/data_wip/strachy_wip/` (`kanon_strachu_pocity.json` = zdroj pravdy pro skupiny, `brany_reframings.md`), build `build_fears.py`. **44× `[ověřit]`** v přerámováních → `overit.md`, musí projít před ostrým nasazením. `kanon_strachu.md` je historie (aliasy zahozeny, měl je u 2 položek).
+- **Bolístky (brána 3): nasazeno 11. 9. 2026** — `pains.json` 175 bolístek, **4199 hlášek** (Karolínka 3480 = základ, source `k`; náš výběr 719, source `n`, ~4/bolístku podle role — krátká rána, humor, provokace, tělo; kovboj nikdy). k_222 ponechána, jen našich 15. `smer` = kategorie k rozkliknutí, `oblast` guláš (89 hodnot), nezobrazovat. Build `build_pains.py` z dávek + `hlasky_karolinka.md` + `vyber_nase.json`. **Škrtání na 15 přijde v appce** (provizorní admin na road trip).
 - Krizovka (12): obsahově hotová a pročištěná, slouží jako etalon. Všechny položky `tier: free` (11. 9. 2026 přepnuto z premium — první pomoc v krizi nemá být za paywallem)
 - Tělesné příznaky: **31** (26. 8. 2026) — původních 5 pročištěných (etalon) + 26 nových napsaných podle šablony (neuro/RS, štítná žláza, spánek, derealizace, hormony, váha, intimita…), obsahově zatím neprověřených Bobem. Zdroj výběru: sloupec „Tělesné příznaky" + somatizační index v Bobově monster tabulce (`C:\Users\bobre\Desktop\tab.xlsx`), vytěženo dočista
 - Cvičení (71), Články (112), Oddíly (11), Řetězy (4): nasazené v `data/` (14. 8. 2026). Strukturálně čisté, obsahově neprověřené — viz `TODO.md`.
@@ -42,15 +44,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 
   **Tagování otázek (rozhodnuto 11. 9. 2026):** **3–6 tagů seřazenejch podle priority** (první = téma, 2.–3. nesou váhu, zbytek tie-break). Povolený: „Chci pracovat na" + „Vztahy" + Emoce jen když je emoce jádrem otázky + `tělo`/`přítomnost`/`mindfulness`/`dýchání`. **Stavy a potíže nikdy** (klinickej tag na univerzálce = nasranej uživatel v akutním módu). Strop je vědomej — u OR filtru dělá přesnost málo tagů na položce, ne hodně; 10 tagů by šlo naplnit jen natažením. Appka zatím pořadí nečte, filtr je čistě OR; řazení výsledků podle váhy shodujících se tagů je **nenapsanej algoritmus**, samostatnej budoucí krok. Jedinej singleton v datech je `ztráta` (legit, „Čí ztráta by mě zasáhla nejvíc?").
 - Inspirace: **nasazeno 11. 9. 2026 — 202 citátů** = 21 původních (přetagovaných) + 181 ze sklizně (`local/data_wip/inspirations_wip/sklizen.json`, teď historie; prompt `local/_prompty/citaty.md`). **`schemas` shozeny všem** — inspirace jdou mimo doporučování stejně jako otázky. `author` i `year` smí být `null`. Tagy podle priority, typicky 2–3 (průměr 2,8), stejná pravidla jako u otázek (Chci pracovat na + Vztahy, Emoce jen jako jádro, z „Co se dělá" jen `přítomnost`/`mindfulness`/`tělo`, Stavy nikdy). Kvůli ~12 citátům o kamarádech **rozsloučen tag `přátelství`** (dřív → `vztahy`). Singletony `stud` (Adler) a `hněv` (Jung) jsou legit.
-- Bolístky (brána 4): **fabrika hlášek DOBĚHLA 1. 9. 2026 — 174/174 bolístek, 2625 hlášek** (dávky 1–18 v `local/data_wip/bolistky_wip/hlasky_davka*.json`, formát `{bolistka_id, bolistka, hlasky: [15]}`; dávka 1 má starší členění vybrané/zásoba, dávka 18 je dorovnaná kalibrační trojice p_010/p_032/h_094; dávka 3 obsahuje bonus k_222, který ve zdrojáku není). Výroba: dávky 1–6 a 9–15 agenti Fable, 7–8 Opus, 16–18 orchestrátor solo. Zdroj = `brana4_bolistky.json` (174), proces zůstává popsaný v `local/_prompty/bolistky-hlasky.md` + `bolistky-fabrika-pokracovani.md` (obojí už jen historie). `brana3_test_vyroky.json` (334) čeká na budoucí YSQ test.
-
-  **Druhý, paralelní pool — Karolínka (1. 9. 2026):** `local/data_wip/bolistky_wip/hlasky_karolinka.md` — **všech 174 bolístek × 20 hlášek = 3479**, po dvou kolech, formát `**id — text**` + `Kolo 1` / `Kolo 2`. (`bolistky_karolinka.txt` v téže složce je jen starší výřez prvních 5 bolístek, podmnožina — pro práci ber `.md`.) Jiný hlas než náš: laskavě ironický, „z knihovny do normálu", psychologicky přesný, břitkost knihovnická místo hospodské — vědomě se **nesjednocuje**, právě ta jinakost dělá portfolio. Zadání pro další porce už má 1–2 věty a rodovou neutralitu `(a)`. **Celkový pool tedy ~6100 hlášek, ~35 kandidátů na bolístku.**
-
-  **Kurátorská fáze (běží):** cíl je vybrat **top 15 na bolístku** z obou poolů dohromady — ne přesné pořadí, jen výběr. Bob škrtá sám, Claude může připravit předvýběr (viz TODO). Kalibrace shody proběhla 1. 9. na `p_002` (`kuratorska_kalibrace_kolo1_p002.md`) — shoda „dost velká, ale i rozchody"; Bobův závěr: **většina hlášek je dobrá a rozdíly v prostředku jsou vkusový šum, neseřazovat jak kretén.** Kalibrační kola můžou pokračovat.
-
-  **Anomálie k vědomí:** `hlasky_davka03.json` obsahuje bonus **k_222** („Celý můj kalendář jsou povinnosti pro ostatní"), který ve zdrojáku `brana4_bolistky.json` **není** — buď doplnit do zdrojáku, nebo zahodit. Kalibrační trojice p_010/p_032/h_094 vznikla starším procesem (12 hlášek) a je dorovnaná na 15 v dávce 18.
-
-  **Další kroky:** deduplikační pas opakovaček napříč našimi dávkami (kovboj, „jediný sport, kde…", „kdyby X umělo mluvit", „perspektiva delšího času"… — viz TODO.md), pak kurátorské škrtání na 15.
+- Bolístky — historie výroby (1. 9. 2026): náš pool 18 dávek `hlasky_davka*.json` (15/bolístka, 2625; dávka 1 má členění vybrané/zásoba, dávka 18 = kalibrační trojice) + Karolínka `hlasky_karolinka.md` (20/bolístka, 3480, laskavě ironický „z knihovny do normálu“, vědomě nesjednocený hlas). Prompty v `local/_prompty/bolistky-*.md` jsou historie. `brana3_test_vyroky.json` (334) čeká na budoucí YSQ test. **Kurátorská zásada (Bob, 1. 9.):** většina hlášek je dobrá, rozdíly v prostředku jsou vkusový šum — vybírat, neseřazovat.
 - Ostatní obsah: vzorek, plní se
 - Vizuál: nový design systém nasazený (17. 7. 2026), základ odladěný. Karty Přerámování čekají na doladění s Bobem.
 
@@ -68,6 +62,9 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 | **oddíly** | `local/data_wip/sections_wip/sections.json` | kopií |
 | **řetězy** | `local/data_wip/chains_wip/chains.json` | kopií |
 | **články** | `data/articles.json` — **zdroj i výsledek**, žádný build | — |
+| **triplet** (ref/refq/refa) | `local/data_wip/reframings_triplet_wip/reframings.xlsx` + `tykani_opravy.json` | `build_triplet.py` |
+| **strachy** (fears/situations) | `local/data_wip/strachy_wip/kanon_strachu_pocity.json` + `brany_reframings.md` | `build_fears.py` |
+| **bolístky** (pains) | `local/data_wip/bolistky_wip/` dávky + `hlasky_karolinka.md` + `vyber_nase.json` | `build_pains.py` |
 | ostatní | `data/*.json` přímo | — |
 
 `sections_wip/_podklad/sec_*.md` jsou **surovina, ze které oddíly kdysi vznikly, ne zdroj pravdy.** Build skript pro ně neexistuje a s JSONem se už rozešly.
@@ -81,6 +78,15 @@ python 02_build_exercises.py cviceni_davky exercises.json && python 03_lint_exer
 Lint musí projít na nulu. Kontroluje pole, ID, `sort_order` per oddíl, řetězy, počet schémat (3) a tagy — ty čte z `tagy.json` v kořeni, vlastní kopii seznamu vědomě nedrží. `01_fix_davky.py` je **jednorázová oprava z 14. 8. 2026, znovu ji nespouštěj** — je hotová a její tabulky by přepsaly dnešní stav.
 
 Konzoli si přepni na UTF-8 (`PYTHONIOENCODING=utf-8`), jinak lint spadne na emoji ve výpisu.
+
+### Sekce Přerámování = tři brány (rozhodnuto 11. 9. 2026, data hotová, appka čeká)
+
+Tři dlaždice po vstupu, každá s větou „kdy sem“: **Jádrové pocity** (*„Vím, co cítím“*, stávající vstup) / **Strachy** (*„Bojím se něčeho konkrétního“*) / **Bolístky** (*„Mám v hlavě větu, která bolí“*). Plný popis toku v README „Sekce aplikace → Přerámování“. Co musíš mít v hlavě při ohýbání appky:
+
+- **Strachy:** kanonový strach → **rovnou triplet** přes merged interleaving nad jeho `cluster_ids`, pocity uživatel nevidí. **Bere se `cluster_ids.slice(0, 3)`**, ne všech 5 (kolový interleaving by dal šumu stejné slovo jako jádru) — laditelná konstanta vedle `VAHY_POZIC`. Situace → `mark` P/E/K (K = odkaz na Krizovku) → „Co je pod tím?“ → její `fear_ids` → triplet. Kategorie = `group` u obou. Vyhledávání hledá i v `aliases`.
+- **Bolístky:** kategorie = `smer`, `oblast` nezobrazovat. Hlášky bez tripletu, vědomě. `source` k/n zobrazit při škrtání.
+- **Provizorní admin na road trip (září 2026):** appka musí umět škrtat hlášky (cíl 15/bolístku) a mazat položky tripletu, výsledek propsat zpět do zdrojů (Excel / `vyber_nase.json`), ne do `data/`.
+- **Datový objem:** triplet 4,2 MB + pains 1 MB, appka tahá všech 16 souborů najednou s `no-cache`. Přes Pages gzip ~1,3 MB — na hotelové wifi znát. Lazy load tripletu až po vstupu do sekce je legitimní krok, až to začne bolet.
 
 ### Jediná verze appky
 
@@ -96,7 +102,7 @@ Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník → „Moje cesta"
 
 ## Datový model — rychlá orientace
 
-13 souborů. Plný rozpis polí v README. Co musíš mít v hlavě:
+16 souborů. Plný rozpis polí v README. Co musíš mít v hlavě:
 
 - **ID** = permanentní totožnost, formát `prefix_NNNN`, **čtyřmístný** zero-padding (`ref_0001`, ne `ref_001`). Nikdy se nemění, nenese pořadí.
 - **`sort_order`** = pořadí. U tripletu **lokální per cluster** (restart na 1, hustě 1..N bez děr). U plochého obsahu globální v souboru.
@@ -104,9 +110,9 @@ Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník → „Moje cesta"
 - **Tagy** vždy lowercase a **výhradně z `tagy.json`** v kořeni repa. Nikdy nezakládej druhou kopii seznamu.
 - **`schemas`** = EMS kódy. **Cluster má 5, obsah má 3.** (README kdysi místy mluvil o 5 i u obsahu — to je opravené, reálná data mají u obsahu 3. Drž 3.)
 
-Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `sec_`, `chain_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`.
+Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `sec_`, `chain_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`, `fear_`, `sit_`, `pain_`.
 
-Všech 13 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný obalový objekt). Ikony a statické assety v `assets/`.
+Všech 16 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný obalový objekt; `pains` má vnořené pole `hlasky`, `situations` pole `reframings` — pořád je to plochý list položek). Ikony a statické assety v `assets/`.
 
 **Markdown v tělech** appka renderuje vlastním mini-parserem. Umí: `##`/`###`/`####`, `*` i `-` odrážky, `1.` číslované, `**tučně**`, `*kurzíva*`, vnořené odrážky přes odsazení, víceřádkové položky seznamu. **Neumí: odkazy, obrázky, tabulky, kód, citace `>`, vodorovné čáry** — nepiš je do dat, nevykreslí se.
 
@@ -128,7 +134,7 @@ Všech 13 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný ob
 Kdo má co:
 - **`schemas`** mají: clusters (5), articles, exercises (3). **Nemají**: feelings, crisis, body, triplet, sections, chains, questions, inspirations (obojí shozeno 11. 9. 2026 — univerzálky mimo doporučování).
 - **datum** má většina (`added_at`); articles má navíc `published_at`. **Nemají**: crisis, body (jsou to malé stabilní sady, které se nebudou rozšiřovat — je to záměr, ne opomenutí).
-- **`cluster_id`** mají: feelings, triplet (ref/refq/refa).
+- **`cluster_id`** mají: feelings, triplet (ref/refq/refa). **`cluster_ids`** (5) má fears; situations se na klastry vážou přes `fear_ids`; pains vazbu vědomě nemají.
 
 ---
 
@@ -148,7 +154,7 @@ Kdo má co:
 
 7. **Renderer má tři cílené transformace obsahu** (ne berličky — vědomé komponenty): `mc-tel` obarví tónem `**bold**`, který je čistě telefonní číslo (Krizovka). `splitJournal` oddělí závěrečný `## Zápis do deníku` z těla cvičení a vyrenderuje ho jako tealovou journal-card. Markdown parser umí i **víceřádkové položky seznamu** (odsazený řádek pokračuje poslední odrážkou) — kvůli kontaktům s číslem na dalším řádku.
 
-8. **Neupravuj `data/exercises.json` přímo.** Je to výstup buildu ze 17 dávek (viz „Zdrojáky obsahu a rebuild"). Oprava zapsaná do `data/` vypadá, že funguje — a zmizí při prvním rebuildu. Uprav dávku, přebuilduj, prožeň lintem, zkopíruj. Totéž platí pro `data/sections.json` a `data/chains.json`, jen tam je zdrojem JSON v `local/data_wip/`, ne dávky.
+8. **Neupravuj `data/exercises.json` přímo** (a totéž triplet, fears, situations, pains — všechno jsou výstupy buildů, viz tabulka). Je to výstup buildu ze 17 dávek (viz „Zdrojáky obsahu a rebuild"). Oprava zapsaná do `data/` vypadá, že funguje — a zmizí při prvním rebuildu. Uprav dávku, přebuilduj, prožeň lintem, zkopíruj. Totéž platí pro `data/sections.json` a `data/chains.json`, jen tam je zdrojem JSON v `local/data_wip/`, ne dávky.
 
 9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací, článků a cvičení 97). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
 

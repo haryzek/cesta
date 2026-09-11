@@ -35,7 +35,7 @@ Obě verze jsou technicky tatáž aplikace, liší se pouze rozsahem obsahu. Roz
 
 ## Datový model
 
-Obsah je rozdělený do třinácti JSON souborů. **Struktura všech souborů je finální a doladěná.** Obsah zatím finální není — plní se postupně (viz Stav níže).
+Obsah je rozdělený do šestnácti JSON souborů (11. 9. 2026 přibyly `fears`, `situations`, `pains` — brány sekce Přerámování). **Struktura všech souborů je finální a doladěná.** Obsah zatím finální není — plní se postupně (viz Stav níže).
 
 Napříč všemi soubory platí:
 
@@ -293,6 +293,8 @@ Tři seznamy navázané vždy na jeden konkrétní klastr (ne na jednotlivý poc
 
 7b i 7c mají stejnou strukturu jako 7a (`id`, `cluster_id`, `text`, `tier`, `sort_order`, `added_at`).
 
+**Stav 11. 9. 2026 — kompletní pro všech 116 klastrů:** 5202 přerámování, 3592 otázek, 3611 úkolů. Zdroj pravdy je `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sheet per klastr, řádky `R`/`Q`/`A`/`E`), `data/` je výsledek `build_triplet.py`. **Řádky `E` (behaviorální experimenty, 1183, začínají „Experiment …“) jdou do úkolů** — rozhodnuto 11. 9. 2026, žádný čtvrtý soubor. Obsah je nepročištěný (některé klastry mají narváno z několika sessions, `cl_0096` je smíchaný s „náročný“) — čistka proběhne přímo v appce v režimu provizorního adminu.
+
 ### 10. Inspirace — `inspirations.json`
 
 Citáty, rady, moudra. `author` smí být `null` (lidová moudra, přísloví, vlastní výroky bez atribuce), `year` smí být `null`. **Bez pole `schemas`** — rozhodnuto 11. 9. 2026: citáty jsou lidsky univerzální, stejná logika jako u otázek; půl na půl (21 se schématy, 181 bez) by dělalo náhodný výběr tvářící se jako cílený. Inspirace tím stojí mimo doporučování.
@@ -331,6 +333,76 @@ Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítí
 }
 ```
 
+### 12. Strachy — `fears.json` + `situations.json`
+
+Druhá brána sekce Přerámování (viz „Sekce aplikace“). Dvě vrstvy, obě vedou do tripletu.
+
+**12a. Kanonové strachy** (`fears.json`, 235, prefix `fear_`) — schematické strachy („Zrada“, „Samota“, „Chyby“, „Být za sobce“) ve **35 skupinách**, které čtou jako schémata v první osobě („Zůstanu sám“, „Jsem vadný, divný, nenormální“, „Selžu“). Skupiny jsou kategorie k rozkliknutí (235 položek plochým seznamem nejde). Každý strach má **5 jádrových pocitů** (`cluster_ids`, seřazené od nejtypičtějšího) — přes ně se strach napojí na triplet. Skupina „Obranné“ (Blízkost, Láska, Sex, Důvěřovat…) je vědomě mimo hlavní nabídku, jen do vyhledávání. Bez aliasů (zdrojový `kanon_strachu.md` je měl u dvou položek — zahozeno).
+
+```json
+{
+  "id": "fear_0001",
+  "name": "Zneužití",
+  "group": "Zneužije mě, využije mě, podvede mě",
+  "cluster_ids": ["cl_0017", "cl_0013", "cl_0015", "cl_0012", "cl_0042"],
+  "tier": "free",
+  "sort_order": 1,
+  "added_at": "2026-09-11"
+}
+```
+
+**12b. Situace** (`situations.json`, 137, prefix `sit_`) — konkrétní běžné strachy, fobie, místa a situace (zkouška, pohovor, žraloci, pohřeb) v **10 skupinách** (Výkon a hodnocení, Sociální situace, Fobie, Zdraví a psychika…). `aliases` jsou pro vyhledávání (zkouška → test, státnice, maturita), nezobrazují se. `mark` řídí, co se ukáže před otázkou „Co je pod tím?“:
+
+- **`P`** (121) — `reframings` 3–5 vět: fakta, logika, selský rozum, praktický postup. Bez bagatelizace.
+- **`E`** (14) — `reframings` 1–2 věty empatické normalizace, žádná fakta (pohřeb, šikana, obtěžování). Strach je oprávněný.
+- **`K`** (2) — `reframings` prázdné, appka vede na Krizovku (poruchy příjmu potravy, sebedestruktivní myšlenky).
+
+`fear_ids` = 3–6 kanonových strachů, od nejtypičtějšího. Pocity se u situací nikdy nepřiřazují ručně — odvozují se přes kanon.
+
+```json
+{
+  "id": "sit_0001",
+  "name": "zkouška",
+  "group": "Výkon a hodnocení",
+  "aliases": ["test", "zkouškové", "státnice", "maturita"],
+  "mark": "P",
+  "reframings": ["Zkouška měří, co umíš v jednu konkrétní hodinu jednoho dne — …", "…"],
+  "fear_ids": ["fear_0060", "fear_0033", "fear_0049", "fear_0063", "fear_0100", "fear_0038"],
+  "tier": "free",
+  "sort_order": 1,
+  "added_at": "2026-09-11"
+}
+```
+
+Zdroje: `local/data_wip/strachy_wip/kanon_strachu_pocity.json` (kanon, zdroj pravdy pro skupiny) + `brany_reframings.md` (situace, JSON objekty; zadání v `zadani_brany.md`), build `build_fears.py`. **44 vět v přerámováních nese `[ověřit]`** (čísla a tvrzení k ověření) — seznam v `overit.md` vedle zdrojů, před ostrým nasazením musí projít.
+
+### 13. Bolístky — `pains.json`
+
+Třetí brána sekce Přerámování. **Věta, kterou si člověk říká** („Nestíhám, nemám na nic čas!“, „Manžel(ka) mě štve čím dál víc.“, „Dnešní mládež za nic nestojí.“) → **hlášky** — krátká přerámování ušitá na tu jednu větu. **Bez napojení na triplet** (vědomě, MVP). Prefix `pain_`.
+
+**175 bolístek, 4199 hlášek** (11. 9. 2026). `smer` = na sebe (102) / na blízké (43) / na svět (29) — jediná čistá kategorie k rozkliknutí. `oblast` je stopa z tvorby (89 hodnot, mix úrovní, 23 bolístek ji nemá) — v datech zůstává, appka ji nezobrazuje; sjednocení až po škrtání. `src_id` = původní WIP ID (p_/h_/k_ = přestřelka / harvest / klastry) pro dohledání.
+
+Hlášky mají `source`: **`k`** = Karolínka (3480, 20 na bolístku, základ — čeština čistší, tón konzistentní, laskavě ironický „z knihovny do normálu“) a **`n`** = náš pool (719, typicky 4 na bolístku, vybrané z 2625 jako doplněk portfolia — krátká rána, humor, provokace, tělo, obrat perspektivy; rodiny opakovaček max jedna na bolístku, kovboj nikdy). `k_222` („Celý můj kalendář jsou povinnosti pro ostatní“) je navíc proti schválenému seznamu, má jen 15 našich. **Cíl je top 15 na bolístku** — škrtá Bob v appce (režim provizorního adminu), `source` je tam proto, aby bylo vidět, který hlas přežil.
+
+```json
+{
+  "id": "pain_0001",
+  "src_id": "p_001",
+  "text": "Nestíhám, nemám na nic čas!",
+  "smer": "na sebe",
+  "oblast": "mít čas",
+  "tier": "free",
+  "sort_order": 1,
+  "added_at": "2026-09-11",
+  "hlasky": [
+    { "text": "Možná opravdu nestíháš. Ale než z toho uděláš rozsudek …", "source": "k" },
+    { "text": "Nestíhat všechno není selhání, to je fyzika: …", "source": "n" }
+  ]
+}
+```
+
+Zdroje: `local/data_wip/bolistky_wip/` — `brana4_bolistky.json` (seznam), `hlasky_karolinka.md`, `hlasky_davka01–18*.json`, `vyber_nase.json` (indexy vybraných našich), build `build_pains.py`.
+
 ### Shrnutí polí
 
 | Soubor | `schemas` | datum | vazba na cluster |
@@ -342,6 +414,9 @@ Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítí
 | articles | 3 | `published_at` + `added_at` | — |
 | exercises | 3 | `added_at` | — |
 | reframings / _questions / _actions | — | `added_at` | `cluster_id` |
+| fears | — | `added_at` | `cluster_ids` (5) |
+| situations | — | `added_at` | přes `fear_ids` |
+| pains | — | `added_at` | — (vědomě bez vazby) |
 | inspirations | — | `added_at` | — |
 | questions | — | `added_at` | — |
 
@@ -439,9 +514,28 @@ Přerámování se od ostatních sekcí liší: keyword hledá v **pocitech** (v
 
 ## Sekce aplikace a jejich chování
 
-### Přerámování
+### Přerámování — tři brány (rozhodnuto 11. 9. 2026, appka zatím implementuje jen první)
 
-Vstupní sekce s triplety. Po vstupu je vidět seznam hlavních pocitů (názvy klastrů) ve dvou sloupcích; tlačítko „Další" dozobrazí sekundární pocity. Submenu (Přerámování / Otázky / Úkoly / Zpět) se objeví až po volbě pocitu.
+Sekce má po vstupu **tři velké dlaždice** — tři způsoby, jak člověk pojmenuje svůj stav. Každá dlaždice nese jednu větu „kdy sem“, protože názvy samy o sobě uživatel v akutním módu nerozliší:
+
+| brána | jazyk uživatele | data | kam vede |
+|---|---|---|---|
+| **Jádrové pocity** | *„Vím, co cítím“* | `feelings` → `clusters` | triplet (single / merged mód, viz níže) |
+| **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → `fears` → `clusters` | triplet přes merged interleaving |
+| **Bolístky** | *„Mám v hlavě větu, která bolí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
+
+**Brána Strachy** má dvě úrovně, obě dostupné z jedné obrazovky (kategorie k rozkliknutí = `group`):
+
+- **Kanonový strach** (klik na „Selžu“ ve skupině *Selžu*) → rovnou triplet. Appka vezme `cluster_ids` strachu a pustí merged interleaving, jako by uživatel vybral víc pocitů naráz — pocity jsou pod kapotou, žádný mezikrok s výběrem. **Do tripletu jdou první 3 z 5** (`cluster_ids.slice(0, 3)`, laditelná konstanta vedle `VAHY_POZIC`); pozice 4–5 jsou v datech, ale v kolovém interleavingu by dostaly stejné slovo jako první a ředily by výsledek.
+- **Situace** (klik na „zkouška“ ve skupině *Výkon a hodnocení*) → podle `mark`: `P` ukáže přerámování, `E` dvě věty empatie, `K` vede rovnou na Krizovku. Pod tím tlačítko **„Co je pod tím?“** → nabídka jejích `fear_ids` (3–6 kanonových strachů) → klik → triplet jako výše. Tedy zkouška → Co je pod tím → Selžu → triplet, dva kliky. Vyhledávací pole nad situacemi hledá i v `aliases`.
+
+**Brána Bolístky**: kategorie k rozkliknutí = `smer` (na sebe / na blízké / na svět), pak seznam vět, klik → hlášky. `oblast` se nezobrazuje. Na road trip (září 2026) se appka tweakne na **provizorní admin** — Bob v ní škrtá hlášky z ~24 na 15 a maže evidentní chyby v tripletu; výsledek se pak propíše zpět do zdrojů.
+
+Otevřené, vědomě odložené: bolístky nemají most k tripletu (kanon má „Nebýt potřebný“, bolístky „Nikdo mě nepotřebuje“ — jednou si o něj řeknou); situace by mohly nabízet i „rovnou k přerámování“ se součtem pocitů přes všechny své strachy.
+
+#### Jádrové pocity (původní vstup)
+
+Po vstupu je vidět seznam hlavních pocitů (názvy klastrů) ve dvou sloupcích; tlačítko „Další" dozobrazí sekundární pocity. Submenu (Přerámování / Otázky / Úkoly / Zpět) se objeví až po volbě pocitu.
 
 Tři způsoby volby a tři režimy:
 
@@ -649,7 +743,7 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
 | Frontend — obal + registr sekcí | ✅ funkční |
-| Frontend — všechny sekce | ✅ živé v `cesta.html` nad všemi 13 JSONy |
+| Frontend — všechny sekce | ✅ živé v `cesta.html` nad 13 JSONy; `fears`/`situations`/`pains` appka zatím nezná (přidané 11. 9. 2026, ohýbání sekce Přerámování na tři brány je další krok) |
 | Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
 | Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný |
 | Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |
@@ -691,7 +785,7 @@ cesta/
 ├── cesta.html     ★ aplikace — jediný živý HTML soubor
 ├── manifest.json            PWA (spuštění z plochy mobilu)
 ├── tagy.json                kanonický slovník tagů — jediný zdroj pravdy
-├── data/                    13 datových JSONů (obsah aplikace)
+├── data/                    16 datových JSONů (obsah aplikace)
 ├── assets/                  ikony
 ├── README.md                tento dokument — jak věci JSOU
 ├── TODO.md                  co se má stát (dělené podle toho, kdo to utáhne)

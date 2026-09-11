@@ -15,9 +15,17 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 
 ### Obsah
 
-- [ ] **Triplet přerámování — jádro appky.** Pokrytí je 4 clustery ze 116
-      (`cl_0001`, `cl_0008`, `cl_0013`, `cl_0031`). Jde z Bobových Excel seznamů,
-      ne z textových promptů. *Tohle je největší kus nehotové práce v projektu.*
+- [x] **Triplet přerámování nasazený (11. 9. 2026).** 116/116 klastrů z Excelu,
+      5202 R / 3592 Q / 3611 A. Experimenty (E) v úkolech.
+- [ ] **Čistka tripletu (po USA).** ~10 klastrů má narváno z několika sessions
+      (`cl_0001` 332 R), `cl_0096 Zodpovědný` je smíchaný s „náročný“ — vybrat
+      dobré. Škrtá Bob v appce (provizorní admin), výsledek zpět do Excelu.
+- [ ] **Ověřit 44× `[ověřit]` v přerámováních situací** — čísla a tvrzení,
+      seznam `local/data_wip/strachy_wip/overit.md`. Před ostrým nasazením.
+- [ ] **Ohnout appku na tři brány Přerámování** (registr `FILES` + `fears`,
+      `situations`, `pains`; dlaždice; strachy → triplet přes `cluster_ids.slice(0,3)`;
+      situace → mark P/E/K → „Co je pod tím?“; bolístky podle `smer`). Plus
+      provizorní admin pro škrtání na road trip. Viz README „Přerámování — tři brány“.
 - [ ] **Obsahová kontrola cvičení, dávka po dávce.** 71 cvičení je strukturálně
       čistých, ale věcně a jazykově neprověřených. Kontroluje se samonosnost,
       věrnost Bobovým formulacím, úplnost postupů, kvalita deníkových otázek
@@ -29,20 +37,13 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
       musí Bob.
 - [ ] **Zadat, jestli projet perexy článků.** U cvičení se to udělalo (8 přepsaných
       z 71). U 112 článků se perexy zatím nikdo nedíval stejným metrem.
-- [ ] **Kurátorské škrtání hlášek k bolístkám — top 15 ze ~35.** Fabrika doběhla
-      1. 9. 2026: náš pool 174 × 15 (`hlasky_davka01–18*.json`) + Karolínčin pool
-      174 × 20 (`hlasky_karolinka.md`) = ~6100 kandidátů. Cíl: **vybrat 15 na
-      bolístku, ne seřazovat** — většina je dobrá a rozdíly v prostředku jsou
-      vkusový šum. Vybírat jako **portfolio rolí** (uznání · břitkost · praktický
-      šťouch · otázka · humor · tělo · perspektiva času), ne patnáct variant
-      nejsilnějšího úhlu. Claude umí seříznout ~35 → ~22 (spodek, duplikáty,
-      prohřešky) a označit svých top 15; Bob pak vybírá z předvýběru.
-      Kalibrace shody: `kuratorska_kalibrace_kolo1_p002.md` (kolo 1, 1. 9. 2026),
-      další kola volitelně.
-- [ ] **Rozhodnout o `k_222`.** `hlasky_davka03.json` má hlášky k bolístce
-      „Celý můj kalendář jsou povinnosti pro ostatní — kde tam jsem já?", která
-      ve zdrojáku `brana4_bolistky.json` není. Doplnit do zdrojáku (pak 175),
-      nebo hlášky zahodit.
+- [x] **Bolístky nasazené (11. 9. 2026).** `pains.json` 175 × ~24 hlášek:
+      Karolínka celá (`source: k`) + Claudův výběr ~4 z našich (`source: n`,
+      `vyber_nase.json`) jako doplněk portfolia. k_222 ponechána (jen našich 15).
+- [ ] **Škrtání hlášek na 15/bolístku** — Bob v appce (provizorní admin), pak
+      výsledek propsat do zdrojů. Sledovat, jestli náš hlas (`n`) přežívá.
+- [ ] **Sjednotit `oblast` u bolístek** (89 hodnot, guláš) na ~15 kategorií —
+      až po škrtání, až bude jasné, jestli druhá úroveň pod `smer` chybí.
 - [x] **Hloubavky nasazené (11. 9. 2026).** 251 otázek v `questions.json`
       bez `schemas`, tagy 3–6 podle priority, staré 63 přepsané do ich-formy.
 - [x] **Inspirace nasazené (11. 9. 2026).** 202 citátů (21 přetagovaných + 181
