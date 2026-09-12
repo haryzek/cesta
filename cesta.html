@@ -28,6 +28,11 @@
 
 <style>
   :where(#mc-root *, #mc-root *::before, #mc-root *::after) { margin:0; box-sizing:border-box; }
+  /* Mobil: žádný modrý záblesk při ťuknutí, žádný výběr textu na dlouhý dotyk
+     u klikacích prvků. Hover jen tam, kde je myš — na dotyku by po ťuknutí
+     visel (viz @media (hover:hover) u všech :hover). */
+  #mc-root{ -webkit-tap-highlight-color:transparent; }
+  :where(#mc-root button, #mc-root .mc-card.clickable, #mc-root .mc-tile, #mc-root .mc-name-item, #mc-root .mc-feeling, #mc-root .mc-swipe-card){ -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
   /* Pozor na specificitu: `#mc-root ul` (0,1,1) přebíjí třídy (0,1,0), takže
      každé .mc-list/.mc-cards/.mc-md ul tiše přišlo o vlastní padding a leželo
      na okraji obrazovky. Reset proto přes :where() — nulová specificita. */
@@ -131,7 +136,7 @@
   .mc-icon-btn{ flex-shrink:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;
     background:none; border:none; color:var(--soft); cursor:pointer; padding:0; border-radius:9px;
     transition:color .15s ease,background .15s ease; position:relative; }
-  .mc-icon-btn:hover{ color:var(--text); background:var(--surface); }
+  @media (hover:hover){ .mc-icon-btn:hover{ color:var(--text); background:var(--surface); } }
   .mc-icon-btn svg{ width:22px; height:22px; display:block; }
   .mc-topbar-title{ flex:1; text-align:center; font-family:var(--serif); font-weight:600; font-size:19px;
     font-variation-settings:'opsz' 36; color:var(--text); letter-spacing:-0.01em; cursor:pointer; line-height:1.1; }
@@ -156,7 +161,7 @@
   .mc-menu-item{ display:flex; align-items:center; gap:13px; width:100%; padding:13px 16px; background:none;
     border:none; cursor:pointer; text-align:left; color:var(--body); font-family:var(--sans); font-size:15px;
     transition:background .12s ease; }
-  .mc-menu-item:hover{ background:var(--surface-2); }
+  @media (hover:hover){ .mc-menu-item:hover{ background:var(--surface-2); } }
   .mc-menu-item.active{ color:var(--accent); }
   .mc-menu-item .mi-ic{ flex-shrink:0; width:22px; height:22px; color:var(--soft); }
   .mc-menu-item.active .mi-ic{ color:var(--accent); }
@@ -201,7 +206,7 @@
   .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
     background:var(--surface); border:1px solid var(--border); border-radius:16px; cursor:pointer; text-align:left;
     transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
-  .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); }
+  @media (hover:hover){ .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); } }
   .mc-tile:active{ transform:scale(.985); }
   /* Ikonka v barevném čtverečku podle tónu sekce — akční červeně, čtecí
      zeleně. Dřív se střídalo mechanicky ob jednu, bez významu. */
@@ -225,7 +230,7 @@
   .mc-sec-heart{ display:inline-flex; align-items:center; gap:5px; flex-shrink:0; background:none; border:1px solid var(--border);
     border-radius:999px; padding:5px 10px 5px 8px; cursor:pointer; color:var(--muted); font-family:var(--mono); font-size:11px;
     transition:border-color .15s ease,color .15s ease,background .15s ease; }
-  .mc-sec-heart:hover{ color:var(--text); border-color:var(--muted); }
+  @media (hover:hover){ .mc-sec-heart:hover{ color:var(--text); border-color:var(--muted); } }
   .mc-sec-heart svg{ width:16px; height:16px; display:block; }
   .mc-sec-heart .hf{ display:none; }
   .mc-sec-heart.on{ color:var(--heart); border-color:var(--heart); background:var(--surface); }
@@ -251,7 +256,7 @@
     font-weight:700; min-width:20px; text-align:center; padding:3px 7px; border-radius:6px; pointer-events:none; }
   .mc-search-clear{ display:flex; align-items:center; justify-content:center; width:22px; height:22px; padding:0;
     background:none; border:none; cursor:pointer; color:var(--muted); border-radius:50%; transition:color .12s ease; }
-  .mc-search-clear:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-search-clear:hover{ color:var(--text); } }
   .mc-search-clear svg{ width:13px; height:13px; }
 
   /* ===== SUBMENU (Nejnovější / Redakce / filtr) ===== */
@@ -259,7 +264,7 @@
   .mc-submenu button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer;
     transition:all .15s ease; }
-  .mc-submenu button:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-submenu button:hover{ color:var(--text); } }
   .mc-submenu button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
   .mc-submenu .mc-filter-btn{ display:inline-flex; align-items:center; gap:6px; }
   /* Nástroje (oko, karty) k pravému okraji řádku submenu */
@@ -277,12 +282,12 @@
   .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
   .mc-chip.dur{ background:var(--accent-dim); border-color:transparent; color:var(--accent); font-family:var(--mono); font-weight:700; }
-  .mc-chip:hover{ border-color:var(--soft); }
+  @media (hover:hover){ .mc-chip:hover{ border-color:var(--soft); } }
   .mc-chip.on,.mc-chip.dur.on{ background:var(--tone); border-color:var(--tone); color:var(--on-accent); font-weight:700; }
   .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
   .mc-filter-clear{ background:none; border:none; color:var(--soft); font-family:var(--sans); font-size:12.5px;
     cursor:pointer; text-decoration:underline; }
-  .mc-filter-clear:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-filter-clear:hover{ color:var(--text); } }
 
   /* ===== FLOATING ACTION ===== */
   .mc-fab-wrap{ position:fixed; left:0; right:0; bottom:0; display:flex; justify-content:center;
@@ -291,7 +296,7 @@
   .mc-fab{ pointer-events:auto; max-width:484px; width:100%; background:var(--accent); color:var(--on-accent); border:none;
     border-radius:12px; padding:14px; font-family:var(--sans); font-size:15px; font-weight:700; cursor:pointer;
     transition:transform .12s ease,filter .15s ease; }
-  .mc-fab:hover{ filter:brightness(1.06); }
+  @media (hover:hover){ .mc-fab:hover{ filter:brightness(1.06); } }
   .mc-fab:active{ transform:scale(.98); }
 
   /* ===== FEELING LIST ===== */
@@ -310,17 +315,17 @@
     font-variation-settings:'opsz' 14; letter-spacing:0; line-height:1.25; color:var(--text); cursor:pointer;
     overflow-wrap:anywhere; hyphens:auto; }
   .mc-feeling-go{ flex-shrink:0; font-family:var(--mono); color:var(--soft); font-size:15px; opacity:.45; cursor:pointer; padding:0 1px; }
-  .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--tone); }
+  @media (hover:hover){ .mc-feeling-name:hover ~ .mc-feeling-go,.mc-feeling-go:hover{ opacity:.9; color:var(--tone); } }
   .mc-more{ width:auto; margin:10px var(--gutter) 4px; padding:11px; background:transparent; border:1px dashed var(--border);
     border-radius:14px; color:var(--soft); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:all .15s ease; }
-  .mc-more:hover{ color:var(--text); border-color:var(--soft); }
+  @media (hover:hover){ .mc-more:hover{ color:var(--text); border-color:var(--soft); } }
 
   /* ===== NAME LIST (crisis, body) ===== */
   .mc-namelist{ padding:24px var(--gutter) 0; }
   .mc-name-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
     padding:15px 17px; background:var(--surface); border:1px solid var(--border); border-radius:14px; margin-bottom:8px;
     cursor:pointer; text-align:left; transition:border-color .15s ease,background .15s ease; }
-  .mc-name-item:hover{ border-color:var(--accent); background:var(--surface-2); }
+  @media (hover:hover){ .mc-name-item:hover{ border-color:var(--accent); background:var(--surface-2); } }
   .mc-name-item .n{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24;
     letter-spacing:-0.01em; color:var(--text); line-height:1.25; }
   .mc-name-item .go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
@@ -351,7 +356,7 @@
     padding:5px 11px 5px 9px; cursor:pointer; color:var(--muted); font-family:var(--mono); font-size:11px;
     transition:border-color .15s ease,color .15s ease,background .15s ease; }
   .mc-pill svg{ width:14px; height:14px; display:block; }
-  .mc-pill:hover{ color:var(--text); border-color:var(--muted); }
+  @media (hover:hover){ .mc-pill:hover{ color:var(--text); border-color:var(--muted); } }
   .mc-pill.on{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
   .mc-pill.ic{ padding:6px 8px; }
   .mc-pill svg{ width:16px; height:16px; }
@@ -390,7 +395,7 @@
   .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
   .mc-sec-link{ display:inline-flex; align-items:center; gap:8px; margin:10px var(--gutter) 0; padding:0; background:none; border:none;
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
-  .mc-sec-link:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-sec-link:hover{ color:var(--text); } }
   .mc-sec-link .l{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); }
   .mc-extra{ padding-bottom:0; }
   .mc-extra + .mc-detail-body{ padding-top:0; }
@@ -428,7 +433,7 @@
   /* ===== BACK / DETAIL ===== */
   .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:20px var(--gutter) 0; background:none; border:none;
     padding:0; color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease; }
-  .mc-back:hover{ opacity:.7; }
+  @media (hover:hover){ .mc-back:hover{ opacity:.7; } }
   .mc-detail-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px var(--gutter) 2px; }
   .mc-detail-title{ font-family:var(--serif); font-weight:600; font-size:30px; font-variation-settings:'opsz' 72;
     color:var(--tone); letter-spacing:-0.01em; line-height:1.15; }
@@ -446,7 +451,7 @@
   .mc-submenu-triplet{ display:flex; gap:6px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
     font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
-  .mc-submenu-triplet button:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-submenu-triplet button:hover{ color:var(--text); } }
   .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
 
   /* ===== CARDS ===== */
@@ -456,7 +461,7 @@
   .mc-card{ position:relative; background:var(--surface); border:1px solid var(--border); border-radius:16px;
     padding:18px 50px 18px 20px; margin-bottom:10px; overflow:hidden; }
   .mc-card.clickable{ cursor:pointer; transition:border-color .15s ease,background .15s ease; }
-  .mc-card.clickable:hover{ border-color:var(--accent); background:var(--surface-2); }
+  @media (hover:hover){ .mc-card.clickable:hover{ border-color:var(--accent); background:var(--surface-2); } }
   .mc-card-title{ font-family:var(--serif); font-weight:600; font-size:18px; font-variation-settings:'opsz' 24;
     letter-spacing:-0.01em; color:var(--text); line-height:1.25; margin-bottom:6px; }
   .mc-card-text{ font-family:var(--sans); font-size:14.5px; line-height:1.55; color:var(--soft); }
@@ -487,7 +492,7 @@
   .mc-tab{ flex:1; text-align:center; padding:11px 0; border-radius:12px; border:none; cursor:pointer;
     font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); background:transparent;
     transition:background .15s ease,color .15s ease; }
-  .mc-tab:hover{ color:var(--text); }
+  @media (hover:hover){ .mc-tab:hover{ color:var(--text); } }
   .mc-tab.active{ background:var(--text); color:var(--bg); }
   .mc-tab .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--accent);
     margin-left:5px; vertical-align:middle; }
@@ -527,7 +532,7 @@
   .mc-source{ margin:30px var(--gutter) 0; padding-top:16px; border-top:1px solid var(--border); }
   .mc-source a{ display:inline-flex; align-items:center; gap:7px; font-family:var(--sans);
     font-size:14px; color:var(--muted); text-decoration:none; }
-  .mc-source a:hover{ color:var(--tone); }
+  @media (hover:hover){ .mc-source a:hover{ color:var(--tone); } }
   .mc-source svg{ width:14px; height:14px; flex:none; }
 
   /* ===== MARKDOWN ===== */
@@ -584,7 +589,7 @@
   .mc-more-page{ width:calc(100% - 36px); margin:4px 18px 0; padding:12px; background:var(--surface);
     border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:var(--sans); font-size:13px;
     font-weight:600; cursor:pointer; transition:border-color .15s ease; }
-  .mc-more-page:hover{ border-color:var(--accent); }
+  @media (hover:hover){ .mc-more-page:hover{ border-color:var(--accent); } }
 
   /* ===== ABOUT ===== */
   .mc-about{ padding:14px var(--gutter) 0; font-family:var(--serif); font-size:16.5px; line-height:1.7; color:var(--body); }
