@@ -369,9 +369,10 @@
   .mc-swipe-card{ flex:0 0 100%; width:100%; scroll-snap-align:start; scroll-snap-stop:always; display:flex; flex-direction:column;
     padding:4px var(--gutter) 12px; box-sizing:border-box; }
   .mc-swipe-card .sc-body{ position:relative; flex:1; min-height:0; overflow-y:auto; display:flex; flex-direction:column; justify-content:center;
-    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:48px 24px 32px; text-align:center; }
-  .mc-swipe-card .sc-count{ position:absolute; top:16px; left:18px; font-family:var(--mono); font-size:11px; color:var(--muted); }
-  .mc-swipe-card .sc-body .mc-heart{ top:9px; right:10px; }
+    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:32px 24px 48px; text-align:center; }
+  /* Počítadlo a srdíčko dole v rozích — srdíčko blíž palci. */
+  .mc-swipe-card .sc-count{ position:absolute; bottom:18px; left:18px; font-family:var(--mono); font-size:11px; color:var(--muted); }
+  .mc-swipe-card .sc-body .mc-heart{ top:auto; bottom:9px; right:10px; }
   .mc-swipe-card .sc-body .mc-heart svg{ width:24px; height:24px; }
   .mc-swipe-card .sc-text{ font-family:var(--serif); font-weight:400; color:var(--text); line-height:1.35; letter-spacing:-0.01em; font-variation-settings:'opsz' 36; }
   .mc-swipe-card .sc-text.xl{ font-size:30px; }
