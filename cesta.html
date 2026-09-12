@@ -219,6 +219,18 @@
   .mc-sec-head{ padding:24px var(--gutter) 2px; }
   .mc-sec-head h1{ color:var(--tone); }
   .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
+  /* Řádek H1 + přepínač „jen oblíbené". Srdíčko menší a obrysové, ať se
+     nečte jako „uložit sekci"; plné jen když je přepnuté. */
+  .mc-sec-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .mc-sec-heart{ display:inline-flex; align-items:center; gap:5px; flex-shrink:0; background:none; border:1px solid var(--border);
+    border-radius:999px; padding:5px 10px 5px 8px; cursor:pointer; color:var(--muted); font-family:var(--mono); font-size:11px;
+    transition:border-color .15s ease,color .15s ease,background .15s ease; }
+  .mc-sec-heart:hover{ color:var(--text); border-color:var(--muted); }
+  .mc-sec-heart svg{ width:16px; height:16px; display:block; }
+  .mc-sec-heart .hf{ display:none; }
+  .mc-sec-heart.on{ color:var(--heart); border-color:var(--heart); background:var(--surface); }
+  .mc-sec-heart.on .he{ display:none; }
+  .mc-sec-heart.on .hf{ display:block; }
 
   /* ===== SEARCH ===== */
   /* Obalovač má nesymetrické odsazení (20px nahoře, 2px dole), takže top:50%
@@ -675,7 +687,7 @@
     detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
   };
   function secState(key){
-    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], durs:[], search:"" };
+    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], durs:[], search:"", favOnly:false };
     return state.sec[key];
   }
 
@@ -926,6 +938,7 @@
   function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; return n; }
   function contentList(key){
     var cfg=CONTENT[key], s=secState(key), items=(flat[cfg.dataKey]||[]).slice();
+    if(s.favOnly) items=items.filter(function(it){ return isFav(cfg.store,it.id); });
     if(s.mode==="edit" && cfg.redakce){ items=items.filter(function(it){ return it.quality===5; }); shuffle(items); }
     else { items.sort(function(a,b){ return String(b.added_at||"").localeCompare(String(a.added_at||"")) || b.sort_order-a.sort_order; }); }
     if(s.kw.trim()){
@@ -983,7 +996,8 @@
   }
 
   function viewTopbar(){
-    var favOn=favCount()>0, nt=newsTotal();
+    // Plné jen v Oblíbených — „máš něco uloženo" nikomu nic neříkalo.
+    var favOn=state.page==="favorites", nt=newsTotal();
     var h='<div class="mc-topbar">';
     h+='<button class="mc-icon-btn" onclick="MC.menu(true)" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>'+(nt>0?'<span class="mc-topbadge">'+nt+'</span>':'')+'</button>';
     h+='<div class="mc-topbar-title" onclick="MC.home()">Moje <span class="mc-mark">cesta</span></div>';
@@ -1035,7 +1049,10 @@
   // Rozcestník tří bran. Názvy samy o sobě uživatel v akutním módu
   // nerozliší — každá nese větu „kdy sem".
   function viewRfGates(){
-    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Pojmenujte, co se s vámi děje — a podívejte se na to jinak.</p></div>';
+    var n=favCountOf(RF_STORES);
+    var h=secHead("reframing","Přerámování","Pojmenujte, co se s vámi děje — a podívejte se na to jinak.",n);
+    // Uložená přerámování jsou napříč klastry — jeden seznam po typech.
+    if(secState("reframing").favOnly) return h+(n?favGroups(RF_STORES):favEmpty());
     h+='<ul class="mc-cards mc-gates">';
     GATES.forEach(function(g){
       h+='<li class="mc-card clickable mc-in" onclick="MC.rfGate(\''+g.key+'\')"><div class="mc-card-title">'+esc(g.label)+'</div><div class="mc-card-text lead gate-hint">„'+esc(g.hint)+'“</div><span class="mc-card-go">›</span></li>';
@@ -1203,7 +1220,14 @@
   var JOURNEY_TABS=[ {key:"exercises",label:"Cvičení"}, {key:"info",label:"Info"}, {key:"theory",label:"Teorie"}, {key:"practice",label:"Praxe"} ];
   function viewJourney(){ return state.journey.sectionId?viewJourneySection():viewJourneyList(); }
   function viewJourneyList(){
-    var h='<div class="mc-sec-head"><h1>Moje cesta</h1><p>Cvičebnice krok za krokem — oddíly, jejich cvičení, teorie a praxe.</p></div>';
+    var favs=USER.favorites.exercises;
+    var h=secHead("journey","Moje cesta","Cvičebnice krok za krokem — oddíly, jejich cvičení, teorie a praxe.",favs.length);
+    if(secState("journey").favOnly){
+      // Uložená cvičení s oddílem jako meta — druhé dveře k témuž jako v Cvičení.
+      var exs=favs.slice().reverse().map(function(id){ return itemIndex.exercises[id]; }).filter(Boolean);
+      if(!exs.length) return h+favEmpty();
+      return h+nameList(exs,function(e){ return "MC.detail('exercises','"+e.id+"')"; },function(e){ var s=itemIndex.sections[e.section_id]; return s?'<span class="m">Oddíl '+("0"+s.sort_order).slice(-2)+' · '+esc(s.title)+'</span>':""; });
+    }
     h+='<ul class="mc-cards">';
     flat.sections.forEach(function(s){
       var n=(bySection[s.id]||[]).length;
@@ -1277,7 +1301,8 @@
     var cfg=CONTENT[key], s=secState(key);
     var items=(flat[cfg.dataKey]||[]).slice();
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
-    var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
+    var h=secHead(key,cfg.label,null,USER.favorites[cfg.store].length);
+    if(s.favOnly){ items=items.filter(function(it){ return isFav(cfg.store,it.id); }); if(!items.length) return h+favEmpty(); }
     if(cfg.search){
       h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
@@ -1292,7 +1317,8 @@
 
   function viewCards(key){
     var cfg=CONTENT[key], s=secState(key);
-    var h='<div class="mc-sec-head"><h1>'+esc(cfg.label)+'</h1></div>';
+    var h=secHead(key,cfg.label,null,USER.favorites[cfg.store].length);
+    if(s.favOnly&&!USER.favorites[cfg.store].length) return h+favEmpty();
     h+='<div class="mc-submenu">';
     h+='<button class="'+(s.mode==="new"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'new\')">Nejnovější</button>';
     if(cfg.redakce) h+='<button class="'+(s.mode==="edit"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'edit\')">Redakce</button>';
@@ -1302,7 +1328,7 @@
     if(s.filterOpen) h+=viewFilterPanel(key);
     var items=contentList(key);
     h+='<ul class="mc-cards">';
-    if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
+    if(items.length===0) h+='<div class="mc-empty">'+(s.favOnly?"Žádná uložená položka neodpovídá filtru.":"Nic neodpovídá filtru.")+'</div>';
     else if(cfg.render==="quotes") items.forEach(function(it){ h+=quoteCard(cfg,it); });
     else items.forEach(function(it){ h+=contentCard(key,cfg,it); });
     h+='</ul>';
@@ -1446,7 +1472,14 @@
   function viewFavorites(){
     var h='<div class="mc-sec-head"><h1>Oblíbené</h1></div>';
     if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepněte na srdíčko u věty, která vás osloví, a najdete ji tady.</div>';
+    return h+favGroups(null);
+  }
+  // Skupiny oblíbených po typech; stores = omezení na vybrané (sekční
+  // přepínač), null = všechny (globální feed).
+  function favGroups(stores){
+    var h='';
     FAV_VIEW.forEach(function(fv){
+      if(stores&&stores.indexOf(fv.store)<0) return;
       var items=USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean);
       if(items.length===0) return;
       h+='<div class="mc-fav-group"><h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2><ul class="mc-cards" style="padding-left:0;padding-right:0">';
@@ -1463,6 +1496,7 @@
     });
     return h;
   }
+  var RF_STORES=["reframings","reframing_questions","reframing_actions","pains"];
 
   // ===================== RENDER — O appce =====================
   function viewAbout(){
@@ -1477,6 +1511,18 @@
   }
 
   // ===================== SPOLEČNÉ =====================
+  var HEART_ICONS='<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+  // Hlavička sekce s přepínačem „jen oblíbené" vpravo od H1. Menší a obrysové,
+  // ať se nečte jako „uložit sekci"; počet ho vysvětlí. Stav drží relace.
+  function secHead(key,title,perex,count){
+    var on=secState(key).favOnly;
+    var h='<div class="mc-sec-head"><div class="mc-sec-row"><h1>'+esc(title)+'</h1>';
+    h+='<button class="mc-sec-heart '+(on?"on":"")+'" onclick="MC.secFav(\''+key+'\')" aria-label="Jen oblíbené">'+HEART_ICONS+(count?'<span class="c">'+count+'</span>':'')+'</button></div>';
+    if(perex&&!on) h+='<p>'+esc(perex)+'</p>';
+    return h+'</div>';
+  }
+  function favEmpty(){ return '<div class="mc-empty"><div class="e-ic">♡</div>V téhle sekci zatím nic uloženého.</div>'; }
+  function favCountOf(stores){ return stores.reduce(function(n,s){ return n+USER.favorites[s].length; },0); }
   function heartBtn(store,id,on,stop){
     var s=stop?'event.stopPropagation();':'';
     return '<button class="mc-heart '+(on?"on":"")+'" onclick="'+s+'MC.fav(\''+store+'\',\''+id+'\')" aria-label="Uložit do oblíbených"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>';
@@ -1532,6 +1578,7 @@
     rfMore:function(){ state.rf.pageLimit+=50; render(); },
     // obsahové sekce
     secMode:function(key,m){ secState(key).mode=m; scrollTop(); render(); },
+    secFav:function(key){ var s=secState(key); s.favOnly=!s.favOnly; render(); },
     secFilter:function(key){ var s=secState(key); s.filterOpen=!s.filterOpen; render(); },
     secKw:function(key,v){ secState(key).kw=v; render(); var i=document.querySelector(".mc-filter .fkw"); if(i){ i.focus(); i.value=v; i.setSelectionRange(v.length,v.length); } },
     secTag:function(key,t){ var s=secState(key),i=s.tags.indexOf(t); if(i>-1)s.tags.splice(i,1); else s.tags.push(t); render(); },
