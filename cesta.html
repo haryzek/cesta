@@ -698,20 +698,22 @@
   };
 
   // ===================== REGISTR SEKCÍ =====================
-  // tone: "accent" = akční sekce (zásah, když je zle), "teal" = čtecí (práce
-  // na sobě, volné čtení). Řídí barvu nadpisů, odrážek a ikonky dlaždice.
+  // tone: "teal" = práce na sobě a čtení (běžné používání), "accent" = zásah,
+  // když je zle (Tělo, První pomoc). Řídí barvu nadpisů, odrážek a ikonky
+  // dlaždice. Pořadí = pořadí v menu i dlaždicích; sep = oddělovací linka
+  // před položkou v menu. První pomoc dole, u palce.
   var SECTIONS = [
-    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true, tone:"accent" },
-    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent" },
-    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true, tone:"accent" },
-    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true, tone:"accent" },
-    { key:"journey",      label:"Moje cesta",       icon:"journey",      kind:"journey",   tile:true, tone:"accent" },
+    { key:"journey",      label:"Moje cesta",       icon:"journey",      kind:"journey",   tile:true, tone:"teal" },
+    { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true, tone:"teal" },
+    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true, tone:"teal", sep:true },
     { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true, tone:"teal" },
     { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true, tone:"teal" },
     { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true, tone:"teal" },
+    { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent", sep:true },
+    { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true, tone:"accent" },
+    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent", sep:true },
     // O appce jen v menu — dlaždice jedou po párech a devátá by zůstala sama.
-    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:false, tone:"teal" },
-    { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent" }
+    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:false, tone:"teal" }
   ];
   function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
 
@@ -1067,17 +1069,15 @@
   function viewMenu(){
     var h='<div class="mc-menu-backdrop" onclick="MC.menu(false)"></div><nav class="mc-menu">';
     h+='<div class="mc-menu-head"><h2 onclick="MC.home()">Moje <span class="mc-mark">cesta</span></h2><button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
-    // Menu nese všechny sekce (i ty bez dlaždice — O appce); Oblíbené mají řádek níž.
-    SECTIONS.filter(function(s){return s.kind!=="favorites";}).forEach(function(s){
-      var active=state.page==="section"&&state.section===s.key;
-      h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span></button>';
-    });
-    h+='<div class="mc-menu-sep"></div>';
-    var fav=sectionByKey("favorites");
-    h+='<button class="mc-menu-item '+(state.page==="favorites"?"active":"")+'" onclick="MC.open(\'favorites\')"><span class="mi-ic">'+IC[fav.icon]+'</span><span class="mi-label">'+esc(fav.label)+'</span>'+(favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'')+'</button>';
-    h+='<div class="mc-menu-sep"></div>';
+    // Menu = registr v pořadí, linky podle `sep`; přepínač režimu před O appce.
     var lightNow=theme()==="light";
-    h+='<button class="mc-menu-item" onclick="MC.theme()"><span class="mi-ic">'+(lightNow?IC.moon:IC.sun)+'</span><span class="mi-label">'+(lightNow?"Tmavý režim":"Světlý režim")+'</span></button>';
+    SECTIONS.forEach(function(s){
+      if(s.sep) h+='<div class="mc-menu-sep"></div>';
+      if(s.kind==="about") h+='<button class="mc-menu-item" onclick="MC.theme()"><span class="mi-ic">'+(lightNow?IC.moon:IC.sun)+'</span><span class="mi-label">'+(lightNow?"Tmavý režim":"Světlý režim")+'</span></button>';
+      var active=s.kind==="favorites"?state.page==="favorites":(state.page==="section"&&state.section===s.key);
+      var badge=s.kind==="favorites"&&favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'';
+      h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span>'+badge+'</button>';
+    });
     h+='</nav>'; return h;
   }
 
