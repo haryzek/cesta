@@ -390,6 +390,45 @@
   .mc-swipe-card .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
   .mc-fab.ghost{ background:transparent; color:var(--text); border:1px solid var(--border); }
 
+  /* ===== ADMIN (provizorní) ===== */
+  .mc-adm{ display:flex; align-items:center; gap:4px; margin-top:10px; padding-top:8px; border-top:1px dashed var(--border); }
+  .mc-adm .adm-sp{ flex:1; }
+  .mc-adm .adm-src{ font-family:var(--mono); font-size:10px; color:var(--muted); background:var(--surface-2); border:1px solid var(--border); border-radius:6px; padding:2px 6px; }
+  .mc-adm .adm-src.edited{ color:var(--teal); border-color:var(--teal); }
+  .adm-btn{ background:none; border:1px solid var(--border); border-radius:8px; width:34px; height:30px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; color:var(--soft); }
+  .adm-btn svg{ width:15px; height:15px; }
+  .adm-btn.on{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
+  .adm-btn.del{ color:var(--muted); }
+  @media (hover:hover){ .adm-btn:hover{ color:var(--text); border-color:var(--muted); } .adm-btn.del:hover{ color:var(--accent); border-color:var(--accent); } }
+  .mc-card .mc-adm{ margin-right:-30px; }   /* lišta smí pod srdíčko */
+  .mc-swipe-card .mc-adm{ justify-content:center; border-top:none; margin-top:14px; }
+  .mc-swipe-card .mc-adm .adm-sp{ display:none; }
+  .mc-adm-detail{ padding:0 var(--gutter); }
+  .mc-adm-detail .mc-adm{ margin-top:6px; }
+  .mc-top{ display:inline-flex; color:var(--accent); vertical-align:-2px; margin-right:5px; }
+  .mc-top svg{ width:14px; height:14px; }
+  .mc-card-meta .mc-top{ margin:0; gap:4px; }
+  .mc-adm-edit textarea{ width:100%; box-sizing:border-box; font-family:var(--sans); font-size:15px; line-height:1.5; color:var(--text); background:var(--surface-2);
+    border:1px solid var(--accent); border-radius:12px; padding:10px 12px; resize:vertical; }
+  .mc-adm-edit .adm-row{ display:flex; gap:6px; justify-content:flex-end; margin-top:8px; flex-wrap:wrap; }
+  .mc-adm-edit .adm-row .mc-fab{ width:auto; padding:9px 14px; font-size:13px; }
+  .mc-swipe-card .mc-adm-edit{ text-align:left; }
+  .mc-toast{ position:fixed; left:50%; bottom:calc(20px + env(safe-area-inset-bottom)); transform:translateX(-50%); z-index:60;
+    display:flex; align-items:center; gap:14px; background:var(--text); color:var(--bg); padding:11px 16px; border-radius:12px;
+    font-family:var(--sans); font-size:14px; box-shadow:0 6px 24px rgba(0,0,0,.25); max-width:calc(100% - 40px); }
+  .mc-toast button{ background:none; border:none; color:var(--accent); font-family:var(--sans); font-size:14px; font-weight:700; cursor:pointer; padding:0; }
+  .mc-menu-item.adm .mi-label{ color:var(--muted); }
+  .mc-menu-item.adm.active .mi-label{ color:var(--accent); }
+  .mc-adm-stats{ display:flex; gap:10px; margin:16px var(--gutter) 0; }
+  .mc-adm-stats > div{ flex:1; text-align:center; padding:12px 8px; background:var(--surface); border:1px solid var(--border); border-radius:14px; font-family:var(--sans); font-size:12px; color:var(--soft); }
+  .mc-adm-stats b{ display:block; font-family:var(--mono); font-size:20px; color:var(--text); }
+  .mc-box.adm-export{ padding:12px 16px; }
+  .mc-adm-actions{ display:flex; gap:8px; flex-wrap:wrap; margin:12px var(--gutter) 0; }
+  .mc-adm-actions .mc-fab{ width:auto; flex:1; padding:12px 14px; font-size:14px; }
+  .mc-adm-note{ margin:10px var(--gutter) 0; font-family:var(--sans); font-size:13px; color:var(--muted); line-height:1.5; }
+  .mc-adm-h3{ font-family:var(--sans); font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 8px; }
+  .mc-card.del .mc-card-text{ color:var(--muted); }
+
   /* ===== MOJE CESTA — oddíly ===== */
   .mc-card-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); margin-bottom:6px; }
   .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
@@ -687,6 +726,9 @@
     eyeOff:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.2A11 11 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.1 3.9"/><path d="M6.6 6.6A16 16 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 4.4-1"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>',
     list:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
     cards:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M2 8v8M22 8v8"/></svg>',
+    edit:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>',
+    x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>',
+    admin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L13 18l-1 3-3 1 1-3 6.7-6.7"/><path d="M4 20l3-3"/></svg>',
     chevron:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
     questions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
     inspirations:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M19 5l1.4-1.4M3.6 20.4 5 19"/><circle cx="12" cy="12" r="4"/></svg>',
@@ -738,6 +780,8 @@
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
     journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
     swipe:{ key:null, ids:[], index:0 },           // snímek proudu karet (viz swipeView)
+    adminEdit:null,                                // { store, id } — otevřená inline editace
+    toast:null,                                    // { text, undo:{store,id} } — 3 s dole
     detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
   };
   function secState(key){
@@ -764,6 +808,67 @@
     return u;
   }
   function saveUser(){ try{ localStorage.setItem(STORE_KEY,JSON.stringify(USER)); }catch(e){} }
+
+  // ===================== ADMIN (provizorní, jen pro Boba) =====================
+  // Tři akce nad koncovým obsahem: smazat / upravit text / Top!. Vlastní klíč
+  // v localStorage (jiný životní cyklus než uživatelská data), denní snapshot
+  // (posledních 7), export/import JSON. Data v data/ se nesahají — výsledek
+  // se po road tripu propíše do zdrojů skriptem. Smazané a upravené se
+  // aplikují i mimo admin mód (Bob vidí appku, jak ji uvidí uživatel).
+  var ADMIN_KEY="mc_admin_v1", ADMIN_BAK="mc_admin_bak_", ADMIN_BAK_KEEP=7;
+  // store → kde leží položky a jestli mají editovatelný text (věty)
+  var ADMIN_STORES={
+    reframings:{ dataKey:"reframings", label:"Přerámování", text:true },
+    reframing_questions:{ dataKey:"questions_rf", label:"Otázky (přerámování)", text:true },
+    reframing_actions:{ dataKey:"actions", label:"Úkoly", text:true },
+    pains:{ dataKey:"hlasky", label:"Hlášky", text:true },
+    situations:{ dataKey:"sitref", label:"Přerámování situací", text:true },
+    inspirations:{ dataKey:"inspirations", label:"Inspirace", text:true },
+    questions:{ dataKey:"questions", label:"Podnětné otázky", text:true },
+    articles:{ dataKey:"articles", label:"Články", text:false, title:"title" },
+    exercises:{ dataKey:"exercises", label:"Cvičení", text:false, title:"name" },
+    crisis:{ dataKey:"crisis", label:"První pomoc", text:false, title:"name" },
+    body:{ dataKey:"body", label:"Tělesné příznaky", text:false, title:"name" }
+  };
+  var ADMIN=loadAdmin();
+  function emptyAdmin(){ return { on:false, deleted:{}, edits:{}, top:{}, lastExport:null, dirty:0 }; }
+  function loadAdmin(){
+    var a=emptyAdmin();
+    try{ var d=JSON.parse(localStorage.getItem(ADMIN_KEY));
+      if(d&&typeof d==="object"){ a.on=!!d.on; ["deleted","edits","top"].forEach(function(k){ if(d[k]&&typeof d[k]==="object") a[k]=d[k]; }); a.lastExport=d.lastExport||null; a.dirty=d.dirty|0; }
+    }catch(e){}
+    return a;
+  }
+  function saveAdmin(change){
+    if(change) ADMIN.dirty++;
+    try{
+      localStorage.setItem(ADMIN_KEY,JSON.stringify(ADMIN));
+      // Denní snapshot: první zápis v daný den uloží kopii, starší než 7 se mažou.
+      var k=ADMIN_BAK+today();
+      if(change && !localStorage.getItem(k)){
+        localStorage.setItem(k,JSON.stringify(ADMIN));
+        var baks=[]; for(var i=0;i<localStorage.length;i++){ var key=localStorage.key(i); if(key&&key.indexOf(ADMIN_BAK)===0) baks.push(key); }
+        baks.sort(); while(baks.length>ADMIN_BAK_KEEP) localStorage.removeItem(baks.shift());
+      }
+    }catch(e){}
+  }
+  function admList(map,store){ return map[store]=map[store]||[]; }
+  function isDeleted(store,id){ return (ADMIN.deleted[store]||[]).indexOf(id)>-1; }
+  function isTop(store,id){ return (ADMIN.top[store]||[]).indexOf(id)>-1; }
+  function admEdit(store,id){ return (ADMIN.edits[store]||{})[id]; }
+  // Filtr živých položek — volá se na každém místě, kde se koncový obsah vypisuje.
+  function alive(store,items){ var d=ADMIN.deleted[store]; if(!d||!d.length) return items; return items.filter(function(it){ return d.indexOf(it.id)<0; }); }
+  // Upravený text se propisuje přímo do objektů v paměti (položka pak
+  // vypadá upraveně všude — seznam, karty, oblíbené), původní se drží v _orig.
+  function applyEdits(){
+    Object.keys(ADMIN.edits).forEach(function(store){
+      var cfg=ADMIN_STORES[store]; if(!cfg||!cfg.text) return;
+      var idx=itemIndex[cfg.dataKey]||{};
+      Object.keys(ADMIN.edits[store]).forEach(function(id){ var it=idx[id]; if(it){ if(it._orig==null) it._orig=it.text; it.text=ADMIN.edits[store][id]; } });
+    });
+  }
+  function admCount(map){ return Object.keys(map).reduce(function(n,k){ return n+(Array.isArray(map[k])?map[k].length:Object.keys(map[k]).length); },0); }
+  function admExportJson(){ return JSON.stringify({ exported:new Date().toISOString(), deleted:ADMIN.deleted, edits:ADMIN.edits, top:ADMIN.top },null,1); }
 
   // ===================== DNEŠNÍ INSPIRACE =====================
   // Jeden citát na den, drží se přes celý den (opakované otevření appky ho
@@ -858,7 +963,11 @@
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
     itemIndex.hlasky={};
-    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x,i){ itemIndex.hlasky[p.id+":"+i]={ id:p.id+":"+i, text:x.text, meta:p.text }; }); });
+    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x,i){ itemIndex.hlasky[p.id+":"+i]={ id:p.id+":"+i, text:x.text, meta:p.text, source:x.source }; }); });
+    // Přerámování situací jako položky (klíč sit_id:index) — kvůli adminu.
+    itemIndex.sitref={};
+    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(t,i){ itemIndex.sitref[s.id+":"+i]={ id:s.id+":"+i, text:t, meta:s.name }; }); });
+    applyEdits();
     bySection={}; byChain={};
     (DB.exercises||[]).forEach(function(e){
       if(e.section_id) (bySection[e.section_id]=bySection[e.section_id]||[]).push(e);
@@ -979,8 +1088,9 @@
   }
   function currentRfList(){
     var rf=state.rf;
-    if(rf.detailMode==="single"){ var cid=rf.detailClusters[0].cluster_id; return (byCluster[rf.activeType][cid]||[]).slice(); }
-    return interleave(rf.activeType,rf.detailClusters);
+    var store=storeOf(rf.activeType);
+    if(rf.detailMode==="single"){ var cid=rf.detailClusters[0].cluster_id; return alive(store,(byCluster[rf.activeType][cid]||[]).slice()); }
+    return alive(store,interleave(rf.activeType,rf.detailClusters));
   }
   function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
 
@@ -1002,7 +1112,7 @@
   function durationBuckets(){ return [ {label:"do 5 min",max:5}, {label:"6–15 min",min:6,max:15}, {label:"16+ min",min:16} ]; }
   function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; return n; }
   function contentList(key){
-    var cfg=CONTENT[key], s=secState(key), items=(flat[cfg.dataKey]||[]).slice();
+    var cfg=CONTENT[key], s=secState(key), items=alive(cfg.store,(flat[cfg.dataKey]||[]).slice());
     if(s.favOnly) items=items.filter(function(it){ return isFav(cfg.store,it.id); });
     if(s.mode==="edit" && cfg.redakce){ items=items.filter(function(it){ return it.quality===5; }); shuffle(items); }
     else { items.sort(function(a,b){ return String(b.added_at||"").localeCompare(String(a.added_at||"")) || b.sort_order-a.sort_order; }); }
@@ -1045,6 +1155,7 @@
     if(state.detail){ h+=viewContentDetail(); }
     else if(state.page==="home"){ h+=viewHome(); }
     else if(state.page==="favorites"){ h+=viewFavorites(); }
+    else if(state.page==="admin"){ h+=viewAdmin(); }
     else {
       var sec=sectionByKey(state.section);
       if(sec&&sec.kind==="reframing") h+=viewReframing();
@@ -1055,7 +1166,9 @@
       else h+='<div class="mc-empty">—</div>';
     }
     if(state.menuOpen) h+=viewMenu();
+    h+=viewToast();
     root.innerHTML=h;
+    var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
     bindSwipe();
     var s=document.getElementById("mc-search");
     if(s){ var v=(state.section==="reframing")?state.rf.search:(secState(state.section||"").search); if(v){ s.value=v; } }
@@ -1083,6 +1196,10 @@
       var badge=s.kind==="favorites"&&favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'';
       h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span>'+badge+'</button>';
     });
+    // Admin úplně dole — přepínač; když je zapnutý, pod ním řádek do panelu.
+    h+='<div class="mc-menu-sep"></div>';
+    h+='<button class="mc-menu-item adm '+(ADMIN.on?"active":"")+'" onclick="MC.admin()"><span class="mi-ic">'+IC.admin+'</span><span class="mi-label">Admin '+(ADMIN.on?"zapnutý":"vypnutý")+'</span></button>';
+    if(ADMIN.on) h+='<button class="mc-menu-item adm '+(state.page==="admin"?"active":"")+'" onclick="MC.admPage()"><span class="mi-ic"></span><span class="mi-label">Záloha a koš</span>'+(ADMIN.dirty?'<span class="mi-badge">'+ADMIN.dirty+'</span>':'')+'</button>';
     h+='</nav>'; return h;
   }
 
@@ -1188,8 +1305,9 @@
       h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
       h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.open(\'crisis\')">Otevřít První pomoc</button></div>';
     } else if(s.reframings&&s.reframings.length){
+      var refs=alive("situations",(s.reframings||[]).map(function(t,i){ return itemIndex.sitref[s.id+":"+i]; }));
       h+='<ul class="mc-cards">';
-      s.reframings.forEach(function(t){ h+='<li class="mc-card mc-in nofav"><div class="mc-card-text'+(s.mark==="E"?" lead":"")+'">'+esc(t)+'</div></li>'; });
+      refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text"+(s.mark==="E"?" lead":""))+adminBar("situations",r.id)+'</li>'; });
       h+='</ul>';
     }
     var fears=(s.fear_ids||[]).map(function(id){ return itemIndex.fears[id]; }).filter(Boolean);
@@ -1221,12 +1339,12 @@
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
-    var all=(p.hlasky||[]).map(function(x,i){ return itemIndex.hlasky[p.id+":"+i]; }), list=unseenOnly("pains",all);
+    var all=alive("pains",(p.hlasky||[]).map(function(x,i){ return itemIndex.hlasky[p.id+":"+i]; })), list=unseenOnly("pains",all);
     h+=listTools("pains",all.length,list.length);
     if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,all.filter(function(it){ return !USER.onlyNew||!isSeen("pains",it.id)||state.swipe.ids.indexOf(it.id)>-1; }),null);
     if(!list.length) return h+allSeen();
     h+='<ul class="mc-cards">';
-    list.forEach(function(x){ h+='<li class="mc-card mc-in"><div class="mc-card-text">'+esc(x.text)+'</div>'+heartBtn("pains",x.id,isFav("pains",x.id))+'</li>'; });
+    list.forEach(function(x){ h+='<li class="mc-card mc-in">'+admText("pains",x.id,x.text,"mc-card-text")+adminBar("pains",x.id)+heartBtn("pains",x.id,isFav("pains",x.id))+'</li>'; });
     return h+'</ul>';
   }
 
@@ -1273,9 +1391,9 @@
     h+='<ul class="mc-cards">';
     shown.forEach(function(it){
       var on=isFav(store,it.id);
-      h+='<li class="mc-card mc-in"><div class="mc-card-text">'+esc(it.text)+'</div>';
+      h+='<li class="mc-card mc-in">'+admText(store,it.id,it.text,"mc-card-text");
       if(metaFn) h+='<div class="mc-card-meta">'+metaFn(it)+'</div>';
-      h+=heartBtn(store,it.id,on)+'</li>';
+      h+=adminBar(store,it.id)+heartBtn(store,it.id,on)+'</li>';
     });
     h+='</ul>';
     if(list.length>rf.pageLimit) h+='<button class="mc-more-page" onclick="MC.rfMore()">Dalších '+Math.min(50,list.length-rf.pageLimit)+'</button>';
@@ -1337,7 +1455,7 @@
   }
   function viewSectionExercises(s){
     var h='<div class="mc-namelist">';
-    (bySection[s.id]||[]).forEach(function(e){
+    alive("exercises",bySection[s.id]||[]).forEach(function(e){
       h+='<button class="mc-name-item mc-in" onclick="MC.detail(\'exercises\',\''+e.id+'\')"><span class="nb"><span class="n">'+esc(e.name)+'</span>'+
          '<span class="sub">'+minutes(e.duration)+diffPill(e.difficulty)+(e.chain_id?'<span class="m">'+IC.chain+e.chain_order+'/'+(byChain[e.chain_id]||[]).length+'</span>':'')+(e.warning?'<span class="m warn">'+IC.warn+'</span>':'')+'</span></span><span class="go">›</span></button>';
     });
@@ -1368,7 +1486,7 @@
 
   function viewDocList(key){
     var cfg=CONTENT[key], s=secState(key);
-    var items=(flat[cfg.dataKey]||[]).slice();
+    var items=alive(cfg.store,(flat[cfg.dataKey]||[]).slice());
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
     var h=secHead(key,cfg.label,null,USER.favorites[cfg.store].length);
     if(s.favOnly){ items=items.filter(function(it){ return isFav(cfg.store,it.id); }); if(!items.length) return h+favEmpty(); }
@@ -1439,17 +1557,18 @@
     h+='<div class="mc-card-meta">';
     if(cfg.timeField) h+=minutes(it[cfg.timeField]);
     if(cfg.redakce&&it.quality===5) h+='<span class="m" style="color:var(--accent)">'+IC.star+'Redakce</span>';
+    if(isTop(store,it.id)) h+='<span class="m mc-top">'+IC.star+'Top</span>';
     h+='</div>';
-    h+=heartBtn(store,it.id,on,true)+'</li>';
+    h+=adminBar(store,it.id)+heartBtn(store,it.id,on,true)+'</li>';
     return h;
   }
 
   function quoteCard(cfg,it){
     var store=cfg.store, on=isFav(store,it.id);
-    var h='<li class="mc-card mc-in"><div class="mc-card-text lead">'+esc(it.text)+'</div>';
+    var h='<li class="mc-card mc-in">'+admText(store,it.id,it.text,"mc-card-text lead");
     if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>';
     if(it.tags&&it.tags.length) h+=tagRow(it.tags,2);
-    h+=heartBtn(store,it.id,on)+'</li>';
+    h+=adminBar(store,it.id)+heartBtn(store,it.id,on)+'</li>';
     return h;
   }
 
@@ -1486,6 +1605,7 @@
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
     if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
+    if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+'</div>';
     // Most z cvičení do jeho oddílu v Moje cesta.
     if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
 
@@ -1556,7 +1676,7 @@
     var h='';
     FAV_VIEW.forEach(function(fv){
       if(stores&&stores.indexOf(fv.store)<0) return;
-      var items=USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean);
+      var items=alive(fv.store,USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean));
       if(items.length===0) return;
       h+='<div class="mc-fav-group"><h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2><ul class="mc-cards" style="padding-left:0;padding-right:0">';
       items.forEach(function(it){
@@ -1574,6 +1694,32 @@
   }
   var RF_STORES=["reframings","reframing_questions","reframing_actions","pains"];
 
+  // ===================== RENDER — Admin: záloha a koš =====================
+  function viewAdmin(){
+    var h='<button class="mc-back" onclick="MC.home()">← Domů</button>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">Admin</div></div>';
+    var nDel=admCount(ADMIN.deleted), nEd=admCount(ADMIN.edits), nTop=admCount(ADMIN.top);
+    var days=ADMIN.lastExport?Math.floor((Date.now()-new Date(ADMIN.lastExport).getTime())/864e5):null;
+    var warn=ADMIN.dirty>0&&(days==null||days>3);
+    h+='<div class="mc-adm-stats"><div><b>'+nDel+'</b> smazáno</div><div><b>'+nEd+'</b> upraveno</div><div><b>'+nTop+'</b> Top</div></div>';
+    h+='<div class="mc-box '+(warn?"mc-warn":"")+' adm-export"><span class="b-text">'+(ADMIN.lastExport?'Poslední export před '+days+' dny':'Zatím žádný export')+(ADMIN.dirty?' · <b>'+ADMIN.dirty+' nezálohovaných změn</b>':' · vše zálohováno')+'</span></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.admExport()">Export (stáhnout)</button><button class="mc-fab ghost" onclick="MC.admCopy()">Zkopírovat</button><button class="mc-fab ghost" onclick="MC.admImport()">Import</button></div>';
+    h+='<p class="mc-adm-note">Snapshoty se drží automaticky za posledních 7 dní v tomhle prohlížeči. Export je jediná záloha mimo telefon — dělejte ho průběžně.</p>';
+    // Koš
+    h+='<div class="mc-fav-group"><h2>Koš <span class="c">'+nDel+'</span></h2>';
+    if(!nDel) h+='<div class="mc-empty">Nic smazaného.</div>';
+    Object.keys(ADMIN.deleted).forEach(function(store){
+      var cfg=ADMIN_STORES[store]; if(!cfg||!ADMIN.deleted[store].length) return;
+      h+='<h3 class="mc-adm-h3">'+esc(cfg.label)+'</h3><ul class="mc-cards" style="padding:0">';
+      ADMIN.deleted[store].forEach(function(id){
+        var it=(itemIndex[cfg.dataKey]||{})[id], txt=it?(cfg.text?it.text:(it[cfg.title]||id)):id;
+        h+='<li class="mc-card nofav del"><div class="mc-card-text">'+esc(txt)+'</div>'+(it&&it.meta?'<div class="mc-card-meta">'+esc(it.meta)+'</div>':'')+'<div class="mc-adm"><span class="adm-sp"></span><button class="mc-link" onclick="MC.admRestore(\''+store+'\',\''+id+'\')">Obnovit</button></div></li>';
+      });
+      h+='</ul>';
+    });
+    return h+'</div>';
+  }
+
   // ===================== RENDER — O appce =====================
   function viewAbout(){
     return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
@@ -1587,6 +1733,37 @@
   }
 
   // ===================== SPOLEČNÉ =====================
+  // Admin lišta u položky: ✎ upravit (jen věty) · ★ Top! · ✕ smazat. Kreslí se
+  // jen v admin módu. Otevřená editace nahradí text položky textareou.
+  function adminBar(store,id){
+    if(!ADMIN.on||!ADMIN_STORES[store]) return "";
+    var cfg=ADMIN_STORES[store], top=isTop(store,id), it=(itemIndex[cfg.dataKey]||{})[id];
+    var h='<div class="mc-adm" onclick="event.stopPropagation()">';
+    if(it&&it.source) h+='<span class="adm-src">'+esc(it.source)+'</span>';
+    if(admEdit(store,id)!=null) h+='<span class="adm-src edited">upraveno</span>';
+    h+='<span class="adm-sp"></span>';
+    if(cfg.text) h+='<button class="adm-btn" onclick="MC.admEditOpen(\''+store+'\',\''+id+'\')" aria-label="Upravit">'+IC.edit+'</button>';
+    h+='<button class="adm-btn '+(top?"on":"")+'" onclick="MC.admTop(\''+store+'\',\''+id+'\')" aria-label="Top">'+IC.star+'</button>';
+    h+='<button class="adm-btn del" onclick="MC.admDel(\''+store+'\',\''+id+'\')" aria-label="Smazat">'+IC.x+'</button>';
+    return h+'</div>';
+  }
+  function adminEditing(store,id){ var e=state.adminEdit; return !!(e&&e.store===store&&e.id===id); }
+  function adminEditor(store,id,text){
+    return '<div class="mc-adm-edit" onclick="event.stopPropagation()"><textarea id="mc-adm-ta" rows="5">'+esc(text)+'</textarea>'+
+      '<div class="adm-row"><button class="mc-fab ghost" onclick="MC.admEditClose()">Zrušit</button>'+(admEdit(store,id)!=null?'<button class="mc-fab ghost" onclick="MC.admEditReset(\''+store+'\',\''+id+'\')">Původní</button>':'')+'<button class="mc-fab" onclick="MC.admEditSave(\''+store+'\',\''+id+'\')">Uložit</button></div></div>';
+  }
+  // Text položky v kartě: buď editor, nebo text (+ hvězdička Top).
+  function admText(store,id,text,cls){
+    if(adminEditing(store,id)) return adminEditor(store,id,text);
+    return '<div class="'+cls+'">'+(isTop(store,id)?'<span class="mc-top">'+IC.star+'</span>':'')+esc(text)+'</div>';
+  }
+  function viewToast(){
+    var t=state.toast; if(!t) return "";
+    return '<div class="mc-toast"><span>'+esc(t.text)+'</span>'+(t.undo?'<button onclick="MC.admUndo()">Vrátit</button>':'')+'</div>';
+  }
+  var toastTimer=null;
+  function toast(text,undo){ clearTimeout(toastTimer); state.toast={text:text,undo:undo||null}; toastTimer=setTimeout(function(){ state.toast=null; render(); },3000); }
+
   var HEART_ICONS='<svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
   // Hlavička sekce s přepínačem „jen oblíbené" vpravo od H1. Menší a obrysové,
   // ať se nečte jako „uložit sekci"; počet ho vysvětlí. Stav drží relace.
@@ -1629,7 +1806,7 @@
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
       // Počítadlo vlevo nahoře a srdíčko vpravo nahoře v kartě — nic mimo ni.
       h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
-      h+='<div class="sc-text '+size+'">'+esc(it.text)+'</div>'+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+'</div></div>';
+      h+=admText(store,it.id,it.text,"sc-text "+size)+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
       if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
     h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"To je všechno nové. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div>';
@@ -1725,6 +1902,42 @@
     journeyTab:function(t){ state.journey.tab=t; scrollTop(); render(); },
     // oblíbené
     fav:function(store,id){ toggleFav(store,id); render(); },
+    // admin
+    admin:function(){ ADMIN.on=!ADMIN.on; state.adminEdit=null; saveAdmin(false); render(); },
+    admPage:function(){ state.menuOpen=false; state.detail=null; state.page="admin"; state.section=null; scrollTop(); render(); },
+    admTop:function(store,id){ var a=admList(ADMIN.top,store), i=a.indexOf(id); if(i>-1) a.splice(i,1); else a.push(id); saveAdmin(true); render(); },
+    admDel:function(store,id){ admList(ADMIN.deleted,store).push(id); saveAdmin(true); toast("Smazáno",{store:store,id:id}); render(); },
+    admUndo:function(){ var u=state.toast&&state.toast.undo; if(!u) return; MC.admRestore(u.store,u.id); state.toast=null; clearTimeout(toastTimer); render(); },
+    admRestore:function(store,id){ var a=admList(ADMIN.deleted,store), i=a.indexOf(id); if(i>-1) a.splice(i,1); saveAdmin(true); render(); },
+    admEditOpen:function(store,id){ state.adminEdit={store:store,id:id}; render(); },
+    admEditClose:function(){ state.adminEdit=null; render(); },
+    admEditSave:function(store,id){
+      var ta=document.getElementById("mc-adm-ta"), it=itemIndex[ADMIN_STORES[store].dataKey][id]; if(!ta||!it) return;
+      var v=ta.value.trim(); if(!v) return;
+      if(it._orig==null) it._orig=it.text;
+      if(v===it._orig){ delete (ADMIN.edits[store]||{})[id]; it.text=it._orig; }
+      else { (ADMIN.edits[store]=ADMIN.edits[store]||{})[id]=v; it.text=v; }
+      saveAdmin(true); state.adminEdit=null; render();
+    },
+    admEditReset:function(store,id){ var it=itemIndex[ADMIN_STORES[store].dataKey][id]; if(it&&it._orig!=null) it.text=it._orig; delete (ADMIN.edits[store]||{})[id]; saveAdmin(true); state.adminEdit=null; render(); },
+    admExport:function(){
+      var json=admExportJson(), name="cesta_admin_"+today()+".json";
+      try{ var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json],{type:"application/json"})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); }catch(e){}
+      ADMIN.lastExport=new Date().toISOString(); ADMIN.dirty=0; saveAdmin(false); toast("Export "+name); render();
+    },
+    admCopy:function(){
+      var json=admExportJson();
+      var done=function(){ ADMIN.lastExport=new Date().toISOString(); ADMIN.dirty=0; saveAdmin(false); toast("Zkopírováno do schránky"); render(); };
+      if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(json).then(done,function(){ window.prompt("Zkopírujte ručně:",json); done(); });
+      else { window.prompt("Zkopírujte ručně:",json); done(); }
+    },
+    admImport:function(){
+      var s=window.prompt("Vložte JSON zálohy (sloučí se s aktuálním stavem):"); if(!s) return;
+      try{ var d=JSON.parse(s); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
+        Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
+        applyEdits(); saveAdmin(true); state.swipe.key=null; toast("Import hotov"); render();
+      }catch(e){ toast("Import selhal — není to JSON"); render(); }
+    },
     // jen nové / proud karet
     onlyNew:function(){ USER.onlyNew=!USER.onlyNew; saveUser(); state.swipe.key=null; render(); },
     viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; render(); },
