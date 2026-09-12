@@ -310,6 +310,52 @@
   .mc-name-item .n{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24;
     letter-spacing:-0.01em; color:var(--text); line-height:1.25; }
   .mc-name-item .go{ font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
+  /* Seznam cvičení v oddílu: pod názvem řádek metadat (čas · náročnost · řetěz) */
+  .mc-name-item .nb{ display:flex; flex-direction:column; gap:6px; min-width:0; }
+  .mc-name-item .sub{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-family:var(--mono); font-size:11px; color:var(--soft); }
+  .mc-name-item .sub .m{ display:inline-flex; align-items:center; gap:4px; }
+  .mc-name-item .sub svg{ width:12px; height:12px; }
+  .mc-name-item .sub .warn{ color:var(--accent); }
+
+  /* ===== MOJE CESTA — oddíly ===== */
+  .mc-card-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); margin-bottom:6px; }
+  .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
+  .mc-sec-link{ display:inline-flex; align-items:center; gap:8px; margin:10px var(--gutter) 0; padding:0; background:none; border:none;
+    cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
+  .mc-sec-link:hover{ color:var(--text); }
+  .mc-sec-link .l{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); }
+  .mc-extra{ padding-bottom:0; }
+  .mc-extra + .mc-detail-body{ padding-top:0; }
+
+  /* Náročnost — pilulka (nízká / střední / vysoká) */
+  .mc-diff{ display:inline-block; padding:3px 10px; border-radius:999px; font-family:var(--sans); font-size:12px; font-weight:600; line-height:1.4; }
+  .mc-diff.low{ background:var(--teal-soft); color:var(--teal); }
+  .mc-diff.mid{ background:var(--accent-dim); color:var(--accent); }
+  .mc-diff.high{ background:var(--accent); color:var(--on-accent); }
+
+  /* Boxy pod taby: řetěz a upozornění (stejný rámeček jako .mc-strip) */
+  .mc-box{ margin:10px var(--gutter) 0; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+  .mc-box .b-head{ display:flex; align-items:center; gap:12px; width:100%; padding:12px 16px; background:none; border:none; cursor:pointer; text-align:left; }
+  .mc-box .b-num{ font-family:var(--mono); font-size:12px; color:var(--accent); background:var(--accent-dim); padding:4px 8px; border-radius:8px; }
+  .mc-box .b-text{ flex:1; font-family:var(--sans); font-size:14px; color:var(--text); line-height:1.45; }
+  .mc-box .b-chev{ color:var(--soft); display:flex; transition:transform .15s ease; }
+  .mc-box .b-chev svg{ width:16px; height:16px; }
+  .mc-box.open .b-chev{ transform:rotate(180deg); }
+  .mc-box .b-body{ padding:0 16px 14px; border-top:1px solid var(--border); }
+  .mc-box .b-title{ font-family:var(--serif); font-weight:600; font-size:16px; font-variation-settings:'opsz' 24; color:var(--text); padding-top:12px; }
+  .mc-box .b-hint{ font-family:var(--sans); font-size:13px; color:var(--soft); margin:4px 0 10px; }
+  .mc-box .b-list{ margin:0; padding-left:22px; font-family:var(--mono); font-size:12px; color:var(--soft); }
+  .mc-box .b-list li{ margin:4px 0; }
+  .mc-box .b-list button{ background:none; border:none; padding:0; cursor:pointer; font-family:var(--sans); font-size:14px; color:var(--text); text-align:left; }
+  .mc-box .b-list li.cur button{ color:var(--accent); font-weight:600; }
+  .mc-warn{ display:flex; align-items:center; gap:12px; padding:12px 16px; }
+  .mc-warn .b-ic{ flex-shrink:0; width:30px; height:30px; border-radius:9px; background:var(--accent-dim); color:var(--accent); display:flex; align-items:center; justify-content:center; }
+  .mc-warn .b-ic svg{ width:16px; height:16px; }
+
+  /* Příloha cvičení (attachments) — samostatná karta za postupem */
+  .mc-attach{ margin:20px var(--gutter) 0; padding:16px 20px; background:var(--surface); border:1px solid var(--border); border-radius:16px; }
+  .mc-attach .a-title{ font-family:var(--serif); font-weight:600; font-size:16px; font-variation-settings:'opsz' 24; color:var(--tone); margin-bottom:8px; }
+  .mc-attach .mc-md{ font-size:14.5px; }
 
   /* ===== BACK / DETAIL ===== */
   .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:20px var(--gutter) 0; background:none; border:none;
@@ -388,6 +434,12 @@
   .mc-strip .s-label{ font-family:var(--sans); font-size:11px; text-transform:uppercase; letter-spacing:0.06em;
     color:var(--muted); font-weight:600; margin-bottom:1px; }
   .mc-strip .s-value{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
+  /* Box náročnosti: vlevo řádky Trvání / Praxe, vpravo pilulka náročnosti */
+  .mc-strip .s-rows{ flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; }
+  .mc-strip .s-rows > div{ display:flex; gap:8px; align-items:baseline; }
+  .mc-strip .s-rows .s-label{ margin:0; min-width:56px; }
+  .mc-strip .s-diff{ text-align:right; flex-shrink:0; }
+  .mc-strip .s-diff .s-label{ margin-bottom:4px; }
 
   /* ===== JOURNAL CARD (Zápis do deníku) =====
      Reflexe po cvičení — odlišená teal kartou (klidová/čtecí barva) proti
@@ -487,8 +539,11 @@
     clusters:"clusters.json", feelings:"feelings.json",
     reframings:"reframings.json", questions_rf:"reframing_questions.json", actions:"reframing_actions.json",
     crisis:"crisis.json", body:"body.json", exercises:"exercises.json",
+    sections:"sections.json", chains:"chains.json",
     inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json"
   };
+  // Náročnost cvičení → tón pilulky (viz .mc-diff)
+  var DIFF_CLASS = { "nízká":"low", "střední":"mid", "vysoká":"high" };
 
   // triplet přerámování
   var TYPES = [
@@ -535,6 +590,10 @@
     body:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-8.8-1.4 5.5 5.5 0 0 0-8.8 6.6C4.8 13.5 12 20 12 20s7.2-6.5 8.8-9.2a5.5 5.5 0 0 0 0-5.2z"/></svg>',
     reframing:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>',
     exercises:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6M8 22l4-8 4 8M6 11h12"/></svg>',
+    journey:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c4-1 3-6 7-7s4-6 9-7"/><circle cx="4" cy="20" r="1.6"/><circle cx="20" cy="6" r="1.6"/></svg>',
+    chain:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>',
+    warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
+    chevron:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
     questions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
     inspirations:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M19 5l1.4-1.4M3.6 20.4 5 19"/><circle cx="12" cy="12" r="4"/></svg>',
     articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>',
@@ -557,10 +616,12 @@
     { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent" },
     { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true, tone:"accent" },
     { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true, tone:"accent" },
+    { key:"journey",      label:"Moje cesta",       icon:"journey",      kind:"journey",   tile:true, tone:"accent" },
     { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true, tone:"teal" },
     { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true, tone:"teal" },
     { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true, tone:"teal" },
-    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:true, tone:"teal" },
+    // O appce jen v menu — dlaždice jedou po párech a devátá by zůstala sama.
+    { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:false, tone:"teal" },
     { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent" }
   ];
   function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
@@ -568,12 +629,14 @@
   // ===================== STAV =====================
   var DB=null, clusterName={}, clusterSort={}, byCluster={}, itemIndex={}, contentClusters=[];
   var flat={};  // dataKey -> [items sorted by sort_order]
+  var bySection={}, byChain={};  // section_id / chain_id -> [cvičení] (sort_order / chain_order)
 
   var state = {
     page:"home", section:null, menuOpen:false,
     rf:{ view:"feelings", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50 },
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
-    detail:null     // { type, id, infoOpen }
+    journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
+    detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
   };
   function secState(key){
     if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], durs:[], search:"" };
@@ -675,6 +738,19 @@
       flat[dk]=(DB[dk]||[]).slice().sort(function(a,b){ return a.sort_order-b.sort_order; });
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
+    // Oddíly a řetězy (Moje cesta). sort_order cvičení je lokální per oddíl,
+    // chain_order per řetěz — proto dva samostatné indexy.
+    ["sections","chains"].forEach(function(dk){
+      flat[dk]=(DB[dk]||[]).slice().sort(function(a,b){ return a.sort_order-b.sort_order; });
+      itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
+    });
+    bySection={}; byChain={};
+    (DB.exercises||[]).forEach(function(e){
+      if(e.section_id) (bySection[e.section_id]=bySection[e.section_id]||[]).push(e);
+      if(e.chain_id) (byChain[e.chain_id]=byChain[e.chain_id]||[]).push(e);
+    });
+    Object.keys(bySection).forEach(function(k){ bySection[k].sort(function(a,b){ return a.sort_order-b.sort_order; }); });
+    Object.keys(byChain).forEach(function(k){ byChain[k].sort(function(a,b){ return (a.chain_order||0)-(b.chain_order||0); }); });
   }
 
   function showError(err){
@@ -856,6 +932,7 @@
     else {
       var sec=sectionByKey(state.section);
       if(sec&&sec.kind==="reframing") h+=viewReframing();
+      else if(sec&&sec.kind==="journey") h+=viewJourney();
       else if(sec&&sec.kind==="favorites") h+=viewFavorites();
       else if(sec&&sec.kind==="about") h+=viewAbout();
       else if(sec&&sec.kind==="content") h+=viewContent(sec.key);
@@ -879,7 +956,8 @@
   function viewMenu(){
     var h='<div class="mc-menu-backdrop" onclick="MC.menu(false)"></div><nav class="mc-menu">';
     h+='<div class="mc-menu-head"><h2 onclick="MC.home()">Moje <span class="mc-mark">cesta</span></h2><button class="mc-icon-btn" onclick="MC.menu(false)" aria-label="Zavřít"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
-    SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
+    // Menu nese všechny sekce (i ty bez dlaždice — O appce); Oblíbené mají řádek níž.
+    SECTIONS.filter(function(s){return s.kind!=="favorites";}).forEach(function(s){
       var active=state.page==="section"&&state.section===s.key;
       h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span></button>';
     });
@@ -947,6 +1025,76 @@
     h+='</ul>';
     if(list.length>rf.pageLimit) h+='<button class="mc-more-page" onclick="MC.rfMore()">Dalších '+Math.min(50,list.length-rf.pageLimit)+'</button>';
     return h;
+  }
+
+  // ===================== RENDER — Moje cesta (oddíly) =====================
+  // Cvičebnice po oddílech. Oddíly 01–03 jsou jen text (theory), 04–11 mají
+  // submenu Cvičení / Info / Teorie / Praxe — výchozí Cvičení (kdo otevře
+  // oddíl, chce cvičit; teorii si klikne). Tab se kreslí jen když má obsah.
+  var JOURNEY_TABS=[ {key:"exercises",label:"Cvičení"}, {key:"info",label:"Info"}, {key:"theory",label:"Teorie"}, {key:"practice",label:"Praxe"} ];
+  function viewJourney(){ return state.journey.sectionId?viewJourneySection():viewJourneyList(); }
+  function viewJourneyList(){
+    var h='<div class="mc-sec-head"><h1>Moje cesta</h1><p>Cvičebnice krok za krokem — oddíly, jejich cvičení, teorie a praxe.</p></div>';
+    h+='<ul class="mc-cards">';
+    flat.sections.forEach(function(s){
+      var n=(bySection[s.id]||[]).length;
+      h+='<li class="mc-card clickable mc-in" onclick="MC.journeySection(\''+s.id+'\')">';
+      h+='<div class="mc-card-eyebrow">'+("0"+s.sort_order).slice(-2)+'</div>';
+      h+='<div class="mc-card-title">'+esc(s.title)+'</div>';
+      if(s.perex) h+='<div class="mc-card-text">'+esc(s.perex)+'</div>';
+      h+='<div class="mc-card-meta">'+(n?'<span class="m">'+n+' cvičení</span>':'<span class="m">text</span>')+'</div>';
+      h+='<span class="mc-card-go">›</span></li>';
+    });
+    return h+'</ul>';
+  }
+  function journeyTabs(s){
+    var exs=bySection[s.id]||[];
+    return JOURNEY_TABS.filter(function(t){ return t.key==="exercises"?exs.length>0:!!s[t.key]; });
+  }
+  function viewJourneySection(){
+    var j=state.journey, s=itemIndex.sections[j.sectionId];
+    if(!s) return '<div class="mc-empty">Oddíl nenalezen.</div>';
+    var h='<button class="mc-back" onclick="MC.journeyBack()">← Oddíly</button>';
+    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">Oddíl '+("0"+s.sort_order).slice(-2)+'</div></div>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.title)+'</div></div>';
+    if(s.perex) h+='<div class="mc-detail-perex">'+esc(s.perex)+'</div>';
+    var tabs=journeyTabs(s);
+    if(tabs.length<=1){
+      // Oddíly bez cvičení — jen text. Když zbyde jediný tab, nekreslí se.
+      var only=tabs[0]?tabs[0].key:"theory";
+      return h+'<div class="mc-detail-body mc-md">'+md(stripDupHeading(s[only],s.title))+'</div>';
+    }
+    var tab=tabs.some(function(t){return t.key===j.tab;})?j.tab:tabs[0].key;
+    h+='<div class="mc-submenu">';
+    tabs.forEach(function(t){ h+='<button class="'+(tab===t.key?"active":"")+'" onclick="MC.journeyTab(\''+t.key+'\')">'+t.label+'</button>'; });
+    h+='</div>';
+    if(tab==="exercises") h+=viewSectionExercises(s);
+    else if(tab==="practice") h+=renderPractice(s.practice,s.diary_practice,s.title);
+    else h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(s[tab],s.title))+'</div>';
+    return h;
+  }
+  function viewSectionExercises(s){
+    var h='<div class="mc-namelist">';
+    (bySection[s.id]||[]).forEach(function(e){
+      h+='<button class="mc-name-item mc-in" onclick="MC.detail(\'exercises\',\''+e.id+'\')"><span class="nb"><span class="n">'+esc(e.name)+'</span>'+
+         '<span class="sub">'+minutes(e.duration)+diffPill(e.difficulty)+(e.chain_id?'<span class="m">'+IC.chain+e.chain_order+'/'+(byChain[e.chain_id]||[]).length+'</span>':'')+(e.warning?'<span class="m warn">'+IC.warn+'</span>':'')+'</span></span><span class="go">›</span></button>';
+    });
+    return h+'</div>';
+  }
+  function diffPill(d){ if(!d) return ""; return '<span class="mc-diff '+(DIFF_CLASS[d]||"")+'">'+esc(d)+'</span>'; }
+  // Tab Praxe oddílu: deník (diary_practice) se vkládá pozičně za druhý blok
+  // („Uvedení do praxe"), ne podle jména nadpisu — závěrečné nadpisy jsou živé.
+  function renderPractice(src,diary,title){
+    src=stripDupHeading(src,title)||"";
+    if(!diary) return '<div class="mc-detail-body mc-md">'+md(src)+'</div>';
+    var lines=String(src).split(/\r?\n/), heads=[];
+    lines.forEach(function(l,i){ if(/^#{1,6}\s/.test(l.trim())) heads.push(i); });
+    var cut=heads.length>=3?heads[2]:lines.length;
+    return '<div class="mc-detail-body mc-md">'+md(lines.slice(0,cut).join("\n"))+'</div>'+journalCard(diary)+
+           (cut<lines.length?'<div class="mc-detail-body mc-md">'+md(lines.slice(cut).join("\n"))+'</div>':'');
+  }
+  function journalCard(src){
+    return '<div class="mc-journal"><div class="mc-journal-eyebrow">'+IC.journal+'Zápis do deníku</div><div class="mc-md">'+md(src)+'</div></div>';
   }
 
   // ===================== RENDER — obsahové sekce =====================
@@ -1041,41 +1189,77 @@
     if(!item||!cfg) return '<div class="mc-empty">Položka nenalezena.</div>';
     var title=item[cfg.titleField]||item.name||"";
     var store=cfg.store, on=isFav(store,d.id);
-    var hasTabs=!!(cfg.info&&item.info), onInfo=hasTabs&&d.infoOpen;
+    // Cvičení: taby Postup / Info / Teorie / Praxe. Info/Teorie/Praxe se u
+    // cvičení dědí z oddílu (v datech jsou vždy null), info_extra/theory_extra
+    // se předřadí nad oddílový text. Tab se kreslí jen když má obsah.
+    var isEx=!!cfg.info, sec=isEx&&item.section_id?itemIndex.sections[item.section_id]:null;
+    var tabs=[];
+    if(isEx){
+      tabs.push({key:"body",label:"Postup"});
+      var src={ info:item.info||(sec&&sec.info), theory:item.theory||(sec&&sec.theory), practice:item.practice||(sec&&sec.practice) };
+      if(src.info) tabs.push({key:"info",label:"Info",src:src.info,extra:item.info_extra});
+      if(src.theory) tabs.push({key:"theory",label:"Teorie",src:src.theory,extra:item.theory_extra});
+      if(src.practice) tabs.push({key:"practice",label:"Praxe",src:src.practice,practice:true});
+    }
+    var hasTabs=tabs.length>1;
+    var tab=tabs.some(function(t){return t.key===d.tab;})?d.tab:"body";
 
     var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
     // Pořadí podle mockupu: tag pilulky nad H1, pak titulek, pak perex.
-    // Čas u cvičení nese duration strip pod taby, takže pilulku nedubluje.
+    // Čas u cvičení nese box náročnosti pod taby, takže pilulku nedubluje.
     var pills=[];
-    if(cfg.timeField&&item[cfg.timeField]&&!hasTabs) pills.push(timeTag(item[cfg.timeField]));
+    if(cfg.timeField&&item[cfg.timeField]&&!isEx) pills.push(timeTag(item[cfg.timeField]));
     if(item.tags&&item.tags.length) item.tags.forEach(function(t){ pills.push('<span class="mc-tag">'+esc(t)+'</span>'); });
     if(pills.length) h+='<div class="mc-detail-meta"><div class="mc-tag-row">'+pills.join("")+'</div></div>';
 
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
     if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
+    // Most z cvičení do jeho oddílu v Moje cesta.
+    if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
 
     if(hasTabs){
       h+='<div class="mc-tabbar">';
-      h+='<button class="mc-tab '+(onInfo?"":"active")+'" onclick="MC.detailTab(0)">Postup</button>';
-      h+='<button class="mc-tab '+(onInfo?"active":"")+'" onclick="MC.detailTab(1)">Info<span class="dot"></span></button>';
+      tabs.forEach(function(t){ h+='<button class="mc-tab '+(tab===t.key?"active":"")+'" onclick="MC.detailTab(\''+t.key+'\')">'+t.label+(t.key!=="body"?'<span class="dot"></span>':'')+'</button>'; });
       h+='</div>';
     }
-    if(onInfo){
-      h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(item.info,title))+'</div>';
+    var cur=tabs.filter(function(t){return t.key===tab;})[0];
+    if(cur&&cur.key!=="body"){
+      if(cur.extra) h+='<div class="mc-detail-body mc-md mc-extra">'+md(cur.extra)+'</div>';
+      if(cur.practice) h+=renderPractice(cur.src,sec&&sec.diary_practice,title);
+      else h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(cur.src,title))+'</div>';
     } else {
-      // Duration strip jen u cvičení (mají taby). Bere přímo pole `duration` —
-      // jedna performance cvičení. Články nesou čas pilulkou nad titulkem.
-      if(hasTabs && cfg.timeField && item[cfg.timeField]){
-        h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div>'+
-           '<div class="s-label">Trvání</div><div class="s-value">'+esc(item[cfg.timeField])+' min</div></div></div>';
+      if(isEx){
+        // Box náročnosti: Trvání (jedna performance) · Praxe (frequency /
+        // training_period) · Náročnost. Návrh local/_design/box_náročnosti.jpg.
+        var praxe=[item.frequency,item.training_period].filter(Boolean).join(" / ");
+        h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div class="s-rows">';
+        if(item.duration) h+='<div><span class="s-label">Trvání:</span><span class="s-value">'+esc(item.duration)+' min</span></div>';
+        if(praxe) h+='<div><span class="s-label">Praxe:</span><span class="s-value">'+esc(praxe)+'</span></div>';
+        h+='</div>';
+        if(item.difficulty) h+='<div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
+        h+='</div>';
+        // Box řetězu — jediný nosič návaznosti. Rozklik ukáže celý řetěz.
+        if(item.chain_id && byChain[item.chain_id]){
+          var ch=itemIndex.chains[item.chain_id], list=byChain[item.chain_id];
+          h+='<div class="mc-box mc-chain '+(d.chainOpen?"open":"")+'"><button class="b-head" onclick="MC.detailChain()"><span class="b-num">'+item.chain_order+'/'+list.length+'</span><span class="b-text">Cvičení je součástí řetězu</span><span class="b-chev">'+IC.chevron+'</span></button>';
+          if(d.chainOpen){
+            h+='<div class="b-body"><div class="b-title">'+esc(ch?ch.title:"")+'</div><div class="b-hint">Cvičení na sebe navazují — doporučujeme začít od prvního.</div><ol class="b-list">';
+            list.forEach(function(e){ h+='<li class="'+(e.id===item.id?"cur":"")+'"><button onclick="MC.detail(\'exercises\',\''+e.id+'\')">'+esc(e.name)+'</button></li>'; });
+            h+='</ol></div>';
+          }
+          h+='</div>';
+        }
+        if(item.warning) h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">'+esc(item.warning)+'</span></div>';
       }
-      var jr=splitJournal(stripDupHeading(item.body,title));
-      h+='<div class="mc-detail-body mc-md'+(hasTabs?" mc-steps":"")+'">'+md(jr.body)+'</div>';
-      if(jr.journal){
-        h+='<div class="mc-journal"><div class="mc-journal-eyebrow">'+IC.journal+'Zápis do deníku</div>'+
-           '<div class="mc-md">'+md(jr.journal)+'</div></div>';
+      var jr=isEx?{body:stripDupHeading(item.body,title),journal:null}:splitJournal(stripDupHeading(item.body,title));
+      h+='<div class="mc-detail-body mc-md'+(isEx?" mc-steps":"")+'">'+md(jr.body)+'</div>';
+      if(isEx&&item.attachments&&item.attachments.length){
+        item.attachments.forEach(function(a){ h+='<div class="mc-attach"><div class="a-title">'+esc(a.title||"Příloha")+'</div><div class="mc-md">'+md(a.body||"")+'</div></div>'; });
       }
+      // Deník cvičení žije v polích: oddílový (společný) + specifický, slepené.
+      var diary=isEx?[sec&&sec.diary_exercise,item.diary_exercise].filter(Boolean).join("\n"):jr.journal;
+      if(diary) h+=journalCard(diary);
       // Zkrácené články (`show_link: true`) nabídnou plné znění na blogu.
       // Odkaz staví renderer, ne markdown — parser odkazy neumí a do těl se
       // zásadně nepíšou. Podmínka na https:// je pojistka, ať se do href
@@ -1136,7 +1320,7 @@
     open:function(key){
       state.menuOpen=false; state.detail=null;
       if(key==="favorites"){ state.page="favorites"; state.section=null; }
-      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="feelings"; }
+      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="feelings"; if(key==="journey") state.journey.sectionId=null; }
       scrollTop(); render();
     },
     // Přerámování
@@ -1164,10 +1348,14 @@
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
-    detail:function(type,id){ state.detail={ type:type, id:id, infoOpen:false }; scrollTop(); render(); },
+    detail:function(type,id){ state.detail={ type:type, id:id, tab:"body", chainOpen:false }; scrollTop(); render(); },
     detailBack:function(){ state.detail=null; scrollTop(); render(); },
-    detailInfo:function(){ if(state.detail) state.detail.infoOpen=!state.detail.infoOpen; render(); },
-    detailTab:function(i){ if(state.detail) state.detail.infoOpen=(i===1); scrollTop(); render(); },
+    detailTab:function(t){ if(state.detail) state.detail.tab=t; scrollTop(); render(); },
+    detailChain:function(){ if(state.detail) state.detail.chainOpen=!state.detail.chainOpen; render(); },
+    // Moje cesta
+    journeySection:function(id){ state.page="section"; state.section="journey"; state.detail=null; state.journey.sectionId=id; state.journey.tab="exercises"; scrollTop(); render(); },
+    journeyBack:function(){ state.journey.sectionId=null; scrollTop(); render(); },
+    journeyTab:function(t){ state.journey.tab=t; scrollTop(); render(); },
     // oblíbené
     fav:function(store,id){ toggleFav(store,id); render(); },
     // Enter v hledání zavře klávesnici. Na mobilu jinak není jak ji schovat —
