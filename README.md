@@ -43,6 +43,7 @@ Napříč všemi soubory platí:
 - **`sort_order`** určuje pořadí. U tripletu přerámování je lokální v rámci clusteru (restartuje na 1, hustě 1..N bez děr). U plochých typů obsahu je globální v rámci souboru.
 - **`tier`** je vždy `free` nebo `premium`.
 - **Tagy** jsou vždy lowercase a berou se **výhradně** z `tagy.json` v kořeni repa — viz Tagy níže.
+- **Tagy jsou v datech seřazené podle priority** (první = téma položky, 2.–3. nesou váhu, zbytek tie-break) a **appka to čte**: filtr (12. 9. 2026) skóruje položky vahou podle pozice zaškrtnutého tagu — viz Filtrování níže.
 - **`schemas`** nese kódy Youngových schémat (viz EMS model níže), **seřazené podle priority**. U clusterů je jich pět, u obsahu tři — a není to nedůslednost, ale rozdíl rolí:
   - **Cluster je zdroj profilu.** Kliknutí na pocit nasype váhu do všech pěti schémat (5,4,3,2,1), takže se čte i pátá pozice. Pět je tam potřeba.
   - **Obsah je cíl, který se skóruje.** Doporučovadlo čte jen pozice 1–2, třetí je zdokumentovaná rezerva pro případné rozšíření na 1–3. Pozice 4–5 by nečetlo nic — ani dnes, ani po plánovaném rozšíření.
@@ -221,7 +222,7 @@ Globální `sort_order` byl zvážen a **zamítnut**: byl by duplicitou k `id` a
 
 ### 7. Oddíly — `sections.json`
 
-Jedenáct oddílů, do kterých jsou cvičení rozdělená. Slouží plánované sekci **„Moje cesta"**: uživatel vidí seznam oddílů a po rozkliknutí stránku se submenu **Cvičení / Info / Teorie / Praxe** (výchozí Teorie). Tab se kreslí jen tehdy, když má obsah; když zbyde jediný, nekreslí se vůbec.
+Jedenáct oddílů, do kterých jsou cvičení rozdělená. Nesou sekci **„Moje cesta"** (nasazena 12. 9. 2026): uživatel vidí seznam oddílů a po rozkliknutí stránku se submenu **Cvičení / Info / Teorie / Praxe** (výchozí **Cvičení** — kdo otevře oddíl, chce cvičit, teorii si klikne; SPEC měl Teorii, změněno 12. 9. 2026). Tab se kreslí jen tehdy, když má obsah; když zbyde jediný, nekreslí se vůbec. Detail cvičení dědí `info`/`theory`/`practice` z oddílu — viz Cvičení níže.
 
 - **`perex`** — jedna věta, co oddíl nabízí. Zobrazí se v seznamu oddílů.
 - **`info`**, **`theory`**, **`practice`** — markdown pro jednotlivé taby submenu.
@@ -248,7 +249,7 @@ Jedenáct oddílů, do kterých jsou cvičení rozdělená. Slouží plánované
 
 Řetěz je sada cvičení s logickou návazností, kterou je doporučeno absolvovat popořadě. **V budoucnu z řetězů budou cesty ke zvládnutí.** Do řetězu patří jen část cvičení oddílu; každé má pevné místo dané polem `chain_order` na cvičení.
 
-V první verzi appky nese řetěz jen upozornění na stránce cvičení: badge s pořadím („2/5 — Cvičení je součástí řetězu") a doporučení začít od začátku. Po rozkliknutí se zobrazí název řetězu a seznam všech jeho cvičení s proklikem. Badge je **jediný nosič návaznosti** — žádné odkazy na první článek řetězu v textu, žádné pole `basics_ref` (zvažováno a zamítnuto). Řetězové cvičení smí v „Než začneme" jednou větou říct, na čem staví, ale bez prokliku.
+V appce nese řetěz jen box na stránce cvičení (nasazen 12. 9. 2026): pořadí („2/6 · Cvičení je součástí řetězu") s chevronem; po rozkliknutí název řetězu, doporučení začít od prvního a seznam všech jeho cvičení s proklikem, aktuální zvýrazněné. Box je **jediný nosič návaznosti** — žádné odkazy na první článek řetězu v textu, žádné pole `basics_ref` (zvažováno a zamítnuto). Řetězové cvičení smí v „Než začneme" jednou větou říct, na čem staví, ale bez prokliku.
 
 | ID | title | section_id | cvičení |
 |---|---|---|---|
@@ -380,7 +381,7 @@ Zdroje: `local/data_wip/strachy_wip/kanon_strachu_pocity.json` (kanon, zdroj pra
 
 Třetí brána sekce Přerámování. **Věta, kterou si člověk říká** („Nestíhám, nemám na nic čas!“, „Manžel(ka) mě štve čím dál víc.“, „Dnešní mládež za nic nestojí.“) → **hlášky** — krátká přerámování ušitá na tu jednu větu. **Bez napojení na triplet** (vědomě, MVP). Prefix `pain_`.
 
-**175 bolístek, 4199 hlášek** (11. 9. 2026). `smer` = na sebe (102) / na blízké (43) / na svět (29) — jediná čistá kategorie k rozkliknutí. `oblast` je stopa z tvorby (89 hodnot, mix úrovní, 23 bolístek ji nemá) — v datech zůstává, appka ji nezobrazuje; sjednocení až po škrtání. `src_id` = původní WIP ID (p_/h_/k_ = přestřelka / harvest / klastry) pro dohledání.
+**175 bolístek, 4199 hlášek** (11. 9. 2026). `smer` = na sebe (103) / na blízké (43) / na svět (29) — **appka ho nezobrazuje** (rozhodnuto 12. 9. 2026: je to autorská kategorie z výroby, ne otázka, kterou si člověk klade; seznam vět je jedno zrcadlo se searchem). `oblast` je stopa z tvorby (89 hodnot, mix úrovní, 23 bolístek ji nemá) — v datech zůstává, appka ji nezobrazuje; sjednocení až po škrtání. Hlášky nemají vlastní ID — v oblíbených a paměti viděného se adresují klíčem `pain_id:index` (např. `pain_0001:3`), který appka staví při načtení. `src_id` = původní WIP ID (p_/h_/k_ = přestřelka / harvest / klastry) pro dohledání.
 
 Hlášky mají `source`: **`k`** = Karolínka (3480, 20 na bolístku, základ — čeština čistší, tón konzistentní, laskavě ironický „z knihovny do normálu“) a **`n`** = náš pool (719, typicky 4 na bolístku, vybrané z 2625 jako doplněk portfolia — krátká rána, humor, provokace, tělo, obrat perspektivy; rodiny opakovaček max jedna na bolístku, kovboj nikdy). `k_222` („Celý můj kalendář jsou povinnosti pro ostatní“) je navíc proti schválenému seznamu, má jen 15 našich. **Cíl je top 15 na bolístku** — škrtá Bob v appce (režim provizorního adminu), `source` je tam proto, aby bylo vidět, který hlas přežil.
 
@@ -446,7 +447,7 @@ Nasazený 17. 7. 2026. **Zdroj pravdy je `<style>` blok v `cesta.html`** — nic
 
 **Dvě témata (light + dark).** Přepínač dole v hamburger menu, volba v `localStorage` (`mc_theme`); dokud si uživatel nevybere, jede se podle systému (`prefers-color-scheme`). `data-theme` se píše na `#mc-root`, ne na `<html>` — uvnitř Miowebu nad ním nemáme kontrolu.
 
-**Tón sekce.** Akční sekce (První pomoc, Tělesné příznaky, Přerámování, Cvičení) jedou červeně, čtecí (Otázky, Inspirace, Články, O appce) zeleně — „akční zásahový vs. volné čtení". Registr sekcí má pole `tone`, render píše `data-tone` na `#mc-root`. Řídí barvu nadpisů (včetně nadpisů uvnitř markdownu), odrážek, ikonek dlaždic a výběru.
+**Tón sekce (přerozděleno 12. 9. 2026).** Běžné používání — Moje cesta, Cvičení, Přerámování, Otázky, Inspirace, Články, O appce — jede **teal** (Bob mu říká „modrá"); **červená (accent)** zůstala jen pro zásah, když je zle: Tělesné příznaky a První pomoc. Registr sekcí má pole `tone`, render píše `data-tone` na `#mc-root`. Řídí barvu nadpisů (včetně nadpisů uvnitř markdownu), odrážek, ikonek dlaždic a výběru — tón platí pro celou sekci včetně vnitřku, ne jen pro dlaždici.
 
 **Typografie.** Fraunces (nadpisy, titulky karet, citáty) + Public Sans (UI a běžný text) + mono (metadata, čísla). Fraunces je variabilní font s osou `opsz` — nastavuje se explicitně podle velikosti (72 pro H1, 36 pro H2, 24 pro titulky), bez toho vypadá placatě. Váha nadpisů 600.
 
@@ -465,9 +466,9 @@ Vlastní proměnné nad rámec handoffu: `--tone`/`--tone-soft` (barva sekce), `
 
 ### Obal aplikace
 
-- **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce. Klik na název i na název v menu vede na úvod.
-- **Úvodní stránka** — nadpis „Dnešní inspirace" + náhodný citát, pod tím dlaždice po párech (První pomoc / Tělesné příznaky, Přerámování / Cvičení, Otázky / Inspirace, Články / O appce). Dlaždice vyplní zbytek výšky okna; pod 700px se samy zúží, aby se vešly bez scrollování.
-- **Menu** (z hamburgeru) — tytéž sekce jako svislý seznam řádků, vpravo případně badge novinek, dole přepínač světlého/tmavého režimu.
+- **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených) — **obrysové, plné jen když jsem v Oblíbených** (dřív se plnilo, když bylo cokoli uloženo; ten signál nikomu nic neříkal). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce. Klik na název i na název v menu vede na úvod.
+- **Úvodní stránka** — nadpis „Dnešní inspirace" + náhodný citát, pod tím **8 dlaždic** po párech v pořadí registru: Moje cesta / Cvičení, Přerámování / Otázky, Inspirace / Články, Tělesné příznaky / První pomoc. **První pomoc je dole u palce** (pořadí 12. 9. 2026 — lidé appku nepoužívají primárně pro krizi, ale když ji potřebují, má být na dosah). **O appce dlaždici nemá** (`tile:false`), jen řádek v menu — devátá dlaždice by trčela sama. Dlaždice vyplní zbytek výšky okna; pod 700px se samy zúží, aby se vešly bez scrollování.
+- **Menu** (z hamburgeru) — sekce v pořadí registru s oddělovacími linkami (`sep` na položce): Moje cesta, Cvičení | Přerámování, Otázky, Inspirace, Články | Tělesné příznaky, První pomoc | Oblíbené (s počtem), Tmavý/Světlý režim, O appce.
 
 ### Dnešní inspirace
 
@@ -479,34 +480,46 @@ Losuje se z těch, které uživatel ještě neviděl; po vyčerpání všech se 
 
 Napříč sekcemi se opakují tři tvary:
 
-1. **Seznam** — nadpis sekce + položky pod sebou (buttony nebo boxy).
+1. **Seznam** — nadpis sekce + položky pod sebou (buttony nebo boxy). **Vpravo od H1 pilulka „♡ N"** = přepínač „jen oblíbené" v téhle sekci (viz Oblíbené).
 2. **Detail** — nadpis a na stejném řádku vpravo u okraje ikony: šipka „Zpět" a (kde dává smysl) srdíčko. Pod tím obsah (markdown nebo boxy). Srdíčko má dva stavy (uloženo / neuloženo).
 3. **Filtrovaný seznam** (obsahové sekce s tagy) — viz níže.
+4. **Proud karet** (věty: triplet, hlášky, Inspirace, Otázky) — swipe místo seznamu, viz „Proud karet a paměť viděného".
 
 ### Filtrování obsahových sekcí (Cvičení, Otázky, Inspirace, Články)
 
 - **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam od nejnovějších; v submenu je zvýrazněné „Nejnovější". Žádná tagová brána, žádné tlačítko „Zobrazit".
-- **Submenu:** Nejnovější / (Redakce — jen Cvičení a Články) / Pro vás (jen když existuje profil) / ikona filtru.
-- **Filtr** je jedna ikona → rozbalí panel: nahoře keyword pole, pod ním pilulky — nejdřív `duration` (jen Cvičení), pak tagy. Bez nadpisů „Štítky"/„Délka", délku odliší accentový tón a mono písmo. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka. Enter v poli zavře klávesnici (blur) — filtruje se průběžně, není co odesílat.
+- **Submenu:** Nejnovější / (Redakce — jen Cvičení a Články) / Pro vás (jen když existuje profil) / tlačítko Filtr hned vedle; **u vět (Inspirace, Otázky) vpravo u okraje dvě ikonky**: oko (jen nové) a seznam/karty — viz „Proud karet".
+- **Filtr** je jedno tlačítko → rozbalí panel: nahoře keyword pole, pod ním pilulky — nejdřív `duration` (jen Cvičení), pak tagy. Bez nadpisů „Štítky"/„Délka", délku odliší accentový tón a mono písmo. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka. Enter v poli zavře klávesnici (blur) — filtruje se průběžně, není co odesílat.
 - **Tagy i délky se sčítají (OR), keyword se s nimi násobí (AND).** Víc zaškrtnutých tagů = širší výběr, ne užší; položka projde, když sedí na kterýkoli z nich. Původně byly tagy AND, ale u pár tagů na položku to vracelo skoro vždycky prázdno. Keyword zůstává AND — ten zužuje záměrně. Délka je multiple-choice stejně jako tagy.
+- **OR říká, co projde; priorita tagů v datech říká pořadí (12. 9. 2026).** Každý zaškrtnutý tag přičte položce váhu podle své pozice v jejím `tags`: `TAG_VAHY = [6, 5, 4, 3, 2, 1]` (první tag 6, šestý a další 1). Řadí se skóre ↓ → počet shod ↓ → `added_at` ↓ → `id`. Zaškrtnu `strach` + `tělo` → nahoře cvičení, kde jsou to témata, dole ta, co se strachu dotýkají na tie-breaku. Bez zaškrtnutého tagu se nic nemění (Nejnovější je Nejnovější); v Redakci s tagem přebije skóre náhodné pořadí. `TAG_VAHY` je jediná laditelná konstanta filtru — lineární je bezpečný start, strmější (`[8,5,3,2,1,1]`) by nechal dominovat první tag.
 - Panel drží stav; zavření panelu filtr nemaže. Ikona filtru ukazuje počet aktivních filtrů (keyword se počítá jako jeden).
 - **`quality` není ve filtru** — „ukaž mi to nejlepší" pokrývá submenu Redakce. Quality je kurátorský nástroj, ne uživatelský ovladač.
 - Naznačený řádek doporučených tagů (viz sekce níže) je **budoucí rozšíření**, ne MVP — vyžaduje kurátorskou údržbu, kterou zatím nemáme.
 - `duration` (cvičení) a `reading_time` (články) zůstávají v datech pod svými jmény; v UI se zobrazují jednotně jako čas (ikonka hodin + „X min").
 
+### Proud karet a paměť viděného (12. 9. 2026)
+
+Pro **věty** — triplet přerámování, hlášky bolístek, Inspirace, Podnětné otázky — má appka vedle seznamu **proud karet**: swipe doprava, jedna věta = jedna karta přes obrazovku, velkým Fraunces vycentrovaná (velikost písma podle délky věty), počítadlo „3 / 48" mono vlevo dole a srdíčko vpravo dole (u palce). Ideální použití: tramvajová zastávka — pár vět, srdíčko, pryč, zítra zas. Články, cvičení, krizovka a tělo proud nemají — tam se čte struktura, ne věta.
+
+- **Mechanika:** CSS `scroll-snap` horizontálně, bez knihovny. Výška karty se váže na okno (`100vh − 230px`, 400–720 px) — **uvnitř Miowebu je to výška elementu, ne okna; ověřit v embedu.**
+- **Měkký odchod:** každých `SWIPE_BREAK = 10` karet vložený předěl „Stačí pro dnes?" (*Zavřít / Ještě pár*), na konci „To je všechno nové. Zítra zas." + *Zobrazit i viděné*. Appka sama nabízí odchod — jinak lidé swipují do konce s pocitem nedokoukaného seriálu.
+- **Přepínač seznam / karty** = ikonka vpravo v řádku submenu; volba je **globální** v `localStorage` (`mc_view`) — je to vkus, ne kontext. Seznam je default.
+- **Paměť „viděl jsem"** (`USER.seen[store] = [id…]`) **se plní jen v proudu karet** (karta na obrazovce = přečtená) a srdíčkem. **Seznam ji nikdy nepíše** — proscrollovat 50 karet není vidět je; IntersectionObserver v seznamu byl zvážen a zamítnut (odhad, ne důkaz). Nové položky v datech jsou automaticky neviděné, žádná migrace.
+- **Přepínač „jen nové"** = ikona oka vedle přepínače karet: otevřené oko = vidím všechno, škrtnuté = viděné schované (s mini badge počtu nových). Globální (`USER.onlyNew`), pořád na očích, klik přepíná. Když jsou nové vyčerpané: „Všechno z tohohle už jste viděli · Zobrazit i viděné". Proud si při „jen nové" **snímkuje** seznam při vstupu (`state.swipe`), jinak by karty mizely pod rukama, jak se označují za viděné.
+
 ### Navigace a stav
 
-- **Šipka „Zpět" vede tam, odkud jsem přišel**, ne na fixní seznam. Do téhož detailu se dá dojít ze seznamu, z Oblíbených i z „Pro vás"; detail si pamatuje návratový bod.
+- **Šipka „Zpět" vede tam, odkud jsem přišel**, ne na fixní seznam. Do téhož detailu se dá dojít ze seznamu, z Oblíbených i z „Pro vás"; detail si pamatuje návratový bod. V Přerámování vede Zpět z tripletu na pocity / skupinu strachů / situaci podle toho, odkud se přišlo (`rf.origin`).
 - **Výběr pocitů v Přerámování se drží v rámci relace** — přežije přepnutí sekce, ale neukládá se (refresh = čistý stůl). Že něco visí vybráno, je vidět na spodním tlačítku „Zobrazit přerámování (N)".
 - **Tělesné příznaky** se řadí abecedně (ne podle `sort_order`).
 
 ### Odchylky u Přerámování
 
-Přerámování se od ostatních sekcí liší: keyword hledá v **pocitech** (vstup do výběru), ne ve výsledném obsahu — proto je search samostatně nahoře, ne v filtračním panelu. Sloučení keyword+tagy se Přerámování netýká. Popisek clusteru pod boxy se zobrazuje jen v merged režimu (víc pocitů); u jednoho pocitu je zbytečný (všechny boxy jsou z jednoho clusteru).
+Přerámování se od ostatních sekcí liší: keyword hledá v **pocitech / strachách / větách** (vstup do výběru), ne ve výsledném obsahu — proto je search samostatně nahoře, ne v filtračním panelu. Sloučení keyword+tagy se Přerámování netýká. Popisek clusteru pod boxy se zobrazuje jen v merged režimu (víc pocitů, nebo triplet ze strachu); u jednoho pocitu je zbytečný (všechny boxy jsou z jednoho clusteru).
 
 ### Budoucí rozšíření (mimo MVP)
 
-- **Připínání „rychlé pomoci"** zamítnuto: srdíčko už plní účel „mít po ruce", druhý mechanismus by jen dělil totéž. Oblíbené zůstávají jediná sbírka, členěná po typech.
+- **Připínání „rychlé pomoci"** zamítnuto: srdíčko už plní účel „mít po ruce", druhý mechanismus by jen dělil totéž. Oblíbené zůstávají jediná sbírka (globálně po typech, per sekce přepínačem u H1).
 - Naznačený řádek doporučených tagů nad seznamem.
 - Strop diverzity a další ladění doporučování (viz Doporučování obsahu).
 
@@ -514,9 +527,9 @@ Přerámování se od ostatních sekcí liší: keyword hledá v **pocitech** (v
 
 ## Sekce aplikace a jejich chování
 
-### Přerámování — tři brány (rozhodnuto 11. 9. 2026, appka zatím implementuje jen první)
+### Přerámování — tři brány (rozhodnuto 11. 9. 2026, nasazeno 12. 9. 2026)
 
-Sekce má po vstupu **tři velké dlaždice** — tři způsoby, jak člověk pojmenuje svůj stav. Každá dlaždice nese jednu větu „kdy sem“, protože názvy samy o sobě uživatel v akutním módu nerozliší:
+Sekce má po vstupu **tři karty** (rozcestník) — tři způsoby, jak člověk pojmenuje svůj stav. Každá nese jednu větu „kdy sem“, protože názvy samy o sobě uživatel v akutním módu nerozliší:
 
 | brána | jazyk uživatele | data | kam vede |
 |---|---|---|---|
@@ -524,12 +537,14 @@ Sekce má po vstupu **tři velké dlaždice** — tři způsoby, jak člověk po
 | **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → `fears` → `clusters` | triplet přes merged interleaving |
 | **Bolístky** | *„Mám v hlavě větu, která bolí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
 
-**Brána Strachy** má dvě úrovně, obě dostupné z jedné obrazovky (kategorie k rozkliknutí = `group`):
+**Brána Strachy** — jedna obrazovka: search nahoře (hledá v názvech i `aliases` **napříč oběma vrstvami**, včetně skryté skupiny; „maturita“ najde zkoušku), pod ním submenu **Konkrétní strachy / Jádrové strachy** (situace první — to je jazyk uživatele) a **seznam kategorií s počtem** (`group`; 10 u situací, 34 u kanonu — skupina `Obranné` je mimo nabídku, jen do hledání) → klik → položky skupiny.
 
-- **Kanonový strach** (klik na „Selžu“ ve skupině *Selžu*) → rovnou triplet. Appka vezme `cluster_ids` strachu a pustí merged interleaving, jako by uživatel vybral víc pocitů naráz — pocity jsou pod kapotou, žádný mezikrok s výběrem. **Do tripletu jdou první 3 z 5** (`cluster_ids.slice(0, 3)`, laditelná konstanta vedle `VAHY_POZIC`); pozice 4–5 jsou v datech, ale v kolovém interleavingu by dostaly stejné slovo jako první a ředily by výsledek.
-- **Situace** (klik na „zkouška“ ve skupině *Výkon a hodnocení*) → podle `mark`: `P` ukáže přerámování, `E` dvě věty empatie, `K` vede rovnou na Krizovku. Pod tím tlačítko **„Co je pod tím?“** → nabídka jejích `fear_ids` (3–6 kanonových strachů) → klik → triplet jako výše. Tedy zkouška → Co je pod tím → Selžu → triplet, dva kliky. Vyhledávací pole nad situacemi hledá i v `aliases`.
+- **Kanonový strach** (klik na „Selžu“ ve skupině *Selžu*) → rovnou triplet. Appka vezme `cluster_ids` strachu a pustí merged interleaving, jako by uživatel vybral víc pocitů naráz — žádný mezikrok s výběrem. **Do tripletu jdou první 3 z 5** (`FEAR_CLUSTERS = 3`, laditelná konstanta); pozice 4–5 jsou v datech, ale v kolovém interleavingu by dostaly stejné slovo jako první a ředily by výsledek. Titulek tripletu = název strachu, pod ním **tři jádrové pocity, ze kterých to jde** — uživatel je nevybíral, ale vidí, odkud přerámování pocházejí („Co je pod tím“ dotažené do konce). Karty nesou jméno pocitu jako meta (merged režim).
+- **Situace** (klik na „zkouška“ ve skupině *Výkon a hodnocení*) → podle `mark`: `P` ukáže přerámování jako karty, `E` věty empatie kurzívou, `K` box + tlačítko „Otevřít První pomoc“. Přerámování situací **nemají srdíčka** (nemají ID; šlo by klíčem `sit_id:index` jako u hlášek, zatím ne). Pod tím **„Co je pod tím?“** → chipsy jejích `fear_ids` (3–6 kanonových strachů) → klik → triplet jako výše. Tedy zkouška → Co je pod tím → Selžu → triplet, dva kliky. Zpět z tripletu vede na situaci, z ní na skupinu.
 
-**Brána Bolístky**: kategorie k rozkliknutí = `smer` (na sebe / na blízké / na svět), pak seznam vět, klik → hlášky. `oblast` se nezobrazuje. Na road trip (září 2026) se appka tweakne na **provizorní admin** — Bob v ní škrtá hlášky z ~24 na 15 a maže evidentní chyby v tripletu; výsledek se pak propíše zpět do zdrojů.
+**Brána Bolístky** — **bez kategorií** (rozhodnuto 12. 9. 2026, `smer` se nezobrazuje): jedno zrcadlo 175 vět se searchem, po 30 („Dalších 30“), klik → věta jako titulek, hlášky jako karty se srdíčky (klíč `pain_id:index`). Hlášky umí proud karet i „jen nové“. Na road trip (září 2026) se appka tweakne na **provizorní admin** — Bob v ní škrtá hlášky z ~24 na 15 a maže evidentní chyby v tripletu; výsledek se pak propíše zpět do zdrojů.
+
+**Oblíbené v sekci** (pilulka u H1 rozcestníku): uložená přerámování jsou napříč klastry, proto se ukazují jako jeden seznam po typech (přerámování / otázky / úkoly / bolístky), ne po pocitech.
 
 Otevřené, vědomě odložené: bolístky nemají most k tripletu (kanon má „Nebýt potřebný“, bolístky „Nikdo mě nepotřebuje“ — jednou si o něj řeknou); situace by mohly nabízet i „rovnou k přerámování“ se součtem pocitů přes všechny své strachy.
 
@@ -589,9 +604,9 @@ dokud existuje klastr s nevyčerpaným seznamem:
 ── VÝSTUP ──  merged  (stránkovat po 50)
 ```
 
-### Mikročlánky
+### Články
 
-Submenu: Nejnovější / Redakce / Pro vás. Nad seznamem dva řádky doporučených tagů s ikonou pro rozbalení všech.
+Submenu: Nejnovější / Redakce / Filtr (Pro vás až s profilem; řádek doporučených tagů je budoucnost).
 
 - **Nejnovější** (výchozí): perexy od nejnovějších.
 - **Redakce:** perexy článků s `quality` = 5, při každém zobrazení náhodné pořadí.
@@ -603,7 +618,9 @@ Radiobutton „Nepřečtené" filtruje jen nepřečtené články. Přečtené s
 
 Submenu: Nejnovější / Redakce / Pro vás (stejná logika jako mikročlánky). Ve výchozím zobrazení seznam tagů rozdělený do kategorií (viz výše).
 
-**Detail cvičení** (podle mockupu `exercise.html`): tag pilulky nad názvem → název → perex → tabbar **Postup / Info** (Postup výchozí, aktivní tab tmavý, Info nese tečku) → duration strip s ikonkou → kroky → journal-card.
+**Detail cvičení** (dotažen k SPEC 12. 9. 2026, společný pro sekci Cvičení i Moje cesta): tag pilulky nad názvem → název → perex → řádek **„Oddíl 04 · Relaxace a pocit bezpečí ›“** (most do Moje cesta) → tabbar **Postup / Info / Teorie / Praxe** (Postup výchozí, aktivní tab tmavý, ostatní nesou tečku; tab jen když má obsah) → pod Postupem **box náročnosti** (Trvání `duration` · Praxe `frequency / training_period` · Náročnost jako barevná pilulka nízká/střední/vysoká; návrh `local/_design/box_náročnosti.jpg`) → **box řetězu** (když `chain_id`) → **box upozornění** (když `warning`) → kroky → **přílohy** (`attachments`, 16 cvičení — karta s titulkem a markdown tělem) → journal-card.
+
+Info / Teorie / Praxe se u cvičení **dědí z oddílu** (`exercise.info` atd. jsou v datech vždy `null`); `info_extra` / `theory_extra` cvičení se předřadí nad oddílový text. Praxe vkládá `section.diary_practice` jako journal-card pozičně za druhý blok. **Journal-card v Postupu se kreslí z polí** `section.diary_exercise` + `exercise.diary_exercise` (slepené, nejdřív oddílové) — v `body` cvičení žádný deník není, `splitJournal` se u cvičení nevolá.
 
 **Kroky** se skládají z číslovaného seznamu v markdownu — CSS countery nad `<ol>` dělají kolečko s číslem, vertikální linku a titulek kroku (tučný text na začátku položky). Datový model se nesahá, ale **vzor v datech je závazný**:
 
@@ -615,17 +632,25 @@ Submenu: Nejnovější / Redakce / Pro vás (stejná logika jako mikročlánky).
 
 Když se vzor poruší, kroky se rozpadnou na obyčejný seznam.
 
-**Duration strip** je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Bere přímo pole `duration` = jedna performance cvičení.
+**Box náročnosti** nahradil duration strip a je jen u cvičení (články nesou čas pilulkou, jinak by ho měly dvakrát). Trvání bere přímo pole `duration` = jedna performance cvičení.
 
 **Praxe (oddílová)** — `## Úvodní motivace` → `## Uvedení do praxe` → *(sem renderer vloží `section.diary_practice`)* → volitelné bloky → závěrečný blok s živým nadpisem („Jak začlenit relaxaci do každodenního života“; SPEC §5 měl jednotné „Začlenění do každodenního života“, 11. 9. 2026 rozhodnuto nechat živé nadpisy a vkládat deník pozičně za druhý blok). Oddílové `theory`/`practice` vykají, Postup je „my“ — záměr, ne chyba.
 
-**Journal-card** — závěrečný blok `## Zápis do deníku` v těle se odděluje (`splitJournal`) a renderuje jako samostatná tealová karta s ikonou deníku, oddělená od červeného postupu. Otázky v ich-formě.
+**Journal-card** — tealová karta s ikonou deníku, oddělená od postupu. Otázky v ich-formě. U cvičení se staví z polí (viz výše); `splitJournal` (oddělení bloku `## Zápis do deníku` z těla) zůstává jen pro ostatní typy, kde dnes žádný deník není — kandidát na Viktora.
 
 CTA „Dokončit cvičení" z mockupu **není implementované** — appka nemá koncept dokončení cvičení, byla by to nová funkce i s daty.
 
+### Moje cesta (nasazeno 12. 9. 2026)
+
+Cvičebnice po oddílech — první dlaždice appky. Seznam 11 oddílů jako karty (číslo mono, název, perex, počet cvičení; oddíly 01–03 „text“). Klik → oddíl:
+
+- **01–03** (bez cvičení): jen `theory` jako text.
+- **04–11**: submenu **Cvičení / Info / Teorie / Praxe**, výchozí Cvičení. Seznam cvičení podle `sort_order` s řádkem metadat (čas · náročnost · řetěz „⛓ 2/6“ · ⚠ když má warning), klik → detail cvičení (stejný jako v sekci Cvičení). Praxe s `diary_practice` jako journal-card za druhým blokem.
+- Zpět z detailu cvičení vede zpět do oddílu; pilulka ♡ u H1 ukáže uložená cvičení s oddílem jako meta.
+
 ### Inspirace a Podnětné otázky
 
-Submenu: Nejnovější / Pro vás. Dva řádky doporučených tagů s rozbalením. „Nejnovější" řadí od nejnovějších, „Pro vás" doporučuje podle profilu.
+Submenu: Nejnovější / Filtr, vpravo oko („jen nové") a přepínač seznam/karty. „Nejnovější" řadí od nejnovějších; s tagy ve filtru řadí priorita tagů. Umí proud karet a paměť viděného. („Pro vás" a řádek doporučených tagů jsou budoucnost — obě sady jsou bez `schemas`, doporučování se jich netýká.)
 
 ### První pomoc v krizi, Tělesné příznaky
 
@@ -633,11 +658,14 @@ Prostý seznam → klik → strukturovaný text → možnost uložit do oblíben
 
 ### Oblíbené
 
-Napříč sekcemi: klepnutí na srdíčko u položky ji uloží. Sekce oblíbených je rozdělená do kategorií obsahu.
+Napříč sekcemi: klepnutí na srdíčko u položky ji uloží (a označí za viděnou). Dvě cesty k uloženému (12. 9. 2026):
 
-Položky, které mají vlastní detail (První pomoc, Tělesné příznaky, Články, Cvičení), jsou odsud **prokliknutelné** — `FAV_VIEW` má u nich `detail:true`. Přerámování, Inspirace a Podnětné otázky detail nemají ani ve svých sekcích, takže odkaz nemají ani tady.
+- **Globální feed** (srdíčko v hlavičce) — všechno po typech, včetně skupiny „Bolístky“ (hlášky, s větou bolístky jako meta).
+- **Per sekce** — pilulka **„♡ N“ vpravo od H1** v každé sekci kromě O appce: přepínač „jen oblíbené“, zapnutý = plný; seznam ukáže jen uložené, filtr / keyword / Redakce se s tím násobí (AND), perex sekce se schová. Stav drží relace (`secState.favOnly`). Prázdný stav: „V téhle sekci zatím nic uloženého.“ Pilulka je menší a obrysová, ať se nečte jako „uložit celou sekci“ — počet ji vysvětlí. Přerámování → skupiny po typech (viz brány), Moje cesta → uložená cvičení s oddílem.
 
-Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` musí odpovídat rendereru sekce — Podnětné otázky jsou `quote`, ne `text`).
+Položky, které mají vlastní detail (První pomoc, Tělesné příznaky, Články, Cvičení), jsou odsud **prokliknutelné** — `FAV_VIEW` má u nich `detail:true`. Přerámování, hlášky, Inspirace a Podnětné otázky detail nemají ani ve svých sekcích, takže odkaz nemají ani tady.
+
+Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` musí odpovídat rendereru sekce — Podnětné otázky jsou `quote`, ne `text`). Skupiny kreslí jedna funkce `favGroups(stores)` pro globální feed i sekční přepínač.
 
 ---
 
@@ -702,12 +730,17 @@ Oblíbené a přečtené:
     "reframings": ["ref_0042"],
     "reframing_questions": ["refq_0042"],
     "reframing_actions": ["refa_0042"],
+    "pains": ["pain_0001:3"],
     "inspirations": ["inspir_0012"],
     "questions": ["quest_0005"]
   },
-  "read": ["art_0003", "art_0005"]
+  "read": ["art_0003", "art_0005"],
+  "seen": { "reframings": ["ref_0001", "ref_0002"], "pains": ["pain_0001:0"] },
+  "onlyNew": false
 }
 ```
+
+`seen` = paměť viděného per store (plní jen proud karet a srdíčko), `onlyNew` = přepínač „jen nové“. Vedle toho v `localStorage` samostatně `mc_theme` (světlý/tmavý) a `mc_view` (seznam/karty). Paměť je per doména — Pages a Mioweb si ji nesdílí, stejně jako oblíbené.
 
 Notifikace nového obsahu — počet položek, kde `added_at > last_seen[kategorie]`, je číslo na badge; klik na kategorii aktualizuje timestamp:
 
@@ -741,22 +774,21 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 
 | Oblast | Stav |
 |--------|------|
-| Datový model všech 11 typů | ✅ finální struktura |
+| Datový model všech 16 souborů | ✅ finální struktura |
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
-| Frontend — obal + registr sekcí | ✅ funkční |
-| Frontend — všechny sekce | ✅ živé v `cesta.html` nad 11 JSONy (`sections`/`chains` se zatím nenačítají — viz TODO „Cvičení: dotáhnout appku k SPEC“); `fears`/`situations`/`pains` appka zatím nezná (přidané 11. 9. 2026, ohýbání sekce Přerámování na tři brány je další krok) |
+| Frontend — obal + registr sekcí | ✅ funkční, 8 dlaždic + menu z jednoho registru |
+| Frontend — všechny sekce | ✅ živé v `cesta.html` nad všemi 16 JSONy (12. 9. 2026): Moje cesta, Cvičení s detailem k SPEC, Přerámování se třemi branami, oblíbené per sekce, proud karet s pamětí viděného |
 | Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
-| Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný |
+| Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný; tóny přerozdělené 12. 9. 2026 |
 | Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |
-| Vizuál — karty Přerámování | 🔄 čekají na doladění (větší karty, výraznější věty) |
-| Přerámování — triplet obsahu | 🔄 testovací fáze, zatím 4 klastry |
-| Ostatní obsah (články, cvičení, inspirace, otázky, krizovka, tělo) | 🔄 vzorek, plní se |
-| Pravidla pro generování obsahu (prompty) | 🔄 rozpracovaná, viz Otevřené otázky |
-| Embed kompletní verze do Miowebu | 🔲 neověřeno |
+| Vizuál — karty proudu | 🔄 funkční, čekají na design pass (písmo, plocha, tón) |
+| Triplet přerámování | ✅ kompletní 116/116 klastrů (5202 R / 3592 Q / 3611 A), nepročištěný |
+| Strachy, situace, bolístky | ✅ nasazené v datech i appce; 44× `[ověřit]`, škrtání hlášek na 15 čeká |
+| Ostatní obsah (články 112, cvičení 71, inspirace 202, otázky 251, krizovka 12, tělo 31) | ✅ nasazený, obsahově neprověřený (viz TODO) |
+| Embed kompletní verze do Miowebu | 🔲 neověřeno (nově i výška proudu karet) |
+| Provizorní admin (škrtání v appce) | 🔲 na závěr před road tripem |
 | Admin nástroj | 🔲 k přestavbě od základu (stávající je zastaralý) |
-
-Reálná čísla obsahu (testovací fáze): triplet pokrývá 4 klastry — `cl_0001` neviditelný, `cl_0008` zbytečný, `cl_0013` nedůvěřivý, `cl_0031` špatný.
 
 ---
 
@@ -767,7 +799,7 @@ Tenhle dokument popisuje, jak věci jsou; `TODO.md`, co se má stát.
 
 ### Stav pročištění obsahu (18. 7. 2026)
 
-crisis, body, exercises i articles jsou **pročištěné a naformátované** — slouží jako etalon pro prompty v `local/_prompty/`. Duplicitní názvy pryč, cvičení má bloky `##`, tělo pevný skelet 7 bloků, telefonní čísla v krizovce v `**bold**` (renderer je obarví tónem). Formátovací pravidla jednotlivých sekcí drží ty prompty, ne tento dokument.
+crisis, body (původních 5), exercises i articles jsou **pročištěné a naformátované** — slouží jako etalon pro prompty v `local/_prompty/`. Duplicitní názvy pryč, cvičení má bloky `##`, tělo pevný skelet 7 bloků, telefonní čísla v krizovce v `**bold**` (renderer je obarví tónem). Formátovací pravidla jednotlivých sekcí drží ty prompty, ne tento dokument.
 
 ### Odrážkové pravidlo (Bobovo, odvozené z krizovky)
 
@@ -792,7 +824,7 @@ cesta/
 ├── README.md                tento dokument — jak věci JSOU
 ├── TODO.md                  co se má stát (dělené podle toho, kdo to utáhne)
 ├── CLAUDE.md                pracovní brífink pro Claude Code
-├── _scratch/                hrací písek (mimo git)
+├── _scratch/                hrací písek (mimo git) — v tests/ headless testy appky (jsdom)
 └── local/                   osobní podklady a rozpracovaná data (mimo git)
     ├── data_wip/            zdrojáky obsahu před nasazením do data/
     ├── _prompty/            prompty pro generování obsahu
@@ -816,6 +848,8 @@ Aplikace stojí na **registru sekcí** — jeden `SECTIONS = [...]` řídí úvo
 ### Spuštění
 
 **Lokálně:** `python -m http.server 8777` v kořeni → `http://localhost:8777/cesta.html`. Otevření souboru z disku nefunguje (fetch potřebuje HTTP).
+
+**Headless testy:** `_scratch/tests/` (mimo git) — jsdom načte `cesta.html`, `fetch` čte z `data/`, testy klikají přes `window.MC.*` a kontrolují DOM. `node test.js` atd., viz README tam. Nemá layout — swipe a výšky ověří jen mobil.
 
 **Na mobilu:** `https://haryzek.github.io/cesta/` → „Moje cesta" → v Chrome „Přidat na plochu". Cache je na HTML i JSONech vypnutá, takže po pushi stačí appku zavřít a znovu otevřít.
 
