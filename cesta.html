@@ -362,24 +362,23 @@
   /* ===== PROUD KARET (swipe) =====
      Horizontální scroll-snap, jedna karta = šířka obrazovky. Výška se váže
      na okno; uvnitř Miowebu je to výška elementu — ověřit v embedu. */
-  .mc-swipe-wrap{ position:relative; padding:12px 0 0; }
-  .mc-swipe-count{ position:absolute; top:22px; left:0; right:0; text-align:center; font-family:var(--mono); font-size:11px; color:var(--muted); pointer-events:none; z-index:1; }
+  .mc-swipe-wrap{ padding:12px 0 0; }
   .mc-swipe{ display:flex; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
     scrollbar-width:none; gap:0; height:calc(100vh - 230px); min-height:400px; max-height:720px; }
   .mc-swipe::-webkit-scrollbar{ display:none; }
   .mc-swipe-card{ flex:0 0 100%; width:100%; scroll-snap-align:start; scroll-snap-stop:always; display:flex; flex-direction:column;
-    padding:34px var(--gutter) 16px; box-sizing:border-box; }
-  .mc-swipe-card .sc-body{ flex:1; min-height:0; overflow-y:auto; display:flex; flex-direction:column; justify-content:center;
-    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:28px 24px; text-align:center; }
+    padding:4px var(--gutter) 12px; box-sizing:border-box; }
+  .mc-swipe-card .sc-body{ position:relative; flex:1; min-height:0; overflow-y:auto; display:flex; flex-direction:column; justify-content:center;
+    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:48px 24px 32px; text-align:center; }
+  .mc-swipe-card .sc-count{ position:absolute; top:16px; left:18px; font-family:var(--mono); font-size:11px; color:var(--muted); }
+  .mc-swipe-card .sc-body .mc-heart{ top:9px; right:10px; }
+  .mc-swipe-card .sc-body .mc-heart svg{ width:24px; height:24px; }
   .mc-swipe-card .sc-text{ font-family:var(--serif); font-weight:400; color:var(--text); line-height:1.35; letter-spacing:-0.01em; font-variation-settings:'opsz' 36; }
   .mc-swipe-card .sc-text.xl{ font-size:30px; }
   .mc-swipe-card .sc-text.lg{ font-size:24px; }
   .mc-swipe-card .sc-text.md{ font-size:20px; line-height:1.4; }
   .mc-swipe-card .sc-text.sm{ font-size:17px; line-height:1.5; font-variation-settings:'opsz' 24; }
   .mc-swipe-card .sc-meta{ margin-top:18px; font-family:var(--mono); font-size:11px; color:var(--soft); }
-  .mc-swipe-card .sc-foot{ display:flex; justify-content:center; padding-top:10px; }
-  .mc-swipe-card .sc-foot .mc-heart{ position:static; }
-  .mc-swipe-card .sc-foot .mc-heart svg{ width:28px; height:28px; }
   .mc-swipe-card.break .sc-body{ background:var(--surface-2); border-style:dashed; }
   .mc-swipe-card .sc-actions{ display:flex; gap:8px; justify-content:center; margin-top:24px; flex-wrap:wrap; }
   .mc-swipe-card .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
@@ -1619,27 +1618,27 @@
     var idx={}; items.forEach(function(it){ idx[it.id]=it; });
     var list=sw.ids.map(function(id){ return idx[id]; }).filter(Boolean);
     if(!list.length) return USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>';
-    var h='<div class="mc-swipe-wrap"><div class="mc-swipe-count" id="mc-swipe-count"></div><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">';
+    var h='<div class="mc-swipe-wrap"><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">';
     list.forEach(function(it,i){
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
-      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'" data-n="'+(i+1)+'"><div class="sc-body"><div class="sc-text '+size+'">'+esc(it.text)+'</div>'+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+'</div>';
-      h+='<div class="sc-foot">'+heartBtn(store,it.id,isFav(store,it.id))+'</div></div>';
+      // Počítadlo vlevo nahoře a srdíčko vpravo nahoře v kartě — nic mimo ni.
+      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
+      h+='<div class="sc-text '+size+'">'+esc(it.text)+'</div>'+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+'</div></div>';
       if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
     h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"To je všechno nové. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div>';
     return h+'</div></div>';
   }
-  // Po překreslení: obnovit pozici, napojit počítadlo a označování viděných.
+  // Po překreslení: obnovit pozici a označovat viděné podle karty na obrazovce.
   function bindSwipe(){
     var el=document.getElementById("mc-swipe"); if(!el) return;
-    var store=el.getAttribute("data-store"), cards=el.children, total=el.querySelectorAll(".mc-swipe-card:not(.break)").length;
+    var store=el.getAttribute("data-store"), cards=el.children;
     function w(){ return el.clientWidth||1; }
     function update(){
       var i=Math.round(el.scrollLeft/w()); if(i<0)i=0; if(i>=cards.length)i=cards.length-1;
       state.swipe.index=i;
-      var c=cards[i], cnt=document.getElementById("mc-swipe-count");
+      var c=cards[i];
       if(c&&c.getAttribute("data-id")) markSeen(store,c.getAttribute("data-id"));
-      if(cnt) cnt.textContent=c&&c.getAttribute("data-n")?c.getAttribute("data-n")+" / "+total:"";
     }
     el.scrollLeft=state.swipe.index*w();
     var t; el.addEventListener("scroll",function(){ clearTimeout(t); t=setTimeout(update,80); });
