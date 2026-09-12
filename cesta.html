@@ -317,6 +317,20 @@
   .mc-name-item .sub svg{ width:12px; height:12px; }
   .mc-name-item .sub .warn{ color:var(--accent); }
 
+  /* ===== PŘERÁMOVÁNÍ — brány ===== */
+  .mc-gates{ padding-top:20px; }
+  .mc-gates .mc-card{ padding:20px 50px 20px 20px; }
+  .mc-gates .gate-hint{ margin-top:4px; color:var(--soft); font-style:italic; }
+  .mc-card.nofav{ padding-right:20px; }
+  .mc-name-item .sub-n{ margin-left:auto; font-family:var(--mono); font-size:11px; color:var(--soft); }
+  /* Zrcadlo bolístek: věty, ne názvy — sans, menší, bez serifové váhy */
+  .mc-mirror .mc-name-item .n{ font-family:var(--sans); font-weight:500; font-size:15px; line-height:1.4; }
+  .mc-under{ margin:26px var(--gutter) 0; padding-top:18px; border-top:1px solid var(--border); }
+  .mc-under h2{ color:var(--tone); }
+  .mc-under p{ color:var(--soft); font-size:14.5px; line-height:1.55; margin:6px 0 12px; }
+  .mc-under .mc-chips{ padding:0; }
+  .mc-fab-wrap.static{ position:static; padding:16px var(--gutter) 0; background:none; pointer-events:auto; }
+
   /* ===== MOJE CESTA — oddíly ===== */
   .mc-card-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); margin-bottom:6px; }
   .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
@@ -540,10 +554,24 @@
     reframings:"reframings.json", questions_rf:"reframing_questions.json", actions:"reframing_actions.json",
     crisis:"crisis.json", body:"body.json", exercises:"exercises.json",
     sections:"sections.json", chains:"chains.json",
+    fears:"fears.json", situations:"situations.json", pains:"pains.json",
     inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json"
   };
   // Náročnost cvičení → tón pilulky (viz .mc-diff)
   var DIFF_CLASS = { "nízká":"low", "střední":"mid", "vysoká":"high" };
+
+  // Brána Strachy: kolik jádrových pocitů strachu jde do tripletu. Strach má
+  // 5 cluster_ids od nejtypičtějšího; kolový interleaving by pozicím 4–5 dal
+  // stejné slovo jako první a ředil by výsledek. Laditelná konstanta.
+  var FEAR_CLUSTERS = 3;
+  // Skupina kanonových strachů mimo hlavní nabídku (jen do vyhledávání).
+  var FEAR_HIDDEN_GROUP = "Obranné";
+  // Tři brány sekce Přerámování — tři způsoby, jak člověk pojmenuje svůj stav.
+  var GATES = [
+    { key:"feelings", label:"Jádrové pocity", hint:"Vím, co cítím." },
+    { key:"fears",    label:"Strachy",        hint:"Bojím se něčeho konkrétního." },
+    { key:"pains",    label:"Bolístky",       hint:"Mám v hlavě větu, která bolí." }
+  ];
 
   // triplet přerámování
   var TYPES = [
@@ -565,7 +593,7 @@
 
   var STORE_KEY = "mc_kompletni_v1";
   var FAV_STORES = ["crisis","body","articles","exercises",
-                    "reframings","reframing_questions","reframing_actions","inspirations","questions"];
+                    "reframings","reframing_questions","reframing_actions","pains","inspirations","questions"];
   // mapování store -> {dataKey, jak zobrazit v oblíbených}
   // detail:true = položka má vlastní stránku, na kterou se dá z oblíbených
   // prokliknout. Přerámování, Inspirace a Otázky detail nemají ani ve svých
@@ -580,6 +608,9 @@
     { store:"reframings",          dataKey:"reframings",   label:"Přerámování",          kind:"text" },
     { store:"reframing_questions", dataKey:"questions_rf", label:"Otázky (přerámování)", kind:"text" },
     { store:"reframing_actions",   dataKey:"actions",      label:"Úkoly",                kind:"text" },
+    // Hlášky nemají vlastní ID — klíč je pain_id:index, index do itemIndex.hlasky
+    // se staví v prepare(). Meta pod hláškou nese větu bolístky.
+    { store:"pains",               dataKey:"hlasky",       label:"Bolístky",             kind:"text" },
     { store:"inspirations",        dataKey:"inspirations", label:"Inspirace",            kind:"quote" },
     { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"quote" }
   ];
@@ -633,7 +664,12 @@
 
   var state = {
     page:"home", section:null, menuOpen:false,
-    rf:{ view:"feelings", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50 },
+    // view: gates | feelings | fears | fearGroup | situation | pains | pain | detail (triplet)
+    // origin = view, kam vede Zpět z tripletu (pocity / skupina strachů / situace)
+    rf:{ view:"gates", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50,
+         origin:"feelings", detailTitle:null,
+         fearsTab:"situations", fearGroup:null, fearSearch:"", situation:null,
+         painSearch:"", pain:null, painLimit:30 },
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
     journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
     detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
@@ -740,10 +776,12 @@
     });
     // Oddíly a řetězy (Moje cesta). sort_order cvičení je lokální per oddíl,
     // chain_order per řetěz — proto dva samostatné indexy.
-    ["sections","chains"].forEach(function(dk){
+    ["sections","chains","fears","situations","pains"].forEach(function(dk){
       flat[dk]=(DB[dk]||[]).slice().sort(function(a,b){ return a.sort_order-b.sort_order; });
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
+    itemIndex.hlasky={};
+    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x,i){ itemIndex.hlasky[p.id+":"+i]={ id:p.id+":"+i, text:x.text, meta:p.text }; }); });
     bySection={}; byChain={};
     (DB.exercises||[]).forEach(function(e){
       if(e.section_id) (bySection[e.section_id]=bySection[e.section_id]||[]).push(e);
@@ -983,10 +1021,137 @@
   }
 
   // ===================== RENDER — Přerámování =====================
-  function viewReframing(){ return state.rf.view==="detail"?viewRfDetail():viewRfFeelings(); }
+  function viewReframing(){
+    var v=state.rf.view;
+    if(v==="detail") return viewRfDetail();
+    if(v==="feelings") return viewRfFeelings();
+    if(v==="fears") return viewRfFears();
+    if(v==="fearGroup") return viewRfFearGroup();
+    if(v==="situation") return viewRfSituation();
+    if(v==="pains") return viewRfPains();
+    if(v==="pain") return viewRfPain();
+    return viewRfGates();
+  }
+  // Rozcestník tří bran. Názvy samy o sobě uživatel v akutním módu
+  // nerozliší — každá nese větu „kdy sem".
+  function viewRfGates(){
+    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Pojmenujte, co se s vámi děje — a podívejte se na to jinak.</p></div>';
+    h+='<ul class="mc-cards mc-gates">';
+    GATES.forEach(function(g){
+      h+='<li class="mc-card clickable mc-in" onclick="MC.rfGate(\''+g.key+'\')"><div class="mc-card-title">'+esc(g.label)+'</div><div class="mc-card-text lead gate-hint">„'+esc(g.hint)+'“</div><span class="mc-card-go">›</span></li>';
+    });
+    return h+'</ul>';
+  }
+  function searchBox(placeholder,handler,value){
+    var h='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    h+='<input id="mc-search" class="mc-search" placeholder="'+esc(placeholder)+'" oninput="MC.'+handler+'(this.value)" onkeydown="MC.searchKey(event)">';
+    if(value&&value.trim()) h+='<div class="mc-search-tools"><button class="mc-search-clear" onclick="MC.'+handler+'(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
+    return h+'</div>';
+  }
+  function nameList(items,onclick,sub){
+    var h='<div class="mc-namelist">';
+    if(!items.length) h+='<div class="mc-empty">Nic neodpovídá hledání.</div>';
+    items.forEach(function(it){
+      var s=sub?sub(it):"";
+      h+='<button class="mc-name-item mc-in" onclick="'+onclick(it)+'">'+(s?'<span class="nb"><span class="n">'+esc(it.name)+'</span><span class="sub">'+s+'</span></span>':'<span class="n">'+esc(it.name)+'</span>')+'<span class="go">›</span></button>';
+    });
+    return h+'</div>';
+  }
+
+  // ---- Brána Strachy: Konkrétní (situace) / Jádrové (kanon) → kategorie → položky
+  function groupsOf(list){ var seen={},out=[]; list.forEach(function(x){ if(!seen[x.group]){ seen[x.group]=1; out.push(x.group); } }); return out; }
+  function fearMatches(q,x){ return deburr(x.name).indexOf(q)>-1 || (x.aliases||[]).some(function(a){ return deburr(a).indexOf(q)>-1; }); }
+  function viewRfFears(){
+    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
+    h+='<div class="mc-sec-head"><h1>Strachy</h1><p>Čeho se bojíte? Vyberte konkrétní situaci, nebo rovnou jádrový strach.</p></div>';
+    h+=searchBox("Hledejte strach…","rfFearSearch",rf.fearSearch);
+    if(rf.fearSearch.trim()){
+      // Hledání jde napříč oběma vrstvami i skrytou skupinou; aliasy se hledají, nezobrazují.
+      var q=deburr(rf.fearSearch);
+      var sits=flat.situations.filter(function(x){ return fearMatches(q,x); });
+      var fears=flat.fears.filter(function(x){ return fearMatches(q,x); });
+      if(!sits.length&&!fears.length) return h+'<div class="mc-empty">Nic neodpovídá hledání.</div>';
+      if(sits.length) h+='<div class="mc-fav-group"><h2>Konkrétní strachy <span class="c">'+sits.length+'</span></h2>'+nameList(sits,function(it){ return "MC.rfSituation('"+it.id+"')"; })+'</div>';
+      if(fears.length) h+='<div class="mc-fav-group"><h2>Jádrové strachy <span class="c">'+fears.length+'</span></h2>'+nameList(fears,function(it){ return "MC.rfFear('"+it.id+"')"; })+'</div>';
+      return h;
+    }
+    h+='<div class="mc-submenu-triplet">';
+    h+='<button class="'+(rf.fearsTab==="situations"?"active":"")+'" onclick="MC.rfFearsTab(\'situations\')">Konkrétní strachy</button>';
+    h+='<button class="'+(rf.fearsTab==="fears"?"active":"")+'" onclick="MC.rfFearsTab(\'fears\')">Jádrové strachy</button>';
+    h+='</div>';
+    var list=rf.fearsTab==="situations"?flat.situations:flat.fears.filter(function(x){ return x.group!==FEAR_HIDDEN_GROUP; });
+    var groups=groupsOf(list);
+    h+='<div class="mc-namelist">';
+    groups.forEach(function(g){
+      var n=list.filter(function(x){ return x.group===g; }).length;
+      h+='<button class="mc-name-item mc-in" onclick="MC.rfFearGroup(\''+esc(g).replace(/'/g,"\\'")+'\')"><span class="n">'+esc(g)+'</span><span class="sub-n">'+n+'</span><span class="go">›</span></button>';
+    });
+    return h+'</div>';
+  }
+  function viewRfFearGroup(){
+    var rf=state.rf, isSit=rf.fearsTab==="situations";
+    var h='<button class="mc-back" onclick="MC.rfGate(\'fears\')">← Strachy</button>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.fearGroup)+'</div></div>';
+    var list=(isSit?flat.situations:flat.fears).filter(function(x){ return x.group===rf.fearGroup; });
+    return h+nameList(list,function(it){ return isSit?"MC.rfSituation('"+it.id+"')":"MC.rfFear('"+it.id+"')"; });
+  }
+  // Situace: podle mark P (přerámování) / E (empatie) / K (Krizovka), pod tím
+  // „Co je pod tím?" → její kanonové strachy → triplet.
+  function viewRfSituation(){
+    var rf=state.rf, s=itemIndex.situations[rf.situation];
+    if(!s) return '<div class="mc-empty">Nenalezeno.</div>';
+    var h='<button class="mc-back" onclick="MC.rfSitBack()">← Zpět</button>';
+    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">'+esc(s.group)+'</div></div>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.name)+'</div></div>';
+    if(s.mark==="K"){
+      h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
+      h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.open(\'crisis\')">Otevřít První pomoc</button></div>';
+    } else if(s.reframings&&s.reframings.length){
+      h+='<ul class="mc-cards">';
+      s.reframings.forEach(function(t){ h+='<li class="mc-card mc-in nofav"><div class="mc-card-text'+(s.mark==="E"?" lead":"")+'">'+esc(t)+'</div></li>'; });
+      h+='</ul>';
+    }
+    var fears=(s.fear_ids||[]).map(function(id){ return itemIndex.fears[id]; }).filter(Boolean);
+    if(fears.length){
+      h+='<div class="mc-under"><h2>Co je pod tím?</h2><p>Konkrétní strach má obvykle hlubší kořen. Vyberte, co z toho sedí — a podívejte se na to jinak.</p><div class="mc-chips">';
+      fears.forEach(function(f){ h+='<button class="mc-chip" onclick="MC.rfFear(\''+f.id+'\')">'+esc(f.name)+'</button>'; });
+      h+='</div></div>';
+    }
+    return h;
+  }
+
+  // ---- Brána Bolístky: jedno zrcadlo vět (bez kategorií) → hlášky
+  function viewRfPains(){
+    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
+    h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
+    h+=searchBox("Hledejte větu…","rfPainSearch",rf.painSearch);
+    var list=flat.pains;
+    if(rf.painSearch.trim()){ var q=deburr(rf.painSearch); list=list.filter(function(p){ return deburr(p.text).indexOf(q)>-1; }); }
+    var shown=list.slice(0,rf.painLimit);
+    h+='<div class="mc-namelist mc-mirror">';
+    if(!list.length) h+='<div class="mc-empty">Nic neodpovídá hledání.</div>';
+    shown.forEach(function(p){ h+='<button class="mc-name-item mc-in" onclick="MC.rfPain(\''+p.id+'\')"><span class="n">'+esc(p.text)+'</span><span class="go">›</span></button>'; });
+    h+='</div>';
+    if(list.length>rf.painLimit) h+='<button class="mc-more-page" onclick="MC.rfPainMore()">Dalších '+Math.min(30,list.length-rf.painLimit)+'</button>';
+    return h;
+  }
+  function viewRfPain(){
+    var rf=state.rf, p=itemIndex.pains[rf.pain];
+    if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
+    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
+    h+='<ul class="mc-cards">';
+    (p.hlasky||[]).forEach(function(x,i){
+      var id=p.id+":"+i, on=isFav("pains",id);
+      h+='<li class="mc-card mc-in"><div class="mc-card-text">'+esc(x.text)+'</div>'+heartBtn("pains",id,on)+'</li>';
+    });
+    return h+'</ul>';
+  }
+
   function viewRfFeelings(){
     var rf=state.rf, feelings=visibleFeelings(), total=mainFeelings().length+secondaryFeelings().length;
-    var h='<div class="mc-sec-head"><h1>Přerámování</h1><p>Vyberte, jak se cítíte — a podívejte se na to jinak.</p></div>';
+    var h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
+    h+='<div class="mc-sec-head"><h1>Jádrové pocity</h1><p>Vyberte, jak se cítíte — a podívejte se na to jinak.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
     h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
@@ -1008,9 +1173,13 @@
     return h;
   }
   function viewRfDetail(){
-    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět na pocity</button>';
-    if(rf.detailMode==="single") h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(clusterName[rf.detailClusters[0].cluster_id]||"")+'</div></div>';
-    else { var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; }); h+='<div class="mc-detail-head"><div class="mc-detail-title">Vybrané pocity</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>'; }
+    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět</button>';
+    var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
+    // Ze strachu: titulek = strach, pod ním jádrové pocity, které za ním stojí
+    // (uživatel je nevybíral, ale má vidět, odkud přerámování jdou).
+    if(rf.detailTitle) h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.detailTitle)+'</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
+    else if(rf.detailMode==="single") h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(names[0]||"")+'</div></div>';
+    else h+='<div class="mc-detail-head"><div class="mc-detail-title">Vybrané pocity</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
     h+='<div class="mc-submenu-triplet">';
     TYPES.forEach(function(t){ h+='<button class="'+(rf.activeType===t.key?"active":"")+'" onclick="MC.rfType(\''+t.key+'\')">'+t.label+'</button>'; });
     h+='</div>';
@@ -1287,7 +1456,7 @@
         if(fv.kind==="title") h+='<div class="mc-card-title">'+esc(it.title||"")+'</div>'+(it.perex?'<div class="mc-card-text">'+esc(it.perex)+'</div>':'');
         else if(fv.kind==="name") h+='<div class="mc-card-title">'+esc(it.name||"")+'</div>';
         else if(fv.kind==="quote"){ h+='<div class="mc-card-text lead">'+esc(it.text||"")+'</div>'; if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>'; }
-        else { h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; if(it.cluster_id) h+='<div class="mc-card-meta">'+esc(clusterName[it.cluster_id]||"")+'</div>'; }
+        else { h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; var meta=it.cluster_id?clusterName[it.cluster_id]:it.meta; if(meta) h+='<div class="mc-card-meta">'+esc(meta)+'</div>'; }
         h+=heartBtn(fv.store,it.id,true,!!fv.detail)+'</li>';
       });
       h+='</ul></div>';
@@ -1320,23 +1489,45 @@
     open:function(key){
       state.menuOpen=false; state.detail=null;
       if(key==="favorites"){ state.page="favorites"; state.section=null; }
-      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="feelings"; if(key==="journey") state.journey.sectionId=null; }
+      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="gates"; if(key==="journey") state.journey.sectionId=null; }
       scrollTop(); render();
     },
     // Přerámování
     rfSearch:function(v){ state.rf.search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     rfSecondary:function(){ state.rf.showSecondary=!state.rf.showSecondary; render(); },
     rfToggle:function(id){ var sel=state.rf.selected; if(sel[id]) delete sel[id]; else { var f=DB.feelings.filter(function(x){return x.id===id;})[0]; if(f) sel[id]=f; } render(); },
-    rfSingle:function(cid){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cid,count:1}]; enterRfDetail(); },
+    rfSingle:function(cid){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cid,count:1}]; state.rf.detailTitle=null; state.rf.origin="feelings"; enterRfDetail(); },
     rfOpenSelected:function(){
       var sel=state.rf.selected, feels=Object.keys(sel).map(function(k){return sel[k];}), counts={};
       feels.forEach(function(f){ counts[f.cluster_id]=(counts[f.cluster_id]||0)+1; });
       var cids=Object.keys(counts);
       if(cids.length===1){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cids[0],count:counts[cids[0]]}]; }
       else { state.rf.detailMode="merged"; state.rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:counts[c]}; }); }
+      state.rf.detailTitle=null; state.rf.origin="feelings";
       enterRfDetail();
     },
-    rfBack:function(){ state.rf.view="feelings"; scrollTop(); render(); },
+    rfBack:function(){ state.rf.view=state.rf.origin||"feelings"; scrollTop(); render(); },
+    // brány
+    rfGate:function(g){ var rf=state.rf; rf.view=g||"gates"; if(g==="fears"){ rf.fearGroup=null; } if(g==="pains"){ rf.pain=null; } scrollTop(); render(); },
+    rfFearsTab:function(t){ state.rf.fearsTab=t; render(); },
+    rfFearSearch:function(v){ state.rf.fearSearch=v; render(); refocus(v); },
+    rfFearGroup:function(g){ state.rf.fearGroup=g; state.rf.view="fearGroup"; scrollTop(); render(); },
+    rfSituation:function(id){ state.rf.situation=id; state.rf.view="situation"; scrollTop(); render(); },
+    rfSitBack:function(){ var rf=state.rf; rf.view=rf.fearSearch.trim()||!rf.fearGroup?"fears":"fearGroup"; scrollTop(); render(); },
+    // Kanonový strach → rovnou triplet přes merged interleaving nad prvními
+    // FEAR_CLUSTERS jádrovými pocity. Zpět vede tam, odkud se přišlo.
+    rfFear:function(id){
+      var rf=state.rf, f=itemIndex.fears[id]; if(!f) return;
+      var cids=(f.cluster_ids||[]).slice(0,FEAR_CLUSTERS).filter(function(c){ return contentClusters.indexOf(c)>-1; });
+      if(!cids.length) return;
+      rf.detailMode=cids.length===1?"single":"merged";
+      rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:1}; });
+      rf.detailTitle=f.name; rf.origin=rf.view;
+      enterRfDetail();
+    },
+    rfPainSearch:function(v){ state.rf.painSearch=v; state.rf.painLimit=30; render(); refocus(v); },
+    rfPainMore:function(){ state.rf.painLimit+=30; render(); },
+    rfPain:function(id){ state.rf.pain=id; state.rf.view="pain"; scrollTop(); render(); },
     rfType:function(t){ state.rf.activeType=t; state.rf.pageLimit=50; scrollTop(); render(); },
     rfMore:function(){ state.rf.pageLimit+=50; render(); },
     // obsahové sekce
@@ -1370,6 +1561,8 @@
   };
 
   function enterRfDetail(){ state.rf.view="detail"; state.rf.activeType="reframings"; state.rf.pageLimit=50; scrollTop(); render(); }
+  // Po překreslení vrátí kurzor do hledacího pole (render ho nahradil).
+  function refocus(v){ var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } }
   function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
 
   applyTheme();
