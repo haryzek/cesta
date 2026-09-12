@@ -798,6 +798,16 @@
     var set={}; (flat[dataKey]||[]).forEach(function(it){ (it.tags||[]).forEach(function(t){ set[t]=1; }); });
     return Object.keys(set).sort();
   }
+  // Váha tagu podle pozice v datech (tagy jsou v JSONu seřazené podle priority,
+  // první nese téma, 2.–3. váhu, zbytek je tie-break). Jediná laditelná
+  // konstanta filtru; lineární je bezpečný start, strmější ([8,5,3,2,1,1])
+  // by nechal dominovat první tag.
+  var TAG_VAHY=[6,5,4,3,2,1];
+  function tagScore(it,sel){
+    var t=it.tags||[], score=0, hits=0;
+    sel.forEach(function(tag){ var p=t.indexOf(tag); if(p>-1){ score+=TAG_VAHY[Math.min(p,TAG_VAHY.length-1)]; hits++; } });
+    return {score:score, hits:hits};
+  }
   function durationBuckets(){ return [ {label:"do 5 min",max:5}, {label:"6–15 min",min:6,max:15}, {label:"16+ min",min:16} ]; }
   function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; return n; }
   function contentList(key){
@@ -809,8 +819,15 @@
       items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex].filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
     }
     // Tagy se sčítají (OR): víc zaškrtnutých = širší výběr, ne užší. Dřív AND,
-    // což u pár tagů vracelo skoro vždycky prázdno.
-    if(s.tags.length){ items=items.filter(function(it){ var t=it.tags||[]; return s.tags.some(function(tag){ return t.indexOf(tag)>-1; }); }); }
+    // což u pár tagů vracelo skoro vždycky prázdno. OR říká CO projde; pořadí
+    // pak určuje priorita tagů v datech (první tag = téma položky) — viz tagScore.
+    if(s.tags.length){
+      items=items.map(function(it){ return {it:it, sc:tagScore(it,s.tags)}; })
+        .filter(function(x){ return x.sc.score>0; })
+        .sort(function(a,b){ return b.sc.score-a.sc.score || b.sc.hits-a.sc.hits
+          || String(b.it.added_at||"").localeCompare(String(a.it.added_at||"")) || String(a.it.id).localeCompare(String(b.it.id)); })
+        .map(function(x){ return x.it; });
+    }
     // Délky se sčítají (OR) stejně jako tagy — položka projde, když padne do
     // kteréhokoli zaškrtnutého pásma.
     if(s.durs.length && cfg.timeField){
