@@ -15,12 +15,13 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 
 ### Před road tripem (září 2026)
 
-- [ ] **Provizorní admin v appce — dělá se až na závěr, po všem ostatním.**
-      Režim škrtání: u hlášek a položek tripletu křížek „škrtnout“, `source` k/n
-      viditelný, škrtnuté v `localStorage`, tlačítko Export vysype JSON škrtů →
-      skriptem propsat do zdrojů (Excel / `vyber_nase.json`), ne do `data/`.
-      Zapnutí přes `?admin` v URL nebo dlouhé podržení názvu. Rozsah domluvit
-      před stavbou.
+- [x] **Provizorní admin v appce (12. 9. 2026).** Smazat / upravit / Top,
+      záloha, koš. Viz README.
+- [ ] **Hned po prvním klikání na mobilu: Export** — ověřit, že stažení JSON
+      na Androidu funguje (fallback Zkopírovat).
+- [ ] **`apply_admin.py`** — po road tripu: z exportu propsat smazané/upravené
+      do Excelu (triplet), `vyber_nase.json` + Karolínka (hlášky),
+      `brany_reframings.md` (situace); Top uložit jako pole do zdrojů? Rozhodnout.
 - [ ] **Prstem projít appku na mobilu** — tři brány, Moje cesta, proud karet
       (výška `100vh − 230px`, snap, srdíčko u palce), pilulky u H1, oči v liště.
       Guláš připomínek pak Claude roztřídí.
@@ -160,6 +161,7 @@ Držet krátké — jen věci, na které se bude někdo ptát „a tohle jsme ř
   u H1). **Proud karet** se scroll-snap + **paměť viděného** (píše jen swipe)
   + oko „jen nové“. **Pořadí sekcí** — Moje cesta první, První pomoc u palce,
   teal pro běžné používání, accent jen Tělo + První pomoc; O appce bez dlaždice.
+  **Provizorní admin** (smazat / upravit / Top, záloha, koš).
   Headless testy v `_scratch/tests/` (jsdom).
 - **12. 9. 2026 — rozhodnutí, která nevypadají samozřejmě:** default tab
   oddílu je Cvičení (ne Teorie); bolístky bez `smer`; u tripletu ze strachu se

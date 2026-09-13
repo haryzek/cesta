@@ -53,6 +53,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - **Tři brány Přerámování** — rozcestník; Strachy (search přes aliasy, Konkrétní/Jádrové, kategorie → položky, situace P/E/K + „Co je pod tím?“, kanon → triplet přes `FEAR_CLUSTERS=3` s titulkem strachu a třemi pocity pod ním); Bolístky bez kategorií (zrcadlo vět po 30, hlášky se srdíčky `pain_id:index`).
 - **Oblíbené per sekce** — pilulka „♡ N“ u H1, přepínač; globální srdíčko plné jen v Oblíbených; `favGroups(stores)` sdílené.
 - **Proud karet + paměť viděného** — swipe (scroll-snap) pro triplet, hlášky, Inspirace, Otázky; `USER.seen` se plní **jen ve swipe a srdíčkem**, seznam nikdy nepíše; oko = „jen nové“ (globální `USER.onlyNew`), karty/seznam globální `mc_view`; předěl „Stačí pro dnes?“ každých `SWIPE_BREAK=10`.
+- **Provizorní admin** — smazat / upravit / Top nad koncovým obsahem, `mc_admin_v1`, Záloha a koš.
 - **Pořadí sekcí** — jeden registr `SECTIONS` řídí dlaždice i menu (pole `sep` = linka v menu): Moje cesta, Cvičení | Přerámování, Otázky, Inspirace, Články | Tělo, První pomoc | Oblíbené, režim, O appce. O appce je `tile:false`.
 
 **Přetagování obsahu — HOTOVO 11. 9. 2026 (Otázky, Inspirace, Články, Cvičení).** Zadání a logika per sekce v `local/_prompty/tagovani.md` (uživatel kliká na tag s jinou otázkou v hlavě). Cvičení: pořadí „k čemu → metoda (vždy aspoň jedna) → tie-break", průměr 4,8 tagu, nový tag `vnitřní dítě` (slovník **97**), `strach` konečně na expozicích, `přítomnost` na mindfulness, `smrt` na meditaci nad smrtí. Singletony `hranice`, `komunikace`, `návyky`, `svoboda`, `vděčnost`, `volný čas` jsou vědomé tie-breaky. **Obsahová díra:** žádné cvičení není na `deprese`, `vyhoření`, `ocd`. Přetagováním se zároveň srovnal drift dávek vs. `data/` (5 cvičení mělo v dávkách `přerámování`, v datech už `přerámování myšlenek`).
@@ -92,7 +93,7 @@ Rozcestník tří karet s větou „kdy sem“: **Jádrové pocity** / **Strachy
 
 - **Strachy:** kanonový strach → **rovnou triplet** přes merged interleaving nad `cluster_ids.slice(0, FEAR_CLUSTERS)` (3, ne 5 — kolový interleaving by dal šumu stejné slovo jako jádru). Uživatel pocity nevybírá, ale **vidí je pod titulkem** (rozhodnuto 12. 9.). Situace → `mark` P/E/K → „Co je pod tím?“ → `fear_ids` → triplet. Skupina `Obranné` (`FEAR_HIDDEN_GROUP`) jen do hledání. `rf.origin` říká, kam vede Zpět.
 - **Bolístky:** **bez kategorií** — `smer` i `oblast` se nezobrazují (rozhodnuto 12. 9.). Hlášky bez tripletu, vědomě; klíč `pain_id:index` pro oblíbené/viděné. `source` k/n zobrazit až při škrtání.
-- **Provizorní admin na road trip (září 2026, dělá se až na závěr):** appka musí umět škrtat hlášky (cíl 15/bolístku) a mazat položky tripletu, výsledek propsat zpět do zdrojů (Excel / `vyber_nase.json`), ne do `data/`.
+- **Provizorní admin — nasazen 12. 9. 2026** (README „Provizorní admin“): přepínač dole v menu, ✎/★/✕ na kartách, vlastní klíč `mc_admin_v1`, denní snapshoty, export/import. `alive()` filtruje smazané na každém výpisu, `applyEdits()` propisuje edity do objektů. Propsání do zdrojů (`apply_admin.py`) po road tripu.
 - **Datový objem:** triplet 4,2 MB + pains 1 MB, appka tahá všech 16 souborů najednou s `no-cache`. Přes Pages gzip ~1,3 MB — na hotelové wifi znát. Lazy load tripletu až po vstupu do sekce je legitimní krok, až to začne bolet.
 
 ### Jediná verze appky

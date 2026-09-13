@@ -669,6 +669,17 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 
 ---
 
+## Provizorní admin (12. 9. 2026)
+
+Režim škrtání pro Boba na road trip — tři akce nad koncovým obsahem, nic víc. Zapíná se úplně dole v hamburgeru („Admin vypnutý/zapnutý“, drží se v `localStorage`). Vypnutý = appka jako pro uživatele.
+
+- **Co jde označit:** každá koncová položka se `store` + `id` — triplet, hlášky (`pain_id:index`), přerámování situací (`sit_id:index`, pseudo-store `situations`), citáty, otázky, články, cvičení, krizovka, tělo. **Editace textu jen u vět**; články/cvičení/krizovka/tělo jen smazat a Top.
+- **Ovládání:** na kartě (i ve swipe kartě) a v detailu tenká lišta **✎ upravit · ★ Top! · ✕ smazat**. U hlášek badge `k`/`n` (který hlas přežívá), u upravených „upraveno“. ✕ → položka zmizí, 3 s toast „Smazáno · Vrátit“. ✎ → inline textarea, Zrušit / Původní / Uložit.
+- **Účinek:** smazané se nezobrazují a edity se aplikují **i mimo admin mód** (Bob vidí appku, jak ji uvidí uživatel po propsání). Edity se propisují do objektů v paměti při načtení (`applyEdits`, původní v `_orig`), smazané filtruje `alive(store, items)` na každém výpisu. **Data v `data/` se nesahají.**
+- **Uložení:** vlastní klíč `mc_admin_v1` (`deleted`, `edits`, `top`, `lastExport`, `dirty`) — oddělený od uživatelských dat. **Denní snapshot** `mc_admin_bak_<datum>` při prvním zápisu v den, drží se posledních 7 — proti vlastnímu překlepu.
+- **Záloha a koš** (řádek v menu, když je admin zapnutý): počty, dny od exportu + nezálohované změny (zčervená po 3 dnech), **Export** (stáhne `cesta_admin_<datum>.json`), **Zkopírovat** (schránka), **Import** (vložit JSON, sloučí se). Koš = smazané po typech s „Obnovit“.
+- **Propsání do zdrojů** (Excel / `vyber_nase.json` / `brany_reframings.md`) udělá skript `apply_admin.py` z exportu — po road tripu, zatím nenapsaný.
+
 ## Doporučování obsahu
 
 Odpovídá na otázku „který obsah nabídnout na základě toho, co uživatel dlouhodobě prožívá". Platí **jen pro články a cvičení** — jediné typy s polem `schemas`. Každý typ se skóruje zvlášť, obsah se mezi typy nemíchá. Podnětné otázky (11. 9. 2026) i inspirace (11. 9. 2026) o `schemas` přišly a z doporučování vypadly: jsou lidsky univerzální a nemají komu cílit.
