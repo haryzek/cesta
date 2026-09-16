@@ -1341,7 +1341,7 @@
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
     var all=alive("pains",(p.hlasky||[]).map(function(x,i){ return itemIndex.hlasky[p.id+":"+i]; })), list=unseenOnly("pains",all);
     h+=listTools("pains",all.length,list.length);
-    if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,all.filter(function(it){ return !USER.onlyNew||!isSeen("pains",it.id)||state.swipe.ids.indexOf(it.id)>-1; }),null);
+    if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,swipeItems("pains","pain:"+p.id,all),null);
     if(!list.length) return h+allSeen();
     h+='<ul class="mc-cards">';
     list.forEach(function(x){ h+='<li class="mc-card mc-in">'+admText("pains",x.id,x.text,"mc-card-text")+adminBar("pains",x.id)+heartBtn("pains",x.id,isFav("pains",x.id))+'</li>'; });
@@ -1385,7 +1385,8 @@
     h+='<div class="mc-submenu-triplet">';
     TYPES.forEach(function(t){ h+='<button class="'+(rf.activeType===t.key?"active":"")+'" onclick="MC.rfType(\''+t.key+'\')">'+t.label+'</button>'; });
     h+=listTools(store,all.length,list.length,true)+'</div>';
-    if(viewMode()==="swipe") return h+swipeView(store,"rf:"+rf.activeType+":"+rf.detailClusters.map(function(c){return c.cluster_id;}).join(","),all.filter(function(it){ return !USER.onlyNew||!isSeen(store,it.id)||state.swipe.ids.indexOf(it.id)>-1; }),metaFn);
+    var rfKey="rf:"+rf.activeType+":"+rf.detailClusters.map(function(c){return c.cluster_id;}).join(",");
+    if(viewMode()==="swipe") return h+swipeView(store,rfKey,swipeItems(store,rfKey,all),metaFn);
     if(!list.length) return h+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
     var shown=list.slice(0,rf.pageLimit);
     h+='<ul class="mc-cards">';
@@ -1518,7 +1519,8 @@
     h+='</div>';
     if(s.filterOpen) h+=viewFilterPanel(key);
     if(cfg.render==="quotes"){
-      if(viewMode()==="swipe") return h+swipeView(cfg.store,key+":"+s.mode+":"+s.kw+":"+s.tags.join(","),all.filter(function(it){ return !USER.onlyNew||!isSeen(cfg.store,it.id)||state.swipe.ids.indexOf(it.id)>-1; }),function(it){ return it.author?esc(it.author):""; });
+      var qKey=key+":"+s.mode+":"+s.kw+":"+s.tags.join(",");
+      if(viewMode()==="swipe") return h+swipeView(cfg.store,qKey,swipeItems(cfg.store,qKey,all),function(it){ return it.author?esc(it.author):""; });
       if(!items.length&&USER.onlyNew&&all.length) return h+allSeen();
     }
     h+='<ul class="mc-cards">';
@@ -1795,6 +1797,15 @@
   // za viděné. Každých SWIPE_BREAK karet měkký předěl „Stačí pro dnes?",
   // na konci závěr — appka sama nabízí odchod.
   var SWIPE_BREAK=10;
+  // Vstup do proudu: při „jen nové" se viděné vyhazují, ale karty aktuálního
+  // snímku (stejný key) zůstávají — jinak by mizely pod rukama. Pozor: ids se
+  // smí konzultovat JEN když key sedí, jinak by starý snímek propustil úplně
+  // všechno a oko by vypadalo nefunkčně (bug 16. 9. 2026).
+  function swipeItems(store,key,all){
+    if(!USER.onlyNew) return all;
+    var keep=state.swipe.key===key?state.swipe.ids:[];
+    return all.filter(function(it){ return !isSeen(store,it.id)||keep.indexOf(it.id)>-1; });
+  }
   function swipeView(store,key,items,meta){
     var sw=state.swipe;
     if(sw.key!==key){ sw.key=key; sw.ids=items.map(function(it){ return it.id; }); sw.index=0; }
@@ -1935,12 +1946,12 @@
       var s=window.prompt("Vložte JSON zálohy (sloučí se s aktuálním stavem):"); if(!s) return;
       try{ var d=JSON.parse(s); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
         Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
-        applyEdits(); saveAdmin(true); state.swipe.key=null; toast("Import hotov"); render();
+        applyEdits(); saveAdmin(true); state.swipe.key=null; state.swipe.ids=[]; toast("Import hotov"); render();
       }catch(e){ toast("Import selhal — není to JSON"); render(); }
     },
     // jen nové / proud karet
-    onlyNew:function(){ USER.onlyNew=!USER.onlyNew; saveUser(); state.swipe.key=null; render(); },
-    viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; render(); },
+    onlyNew:function(){ USER.onlyNew=!USER.onlyNew; saveUser(); state.swipe.key=null; state.swipe.ids=[]; render(); },
+    viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeNext:function(){ swipeStep(1); },
     swipeClose:function(){ if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
     // Enter v hledání zavře klávesnici. Na mobilu jinak není jak ji schovat —
