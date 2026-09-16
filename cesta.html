@@ -260,15 +260,15 @@
   .mc-search-clear svg{ width:13px; height:13px; }
 
   /* ===== SUBMENU (Nejnovější / Redakce / filtr) ===== */
-  .mc-submenu{ display:flex; gap:6px; padding:14px var(--gutter) 4px; flex-wrap:wrap; align-items:center; }
+  .mc-submenu{ display:flex; gap:5px; padding:14px var(--gutter) 4px; flex-wrap:wrap; align-items:center; }
   .mc-submenu button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
-    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer;
+    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 12px; border-radius:8px; cursor:pointer;
     transition:all .15s ease; }
   @media (hover:hover){ .mc-submenu button:hover{ color:var(--text); } }
   .mc-submenu button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
   .mc-submenu .mc-filter-btn{ display:inline-flex; align-items:center; gap:6px; }
   /* Nástroje (oko, karty) k pravému okraji řádku submenu */
-  .mc-tools-in{ margin-left:auto; display:inline-flex; gap:6px; }
+  .mc-tools-in{ margin-left:auto; display:inline-flex; gap:5px; }
   .mc-submenu .mc-filter-btn svg{ width:15px; height:15px; }
   .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px;
     font-weight:700; padding:0 6px; border-radius:6px; }
@@ -358,9 +358,10 @@
   .mc-pill svg{ width:14px; height:14px; display:block; }
   @media (hover:hover){ .mc-pill:hover{ color:var(--text); border-color:var(--muted); } }
   .mc-pill.on{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
-  .mc-pill.ic{ padding:6px 8px; }
+  .mc-pill.ic{ padding:6px 7px; gap:4px; }
   .mc-pill svg{ width:16px; height:16px; }
-  .mc-pill .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px; min-width:16px; height:16px; padding:0 4px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; }
+  .mc-pill .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px; font-variant-numeric:tabular-nums; letter-spacing:-0.03em;
+    min-width:15px; height:15px; padding:0 3px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; }
   .mc-submenu-triplet{ align-items:center; }
   .mc-link{ background:none; border:none; padding:0; margin-top:6px; cursor:pointer; color:var(--accent); font-family:var(--sans); font-size:14px; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
 
@@ -487,9 +488,9 @@
   .mc-detail-perex{ padding:10px var(--gutter) 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
   .mc-detail-body{ padding:18px var(--gutter) 0; }
 
-  .mc-submenu-triplet{ display:flex; gap:6px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
+  .mc-submenu-triplet{ display:flex; gap:5px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
   .mc-submenu-triplet button{ background:var(--surface); border:1px solid var(--border); color:var(--soft);
-    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
+    font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 12px; border-radius:8px; cursor:pointer; transition:all .15s ease; }
   @media (hover:hover){ .mc-submenu-triplet button:hover{ color:var(--text); } }
   .mc-submenu-triplet button.active{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
 

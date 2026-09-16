@@ -9,7 +9,7 @@
    - Assety a fonty (Google Fonts): cache-first, na pozadí se obnoví.
    VERSION bumpni, když měníš tenhle soubor nebo seznam PRECACHE. */
 
-var VERSION  = "mc-v1";
+var VERSION  = "mc-v2";
 var SHELL    = "mc-shell-" + VERSION;
 var RUNTIME  = "mc-runtime-" + VERSION;
 var NET_TIMEOUT = 4000;
