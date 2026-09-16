@@ -1982,7 +1982,23 @@
   function refocus(v){ var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } }
   function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
 
+  // ===================== OFFLINE (service worker) =====================
+  // Appka přidaná na plochu musí jet bez signálu. SW precachuje obal i všech
+  // 16 JSONů; data pak jedou network-first s fallbackem do cache.
+  // Uvnitř Miowebu se registrace nepovede (jiný origin/scope) — nevadí,
+  // catch to spolkne a appka jede jako dřív.
+  function initSW(){
+    if(!("serviceWorker" in navigator)) return;
+    if(location.protocol!=="https:" && location.hostname!=="localhost" && location.hostname!=="127.0.0.1") return;
+    try{
+      navigator.serviceWorker.register("sw.js",{scope:"./",updateViaCache:"none"})
+        .then(function(reg){ if(reg&&reg.update) reg.update(); })
+        .catch(function(){});
+    }catch(e){}
+  }
+
   applyTheme();
+  initSW();
   load();
 })();
 </script>

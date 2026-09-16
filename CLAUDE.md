@@ -100,6 +100,7 @@ Rozcestník tří karet s větou „kdy sem“: **Jádrové pocity** / **Strachy
 
 - **`cesta.html` — jediný živý HTML soubor.** Všechny sekce naživo nad daty v `data/`. `MC_BASE="./data/"`. Meta hlavičky pro mobil (viewport, PWA manifest, vypnutá cache) — Mioweb je ignoruje. **Veškerá práce jde sem.**
 - **`cesta_prototyp.html`** — **smazaný 14. 8. 2026.** Starší obal pro Mioweb, mrtvá větev. Zůstává v historii gitu.
+- **`sw.js` — service worker, offline režim.** Precachuje obal (index, cesta.html, manifest, ikony) i všech 16 JSONů; HTML a data pak jedou **network-first s 4s timeoutem** a fallbackem do cache (online se chová jako dřív — push je hned vidět), fonty a obrázky **cache-first**. Registruje se z `cesta.html` (`initSW`) jen přes https/localhost, uvnitř Miowebu registrace tiše selže a nevadí. **Když saháš do `sw.js` nebo do seznamu precache, bumpni `VERSION`** — jinak si prohlížeč nechá starou verzi. První návštěva online stáhne ~1,3 MB gzip, pak appka jede bez signálu.
 - **`cesta_admin.html`** — zastaralý, k přestavbě od základu (viz past č. 1). **Odsunutý do `local/.old/`**, ať neleží vedle živých souborů a nemate.
 
 Appka stojí na **registru sekcí** — jeden `SECTIONS = [...]` řídí dlaždice, menu (pořadí, linky přes `sep`) i router. Nová sekce = výměna rendereru, obal se nesahá.
