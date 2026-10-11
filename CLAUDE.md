@@ -171,6 +171,8 @@ Kdo má co:
 
 11. **Dlaždice jedou po párech (grid 2 sloupce).** Devátá sekce s `tile:true` by trčela sama. Když přibude sekce, buď ji dej do menu (`tile:false`, jako O appce), nebo přidej dvě.
 
+12. **Hlídáš ty, ne Bob (řekl si o to 11. 10. 2026).** Na začátku sezení `git fetch` + `git status -sb`: když je lokál pozadu (cloudové sessions z webu/mobilu pushují rovnou, takhle přibyly 4 commity 16. 9. 2026), řekni to a `git pull --ff-only` dřív, než se sáhne do kódu. Zbylé `claude/*` větve na remotu po cloudových sessions jsou po merge mrtvé, nabídni smazání. Před pushem ověř, že appka v headless testech jede — rozbitý push si mobil s appkou na ploše stáhne a service worker ho pak drží i offline. Při změně `sw.js` bumpni `VERSION`, při novém JSONu v `data/` doplň `DATA_FILES` (viz „Jediná verze appky“).
+
 
 ---
 
@@ -225,6 +227,8 @@ Když sáhneš do těchhle algoritmů, přečti si v README i „proč" — jsou
 Router se dá ovládat z konzole: `MC.open("exercises")`, `MC.home()`, `MC.detail(...)` — rychlejší než klikat.
 
 Screenshot ani localhost v Browser pane v tomhle setupu nefungují. **Testuj headless v Node:** `_scratch/tests/` (mimo git, jsdom) — načte `cesta.html`, `fetch` nahradí čtením z `data/`, klikne přes `window.MC.*` a zkontroluje DOM. `node test.js`, `test_rf.js`, `test_fav.js`, `test_swipe.js`; jsdom potřebuje `url: "http://localhost/"`, jinak nemá `localStorage`. Bar je: nula ERR, `window errors: none`. Layout (scroll-snap, výšky) jsdom nemá — to ověří Bob na mobilu.
+
+Service worker se registruje i na `localhost:8777`. Data jedou network-first, takže při vývoji ho nepoznáš — ale po vypnutí serveru appka jede dál z cache (nemysli si, že server běží), a při ladění samotného `sw.js` je potřeba v DevTools → Application → Service Workers „Update on reload“. jsdom SW nemá, `initSW` se v testech vrátí naprázdno.
 
 Než pushneš, zabij server (`taskkill //F //IM python.exe`) — drží složku a `rm -rf` pak spadne na „Device or resource busy".
 
