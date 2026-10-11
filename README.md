@@ -24,6 +24,16 @@ JSON soubory jsou hostované na GitHub Pages ve složce `data/`. Repozitář slo
 
 Repozitář je veřejný (vyžaduje to Pages) — u prototypových dat je to přijatelné. Až půjde o ostrou verzi, řeší se to jinak.
 
+### Offline režim — `sw.js` (16. 9. 2026)
+
+Appka přidaná na plochu jede i bez signálu (hotel, letadlo, metro). Stará se o to service worker `sw.js` v kořeni:
+
+- **Precache při instalaci:** obal (`./`, `index.html`, `cesta.html`, `manifest.json`, ikony) + všech 16 JSONů z `data/`. První návštěva online stáhne ~1,3 MB gzip, pak je všechno v cache. Jeden 404 instalaci neshodí (soubory se přidávají po jednom).
+- **HTML a JSON: network-first se 4s timeoutem** (`NET_TIMEOUT`), při výpadku nebo timeoutu sáhne do cache. Online se appka chová jako dřív — push je po zavření a otevření hned vidět. Navigace bez cache spadne aspoň na `cesta.html`.
+- **Fonty (Google Fonts) a obrázky: cache-first**, na pozadí se obnoví.
+- **Verze:** konstanta `VERSION` (teď `mc-v2`) je v názvu cache, při aktivaci se smažou všechny `mc-*` cache jiné verze. **Když měníš `sw.js` nebo seznam precache, bumpni `VERSION`.** Nový JSON v `data/` = přidat do `DATA_FILES`, jinak offline chybí.
+- **Registrace:** `initSW()` na konci `cesta.html`, jen přes https nebo localhost, `updateViaCache:"none"`. Uvnitř Miowebu registrace tiše selže (jiný origin) a appka jede jako dosud.
+
 ### Free a Premium
 
 Obě verze jsou technicky tatáž aplikace, liší se pouze rozsahem obsahu. Rozlišení řídí pole `tier` u jednotlivých položek.
@@ -674,7 +684,7 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 Režim škrtání pro Boba na road trip — tři akce nad koncovým obsahem, nic víc. Zapíná se úplně dole v hamburgeru („Admin vypnutý/zapnutý“, drží se v `localStorage`). Vypnutý = appka jako pro uživatele.
 
 - **Co jde označit:** každá koncová položka se `store` + `id` — triplet, hlášky (`pain_id:index`), přerámování situací (`sit_id:index`, pseudo-store `situations`), citáty, otázky, články, cvičení, krizovka, tělo. **Editace textu jen u vět**; články/cvičení/krizovka/tělo jen smazat a Top.
-- **Ovládání:** na kartě (i ve swipe kartě) a v detailu tenká lišta **✎ upravit · ★ Top! · ✕ smazat**. U hlášek badge `k`/`n` (který hlas přežívá), u upravených „upraveno“. ✕ → položka zmizí, 3 s toast „Smazáno · Vrátit“. ✎ → inline textarea, Zrušit / Původní / Uložit.
+- **Ovládání:** na kartě (i ve swipe kartě) a v detailu tenká lišta **✎ upravit · ★ Top! · ✕ smazat**. U hlášek badge `k`/`n` (který hlas přežívá), u upravených „upraveno“. ✕ → položka zmizí, 3 s toast „Smazáno · Vrátit“. ✎ → inline textarea, Zrušit / Původní / Uložit. Tlačítko **kopírovat** (`admCopyText`, 16. 9. 2026) hodí do schránky větu, u článků/cvičení/krizovky/těla název — ať se dá rychle vložit do chatu; bez Clipboard API spadne do `window.prompt`.
 - **Účinek:** smazané se nezobrazují a edity se aplikují **i mimo admin mód** (Bob vidí appku, jak ji uvidí uživatel po propsání). Edity se propisují do objektů v paměti při načtení (`applyEdits`, původní v `_orig`), smazané filtruje `alive(store, items)` na každém výpisu. **Data v `data/` se nesahají.**
 - **Uložení:** vlastní klíč `mc_admin_v1` (`deleted`, `edits`, `top`, `lastExport`, `dirty`) — oddělený od uživatelských dat. **Denní snapshot** `mc_admin_bak_<datum>` při prvním zápisu v den, drží se posledních 7 — proti vlastnímu překlepu.
 - **Záloha a koš** (řádek v menu, když je admin zapnutý): počty, dny od exportu + nezálohované změny (zčervená po 3 dnech), **Export** (stáhne `cesta_admin_<datum>.json`), **Zkopírovat** (schránka), **Import** (vložit JSON, sloučí se). Koš = smazané po typech s „Obnovit“.
@@ -829,6 +839,7 @@ cesta/
 ├── index.html               rozcestník na GitHub Pages
 ├── cesta.html     ★ aplikace — jediný živý HTML soubor
 ├── manifest.json            PWA (spuštění z plochy mobilu)
+├── sw.js                    service worker — offline režim (precache obalu i dat)
 ├── tagy.json                kanonický slovník tagů — jediný zdroj pravdy
 ├── data/                    16 datových JSONů (obsah aplikace)
 ├── assets/                  ikony
@@ -862,7 +873,7 @@ Aplikace stojí na **registru sekcí** — jeden `SECTIONS = [...]` řídí úvo
 
 **Headless testy:** `_scratch/tests/` (mimo git) — jsdom načte `cesta.html`, `fetch` čte z `data/`, testy klikají přes `window.MC.*` a kontrolují DOM. `node test.js` atd., viz README tam. Nemá layout — swipe a výšky ověří jen mobil.
 
-**Na mobilu:** `https://haryzek.github.io/cesta/` → „Moje cesta" → v Chrome „Přidat na plochu". Cache je na HTML i JSONech vypnutá, takže po pushi stačí appku zavřít a znovu otevřít.
+**Na mobilu:** `https://haryzek.github.io/cesta/` → „Moje cesta" → v Chrome „Přidat na plochu". HTML i JSONy jedou přes service worker network-first, takže po pushi stačí appku zavřít a znovu otevřít; bez signálu jede z cache (viz „Offline režim“).
 
 Aplikace je **HTML fragment** (bez `<html>`/`<head>`) kvůli vkládání do Miowebu. Meta tagy pro mobil jsou nahoře v souboru — WordPress je ignoruje. Barva pozadí visí na `#mc-root`; při samostatném běhu se `body` obarvuje přes `body:has(> #mc-root)`, což se uvnitř Miowebu (kde je `#mc-root` zanořený ve WP divech) nechytí a pozadí stránky zůstane WordPressu.
 
