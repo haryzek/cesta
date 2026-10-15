@@ -1721,6 +1721,11 @@
       });
       h+='</ul>';
     });
+    h+='</div>';
+    // Reset — testovací fáze: po přečíslování ID visí srdíčka/viděné/edity na cizích položkách.
+    h+='<div class="mc-fav-group"><h2>Reset</h2>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab ghost" onclick="MC.userReset()">Vymazat oblíbené a viděné</button><button class="mc-fab ghost" onclick="MC.admReset()">Vynulovat admin</button></div>';
+    h+='<p class="mc-adm-note">Maže jen data téhle appky v tomhle prohlížeči. Vynulování adminu zahodí smazané, úpravy i Top — denní snapshoty zůstanou.</p>';
     return h+'</div>';
   }
 
@@ -1961,6 +1966,19 @@
         Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
         applyEdits(); saveAdmin(true); state.swipe.key=null; state.swipe.ids=[]; toast("Import hotov"); render();
       }catch(e){ toast("Import selhal — není to JSON"); render(); }
+    },
+    userReset:function(){
+      if(!window.confirm("Vymazat všechna oblíbená a paměť viděného?")) return;
+      USER=emptyUser(); saveUser(); state.swipe.key=null; state.swipe.ids=[]; toast("Oblíbené a viděné vymazány"); render();
+    },
+    admReset:function(){
+      if(!window.confirm("Vynulovat admin? Smazané, úpravy i Top se zahodí. Nejdřív radši Export.")) return;
+      Object.keys(ADMIN.edits).forEach(function(store){
+        var cfg=ADMIN_STORES[store], idx=cfg?(itemIndex[cfg.dataKey]||{}):{};
+        Object.keys(ADMIN.edits[store]).forEach(function(id){ var it=idx[id]; if(it&&it._orig!=null){ it.text=it._orig; delete it._orig; } });
+      });
+      var on=ADMIN.on; ADMIN=emptyAdmin(); ADMIN.on=on; saveAdmin(false);
+      state.swipe.key=null; state.swipe.ids=[]; toast("Admin vynulován"); render();
     },
     // jen nové / proud karet
     onlyNew:function(){ USER.onlyNew=!USER.onlyNew; saveUser(); state.swipe.key=null; state.swipe.ids=[]; render(); },
