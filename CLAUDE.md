@@ -33,7 +33,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 **Struktura všech 16 JSONů je finální** (11. 9. 2026 přibyly `fears`, `situations`, `pains`). Obsah ne — plní se. Když něco tvoříš nebo generuješ, drž se přesně stávající struktury.
 
 - Klastry (116) + pocity (399): kompletní mapa s ID a schématy ✅
-- **Triplet přerámování: KOMPLETNÍ 11. 9. 2026 — 116 klastrů, 5202 R / 3592 Q / 3611 A.** Zdroj = `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sheet per klastr, řádky R/Q/A/E), build `build_triplet.py` + `tykani_opravy.json` (14 vykacích experimentů z cl0001 ručně na tykání). **E = experimenty jdou do úkolů**, žádný čtvrtý soubor. 22 duplikátů zahozeno. **Nepročištěno** — ~10 klastrů má narváno z několika sessions (cl_0001 má 332 R), `cl_0096 Zodpovědný` je smíchaný s „náročný“; čistka po USA v appce.
+- **Triplet přerámování: přebuildováno 15. 10. 2026 — 116 klastrů, 5407 R / 3871 Q / 3745 A, ID od nuly.** Zdroj = `local/data_wip/reframings_triplet_wip/reframings.xlsx`, sheet per klastr, **build čte sloupce C (typ R/Q/A/E) a D (text)** = Bobova přeřazená a učesaná verze; **A/B jsou stará verze, ignorovat**. Build `build_triplet.py` (řádek bez typu zdědí typ předchozího a vypíše se; duplikáty v klastru zahodí). `tykani_opravy.json` je historie verze A/B. **E = experimenty jdou do úkolů**, žádný čtvrtý soubor. Velké klastry zůstávají (cl_0013 331 R, cl_0001 149 R), škrtání v appce.
 - **Strachy (brána 2): nasazeno 11. 9. 2026** — `fears.json` 235 kanonových strachů ve 35 skupinách, každý 5 `cluster_ids`; `situations.json` 137 situací v 10 skupinách, `mark` P/E/K (121/14/2), `aliases`, `fear_ids` 3–6. Zdroj `local/data_wip/strachy_wip/` (`kanon_strachu_pocity.json` = zdroj pravdy pro skupiny, `brany_reframings.md`), build `build_fears.py`. **44× `[ověřit]`** v přerámováních → `overit.md`, musí projít před ostrým nasazením. `kanon_strachu.md` je historie (aliasy zahozeny, měl je u 2 položek).
 - **Bolístky (brána 3): nasazeno 11. 9. 2026** — `pains.json` 175 bolístek, **4199 hlášek** (Karolínka 3480 = základ, source `k`; náš výběr 719, source `n`, ~4/bolístku podle role — krátká rána, humor, provokace, tělo; kovboj nikdy). k_222 ponechána, jen našich 15. `smer` ani `oblast` (guláš, 89 hodnot) se v appce nezobrazují — bolístky jsou jedno zrcadlo vět (rozhodnuto 12. 9. 2026). Build `build_pains.py` z dávek + `hlasky_karolinka.md` + `vyber_nase.json`. **Škrtání na 15 přijde v appce** (provizorní admin na road trip).
 - Krizovka (12): obsahově hotová a pročištěná, slouží jako etalon. Všechny položky `tier: free` (11. 9. 2026 přepnuto z premium — první pomoc v krizi nemá být za paywallem)
@@ -70,7 +70,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 | **oddíly** | `local/data_wip/sections_wip/sections.json` | kopií |
 | **řetězy** | `local/data_wip/chains_wip/chains.json` | kopií |
 | **články** | `data/articles.json` — **zdroj i výsledek**, žádný build | — |
-| **triplet** (ref/refq/refa) | `local/data_wip/reframings_triplet_wip/reframings.xlsx` + `tykani_opravy.json` | `build_triplet.py` |
+| **triplet** (ref/refq/refa) | `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sloupce C/D) | `build_triplet.py` |
 | **strachy** (fears/situations) | `local/data_wip/strachy_wip/kanon_strachu_pocity.json` + `brany_reframings.md` | `build_fears.py` |
 | **bolístky** (pains) | `local/data_wip/bolistky_wip/` dávky + `hlasky_karolinka.md` + `vyber_nase.json` | `build_pains.py` |
 | ostatní | `data/*.json` přímo | — |
