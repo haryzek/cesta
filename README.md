@@ -304,7 +304,7 @@ Tři seznamy navázané vždy na jeden konkrétní klastr (ne na jednotlivý poc
 
 7b i 7c mají stejnou strukturu jako 7a (`id`, `cluster_id`, `text`, `tier`, `sort_order`, `added_at`).
 
-**Stav 15. 10. 2026 — kompletní pro všech 116 klastrů:** 5407 přerámování, 3871 otázek, 3745 úkolů. Zdroj pravdy je `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sheet per klastr), `data/` je výsledek `build_triplet.py`. Build čte **sloupce C (typ `R`/`Q`/`A`/`E`) a D (text)** — Bobem přeřazená a jazykově učesaná verze; sloupce A/B jsou stará verze z 11. 9. a ignorují se. ID přečíslována od nuly (15. 10. 2026, testovací fáze — staré oblíbené/viděné/admin edity nesedí). **Behaviorální experimenty (začínají „Experiment …“) jdou do úkolů** — rozhodnuto 11. 9. 2026, žádný čtvrtý soubor. Škrtání obsahu proběhne přímo v appce v režimu provizorního adminu.
+**Stav 16. 10. 2026 — kompletní pro všech 116 klastrů:** 5415 přerámování, 3875 otázek, 3747 úkolů (po Bobově průchodu oslími návrhy). Zdroj pravdy je `local/data_wip/reframings_triplet_wip/reframings.xlsx` (sheet per klastr), `data/` je výsledek `build_triplet.py`. Build čte **sloupce C (typ `R`/`Q`/`A`/`E`) a D (text)** — Bobem přeřazená a jazykově učesaná verze; sloupce A/B jsou stará verze z 11. 9. a ignorují se. ID přečíslována od nuly (15. 10. 2026, testovací fáze — staré oblíbené/viděné/admin edity nesedí). **Behaviorální experimenty (začínají „Experiment …“) jdou do úkolů** — rozhodnuto 11. 9. 2026, žádný čtvrtý soubor. Škrtání obsahu proběhne přímo v appce v režimu provizorního adminu.
 
 ### 10. Inspirace — `inspirations.json`
 
@@ -804,7 +804,7 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný; tóny přerozdělené 12. 9. 2026 |
 | Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |
 | Vizuál — karty proudu | 🔄 funkční, čekají na design pass (písmo, plocha, tón) |
-| Triplet přerámování | ✅ kompletní 116/116 klastrů (5407 R / 3871 Q / 3745 A), přeřazený a učesaný 15. 10., škrtání v appce |
+| Triplet přerámování | ✅ kompletní 116/116 klastrů (5415 R / 3875 Q / 3747 A), přeřazený a učesaný 15.–16. 10., škrtání v appce |
 | Strachy, situace, bolístky | ✅ nasazené v datech i appce; 44× `[ověřit]`, škrtání hlášek na 15 čeká |
 | Ostatní obsah (články 112, cvičení 71, inspirace 202, otázky 251, krizovka 12, tělo 31) | ✅ nasazený, obsahově neprověřený (viz TODO) |
 | Embed kompletní verze do Miowebu | 🔲 neověřeno (nově i výška proudu karet) |
