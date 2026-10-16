@@ -51,7 +51,13 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 - [ ] **Zadat, jestli projet perexy článků.** U cvičení se to udělalo (8 přepsaných
       z 71). U 112 článků se perexy zatím nikdo nedíval stejným metrem.
 - [ ] **Tělesné příznaky — 26 nových prověřit** (napsané podle šablony 26. 8.,
-      Bob je obsahově neviděl).
+      Bob je obsahově neviděl). Odborná medicínská kontrola všech 31 hotová
+      16. 10. 2026 (`local/kontrola/telo_odborna_kontrola.md`), Bobovo čtení zbývá.
+- [ ] **Ženské verze vět (rozhodnuto 16. 10. 2026) — až po ořezu tripletu na
+      top 20.** Excel sloupec F = ženská verze (jen kde se liší) → build `text_f`
+      + lint „D vypadá rodově a F chybí“; v appce volba oslovení žena / muž,
+      fallback `text`. Rozsah: triplet, hlášky, situace/strachy, deník, Otázky „(a)“.
+      Rodových vět ~40 % (po ořezu ~3 000). Generuje Claude po dávkách, Bob namátkou.
 - [ ] **Zobrazovací vrstva nad slovníkem** — jen kdyby se lišta filtru po
       přetagování stala nepřehlednou (rozhodnuto 11. 9.: zatím ne).
 
