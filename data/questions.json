@@ -823,19 +823,6 @@
     "added_at": "2026-09-11"
   },
   {
-    "id": "quest_0069",
-    "text": "Nebojím se ve skutečnosti hlavně toho, jak mě posoudí druzí?",
-    "tags": [
-      "strach",
-      "uznání",
-      "autenticita",
-      "sebevědomí"
-    ],
-    "tier": "free",
-    "sort_order": 69,
-    "added_at": "2026-09-11"
-  },
-  {
     "id": "quest_0070",
     "text": "Jak bych se choval(a), kdybych se přestal(a) bát toho, co si myslí ostatní?",
     "tags": [
@@ -845,7 +832,7 @@
       "uznání"
     ],
     "tier": "free",
-    "sort_order": 70,
+    "sort_order": 69,
     "added_at": "2026-09-11"
   },
   {
@@ -857,7 +844,7 @@
       "úspěch"
     ],
     "tier": "free",
-    "sort_order": 71,
+    "sort_order": 70,
     "added_at": "2026-09-11"
   },
   {
@@ -870,7 +857,7 @@
       "úspěch"
     ],
     "tier": "free",
-    "sort_order": 72,
+    "sort_order": 71,
     "added_at": "2026-09-11"
   },
   {
@@ -882,7 +869,7 @@
       "komunikace"
     ],
     "tier": "free",
-    "sort_order": 73,
+    "sort_order": 72,
     "added_at": "2026-09-11"
   },
   {
@@ -894,7 +881,7 @@
       "motivace"
     ],
     "tier": "free",
-    "sort_order": 74,
+    "sort_order": 73,
     "added_at": "2026-09-11"
   },
   {
@@ -905,7 +892,7 @@
       "sebevědomí"
     ],
     "tier": "free",
-    "sort_order": 75,
+    "sort_order": 74,
     "added_at": "2026-09-11"
   },
   {
@@ -917,7 +904,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 76,
+    "sort_order": 75,
     "added_at": "2026-09-11"
   },
   {
@@ -929,7 +916,7 @@
       "přítomnost"
     ],
     "tier": "free",
-    "sort_order": 77,
+    "sort_order": 76,
     "added_at": "2026-09-11"
   },
   {
@@ -941,7 +928,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 78,
+    "sort_order": 77,
     "added_at": "2026-09-11"
   },
   {
@@ -953,7 +940,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 79,
+    "sort_order": 78,
     "added_at": "2026-09-11"
   },
   {
@@ -965,7 +952,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 80,
+    "sort_order": 79,
     "added_at": "2026-09-11"
   },
   {
@@ -978,7 +965,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 81,
+    "sort_order": 80,
     "added_at": "2026-09-11"
   },
   {
@@ -991,7 +978,7 @@
       "láska"
     ],
     "tier": "free",
-    "sort_order": 82,
+    "sort_order": 81,
     "added_at": "2026-09-11"
   },
   {
@@ -1003,7 +990,7 @@
       "moudrost"
     ],
     "tier": "free",
-    "sort_order": 83,
+    "sort_order": 82,
     "added_at": "2026-09-11"
   },
   {
@@ -1015,7 +1002,7 @@
       "smysl života"
     ],
     "tier": "free",
-    "sort_order": 84,
+    "sort_order": 83,
     "added_at": "2026-09-11"
   },
   {
@@ -1027,7 +1014,7 @@
       "rozhodování"
     ],
     "tier": "free",
-    "sort_order": 85,
+    "sort_order": 84,
     "added_at": "2026-09-11"
   },
   {
@@ -1039,7 +1026,7 @@
       "změna"
     ],
     "tier": "free",
-    "sort_order": 86,
+    "sort_order": 85,
     "added_at": "2026-09-11"
   },
   {
@@ -1051,7 +1038,7 @@
       "změna"
     ],
     "tier": "free",
-    "sort_order": 87,
+    "sort_order": 86,
     "added_at": "2026-09-11"
   },
   {
@@ -1063,7 +1050,7 @@
       "smysl života"
     ],
     "tier": "free",
-    "sort_order": 88,
+    "sort_order": 87,
     "added_at": "2026-09-11"
   },
   {
@@ -1076,7 +1063,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 89,
+    "sort_order": 88,
     "added_at": "2026-09-11"
   },
   {
@@ -1087,7 +1074,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 90,
+    "sort_order": 89,
     "added_at": "2026-09-11"
   },
   {
@@ -1099,7 +1086,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 91,
+    "sort_order": 90,
     "added_at": "2026-09-11"
   },
   {
@@ -1112,7 +1099,7 @@
       "vztahy"
     ],
     "tier": "free",
-    "sort_order": 92,
+    "sort_order": 91,
     "added_at": "2026-09-11"
   },
   {
@@ -1125,7 +1112,7 @@
       "rodina"
     ],
     "tier": "free",
-    "sort_order": 93,
+    "sort_order": 92,
     "added_at": "2026-09-11"
   },
   {
@@ -1138,7 +1125,7 @@
       "smrt"
     ],
     "tier": "free",
-    "sort_order": 94,
+    "sort_order": 93,
     "added_at": "2026-09-11"
   },
   {
@@ -1151,7 +1138,7 @@
       "štěstí"
     ],
     "tier": "free",
-    "sort_order": 95,
+    "sort_order": 94,
     "added_at": "2026-09-11"
   },
   {
@@ -1161,7 +1148,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 96,
+    "sort_order": 95,
     "added_at": "2026-09-11"
   },
   {
@@ -1172,7 +1159,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 97,
+    "sort_order": 96,
     "added_at": "2026-09-11"
   },
   {
@@ -1184,7 +1171,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 98,
+    "sort_order": 97,
     "added_at": "2026-09-11"
   },
   {
@@ -1196,7 +1183,7 @@
       "myšlenky"
     ],
     "tier": "free",
-    "sort_order": 99,
+    "sort_order": 98,
     "added_at": "2026-09-11"
   },
   {
@@ -1208,7 +1195,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 100,
+    "sort_order": 99,
     "added_at": "2026-09-11"
   },
   {
@@ -1219,7 +1206,7 @@
       "hodnoty"
     ],
     "tier": "free",
-    "sort_order": 101,
+    "sort_order": 100,
     "added_at": "2026-09-11"
   },
   {
@@ -1231,7 +1218,7 @@
       "identita"
     ],
     "tier": "free",
-    "sort_order": 102,
+    "sort_order": 101,
     "added_at": "2026-09-11"
   },
   {
@@ -1243,7 +1230,7 @@
       "sebevědomí"
     ],
     "tier": "free",
-    "sort_order": 103,
+    "sort_order": 102,
     "added_at": "2026-09-11"
   },
   {
@@ -1254,7 +1241,7 @@
       "moudrost"
     ],
     "tier": "free",
-    "sort_order": 104,
+    "sort_order": 103,
     "added_at": "2026-09-11"
   },
   {
@@ -1266,7 +1253,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 105,
+    "sort_order": 104,
     "added_at": "2026-09-11"
   },
   {
@@ -1277,7 +1264,7 @@
       "přínos"
     ],
     "tier": "free",
-    "sort_order": 106,
+    "sort_order": 105,
     "added_at": "2026-09-11"
   },
   {
@@ -1288,7 +1275,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 107,
+    "sort_order": 106,
     "added_at": "2026-09-11"
   },
   {
@@ -1300,7 +1287,7 @@
       "láska"
     ],
     "tier": "free",
-    "sort_order": 108,
+    "sort_order": 107,
     "added_at": "2026-09-11"
   },
   {
@@ -1312,7 +1299,7 @@
       "přínos"
     ],
     "tier": "free",
-    "sort_order": 109,
+    "sort_order": 108,
     "added_at": "2026-09-11"
   },
   {
@@ -1324,7 +1311,7 @@
       "volný čas"
     ],
     "tier": "free",
-    "sort_order": 110,
+    "sort_order": 109,
     "added_at": "2026-09-11"
   },
   {
@@ -1335,7 +1322,7 @@
       "tvoření"
     ],
     "tier": "free",
-    "sort_order": 111,
+    "sort_order": 110,
     "added_at": "2026-09-11"
   },
   {
@@ -1348,7 +1335,7 @@
       "přítomnost"
     ],
     "tier": "free",
-    "sort_order": 112,
+    "sort_order": 111,
     "added_at": "2026-09-11"
   },
   {
@@ -1360,7 +1347,7 @@
       "rodina"
     ],
     "tier": "free",
-    "sort_order": 113,
+    "sort_order": 112,
     "added_at": "2026-09-11"
   },
   {
@@ -1372,7 +1359,7 @@
       "odvaha"
     ],
     "tier": "free",
-    "sort_order": 114,
+    "sort_order": 113,
     "added_at": "2026-09-11"
   },
   {
@@ -1384,7 +1371,7 @@
       "duševní pohoda"
     ],
     "tier": "free",
-    "sort_order": 115,
+    "sort_order": 114,
     "added_at": "2026-09-11"
   },
   {
@@ -1396,7 +1383,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 116,
+    "sort_order": 115,
     "added_at": "2026-09-11"
   },
   {
@@ -1408,7 +1395,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 117,
+    "sort_order": 116,
     "added_at": "2026-09-11"
   },
   {
@@ -1420,7 +1407,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 118,
+    "sort_order": 117,
     "added_at": "2026-09-11"
   },
   {
@@ -1433,7 +1420,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 119,
+    "sort_order": 118,
     "added_at": "2026-09-11"
   },
   {
@@ -1446,7 +1433,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 120,
+    "sort_order": 119,
     "added_at": "2026-09-11"
   },
   {
@@ -1459,7 +1446,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 121,
+    "sort_order": 120,
     "added_at": "2026-09-11"
   },
   {
@@ -1471,7 +1458,7 @@
       "růst"
     ],
     "tier": "free",
-    "sort_order": 122,
+    "sort_order": 121,
     "added_at": "2026-09-11"
   },
   {
@@ -1484,7 +1471,7 @@
       "odolnost"
     ],
     "tier": "free",
-    "sort_order": 123,
+    "sort_order": 122,
     "added_at": "2026-09-11"
   },
   {
@@ -1497,7 +1484,7 @@
       "odvaha"
     ],
     "tier": "free",
-    "sort_order": 124,
+    "sort_order": 123,
     "added_at": "2026-09-11"
   },
   {
@@ -1509,7 +1496,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 125,
+    "sort_order": 124,
     "added_at": "2026-09-11"
   },
   {
@@ -1522,7 +1509,7 @@
       "myšlenky"
     ],
     "tier": "free",
-    "sort_order": 126,
+    "sort_order": 125,
     "added_at": "2026-09-11"
   },
   {
@@ -1535,7 +1522,7 @@
       "vina"
     ],
     "tier": "free",
-    "sort_order": 127,
+    "sort_order": 126,
     "added_at": "2026-09-11"
   },
   {
@@ -1548,7 +1535,7 @@
       "úspěch"
     ],
     "tier": "free",
-    "sort_order": 128,
+    "sort_order": 127,
     "added_at": "2026-09-11"
   },
   {
@@ -1561,7 +1548,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 129,
+    "sort_order": 128,
     "added_at": "2026-09-11"
   },
   {
@@ -1574,7 +1561,7 @@
       "moudrost"
     ],
     "tier": "free",
-    "sort_order": 130,
+    "sort_order": 129,
     "added_at": "2026-09-11"
   },
   {
@@ -1587,7 +1574,7 @@
       "sebevědomí"
     ],
     "tier": "free",
-    "sort_order": 131,
+    "sort_order": 130,
     "added_at": "2026-09-11"
   },
   {
@@ -1599,7 +1586,7 @@
       "návyky"
     ],
     "tier": "free",
-    "sort_order": 132,
+    "sort_order": 131,
     "added_at": "2026-09-11"
   },
   {
@@ -1611,7 +1598,7 @@
       "svoboda"
     ],
     "tier": "free",
-    "sort_order": 133,
+    "sort_order": 132,
     "added_at": "2026-09-11"
   },
   {
@@ -1623,7 +1610,7 @@
       "mindfulness"
     ],
     "tier": "free",
-    "sort_order": 134,
+    "sort_order": 133,
     "added_at": "2026-09-11"
   },
   {
@@ -1635,7 +1622,7 @@
       "fyzické zdraví"
     ],
     "tier": "free",
-    "sort_order": 135,
+    "sort_order": 134,
     "added_at": "2026-09-11"
   },
   {
@@ -1647,7 +1634,7 @@
       "přítomnost"
     ],
     "tier": "free",
-    "sort_order": 136,
+    "sort_order": 135,
     "added_at": "2026-09-11"
   },
   {
@@ -1659,7 +1646,7 @@
       "volný čas"
     ],
     "tier": "free",
-    "sort_order": 137,
+    "sort_order": 136,
     "added_at": "2026-09-11"
   },
   {
@@ -1671,7 +1658,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 138,
+    "sort_order": 137,
     "added_at": "2026-09-11"
   },
   {
@@ -1683,7 +1670,7 @@
       "plné prožívání"
     ],
     "tier": "free",
-    "sort_order": 139,
+    "sort_order": 138,
     "added_at": "2026-09-11"
   },
   {
@@ -1696,7 +1683,7 @@
       "přijetí"
     ],
     "tier": "free",
-    "sort_order": 140,
+    "sort_order": 139,
     "added_at": "2026-09-11"
   },
   {
@@ -1708,7 +1695,7 @@
       "duševní pohoda"
     ],
     "tier": "free",
-    "sort_order": 141,
+    "sort_order": 140,
     "added_at": "2026-09-11"
   },
   {
@@ -1721,7 +1708,7 @@
       "mindfulness"
     ],
     "tier": "free",
-    "sort_order": 142,
+    "sort_order": 141,
     "added_at": "2026-09-11"
   },
   {
@@ -1733,7 +1720,7 @@
       "mindfulness"
     ],
     "tier": "free",
-    "sort_order": 143,
+    "sort_order": 142,
     "added_at": "2026-09-11"
   },
   {
@@ -1745,7 +1732,7 @@
       "tělo"
     ],
     "tier": "free",
-    "sort_order": 144,
+    "sort_order": 143,
     "added_at": "2026-09-11"
   },
   {
@@ -1757,7 +1744,7 @@
       "mindfulness"
     ],
     "tier": "free",
-    "sort_order": 145,
+    "sort_order": 144,
     "added_at": "2026-09-11"
   },
   {
@@ -1769,7 +1756,7 @@
       "fyzické zdraví"
     ],
     "tier": "free",
-    "sort_order": 146,
+    "sort_order": 145,
     "added_at": "2026-09-11"
   },
   {
@@ -1781,7 +1768,7 @@
       "emoce"
     ],
     "tier": "free",
-    "sort_order": 147,
+    "sort_order": 146,
     "added_at": "2026-09-11"
   },
   {
@@ -1793,7 +1780,7 @@
       "sebeláska"
     ],
     "tier": "free",
-    "sort_order": 148,
+    "sort_order": 147,
     "added_at": "2026-09-11"
   },
   {
@@ -1805,7 +1792,7 @@
       "přijetí"
     ],
     "tier": "free",
-    "sort_order": 149,
+    "sort_order": 148,
     "added_at": "2026-09-11"
   },
   {
@@ -1817,7 +1804,7 @@
       "plné prožívání"
     ],
     "tier": "free",
-    "sort_order": 150,
+    "sort_order": 149,
     "added_at": "2026-09-11"
   },
   {
@@ -1830,7 +1817,7 @@
       "sebeláska"
     ],
     "tier": "free",
-    "sort_order": 151,
+    "sort_order": 150,
     "added_at": "2026-09-11"
   },
   {
@@ -1842,7 +1829,7 @@
       "štěstí"
     ],
     "tier": "free",
-    "sort_order": 152,
+    "sort_order": 151,
     "added_at": "2026-09-11"
   },
   {
@@ -1855,7 +1842,7 @@
       "volný čas"
     ],
     "tier": "free",
-    "sort_order": 153,
+    "sort_order": 152,
     "added_at": "2026-09-11"
   },
   {
@@ -1868,7 +1855,7 @@
       "mindfulness"
     ],
     "tier": "free",
-    "sort_order": 154,
+    "sort_order": 153,
     "added_at": "2026-09-11"
   },
   {
@@ -1881,7 +1868,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 155,
+    "sort_order": 154,
     "added_at": "2026-09-11"
   },
   {
@@ -1892,7 +1879,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 156,
+    "sort_order": 155,
     "added_at": "2026-09-11"
   },
   {
@@ -1905,7 +1892,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 157,
+    "sort_order": 156,
     "added_at": "2026-09-11"
   },
   {
@@ -1917,7 +1904,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 158,
+    "sort_order": 157,
     "added_at": "2026-09-11"
   },
   {
@@ -1929,7 +1916,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 159,
+    "sort_order": 158,
     "added_at": "2026-09-11"
   },
   {
@@ -1942,7 +1929,7 @@
       "tvoření"
     ],
     "tier": "free",
-    "sort_order": 160,
+    "sort_order": 159,
     "added_at": "2026-09-11"
   },
   {
@@ -1955,7 +1942,7 @@
       "svoboda"
     ],
     "tier": "free",
-    "sort_order": 161,
+    "sort_order": 160,
     "added_at": "2026-09-11"
   },
   {
@@ -1968,7 +1955,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 162,
+    "sort_order": 161,
     "added_at": "2026-09-11"
   },
   {
@@ -1981,7 +1968,7 @@
       "sebevědomí"
     ],
     "tier": "free",
-    "sort_order": 163,
+    "sort_order": 162,
     "added_at": "2026-09-11"
   },
   {
@@ -1994,7 +1981,7 @@
       "identita"
     ],
     "tier": "free",
-    "sort_order": 164,
+    "sort_order": 163,
     "added_at": "2026-09-11"
   },
   {
@@ -2006,7 +1993,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 165,
+    "sort_order": 164,
     "added_at": "2026-09-11"
   },
   {
@@ -2019,7 +2006,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 166,
+    "sort_order": 165,
     "added_at": "2026-09-11"
   },
   {
@@ -2031,7 +2018,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 167,
+    "sort_order": 166,
     "added_at": "2026-09-11"
   },
   {
@@ -2043,7 +2030,7 @@
       "moudrost"
     ],
     "tier": "free",
-    "sort_order": 168,
+    "sort_order": 167,
     "added_at": "2026-09-11"
   },
   {
@@ -2056,7 +2043,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 169,
+    "sort_order": 168,
     "added_at": "2026-09-11"
   },
   {
@@ -2069,7 +2056,7 @@
       "volný čas"
     ],
     "tier": "free",
-    "sort_order": 170,
+    "sort_order": 169,
     "added_at": "2026-09-11"
   },
   {
@@ -2081,7 +2068,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 171,
+    "sort_order": 170,
     "added_at": "2026-09-11"
   },
   {
@@ -2093,7 +2080,7 @@
       "motivace"
     ],
     "tier": "free",
-    "sort_order": 172,
+    "sort_order": 171,
     "added_at": "2026-09-11"
   },
   {
@@ -2107,7 +2094,7 @@
       "změna"
     ],
     "tier": "free",
-    "sort_order": 173,
+    "sort_order": 172,
     "added_at": "2026-09-11"
   },
   {
@@ -2120,7 +2107,7 @@
       "volný čas"
     ],
     "tier": "free",
-    "sort_order": 174,
+    "sort_order": 173,
     "added_at": "2026-09-11"
   },
   {
@@ -2133,7 +2120,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 175,
+    "sort_order": 174,
     "added_at": "2026-09-11"
   },
   {
@@ -2145,7 +2132,7 @@
       "svoboda"
     ],
     "tier": "free",
-    "sort_order": 176,
+    "sort_order": 175,
     "added_at": "2026-09-11"
   },
   {
@@ -2157,7 +2144,7 @@
       "odpovědnost"
     ],
     "tier": "free",
-    "sort_order": 177,
+    "sort_order": 176,
     "added_at": "2026-09-11"
   },
   {
@@ -2169,7 +2156,7 @@
       "odvaha"
     ],
     "tier": "free",
-    "sort_order": 178,
+    "sort_order": 177,
     "added_at": "2026-09-11"
   },
   {
@@ -2182,7 +2169,7 @@
       "rodina"
     ],
     "tier": "free",
-    "sort_order": 179,
+    "sort_order": 178,
     "added_at": "2026-09-11"
   },
   {
@@ -2195,7 +2182,7 @@
       "nezávislost"
     ],
     "tier": "free",
-    "sort_order": 180,
+    "sort_order": 179,
     "added_at": "2026-09-11"
   },
   {
@@ -2208,7 +2195,7 @@
       "nezávislost"
     ],
     "tier": "free",
-    "sort_order": 181,
+    "sort_order": 180,
     "added_at": "2026-09-11"
   },
   {
@@ -2221,7 +2208,7 @@
       "nezávislost"
     ],
     "tier": "free",
-    "sort_order": 182,
+    "sort_order": 181,
     "added_at": "2026-09-11"
   },
   {
@@ -2234,7 +2221,7 @@
       "moudrost"
     ],
     "tier": "free",
-    "sort_order": 183,
+    "sort_order": 182,
     "added_at": "2026-09-11"
   },
   {
@@ -2247,7 +2234,7 @@
       "bezmoc"
     ],
     "tier": "free",
-    "sort_order": 184,
+    "sort_order": 183,
     "added_at": "2026-09-11"
   },
   {
@@ -2260,7 +2247,7 @@
       "sebevědomí"
     ],
     "tier": "free",
-    "sort_order": 185,
+    "sort_order": 184,
     "added_at": "2026-09-11"
   },
   {
@@ -2272,7 +2259,7 @@
       "rozhodování"
     ],
     "tier": "free",
-    "sort_order": 186,
+    "sort_order": 185,
     "added_at": "2026-09-11"
   },
   {
@@ -2285,7 +2272,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 187,
+    "sort_order": 186,
     "added_at": "2026-09-11"
   },
   {
@@ -2297,7 +2284,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 188,
+    "sort_order": 187,
     "added_at": "2026-09-11"
   },
   {
@@ -2310,7 +2297,7 @@
       "přijetí"
     ],
     "tier": "free",
-    "sort_order": 189,
+    "sort_order": 188,
     "added_at": "2026-09-11"
   },
   {
@@ -2323,7 +2310,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 190,
+    "sort_order": 189,
     "added_at": "2026-09-11"
   },
   {
@@ -2335,7 +2322,7 @@
       "sebepoznání"
     ],
     "tier": "free",
-    "sort_order": 191,
+    "sort_order": 190,
     "added_at": "2026-09-11"
   },
   {
@@ -2348,7 +2335,7 @@
       "nezávislost"
     ],
     "tier": "free",
-    "sort_order": 192,
+    "sort_order": 191,
     "added_at": "2026-09-11"
   },
   {
@@ -2362,7 +2349,7 @@
       "identita"
     ],
     "tier": "free",
-    "sort_order": 193,
+    "sort_order": 192,
     "added_at": "2026-09-11"
   },
   {
@@ -2374,417 +2361,7 @@
       "hranice"
     ],
     "tier": "free",
-    "sort_order": 194,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0195",
-    "text": "Kdy jsem naposledy řekl(a) ano, i když celé moje tělo křičelo ne?",
-    "tags": [
-      "hranice",
-      "autenticita",
-      "tělo"
-    ],
-    "tier": "free",
-    "sort_order": 195,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0196",
-    "text": "Co by se stalo, kdyby se moji blízcí museli chvíli obejít bez mé péče?",
-    "tags": [
-      "hranice",
-      "odpovědnost",
-      "rodina",
-      "vztahy"
-    ],
-    "tier": "free",
-    "sort_order": 196,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0197",
-    "text": "Co nejhoršího by se stalo, kdyby lidé kolem mě uviděli moji únavu nebo slabost?",
-    "tags": [
-      "autenticita",
-      "sebeláska",
-      "strach",
-      "přijetí"
-    ],
-    "tier": "free",
-    "sort_order": 197,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0198",
-    "text": "Kdo by měl jako první slyšet, co doopravdy potřebuji — a já raději mlčím?",
-    "tags": [
-      "komunikace",
-      "vztahy",
-      "hranice",
-      "autenticita"
-    ],
-    "tier": "free",
-    "sort_order": 198,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0199",
-    "text": "Ulevuji si někdy jídlem, prací nebo nákupy místo toho, abych vyhledal(a) blízkost?",
-    "tags": [
-      "návyky",
-      "samota",
-      "vztahy"
-    ],
-    "tier": "free",
-    "sort_order": 199,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0200",
-    "text": "Na kom visí můj pocit bezpečí — a co by se stalo, kdyby zítra odešel?",
-    "tags": [
-      "bezpečí",
-      "vztahy",
-      "nezávislost",
-      "strach"
-    ],
-    "tier": "free",
-    "sort_order": 200,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0201",
-    "text": "Odpojuji se ze vztahů dřív, než mě stihne někdo opustit?",
-    "tags": [
-      "vztahy",
-      "strach",
-      "bezpečí"
-    ],
-    "tier": "free",
-    "sort_order": 201,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0202",
-    "text": "Kolik mého neklidu pramení z přesvědčení, že klid je jen ticho před bouří?",
-    "tags": [
-      "strach",
-      "myšlenky",
-      "bezpečí",
-      "přítomnost"
-    ],
-    "tier": "free",
-    "sort_order": 202,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0203",
-    "text": "Odkud mám přesvědčení, že mě druzí dřív nebo později zradí, když polevím v ostražitosti?",
-    "tags": [
-      "vztahy",
-      "bezpečí",
-      "strach",
-      "rodina"
-    ],
-    "tier": "free",
-    "sort_order": 203,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0204",
-    "text": "Když mě někdo chválí, jak moc v duchu hledám jeho skryté motivy?",
-    "tags": [
-      "vztahy",
-      "přijetí",
-      "uznání",
-      "sebevědomí"
-    ],
-    "tier": "free",
-    "sort_order": 204,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0205",
-    "text": "Kdo mě kdysi zranil tak, že dodnes podezřívám i lidi, kteří to se mnou myslí dobře?",
-    "tags": [
-      "vztahy",
-      "bezpečí",
-      "přijetí"
-    ],
-    "tier": "free",
-    "sort_order": 205,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0206",
-    "text": "Čím živím iluzi, že mě samota ochrání před utrpením?",
-    "tags": [
-      "samota",
-      "bezpečí",
-      "vztahy"
-    ],
-    "tier": "free",
-    "sort_order": 206,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0207",
-    "text": "Kam až sahá můj pocit, že nikam nepatřím?",
-    "tags": [
-      "sounáležitost",
-      "samota",
-      "identita"
-    ],
-    "tier": "free",
-    "sort_order": 207,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0208",
-    "text": "Maskuji svoji odlišnost tím, že se přizpůsobuji zájmům a názorům ostatních?",
-    "tags": [
-      "autenticita",
-      "sounáležitost",
-      "přijetí",
-      "identita"
-    ],
-    "tier": "free",
-    "sort_order": 208,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0209",
-    "text": "Jaké tajemství tajím ze strachu, že by se mě lidé zřekli?",
-    "tags": [
-      "stud",
-      "autenticita",
-      "přijetí",
-      "vztahy"
-    ],
-    "tier": "free",
-    "sort_order": 209,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0210",
-    "text": "Jak moc odvozuji svoji hodnotu od chyb, které jsem udělal(a)?",
-    "tags": [
-      "sebeláska",
-      "minulost",
-      "vina",
-      "přijetí",
-      "sebevědomí"
-    ],
-    "tier": "free",
-    "sort_order": 210,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0211",
-    "text": "Od koho tajně čekám, že mi přečte myšlenky a zachrání mě?",
-    "tags": [
-      "vztahy",
-      "komunikace",
-      "samostatnost",
-      "odpovědnost"
-    ],
-    "tier": "free",
-    "sort_order": 211,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0212",
-    "text": "Kde se tvářím jako oběť, jen abych nemusel(a) převzít odpovědnost za změnu?",
-    "tags": [
-      "odpovědnost",
-      "změna",
-      "bezmoc",
-      "samostatnost"
-    ],
-    "tier": "free",
-    "sort_order": 212,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0213",
-    "text": "Věřím víc úsudku cizích lidí než vlastním instinktům a zkušenostem?",
-    "tags": [
-      "sebevědomí",
-      "samostatnost",
-      "rozhodování",
-      "nezávislost"
-    ],
-    "tier": "free",
-    "sort_order": 213,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0214",
-    "text": "Kde beru jistotu, že katastrofické scénáře v mé hlavě jsou předpověď, a ne jen únava?",
-    "tags": [
-      "myšlenky",
-      "strach",
-      "přítomnost"
-    ],
-    "tier": "free",
-    "sort_order": 214,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0215",
-    "text": "Kolik energie denně spálím kontrolou věcí, které nedokážu ovlivnit?",
-    "tags": [
-      "přijetí",
-      "bezmoc",
-      "myšlenky",
-      "přítomnost"
-    ],
-    "tier": "free",
-    "sort_order": 215,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0216",
-    "text": "Co mě můj strach ze selhání nebo nemoci učí o tom, jak lpím na absolutním bezpečí?",
-    "tags": [
-      "strach",
-      "bezpečí",
-      "přijetí",
-      "moudrost"
-    ],
-    "tier": "free",
-    "sort_order": 216,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0217",
-    "text": "Čí život vlastně žiju, když se snažím plnit očekávání všech kolem?",
-    "tags": [
-      "autenticita",
-      "svoboda",
-      "hranice",
-      "rodina"
-    ],
-    "tier": "free",
-    "sort_order": 217,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0218",
-    "text": "Kde končím já a kde začínají nálady a potřeby mého partnera nebo rodičů?",
-    "tags": [
-      "hranice",
-      "identita",
-      "vztahy",
-      "rodina"
-    ],
-    "tier": "free",
-    "sort_order": 218,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0219",
-    "text": "Čí hněv nebo zklamání se snažím výkonem a dokonalostí odvracet už od dětství?",
-    "tags": [
-      "rodina",
-      "dětství",
-      "uznání",
-      "produktivita",
-      "strach"
-    ],
-    "tier": "free",
-    "sort_order": 219,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0220",
-    "text": "Nezaměňuji dělání chyb s pocitem, že já sám / sama jsem jedno velké selhání?",
-    "tags": [
-      "sebeláska",
-      "přijetí",
-      "stud",
-      "myšlenky"
-    ],
-    "tier": "free",
-    "sort_order": 220,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0221",
-    "text": "Co by mi zbylo ze sebevědomí, kdybych zítra ztratil(a) práci, status i všechny své úspěchy?",
-    "tags": [
-      "sebevědomí",
-      "identita",
-      "úspěch",
-      "hodnoty"
-    ],
-    "tier": "free",
-    "sort_order": 221,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0222",
-    "text": "Kde si myslím, že pravidla platící pro ostatní pro mě neplatí?",
-    "tags": [
-      "hodnoty",
-      "odpovědnost",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "tier": "free",
-    "sort_order": 222,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0223",
-    "text": "Není moje potřeba mít pravdu a mít věci pod kontrolou jen štítem před bezmocí?",
-    "tags": [
-      "bezmoc",
-      "konflikty",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "tier": "free",
-    "sort_order": 223,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0224",
-    "text": "Koho zraňuji pocitem, že mi svět dluží zvláštní zacházení?",
-    "tags": [
-      "vztahy",
-      "odpovědnost",
-      "rodina"
-    ],
-    "tier": "free",
-    "sort_order": 224,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0225",
-    "text": "Co se v sobě snažím přehlušit tím, že se držím v šíleném pracovním tempu?",
-    "tags": [
-      "produktivita",
-      "emoce",
-      "sebepoznání",
-      "návyky"
-    ],
-    "tier": "free",
-    "sort_order": 225,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0226",
-    "text": "Kolik mých projektů ztroskotalo jen na tom, že jsem nevydržel(a) počáteční nudu a frustraci?",
-    "tags": [
-      "motivace",
-      "návyky",
-      "produktivita",
-      "odolnost"
-    ],
-    "tier": "free",
-    "sort_order": 226,
+    "sort_order": 193,
     "added_at": "2026-09-11"
   },
   {
@@ -2796,211 +2373,7 @@
       "rozhodování"
     ],
     "tier": "free",
-    "sort_order": 227,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0228",
-    "text": "Kolik svých rozhodnutí dělám jen proto, aby se druzí necítili špatně?",
-    "tags": [
-      "hranice",
-      "rozhodování",
-      "vztahy",
-      "autenticita"
-    ],
-    "tier": "free",
-    "sort_order": 228,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0229",
-    "text": "Kde potlačuji zdravý vztek a volím raději tichou, pasivně-agresivní pomstu?",
-    "tags": [
-      "hněv",
-      "konflikty",
-      "komunikace",
-      "vztahy"
-    ],
-    "tier": "free",
-    "sort_order": 229,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0230",
-    "text": "Před kým hrbím hřbet a vzdávám se své svobody ze strachu z konfliktu?",
-    "tags": [
-      "hranice",
-      "konflikty",
-      "svoboda",
-      "odvaha"
-    ],
-    "tier": "free",
-    "sort_order": 230,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0231",
-    "text": "Sbírám lajky, pochvaly a uznání zvenčí, protože uvnitř žádné necítím?",
-    "tags": [
-      "uznání",
-      "sebeláska",
-      "sebevědomí"
-    ],
-    "tier": "free",
-    "sort_order": 231,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0232",
-    "text": "Jak moc odpovídá moje maska na veřejnosti tomu, jak se cítím večer o samotě?",
-    "tags": [
-      "autenticita",
-      "samota",
-      "identita"
-    ],
-    "tier": "free",
-    "sort_order": 232,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0233",
-    "text": "Jaké moje měřítko úspěchu je tak přísné, že ho nesplní žádný člověk na světě?",
-    "tags": [
-      "úspěch",
-      "přijetí",
-      "sebeláska",
-      "hodnoty"
-    ],
-    "tier": "free",
-    "sort_order": 233,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0234",
-    "text": "Dokážu mít ze sebe radost, aniž bych hned viděl(a) prostor pro další zlepšení?",
-    "tags": [
-      "přijetí",
-      "sebeláska",
-      "štěstí",
-      "úspěch"
-    ],
-    "tier": "free",
-    "sort_order": 234,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0235",
-    "text": "Není moje kritičnost k chybám druhých jen odleskem toho, jak tvrdý / tvrdá jsem na sebe?",
-    "tags": [
-      "přijetí",
-      "sebeláska",
-      "vztahy",
-      "sebepoznání"
-    ],
-    "tier": "free",
-    "sort_order": 235,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0236",
-    "text": "Když vidím někoho selhat, odsoudím ho, nebo se ptám na jeho příběh?",
-    "tags": [
-      "přijetí",
-      "vztahy",
-      "moudrost"
-    ],
-    "tier": "free",
-    "sort_order": 236,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0237",
-    "text": "Věřím, že každá moje chyba musí být potrestána, abych se stal(a) lepším člověkem?",
-    "tags": [
-      "vina",
-      "sebeláska",
-      "přijetí",
-      "růst"
-    ],
-    "tier": "free",
-    "sort_order": 237,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0238",
-    "text": "Čí trestající hlas slyším v hlavě, když si dovolím radost nebo lenošení?",
-    "tags": [
-      "rodina",
-      "štěstí",
-      "vina",
-      "volný čas"
-    ],
-    "tier": "free",
-    "sort_order": 238,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0239",
-    "text": "Není moje utápění se v nesmyslnosti věcí jen obranou před strachem ze selhání?",
-    "tags": [
-      "smysl života",
-      "strach",
-      "sebepoznání"
-    ],
-    "tier": "free",
-    "sort_order": 239,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0240",
-    "text": "Když se na situaci dívám optikou nespravedlnosti světa, jak mi to pomáhá pohnout se z místa?",
-    "tags": [
-      "přijetí",
-      "bezmoc",
-      "změna",
-      "myšlenky"
-    ],
-    "tier": "free",
-    "sort_order": 240,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0241",
-    "text": "Kdo mi namluvil, že život musí být fér — a proč tomu věřím dodnes?",
-    "tags": [
-      "přijetí",
-      "dětství",
-      "rodina",
-      "myšlenky",
-      "moudrost"
-    ],
-    "tier": "free",
-    "sort_order": 241,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0242",
-    "text": "Unesu nespravedlivé chování druhých, aniž bych se hned uchýlil(a) k intrikám a zlobě?",
-    "tags": [
-      "hněv",
-      "konflikty",
-      "přijetí",
-      "odolnost"
-    ],
-    "tier": "free",
-    "sort_order": 242,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0243",
-    "text": "Kdyby můj vnitřní zmatek byl jen způsob, jak se schovat před jedním těžkým rozhodnutím, jaké rozhodnutí by to bylo?",
-    "tags": [
-      "rozhodování",
-      "sebepoznání",
-      "odvaha"
-    ],
-    "tier": "free",
-    "sort_order": 243,
+    "sort_order": 194,
     "added_at": "2026-09-11"
   },
   {
@@ -3013,7 +2386,7 @@
       "autenticita"
     ],
     "tier": "free",
-    "sort_order": 244,
+    "sort_order": 195,
     "added_at": "2026-09-11"
   },
   {
@@ -3025,83 +2398,7 @@
       "odolnost"
     ],
     "tier": "free",
-    "sort_order": 245,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0246",
-    "text": "Které emoci se vyhýbám tak, že raději volím cynismus a chlad?",
-    "tags": [
-      "emoce",
-      "plné prožívání",
-      "sebepoznání"
-    ],
-    "tier": "free",
-    "sort_order": 246,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0247",
-    "text": "Co hezkého by se stalo v mých vztazích, kdybych před někým blízkým dovolil(a) slzy?",
-    "tags": [
-      "vztahy",
-      "plné prožívání",
-      "odvaha",
-      "smutek",
-      "autenticita"
-    ],
-    "tier": "free",
-    "sort_order": 247,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0248",
-    "text": "Proč je pro mě bezpečnější být chytrý / chytrá než mít prostou, zranitelnou radost?",
-    "tags": [
-      "plné prožívání",
-      "štěstí",
-      "bezpečí",
-      "autenticita"
-    ],
-    "tier": "free",
-    "sort_order": 248,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0249",
-    "text": "Kolik energie obětuji neustálému očekávání té nejhorší varianty?",
-    "tags": [
-      "myšlenky",
-      "strach",
-      "přítomnost"
-    ],
-    "tier": "free",
-    "sort_order": 249,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0250",
-    "text": "Kdyby moje pesimistická mysl dostala na chvíli dovolenou, jakou drobnou naději bych v sobě nechal(a) vyklíčit?",
-    "tags": [
-      "motivace",
-      "myšlenky",
-      "štěstí"
-    ],
-    "tier": "free",
-    "sort_order": 250,
-    "added_at": "2026-09-11"
-  },
-  {
-    "id": "quest_0251",
-    "text": "Před jakým zklamáním mě chrání můj skepticismus — a od čeho mě zároveň odřezává?",
-    "tags": [
-      "myšlenky",
-      "štěstí",
-      "plné prožívání",
-      "bezpečí"
-    ],
-    "tier": "free",
-    "sort_order": 251,
+    "sort_order": 196,
     "added_at": "2026-09-11"
   }
 ]
