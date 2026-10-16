@@ -932,10 +932,19 @@
   function newsTotal(){ return 0; }
 
   // ===================== NAČTENÍ =====================
+  // Odkud data jsou: Last-Modified = čas deploye na Pages (stejný u všech
+  // souborů), X-MC-Source = značka service workeru, když vrátil cache.
+  var DATA_INFO={modified:null,cache:false};
+  function noteData(r){
+    if(!r.headers||!r.headers.get) return;
+    var lm=Date.parse(r.headers.get("Last-Modified")||"");
+    if(!isNaN(lm)&&(DATA_INFO.modified==null||lm>DATA_INFO.modified)) DATA_INFO.modified=lm;
+    if(r.headers.get("X-MC-Source")==="cache") DATA_INFO.cache=true;
+  }
   function load(){
     var keys=Object.keys(FILES);
     Promise.all(keys.map(function(k){
-      return fetch(MC_BASE+FILES[k],{cache:"no-cache"}).then(function(r){ if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status); return r.json(); });
+      return fetch(MC_BASE+FILES[k],{cache:"no-cache"}).then(function(r){ if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status); noteData(r); return r.json(); });
     })).then(function(arrs){
       DB={}; keys.forEach(function(k,i){ DB[k]=arrs[i]; });
       prepare(); render();
@@ -1705,6 +1714,8 @@
     var nDel=admCount(ADMIN.deleted), nEd=admCount(ADMIN.edits), nTop=admCount(ADMIN.top);
     var days=ADMIN.lastExport?Math.floor((Date.now()-new Date(ADMIN.lastExport).getTime())/864e5):null;
     var warn=ADMIN.dirty>0&&(days==null||days>3);
+    var dm=DATA_INFO.modified!=null?new Date(DATA_INFO.modified):null;
+    h+='<p class="mc-adm-note">Data: '+(dm?dm.getDate()+'. '+(dm.getMonth()+1)+'. '+dm.getFullYear()+' '+dm.getHours()+':'+String(dm.getMinutes()).padStart(2,"0"):'datum neznámé')+(DATA_INFO.cache?' · <b>z offline cache</b> (síť neodpověděla včas)':' · ze sítě')+'</p>';
     h+='<div class="mc-adm-stats"><div><b>'+nDel+'</b> smazáno</div><div><b>'+nEd+'</b> upraveno</div><div><b>'+nTop+'</b> Top</div></div>';
     h+='<div class="mc-box '+(warn?"mc-warn":"")+' adm-export"><span class="b-text">'+(ADMIN.lastExport?'Poslední export před '+days+' dny':'Zatím žádný export')+(ADMIN.dirty?' · <b>'+ADMIN.dirty+' nezálohovaných změn</b>':' · vše zálohováno')+'</span></div>';
     h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.admExport()">Export (stáhnout)</button><button class="mc-fab ghost" onclick="MC.admCopy()">Zkopírovat</button><button class="mc-fab ghost" onclick="MC.admImport()">Import</button></div>';

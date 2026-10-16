@@ -9,7 +9,7 @@
    - Assety a fonty (Google Fonts): cache-first, na pozadí se obnoví.
    VERSION bumpni, když měníš tenhle soubor nebo seznam PRECACHE. */
 
-var VERSION  = "mc-v2";
+var VERSION  = "mc-v3";
 var SHELL    = "mc-shell-" + VERSION;
 var RUNTIME  = "mc-runtime-" + VERSION;
 var NET_TIMEOUT = 4000;
@@ -91,7 +91,11 @@ self.addEventListener("fetch", function(e){
   e.respondWith(
     fromNetwork(req, SHELL, NET_TIMEOUT).catch(function(){
       return caches.match(req).then(function(hit){
-        if(hit) return hit;
+        // Značka pro appku: tohle je záložní kopie, ne čerstvá síť (admin ji ukáže).
+        if(hit){
+          var h = new Headers(hit.headers); h.set("X-MC-Source", "cache");
+          return new Response(hit.body, {status:hit.status, statusText:hit.statusText, headers:h});
+        }
         // Navigace bez cache → aspoň obal appky.
         if(req.mode === "navigate") return caches.match("./cesta.html");
         return new Response("", {status:504, statusText:"offline"});
