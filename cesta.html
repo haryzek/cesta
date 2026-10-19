@@ -414,6 +414,16 @@
   .mc-adm-edit .adm-row{ display:flex; gap:6px; justify-content:flex-end; margin-top:8px; flex-wrap:wrap; }
   .mc-adm-edit .adm-row .mc-fab{ width:auto; padding:9px 14px; font-size:13px; }
   .mc-swipe-card .mc-adm-edit{ text-align:left; }
+  .mc-adm-edit input{ width:100%; box-sizing:border-box; margin-top:6px; font-family:var(--sans); font-size:14px; color:var(--text); background:var(--surface-2);
+    border:1px solid var(--border); border-radius:10px; padding:8px 12px; }
+  .mc-adm-fedit{ margin-top:10px; }
+  .mc-adm-fedit textarea.big{ font-family:var(--mono); font-size:13px; line-height:1.55; min-height:40vh; }
+  .adm-fields{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+  .adm-pill{ font-family:var(--sans); font-size:12px; padding:5px 11px; border-radius:999px; border:1px solid var(--border); background:none; color:var(--soft); cursor:pointer; }
+  .adm-pill.active{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
+  .adm-pill.edited::after{ content:" •"; color:var(--teal); font-weight:700; }
+  .adm-shared{ display:flex; gap:8px; align-items:flex-start; font-family:var(--sans); font-size:13px; line-height:1.4; color:var(--accent); margin-bottom:8px; }
+  .adm-shared svg{ width:16px; height:16px; flex:none; }
   .mc-toast{ position:fixed; left:50%; bottom:calc(20px + env(safe-area-inset-bottom)); transform:translateX(-50%); z-index:60;
     display:flex; align-items:center; gap:14px; background:var(--text); color:var(--bg); padding:11px 16px; border-radius:12px;
     font-family:var(--sans); font-size:14px; box-shadow:0 6px 24px rgba(0,0,0,.25); max-width:calc(100% - 40px); }
@@ -825,13 +835,16 @@
     reframing_actions:{ dataKey:"actions", label:"Úkoly", text:true },
     pains:{ dataKey:"hlasky", label:"Hlášky", text:true },
     situations:{ dataKey:"sitref", label:"Přerámování situací", text:true },
-    inspirations:{ dataKey:"inspirations", label:"Inspirace", text:true },
+    inspirations:{ dataKey:"inspirations", label:"Inspirace", text:true, more:[["author","Autor"]] },
     questions:{ dataKey:"questions", label:"Podnětné otázky", text:true },
-    articles:{ dataKey:"articles", label:"Články", text:false, title:"title" },
-    exercises:{ dataKey:"exercises", label:"Cvičení", text:false, title:"name" },
-    crisis:{ dataKey:"crisis", label:"První pomoc", text:false, title:"name" },
-    body:{ dataKey:"body", label:"Tělesné příznaky", text:false, title:"name" }
+    // Dlouhý obsah se edituje v detailu po polích (surový markdown).
+    articles:{ dataKey:"articles", label:"Články", text:false, title:"title", fields:[["title","Název"],["perex","Perex"],["body","Text"]] },
+    exercises:{ dataKey:"exercises", label:"Cvičení", text:false, title:"name", fields:[["name","Název"],["perex","Perex"],["body","Postup"],["warning","Varování"],["diary_exercise","Deník cvičení"],["info_extra","Info navíc"],["theory_extra","Teorie navíc"]] },
+    crisis:{ dataKey:"crisis", label:"První pomoc", text:false, title:"name", fields:[["name","Název"],["body","Text"]] },
+    body:{ dataKey:"body", label:"Tělesné příznaky", text:false, title:"name", fields:[["name","Název"],["body","Text"]] },
+    sections:{ dataKey:"sections", label:"Oddíly", text:false, title:"title", fields:[["title","Název"],["perex","Perex"],["info","Info"],["theory","Teorie"],["practice","Praxe"],["diary_exercise","Deník oddílu"],["diary_practice","Deník praxe"]] }
   };
+  var ADM_REQUIRED=["text","name","title","body"];   // tahle pole nesmí zůstat prázdná
   var ADMIN=loadAdmin();
   function emptyAdmin(){ return { on:false, deleted:{}, edits:{}, top:{}, lastExport:null, dirty:0 }; }
   function loadAdmin(){
@@ -860,13 +873,28 @@
   function admEdit(store,id){ return (ADMIN.edits[store]||{})[id]; }
   // Filtr živých položek — volá se na každém místě, kde se koncový obsah vypisuje.
   function alive(store,items){ var d=ADMIN.deleted[store]; if(!d||!d.length) return items; return items.filter(function(it){ return d.indexOf(it.id)<0; }); }
+  // Úprava položky = { pole: hodnota }. Starší úpravy vět jsou jen string
+  // (= pole text) a tak se i dál ukládají, když se mění jen text.
+  function admFields(store,id){ var e=admEdit(store,id); return e==null?{}:(typeof e==="string"?{text:e}:e); }
+  function admItem(store,id){ var cfg=ADMIN_STORES[store]; return cfg?(itemIndex[cfg.dataKey]||{})[id]:null; }
+  // Původní hodnoty polí se drží v it._o (jen v paměti).
+  function admOrig(it,field){ it._o=it._o||{}; if(!(field in it._o)) it._o[field]=it[field]; return it._o[field]; }
+  function admSetField(store,id,field,v){
+    var it=admItem(store,id); if(!it) return;
+    var orig=admOrig(it,field), f=admFields(store,id);
+    if(v===(orig==null?"":String(orig))){ delete f[field]; it[field]=orig; } else { f[field]=v; it[field]=v; }
+    var keys=Object.keys(f), map=ADMIN.edits[store]=ADMIN.edits[store]||{};
+    if(!keys.length) delete map[id]; else map[id]=(keys.length===1&&keys[0]==="text")?f.text:f;
+  }
+  function admRestoreItem(store,id){ var it=admItem(store,id); if(it&&it._o) Object.keys(it._o).forEach(function(k){ it[k]=it._o[k]; }); delete (ADMIN.edits[store]||{})[id]; }
   // Upravený text se propisuje přímo do objektů v paměti (položka pak
-  // vypadá upraveně všude — seznam, karty, oblíbené), původní se drží v _orig.
+  // vypadá upraveně všude — seznam, karty, oblíbené, detail).
   function applyEdits(){
     Object.keys(ADMIN.edits).forEach(function(store){
-      var cfg=ADMIN_STORES[store]; if(!cfg||!cfg.text) return;
-      var idx=itemIndex[cfg.dataKey]||{};
-      Object.keys(ADMIN.edits[store]).forEach(function(id){ var it=idx[id]; if(it){ if(it._orig==null) it._orig=it.text; it.text=ADMIN.edits[store][id]; } });
+      Object.keys(ADMIN.edits[store]).forEach(function(id){
+        var it=admItem(store,id), f=admFields(store,id); if(!it) return;
+        Object.keys(f).forEach(function(k){ admOrig(it,k); it[k]=f[k]; });
+      });
     });
   }
   function admCount(map){ return Object.keys(map).reduce(function(n,k){ return n+(Array.isArray(map[k])?map[k].length:Object.keys(map[k]).length); },0); }
@@ -1454,9 +1482,11 @@
     if(tabs.length<=1){
       // Oddíly bez cvičení — jen text. Když zbyde jediný tab, nekreslí se.
       var only=tabs[0]?tabs[0].key:"theory";
+      if(ADMIN.on) h+='<div class="mc-adm-detail">'+admPanel(admSectionTargets(s,only),true)+'</div>';
       return h+'<div class="mc-detail-body mc-md">'+md(stripDupHeading(s[only],s.title))+'</div>';
     }
     var tab=tabs.some(function(t){return t.key===j.tab;})?j.tab:tabs[0].key;
+    if(ADMIN.on) h+='<div class="mc-adm-detail">'+admPanel(admSectionTargets(s,tab),true)+'</div>';
     h+='<div class="mc-submenu">';
     tabs.forEach(function(t){ h+='<button class="'+(tab===t.key?"active":"")+'" onclick="MC.journeyTab(\''+t.key+'\')">'+t.label+'</button>'; });
     h+='</div>';
@@ -1618,7 +1648,7 @@
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
     if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
-    if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+'</div>';
+    if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+admPanel(admDetailTargets(store,item,sec,tab),false)+'</div>';
     // Most z cvičení do jeho oddílu v Moje cesta.
     if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
 
@@ -1763,15 +1793,55 @@
     if(admEdit(store,id)!=null) h+='<span class="adm-src edited">upraveno</span>';
     h+='<span class="adm-sp"></span>';
     h+='<button class="adm-btn" onclick="MC.admCopyText(\''+store+'\',\''+id+'\')" aria-label="Zkopírovat text">'+IC.copy+'</button>';
-    if(cfg.text) h+='<button class="adm-btn" onclick="MC.admEditOpen(\''+store+'\',\''+id+'\')" aria-label="Upravit">'+IC.edit+'</button>';
+    if(cfg.text||cfg.fields) h+='<button class="adm-btn" onclick="MC.admEditOpen(\''+store+'\',\''+id+'\')" aria-label="Upravit">'+IC.edit+'</button>';
     h+='<button class="adm-btn '+(top?"on":"")+'" onclick="MC.admTop(\''+store+'\',\''+id+'\')" aria-label="Top">'+IC.star+'</button>';
     h+='<button class="adm-btn del" onclick="MC.admDel(\''+store+'\',\''+id+'\')" aria-label="Smazat">'+IC.x+'</button>';
     return h+'</div>';
   }
   function adminEditing(store,id){ var e=state.adminEdit; return !!(e&&e.store===store&&e.id===id); }
   function adminEditor(store,id,text){
-    return '<div class="mc-adm-edit" onclick="event.stopPropagation()"><textarea id="mc-adm-ta" rows="5">'+esc(text)+'</textarea>'+
+    var it=admItem(store,id), more="";
+    (ADMIN_STORES[store].more||[]).forEach(function(m){ more+='<input id="mc-adm-f-'+m[0]+'" placeholder="'+m[1]+'" value="'+esc(it&&it[m[0]]!=null?String(it[m[0]]):"").replace(/"/g,"&quot;")+'">'; });
+    return '<div class="mc-adm-edit" onclick="event.stopPropagation()"><textarea id="mc-adm-ta" rows="5">'+esc(text)+'</textarea>'+more+
       '<div class="adm-row"><button class="mc-fab ghost" onclick="MC.admEditClose()">Zrušit</button>'+(admEdit(store,id)!=null?'<button class="mc-fab ghost" onclick="MC.admEditReset(\''+store+'\',\''+id+'\')">Původní</button>':'')+'<button class="mc-fab" onclick="MC.admEditSave(\''+store+'\',\''+id+'\')">Uložit</button></div></div>';
+  }
+  // Panel polí v detailu. targets = [{store,id,field,label,shared}] podle toho,
+  // co je zrovna na obrazovce (tab). Zavřený panel = jen tlačítko (když withBtn).
+  var admTargets=[];
+  function admPanel(targets,withBtn){
+    var e=state.adminEdit;
+    if(!e||!e.panel||!targets.length) return withBtn&&targets.length?'<div class="mc-adm"><span class="adm-sp"></span><button class="adm-btn" onclick="MC.admFieldOpen()" aria-label="Upravit texty">'+IC.edit+'</button></div>':"";
+    admTargets=targets;
+    var cur=targets.filter(function(t){ return t.store===e.store&&t.id===e.id&&t.field===e.field; })[0]||targets[0];
+    e.store=cur.store; e.id=cur.id; e.field=cur.field;
+    var h='<div class="mc-adm-edit mc-adm-fedit" onclick="event.stopPropagation()"><div class="adm-fields">';
+    targets.forEach(function(t,i){ h+='<button class="adm-pill'+(t===cur?" active":"")+(t.field in admFields(t.store,t.id)?" edited":"")+'" onclick="MC.admFieldPick('+i+')">'+esc(t.label)+'</button>'; });
+    h+='</div>';
+    if(cur.shared) h+='<div class="adm-shared">'+IC.warn+'<span>'+esc(cur.shared)+'</span></div>';
+    var it=admItem(cur.store,cur.id), v=it&&it[cur.field]!=null?String(it[cur.field]):"", edited=cur.field in admFields(cur.store,cur.id);
+    h+='<textarea id="mc-adm-ta" class="big" rows="16" spellcheck="true">'+esc(v)+'</textarea>';
+    h+='<div class="adm-row"><button class="mc-fab ghost" onclick="MC.admEditClose()">Zavřít</button>'+(edited?'<button class="mc-fab ghost" onclick="MC.admFieldReset()">Původní</button>':'')+'<button class="mc-fab" onclick="MC.admFieldSave()">Uložit</button></div></div>';
+    return h;
+  }
+  function admTarget(store,item,field,shared){
+    var f=(ADMIN_STORES[store].fields||[]).filter(function(x){ return x[0]===field; })[0];
+    return { store:store, id:item.id, field:field, label:(shared?"Oddíl · ":"")+(f?f[1]:field), shared:shared||null };
+  }
+  // Co se dá upravit na detailu: u cvičení podle tabu, oddílová pole s varováním.
+  var ADM_EX_TABS={ body:{ ex:["name","perex","body","warning","diary_exercise"], sec:["diary_exercise"] }, info:{ ex:["info_extra"], sec:["info"] }, theory:{ ex:["theory_extra"], sec:["theory"] }, practice:{ ex:[], sec:["practice","diary_practice"] } };
+  function admDetailTargets(store,item,sec,tab){
+    var cfg=ADMIN_STORES[store]; if(!cfg||!cfg.fields) return [];
+    if(store!=="exercises") return cfg.fields.map(function(f){ return admTarget(store,item,f[0]); });
+    var m=ADM_EX_TABS[tab]||ADM_EX_TABS.body, out=m.ex.map(function(f){ return admTarget(store,item,f); });
+    if(sec){ var n=(bySection[sec.id]||[]).length, note="Společné pro celý oddíl „"+sec.title+"“ ("+n+" cvičení)";
+      m.sec.forEach(function(f){ out.push(admTarget("sections",sec,f,note)); }); }
+    return out;
+  }
+  // Stránka oddílu v Moje cesta: pole podle tabu.
+  function admSectionTargets(s,tab){
+    var f={ exercises:["title","perex","diary_exercise"], info:["info"], theory:["theory"], practice:["practice","diary_practice"] }[tab]||[tab];
+    if(tab!=="exercises") f=["title","perex"].concat(f);
+    return f.map(function(x){ return admTarget("sections",s,x); });
   }
   // Text položky v kartě: buď editor, nebo text (+ hvězdička Top).
   function admText(store,id,text,cls){
@@ -1922,13 +1992,13 @@
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
-    detail:function(type,id){ state.detail={ type:type, id:id, tab:"body", chainOpen:false }; scrollTop(); render(); },
-    detailBack:function(){ state.detail=null; scrollTop(); render(); },
+    detail:function(type,id){ state.detail={ type:type, id:id, tab:"body", chainOpen:false }; state.adminEdit=null; scrollTop(); render(); },
+    detailBack:function(){ state.detail=null; state.adminEdit=null; scrollTop(); render(); },
     detailTab:function(t){ if(state.detail) state.detail.tab=t; scrollTop(); render(); },
     detailChain:function(){ if(state.detail) state.detail.chainOpen=!state.detail.chainOpen; render(); },
     // Moje cesta
-    journeySection:function(id){ state.page="section"; state.section="journey"; state.detail=null; state.journey.sectionId=id; state.journey.tab="exercises"; scrollTop(); render(); },
-    journeyBack:function(){ state.journey.sectionId=null; scrollTop(); render(); },
+    journeySection:function(id){ state.page="section"; state.section="journey"; state.detail=null; state.journey.sectionId=id; state.journey.tab="exercises"; state.adminEdit=null; scrollTop(); render(); },
+    journeyBack:function(){ state.journey.sectionId=null; state.adminEdit=null; scrollTop(); render(); },
     journeyTab:function(t){ state.journey.tab=t; scrollTop(); render(); },
     // oblíbené
     fav:function(store,id){ toggleFav(store,id); render(); },
@@ -1949,17 +2019,34 @@
       if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(ok,function(){ window.prompt("Zkopírujte ručně:",txt); ok(); });
       else { window.prompt("Zkopírujte ručně:",txt); ok(); }
     },
-    admEditOpen:function(store,id){ state.adminEdit={store:store,id:id}; render(); },
+    // Dlouhý obsah (fields) se edituje v detailu — z karty v seznamu se detail otevře.
+    admEditOpen:function(store,id){
+      var cfg=ADMIN_STORES[store];
+      if(cfg&&cfg.fields){ if(!state.detail||state.detail.id!==id) MC.detail(cfg.dataKey,id); state.adminEdit={panel:true}; render(); return; }
+      state.adminEdit={store:store,id:id}; render();
+    },
     admEditClose:function(){ state.adminEdit=null; render(); },
     admEditSave:function(store,id){
-      var ta=document.getElementById("mc-adm-ta"), it=itemIndex[ADMIN_STORES[store].dataKey][id]; if(!ta||!it) return;
+      var ta=document.getElementById("mc-adm-ta"), cfg=ADMIN_STORES[store]; if(!ta||!admItem(store,id)) return;
       var v=ta.value.trim(); if(!v) return;
-      if(it._orig==null) it._orig=it.text;
-      if(v===it._orig){ delete (ADMIN.edits[store]||{})[id]; it.text=it._orig; }
-      else { (ADMIN.edits[store]=ADMIN.edits[store]||{})[id]=v; it.text=v; }
+      admSetField(store,id,"text",v);
+      (cfg.more||[]).forEach(function(m){ var inp=document.getElementById("mc-adm-f-"+m[0]); if(inp) admSetField(store,id,m[0],inp.value.trim()); });
       saveAdmin(true); state.adminEdit=null; render();
     },
-    admEditReset:function(store,id){ var it=itemIndex[ADMIN_STORES[store].dataKey][id]; if(it&&it._orig!=null) it.text=it._orig; delete (ADMIN.edits[store]||{})[id]; saveAdmin(true); state.adminEdit=null; render(); },
+    admEditReset:function(store,id){ admRestoreItem(store,id); saveAdmin(true); state.adminEdit=null; render(); },
+    // Panel polí v detailu: výběr pole, uložení, návrat k původnímu.
+    admFieldOpen:function(){ state.adminEdit={panel:true}; render(); },
+    admFieldPick:function(i){ var t=admTargets[i]; if(!t) return; state.adminEdit={panel:true,store:t.store,id:t.id,field:t.field}; render(); },
+    admFieldSave:function(){
+      var e=state.adminEdit, ta=document.getElementById("mc-adm-ta"); if(!e||!e.panel||!ta||!e.field) return;
+      var v=ta.value.replace(/\s+$/,"").replace(/^\s*\n/,"");
+      if(!v.trim()&&ADM_REQUIRED.indexOf(e.field)>-1){ toast("Tohle pole nesmí být prázdné"); render(); return; }
+      admSetField(e.store,e.id,e.field,v); saveAdmin(true); toast("Uloženo"); render();
+    },
+    admFieldReset:function(){
+      var e=state.adminEdit; if(!e||!e.field) return; var it=admItem(e.store,e.id); if(!it) return;
+      var o=admOrig(it,e.field); admSetField(e.store,e.id,e.field,o==null?"":String(o)); saveAdmin(true); toast("Vráceno na původní"); render();
+    },
     admExport:function(){
       var json=admExportJson(), name="cesta_admin_"+today()+".json";
       try{ var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json],{type:"application/json"})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); }catch(e){}
@@ -1985,8 +2072,7 @@
     admReset:function(){
       if(!window.confirm("Vynulovat admin? Smazané, úpravy i Top se zahodí. Nejdřív radši Export.")) return;
       Object.keys(ADMIN.edits).forEach(function(store){
-        var cfg=ADMIN_STORES[store], idx=cfg?(itemIndex[cfg.dataKey]||{}):{};
-        Object.keys(ADMIN.edits[store]).forEach(function(id){ var it=idx[id]; if(it&&it._orig!=null){ it.text=it._orig; delete it._orig; } });
+        Object.keys(ADMIN.edits[store]).forEach(function(id){ admRestoreItem(store,id); });
       });
       var on=ADMIN.on; ADMIN=emptyAdmin(); ADMIN.on=on; saveAdmin(false);
       state.swipe.key=null; state.swipe.ids=[]; toast("Admin vynulován"); render();
