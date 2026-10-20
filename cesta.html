@@ -401,7 +401,7 @@
   .adm-btn.on{ color:var(--accent); border-color:var(--accent); background:var(--accent-dim); }
   .adm-btn.del{ color:var(--muted); }
   @media (hover:hover){ .adm-btn:hover{ color:var(--text); border-color:var(--muted); } .adm-btn.del:hover{ color:var(--accent); border-color:var(--accent); } }
-  .mc-card .mc-adm{ margin-right:-30px; }   /* lišta smí pod srdíčko */
+  .mc-card:not(.nofav) .mc-adm{ margin-right:-30px; }   /* lišta smí pod srdíčko — nofav srdíčko nemá */
   .mc-swipe-card .mc-adm{ justify-content:center; border-top:none; margin-top:14px; }
   .mc-swipe-card .mc-adm .adm-sp{ display:none; }
   .mc-adm-detail{ padding:0 var(--gutter); }
