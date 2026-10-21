@@ -346,9 +346,9 @@ Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítí
 
 ### 12. Strachy — `fears.json` + `situations.json`
 
-Druhá brána sekce Přerámování (viz „Sekce aplikace“). Dvě vrstvy, obě vedou do tripletu.
+Druhá brána sekce Přerámování (viz „Sekce aplikace“). Dvě vrstvy: uživatel vidí jen situace (konkrétní strachy), kanon je pod nimi skrytá mapa na jádrové pocity.
 
-**12a. Kanonové strachy** (`fears.json`, 235, prefix `fear_`) — schematické strachy („Zrada“, „Samota“, „Chyby“, „Být za sobce“) ve **35 skupinách**, které čtou jako schémata v první osobě („Zůstanu sám“, „Jsem vadný, divný, nenormální“, „Selžu“). Skupiny jsou kategorie k rozkliknutí (235 položek plochým seznamem nejde). Každý strach má **5 jádrových pocitů** (`cluster_ids`, seřazené od nejtypičtějšího) — přes ně se strach napojí na triplet. Skupina „Obranné“ (Blízkost, Láska, Sex, Důvěřovat…) je vědomě mimo hlavní nabídku, jen do vyhledávání. Bez aliasů (zdrojový `kanon_strachu.md` je měl u dvou položek — zahozeno).
+**12a. Kanonové strachy** (`fears.json`, 235, prefix `fear_`) — schematické strachy („Zrada“, „Samota“, „Chyby“, „Být za sobce“) ve **35 skupinách**. Každý strach má **5 jádrových pocitů** (`cluster_ids`, seřazené od nejtypičtějšího). **Od 21. 10. 2026 se v appce nezobrazují** — byla to druhá záložka „Jádrové strachy“ a vedla rovnou do mixu tří pocitů, který u hrozeb nesedl (Fyzické napadení → *bezmocný* s texty o zoufalství; Znásilnění → traumatický klastr *znásilněný*, texty pro oběť). Zhruba polovina kanonu je navíc jen přejmenovaný pocit (Kritika → kritizovaný) = duplicita brány Jádrové pocity. Kanon teď slouží jen jako mapa situace → pocity; 27 strachů, které jsou konkrétní událostí, se přesunulo mezi situace (12b). **Klastr *znásilněný* v kanonu není** — traumatický klastr patří jen do brány Jádrové pocity, kde si ho člověk vybere vědomě. Bez aliasů.
 
 ```json
 {
@@ -362,13 +362,13 @@ Druhá brána sekce Přerámování (viz „Sekce aplikace“). Dvě vrstvy, ob�
 }
 ```
 
-**12b. Situace** (`situations.json`, 137, prefix `sit_`) — konkrétní běžné strachy, fobie, místa a situace (zkouška, pohovor, žraloci, pohřeb) v **10 skupinách** (Výkon a hodnocení, Sociální situace, Fobie, Zdraví a psychika…). `aliases` jsou pro vyhledávání (zkouška → test, státnice, maturita), nezobrazují se. `mark` řídí, co se ukáže před otázkou „Co je pod tím?“:
+**12b. Situace** (`situations.json`, 164, prefix `sit_`) — konkrétní strachy: běžné situace, fobie, místa (zkouška, pohovor, žraloci, pohřeb) a od 21. 10. 2026 i **27 strachů z kanonu, které jsou konkrétní událostí** (kritika, odmítnutí, ztrapnit se, zrada, manipulace, být na obtíž, že někomu ublížím, budoucnost… — `sit_0138`–`sit_0164`, na konci zdroje, ať se stávající ID nehnou). V **10 skupinách** (Výkon a hodnocení, Sociální situace, Fobie, Zdraví a psychika…). `aliases` jsou pro vyhledávání (zkouška → test, státnice, maturita), nezobrazují se. `mark` řídí, co se ukáže před otázkou „Co je pod tím?“:
 
-- **`P`** (121) — `reframings` 3–5 vět: fakta, logika, selský rozum, praktický postup. Bez bagatelizace.
+- **`P`** (148) — `reframings` 3–5 vět: fakta, logika, selský rozum, praktický postup. Bez bagatelizace.
 - **`E`** (14) — `reframings` 1–2 věty empatické normalizace, žádná fakta (pohřeb, šikana, obtěžování). Strach je oprávněný.
 - **`K`** (2) — `reframings` prázdné, appka vede na Krizovku (poruchy příjmu potravy, sebedestruktivní myšlenky).
 
-`fear_ids` = 3–6 kanonových strachů, od nejtypičtějšího. Pocity se u situací nikdy nepřiřazují ručně — odvozují se přes kanon.
+`fear_ids` = 3–6 kanonových strachů, od nejtypičtějšího. Pocity se u situací nikdy nepřiřazují ručně — odvozují se přes kanon (součet vah, viz „Brána Strachy“). Build drží `added_at` z nasazených dat podle jména; dnešek dostanou jen nové položky.
 
 ```json
 {
@@ -544,19 +544,20 @@ Sekce má po vstupu **tři karty** (rozcestník) — tři způsoby, jak člověk
 | brána | jazyk uživatele | data | kam vede |
 |---|---|---|---|
 | **Jádrové pocity** | *„Vím, co cítím“* | `feelings` → `clusters` | triplet (single / merged mód, viz níže) |
-| **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → `fears` → `clusters` | triplet přes merged interleaving |
+| **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → (`fears`) → `clusters` | přerámování strachu → volba pocitů → triplet |
 | **Bolístky** | *„Mám v hlavě větu, která bolí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
 
-**Brána Strachy** — jedna obrazovka: search nahoře (hledá v názvech i `aliases` **napříč oběma vrstvami**, včetně skryté skupiny; „maturita“ najde zkoušku), pod ním submenu **Konkrétní strachy / Jádrové strachy** (situace první — to je jazyk uživatele) a **seznam kategorií s počtem** (`group`; 10 u situací, 34 u kanonu — skupina `Obranné` je mimo nabídku, jen do hledání) → klik → položky skupiny.
+**Brána Strachy** (přestavěno 21. 10. 2026) — search nahoře (názvy i `aliases`; „maturita“ najde zkoušku), pod ním **seznam 10 kategorií s počtem** (`group`) → klik → konkrétní strachy skupiny. Kanon se nikde nezobrazuje.
 
-- **Kanonový strach** (klik na „Selžu“ ve skupině *Selžu*) → rovnou triplet. Appka vezme `cluster_ids` strachu a pustí merged interleaving, jako by uživatel vybral víc pocitů naráz — žádný mezikrok s výběrem. **Do tripletu jdou první 3 z 5** (`FEAR_CLUSTERS = 3`, laditelná konstanta); pozice 4–5 jsou v datech, ale v kolovém interleavingu by dostaly stejné slovo jako první a ředily by výsledek. Titulek tripletu = název strachu, pod ním **tři jádrové pocity, ze kterých to jde** — uživatel je nevybíral, ale vidí, odkud přerámování pocházejí („Co je pod tím“ dotažené do konce). Karty nesou jméno pocitu jako meta (merged režim).
-- **Situace** (klik na „zkouška“ ve skupině *Výkon a hodnocení*) → podle `mark`: `P` ukáže přerámování jako karty, `E` věty empatie kurzívou, `K` box + tlačítko „Otevřít První pomoc“. Přerámování situací **nemají srdíčka** (nemají ID; šlo by klíčem `sit_id:index` jako u hlášek, zatím ne). Pod tím **„Co je pod tím?“** → chipsy jejích `fear_ids` (3–6 kanonových strachů) → klik → triplet jako výše. Tedy zkouška → Co je pod tím → Selžu → triplet, dva kliky. Zpět z tripletu vede na situaci, z ní na skupinu.
+- **Konkrétní strach** (klik na „zkouška“) → podle `mark`: `P` přerámování jako karty, `E` věty empatie kurzívou, `K` box + „Otevřít První pomoc“ a **nic dalšího**. Přerámování strachů **nemají srdíčka** (šlo by klíčem `sit_id:index` jako u hlášek, zatím ne).
+- Pod nimi **„Co je pod tím?“** → **jádrové pocity** ve stejné komponentě jako brána Jádrové pocity (fajfka = výběr, jméno = rovnou ten jeden pocit). Pocity se sečtou přes `fear_ids`: pocit dostane body podle pozice v `cluster_ids` každého strachu (`FEAR_POS_WEIGHTS = [5,4,3,2,1]`), řadí se skóre ↓ → `sort_order` klastru. **Ukazují se všechny** (typicky 12–20), ne top N — uživatel vybírá, pořadí jen napovídá (zkouška: *nedostatečný, pod tlakem, úzkostný…*; pavouci: *úzkostný, strachuplný, ohrožený…*). Proč: dřív se tu nabízely další (kanonové) strachy a pak mix tří pocitů, který uživatel nevybral a který u hrozeb nesedl. Volba pocitu staví most k bráně Jádrové pocity — stejná slova, stejné přerámování.
+- Výběr víc pocitů → merged interleaving; **remízu rozhoduje pořadí pocitů pod strachem** (`rank` v `detailClusters`), ne `sort_order` klastru. Titulek tripletu = název strachu, pod ním vybrané pocity. Zpět z tripletu vede na strach (výběr zůstane), z něj na skupinu.
 
 **Brána Bolístky** — **bez kategorií** (rozhodnuto 12. 9. 2026, `smer` se nezobrazuje): jedno zrcadlo 175 vět se searchem, po 30 („Dalších 30“), klik → věta jako titulek, hlášky jako karty se srdíčky (klíč `pain_id:index`). Hlášky umí proud karet i „jen nové“. Na road trip (září 2026) se appka tweakne na **provizorní admin** — Bob v ní škrtá hlášky z ~24 na 15 a maže evidentní chyby v tripletu; výsledek se pak propíše zpět do zdrojů.
 
 **Oblíbené v sekci** (pilulka u H1 rozcestníku): uložená přerámování jsou napříč klastry, proto se ukazují jako jeden seznam po typech (přerámování / otázky / úkoly / bolístky), ne po pocitech.
 
-Otevřené, vědomě odložené: bolístky nemají most k tripletu (kanon má „Nebýt potřebný“, bolístky „Nikdo mě nepotřebuje“ — jednou si o něj řeknou); situace by mohly nabízet i „rovnou k přerámování“ se součtem pocitů přes všechny své strachy.
+Otevřené, vědomě odložené: bolístky nemají most k tripletu (kanon má „Nebýt potřebný“, bolístky „Nikdo mě nepotřebuje“ — jednou si o něj řeknou). Klastr *bezmocný* má texty o zoufalství, u hrozeb (napadení, agrese) sedí jen napůl — obsahová otázka na později.
 
 #### Jádrové pocity (původní vstup)
 

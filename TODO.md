@@ -117,8 +117,12 @@ Potřebuje domluvu, pak už to Claude dotáhne.
       `sit_id:index` jako u hlášek. Rozhodnout, jestli je to potřeba.
 - [ ] **Most bolístky → triplet.** Bolístky vědomě bez vazby na klastry (kanon
       má „Nebýt potřebný“, bolístky „Nikdo mě nepotřebuje“ — jednou si o něj
-      řeknou). Situace by mohly nabízet i „rovnou k přerámování“ se součtem
-      pocitů přes všechny své strachy.
+      řeknou). (Součet pocitů přes strachy situace hotový 21. 10. 2026.)
+- [ ] **Projít 27 nových konkrétních strachů (21. 10. 2026).** `sit_0138`+,
+      přerámování napsal osel. Hlavně citlivé: „že někomu ublížím“ (pocit
+      *ubližující* v nabídce?), „cizí vztek a agrese“, „manipulace“.
+- [ ] **Klastr *bezmocný* u hrozeb.** Texty jsou o zoufalství („nevidíš cestu
+      ven“), u napadení/agrese sedí napůl. Pár vět o bezmoci tváří v tvář hrozbě?
 - [ ] **Brána Test à la YSQ (rozhodnuto 27. 8. 2026, stavět po bolístkách).**
       Ne diagnostika — jasně popsat jako inspiraci, hrubé načrtnutí vnitřních
       citlivostí. UI: scrollování výroků, odpověď „Spíše ano / Spíše ne",
