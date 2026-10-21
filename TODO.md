@@ -176,6 +176,11 @@ Mechanika, nepotřebuje Bobovo rozhodnutí — jen se to musí udělat.
 
 ## Nápadník
 
+- **Sekce Behaviorální experimenty** (Bob, 21. 10. 2026) — hlavně pro terapeuty.
+  Surovina už leží v úkolech tripletu: **1293 položek „Experiment: …“ ve všech
+  116 klastrech** (víra v uvozovkách → předpověď → gradace → srovnání). Zcucnout,
+  roztřídit podle víry/schématu. Jen poznámka, nestavět teď.
+
 - **„Najdeš se?"** — nápad na slogan nebo jméno appky (Bob, 26. 8. 2026).
   Do foroty, netrvá se na něm. Sedí k bolístkám-zrcadlu i k výběru pocitů.
 
