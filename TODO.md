@@ -113,6 +113,26 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 
 Potřebuje domluvu, pak už to Claude dotáhne.
 
+- [ ] **Triplet — závěrečný průchod klastru (po Bobově čtení + exportu adminu).**
+      Vzor z `cl_0001` *neviditelný* (21. 10. 2026), platí pro všechny klastry:
+      * **Úplné duplikáty pryč**, **skoro-duplikáty** (build je nechytí) — z dvojice
+        jen jeden do top 20. U neviditelného: R36/R105, R56/R114, R19/R86/R126,
+        R40/R104, R111/R116, R108↔A24, R85↔A13, Q13/Q14, Q25↔A47, Q8/Q24/Q58.
+      * **Série** („Někdy stačí…“ R49–53, „Ne každý…“ R76–78) — v proudu karet
+        po sobě = monotónnost; do top 20 max jedna z každé.
+      * **Vyčítání** — věty, které v akutní bolesti zní jako „můžeš si za to sám“
+        (R73 „žebrat“, R79, R112), do top 20 ne; patří do druhé vlny.
+      * **Tónové ulítnutí** — R142 kovboj, R143 „životní hovna“ → zásoba?
+      * **Claudova otázka „co se ti nejvíc líbí“** — volný výběr favoritů
+        místo specifického třídění, jako podklad k Bobovým hvězdičkám.
+      * Hvězdička v adminu = šoupnout do top 20, přesné pořadí se neřeší.
+- [ ] **Ženský rod — celý triplet duplikovaně ve dvou rodech** (rozhodnuto).
+      Mechanický převod, Claude. Ze začátku bude hodně žen, jde to víc do těla.
+      Domluvit datový tvar (pole `text_f`? volba rodu v UI).
+- [ ] **Návod ke čtení — nepřehlédnutelný.** Uživatel ho musí odkliknout
+      („přečetl/a jsem“); tipy: číst nahlas, dávat si pauzy. Častější
+      „Chcete číst dál?“ v proudu (dnes `SWIPE_BREAK=10`).
+
 - [ ] **Srdíčka na přerámování situací (P/E).** Věty nemají ID; šlo by klíčem
       `sit_id:index` jako u hlášek. Rozhodnout, jestli je to potřeba.
 - [ ] **Most bolístky → triplet.** Bolístky vědomě bez vazby na klastry (kanon
