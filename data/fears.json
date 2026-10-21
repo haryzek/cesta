@@ -244,10 +244,10 @@
     "name": "Znásilnění",
     "group": "Ublíží mi",
     "cluster_ids": [
-      "cl_0018",
       "cl_0041",
-      "cl_0039",
       "cl_0042",
+      "cl_0044",
+      "cl_0039",
       "cl_0017"
     ],
     "tier": "free",
