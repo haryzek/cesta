@@ -347,7 +347,6 @@
   .mc-under{ margin:26px var(--gutter) 0; padding-top:18px; border-top:1px solid var(--border); }
   .mc-under h2{ color:var(--tone); }
   .mc-under p{ color:var(--soft); font-size:14.5px; line-height:1.55; margin:6px 0 12px; }
-  .mc-under .mc-chips{ padding:0; }
   .mc-fab-wrap.static{ position:static; padding:16px var(--gutter) 0; background:none; pointer-events:auto; }
 
   /* ===== LIŠTA „jen nové" / seznam–karty ===== */
@@ -669,12 +668,10 @@
   // Náročnost cvičení → tón pilulky (viz .mc-diff)
   var DIFF_CLASS = { "nízká":"low", "střední":"mid", "vysoká":"high" };
 
-  // Brána Strachy: kolik jádrových pocitů strachu jde do tripletu. Strach má
-  // 5 cluster_ids od nejtypičtějšího; kolový interleaving by pozicím 4–5 dal
-  // stejné slovo jako první a ředil by výsledek. Laditelná konstanta.
-  var FEAR_CLUSTERS = 3;
-  // Skupina kanonových strachů mimo hlavní nabídku (jen do vyhledávání).
-  var FEAR_HIDDEN_GROUP = "Obranné";
+  // Brána Strachy: pocity pod konkrétním strachem se sčítají přes jeho kanonové
+  // strachy (fear_ids) — pocit dostane body podle pozice v cluster_ids strachu
+  // (1. místo 5 … 5. místo 1). Kanon sám se uživateli nezobrazuje.
+  var FEAR_POS_WEIGHTS = [5,4,3,2,1];
   // Tři brány sekce Přerámování — tři způsoby, jak člověk pojmenuje svůj stav.
   var GATES = [
     { key:"feelings", label:"Jádrové pocity", hint:"Vím, co cítím." },
@@ -787,7 +784,7 @@
     // origin = view, kam vede Zpět z tripletu (pocity / skupina strachů / situace)
     rf:{ view:"gates", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50,
          origin:"feelings", detailTitle:null,
-         fearsTab:"situations", fearGroup:null, fearSearch:"", situation:null,
+         fearGroup:null, fearSearch:"", situation:null, sitSel:{},
          painSearch:"", pain:null, painLimit:30 },
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
     journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
@@ -1117,8 +1114,9 @@
     list.sort(function(a,b){ return a.sort_order-b.sort_order; }); return list;
   }
   function interleave(typeKey,cwc){
-    var counts={},ids=[]; cwc.forEach(function(c){ counts[c.cluster_id]=c.count; ids.push(c.cluster_id); });
-    ids.sort(function(a,b){ if(counts[b]!==counts[a]) return counts[b]-counts[a]; return (clusterSort[a]||0)-(clusterSort[b]||0); });
+    // rank (volitelný) = pořadí pocitu pod strachem; má přednost před sort_order clusteru.
+    var counts={},rank={},ids=[]; cwc.forEach(function(c){ counts[c.cluster_id]=c.count; rank[c.cluster_id]=c.rank; ids.push(c.cluster_id); });
+    ids.sort(function(a,b){ if(counts[b]!==counts[a]) return counts[b]-counts[a]; if(rank[a]!=null&&rank[b]!=null&&rank[a]!==rank[b]) return rank[a]-rank[b]; return (clusterSort[a]||0)-(clusterSort[b]||0); });
     var lists={},pos={}; ids.forEach(function(cid){ lists[cid]=byCluster[typeKey][cid]||[]; pos[cid]=0; });
     var seen={},merged=[];
     function exhausted(){ return ids.every(function(cid){ return pos[cid]>=lists[cid].length; }); }
@@ -1295,28 +1293,21 @@
     return h+'</div>';
   }
 
-  // ---- Brána Strachy: Konkrétní (situace) / Jádrové (kanon) → kategorie → položky
+  // ---- Brána Strachy: kategorie → konkrétní strach → přerámování → jádrové pocity
   function groupsOf(list){ var seen={},out=[]; list.forEach(function(x){ if(!seen[x.group]){ seen[x.group]=1; out.push(x.group); } }); return out; }
   function fearMatches(q,x){ return deburr(x.name).indexOf(q)>-1 || (x.aliases||[]).some(function(a){ return deburr(a).indexOf(q)>-1; }); }
   function viewRfFears(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
-    h+='<div class="mc-sec-head"><h1>Strachy</h1><p>Čeho se bojíte? Vyberte konkrétní situaci, nebo rovnou jádrový strach.</p></div>';
+    h+='<div class="mc-sec-head"><h1>Strachy</h1><p>Čeho se bojíte? Najděte to, co je vám nejblíž.</p></div>';
     h+=searchBox("Hledejte strach…","rfFearSearch",rf.fearSearch);
     if(rf.fearSearch.trim()){
-      // Hledání jde napříč oběma vrstvami i skrytou skupinou; aliasy se hledají, nezobrazují.
+      // Aliasy se hledají, nezobrazují.
       var q=deburr(rf.fearSearch);
       var sits=flat.situations.filter(function(x){ return fearMatches(q,x); });
-      var fears=flat.fears.filter(function(x){ return fearMatches(q,x); });
-      if(!sits.length&&!fears.length) return h+'<div class="mc-empty">Nic neodpovídá hledání.</div>';
-      if(sits.length) h+='<div class="mc-fav-group"><h2>Konkrétní strachy <span class="c">'+sits.length+'</span></h2>'+nameList(sits,function(it){ return "MC.rfSituation('"+it.id+"')"; })+'</div>';
-      if(fears.length) h+='<div class="mc-fav-group"><h2>Jádrové strachy <span class="c">'+fears.length+'</span></h2>'+nameList(fears,function(it){ return "MC.rfFear('"+it.id+"')"; })+'</div>';
-      return h;
+      if(!sits.length) return h+'<div class="mc-empty">Nic neodpovídá hledání.</div>';
+      return h+nameList(sits,function(it){ return "MC.rfSituation('"+it.id+"')"; });
     }
-    h+='<div class="mc-submenu-triplet">';
-    h+='<button class="'+(rf.fearsTab==="situations"?"active":"")+'" onclick="MC.rfFearsTab(\'situations\')">Konkrétní strachy</button>';
-    h+='<button class="'+(rf.fearsTab==="fears"?"active":"")+'" onclick="MC.rfFearsTab(\'fears\')">Jádrové strachy</button>';
-    h+='</div>';
-    var list=rf.fearsTab==="situations"?flat.situations:flat.fears.filter(function(x){ return x.group!==FEAR_HIDDEN_GROUP; });
+    var list=flat.situations;
     var groups=groupsOf(list);
     h+='<div class="mc-namelist">';
     groups.forEach(function(g){
@@ -1326,14 +1317,25 @@
     return h+'</div>';
   }
   function viewRfFearGroup(){
-    var rf=state.rf, isSit=rf.fearsTab==="situations";
+    var rf=state.rf;
     var h='<button class="mc-back" onclick="MC.rfGate(\'fears\')">← Strachy</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.fearGroup)+'</div></div>';
-    var list=(isSit?flat.situations:flat.fears).filter(function(x){ return x.group===rf.fearGroup; });
-    return h+nameList(list,function(it){ return isSit?"MC.rfSituation('"+it.id+"')":"MC.rfFear('"+it.id+"')"; });
+    var list=flat.situations.filter(function(x){ return x.group===rf.fearGroup; });
+    return h+nameList(list,function(it){ return "MC.rfSituation('"+it.id+"')"; });
+  }
+  // Jádrové pocity pod konkrétním strachem: součet vah přes jeho kanonové
+  // strachy, seřazené od nejpravděpodobnějšího. Všechny, ne top N — uživatel
+  // vybírá, pořadí mu jen napovídá.
+  function situationFeelings(s){
+    var score={};
+    (s.fear_ids||[]).forEach(function(id){
+      var f=itemIndex.fears[id]; if(!f) return;
+      (f.cluster_ids||[]).forEach(function(c,i){ if(contentClusters.indexOf(c)>-1) score[c]=(score[c]||0)+(FEAR_POS_WEIGHTS[i]||1); });
+    });
+    return Object.keys(score).sort(function(a,b){ return score[b]-score[a] || (clusterSort[a]||0)-(clusterSort[b]||0); });
   }
   // Situace: podle mark P (přerámování) / E (empatie) / K (Krizovka), pod tím
-  // „Co je pod tím?" → její kanonové strachy → triplet.
+  // „Co je pod tím?" → jádrové pocity (výběr jednoho i víc) → triplet.
   function viewRfSituation(){
     var rf=state.rf, s=itemIndex.situations[rf.situation];
     if(!s) return '<div class="mc-empty">Nenalezeno.</div>';
@@ -1349,11 +1351,18 @@
       refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text"+(s.mark==="E"?" lead":""))+adminBar("situations",r.id)+'</li>'; });
       h+='</ul>';
     }
-    var fears=(s.fear_ids||[]).map(function(id){ return itemIndex.fears[id]; }).filter(Boolean);
-    if(fears.length){
-      h+='<div class="mc-under"><h2>Co je pod tím?</h2><p>Konkrétní strach má obvykle hlubší kořen. Vyberte, co z toho sedí — a podívejte se na to jinak.</p><div class="mc-chips">';
-      fears.forEach(function(f){ h+='<button class="mc-chip" onclick="MC.rfFear(\''+f.id+'\')">'+esc(f.name)+'</button>'; });
-      h+='</div></div>';
+    if(s.mark==="K") return h;
+    var cids=situationFeelings(s);
+    if(cids.length){
+      h+='<div class="mc-under"><h2>Co je pod tím?</h2><p>Pod strachem bývá hlubší pocit. Vyberte jeden nebo víc, které sedí — a podívejte se na ně jinak.</p></div>';
+      h+='<ul class="mc-list">';
+      cids.forEach(function(c){
+        var on=!!rf.sitSel[c];
+        h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'"><span class="mc-check '+(on?"on":"")+'" onclick="MC.rfSitToggle(\''+c+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="mc-feeling-name" onclick="MC.rfSitOpen(\''+c+'\')">'+esc(clusterName[c]||"")+'</span><span class="mc-feeling-go" onclick="MC.rfSitOpen(\''+c+'\')">›</span></li>';
+      });
+      h+='</ul>';
+      var n=Object.keys(rf.sitSel).length;
+      if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfSitOpen()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
     }
     return h;
   }
@@ -1414,8 +1423,7 @@
   function viewRfDetail(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět</button>';
     var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
-    // Ze strachu: titulek = strach, pod ním jádrové pocity, které za ním stojí
-    // (uživatel je nevybíral, ale má vidět, odkud přerámování jdou).
+    // Ze strachu: titulek = strach, pod ním vybrané jádrové pocity.
     if(rf.detailTitle) h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.detailTitle)+'</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
     else if(rf.detailMode==="single") h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(names[0]||"")+'</div></div>';
     else h+='<div class="mc-detail-head"><div class="mc-detail-title">Vybrané pocity</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
@@ -1961,20 +1969,21 @@
     rfBack:function(){ state.rf.view=state.rf.origin||"feelings"; scrollTop(); render(); },
     // brány
     rfGate:function(g){ var rf=state.rf; rf.view=g||"gates"; if(g==="fears"){ rf.fearGroup=null; } if(g==="pains"){ rf.pain=null; } scrollTop(); render(); },
-    rfFearsTab:function(t){ state.rf.fearsTab=t; render(); },
     rfFearSearch:function(v){ state.rf.fearSearch=v; render(); refocus(v); },
     rfFearGroup:function(g){ state.rf.fearGroup=g; state.rf.view="fearGroup"; scrollTop(); render(); },
-    rfSituation:function(id){ state.rf.situation=id; state.rf.view="situation"; scrollTop(); render(); },
+    rfSituation:function(id){ state.rf.situation=id; state.rf.sitSel={}; state.rf.view="situation"; scrollTop(); render(); },
     rfSitBack:function(){ var rf=state.rf; rf.view=rf.fearSearch.trim()||!rf.fearGroup?"fears":"fearGroup"; scrollTop(); render(); },
-    // Kanonový strach → rovnou triplet přes merged interleaving nad prvními
-    // FEAR_CLUSTERS jádrovými pocity. Zpět vede tam, odkud se přišlo.
-    rfFear:function(id){
-      var rf=state.rf, f=itemIndex.fears[id]; if(!f) return;
-      var cids=(f.cluster_ids||[]).slice(0,FEAR_CLUSTERS).filter(function(c){ return contentClusters.indexOf(c)>-1; });
+    rfSitToggle:function(cid){ var sel=state.rf.sitSel; if(sel[cid]) delete sel[cid]; else sel[cid]=1; render(); },
+    // Jádrové pocity pod strachem → triplet. S cid = jeden pocit (klik na jméno),
+    // bez = vybrané; merged jde v pořadí, v jakém pocity pod strachem stojí.
+    rfSitOpen:function(cid){
+      var rf=state.rf, s=itemIndex.situations[rf.situation]; if(!s) return;
+      var order=situationFeelings(s);
+      var cids=cid?[cid]:order.filter(function(c){ return rf.sitSel[c]; });
       if(!cids.length) return;
       rf.detailMode=cids.length===1?"single":"merged";
-      rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:1}; });
-      rf.detailTitle=f.name; rf.origin=rf.view;
+      rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:1,rank:order.indexOf(c)}; });
+      rf.detailTitle=s.name; rf.origin="situation";
       enterRfDetail();
     },
     rfPainSearch:function(v){ state.rf.painSearch=v; state.rf.painLimit=30; render(); refocus(v); },
