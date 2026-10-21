@@ -3734,5 +3734,750 @@
     "tier": "free",
     "sort_order": 137,
     "added_at": "2026-09-11"
+  },
+  {
+    "id": "sit_0138",
+    "name": "kritika",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "výtka",
+      "negativní zpětná vazba",
+      "být kritizován"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Kritika je názor na to, co jsi udělal, ne verdikt nad tím, kdo jsi. I když v tu chvíli pálí, týká se jedné věci, ne celého člověka.",
+      "Ber ji jako surovinu: něco z ní může být pravda a dá se použít, zbytek můžeš v klidu odložit. Nemusíš ji spolknout celou ani celou odmítnout.",
+      "Kritika často vypovídá i o tom, kdo ji dává — o jeho nárocích, únavě nebo náladě. Vyplatí se oddělit, co z ní je o věci a co o něm.",
+      "Nejvíc pálí kritika, která trefí to, co si o sobě potichu myslíš sám. Pak stojí za to všimnout si, kolik z té bolesti přidává tvůj vlastní vnitřní kritik.",
+      "Snést kritiku je dovednost, ne povaha. S každou zkušeností, kterou ustojíš, je to o kousek snazší."
+    ],
+    "fear_ids": [
+      "fear_0044",
+      "fear_0045",
+      "fear_0046",
+      "fear_0076",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 138,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0139",
+    "name": "selhání",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "neúspěch",
+      "prohra",
+      "nezvládnout to"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Selhání je událost, ne vlastnost. Něco se nepovedlo — to ještě neříká, že jsi neschopný.",
+      "Kdo nikdy neselhal, většinou toho moc nezkoušel. Neúspěchy jsou cena za to, že se o něco pokoušíš.",
+      "Strach přehrává hlavně okamžik průšvihu a přeskakuje, co by bylo potom. Zkus si scénář dohrát do konce: co bys v té situaci udělal dál?",
+      "Lidi kolem si tvého neúspěchu všimnou míň a zapomenou na něj dřív, než se ti teď zdá — každý je zaměstnaný hlavně svými věcmi."
+    ],
+    "fear_ids": [
+      "fear_0086",
+      "fear_0087",
+      "fear_0076",
+      "fear_0060",
+      "fear_0128",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 139,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0140",
+    "name": "udělat chybu",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "chyba",
+      "pokazit to",
+      "omyl",
+      "přiznat chybu"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Chyby dělá každý, kdo něco dělá. Bezchybnost není laťka, kterou ostatní zvládají a ty ne — nezvládá ji nikdo.",
+      "Většina chyb se dá opravit, omluvit nebo vysvětlit. Ty opravdu nevratné jsou výjimka, i když strach tvrdí opak.",
+      "Přiznat chybu nahlas bývá úlevnější než ji schovávat — a lidi ti pak spíš věří víc, ne míň.",
+      "Když se chyby bojíš tolik, že všechno kontroluješ znovu a znovu, stojí tě to často víc času a sil než chyba samotná."
+    ],
+    "fear_ids": [
+      "fear_0112",
+      "fear_0113",
+      "fear_0117",
+      "fear_0044",
+      "fear_0114"
+    ],
+    "tier": "free",
+    "sort_order": 140,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0141",
+    "name": "že prokouknou, že na to nemám",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "syndrom podvodníka",
+      "impostor",
+      "odhalení",
+      "nejsem dost dobrý na svou práci"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Pocit, že jsi podvodník, potkává i velmi schopné lidi. Je to pocit, ne důkaz o tvých schopnostech.",
+      "Pochybnosti nejsou spolehlivé měřítko. Lidé kolem posuzují, co reálně odvádíš, a to jsou tvrdší data než tvůj vnitřní hlas.",
+      "Nevědět všechno patří ke každé práci. Odborník není ten, kdo všechno ví, ale ten, kdo ví, jak to zjistit.",
+      "Pomáhá vést si obyčejný seznam toho, co se ti povedlo. Paměť ve strachu ráda maže úspěchy a nechává jen zaváhání."
+    ],
+    "fear_ids": [
+      "fear_0067",
+      "fear_0089",
+      "fear_0076",
+      "fear_0116",
+      "fear_0045"
+    ],
+    "tier": "free",
+    "sort_order": 141,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0142",
+    "name": "odpovědnost",
+    "group": "Výkon a hodnocení",
+    "aliases": [
+      "zodpovědnost",
+      "být za něco zodpovědný",
+      "vést lidi"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Odpovědnost neznamená mít všechno pod kontrolou. Znamená starat se, jak nejlíp umíš, a když se něco pokazí, řešit to.",
+      "Odpovědnost se dá sdílet: zeptat se, poradit se, rozdělit úkoly. Nést všechno sám není známka zodpovědnosti, ale přetížení.",
+      "Strach z odpovědnosti často prozrazuje, že ti na výsledku záleží. To je dobrý základ, ne slabina.",
+      "Připravený na odpovědnost nezačíná nikdo. Jistota přichází až s tím, jak ji neseš."
+    ],
+    "fear_ids": [
+      "fear_0121",
+      "fear_0086",
+      "fear_0060",
+      "fear_0061",
+      "fear_0093"
+    ],
+    "tier": "free",
+    "sort_order": 142,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0143",
+    "name": "odmítnutí",
+    "group": "Sociální situace",
+    "aliases": [
+      "být odmítnut",
+      "dostat košem",
+      "nebýt přijat"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Odmítnutí říká, že něco nesedlo v jedné situaci s jedním člověkem. Neříká, jakou máš hodnotu.",
+      "Lidé odmítají z důvodů, které s tebou často vůbec nesouvisí — nemají čas, sílu nebo zrovna potřebují něco jiného.",
+      "Bolí to, protože o přijetí stojíme všichni. Ta bolest je normální a časem slábne, i když se to v první chvíli nezdá.",
+      "Kdo se odmítnutí vyhýbá, přichází i o všechna „ano“. Každá žádost je malá sázka a málokterá je o všechno."
+    ],
+    "fear_ids": [
+      "fear_0043",
+      "fear_0048",
+      "fear_0076",
+      "fear_0069",
+      "fear_0018"
+    ],
+    "tier": "free",
+    "sort_order": 143,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0144",
+    "name": "ztrapnit se",
+    "group": "Sociální situace",
+    "aliases": [
+      "trapas",
+      "ostuda",
+      "vypadat hloupě",
+      "udělat ze sebe blbce"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Trapnou chvíli si pamatuješ mnohem déle a ostřeji ty než ostatní. Oni na ni většinou zapomenou ještě ten den.",
+      "K drobné nešikovnosti mají lidé víc pochopení, než čekáš — malý trapas tě často spíš polidští.",
+      "Když se zasměješ s ostatními, situace obvykle splaskne. Trapnost roste hlavně tím, jak moc ji schováváme.",
+      "Strach ze ztrapnění se živí vyhýbáním. Čím víc situací obcházíš, tím hrozivěji vypadají."
+    ],
+    "fear_ids": [
+      "fear_0069",
+      "fear_0064",
+      "fear_0065",
+      "fear_0079",
+      "fear_0070",
+      "fear_0071"
+    ],
+    "tier": "free",
+    "sort_order": 144,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0145",
+    "name": "co si o mně lidi myslí",
+    "group": "Sociální situace",
+    "aliases": [
+      "názor ostatních",
+      "pověst",
+      "jak působím",
+      "co tomu řeknou lidi"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Lidé o tobě přemýšlejí mnohem míň, než se zdá. Většinu času řeší sami sebe — a možná i to, co si o nich myslíš ty.",
+      "Co si o tobě kdo myslí, nikdy úplně neovlivníš. Ovlivníš, jak se chováš ty, a to je dost.",
+      "Mínění druhých se skládá z jejich zkušeností, nálad a předsudků. Je to spíš obrázek jich samých než přesný portrét tebe.",
+      "Zalíbit se všem nejde. Kdo se o to snaží, ztrácí sám sebe — a stejně to nevyjde."
+    ],
+    "fear_ids": [
+      "fear_0070",
+      "fear_0045",
+      "fear_0048",
+      "fear_0069",
+      "fear_0162"
+    ],
+    "tier": "free",
+    "sort_order": 145,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0146",
+    "name": "výsměch",
+    "group": "Sociální situace",
+    "aliases": [
+      "posměch",
+      "zesměšnění",
+      "ponížení",
+      "dělat si ze mě legraci"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Kdo se druhým posmívá, ukazuje hlavně vlastní nejistotu nebo potřebu postavit se nad někoho. Je to víc o něm než o tobě.",
+      "Posměch bolí i dospělé a není to přecitlivělost. Máš právo říct, že ti to vadí, nebo prostě odejít.",
+      "Škádlení se smíchem počítá s tebou, zesměšnění se směje na tvůj úkor. To druhé snášet nemusíš.",
+      "Starý výsměch, třeba ze školy, umí v hlavě znít dlouho. Dnes ale nejsi v té třídě a máš možnosti, které jsi tehdy neměl."
+    ],
+    "fear_ids": [
+      "fear_0064",
+      "fear_0068",
+      "fear_0069",
+      "fear_0065",
+      "fear_0066"
+    ],
+    "tier": "free",
+    "sort_order": 146,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0147",
+    "name": "pomluvy",
+    "group": "Sociální situace",
+    "aliases": [
+      "drby",
+      "řeči za zády",
+      "klepy"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Pomluvy vypovídají hlavně o tom, kdo je šíří. Kdo tě zná, si obrázek dělá podle toho, jak se chováš, ne podle řečí.",
+      "Drby mají krátký život — brzy se objeví nové téma a staré vyšumí.",
+      "Uhlídat všechny řeči nejde. Jde ale v klidu uvést věc na pravou míru u lidí, na kterých ti záleží.",
+      "Když tě pomluva opravdu poškozuje, třeba v práci, máš právo to řešit otevřeně — i oficiální cestou."
+    ],
+    "fear_ids": [
+      "fear_0047",
+      "fear_0007",
+      "fear_0048",
+      "fear_0070",
+      "fear_0209"
+    ],
+    "tier": "free",
+    "sort_order": 147,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0148",
+    "name": "nezapadnout",
+    "group": "Sociální situace",
+    "aliases": [
+      "být jiný",
+      "nikam nepatřit",
+      "vyloučení z party",
+      "být mimo"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Nezapadnout do jedné party neznamená, že nikam nepatříš. Znamená to, že tahle skupina není tvoje.",
+      "Pocit, že jsi mimo, mívá v nové skupině skoro každý. Sounáležitost se buduje opakovaným potkáváním, ne prvním dojmem.",
+      "Lidé, se kterými si sedneš, často nejsou ti nejhlasitější v místnosti. Stojí za to je hledat.",
+      "Odlišnost je pro jedny problém a pro jiné důvod, proč tě chtějí kolem sebe. Úplné přizpůsobení by tě stálo víc, než by ti dalo."
+    ],
+    "fear_ids": [
+      "fear_0082",
+      "fear_0080",
+      "fear_0081",
+      "fear_0048",
+      "fear_0084"
+    ],
+    "tier": "free",
+    "sort_order": 148,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0149",
+    "name": "říct svůj názor",
+    "group": "Sociální situace",
+    "aliases": [
+      "ozvat se",
+      "nesouhlasit",
+      "prosadit se",
+      "mluvit na poradě"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Názor není útok. Můžeš nesouhlasit a zároveň zůstat k druhému slušný.",
+      "Když mlčíš, ostatní nevědí, co si myslíš — a rozhodnou bez tebe. Tvůj pohled může chybět víc, než tušíš.",
+      "Nemusíš mít jistotu, že máš pravdu, abys směl promluvit. Stačí říct, jak to vidíš ty.",
+      "Ozývat se jde trénovat: nejdřív v bezpečnějším prostředí a u menších věcí. S každým pokusem to jde o kousek líp."
+    ],
+    "fear_ids": [
+      "fear_0169",
+      "fear_0166",
+      "fear_0171",
+      "fear_0172",
+      "fear_0162",
+      "fear_0043"
+    ],
+    "tier": "free",
+    "sort_order": 149,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0150",
+    "name": "cizí vztek a agrese",
+    "group": "Sociální situace",
+    "aliases": [
+      "agresivní lidé",
+      "křik",
+      "výhrůžky",
+      "napadení"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z cizího vzteku je přirozený — tělo se tak chystá na obranu. Neznamená to, že jsi slabý.",
+      "Za svůj vztek odpovídá ten, kdo ho prožívá. Nemusíš ho za každou cenu uklidňovat ani si ho brát za svůj.",
+      "Když ti někdo vyhrožuje nebo jsi v ohrožení, odejít není zbabělost, ale rozumné rozhodnutí. Bezpečí má přednost před tím, kdo má pravdu.",
+      "Když se agrese opakuje, třeba doma, není to normální a nemusíš to snášet. Můžeš se obrátit na pomoc pro oběti násilí nebo na policii."
+    ],
+    "fear_ids": [
+      "fear_0014",
+      "fear_0015",
+      "fear_0154",
+      "fear_0171",
+      "fear_0012"
+    ],
+    "tier": "free",
+    "sort_order": 150,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0151",
+    "name": "opuštění",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "že mě opustí",
+      "ztratit blízkého člověka",
+      "že odejde"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Strach z opuštění často vychází z dřívějších zkušeností, ne z toho, co se děje teď. Stojí za to rozlišit, co patří minulosti a co přítomnosti.",
+      "Vztah nedrží to, že se druhý bojí odejít, ale to, že chce zůstat. To se nedá vynutit, dá se o to jen pečovat.",
+      "Kontrola, ujišťování a přizpůsobování strach na chvíli utiší, dlouhodobě ho ale spíš živí a vztah zatěžují.",
+      "Ztráta blízkého člověka bolí, ale lidé ji opravdu přežijí — a s časem zase dokážou blízkost navázat."
+    ],
+    "fear_ids": [
+      "fear_0018",
+      "fear_0021",
+      "fear_0022",
+      "fear_0025",
+      "fear_0043"
+    ],
+    "tier": "free",
+    "sort_order": 151,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0152",
+    "name": "zrada",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "podraz",
+      "zklamání v člověku",
+      "zrada přítele"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zrada bolí právě proto, že jsi věřil. Důvěra není naivita, je to podmínka blízkosti.",
+      "Kdo zradí, říká tím něco o sobě a svých hodnotách. Neříká tím, že sis důvěru nezasloužil.",
+      "Důvěřovat se dá postupně, po krocích, podle toho, jak se druhý chová. Nemusíš věřit všem hned, ani nikomu nikdy.",
+      "Jedna zrada neznamená, že zradí všichni. Mozek po zranění rád zobecňuje víc, než je potřeba."
+    ],
+    "fear_ids": [
+      "fear_0007",
+      "fear_0010",
+      "fear_0004",
+      "fear_0009",
+      "fear_0018"
+    ],
+    "tier": "free",
+    "sort_order": 152,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0153",
+    "name": "manipulace",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "být využit",
+      "zneužití",
+      "ovládání",
+      "gaslighting"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Varovným signálem bývá, že se po rozhovoru s někým cítíš zmatený, provinilý nebo pochybuješ o vlastní paměti. Ten pocit stojí za to brát vážně.",
+      "Máš právo si věci ověřit, vzít si čas na rozmyšlenou a nerozhodovat se pod tlakem. Kdo tohle nesnese, sám ukazuje, o co mu jde.",
+      "Že se tě někdo pokusil zmanipulovat, neznamená, že jsi hloupý. Manipulace funguje hlavně na slušné lidi, kteří druhým věří.",
+      "Pomáhá probrat situaci s někým nezávislým. Zvenku bývá vidět to, co zevnitř vztahu zaniká."
+    ],
+    "fear_ids": [
+      "fear_0002",
+      "fear_0001",
+      "fear_0148",
+      "fear_0003",
+      "fear_0174"
+    ],
+    "tier": "free",
+    "sort_order": 153,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0154",
+    "name": "citové vydírání",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "vyčítání",
+      "hraní na city",
+      "výčitky od blízkých"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Za své pocity odpovídá každý sám. Když někdo říká „kvůli tobě je mi zle“, je to jeho prožitek, ne automaticky tvoje vina.",
+      "Můžeš mít druhého rád a přesto mu nevyhovět. Láska a poslušnost nejsou totéž.",
+      "Vina, kterou cítíš, nemusí znamenat, že děláš něco špatně. Někdy jen hlásí, že nenaplňuješ cizí očekávání.",
+      "Hranice se nejlíp drží klidně a opakovaně, bez dlouhého obhajování. Čím víc se vysvětluješ, tím víc prostoru dostává další tlak."
+    ],
+    "fear_ids": [
+      "fear_0003",
+      "fear_0049",
+      "fear_0060",
+      "fear_0165",
+      "fear_0170"
+    ],
+    "tier": "free",
+    "sort_order": 154,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0155",
+    "name": "být na obtíž",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "obtěžovat",
+      "požádat o pomoc",
+      "zatěžovat druhé"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Spousta lidí pomáhá ráda — dává jim to pocit, že jsou užiteční a že jim věříš.",
+      "Požádat o něco není obtěžování. Druhý může vždycky říct ne, a to rozhodnutí je jeho, ne tvoje.",
+      "Když pomáháš ty druhým, taky je nevnímáš jako přítěž. Proč by oni měli vnímat tebe jinak?",
+      "Vztahy stojí na vzájemnosti, ne na vyrovnaných účtech. Někdy víc dáváš, jindy víc bereš, a obojí je v pořádku."
+    ],
+    "fear_ids": [
+      "fear_0049",
+      "fear_0043",
+      "fear_0060",
+      "fear_0162"
+    ],
+    "tier": "free",
+    "sort_order": 155,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0156",
+    "name": "zklamat někoho",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "zklamat rodiče",
+      "nesplnit očekávání",
+      "zklamat blízké"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zklamat někoho patří k životu. Nikdo nemůže vyhovět všem a přitom zůstat sám sebou.",
+      "Když někoho zklameš, vztah tím obvykle nekončí. Zdravé vztahy zklamání unesou.",
+      "Očekávání druhých patří jim. Můžeš je brát v úvahu, ale nemusíš podle nich žít.",
+      "Někdy je cizí zklamání cena za to, že děláš, co je pro tebe správné. A ta cena může stát za to."
+    ],
+    "fear_ids": [
+      "fear_0060",
+      "fear_0061",
+      "fear_0057",
+      "fear_0043",
+      "fear_0162"
+    ],
+    "tier": "free",
+    "sort_order": 156,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0157",
+    "name": "dát najevo city",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "říct mám tě rád",
+      "plakat před ostatními",
+      "ukázat slabost",
+      "otevřít se"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Ukázat, co cítíš, není slabost. Chce to odvahu, protože nevíš, jak druhý zareaguje.",
+      "Blízkost vzniká právě tam, kde se lidé odváží ukázat víc než povrch.",
+      "Nemusíš se otevřít všem a hned. Můžeš začít u člověka, kterému věříš nejvíc, a po malých kouscích.",
+      "I když druhý nezareaguje tak, jak bys chtěl, tvoje city tím neztrácejí platnost."
+    ],
+    "fear_ids": [
+      "fear_0188",
+      "fear_0190",
+      "fear_0143",
+      "fear_0043",
+      "fear_0069"
+    ],
+    "tier": "free",
+    "sort_order": 157,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0158",
+    "name": "závazek",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "vázat se",
+      "svatba",
+      "dlouhodobý vztah",
+      "rozhodnout se natrvalo"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Závazek není klec. Je to rozhodnutí, ke kterému se znovu a znovu vracíš.",
+      "Strach z vázání často hlídá svobodu, na které ti záleží. Pomáhá pojmenovat, co konkrétně si chceš uchovat.",
+      "Žádná volba není jistá napořád a každé rozhodnutí něco uzavírá. Nerozhodnout se ale dveře zavírá taky — jen pomaleji.",
+      "Dobrý závazek nechává prostor oběma. Když se ve vztahu necítíš svobodně, je lepší o tom mluvit než utíkat."
+    ],
+    "fear_ids": [
+      "fear_0205",
+      "fear_0151",
+      "fear_0150",
+      "fear_0093",
+      "fear_0234"
+    ],
+    "tier": "free",
+    "sort_order": 158,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0159",
+    "name": "zamilovat se",
+    "group": "Vztahy a rodina",
+    "aliases": [
+      "láska",
+      "blízkost",
+      "pustit si někoho k tělu"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Zamilovat se znamená riskovat, že to bude bolet. Tahle zranitelnost je ale zároveň to, co dělá lásku skutečnou.",
+      "Strach z blízkosti bývá ochrana, kterou sis kdysi postavil z dobrého důvodu. Dnes ji můžeš povolovat postupně.",
+      "Nemusíš do vztahu skočit celý. Důvěra roste po krůčcích, podle toho, jak se ten druhý chová.",
+      "Minulé zklamání v lásce je zkušenost, ne předpověď. Další člověk není ten předchozí."
+    ],
+    "fear_ids": [
+      "fear_0227",
+      "fear_0226",
+      "fear_0143",
+      "fear_0043",
+      "fear_0018"
+    ],
+    "tier": "free",
+    "sort_order": 159,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0160",
+    "name": "že někomu ublížím",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "vtíravé myšlenky",
+      "nechtěné myšlenky",
+      "že něco udělám"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Nechtěná myšlenka, že bys někomu ublížil, napadne čas od času skoro každého. Mít myšlenku neznamená chtít ji udělat.",
+      "Že tě taková myšlenka děsí, svědčí o tom, že je v rozporu s tím, kým jsi a co chceš.",
+      "Snaha myšlenku potlačit, hlídat se nebo se pořád ujišťovat ji obvykle posiluje. Pomáhá nechat ji přijít i odejít, bez boje.",
+      "Když tě takové myšlenky trápí často a berou ti klid, psycholog nebo psychiatr s nimi umí účinně pracovat.",
+      "Jiná situace je, když cítíš skutečnou chuť někomu ublížit nebo ztrácíš kontrolu nad vztekem — pak si řekni o pomoc hned."
+    ],
+    "fear_ids": [
+      "fear_0059",
+      "fear_0159",
+      "fear_0051",
+      "fear_0161",
+      "fear_0057"
+    ],
+    "tier": "free",
+    "sort_order": 160,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0161",
+    "name": "ztráta kontroly",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "ztratit kontrolu",
+      "omdlít",
+      "udělat něco nepředvídatelného"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Pocit, že ztrácíš kontrolu, je typický průvodce silné úzkosti. Pocit ztráty kontroly ale není totéž co skutečná ztráta kontroly.",
+      "Při panice dělá tělo přesně to, co má při poplachu: zrychlí dech i tep. Je to velmi nepříjemné, ale odezní to samo.",
+      "Úplnou kontrolu nemá nikdo. Úleva často přijde, když ji přestaneš chtít mít nad vším a zeptáš se, co ovlivnit opravdu můžeš.",
+      "Když se strach ze ztráty kontroly vrací a omezuje tě, dá se s ním dobře pracovat — psychoterapie má na úzkost osvědčené postupy."
+    ],
+    "fear_ids": [
+      "fear_0159",
+      "fear_0160",
+      "fear_0140",
+      "fear_0026",
+      "fear_0134"
+    ],
+    "tier": "free",
+    "sort_order": 161,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0162",
+    "name": "bolest",
+    "group": "Zdraví a psychika",
+    "aliases": [
+      "fyzická bolest",
+      "zákrok",
+      "porod",
+      "trpět"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Čekání na bolest bývá často horší než bolest samotná. Strach ji v představách zvětšuje.",
+      "Strach a napětí bolest zesilují, uvolnění a pomalý dech ji umí zmírnit. Tělo a hlava tu táhnou za jeden provaz.",
+      "Medicína má dnes na bolest spoustu možností. Máš právo říct, že tě něco bolí, a žádat úlevu.",
+      "Bolest většinou pomine, i když v tu chvíli vypadá nekonečně."
+    ],
+    "fear_ids": [
+      "fear_0144",
+      "fear_0134",
+      "fear_0143",
+      "fear_0159"
+    ],
+    "tier": "free",
+    "sort_order": 162,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0163",
+    "name": "že se stane něco zlého",
+    "group": "Svět a bezpečí",
+    "aliases": [
+      "neštěstí",
+      "tušení nejhoršího",
+      "katastrofické myšlenky",
+      "starosti"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Mozek je nastavený hledat hrozby. Myšlenka, že se stane něco zlého, je jeho pojistka, ne předpověď.",
+      "Spousta věcí, kterých se předem bojíme, se nikdy nestane. A když se něco stane, bývá to jinak, než jsme si malovali.",
+      "Starosti dávají pocit, že se na neštěstí připravuješ. Zastavit ho ale nedokážou — vezmou ti jen dnešek.",
+      "Pomáhá rozlišit: dá se s tím teď něco udělat? Pokud ano, udělej první krok. Pokud ne, můžeš starost vědomě odložit."
+    ],
+    "fear_ids": [
+      "fear_0157",
+      "fear_0158",
+      "fear_0156",
+      "fear_0030",
+      "fear_0119"
+    ],
+    "tier": "free",
+    "sort_order": 163,
+    "added_at": "2026-10-21"
+  },
+  {
+    "id": "sit_0164",
+    "name": "budoucnost",
+    "group": "Životní události a změny",
+    "aliases": [
+      "co bude",
+      "nejistá budoucnost",
+      "nevím, co dál"
+    ],
+    "mark": "P",
+    "reframings": [
+      "Budoucnost nezná nikdo. Nejistota není znamení, že je něco špatně — je to normální stav života.",
+      "Strach vyplní prázdné místo tou nejhorší verzí. Ty lepší verze jsou ale taky možné, jen na ně strach nemyslí.",
+      "Nemusíš mít plán na deset let dopředu. Stačí vědět, jaký je další rozumný krok.",
+      "Už jsi zvládl spoustu věcí, které jsi předem neznal. To je lepší vodítko než jakákoli předpověď."
+    ],
+    "fear_ids": [
+      "fear_0030",
+      "fear_0023",
+      "fear_0029",
+      "fear_0028",
+      "fear_0217"
+    ],
+    "tier": "free",
+    "sort_order": 164,
+    "added_at": "2026-10-21"
   }
 ]
