@@ -24,11 +24,16 @@ Excel už jen orientace).
       export propsaný (cl_0001–0003): editace, smazané → `rejected`, hvězdičky zpod
       řezu přeřazené za top 15/8/7. ID zmrazená.
 
-- [ ] **Pročištění (agenti, čistá lokální session):** duplikáty v klastru → na konec
-      seznamu; volitelně jazyková korektura jako návrh, ne přepis.
-- [ ] **Kalibrace (Bob):** pár klastrů, z každého 5 položek seřadit + krátká
-      poznámka proč (2–3 slova). Claude z toho sepíše vkusový profil
-      (`local/_prompty/`), Bob ho opraví.
+- [x] **Kalibrace (22. 10. 2026):** Bob seřadil 3 sady, vkusový profil v
+      `local/_prompty/vkus_tripletu.md`.
+- [x] **Duplikáty v topu (22. 10. 2026, Claude sólo, bez agentů):** všech 116 klastrů,
+      478 významových duplikátů v top 15/8/7 (stejná páka + stejné „co si odnesu“).
+      Horší z dvojice jde o 20 pozic pod top (R od 36., Q od 29., A od 28.), náhradou
+      nejvýš položená věta zpod řezu, která v topu nemá dvojče, a jde **na konec topu**.
+      U úkolů rozhoduje, co úkol dá, ne podobnost textu. Rozhodnutí po dávkách v
+      `reframings_triplet_wip/dedup/davka_NN.json`, čitelný přehled
+      `local/kontrola/duplikaty_tripletu.md`, záloha před zásahem = tag
+      `pred-duplikaty-2026-10-22` v `cesta-local`. Jazyková korektura neproběhla.
 - [ ] **Řez podle pořadí ve zdroji:** top **15 R / 8 Q / 7 A** per klastr = kandidáti
       do appky.
 - [ ] **Rezerva (Claude):** z toho, co je pod řezem, vybere podle profilu
