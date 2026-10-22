@@ -843,11 +843,11 @@
   };
   var ADM_REQUIRED=["text","name","title","body"];   // tahle pole nesmí zůstat prázdná
   var ADMIN=loadAdmin();
-  function emptyAdmin(){ return { on:false, deleted:{}, edits:{}, top:{}, lastExport:null, dirty:0 }; }
+  function emptyAdmin(){ return { on:false, deleted:{}, edits:{}, top:{}, lastExport:null, dirty:0, cut:true }; }
   function loadAdmin(){
     var a=emptyAdmin();
     try{ var d=JSON.parse(localStorage.getItem(ADMIN_KEY));
-      if(d&&typeof d==="object"){ a.on=!!d.on; ["deleted","edits","top"].forEach(function(k){ if(d[k]&&typeof d[k]==="object") a[k]=d[k]; }); a.lastExport=d.lastExport||null; a.dirty=d.dirty|0; }
+      if(d&&typeof d==="object"){ a.on=!!d.on; ["deleted","edits","top"].forEach(function(k){ if(d[k]&&typeof d[k]==="object") a[k]=d[k]; }); a.lastExport=d.lastExport||null; a.dirty=d.dirty|0; a.cut=d.cut!==false; }
     }catch(e){}
     return a;
   }
@@ -1117,7 +1117,7 @@
     // rank (volitelný) = pořadí pocitu pod strachem; má přednost před sort_order clusteru.
     var counts={},rank={},ids=[]; cwc.forEach(function(c){ counts[c.cluster_id]=c.count; rank[c.cluster_id]=c.rank; ids.push(c.cluster_id); });
     ids.sort(function(a,b){ if(counts[b]!==counts[a]) return counts[b]-counts[a]; if(rank[a]!=null&&rank[b]!=null&&rank[a]!==rank[b]) return rank[a]-rank[b]; return (clusterSort[a]||0)-(clusterSort[b]||0); });
-    var lists={},pos={}; ids.forEach(function(cid){ lists[cid]=byCluster[typeKey][cid]||[]; pos[cid]=0; });
+    var lists={},pos={}; ids.forEach(function(cid){ lists[cid]=rfList(typeKey,cid); pos[cid]=0; });
     var seen={},merged=[];
     function exhausted(){ return ids.every(function(cid){ return pos[cid]>=lists[cid].length; }); }
     while(!exhausted()){ ids.forEach(function(cid){ var e=0; while(e<counts[cid]&&pos[cid]<lists[cid].length){ var it=lists[cid][pos[cid]]; pos[cid]++; if(seen[it.id])continue; seen[it.id]=1; merged.push(it); e++; } }); }
@@ -1126,8 +1126,16 @@
   function currentRfList(){
     var rf=state.rf;
     var store=storeOf(rf.activeType);
-    if(rf.detailMode==="single"){ var cid=rf.detailClusters[0].cluster_id; return alive(store,(byCluster[rf.activeType][cid]||[]).slice()); }
+    if(rf.detailMode==="single") return rfList(rf.activeType,rf.detailClusters[0].cluster_id);
     return alive(store,interleave(rf.activeType,rf.detailClusters));
+  }
+  // Řez pro první verzi: z každého klastru jen top N živých položek (pořadí =
+  // pořadí ve zdroji). Uživatel ho má vždycky, Bob ho v adminu může vypnout.
+  var RF_CUT={ reframings:15, questions_rf:8, actions:7 };
+  function cutOn(){ return !ADMIN.on||ADMIN.cut!==false; }
+  function rfList(typeKey,cid){
+    var l=alive(storeOf(typeKey),(byCluster[typeKey][cid]||[]).slice());
+    return cutOn()&&RF_CUT[typeKey]?l.slice(0,RF_CUT[typeKey]):l;
   }
   function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
 
@@ -1758,6 +1766,11 @@
     h+='<div class="mc-box '+(warn?"mc-warn":"")+' adm-export"><span class="b-text">'+(ADMIN.lastExport?'Poslední export před '+days+' dny':'Zatím žádný export')+(ADMIN.dirty?' · <b>'+ADMIN.dirty+' nezálohovaných změn</b>':' · vše zálohováno')+'</span></div>';
     h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.admExport()">Export (stáhnout)</button><button class="mc-fab ghost" onclick="MC.admCopy()">Zkopírovat</button><button class="mc-fab ghost" onclick="MC.admImport()">Import</button></div>';
     h+='<p class="mc-adm-note">Snapshoty se drží automaticky za posledních 7 dní v tomhle prohlížeči. Export je jediná záloha mimo telefon — dělejte ho průběžně.</p>';
+    // Řez tripletu
+    var cut=ADMIN.cut!==false;
+    h+='<div class="mc-fav-group"><h2>Řez přerámování</h2>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7':'Vypnuto: celá zásoba')+'</button></div>';
+    h+='<p class="mc-adm-note">Z každého pocitu jen prvních 15 přerámování, 8 otázek a 7 úkolů. Uživatelé řez mají vždycky, vypnout jde jen tady v adminu.</p></div>';
     // Koš
     h+='<div class="mc-fav-group"><h2>Koš <span class="c">'+nDel+'</span></h2>';
     if(!nDel) h+='<div class="mc-empty">Nic smazaného.</div>';
@@ -2088,6 +2101,7 @@
     },
     // jen nové / proud karet
     onlyNew:function(){ USER.onlyNew=!USER.onlyNew; saveUser(); state.swipe.key=null; state.swipe.ids=[]; render(); },
+    admCut:function(){ ADMIN.cut=ADMIN.cut===false; saveAdmin(false); state.swipe.key=null; state.swipe.ids=[]; render(); },
     viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeNext:function(){ swipeStep(1); },
     swipeClose:function(){ if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
