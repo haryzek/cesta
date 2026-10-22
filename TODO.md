@@ -176,6 +176,22 @@ Mechanika, nepotřebuje Bobovo rozhodnutí — jen se to musí udělat.
 
 ## Nápadník
 
+- **Dávkování přerámování + „Moje pocity“ + notifikace** (Bob, 22. 10. 2026) — k rozmyšlení.
+  Bob průběžně hvězdičkuje zásobu tripletu a vpouští ji po troškách; uživatel si
+  switchem zvolí jádrové pocity, které sleduje, a nová věta mu přijde samostatně,
+  mířená na to, co řeší — místo 40 přerámování v jednom chumlu na začátku.
+  * **Bez backendu jde hned:** „Moje pocity“ v `USER`, badge „N nových pro vaše
+    pocity“ při otevření appky. Předpoklad: datum vpuštění u každé věty
+    (`released_at`), ne datum vzniku — **zapisovat ho rovnou při ořezu/vpouštění**,
+    i když se zatím nepoužije.
+  * **Notifikace v telefonu** bez obchodu (PWA na ploše; Android roky, iOS od 16.4
+    jen z plochy). Chybí jen odesílatel — nejjednodušší hotová služba typu OneSignal
+    (seznam telefonů + panel „Odeslat“ + štítky per sledovaný pocit). Jen pro appku
+    na `haryzek.github.io`/vlastní doméně, embed v Miowebu ne.
+  * **GDPR:** kdo trpí jakým pocitem = de facto zdravotní data. Štítky jen jako
+    anonymní kódy (`cl_0013`), a před ostrým nasazením právní pohled.
+  * Prototyp ne — až s ostrou verzí.
+
 - **Sekce Behaviorální experimenty** (Bob, 21. 10. 2026) — hlavně pro terapeuty.
   Surovina už leží v úkolech tripletu: **1293 položek „Experiment: …“ ve všech
   116 klastrech** (víra v uvozovkách → předpověď → gradace → srovnání). Zcucnout,
