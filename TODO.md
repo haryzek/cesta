@@ -190,6 +190,13 @@ Mechanika, nepotřebuje Bobovo rozhodnutí — jen se to musí udělat.
     na `haryzek.github.io`/vlastní doméně, embed v Miowebu ne.
   * **GDPR:** kdo trpí jakým pocitem = de facto zdravotní data. Štítky jen jako
     anonymní kódy (`cl_0013`), a před ostrým nasazením právní pohled.
+  * **Jednodušší varianta (Bob, 22. 10.): obecné „Nový obsah v Moje cestě“ pro
+    všechny**, bez štítků → bez dat o pocitech, GDPR skoro odpadá. Bob garantuje
+    nový mikroobsah každé ~3 dny a pošle/naplánuje notifikaci v panelu služby.
+    Časovaná připomínka čistě z appky bez serveru nejde spolehlivě (Android jen
+    periodic sync dle uvážení telefonu, iOS nic). Bez kódu: newsletter z Miowebu.
+    V appce: štítek „Nové“ u sekcí, kde přibylo. **Slibovat až se zásobou pár
+    týdnů dopředu** — prázdná notifikace je horší než žádná.
   * Prototyp ne — až s ostrou verzí.
 
 - **Sekce Behaviorální experimenty** (Bob, 21. 10. 2026) — hlavně pro terapeuty.
