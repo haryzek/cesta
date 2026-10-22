@@ -13,6 +13,34 @@ kde je potřeba Bobova hlava nebo ruka a nikdo je za něj neudělá.
 Věci, kde rozhoduje Bobův úsudek, jeho hlas nebo jeho přístupy. Claude umí připravit
 podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 
+### Řez tripletu pro první verzi (rozhodnuto 22. 10. 2026)
+
+Cíl: spustit dřív, ne dokonale. Neřadí se už nejlepší/nejhorší — Bob jen čte,
+opravuje a schvaluje. Do appky jde **jen Bobem přečtené a schválené**, zbytek
+zásoba na průběžné aktualizace. Excel je zdroj pravdy na začátku i na konci.
+
+- [ ] **Pročištění (agenti, čistá lokální session):** duplikáty v klastru → na konec
+      seznamu; volitelně jazyková korektura jako návrh, ne přepis.
+- [ ] **Kalibrace (Bob):** pár klastrů, z každého 5 položek seřadit + krátká
+      poznámka proč (2–3 slova). Claude z toho sepíše vkusový profil
+      (`local/_prompty/`), Bob ho opraví.
+- [ ] **Řez podle pořadí v D:** top **15 R / 8 Q / 7 A** per klastr = kandidáti
+      do appky.
+- [ ] **Rezerva (Claude):** z toho, co je pod řezem, vybere podle profilu
+      **+5 R / +5 Q / +5 A** per klastr — náhradníci, když Bob něco vyhodí.
+      V adminu vidět odlišeně, uživatelům ne.
+- [ ] **Excel:** nový sloupec stavu (top / rezerva / schváleno + datum vpuštění =
+      budoucí `released_at`). Build z něj čte, co jde do appky.
+- [ ] **Admin + `apply_admin.py`:** schválit (fajfka/★), opravy, smazání → Export →
+      skript zapíše opravený text do D a stav do nového sloupce. **Párovat podle
+      klastru + původního textu (`_o`), ne podle ID** (ID se při rebuildu počítají
+      pořadím). Mezi exportem a propisem v Excelu na ty věty nesahat.
+- [ ] **Bob čte jako robot:** jen 15/8/7, rezerva jen když něco vyletí. Hotovo je
+      hotovo, zbytek se dosype v aktualizacích.
+- Odloženo na v2: **typy psychických pák** (realitní test, perspektiva, původ,
+  funkce/ochránce, tělo, defúze, hodnoty, sdílené lidství/laskavost, paradox/humor)
+  → barvy karet v adminu + měkké kvóty v dashboardu pro pestrost výběru.
+
 ### Před road tripem (září 2026)
 
 - [x] **Provizorní admin v appce (12. 9. 2026).** Smazat / upravit / Top,
