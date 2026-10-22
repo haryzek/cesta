@@ -848,7 +848,8 @@ cesta/
 ├── TODO.md                  co se má stát (dělené podle toho, kdo to utáhne)
 ├── CLAUDE.md                pracovní brífink pro Claude Code
 ├── _scratch/                hrací písek (mimo git) — v tests/ headless testy appky (jsdom)
-└── local/                   osobní podklady a rozpracovaná data (mimo git)
+└── local/                   osobní podklady a rozpracovaná data (mimo hlavní repo; vlastní
+                             git → soukromé haryzek/cesta-local, od 22. 10. 2026)
     ├── data_wip/            zdrojáky obsahu před nasazením do data/
     ├── _prompty/            prompty pro generování obsahu
     ├── _design/             podklady k designu
