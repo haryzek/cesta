@@ -17,24 +17,29 @@ podklad, seznam nebo návrh — ale poslední slovo je Bobovo.
 
 Cíl: spustit dřív, ne dokonale. Neřadí se už nejlepší/nejhorší — Bob jen čte,
 opravuje a schvaluje. Do appky jde **jen Bobem přečtené a schválené**, zbytek
-zásoba na průběžné aktualizace. Excel je zdroj pravdy na začátku i na konci.
+zásoba na průběžné aktualizace. Zdroj pravdy = `klastry/cl_NNNN.json` (od 22. 10.,
+Excel už jen orientace).
+
+- [x] **Zdroj pravdy z Excelu do JSON per klastr (22. 10. 2026)** + první admin
+      export propsaný (cl_0001–0003): editace, smazané → `rejected`, hvězdičky zpod
+      řezu přeřazené za top 15/8/7. ID zmrazená.
 
 - [ ] **Pročištění (agenti, čistá lokální session):** duplikáty v klastru → na konec
       seznamu; volitelně jazyková korektura jako návrh, ne přepis.
 - [ ] **Kalibrace (Bob):** pár klastrů, z každého 5 položek seřadit + krátká
       poznámka proč (2–3 slova). Claude z toho sepíše vkusový profil
       (`local/_prompty/`), Bob ho opraví.
-- [ ] **Řez podle pořadí v D:** top **15 R / 8 Q / 7 A** per klastr = kandidáti
+- [ ] **Řez podle pořadí ve zdroji:** top **15 R / 8 Q / 7 A** per klastr = kandidáti
       do appky.
 - [ ] **Rezerva (Claude):** z toho, co je pod řezem, vybere podle profilu
       **+5 R / +5 Q / +5 A** per klastr — náhradníci, když Bob něco vyhodí.
       V adminu vidět odlišeně, uživatelům ne.
-- [ ] **Excel:** nový sloupec stavu (top / rezerva / schváleno + datum vpuštění =
+- [ ] **Zdroj:** pole stavu v položce (top / rezerva / schváleno + datum vpuštění =
       budoucí `released_at`). Build z něj čte, co jde do appky.
 - [ ] **Admin + `apply_admin.py`:** schválit (fajfka/★), opravy, smazání → Export →
-      skript zapíše opravený text do D a stav do nového sloupce. **Párovat podle
-      klastru + původního textu (`_o`), ne podle ID** (ID se při rebuildu počítají
-      pořadím). Mezi exportem a propisem v Excelu na ty věty nesahat.
+      skript zapíše opravený text a stav do `klastry/`, **párování podle ID**
+      (ID jsou od 22. 10. permanentní). Smazané → `rejected` na konec klastru.
+      Převodní logika z 22. 10. leží v `old/convert_xlsx_to_json_2026-10-22.py`.
 - [ ] **Bob čte jako robot:** jen 15/8/7, rezerva jen když něco vyletí. Hotovo je
       hotovo, zbytek se dosype v aktualizacích.
 - Odloženo na v2: **typy psychických pák** (realitní test, perspektiva, původ,
@@ -48,7 +53,7 @@ zásoba na průběžné aktualizace. Excel je zdroj pravdy na začátku i na kon
 - [ ] **Hned po prvním klikání na mobilu: Export** — ověřit, že stažení JSON
       na Androidu funguje (fallback Zkopírovat).
 - [ ] **`apply_admin.py`** — po road tripu: z exportu propsat smazané/upravené
-      do Excelu (triplet), `vyber_nase.json` + Karolínka (hlášky),
+      do `klastry/` (triplet), `vyber_nase.json` + Karolínka (hlášky),
       `brany_reframings.md` (situace); Top uložit jako pole do zdrojů? Rozhodnout.
 - [ ] **Prstem projít appku na mobilu** — tři brány, Moje cesta, proud karet
       (výška `100vh − 230px`, snap, srdíčko u palce), pilulky u H1, oči v liště.
@@ -82,7 +87,7 @@ zásoba na průběžné aktualizace. Excel je zdroj pravdy na začátku i na kon
       Bob je obsahově neviděl). Odborná medicínská kontrola všech 31 hotová
       16. 10. 2026 (`local/kontrola/telo_odborna_kontrola.md`), Bobovo čtení zbývá.
 - [ ] **Ženské verze vět (rozhodnuto 16. 10. 2026) — až po ořezu tripletu na
-      top 20.** Excel sloupec F = ženská verze (jen kde se liší) → build `text_f`
+      top 20.** Pole `text_f` ve zdroji = ženská verze (jen kde se liší) → build `text_f`
       + lint „D vypadá rodově a F chybí“; v appce volba oslovení žena / muž,
       fallback `text`. Rozsah: triplet, hlášky, situace/strachy, deník, Otázky „(a)“.
       Rodových vět ~40 % (po ořezu ~3 000). Generuje Claude po dávkách, Bob namátkou.

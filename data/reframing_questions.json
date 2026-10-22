@@ -18,7 +18,7 @@
   {
     "id": "refq_0003",
     "cluster_id": "cl_0001",
-    "text": "Jsou vztahy, ve kterých se cítíš viděný přirozeněji než v jiných — a co ti ten rozdíl říká o tom, nakolik je problém v tobě a nakolik vzniká mezi tebou a konkrétními lidmi?",
+    "text": "Jsou vztahy, ve kterých se cítíš více viděný než v jiných — co ti ten rozdíl říká o tom, nakolik je problém v tobě a nakolik vzniká mezi tebou a konkrétními lidmi?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -64,379 +64,19 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_0009",
+    "id": "refq_0052",
     "cluster_id": "cl_0001",
-    "text": "V jakých situacích se pocit neviditelnosti ozývá nejsilněji — ve skupině, v blízkém vztahu, při odmítnutí, nebo třeba právě tehdy, když druzí věnují pozornost někomu jinému?",
+    "text": "Nesnažíš se někdy získat pocit vlastní hodnoty právě od lidí, kteří ti ho ze své povahy nebo svých možností neumějí dát?",
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_0010",
-    "cluster_id": "cl_0001",
-    "text": "Od koho přesně toužíš být viděn a proč právě od něj?",
-    "tier": "free",
-    "sort_order": 10,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0011",
-    "cluster_id": "cl_0001",
-    "text": "Které svoje potřeby zmenšuješ, protože se bojíš, že by jich na druhé bylo příliš?",
-    "tier": "free",
-    "sort_order": 11,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0012",
-    "cluster_id": "cl_0001",
-    "text": "Co děláš proto, aby sis pozornost zasloužil — a co bys potřeboval dostávat, aniž by sis to musel zasloužit?",
-    "tier": "free",
-    "sort_order": 12,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0013",
-    "cluster_id": "cl_0001",
-    "text": "Když ti někdo projeví zájem, dokážeš ho přijmout, nebo tvoje mysl rychle najde důvod, proč se to nepočítá?",
-    "tier": "free",
-    "sort_order": 13,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0014",
-    "cluster_id": "cl_0001",
-    "text": "Když ti někdo dá najevo, že ho zajímáš, co ti pomáhá jeho zájem přijmout a co tě naopak vede k tomu, že ho zlehčíš nebo odmítneš?",
-    "tier": "free",
-    "sort_order": 14,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0015",
-    "cluster_id": "cl_0001",
-    "text": "Když někdo nereaguje tak, jak sis přál, co všechno o sobě z té jediné události okamžitě vyvodíš?",
-    "tier": "free",
-    "sort_order": 15,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0016",
-    "cluster_id": "cl_0001",
-    "text": "Co považuješ za důkaz, že tě druzí skutečně vnímají, a není někdy tvoje představa o tom, jak by to mělo vypadat, příliš přísná?",
-    "tier": "free",
-    "sort_order": 16,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0017",
-    "cluster_id": "cl_0001",
-    "text": "Čí pozornost ti ve skutečnosti chybí, když máš pocit, že tě nevidí nikdo?",
-    "tier": "free",
-    "sort_order": 17,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0018",
-    "cluster_id": "cl_0001",
-    "text": "Kdy ses naposledy cítil opravdu viděný — a co ten člověk dělal jinak?",
-    "tier": "free",
-    "sort_order": 18,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0019",
-    "cluster_id": "cl_0001",
-    "text": "Kdo tě v minulosti vnímal lépe, než si teď připouštíš?",
-    "tier": "free",
-    "sort_order": 19,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0020",
-    "cluster_id": "cl_0001",
-    "text": "Připomíná ti dnešní pocit neviditelnosti nějaký známý pocit z dřívějšího období života — a co jsi tehdy od druhých potřeboval, ale nedostával?",
-    "tier": "free",
-    "sort_order": 20,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0021",
-    "cluster_id": "cl_0001",
-    "text": "Co tě mohlo kdysi naučit, že je bezpečnější nebýt vidět, a před čím tě tahle nenápadnost může chránit i dnes?",
-    "tier": "free",
-    "sort_order": 21,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0022",
-    "cluster_id": "cl_0001",
-    "text": "Kdyby se ukázalo, že tě pocit neviditelnosti před něčím chrání, co by mohlo být ještě bolestivější než být přehlížený?",
-    "tier": "free",
-    "sort_order": 22,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0023",
-    "cluster_id": "cl_0001",
-    "text": "Osvojil sis někdy roli člověka, který moc nepotřebuje, nepřekáží a všechno zvládne sám? A pokud ano, jak může ovlivňovat to, co od tebe druzí očekávají?",
-    "tier": "free",
-    "sort_order": 23,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0024",
-    "cluster_id": "cl_0001",
-    "text": "Nečekáš někdy potají, až si tě někdo všimne sám od sebe, abys nemusel riskovat, že se ukážeš a nebudeš přijat?",
-    "tier": "free",
-    "sort_order": 24,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0025",
-    "cluster_id": "cl_0001",
-    "text": "Je možné, že někdy čekáš, že druzí sami poznají, že potřebuješ jejich zájem, aniž bys jim to dal najevo?",
-    "tier": "free",
-    "sort_order": 25,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0026",
-    "cluster_id": "cl_0001",
-    "text": "Nepletu si někdy být viděn s tím, že mě druzí musí pochopit napoprvé a beze slov? Dávám jim vůbec příležitost, aby mě mohli poznat?",
-    "tier": "free",
-    "sort_order": 26,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0027",
-    "cluster_id": "cl_0001",
-    "text": "Kolik ze sebe druhým skutečně ukazuješ — a kolik necháváš bezpečně schované?",
-    "tier": "free",
-    "sort_order": 27,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0028",
-    "cluster_id": "cl_0001",
-    "text": "Kdyby ses za svou potřebu být viděn nemusel vůbec stydět, o co konkrétního by sis dovolil někoho požádat?",
-    "tier": "free",
-    "sort_order": 28,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0029",
-    "cluster_id": "cl_0001",
-    "text": "Co by znamenalo dát druhým o trochu jasněji najevo „jsem tady, tohle cítím, tohle chci“, aniž bys čekal na jejich svolení?",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0030",
-    "cluster_id": "cl_0001",
-    "text": "Jak by vypadalo být viděn způsobem, který je ti příjemný a bezpečný, nikoli zahlcující?",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0031",
-    "cluster_id": "cl_0001",
-    "text": "Co se děje v tvém těle ve chvíli, kdy se cítíš jako vzduch — a co se změní, když tomu pocitu na chvíli dovolíš být tělesným prožitkem místo důkazu o své hodnotě?",
-    "tier": "free",
-    "sort_order": 31,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0032",
-    "cluster_id": "cl_0001",
-    "text": "Kdyby tvůj pocit neviditelnosti mohl promluvit, o jakou pozornost, potřebu nebo důležitou pravdu by se přihlásil?",
-    "tier": "free",
-    "sort_order": 32,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0033",
-    "cluster_id": "cl_0001",
-    "text": "Kdybys mohl promluvit k té části sebe, která je přesvědčená, že nikoho nezajímá, na co by ses jí chtěl zeptat jako první?",
-    "tier": "free",
-    "sort_order": 33,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0034",
-    "cluster_id": "cl_0001",
-    "text": "Co na sobě sám skrýváš nebo zneviditelňuješ, třeba i před lidmi, kteří by tě mohli chtít poznat?",
-    "tier": "free",
-    "sort_order": 34,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0035",
-    "cluster_id": "cl_0001",
-    "text": "Kde sám sebe odsouváš na okraj dřív, než to udělá svět?",
-    "tier": "free",
-    "sort_order": 35,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0036",
-    "cluster_id": "cl_0001",
-    "text": "Kde ve svém životě zabíráš méně místa, než bys ve skutečnosti chtěl?",
-    "tier": "free",
-    "sort_order": 36,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0037",
-    "cluster_id": "cl_0001",
-    "text": "Jakou cenu platíš za to, že se snažíš nepřekážet nebo nezabírat příliš mnoho místa?",
-    "tier": "free",
-    "sort_order": 37,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0038",
-    "cluster_id": "cl_0001",
-    "text": "Jak vypadá tvoje tělo, když se snažíš nebýt moc?",
-    "tier": "free",
-    "sort_order": 38,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0039",
-    "cluster_id": "cl_0001",
-    "text": "Co by se změnilo, kdybys přestal považovat neviditelnost za součást své identity a začal ji vnímat jako pocit, který přichází v určitých situacích?",
-    "tier": "free",
-    "sort_order": 39,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0040",
-    "cluster_id": "cl_0001",
-    "text": "Kdyby pocit „jsem pro všechny vzduch“ nebyl nezpochybnitelný fakt, ale závěr, z jakých zkušeností ses ho mohl naučit vyvozovat?",
-    "tier": "free",
-    "sort_order": 40,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0041",
-    "cluster_id": "cl_0001",
-    "text": "Vedeš si stejně poctivě záznamy o chvílích, kdy tě někdo zahlédl a vnímal, jako o těch, kdy tě minul?",
-    "tier": "free",
-    "sort_order": 41,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0042",
-    "cluster_id": "cl_0001",
-    "text": "Kde jsi ve svém životě zanechal stopu, kterou ve slabé chvíli přestáváš počítat?",
-    "tier": "free",
-    "sort_order": 42,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0043",
-    "cluster_id": "cl_0001",
-    "text": "Jsou lidé, jejichž zájem přehlížíš právě proto, že nejvíc toužíš po zájmu někoho jiného?",
-    "tier": "free",
-    "sort_order": 43,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0044",
-    "cluster_id": "cl_0001",
-    "text": "Když toužíš, aby tě někdo viděl, dokážeš v té chvíli vidět také ty jeho, nebo tě strach z neviditelnosti uzavře do sledování vlastní hodnoty v jeho očích?",
-    "tier": "free",
-    "sort_order": 44,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0045",
-    "cluster_id": "cl_0001",
-    "text": "Kde zaměňuješ být viděn za být přijat?",
-    "tier": "free",
-    "sort_order": 45,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0046",
-    "cluster_id": "cl_0001",
-    "text": "Co v tobě zůstává živé a důležité, i když to zrovna nikdo další nevidí?",
-    "tier": "free",
-    "sort_order": 46,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0047",
-    "cluster_id": "cl_0001",
-    "text": "Na čem ti záleží natolik, že kvůli tomu stojí za to zůstat přítomný, i když si tě zrovna nikdo nevšímá?",
-    "tier": "free",
-    "sort_order": 47,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0048",
-    "cluster_id": "cl_0001",
-    "text": "Kdybys přestal usilovat o to, aby tě viděli lidé, kteří tě dlouhodobě přehlížejí, komu jinému bys mohl začít věnovat svou pozornost?",
-    "tier": "free",
-    "sort_order": 48,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0049",
-    "cluster_id": "cl_0001",
-    "text": "Co kdyby nejdůležitější změnou nebylo zařídit, aby si tě všímalo víc lidí, ale přestat zůstávat tam, kde musíš o svou viditelnost neustále bojovat?",
-    "tier": "free",
-    "sort_order": 49,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0050",
-    "cluster_id": "cl_0001",
-    "text": "Kde by ti pomohlo nastavit hranici — v tom, co ještě přijímáš, jak dlouho čekáš nebo komu stále dáváš další šanci?",
-    "tier": "free",
-    "sort_order": 50,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0051",
-    "cluster_id": "cl_0001",
-    "text": "Jaké lidi si vybíráš, když chceš zažít pocit, že jsi pro ně důležitý, a proč právě ty?",
-    "tier": "free",
-    "sort_order": 51,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0052",
-    "cluster_id": "cl_0001",
-    "text": "Nesnažíš se někdy získat pocit vlastní hodnoty právě od lidí, kteří ti ho ze své povahy nebo svých možností neumějí dát?",
-    "tier": "free",
-    "sort_order": 52,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0053",
-    "cluster_id": "cl_0001",
-    "text": "Když toužíš být viděn, jde ti hlavně o to, aby tě druzí skutečně poznali, nebo potřebuješ především jejich obdiv a uznání? Co pro tebe znamená každá z těchto možností?",
-    "tier": "free",
-    "sort_order": 53,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0054",
-    "cluster_id": "cl_0001",
-    "text": "Kdyby tě zítra někdo opravdu uviděl a začal ti věnovat pozornost, co by se změnilo — a bylo by něco, čeho by ses musel vzdát, například pocitu křivdy nebo naděje, že ti někdo konečně vynahradí minulost?",
-    "tier": "free",
-    "sort_order": 54,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refq_0055",
     "cluster_id": "cl_0001",
-    "text": "Ten vnitřní hlas, který říká „zase si mě nikdo nevšiml“, komu se podobá a jak starý se v tu chvíli cítíš?",
+    "text": "Ten vnitřní hlas, který říká „zase si mě nikdo nevšiml“, komu z minulosti by mohl patřit a kolik je ti v tu chvíli let?",
     "tier": "free",
-    "sort_order": 55,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -444,7 +84,7 @@
     "cluster_id": "cl_0001",
     "text": "Vidíš sám sebe, když jsi sám, nebo i před sebou samým mizíš ve chvíli, kdy se na tebe nikdo nedívá?",
     "tier": "free",
-    "sort_order": 56,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -452,7 +92,7 @@
     "cluster_id": "cl_0001",
     "text": "Kdyby ses mohl podívat na své dětství, kdo měl vidět dítě, kterým jsi byl, a možná ho neviděl? Promítá se tahle nenaplněná potřeba nějak do tvých dnešních vztahů?",
     "tier": "free",
-    "sort_order": 57,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -460,7 +100,7 @@
     "cluster_id": "cl_0001",
     "text": "Nemůže se někdy stát, že se ze strachu z přehlédnutí schováš dřív, než druzí vůbec dostanou možnost tě uvidět?",
     "tier": "free",
-    "sort_order": 58,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -468,7 +108,7 @@
     "cluster_id": "cl_0001",
     "text": "Co bys dělal jinak, kdybys na měsíc přestal věřit větě „jsem pro ostatní vzduch“?",
     "tier": "free",
-    "sort_order": 59,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -476,21 +116,381 @@
     "cluster_id": "cl_0001",
     "text": "Jaký jeden malý krok bys mohl udělat příště, když se začneš cítit neviditelný, abys tentokrát neudělal automaticky to, co děláš vždycky?",
     "tier": "free",
-    "sort_order": 60,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0061",
-    "cluster_id": "cl_0001",
-    "text": "Co bys chtěl, aby druzí zahlédli na tvém úsilí, které často zůstává bez povšimnutí?",
-    "tier": "free",
-    "sort_order": 61,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
     "id": "refq_0062",
     "cluster_id": "cl_0001",
     "text": "Koho přehlížíš ty? A kdy jsi byl naposledy opravdu přítomný s druhým, místo pocitu, že tam nejsi?",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0009",
+    "cluster_id": "cl_0001",
+    "text": "V jakých situacích se pocit neviditelnosti ozývá nejsilněji — ve skupině, v blízkém vztahu, při odmítnutí, nebo stačí, když druzí věnují chvíli pozornost někomu jinému?",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0010",
+    "cluster_id": "cl_0001",
+    "text": "Kým přesně toužíš být viděn a proč právě jím?",
+    "tier": "free",
+    "sort_order": 18,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0011",
+    "cluster_id": "cl_0001",
+    "text": "Které svoje potřeby zmenšuješ, protože se bojíš, že by jich na druhé bylo příliš?",
+    "tier": "free",
+    "sort_order": 19,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0012",
+    "cluster_id": "cl_0001",
+    "text": "Co děláš proto, aby sis pozornost zasloužil — a co bys potřeboval dostávat, aniž by sis to musel zasloužit?",
+    "tier": "free",
+    "sort_order": 20,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0013",
+    "cluster_id": "cl_0001",
+    "text": "Když ti někdo projeví zájem, dokážeš ho přijmout, nebo tvoje mysl rychle najde důvod, proč se to nepočítá?",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0014",
+    "cluster_id": "cl_0001",
+    "text": "Když ti někdo dá najevo, že ho zajímáš, co ti pomáhá jeho zájem přijmout a co tě naopak vede k tomu, že ho zlehčíš nebo odmítneš?",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0015",
+    "cluster_id": "cl_0001",
+    "text": "Když někdo nereaguje tak, jak sis přál, co všechno o sobě z té jediné události okamžitě vyvodíš?",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0016",
+    "cluster_id": "cl_0001",
+    "text": "Co považuješ za důkaz, že tě druzí skutečně vnímají, a není někdy tvoje představa o tom, jak by to mělo vypadat, příliš přísná?",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0017",
+    "cluster_id": "cl_0001",
+    "text": "Čí pozornost ti ve skutečnosti chybí, když máš pocit, že tě nevidí nikdo?",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0018",
+    "cluster_id": "cl_0001",
+    "text": "Kdy ses naposledy cítil opravdu viděný — a co ten člověk dělal jinak?",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0019",
+    "cluster_id": "cl_0001",
+    "text": "Kdo tě v minulosti vnímal lépe, než si obvykle připouštíš?",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0020",
+    "cluster_id": "cl_0001",
+    "text": "Připomíná ti dnešní pocit neviditelnosti nějaký známý pocit z dřívějšího období života — a co jsi tehdy od druhých potřeboval, ale nedostával?",
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0021",
+    "cluster_id": "cl_0001",
+    "text": "Co tě mohlo kdysi naučit, že je bezpečnější nebýt vidět, a před čím tě tahle nenápadnost může chránit i dnes?",
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0022",
+    "cluster_id": "cl_0001",
+    "text": "Kdyby se ukázalo, že tě pocit neviditelnosti před něčím chrání, co by mohlo být ještě bolestivější než být přehlížený?",
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0023",
+    "cluster_id": "cl_0001",
+    "text": "Osvojil sis někdy roli člověka, který toho moc nepotřebuje, nepřekáží a všechno zvládne sám? A pokud ano, jak může ovlivňovat to, co od tebe druzí očekávají?",
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0024",
+    "cluster_id": "cl_0001",
+    "text": "Nečekáš někdy potají, až si tě někdo všimne sám od sebe, abys nemusel riskovat, že se ukážeš a nebudeš přijat?",
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0025",
+    "cluster_id": "cl_0001",
+    "text": "Čekáš někdy, až druzí sami poznají, že potřebuješ jejich zájem, aniž bys jim to dal najevo?",
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0026",
+    "cluster_id": "cl_0001",
+    "text": "Nepletu si někdy být viděn s tím, že mě druzí musí pochopit napoprvé a beze slov? Dávám jim vůbec příležitost, aby mě mohli poznat?",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0027",
+    "cluster_id": "cl_0001",
+    "text": "Kolik ze sebe druhým skutečně ukazuješ a kolik toho necháváš bezpečně skrytého?",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0028",
+    "cluster_id": "cl_0001",
+    "text": "Kdyby ses za svou potřebu být viděn nemusel vůbec stydět, o co konkrétního by sis dovolil někoho požádat?",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0029",
+    "cluster_id": "cl_0001",
+    "text": "Co by znamenalo dát druhým o trochu jasněji najevo „jsem tady, tohle cítím, tohle chci“, aniž bys čekal na jejich svolení?",
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0030",
+    "cluster_id": "cl_0001",
+    "text": "Jak by vypadalo být viděn způsobem, který je ti příjemný a bezpečný, nikoli zahlcující?",
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0031",
+    "cluster_id": "cl_0001",
+    "text": "Co se děje v tvém těle ve chvíli, kdy se cítíš jako vzduch — a co se změní, když tomu pocitu na chvíli dovolíš být tělesným prožitkem místo důkazu o své hodnotě?",
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0032",
+    "cluster_id": "cl_0001",
+    "text": "Kdyby tvůj pocit neviditelnosti mohl promluvit, o jakou pozornost, potřebu nebo důležitou pravdu by se přihlásil?",
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0033",
+    "cluster_id": "cl_0001",
+    "text": "Kdybys mohl promluvit k té části sebe, která je přesvědčená, že nikoho nezajímá, na co by ses jí chtěl zeptat jako první?",
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0034",
+    "cluster_id": "cl_0001",
+    "text": "Co na sobě sám skrýváš nebo zneviditelňuješ, třeba i před lidmi, kteří by tě mohli chtít poznat?",
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0035",
+    "cluster_id": "cl_0001",
+    "text": "Kde sám sebe odsouváš na okraj dřív, než to udělá svět?",
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0036",
+    "cluster_id": "cl_0001",
+    "text": "Kde ve svém životě zabíráš méně místa, než bys ve skutečnosti chtěl?",
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0037",
+    "cluster_id": "cl_0001",
+    "text": "Jakou cenu platíš za to, že se snažíš nepřekážet nebo nezabírat příliš mnoho místa?",
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0038",
+    "cluster_id": "cl_0001",
+    "text": "Jak vypadá tvoje tělo, když se snažíš nebýt moc?",
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0039",
+    "cluster_id": "cl_0001",
+    "text": "Co by se změnilo, kdybys přestal považovat neviditelnost za součást své identity a začal ji vnímat jako pocit, který přichází jen v určitých situacích?",
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0040",
+    "cluster_id": "cl_0001",
+    "text": "Kdyby pocit „jsem pro všechny vzduch“ nebyl nezpochybnitelný fakt, ale závěr, z jakých zkušeností ses ho mohl naučit vyvozovat?",
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0041",
+    "cluster_id": "cl_0001",
+    "text": "Vedeš si stejně poctivě záznamy o chvílích, kdy tě někdo zahlédl a vnímal, jako o těch, kdy tě minul?",
+    "tier": "free",
+    "sort_order": 49,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0042",
+    "cluster_id": "cl_0001",
+    "text": "Kde jsi ve svém životě zanechal stopu, kterou ve slabé chvíli přestáváš vidět?",
+    "tier": "free",
+    "sort_order": 50,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0043",
+    "cluster_id": "cl_0001",
+    "text": "Jsou lidé, jejichž zájem přehlížíš právě proto, že nejvíc toužíš po zájmu někoho jiného?",
+    "tier": "free",
+    "sort_order": 51,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0044",
+    "cluster_id": "cl_0001",
+    "text": "Když toužíš, aby tě někdo viděl, dokážeš v té chvíli vidět také ty jeho, nebo tě strach z neviditelnosti uzavře do sledování vlastní hodnoty v jeho očích?",
+    "tier": "free",
+    "sort_order": 52,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0045",
+    "cluster_id": "cl_0001",
+    "text": "Kde zaměňuješ být viděn za být přijat?",
+    "tier": "free",
+    "sort_order": 53,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0046",
+    "cluster_id": "cl_0001",
+    "text": "Co v tobě zůstává živé a důležité, i když to zrovna nikdo další nevidí?",
+    "tier": "free",
+    "sort_order": 54,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0047",
+    "cluster_id": "cl_0001",
+    "text": "Na čem ti záleží natolik, že kvůli tomu stojí za to zůstat přítomný, i když si tě zrovna nikdo nevšímá?",
+    "tier": "free",
+    "sort_order": 55,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0048",
+    "cluster_id": "cl_0001",
+    "text": "Kdybys přestal usilovat o to, aby tě viděli lidé, kteří tě dlouhodobě přehlížejí, komu jinému bys mohl začít věnovat svou pozornost?",
+    "tier": "free",
+    "sort_order": 56,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0049",
+    "cluster_id": "cl_0001",
+    "text": "Co kdyby nejdůležitější změnou nebylo zařídit, aby si tě všímalo víc lidí, ale přestat zůstávat tam, kde musíš o svou viditelnost neustále bojovat?",
+    "tier": "free",
+    "sort_order": 57,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0050",
+    "cluster_id": "cl_0001",
+    "text": "Kde by ti pomohlo nastavit hranici — v tom, co ještě přijímáš, jak dlouho čekáš nebo komu stále dáváš další šanci?",
+    "tier": "free",
+    "sort_order": 58,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0051",
+    "cluster_id": "cl_0001",
+    "text": "Jaké lidi si vybíráš, když chceš zažít pocit, že jsi pro ně důležitý, a proč právě ty?",
+    "tier": "free",
+    "sort_order": 59,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0053",
+    "cluster_id": "cl_0001",
+    "text": "Když toužíš být viděn, jde ti hlavně o to, aby tě druzí skutečně poznali, nebo potřebuješ především jejich obdiv a uznání? Co pro tebe znamená každá z těchto možností?",
+    "tier": "free",
+    "sort_order": 60,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0054",
+    "cluster_id": "cl_0001",
+    "text": "Kdyby tě zítra někdo opravdu uviděl a začal ti věnovat pozornost, co by se změnilo — a bylo by něco, čeho by ses musel vzdát, například pocitu křivdy nebo naděje, že ti někdo konečně vynahradí minulost?",
+    "tier": "free",
+    "sort_order": 61,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0061",
+    "cluster_id": "cl_0001",
+    "text": "Co bys chtěl, aby druzí zahlédli na tvém úsilí, které často zůstává bez povšimnutí?",
     "tier": "free",
     "sort_order": 62,
     "added_at": "2026-10-16"
@@ -546,7 +546,7 @@
   {
     "id": "refq_0069",
     "cluster_id": "cl_0002",
-    "text": "Které zkušenosti ze svého života musíš přehlédnout nebo znehodnotit, aby přesvědčení „jsem nemilovatelný“ mohlo zůstat pravdivé?",
+    "text": "Které zkušenosti ze svého života musíš přehlédnout nebo znehodnotit, aby přesvědčení „jsem nemilovatelný“ mohlo dál existovat?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -584,35 +584,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_0074",
-    "cluster_id": "cl_0002",
-    "text": "Jsou lidé, vedle kterých se cítíš nemilovatelný výrazně víc než vedle jiných? Co mají tyhle vztahy společného?",
-    "tier": "free",
-    "sort_order": 12,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0075",
-    "cluster_id": "cl_0002",
-    "text": "Jak poznáš rozdíl mezi chvílí, kdy ti někdo skutečně nedává lásku, kterou potřebuješ, a chvílí, kdy se v tobě probudil starý strach, že ji nedostaneš?",
-    "tier": "free",
-    "sort_order": 13,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refq_0076",
     "cluster_id": "cl_0002",
     "text": "Co jsi jako dítě potřeboval opakovaně zažívat, aby v tobě místo „nejde mě milovat“ mohlo vzniknout „jsem pro někoho důležitý, i když zrovna nic nedokazuju“?",
     "tier": "free",
-    "sort_order": 14,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0077",
-    "cluster_id": "cl_0002",
-    "text": "Když se pocit nemilovatelnosti objeví, co uděláš jako první? Stáhneš se, snažíš se zalíbit, hledáš ujištění, útočíš, nebo se chráníš nějak jinak?",
-    "tier": "free",
-    "sort_order": 15,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -620,15 +596,7 @@
     "cluster_id": "cl_0002",
     "text": "Co přesně musí druhý člověk udělat, aby ses cítil milovaný? Má vůbec reálnou šanci tuhle laťku splnit?",
     "tier": "free",
-    "sort_order": 16,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0079",
-    "cluster_id": "cl_0002",
-    "text": "Dokážou lidé, které sis pustil k sobě, poznat, jak chceš být milovaný? Nebo doufáš, že to ten správný člověk pozná sám?",
-    "tier": "free",
-    "sort_order": 17,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -636,23 +604,7 @@
     "cluster_id": "cl_0002",
     "text": "Nezaměňuješ někdy lásku za některé její projevy, třeba intenzivní zájem, obdiv, sexuální touhu nebo časté ujišťování, takže ti jiné podoby náklonnosti unikají?",
     "tier": "free",
-    "sort_order": 18,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0081",
-    "cluster_id": "cl_0002",
-    "text": "Co se děje v tvém těle, když tě někdo přijímá nebo ti dává najevo lásku? Dokážeš v tom příjemném prožitku chvíli zůstat?",
-    "tier": "free",
-    "sort_order": 19,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0082",
-    "cluster_id": "cl_0002",
-    "text": "Když tě někdo má rád, ale neprojevuje to přesně tak, jak potřebuješ, co si o jeho lásce začneš myslet?",
-    "tier": "free",
-    "sort_order": 20,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -660,15 +612,7 @@
     "cluster_id": "cl_0002",
     "text": "Nevybíráš si někdy lidi, od kterých je těžké získat lásku, protože jejich nedostupnost zapadá do příběhu, který už o sobě znáš?",
     "tier": "free",
-    "sort_order": 21,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0084",
-    "cluster_id": "cl_0002",
-    "text": "Co děláš, když začínáš být někomu opravdu blízký? Dovolíš si přiblížit se ještě víc, nebo začneš hledat cestu do bezpečné vzdálenosti?",
-    "tier": "free",
-    "sort_order": 22,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -676,7 +620,7 @@
     "cluster_id": "cl_0002",
     "text": "Před čím tě přesvědčení „nikdo mě nemůže opravdu milovat“ chrání? Před odmítnutím, nadějí, závislostí na druhém, zranitelností, nebo něčím jiným?",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -684,15 +628,7 @@
     "cluster_id": "cl_0002",
     "text": "Co je pro tebe děsivější: že tě někdo nebude milovat, nebo že tě někdo opravdu milovat bude a ty mu dovolíš, aby tě poznal?",
     "tier": "free",
-    "sort_order": 24,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0087",
-    "cluster_id": "cl_0002",
-    "text": "Před kým se nejvíc snažíš být milovatelný? A co tě tahle snaha stojí?",
-    "tier": "free",
-    "sort_order": 25,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -700,7 +636,7 @@
     "cluster_id": "cl_0002",
     "text": "Kde ve vztazích potřebuješ víc blízkosti a kde naopak pevnější hranice, abys nemusel získávat lásku za cenu toho, že opustíš sám sebe?",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -708,7 +644,7 @@
     "cluster_id": "cl_0002",
     "text": "Kdyby tvoji hodnotu neurčovalo to, kdo tě chce, kdo zůstává a kdo odchází, podle čeho bys ji určoval?",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -716,39 +652,15 @@
     "cluster_id": "cl_0002",
     "text": "Kdo ve tvém životě nemusí o tvoji lásku bojovat ani si ji zasloužit? Co by se změnilo, kdybys stejným pohledem zkusil vidět i sebe?",
     "tier": "free",
-    "sort_order": 28,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0091",
-    "cluster_id": "cl_0002",
-    "text": "Co ti brání dovolit druhému, aby tě měl rád nedokonale, po svém a ne vždy přesně ve chvíli, kdy to potřebuješ?",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0092",
-    "cluster_id": "cl_0002",
-    "text": "Kdyby ses ve chvíli „jsem nemilovatelný“ nemusel přesvědčovat o opaku, co bys od sebe tehdy skutečně potřeboval?",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0093",
-    "cluster_id": "cl_0002",
-    "text": "Kdyby tenhle pocit nebyl jen ozvěnou minulosti, ale také zprávou o tvém současném životě, na co důležitého by tě mohl upozorňovat?",
-    "tier": "free",
-    "sort_order": 31,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
     "id": "refq_0094",
     "cluster_id": "cl_0002",
-    "text": "Jak by ses ve vztazích choval jinak, kdybys na nějaký čas přestal řešit otázku, jestli jsi dost milovatelný?",
+    "text": "Jak by ses ve vztazích choval jinak, kdybys na nějaký čas přestal řešit otázku, jestli jsi dost milovaný?",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -756,7 +668,7 @@
     "cluster_id": "cl_0002",
     "text": "Co kdyby tvým úkolem nebylo stát se člověkem, kterého lze milovat, ale postupně se naučit lásku rozpoznávat, přijímat a důvěřovat jí?",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -764,7 +676,7 @@
     "cluster_id": "cl_0002",
     "text": "Jaký malý vztahový experiment bys mohl zkusit, abys zjistil, co se stane, když budeš o trochu otevřenější nebo konkrétnější v tom, co potřebuješ?",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -772,7 +684,7 @@
     "cluster_id": "cl_0002",
     "text": "Co by se stalo, kdybys někomu, komu důvěřuješ, ukázal i tu část sebe, o které se domníváš, že ji nikdo nemůže mít rád?",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -780,7 +692,7 @@
     "cluster_id": "cl_0002",
     "text": "Jak bys mluvil s někým blízkým, kdo by o sobě tvrdil, že je nemilovatelný? Dokázal bys něco z těch slov nabídnout i sobě?",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -788,15 +700,7 @@
     "cluster_id": "cl_0002",
     "text": "Co bys potřeboval zažít, aby ses nemusel stále znovu ujišťovat, že si lásku zasloužíš?",
     "tier": "free",
-    "sort_order": 37,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0100",
-    "cluster_id": "cl_0002",
-    "text": "Je možné, že některé projevy lásky přehlížíš právě proto, že neodpovídají tomu, jak sis představoval, že by měla vypadat?",
-    "tier": "free",
-    "sort_order": 38,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -804,7 +708,87 @@
     "cluster_id": "cl_0002",
     "text": "Čeho by ses musel vzdát a co bys získal, kdybys připustil, že možná vůbec nejsi nemilovatelný?",
     "tier": "free",
-    "sort_order": 39,
+    "sort_order": 27,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0074",
+    "cluster_id": "cl_0002",
+    "text": "Jsou lidé, vedle kterých se cítíš víc nemilovatelný než vedle jiných? Co mají tyhle vztahy společného?",
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0075",
+    "cluster_id": "cl_0002",
+    "text": "Jak poznáš rozdíl mezi chvílí, kdy ti někdo skutečně nedává lásku, kterou potřebuješ, a chvílí, kdy se v tobě probudil starý strach, že ji nedostaneš?",
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0077",
+    "cluster_id": "cl_0002",
+    "text": "Když se pocit nemilovatelnosti objeví, co uděláš jako první? Stáhneš se, snažíš se zalíbit, hledáš ujištění, útočíš, nebo se chráníš nějak jinak?",
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0079",
+    "cluster_id": "cl_0002",
+    "text": "Dokážou lidé, které sis pustil k sobě, poznat, jak chceš být milovaný? Nebo doufáš, že to ten správný člověk pozná sám?",
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0081",
+    "cluster_id": "cl_0002",
+    "text": "Co se děje v tvém těle, když tě někdo přijímá nebo ti dává najevo lásku? Dokážeš v tom příjemném prožitku chvíli zůstat?",
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0082",
+    "cluster_id": "cl_0002",
+    "text": "Když tě někdo má rád, ale neprojevuje to přesně tak, jak potřebuješ, co si o jeho lásce začneš myslet?",
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0084",
+    "cluster_id": "cl_0002",
+    "text": "Co děláš, když začínáš být někomu opravdu blízký? Dovolíš si přiblížit se ještě víc, nebo začneš hledat cestu do bezpečné vzdálenosti?",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0087",
+    "cluster_id": "cl_0002",
+    "text": "Před kým se nejvíc snažíš být milovatelný? A co tě tahle snaha stojí?",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0091",
+    "cluster_id": "cl_0002",
+    "text": "Co ti brání dovolit druhému, aby tě měl rád nedokonale, po svém a ne vždy přesně ve chvíli, kdy to potřebuješ?",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0093",
+    "cluster_id": "cl_0002",
+    "text": "Kdyby tenhle pocit nebyl jen ozvěnou minulosti, ale také zprávou o tvém současném životě, na co důležitého by tě mohl upozorňovat?",
+    "tier": "free",
+    "sort_order": 37,
     "added_at": "2026-10-16"
   },
   {
@@ -842,7 +826,7 @@
   {
     "id": "refq_0106",
     "cluster_id": "cl_0003",
-    "text": "Když se cítíš zanedbávaný, co obvykle uděláš – stáhneš se, ochladneš, začneš se víc snažit, rozzlobíš se, nebo čekáš, až si druhý všimne? A jak tvoje reakce ovlivňuje to, co se děje dál?",
+    "text": "Když se cítíš zanedbávaný, co obvykle uděláš – stáhneš se, ochladneš, začneš se víc snažit, rozzlobíš se, nebo čekáš, až si tě druhý všimne? A jak tvoje reakce ovlivňuje to, co se děje dál?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -872,35 +856,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_0110",
-    "cluster_id": "cl_0003",
-    "text": "Je možné, že tvoje potřeba péče není jen ozvěnou minulosti, ale upozorňuje tě na něco, co ti v některém současném vztahu opravdu dlouhodobě chybí?",
-    "tier": "free",
-    "sort_order": 9,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refq_0111",
     "cluster_id": "cl_0003",
     "text": "Čekáš někdy, že druzí sami poznají, co potřebuješ, a když si toho nevšimnou, bereš to jako důkaz, že jim na tobě nezáleží?",
     "tier": "free",
-    "sort_order": 10,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0112",
-    "cluster_id": "cl_0003",
-    "text": "Když si připustíš, že potřebuješ něčí péči, co se v tobě ozve? Přijímáš tuhle potřebu jako přirozenou, nebo se za ni nějakým způsobem odsuzuješ?",
-    "tier": "free",
-    "sort_order": 11,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0113",
-    "cluster_id": "cl_0003",
-    "text": "Je někdo, od koho stále čekáš péči, kterou ti dlouhodobě nedává? Co tě vede k tomu, že na ni čekáš právě od něj?",
-    "tier": "free",
-    "sort_order": 12,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -908,7 +868,7 @@
     "cluster_id": "cl_0003",
     "text": "Co jsi v minulosti potřeboval od druhých dostávat, ale nedostával? Jak to mohlo ovlivnit tvoje dnešní očekávání od vztahů?",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -916,7 +876,7 @@
     "cluster_id": "cl_0003",
     "text": "Když ti někdo nabídne péči, dokážeš ji přijmout, nebo máš tendenci ji odmítnout, zlehčit či ukázat, že vlastně nic nepotřebuješ?",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -924,23 +884,15 @@
     "cluster_id": "cl_0003",
     "text": "Co by se změnilo, kdybys nedostatek péče od konkrétního člověka přestal vnímat jako důkaz, že si péči nezasloužíš?",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
     "id": "refq_0117",
     "cluster_id": "cl_0003",
-    "text": "Působíš někdy před druhými tak soběstačně a nenáročně, že vůbec netuší, jak moc bys jejich péči potřeboval?",
+    "text": "Působíš někdy před druhými tak soběstačně a nenáročně, že vůbec nemusí tušit, jak moc bys jejich péči potřeboval?",
     "tier": "free",
-    "sort_order": 16,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0118",
-    "cluster_id": "cl_0003",
-    "text": "Jak by vypadal vztah, ve kterém by ses cítil bezpečně a nemusel o základní péči bojovat ani si ji zasloužit?",
-    "tier": "free",
-    "sort_order": 17,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -948,7 +900,7 @@
     "cluster_id": "cl_0003",
     "text": "Které vztahy tě nechávají s pocitem osamění a ve kterých naopak zažíváš, že jsi pro někoho důležitý? Čím se od sebe liší?",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -956,7 +908,7 @@
     "cluster_id": "cl_0003",
     "text": "Co nejhoršího by se podle tebe mohlo stát, kdybys někomu otevřeně ukázal, jak moc jeho péči potřebuješ?",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -964,15 +916,7 @@
     "cluster_id": "cl_0003",
     "text": "Stává se ti, že tě přitahují lidé, od kterých je těžké získat zájem a péči? Pokud ano, co tě k nim přitahuje?",
     "tier": "free",
-    "sort_order": 20,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0122",
-    "cluster_id": "cl_0003",
-    "text": "Kdy a za jakých okolností ses mohl naučit, že svoje potřeby musíš zvládat sám a nemůžeš se spoléhat na druhé?",
-    "tier": "free",
-    "sort_order": 21,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -980,7 +924,7 @@
     "cluster_id": "cl_0003",
     "text": "Dáváš někdy druhým péči, pozornost nebo pomoc s nevysloveným přáním, aby ti totéž jednou oplatili?",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -988,7 +932,7 @@
     "cluster_id": "cl_0003",
     "text": "Když se cítíš zanedbávaný, co bys od druhého nejvíc potřeboval slyšet nebo zažít, abys věděl, že v tom nejsi sám?",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -996,7 +940,7 @@
     "cluster_id": "cl_0003",
     "text": "Jsou chvíle, kdy se k tobě druzí chovají pozorně a laskavě, a přesto se cítíš zanedbávaný? Co se v těch chvílích odehrává?",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -1004,7 +948,7 @@
     "cluster_id": "cl_0003",
     "text": "Kterých projevů péče si možná nevšímáš, protože vypadají jinak, než jak by sis přál?",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -1012,7 +956,7 @@
     "cluster_id": "cl_0003",
     "text": "Když máš pocit, že se o tebe nikdo nestará, vybavíš si také situace, které tomuto přesvědčení odporují? Co s těmito zkušenostmi obvykle uděláš?",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -1020,7 +964,7 @@
     "cluster_id": "cl_0003",
     "text": "Kdyby ses nemusel stydět za touhu po pozornosti, něze nebo pravidelném zájmu, co by sis dovolil od druhých chtít? Co ti v tom dnes brání?",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -1028,7 +972,7 @@
     "cluster_id": "cl_0003",
     "text": "Kdybys přestal čekat na péči od lidí, kteří ti ji opakovaně nedávají, komu nebo čemu bys mohl věnovat svou energii?",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -1036,7 +980,7 @@
     "cluster_id": "cl_0003",
     "text": "Co bys mohl změnit ve svých vztazích, abys nemusel tak často čekat na péči, která nepřichází?",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -1044,7 +988,7 @@
     "cluster_id": "cl_0003",
     "text": "Co v tobě zůstává, když někdo přejde tvoji bolest bez povšimnutí? Je to smutek, vztek, osamění, nebo něco, co se ti těžko pojmenovává?",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -1052,7 +996,7 @@
     "cluster_id": "cl_0003",
     "text": "Když se cítíš zanedbávaný, potřebuješ, aby ti někdo pomohl vyřešit problém, nebo především toužíš po jeho přítomnosti a zájmu?",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -1060,7 +1004,7 @@
     "cluster_id": "cl_0003",
     "text": "Co by pro tebe znamenalo připustit, že péči a pozornost můžeš potřebovat, aniž bys tím ztrácel svou samostatnost?",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -1068,7 +1012,7 @@
     "cluster_id": "cl_0003",
     "text": "Když se objeví pocit zanedbávání, co se děje v tvém těle? Dokážeš u toho pocitu chvíli zůstat, aniž bys hned hledal vysvětlení?",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -1076,15 +1020,7 @@
     "cluster_id": "cl_0003",
     "text": "Jaký jeden malý krok bys mohl příště udělat, když se začneš cítit zanedbávaný, místo abys automaticky reagoval jako obvykle?",
     "tier": "free",
-    "sort_order": 34,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_0136",
-    "cluster_id": "cl_0003",
-    "text": "Jak by vypadala péče, při které by sis zachoval důstojnost a neměl pocit, že prosíš o drobky?",
-    "tier": "free",
-    "sort_order": 35,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -1092,7 +1028,7 @@
     "cluster_id": "cl_0003",
     "text": "Co kdyby tvoje potřeba péče nebyla slabost ani problém, ale důležitá informace? K čemu by tě právě teď vybízela?",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -1100,15 +1036,15 @@
     "cluster_id": "cl_0003",
     "text": "Dokážeš rozlišit mezi pocitem „jsem zanedbávaný“ a konkrétním zjištěním „tenhle člověk mi nedává to, co potřebuju“? Co se změní, když to takhle pojmenuješ?",
     "tier": "free",
-    "sort_order": 37,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
     "id": "refq_0139",
     "cluster_id": "cl_0003",
-    "text": "Co bys potřeboval, aby ses cítil důležitý pro někoho, kdo od tebe právě nic nepotřebuje?",
+    "text": "Co bys potřeboval, aby ses cítil důležitý pro někoho, kdo od tebe právě teď nic nepotřebuje?",
     "tier": "free",
-    "sort_order": 38,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -1116,7 +1052,39 @@
     "cluster_id": "cl_0003",
     "text": "Jakou cenu platíš za to, že se snažíš být pro druhé nenáročný a všechno zvládat sám?",
     "tier": "free",
-    "sort_order": 39,
+    "sort_order": 33,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0110",
+    "cluster_id": "cl_0003",
+    "text": "Je možné, že tvoje potřeba péče není jen ozvěnou minulosti, ale upozorňuje tě na něco, co ti v některém současném vztahu opravdu dlouhodobě chybí?",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0112",
+    "cluster_id": "cl_0003",
+    "text": "Když si připustíš, že potřebuješ něčí péči, co se v tobě ozve? Přijímáš tuhle potřebu jako přirozenou, nebo se za ni nějakým způsobem odsuzuješ?",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0113",
+    "cluster_id": "cl_0003",
+    "text": "Je někdo, od koho stále čekáš péči, kterou ti dlouhodobě nedává? Co tě vede k tomu, že na ni čekáš právě od něj?",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "refq_0118",
+    "cluster_id": "cl_0003",
+    "text": "Jak by vypadal vztah, ve kterém by ses cítil bezpečně a nemusel o základní péči bojovat ani si ji zasloužit?",
+    "tier": "free",
+    "sort_order": 37,
     "added_at": "2026-10-16"
   },
   {
@@ -1124,7 +1092,7 @@
     "cluster_id": "cl_0003",
     "text": "Když druhý tvoji potřebu péče nenaplní, dokážeš mu dát najevo své zklamání, aniž by ses musel stáhnout nebo na něj zaútočit?",
     "tier": "free",
-    "sort_order": 40,
+    "sort_order": 38,
     "added_at": "2026-10-16"
   },
   {

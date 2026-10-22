@@ -2,7 +2,7 @@
   {
     "id": "ref_0001",
     "cluster_id": "cl_0001",
-    "text": "To, že tě někdo neviděl, ještě není důkaz, že jsi nebyl hodný vidění.",
+    "text": "To, že tě někdo v minulosti neviděl, není důkaz toho, že nejsi hodný vidění.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -26,7 +26,7 @@
   {
     "id": "ref_0004",
     "cluster_id": "cl_0001",
-    "text": "Je pravda, že tě někteří lidé mohli přehlédnout. Není ale pravda, že proto nejsi člověk, kterého lze poznat, chtít a pamatovat si.",
+    "text": "Je pravda, že tě někteří lidé mohli přehlédnout. Není ale pravda, že jsi proto člověk, o kterého nemůže být zájem.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -42,7 +42,7 @@
   {
     "id": "ref_0006",
     "cluster_id": "cl_0001",
-    "text": "Někdy se cítíš neviditelný právě proto, že tě nevidí ten, od koho to tvoje duše pořád ještě čeká. A to je sakra rozdíl.",
+    "text": "Někdy se cítíš neviditelný jen proto, že tě nevidí ten, od koho to tvoje duše pořád ještě čeká. A to je sakra rozdíl.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -66,7 +66,7 @@
   {
     "id": "ref_0009",
     "cluster_id": "cl_0001",
-    "text": "Některé chvíle samoty vypadají jako důkaz, že na nás nikomu nezáleží. Jsou ale pořád jen chvílemi samoty.",
+    "text": "Některé chvíle samoty vypadají jako důkaz, že na nás nikomu nezáleží. Stále ale nejsou ničím víc než chvílemi samoty.",
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16"
@@ -120,291 +120,27 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_0016",
+    "id": "ref_0037",
     "cluster_id": "cl_0001",
-    "text": "To, že tě někdo neunesl ve své pozornosti, neznamená, že tě nedokáže přijmout nikdo jiný.",
+    "text": "To, co vypadá jako skromnost, může být někdy způsob, jak sám sebe vymazat.",
     "tier": "free",
     "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_0017",
+    "id": "ref_0044",
     "cluster_id": "cl_0001",
-    "text": "Možná nejsi neviditelný. Možná jen nejsi viděný v některých vztazích a chvílích, kde tvoje skutečné já nedostává prostor.",
+    "text": "Možná nepotřebuješ víc očí upřených na tebe, ale víc věrnosti k sobě.",
     "tier": "free",
     "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_0018",
-    "cluster_id": "cl_0001",
-    "text": "Pocit říká „nikdo“, ale skutečnost může být spíš „někdo někdy“. Zkus mezi těmito dvěma tvrzeními rozlišovat.",
-    "tier": "free",
-    "sort_order": 18,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0019",
-    "cluster_id": "cl_0001",
-    "text": "Opakem neviditelnosti není stát pod reflektorem. Je to být dostatečně viděn tam, kde na tom záleží.",
-    "tier": "free",
-    "sort_order": 19,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0020",
-    "cluster_id": "cl_0001",
-    "text": "Být viděn správnými lidmi je víc než být registrován davem.",
-    "tier": "free",
-    "sort_order": 20,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0021",
-    "cluster_id": "cl_0001",
-    "text": "Tvoje potřeba být viděn není slabost. Je to základní lidská potřeba blízkosti, uznání a vztahu.",
-    "tier": "free",
-    "sort_order": 21,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0022",
-    "cluster_id": "cl_0001",
-    "text": "Být přehlížený bolí právě proto, že v tobě je něco živého, co touží po kontaktu, ne proto, že bys byl prázdný.",
-    "tier": "free",
-    "sort_order": 22,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0023",
-    "cluster_id": "cl_0001",
-    "text": "Možná teď nejvíc potřebuješ ne důkaz, že tě vidí všichni, ale zkušenost, že před někým můžeš být sám sebou a on zůstane.",
-    "tier": "free",
-    "sort_order": 23,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0024",
-    "cluster_id": "cl_0001",
-    "text": "Ta část tebe, která se cítí neviditelná, nepotřebuje opravit. Potřebuje někoho, kdo si k ní sedne a neodejde.",
-    "tier": "free",
-    "sort_order": 24,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0025",
-    "cluster_id": "cl_0001",
-    "text": "Tvoje existence nepotřebuje reklamu, ale kontakt.",
-    "tier": "free",
-    "sort_order": 25,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0026",
-    "cluster_id": "cl_0001",
-    "text": "Není tvoje práce rozsvítit se tak moc, aby si tě konečně všimli lidé, kteří se neumějí dívat.",
-    "tier": "free",
-    "sort_order": 26,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0027",
-    "cluster_id": "cl_0001",
-    "text": "Nemusíš být hlučnější, abys směl být vnímán. Nemusíš se omlouvat za to, že jsi.",
-    "tier": "free",
-    "sort_order": 27,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0028",
-    "cluster_id": "cl_0001",
-    "text": "Nejsi neviditelný člověk. Jsi člověk, který nese zkušenost, že ho druzí někdy neviděli.",
-    "tier": "free",
-    "sort_order": 28,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0029",
-    "cluster_id": "cl_0001",
-    "text": "To, že jsi nebyl středem pozornosti, neznamená, že jsi byl mimo obraz. Možná jsi byl jen v koutě, kam se nikdo nenaučil dívat.",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0030",
-    "cluster_id": "cl_0001",
-    "text": "Možná tě někteří lidé minuli. To ale neznamená, že tě minul život.",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0031",
-    "cluster_id": "cl_0001",
-    "text": "Není tvoje vina, že ses naučil přežít tím, že nebudeš překážet.",
-    "tier": "free",
-    "sort_order": 31,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0032",
-    "cluster_id": "cl_0001",
-    "text": "Možná ses kdysi naučil být hodný, tichý a nenápadný, protože to byl způsob, jak zůstat v bezpečí.",
-    "tier": "free",
-    "sort_order": 32,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0033",
-    "cluster_id": "cl_0001",
-    "text": "Neviditelnost může být starý ochranný plášť: když mě nikdo neuvidí, nikdo mě neodmítne.",
-    "tier": "free",
-    "sort_order": 33,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0034",
-    "cluster_id": "cl_0001",
-    "text": "Plášť, který tě kdysi chránil, tě dnes ale může dusit.",
-    "tier": "free",
-    "sort_order": 34,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0035",
-    "cluster_id": "cl_0001",
-    "text": "Možná ses naučil zmenšovat, aby bylo méně konfliktů, odmítnutí a zklamání. Teď se můžeš pomalu učit zabírat svoje místo.",
-    "tier": "free",
-    "sort_order": 35,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0036",
-    "cluster_id": "cl_0001",
-    "text": "Přestat se zmenšovat není sobectví.",
-    "tier": "free",
-    "sort_order": 36,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0037",
-    "cluster_id": "cl_0001",
-    "text": "To, co vypadá jako skromnost, může být někdy způsob, jak sám sebe vymazat.",
-    "tier": "free",
-    "sort_order": 37,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0038",
-    "cluster_id": "cl_0001",
-    "text": "Sebeobětování, při kterém mizíš z vlastního života, není ctnost. Často je to starý zvyk z doby, kdy to jinak nešlo.",
-    "tier": "free",
-    "sort_order": 38,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0039",
-    "cluster_id": "cl_0001",
-    "text": "Možná ses stal odborníkem na čtení místnosti a úplným amatérem na vnášení sebe do ní. To se dá doučit.",
-    "tier": "free",
-    "sort_order": 39,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0040",
-    "cluster_id": "cl_0001",
-    "text": "Někdy se cítíš neviditelně právě proto, že ses celý život učil předvídat druhé a potlačovat sebe.",
-    "tier": "free",
-    "sort_order": 40,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0041",
-    "cluster_id": "cl_0001",
-    "text": "Když se cítíš zapomínaný, může se v tobě ozývat stará věta: „Aby bylo místo pro ostatní, já se musím zmenšit.“ Zmenšování ale není tvoje povaha; může to být naučený způsob přežití.",
-    "tier": "free",
-    "sort_order": 41,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0042",
-    "cluster_id": "cl_0001",
-    "text": "Možná ses stal neviditelným i sám sobě: přestáváš vnímat hlad, únavu, vztek, přání nebo vlastní hranice. Pak první krok k viditelnosti nevede přes druhé, ale přes tělo. To ti možná už dlouho hlásí: „Hele, jsem tady.“",
-    "tier": "free",
-    "sort_order": 42,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0043",
-    "cluster_id": "cl_0001",
-    "text": "Když tě druzí přehlížejí, je snadné začít přehlížet i sám sebe. Právě tady můžeš ten řetěz přerušit.",
-    "tier": "free",
-    "sort_order": 43,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0044",
-    "cluster_id": "cl_0001",
-    "text": "Možná nepotřebuješ víc očí na sobě, ale víc věrnosti vůči sobě.",
-    "tier": "free",
-    "sort_order": 44,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "ref_0045",
     "cluster_id": "cl_0001",
-    "text": "Nejsi neviditelný, když sám sebe cítíš, slyšíš a bereš vážně.",
+    "text": "Nebudeš neviditelný, když budeš sám sebe brát vážně.",
     "tier": "free",
-    "sort_order": 45,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0046",
-    "cluster_id": "cl_0001",
-    "text": "Tvoje tělo možná stále poslouchá starý příkaz „zmiz“. Někdy může pomoci zhluboka se nadechnout, narovnat záda a dovolit si být přítomný.",
-    "tier": "free",
-    "sort_order": 46,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0047",
-    "cluster_id": "cl_0001",
-    "text": "Je možné být obyčejně přítomný, bez cirkusu i bez zmizení.",
-    "tier": "free",
-    "sort_order": 47,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0048",
-    "cluster_id": "cl_0001",
-    "text": "Viditelnost často začíná ve větách, ne v osudu.",
-    "tier": "free",
-    "sort_order": 48,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0049",
-    "cluster_id": "cl_0001",
-    "text": "Někdy stačí přestat mluvit o sobě omluvným tónem.",
-    "tier": "free",
-    "sort_order": 49,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0050",
-    "cluster_id": "cl_0001",
-    "text": "Někdy stačí neříkat „to je asi blbost, ale…“ před každou vlastní větou.",
-    "tier": "free",
-    "sort_order": 50,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0051",
-    "cluster_id": "cl_0001",
-    "text": "Někdy stačí neposouvat svoje potřeby až na konec fronty.",
-    "tier": "free",
-    "sort_order": 51,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -412,7 +148,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy stačí zůstat o pět minut déle v konverzaci místo automatického stažení.",
     "tier": "free",
-    "sort_order": 52,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -420,7 +156,239 @@
     "cluster_id": "cl_0001",
     "text": "Někdy stačí říct: „Tohle je pro mě důležité.“",
     "tier": "free",
-    "sort_order": 53,
+    "sort_order": 20,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0016",
+    "cluster_id": "cl_0001",
+    "text": "To, že ti někdo nevěnoval dost své pozornosti, neznamená, že tě nedokáže vidět nikdo jiný.",
+    "tier": "free",
+    "sort_order": 21,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0017",
+    "cluster_id": "cl_0001",
+    "text": "Možná nejsi viděný jen v některých vztazích a chvílích, kde tvoje skutečné já nedostává prostor.",
+    "tier": "free",
+    "sort_order": 22,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0018",
+    "cluster_id": "cl_0001",
+    "text": "Pocit říká „nikdo“, ale skutečnost může být spíš „někdo někdy“. Zkus mezi těmito dvěma tvrzeními rozlišovat.",
+    "tier": "free",
+    "sort_order": 23,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0019",
+    "cluster_id": "cl_0001",
+    "text": "Opakem neviditelnosti není stát pod reflektorem. Stačí být dostatečně viděn tam, kde na tom záleží.",
+    "tier": "free",
+    "sort_order": 24,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0020",
+    "cluster_id": "cl_0001",
+    "text": "Být viděn správnými lidmi je víc než být registrován davem.",
+    "tier": "free",
+    "sort_order": 25,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0021",
+    "cluster_id": "cl_0001",
+    "text": "Tvoje potřeba být viděn není slabost. Je to základní lidská potřeba blízkosti, uznání a vztahu.",
+    "tier": "free",
+    "sort_order": 26,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0022",
+    "cluster_id": "cl_0001",
+    "text": "Být přehlížený bolí právě proto, že v tobě je něco živého, co touží po kontaktu, ne proto, že bys byl prázdný.",
+    "tier": "free",
+    "sort_order": 27,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0023",
+    "cluster_id": "cl_0001",
+    "text": "Možná teď nejvíc potřebuješ ne důkaz, že tě vidí všichni, ale zkušenost, že před někým můžeš být sám sebou a on zůstane.",
+    "tier": "free",
+    "sort_order": 28,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0024",
+    "cluster_id": "cl_0001",
+    "text": "Ta část tebe, která se cítí neviditelná, nepotřebuje opravit. Potřebuje někoho, kdo si k ní sedne a neodejde.",
+    "tier": "free",
+    "sort_order": 29,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0025",
+    "cluster_id": "cl_0001",
+    "text": "Tvoje existence nepotřebuje reklamu, ale kontakt.",
+    "tier": "free",
+    "sort_order": 30,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0026",
+    "cluster_id": "cl_0001",
+    "text": "Není tvoje práce na sebe ukazovat, aby si tě konečně všimli lidé, kteří se neumějí dívat.",
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0027",
+    "cluster_id": "cl_0001",
+    "text": "Nemusíš se omlouvat za to, že jsi.",
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0028",
+    "cluster_id": "cl_0001",
+    "text": "Nejsi neviditelný člověk. Jsi člověk, který nese zkušenost, že ho druzí někdy neviděli.",
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0030",
+    "cluster_id": "cl_0001",
+    "text": "Možná tě někteří lidé minuli. To ale neznamená, že tě minul život.",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0031",
+    "cluster_id": "cl_0001",
+    "text": "Není tvoje vina, že ses naučil přežít tím, že nebudeš překážet.",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0032",
+    "cluster_id": "cl_0001",
+    "text": "Možná ses kdysi naučil být hodný, tichý a nenápadný, protože to byl způsob, jak zůstat v bezpečí.",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0033",
+    "cluster_id": "cl_0001",
+    "text": "Neviditelnost může být starý ochranný plášť: \"Když mě nikdo neuvidí, nikdo mě neodmítne.\" Plášť, který tě kdysi chránil, tě dnes ale může dusit.",
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0035",
+    "cluster_id": "cl_0001",
+    "text": "Možná ses naučil zmenšovat, aby bylo méně konfliktů, odmítnutí a zklamání. Teď se můžeš pomalu učit zabírat svoje místo. Přestat se zmenšovat není sobectví.",
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0038",
+    "cluster_id": "cl_0001",
+    "text": "Sebeobětování, při kterém mizíš z vlastního života, není ctnost. Často je to starý zvyk z doby, kdy to jinak nešlo.",
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0039",
+    "cluster_id": "cl_0001",
+    "text": "Možná ses stal odborníkem na čtení místnosti a úplným amatérem na vnášení sebe do ní. To se dá doučit.",
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0040",
+    "cluster_id": "cl_0001",
+    "text": "Někdy se cítíš neviditelně právě proto, že ses celý život učil předvídat druhé a potlačovat sebe.",
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0041",
+    "cluster_id": "cl_0001",
+    "text": "Když se cítíš zapomínaný, může se v tobě ozývat stará věta: „Aby bylo místo pro ostatní, já se musím zmenšit.“ Zmenšování nemusí být tvoje povaha; ale naučený způsob přežití.",
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0042",
+    "cluster_id": "cl_0001",
+    "text": "Možná ses stal neviditelným i sám sobě: přestáváš vnímat hlad, únavu, vztek, přání nebo vlastní hranice. Pak první krok k viditelnosti nevede přes druhé, ale přes tělo. To ti možná už dlouho hlásí: „Hele, jsem tady.“",
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0043",
+    "cluster_id": "cl_0001",
+    "text": "Když tě druzí přehlížejí, je snadné začít přehlížet i sám sebe. Právě tady můžeš ten řetěz přerušit.",
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0046",
+    "cluster_id": "cl_0001",
+    "text": "Tvoje tělo možná stále poslouchá starý příkaz „musím zmizet“. Někdy může pomoci zhluboka se nadechnout, narovnat záda a dovolit si být přítomný.",
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0047",
+    "cluster_id": "cl_0001",
+    "text": "Je možné být obyčejně přítomný, bez cirkusu i bez zmizení.",
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0049",
+    "cluster_id": "cl_0001",
+    "text": "Někdy stačí přestat mluvit o sobě omluvným tónem.",
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0050",
+    "cluster_id": "cl_0001",
+    "text": "Někdy stačí neříkat „to je asi blbost, ale…“ před každou druhou větou.",
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0051",
+    "cluster_id": "cl_0001",
+    "text": "Někdy stačí neposouvat svoje potřeby až na konec fronty.",
+    "tier": "free",
+    "sort_order": 49,
     "added_at": "2026-10-16"
   },
   {
@@ -428,7 +396,7 @@
     "cluster_id": "cl_0001",
     "text": "Viditelnost není jen o tom, že se na tebe někdo dívá. Je také o tom, že něco řekneš včas, nezmizíš po první nejistotě a dovolíš si zabrat vlastní místo.",
     "tier": "free",
-    "sort_order": 54,
+    "sort_order": 50,
     "added_at": "2026-10-16"
   },
   {
@@ -436,7 +404,7 @@
     "cluster_id": "cl_0001",
     "text": "Nečekej, až tě svět sám od sebe objeví.",
     "tier": "free",
-    "sort_order": 55,
+    "sort_order": 51,
     "added_at": "2026-10-16"
   },
   {
@@ -444,7 +412,7 @@
     "cluster_id": "cl_0001",
     "text": "Říct si o kontakt není trapnost. Je to způsob, jak druhému dát možnost se k tobě přiblížit.",
     "tier": "free",
-    "sort_order": 56,
+    "sort_order": 52,
     "added_at": "2026-10-16"
   },
   {
@@ -452,7 +420,7 @@
     "cluster_id": "cl_0001",
     "text": "Místo otázky „Proč mě nikdo nevidí?“ může někdy pomoct otázka „Komu jsem se dnes opravdu ukázal?“",
     "tier": "free",
-    "sort_order": 57,
+    "sort_order": 53,
     "added_at": "2026-10-16"
   },
   {
@@ -460,7 +428,7 @@
     "cluster_id": "cl_0001",
     "text": "Nemusíš být právě teď v něčí mysli, abys měl v jeho životě svoje místo.",
     "tier": "free",
-    "sort_order": 58,
+    "sort_order": 54,
     "added_at": "2026-10-16"
   },
   {
@@ -468,7 +436,7 @@
     "cluster_id": "cl_0001",
     "text": "To, že po tobě někdo právě nesáhl, ještě neznamená, že by mu nechybělo, kdybys tam nebyl.",
     "tier": "free",
-    "sort_order": 59,
+    "sort_order": 55,
     "added_at": "2026-10-16"
   },
   {
@@ -476,7 +444,7 @@
     "cluster_id": "cl_0001",
     "text": "Můžeš být pro někoho důležitý i ve chvíli, kdy ti to neumí dát najevo.",
     "tier": "free",
-    "sort_order": 60,
+    "sort_order": 56,
     "added_at": "2026-10-16"
   },
   {
@@ -484,7 +452,7 @@
     "cluster_id": "cl_0001",
     "text": "Ten, kdo tě má rád, si může všímat i věcí, které ty sám považuješ za neviditelné: tvého tónu hlasu, únavy v očích nebo způsobu, jakým mlčíš.",
     "tier": "free",
-    "sort_order": 61,
+    "sort_order": 57,
     "added_at": "2026-10-16"
   },
   {
@@ -492,7 +460,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná jsi zaznamenaný víc, než si ve slabších chvílích připouštíš.",
     "tier": "free",
-    "sort_order": 62,
+    "sort_order": 58,
     "added_at": "2026-10-16"
   },
   {
@@ -500,7 +468,7 @@
     "cluster_id": "cl_0001",
     "text": "I když na tebe někdo zapomněl, v životě někoho jiného můžeš mít hluboké a trvalé místo.",
     "tier": "free",
-    "sort_order": 63,
+    "sort_order": 59,
     "added_at": "2026-10-16"
   },
   {
@@ -508,7 +476,7 @@
     "cluster_id": "cl_0001",
     "text": "Když se cítíš neviditelný, zkus na chvíli nepátrat po tom, kdo tě nevidí. Vzpomeň si na člověka, před kterým ses někdy cítil skutečně spatřený.",
     "tier": "free",
-    "sort_order": 64,
+    "sort_order": 60,
     "added_at": "2026-10-16"
   },
   {
@@ -516,7 +484,7 @@
     "cluster_id": "cl_0001",
     "text": "I když se teď cítíš odstrčený na okraj, pořád patříš do lidského světa. Nemusíš si svoje místo znovu zasloužit.",
     "tier": "free",
-    "sort_order": 65,
+    "sort_order": 61,
     "added_at": "2026-10-16"
   },
   {
@@ -524,7 +492,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy jsi neviditelný jen v příběhu, který o sobě vyprávíš. Nemusíš si nalhávat opak; můžeš začít vnímat i to, co ses dřív naučil přehlížet.",
     "tier": "free",
-    "sort_order": 66,
+    "sort_order": 62,
     "added_at": "2026-10-16"
   },
   {
@@ -532,7 +500,7 @@
     "cluster_id": "cl_0001",
     "text": "Jestli jsi býval přehlížený, tvoje mysl možná hledá důkazy, že se to děje znovu. Neznamená to, že ti lže. Jen někdy pracuje podle staré mapy.",
     "tier": "free",
-    "sort_order": 67,
+    "sort_order": 63,
     "added_at": "2026-10-16"
   },
   {
@@ -540,7 +508,7 @@
     "cluster_id": "cl_0001",
     "text": "Pocit neviditelnosti může být starou ozvěnou chvílí, kdy sis zasloužil pozornost a nedostal ji.",
     "tier": "free",
-    "sort_order": 68,
+    "sort_order": 64,
     "added_at": "2026-10-16"
   },
   {
@@ -548,7 +516,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná nejsi zapomínaný. Možná jsi jen unavený z toho, jak dlouho si s sebou neseš zkušenost, že na tebe druzí zapomínali.",
     "tier": "free",
-    "sort_order": 69,
+    "sort_order": 65,
     "added_at": "2026-10-16"
   },
   {
@@ -556,7 +524,7 @@
     "cluster_id": "cl_0001",
     "text": "Dítě, kterému nikdo dostatečně nevěnoval pozornost, si snadno začne myslet, že je průhledné. Jenže to, co se tehdy o sobě naučilo, nemusí být pravda.",
     "tier": "free",
-    "sort_order": 70,
+    "sort_order": 66,
     "added_at": "2026-10-16"
   },
   {
@@ -564,7 +532,7 @@
     "cluster_id": "cl_0001",
     "text": "Někteří lidé vyrůstají v prostředí, kde musí o pozornost bojovat. Pak si mohou splést boj o pozornost s tím, co musí dělat, aby měli hodnotu.",
     "tier": "free",
-    "sort_order": 71,
+    "sort_order": 67,
     "added_at": "2026-10-16"
   },
   {
@@ -572,7 +540,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná ses celé roky snažil dokazovat, že stojíš za povšimnutí, místo abys zkoumal, před kým se vůbec potřebuješ ukazovat.",
     "tier": "free",
-    "sort_order": 72,
+    "sort_order": 68,
     "added_at": "2026-10-16"
   },
   {
@@ -580,7 +548,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je dospělost právě v tom, že přestaneš žebrat o pozornost u lidí, kteří ti ji nedokážou dát.",
     "tier": "free",
-    "sort_order": 73,
+    "sort_order": 69,
     "added_at": "2026-10-16"
   },
   {
@@ -588,7 +556,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je přehlížení filtr, ne rozsudek.",
     "tier": "free",
-    "sort_order": 74,
+    "sort_order": 70,
     "added_at": "2026-10-16"
   },
   {
@@ -596,7 +564,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy se úleva začne rodit ve chvíli, kdy přestaneš dávat náhodným lidem právo rozhodovat o tvé hodnotě.",
     "tier": "free",
-    "sort_order": 75,
+    "sort_order": 71,
     "added_at": "2026-10-16"
   },
   {
@@ -604,7 +572,7 @@
     "cluster_id": "cl_0001",
     "text": "Ne každý, kdo tě přehlíží, je pro tebe důležitý.",
     "tier": "free",
-    "sort_order": 76,
+    "sort_order": 72,
     "added_at": "2026-10-16"
   },
   {
@@ -612,7 +580,7 @@
     "cluster_id": "cl_0001",
     "text": "Ne každý, kdo tě nevyhledá, má právo určovat tvou cenu.",
     "tier": "free",
-    "sort_order": 77,
+    "sort_order": 73,
     "added_at": "2026-10-16"
   },
   {
@@ -620,7 +588,7 @@
     "cluster_id": "cl_0001",
     "text": "Ne každý, kdo na tebe zapomněl, si zaslouží místo v tvém vnitřním soudu.",
     "tier": "free",
-    "sort_order": 78,
+    "sort_order": 74,
     "added_at": "2026-10-16"
   },
   {
@@ -628,7 +596,7 @@
     "cluster_id": "cl_0001",
     "text": "Jestli se celý život cítíš zapomínaný, možná nevědomky vybíráš lidi, kteří tě znovu a znovu nechávají čekat na potvrzení.",
     "tier": "free",
-    "sort_order": 79,
+    "sort_order": 75,
     "added_at": "2026-10-16"
   },
   {
@@ -636,7 +604,7 @@
     "cluster_id": "cl_0001",
     "text": "Známé peklo může mít podivnou přitažlivost.",
     "tier": "free",
-    "sort_order": 80,
+    "sort_order": 76,
     "added_at": "2026-10-16"
   },
   {
@@ -644,7 +612,7 @@
     "cluster_id": "cl_0001",
     "text": "To, že tě někdo drží na okraji, v tobě může probouzet něco důvěrně známého. Neznamená to, že je to tvůj osud.",
     "tier": "free",
-    "sort_order": 81,
+    "sort_order": 77,
     "added_at": "2026-10-16"
   },
   {
@@ -652,7 +620,7 @@
     "cluster_id": "cl_0001",
     "text": "Ne všechno známé je pro tebe dobré.",
     "tier": "free",
-    "sort_order": 82,
+    "sort_order": 78,
     "added_at": "2026-10-16"
   },
   {
@@ -660,7 +628,7 @@
     "cluster_id": "cl_0001",
     "text": "Když tě někdo dlouhodobě přehlíží, nemusíš ho přesvědčovat, aby konečně pochopil, co v tobě je. Můžeš také hledat vztahy, ve kterých bude prostor pro vzájemný zájem.",
     "tier": "free",
-    "sort_order": 83,
+    "sort_order": 79,
     "added_at": "2026-10-16"
   },
   {
@@ -668,7 +636,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je důležitější přestat bojovat o pozornost určitých lidí než získat pozornost dalších.",
     "tier": "free",
-    "sort_order": 84,
+    "sort_order": 80,
     "added_at": "2026-10-16"
   },
   {
@@ -676,7 +644,7 @@
     "cluster_id": "cl_0001",
     "text": "Přesuň energii od dokazování své hodnoty k výběru vztahů, ve kterých můžeš být sám sebou.",
     "tier": "free",
-    "sort_order": 85,
+    "sort_order": 81,
     "added_at": "2026-10-16"
   },
   {
@@ -684,7 +652,7 @@
     "cluster_id": "cl_0001",
     "text": "Opakem neviditelnosti není být všude středem pozornosti. Je to mít dost prostoru být viděn tam, kde na tom záleží.",
     "tier": "free",
-    "sort_order": 86,
+    "sort_order": 82,
     "added_at": "2026-10-16"
   },
   {
@@ -692,7 +660,7 @@
     "cluster_id": "cl_0001",
     "text": "Jsou lidé, kteří si všimnou jen hluku, a lidé, kteří dokážou vnímat i tichou přítomnost.",
     "tier": "free",
-    "sort_order": 87,
+    "sort_order": 83,
     "added_at": "2026-10-16"
   },
   {
@@ -700,7 +668,7 @@
     "cluster_id": "cl_0001",
     "text": "Když tě nikdo nevidí v tvé jemnosti, neznamená to, že musíš zhrubnout. Možná potřebuješ hledat citlivější oči.",
     "tier": "free",
-    "sort_order": 88,
+    "sort_order": 84,
     "added_at": "2026-10-16"
   },
   {
@@ -708,7 +676,7 @@
     "cluster_id": "cl_0001",
     "text": "Jestli jsi přehlížený mezi lidmi, kteří se k druhým chovají bezohledně, řešením není stát se jedním z nich.",
     "tier": "free",
-    "sort_order": 89,
+    "sort_order": 85,
     "added_at": "2026-10-16"
   },
   {
@@ -716,7 +684,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy stačí odejít z lesa, ve kterém tě nikdo nedokáže zahlédnout.",
     "tier": "free",
-    "sort_order": 90,
+    "sort_order": 86,
     "added_at": "2026-10-16"
   },
   {
@@ -724,7 +692,7 @@
     "cluster_id": "cl_0001",
     "text": "Tiché věci nebývají bezvýznamné. Jen si jich ne každý všimne.",
     "tier": "free",
-    "sort_order": 91,
+    "sort_order": 87,
     "added_at": "2026-10-16"
   },
   {
@@ -732,7 +700,7 @@
     "cluster_id": "cl_0001",
     "text": "Ne každý poklad cinká.",
     "tier": "free",
-    "sort_order": 92,
+    "sort_order": 88,
     "added_at": "2026-10-16"
   },
   {
@@ -740,7 +708,7 @@
     "cluster_id": "cl_0001",
     "text": "Strom nekřičí, a přesto zabírá kus světa, poskytuje stín a drží půdu.",
     "tier": "free",
-    "sort_order": 93,
+    "sort_order": 89,
     "added_at": "2026-10-16"
   },
   {
@@ -748,7 +716,7 @@
     "cluster_id": "cl_0001",
     "text": "Skála nepotřebuje potlesk, aby unesla déšť.",
     "tier": "free",
-    "sort_order": 94,
+    "sort_order": 90,
     "added_at": "2026-10-16"
   },
   {
@@ -756,7 +724,7 @@
     "cluster_id": "cl_0001",
     "text": "Hluboká voda může z dálky vypadat nenápadně. To ale nic nevypovídá o její hloubce.",
     "tier": "free",
-    "sort_order": 95,
+    "sort_order": 91,
     "added_at": "2026-10-16"
   },
   {
@@ -764,7 +732,7 @@
     "cluster_id": "cl_0001",
     "text": "To, co tě dělá lidským, nemusí být efektní, aby to bylo hodno pozornosti.",
     "tier": "free",
-    "sort_order": 96,
+    "sort_order": 92,
     "added_at": "2026-10-16"
   },
   {
@@ -772,7 +740,7 @@
     "cluster_id": "cl_0001",
     "text": "Tvoje existence není soutěž v tom, kdo na sebe strhne víc očí.",
     "tier": "free",
-    "sort_order": 97,
+    "sort_order": 93,
     "added_at": "2026-10-16"
   },
   {
@@ -780,7 +748,7 @@
     "cluster_id": "cl_0001",
     "text": "Každý člověk je občas jen kulisou v cizím filmu. Není to osobní prokletí, ale součást toho, jak lidská pozornost funguje.",
     "tier": "free",
-    "sort_order": 98,
+    "sort_order": 94,
     "added_at": "2026-10-16"
   },
   {
@@ -788,7 +756,7 @@
     "cluster_id": "cl_0001",
     "text": "Lidé řeší svoje strachy, telefony, bolavá ega, účty i průšvihy. Často tě nepřehlížejí ze zlého úmyslu, ale protože jsou sami přetížení. To sice nemusí bolet méně, ale dává situaci realističtější obrysy.",
     "tier": "free",
-    "sort_order": 99,
+    "sort_order": 95,
     "added_at": "2026-10-16"
   },
   {
@@ -796,7 +764,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy nejsi neviditelný, jen se pohybuješ mezi lidmi, kteří mají pozornost jako rozbitý nákupní vozík.",
     "tier": "free",
-    "sort_order": 100,
+    "sort_order": 96,
     "added_at": "2026-10-16"
   },
   {
@@ -804,7 +772,7 @@
     "cluster_id": "cl_0001",
     "text": "Nedělej ze špatného publika důkaz, že jsi špatná hra.",
     "tier": "free",
-    "sort_order": 101,
+    "sort_order": 97,
     "added_at": "2026-10-16"
   },
   {
@@ -812,7 +780,7 @@
     "cluster_id": "cl_0001",
     "text": "Když vlezeš do hospody a nikdo tě nezaregistruje, může to znamenat i to, že tam sedí parta nevšímavých lidí, ne že jsi duch.",
     "tier": "free",
-    "sort_order": 102,
+    "sort_order": 98,
     "added_at": "2026-10-16"
   },
   {
@@ -820,7 +788,7 @@
     "cluster_id": "cl_0001",
     "text": "Neber si osobně všechno, co se odehrává v cizí hlavě.",
     "tier": "free",
-    "sort_order": 103,
+    "sort_order": 99,
     "added_at": "2026-10-16"
   },
   {
@@ -828,7 +796,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy se člověk cítí neviditelný, protože se naučil předvídat potřeby druhých a potlačovat ty vlastní.",
     "tier": "free",
-    "sort_order": 104,
+    "sort_order": 100,
     "added_at": "2026-10-16"
   },
   {
@@ -836,7 +804,7 @@
     "cluster_id": "cl_0001",
     "text": "Přestat se mazat není sobectví.",
     "tier": "free",
-    "sort_order": 105,
+    "sort_order": 101,
     "added_at": "2026-10-16"
   },
   {
@@ -844,7 +812,7 @@
     "cluster_id": "cl_0001",
     "text": "Viditelnost může začít tím, že se přestaneš automaticky omlouvat za vlastní názor.",
     "tier": "free",
-    "sort_order": 106,
+    "sort_order": 102,
     "added_at": "2026-10-16"
   },
   {
@@ -852,7 +820,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy stačí přestat své potřeby odkládat, jako by na ně nikdy neměla přijít řada.",
     "tier": "free",
-    "sort_order": 107,
+    "sort_order": 103,
     "added_at": "2026-10-16"
   },
   {
@@ -860,7 +828,7 @@
     "cluster_id": "cl_0001",
     "text": "Když tě někdo přerušuje, můžeš klidně říct: „Ještě dokončím myšlenku.“ Tvůj hlas nemusí automaticky ustoupit hlasu druhého.",
     "tier": "free",
-    "sort_order": 108,
+    "sort_order": 104,
     "added_at": "2026-10-16"
   },
   {
@@ -868,7 +836,7 @@
     "cluster_id": "cl_0001",
     "text": "Když se bojíš, že tě druzí přehlédnou, můžeš mít chuť začít dělat víc a víc. Jenže možná nepotřebuješ být výraznější; možná potřebuješ být méně schovaný.",
     "tier": "free",
-    "sort_order": 109,
+    "sort_order": 105,
     "added_at": "2026-10-16"
   },
   {
@@ -876,7 +844,7 @@
     "cluster_id": "cl_0001",
     "text": "Tohle není výzva k výkonu, ale k tomu, abys dovolil druhým poznat víc ze sebe.",
     "tier": "free",
-    "sort_order": 110,
+    "sort_order": 106,
     "added_at": "2026-10-16"
   },
   {
@@ -884,7 +852,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy člověk analyzuje celé hodiny, jak je neviditelný, ale sám se ani jednou jasně neukáže. Je to trochu jako stát zabalený v prostěradle a divit se, že nikdo neobdivuje tvůj outfit.",
     "tier": "free",
-    "sort_order": 111,
+    "sort_order": 107,
     "added_at": "2026-10-16"
   },
   {
@@ -892,7 +860,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy část trápení nevzniká jen tím, že tě druzí nevidí, ale také tím, že jim nevědomky dáváš najevo, že nechceš být vidět. Je to nepříjemné zjištění, ale zároveň něco, s čím se dá pracovat.",
     "tier": "free",
-    "sort_order": 112,
+    "sort_order": 108,
     "added_at": "2026-10-16"
   },
   {
@@ -900,7 +868,7 @@
     "cluster_id": "cl_0001",
     "text": "Někteří lidé čekají na telepatický zázrak: „Když mě mají mít rádi, sami poznají, co cítím.“ To by bylo krásné, ale ani ti nejvnímavější lidé neumějí číst myšlenky.",
     "tier": "free",
-    "sort_order": 113,
+    "sort_order": 109,
     "added_at": "2026-10-16"
   },
   {
@@ -908,7 +876,7 @@
     "cluster_id": "cl_0001",
     "text": "Říct si o kontakt není trapnost. Je to způsob, jak dát druhému možnost reagovat na to, co skutečně potřebuješ.",
     "tier": "free",
-    "sort_order": 114,
+    "sort_order": 110,
     "added_at": "2026-10-16"
   },
   {
@@ -916,7 +884,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná ses naučil mizet tak dobře, že si dnes někdy nevšímáš ani sám sebe.",
     "tier": "free",
-    "sort_order": 115,
+    "sort_order": 111,
     "added_at": "2026-10-16"
   },
   {
@@ -924,7 +892,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy člověk tři hodiny přemýšlí, proč ho druzí nevidí, a přitom sám sobě nedovolí ukázat se. To není důvod k výčitkám, ale příležitost něco změnit.",
     "tier": "free",
-    "sort_order": 116,
+    "sort_order": 112,
     "added_at": "2026-10-16"
   },
   {
@@ -932,7 +900,7 @@
     "cluster_id": "cl_0001",
     "text": "Svět nám někdy vrací i signály, které vysíláme, aniž si to uvědomujeme. Dobrá zpráva je, že se dají postupně měnit. Nemusíš se kvůli tomu proměnit ve světlici.",
     "tier": "free",
-    "sort_order": 117,
+    "sort_order": 113,
     "added_at": "2026-10-16"
   },
   {
@@ -940,7 +908,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná jsi tak dlouho zvyklý nepřekážet, že druzí ani netuší, kolik prostoru bys ve skutečnosti potřeboval.",
     "tier": "free",
-    "sort_order": 118,
+    "sort_order": 114,
     "added_at": "2026-10-16"
   },
   {
@@ -948,7 +916,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je přehlížení důsledkem toho, že jsi byl druhým vždycky samozřejmě k dispozici. Tvoje spolehlivost ale neznamená, že nepotřebuješ jejich zájem.",
     "tier": "free",
-    "sort_order": 119,
+    "sort_order": 115,
     "added_at": "2026-10-16"
   },
   {
@@ -956,7 +924,7 @@
     "cluster_id": "cl_0001",
     "text": "Lidé si někdy neváží toho, co mají stále po ruce. Jejich nevšímavost ale není důkazem, že nemáš hodnotu.",
     "tier": "free",
-    "sort_order": 120,
+    "sort_order": 116,
     "added_at": "2026-10-16"
   },
   {
@@ -964,7 +932,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy se lidé snaží získat pozornost tak usilovně, až se z toho stane další výkon. Úleva může přijít spíš tehdy, když se naučíš být přirozeně přítomný, aniž by ses musel předvádět nebo schovávat.",
     "tier": "free",
-    "sort_order": 121,
+    "sort_order": 117,
     "added_at": "2026-10-16"
   },
   {
@@ -972,7 +940,7 @@
     "cluster_id": "cl_0001",
     "text": "Touha být viděn je lidská. Jen není dobré svěřit ji do rukou každého, kdo jde kolem.",
     "tier": "free",
-    "sort_order": 122,
+    "sort_order": 118,
     "added_at": "2026-10-16"
   },
   {
@@ -980,7 +948,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná nepotřebuješ, aby se na tebe dívalo víc lidí. Možná potřebuješ několik vztahů, ve kterých nemusíš bojovat o pozornost.",
     "tier": "free",
-    "sort_order": 123,
+    "sort_order": 119,
     "added_at": "2026-10-16"
   },
   {
@@ -988,7 +956,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy se pocit neviditelnosti ozývá právě proto, že ti na spojení s druhými záleží. To není známka prázdnoty, ale důkaz, že toužíš po vztahu.",
     "tier": "free",
-    "sort_order": 124,
+    "sort_order": 120,
     "added_at": "2026-10-16"
   },
   {
@@ -996,7 +964,7 @@
     "cluster_id": "cl_0001",
     "text": "Kámen neřeší, jestli si ho někdo všímá. Řeší to člověk, kterému záleží na spojení s druhými. A to je známka živosti, ne vady.",
     "tier": "free",
-    "sort_order": 125,
+    "sort_order": 121,
     "added_at": "2026-10-16"
   },
   {
@@ -1004,7 +972,7 @@
     "cluster_id": "cl_0001",
     "text": "Pocit neviditelnosti někdy svádí k tomu, abys chtěl být středem všeho. Jenže skutečným opakem neviditelnosti není neustálá pozornost, ale možnost být dostatečně a opravdově vnímán.",
     "tier": "free",
-    "sort_order": 126,
+    "sort_order": 122,
     "added_at": "2026-10-16"
   },
   {
@@ -1012,7 +980,7 @@
     "cluster_id": "cl_0001",
     "text": "Mozek je starý opičí alarm. Když si tě skupina nevšímá, může spustit poplach, protože kdysi mohla být příslušnost ke skupině otázkou přežití.",
     "tier": "free",
-    "sort_order": 127,
+    "sort_order": 123,
     "added_at": "2026-10-16"
   },
   {
@@ -1020,7 +988,7 @@
     "cluster_id": "cl_0001",
     "text": "Tvoje nervová soustava může reagovat, jako by přehlédnutí znamenalo vyhnanství. Dnes už ale nejsi bezmocné mládě odkázané na jediný pár očí.",
     "tier": "free",
-    "sort_order": 128,
+    "sort_order": 124,
     "added_at": "2026-10-16"
   },
   {
@@ -1028,7 +996,7 @@
     "cluster_id": "cl_0001",
     "text": "Biologie dokáže vytvořit velmi silný pocit, aniž by tím zároveň vytvořila pravdu o světě.",
     "tier": "free",
-    "sort_order": 129,
+    "sort_order": 125,
     "added_at": "2026-10-16"
   },
   {
@@ -1036,7 +1004,7 @@
     "cluster_id": "cl_0001",
     "text": "Když se cítíš neviditelný, může se ozvat vnitřní hlas: „Kdybys měl větší cenu, všimli by si tě.“ To ale není objektivní soud. Nemusíš na něj reagovat ani přehnanou snahou zazářit, ani úplným stažením.",
     "tier": "free",
-    "sort_order": 130,
+    "sort_order": 126,
     "added_at": "2026-10-16"
   },
   {
@@ -1044,7 +1012,7 @@
     "cluster_id": "cl_0001",
     "text": "Je možné, že se část tebe zoufale snaží říct „všimněte si mě“, zatímco jiná část šeptá „hlavně ať mě nikdo nevidí“. Tenhle rozpor může být pochopitelnou reakcí na zkušenosti, kdy blízkost zároveň přitahovala i bolela.",
     "tier": "free",
-    "sort_order": 131,
+    "sort_order": 127,
     "added_at": "2026-10-16"
   },
   {
@@ -1052,7 +1020,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná se nebojíš jen toho, že tě nikdo neuvidí. Možná se bojíš i toho, co by se mohlo stát, kdyby tě někdo opravdu poznal.",
     "tier": "free",
-    "sort_order": 132,
+    "sort_order": 128,
     "added_at": "2026-10-16"
   },
   {
@@ -1060,7 +1028,7 @@
     "cluster_id": "cl_0001",
     "text": "Být viděn může být krásné i nebezpečné zároveň. Znamená to také riskovat stud, závist, odmítnutí nebo ztrátu kontroly.",
     "tier": "free",
-    "sort_order": 133,
+    "sort_order": 129,
     "added_at": "2026-10-16"
   },
   {
@@ -1068,7 +1036,7 @@
     "cluster_id": "cl_0001",
     "text": "Připustit, že chceš být viděn, může být těžší než předstírat, že o pozornost vůbec nestojíš.",
     "tier": "free",
-    "sort_order": 134,
+    "sort_order": 130,
     "added_at": "2026-10-16"
   },
   {
@@ -1076,7 +1044,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je potřeba přestat maskovat touhu po blízkosti pohrdáním, ironií nebo mizením.",
     "tier": "free",
-    "sort_order": 135,
+    "sort_order": 131,
     "added_at": "2026-10-16"
   },
   {
@@ -1084,7 +1052,7 @@
     "cluster_id": "cl_0001",
     "text": "Některé jizvy se nezahojí jen tím, že tě konečně uvidí správný člověk. Pomáhá také přestat opouštět sám sebe pokaždé, když tě někdo mine. Není ostuda přiznat, že chceš být viděn.",
     "tier": "free",
-    "sort_order": 136,
+    "sort_order": 132,
     "added_at": "2026-10-16"
   },
   {
@@ -1092,7 +1060,7 @@
     "cluster_id": "cl_0001",
     "text": "Na smrtelné posteli tě nejspíš nebude tolik pálit, kolikrát tě někdo přehlédl, jako spíš to, kolikrát ses kvůli tomu minul sám se sebou.",
     "tier": "free",
-    "sort_order": 137,
+    "sort_order": 133,
     "added_at": "2026-10-16"
   },
   {
@@ -1100,7 +1068,7 @@
     "cluster_id": "cl_0001",
     "text": "Budoucí ty možná jednou řekne: „Nejhorší nebylo, že mě neviděli druzí, ale že jsem se kvůli tomu přestal ukazovat.“",
     "tier": "free",
-    "sort_order": 138,
+    "sort_order": 134,
     "added_at": "2026-10-16"
   },
   {
@@ -1108,7 +1076,7 @@
     "cluster_id": "cl_0001",
     "text": "Vesmír si nevšimne ani našich triumfů, ani našich trapasů. A v tom je podivná svoboda: nemusíš svůj život neustále předvádět ani obhajovat.",
     "tier": "free",
-    "sort_order": 139,
+    "sort_order": 135,
     "added_at": "2026-10-16"
   },
   {
@@ -1116,7 +1084,7 @@
     "cluster_id": "cl_0001",
     "text": "Za sto let bude většina dnešních přehlédnutí jen dávno zapomenutou epizodou. Neznamená to, že dnešní bolest není skutečná; jen nemusí mít takovou moc nad celým tvým životem.",
     "tier": "free",
-    "sort_order": 140,
+    "sort_order": 136,
     "added_at": "2026-10-16"
   },
   {
@@ -1124,7 +1092,7 @@
     "cluster_id": "cl_0001",
     "text": "Pes se necítí méně existující, když se na něj pět minut nikdo nedívá.",
     "tier": "free",
-    "sort_order": 141,
+    "sort_order": 137,
     "added_at": "2026-10-16"
   },
   {
@@ -1132,7 +1100,7 @@
     "cluster_id": "cl_0001",
     "text": "Starý kovboj by ti řekl, že ani na prérii tě neuvidí každý, a přesto po tobě zůstávají stopy v prachu.",
     "tier": "free",
-    "sort_order": 142,
+    "sort_order": 138,
     "added_at": "2026-10-16"
   },
   {
@@ -1140,7 +1108,7 @@
     "cluster_id": "cl_0001",
     "text": "Kdo zažil všechna možná životní hovna, ten ví, že tiší lidé bývají často nejhutnější.",
     "tier": "free",
-    "sort_order": 143,
+    "sort_order": 139,
     "added_at": "2026-10-16"
   },
   {
@@ -1148,7 +1116,7 @@
     "cluster_id": "cl_0001",
     "text": "Tvoje přítomnost nemusí být hlasitá, aby byla skutečná.",
     "tier": "free",
-    "sort_order": 144,
+    "sort_order": 140,
     "added_at": "2026-10-16"
   },
   {
@@ -1156,7 +1124,7 @@
     "cluster_id": "cl_0001",
     "text": "Nejsi duch. Jsi člověk, který už nechce žít na okraji vlastního obrazu. A to je zatraceně dobrý začátek.",
     "tier": "free",
-    "sort_order": 145,
+    "sort_order": 141,
     "added_at": "2026-10-16"
   },
   {
@@ -1164,7 +1132,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy je neviditelnost jen stará zpráva, kterou sis přilepil k vlastní identitě. Nemusí se stát tvým jménem jen proto, že se často vrací.",
     "tier": "free",
-    "sort_order": 146,
+    "sort_order": 142,
     "added_at": "2026-10-16"
   },
   {
@@ -1172,7 +1140,7 @@
     "cluster_id": "cl_0001",
     "text": "Někdy tě druzí opravdu přehlížejí. Jindy si jejich pozornosti nedokážeš všimnout nebo ji přijmout. A někdy se děje obojí. Nemusíš si vybírat jen jedno vysvětlení.",
     "tier": "free",
-    "sort_order": 147,
+    "sort_order": 143,
     "added_at": "2026-10-16"
   },
   {
@@ -1180,7 +1148,7 @@
     "cluster_id": "cl_0001",
     "text": "Možná nepotřebuješ přesvědčit celý svět, že existuješ. Někdy stačí najít pár lidí, před kterými nemusíš mizet.",
     "tier": "free",
-    "sort_order": 148,
+    "sort_order": 144,
     "added_at": "2026-10-16"
   },
   {
@@ -1188,7 +1156,7 @@
     "cluster_id": "cl_0001",
     "text": "Jednou se možná ohlédneš a uvidíš, že některé místnosti tě prostě neuměly pojmout. Kvůli nim ale nemusíš zůstat malý navždy.",
     "tier": "free",
-    "sort_order": 149,
+    "sort_order": 145,
     "added_at": "2026-10-16"
   },
   {
@@ -1234,7 +1202,7 @@
   {
     "id": "ref_0155",
     "cluster_id": "cl_0002",
-    "text": "Možná tě někdo opravdu odmítl, přehlížel nebo nedokázal přijmout. To je skutečná bolest, ale není v ní obsažena informace, že problém musel být v tobě.",
+    "text": "Možná tě někdo opravdu odmítl, přehlížel nebo nedokázal přijmout. To je skutečná bolest, ale není v ní psáno, že problém musel být v tobě.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -1266,7 +1234,7 @@
   {
     "id": "ref_0159",
     "cluster_id": "cl_0002",
-    "text": "A jestli teď nedokážeš uvěřit, že jsi milovatelný, nemusíš. Zkus si jen na chvíli přestat dokazovat, že nejsi.",
+    "text": "Jestli teď nedokážeš uvěřit, že jsi milovatelný, nemusíš. Zkus si jen na chvíli přestat dokazovat, že nejsi.",
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16"
@@ -1306,7 +1274,7 @@
   {
     "id": "ref_0164",
     "cluster_id": "cl_0002",
-    "text": "Ta část tebe, která se cítí nemilovatelná, možná nepotřebuje přesvědčovat. Možná potřebuje zažít, že u ní někdo zůstane, i když je smutná, vyděšená nebo naštvaná.",
+    "text": "Ta část tebe, která se cítí nemilovatelná, nepotřebuje přesvědčovat. Potřebuje zažít, že u ní někdo zůstane, i když je smutná, vyděšená nebo naštvaná.",
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16"
@@ -1314,25 +1282,9 @@
   {
     "id": "ref_0165",
     "cluster_id": "cl_0002",
-    "text": "Pocit nemilovanosti může být spíš hlad než definice toho, kdo jsi. Hlad přece taky nedokazuje, že pro tebe na světě není žádné jídlo.",
+    "text": "Pocit nemilovanosti může být spíš hlad po lásce než definice toho, kdo jsi. Obyčejný hlad přece taky nedokazuje, že pro tebe na světě není žádné jídlo.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0166",
-    "cluster_id": "cl_0002",
-    "text": "To, že tě někdo nedokázal milovat tak, jak jsi potřeboval, nevypovídá o tom, jestli jsi milovatelný. Vypovídá to i o jeho možnostech, limitech a příběhu.",
-    "tier": "free",
-    "sort_order": 17,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0167",
-    "cluster_id": "cl_0002",
-    "text": "Možná ve skutečnosti netoužíš po tom, aby tě milovali všichni. Možná chceš jen pár vztahů, ve kterých nemusíš pořád skládat přijímací zkoušku na to, abys směl být někomu blízko.",
-    "tier": "free",
-    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -1340,7 +1292,7 @@
     "cluster_id": "cl_0002",
     "text": "Možná se necítíš nemilovatelný proto, že bys takový byl, ale proto, že ses kdysi naučil očekávat, že láska nepřijde. Staré očekávání se může tvářit jako pravda o tobě.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -1348,7 +1300,7 @@
     "cluster_id": "cl_0002",
     "text": "Můžeš někomu říct, že ti chybí jeho blízkost. Nemusíš čekat, až to sám pozná, ani se stydět, že o ni žádáš.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -1356,15 +1308,7 @@
     "cluster_id": "cl_0002",
     "text": "Pocit „jsem nemilovatelný“ může mít chytrý ochranný účel: když s odmítnutím počítáš předem, nemusíš tolik riskovat naději. Jenže ochrana před zklamáním tě může zároveň chránit i před blízkostí.",
     "tier": "free",
-    "sort_order": 21,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0171",
-    "cluster_id": "cl_0002",
-    "text": "Je možné, že právě teď nikoho blízkého necítíš. To ale není totéž jako být člověkem, kterého nejde milovat.",
-    "tier": "free",
-    "sort_order": 22,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -1372,31 +1316,23 @@
     "cluster_id": "cl_0002",
     "text": "Láska není odměna za bezchybnost. Lidé milují nedokonalé, komplikované, občas protivné a zranitelné lidi každý den.",
     "tier": "free",
-    "sort_order": 23,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0173",
-    "cluster_id": "cl_0002",
-    "text": "A možná nemusíš vyřešit otázku, jestli jsi milovatelný jednou provždy. Stačí dnes nechat dveře pootevřené možnosti, že tvoje bolest vypráví příběh o tom, co ti chybělo, nikoli definitivní pravdu o tom, kdo jsi.",
-    "tier": "free",
-    "sort_order": 24,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0174",
     "cluster_id": "cl_0002",
-    "text": "Tvým úkolem není přesvědčit celý svět, aby tě miloval. Spíš postupně poznávat lidi, u kterých nemusíš o základní něhu a blízkost bojovat.",
+    "text": "Tvým úkolem není přesvědčit celý svět, aby tě miloval, ale postupně poznávat lidi, u kterých nemusíš o základní něhu a blízkost bojovat.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0175",
     "cluster_id": "cl_0002",
-    "text": "Když se cítíš nemilovatelný, mozek začne sbírat hlavně důkazy, které mu dávají za pravdu. Zkus dnes nechat otevřenou aspoň malou možnost, že přehlíží i něco jiného.",
+    "text": "Ta část tebe, která se cítí nemilovatelná, sbírá hlavně důkazy, které jí dávají za pravdu. Můžeš k ní promluvit, ať to zkusí chvíli nedělat. Třeba zjistí, že to dělat nemusí.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -1404,39 +1340,15 @@
     "cluster_id": "cl_0002",
     "text": "Nikdo není milovaný dokonale, neustále a přesně tak, jak potřebuje. Možná tedy nepotřebuješ dokonalou lásku, ale několik skutečných vztahů, ve kterých je dost blízkosti, bezpečí a prostoru být sám sebou.",
     "tier": "free",
-    "sort_order": 27,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0177",
-    "cluster_id": "cl_0002",
-    "text": "Když se cítíš nemilovatelný, můžeš momentální stav svého vnitřního světa zaměnit za trvalou vlastnost. Je rozdíl mezi „cítím se nemilovaný“ a „jsem nemilovatelný“.",
-    "tier": "free",
-    "sort_order": 28,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0178",
     "cluster_id": "cl_0002",
-    "text": "Je až zvláštní, jak snadno člověk udělá z cizí neschopnosti milovat vlastní životopis. To, co druzí neuměli dát, ale nemusí být popisem toho, co si zasloužíš dostávat.",
+    "text": "Je až zvláštní, jak snadno člověk udělá z cizí neschopnosti milovat vlastní životopis. To, co druzí neumí dát není popisem toho, co si zasloužíš dostávat.",
     "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0179",
-    "cluster_id": "cl_0002",
-    "text": "To, že po lásce tolik toužíš, není důkaz, že ti něco chybí jako člověku. Je to důkaz, že je pro tebe spojení s druhými důležité.",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0180",
-    "cluster_id": "cl_0002",
-    "text": "Můžeš mít někoho rád a přesto uznat, že ti ve vztahu nedává tolik lásky, kolik potřebuješ. Jedno nevylučuje druhé.",
-    "tier": "free",
-    "sort_order": 31,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -1444,7 +1356,7 @@
     "cluster_id": "cl_0002",
     "text": "I když se teď cítíš úplně sám, tahle chvíle není celý tvůj život. Blízkost se může znovu objevit tam, kde ji dnes ještě vůbec nevidíš.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -1452,15 +1364,15 @@
     "cluster_id": "cl_0002",
     "text": "Jestli ses naučil získávat lásku výkonem, poslušností nebo tím, že jsi pro druhé příjemný a užitečný, není divu, že klidnou náklonnost někdy podezíráš z omylu.",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0183",
     "cluster_id": "cl_0002",
-    "text": "Když ti někdo lásku nedává, neznamená to automaticky, že ji nejsi hoden. Někdy prostě hledáš vodu u studny, která je sama prázdná.",
+    "text": "Když ti někdo lásku nedává, neznamená to automaticky, že jí nejsi hoden. Někdy prostě hledáš vodu u studny, která je sama prázdná.",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -1468,15 +1380,15 @@
     "cluster_id": "cl_0002",
     "text": "Tvůj mozek není nestranný soudce. Když očekává odmítnutí, všímá si chladného pohledu a snadno přehlédne deset drobných známek náklonnosti.",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0185",
     "cluster_id": "cl_0002",
-    "text": "Zkus si vybavit ne jeden velký důkaz lásky, ale všechny druhy zkušeností, které se s „jsem nemilovatelný“ špatně slučují: kdo tě někdy vyhledával, těšil se na tebe, svěřil se ti, postrádal tě nebo chtěl být ve tvé blízkosti.",
+    "text": "Zkus si vybavit ne jeden velký důkaz lásky, ale všechny druhy zkušeností, které svědčí o náklonnosti: kdo tě někdy vyhledával, těšil se na tebe, svěřil se ti, postrádal tě nebo chtěl být ve tvé blízkosti.",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -1484,7 +1396,7 @@
     "cluster_id": "cl_0002",
     "text": "Někdy je těžké cítit se milovaný ne proto, že láska chybí, ale protože se tvůj nervový systém naučil čekat hlavně její ztrátu.",
     "tier": "free",
-    "sort_order": 37,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -1492,15 +1404,7 @@
     "cluster_id": "cl_0002",
     "text": "To, co na sobě považuješ za nemilovatelné, mohlo kdysi vzniknout jako způsob, jak přežít nedostatek lásky. Pro dítě je někdy snesitelnější uvěřit „chyba je ve mně“ než připustit, že člověk, na kterém závisí, mu nedokáže dát, co potřebuje.",
     "tier": "free",
-    "sort_order": 38,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0188",
-    "cluster_id": "cl_0002",
-    "text": "Nemusíš být pro každého. Stačí, že existují lidé, se kterými se tvoje zvláštnosti, citlivost a způsob bytí můžou potkat správně.",
-    "tier": "free",
-    "sort_order": 39,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -1508,31 +1412,7 @@
     "cluster_id": "cl_0002",
     "text": "Představ si svoje budoucí já, které už zná lidi, které dnes ještě vůbec neznáš. Možná by ti řeklo: nedělej z dnešní samoty předpověď celého svého života.",
     "tier": "free",
-    "sort_order": 40,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0190",
-    "cluster_id": "cl_0002",
-    "text": "To, že tě odmítnutí tolik bolí, může být paradoxně známkou toho, jak moc jsi schopný vztahu. Člověk netouží po blízkosti proto, že by byl pro blízkost stvořený špatně.",
-    "tier": "free",
-    "sort_order": 41,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0191",
-    "cluster_id": "cl_0002",
-    "text": "Člověk, který tě miluje, by nejspíš neposuzoval tvoji milovatelnost podle toho, jak dobře se zrovna cítíš sám se sebou. Viděl by v tobě věci, které zevnitř svého smutku vůbec nevidíš.",
-    "tier": "free",
-    "sort_order": 42,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0192",
-    "cluster_id": "cl_0002",
-    "text": "Věta „nejsem milovatelný“ obsahuje obrovský logický skok: z několika vztahů nebo zkušeností dělá tvrzení o všech lidech a celé budoucnosti. Takový závěr nemáš z čeho spolehlivě vyvodit.",
-    "tier": "free",
-    "sort_order": 43,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -1540,15 +1420,15 @@
     "cluster_id": "cl_0002",
     "text": "Možná teď nedokážeš cítit, že máš pro někoho cenu. Nemusíš tomu pocitu věřit jen proto, že je hlasitý.",
     "tier": "free",
-    "sort_order": 44,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0194",
     "cluster_id": "cl_0002",
-    "text": "Kdyby mi malé dítě řeklo „nikdo mě nemůže milovat“, nehledala bych na něm důvody, proč má pravdu. Zajímalo by mě, kdo ho nechal dojít k tak smutnému závěru.",
+    "text": "Kdyby ti malé dítě řeklo „nikdo mě nemůže milovat“, nehledal bys na něm důvody, proč má pravdu. Zajímalo by tě, kdo ho nechal dojít k tak smutnému závěru.",
     "tier": "free",
-    "sort_order": 45,
+    "sort_order": 34,
     "added_at": "2026-10-16"
   },
   {
@@ -1556,15 +1436,7 @@
     "cluster_id": "cl_0002",
     "text": "Nemusíš si zasloužit právo být někomu drahý. Už samotný fakt, že jsi jedinečný člověk se svým příběhem, dává druhým možnost tě poznat, připoutat se k tobě a milovat tě.",
     "tier": "free",
-    "sort_order": 46,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0196",
-    "cluster_id": "cl_0002",
-    "text": "Tělo by možná řeklo: já nevím, jestli jsi milovatelný. Vím jen, že když tě někdo obejme, povolím, když odejde, stáhnu se, a když jsi dlouho sám, chybí mi blízkost. Možná nepotřebuješ rozsudek, ale kontakt.",
-    "tier": "free",
-    "sort_order": 47,
+    "sort_order": 35,
     "added_at": "2026-10-16"
   },
   {
@@ -1572,13 +1444,109 @@
     "cluster_id": "cl_0002",
     "text": "Nejsi výrobek, kterému trh udělil jednu hvězdičku a tím je rozhodnuto. Lidská přitažlivost a láska jsou podivně konkrétní: právě to, co jednoho nechává chladným, může být pro druhého důvodem, proč si tě zamiluje.",
     "tier": "free",
-    "sort_order": 48,
+    "sort_order": 36,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0198",
     "cluster_id": "cl_0002",
-    "text": "Možná se v tobě teď ozývá staré místo, které dlouho čekalo, až si ho někdo vybere. To místo nepotřebuje další kritiku, ale trochu něhy.",
+    "text": "Možná se v tobě teď ozývá staré místo, které dlouho čekalo, až si ho někdo vybere. To místo nepotřebuje další kritiku, ale trochu něhy. I od tebe samotného",
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0166",
+    "cluster_id": "cl_0002",
+    "text": "To, že tě někdo nedokázal milovat tak, jak jsi potřeboval, nevypovídá o tom, jestli jsi milovatelný. Vypovídá to i o jeho možnostech, limitech a příběhu.",
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0167",
+    "cluster_id": "cl_0002",
+    "text": "Možná ve skutečnosti netoužíš po tom, aby tě milovali všichni. Možná chceš jen pár vztahů, ve kterých nemusíš pořád skládat přijímačky.",
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0171",
+    "cluster_id": "cl_0002",
+    "text": "Je možné, že právě teď nikoho blízkého necítíš. To ale není totéž jako být člověkem, kterého nejde milovat.",
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0173",
+    "cluster_id": "cl_0002",
+    "text": "Nemusíš vyřešit otázku, jestli jsi milovatelný jednou provždy. Stačí dnes nechat dveře pootevřené možnosti, že tvoje bolest vypráví příběh o tom, co ti chybělo, nikoli definitivní pravdu o tom, kdo jsi.",
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0177",
+    "cluster_id": "cl_0002",
+    "text": "Když se cítíš nemilovatelný, můžeš momentální stav svého vnitřního světa zaměnit za trvalou vlastnost. Je rozdíl mezi „cítím se nemilovaný“ a „jsem nemilovatelný“.",
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0179",
+    "cluster_id": "cl_0002",
+    "text": "To, že po lásce tolik toužíš, nemusí být důkaz, že ti něco chybí jako člověku. Je to důkaz, že je pro tebe spojení s druhými důležité.",
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0180",
+    "cluster_id": "cl_0002",
+    "text": "Můžeš mít někoho rád a přesto uznat, že ti ve vztahu nedává tolik lásky, kolik potřebuješ. Jedno nevylučuje druhé.",
+    "tier": "free",
+    "sort_order": 44,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0188",
+    "cluster_id": "cl_0002",
+    "text": "Nemusíš být pro každého skvělý. Stačí, že existují lidé, se kterými se tvoje zvláštnosti, citlivost a způsob bytí můžou potkat.",
+    "tier": "free",
+    "sort_order": 45,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0190",
+    "cluster_id": "cl_0002",
+    "text": "To, že tě odmítnutí tolik bolí, může být paradoxně známkou toho, jak moc jsi schopný vztahu.",
+    "tier": "free",
+    "sort_order": 46,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0191",
+    "cluster_id": "cl_0002",
+    "text": "Člověk, který tě miluje, by nejspíš neposuzoval tvoji milovatelnost podle toho, jak dobře se zrovna cítíš sám se sebou. Viděl by v tobě věci, které zevnitř svého smutku vůbec nevidíš.",
+    "tier": "free",
+    "sort_order": 47,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0192",
+    "cluster_id": "cl_0002",
+    "text": "Věta „nejsem milovatelný“ obsahuje obrovský logický skok: z několika vztahů nebo zkušeností dělá tvrzení o všech lidech a celé budoucnosti. Takový závěr nemáš z čeho spolehlivě vyvodit.",
+    "tier": "free",
+    "sort_order": 48,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0196",
+    "cluster_id": "cl_0002",
+    "text": "Tělo by možná řeklo: já nevím, jestli jsi milovatelný. Vím jen, že když tě někdo obejme, povolím, když odejde, stáhnu se, a když jsi dlouho sám, chybí mi blízkost. Možná nepotřebuješ rozsudek, ale obyčejný kontakt.",
     "tier": "free",
     "sort_order": 49,
     "added_at": "2026-10-16"
@@ -1586,7 +1554,7 @@
   {
     "id": "ref_0199",
     "cluster_id": "cl_0002",
-    "text": "Starý kovboj by možná řekl: hochu, za život tě pár lidí nebude chtít, pár tě opustí a pár tě bude milovat víc, než vůbec pochopíš. Nedělej z první skupiny odbornou komisi na svou hodnotu.",
+    "text": "Starý kovboj by možná řekl: hochu, za život tě pár lidí nebude chtít, pár tě opustí a pár tě bude milovat víc, než vůbec pochopíš. A také tu budou ti, které bude bolet, že jsi odmítl ty je.",
     "tier": "free",
     "sort_order": 50,
     "added_at": "2026-10-16"
@@ -1610,7 +1578,7 @@
   {
     "id": "ref_0202",
     "cluster_id": "cl_0002",
-    "text": "Z pohledu vesmíru je trochu absurdní, že kus hvězdného prachu schopný vědomí sedí na malé planetě a vydává rozsudek, že není dost dobrý pro lásku. Vesmír ti žádné takové hodnocení nevystavil.",
+    "text": "Z pohledu vesmíru je trochu absurdní, že kus hvězdného prachu schopný vědomí sedí na malé planetě a vydává rozsudek, že není dost dobrý pro lásku. Vesmír ti žádné takové hodnocení nedal.",
     "tier": "free",
     "sort_order": 53,
     "added_at": "2026-10-16"
@@ -1666,7 +1634,7 @@
   {
     "id": "ref_0209",
     "cluster_id": "cl_0003",
-    "text": "To, že se teď cítíš zanedbaný, ještě neznamená, že jsi všem lhostejný. Ten pocit ti především říká, že ti něco důležitého chybí.",
+    "text": "To, že se teď cítíš zanedbaný, ještě neznamená, že jsi všem lhostejný. Ten pocit především říká, že ti něco důležitého chybí.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -1714,7 +1682,7 @@
   {
     "id": "ref_0215",
     "cluster_id": "cl_0003",
-    "text": "Možná tě nebolí jen to, co se děje teď. Možná se ozývají i všechny chvíle, kdy sis přál, aby si někdo všiml, a nikdo nepřišel.",
+    "text": "Možná tě nebolí jen to, co se děje teď. Možná se ozývají i všechny chvíle, kdy sis přál, aby si tě někdo všiml, a nikdo nepřišel.",
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16"
@@ -1736,35 +1704,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_0218",
-    "cluster_id": "cl_0003",
-    "text": "Možná ses kdysi naučil čekat, že si tě někdo všimne až ve chvíli, kdy už je opravdu zle. Nemusíš dojít až tam, aby tvoje potřeba péče byla oprávněná.",
-    "tier": "free",
-    "sort_order": 16,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0219",
-    "cluster_id": "cl_0003",
-    "text": "Když se o sebe začneš starat, není to náhradní cena za péči od druhých. Je to rozhodnutí, že už se k těm, kteří tě přehlíželi, nepřidáš i ty sám.",
-    "tier": "free",
-    "sort_order": 17,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0220",
-    "cluster_id": "cl_0003",
-    "text": "Možná ses stal odborníkem na neobtěžování. Ale dobrý vztah po tobě nechce, abys svoje potřeby stáhl do úsporného režimu.",
-    "tier": "free",
-    "sort_order": 18,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "ref_0221",
     "cluster_id": "cl_0003",
     "text": "Ano, možná právě nedostáváš péči, kterou potřebuješ. Ale „nedostávám ji teď a tady“ není totéž jako „nikdy ji nedostanu a nikomu na mně nezáleží“.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -1772,47 +1716,15 @@
     "cluster_id": "cl_0003",
     "text": "To, že potřebuješ obejmout, vyslechnout, uklidnit nebo prostě cítit něčí zájem, z tebe nedělá slabého člověka. Dělá to z tebe člověka.",
     "tier": "free",
-    "sort_order": 20,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0223",
-    "cluster_id": "cl_0003",
-    "text": "Když ti péče dlouho chyběla, i malé přehlédnutí může otevřít mnohem větší bolest. Nemusí to znamenat, že přeháníš. Možná se jen někdo dotkl starého zranění.",
-    "tier": "free",
-    "sort_order": 21,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0224",
     "cluster_id": "cl_0003",
-    "text": "Možná teď nejvíc potřebuješ přestat řešit, jestli máš právo něco potřebovat. Potřebuješ to, a to samo o sobě stačí.",
+    "text": "Možná teď nejvíc potřebuješ přestat řešit, jestli máš právo něco potřebovat.",
     "tier": "free",
-    "sort_order": 22,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0225",
-    "cluster_id": "cl_0003",
-    "text": "Někdy lidé nedávají péči ne proto, že bys jim za ni nestál, ale protože ji neumějí dát, nevšimnou si nebo jsou sami zahlcení. Jejich omezení nejsou měřítkem tvojí hodnoty.",
-    "tier": "free",
-    "sort_order": 23,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0226",
-    "cluster_id": "cl_0003",
-    "text": "Možná tě tenhle pocit chrání před ještě zranitelnější větou: „Potřebuju tě.“ Jestli je to tak, nemusíš tu potřebu zahnat; můžeš ji začít pouštět ven tam, kde je pro ni bezpečno.",
-    "tier": "free",
-    "sort_order": 24,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0227",
-    "cluster_id": "cl_0003",
-    "text": "Když jsi dlouho nedostával péči, může být těžké vůbec uvěřit, že na ni máš právo. Ale ano, máš.",
-    "tier": "free",
-    "sort_order": 25,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -1820,79 +1732,15 @@
     "cluster_id": "cl_0003",
     "text": "Můžeš toužit po péči a zároveň se učit nečekat na ni tam, kde je dlouhodobě zamčeno.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0229",
     "cluster_id": "cl_0003",
-    "text": "Pocit zanedbání vypovídá o tom, co ti chybí, ne o tom, kdo jsi. Nejsi zanedbatelný člověk; jsi člověk, který právě potřebuje víc péče.",
+    "text": "Pocit zanedbání vypovídá o tom, co ti chybí, ne o tom, kdo jsi.",
     "tier": "free",
-    "sort_order": 27,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0230",
-    "cluster_id": "cl_0003",
-    "text": "Když ses kdysi naučil, že péče nepřichází sama, mohl sis z toho odnést, že ji nepotřebuješ nebo si ji nezasloužíš. To ale mohl být způsob, jak se vyrovnat s jejím nedostatkem, ne pravda o tobě.",
-    "tier": "free",
-    "sort_order": 28,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0231",
-    "cluster_id": "cl_0003",
-    "text": "I když tu teď není člověk, od kterého bys péči potřeboval, nemusíš svoje trápení opustit spolu s ním. Můžeš se k sobě zachovat tak, jak sis přál, aby se zachoval on.",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0232",
-    "cluster_id": "cl_0003",
-    "text": "Zanedbání bolí zvláštně tiše: není tam jedna rána, ale prázdné místo, kde měla být něčí přítomnost. I prázdné místo může bolet doopravdy.",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0233",
-    "cluster_id": "cl_0003",
-    "text": "Možná se tolik soustředíš na péči, kterou nedostáváš, že ti uniká otázka, kdo ti ji skutečně může dát. Nemusíš přestat toužit po blízkosti. Možná jen potřebuješ hledat i jinde.",
-    "tier": "free",
-    "sort_order": 31,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0234",
-    "cluster_id": "cl_0003",
-    "text": "Tvoje tělo možná neříká „jsem bezcenný“. Možná říká něco mnohem prostšího: „Jsem unavený z toho, že všechno nesu sám. Potřebuju blízkost, klid a něčí přítomnost.“",
-    "tier": "free",
-    "sort_order": 32,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0235",
-    "cluster_id": "cl_0003",
-    "text": "To, že zanedbání tolik bolí, může znamenat i něco zdravého: pořád v sobě cítíš, že blízkost, zájem a péče mají cenu. Něco v tobě se odmítá smířit s drobky.",
-    "tier": "free",
-    "sort_order": 33,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0236",
-    "cluster_id": "cl_0003",
-    "text": "Možná si přeješ péči právě od člověka, který ti ji nedává. A možná tě bolí nejen její nedostatek, ale i představa, že ji od něj nikdy nedostaneš. I tuhle ztrátu si smíš oplakat.",
-    "tier": "free",
-    "sort_order": 34,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0237",
-    "cluster_id": "cl_0003",
-    "text": "Ta část tebe, která tak citlivě hlídá, jestli se o tebe někdo stará, možná kdysi měla zatraceně důležitou práci. Dnes už ale nemusí každé přehlédnutí vyhlašovat za důkaz, že jsi zase sám.",
-    "tier": "free",
-    "sort_order": 35,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -1900,23 +1748,7 @@
     "cluster_id": "cl_0003",
     "text": "Můžeš být člověk, který byl zanedbáván, aniž by ses stal „tím zanedbaným“. Je to část tvého příběhu, ne tvoje identita.",
     "tier": "free",
-    "sort_order": 36,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0239",
-    "cluster_id": "cl_0003",
-    "text": "Někdy není potřeba naučit se snášet ještě víc nedostatku péče. Někdy je potřeba začít brát vážně, že ti ve vztahu něco podstatného chybí.",
-    "tier": "free",
-    "sort_order": 37,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0240",
-    "cluster_id": "cl_0003",
-    "text": "Možná tě pocit zanedbání chrání před tím, abys znovu dával srdce lidem, kteří neumějí pečovat. Nemusíš se té ochrany zbavit; můžeš se postupně učit lépe rozpoznávat, komu stojí za to otevřít dveře.",
-    "tier": "free",
-    "sort_order": 38,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -1924,39 +1756,7 @@
     "cluster_id": "cl_0003",
     "text": "Když tě někdo zanedbává, nemusíš donekonečna hledat způsob, jak ho přimět, aby se změnil. Máš právo rozhodovat i o tom, kolik místa mu ve svém životě dáš.",
     "tier": "free",
-    "sort_order": 39,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0242",
-    "cluster_id": "cl_0003",
-    "text": "Pocit „nikdo se o mě nestará“ může z několika bolestivých zkušeností udělat rozsudek nad celým tvým životem. Bolest může být pravdivá, rozsudek už být pravdivý nemusí.",
-    "tier": "free",
-    "sort_order": 40,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0243",
-    "cluster_id": "cl_0003",
-    "text": "Zkus se zeptat konkrétně: kdo tě teď zanedbává a v čem? Možná zjistíš, že problém je ohraničenější a řešitelnější, než jak se jeví ve chvíli, kdy máš pocit, že jsi úplně bez péče.",
-    "tier": "free",
-    "sort_order": 41,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0244",
-    "cluster_id": "cl_0003",
-    "text": "Když se otevře stará zkušenost zanedbání, mysl může začít přednostně vyhledávat další důkazy, že jsi zase bez péče. To, co cítíš, je skutečné. Ale obraz celé situace, který si z toho skládáš, nemusí být úplný.",
-    "tier": "free",
-    "sort_order": 42,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0245",
-    "cluster_id": "cl_0003",
-    "text": "Zkus si vybavit okamžiky, které by odporovaly větě „nikdo se o mě nestará“. Někdo se ozval, zajímal se, pomohl, pamatoval si tě nebo chtěl být s tebou. I malé výjimky mohou zpochybnit tak absolutní závěr.",
-    "tier": "free",
-    "sort_order": 43,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -1964,7 +1764,7 @@
     "cluster_id": "cl_0003",
     "text": "Možná ti nechybí péče obecně, ale určitý druh péče od určitého člověka. Rozpoznat ten rozdíl ti může pomoct pochopit, co tě skutečně bolí.",
     "tier": "free",
-    "sort_order": 44,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -1972,95 +1772,167 @@
     "cluster_id": "cl_0003",
     "text": "Člověk je zvláštní tvor: potřebuje druhé, ale zároveň někdy čeká, že mu budou číst myšlenky. Někdy tragédie není v tom, že by se o tebe nikdo nechtěl starat, ale že nikdo nedostal mapu k místu, kde tě to bolí.",
     "tier": "free",
-    "sort_order": 45,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0248",
-    "cluster_id": "cl_0003",
-    "text": "Kdyby ses mohl vrátit k mladšímu sobě ve chvíli, kdy péče nepřišla, nemusíš mu vysvětlovat, proč ostatní selhali. Stačilo by si k němu sednout a říct: „Vidím tě. Tohle jsi neměl nést sám.“",
-    "tier": "free",
-    "sort_order": 46,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0249",
     "cluster_id": "cl_0003",
-    "text": "Existují lidé, vedle kterých nebudeš muset pořád dokazovat, že stojíš za pozornost a péči. A má smysl dělat ve svém životě víc místa právě pro ně.",
+    "text": "Existují lidé, vedle kterých nebudeš muset pořád dokazovat, že stojíš za pozornost a péči. Má smysl dát ve svém životě víc místa právě jim.",
     "tier": "free",
-    "sort_order": 47,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0250",
     "cluster_id": "cl_0003",
-    "text": "Někdy není nedostatek péče důkazem nedostatku lásky. Člověk tě může mít rád, a přesto nedokáže rozpoznat nebo naplnit to, co od něj potřebuješ. Obojí může být pravda.",
+    "text": "Nedostatek péče nemusí být důkazem nedostatku lásky. Člověk tě může mít rád, a přesto nedokáže rozpoznat nebo naplnit to, co od něj potřebuješ. Obojí může být pravda.",
     "tier": "free",
-    "sort_order": 48,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0251",
     "cluster_id": "cl_0003",
-    "text": "Člověk, který tě miluje, možná nechce, abys jeho momentální nepřítomnost bral jako důkaz své nedůležitosti. I když zrovna není nablízku, může mu na tobě záležet.",
+    "text": "I člověku, který zrovna není nablízku, na tobě může záležet.",
     "tier": "free",
-    "sort_order": 49,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0252",
-    "cluster_id": "cl_0003",
-    "text": "Tvoje citlivost na přehlížení nemusí být jen zranění. Možná díky ní také dobře poznáš, jak vypadá opravdová blízkost, když ji potkáš.",
-    "tier": "free",
-    "sort_order": 50,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0253",
-    "cluster_id": "cl_0003",
-    "text": "Budoucí ty se možná jednou ohlédne na dnešek a nebude se divit, proč jsi potřeboval péči. Spíš ho bude mrzet každá chvíle, kdy sis myslel, že sis o ni nesměl říct.",
-    "tier": "free",
-    "sort_order": 51,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0254",
-    "cluster_id": "cl_0003",
-    "text": "Nemusíš vyřešit celý svůj vztah k péči právě teď. Pro tuhle chvíli stačí jediná otázka: „Co by mi teď pomohlo cítit se o deset procent míň opuštěný se vším, co nesu?“",
-    "tier": "free",
-    "sort_order": 52,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_0255",
-    "cluster_id": "cl_0003",
-    "text": "Je trochu absurdní, když ti mysl řekne „nikdo se o mě nestará“ a vzápětí navrhne, aby ses o sebe přestal starat taky. Zrovna ve chvíli, kdy péče chybí, jí potřebuješ přidat, ne ubrat.",
-    "tier": "free",
-    "sort_order": 53,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0256",
     "cluster_id": "cl_0003",
-    "text": "Starý kovboj by možná řekl: „Chlapče, některý studny jsou prostě vyschlý. To neznamená, že nemáš žízeň oprávněně; znamená to, že je blbost stát celej život u jedný studny.“",
+    "text": "Starý kovboj by možná řekl: „Chlapče, některý studny jsou prostě vyschlý. To neznamená, že bude bez vody i ta studna o pár mil dál.“",
     "tier": "free",
-    "sort_order": 54,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
     "id": "ref_0257",
     "cluster_id": "cl_0003",
-    "text": "Strom by se asi neurazil, že zrovna neprší. Zapustil by kořeny tam, kde voda skutečně je. Možná ani ty nemusíš pořád čekat na péči právě od lidí, kteří ji neumějí dávat.",
+    "text": "Strom by se asi neurazil, že zrovna neprší. Zapustil by kořeny tam, kde voda skutečně je.",
     "tier": "free",
-    "sort_order": 55,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_0258",
+    "id": "ref_0218",
     "cluster_id": "cl_0003",
-    "text": "Jednou tady nebude nikdo z nás a většina věcí, kterými se dnes trápíme, zmizí beze stopy. O to méně smyslu dává strávit svůj omezený čas dokazováním, že nic nepotřebuješ.",
+    "text": "Možná ses kdysi naučil čekat na trochu pozornosti až do chvíle, kdy už bylo opravdu zle. Dnes už tak dlouho čekat nemusíš.",
     "tier": "free",
-    "sort_order": 56,
+    "sort_order": 30,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0220",
+    "cluster_id": "cl_0003",
+    "text": "Možná ses stal odborníkem na neobtěžování. Ale dobrý vztah po tobě nechce, abys svoje potřeby stáhl do úsporného režimu.",
+    "tier": "free",
+    "sort_order": 31,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0223",
+    "cluster_id": "cl_0003",
+    "text": "Když ti péče dlouho chyběla, i malé přehlédnutí může způsobit velkou bolest. Nemusí to znamenat, že přeháníš. Možná se jen někdo dotkl starého zranění.",
+    "tier": "free",
+    "sort_order": 32,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0225",
+    "cluster_id": "cl_0003",
+    "text": "Někdy lidé neposkytují dost péče, protože ji neumějí dát, nejsou pozorní nebo jsou sami zahlcení. Jejich omezení nejsou měřítkem tvojí hodnoty.",
+    "tier": "free",
+    "sort_order": 33,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0227",
+    "cluster_id": "cl_0003",
+    "text": "Když jsi dlouho nedostával péči, může být těžké vůbec uvěřit, že na ni máš právo. Ale ano, máš.",
+    "tier": "free",
+    "sort_order": 34,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0231",
+    "cluster_id": "cl_0003",
+    "text": "I když tu teď možná není člověk, od kterého bys péči potřeboval, nemusíš svoje trápení zapírat. Můžeš se k sobě zachovat tak, jak by sis přál, aby se zachoval on.",
+    "tier": "free",
+    "sort_order": 35,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0233",
+    "cluster_id": "cl_0003",
+    "text": "Možná se tolik soustředíš na péči, kterou nedostáváš, že ti uniká otázka, kdo ti ji skutečně může dát.",
+    "tier": "free",
+    "sort_order": 36,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0235",
+    "cluster_id": "cl_0003",
+    "text": "To, že zanedbání tolik bolí, může znamenat i něco zdravého: pořád v sobě cítíš, že blízkost, zájem a péče mají cenu. Něco v tobě se odmítá smířit s drobky.",
+    "tier": "free",
+    "sort_order": 37,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0240",
+    "cluster_id": "cl_0003",
+    "text": "Možná tě pocit zanedbání chrání před tím, abys znovu dával srdce lidem, kteří neumějí pečovat. Nemusíš se té ochrany zbavit, ale můžeš se postupně učit lépe rozpoznávat, komu stojí za to otevřít dveře.",
+    "tier": "free",
+    "sort_order": 38,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0242",
+    "cluster_id": "cl_0003",
+    "text": "Pocit „nikdo se o mě nestará“ může z několika bolestivých zkušeností udělat rozsudek nad celým tvým životem. Bolest může být pravdivá, rozsudek už být pravdivý nemusí.",
+    "tier": "free",
+    "sort_order": 39,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0243",
+    "cluster_id": "cl_0003",
+    "text": "Zkus se zeptat konkrétně: kdo tě teď zanedbává a v čem? Možná zjistíš, že problém je ohraničenější a řešitelnější, než jak se jeví ve chvíli, kdy máš pocit, že jsi úplně bez péče.",
+    "tier": "free",
+    "sort_order": 40,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0244",
+    "cluster_id": "cl_0003",
+    "text": "Když se otevře stará zkušenost zanedbání, mysl může začít přednostně vyhledávat další důkazy, že jsi zase bez péče. To, co cítíš, je skutečné. Ale obraz celé situace, který si z toho skládáš, nemusí být úplný.",
+    "tier": "free",
+    "sort_order": 41,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0245",
+    "cluster_id": "cl_0003",
+    "text": "Zkus si vybavit okamžiky, které odporují větě „nikdo se o mě nestará“. Někdo se ozval, zajímal se, pomohl, pamatoval si tě nebo chtěl být s tebou. I malé výjimky mohou zpochybnit tak absolutní závěr.",
+    "tier": "free",
+    "sort_order": 42,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0253",
+    "cluster_id": "cl_0003",
+    "text": "Tvé budoucí já se možná jednou ohlédne a budou ho mrzet ty chvíle, kdy sis myslel, že sis o péči nesměl říct.",
+    "tier": "free",
+    "sort_order": 43,
+    "added_at": "2026-10-16"
+  },
+  {
+    "id": "ref_0254",
+    "cluster_id": "cl_0003",
+    "text": "Nemusíš to teď vyřešit. Pro tuhle chvíli stačí otázka: „Co by mi teď pomohlo cítit se o deset procent míň opuštěný se vším, co nesu?“",
+    "tier": "free",
+    "sort_order": 44,
     "added_at": "2026-10-16"
   },
   {
