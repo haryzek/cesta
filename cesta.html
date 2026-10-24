@@ -895,6 +895,13 @@
     });
   }
   function admCount(map){ return Object.keys(map).reduce(function(n,k){ return n+(Array.isArray(map[k])?map[k].length:Object.keys(map[k]).length); },0); }
+  // Sloučí zálohu adminu (deleted / top / edits) s aktuálním stavem
+  function admMerge(s){
+    try{ var d=JSON.parse(String(s).replace(/^﻿/,"")); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
+      Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
+      applyEdits(); saveAdmin(true); state.swipe.key=null; state.swipe.ids=[]; toast("Import hotov"); render();
+    }catch(e){ toast("Import selhal — není to JSON"); render(); }
+  }
   function admExportJson(){ return JSON.stringify({ exported:new Date().toISOString(), deleted:ADMIN.deleted, edits:ADMIN.edits, top:ADMIN.top },null,1); }
 
   // ===================== DNEŠNÍ INSPIRACE =====================
@@ -1764,7 +1771,7 @@
     h+='<p class="mc-adm-note">Data: '+(dm?dm.getDate()+'. '+(dm.getMonth()+1)+'. '+dm.getFullYear()+' '+dm.getHours()+':'+String(dm.getMinutes()).padStart(2,"0"):'datum neznámé')+(DATA_INFO.cache?' · <b>z offline cache</b> (síť neodpověděla včas)':' · ze sítě')+'</p>';
     h+='<div class="mc-adm-stats"><div><b>'+nDel+'</b> smazáno</div><div><b>'+nEd+'</b> upraveno</div><div><b>'+nTop+'</b> Top</div></div>';
     h+='<div class="mc-box '+(warn?"mc-warn":"")+' adm-export"><span class="b-text">'+(ADMIN.lastExport?'Poslední export před '+days+' dny':'Zatím žádný export')+(ADMIN.dirty?' · <b>'+ADMIN.dirty+' nezálohovaných změn</b>':' · vše zálohováno')+'</span></div>';
-    h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.admExport()">Export (stáhnout)</button><button class="mc-fab ghost" onclick="MC.admCopy()">Zkopírovat</button><button class="mc-fab ghost" onclick="MC.admImport()">Import</button></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.admExport()">Export (stáhnout)</button><button class="mc-fab ghost" onclick="MC.admCopy()">Zkopírovat</button><button class="mc-fab ghost" onclick="MC.admImport()">Import (soubor)</button><button class="mc-fab ghost" onclick="MC.admImportText()">Vložit text</button></div>';
     h+='<p class="mc-adm-note">Snapshoty se drží automaticky za posledních 7 dní v tomhle prohlížeči. Export je jediná záloha mimo telefon — dělejte ho průběžně.</p>';
     // Řez tripletu
     var cut=ADMIN.cut!==false;
@@ -2080,12 +2087,22 @@
       if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(json).then(done,function(){ window.prompt("Zkopírujte ručně:",json); done(); });
       else { window.prompt("Zkopírujte ručně:",json); done(); }
     },
+    // Import ze souboru (.json z Exportu) — vložení dlouhého textu přes schránku na mobilu ořezávalo
     admImport:function(){
+      var inp=document.createElement("input"); inp.type="file"; inp.accept=".json,application/json,text/plain";
+      inp.onchange=function(){
+        var f=inp.files&&inp.files[0]; if(!f) return;
+        var r=new FileReader();
+        r.onload=function(){ admMerge(String(r.result||"")); };
+        r.onerror=function(){ toast("Soubor se nepodařilo přečíst"); };
+        r.readAsText(f);
+      };
+      inp.click();
+    },
+    // Záložní cesta: vložit text zálohy
+    admImportText:function(){
       var s=window.prompt("Vložte JSON zálohy (sloučí se s aktuálním stavem):"); if(!s) return;
-      try{ var d=JSON.parse(s); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
-        Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
-        applyEdits(); saveAdmin(true); state.swipe.key=null; state.swipe.ids=[]; toast("Import hotov"); render();
-      }catch(e){ toast("Import selhal — není to JSON"); render(); }
+      admMerge(s);
     },
     userReset:function(){
       if(!window.confirm("Vymazat všechna oblíbená a paměť viděného?")) return;
