@@ -714,8 +714,8 @@
     { store:"reframings",          dataKey:"reframings",   label:"Přerámování",          kind:"text" },
     { store:"reframing_questions", dataKey:"questions_rf", label:"Otázky (přerámování)", kind:"text" },
     { store:"reframing_actions",   dataKey:"actions",      label:"Úkoly",                kind:"text" },
-    // Hlášky nemají vlastní ID — klíč je pain_id:index, index do itemIndex.hlasky
-    // se staví v prepare(). Meta pod hláškou nese větu bolístky.
+    // Hlášky mají vlastní ID (hl_NNNN), index itemIndex.hlasky se staví
+    // v prepare(). Meta pod hláškou nese větu bolístky.
     { store:"pains",               dataKey:"hlasky",       label:"Bolístky",             kind:"text" },
     { store:"inspirations",        dataKey:"inspirations", label:"Inspirace",            kind:"quote" },
     { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"quote" }
@@ -897,10 +897,55 @@
   function admCount(map){ return Object.keys(map).reduce(function(n,k){ return n+(Array.isArray(map[k])?map[k].length:Object.keys(map[k]).length); },0); }
   // Sloučí zálohu adminu (deleted / top / edits) s aktuálním stavem
   function admMerge(s){
-    try{ var d=JSON.parse(String(s).replace(/^﻿/,"")); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
+    try{ var d=JSON.parse(String(s).replace(/^﻿/,"")); migrateAdminKeys(d); ["deleted","top"].forEach(function(k){ Object.keys(d[k]||{}).forEach(function(st){ var a=admList(ADMIN[k],st); (d[k][st]||[]).forEach(function(id){ if(a.indexOf(id)<0) a.push(id); }); }); });
       Object.keys(d.edits||{}).forEach(function(st){ ADMIN.edits[st]=ADMIN.edits[st]||{}; Object.keys(d.edits[st]).forEach(function(id){ ADMIN.edits[st][id]=d.edits[st][id]; }); });
       applyEdits(); saveAdmin(true); state.swipe.key=null; state.swipe.ids=[]; toast("Import hotov"); render();
     }catch(e){ toast("Import selhal — není to JSON"); render(); }
+  }
+  // Hlášky a věty pod strachy měly do 6. 11. 2026 klíč podle pořadí (pain_id:index,
+  // sit_id:index), od té doby trvalé ID. ID se přidělila podle tehdejšího pořadí, takže
+  // starý index = pořadí podle ID, i když se věty později přeřadí. Přepis je idempotentní.
+  var legacyKeys={}, LEGACY_STORES=["pains","situations"];
+  function buildLegacyKeys(){
+    legacyKeys={};
+    [[DB.pains,"hlasky"],[DB.situations,"reframings"]].forEach(function(d){
+      (d[0]||[]).forEach(function(o){
+        (o[d[1]]||[]).map(function(x){ return x.id; }).sort().forEach(function(id,i){ legacyKeys[o.id+":"+i]=id; });
+      });
+    });
+  }
+  function migrateList(a){
+    if(!Array.isArray(a)) return false;
+    var changed=false;
+    a.forEach(function(k,i){ if(legacyKeys[k]){ a[i]=legacyKeys[k]; changed=true; } });
+    return changed;
+  }
+  function migrateAdminKeys(a){
+    var changed=false;
+    LEGACY_STORES.forEach(function(st){
+      if(a.deleted&&migrateList(a.deleted[st])) changed=true;
+      if(a.top&&migrateList(a.top[st])) changed=true;
+      var e=a.edits&&a.edits[st];
+      if(e) Object.keys(e).forEach(function(k){ if(legacyKeys[k]){ e[legacyKeys[k]]=e[k]; delete e[k]; changed=true; } });
+    });
+    return changed;
+  }
+  // Před prvním přepisem zůstane v telefonu pojistná kopie původního stavu.
+  function migrateStoredKeys(){
+    var rawA, rawU;
+    try{ rawA=localStorage.getItem(ADMIN_KEY); rawU=localStorage.getItem(STORE_KEY); }catch(e){}
+    var chA=migrateAdminKeys(ADMIN), chU=false;
+    LEGACY_STORES.forEach(function(st){
+      if(USER.favorites&&migrateList(USER.favorites[st])) chU=true;
+      if(USER.seen&&migrateList(USER.seen[st])) chU=true;
+    });
+    if(!chA&&!chU) return;
+    try{
+      if(rawA&&!localStorage.getItem("mc_pred_id_admin")) localStorage.setItem("mc_pred_id_admin",rawA);
+      if(rawU&&!localStorage.getItem("mc_pred_id_user")) localStorage.setItem("mc_pred_id_user",rawU);
+    }catch(e){}
+    if(chA) saveAdmin(false);
+    if(chU) saveUser();
   }
   function admExportJson(){ return JSON.stringify({ exported:new Date().toISOString(), deleted:ADMIN.deleted, edits:ADMIN.edits, top:ADMIN.top },null,1); }
 
@@ -1006,10 +1051,11 @@
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
     itemIndex.hlasky={};
-    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x,i){ itemIndex.hlasky[p.id+":"+i]={ id:p.id+":"+i, text:x.text, meta:p.text, source:x.source }; }); });
-    // Přerámování situací jako položky (klíč sit_id:index) — kvůli adminu.
+    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, meta:p.text, source:x.source }; }); });
+    // Přerámování situací jako položky (ID sitr_NNNN) — kvůli adminu.
     itemIndex.sitref={};
-    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(t,i){ itemIndex.sitref[s.id+":"+i]={ id:s.id+":"+i, text:t, meta:s.name }; }); });
+    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, meta:s.name }; }); });
+    buildLegacyKeys(); migrateStoredKeys();
     applyEdits();
     bySection={}; byChain={};
     (DB.exercises||[]).forEach(function(e){
@@ -1361,7 +1407,7 @@
       h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
       h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.open(\'crisis\')">Otevřít První pomoc</button></div>';
     } else if(s.reframings&&s.reframings.length){
-      var refs=alive("situations",(s.reframings||[]).map(function(t,i){ return itemIndex.sitref[s.id+":"+i]; }));
+      var refs=alive("situations",(s.reframings||[]).map(function(r){ return itemIndex.sitref[r.id]; }));
       h+='<ul class="mc-cards">';
       refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text"+(s.mark==="E"?" lead":""))+adminBar("situations",r.id)+'</li>'; });
       h+='</ul>';
@@ -1402,7 +1448,7 @@
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
-    var all=alive("pains",(p.hlasky||[]).map(function(x,i){ return itemIndex.hlasky[p.id+":"+i]; })), list=unseenOnly("pains",all);
+    var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; })), list=unseenOnly("pains",all);
     h+=listTools("pains",all.length,list.length);
     if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,swipeItems("pains","pain:"+p.id,all),null);
     if(!list.length) return h+allSeen();

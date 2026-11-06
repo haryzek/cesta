@@ -377,7 +377,7 @@ Druhá brána sekce Přerámování (viz „Sekce aplikace“). Dvě vrstvy: už
   "group": "Výkon a hodnocení",
   "aliases": ["test", "zkouškové", "státnice", "maturita"],
   "mark": "P",
-  "reframings": ["Zkouška měří, co umíš v jednu konkrétní hodinu jednoho dne — …", "…"],
+  "reframings": [{ "id": "sitr_0001", "text": "Zkouška měří, co umíš v jednu konkrétní hodinu jednoho dne — …" }, { "id": "sitr_0002", "text": "…" }],
   "fear_ids": ["fear_0060", "fear_0033", "fear_0049", "fear_0063", "fear_0100", "fear_0038"],
   "tier": "free",
   "sort_order": 1,
@@ -406,13 +406,13 @@ Hlášky mají `source`: **`k`** = Karolínka (3480, 20 na bolístku, základ �
   "sort_order": 1,
   "added_at": "2026-09-11",
   "hlasky": [
-    { "text": "Možná opravdu nestíháš. Ale než z toho uděláš rozsudek …", "source": "k" },
-    { "text": "Nestíhat všechno není selhání, to je fyzika: …", "source": "n" }
+    { "id": "hl_0001", "text": "Možná opravdu nestíháš. Ale než z toho uděláš rozsudek …", "source": "k" },
+    { "id": "hl_0024", "text": "Nestíhat všechno není selhání, to je fyzika: …", "source": "n" }
   ]
 }
 ```
 
-Zdroje: `local/data_wip/bolistky_wip/` — `brana4_bolistky.json` (seznam), `hlasky_karolinka.md`, `hlasky_davka01–18*.json`, `vyber_nase.json` (indexy vybraných našich), build `build_pains.py`.
+Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build `build_pains.py`. Každá hláška má trvalé ID `hl_NNNN`, věta pod konkrétním strachem `sitr_NNNN`; ID nenesou pořadí a build je nečísluje. Dřívější skládání z `brana4_bolistky.json`, `hlasky_karolinka.md`, `hlasky_davka01–18*.json` a `vyber_nase.json` je historie (`old/build_pains_do_2026-11-06.py`). Staré adresy `pain_id:index` a `sit_id:index` převádí `local/data_wip/legacy_keys.json`, appka je ve své paměti a při importu starého exportu přepíše sama.
 
 ### Shrnutí polí
 
@@ -684,7 +684,7 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 
 Režim škrtání pro Boba na road trip — tři akce nad koncovým obsahem, nic víc. Zapíná se úplně dole v hamburgeru („Admin vypnutý/zapnutý“, drží se v `localStorage`). Vypnutý = appka jako pro uživatele.
 
-- **Co jde označit:** každá koncová položka se `store` + `id` — triplet, hlášky (`pain_id:index`), přerámování situací (`sit_id:index`, pseudo-store `situations`), citáty, otázky, články, cvičení, krizovka, tělo. **Editovat jde všechno** (19. 10. 2026): věty inline na kartě (u citátu i autor), dlouhý obsah po polích v detailu.
+- **Co jde označit:** každá koncová položka se `store` + `id` — triplet, hlášky (`hl_NNNN`), přerámování situací (`sitr_NNNN`, pseudo-store `situations`), citáty, otázky, články, cvičení, krizovka, tělo. **Editovat jde všechno** (19. 10. 2026): věty inline na kartě (u citátu i autor), dlouhý obsah po polích v detailu.
 - **Ovládání:** na kartě (i ve swipe kartě) a v detailu tenká lišta **✎ upravit · ★ Top! · ✕ smazat**. U hlášek badge `k`/`n` (který hlas přežívá), u upravených „upraveno“. ✕ → položka zmizí, 3 s toast „Smazáno · Vrátit“. ✎ u vět → inline textarea, Zrušit / Původní / Uložit. ✎ u článků/cvičení/krizovky/těla (z karty otevře detail) → **panel polí** (`admPanel`): pilulky polí podle toho, co je na obrazovce, velká textarea se surovým markdownem, Zavřít / Původní / Uložit (panel zůstane otevřený, upravené pole má tečku). Cvičení po tabech (`ADM_EX_TABS`): Postup = název, perex, postup, varování, deník cvičení + deník oddílu; Info/Teorie = `*_extra` + oddílový text; Praxe = oddílová praxe a deník praxe. **Oddílová pole** (store `sections`) mají varování „Společné pro celý oddíl (N cvičení)“. Na stránce oddílu v Moje cestě je ✎ samostatně, pole podle tabu. Tlačítko **kopírovat** (`admCopyText`, 16. 9. 2026) hodí do schránky větu, u článků/cvičení/krizovky/těla název — ať se dá rychle vložit do chatu; bez Clipboard API spadne do `window.prompt`.
 - **Účinek:** smazané se nezobrazují a edity se aplikují **i mimo admin mód** (Bob vidí appku, jak ji uvidí uživatel po propsání). Edit = `{ pole: hodnota }`, úprava jen textu věty zůstává string (zpětná kompatibilita exportů). Propisují se do objektů v paměti při načtení (`applyEdits`, původní hodnoty polí v `_o`), smazané filtruje `alive(store, items)` na každém výpisu. **Data v `data/` se nesahají.**
 - **Uložení:** vlastní klíč `mc_admin_v1` (`deleted`, `edits`, `top`, `lastExport`, `dirty`) — oddělený od uživatelských dat. **Denní snapshot** `mc_admin_bak_<datum>` při prvním zápisu v den, drží se posledních 7 — proti vlastnímu překlepu.
@@ -754,12 +754,12 @@ Oblíbené a přečtené:
     "reframings": ["ref_0042"],
     "reframing_questions": ["refq_0042"],
     "reframing_actions": ["refa_0042"],
-    "pains": ["pain_0001:3"],
+    "pains": ["hl_0004"],
     "inspirations": ["inspir_0012"],
     "questions": ["quest_0005"]
   },
   "read": ["art_0003", "art_0005"],
-  "seen": { "reframings": ["ref_0001", "ref_0002"], "pains": ["pain_0001:0"] },
+  "seen": { "reframings": ["ref_0001", "ref_0002"], "pains": ["hl_0001"] },
   "onlyNew": false
 }
 ```

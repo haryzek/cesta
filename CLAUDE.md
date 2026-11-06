@@ -71,8 +71,8 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 | **řetězy** | `local/data_wip/chains_wip/chains.json` | kopií |
 | **články** | `data/articles.json` — **zdroj i výsledek**, žádný build | — |
 | **triplet** (ref/refq/refa) | `local/data_wip/reframings_triplet_wip/klastry/cl_NNNN.json` (od 22. 10. 2026, Excel už ne) | `build_triplet.py` + kopie 3 JSONů do `data/` |
-| **strachy** (fears/situations) | `local/data_wip/strachy_wip/kanon_strachu_pocity.json` + `brany_reframings.md` | `build_fears.py` |
-| **bolístky** (pains) | `local/data_wip/bolistky_wip/` dávky + `hlasky_karolinka.md` + `vyber_nase.json` | `build_pains.py` |
+| **strachy** (fears/situations) | `local/data_wip/strachy_wip/kanon_strachu_pocity.json` + `brany_reframings.md` | `build_fears.py` + kopie do `data/` |
+| **bolístky** (pains) | `local/data_wip/bolistky_wip/pains_src.json` (od 6. 11. 2026, dávky a Karolínka jsou historie) | `build_pains.py` + kopie do `data/` |
 | ostatní | `data/*.json` přímo | — |
 
 `sections_wip/_podklad/sec_*.md` jsou **surovina, ze které oddíly kdysi vznikly, ne zdroj pravdy.** Build skript pro ně neexistuje a s JSONem se už rozešly.
@@ -92,7 +92,7 @@ Konzoli si přepni na UTF-8 (`PYTHONIOENCODING=utf-8`), jinak lint spadne na emo
 Rozcestník tří karet s větou „kdy sem“: **Jádrové pocity** / **Strachy** / **Bolístky**. Plný popis toku v README „Sekce aplikace → Přerámování“. Co musíš mít v hlavě:
 
 - **Strachy (přestavěno 21. 10. 2026):** jen konkrétní strachy (`situations`), záložka Jádrové strachy zrušená. Konkrétní strach → `mark` P/E/K → „Co je pod tím?“ → **jádrové pocity** (stejná komponenta jako brána Jádrové pocity, výběr jednoho i víc) → triplet. Pocity = součet `FEAR_POS_WEIGHTS=[5,4,3,2,1]` přes `fear_ids` → `cluster_ids`, **ukazují se všechny seřazené**, ne top N (Bobovo rozhodnutí). Merged remízu řeší `rank` (pořadí pod strachem). `K` pocity nenabízí. Dřívější kanon → rovnou mix 3 pocitů (`FEAR_CLUSTERS`) je pryč: u hrozeb nesedl a uživatel si pocit nevybral. **Nový jádrový strach do appky = nový záznam v `brany_reframings.md` na konci** (ID se počítají pořadím, vložení doprostřed by posunulo `sit_` ID a rozbilo oblíbené/admin). `rf.origin` říká, kam vede Zpět.
-- **Bolístky:** **bez kategorií** — `smer` i `oblast` se nezobrazují (rozhodnuto 12. 9.). Hlášky bez tripletu, vědomě; klíč `pain_id:index` pro oblíbené/viděné. `source` k/n zobrazit až při škrtání.
+- **Bolístky:** **bez kategorií** — `smer` i `oblast` se nezobrazují (rozhodnuto 12. 9.). Hlášky bez tripletu, vědomě; ID `hl_NNNN` pro oblíbené/viděné. `source` k/n zobrazit až při škrtání.
 - **Provizorní admin — nasazen 12. 9. 2026** (README „Provizorní admin“): přepínač dole v menu, ✎/★/✕ na kartách, vlastní klíč `mc_admin_v1`, denní snapshoty, export/import. `alive()` filtruje smazané na každém výpisu, `applyEdits()` propisuje edity do objektů. Propsání do zdrojů (`apply_admin.py`) po road tripu.
 - **Datový objem:** triplet 4,2 MB + pains 1 MB, appka tahá všech 16 souborů najednou s `no-cache`. Přes Pages gzip ~1,3 MB — na hotelové wifi znát. Lazy load tripletu až po vstupu do sekce je legitimní krok, až to začne bolet.
 
@@ -119,7 +119,7 @@ Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník → „Moje cesta"
 - **Tagy** vždy lowercase a **výhradně z `tagy.json`** v kořeni repa. Nikdy nezakládej druhou kopii seznamu.
 - **`schemas`** = EMS kódy. **Cluster má 5, obsah má 3.** (README kdysi místy mluvil o 5 i u obsahu — to je opravené, reálná data mají u obsahu 3. Drž 3.)
 
-Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `sec_`, `chain_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`, `fear_`, `sit_`, `pain_`.
+Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `sec_`, `chain_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`, `fear_`, `sit_`, `pain_`, `hl_` (hláška pod bolístkou), `sitr_` (věta pod konkrétním strachem). Poslední dvě od 6. 11. 2026 místo klíčů podle pořadí; nová věta bez ID: `build_pains` dá max+1 sám, `build_fears` se zastaví a chce ji doplnit ručně. Před ostrým vydáním se dá celá databáze jednou přečíslovat načisto (Bob, 6. 11.), po vydání už ID nikdy.
 
 Všech 16 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný obalový objekt; `pains` má vnořené pole `hlasky`, `situations` pole `reframings` — pořád je to plochý list položek). Ikony a statické assety v `assets/`.
 
