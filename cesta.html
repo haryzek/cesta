@@ -1184,7 +1184,7 @@
   }
   // Řez pro první verzi: z každého klastru jen top N živých položek (pořadí =
   // pořadí ve zdroji). Uživatel ho má vždycky, Bob ho v adminu může vypnout.
-  var RF_CUT={ reframings:15, questions_rf:8, actions:7 };
+  var RF_CUT={ reframings:15, questions_rf:8, actions:7 }, PAIN_CUT=5;
   function cutOn(){ return !ADMIN.on||ADMIN.cut!==false; }
   function rfList(typeKey,cid){
     var l=alive(storeOf(typeKey),(byCluster[typeKey][cid]||[]).slice());
@@ -1448,7 +1448,9 @@
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
-    var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; })), list=unseenOnly("pains",all);
+    var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; }));
+    if(cutOn()) all=all.slice(0,PAIN_CUT);
+    var list=unseenOnly("pains",all);
     h+=listTools("pains",all.length,list.length);
     if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,swipeItems("pains","pain:"+p.id,all),null);
     if(!list.length) return h+allSeen();
@@ -1822,7 +1824,7 @@
     // Řez tripletu
     var cut=ADMIN.cut!==false;
     h+='<div class="mc-fav-group"><h2>Řez přerámování</h2>';
-    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7':'Vypnuto: celá zásoba')+'</button></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7 a 5 hlášek':'Vypnuto: celá zásoba')+'</button></div>';
     h+='<p class="mc-adm-note">Z každého pocitu jen prvních 15 přerámování, 8 otázek a 7 úkolů. Uživatelé řez mají vždycky, vypnout jde jen tady v adminu.</p></div>';
     // Koš
     h+='<div class="mc-fav-group"><h2>Koš <span class="c">'+nDel+'</span></h2>';

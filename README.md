@@ -412,7 +412,7 @@ Hlášky mají `source`: **`k`** = Karolínka (3480, 20 na bolístku, základ �
 }
 ```
 
-Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build `build_pains.py`. Každá hláška má trvalé ID `hl_NNNN`, věta pod konkrétním strachem `sitr_NNNN`; ID nenesou pořadí a build je nečísluje. Dřívější skládání z `brana4_bolistky.json`, `hlasky_karolinka.md`, `hlasky_davka01–18*.json` a `vyber_nase.json` je historie (`old/build_pains_do_2026-11-06.py`). Staré adresy `pain_id:index` a `sit_id:index` převádí `local/data_wip/legacy_keys.json`, appka je ve své paměti a při importu starého exportu přepíše sama.
+Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build `build_pains.py`. Každá hláška má trvalé ID `hl_NNNN`, věta pod konkrétním strachem `sitr_NNNN`; ID nenesou pořadí a build je nečísluje. Dřívější skládání z `brana4_bolistky.json`, `hlasky_karolinka.md`, `hlasky_davka01–18*.json` a `vyber_nase.json` je historie (`old/build_pains_do_2026-11-06.py`). **Řez hlášek:** výběr 6. 11. 2026 (Claude, `bolistky_wip/vyber5/vyber.txt` + `aplikuj_vyber.py`): pod každou bolístkou je **pořadí = top 5, pak 5 náhradníků, pak zbytek**. Appka ukazuje jen prvních 5 živých (`PAIN_CUT` v `cesta.html`, stejný přepínač v adminu jako řez tripletu), smazaná věta se doplní zespodu. Bob ještě čte a čistí. Staré adresy `pain_id:index` a `sit_id:index` převádí `local/data_wip/legacy_keys.json`, appka je ve své paměti a při importu starého exportu přepíše sama.
 
 ### Shrnutí polí
 
