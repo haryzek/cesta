@@ -73,7 +73,8 @@ Excel už jen orientace).
       počet na klastr dluh — je to zásoba. Škrtat jen za kvalitu, ne za objem.
 - [ ] **Ověřit 44× `[ověřit]` v přerámováních situací** — čísla a tvrzení,
       seznam `local/data_wip/strachy_wip/overit.md`. Před ostrým nasazením.
-- [ ] **Škrtání hlášek na 15/bolístku** — Bob v appce (provizorní admin), pak
+- [ ] **Bob čte top 5 hlášek** (875 vět, vybral Claude 6. 11. 2026, v topu 840 `k` / 35 `n`,
+      zbytek ve frontě; překlep ve frontě: `hl_3200` „prázzdně“) — smazáním se doplní náhradník, pak
       výsledek propsat do zdrojů. Sledovat, jestli náš hlas (`n`) přežívá.
 - [ ] **Sjednotit `oblast` u bolístek** (89 hodnot, guláš) na ~15 kategorií —
       až po škrtání, a jen kdyby se zrcadlo 175 vět ukázalo jako moc dlouhé
