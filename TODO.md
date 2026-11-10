@@ -73,7 +73,8 @@ Excel už jen orientace).
       počet na klastr dluh — je to zásoba. Škrtat jen za kvalitu, ne za objem.
 - [ ] **Ověřit 44× `[ověřit]` v přerámováních situací** — čísla a tvrzení,
       seznam `local/data_wip/strachy_wip/overit.md`. Před ostrým nasazením.
-- [ ] **Bob čte top 5 hlášek** (875 vět, vybral Claude 6. 11. 2026, v topu 840 `k` / 35 `n`,
+- [ ] **Bob čte top 5 hlášek u bolístek 125–139** (1–124 hotové 10. 11. 2026, export v `local/.backups/`; 140–175 schované, `PAIN_LIST_CUT`)
+- [ ] Původně: **Bob čte top 5 hlášek** (875 vět, vybral Claude 6. 11. 2026, v topu 840 `k` / 35 `n`,
       zbytek ve frontě; překlep ve frontě: `hl_3200` „prázzdně“) — smazáním se doplní náhradník, pak
       výsledek propsat do zdrojů. Sledovat, jestli náš hlas (`n`) přežívá.
 - [ ] **Sjednotit `oblast` u bolístek** (89 hodnot, guláš) na ~15 kategorií —

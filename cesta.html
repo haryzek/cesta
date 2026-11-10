@@ -1184,7 +1184,8 @@
   }
   // Řez pro první verzi: z každého klastru jen top N živých položek (pořadí =
   // pořadí ve zdroji). Uživatel ho má vždycky, Bob ho v adminu může vypnout.
-  var RF_CUT={ reframings:15, questions_rf:8, actions:7 }, PAIN_CUT=5;
+  // Bolístky: prvních 139 podle sort_order (Bob prošel 124 + 15 vybraných 10. 11. 2026), zbytek ve frontě.
+  var RF_CUT={ reframings:15, questions_rf:8, actions:7 }, PAIN_CUT=5, PAIN_LIST_CUT=139;
   function cutOn(){ return !ADMIN.on||ADMIN.cut!==false; }
   function rfList(typeKey,cid){
     var l=alive(storeOf(typeKey),(byCluster[typeKey][cid]||[]).slice());
@@ -1434,6 +1435,7 @@
     h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
     h+=searchBox("Hledejte větu…","rfPainSearch",rf.painSearch);
     var list=flat.pains;
+    if(cutOn()) list=list.slice(0,PAIN_LIST_CUT);
     if(rf.painSearch.trim()){ var q=deburr(rf.painSearch); list=list.filter(function(p){ return deburr(p.text).indexOf(q)>-1; }); }
     var shown=list.slice(0,rf.painLimit);
     h+='<div class="mc-namelist mc-mirror">';
@@ -1824,7 +1826,7 @@
     // Řez tripletu
     var cut=ADMIN.cut!==false;
     h+='<div class="mc-fav-group"><h2>Řez přerámování</h2>';
-    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7 a 5 hlášek':'Vypnuto: celá zásoba')+'</button></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7 a 5 hlášek, 139 bolístek':'Vypnuto: celá zásoba')+'</button></div>';
     h+='<p class="mc-adm-note">Z každého pocitu jen prvních 15 přerámování, 8 otázek a 7 úkolů. Uživatelé řez mají vždycky, vypnout jde jen tady v adminu.</p></div>';
     // Koš
     h+='<div class="mc-fav-group"><h2>Koš <span class="c">'+nDel+'</span></h2>';

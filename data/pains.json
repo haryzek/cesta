@@ -16403,13 +16403,364 @@
     ]
   },
   {
+    "id": "pain_0175",
+    "src_id": "k_222",
+    "text": "Celý můj kalendář jsou povinnosti pro ostatní — kde tam jsem já?",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 125,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_4187",
+        "text": "Hodina pro tebe není ukradená ostatním; je to údržba člověka, na kterém všichni ti ostatní stojí.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4189",
+        "text": "Nikdo ti tu půlhodinu pro sebe nepřidělí, protože nikdo jiný neví, že ji potřebuješ — říct si o ni není sobectví, ale upřímnost.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4185",
+        "text": "Možná nejde o to, že v kalendáři chybíš — možná v něm chybí jen kolonka s tvým jménem, a tu tam smíš dopsat úplně stejně, jako tam dopisuješ všechny ostatní.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4193",
+        "text": "Zkus to zmenšit: nehledej v kalendáři sebe, najdi tam jednu půlhodinu tenhle týden — to je celý úkol, žádné hledání smyslu života.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4194",
+        "text": "Schůzka sama se sebou se dá zapsat úplně stejně jako schůzka se zubařem, a na rozdíl od zubaře se na ni můžeš i těšit.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4186",
+        "text": "To, že se o tebe tvůj kalendář nestará, neznamená, že si péči nezasloužíš — znamená to jen, že ses ještě nenaučil objednávat se sám u sebe.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4192",
+        "text": "Ono „pro ostatní“ je fér pocit, ale není to celá pravda — spousta těch povinností jsou tvoje volby, které mezitím zapomněly, že kdysi byly volby.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4196",
+        "text": "Představ si opak: kalendář plný jen tebe, nikdo tě nepotřebuje, nikomu nic nedlužíš — a hádám, že do týdne by ti bylo smutno; takže nejde o vymazat ostatní, jen si mezi ně sednout.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4190",
+        "text": "Kdo ten kalendář vlastně plnil? Protože jestli to bylo tvoje pero, tak tam nechybíš — jsi tam na každém řádku, jen sis dal roli sekretáře místo klienta.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4188",
+        "text": "Zkus se na ten plný kalendář podívat i z druhé strany: je to mapa lidí, kterým na tobě záleží a ty jim — teď už jen přidat jednoho, na kterém ti záleží taky.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4191",
+        "text": "Zajímavý paradox se skrývá v té větě: v kalendáři prý nejsi, a přitom jsi jediný, kdo v něm figuruje úplně všude.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4195",
+        "text": "Kdyby tvoje tělo umělo psát do kalendáře, už dávno by si tam červeně vyblokovalo středu odpoledne — a tebe by na tu schůzku pozvalo jen jako hosta.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4197",
+        "text": "Starý kovboj by řekl: kůň, který jen vozí náklad a nikdy se nepase, ti jednou lehne uprostřed cesty — a bude mu fuk, co máš v diáři.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4198",
+        "text": "Za deset let si z těch schůzek nevzpomeneš ani na jednu, ale na to, že ses celou dekádu nikde nepotkal sám se sebou, si vzpomeneš spolehlivě.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4199",
+        "text": "Ještě že to vidíš — horší verze téhle věty je ta, kterou člověk vysloví až v důchodu.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0156",
+    "src_id": "k_009",
+    "text": "Kdy se mě naposledy někdo zeptal, jak se vlastně mám?",
+    "smer": "na svět",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 126,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3728",
+        "text": "Tohle může být velmi osamělý pocit: být mezi lidmi, fungovat, odpovídat na jejich otázky — a přitom mít dojem, že nikoho nenapadne zastavit se u tebe.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3729",
+        "text": "Možná ti nechybí velká pomoc ani dlouhý rozhovor, ale prostý zájem, který nepřijde až poté, co si o něj řekneš. I tak malá věc může mít velkou váhu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3730",
+        "text": "Je možné, že působíš jako člověk, který všechno zvládá, a okolí proto méně často kontroluje, co se děje uvnitř. Samostatnost umí člověka paradoxně udělat méně viditelným.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3731",
+        "text": "Nemusíš být v krizi, aby sis zasloužil otázku „jak ti je?“. Zájem není služba vyhrazená lidem, kteří už se hroutí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3734",
+        "text": "Nemusíš čekat, až někdo přesně uhodne, že potřebuješ být chvíli na druhé straně pozornosti. Můžeš člověku, kterému věříš, říct „dneska bych potřeboval, abys chvíli poslouchal ty mě“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3736",
+        "text": "Možná jsi tak dlouho odpovídal „dobrý“, že okolí získalo dojem, že hlubší otázka není potřeba. Není pozdě začít odpovídat o trochu pravdivěji tam, kde o kontakt stojíš.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3733",
+        "text": "Je fér chtít ve vztazích trochu vzájemnosti. Být pořád ten, kdo naslouchá, drží prostor nebo se zajímá, může časem bolet i velmi schopného člověka.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3740",
+        "text": "Zkus někdy na automatické „jak se máš?“ neříct automatické „dobrý“, ale jednu skutečnou větu. Dost rychle poznáš, kdo se zastaví a kdo už je mentálně o tři témata dál.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3747",
+        "text": "Není sobecké chtít být občas tématem rozhovoru. Přátelství ani blízkost nemají být celoživotní moderátorská směna.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3751",
+        "text": "Dospělost má krutý fór: čím líp ji zvládáš, tím míň se tě kdo ptá — otázky dostávají ti, co viditelně hoří, ne ti, co tiše drží.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3732",
+        "text": "Možná se tě lidé ptají „jak se máš“, ale způsobem, který nečeká skutečnou odpověď. Pak ti nechybí samotná otázka, ale pocit, že odpověď někoho opravdu zajímá.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3735",
+        "text": "Je možné, že lidé kolem tebe mají vlastní starosti a nevšímají si dobře druhých. To může být pravda a zároveň ti jejich nezájem může chybět úplně oprávněně.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3737",
+        "text": "To, že se někdo nezeptal, není důkaz, že tvoje prožívání není důležité. Je to ale možná důležitá informace o tom, kolik skutečného zájmu je v některých tvých vztazích.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3738",
+        "text": "„Jak se máš?“ je jedna z nejčastějších vět na světě a zároveň se dá vyslovit tak, aby odpověď byla prakticky zakázaná. Možná ti nechybí otázka, ale její opravdová verze.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3739",
+        "text": "Kdo konkrétně by ses přál, aby se tě zeptal? Jakmile z „nikdo“ vznikne jméno, možná se ukáže i vztah, ve kterém tě to bolí nejvíc.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3741",
+        "text": "Možná kolem sebe máš lidi, kteří tě mají rádi, ale neumějí dobře iniciovat hlubší kontakt. To je méně romantické než spontánní empatie, ale pořád se s tím dá pracovat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3742",
+        "text": "Kdybys přestal být na chvíli hlavním tazatelem ty, co by se ve vztazích stalo? Ten experiment může ukázat, kdo má vlastní zvědavost a kdo jen pohodlně využívá tu tvoji.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3743",
+        "text": "Je možné, že jsi získal pověst „toho silného“. Silní lidé mají bohužel zvláštní vedlejší efekt: okolí někdy začne předpokládat, že nepotřebují údržbu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3744",
+        "text": "Nemusíš čekat na ideálního člověka s perfektní otázkou. Někdy můžeš začít větou „hele, já bych ti dneska chtěl říct, jak mi je“ a obejít nefunkční čekání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3745",
+        "text": "Pokud ti chybí zájem, není nutné hned dojít k závěru, že jsi lidem lhostejný. Někteří lidé jsou v péči prostě nápadně méně všímaví, než bychom potřebovali.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3746",
+        "text": "Možná stojí za to víc investovat do vztahů, kde se někdo nejen ptá, ale také si pamatuje odpověď. Právě tam bývá pocit „někdo mě opravdu vidí“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3748",
+        "text": "Otázka „jak se máš“ zdegenerovala na pozdrav — lidi se neptají míň, protože jim na druhých nezáleží, ale protože z té věty vyprchal obsah; skutečný zájem dneska vypadá jinak a nenápadněji.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3749",
+        "text": "Nejrychlejší způsob, jak tu otázku uslyšet, je začít ji rozdávat naostro: „Ne, fakt — jak se máš?“ Lidi ji vrací jako pozdrav, jen si ji potřebují znovu osahat.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3750",
+        "text": "Smíš odpovědět po pravdě i na tu zdvořilostní verzi — „popravdě, všelijak“ zastaví v chůzi i člověka, který se ptal jen ze slušnosti; a někdy se z toho stane rozhovor, na který čekáš.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0162",
+    "src_id": "k_022",
+    "text": "Děti už mě nepotřebují a já najednou nevím, co se sebou.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 127,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3872",
+        "text": "Tohle může být zvláštní druh ztráty: dlouho byl velký kus tvého života organizovaný kolem péče a najednou se uvolnil prostor, o který sis možná ani neřekl. Není divu, že místo úlevy může přijít prázdno.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3873",
+        "text": "To, že tě děti potřebují méně prakticky, neznamená, že pro ně přestáváš být důležitý. Jen se mění forma vztahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3874",
+        "text": "Možná ses dlouho ptal hlavně „co potřebují děti?“ a otázka „co chci já?“ zůstala trochu zakrnělá. Není ostuda, že na ni teď nemáš okamžitou odpověď.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3877",
+        "text": "Děti se osamostatňují právě proto, že péče měla svůj účinek. Paradoxně může jejich menší závislost být i výsledkem něčeho, co jsi dělal dobře.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3880",
+        "text": "Je v pořádku truchlit za obdobím, které končí, i když končí správně. Radost z jejich samostatnosti a smutek z vlastní ztráty se vůbec nevylučují.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3875",
+        "text": "Nemusíš ten nový prostor hned zaplnit velkým smyslem, koníčkem nebo životním projektem. Chvíli nevědět, co se sebou, může být normální mezifáze.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3879",
+        "text": "Možná se vztah s dětmi posouvá od „potřebují mě“ k „chtějí mě ve svém životě“. To může být méně intenzivní, ale často mnohem svobodnější druh blízkosti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3881",
+        "text": "Nemusíš teď vědět, jak má vypadat další část života. Stačí začít zkoumat malé věci, které jsou tvoje, ne něčí potřeba vůči tobě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3883",
+        "text": "Zkus si místo „co se sebou budu dělat?“ položit menší otázku: co bych chtěl mít pravidelně ve svém týdnu jen proto, že to dělá dobře mně? Nemusí z toho vzniknout nové životní poslání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3895",
+        "text": "Vychovat děti tak, že tě nepotřebují, byl celou dobu cíl — bolí to jako každá dokončená velká práce; mistr po dostavbě taky chvíli neví, kam s rukama.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3876",
+        "text": "Je možné, že ti nechybí samotná práce kolem dětí, ale pocit každodenní potřebnosti. To je hluboká lidská potřeba a její změna může bolet i tehdy, když jsi na jejich samostatnost pyšný.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3878",
+        "text": "Nemusíš si hledat někoho dalšího, koho budeš zachraňovat, jen abys znovu cítil jasnou roli. Teď může přijít čas zjistit, kdo jsi i mimo službu druhým.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3882",
+        "text": "Rodičovství má zvláštní pracovní smlouvu: když svou práci děláš dobře, klienti tě postupně potřebují méně. Je to jeden z mála oborů, kde úspěch může subjektivně připomínat propouštění.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3884",
+        "text": "Možná tvoje identita dlouho stála na potřebnosti. Pak není divu, že svoboda nejdřív nepůsobí jako svoboda, ale jako ztráta pracovního zařazení.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3885",
+        "text": "Kdyby tě děti potřebovaly stejně intenzivně dalších třicet let, pravděpodobně by sis také stěžoval. Jejich samostatnost je správný vývoj, jen tvoje část toho přechodu může bolet.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3886",
+        "text": "Zkus si všimnout, jaké schopnosti jsi během rodičovství rozvinul a které z nich patří tobě, ne jen rodičovské roli. Péče, trpělivost, organizace nebo humor nezmizely s prázdnějším kalendářem.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3887",
+        "text": "Nemusíš z prázdného prostoru okamžitě udělat produktivní projekt. Po letech služby může být docela legitimní chvíli jen zjišťovat, co tě baví, když nikdo nic nepotřebuje.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3888",
+        "text": "Možná tě děsí otázka „kdo jsem, když nejsem potřeba?“ Zkus ji otočit na „kdo jsem, když už nemusím být pořád k dispozici?“",
+        "source": "k"
+      },
+      {
+        "id": "hl_3889",
+        "text": "Dospělé děti tě mohou potřebovat méně jako servis a víc jako člověka. To je menší role na počet úkolů, ale může být větší na skutečný vztah.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3890",
+        "text": "Pokud celý den nikdo nic nechce, může to nejdřív znít skoro jako ticho po vypnutí stroje. Chvíli trvá, než v tom tichu začne být slyšet něco vlastního.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3891",
+        "text": "Možná není potřeba najít nový důvod, proč být potřebný. Možná je právě teď úkol naučit se být hodnotný i ve chvíli, kdy nic pro nikoho nezařizuješ.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3892",
+        "text": "To „nevím, co se sebou“ není prázdná hlava — je to čistý stůl; poprvé po letech je na něm místo, a prázdný stůl chvíli děsí každého, kdo byl zvyklý na plný.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3893",
+        "text": "Děti se vracejí nejradši tam, kde rodič žije vlastní život — spokojenost je pro ně menší závazek než prázdné hnízdo, které na ně čeká u okna.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3894",
+        "text": "Ta volnost se dá i obrátit: poprvé za dlouhá léta se nemusíš nikoho ptát, co bude k večeři — a tahle věta může znít jako ztráta, nebo jako začátek, podle toho, kdo ji čte.",
+        "source": "n"
+      }
+    ]
+  },
+  {
     "id": "pain_0125",
     "src_id": "h_086",
     "text": "Manžel se mě před svojí mámou nikdy nezastane.",
     "smer": "na blízké",
     "oblast": "tchán/tchyně / partner",
     "tier": "free",
-    "sort_order": 125,
+    "sort_order": 128,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -16535,265 +16886,133 @@
     ]
   },
   {
-    "id": "pain_0126",
-    "src_id": "h_087",
-    "text": "Soused zase celou sobotu seká, vrtá a řeže — a když něco řeknu, jsem já ten blbec.",
+    "id": "pain_0155",
+    "src_id": "k_008",
+    "text": "Partner má čas na kolo, na kluky i na mobil, jen na mě ne.",
     "smer": "na blízké",
-    "oblast": "sousedi",
+    "oblast": null,
     "tier": "free",
-    "sort_order": 126,
+    "sort_order": 129,
     "added_at": "2026-09-11",
     "hlasky": [
       {
-        "id": "hl_3008",
-        "text": "Je pochopitelné, že tě hluk celý den štve, zvlášť když je to opakovaně. To, že se ozveš, z tebe automaticky nedělá potížistu.",
+        "id": "hl_3704",
+        "text": "Tohle bolí právě proto, že čas očividně existuje — jen se ti zdá, že pro tebe v něm není místo. Není divu, že se z nedostatku času rychle stane pocit nedostatku důležitosti.",
         "source": "k"
       },
       {
-        "id": "hl_3009",
-        "text": "Možná soused má právo něco dělat a ty máš zároveň právo chtít doma chvíli klidu. Tyhle dvě potřeby se nemusí navzájem zrušit.",
+        "id": "hl_3705",
+        "text": "Je možné, že partner svoje aktivity vnímá jako samozřejmou součást života a vůbec mu nedochází, jak vedle nich váš vztah vypadá. To ale neznamená, že se s tím musíš smířit.",
         "source": "k"
       },
       {
-        "id": "hl_3012",
-        "text": "Je možné, že soused netuší, jak moc se hluk přenáší nebo jak dlouho už ho vnímáš. To se dá nejdřív zjistit bez předpokladu, že je mu to jedno.",
+        "id": "hl_3706",
+        "text": "Možná ti nechybí obrovské množství času, ale pocit, že si tě někdy vybere aktivně. Hodina, kterou ti někdo skutečně chce dát, může znamenat víc než celý večer náhodného společného pobytu.",
         "source": "k"
       },
       {
-        "id": "hl_3013",
-        "text": "Nemusíš žádat absolutní ticho, aby byl tvůj požadavek rozumný. I malá dohoda o časech může udělat velký rozdíl.",
+        "id": "hl_3708",
+        "text": "Je fér chtít, aby člověk měl vlastní zájmy a přátele. Je stejně fér chtít, aby vztah nebyl jediná oblast, kterou lze donekonečna odkládat.",
         "source": "k"
       },
       {
-        "id": "hl_3023",
-        "text": "Zkus místo dalšího výbuchu jednu větu: „Nevadí mi, že něco děláš, ale celý den je na mě moc.“ Krátká věta nechává méně prostoru pro přestřelku.",
+        "id": "hl_3710",
+        "text": "Můžeš partnerovi říct ne „nikdy na mě nemáš čas“, ale konkrétně „chybí mi, že spolu nemáme chvíli, kterou si vyhradíme jen pro nás“. Takové sdělení se dá mnohem snáz převést do změny.",
         "source": "k"
       },
       {
-        "id": "hl_3011",
-        "text": "Nemusíš čekat, až budeš úplně vytočený. Klidná domluva před dalším hlučným dnem může mít větší šanci než rozhovor přes rozjetou pilu.",
+        "id": "hl_3715",
+        "text": "Zkus mu říct konkrétní množství a podobu času, které ti chybí. „Jednou týdně večer jen spolu“ se řeší líp než celkové „nikdy na mě nemáš čas“.",
         "source": "k"
       },
       {
-        "id": "hl_3010",
-        "text": "Nejhorší na tom možná není ani vrtačka, ale pocit, že když řekneš něco normálního, ještě skončíš jako viník. To umí naštvat dvojnásob.",
+        "id": "hl_3711",
+        "text": "To, že s někým bydlíš, ještě neznamená, že spolu trávíte vztahový čas. Sdílet gauč a být spolu jsou dvě různé věci.",
         "source": "k"
       },
       {
-        "id": "hl_3026",
-        "text": "Nemusíš mít pravdu ve všem, aby ses směl ozvat kvůli jedné věci, která ti vadí. Slušná hranice nepotřebuje morální převahu.",
+        "id": "hl_3723",
+        "text": "Vztah nepotřebuje být vždycky na prvním místě před vším ostatním. Pokud je ale dlouhodobě až za vším ostatním, není divu, že se v něm začneš cítit sama.",
         "source": "k"
       },
       {
-        "id": "hl_3019",
-        "text": "Zkus si přesně říct, co chceš: méně hodin, pozdější začátek, pauzu přes oběd, nebo informaci předem? Konkrétní požadavek se odmítá i přijímá lépe než „nedělej rámus“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3028",
-        "text": "On má právo vrtat a ty máš právo na klid — dvě práva se prostě přetlačují a nikdo z vás není automaticky blbec; blbec je nanejvýš ten formát, kdy se to řeší přes plot a se zaťatými zuby.",
+        "id": "hl_3725",
+        "text": "Společný čas se v dlouhém vztahu neděje sám — plánovaná schůzka s vlastním partnerem zní neromanticky, ale je to nejromantičtější položka v kalendáři.",
         "source": "n"
       },
       {
-        "id": "hl_3014",
-        "text": "Pokud tě shodí jen proto, že ses ozval, nemusíš jeho reakci přijmout jako důkaz, že jsi přehnaný. Může to být prostě jeho obrana proti nepříjemné zpětné vazbě.",
+        "id": "hl_3721",
+        "text": "Možná partner vůbec nevnímá, že tvoje stížnost není zákaz kola ani kamarádů. Je to žádost, aby ses občas necítila jako poslední položka po vybití baterky.",
         "source": "k"
       },
       {
-        "id": "hl_3015",
-        "text": "Je fér rozlišit jednorázovou rekonstrukci od nekonečného víkendového režimu. Tolerance má jinou podobu, když víš, že něco za týden skončí, a jinou, když nevíš nic.",
+        "id": "hl_3707",
+        "text": "Nemusíš soutěžit s kolem, kamarády ani telefonem o to, kdo je legitimnější. Partnerství má mít vlastní prostor, ne jen čas, který náhodou zůstane po ostatních věcech.",
         "source": "k"
       },
       {
-        "id": "hl_3016",
-        "text": "Možná je potřeba pustit představu, že dobrý soused všechno vydrží. Dobrý soused může být i ten, kdo řekne „hele, tohle už je na mě moc“ bez války.",
+        "id": "hl_3709",
+        "text": "Možná se nejvíc zlobíš na mobil právě proto, že ukazuje, že pár minut volné pozornosti během dne existuje. Jen je automaticky spolyká něco jiného.",
         "source": "k"
       },
       {
-        "id": "hl_3017",
-        "text": "Nemusíš mít se sousedem ideální vztah. Úplně stačí nějaký způsob soužití, ve kterém nemusíš každou sobotu volit mezi tichem a klidem v hlavě.",
+        "id": "hl_3712",
+        "text": "Je možné, že partner netuší, že se cítíš až na posledním místě, protože z jeho pohledu jste přece „pořád spolu“. Právě ten rozdíl mezi fyzickou blízkostí a skutečným kontaktem stojí za pojmenování.",
         "source": "k"
       },
       {
-        "id": "hl_3018",
-        "text": "Když soused šest hodin řeže dřevo a pak je překvapený, že existují i jiné nervové soustavy, je to docela výkon. Nemusíš ale kvůli tomu hned vstupovat do sousedské občanské války.",
+        "id": "hl_3713",
+        "text": "Nemusíš dokazovat, že jsi důležitější než jeho koníčky. Potřebuješ spíš zjistit, jestli je ochotný dát vašemu vztahu reálné místo vedle nich.",
         "source": "k"
       },
       {
-        "id": "hl_3020",
-        "text": "Možná se hádáte o princip, i když by vám oběma stačila praktická dohoda. Principy umějí dělat z vrtačky otázku lidské důstojnosti.",
+        "id": "hl_3714",
+        "text": "Kolo, kluci a mobil mají jednu společnou výhodu: očividně se umějí dostat do jeho kalendáře. Možná vztah potřebuje přestat spoléhat na to, že se do něj nějak vejde sám.",
         "source": "k"
       },
       {
-        "id": "hl_3021",
-        "text": "Kdo přesně z tebe dělá „toho blbce“ — soused, další sousedi, nebo hlavně jeho tón? Čím přesnější odpověď, tím méně budeš bojovat proti celé ulici v hlavě.",
+        "id": "hl_3716",
+        "text": "Kdyby mobil zmizel a partner ten čas věnoval něčemu úplně jinému, bolelo by tě to stejně? Odpověď může ukázat, jestli ti vadí konkrétní konkurence, nebo hlavně pocit, že nejsi volená.",
         "source": "k"
       },
       {
-        "id": "hl_3022",
-        "text": "Je možné, že soused slyší tvoji stížnost jako „nesmíš si doma nic dělat“, i když říkáš jen „potřebuju trochu klidu“. Někdy pomůže rovnou pojmenovat ten rozdíl.",
+        "id": "hl_3717",
+        "text": "Je možné, že kolo a kamarádi jsou pro něj aktivní události, zatímco vztah vnímá jako stabilní kulisu, o kterou se nemusí starat. Právě stabilní věci ale bez péče umějí potichu chátrat.",
         "source": "k"
       },
       {
-        "id": "hl_3024",
-        "text": "Pokud se nic nezmění, může být užitečné přestat pokaždé řešit jeho charakter a začít řešit jen opakující se situaci. Konkrétní problém se zvládá líp než diagnóza souseda.",
+        "id": "hl_3718",
+        "text": "Nemusíš ho nutit vzdát se věcí, které má rád. Smyslem může být zjistit, zda umí vytvořit prostor i pro něco, co má být důležité mezi vámi.",
         "source": "k"
       },
       {
-        "id": "hl_3025",
-        "text": "Sousedé jsou zvláštní společenský experiment: lidé, které sis nevybral, ale sdílíš s nimi stěny, hluk a někdy i nervy. Není divu, že to občas skřípe.",
+        "id": "hl_3719",
+        "text": "„Jsme přece spolu každý večer“ není úplně přesvědčivá odpověď, pokud jeden scrolluje a druhý čeká na kontakt. Nábytek je také celý večer ve stejné místnosti a vztah z toho nevzniká.",
         "source": "k"
       },
       {
-        "id": "hl_3027",
-        "text": "Možná se nikdy neshodnete na tom, co je „normální hluk“. Pak může být praktičtější hledat snesitelný režim než konečný rozsudek, kdo z vás je ten rozumný.",
+        "id": "hl_3720",
+        "text": "Pokud si musíš opakovaně říkat o každou chvíli pozornosti, může být užitečné přestat řešit jednotlivé večery a otevřít téma priority vztahu jako takové.",
         "source": "k"
       },
       {
-        "id": "hl_3029",
-        "text": "Sobotní vrtačka je zvuková kulisa celé téhle země — a v tuhle chvíli u ní skřípe zubama půl republiky, takže nejsi divný, jsi jen slyšitelně obydlený.",
+        "id": "hl_3722",
+        "text": "Zkus sledovat, co udělá poté, co mu to řekneš jasně. Ochota hledat řešení je důležitější informace než dokonalá první reakce.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3724",
+        "text": "Mobil je nejsnazší soupeř na světě — nabízí odpočinek bez námahy; ty nabízíš vztah, a ten námahu chce. Nejde o to být zábavnější než displej, jde o to si čas domluvit najisto.",
         "source": "n"
       },
       {
-        "id": "hl_3030",
-        "text": "Ten nejkrutější moment znáš: nastane ticho, ty se nadechneš, tělo povolí — a cirkulárka nastoupí na druhou směnu, jako by si to celé nazkoušela pro efekt.",
+        "id": "hl_3726",
+        "text": "Pozor na počítadlo v hlavě — od chvíle, kdy začneš jeho hodiny sčítat, prohráváš každý den, i ten hezký.",
         "source": "n"
       },
       {
-        "id": "hl_3031",
-        "text": "Je v tom paradox: mlčíš, abys nebyl za blbce — a přesně tím mlčením si zařizuješ, že se blbcem cítíš každou sobotu znovu.",
-        "source": "n"
-      }
-    ]
-  },
-  {
-    "id": "pain_0127",
-    "src_id": "h_089",
-    "text": "Na fotkách z té akce jsou všichni. Kromě mě — mně nikdo neřekl.",
-    "smer": "na blízké",
-    "oblast": "mikro-bodnutí / přátelé",
-    "tier": "free",
-    "sort_order": 127,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3032",
-        "text": "Tohle umí zabolet překvapivě silně, protože nejde jen o jednu akci, ale o pocit „počítali se všemi, jen ne se mnou“. Ten pocit není přecitlivělost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3033",
-        "text": "Možná tě nikdo záměrně nevyloučil a možná ano; z jedné fotky to zatím nevíš. Je dobré nepřeskočit rovnou k nejhoršímu vysvětlení.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3035",
-        "text": "Někdy pozvání vznikne chaoticky, někdo předpokládá, že dal vědět někdo jiný, a výsledkem je velmi osobně působící přehlédnutí. Dopad může bolet i bez zlého úmyslu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3037",
-        "text": "Pokud jsou to lidé, na kterých ti záleží, může být úplně v pořádku se jednoho z nich zeptat, jak ta akce vznikla. Faktická odpověď může být milosrdnější než deset vlastních teorií.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3043",
-        "text": "Zkus oddělit dvě věty: „nebyl jsem pozvaný“ a „nechtějí mě“. První je fakt, druhá zatím interpretace.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3036",
-        "text": "Nemusíš předstírat, že je ti to jedno, abys vypadal nad věcí. Vyloučení ze skupiny sahá na dost citlivé lidské místo.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3039",
-        "text": "To, že tě někdo nepozval, není automaticky verdikt o tvé hodnotě nebo oblíbenosti. Je to informace o jednom konkrétním pozvání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3053",
-        "text": "Bodne to jak ve školce, když se rozdávaly pozvánky — a není divu: vypadnout z tlupy je pradávný poplach v těle, žádná malichernost.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3045",
-        "text": "Pokud se chceš zeptat, můžeš říct prostě: „Viděl jsem fotky a překvapilo mě, že jsem o tom nevěděl.“ To dává druhé straně šanci něco vysvětlit bez okamžité obžaloby.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3055",
-        "text": "Příště to otoč: svolej akci ty — kdo zve, ten na fotkách nikdy nechybí.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3034",
-        "text": "Je pochopitelné, že se ti v hlavě okamžitě rozjede otázka, co je s tebou špatně. To ale není jediná možná odpověď na to, proč pozvánka nepřišla.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3038",
-        "text": "Možná je to jednorázové přehlédnutí. Pokud se to ale děje opakovaně, stojí za to přestat si namlouvat, že si ničeho nevšímáš.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3040",
-        "text": "Můžeš být zklamaný a zároveň nechat otevřené, co přesně se stalo. Nemusíš si vybírat mezi bolestí a střízlivostí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3041",
-        "text": "Někdy je nejhorší právě nejistota. Krátká otázka může bolet méně než několik dní skládání příběhu z fotek a výrazů obličejů.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3042",
-        "text": "Sociální sítě mají talent doručit člověku pozvánku na akci přesně ve chvíli, kdy už skončila. Technologicky bezchybné, emocionálně poněkud kruté.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3044",
-        "text": "Kdo akci vlastně organizoval a kdo rozhodoval, koho pozvat? Možná se za slovem „všichni“ skrývá mnohem menší okruh lidí a dost obyčejný chaos.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3046",
-        "text": "Je možné, že odpověď bude bolet. Ale jasná bolest bývá někdy snesitelnější než nekonečné „proč asi“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3047",
-        "text": "Když na fotce vidíš deset usměvavých lidí, nevidíš jejich vztahy, domluvy ani kdo se tam ocitl náhodou. Fotka umí z obyčejného večera udělat velmi přesvědčivý klub, do kterého tě nevzali.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3048",
-        "text": "Pokud se ukáže, že tě opravdu vynechali, nemusíš začít dokazovat, že tam patříš. Možná je užitečnější vědět, kam svou energii příště dávat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3049",
-        "text": "Je v pořádku, že tě to bodne i tehdy, když s těmi lidmi nejsi nijak zvlášť blízký. Pocit být vynechaný má vlastní nerv, který nepotřebuje dlouhý životopis vztahu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3050",
-        "text": "Zkus si všimnout, jestli jedna fotografie nezačala přepisovat celý obraz tvých vztahů. Jedna chybějící pozvánka může být důležitá a přitom nemusí vysvětlovat všechno.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3051",
-        "text": "Možná nejde o to přesvědčit se, že je ti to jedno. Stačí zjistit, co se stalo, a podle skutečnosti upravit očekávání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3052",
-        "text": "Hlava z jedné fotky vyrobila celý příběh o tom, že o tebe nikdo nestojí — a to je detektivka postavená na jediné stopě.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3054",
-        "text": "Projíždět cizí fotky a hledat v nich důkazy proti sobě je disciplína, ve které se nedá vyhrát — soudce, žalobce i odsouzený jsi tam ty.",
+        "id": "hl_3727",
+        "text": "Kdyby jeho mobil uměl mluvit, řekl by: „Já ho nemám rád, já ho jen držím.“ Ta výhoda je pořád na tvojí straně.",
         "source": "n"
       }
     ]
@@ -16805,7 +17024,7 @@
     "smer": "na blízké",
     "oblast": "mikro-bodnutí",
     "tier": "free",
-    "sort_order": 128,
+    "sort_order": 130,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -16931,13 +17150,1338 @@
     ]
   },
   {
+    "id": "pain_0127",
+    "src_id": "h_089",
+    "text": "Na fotkách z té akce jsou všichni. Kromě mě — mně nikdo neřekl.",
+    "smer": "na blízké",
+    "oblast": "mikro-bodnutí / přátelé",
+    "tier": "free",
+    "sort_order": 131,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3032",
+        "text": "Tohle umí zabolet překvapivě silně, protože nejde jen o jednu akci, ale o pocit „počítali se všemi, jen ne se mnou“. Ten pocit není přecitlivělost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3033",
+        "text": "Možná tě nikdo záměrně nevyloučil a možná ano; z jedné fotky to zatím nevíš. Je dobré nepřeskočit rovnou k nejhoršímu vysvětlení.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3035",
+        "text": "Někdy pozvání vznikne chaoticky, někdo předpokládá, že dal vědět někdo jiný, a výsledkem je velmi osobně působící přehlédnutí. Dopad může bolet i bez zlého úmyslu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3037",
+        "text": "Pokud jsou to lidé, na kterých ti záleží, může být úplně v pořádku se jednoho z nich zeptat, jak ta akce vznikla. Faktická odpověď může být milosrdnější než deset vlastních teorií.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3043",
+        "text": "Zkus oddělit dvě věty: „nebyl jsem pozvaný“ a „nechtějí mě“. První je fakt, druhá zatím interpretace.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3036",
+        "text": "Nemusíš předstírat, že je ti to jedno, abys vypadal nad věcí. Vyloučení ze skupiny sahá na dost citlivé lidské místo.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3039",
+        "text": "To, že tě někdo nepozval, není automaticky verdikt o tvé hodnotě nebo oblíbenosti. Je to informace o jednom konkrétním pozvání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3053",
+        "text": "Bodne to jak ve školce, když se rozdávaly pozvánky — a není divu: vypadnout z tlupy je pradávný poplach v těle, žádná malichernost.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3045",
+        "text": "Pokud se chceš zeptat, můžeš říct prostě: „Viděl jsem fotky a překvapilo mě, že jsem o tom nevěděl.“ To dává druhé straně šanci něco vysvětlit bez okamžité obžaloby.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3055",
+        "text": "Příště to otoč: svolej akci ty — kdo zve, ten na fotkách nikdy nechybí.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3034",
+        "text": "Je pochopitelné, že se ti v hlavě okamžitě rozjede otázka, co je s tebou špatně. To ale není jediná možná odpověď na to, proč pozvánka nepřišla.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3038",
+        "text": "Možná je to jednorázové přehlédnutí. Pokud se to ale děje opakovaně, stojí za to přestat si namlouvat, že si ničeho nevšímáš.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3040",
+        "text": "Můžeš být zklamaný a zároveň nechat otevřené, co přesně se stalo. Nemusíš si vybírat mezi bolestí a střízlivostí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3041",
+        "text": "Někdy je nejhorší právě nejistota. Krátká otázka může bolet méně než několik dní skládání příběhu z fotek a výrazů obličejů.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3042",
+        "text": "Sociální sítě mají talent doručit člověku pozvánku na akci přesně ve chvíli, kdy už skončila. Technologicky bezchybné, emocionálně poněkud kruté.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3044",
+        "text": "Kdo akci vlastně organizoval a kdo rozhodoval, koho pozvat? Možná se za slovem „všichni“ skrývá mnohem menší okruh lidí a dost obyčejný chaos.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3046",
+        "text": "Je možné, že odpověď bude bolet. Ale jasná bolest bývá někdy snesitelnější než nekonečné „proč asi“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3047",
+        "text": "Když na fotce vidíš deset usměvavých lidí, nevidíš jejich vztahy, domluvy ani kdo se tam ocitl náhodou. Fotka umí z obyčejného večera udělat velmi přesvědčivý klub, do kterého tě nevzali.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3048",
+        "text": "Pokud se ukáže, že tě opravdu vynechali, nemusíš začít dokazovat, že tam patříš. Možná je užitečnější vědět, kam svou energii příště dávat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3049",
+        "text": "Je v pořádku, že tě to bodne i tehdy, když s těmi lidmi nejsi nijak zvlášť blízký. Pocit být vynechaný má vlastní nerv, který nepotřebuje dlouhý životopis vztahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3050",
+        "text": "Zkus si všimnout, jestli jedna fotografie nezačala přepisovat celý obraz tvých vztahů. Jedna chybějící pozvánka může být důležitá a přitom nemusí vysvětlovat všechno.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3051",
+        "text": "Možná nejde o to přesvědčit se, že je ti to jedno. Stačí zjistit, co se stalo, a podle skutečnosti upravit očekávání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3052",
+        "text": "Hlava z jedné fotky vyrobila celý příběh o tom, že o tebe nikdo nestojí — a to je detektivka postavená na jediné stopě.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3054",
+        "text": "Projíždět cizí fotky a hledat v nich důkazy proti sobě je disciplína, ve které se nedá vyhrát — soudce, žalobce i odsouzený jsi tam ty.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0164",
+    "src_id": "k_024",
+    "text": "V neděli večer je v bytě takový ticho, že si pouštím telku jen kvůli zvuku.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 132,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3920",
+        "text": "Nedělní ticho může mít úplně jinou váhu než ticho jindy, zvlášť když připomíná, že kolem tebe právě nikdo není. Pustit si zvuk do bytu je docela pochopitelný způsob, jak ten prostor trochu zlidštit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3921",
+        "text": "Nemusíš se stydět, že ti lidské hlasy v pozadí dělají dobře. Mozek není stavěný na to, aby každou samotu automaticky prožíval jako příjemný klid.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3922",
+        "text": "Možná ti nevadí samotné ticho, ale pocit prázdna, který v něm večer vystoupí do popředí. To je důležitý rozdíl.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3927",
+        "text": "Je fér přiznat si, že ti chybí živá přítomnost druhého člověka. Televize ten nedostatek možná jen na chvíli změkčuje, ale nemusíš předstírat, že ho plně nahrazuje.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3932",
+        "text": "Možná nedělní večer potřebuje vlastní malý rituál, aby nebyl jen čekárnou na pondělí. Něco dobrého k jídlu, krátká procházka nebo konkrétní pořad může dát večeru tvar místo pouhého hluku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3923",
+        "text": "Televize nemusí být problém, pokud ti dává pocit společnosti a zároveň tě neodřízne od všeho ostatního. Někdy je prostě zvuková kulisa malá forma útěchy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3925",
+        "text": "Nemusíš si dokazovat, že umíš být sám tím, že budeš sedět v úplném tichu. Samota není disciplína, ve které se udělují body za absenci rádia.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3935",
+        "text": "Je možné, že ti chybí kontakt, ale nemáš energii ho aktivně hledat. I krátká zpráva nebo telefonát může být někdy živější zvuk než čtyři hodiny televizních dialogů.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3939",
+        "text": "Nemusíš milovat ticho, abys byl psychicky v pořádku. Někteří lidé prostě lépe odpočívají v prostoru, kde je trochu života slyšet.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3940",
+        "text": "Rozhlas nebo podcast je lepší společník než telka — mluví k tobě, ne na tebe; a hlas člověka zahřeje víc než zvuk reklam.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3924",
+        "text": "Je možné, že neděle zesiluje i vědomí konce víkendu a návratu do pracovního týdne. Samota se pak může spojit s další melancholií a působit těžší než jindy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3926",
+        "text": "Možná by ti vedle zvuku pomohlo mít v neděli večer něco malého, co má vlastní rytmus a na co se těšíš. Prázdný čas bývá těžší než čas, který má jemný tvar.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3928",
+        "text": "Ticho někdy dává prostor věcem, které přes týden přehluší povinnosti. Pokud v neděli přichází smutek nebo samota, nemusíš je automaticky zahánět ani jim odevzdat celý večer.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3929",
+        "text": "Byt plný hlasů z televize a byt plný blízkosti nejsou totéž. Přesto je úplně lidské sáhnout po první možnosti, když druhá zrovna není k dispozici.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3930",
+        "text": "Televize puštěná „jen kvůli zvuku“ je vlastně takový nízkonákladový spolubydlící: pořád mluví, nic po tobě nechce a bohužel se nikdy nezeptá, jak se máš.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3931",
+        "text": "Zkus si všimnout, co přesně nastane ve chvíli, kdy televizi nezapneš. Je to nuda, smutek, úzkost, pocit prázdného bytu, nebo něco úplně jiného?",
+        "source": "k"
+      },
+      {
+        "id": "hl_3933",
+        "text": "Není potřeba dělat z ticha duchovní úkol. Pokud ti rádio, podcast nebo televize dělají společnost, klidně je používej vědomě místo pocitu, že „zase utíkáš“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3934",
+        "text": "Kdyby stejný byt byl v úterý večer stejně tichý, bolelo by to stejně? Pokud ne, možná je kus té tíhy specificky nedělní a stojí za to řešit právě ji.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3936",
+        "text": "Samota má zvláštní akustiku: lednička začne znít jako průmyslový stroj a sousedovo spláchnutí jako společenská událost. Není divu, že člověk pustí něco, co připomíná lidskou přítomnost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3937",
+        "text": "Možná se snažíš večer překlenout, místo abys ho opravdu prožil. Zkus si někdy naplánovat jednu jedinou věc, kvůli které bude nedělní večer „něco“, ne jen konec víkendu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3938",
+        "text": "Televize může trochu zmírnit ticho, ale pokud je pod ním dlouhodobě samota, stojí za to ji nazvat pravým jménem. Přesná bolest se obvykle řeší lépe než neurčité „nějak je mi divně“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3941",
+        "text": "Ta neděle možná neměří tvou samotu, ale tvůj týden — když je pátek a sobota plná, nedělní ticho je jen dozvuk; když je prázdný celý týden, říká ti to něco důležitějšího.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3942",
+        "text": "Kdyby ten byt uměl mluvit, řekl by: já nejsem prázdný — já jsem jen tichý; a to jsou dvě různé věci, i když v neděli večer zní stejně.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3943",
+        "text": "Neděle večer je odjakživa hodina bilancí — tíseň nepřichází z ticha, ale z otázek, které v něm začnou být slyšet; a otázky se dají poslouchat i po kouskách, ne všechny naráz.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0166",
+    "src_id": "k_026",
+    "text": "Nemám komu napsat, když se mi něco povede.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 133,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3968",
+        "text": "Tohle je zvláštní druh samoty: radost přijde, ale nemá kam pokračovat. Člověk někdy potřebuje někoho, kdo se s ním na chvíli potěší, aby dobrá zpráva opravdu dosedla.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3969",
+        "text": "Možná ti nechybí publikum ani obdiv, ale jeden člověk, kterému můžeš spontánně napsat „hele, povedlo se mi to“. To je velmi obyčejná a hluboká potřeba.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3972",
+        "text": "Nemusíš své dobré věci zmenšovat jen proto, že je zrovna nikdo neoslaví s tebou. To, co se ti povedlo, neztrácí hodnotu nedostatkem svědků.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3974",
+        "text": "Je fér chtít vedle sebe někoho nejen na těžké chvíle, ale i na ty dobré. Blízkost není jen záchranná služba pro problémy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3980",
+        "text": "Zkus někdy někomu poslat malou dobrou zprávu bez velkého vysvětlování. Jeho reakce ti může ukázat, zda ve vztahu existuje víc prostoru pro sdílení, než sis myslel.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3970",
+        "text": "Úspěch bývá osamělejší, když ho člověk nemá s kým sdílet. Nemusíš si proto vyčítat, že samotné „měl bych mít radost“ někdy nestačí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3975",
+        "text": "Pokud si zatím nemáš komu napsat, můžeš si ten okamžik aspoň vědomě zaznamenat pro sebe místo rychlého přeskočení dál. Radost si zaslouží trochu místa, i když je právě bez společnosti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3976",
+        "text": "Možná se některé vztahy dají prohloubit právě tím, že začneš sdílet i malé dobré věci, nejen praktické zprávy. Blízkost někdy vzniká z opakovaných drobných otevření.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3979",
+        "text": "Kdo by byl první člověk, kterému bys chtěl psát, kdyby ses nebál, že ho to nebude zajímat? Možná je mezi „nemám komu“ a „netroufám si komu“ důležitý rozdíl.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3989",
+        "text": "„Nemám komu“ někdy znamená „nemám jistotu, že to koho zajímá“ — a to je jiná věta; lidi dobré zprávy většinou potěší, jen je nikdo neposílá, protože se každý bojí, že se vytahuje.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3971",
+        "text": "Je možné, že kolem sebe lidi máš, ale necítíš s nimi takovou blízkost, aby ses chtěl pochlubit něčím důležitým. Pak nejde jen o počet kontaktů, ale o kvalitu spojení.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3973",
+        "text": "Možná tě právě úspěch upozorňuje na něco, co se při běžném dni tolik neozve: chybí ti vztah, ve kterém je přirozené sdílet radost. To je cenná informace, ne důkaz selhání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3977",
+        "text": "Nemusíš se spokojit s představou, že radost je čistě soukromá záležitost. Touha po člověku, který řekne „to je skvělý, mám radost s tebou“, je naprosto legitimní.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3978",
+        "text": "Telefon může být plný kontaktů a stejně v něm nemusí být jediné jméno pro zprávu „juchů“. Počet uložených čísel je v tomhle směru dost mizerná statistika blízkosti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3981",
+        "text": "Možná sis zvykl ozývat se lidem hlavně tehdy, když je k tomu důvod, plán nebo problém. Radost může být docela hezký důvod k tomu naučit vztahy jiný jazyk.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3982",
+        "text": "Kdyby sis mohl vybrat, co přesně od druhého potřebuješ — gratulaci, nadšení, otázku, nebo jen „mám z tebe radost“? Přesnější touha se hledá snáz než neurčité „někdo“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3983",
+        "text": "Je možné, že tvoje okolí vůbec neví, že potřebuješ sdílet úspěchy. Někteří lidé jsou ochotní slavit s tebou, jen nedostanou vstupenku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3984",
+        "text": "Radost bez svědka někdy působí skoro nedokončeně, ale pořád je to radost. Nemusíš jí dát storno jen proto, že momentálně chybí adresát.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3985",
+        "text": "Možná máš kolem sebe vztahy, které drží hlavně zvyky a logistika, ne skutečná zvědavost jeden na druhého. Pak je pochopitelné, že dobrá zpráva nemá přirozené místo přistání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3986",
+        "text": "Pokud ti chybí člověk pro dobré zprávy, není nutné hned hledat nejlepšího přítele na celý život. Jeden vztah může začít růst i tím, že mu dáš trochu víc skutečného obsahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3987",
+        "text": "Úspěch se nemusí změnit v tiskovou konferenci, aby měl smysl. Ale člověk, který se umí radovat s tebou bez závisti a bez převádění řeči na sebe, je opravdu cenná věc.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3988",
+        "text": "Zkus to otočit: začni být ty ten, komu ostatní píšou, když se jim něco povede — kdo fandí druhým, kolem toho se publikum nastěhuje samo.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3990",
+        "text": "Kdyby ta neodeslaná zpráva uměla mluvit, řekla by: nenech mě v konceptech — i kdybys mě poslal(a) člověku, se kterým sis rok nepsal(a); dobré zprávy jsou nejlepší záminka, jak oživit staré kontakty.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3991",
+        "text": "Všimni si, že ta věta říká i něco hezkého: věci se ti dějí, daří se ti — polovina zprávy je dobrá; teď už jen doručit tu druhou.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0168",
+    "src_id": "k_055",
+    "text": "Přijedu domů k rodičům a připadám si tam jak na návštěvě u cizích lidí.",
+    "smer": "na blízké",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 134,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_4016",
+        "text": "To může být velmi zvláštní bolest: místo, které bývalo samozřejmě tvoje, pořád vypadá povědomě, ale pocit domova se z něj vytratil. Člověk pak může truchlit za něčím, co fyzicky pořád stojí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4017",
+        "text": "Je možné, že ses změnil ty, rodiče i způsob, jak spolu žijete. Blízkost z minulosti se nemusí automaticky zachovat jen proto, že sdílíte rodinu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4019",
+        "text": "Dospělost často promění rodičovský dům z vlastního prostoru na prostor rodičů, ve kterém už jsi host. To může být normální změna a přesto trochu bolet.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4025",
+        "text": "Možná stojí za to poznávat rodiče znovu jako dnešní lidi, ne jen jako postavy z dětství. Někdy právě tam začíná jiný, dospělejší druh vztahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4037",
+        "text": "S rodiči se nejlíp mluví bokem, ne čelem — u vaření, na zahradě, v autě; společná činnost rozpouští rozpaky spolehlivěji než sezení proti sobě s otázkou „tak co je nového“.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4018",
+        "text": "Možná tě nejvíc zasahuje kontrast mezi slovem „domů“ a tím, jak se tam skutečně cítíš. Není povinnost cítit se doma někde jen proto, že jsi tam vyrůstal.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4021",
+        "text": "Nemusíš při každé návštěvě vyrábět velkou rodinnou blízkost. Někdy stačí hledat jeden skutečný rozhovor místo několika hodin společenského provozu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4022",
+        "text": "Možná se u rodičů automaticky vracíš do staré verze sebe sama, která už ti nesedí. I to může vytvářet pocit, že tam vlastně nejsi úplně ty.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4030",
+        "text": "Zkus se jednou zeptat rodiče na něco, na co ses ho nikdy jako dítě neptal. Nový rozhovor může někdy vytvořit víc blízkosti než další kolo známých rodinných témat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4038",
+        "text": "Zkus se rodičů zeptat na jejich mládí — na dobu, kdy byli jako ty teď; často se v tu chvíli poprvé potkáš s nimi jako s lidmi, a lidé si cizí nepřipadají tak snadno jako role.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4020",
+        "text": "Je možné, že mezi vámi chybí současná témata a žijete hlavně ze starých rolí a vzpomínek. Pak se můžete dobře znát historicky a přesto si být dnes překvapivě cizí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4023",
+        "text": "Je fér být smutný, pokud se vztah s rodiči změnil způsobem, který sis nepřál. Rodinná příslušnost sama o sobě nezaručuje pocit blízkosti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4024",
+        "text": "Nemusíš se nutit označovat jejich dům za svůj domov. Domov se v dospělosti může přesunout jinam, aniž tím popíráš vlastní minulost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4026",
+        "text": "Vrátit se „domů“ a současně se ptát, kam si můžeš položit hrnek, je docela přesný symbol toho, jak zvláštní umí dospělá návštěva rodičů být.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4027",
+        "text": "Zkus si všimnout, co konkrétně vytváří cizotu: o čem se bavíte, jak se k tobě chovají, jak se chováš ty, nebo samotný fakt, že už tam nežiješ? Každá odpověď znamená něco jiného.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4028",
+        "text": "Možná čekáš pocit domova z doby, kdy jsi tam měl pokoj, denní rytmus a vlastní samozřejmé místo. Ten pocit se nedá vždycky vrátit návštěvou na víkend.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4029",
+        "text": "Je možné, že rodiče pořád mluví s tvou starou verzí, zatímco ty přicházíš jako někdo, koho vlastně ještě pořádně nepoznali. Rodinná aktualizace softwaru bývá překvapivě pomalá.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4031",
+        "text": "Pokud se tam cítíš jako host, nemusí to být jen špatně. Možná je to i známka, že sis mezitím vytvořil vlastní život a vlastní centrum.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4032",
+        "text": "Kdyby ses u rodičů cítil úplně stejně jako v patnácti, bylo by to vlastně také trochu podezřelé. Některá cizota je cena za to, že ses stal samostatným člověkem.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4033",
+        "text": "Je možné, že mezi vámi skutečně vznikla vzdálenost, kterou samotné příbuzenství nepřemostí. Pak má větší smysl budovat kontakt vědomě než čekat, že se automaticky zapne při překročení prahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4034",
+        "text": "Možná ti chybí hlavně pocit, že tam pořád máš svoje místo. To se někdy dá říct mnohem přímočařeji než obecné „už to není jako dřív“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4035",
+        "text": "Rodičovský dům může přestat být tvým domovem a přitom v něm mohou zůstat lidé, se kterými stojí za to hledat nový vztah. Ty dvě věci se nemusí vracet společně.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4036",
+        "text": "Zkus tam příště přijet jako dospělý host, ne jako bývalé dítě — přivez jídlo, navrhni výlet, zeptej se na věci, na které se ptají dospělí; role se mění tím, že ji někdo první zahraje jinak.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4039",
+        "text": "Návštěva to je — a to není prohra, to je nová přesnost: dospělé dítě je host, který zná cestu do spíže; hostem být smíš, cizím nemusíš.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0172",
+    "src_id": "k_223",
+    "text": "Hypotéka, práce, děti — mám pocit, že už nikdy nebudu moct nic změnit.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 135,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_4112",
+        "text": "Tohle může opravdu působit jako sevření, protože všechny ty věci jsou reálné závazky a nejdou prostě vypnout. Není divu, že vedle nich svoboda začne vypadat hodně malá.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4113",
+        "text": "„Nemůžu změnit nic“ může být pocit vzniklý z toho, že nemůžeš změnit všechno najednou. Mezi úplnou revolucí a nulovou volbou ale bývá dost prostoru.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4114",
+        "text": "Možná tě nedusí samotné děti, práce ani hypotéka, ale součet všech povinností bez místa, které by působilo opravdu tvoje. To je jiný problém než touha všechno opustit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4118",
+        "text": "Možná si představuješ změnu jen jako radikální řez, a proto vypadá nereálně. Menší přestavba života může být méně dramatická a přesto velmi významná.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4132",
+        "text": "To, že to celé utáhneš — hypotéku, práci, děti — je mimochodem výkon, který si sám (sama) nikdy nepochválíš; tak to udělám za tebe: klobouk dolů.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4120",
+        "text": "Nemusíš už teď vědět, co přesně chceš změnit. První krok může být jen rozeznat, která část života tě svírá nejvíc a která je naopak v pořádku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4123",
+        "text": "Zkus otázku „co můžu změnit?“ zmenšit na „co nemusí být za půl roku stejné jako dnes?“ Budoucnost na půl roku je podstatně méně děsivá než doživotní smlouva.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4125",
+        "text": "Kdyby hypotéka zůstala, děti zůstaly a změnit šla jen jedna věc, která by ti nejvíc ulevila? Jedna páka bývá praktičtější než snaha zvednout celý dům.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4129",
+        "text": "Možná nemůžeš udělat velkou změnu rychle, ale můžeš začít připravovat podmínky pro změnu pomalu. Rozdíl mezi „teď ne“ a „nikdy“ je obrovský.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4127",
+        "text": "Děti potřebují rodiče, ne nutně rodiče, který už nikdy nic vlastního nezmění. Péče o ně a péče o vlastní život nemusí být protichůdné projekty.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4115",
+        "text": "Nemusíš mít možnost odjet zítra na druhý konec světa, aby v životě existovala svoboda. Někdy začíná u mnohem menších rozhodnutí, která nejsou předem přidělená.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4116",
+        "text": "Je možné, že některé velké změny jsou teď skutečně obtížné nebo drahé. To ale pořád není totéž jako nemožnost měnit směr postupně.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4117",
+        "text": "Závazek nemusí znamenat doživotní rozsudek. Hypotéky, práce i rodinné uspořádání mají nějaké podmínky, ale nejsou to přírodní zákony.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4119",
+        "text": "Je fér přiznat si, že některé volby z minulosti dnes omezují tvoje možnosti. Dospělá svoboda často není bez omezení, ale schopnost vybírat uvnitř nich.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4121",
+        "text": "Pocit pasti stojí za pozornost právě proto, že člověk v něm snadno přestane hledat i ty dveře, které opravdu existují.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4122",
+        "text": "Když na sebe naskládáš hypotéku, práci a děti do jedné věty, zní to skoro jako tři ocelové tyče přes dveře. Každá z nich je ale jiný závazek a každá se mění jiným způsobem.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4124",
+        "text": "Možná si svobodu představuješ jako stav bez závazků. Jenže člověk může mít závazky a pořád rozhodovat o práci, vztazích, čase, prioritách nebo způsobu, jak je naplňuje.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4126",
+        "text": "Je možné, že máš pocit povinnosti zachovat úplně všechny parametry současného života, protože „tak se to přece dělá“. Některé z těch zdí mohou být společenský zvyk, ne skutečná nutnost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4128",
+        "text": "Hypotéka je finanční smlouva, ne slib, že do konce splatnosti budeš stejný člověk. Banka má nárok na splátku, ne na tvoji identitu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4130",
+        "text": "Pocit pasti někdy vzniká také tím, že všechny možné následky změny vidíš velmi ostře a následky nezměněného života skoro vůbec. I setrvání je volba s cenou.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4131",
+        "text": "Nemusíš převrátit stůl, aby ses přestal cítit jako jeho inventář. Občas stačí nejdřív zjistit, kterou jednu věc už dál nechceš automaticky přijímat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4133",
+        "text": "Rozlož si to: hypotéka je smlouva, ne pouto na duši — dá se refinancovat, byt se dá i prodat; práce se dá změnit i se závazky, lidi to dělají; děti jsou jediná položka bez výpovědní lhůty — a zrovna ta je ta, kterou bys nevypověděl(a) stejně.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4134",
+        "text": "Změna se závazky nevypadá jako skok, ale jako pomalá výhybka — kurz po večerech, ušetřená rezerva, rozhovor s partnerem o přerozdělení; vlak nezastavíš, ale přehodit ho na jinou kolej jde i za jízdy.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4135",
+        "text": "Kdyby ta hypotéka uměla mluvit, řekla by: já jsem sedmnáct řádků v bance, ne mříž — z té klece, co cítíš, jsem postavila jen zdi; strop sis tam domyslel(a) sám (sama).",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0157",
+    "src_id": "k_012",
+    "text": "Já si snad tu smůlu fakt přitahuju.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 136,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3752",
+        "text": "Když se několik nepříjemných věcí sejde za sebou, snadno to přestane vypadat jako náhoda a začne to působit skoro osobně. Mozek je velmi dobrý ve hledání vzorce i tam, kde může být jen série blbých okolností.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3753",
+        "text": "To, že máš smolné období, ještě neznamená, že jsi jeho příčina. „Děje se mi hodně špatných věcí“ a „nějak je přitahuju“ jsou dvě různé věty.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3755",
+        "text": "Je užitečné oddělit věci, které jsi mohl ovlivnit, od těch, které přišly úplně zvenčí. Jinak si snadno vezmeš na účet i počasí, poruchu auta a cizí chování.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3757",
+        "text": "Nemusíš se přesvědčovat, že máš vlastně štěstí, když se ti teď opravdu nedaří. Stačí nepřidávat k reálným potížím ještě obvinění, že je nějak vyrábíš svou existencí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3761",
+        "text": "Nemusíš z každého průšvihu vyrábět lekci o sobě. Některé věci se prostě stanou a člověk je může jen přežít, opravit nebo nechat odeznít.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3754",
+        "text": "Možná některé opakující se problémy opravdu souvisejí s tvými rozhodnutími. To ale není mystická smůla — a právě proto se s tím dá něco dělat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3758",
+        "text": "Možná tě víc děsí pocit nepředvídatelnosti než samotná smůla. Představa „přitahuju si to“ je paradoxně někdy snesitelnější než přiznat, že část života prostě nemáme pod kontrolou.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3759",
+        "text": "Jedna série nepříjemností nemá schopnost předpovídat další kapitolu. Špatné období může být přesně jen obdobím.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3768",
+        "text": "Je možné mít špatnou sérii bez hlubšího významu. Vesmír někdy jen rozhází kostky mizerně a neposílá k tomu osobní vzkaz.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3775",
+        "text": "Starý rybář by řekl: někdy nebere týden a pak bere tři dny v kuse — a ryby o tobě přitom nevědí vůbec nic.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3756",
+        "text": "Když člověk čeká další průšvih, začne si ho také víc všímat. Dobré a neutrální věci pak snadno vypadají jako bezvýznamné mezery mezi katastrofami.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3760",
+        "text": "Pokud se ti opakuje stejný typ problému, má smysl hledat konkrétní společný jmenovatel. Pokud jsou pokaždé úplně jiné, možná je opravdu přesnější slovo „smůla“ než „moje chyba“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3762",
+        "text": "Pokud bys skutečně přitahoval smůlu, byla by to fascinující fyzikální vlastnost a Nobelovka by možná aspoň trochu vyrovnala bilanci. Pravděpodobnější je bohužel obyčejná náhoda a pár opakujících se vzorců.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3763",
+        "text": "Zkus si posledních několik „smolných“ událostí rozdělit na náhodu, vlastní rozhodnutí a chování druhých. Možná zjistíš, že tvoje osobní magnetické pole má podstatně menší výkon, než sis myslel.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3764",
+        "text": "Mozek nerad přijímá náhodu, protože z ní nejde vyrobit kontrola. „Já to přitahuju“ je nepříjemná teorie, ale aspoň dává chaosu autora.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3765",
+        "text": "Když se ti tři věci pokazí za týden, čtvrtá se nezačne řídit předchozími výsledky. Náhoda nemá paměť ani smysl pro dramatickou dramaturgii.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3766",
+        "text": "Možná říkáš „mám smůlu“ u věcí, kde ve skutečnosti opakuješ stejnou volbu. To není důvod se seřvat; je to naopak dobrá zpráva, protože volbu lze změnit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3767",
+        "text": "Zkus si chvíli zapisovat i věci, které dopadly normálně nebo dobře. Ne jako pozitivní deníček, ale jako protiváhu výběrové paměti, která miluje důkazy pro velký smolný příběh.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3769",
+        "text": "Pokud tě smůla nutí být pořád ve střehu, vrať otázku z „co se zase pokazí?“ na „co konkrétně teď můžu ovlivnit?“ To je menší území, ale skutečně tvoje.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3770",
+        "text": "„Vždycky se mi něco stane“ často přeskočí všechny dny, kdy se nestalo vůbec nic. Nuda má bohužel mizernou paměťovou reklamu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3771",
+        "text": "Nemusíš vyřešit, jestli jsi smolař. Stačí u příštího problému zjistit, jestli je v něm něco k poučení, nebo jestli si zaslouží pouze stručné „no tak tohle bylo fakt na hovno“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3772",
+        "text": "Kdyby sis vedl(a) deník smůly i štěstí se stejnou pečlivostí, sloupec štěstí by nejspíš vyhrál — jen se o něm nemluví u piva, protože je to špatná historka.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3773",
+        "text": "Smolař je nejvděčnější role v každé hospodě — historky o smůle mají úspěch, historky o klidném úterý ne; jen pozor, ať se ti z historky nestane občanka.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3774",
+        "text": "Kdyby smůla fakt fungovala jako magnet, pojišťovny by měly kolonku „smolař“ a účtovaly by ti víc — nemají ji, protože ani lidi, co počítají riziko za peníze, na přitahování smůly nevěří.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0170",
+    "src_id": "k_131",
+    "text": "V neděli večer mi začne být těžko jen z toho, že zítra je pondělí.",
+    "smer": "na sebe",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 137,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_4064",
+        "text": "Tohle je nepříjemné, protože kus pondělí ti pak začne ukusovat už neděli. Člověk ještě má volno, ale hlava už ho pomalu stěhuje do zítřka.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4065",
+        "text": "Je možné, že ti nevadí pondělí jako takové, ale něco konkrétního, co se s návratem do týdne pojí. Přesnější pojmenování bývá užitečnější než boj s celým dnem v kalendáři.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4066",
+        "text": "Nemusíš si vyčítat, že si neumíš „užít neděli“. Když tě čeká náročný začátek týdne, tělo může reagovat předem, i když se ještě objektivně nic neděje.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4068",
+        "text": "Nedělní večer nemusí sloužit jako čekárna na pondělí. Může mít vlastní malý obsah, který má smysl sám o sobě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4084",
+        "text": "Praktický trik: udělej si v pátek před odchodem pořádek — dopiš, co jde, a napiš si první krok na pondělí; nedělní tíseň žere hlavně nedodělky a neznámo, obojí se dá zmenšit předem.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4069",
+        "text": "Je možné, že v hlavě přehráváš celý pracovní týden najednou, i když zítra tě čeká jen první část pondělí. Zmenšit horizont na první konkrétní krok může ubrat kus tíhy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4071",
+        "text": "Možná tě těžký nedělní pocit upozorňuje, že v pracovním týdnu dlouhodobě něco není v pořádku. Nemusí to být jen „blbá nálada“, kterou je potřeba přemoci.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4073",
+        "text": "Pondělí přijde tak jako tak. Nedělní večer mu ale nemusíš platit nájem předem.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4076",
+        "text": "Když hlava v neděli večer řekne „zítra zase celý ten kolotoč“, vrať ji jen k pondělnímu ránu. Celý týden se dnes opravdu nemusí vejít do jedné nervové soustavy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4087",
+        "text": "Všimni si, že pondělní rána málokdy dorovnají nedělní katastrofické scénáře — večer maluje, ráno koná; tvoje pondělky už mnohokrát dopadly líp, než neděle slibovala.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4067",
+        "text": "Možná by stálo za to rozlišit, jestli tě tíží práce, ranní vstávání, přechod z volnosti do povinností, nebo pocit nekonečného opakování. Každá z těch věcí potřebuje trochu jinou odpověď.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4070",
+        "text": "Nemusíš v neděli večer řešit všechny pondělní problémy, které ještě nenastaly. Pokud je něco potřeba připravit, stačí krátce a pak má dnešek právo zase pokračovat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4072",
+        "text": "Je fér chtít, aby práce nezabírala i předvečer v podobě anticipačního stresu. Pokud se to děje pravidelně, stojí za pozornost samotné uspořádání týdne.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4074",
+        "text": "Pondělí má pozoruhodný talent začít už v neděli v šest, aniž by za přesčas zaplatilo jedinou korunu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4075",
+        "text": "Zkus si všimnout přesné chvíle, kdy se nálada zlomí, a jaká myšlenka přijde těsně předtím. Možná objevíš jeden konkrétní spouštěč místo neurčitého „neděle jsou hrozné“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4077",
+        "text": "Možná by pomohlo mít pondělí o jednu malou příjemnou věc lepší, ne celou práci jinou. Mozek se někdy bojí méně dne, ve kterém ho čeká aspoň jeden známý dobrý bod.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4078",
+        "text": "Je možné, že si neděli večer nevědomky necháváš hlavně na přípravu, povinnosti a myšlenky na práci. Pak se z ní časem stane administrativní předsíň pondělí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4079",
+        "text": "Kdyby zítra nebylo pondělí, co bys dnes večer dělal jinak? Možná právě jedna z těch věcí patří zpátky i do skutečné neděle.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4080",
+        "text": "Nedělní úzkost někdy funguje jako nepovedená snaha „připravit se“ na zítřek. Jenže dvě hodiny obav člověka na pondělí obvykle vybaví hůř než dvě hodiny skutečného odpočinku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4081",
+        "text": "Pokud je nejtěžší samotný přechod z volnosti do režimu, může pomoct udělat pondělní ráno co nejméně rozhodovací. Čím míň drobných bitev čeká po probuzení, tím menší monstrum musí nedělní hlava předvídat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4082",
+        "text": "Je možné, že problém není neděle, ale práce, kterou tělo už večer nechce pustit k sobě. Pak má smysl poslouchat zprávu, ne jen umlčovat posla.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4083",
+        "text": "Pondělí je jeden den, ne soudní rozsudek nad dalšími pěti. Kalendář má tendenci být méně dramatický než naše nedělní představivost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4085",
+        "text": "Přesuň těžiště víkendu — když je to nejlepší v neděli večer (dobrá večeře, film, sauna), přestane být neděle rozloučením a začne být vyvrcholením; tíseň nesnáší konkurenci.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4086",
+        "text": "Kdyby neděle uměla mluvit, řekla by: já za to nemůžu — já jsem pořád volný den; to pondělí si mě bere jako rukojmí. Vrať mi můj večer.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0173",
+    "src_id": "k_224",
+    "text": "Nenávidím svou práci, ale nájem se sám nezaplatí — tak zase v pondělí nastoupím.",
+    "smer": "na svět",
+    "oblast": null,
+    "tier": "free",
+    "sort_order": 138,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_4136",
+        "text": "Tohle je tvrdá situace právě proto, že tvoje nechuť nenaráží na nedostatek odvahy, ale na úplně reálné účty. Potřebovat příjem výrazně omezuje, jak romanticky lze odcházet z práce.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4137",
+        "text": "Nemusíš si vyčítat, že v nenáviděné práci zůstáváš, pokud ji teď potřebuješ k živobytí. Opatrnost není zbabělost.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4138",
+        "text": "Zároveň nemusíš z „musím tam v pondělí“ dělat „musím tam být navždy“. Současná nutnost nemusí být doživotní rozhodnutí.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4139",
+        "text": "Možná je užitečné zjistit, co přesně na práci nenávidíš: obsah, lidi, tempo, směny, vedení nebo pocit bezvýchodnosti. Některé části se mění snáz než celé zaměstnání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4141",
+        "text": "Nemusíš dát výpověď zítra, aby ses začal pohybovat pryč. I malé kroky směrem k jiné možnosti mohou změnit pocit, že jsi úplně bez volby.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4143",
+        "text": "Nájem je důvod zůstat, ne důkaz, že musíš mít svou práci rád. Nemusíš svůj praktický kompromis ještě přikrášlovat falešnou vděčností.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4144",
+        "text": "Možná tě nejvíc vysává pocit, že nemáš žádný plán B. I velmi pomalé budování jiné cesty může vrátit kus psychické svobody dřív, než změníš zaměstnavatele.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4147",
+        "text": "Zkus si vedle otázky „můžu odejít?“ položit „co bych potřeboval, abych mohl odejít bezpečněji?“ Druhá otázka vyrábí podmínky místo bezmoci.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4153",
+        "text": "Pokud nemůžeš změnit práci hned, zkus chránit to, co jí nepatří: čas po směně, vlastní energii, vztahy, zájmy nebo myšlenku, že nejsi jen zaměstnanec téhle firmy.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4160",
+        "text": "Nemusíš zítra dávat výpověď, aby se něco hnulo. Stačí jedna maličkost — oprášit životopis, napsat známému, kouknout na jeden inzerát — a z vězně je najednou člověk, který má plán.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4140",
+        "text": "Je fér, pokud práce bere víc než jen osm hodin a začne ti kazit i večery a víkendy. Taková cena stojí za to brát vážně, i když zatím nemůžeš odejít.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4142",
+        "text": "Je možné, že teď opravdu žádná bezpečná alternativa není. Pak má smysl zaměřit se i na to, jak si současnou práci udělat o něco méně ničivou, dokud se něco nezmění.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4145",
+        "text": "Pondělní návrat nemusí znamenat kapitulaci. Může to být prostě způsob, jak si zatím financuješ čas potřebný k hledání něčeho lepšího.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4146",
+        "text": "Nájem má jednu otravnou vlastnost: pronajímatel bývá překvapivě málo dojatý existenciální krizí svého nájemníka. Praktická stránka věci je bohužel skutečná.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4148",
+        "text": "Je možné, že slovo „nenávidím“ skrývá jednu nebo dvě konkrétní věci, které dělají většinu utrpení. Pokud je najdeš, možná existuje změna i bez okamžité výpovědi.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4149",
+        "text": "Kdybys věděl, že za rok pracuješ jinde, co bys začal dělat už teď? Tuhle otázku můžeš použít jako kompas, i když termín vůbec jistý není.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4150",
+        "text": "„Musím v pondělí nastoupit“ je možná pravda. „Nemám vůbec žádnou možnost ovlivnit příštích pět let“ už je mnohem větší tvrzení a zaslouží si přezkoumat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4151",
+        "text": "Nemusíš z každého pracovního dne udělat boj o smysl života. Pokud je teď práce hlavně zdroj peněz, může být dočasně zdravější přestat od ní vyžadovat identitu, naplnění i sebeúctu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4152",
+        "text": "Možná už dlouho čekáš, až budeš mít jistotu, že jiná volba vyjde. Jistota ale u pracovních změn často přijde až po kroku, ne před ním.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4154",
+        "text": "Výplata je silný argument pro pondělní příchod, ale není to manželský slib. Praktická závislost na práci a věrnost práci jsou dvě různé věci.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4155",
+        "text": "Možná teď potřebuješ méně odvahy „všechno zahodit“ a víc trpělivosti vytvořit si únikovou cestu. To bývá méně filmové, ale podstatně použitelnější.",
+        "source": "k"
+      },
+      {
+        "id": "hl_4156",
+        "text": "Zajímavé je, že práci nenávidíš, a přesto tam každé pondělí spolehlivě dorazíš. To není past, to je volba — a kdo volí, může časem zvolit i jinak.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4157",
+        "text": "Nájem se sám nezaplatí, to je pravda. Ale ta věta neříká, že ho musí platit zrovna tahle práce — jen že ho zatím platí ona.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4158",
+        "text": "Tělo by ti možná řeklo: dobře, vydržím to s tebou, ale všímej si, kde mě to tlačí. Zatnutá čelist v neděli večer je zpráva, ne počasí.",
+        "source": "n"
+      },
+      {
+        "id": "hl_4159",
+        "text": "Víkend má taky svá práva — nenech pondělku sežrat ještě sobotu a neděli. Trápit se prací ve chvíli, kdy v ní zrovna nejsi, je přesčas, který ti nikdo neproplatí.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0131",
+    "src_id": "h_093",
+    "text": "Jiné rodiny na dovolené, my zase nikde — a já koukám na jejich fotky a užírám se.",
+    "smer": "na blízké",
+    "oblast": "partner / mikro-bodnutí",
+    "tier": "free",
+    "sort_order": 139,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3128",
+        "text": "Tohle nemusí být malicherná závist. Možná ti ty fotky jen velmi názorně připomínají něco, co bys pro svou rodinu chtěl taky zažívat.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3129",
+        "text": "Cizí dovolená na fotkách je několik hezkých vteřin vybraných z celého života. Porovnávat s nimi svůj běžný rok je pro tvoji náladu dost nevýhodný obchod.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3131",
+        "text": "Je v pořádku přiznat si: „Jo, závidím jim to, protože bych to chtěl taky.“ Závist někdy není charakterová vada, ale docela přesná směrovka k nenaplněnému přání.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3132",
+        "text": "Nemusíš svoji rodinu hodnotit podle toho, jak fotogenicky tráví volno jiné rodiny. Dobré společné chvíle nepotřebují letiště ani moře.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3147",
+        "text": "Dovolená je jeden způsob, jak vystoupit z každodennosti, ne jediný. Pokud ti chybí hlavně pocit, že spolu něco žijete, začít se dá mnohem blíž než na letišti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3149",
+        "text": "Děti si za dvacet let nevybaví, u kterého moře byly, ale přesně si vybaví, jestli doma bývalo veselo — a na to nepotřebuješ ušetřit ani korunu.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3139",
+        "text": "Zkus si při další závisti nepřikazovat „nezáviď“, ale doplnit větu „závidím jim konkrétně…“. Možná zjistíš, že chceš moře, změnu prostředí, společný čas, nebo jen něco, na co se těšit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3136",
+        "text": "Pokud tě sledování cizích dovolených pravidelně užírá, nemusíš se tomu dál vystavovat ve jménu informovanosti. Některé podněty je úplně legitimní prostě omezit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3144",
+        "text": "Pokud vám brání peníze, čas nebo jiné okolnosti, je fér být z toho naštvaný. „Nemůžeme teď“ ale není totéž jako „náš život stojí za houby“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3150",
+        "text": "Fotka z dovolené jsou tři vteřiny z deseti dnů — hádka před odjezdem, dítě zvracející v autě ani nervy z útraty se nefotí.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3130",
+        "text": "Možná tě netrápí samotné cestování, ale pocit, že ostatní spolu něco prožívají a váš rodinný život stojí na místě. Pak stojí za to řešit právě zážitky, ne nutně dovolenou.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3133",
+        "text": "Pokud vám dovolená skutečně chybí, není potřeba se přesvědčovat, že je zbytečná. Můžeš uznat, že po ní toužíš, a teprve potom řešit, co je ve vašich možnostech.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3134",
+        "text": "Možná si při pohledu na fotky domýšlíš i atmosféru, kterou na nich nevidíš. Usměvavá rodina před památkou mohla deset minut předtím zuřivě hledat ztracené dítě a nabíječku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3135",
+        "text": "Není nic špatného na tom chtít svým dětem nebo partnerovi dopřát něco hezkého. Jen pozor, aby se z cizích fotografií nestal důkaz, že váš vlastní život je nedostatečný.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3137",
+        "text": "Možná není potřeba dohnat ostatní rodiny. Stačí se zeptat, co byste chtěli zažít vy, kdyby se nikdo neměl dozvědět, kde jste byli a jak to vypadalo na fotce.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3138",
+        "text": "Sociální sítě mají zvláštní cestovní kancelář: ostatním vystaví katalog nejhezčích okamžiků a tobě k němu zdarma přibalí pocit, že žiješ blbě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3140",
+        "text": "„My zase nikde“ zní jako rozsudek nad celým rokem. Možná je užitečnější zmenšit otázku na „co hezkého můžeme společně udělat během příštího měsíce?“",
+        "source": "k"
+      },
+      {
+        "id": "hl_3141",
+        "text": "Kdyby z dovolených nesměla vzniknout jediná fotografie, po jaké bys pořád toužil? Tím se docela rychle oddělí skutečné přání od soutěže s cizím obrazem života.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3142",
+        "text": "Je možné, že některé rodiny opravdu cestují víc a zažívají díky tomu věci, které vám chybějí. Nemusíš tu realitu popírat; jen z ní nemusíš vyrábět pořadí šťastných rodin.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3143",
+        "text": "Zkus si všimnout, kolikrát vidíš jejich dovolenou a kolikrát jejich obyčejné úterý s prádlem, hádkou a bolavým zubem. Vstupní data pro porovnání jsou poněkud zmanipulovaná.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3145",
+        "text": "Možná nepotřebuješ přestat koukat na cizí fotky, ale přestat je používat jako hodnoticí komisi vlastní rodiny. Instagram opravdu nemá akreditaci na posuzování kvality života.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3146",
+        "text": "Závist může být užitečná, dokud říká „tohle bych chtěl“. Začne tě žrát ve chvíli, kdy pokračuje „a proto je se mnou nebo s námi něco špatně“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3148",
+        "text": "„Nikde“ není místo na mapě — letos jste byli doma, na zahradě, u babičky, v parku, a nic z toho se nepočítá jen proto, že to nemá letištní razítko.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3151",
+        "text": "Je v tom docela vtipný paradox: čas, který prosedíš u fotek cizí rodiny, je přesně ten čas, který by šel prožít s tou svojí.",
+        "source": "n"
+      }
+    ]
+  },
+  {
+    "id": "pain_0126",
+    "src_id": "h_087",
+    "text": "Soused zase celou sobotu seká, vrtá a řeže — a když něco řeknu, jsem já ten blbec.",
+    "smer": "na blízké",
+    "oblast": "sousedi",
+    "tier": "free",
+    "sort_order": 140,
+    "added_at": "2026-09-11",
+    "hlasky": [
+      {
+        "id": "hl_3008",
+        "text": "Je pochopitelné, že tě hluk celý den štve, zvlášť když je to opakovaně. To, že se ozveš, z tebe automaticky nedělá potížistu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3009",
+        "text": "Možná soused má právo něco dělat a ty máš zároveň právo chtít doma chvíli klidu. Tyhle dvě potřeby se nemusí navzájem zrušit.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3012",
+        "text": "Je možné, že soused netuší, jak moc se hluk přenáší nebo jak dlouho už ho vnímáš. To se dá nejdřív zjistit bez předpokladu, že je mu to jedno.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3013",
+        "text": "Nemusíš žádat absolutní ticho, aby byl tvůj požadavek rozumný. I malá dohoda o časech může udělat velký rozdíl.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3023",
+        "text": "Zkus místo dalšího výbuchu jednu větu: „Nevadí mi, že něco děláš, ale celý den je na mě moc.“ Krátká věta nechává méně prostoru pro přestřelku.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3011",
+        "text": "Nemusíš čekat, až budeš úplně vytočený. Klidná domluva před dalším hlučným dnem může mít větší šanci než rozhovor přes rozjetou pilu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3010",
+        "text": "Nejhorší na tom možná není ani vrtačka, ale pocit, že když řekneš něco normálního, ještě skončíš jako viník. To umí naštvat dvojnásob.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3026",
+        "text": "Nemusíš mít pravdu ve všem, aby ses směl ozvat kvůli jedné věci, která ti vadí. Slušná hranice nepotřebuje morální převahu.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3019",
+        "text": "Zkus si přesně říct, co chceš: méně hodin, pozdější začátek, pauzu přes oběd, nebo informaci předem? Konkrétní požadavek se odmítá i přijímá lépe než „nedělej rámus“.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3028",
+        "text": "On má právo vrtat a ty máš právo na klid — dvě práva se prostě přetlačují a nikdo z vás není automaticky blbec; blbec je nanejvýš ten formát, kdy se to řeší přes plot a se zaťatými zuby.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3014",
+        "text": "Pokud tě shodí jen proto, že ses ozval, nemusíš jeho reakci přijmout jako důkaz, že jsi přehnaný. Může to být prostě jeho obrana proti nepříjemné zpětné vazbě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3015",
+        "text": "Je fér rozlišit jednorázovou rekonstrukci od nekonečného víkendového režimu. Tolerance má jinou podobu, když víš, že něco za týden skončí, a jinou, když nevíš nic.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3016",
+        "text": "Možná je potřeba pustit představu, že dobrý soused všechno vydrží. Dobrý soused může být i ten, kdo řekne „hele, tohle už je na mě moc“ bez války.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3017",
+        "text": "Nemusíš mít se sousedem ideální vztah. Úplně stačí nějaký způsob soužití, ve kterém nemusíš každou sobotu volit mezi tichem a klidem v hlavě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3018",
+        "text": "Když soused šest hodin řeže dřevo a pak je překvapený, že existují i jiné nervové soustavy, je to docela výkon. Nemusíš ale kvůli tomu hned vstupovat do sousedské občanské války.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3020",
+        "text": "Možná se hádáte o princip, i když by vám oběma stačila praktická dohoda. Principy umějí dělat z vrtačky otázku lidské důstojnosti.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3021",
+        "text": "Kdo přesně z tebe dělá „toho blbce“ — soused, další sousedi, nebo hlavně jeho tón? Čím přesnější odpověď, tím méně budeš bojovat proti celé ulici v hlavě.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3022",
+        "text": "Je možné, že soused slyší tvoji stížnost jako „nesmíš si doma nic dělat“, i když říkáš jen „potřebuju trochu klidu“. Někdy pomůže rovnou pojmenovat ten rozdíl.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3024",
+        "text": "Pokud se nic nezmění, může být užitečné přestat pokaždé řešit jeho charakter a začít řešit jen opakující se situaci. Konkrétní problém se zvládá líp než diagnóza souseda.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3025",
+        "text": "Sousedé jsou zvláštní společenský experiment: lidé, které sis nevybral, ale sdílíš s nimi stěny, hluk a někdy i nervy. Není divu, že to občas skřípe.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3027",
+        "text": "Možná se nikdy neshodnete na tom, co je „normální hluk“. Pak může být praktičtější hledat snesitelný režim než konečný rozsudek, kdo z vás je ten rozumný.",
+        "source": "k"
+      },
+      {
+        "id": "hl_3029",
+        "text": "Sobotní vrtačka je zvuková kulisa celé téhle země — a v tuhle chvíli u ní skřípe zubama půl republiky, takže nejsi divný, jsi jen slyšitelně obydlený.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3030",
+        "text": "Ten nejkrutější moment znáš: nastane ticho, ty se nadechneš, tělo povolí — a cirkulárka nastoupí na druhou směnu, jako by si to celé nazkoušela pro efekt.",
+        "source": "n"
+      },
+      {
+        "id": "hl_3031",
+        "text": "Je v tom paradox: mlčíš, abys nebyl za blbce — a přesně tím mlčením si zařizuješ, že se blbcem cítíš každou sobotu znovu.",
+        "source": "n"
+      }
+    ]
+  },
+  {
     "id": "pain_0129",
     "src_id": "h_091",
     "text": "Zase mi to zrušila hodinu předem.",
     "smer": "na blízké",
     "oblast": "mikro-bodnutí / přátelé",
     "tier": "free",
-    "sort_order": 129,
+    "sort_order": 141,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17069,7 +18613,7 @@
     "smer": "na blízké",
     "oblast": "mikro-bodnutí / přátelé",
     "tier": "free",
-    "sort_order": 130,
+    "sort_order": 142,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17195,145 +18739,13 @@
     ]
   },
   {
-    "id": "pain_0131",
-    "src_id": "h_093",
-    "text": "Jiné rodiny na dovolené, my zase nikde — a já koukám na jejich fotky a užírám se.",
-    "smer": "na blízké",
-    "oblast": "partner / mikro-bodnutí",
-    "tier": "free",
-    "sort_order": 131,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3128",
-        "text": "Tohle nemusí být malicherná závist. Možná ti ty fotky jen velmi názorně připomínají něco, co bys pro svou rodinu chtěl taky zažívat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3129",
-        "text": "Cizí dovolená na fotkách je několik hezkých vteřin vybraných z celého života. Porovnávat s nimi svůj běžný rok je pro tvoji náladu dost nevýhodný obchod.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3131",
-        "text": "Je v pořádku přiznat si: „Jo, závidím jim to, protože bych to chtěl taky.“ Závist někdy není charakterová vada, ale docela přesná směrovka k nenaplněnému přání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3132",
-        "text": "Nemusíš svoji rodinu hodnotit podle toho, jak fotogenicky tráví volno jiné rodiny. Dobré společné chvíle nepotřebují letiště ani moře.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3147",
-        "text": "Dovolená je jeden způsob, jak vystoupit z každodennosti, ne jediný. Pokud ti chybí hlavně pocit, že spolu něco žijete, začít se dá mnohem blíž než na letišti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3149",
-        "text": "Děti si za dvacet let nevybaví, u kterého moře byly, ale přesně si vybaví, jestli doma bývalo veselo — a na to nepotřebuješ ušetřit ani korunu.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3139",
-        "text": "Zkus si při další závisti nepřikazovat „nezáviď“, ale doplnit větu „závidím jim konkrétně…“. Možná zjistíš, že chceš moře, změnu prostředí, společný čas, nebo jen něco, na co se těšit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3136",
-        "text": "Pokud tě sledování cizích dovolených pravidelně užírá, nemusíš se tomu dál vystavovat ve jménu informovanosti. Některé podněty je úplně legitimní prostě omezit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3144",
-        "text": "Pokud vám brání peníze, čas nebo jiné okolnosti, je fér být z toho naštvaný. „Nemůžeme teď“ ale není totéž jako „náš život stojí za houby“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3150",
-        "text": "Fotka z dovolené jsou tři vteřiny z deseti dnů — hádka před odjezdem, dítě zvracející v autě ani nervy z útraty se nefotí.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3130",
-        "text": "Možná tě netrápí samotné cestování, ale pocit, že ostatní spolu něco prožívají a váš rodinný život stojí na místě. Pak stojí za to řešit právě zážitky, ne nutně dovolenou.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3133",
-        "text": "Pokud vám dovolená skutečně chybí, není potřeba se přesvědčovat, že je zbytečná. Můžeš uznat, že po ní toužíš, a teprve potom řešit, co je ve vašich možnostech.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3134",
-        "text": "Možná si při pohledu na fotky domýšlíš i atmosféru, kterou na nich nevidíš. Usměvavá rodina před památkou mohla deset minut předtím zuřivě hledat ztracené dítě a nabíječku.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3135",
-        "text": "Není nic špatného na tom chtít svým dětem nebo partnerovi dopřát něco hezkého. Jen pozor, aby se z cizích fotografií nestal důkaz, že váš vlastní život je nedostatečný.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3137",
-        "text": "Možná není potřeba dohnat ostatní rodiny. Stačí se zeptat, co byste chtěli zažít vy, kdyby se nikdo neměl dozvědět, kde jste byli a jak to vypadalo na fotce.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3138",
-        "text": "Sociální sítě mají zvláštní cestovní kancelář: ostatním vystaví katalog nejhezčích okamžiků a tobě k němu zdarma přibalí pocit, že žiješ blbě.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3140",
-        "text": "„My zase nikde“ zní jako rozsudek nad celým rokem. Možná je užitečnější zmenšit otázku na „co hezkého můžeme společně udělat během příštího měsíce?“",
-        "source": "k"
-      },
-      {
-        "id": "hl_3141",
-        "text": "Kdyby z dovolených nesměla vzniknout jediná fotografie, po jaké bys pořád toužil? Tím se docela rychle oddělí skutečné přání od soutěže s cizím obrazem života.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3142",
-        "text": "Je možné, že některé rodiny opravdu cestují víc a zažívají díky tomu věci, které vám chybějí. Nemusíš tu realitu popírat; jen z ní nemusíš vyrábět pořadí šťastných rodin.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3143",
-        "text": "Zkus si všimnout, kolikrát vidíš jejich dovolenou a kolikrát jejich obyčejné úterý s prádlem, hádkou a bolavým zubem. Vstupní data pro porovnání jsou poněkud zmanipulovaná.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3145",
-        "text": "Možná nepotřebuješ přestat koukat na cizí fotky, ale přestat je používat jako hodnoticí komisi vlastní rodiny. Instagram opravdu nemá akreditaci na posuzování kvality života.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3146",
-        "text": "Závist může být užitečná, dokud říká „tohle bych chtěl“. Začne tě žrát ve chvíli, kdy pokračuje „a proto je se mnou nebo s námi něco špatně“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3148",
-        "text": "„Nikde“ není místo na mapě — letos jste byli doma, na zahradě, u babičky, v parku, a nic z toho se nepočítá jen proto, že to nemá letištní razítko.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3151",
-        "text": "Je v tom docela vtipný paradox: čas, který prosedíš u fotek cizí rodiny, je přesně ten čas, který by šel prožít s tou svojí.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0132",
     "src_id": "h_094",
     "text": "Nikdo dneska na nikoho nemá čas.",
     "smer": "na svět",
     "oblast": "tempo / lidi",
     "tier": "free",
-    "sort_order": 132,
+    "sort_order": 143,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17465,7 +18877,7 @@
     "smer": "na svět",
     "oblast": "tempo",
     "tier": "free",
-    "sort_order": 133,
+    "sort_order": 144,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17597,7 +19009,7 @@
     "smer": "na svět",
     "oblast": "technologie",
     "tier": "free",
-    "sort_order": 134,
+    "sort_order": 145,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17729,7 +19141,7 @@
     "smer": "na svět",
     "oblast": "technologie / dřív bylo líp",
     "tier": "free",
-    "sort_order": 135,
+    "sort_order": 146,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17861,7 +19273,7 @@
     "smer": "na svět",
     "oblast": "povrchnost / technologie",
     "tier": "free",
-    "sort_order": 136,
+    "sort_order": 147,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -17993,7 +19405,7 @@
     "smer": "na svět",
     "oblast": "povrchnost vztahů",
     "tier": "free",
-    "sort_order": 137,
+    "sort_order": 148,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18125,7 +19537,7 @@
     "smer": "na svět",
     "oblast": "povrchnost obsahu / přesycenost",
     "tier": "free",
-    "sort_order": 138,
+    "sort_order": 149,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18257,7 +19669,7 @@
     "smer": "na svět",
     "oblast": "přesycenost informacemi",
     "tier": "free",
-    "sort_order": 139,
+    "sort_order": 150,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18389,7 +19801,7 @@
     "smer": "na svět",
     "oblast": "drahota",
     "tier": "free",
-    "sort_order": 140,
+    "sort_order": 151,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18521,7 +19933,7 @@
     "smer": "na svět",
     "oblast": "drahota / bydlení",
     "tier": "free",
-    "sort_order": 141,
+    "sort_order": 152,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18653,7 +20065,7 @@
     "smer": "na svět",
     "oblast": "práce / korporát",
     "tier": "free",
-    "sort_order": 142,
+    "sort_order": 153,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18785,7 +20197,7 @@
     "smer": "na svět",
     "oblast": "práce / bullshit jobs",
     "tier": "free",
-    "sort_order": 143,
+    "sort_order": 154,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -18917,7 +20329,7 @@
     "smer": "na svět",
     "oblast": "město vs. příroda",
     "tier": "free",
-    "sort_order": 144,
+    "sort_order": 155,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19049,7 +20461,7 @@
     "smer": "na svět",
     "oblast": "konzum",
     "tier": "free",
-    "sort_order": 145,
+    "sort_order": 156,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19181,7 +20593,7 @@
     "smer": "na svět",
     "oblast": "konzum",
     "tier": "free",
-    "sort_order": 146,
+    "sort_order": 157,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19313,7 +20725,7 @@
     "smer": "na svět",
     "oblast": "anonymita / lhostejnost",
     "tier": "free",
-    "sort_order": 147,
+    "sort_order": 158,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19445,7 +20857,7 @@
     "smer": "na svět",
     "oblast": "lhostejnost / hodnoty",
     "tier": "free",
-    "sort_order": 148,
+    "sort_order": 159,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19577,7 +20989,7 @@
     "smer": "na svět",
     "oblast": "úpadek hodnot",
     "tier": "free",
-    "sort_order": 149,
+    "sort_order": 160,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19709,7 +21121,7 @@
     "smer": "na svět",
     "oblast": "hodnoty / konzum",
     "tier": "free",
-    "sort_order": 150,
+    "sort_order": 161,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19841,7 +21253,7 @@
     "smer": "na svět",
     "oblast": "dřív bylo líp / tempo",
     "tier": "free",
-    "sort_order": 151,
+    "sort_order": 162,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -19973,7 +21385,7 @@
     "smer": "na sebe",
     "oblast": null,
     "tier": "free",
-    "sort_order": 152,
+    "sort_order": 163,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -20105,7 +21517,7 @@
     "smer": "na blízké",
     "oblast": null,
     "tier": "free",
-    "sort_order": 153,
+    "sort_order": 164,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -20237,7 +21649,7 @@
     "smer": "na blízké",
     "oblast": null,
     "tier": "free",
-    "sort_order": 154,
+    "sort_order": 165,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -20363,409 +21775,13 @@
     ]
   },
   {
-    "id": "pain_0155",
-    "src_id": "k_008",
-    "text": "Partner má čas na kolo, na kluky i na mobil, jen na mě ne.",
-    "smer": "na blízké",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 155,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3704",
-        "text": "Tohle bolí právě proto, že čas očividně existuje — jen se ti zdá, že pro tebe v něm není místo. Není divu, že se z nedostatku času rychle stane pocit nedostatku důležitosti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3705",
-        "text": "Je možné, že partner svoje aktivity vnímá jako samozřejmou součást života a vůbec mu nedochází, jak vedle nich váš vztah vypadá. To ale neznamená, že se s tím musíš smířit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3706",
-        "text": "Možná ti nechybí obrovské množství času, ale pocit, že si tě někdy vybere aktivně. Hodina, kterou ti někdo skutečně chce dát, může znamenat víc než celý večer náhodného společného pobytu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3708",
-        "text": "Je fér chtít, aby člověk měl vlastní zájmy a přátele. Je stejně fér chtít, aby vztah nebyl jediná oblast, kterou lze donekonečna odkládat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3710",
-        "text": "Můžeš partnerovi říct ne „nikdy na mě nemáš čas“, ale konkrétně „chybí mi, že spolu nemáme chvíli, kterou si vyhradíme jen pro nás“. Takové sdělení se dá mnohem snáz převést do změny.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3715",
-        "text": "Zkus mu říct konkrétní množství a podobu času, které ti chybí. „Jednou týdně večer jen spolu“ se řeší líp než celkové „nikdy na mě nemáš čas“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3711",
-        "text": "To, že s někým bydlíš, ještě neznamená, že spolu trávíte vztahový čas. Sdílet gauč a být spolu jsou dvě různé věci.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3723",
-        "text": "Vztah nepotřebuje být vždycky na prvním místě před vším ostatním. Pokud je ale dlouhodobě až za vším ostatním, není divu, že se v něm začneš cítit sama.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3725",
-        "text": "Společný čas se v dlouhém vztahu neděje sám — plánovaná schůzka s vlastním partnerem zní neromanticky, ale je to nejromantičtější položka v kalendáři.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3721",
-        "text": "Možná partner vůbec nevnímá, že tvoje stížnost není zákaz kola ani kamarádů. Je to žádost, aby ses občas necítila jako poslední položka po vybití baterky.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3707",
-        "text": "Nemusíš soutěžit s kolem, kamarády ani telefonem o to, kdo je legitimnější. Partnerství má mít vlastní prostor, ne jen čas, který náhodou zůstane po ostatních věcech.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3709",
-        "text": "Možná se nejvíc zlobíš na mobil právě proto, že ukazuje, že pár minut volné pozornosti během dne existuje. Jen je automaticky spolyká něco jiného.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3712",
-        "text": "Je možné, že partner netuší, že se cítíš až na posledním místě, protože z jeho pohledu jste přece „pořád spolu“. Právě ten rozdíl mezi fyzickou blízkostí a skutečným kontaktem stojí za pojmenování.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3713",
-        "text": "Nemusíš dokazovat, že jsi důležitější než jeho koníčky. Potřebuješ spíš zjistit, jestli je ochotný dát vašemu vztahu reálné místo vedle nich.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3714",
-        "text": "Kolo, kluci a mobil mají jednu společnou výhodu: očividně se umějí dostat do jeho kalendáře. Možná vztah potřebuje přestat spoléhat na to, že se do něj nějak vejde sám.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3716",
-        "text": "Kdyby mobil zmizel a partner ten čas věnoval něčemu úplně jinému, bolelo by tě to stejně? Odpověď může ukázat, jestli ti vadí konkrétní konkurence, nebo hlavně pocit, že nejsi volená.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3717",
-        "text": "Je možné, že kolo a kamarádi jsou pro něj aktivní události, zatímco vztah vnímá jako stabilní kulisu, o kterou se nemusí starat. Právě stabilní věci ale bez péče umějí potichu chátrat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3718",
-        "text": "Nemusíš ho nutit vzdát se věcí, které má rád. Smyslem může být zjistit, zda umí vytvořit prostor i pro něco, co má být důležité mezi vámi.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3719",
-        "text": "„Jsme přece spolu každý večer“ není úplně přesvědčivá odpověď, pokud jeden scrolluje a druhý čeká na kontakt. Nábytek je také celý večer ve stejné místnosti a vztah z toho nevzniká.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3720",
-        "text": "Pokud si musíš opakovaně říkat o každou chvíli pozornosti, může být užitečné přestat řešit jednotlivé večery a otevřít téma priority vztahu jako takové.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3722",
-        "text": "Zkus sledovat, co udělá poté, co mu to řekneš jasně. Ochota hledat řešení je důležitější informace než dokonalá první reakce.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3724",
-        "text": "Mobil je nejsnazší soupeř na světě — nabízí odpočinek bez námahy; ty nabízíš vztah, a ten námahu chce. Nejde o to být zábavnější než displej, jde o to si čas domluvit najisto.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3726",
-        "text": "Pozor na počítadlo v hlavě — od chvíle, kdy začneš jeho hodiny sčítat, prohráváš každý den, i ten hezký.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3727",
-        "text": "Kdyby jeho mobil uměl mluvit, řekl by: „Já ho nemám rád, já ho jen držím.“ Ta výhoda je pořád na tvojí straně.",
-        "source": "n"
-      }
-    ]
-  },
-  {
-    "id": "pain_0156",
-    "src_id": "k_009",
-    "text": "Kdy se mě naposledy někdo zeptal, jak se vlastně mám?",
-    "smer": "na svět",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 156,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3728",
-        "text": "Tohle může být velmi osamělý pocit: být mezi lidmi, fungovat, odpovídat na jejich otázky — a přitom mít dojem, že nikoho nenapadne zastavit se u tebe.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3729",
-        "text": "Možná ti nechybí velká pomoc ani dlouhý rozhovor, ale prostý zájem, který nepřijde až poté, co si o něj řekneš. I tak malá věc může mít velkou váhu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3730",
-        "text": "Je možné, že působíš jako člověk, který všechno zvládá, a okolí proto méně často kontroluje, co se děje uvnitř. Samostatnost umí člověka paradoxně udělat méně viditelným.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3731",
-        "text": "Nemusíš být v krizi, aby sis zasloužil otázku „jak ti je?“. Zájem není služba vyhrazená lidem, kteří už se hroutí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3734",
-        "text": "Nemusíš čekat, až někdo přesně uhodne, že potřebuješ být chvíli na druhé straně pozornosti. Můžeš člověku, kterému věříš, říct „dneska bych potřeboval, abys chvíli poslouchal ty mě“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3736",
-        "text": "Možná jsi tak dlouho odpovídal „dobrý“, že okolí získalo dojem, že hlubší otázka není potřeba. Není pozdě začít odpovídat o trochu pravdivěji tam, kde o kontakt stojíš.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3733",
-        "text": "Je fér chtít ve vztazích trochu vzájemnosti. Být pořád ten, kdo naslouchá, drží prostor nebo se zajímá, může časem bolet i velmi schopného člověka.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3740",
-        "text": "Zkus někdy na automatické „jak se máš?“ neříct automatické „dobrý“, ale jednu skutečnou větu. Dost rychle poznáš, kdo se zastaví a kdo už je mentálně o tři témata dál.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3747",
-        "text": "Není sobecké chtít být občas tématem rozhovoru. Přátelství ani blízkost nemají být celoživotní moderátorská směna.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3751",
-        "text": "Dospělost má krutý fór: čím líp ji zvládáš, tím míň se tě kdo ptá — otázky dostávají ti, co viditelně hoří, ne ti, co tiše drží.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3732",
-        "text": "Možná se tě lidé ptají „jak se máš“, ale způsobem, který nečeká skutečnou odpověď. Pak ti nechybí samotná otázka, ale pocit, že odpověď někoho opravdu zajímá.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3735",
-        "text": "Je možné, že lidé kolem tebe mají vlastní starosti a nevšímají si dobře druhých. To může být pravda a zároveň ti jejich nezájem může chybět úplně oprávněně.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3737",
-        "text": "To, že se někdo nezeptal, není důkaz, že tvoje prožívání není důležité. Je to ale možná důležitá informace o tom, kolik skutečného zájmu je v některých tvých vztazích.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3738",
-        "text": "„Jak se máš?“ je jedna z nejčastějších vět na světě a zároveň se dá vyslovit tak, aby odpověď byla prakticky zakázaná. Možná ti nechybí otázka, ale její opravdová verze.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3739",
-        "text": "Kdo konkrétně by ses přál, aby se tě zeptal? Jakmile z „nikdo“ vznikne jméno, možná se ukáže i vztah, ve kterém tě to bolí nejvíc.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3741",
-        "text": "Možná kolem sebe máš lidi, kteří tě mají rádi, ale neumějí dobře iniciovat hlubší kontakt. To je méně romantické než spontánní empatie, ale pořád se s tím dá pracovat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3742",
-        "text": "Kdybys přestal být na chvíli hlavním tazatelem ty, co by se ve vztazích stalo? Ten experiment může ukázat, kdo má vlastní zvědavost a kdo jen pohodlně využívá tu tvoji.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3743",
-        "text": "Je možné, že jsi získal pověst „toho silného“. Silní lidé mají bohužel zvláštní vedlejší efekt: okolí někdy začne předpokládat, že nepotřebují údržbu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3744",
-        "text": "Nemusíš čekat na ideálního člověka s perfektní otázkou. Někdy můžeš začít větou „hele, já bych ti dneska chtěl říct, jak mi je“ a obejít nefunkční čekání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3745",
-        "text": "Pokud ti chybí zájem, není nutné hned dojít k závěru, že jsi lidem lhostejný. Někteří lidé jsou v péči prostě nápadně méně všímaví, než bychom potřebovali.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3746",
-        "text": "Možná stojí za to víc investovat do vztahů, kde se někdo nejen ptá, ale také si pamatuje odpověď. Právě tam bývá pocit „někdo mě opravdu vidí“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3748",
-        "text": "Otázka „jak se máš“ zdegenerovala na pozdrav — lidi se neptají míň, protože jim na druhých nezáleží, ale protože z té věty vyprchal obsah; skutečný zájem dneska vypadá jinak a nenápadněji.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3749",
-        "text": "Nejrychlejší způsob, jak tu otázku uslyšet, je začít ji rozdávat naostro: „Ne, fakt — jak se máš?“ Lidi ji vrací jako pozdrav, jen si ji potřebují znovu osahat.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3750",
-        "text": "Smíš odpovědět po pravdě i na tu zdvořilostní verzi — „popravdě, všelijak“ zastaví v chůzi i člověka, který se ptal jen ze slušnosti; a někdy se z toho stane rozhovor, na který čekáš.",
-        "source": "n"
-      }
-    ]
-  },
-  {
-    "id": "pain_0157",
-    "src_id": "k_012",
-    "text": "Já si snad tu smůlu fakt přitahuju.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 157,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3752",
-        "text": "Když se několik nepříjemných věcí sejde za sebou, snadno to přestane vypadat jako náhoda a začne to působit skoro osobně. Mozek je velmi dobrý ve hledání vzorce i tam, kde může být jen série blbých okolností.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3753",
-        "text": "To, že máš smolné období, ještě neznamená, že jsi jeho příčina. „Děje se mi hodně špatných věcí“ a „nějak je přitahuju“ jsou dvě různé věty.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3755",
-        "text": "Je užitečné oddělit věci, které jsi mohl ovlivnit, od těch, které přišly úplně zvenčí. Jinak si snadno vezmeš na účet i počasí, poruchu auta a cizí chování.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3757",
-        "text": "Nemusíš se přesvědčovat, že máš vlastně štěstí, když se ti teď opravdu nedaří. Stačí nepřidávat k reálným potížím ještě obvinění, že je nějak vyrábíš svou existencí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3761",
-        "text": "Nemusíš z každého průšvihu vyrábět lekci o sobě. Některé věci se prostě stanou a člověk je může jen přežít, opravit nebo nechat odeznít.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3754",
-        "text": "Možná některé opakující se problémy opravdu souvisejí s tvými rozhodnutími. To ale není mystická smůla — a právě proto se s tím dá něco dělat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3758",
-        "text": "Možná tě víc děsí pocit nepředvídatelnosti než samotná smůla. Představa „přitahuju si to“ je paradoxně někdy snesitelnější než přiznat, že část života prostě nemáme pod kontrolou.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3759",
-        "text": "Jedna série nepříjemností nemá schopnost předpovídat další kapitolu. Špatné období může být přesně jen obdobím.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3768",
-        "text": "Je možné mít špatnou sérii bez hlubšího významu. Vesmír někdy jen rozhází kostky mizerně a neposílá k tomu osobní vzkaz.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3775",
-        "text": "Starý rybář by řekl: někdy nebere týden a pak bere tři dny v kuse — a ryby o tobě přitom nevědí vůbec nic.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3756",
-        "text": "Když člověk čeká další průšvih, začne si ho také víc všímat. Dobré a neutrální věci pak snadno vypadají jako bezvýznamné mezery mezi katastrofami.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3760",
-        "text": "Pokud se ti opakuje stejný typ problému, má smysl hledat konkrétní společný jmenovatel. Pokud jsou pokaždé úplně jiné, možná je opravdu přesnější slovo „smůla“ než „moje chyba“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3762",
-        "text": "Pokud bys skutečně přitahoval smůlu, byla by to fascinující fyzikální vlastnost a Nobelovka by možná aspoň trochu vyrovnala bilanci. Pravděpodobnější je bohužel obyčejná náhoda a pár opakujících se vzorců.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3763",
-        "text": "Zkus si posledních několik „smolných“ událostí rozdělit na náhodu, vlastní rozhodnutí a chování druhých. Možná zjistíš, že tvoje osobní magnetické pole má podstatně menší výkon, než sis myslel.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3764",
-        "text": "Mozek nerad přijímá náhodu, protože z ní nejde vyrobit kontrola. „Já to přitahuju“ je nepříjemná teorie, ale aspoň dává chaosu autora.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3765",
-        "text": "Když se ti tři věci pokazí za týden, čtvrtá se nezačne řídit předchozími výsledky. Náhoda nemá paměť ani smysl pro dramatickou dramaturgii.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3766",
-        "text": "Možná říkáš „mám smůlu“ u věcí, kde ve skutečnosti opakuješ stejnou volbu. To není důvod se seřvat; je to naopak dobrá zpráva, protože volbu lze změnit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3767",
-        "text": "Zkus si chvíli zapisovat i věci, které dopadly normálně nebo dobře. Ne jako pozitivní deníček, ale jako protiváhu výběrové paměti, která miluje důkazy pro velký smolný příběh.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3769",
-        "text": "Pokud tě smůla nutí být pořád ve střehu, vrať otázku z „co se zase pokazí?“ na „co konkrétně teď můžu ovlivnit?“ To je menší území, ale skutečně tvoje.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3770",
-        "text": "„Vždycky se mi něco stane“ často přeskočí všechny dny, kdy se nestalo vůbec nic. Nuda má bohužel mizernou paměťovou reklamu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3771",
-        "text": "Nemusíš vyřešit, jestli jsi smolař. Stačí u příštího problému zjistit, jestli je v něm něco k poučení, nebo jestli si zaslouží pouze stručné „no tak tohle bylo fakt na hovno“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3772",
-        "text": "Kdyby sis vedl(a) deník smůly i štěstí se stejnou pečlivostí, sloupec štěstí by nejspíš vyhrál — jen se o něm nemluví u piva, protože je to špatná historka.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3773",
-        "text": "Smolař je nejvděčnější role v každé hospodě — historky o smůle mají úspěch, historky o klidném úterý ne; jen pozor, ať se ti z historky nestane občanka.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3774",
-        "text": "Kdyby smůla fakt fungovala jako magnet, pojišťovny by měly kolonku „smolař“ a účtovaly by ti víc — nemají ji, protože ani lidi, co počítají riziko za peníze, na přitahování smůly nevěří.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0158",
     "src_id": "k_016",
     "text": "Na obědy chodí beze mě a už se ani nenamáhají to skrývat.",
     "smer": "na svět",
     "oblast": null,
     "tier": "free",
-    "sort_order": 158,
+    "sort_order": 166,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -20897,7 +21913,7 @@
     "smer": "na sebe",
     "oblast": null,
     "tier": "free",
-    "sort_order": 159,
+    "sort_order": 167,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -21029,7 +22045,7 @@
     "smer": "na sebe",
     "oblast": null,
     "tier": "free",
-    "sort_order": 160,
+    "sort_order": 168,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -21161,7 +22177,7 @@
     "smer": "na svět",
     "oblast": null,
     "tier": "free",
-    "sort_order": 161,
+    "sort_order": 169,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -21287,145 +22303,13 @@
     ]
   },
   {
-    "id": "pain_0162",
-    "src_id": "k_022",
-    "text": "Děti už mě nepotřebují a já najednou nevím, co se sebou.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 162,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3872",
-        "text": "Tohle může být zvláštní druh ztráty: dlouho byl velký kus tvého života organizovaný kolem péče a najednou se uvolnil prostor, o který sis možná ani neřekl. Není divu, že místo úlevy může přijít prázdno.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3873",
-        "text": "To, že tě děti potřebují méně prakticky, neznamená, že pro ně přestáváš být důležitý. Jen se mění forma vztahu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3874",
-        "text": "Možná ses dlouho ptal hlavně „co potřebují děti?“ a otázka „co chci já?“ zůstala trochu zakrnělá. Není ostuda, že na ni teď nemáš okamžitou odpověď.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3877",
-        "text": "Děti se osamostatňují právě proto, že péče měla svůj účinek. Paradoxně může jejich menší závislost být i výsledkem něčeho, co jsi dělal dobře.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3880",
-        "text": "Je v pořádku truchlit za obdobím, které končí, i když končí správně. Radost z jejich samostatnosti a smutek z vlastní ztráty se vůbec nevylučují.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3875",
-        "text": "Nemusíš ten nový prostor hned zaplnit velkým smyslem, koníčkem nebo životním projektem. Chvíli nevědět, co se sebou, může být normální mezifáze.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3879",
-        "text": "Možná se vztah s dětmi posouvá od „potřebují mě“ k „chtějí mě ve svém životě“. To může být méně intenzivní, ale často mnohem svobodnější druh blízkosti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3881",
-        "text": "Nemusíš teď vědět, jak má vypadat další část života. Stačí začít zkoumat malé věci, které jsou tvoje, ne něčí potřeba vůči tobě.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3883",
-        "text": "Zkus si místo „co se sebou budu dělat?“ položit menší otázku: co bych chtěl mít pravidelně ve svém týdnu jen proto, že to dělá dobře mně? Nemusí z toho vzniknout nové životní poslání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3895",
-        "text": "Vychovat děti tak, že tě nepotřebují, byl celou dobu cíl — bolí to jako každá dokončená velká práce; mistr po dostavbě taky chvíli neví, kam s rukama.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3876",
-        "text": "Je možné, že ti nechybí samotná práce kolem dětí, ale pocit každodenní potřebnosti. To je hluboká lidská potřeba a její změna může bolet i tehdy, když jsi na jejich samostatnost pyšný.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3878",
-        "text": "Nemusíš si hledat někoho dalšího, koho budeš zachraňovat, jen abys znovu cítil jasnou roli. Teď může přijít čas zjistit, kdo jsi i mimo službu druhým.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3882",
-        "text": "Rodičovství má zvláštní pracovní smlouvu: když svou práci děláš dobře, klienti tě postupně potřebují méně. Je to jeden z mála oborů, kde úspěch může subjektivně připomínat propouštění.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3884",
-        "text": "Možná tvoje identita dlouho stála na potřebnosti. Pak není divu, že svoboda nejdřív nepůsobí jako svoboda, ale jako ztráta pracovního zařazení.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3885",
-        "text": "Kdyby tě děti potřebovaly stejně intenzivně dalších třicet let, pravděpodobně by sis také stěžoval. Jejich samostatnost je správný vývoj, jen tvoje část toho přechodu může bolet.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3886",
-        "text": "Zkus si všimnout, jaké schopnosti jsi během rodičovství rozvinul a které z nich patří tobě, ne jen rodičovské roli. Péče, trpělivost, organizace nebo humor nezmizely s prázdnějším kalendářem.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3887",
-        "text": "Nemusíš z prázdného prostoru okamžitě udělat produktivní projekt. Po letech služby může být docela legitimní chvíli jen zjišťovat, co tě baví, když nikdo nic nepotřebuje.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3888",
-        "text": "Možná tě děsí otázka „kdo jsem, když nejsem potřeba?“ Zkus ji otočit na „kdo jsem, když už nemusím být pořád k dispozici?“",
-        "source": "k"
-      },
-      {
-        "id": "hl_3889",
-        "text": "Dospělé děti tě mohou potřebovat méně jako servis a víc jako člověka. To je menší role na počet úkolů, ale může být větší na skutečný vztah.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3890",
-        "text": "Pokud celý den nikdo nic nechce, může to nejdřív znít skoro jako ticho po vypnutí stroje. Chvíli trvá, než v tom tichu začne být slyšet něco vlastního.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3891",
-        "text": "Možná není potřeba najít nový důvod, proč být potřebný. Možná je právě teď úkol naučit se být hodnotný i ve chvíli, kdy nic pro nikoho nezařizuješ.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3892",
-        "text": "To „nevím, co se sebou“ není prázdná hlava — je to čistý stůl; poprvé po letech je na něm místo, a prázdný stůl chvíli děsí každého, kdo byl zvyklý na plný.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3893",
-        "text": "Děti se vracejí nejradši tam, kde rodič žije vlastní život — spokojenost je pro ně menší závazek než prázdné hnízdo, které na ně čeká u okna.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3894",
-        "text": "Ta volnost se dá i obrátit: poprvé za dlouhá léta se nemusíš nikoho ptát, co bude k večeři — a tahle věta může znít jako ztráta, nebo jako začátek, podle toho, kdo ji čte.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0163",
     "src_id": "k_023",
     "text": "Celý den makám a večer nedokážu říct, co jsem vlastně udělal(a).",
     "smer": "na sebe",
     "oblast": null,
     "tier": "free",
-    "sort_order": 163,
+    "sort_order": 170,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -21551,145 +22435,13 @@
     ]
   },
   {
-    "id": "pain_0164",
-    "src_id": "k_024",
-    "text": "V neděli večer je v bytě takový ticho, že si pouštím telku jen kvůli zvuku.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 164,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3920",
-        "text": "Nedělní ticho může mít úplně jinou váhu než ticho jindy, zvlášť když připomíná, že kolem tebe právě nikdo není. Pustit si zvuk do bytu je docela pochopitelný způsob, jak ten prostor trochu zlidštit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3921",
-        "text": "Nemusíš se stydět, že ti lidské hlasy v pozadí dělají dobře. Mozek není stavěný na to, aby každou samotu automaticky prožíval jako příjemný klid.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3922",
-        "text": "Možná ti nevadí samotné ticho, ale pocit prázdna, který v něm večer vystoupí do popředí. To je důležitý rozdíl.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3927",
-        "text": "Je fér přiznat si, že ti chybí živá přítomnost druhého člověka. Televize ten nedostatek možná jen na chvíli změkčuje, ale nemusíš předstírat, že ho plně nahrazuje.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3932",
-        "text": "Možná nedělní večer potřebuje vlastní malý rituál, aby nebyl jen čekárnou na pondělí. Něco dobrého k jídlu, krátká procházka nebo konkrétní pořad může dát večeru tvar místo pouhého hluku.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3923",
-        "text": "Televize nemusí být problém, pokud ti dává pocit společnosti a zároveň tě neodřízne od všeho ostatního. Někdy je prostě zvuková kulisa malá forma útěchy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3925",
-        "text": "Nemusíš si dokazovat, že umíš být sám tím, že budeš sedět v úplném tichu. Samota není disciplína, ve které se udělují body za absenci rádia.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3935",
-        "text": "Je možné, že ti chybí kontakt, ale nemáš energii ho aktivně hledat. I krátká zpráva nebo telefonát může být někdy živější zvuk než čtyři hodiny televizních dialogů.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3939",
-        "text": "Nemusíš milovat ticho, abys byl psychicky v pořádku. Někteří lidé prostě lépe odpočívají v prostoru, kde je trochu života slyšet.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3940",
-        "text": "Rozhlas nebo podcast je lepší společník než telka — mluví k tobě, ne na tebe; a hlas člověka zahřeje víc než zvuk reklam.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3924",
-        "text": "Je možné, že neděle zesiluje i vědomí konce víkendu a návratu do pracovního týdne. Samota se pak může spojit s další melancholií a působit těžší než jindy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3926",
-        "text": "Možná by ti vedle zvuku pomohlo mít v neděli večer něco malého, co má vlastní rytmus a na co se těšíš. Prázdný čas bývá těžší než čas, který má jemný tvar.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3928",
-        "text": "Ticho někdy dává prostor věcem, které přes týden přehluší povinnosti. Pokud v neděli přichází smutek nebo samota, nemusíš je automaticky zahánět ani jim odevzdat celý večer.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3929",
-        "text": "Byt plný hlasů z televize a byt plný blízkosti nejsou totéž. Přesto je úplně lidské sáhnout po první možnosti, když druhá zrovna není k dispozici.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3930",
-        "text": "Televize puštěná „jen kvůli zvuku“ je vlastně takový nízkonákladový spolubydlící: pořád mluví, nic po tobě nechce a bohužel se nikdy nezeptá, jak se máš.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3931",
-        "text": "Zkus si všimnout, co přesně nastane ve chvíli, kdy televizi nezapneš. Je to nuda, smutek, úzkost, pocit prázdného bytu, nebo něco úplně jiného?",
-        "source": "k"
-      },
-      {
-        "id": "hl_3933",
-        "text": "Není potřeba dělat z ticha duchovní úkol. Pokud ti rádio, podcast nebo televize dělají společnost, klidně je používej vědomě místo pocitu, že „zase utíkáš“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3934",
-        "text": "Kdyby stejný byt byl v úterý večer stejně tichý, bolelo by to stejně? Pokud ne, možná je kus té tíhy specificky nedělní a stojí za to řešit právě ji.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3936",
-        "text": "Samota má zvláštní akustiku: lednička začne znít jako průmyslový stroj a sousedovo spláchnutí jako společenská událost. Není divu, že člověk pustí něco, co připomíná lidskou přítomnost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3937",
-        "text": "Možná se snažíš večer překlenout, místo abys ho opravdu prožil. Zkus si někdy naplánovat jednu jedinou věc, kvůli které bude nedělní večer „něco“, ne jen konec víkendu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3938",
-        "text": "Televize může trochu zmírnit ticho, ale pokud je pod ním dlouhodobě samota, stojí za to ji nazvat pravým jménem. Přesná bolest se obvykle řeší lépe než neurčité „nějak je mi divně“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3941",
-        "text": "Ta neděle možná neměří tvou samotu, ale tvůj týden — když je pátek a sobota plná, nedělní ticho je jen dozvuk; když je prázdný celý týden, říká ti to něco důležitějšího.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3942",
-        "text": "Kdyby ten byt uměl mluvit, řekl by: já nejsem prázdný — já jsem jen tichý; a to jsou dvě různé věci, i když v neděli večer zní stejně.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3943",
-        "text": "Neděle večer je odjakživa hodina bilancí — tíseň nepřichází z ticha, ale z otázek, které v něm začnou být slyšet; a otázky se dají poslouchat i po kouskách, ne všechny naráz.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0165",
     "src_id": "k_025",
     "text": "Všichni mají svoje rodiny a na kafe se mnou nikdo nemá čas.",
     "smer": "na svět",
     "oblast": null,
     "tier": "free",
-    "sort_order": 165,
+    "sort_order": 171,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -21815,145 +22567,13 @@
     ]
   },
   {
-    "id": "pain_0166",
-    "src_id": "k_026",
-    "text": "Nemám komu napsat, když se mi něco povede.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 166,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_3968",
-        "text": "Tohle je zvláštní druh samoty: radost přijde, ale nemá kam pokračovat. Člověk někdy potřebuje někoho, kdo se s ním na chvíli potěší, aby dobrá zpráva opravdu dosedla.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3969",
-        "text": "Možná ti nechybí publikum ani obdiv, ale jeden člověk, kterému můžeš spontánně napsat „hele, povedlo se mi to“. To je velmi obyčejná a hluboká potřeba.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3972",
-        "text": "Nemusíš své dobré věci zmenšovat jen proto, že je zrovna nikdo neoslaví s tebou. To, co se ti povedlo, neztrácí hodnotu nedostatkem svědků.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3974",
-        "text": "Je fér chtít vedle sebe někoho nejen na těžké chvíle, ale i na ty dobré. Blízkost není jen záchranná služba pro problémy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3980",
-        "text": "Zkus někdy někomu poslat malou dobrou zprávu bez velkého vysvětlování. Jeho reakce ti může ukázat, zda ve vztahu existuje víc prostoru pro sdílení, než sis myslel.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3970",
-        "text": "Úspěch bývá osamělejší, když ho člověk nemá s kým sdílet. Nemusíš si proto vyčítat, že samotné „měl bych mít radost“ někdy nestačí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3975",
-        "text": "Pokud si zatím nemáš komu napsat, můžeš si ten okamžik aspoň vědomě zaznamenat pro sebe místo rychlého přeskočení dál. Radost si zaslouží trochu místa, i když je právě bez společnosti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3976",
-        "text": "Možná se některé vztahy dají prohloubit právě tím, že začneš sdílet i malé dobré věci, nejen praktické zprávy. Blízkost někdy vzniká z opakovaných drobných otevření.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3979",
-        "text": "Kdo by byl první člověk, kterému bys chtěl psát, kdyby ses nebál, že ho to nebude zajímat? Možná je mezi „nemám komu“ a „netroufám si komu“ důležitý rozdíl.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3989",
-        "text": "„Nemám komu“ někdy znamená „nemám jistotu, že to koho zajímá“ — a to je jiná věta; lidi dobré zprávy většinou potěší, jen je nikdo neposílá, protože se každý bojí, že se vytahuje.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3971",
-        "text": "Je možné, že kolem sebe lidi máš, ale necítíš s nimi takovou blízkost, aby ses chtěl pochlubit něčím důležitým. Pak nejde jen o počet kontaktů, ale o kvalitu spojení.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3973",
-        "text": "Možná tě právě úspěch upozorňuje na něco, co se při běžném dni tolik neozve: chybí ti vztah, ve kterém je přirozené sdílet radost. To je cenná informace, ne důkaz selhání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3977",
-        "text": "Nemusíš se spokojit s představou, že radost je čistě soukromá záležitost. Touha po člověku, který řekne „to je skvělý, mám radost s tebou“, je naprosto legitimní.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3978",
-        "text": "Telefon může být plný kontaktů a stejně v něm nemusí být jediné jméno pro zprávu „juchů“. Počet uložených čísel je v tomhle směru dost mizerná statistika blízkosti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3981",
-        "text": "Možná sis zvykl ozývat se lidem hlavně tehdy, když je k tomu důvod, plán nebo problém. Radost může být docela hezký důvod k tomu naučit vztahy jiný jazyk.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3982",
-        "text": "Kdyby sis mohl vybrat, co přesně od druhého potřebuješ — gratulaci, nadšení, otázku, nebo jen „mám z tebe radost“? Přesnější touha se hledá snáz než neurčité „někdo“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3983",
-        "text": "Je možné, že tvoje okolí vůbec neví, že potřebuješ sdílet úspěchy. Někteří lidé jsou ochotní slavit s tebou, jen nedostanou vstupenku.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3984",
-        "text": "Radost bez svědka někdy působí skoro nedokončeně, ale pořád je to radost. Nemusíš jí dát storno jen proto, že momentálně chybí adresát.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3985",
-        "text": "Možná máš kolem sebe vztahy, které drží hlavně zvyky a logistika, ne skutečná zvědavost jeden na druhého. Pak je pochopitelné, že dobrá zpráva nemá přirozené místo přistání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3986",
-        "text": "Pokud ti chybí člověk pro dobré zprávy, není nutné hned hledat nejlepšího přítele na celý život. Jeden vztah může začít růst i tím, že mu dáš trochu víc skutečného obsahu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3987",
-        "text": "Úspěch se nemusí změnit v tiskovou konferenci, aby měl smysl. Ale člověk, který se umí radovat s tebou bez závisti a bez převádění řeči na sebe, je opravdu cenná věc.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3988",
-        "text": "Zkus to otočit: začni být ty ten, komu ostatní píšou, když se jim něco povede — kdo fandí druhým, kolem toho se publikum nastěhuje samo.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3990",
-        "text": "Kdyby ta neodeslaná zpráva uměla mluvit, řekla by: nenech mě v konceptech — i kdybys mě poslal(a) člověku, se kterým sis rok nepsal(a); dobré zprávy jsou nejlepší záminka, jak oživit staré kontakty.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3991",
-        "text": "Všimni si, že ta věta říká i něco hezkého: věci se ti dějí, daří se ti — polovina zprávy je dobrá; teď už jen doručit tu druhou.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0167",
     "src_id": "k_054",
     "text": "S kamarády ze školy si už jen píšeme „musíme zajít“ — a nikdy nezajdeme.",
     "smer": "na blízké",
     "oblast": null,
     "tier": "free",
-    "sort_order": 167,
+    "sort_order": 172,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -22079,145 +22699,13 @@
     ]
   },
   {
-    "id": "pain_0168",
-    "src_id": "k_055",
-    "text": "Přijedu domů k rodičům a připadám si tam jak na návštěvě u cizích lidí.",
-    "smer": "na blízké",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 168,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_4016",
-        "text": "To může být velmi zvláštní bolest: místo, které bývalo samozřejmě tvoje, pořád vypadá povědomě, ale pocit domova se z něj vytratil. Člověk pak může truchlit za něčím, co fyzicky pořád stojí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4017",
-        "text": "Je možné, že ses změnil ty, rodiče i způsob, jak spolu žijete. Blízkost z minulosti se nemusí automaticky zachovat jen proto, že sdílíte rodinu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4019",
-        "text": "Dospělost často promění rodičovský dům z vlastního prostoru na prostor rodičů, ve kterém už jsi host. To může být normální změna a přesto trochu bolet.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4025",
-        "text": "Možná stojí za to poznávat rodiče znovu jako dnešní lidi, ne jen jako postavy z dětství. Někdy právě tam začíná jiný, dospělejší druh vztahu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4037",
-        "text": "S rodiči se nejlíp mluví bokem, ne čelem — u vaření, na zahradě, v autě; společná činnost rozpouští rozpaky spolehlivěji než sezení proti sobě s otázkou „tak co je nového“.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4018",
-        "text": "Možná tě nejvíc zasahuje kontrast mezi slovem „domů“ a tím, jak se tam skutečně cítíš. Není povinnost cítit se doma někde jen proto, že jsi tam vyrůstal.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4021",
-        "text": "Nemusíš při každé návštěvě vyrábět velkou rodinnou blízkost. Někdy stačí hledat jeden skutečný rozhovor místo několika hodin společenského provozu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4022",
-        "text": "Možná se u rodičů automaticky vracíš do staré verze sebe sama, která už ti nesedí. I to může vytvářet pocit, že tam vlastně nejsi úplně ty.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4030",
-        "text": "Zkus se jednou zeptat rodiče na něco, na co ses ho nikdy jako dítě neptal. Nový rozhovor může někdy vytvořit víc blízkosti než další kolo známých rodinných témat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4038",
-        "text": "Zkus se rodičů zeptat na jejich mládí — na dobu, kdy byli jako ty teď; často se v tu chvíli poprvé potkáš s nimi jako s lidmi, a lidé si cizí nepřipadají tak snadno jako role.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4020",
-        "text": "Je možné, že mezi vámi chybí současná témata a žijete hlavně ze starých rolí a vzpomínek. Pak se můžete dobře znát historicky a přesto si být dnes překvapivě cizí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4023",
-        "text": "Je fér být smutný, pokud se vztah s rodiči změnil způsobem, který sis nepřál. Rodinná příslušnost sama o sobě nezaručuje pocit blízkosti.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4024",
-        "text": "Nemusíš se nutit označovat jejich dům za svůj domov. Domov se v dospělosti může přesunout jinam, aniž tím popíráš vlastní minulost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4026",
-        "text": "Vrátit se „domů“ a současně se ptát, kam si můžeš položit hrnek, je docela přesný symbol toho, jak zvláštní umí dospělá návštěva rodičů být.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4027",
-        "text": "Zkus si všimnout, co konkrétně vytváří cizotu: o čem se bavíte, jak se k tobě chovají, jak se chováš ty, nebo samotný fakt, že už tam nežiješ? Každá odpověď znamená něco jiného.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4028",
-        "text": "Možná čekáš pocit domova z doby, kdy jsi tam měl pokoj, denní rytmus a vlastní samozřejmé místo. Ten pocit se nedá vždycky vrátit návštěvou na víkend.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4029",
-        "text": "Je možné, že rodiče pořád mluví s tvou starou verzí, zatímco ty přicházíš jako někdo, koho vlastně ještě pořádně nepoznali. Rodinná aktualizace softwaru bývá překvapivě pomalá.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4031",
-        "text": "Pokud se tam cítíš jako host, nemusí to být jen špatně. Možná je to i známka, že sis mezitím vytvořil vlastní život a vlastní centrum.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4032",
-        "text": "Kdyby ses u rodičů cítil úplně stejně jako v patnácti, bylo by to vlastně také trochu podezřelé. Některá cizota je cena za to, že ses stal samostatným člověkem.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4033",
-        "text": "Je možné, že mezi vámi skutečně vznikla vzdálenost, kterou samotné příbuzenství nepřemostí. Pak má větší smysl budovat kontakt vědomě než čekat, že se automaticky zapne při překročení prahu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4034",
-        "text": "Možná ti chybí hlavně pocit, že tam pořád máš svoje místo. To se někdy dá říct mnohem přímočařeji než obecné „už to není jako dřív“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4035",
-        "text": "Rodičovský dům může přestat být tvým domovem a přitom v něm mohou zůstat lidé, se kterými stojí za to hledat nový vztah. Ty dvě věci se nemusí vracet společně.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4036",
-        "text": "Zkus tam příště přijet jako dospělý host, ne jako bývalé dítě — přivez jídlo, navrhni výlet, zeptej se na věci, na které se ptají dospělí; role se mění tím, že ji někdo první zahraje jinak.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4039",
-        "text": "Návštěva to je — a to není prohra, to je nová přesnost: dospělé dítě je host, který zná cestu do spíže; hostem být smíš, cizím nemusíš.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0169",
     "src_id": "k_116",
     "text": "Můžu makat jak mezek, a na vlastní bydlení stejně nikdy nedosáhnu.",
     "smer": "na svět",
     "oblast": null,
     "tier": "free",
-    "sort_order": 169,
+    "sort_order": 173,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -22343,145 +22831,13 @@
     ]
   },
   {
-    "id": "pain_0170",
-    "src_id": "k_131",
-    "text": "V neděli večer mi začne být těžko jen z toho, že zítra je pondělí.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 170,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_4064",
-        "text": "Tohle je nepříjemné, protože kus pondělí ti pak začne ukusovat už neděli. Člověk ještě má volno, ale hlava už ho pomalu stěhuje do zítřka.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4065",
-        "text": "Je možné, že ti nevadí pondělí jako takové, ale něco konkrétního, co se s návratem do týdne pojí. Přesnější pojmenování bývá užitečnější než boj s celým dnem v kalendáři.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4066",
-        "text": "Nemusíš si vyčítat, že si neumíš „užít neděli“. Když tě čeká náročný začátek týdne, tělo může reagovat předem, i když se ještě objektivně nic neděje.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4068",
-        "text": "Nedělní večer nemusí sloužit jako čekárna na pondělí. Může mít vlastní malý obsah, který má smysl sám o sobě.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4084",
-        "text": "Praktický trik: udělej si v pátek před odchodem pořádek — dopiš, co jde, a napiš si první krok na pondělí; nedělní tíseň žere hlavně nedodělky a neznámo, obojí se dá zmenšit předem.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4069",
-        "text": "Je možné, že v hlavě přehráváš celý pracovní týden najednou, i když zítra tě čeká jen první část pondělí. Zmenšit horizont na první konkrétní krok může ubrat kus tíhy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4071",
-        "text": "Možná tě těžký nedělní pocit upozorňuje, že v pracovním týdnu dlouhodobě něco není v pořádku. Nemusí to být jen „blbá nálada“, kterou je potřeba přemoci.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4073",
-        "text": "Pondělí přijde tak jako tak. Nedělní večer mu ale nemusíš platit nájem předem.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4076",
-        "text": "Když hlava v neděli večer řekne „zítra zase celý ten kolotoč“, vrať ji jen k pondělnímu ránu. Celý týden se dnes opravdu nemusí vejít do jedné nervové soustavy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4087",
-        "text": "Všimni si, že pondělní rána málokdy dorovnají nedělní katastrofické scénáře — večer maluje, ráno koná; tvoje pondělky už mnohokrát dopadly líp, než neděle slibovala.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4067",
-        "text": "Možná by stálo za to rozlišit, jestli tě tíží práce, ranní vstávání, přechod z volnosti do povinností, nebo pocit nekonečného opakování. Každá z těch věcí potřebuje trochu jinou odpověď.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4070",
-        "text": "Nemusíš v neděli večer řešit všechny pondělní problémy, které ještě nenastaly. Pokud je něco potřeba připravit, stačí krátce a pak má dnešek právo zase pokračovat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4072",
-        "text": "Je fér chtít, aby práce nezabírala i předvečer v podobě anticipačního stresu. Pokud se to děje pravidelně, stojí za pozornost samotné uspořádání týdne.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4074",
-        "text": "Pondělí má pozoruhodný talent začít už v neděli v šest, aniž by za přesčas zaplatilo jedinou korunu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4075",
-        "text": "Zkus si všimnout přesné chvíle, kdy se nálada zlomí, a jaká myšlenka přijde těsně předtím. Možná objevíš jeden konkrétní spouštěč místo neurčitého „neděle jsou hrozné“.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4077",
-        "text": "Možná by pomohlo mít pondělí o jednu malou příjemnou věc lepší, ne celou práci jinou. Mozek se někdy bojí méně dne, ve kterém ho čeká aspoň jeden známý dobrý bod.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4078",
-        "text": "Je možné, že si neděli večer nevědomky necháváš hlavně na přípravu, povinnosti a myšlenky na práci. Pak se z ní časem stane administrativní předsíň pondělí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4079",
-        "text": "Kdyby zítra nebylo pondělí, co bys dnes večer dělal jinak? Možná právě jedna z těch věcí patří zpátky i do skutečné neděle.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4080",
-        "text": "Nedělní úzkost někdy funguje jako nepovedená snaha „připravit se“ na zítřek. Jenže dvě hodiny obav člověka na pondělí obvykle vybaví hůř než dvě hodiny skutečného odpočinku.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4081",
-        "text": "Pokud je nejtěžší samotný přechod z volnosti do režimu, může pomoct udělat pondělní ráno co nejméně rozhodovací. Čím míň drobných bitev čeká po probuzení, tím menší monstrum musí nedělní hlava předvídat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4082",
-        "text": "Je možné, že problém není neděle, ale práce, kterou tělo už večer nechce pustit k sobě. Pak má smysl poslouchat zprávu, ne jen umlčovat posla.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4083",
-        "text": "Pondělí je jeden den, ne soudní rozsudek nad dalšími pěti. Kalendář má tendenci být méně dramatický než naše nedělní představivost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4085",
-        "text": "Přesuň těžiště víkendu — když je to nejlepší v neděli večer (dobrá večeře, film, sauna), přestane být neděle rozloučením a začne být vyvrcholením; tíseň nesnáší konkurenci.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4086",
-        "text": "Kdyby neděle uměla mluvit, řekla by: já za to nemůžu — já jsem pořád volný den; to pondělí si mě bere jako rukojmí. Vrať mi můj večer.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0171",
     "src_id": "k_156",
     "text": "Spolužáci mají firmy a baráky, já dojíždím na směny.",
     "smer": "na sebe",
     "oblast": null,
     "tier": "free",
-    "sort_order": 171,
+    "sort_order": 174,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -22607,282 +22963,13 @@
     ]
   },
   {
-    "id": "pain_0172",
-    "src_id": "k_223",
-    "text": "Hypotéka, práce, děti — mám pocit, že už nikdy nebudu moct nic změnit.",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 172,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_4112",
-        "text": "Tohle může opravdu působit jako sevření, protože všechny ty věci jsou reálné závazky a nejdou prostě vypnout. Není divu, že vedle nich svoboda začne vypadat hodně malá.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4113",
-        "text": "„Nemůžu změnit nic“ může být pocit vzniklý z toho, že nemůžeš změnit všechno najednou. Mezi úplnou revolucí a nulovou volbou ale bývá dost prostoru.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4114",
-        "text": "Možná tě nedusí samotné děti, práce ani hypotéka, ale součet všech povinností bez místa, které by působilo opravdu tvoje. To je jiný problém než touha všechno opustit.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4118",
-        "text": "Možná si představuješ změnu jen jako radikální řez, a proto vypadá nereálně. Menší přestavba života může být méně dramatická a přesto velmi významná.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4132",
-        "text": "To, že to celé utáhneš — hypotéku, práci, děti — je mimochodem výkon, který si sám (sama) nikdy nepochválíš; tak to udělám za tebe: klobouk dolů.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4120",
-        "text": "Nemusíš už teď vědět, co přesně chceš změnit. První krok může být jen rozeznat, která část života tě svírá nejvíc a která je naopak v pořádku.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4123",
-        "text": "Zkus otázku „co můžu změnit?“ zmenšit na „co nemusí být za půl roku stejné jako dnes?“ Budoucnost na půl roku je podstatně méně děsivá než doživotní smlouva.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4125",
-        "text": "Kdyby hypotéka zůstala, děti zůstaly a změnit šla jen jedna věc, která by ti nejvíc ulevila? Jedna páka bývá praktičtější než snaha zvednout celý dům.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4129",
-        "text": "Možná nemůžeš udělat velkou změnu rychle, ale můžeš začít připravovat podmínky pro změnu pomalu. Rozdíl mezi „teď ne“ a „nikdy“ je obrovský.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4127",
-        "text": "Děti potřebují rodiče, ne nutně rodiče, který už nikdy nic vlastního nezmění. Péče o ně a péče o vlastní život nemusí být protichůdné projekty.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4115",
-        "text": "Nemusíš mít možnost odjet zítra na druhý konec světa, aby v životě existovala svoboda. Někdy začíná u mnohem menších rozhodnutí, která nejsou předem přidělená.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4116",
-        "text": "Je možné, že některé velké změny jsou teď skutečně obtížné nebo drahé. To ale pořád není totéž jako nemožnost měnit směr postupně.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4117",
-        "text": "Závazek nemusí znamenat doživotní rozsudek. Hypotéky, práce i rodinné uspořádání mají nějaké podmínky, ale nejsou to přírodní zákony.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4119",
-        "text": "Je fér přiznat si, že některé volby z minulosti dnes omezují tvoje možnosti. Dospělá svoboda často není bez omezení, ale schopnost vybírat uvnitř nich.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4121",
-        "text": "Pocit pasti stojí za pozornost právě proto, že člověk v něm snadno přestane hledat i ty dveře, které opravdu existují.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4122",
-        "text": "Když na sebe naskládáš hypotéku, práci a děti do jedné věty, zní to skoro jako tři ocelové tyče přes dveře. Každá z nich je ale jiný závazek a každá se mění jiným způsobem.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4124",
-        "text": "Možná si svobodu představuješ jako stav bez závazků. Jenže člověk může mít závazky a pořád rozhodovat o práci, vztazích, čase, prioritách nebo způsobu, jak je naplňuje.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4126",
-        "text": "Je možné, že máš pocit povinnosti zachovat úplně všechny parametry současného života, protože „tak se to přece dělá“. Některé z těch zdí mohou být společenský zvyk, ne skutečná nutnost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4128",
-        "text": "Hypotéka je finanční smlouva, ne slib, že do konce splatnosti budeš stejný člověk. Banka má nárok na splátku, ne na tvoji identitu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4130",
-        "text": "Pocit pasti někdy vzniká také tím, že všechny možné následky změny vidíš velmi ostře a následky nezměněného života skoro vůbec. I setrvání je volba s cenou.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4131",
-        "text": "Nemusíš převrátit stůl, aby ses přestal cítit jako jeho inventář. Občas stačí nejdřív zjistit, kterou jednu věc už dál nechceš automaticky přijímat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4133",
-        "text": "Rozlož si to: hypotéka je smlouva, ne pouto na duši — dá se refinancovat, byt se dá i prodat; práce se dá změnit i se závazky, lidi to dělají; děti jsou jediná položka bez výpovědní lhůty — a zrovna ta je ta, kterou bys nevypověděl(a) stejně.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4134",
-        "text": "Změna se závazky nevypadá jako skok, ale jako pomalá výhybka — kurz po večerech, ušetřená rezerva, rozhovor s partnerem o přerozdělení; vlak nezastavíš, ale přehodit ho na jinou kolej jde i za jízdy.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4135",
-        "text": "Kdyby ta hypotéka uměla mluvit, řekla by: já jsem sedmnáct řádků v bance, ne mříž — z té klece, co cítíš, jsem postavila jen zdi; strop sis tam domyslel(a) sám (sama).",
-        "source": "n"
-      }
-    ]
-  },
-  {
-    "id": "pain_0173",
-    "src_id": "k_224",
-    "text": "Nenávidím svou práci, ale nájem se sám nezaplatí — tak zase v pondělí nastoupím.",
-    "smer": "na svět",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 173,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_4136",
-        "text": "Tohle je tvrdá situace právě proto, že tvoje nechuť nenaráží na nedostatek odvahy, ale na úplně reálné účty. Potřebovat příjem výrazně omezuje, jak romanticky lze odcházet z práce.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4137",
-        "text": "Nemusíš si vyčítat, že v nenáviděné práci zůstáváš, pokud ji teď potřebuješ k živobytí. Opatrnost není zbabělost.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4138",
-        "text": "Zároveň nemusíš z „musím tam v pondělí“ dělat „musím tam být navždy“. Současná nutnost nemusí být doživotní rozhodnutí.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4139",
-        "text": "Možná je užitečné zjistit, co přesně na práci nenávidíš: obsah, lidi, tempo, směny, vedení nebo pocit bezvýchodnosti. Některé části se mění snáz než celé zaměstnání.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4141",
-        "text": "Nemusíš dát výpověď zítra, aby ses začal pohybovat pryč. I malé kroky směrem k jiné možnosti mohou změnit pocit, že jsi úplně bez volby.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4143",
-        "text": "Nájem je důvod zůstat, ne důkaz, že musíš mít svou práci rád. Nemusíš svůj praktický kompromis ještě přikrášlovat falešnou vděčností.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4144",
-        "text": "Možná tě nejvíc vysává pocit, že nemáš žádný plán B. I velmi pomalé budování jiné cesty může vrátit kus psychické svobody dřív, než změníš zaměstnavatele.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4147",
-        "text": "Zkus si vedle otázky „můžu odejít?“ položit „co bych potřeboval, abych mohl odejít bezpečněji?“ Druhá otázka vyrábí podmínky místo bezmoci.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4153",
-        "text": "Pokud nemůžeš změnit práci hned, zkus chránit to, co jí nepatří: čas po směně, vlastní energii, vztahy, zájmy nebo myšlenku, že nejsi jen zaměstnanec téhle firmy.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4160",
-        "text": "Nemusíš zítra dávat výpověď, aby se něco hnulo. Stačí jedna maličkost — oprášit životopis, napsat známému, kouknout na jeden inzerát — a z vězně je najednou člověk, který má plán.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4140",
-        "text": "Je fér, pokud práce bere víc než jen osm hodin a začne ti kazit i večery a víkendy. Taková cena stojí za to brát vážně, i když zatím nemůžeš odejít.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4142",
-        "text": "Je možné, že teď opravdu žádná bezpečná alternativa není. Pak má smysl zaměřit se i na to, jak si současnou práci udělat o něco méně ničivou, dokud se něco nezmění.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4145",
-        "text": "Pondělní návrat nemusí znamenat kapitulaci. Může to být prostě způsob, jak si zatím financuješ čas potřebný k hledání něčeho lepšího.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4146",
-        "text": "Nájem má jednu otravnou vlastnost: pronajímatel bývá překvapivě málo dojatý existenciální krizí svého nájemníka. Praktická stránka věci je bohužel skutečná.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4148",
-        "text": "Je možné, že slovo „nenávidím“ skrývá jednu nebo dvě konkrétní věci, které dělají většinu utrpení. Pokud je najdeš, možná existuje změna i bez okamžité výpovědi.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4149",
-        "text": "Kdybys věděl, že za rok pracuješ jinde, co bys začal dělat už teď? Tuhle otázku můžeš použít jako kompas, i když termín vůbec jistý není.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4150",
-        "text": "„Musím v pondělí nastoupit“ je možná pravda. „Nemám vůbec žádnou možnost ovlivnit příštích pět let“ už je mnohem větší tvrzení a zaslouží si přezkoumat.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4151",
-        "text": "Nemusíš z každého pracovního dne udělat boj o smysl života. Pokud je teď práce hlavně zdroj peněz, může být dočasně zdravější přestat od ní vyžadovat identitu, naplnění i sebeúctu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4152",
-        "text": "Možná už dlouho čekáš, až budeš mít jistotu, že jiná volba vyjde. Jistota ale u pracovních změn často přijde až po kroku, ne před ním.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4154",
-        "text": "Výplata je silný argument pro pondělní příchod, ale není to manželský slib. Praktická závislost na práci a věrnost práci jsou dvě různé věci.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4155",
-        "text": "Možná teď potřebuješ méně odvahy „všechno zahodit“ a víc trpělivosti vytvořit si únikovou cestu. To bývá méně filmové, ale podstatně použitelnější.",
-        "source": "k"
-      },
-      {
-        "id": "hl_4156",
-        "text": "Zajímavé je, že práci nenávidíš, a přesto tam každé pondělí spolehlivě dorazíš. To není past, to je volba — a kdo volí, může časem zvolit i jinak.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4157",
-        "text": "Nájem se sám nezaplatí, to je pravda. Ale ta věta neříká, že ho musí platit zrovna tahle práce — jen že ho zatím platí ona.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4158",
-        "text": "Tělo by ti možná řeklo: dobře, vydržím to s tebou, ale všímej si, kde mě to tlačí. Zatnutá čelist v neděli večer je zpráva, ne počasí.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4159",
-        "text": "Víkend má taky svá práva — nenech pondělku sežrat ještě sobotu a neděli. Trápit se prací ve chvíli, kdy v ní zrovna nejsi, je přesčas, který ti nikdo neproplatí.",
-        "source": "n"
-      }
-    ]
-  },
-  {
     "id": "pain_0174",
     "src_id": "k_256",
     "text": "Pondělí, úterý, středa — všechno stejná šedivá břečka.",
     "smer": "na svět",
     "oblast": null,
     "tier": "free",
-    "sort_order": 174,
+    "sort_order": 175,
     "added_at": "2026-09-11",
     "hlasky": [
       {
@@ -23003,93 +23090,6 @@
       {
         "id": "hl_4184",
         "text": "Rytmus sám o sobě není nepřítel — mniši i sportovci žijí v přísnějším stereotypu než ty a šedý jim nepřijde; rozdíl není v pestrosti dnů, ale v tom, jestli v nich člověk vidí směr; možná nehledáš zábavu, ale smysl.",
-        "source": "n"
-      }
-    ]
-  },
-  {
-    "id": "pain_0175",
-    "src_id": "k_222",
-    "text": "Celý můj kalendář jsou povinnosti pro ostatní — kde tam jsem já?",
-    "smer": "na sebe",
-    "oblast": null,
-    "tier": "free",
-    "sort_order": 175,
-    "added_at": "2026-09-11",
-    "hlasky": [
-      {
-        "id": "hl_4187",
-        "text": "Hodina pro tebe není ukradená ostatním; je to údržba člověka, na kterém všichni ti ostatní stojí.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4189",
-        "text": "Nikdo ti tu půlhodinu pro sebe nepřidělí, protože nikdo jiný neví, že ji potřebuješ — říct si o ni není sobectví, ale upřímnost.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4185",
-        "text": "Možná nejde o to, že v kalendáři chybíš — možná v něm chybí jen kolonka s tvým jménem, a tu tam smíš dopsat úplně stejně, jako tam dopisuješ všechny ostatní.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4193",
-        "text": "Zkus to zmenšit: nehledej v kalendáři sebe, najdi tam jednu půlhodinu tenhle týden — to je celý úkol, žádné hledání smyslu života.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4194",
-        "text": "Schůzka sama se sebou se dá zapsat úplně stejně jako schůzka se zubařem, a na rozdíl od zubaře se na ni můžeš i těšit.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4186",
-        "text": "To, že se o tebe tvůj kalendář nestará, neznamená, že si péči nezasloužíš — znamená to jen, že ses ještě nenaučil objednávat se sám u sebe.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4192",
-        "text": "Ono „pro ostatní“ je fér pocit, ale není to celá pravda — spousta těch povinností jsou tvoje volby, které mezitím zapomněly, že kdysi byly volby.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4196",
-        "text": "Představ si opak: kalendář plný jen tebe, nikdo tě nepotřebuje, nikomu nic nedlužíš — a hádám, že do týdne by ti bylo smutno; takže nejde o vymazat ostatní, jen si mezi ně sednout.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4190",
-        "text": "Kdo ten kalendář vlastně plnil? Protože jestli to bylo tvoje pero, tak tam nechybíš — jsi tam na každém řádku, jen sis dal roli sekretáře místo klienta.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4188",
-        "text": "Zkus se na ten plný kalendář podívat i z druhé strany: je to mapa lidí, kterým na tobě záleží a ty jim — teď už jen přidat jednoho, na kterém ti záleží taky.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4191",
-        "text": "Zajímavý paradox se skrývá v té větě: v kalendáři prý nejsi, a přitom jsi jediný, kdo v něm figuruje úplně všude.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4195",
-        "text": "Kdyby tvoje tělo umělo psát do kalendáře, už dávno by si tam červeně vyblokovalo středu odpoledne — a tebe by na tu schůzku pozvalo jen jako hosta.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4197",
-        "text": "Starý kovboj by řekl: kůň, který jen vozí náklad a nikdy se nepase, ti jednou lehne uprostřed cesty — a bude mu fuk, co máš v diáři.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4198",
-        "text": "Za deset let si z těch schůzek nevzpomeneš ani na jednu, ale na to, že ses celou dekádu nikde nepotkal sám se sebou, si vzpomeneš spolehlivě.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4199",
-        "text": "Ještě že to vidíš — horší verze téhle věty je ta, kterou člověk vysloví až v důchodu.",
         "source": "n"
       }
     ]
