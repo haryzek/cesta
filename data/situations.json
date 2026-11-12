@@ -61,7 +61,7 @@
       },
       {
         "id": "sitr_0007",
-        "text": "Strach z veřejného vystupování patří mezi nejrozšířenější strachy vůbec [ověřit], takže nejsi divný, jsi statistický."
+        "text": "Strach z veřejného vystupování patří mezi nejrozšířenější strachy vůbec, takže nejsi divný, jsi statisticky v normě."
       },
       {
         "id": "sitr_0008",
@@ -105,7 +105,7 @@
       },
       {
         "id": "sitr_0012",
-        "text": "Lidé na druhé straně stolu jsou taky nervózní, často improvizují a mají za sebou vlastní pohovory, které nedopadly."
+        "text": "Lidé na druhé straně stolu jsou taky nervózní, často improvizují a mají za sebou vlastní pohovory, které možná nedopadly ideálně."
       },
       {
         "id": "sitr_0013",
@@ -187,7 +187,7 @@
       },
       {
         "id": "sitr_0021",
-        "text": "Kritika v práci se týká výkonu nebo úkolu, ne tvojí hodnoty jako člověka, i když to zevnitř tak necítíš."
+        "text": "Kritika v práci se týká výkonu nebo úkolu, ne tvojí hodnoty jako člověka, i když to možná zevnitř tak necítíš."
       },
       {
         "id": "sitr_0022",
@@ -257,11 +257,11 @@
     "reframings": [
       {
         "id": "sitr_0027",
-        "text": "Známka hodnotí jeden výkon v jednom předmětu u jednoho učitele — ne inteligenci a ne budoucnost."
+        "text": "Známka hodnotí jeden výkon v jednom předmětu u jednoho učitele — ne inteligenci ani budoucnost."
       },
       {
         "id": "sitr_0028",
-        "text": "Školní systém je stavěný na opravy: reparát, opakování ročníku, přestup jinam; máloco v něm je definitivní."
+        "text": "Školní systém je stavěný na opravy: znovu před tabuli, další termín zkoušky, reparát, opakování ročníku, přestup jinam; máloco v něm je definitivní."
       },
       {
         "id": "sitr_0029",
@@ -301,7 +301,7 @@
     "reframings": [
       {
         "id": "sitr_0032",
-        "text": "Prohra je vestavěná součást sportu — i špičkoví hráči prohrávají velký podíl svých zápasů a v každém turnaji nakonec vyhraje jeden."
+        "text": "Prohra je nedílnou součástí sportu — i špičkoví hráči prohrávají velký podíl svých zápasů a v každém turnaji nakonec vyhraje jeden."
       },
       {
         "id": "sitr_0033",
@@ -309,7 +309,7 @@
       },
       {
         "id": "sitr_0034",
-        "text": "Sportovní výkon není stabilní vlastnost, kolísá den ode dne, a jeden špatný závod nevypovídá nic o tvé formě."
+        "text": "Sportovní výkon není stabilní vlastnost, kolísá den ode dne, a jeden špatný závod nevypovídá nic o tvé celkové formě."
       },
       {
         "id": "sitr_0035",
@@ -349,7 +349,7 @@
       },
       {
         "id": "sitr_0038",
-        "text": "Nerozumět se dá vyřešit jednou větou — 'můžete to říct pomaleji?' — a nikdo ji nebere jako selhání."
+        "text": "Neporozumění se dá vyřešit jednou větou — 'můžete to říct pomaleji?' — a nikdo ji nebere jako selhání."
       },
       {
         "id": "sitr_0039",
@@ -425,7 +425,7 @@
       },
       {
         "id": "sitr_0045",
-        "text": "Nejvíc škody nedělá zpoždění, ale mlčení — včasná věta 'nestíhám, potřebuju do pátku' bývá přijatá překvapivě v klidu."
+        "text": "Nejvíc škody nedělá zpoždění, ale mlčení — včasná věta 'nestíhám, potřebuju čas do pátku' bývá přijatá překvapivě v klidu."
       },
       {
         "id": "sitr_0046",
@@ -543,7 +543,7 @@
       },
       {
         "id": "sitr_0057",
-        "text": "Konkrétně pomáhá nástroje zkoušet místo se jich bát: člověk, který AI umí používat, je v lepší pozici než ten, kdo ji ignoruje."
+        "text": "Konkrétně pomáhá nástroje zkoušet, ne se jich bát: člověk, který AI umí používat, je v lepší pozici než ten, kdo ji ignoruje."
       },
       {
         "id": "sitr_0058",
@@ -735,11 +735,11 @@
     "reframings": [
       {
         "id": "sitr_0076",
-        "text": "Strach z telefonování je dnes velmi rozšířený, zvlášť u lidí zvyklých spíš psát [ověřit] — nejsi výjimka, jsi trend."
+        "text": "Strach z telefonování je dnes velmi rozšířený — nejsi výjimka, jsi trend."
       },
       {
         "id": "sitr_0077",
-        "text": "Po telefonu nikdo nevidí, že máš před sebou papír s napsanými větami; připravená první věta a jasný cíl hovoru odstraní většinu nejistoty."
+        "text": "Při telefonování tě nikdo nevidí, můžeš mít před sebou papír s napsanými větami; připravená první věta a jasný cíl hovoru odstraní většinu nejistoty."
       },
       {
         "id": "sitr_0078",
@@ -814,7 +814,7 @@
       },
       {
         "id": "sitr_0085",
-        "text": "Hostitel i host se stejně bojí, že to bude trapné; oba mají zájem, aby to prošlo hladce, takže se navzájem drží."
+        "text": "Hostitel i host se bojí, že to bude trapné; oba mají zájem, aby to prošlo hladce, takže se navzájem podrží."
       },
       {
         "id": "sitr_0086",
@@ -850,7 +850,7 @@
     "reframings": [
       {
         "id": "sitr_0088",
-        "text": "Na velké akci nikdo neřeší tebe — každý řeší, jak vypadá on sám, s kým bude stát a kdy může slušně odejít."
+        "text": "Na velké akci nikdo neřeší tebe — každý řeší, jak vypadá on sám, vedle koho bude stát nebo s kým bude mluvit, a také kdy může slušně odejít."
       },
       {
         "id": "sitr_0089",
@@ -959,7 +959,7 @@
       },
       {
         "id": "sitr_0099",
-        "text": "Kritika bolí tím míň, čím je konkrétnější a čím míň v ní je soudu o člověku — 'tohle mi vadilo' snese skoro každý, 'ty jsi takový' skoro nikdo."
+        "text": "Kritika bolí tím míň, čím je konkrétnější a čím míň v ní je soudu o celém člověku — 'tohle mi vadilo' snese skoro každý, 'ty jsi takový' skoro nikdo."
       },
       {
         "id": "sitr_0100",
@@ -998,7 +998,7 @@
       },
       {
         "id": "sitr_0103",
-        "text": "Každé 'ano', které nechceš říct, je 'ne' něčemu jinému — vlastnímu času, energii nebo lidem, které máš rád."
+        "text": "Každé 'ano', které jsi ve skutečnosti nechtěl vyslovit, je 'ne' něčemu jinému — vlastnímu času, energii nebo lidem, které máš rád."
       },
       {
         "id": "sitr_0104",
@@ -1006,7 +1006,7 @@
       },
       {
         "id": "sitr_0105",
-        "text": "Kdo se na tebe kvůli odmítnutí trvale naštve, ti tím říká, že mu šlo o tvou poslušnost, ne o tebe."
+        "text": "Kdo se na tebe kvůli odmítnutí trvale naštve, tomu šlo o tvou poslušnost, ne o tebe."
       }
     ],
     "fear_ids": [
@@ -1065,7 +1065,7 @@
       },
       {
         "id": "sitr_0109",
-        "text": "Je normální, že se v tom mísí strach, hnus a pochybnost, jestli to nepřeháníš; ten zmatek je součást zásahu, ne důkaz, že se nic nestalo."
+        "text": "Je normální, že se v tom mísí strach, hnus a pochybnost, jestli to nepřeháníš; ten zmatek je součást překročení tvých hranic, ne důkaz, že se nic nestalo."
       }
     ],
     "fear_ids": [
@@ -1097,11 +1097,11 @@
       },
       {
         "id": "sitr_0112",
-        "text": "Nemusíš překonávat 'sám sebe', stačí překonat jednu konkrétní situaci — a ta je vždycky menší než abstraktní představa změny."
+        "text": "Nemusíš překonávat 'sám sebe', stačí překonat jednu konkrétní situaci — a ta je vždycky zvládnutelnější než abstraktní představa změny."
       },
       {
         "id": "sitr_0113",
-        "text": "Lidé zpětně litují spíš toho, co nezkusili, než toho, co zkusili a nevyšlo [ověřit]; jenže v přítomnosti to vždycky vypadá obráceně."
+        "text": "Lidé zpětně často litují spíš toho, co nezkusili, jenže v přítomnosti to vypadá obráceně."
       }
     ],
     "fear_ids": [
@@ -1128,7 +1128,7 @@
     "reframings": [
       {
         "id": "sitr_0114",
-        "text": "Ve světě je vždycky víc dění, než stihne jeden člověk — něco ti uniká pořád, bez ohledu na to, kolik toho stihneš."
+        "text": "Ve světě je vždycky víc věcí k dělání, může jeden člověk stihnout — něco ti uniká pořád, bez ohledu na to, kolik toho stihneš."
       },
       {
         "id": "sitr_0115",
@@ -1136,11 +1136,11 @@
       },
       {
         "id": "sitr_0116",
-        "text": "Většina 'nezapomenutelných' akcí je zapomenutá do měsíce; skutečné vztahy nestojí na tom, že jsi byl u každé z nich."
+        "text": "Většina 'nezapomenutelných' akcí je zapomenutá do měsíce; skutečné vztahy nestojí na stoprocentní prezenci."
       },
       {
         "id": "sitr_0117",
-        "text": "Pomáhá otázku obrátit: ne 'co mi unikne', ale 'co chci, aby mi neuniklo' — a tomu dát čas."
+        "text": "Pomáhá otázku obrátit: ne 'co mi unikne', ale 'co chci, aby mi neuniklo' — a tomu věnovat čas."
       }
     ],
     "fear_ids": [
@@ -1172,7 +1172,7 @@
       },
       {
         "id": "sitr_0119",
-        "text": "Lidé si nervozity druhých všímají mnohem míň, než si ten nervózní myslí; psychologie tomu říká iluze průhlednosti [ověřit]."
+        "text": "Lidé si nervozity druhých všímají mnohem míň, než si nervózní mysl myslí; psychologie tomu říká iluze průhlednosti."
       },
       {
         "id": "sitr_0120",
@@ -1251,7 +1251,7 @@
       },
       {
         "id": "sitr_0127",
-        "text": "Small talk není zkouška vtipu, je to rituál, který říká 'jsem přátelský' — a k tomu stačí otázka a zájem, ne obsah."
+        "text": "Small talk není zkouška vtipu, je to rituál, který říká 'jsem přátelský' — a k tomu stačí otázka a zájem, ne vypiplaný nebo vtipný obsah."
       },
       {
         "id": "sitr_0128",
@@ -1394,7 +1394,7 @@
       },
       {
         "id": "sitr_0140",
-        "text": "Uprostřed hádky nikdo nemyslí jasně, to je fyziologie; věta 'dej mi dvacet minut, pak se k tomu vrátíme' není útěk, ale jediný způsob, jak ji dokončit s rozumem."
+        "text": "Uprostřed hádky nikdo nemyslí jasně, to je fyziologie; věta 'dej mi dvacet minut, pak se k tomu vrátíme' není útěk, ale způsob, jak ji dokončit s rozumem."
       },
       {
         "id": "sitr_0141",
@@ -1402,7 +1402,7 @@
       },
       {
         "id": "sitr_0142",
-        "text": "Hádka, ve které někdo ponižuje, vyhrožuje nebo sahá na druhého, už není hádka, a to platí bez výjimky."
+        "text": "Hádka, ve které někdo ponižuje, vyhrožuje nebo používá násilí, už není hádka, a to platí bez výjimky."
       }
     ],
     "fear_ids": [
@@ -1430,11 +1430,11 @@
       },
       {
         "id": "sitr_0144",
-        "text": "Žárlivost říká víc o vlastní nejistotě než o tom, co dělá partner; často se objeví právě tehdy, když si člověk připadá málo cenný nebo mimo kontrolu."
+        "text": "Žárlivost říká víc o vlastní nejistotě než o tom, co dělá partner; často se objeví právě tehdy, když si člověk připadá málo oceněný nebo mimo kontrolu."
       },
       {
         "id": "sitr_0145",
-        "text": "Kontrola (mobil, výslechy, sledování) žárlivost neuklidní, ale živí — každá kontrola potvrdí, že je co hlídat."
+        "text": "Kontrola mobilu, výslechy,l ani sledování žárlivost neuklidní, ale naopak ji přiživí — každá další kontrola připomene, že je co hlídat."
       },
       {
         "id": "sitr_0146",
@@ -1442,7 +1442,7 @@
       },
       {
         "id": "sitr_0147",
-        "text": "Když žárlivost trvá, roste a řídí život, stojí za to ji řešit s někým — není to ostuda, je to častá věc."
+        "text": "Když žárlivost trvá, roste a řídí život, stojí za to si o ní s někým otevřeně popovídat — není to ostuda, je to častá věc."
       }
     ],
     "fear_ids": [
@@ -1470,15 +1470,15 @@
       },
       {
         "id": "sitr_0149",
-        "text": "Oni jsou nervózní taky; chtějí udělat dobrý dojem stejně jako ty, protože jde i o jejich vztah s vlastním dítětem."
+        "text": "Oni jsou nervózní taky; chtějí udělat dobrý dojem stejně jako ty."
       },
       {
         "id": "sitr_0150",
-        "text": "První setkání je obřad, ne zkouška; nikdo si z něj nepamatuje detaily, jen jestli bylo v pohodě."
+        "text": "První setkání je obřad, ne zkouška; nikdo si z něj nepamatuje detaily, jen jestli bylo aspoň trochu v pohodě."
       },
       {
         "id": "sitr_0151",
-        "text": "Pomáhá se předem zeptat partnera na pár věcí o rodičích (co je baví, na co nechodit) a mít dvě otázky, které jim položíš — lidé mají rádi, když se o ně někdo zajímá."
+        "text": "Pomáhá se předem zeptat partnera na pár věcí o rodičích (co je baví, do čeho se v začátku nepouštět) a mít dvě otázky, které jim položíš — lidé mají rádi, když se o ně někdo zajímá."
       }
     ],
     "fear_ids": [
@@ -1502,11 +1502,11 @@
     "reframings": [
       {
         "id": "sitr_0152",
-        "text": "Strach ze selhání jako rodič mají hlavně rodiče, kteří se snaží; ti, kteří selhávají doopravdy, si tu otázku obvykle nekladou."
+        "text": "Strach z rodičovského selhání mají hlavně rodiče, kteří se snaží; ti, kteří selhávají doopravdy, si tu otázku obvykle nekladou."
       },
       {
         "id": "sitr_0153",
-        "text": "Dítě nepotřebuje dokonalého rodiče, potřebuje 'dost dobrého' — takového, který dělá chyby, všímá si jich a opravuje je; to je pojem z vývojové psychologie, ne útěcha."
+        "text": "Dítě nepotřebuje dokonalého rodiče, potřebuje 'dost dobrého rodiče' — takového, který dělá chyby, všímá si jich a napravuje je; to je pojem z vývojové psychologie, ne útěcha."
       },
       {
         "id": "sitr_0154",
@@ -1514,7 +1514,7 @@
       },
       {
         "id": "sitr_0155",
-        "text": "Omluva dítěti ('to jsem přehnal, promiň') ho nepoškodí — naučí ho, že vztah vydrží chybu, což je jedna z nejcennějších věcí, které mu můžeš dát."
+        "text": "Omluva dítěti ('to jsem přehnal, promiň') ho naučí, že vztah vydrží chybu, což je jedna z nejcennějších věcí, které mu můžeš dát."
       },
       {
         "id": "sitr_0156",
@@ -1542,7 +1542,7 @@
     "reframings": [
       {
         "id": "sitr_0157",
-        "text": "Většina rodičů chce od dospělého dítěte víc než výkon: chtějí být součástí jeho života a vědět, že je v pořádku."
+        "text": "Většina rodičů chce od dospělého dítěte víc než výkon: chtějí být součástí jeho života a vědět, že je v pořádku a spokojené."
       },
       {
         "id": "sitr_0158",
@@ -1554,7 +1554,7 @@
       },
       {
         "id": "sitr_0160",
-        "text": "Když jde o péči o stárnoucí rodiče, nikdo to nezvládá sám a bez viny — vina tu je skoro vždycky a není důkazem, že děláš málo."
+        "text": "Když jde o péči o stárnoucí rodiče, nikdo to nezvládá dokonale — pocit viny je v nějaké míře přítomný skoro vždycky a není důkazem, že děláš málo."
       }
     ],
     "fear_ids": [
@@ -1582,7 +1582,7 @@
     "reframings": [
       {
         "id": "sitr_0161",
-        "text": "Když je problém v rodině, není kam odejít — a přesto to není tvoje vina ani tvoje práce to spravit."
+        "text": "Když je problém v rodině, není kam odejít — a přesto to není tvoje vina ani tvoje povinnost to hned spravit."
       },
       {
         "id": "sitr_0162",
@@ -1613,11 +1613,11 @@
     "reframings": [
       {
         "id": "sitr_0163",
-        "text": "Být single není mezistav před 'skutečným životem'; velká část dospělých je v každém okamžiku bez partnera a žije plnohodnotně [ověřit]."
+        "text": "Být single není mezistav před 'skutečným životem'; velká část dospělých je bez partnera a žije plnohodnotný život, když si to dovolí."
       },
       {
         "id": "sitr_0164",
-        "text": "Partner není jediný zdroj blízkosti — přátelství, rodina a společenství pokrývají většinu toho, co člověk od vztahu čeká, a špatný vztah samotu naopak zvětšuje."
+        "text": "Partner není jediný zdroj blízkosti — přátelství, rodina a společenství pokrývají většinu toho, co člověk od vztahu čeká, a špatný vztah samotu naopak posiluje."
       },
       {
         "id": "sitr_0165",
@@ -1625,11 +1625,11 @@
       },
       {
         "id": "sitr_0166",
-        "text": "Strach ze samoty často vede k tomu, že člověk zůstane ve špatném vztahu nebo se vrhne do prvního dalšího — jeho rozpuštění paradoxně zvyšuje šanci na dobrý vztah."
+        "text": "Strach ze samoty často vede k tomu, že člověk zůstane ve špatném vztahu nebo se hned vrhne do prvního dalšího, který se nabízí. Vzpomeň si, kolikrát se tvůj strach již spletl."
       },
       {
         "id": "sitr_0167",
-        "text": "Stojí za to odlišit dvě věci: samotu, kterou jde vyplnit lidmi, a prázdnotu, která by zůstala i s partnerem — ta druhá se řeší jinak."
+        "text": "Stojí za to odlišit dvě věci: samotu, kterou jde vyplnit lidmi, a prázdnotu, která by zůstala i s partnerem."
       }
     ],
     "fear_ids": [
@@ -1657,11 +1657,11 @@
     "reframings": [
       {
         "id": "sitr_0168",
-        "text": "Svátky jsou nastavené tak, že samota v nich bolí víc než jindy — všude obrazy rodin a plných stolů, a ticho doma je vedle nich hlasitější."
+        "text": "Během svátků bolí samota víc než jindy. Nenechávej se svátkem zaskočit, připrav si program předem a nestyď se někoho z blízkých oslovit."
       },
       {
         "id": "sitr_0169",
-        "text": "Není to tvoje chyba a není to důkaz, že jsi na tom hůř než ostatní; tohle prázdno zná víc lidí, než kolik jich o tom mluví."
+        "text": "Není to tvoje chyba a není to důkaz, že jsi na tom hůř než ostatní; tohle prázdno zná víc lidí, než kolik jich o něm mluví."
       }
     ],
     "fear_ids": [
@@ -1689,11 +1689,11 @@
     "reframings": [
       {
         "id": "sitr_0170",
-        "text": "V šatně ani na pláži se na tebe nikdo nedívá tak pozorně, jak si myslíš; každý je zaměstnaný hlavně sebou a tím, jak vypadá on."
+        "text": "V šatně ani na pláži se na tebe nedívají tak pozorně, jak si myslíš; jsou zaměstnaní hlavně sebou a tím, jak vypadají oni."
       },
       {
         "id": "sitr_0171",
-        "text": "Nahá těla v reálném světě vypadají jinak než na fotkách — záhyby, asymetrie, jizvy a chlupy jsou norma, ne odchylka."
+        "text": "Nahá těla v reálném světě vypadají jinak než na fotkách — vrásky, pigmenty, záhyby, asymetrie, jizvy a chlupy jsou norma, ne odchylka."
       },
       {
         "id": "sitr_0172",
@@ -1701,7 +1701,7 @@
       },
       {
         "id": "sitr_0173",
-        "text": "Nemusíš to lámat přes koleno; jde jít postupně — ručník, tmavší kout, kratší čas — a nechat tělo, ať si zvykne."
+        "text": "Nemusíš to lámat přes koleno; dá se na to jít postupně — ručník, tmavší kout, kratší čas — a nechat tělo, ať si zvykne. Ale do nahoty se ve většině situací nemusíš nutit. Hodnota člověka se neměří plochou obnažené kůže."
       }
     ],
     "fear_ids": [
@@ -1731,23 +1731,19 @@
     "reframings": [
       {
         "id": "sitr_0174",
-        "text": "To, co na sobě vidíš jako hlavní vadu, ostatní většinou vůbec nezaznamenají — vidíš to zblízka, každý den a se soustředěním, jaké ti nikdo jiný nevěnuje."
+        "text": "To, co na sobě vidíš jako hlavní vadu, ostatní nejspíš vůbec nezaznamenají — vidíš to zblízka, každý den a se soustředěním, jaké ti nikdo jiný nevěnuje."
       },
       {
         "id": "sitr_0175",
-        "text": "Přitažlivost mezi lidmi stojí mnohem víc na chování, hlasu, humoru a pozornosti než na jedné části těla."
+        "text": "Přitažlivost mezi lidmi stojí mnohem víc na chování, hlasu, humoru a pozornosti než na částech těla."
       },
       {
         "id": "sitr_0176",
         "text": "Srovnávat se s tím, co je vidět na obrazovkách, znamená srovnávat se s výběrem, úpravou a světlem, ne s lidmi."
       },
       {
-        "id": "sitr_0177",
-        "text": "Velikost prsou nebo penisu má pro spokojenost partnera mnohem menší význam, než se ve strachu zdá — a to platí i podle toho, co říkají partneři sami [ověřit]."
-      },
-      {
         "id": "sitr_0178",
-        "text": "Když se myšlenky na 'vadu' točí celý den a brání ti žít, není to marnivost, ale problém, který se dá dobře léčit — stojí za to o něm někomu říct."
+        "text": "Když se myšlenky na 'vadu' točí hlavou celý den a brání ti žít, není to marnivost, ale problém, o kterém může být dobré se bavit s odborníkem."
       }
     ],
     "fear_ids": [
@@ -1774,7 +1770,7 @@
     "reframings": [
       {
         "id": "sitr_0179",
-        "text": "Váha kolísá u každého — s věkem, ročním obdobím, stresem, spánkem, léky, hormony — a většina těch výkyvů nemá nic společného s vůlí."
+        "text": "Váha kolísá u každého — s věkem, ročním obdobím, stresem, spánkem, léky, hormony — a většina těch výkyvů nemá nic společného se silou vůle."
       },
       {
         "id": "sitr_0180",
@@ -1782,7 +1778,7 @@
       },
       {
         "id": "sitr_0181",
-        "text": "Hodnota člověka a číslo na váze spolu nesouvisí, i když to kultura kolem tvrdí každý den."
+        "text": "Hodnota člověka a číslo na váze spolu nesouvisí."
       },
       {
         "id": "sitr_0182",
@@ -1810,16 +1806,7 @@
       "ztráta váhy"
     ],
     "mark": "E",
-    "reframings": [
-      {
-        "id": "sitr_0183",
-        "text": "Když tělo hubne a člověk to nechce, je to nepříjemné a často děsivé — tělo se mění bez dovolení."
-      },
-      {
-        "id": "sitr_0184",
-        "text": "Je v pořádku brát to vážně a nechat si to od někoho vysvětlit."
-      }
-    ],
+    "reframings": [],
     "fear_ids": [
       "fear_0063",
       "fear_0159",
@@ -1849,15 +1836,15 @@
       },
       {
         "id": "sitr_0186",
-        "text": "Většina toho, co v těchto obdobích děsí, děsí proto, že se o tom nemluví — informace od lékaře nebo z dobré knihy zmenší strach víc než cokoli jiného."
+        "text": "Obavy vázané k těmto obdobím vznikají často proto, že se o tom dost nemluví — informace od lékaře nebo z dobré knihy zmenší strach víc než cokoli jiného."
       },
       {
         "id": "sitr_0187",
-        "text": "Tělo se mění celý život, ne jen v pubertě a v přechodu; to, co se zdá jako ztráta, bývá spíš přesun — jiná energie, jiné priority, jiné tělo."
+        "text": "Tělo se mění celý život, ne jen v pubertě a v přechodu; to, co se zdá jako ztráta, bývá spíš přesun — jiná energie, jiné priority, adaptované tělo."
       },
       {
         "id": "sitr_0188",
-        "text": "Když obtíže výrazně zasahují do života (bolest, výkyvy nálad, krvácení mimo normu), nemusí se to vydržet — dají se řešit a lékař je od toho."
+        "text": "Když obtíže výrazně zasahují do života (bolest, výkyvy nálad, krvácení mimo normu), je na místě vyhledat lékaře a nenutit se překonávat potíže bez pomoci."
       }
     ],
     "fear_ids": [
@@ -1884,15 +1871,15 @@
     "reframings": [
       {
         "id": "sitr_0189",
-        "text": "Strach z porodu, z plodnosti nebo z toho, jestli to zvládnu, má naprostá většina žen i partnerů — je to normální součást tak velké změny."
+        "text": "Strach z těhotenství a porodu má naprostá většina žen i jejich partnerů, ue to lidské."
       },
       {
         "id": "sitr_0190",
-        "text": "Porod je v dnešních podmínkách velmi bezpečná událost s propracovanou péčí; komplikace existují, ale zdravotnictví je na ně připravené [ověřit]."
+        "text": "Porod je v dnešních podmínkách velmi bezpečná událost s propracovanou péčí; komplikace existují, ale zdravotnictví je na ně připravené."
       },
       {
         "id": "sitr_0191",
-        "text": "Nejistota ohledně plodnosti se dá vyšetřit, ne jen tušit — a možnosti jsou dnes mnohem širší než před generací."
+        "text": "Nejistota ohledně plodnosti se dá vyšetřit, ne jen tušit — a možnosti jsou dnes mnohem širší než dřív."
       },
       {
         "id": "sitr_0192",
@@ -1933,11 +1920,11 @@
       },
       {
         "id": "sitr_0195",
-        "text": "Jsou hrozně nepříjemné, ale u zdravého člověka nejsou nebezpečné a samy odezní — obvykle během minut."
+        "text": "Tělesné příznaky úzkosti mohou být velmi nepříjemné, ale u zdravého člověka nejsou nebezpečné a samy odezní — obvykle během minut."
       },
       {
         "id": "sitr_0196",
-        "text": "Sledování vlastního těla příznaky zesiluje: čím pozorněji hlídáš srdce, tím víc si všímáš každé odchylky, a kruh se roztáčí."
+        "text": "Sledování vlastního těla příznaky zesiluje: čím pozorněji hlídáš srdce, tím víc si všímáš každé odchylky, a začarovaný kruh úzkosti se roztáčí."
       },
       {
         "id": "sitr_0197",
@@ -1945,7 +1932,7 @@
       },
       {
         "id": "sitr_0198",
-        "text": "Když se příznaky vracejí a řídí tvůj život, je to dobře léčitelný stav, ne osud."
+        "text": "Když se tělesné příznaky úzkosti vracejí a řídí tvůj život, neznamená to, že tomu tak bude pořád. Úzkost a psychosomatické potíže je možné léčit a výrazně ztlumit či zcela odstranit"
       }
     ],
     "fear_ids": [
@@ -1973,19 +1960,19 @@
     "reframings": [
       {
         "id": "sitr_0199",
-        "text": "Vrásky a šediny jsou známka toho, že se člověk dožil věku, kdy je má — to není selhání, to je výhra nad alternativou."
+        "text": "Vrásky a šediny jsou známkou toho, že se člověk dožil vyššího věku — nejde o selhání, ale o důkaz toho, že žijeme."
       },
       {
         "id": "sitr_0200",
-        "text": "Spokojenost se životem u mnoha lidí po padesátce spíš roste než klesá [ověřit]; tělo slábne, ale nároky, srovnávání a úzkost často taky."
+        "text": "Spokojenost se životem u mnoha lidí po padesátce spíš roste než klesá; tělo může ztrácet formu, ale také se snižují nároky a méně se porovnáváme s ostatními, což zmírňuje úzkost."
       },
       {
         "id": "sitr_0201",
-        "text": "Na stárnutí těla má vliv i to, co se s ním dělá — pohyb, spánek, vztahy — a to jde ovlivnit v každém věku."
+        "text": "Na stárnutí těla má vliv i to, jak s ním zacházíme — v každém věku můžene dbát na to, abychom měli dost pohybu a spánku, jedli pestrou a vyváženou stravu, a pěstovali zdravé vztahy."
       },
       {
         "id": "sitr_0202",
-        "text": "Strach ze stárnutí je často strach z toho, že tě přestanou vidět; ale lidé, kteří jsou zajímaví ve třiceti, jsou obvykle zajímaví i v sedmdesáti."
+        "text": "Strach ze stárnutí je často strach z toho, že tě ostatní přestanou vidět; ale lidé, kteří jsou zajímaví ve třiceti, jsou obvykle zajímaví i v sedmdesáti."
       }
     ],
     "fear_ids": [
@@ -2009,11 +1996,11 @@
     "reframings": [
       {
         "id": "sitr_0203",
-        "text": "Poprvé to bývá nemotorné pro každého — nikdo se nenarodil s tím, jak se to dělá, a druhý to většinou ví stejně málo."
+        "text": "Poprvé to bývá nemotorné pro každého — nikdo se nenarodil s tím, jak se to dělá, a druhý je většinou také nejistý."
       },
       {
         "id": "sitr_0204",
-        "text": "Neexistuje správný věk; 'všichni už' je iluze, o sexu se mnohem víc mluví, než kolik se ho děje [ověřit]."
+        "text": "Neexistuje správný věk; 'všichni už' je iluze, o sexu se mnohem víc mluví, než kolik se ho děje."
       },
       {
         "id": "sitr_0205",
@@ -2045,15 +2032,15 @@
     "reframings": [
       {
         "id": "sitr_0207",
-        "text": "Strach ze sexu je běžnější, než se přiznává; sex je situace, kde je člověk nahý, blízko a bez scénáře — to není maličkost."
+        "text": "Strach ze sexu je běžnější, než se přiznává; sex je situace, kde je člověk nahý, intimně blízko a bez spolehlivého scénáře — to není maličkost."
       },
       {
         "id": "sitr_0208",
-        "text": "Dobrý sex není výkon, ale komunikace — dvojice, které o něm mluví, bývají spokojenější než ty, které to 'prostě vědí' [ověřit]."
+        "text": "Dobrý sex není výkon, ale komunikace — dvojice, které o něm mluví, bývají spokojenější než ty, které \"všechno vědí'."
       },
       {
         "id": "sitr_0209",
-        "text": "Ne každý touží po sexu stejně často a stejně silně; nízká nebo kolísající chuť je běžná a sama o sobě není porucha."
+        "text": "Ne každý touží po sexu stejně často a stejně silně; nízká nebo kolísající chuť je běžná a sama o sobě není poruchou."
       },
       {
         "id": "sitr_0210",
@@ -2098,7 +2085,7 @@
       },
       {
         "id": "sitr_0214",
-        "text": "Mluvit o tom, co chceš nebo nechceš, není trapné — trapné je až léta se tvářit, že je všechno v pohodě."
+        "text": "Mluvit o tom, co chceš nebo nechceš, není trapné — nemusíš se tvářit, že je všechno v pohodě, když není."
       }
     ],
     "fear_ids": [
@@ -2126,7 +2113,7 @@
     "reframings": [
       {
         "id": "sitr_0215",
-        "text": "Fantazie není plán ani přání; mozek si běžně hraje s věcmi, které by člověk nikdy nechtěl doopravdy, a v sexu obzvlášť."
+        "text": "Fantazie není plán ani přání; mozek si běžně hraje s představami věcí, které ve skutečnosti nemáme v úmyslu realizovat. A v sexu to platí obzvlášť."
       },
       {
         "id": "sitr_0216",
@@ -2134,11 +2121,11 @@
       },
       {
         "id": "sitr_0217",
-        "text": "Většina lidí má fantazie, které by nikomu neřekla — pocit 'jen já jsem takový' je nejčastější lež, kterou si o sexu říkáme."
+        "text": "Většina lidí má fantazie, o kterých by nikomu neřekla — pocit \"jen já jsem takový\" je nejčastější omyl, ve kterém se zvytečně utvrzujeme."
       },
       {
         "id": "sitr_0218",
-        "text": "Hranice není obsah fantazie, ale to, jestli ti ubližuje — nutkavost, stud, který tě izoluje, ztráta kontroly nad časem u porna; v tom případě to jde řešit s někým, kdo to slyšel stokrát."
+        "text": "Hranicí není vlastní obsah fantazie, ale to, jestli ti ubližuje — nutkavost, stud, který tě izoluje, ztráta kontroly nad časem tráveným u porna; v tom případě to jde řešit s odborníkem."
       },
       {
         "id": "sitr_0219",
@@ -2170,7 +2157,7 @@
     "reframings": [
       {
         "id": "sitr_0220",
-        "text": "Selhání erekce, opožděný nebo rychlý orgasmus zažije v životě naprostá většina lidí; nejčastější příčina je stres a strach z toho, že se to stane."
+        "text": "Selhání erekce, opožděný nebo příliš rychlý orgasmus zažije v životě naprostá většina lidí; nejčastější příčinou je stres a strach z toho, že se to stane."
       },
       {
         "id": "sitr_0221",
@@ -2182,11 +2169,11 @@
       },
       {
         "id": "sitr_0223",
-        "text": "Sex se nerovná průnik; je spousta způsobů, jak být spolu blízko, a tlak na jednu konkrétní podobu je často sám o sobě příčina problému."
+        "text": "Sex se nerovná průnik; je spousta způsobů, jak se intimně spojit, a tlak na jednu konkrétní podobu je často sám o sobě příčinou problému."
       },
       {
         "id": "sitr_0224",
-        "text": "Když se to opakuje, má smysl vyšetření — tělesné příčiny existují a jsou dobře léčitelné, stejně jako ty psychické."
+        "text": "Když se to opakuje, má smysl vyšetření — tělesné příčiny existují a mohou být dobře léčitelné, stejně jako ty psychické."
       }
     ],
     "fear_ids": [
@@ -2223,15 +2210,15 @@
       },
       {
         "id": "sitr_0227",
-        "text": "Funguje pravidlo: jeden příznak, jedno vyšetření, jedna odpověď — a tu vzít vážně; opakované hledání na internetu a další a další kontroly strach nezmenšují, jen ho živí."
+        "text": "Funguje pravidlo: jeden příznak, jedno důkladné vyšetření, jedna odpověď — a tu vzít vážně; opakované hledání na internetu a další a další kontroly strach nezmenšují, jen ho živí."
       },
       {
         "id": "sitr_0228",
-        "text": "Když strach z nemoci trvá měsíce, přetrvává i po vyšetřeních a bere ti klid, není to ostuda ani přehánění — je to stav, který se dá dobře léčit."
+        "text": "Když strach z nemoci trvá měsíce, přetrvává i po vyšetřeních a bere ti klid, není to ostuda ani přehánění — je to stav, který ti odborník pomůže řešit."
       },
       {
         "id": "sitr_0229",
-        "text": "Když příznak trvá, mění se nebo se zhoršuje, není to na přerámování, ale na lékaře."
+        "text": "Když příznak trvá, mění se nebo se zhoršuje, konzultujte lékaře."
       }
     ],
     "fear_ids": [
@@ -2266,11 +2253,11 @@
       },
       {
         "id": "sitr_0232",
-        "text": "Strach z úrazu při sportu tělo zpomaluje a ztužuje, což riziko zvyšuje — uvolněný a připravený člověk se zraní méně."
+        "text": "Strach z úrazu při sportu tělo zpomaluje a drží ho v tenzi, což riziko zvyšuje — uvolněný a připravený člověk je v menším riziku zranění."
       },
       {
         "id": "sitr_0233",
-        "text": "Riziko se dá zmenšit rozumně (příprava, ochrana, nepřeceňování se), ale nikdy na nulu; život bez rizika neexistuje a strach ho stejně nezajistí."
+        "text": "Riziko se dá zmenšit rozumnou přípravou a nepřeceňováním se, ale nikdy na nulu; život bez rizika neexistuje a strach ho stejně nezajistí."
       }
     ],
     "fear_ids": [
@@ -2296,12 +2283,8 @@
     "mark": "E",
     "reframings": [
       {
-        "id": "sitr_0234",
-        "text": "Představa, že bys byl závislý na péči druhých, sahá na něco hodně hlubokého — na důstojnost a na to, kdo jsi bez toho, co dokážeš."
-      },
-      {
         "id": "sitr_0235",
-        "text": "Bát se toho je lidské a nevypovídá to nic o tom, jak bys život s omezením nesl."
+        "text": "Bát se invalidity je lidské, ale nevypovídá to nic o tom, jak bys život s omezením ve skutečnosti nesl."
       }
     ],
     "fear_ids": [
@@ -2325,11 +2308,11 @@
     "reframings": [
       {
         "id": "sitr_0236",
-        "text": "Když je nemocný někdo blízký, člověk nese dvě věci najednou — strach o něj a bezmoc, že za něj nemůže nic udělat."
+        "text": "Když je nemocný někdo blízký, člověk nese dvě věci najednou — strach o něj a bezmoc, že nedokáže nemoc silou vůle odehnat."
       },
       {
         "id": "sitr_0237",
-        "text": "Je normální být vyčerpaný, mít vztek, chvílemi na to nemyslet a pak se za to stydět."
+        "text": "Je normální být z nemoci blízkého vyčerpaný, mít vztek, chvílemi na to nemyslet a pak se za to stydět."
       }
     ],
     "fear_ids": [
@@ -2361,15 +2344,15 @@
       },
       {
         "id": "sitr_0240",
-        "text": "Nejvíc ji prodlužuje boj s ní; nejrychleji odezní, když se jí člověk nebrání a nechá ji proběhnout, i když to zní jako protimluv."
+        "text": "Když s panikou bojujeme, akorát tím orodloužíme její trvání; nejrychleji odezní, když se jí člověk nebrání a nechá ji proběhnout, i když to zní jako protimluv."
       },
       {
         "id": "sitr_0241",
-        "text": "Strach z další ataky bývá časem horší než ataky samé a vede k vyhýbání se místům a situacím; právě tím se z jedné ataky stává porucha."
+        "text": "Strach z další ataky bývá horší než samotné ataky a vede k vyhýbání se místům a situacím; právě tím se z jedné ataky stává panická porucha."
       },
       {
         "id": "sitr_0242",
-        "text": "Panická porucha patří k nejlépe léčitelným stavům vůbec — když se ataky opakují, jdi s tím za někým, kdo se tím zabývá."
+        "text": "Panická porucha patří k nejlépe léčitelným stavům vůbec — když se ataky opakují, konzultuj lékaře nebo psychoterapueta."
       }
     ],
     "fear_ids": [
@@ -2396,7 +2379,7 @@
     "reframings": [
       {
         "id": "sitr_0243",
-        "text": "Ruminace je pokus mozku vyřešit problém přemýšlením — jenže úzkost není problém, který se dá vyřešit myšlenkami, a tak se točí v kruhu."
+        "text": "Zahlcující myšlenky jsou pokusem mozku vyřešit problém přemýšlením — jenže úzkost není problém, který by takové myšlenky mohly vyřešit, a tak se točí v kruhu."
       },
       {
         "id": "sitr_0244",
@@ -2404,7 +2387,7 @@
       },
       {
         "id": "sitr_0245",
-        "text": "Zahlcení klesá, když myšlenky dostanou ven — na papír, do řeči, do pohybu — místo aby se přemílaly uvnitř."
+        "text": "Zahlcení klesá, když myšlenky přeneseme ven — na papír, do řeči, do pohybu — místo abychom ie stále dokola přemílali v hlavě."
       },
       {
         "id": "sitr_0246",
@@ -2412,7 +2395,7 @@
       },
       {
         "id": "sitr_0247",
-        "text": "Když úzkost trvá týdny, brání spánku nebo práci, je to léčitelný stav, ne povaha."
+        "text": "Když úzkost trvá týdny, brání spánku nebo práci, je to léčitelný stav, ne tvoje povaha."
       }
     ],
     "fear_ids": [
@@ -3193,7 +3176,7 @@
       },
       {
         "id": "sitr_0324",
-        "text": "Existují bezplatné dluhové poradny a zákonné cesty, jak z dluhů ven, včetně oddlužení [ověřit]; nejsou pro 'ty úplně na dně', ale pro každého, kdo to sám nezvládá."
+        "text": "Existují bezplatné dluhové poradny a zákonné cesty, jak si s dluhy pomoci. Nejsou jen pro 'ty úplně na dně', ale pro každého, kdo to sám nezvládá."
       },
       {
         "id": "sitr_0325",
@@ -3272,7 +3255,7 @@
       },
       {
         "id": "sitr_0332",
-        "text": "Existují systémy, které mají zabránit tomu nejhoršímu — dávky, sociální bydlení, potravinové banky, poradny [ověřit]; jsou tu proto, aby se používaly, a využít je není selhání."
+        "text": "Existují systémy, které mají zabránit tomu nejhoršímu — dávky, sociální bydlení, potravinové banky, poradny; jsou tu proto, aby se používaly, a využít je není selhání."
       },
       {
         "id": "sitr_0333",
@@ -5391,7 +5374,7 @@
       },
       {
         "id": "sitr_0548",
-        "text": "Kritika často vypovídá i o tom, kdo ji dává — o jeho nárocích, únavě nebo náladě. Vyplatí se oddělit, co z ní je o věci a co o něm."
+        "text": "Kritika často vypovídá i o tom, kdo ji dává — o jeho nárocích, únavě nebo náladě. Vyplatí se oddělit, co z ní je k věci a co o něm."
       },
       {
         "id": "sitr_0549",
@@ -5507,15 +5490,15 @@
     "reframings": [
       {
         "id": "sitr_0559",
-        "text": "Pocit, že jsi podvodník, potkává i velmi schopné lidi. Je to pocit, ne důkaz o tvých schopnostech."
+        "text": "Syndrom podvodníka potkává i velmi schopné lidi. Je to pocit, ne důkaz o tvých schopnostech."
       },
       {
         "id": "sitr_0560",
-        "text": "Pochybnosti nejsou spolehlivé měřítko. Lidé kolem posuzují, co reálně odvádíš, a to jsou tvrdší data než tvůj vnitřní hlas."
+        "text": "Pochybnosti nejsou spolehlivé měřítko. Lidé kolem posuzují, co reálně děláš, a to jsou tvrdší data než tvůj vnitřní hlas."
       },
       {
         "id": "sitr_0561",
-        "text": "Nevědět všechno patří ke každé práci. Odborník není ten, kdo všechno ví, ale ten, kdo ví, jak to zjistit."
+        "text": "Nevědět všechno patří ke každé práci. Odborník není ten, kdo všechno ví, ale ten, kdo ví, proč to chce zjistit a jak to zjistit."
       },
       {
         "id": "sitr_0562",
@@ -5546,11 +5529,11 @@
     "reframings": [
       {
         "id": "sitr_0563",
-        "text": "Odpovědnost neznamená mít všechno pod kontrolou. Znamená starat se, jak nejlíp umíš, a když se něco pokazí, řešit to."
+        "text": "Odpovědnost neznamená mít všechno pod kontrolou. Stačí starat se, jak nejlíp umíš, a když se něco pokazí, řešit to."
       },
       {
         "id": "sitr_0564",
-        "text": "Odpovědnost se dá sdílet: zeptat se, poradit se, rozdělit úkoly. Nést všechno sám není známka zodpovědnosti, ale přetížení."
+        "text": "Odpovědnost se dá sdílet: zeptat se, poradit se, rozdělit úkoly. Nést všechno sám není známka zodpovědnosti, ale nedůvěry."
       },
       {
         "id": "sitr_0565",
@@ -5597,7 +5580,7 @@
       },
       {
         "id": "sitr_0570",
-        "text": "Kdo se odmítnutí vyhýbá, přichází i o všechna „ano“. Každá žádost je malá sázka a málokterá je o všechno."
+        "text": "Kdo se odmítnutí vyhýbá, přichází i o všechna „ano“. Každá žádost je malá sázka, nikoli loterie o všechno."
       }
     ],
     "fear_ids": [
@@ -5637,7 +5620,7 @@
       },
       {
         "id": "sitr_0574",
-        "text": "Strach ze ztrapnění se živí vyhýbáním. Čím víc situací obcházíš, tím hrozivěji vypadají."
+        "text": "Strach ze ztrapnění se živí vyhýbáním. Čím víc situací obcházíš, tím hrozivěji to vypadá."
       }
     ],
     "fear_ids": [
@@ -5670,11 +5653,11 @@
       },
       {
         "id": "sitr_0576",
-        "text": "Co si o tobě kdo myslí, nikdy úplně neovlivníš. Ovlivníš, jak se chováš ty, a to je dost."
+        "text": "Co si o tobě kdo myslí, nikdy úplně neovlivníš. Ovlivníš to, jak se zachováš, a to je dost."
       },
       {
         "id": "sitr_0577",
-        "text": "Mínění druhých se skládá z jejich zkušeností, nálad a předsudků. Je to spíš obrázek jich samých než přesný portrét tebe."
+        "text": "Mínění druhých se skládá z jejich zkušeností, nálad a předsudků. Je to spíš obrázek jich samých než portrét tebe."
       },
       {
         "id": "sitr_0578",
@@ -5706,7 +5689,7 @@
     "reframings": [
       {
         "id": "sitr_0579",
-        "text": "Kdo se druhým posmívá, ukazuje hlavně vlastní nejistotu nebo potřebu postavit se nad někoho. Je to víc o něm než o tobě."
+        "text": "Kdo se druhým posmívá, ukazuje hlavně jeho vlastní nejistotu nebo potřebu postavit se nad někoho. Je to víc o něm než o tobě."
       },
       {
         "id": "sitr_0580",
@@ -5797,7 +5780,7 @@
       },
       {
         "id": "sitr_0590",
-        "text": "Odlišnost je pro jedny problém a pro jiné důvod, proč tě chtějí kolem sebe. Úplné přizpůsobení by tě stálo víc, než by ti dalo."
+        "text": "Odlišnost je pro jedny problém a pro jiné důvod, proč tě chtějí mít vedle sebe. Úplné přizpůsobení by tě stálo víc, než by ti dalo."
       }
     ],
     "fear_ids": [
@@ -5917,7 +5900,7 @@
       },
       {
         "id": "sitr_0602",
-        "text": "Ztráta blízkého člověka bolí, ale lidé ji opravdu přežijí — a s časem zase dokážou blízkost navázat."
+        "text": "Ztráta blízkého člověka bolí a bolest říká, že to nikdy neskončí. Ale když dáš truchlení prostor, bolest postupně zeslábne nebo změní svůj charakter. Pak bude záležet na tom, kdy si dovolíš zase plně prožívat."
       }
     ],
     "fear_ids": [
@@ -5944,7 +5927,7 @@
     "reframings": [
       {
         "id": "sitr_0603",
-        "text": "Zrada bolí právě proto, že jsi věřil. Důvěra není naivita, je to podmínka blízkosti."
+        "text": "Zrada bolí právě proto, že jsi důvěřoval. Důvěra ale není naivita, je to podmínka blízkosti."
       },
       {
         "id": "sitr_0604",
@@ -5988,7 +5971,7 @@
       },
       {
         "id": "sitr_0608",
-        "text": "Máš právo si věci ověřit, vzít si čas na rozmyšlenou a nerozhodovat se pod tlakem. Kdo tohle nesnese, sám ukazuje, o co mu jde."
+        "text": "Máš plné právo si věci ověřit, vzít si čas na rozmyšlenou a nerozhodovat se pod tlakem. Pokud to druhý nesnese, není to tvůj problém, ale jeho."
       },
       {
         "id": "sitr_0609",
@@ -5996,7 +5979,7 @@
       },
       {
         "id": "sitr_0610",
-        "text": "Pomáhá probrat situaci s někým nezávislým. Zvenku bývá vidět to, co zevnitř vztahu zaniká."
+        "text": "Pomáhá probrat situaci s někým nezávislým. Zvenku bývá vidět to, k čemu jsme uvnitř vztahu slepí."
       }
     ],
     "fear_ids": [
@@ -6061,16 +6044,12 @@
     "mark": "P",
     "reframings": [
       {
-        "id": "sitr_0615",
-        "text": "Spousta lidí pomáhá ráda — dává jim to pocit, že jsou užiteční a že jim věříš."
-      },
-      {
         "id": "sitr_0616",
         "text": "Požádat o něco není obtěžování. Druhý může vždycky říct ne, a to rozhodnutí je jeho, ne tvoje."
       },
       {
         "id": "sitr_0617",
-        "text": "Když pomáháš ty druhým, taky je nevnímáš jako přítěž. Proč by oni měli vnímat tebe jinak?"
+        "text": "Když pomáháš ty druhým, taky je nevnímáš jako přítěž. Proč by tě oni měli vnímat jinak?"
       },
       {
         "id": "sitr_0618",
@@ -6112,7 +6091,7 @@
       },
       {
         "id": "sitr_0622",
-        "text": "Někdy je cizí zklamání cena za to, že děláš, co je pro tebe správné. A ta cena může stát za to."
+        "text": "Někdy je cizí zklamání cena za to, že děláš to, co je pro tebe správné. A ta cena může stát za to, i když bolí."
       }
     ],
     "fear_ids": [
@@ -6184,15 +6163,15 @@
       },
       {
         "id": "sitr_0628",
-        "text": "Strach z vázání často hlídá svobodu, na které ti záleží. Pomáhá pojmenovat, co konkrétně si chceš uchovat."
+        "text": "Strach ze závazku často hlídá svobodu, na které ti záleží. Pomáhá pojmenovat, co konkrétně si chceš uchovat."
       },
       {
         "id": "sitr_0629",
-        "text": "Žádná volba není jistá napořád a každé rozhodnutí něco uzavírá. Nerozhodnout se ale dveře zavírá taky — jen pomaleji."
+        "text": "Žádná volba není jistá napořád a každé rozhodnutí něco uzavírá. Nerozhodnout se ale dveře zavírá taky. Je lepší jedněmi dveřmi projít a pár jich tím zavřít nebo mít všechny dveře otevřené, ale do žádných nevejít?"
       },
       {
         "id": "sitr_0630",
-        "text": "Dobrý závazek nechává prostor oběma. Když se ve vztahu necítíš svobodně, je lepší o tom mluvit než utíkat."
+        "text": "Dobrý závazek nechává prostor oběma. Když se ve vztahu necítíš svobodně, je lepší o tom mluvit než hned utíkat."
       }
     ],
     "fear_ids": [
@@ -6227,7 +6206,7 @@
       },
       {
         "id": "sitr_0633",
-        "text": "Nemusíš do vztahu skočit celý. Důvěra roste po krůčcích, podle toho, jak se ten druhý chová."
+        "text": "Nemusíš do vztahu skočit celý. Důvěra roste po krůčcích, podle toho, jak se ten druhý chová a jak vám v tom spolu je."
       },
       {
         "id": "sitr_0634",

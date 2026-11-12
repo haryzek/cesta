@@ -1386,7 +1386,7 @@
   {
     "id": "refa_0174",
     "cluster_id": "cl_0005",
-    "text": "Když tě závist zaplaví, polož si ruku na místo, kde ji cítíš v těle, a chvíli nic neřeš. Zkus si říct: „Něco důležitého mě teď bolí. Nejdřív zjistím co.“",
+    "text": "Když tě závist zaplaví, polož si ruku na místo, kde ji cítíš v těle, a chvíli nic neřeš. Zkus si říct: „Něco důležitého mě teď bolí. Budu tepělivě zkoumat, co to je.“",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -1738,7 +1738,7 @@
   {
     "id": "refa_0218",
     "cluster_id": "cl_0006",
-    "text": "Rozlišuj „udělal jsem něco, co druhému vadilo“ od „jsem člověk, který druhým vadí“. První může vést k opravě nebo omluvě; druhé je globální rozsudek.",
+    "text": "Rozlišuj „udělal jsem něco, co druhému vadilo“ od „jsem člověk, který druhým vadí“. První může vést k opravě nebo omluvě; druhé je rozsudek.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -1978,7 +1978,7 @@
   {
     "id": "refa_0248",
     "cluster_id": "cl_0007",
-    "text": "Když nic nechceš, nečekej vždycky na motivaci. Vyber drobnou činnost, která ti dřív bývala příjemná, věnuj se jí pět minut a potom si všimni, jestli se něco změnilo. I nepatrný účinek se počítá.",
+    "text": "Když nic nechceš, nečekej na motivaci. Vyber drobnou činnost, která ti dřív bývala příjemná, věnuj se jí pět minut a potom si všimni, jestli se něco změnilo. I nepatrný účinek se počítá. Motivace přichází z dělání, ne naopak.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -2010,7 +2010,7 @@
   {
     "id": "refa_0253",
     "cluster_id": "cl_0007",
-    "text": "Když je i povinnost příliš velká, nepřemýšlej o jejím dokončení. Najdi pouze první fyzický krok – otevřít dokument, položit nádobí ke dřezu, obout boty – a dovol si po něm skončit.",
+    "text": "Když je i obyčejná povinnost příliš velká, nepřemýšlej o jejím dokončení. Najdi pouze první fyzický krok – otevřít dokument, položit nádobí ke dřezu, obout boty – a dovol si po něm skončit.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -2274,7 +2274,7 @@
   {
     "id": "refa_0285",
     "cluster_id": "cl_0008",
-    "text": "Řekni jednou denně nahlas jednu svou drobnou potřebu. Například: „Dneska bych potřeboval klid“, „Nechci to řešit hned“ nebo „Bylo by mi příjemné, kdybys mi odepsal.“ Cílem není, aby ti všichni vyhověli, ale abys přestal mizet.",
+    "text": "Vyslov jednou denně nahlas jednu svou drobnou potřebu. Například: „Dneska bych potřeboval klid“, „Nechci to řešit hned“ nebo „Bylo by mi příjemné, kdybys mi odepsal.“ Cílem není, aby ti všichni vyhověli, ale aby ses přestal schovávat sám před sebou.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -2586,7 +2586,7 @@
   {
     "id": "refa_0324",
     "cluster_id": "cl_0009",
-    "text": "Začni rozlišovat „jsem sám“ od „cítím se opuštěný“. Kdykoli pocit přijde, pojmenuj konkrétně, co ti právě chybí: kontakt, dotek, sdílení, zájem, bezpečí nebo určitý člověk.",
+    "text": "Začni rozlišovat „jsem sám“ od „cítím se opuštěný“. Kdykoli ten pocit přijde, pojmenuj konkrétně, co ti právě chybí: kontakt, dotek, sdílení, zájem, bezpečí nebo určitý člověk?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -2594,7 +2594,7 @@
   {
     "id": "refa_0325",
     "cluster_id": "cl_0009",
-    "text": "Když přijde opuštěnost, napiš si dvě věty: „Co se skutečně stalo?“ a „Co si z toho vykládám?“ Odděluj událost od příběhu, který kolem ní automaticky vzniká.",
+    "text": "Když přijde opuštěnost, napiš si dvě věty: „Co se skutečně stalo?“ a „Co si z toho vykládám?“ Odděluj událost od příběhu, který kolem ní automaticky vzniká v tvé hlavě.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -2602,7 +2602,7 @@
   {
     "id": "refa_0326",
     "cluster_id": "cl_0009",
-    "text": "Když potřebuješ blízkost, zkus ji někdy vyslovit přímo místo čekání, zda si někdo všimne: „Mám dneska chuť nebýt sám, nechceš něco podniknout?“",
+    "text": "Když potřebuješ blízkost, zkus ji někdy přiznat místo čekání, zda si jí někdo všimne: „Mám dneska chuť nebýt sám, nechceš něco podniknout?“",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -2626,7 +2626,7 @@
   {
     "id": "refa_0329",
     "cluster_id": "cl_0009",
-    "text": "Všímej si své první reakce na vzdálení druhého. Pokud se automaticky stahuješ, chladneš nebo přestáváš psát, zkus se na chvíli zastavit. Rozhodni se, jestli opravdu potřebuješ odstup, nebo by ti pomohl malý krok směrem ke kontaktu.",
+    "text": "Všímej si své první reakce na vzdálení druhého. Pokud se automaticky stahuješ, chladneš nebo přestáváš psát zprávu, zkus se na chvíli zastavit. Rozhodni se, jestli opravdu potřebuješ odstup, nebo by ti pomohl malý krok směrem ke kontaktu.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -2826,7 +2826,7 @@
   {
     "id": "refa_0354",
     "cluster_id": "cl_0010",
-    "text": "Když tě přepadne nutkání okamžitě hledat ujištění, zkus nejdřív deset minut počkat. Pojmenuj, čeho se bojíš, co právě potřebuješ a co by ti mohlo pomoct i bez okamžité reakce druhého. Pak se rozhodni, jestli ho chceš kontaktovat.",
+    "text": "Když tě přepadne nutkání okamžitě hledat ujištění, zkus nejdřív deset minut počkat. Pojmenuj, čeho se bojíš, co právě potřebuješ a co by ti mohlo pomoct i bez okamžité reakce druhého. Pak se rozhodni, jestli ho chceš kontaktovat hned nebo to chvíli počká.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -2858,7 +2858,7 @@
   {
     "id": "refa_0359",
     "cluster_id": "cl_0010",
-    "text": "Vrať do svého života jednu oblast, která se kvůli vztahu zmenšila – přátelství, koníček, pohyb, práci nebo čas o samotě. Začni třeba půlhodinou týdně, kterou budeš věnovat právě jí. Postupně jí můžeš dávat víc prostoru.",
+    "text": "Vrať do svého života jednu oblast, kterou jsi kvůli vztahu omezil – přátelství, koníček, pohyb, práci nebo čas o samotě. Začni třeba půlhodinou týdně, kterou budeš věnovat právě jí. Postupně jí můžeš dávat víc prostoru.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -2866,7 +2866,7 @@
   {
     "id": "refa_0360",
     "cluster_id": "cl_0010",
-    "text": "Experiment: „Když řeknu, co opravdu chci, druhý mě odmítne nebo se naštve.“ Vyber si bezpečnou situaci, ve které by ses obvykle přizpůsobil, a tentokrát řekni svou skutečnou preferenci. Začni drobnou volbou, později můžeš zkusit důležitější přání nebo hranici. Předem odhadni reakci druhého a svoji úzkost. Potom porovnej očekávání se skutečností a všimni si, jak ses cítil, když ses nemusel vzdát svého přání.",
+    "text": "Experiment: „Když řeknu, co opravdu chci, druhý mě odmítne nebo se naštve.“ Vyber si bezpečnou situaci, ve které by ses obvykle přizpůsobil, a tentokrát řekni, co by sis skutečně přál. Začni drobnou volbou, později můžeš zkusit důležitější přání nebo hranici. Předem odhadni reakci druhého a svoji úzkost. Potom porovnej očekávání se skutečností a všimni si, jak ses cítil, když ses nemusel vzdát svého přání.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -3074,7 +3074,7 @@
   {
     "id": "refa_0385",
     "cluster_id": "cl_0011",
-    "text": "Zkus rozlišovat tři věci, které se snadno slijí: sexuální touhu, touhu po konkrétním člověku a touhu opustit současný vztah. Jedna automaticky neznamená zbývající dvě.",
+    "text": "Zkus rozlišovat tři věci, které se snadno slijí: sexuální touhu, touhu po konkrétním člověku a touhu opustit současný vztah. Jedna automaticky neobnáší ty dvě další .",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -3322,7 +3322,7 @@
   {
     "id": "refa_0416",
     "cluster_id": "cl_0012",
-    "text": "Když cítíš poplach v těle, dej si minutu, během které nemusíš nic rozhodovat. Pomalu vydechuj, rozhlédni se kolem sebe a vnímej oporu pod nohama. Potom znovu posuď, jestli situace skutečně vyžaduje nějakou ochranu.",
+    "text": "Když cítíš poplach v těle, dej si minutu, během které nemusíš nic rozhodovat. Pomalu vydechuj, rozhlédni se kolem sebe a vnímej oporu pod nohama. Potom znovu posuď situaci.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -3370,7 +3370,7 @@
   {
     "id": "refa_0424",
     "cluster_id": "cl_0012",
-    "text": "U drobných rozhodnutí si předem stanov, kolik informací ti bude stačit. Jakmile je získáš, zkus další prověřování ukončit a rozhodnout se, i když ti nezmizela veškerá nejistota.",
+    "text": "U drobných rozhodnutí si předem stanov, kolik informací ti bude stačit. Jakmile je získáš, zkus další prověřování ukončit a rozhodnout se, i když nezmizela veškerá nejistota.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -3562,7 +3562,7 @@
   {
     "id": "refa_0446",
     "cluster_id": "cl_0013",
-    "text": "Ve chvíli podezření si napiš tři sloupce: fakta, domněnky a strachy. Například: „Neodepsal“ je fakt. „Ignoruje mě“ je domněnka. „Jsem mu ukradený“ je strach. Pomůže ti to oddělit, co skutečně víš, od toho, čeho se obáváš.",
+    "text": "Ve chvíli podezření si napiš tři sloupce: fakta, domněnky a strachy. Například: „Neodepsal“ je fakt. „Ignoruje mě“ je domněnka. „Jsem mu ukradený“ říká tvůj strach. Pomůže ti to oddělit, co skutečně víš, od toho, čeho se obáváš.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -3586,7 +3586,7 @@
   {
     "id": "refa_0450",
     "cluster_id": "cl_0013",
-    "text": "Všímej si lidí, jejichž slova dlouhodobě odpovídají činům. Nehledej dokonalou spolehlivost; sbírej zkušenosti s tím, že důvěryhodnost může existovat po stupních.",
+    "text": "Všímej si lidí, jejichž slova dlouhodobě odpovídají činům. Nehledej dokonalou spolehlivost; sbírej zkušenosti s tím, že důvěryhodnost může existovat v různé míře.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -3866,7 +3866,7 @@
   {
     "id": "refa_0484",
     "cluster_id": "cl_0014",
-    "text": "Když tě něco znepokojí, rozlišuj mezi tím, co jsi skutečně zaznamenal, a tím, co si o tom myslíš. Například „ten člověk se na mě podíval“ je pozorování, zatímco „hlídá mě“ je možné vysvětlení. Nemusíš ho hned vyvracet ani přijímat. Stačí obojí nezaměňovat.",
+    "text": "Když tě něco znepokojí, rozlišuj mezi tím, co jsi skutečně zaznamenal, a tím, co si o tom myslíš. Například „ten člověk se na mě podíval“ je pozorování, zatímco „hlídá mě“ je možné vysvětlení. Nemusíš ho hned vyvracet ani přijímat. Stačí obojí vnímat.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -3906,7 +3906,7 @@
   {
     "id": "refa_0491",
     "cluster_id": "cl_0014",
-    "text": "Pokud se pocit sledování zhoršuje, narušuje ti spánek, omezuje běžný život nebo tě vede k rostoucí izolaci, promluv si s psychologem či psychiatrem. Zvlášť pokud máš stále silnější jistotu, že tě někdo sleduje, ačkoli pro to nemáš jasné důkazy. Odborná pomoc ti může přinést úlevu i větší pocit bezpečí. Nemusíš čekat, až bude situace nesnesitelná.",
+    "text": "Pokud se pocit sledování zhoršuje, narušuje ti spánek, omezuje běžný život nebo tě vede k rostoucí izolaci, promluv si s psychologem či psychiatrem. Zvlášť pokud máš stále silnější jistotu, že tě někdo sleduje, ačkoli pro to nemáš jasné důkazy. Odborná pomoc ti může přinést úlevu i větší pocit bezpečí. Nečekej až do chvíle, kdy bude situace nesnesitelná.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -4114,7 +4114,7 @@
   {
     "id": "refa_0515",
     "cluster_id": "cl_0015",
-    "text": "Když se aktivuje vztek, dej si před zásadní reakcí čas, pokud situace dovoluje. Projdi se, napiš neodeslanou zprávu nebo rozhýbej tělo a rozhoduj až ve chvíli, kdy nejsi v největším poplachu.",
+    "text": "Když se aktivuje vztek, dej si před zásadní reakcí čas, pokud to situace dovoluje. Projdi se, napiš neodeslanou zprávu nebo rozhýbej tělo a rozhoduj až ve chvíli, kdy nejsi v největším poplachu.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -4130,7 +4130,7 @@
   {
     "id": "refa_0517",
     "cluster_id": "cl_0015",
-    "text": "Sepiš si vlastní stupnici důvěry od drobných věcí po velkou zranitelnost. Nemusíš lidem buď věřit, nebo nevěřit; důvěru můžeš dávkovat podle toho, jak s ní zacházejí.",
+    "text": "Sepiš si vlastní stupnici důvěry od drobných věcí po ty, které se dotýkají tvé zranitelnosti. Nemusíš lidem buď úplně věřit, nebo úplně nevěřit; důvěru můžeš dávkovat podle toho, jak s ní druzí zacházejí.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -4138,7 +4138,7 @@
   {
     "id": "refa_0518",
     "cluster_id": "cl_0015",
-    "text": "Pokud vztah stojí za opravu, sleduj činy v čase místo velkých slov. Důvěru obnovuj podle konzistentního chování, převzetí odpovědnosti a respektování tvých hranic, ne podle intenzity omluvy.",
+    "text": "Pokud vztah stojí za opravu, sleduj činy místo velkých slov. Důvěru obnovuj podle konzistentního chování, převzetí odpovědnosti a respektování tvých hranic, ne podle květnatosti omluvy.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -4402,7 +4402,7 @@
   {
     "id": "refa_0552",
     "cluster_id": "cl_0016",
-    "text": "Pokud se opakovaně ocitáš ve vztazích, kde je tvoje bolest zesměšňována, popírána nebo využívána proti tobě, nehledej řešení jen ve své citlivosti. Zkus si konkrétně pojmenovat, co se děje, co už nechceš přijímat a jak můžeš chránit sám sebe. Někdy je potřeba změnit vztah nebo z něj odejít, ne naučit se snášet další zraňování.",
+    "text": "Pokud se opakovaně ocitáš ve vztazích, kde je tvoje bolest zesměšňována, popírána nebo využívána proti tobě, nehledej řešení jen ve své citlivosti. Zkus si konkrétně pojmenovat, co se děje, co už nechceš přijímat a jak můžeš chránit sám sebe. Někdy je potřeba změnit vztah nebo z něj odejít, ne naučit se snášet další bolest.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -4834,7 +4834,7 @@
   {
     "id": "refa_0605",
     "cluster_id": "cl_0018",
-    "text": "Když přijde pocit ohrožení nebo narušení, nejdřív se rozhlédni kolem sebe. Všimni si, kde právě jsi, kdo je s tebou, co se děje a jaké máš možnosti. Pokud jsi teď v bezpečí, připomeň si, že současná situace nemusí být stejná jako ta, kterou ti připomíná.",
+    "text": "Když přijde pocit ohrožení nebo narušení hranic, nejdřív se rozhlédni kolem sebe. Všimni si, kde právě jsi, kdo je s tebou, co se děje a jaké máš možnosti. Pokud jsi teď v bezpečí, připomeň si, že současná situace nemusí být stejná jako ta, kterou ti připomíná.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -5106,7 +5106,7 @@
   {
     "id": "refa_0639",
     "cluster_id": "cl_0019",
-    "text": "Zkus někdy jednoduše vyjádřit, že chceš být součástí: „Můžu se přidat?“ nebo „Dejte mi příště vědět, rád půjdu taky.“ Druhým tím dáváš možnost reagovat na přání, o kterém možná vůbec nevěděli.",
+    "text": "Zkus někdy jednoduše vyjádřit, že se chceš přiblížit: „Můžu se přidat?“ nebo „Dejte mi příště vědět, rád půjdu taky.“ Druhým tím dáváš možnost reagovat na přání, o kterém možná vůbec nevěděli.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -5314,7 +5314,7 @@
   {
     "id": "refa_0665",
     "cluster_id": "cl_0020",
-    "text": "Rozlišuj samotu, kterou sis vybral, od izolace, do které ses propadl. První si klidně dopřej. U druhé zkus udělat jeden malý krok směrem k lidem.",
+    "text": "Rozlišuj samotu, kterou sis vybral, od izolace, do které ses propadl. Samotu si klidně dopřej. Z izolace zkus udělat jeden malý krok směrem k lidem.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -5594,7 +5594,7 @@
   {
     "id": "refa_0700",
     "cluster_id": "cl_0021",
-    "text": "Po bolestivém odmítnutí udělej něco, čím zůstaneš na své straně: zavolej blízkému člověku, projdi se, dej si dobré jídlo nebo odpočívej. Neodměňuj cizí odmítnutí vlastním trestáním.",
+    "text": "Po bolestivém odmítnutí udělej něco, čím zůstaneš na své straně: zavolej blízkému člověku, projdi se, dej si dobré jídlo nebo odpočívej. Neposiluj cizí odmítnutí trestáním sebe sama.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -5826,7 +5826,7 @@
   {
     "id": "refa_0729",
     "cluster_id": "cl_0022",
-    "text": "Po společenských situacích se neptej jen „Jak jsem působil?“, ale také „Jak mi bylo s nimi?“ Přesuneš tím část pozornosti z vlastní přijatelnosti na to, jak ti ve vztahu skutečně je.",
+    "text": "Po společenských situacích se neptej jen „Jak jsem působil?“, ale také „Jak mi bylo s nimi?“ Přesuneš tím část pozornosti z vlastní přijatelnosti na to, jak ti ve vztahu k ostatním skutečně je.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -6058,7 +6058,7 @@
   {
     "id": "refa_0758",
     "cluster_id": "cl_0023",
-    "text": "Když zachytíš úšklebek, ironii nebo šeptání, pojmenuj nejdřív pouze to, co jsi skutečně viděl nebo slyšel. Pak odděl svou interpretaci „pohrdají mnou“ od toho, co opravdu víš. Nemusíš hned rozhodnout, co si druzí myslí.",
+    "text": "Když zachytíš úšklebek, ironii nebo šeptání, pojmenuj nejdřív pouze to, co jsi skutečně viděl nebo slyšel. Pak odděl svou interpretaci „pohrdají mnou“ od toho, co opravdu víš. Nevidíš ostatním do hlavy.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -6066,7 +6066,7 @@
   {
     "id": "refa_0759",
     "cluster_id": "cl_0023",
-    "text": "Když tě někdo opakovaně zesměšňuje nebo ponižuje, nesoustřeď veškerou práci na svou citlivost. Zvaž, jestli můžeš nastavit hranici, omezit kontakt, požádat o podporu nebo odejít z prostředí, ve kterém se s tebou nezachází dobře.",
+    "text": "Když tě někdo opakovaně zesměšňuje nebo ponižuje, zvaž, jestli můžeš nastavit hranici, omezit kontakt, požádat o podporu nebo odejít z prostředí, ve kterém se s tebou nezachází dobře.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -6082,7 +6082,7 @@
   {
     "id": "refa_0762",
     "cluster_id": "cl_0023",
-    "text": "Experiment: „Když řeknu svůj názor, ostatní mě shodí.“ Vyber si bezpečného člověka a nepříliš citlivé téma, ke kterému obvykle raději mlčíš. Předem si poznamenej, jakou reakci očekáváš. Pak svůj názor řekni bez zbytečného omlouvání a sleduj, co se skutečně stalo. Postupně můžeš zkoušet i méně známé lidi nebo větší skupinu. Všímej si také rozdílu mezi nesouhlasem a pohrdáním.",
+    "text": "Experiment: „Když řeknu svůj názor, ostatní mě shodí.“ Vyber si bezpečného člověka a nepříliš citlivé téma, ke kterému obvykle raději mlčíš. Předem si co nejpřesněji poznamenej, jakou reakci očekáváš. Pak svůj názor řekni bez zbytečného omlouvání a sleduj, co se skutečně stalo. Postupně můžeš zkoušet i méně známé lidi nebo větší skupinu. Všímej si také rozdílu mezi nesouhlasem a pohrdáním.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -6314,7 +6314,7 @@
   {
     "id": "refa_0790",
     "cluster_id": "cl_0024",
-    "text": "Po zahanbující situaci rozděl papír na dva sloupce: „Co se skutečně stalo“ a „Co z toho vyvozuju o sobě“. Všímej si, kdy se z jedné chyby nebo nepříjemné zkušenosti stává odsudek celé tvé osobnosti.",
+    "text": "Po zahanbující situaci rozděl papír na dva sloupce: „Co se skutečně stalo“ a „Co z toho vyvozuju o sobě“. Všímej si, kdy se z jedné chyby nebo nepříjemné zkušenosti stává odsouzení celé tvé osobnosti.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -6330,7 +6330,7 @@
   {
     "id": "refa_0793",
     "cluster_id": "cl_0024",
-    "text": "Po epizodě studu napiš dvě krátké odpovědi: co ti říká stud a co by řekl laskavý, ale pravdomluvný dospělý. Nehledej pozitivitu; hledej přiměřenost.",
+    "text": "Až vlna studu přejde, napiš dvě krátké odpovědi: co ti říká stud a co by řekl laskavý, ale pravdomluvný dospělý. Nehledej pozitivitu; hledej přiměřenost.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -6346,7 +6346,7 @@
   {
     "id": "refa_0795",
     "cluster_id": "cl_0024",
-    "text": "Experiment: „Když se zastydím, musím se stáhnout nebo zmizet.“ Vyber si bezpečnou situaci, ve které obvykle reaguješ ústupem. Předem odhadni, co se stane, když tentokrát zůstaneš v kontaktu o chvíli déle. Začni třeba dvěma minutami a postupně můžeš čas prodlužovat. Potom porovnej očekávání se skutečností a všimni si, jak se během té doby měnil tvůj stud. Nezkoušej to tam, kde tě někdo skutečně ponižuje nebo ohrožuje.",
+    "text": "Experiment: „Když se zastydím, musím se stáhnout nebo zmizet.“ Vyber si bezpečnou situaci, ve které obvykle reaguješ ústupem. Předem odhadni, co se stane, když tentokrát zůstaneš v kontaktu o chvíli déle. Začni třeba dvěma minutami a postupně můžeš čas prodlužovat. Potom porovnej očekávání se skutečností a všimni si, jak se mezitím změnil tvůj stud. Nezkoušej to tam, kde tě někdo skutečně ponižuje nebo ohrožuje.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -6354,7 +6354,7 @@
   {
     "id": "refa_0796",
     "cluster_id": "cl_0024",
-    "text": "Když ucítíš stud v těle, zkus se na chvíli zastavit. Opři chodidla o zem, nech ramena uvolnit, dýchej přirozeně a rozhlédni se kolem sebe. Vnímej, kde právě jsi a zda ti skutečně něco hrozí. Nemusíš se studu okamžitě zbavit; stačí dát tělu možnost zjistit, že se nemusí automaticky schovávat.",
+    "text": "Když ucítíš stud v těle, zkus se na chvíli zastavit. Opři chodidla o zem, nech ramena uvolnit, dýchej přirozeně a rozhlédni se kolem sebe. Vnímej si, kde právě jsi a zda ti skutečně něco hrozí. Nemusíš se studu okamžitě zbavit; stačí dát tělu možnost zjistit, že se nemusí automaticky schovávat.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -6602,7 +6602,7 @@
   {
     "id": "refa_0826",
     "cluster_id": "cl_0025",
-    "text": "Jednou denně zachyť některou ze svých sebekritických myšlenek a zkus na ni odpovědět tak, jak bys odpověděl člověku, kterého máš rád a respektuješ. Nemusíš se chválit ani přesvědčovat, že jsi skvělý. Zkus být k sobě především spravedlivý.",
+    "text": "Jednou denně zachyť některou ze svých sebekritických myšlenek a zkus na ni odpovědět tak, jak bys odpověděl člověku, kterého máš rád a respektuješ ho. Nemusíš se chválit ani přesvědčovat, že jsi skvělý. Jen k sobě samému zkus být spravedlivý.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -6610,7 +6610,7 @@
   {
     "id": "refa_0827",
     "cluster_id": "cl_0025",
-    "text": "Všímej si lidí a prostředí, ve kterých se cítíš výrazně „vadnější“ než jinde. Co mají tyhle situace společného? Zkus rozlišit, co vychází z tvého vlastního hodnocení a co z toho, jak s tebou druzí skutečně zacházejí.",
+    "text": "Všímej si lidí a prostředí, ve kterých se cítíš výrazně „vadnější“ než jinde. Co mají tyhle situace společného? Zkus rozlišit, co vychází z tvého vlastního hodnocení a co z toho, jak s tebou druzí zacházejí.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -7586,7 +7586,7 @@
   {
     "id": "refa_0949",
     "cluster_id": "cl_0029",
-    "text": "Experiment: „Když budu sám sebou, nebudu pro druhé zajímavý.“ V bezpečném rozhovoru vyslov jednu skutečnou preferenci nebo názor, který bys normálně přizpůsobil druhému. Předem si poznamenej, jakou reakci očekáváš. Potom ji porovnej s tím, co se skutečně stalo. Postupně můžeš zkoušet osobnější témata a méně známé lidi. Sleduj také, jaké je být ve vztahu o něco opravdovější.",
+    "text": "Experiment: „Když budu sám sebou, nebudu pro druhé zajímavý.“ V bezpečném rozhovoru vyslov jednu skutečnou preferenci nebo názor, který bys jinak přizpůsobil druhému. Předem si poznamenej, jakou reakci očekáváš. Potom ji porovnej s tím, co se skutečně stalo. Postupně můžeš zkoušet osobnější témata a méně známé lidi. Sleduj také, jaké je být ve vztahu o něco opravdovější.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -7842,7 +7842,7 @@
   {
     "id": "refa_0981",
     "cluster_id": "cl_0030",
-    "text": "Experiment: „Můj názor nemá váhu.“ V bezpečném rozhovoru vyslov vlastní názor nebo drobnou preferenci. Předem odhadni, jestli tě druzí budou ignorovat, odmítnou nebo zesměšní. Postupně zkoušej vlastní návrhy, nesouhlas i méně známé lidi. Po každém pokusu porovnej očekávání se skutečnou reakcí. Všímej si také, zda případný nesouhlas opravdu znamená, že tvůj názor nemá hodnotu.",
+    "text": "Experiment: „Můj názor nemá váhu.“ V bezpečném rozhovoru vyslov vlastní názor nebo drobnou preferenci. Předem odhadni, jestli tě druzí budou ignorovat, odmítnou nebo zesměšní. Postupně zkoušej vlastní návrhy a nesouhlas i mezi méně známými lidmi. Po každém pokusu porovnej očekávání se skutečnou reakcí. Všímej si také, zda případný nesouhlas opravdu znamená, že tvůj názor nemá hodnotu.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -8082,7 +8082,7 @@
   {
     "id": "refa_1011",
     "cluster_id": "cl_0031",
-    "text": "Když uděláš chybu, zaměř se na nápravu místo sebetrestání. Uznej svůj díl odpovědnosti, případně se omluv, naprav, co můžeš, a promysli, co příště uděláš jinak. Pak si dovol přestat se obviňovat. Odpovědnost nevyžaduje nekonečný trest.",
+    "text": "Když uděláš chybu, zaměř se na nápravu místo sebetrestání. Uznej svůj díl odpovědnosti, případně se omluv, naprav, co můžeš, a promysli, co příště uděláš jinak. Pak si v sebeobviňování dovol pauzu. Odpovědnost nevyžaduje nekonečný trest.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -8426,7 +8426,7 @@
   {
     "id": "refa_1054",
     "cluster_id": "cl_0032",
-    "text": "Po chybě zkus na chvíli odložit odsuzování sebe sama a odpověz si na tři otázky: Co se skutečně stalo? Za co nesu odpovědnost? Co konkrétně můžu napravit nebo příště udělat jinak? Cílem není zbavit se odpovědnosti, ale převzít ji bez ponižování sebe sama.",
+    "text": "Po chybě zkus na chvíli odložit odsuzování sebe sama a odpověz si na tři otázky: Co se skutečně stalo? Za co skutečně nesu odpovědnost? Co konkrétně můžu napravit nebo příště udělat jinak? Cílem není zbavit se odpovědnosti, ale převzít ji bez ponižování sebe sama.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -8458,7 +8458,7 @@
   {
     "id": "refa_1058",
     "cluster_id": "cl_0032",
-    "text": "Zaveď si pravidlo, že ve chvílích silné sebenenávisti nebudeš dělat zásadní rozhodnutí ani se trestat. Pokud můžeš, odlož rozhodnutí o vztazích, práci nebo jiných důležitých věcech, dokud intenzita emocí nepoleví. Pokud máš nutkání si ublížit, nezůstávej s ním sám a vyhledej bezpečnou podporu.",
+    "text": "Zaveď si pravidlo, že ve chvílích silné sebenenávisti nebudeš dělat zásadní rozhodnutí ani se trestat. Pokud můžeš, odlož rozhodnutí o vztazích, práci nebo jiných důležitých věcech, dokud intenzita emocí nepoleví. Pokud máš nutkání si ublížit, nezůstávej s ním sám a vyhledej odbornou pomoc.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -8666,7 +8666,7 @@
   {
     "id": "refa_1084",
     "cluster_id": "cl_0033",
-    "text": "Když tě přepadne bezradnost, zkus nejdřív pojmenovat, co přesně nevíš nebo nezvládáš. Napiš problém jednou větou a pod ni tři sloupce: „Co vím“, „Co nevím“ a „Co můžu zjistit“. Zatím nemusíš nic řešit. Jen si udělej trochu jasno.",
+    "text": "Když tě přepadne pocit bezradnosti, zkus nejdřív pojmenovat, co přesně nevíš nebo nezvládáš. Napiš problém jednou větou a pod ni tři sloupce: „Co vím“, „Co nevím“ a „Co můžu zjistit“. Zatím nemusíš nic řešit. Jen si udělej trochu jasno.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -8682,7 +8682,7 @@
   {
     "id": "refa_1086",
     "cluster_id": "cl_0033",
-    "text": "Když si nevíš rady, zeptej se sám sebe: „Co z toho můžu ovlivnit a co ne?“ Vyber jednu věc, kterou ovlivnit můžeš, a zkus s ní něco udělat. U ostatních si dovol připustit, že jejich řešení nemusí být ve tvých rukou.",
+    "text": "Když si nevíš rady, zeptej se sám sebe: „Co z toho můžu ovlivnit a co ne?“ Vyber jednu věc, kterou ovlivnit můžeš, a zkus s ní něco udělat. U ostatních si dovol připustit, že jejich řešení nemusí zatím být ve tvých rukou.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -8698,7 +8698,7 @@
   {
     "id": "refa_1089",
     "cluster_id": "cl_0033",
-    "text": "Když se zasekneš, napiš alespoň pět možností, jak pokračovat. Zahrň i nedokonalá nebo provizorní řešení. Zatím nic nevybírej. Jde jen o to znovu uvidět, že nemusí existovat jediná cesta.",
+    "text": "Když se zasekneš, napiš alespoň pět možností, jak pokračovat. Zahrň i nedokonalá nebo provizorní řešení. Zatím nic nevybírej. Jde jen o to znovu uvidět, že nemusí existovat jen jediná správná cesta.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -8922,7 +8922,7 @@
   {
     "id": "refa_1116",
     "cluster_id": "cl_0034",
-    "text": "Každý den si vyber jednu drobnou věc, o které rozhodneš bez konzultace. Nejde o správnost rozhodnutí, ale o zkušenost, že dokážeš volbu udělat a unést.",
+    "text": "Každý den si vyber jednu drobnou věc, o které rozhodneš bez konzultace. Nejde o správnost rozhodnutí, ale o zkušenost, že dokážeš uplatnit svou volbu a unést ji.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -8930,7 +8930,7 @@
   {
     "id": "refa_1117",
     "cluster_id": "cl_0034",
-    "text": "Než požádáš o radu, napiš si nejdřív vlastní odpověď: „Já bych udělal… protože…“ Teprve potom se případně poraď a porovnej názory.",
+    "text": "Než požádáš o radu, napiš si nejdřív vlastní odpověď: „Já bych udělal… protože…“ Teprve potom se případně poraď a porovnej svůj názor s názorem druhého.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -8938,7 +8938,7 @@
   {
     "id": "refa_1118",
     "cluster_id": "cl_0034",
-    "text": "Když tě přepadne „nevím, co dělat“, na chvíli se zastav, opři chodidla o zem a třikrát pomalu vydechni. Pak se zeptej sám sebe: „Jaký nejmenší krok teď dokážu udělat?“",
+    "text": "Když tě přepadne pocit „nevím, co dělat“, na chvíli se zastav, opři chodidla o zem a třikrát pomalu vydechni. Pak se zeptej sám sebe: „Jaký nejmenší krok teď dokážu udělat?“",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -8946,7 +8946,7 @@
   {
     "id": "refa_1119",
     "cluster_id": "cl_0034",
-    "text": "Rozděl úkol, který tě zahlcuje, na malé, konkrétní kroky. Než požádáš někoho, aby ho převzal za tebe, zkus udělat alespoň první krok sám.",
+    "text": "Rozděl úkol, který tě zahlcuje, na malé, konkrétní kroky. Než požádáš někoho, aby ho převzal za tebe, zkus udělat alespoň jeden první krok sám.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -9194,7 +9194,7 @@
   {
     "id": "refa_1150",
     "cluster_id": "cl_0035",
-    "text": "Veď si krátký „deník dospělosti“: každý večer si vybav jednu situaci, ve které ses samostatně rozhodl, převzal odpovědnost, zvládl nejistotu, napravil chybu nebo nastavil hranici. Všímej si konkrétních projevů své zralosti, které bys jinak možná přehlédl.",
+    "text": "Veď si krátký „deník dospělosti“: každý večer si vybav jednu situaci, ve které ses samostatně rozhodl, převzal odpovědnost, zvládl nejistotu, napravil chybu nebo nastavil hranici. Nemusí jít o velké věci. Všímej si konkrétních projevů své zralosti, které bys jinak možná přehlédl.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -9466,7 +9466,7 @@
   {
     "id": "refa_1184",
     "cluster_id": "cl_0036",
-    "text": "Experiment: „Když rozhodnutí znovu nezkontroluju, přehlédnu důležitou chybu.“ Vyber si malé, bezpečné a vratné rozhodnutí. Zvaž potřebné informace, jednou je zkontroluj a pak skonči. Předem odhadni, jak pravděpodobná je chyba a jak nepříjemné bude přestat kontrolovat. Postupně zkoušej o něco významnější vratné volby. Nakonec porovnej očekávání se skutečností a zvaž, zda by další kontroly opravdu přinesly něco užitečného.",
+    "text": "Experiment: „Když rozhodnutí znovu nezkontroluju, přehlédnu důležitou chybu.“ Vyber si malé, bezpečné a vratné rozhodnutí. Zvaž potřebné informace, jednou je zkontroluj a pak skonči. Předem odhadni, jak pravděpodobná je chyba a jak nepříjemné bude přestat danou věc znovu kontrolovat. Postupně zkoušej o něco významnější vratné volby. Nakonec porovnej očekávání se skutečností a zvaž, zda by další kontroly opravdu přinesly něco užitečného.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -9690,7 +9690,7 @@
   {
     "id": "refa_1212",
     "cluster_id": "cl_0037",
-    "text": "Veď si malý záznam toho, co zvládáš. Každý večer si vybav jednu konkrétní situaci, kdy se ti něco podařilo, vyřešil jsi problém nebo ses něco naučil. Nemusí jít o nic mimořádného. Zapisuj, co se skutečně stalo, ne obecné pochvaly sebe sama.",
+    "text": "Veď si stručný záznam toho, co zvládáš. Každý večer si vybav jednu konkrétní situaci, kdy se ti něco podařilo, vyřešil jsi problém nebo ses něco naučil. Nemusí jít o nic mimořádného. Zapisuj, co se skutečně stalo, ne obecné pochvaly sebe sama.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -9906,7 +9906,7 @@
   {
     "id": "refa_1239",
     "cluster_id": "cl_0038",
-    "text": "Veď si „deník zvládnutého“: každý večer si vybav jednu situaci, kterou jsi zvládl navzdory nejistotě. Zapiš si, co jsi udělal a jaké schopnosti nebo vlastní rozhodnutí ti k tomu pomohly. Zahrnuj i úplné maličkosti.",
+    "text": "Veď si „deník zvládnutého“: každý večer si vybav jednu situaci, kterou jsi zvládl navzdory nejistotě. Zapiš si, co jsi udělal a jaké schopnosti nebo vlastní rozhodnutí ti k tomu pomohly. Nemusí jít o velkou věc, zahrnuj i úplné maličkosti.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -9914,7 +9914,7 @@
   {
     "id": "refa_1240",
     "cluster_id": "cl_0038",
-    "text": "Vyber si jednu oblast, ve které si zatím příliš nevěříš, protože ti chybí zkušenosti nebo dovednosti. Místo snahy přesvědčit se, že to zvládneš, si naplánuj několik malých kroků, kterými se to můžeš skutečně naučit. Sebedůvěra často roste právě z opakované zkušenosti, že se zlepšuješ.",
+    "text": "Vyber si jednu oblast, ve které si zatím příliš nevěříš, protože ti chybí zkušenosti nebo dovednosti. Místo snahy přesvědčit se, že to zvládneš, si naplánuj několik malých kroků, kterými se to můžeš skutečně naučit. Sebedůvěra roste z opakované zkušenosti a všímání si pokroku.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -9938,7 +9938,7 @@
   {
     "id": "refa_1243",
     "cluster_id": "cl_0038",
-    "text": "Po chybě si polož tři otázky: Co se skutečně stalo? Co si z toho můžu vzít pro příště? A co z téhle chyby naopak vůbec nevyplývá o mně jako člověku? Zkus zůstat u konkrétní události místo hodnocení celé své osobnosti.",
+    "text": "Po chybě si polož tři otázky: Co se skutečně stalo? Co si z toho můžu vzít pro příště? Co z téhle chyby vůbec nevyplývá o mně jako člověku? Zkus zůstat u konkrétní události místo hodnocení celé své osobnosti.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -10154,7 +10154,7 @@
   {
     "id": "refa_1270",
     "cluster_id": "cl_0039",
-    "text": "Ve chvíli silné bezmoci odlož, pokud to jde, velká rozhodnutí. Zeptej se sám sebe: „Co teď potřebuju zvládnout během příštích deseti minut?“ Soustřeď se jen na tenhle malý úsek času. Nemusíš vyřešit celý život, abys mohl udělat další krok.",
+    "text": "Pokud to jen trochu jde, odlož ve chvíli silné bezmoci velká rozhodnutí. Zeptej se sám sebe: „Co teď potřebuju zvládnout během příštích deseti minut?“ Soustřeď se jen na tenhle malý úsek času. Nemusíš vyřešit celý život, abys mohl udělat další krok.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -10410,7 +10410,7 @@
   {
     "id": "refa_1302",
     "cluster_id": "cl_0040",
-    "text": "Rozlišuj mezi bezpečným ústupem a vyhýbáním. Zeptej se: „Chrání mě odchod před skutečným nebezpečím nebo ubližováním, anebo hlavně před nepříjemným pocitem, který bych možná dokázal chvíli unést?“",
+    "text": "Rozlišuj mezi bezpečným ústupem a vyhýbáním. Zeptej se: „Chrání mě odchod před skutečným nebezpečím nebo ubližováním, anebo hlavně před nepříjemným pocitem, který bych mohl dokázat chvíli unést?“",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -10434,7 +10434,7 @@
   {
     "id": "refa_1305",
     "cluster_id": "cl_0040",
-    "text": "Sestav si vlastní „žebřík odvahy“. Sepiš situace, kterým se vyhýbáš, a seřaď je od nejméně nepříjemných po nejnáročnější. Začni u těch lehčích a postupně přidávej obtížnost. Cílem není přemáhat se za každou cenu, ale získávat zkušenost, že dokážeš zvládnout víc, než ti strach napovídá.",
+    "text": "Sestav si vlastní „žebříček odvahy“. Sepiš situace, kterým se vyhýbáš, a seřaď je od nejméně nepříjemných po nejnáročnější. Začni u těch lehčích a postupně přidávej obtížnost. Cílem není přemáhat se za každou cenu, ale získávat zkušenost, že dokážeš zvládnout víc, než ti strach napovídá.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -10642,7 +10642,7 @@
   {
     "id": "refa_1331",
     "cluster_id": "cl_0041",
-    "text": "Když se cítíš ohrožený, nejdřív se zorientuj: Co se právě děje? Co mi skutečně hrozí? Jaké mám možnosti? Koho můžu požádat o pomoc? Rozlišuj mezi tím, co víš, a tím, čeho se obáváš. Pokud ti reálně hrozí nebezpečí, dej přednost vlastní ochraně před snahou uklidnit se.",
+    "text": "Když se cítíš ohrožený, nejdřív se zorientuj: Co se právě děje? Co mi skutečně hrozí? Jaké mám možnosti? Koho můžu požádat o pomoc? Rozlišuj mezi tím, co skutečně víš, a tím, čeho se obáváš. Pokud ti reálně hrozí nebezpečí, dej přednost vlastní ochraně.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -10666,7 +10666,7 @@
   {
     "id": "refa_1334",
     "cluster_id": "cl_0041",
-    "text": "Všímej si, kdy tvůj vnitřní alarm reaguje na skutečné nebezpečí a kdy spíš na něco nepříjemného. Po náročné situaci si zkus ujasnit, jestli ti opravdu něco hrozilo, nebo jsi čelil nejistotě, kritice, konfliktu či emocím druhého. I nepříjemná situace si zaslouží pozornost, ale nemusí vždy vyžadovat obranu.",
+    "text": "Všímej si, kdy tvůj vnitřní alarm reaguje na skutečné nebezpečí a kdy spíš jen na něco nepříjemného. Po náročné situaci si zkus ujasnit, jestli ti opravdu něco hrozilo, nebo jsi čelil nejistotě, kritice, konfliktu či emocím druhého. I nepříjemná situace si zaslouží pozornost, ale nemusí vždy vyžadovat obranu.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -10938,7 +10938,7 @@
   {
     "id": "refa_1368",
     "cluster_id": "cl_0042",
-    "text": "Experiment: „Nepříjemný pocit mě převálcuje.“ Až se objeví mírná, snesitelná zranitelnost, zkus ji chvíli neodhánět. Začni třeba 30 sekundami. Předem odhadni, co se s pocitem stane, když ho necháš být. Potom sleduj, zda sílí, slábne nebo se proměňuje. Pokud to bude bezpečné a snesitelné, můžeš čas postupně prodlužovat. Cílem není vydržet co nejvíc, ale poznat, jak tvoje emoce skutečně fungují.",
+    "text": "Experiment: „Nepříjemný pocit mě převálcuje.“ Až se objeví mírná, snesitelná zranitelnost, zkus ji chvíli neodhánět. Začni třeba 30 sekundami. Předem odhadni, co se s pocitem stane, když ho necháš být. Potom sleduj, zda sílí, slábne nebo se proměňuje. Pokud to bude bezpečné a snesitelné, můžeš čas postupně prodlužovat. Cílem není vydržet co nejvíc, ale poznat, jak tvé emoce skutečně fungují.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -11178,7 +11178,7 @@
   {
     "id": "refa_1398",
     "cluster_id": "cl_0043",
-    "text": "Když se rozjede úzkost, zkus si říct: „Tohle je úzkost. Můj nervový systém spustil poplach.“ Pokud jsi v bezpečí, dej si dvě minuty, během kterých nemusíš nic řešit ani napravovat. Jen pozoruj, jak se tvůj prožitek mění.",
+    "text": "Když se rozjede úzkost, zkus si říct: „Tohle je jen úzkost. Je to jen nepříjemný pocit. Můj nervový systém spustil poplach. Vlna úzkosti se převalí a bude mi lépe.“ Pokud jsi v bezpečí, dej si dvě minuty, během kterých nemusíš nic řešit ani napravovat. Jen pozoruj, jak se tvůj prožitek mění.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -11186,7 +11186,7 @@
   {
     "id": "refa_1399",
     "cluster_id": "cl_0043",
-    "text": "Když si představuješ katastrofický scénář, napiš si tři možnosti: čeho se nejvíc bojíš, co je nejpravděpodobnější a co nepříjemného, ale zvládnutelného by se mohlo stát. U každé zvaž, jak bys mohl reagovat. Nejde o záruku dobrého výsledku, ale o realističtější pohled na možnosti.",
+    "text": "Když si představuješ katastrofický scénář, napiš si tři možnosti: čeho se nejvíc bojíš, co je nejpravděpodobnější a co nepříjemného, ale zvládnutelného by se mohlo stát. U každé varianty zvaž, jak bys mohl reagovat. Nejde o záruku dobrého výsledku, ale o realističtější pohled na možnosti.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -11210,7 +11210,7 @@
   {
     "id": "refa_1404",
     "cluster_id": "cl_0043",
-    "text": "U opakovaného zdroje úzkosti si polož praktickou otázku: „Co zde lze opravdu změnit?“ Pak udělej jednu konkrétní úpravu prostředí, termínu, přípravy, dovednosti nebo množství povinností místo dalšího přemílání.",
+    "text": "U opakovaného zdroje úzkosti si polož praktickou otázku: „Co mohu změnit?“ Pak udělej jednu konkrétní úpravu prostředí, termínu, přípravy nebo množství povinností místo dalšího přemílání.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -11418,7 +11418,7 @@
   {
     "id": "refa_1428",
     "cluster_id": "cl_0044",
-    "text": "Rozlišuj řešitelnou starost od hypotetické. Pokud můžeš udělat konkrétní krok, udělej ho nebo si ho naplánuj. Pokud zatím není co řešit, zkus se vrátit k tomu, co právě děláš, místo dalšího přemítání.",
+    "text": "Rozlišuj řešitelnou starost od hypotetické. Pokud můžeš udělat konkrétní krok, udělej ho nebo si ho naplánuj. Pokud si uvědomíš, že zatím vlastně není co řešit, zkus se vrátit k tomu, co právě děláš, místo dalšího přemítání.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -11442,7 +11442,7 @@
   {
     "id": "refa_1432",
     "cluster_id": "cl_0044",
-    "text": "Všímej si svých způsobů, jak zaháníš strach: opakované kontrolování, hledání ujištění, googlení, plánování úniku nebo vyhýbání se situacím. Zkus rozlišit, které tě chrání před skutečným nebezpečím a které ti přinášejí hlavně krátkodobou úlevu, ale dlouhodobě strach udržují.",
+    "text": "Všímej si způsobů, jakými zaháníš strach: opakované kontrolování, hledání ujištění, googlování, plánování úniku nebo vyhýbání se situacím. Zkus rozlišit, které tě chrání před skutečným nebezpečím a které ti přinášejí hlavně krátkodobou úlevu, ale dlouhodobě strach udržují.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -11458,7 +11458,7 @@
   {
     "id": "refa_1435",
     "cluster_id": "cl_0044",
-    "text": "Trénuj větu „Nevím, jak to dopadne, a nemusím to vědět právě teď.“ Připomeň si ji ve chvílích, kdy už máš dost informací pro rozumné rozhodnutí, ale stále hledáš další jistotu. Zkus chvíli vydržet s tím, že některé věci zůstávají otevřené.",
+    "text": "Trénuj větu „Nevím, jak to dopadne, a nemusím to vědět hned teď.“ Připomeň si ji ve chvílích, kdy už máš dost informací pro rozumné rozhodnutí, ale stále hledáš další jistotu. Zkus chvíli vydržet s tím, že některé věci zůstávají otevřené.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -11674,7 +11674,7 @@
   {
     "id": "refa_1460",
     "cluster_id": "cl_0045",
-    "text": "Při prvním náznaku paniky si zkus říct: „Spustil se poplach.“ Připomeň si, že silný pocit ohrožení ještě nemusí znamenat skutečné nebezpečí. Nemusíš hned rozhodnout, co všechno tvoje příznaky znamenají. Nejdřív se rozhlédni kolem sebe a zkus zjistit, co se skutečně děje.",
+    "text": "Při prvním náznaku paniky si zkus říct: „Spustil se poplach, nic víc.“ Připomeň si, že silný pocit ohrožení ještě nemusí znamenat skutečné nebezpečí. Nemusíš hned rozhodnout, co všechno tvoje příznaky znamenají. Nejdřív se rozhlédni kolem sebe a zkus zjistit, co se skutečně děje.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -11682,7 +11682,7 @@
   {
     "id": "refa_1461",
     "cluster_id": "cl_0045",
-    "text": "Když přijde panika, zaměř část pozornosti ven: popiš několik barev, zvuků, předmětů nebo dotyků kolem sebe. Nejde o vytěsnění strachu, ale rozšíření pozornosti za jeho hranice.",
+    "text": "Když přijde panika, zaměř část pozornosti ven: nahlas nebo v duchu popiš několik věcí kolem sebe, všímej si jejich tvarů a barev, pojmenuj, co slyšíš, dotkni se předmětů, které máš na dosah. Nejde o vytěsnění strachu, ale rozšíření pozornosti za jeho hranice.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -11698,7 +11698,7 @@
   {
     "id": "refa_1463",
     "cluster_id": "cl_0045",
-    "text": "Nacvičuj pomalé dýchání s přirozeným nádechem a o něco delším výdechem. Začni v klidných chvílích a dýchej jemně, bez zadržování dechu a snahy nadechnout se co nejhlouběji. Při panice se k tomuto způsobu dýchání můžeš vrátit, pokud ti vyhovuje. Nemusíš se jím za každou cenu uklidnit.",
+    "text": "Nacvičuj pomalé dýchání s přirozeným nádechem a delším výdechem. Začni v klidných chvílích a dýchej jemně, pomalu a klidně, bez snahy nadechnout se co nejhlouběji. Prováděj přitom dlouhý výdech. Při panice se k tomuto způsobu dýchání můžeš vrátit, pokud ti vyhovuje. Nemusíš se jím za každou cenu dokonale uklidnit.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -11706,7 +11706,7 @@
   {
     "id": "refa_1464",
     "cluster_id": "cl_0045",
-    "text": "Nacvičuj rozlišování tří věcí: co právě skutečně pozoruješ, co si domýšlíš a co předpovídáš. Například: „Buší mi srdce“ je pozorování, „něco se mnou není v pořádku“ je výklad a „určitě zkolabuju“ je předpověď. Zkus je od sebe oddělit, než začneš jednat podle nejhoršího scénáře.",
+    "text": "Nacvičuj rozlišování tří věcí: co právě skutečně pozoruješ, co si domýšlíš a co předpovídáš. Například: „Buší mi srdce“ je pozorování, „něco se mnou není v pořádku“ je výklad a „určitě zkolabuju“ je předpověď. Zkus je od sebe oddělit, místo abys začal jednat podle nejhoršího scénáře.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -11922,7 +11922,7 @@
   {
     "id": "refa_1491",
     "cluster_id": "cl_0046",
-    "text": "Když zamrzneš, zmenši úkol tak dlouho, dokud nenajdeš krok, který nevyvolává výrazný odpor. Ne „vyřešit finance“, ale třeba jen otevřít bankovnictví.",
+    "text": "Když zamrzneš, rozděluj úkol na menší úkoly tak dlouho, dokud nenajdeš krok, který nevyvolává výrazný odpor. Ne „vyřešit finance“, ale třeba jen \"otevřít aolikaci s bankovnictvím\".",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -11962,7 +11962,7 @@
   {
     "id": "refa_1499",
     "cluster_id": "cl_0046",
-    "text": "Když se zasekneš, zkus si všimnout, co si právě říkáš. Je to „musím to zvládnout dokonale“, „určitě to pokazím“, „nemá to cenu“ nebo něco jiného? Zeptej se, jestli je tahle myšlenka skutečnost, nebo jen jedna z možných předpovědí. Potom si zkus říct něco přesnějšího a méně ochromujícího, například: „Nevím, jak to dopadne, ale můžu udělat první krok.“",
+    "text": "Když se zasekneš, zkus si všimnout, co si právě říkáš. Je to „musím to zvládnout dokonale“, „určitě to pokazím“, „nemá to cenu“ nebo něco jiného? Zeptej se, jestli je tahle myšlenka skutečnost, nebo jen jedna z možných předpovědí. Potom si zkus říct něco přesnějšího a méně ochromujícího, například: „Nevím, jak to dopadne, ale můžu udělat první dílčí krůček.“",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -12202,7 +12202,7 @@
   {
     "id": "refa_1526",
     "cluster_id": "cl_0047",
-    "text": "Experiment: „Když se přestanu kontrolovat, ztratím nad sebou kontrolu.“ Vyber si jednu drobnou kontrolu vlastní mysli, například opakované ověřování, jestli myslíš nebo vnímáš normálně. Při mírné úzkosti ji zkus na dvě minuty vynechat a věnuj se běžné činnosti. Předem odhadni, co se stane a jak silná bude úzkost. Potom porovnej očekávání se skutečností. Pokud to zvládáš, postupně dobu prodlužuj. Cílem není dokázat, že se nikdy nic nestane, ale zjistit, nakolik je kontrolování skutečně potřebné.",
+    "text": "Experiment: „Když se přestanu kontrolovat, úplně nad sebou ztratím kontrolu.“ Vyber si jednu drobnou kontrolu vlastní mysli, například opakované ověřování, jestli myslíš nebo vnímáš normálně. Při mírné úzkosti ji zkus na dvě minuty vynechat a věnuj se běžné činnosti. Předem odhadni, co se stane a jak silná bude úzkost. Potom porovnej očekávání se skutečností. Pokud to zvládáš, postupně dobu prodlužuj. Cílem není dokázat, že se nikdy nic nestane, ale zjistit, nakolik je kontrolování skutečně potřebné.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -12730,7 +12730,7 @@
   {
     "id": "refa_1592",
     "cluster_id": "cl_0049",
-    "text": "Když se ozve tvůj vnitřní kritik, napiš si, co ti vyčítá nebo co od tebe požaduje. Pak si představ, že stejnou věc říká někomu, koho máš rád. Jak bys na jeho slova odpověděl? Zkus podobně odpovědět i sobě. Užitečnou kritiku si můžeš ponechat, ponižování ne.",
+    "text": "Když se ozve tvůj vnitřní kritik, napiš si, co ti vyčítá nebo co od tebe požaduje. Pak si představ, že stejnou věc říká někomu, koho máš rád. Jak by asi na jeho slova odpověděl? Zkus podobně odpovědět i sobě. Užitečnou kritiku si můžeš ponechat, ponižování ne.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -12978,7 +12978,7 @@
   {
     "id": "refa_1623",
     "cluster_id": "cl_0050",
-    "text": "Když tě chyba zasáhne, dej si nejprve dvě minuty na zklidnění těla a teprve potom situaci vyhodnocuj. Rozrušený mozek bývá mizerný soudce vlastních schopností.",
+    "text": "Když tě chyba zasáhne, dej si nejprve dvě minuty na zklidnění těla a teprve potom situaci vyhodnocuj. Rozrušený mozek bývá mizerným soudcem vlastních schopností.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -12986,7 +12986,7 @@
   {
     "id": "refa_1624",
     "cluster_id": "cl_0050",
-    "text": "Experiment: „Bez dokonalé přípravy to nezvládnu.“ Vyber si bezpečný běžný úkol a připravuj se na něj o něco kratší dobu než obvykle. Začni třeba o pět minut dřív, než bys normálně začal. Předem si napiš, co očekáváš, že pokazíš, a jak závažné to bude. Potom porovnej předpověď se skutečností a všimni si také toho, co jsi dokázal vyřešit za pochodu. Pokud budeš chtít, postupně zkoušej méně známé úkoly nebo ještě kratší přípravu.",
+    "text": "Experiment: „Bez dokonalé přípravy to nezvládnu.“ Vyber si bezpečný běžný úkol a připravuj se na něj o něco kratší dobu než obvykle, třeba jen o pět minut. Předem si napiš, co očekáváš, že pokazíš, a jak závažné to bude. Potom porovnej předpověď se skutečností a všimni si také toho, co jsi dokázal vyřešit za pochodu. Pokud budeš chtít, postupně zkoušej méně zažité úkoly nebo ještě kratší přípravu.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -12994,7 +12994,7 @@
   {
     "id": "refa_1625",
     "cluster_id": "cl_0050",
-    "text": "Když tě po chybě napadne „měl jsem to vědět“, vrať se v myšlenkách do okamžiku rozhodování. Jaké informace jsi tehdy skutečně měl? Co jsi nemohl předvídat? Zkus své tehdejší rozhodnutí posoudit bez znalosti toho, jak nakonec dopadlo.",
+    "text": "Když tě po chybě napadne „měl jsem to vědět“, vrať se v myšlenkách do okamžiku rozhodování. Jaké informace jsi tehdy skutečně měl? Co jsi nemohl předvídat? Zkus své tehdejší rozhodnutí posoudit bez ohledu na to, co ses dozvěděl potom.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -13226,7 +13226,7 @@
   {
     "id": "refa_1654",
     "cluster_id": "cl_0051",
-    "text": "Když něco nevyjde, polož si tři otázky: Co bylo moje odpovědnost? Co nebylo pod mou kontrolou? Co příště změním? Pak analýzu ukonči, místo abys pokračoval v sebepotrestání.",
+    "text": "Když něco nevyjde, polož si tři otázky: Co byla moje odpovědnost? Co nebylo pod mou kontrolou? Co příště změním? Pak analýzu ukonči, místo abys pokračoval v sebetrestání.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -13250,7 +13250,7 @@
   {
     "id": "refa_1657",
     "cluster_id": "cl_0051",
-    "text": "Rozděl své aktuální cíle na dvě části: co můžeš ovlivnit a co ne. Zaměř se na to, jak ses připravil, jaká rozhodnutí jsi udělal a co ses naučil. Výsledek ber vážně, ale nepřipisuj si odpovědnost za okolnosti, které jsi nemohl ovlivnit.",
+    "text": "Rozděl aktuální stav věcí na dvě části: co jsi mohl ovlivnit a co ne. Zaměř se na to, jak ses připravil, jaká rozhodnutí jsi udělal a co ses naučil. Výsledek ber vážně, ale nepřipisuj si odpovědnost za okolnosti, které jsi nemohl ovlivnit.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -13538,7 +13538,7 @@
   {
     "id": "refa_1693",
     "cluster_id": "cl_0052",
-    "text": "Sepiš si vlastní definici lidské hodnoty. Pak zkontroluj, jestli ji používáš stejně na sebe i na lidi, které máš rád, nebo sobě tajně přidáváš podmínku užitečnosti.",
+    "text": "Sepiš si, proč máš některé lidi rád a proč si jich vážíš. Pak zkontroluj, jestli používáš stejná kritéria i na sebe, nebo si tajně přidáváš další podmínky",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -13546,7 +13546,7 @@
   {
     "id": "refa_1694",
     "cluster_id": "cl_0052",
-    "text": "Experiment: „Když odmítnu pomoct, druhé zklamu a náš vztah tím utrpí.“ Vyber si bezpečnou situaci, kdy tě někdo požádá o drobnou pomoc, kterou může bez problémů zajistit jinak. Pokud se ti pomáhat nechce, zkus tentokrát slušně odmítnout. Předem odhadni reakci druhého i vlastní pocit viny. Potom porovnej očekávání se skutečností. Postupně můžeš zkoušet odmítat i náročnější požadavky. Cílem není přestat pomáhat, ale zjistit, jestli smíš mít vlastní hranice, aniž bys tím ohrožoval vztahy.",
+    "text": "Experiment: „Když odmítnu někomu pomoct, zklamu ho a náš vztah tím utrpí.“ Vyber si bezpečnou situaci, kdy tě někdo požádá o drobnou pomoc, kterou může bez problémů zajistit jinak. Pokud se ti pomáhat nechce, zkus tentokrát slušně odmítnout. Předem odhadni reakci druhého i vlastní pocit viny. Potom porovnej očekávání se skutečností. Postupně můžeš zkoušet odmítat i náročnější požadavky. Cílem není přestat pomáhat, ale zjistit, jestli smíš mít vlastní hranice, aniž bys tím ohrožoval vztahy.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -14018,7 +14018,7 @@
   {
     "id": "refa_1753",
     "cluster_id": "cl_0054",
-    "text": "V situaci, kdy chceš získat převahu, se na chvíli zastav a pojmenuj potřebu pod tím: bezpečí, respekt, svoboda, uznání, kontrola nebo něco jiného.",
+    "text": "V situaci, kdy chceš získat převahu, se na chvíli zastav a pojmenuj potřebu pod tím: bezpečí, respekt, svoboda, uznání, kontrola nebo něco jiného?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -14314,7 +14314,7 @@
   {
     "id": "refa_1792",
     "cluster_id": "cl_0055",
-    "text": "Po konfliktu se vrať k situaci a odděl tři vrstvy: co druhý skutečně řekl nebo udělal, co sis o tom vyložil a co jsi potřeboval. Pomůže ti to zachytit okamžik, kdy se z potřeby stává boj o převahu.",
+    "text": "Po konfliktu se vrať k situaci a odděl tři vrstvy: co druhý skutečně řekl nebo udělal, jak sis to vyložil a co jsi potřeboval. Pomůže ti to zachytit okamžik, kdy se z potřeby stává boj o převahu.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -14528,19 +14528,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_1817",
-    "cluster_id": "cl_0056",
-    "text": "Chraň si pravidelný spánek jako jednu z hlavních opor psychické stability. Choď spát a vstávej přibližně ve stejnou dobu, večer omez světlo a podněty. Pokud opakovaně nemůžeš spát, zvlášť když se přitom cítíš nezvykle plný energie, včas vyhledej odbornou pomoc.",
-    "tier": "free",
-    "sort_order": 1,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_1818",
     "cluster_id": "cl_0056",
     "text": "Vytvoř si jednoduché bezpečnostní pravidlo: když pocit vlastní výjimečnosti, mimořádného poslání nebo neobvyklé jistoty přesáhne 6 z 10, odlož zásadní rozhodnutí, velké výdaje, veřejná prohlášení i riskantní jednání. Vrať se k nim až ve chvíli, kdy budeš klidnější a odpočatý.",
     "tier": "free",
-    "sort_order": 2,
+    "sort_order": 1,
     "added_at": "2026-10-16"
   },
   {
@@ -14548,7 +14540,7 @@
     "cluster_id": "cl_0056",
     "text": "Když tě zaplaví pocit mimořádné důležitosti nebo silná jistota, zkus si napsat tři věci: co skutečně víš, jak si to vykládáš a jaká další vysvětlení připadají v úvahu. Nemusíš svůj prožitek popírat ani hned rozhodovat, co znamená. Dej si čas, než z něj vyvodíš závěry.",
     "tier": "free",
-    "sort_order": 3,
+    "sort_order": 2,
     "added_at": "2026-10-16"
   },
   {
@@ -14556,7 +14548,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když hned neuposlechnu svou velkou myšlenku, propásnu něco zásadního.“ Vyber si bezpečnou situaci, ve které cítíš silné nutkání okamžitě jednat. Předem si napiš, co se podle tebe stane, když počkáš. Nejdřív odlož jednání o deset minut, později třeba o hodinu nebo den. Mezitím se věnuj běžné činnosti nebo si promluv s někým důvěryhodným. Potom porovnej, co jsi očekával, s tím, co se skutečně stalo. Důležitá rozhodnutí neuspěchej ani tehdy, když pocit naléhavosti přetrvává.",
     "tier": "free",
-    "sort_order": 4,
+    "sort_order": 3,
     "added_at": "2026-10-16"
   },
   {
@@ -14564,7 +14556,7 @@
     "cluster_id": "cl_0056",
     "text": "Veď si krátký deník neobvyklých pocitů a stavů. Zaznamenej jejich intenzitu od 0 do 10, délku spánku, energii, stres, případné užití návykových látek, důležité události a své jednání. Po čase hledej souvislosti. Cílem není potvrdit ani vyvrátit vlastní výjimečnost, ale lépe porozumět tomu, kdy a za jakých okolností tyto stavy přicházejí.",
     "tier": "free",
-    "sort_order": 5,
+    "sort_order": 4,
     "added_at": "2026-10-16"
   },
   {
@@ -14572,7 +14564,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když nejsem výjimečný, ztrácím svou hodnotu.“ Vyber si obyčejnou činnost, kterou uděláš bez snahy vyniknout, získat uznání nebo se někomu pochlubit. Předem si všimni, jak nepříjemné to podle tebe bude a co tím můžeš ztratit. Postupně zkoušej další běžné činnosti nebo situace, kdy necháš vyniknout někoho jiného. Potom porovnej své očekávání se skutečným prožitkem. Zkoumej, zda můžeš mít hodnotu i ve chvílích, kdy nejsi ničím mimořádný.",
     "tier": "free",
-    "sort_order": 6,
+    "sort_order": 5,
     "added_at": "2026-10-16"
   },
   {
@@ -14580,7 +14572,7 @@
     "cluster_id": "cl_0056",
     "text": "Zkus si všímat, kdy se tvoje hodnota začíná odvíjet od toho, zda jsi výjimečný, úspěšný nebo obdivovaný. Každý večer si připomeň jednu obyčejnou věc, ve které ses zachoval laskavě, poctivě, trpělivě nebo odpovědně. Nehodnoť její velikost. Všímej si, jaké to je oceňovat se za způsob, jakým žiješ, a ne za svou mimořádnost.",
     "tier": "free",
-    "sort_order": 7,
+    "sort_order": 6,
     "added_at": "2026-10-16"
   },
   {
@@ -14588,7 +14580,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když druhý nesouhlasí, znamená to, že mě ponižuje nebo nechápe.“ Začni u bezpečného člověka a drobného rozdílu v názorech nebo preferencích. Předem si napiš, jakou reakci a jaké pocity očekáváš. Zkus druhého vyslechnout bez přesvědčování a polož mu jednu upřímnou otázku. Postupně můžeš zkoušet i významnější, ale bezpečná témata. Potom porovnej očekávání se skutečností. Všímej si, zda rozdílný názor skutečně ohrožuje tvoji hodnotu nebo vztah.",
     "tier": "free",
-    "sort_order": 8,
+    "sort_order": 7,
     "added_at": "2026-10-16"
   },
   {
@@ -14596,7 +14588,7 @@
     "cluster_id": "cl_0056",
     "text": "Když se objeví silný pocit výjimečnosti, moci nebo zvláštního poslání, zkus nejprve deset minut věnovat obyčejné péči o tělo. Napij se, něco sněz, osprchuj se, zpomal dech nebo se klidně projdi. Teprve potom se vrať k tomu, co tě zaměstnávalo, a všimni si, zda se něco změnilo.",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 8,
     "added_at": "2026-10-16"
   },
   {
@@ -14604,7 +14596,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když řeknu, že si nejsem jistý, ztratím svou důležitost nebo přijdu o pravdu.“ Vyber si jednu méně závažnou myšlenku, o které máš silné přesvědčení, a prober ji s důvěryhodným člověkem. Předem si zapiš, jakou reakci očekáváš a nakolik jsi o své interpretaci přesvědčený. Zeptej se, jak ji vidí on, a zkus jeho odpověď vyslechnout bez okamžitého obhajování. Později můžeš podobně probrat i důležitější přesvědčení s odborníkem. Porovnej očekávání se skutečností a všimni si, co nového ses dozvěděl.",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -14612,7 +14604,7 @@
     "cluster_id": "cl_0056",
     "text": "Všímej si rozdílu mezi silným pocitem jistoty a skutečným poznáním. Když tě napadne „vím, že to tak je“, zkus si říct „mám velmi silný pocit, že to tak je“. Místo „tohle je znamení“ zkus „takhle si to právě vykládám“. Sleduj, zda ti tento malý odstup pomáhá přemýšlet svobodněji.",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -14620,7 +14612,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když udělám něco obyčejného a nedokonalého, nebude to mít žádnou hodnotu.“ Vyber si činnost, na které ti záleží, a věnuj jí pouhých pět minut. Nesnaž se o mimořádný výsledek a dovol si skončit s něčím nedokončeným. Předem odhadni, jak bezvýznamné nebo neuspokojivé ti to bude připadat. Potom zhodnoť skutečný užitek, uspokojení a chuť pokračovat. Postupně zkoušej delší nebo pravidelnější malé kroky, aniž bys musel zvyšovat velikost cíle.",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -14628,7 +14620,7 @@
     "cluster_id": "cl_0056",
     "text": "Zkus na čas omezit obsah, který tě vtahuje do hledání skrytých znamení, tajných souvislostí nebo představ o mimořádném poslání. Místo něj si dopřej něco předvídatelného a obyčejného: hudbu, vaření, procházku nebo rozhovor. Všímej si, jak se mění tvoje rozpoložení a naléhavost těchto myšlenek.",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -14636,7 +14628,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když budu mít méně podnětů, přijdu o důležité poznání nebo prožitek.“ Naplánuj si jeden klidný večer bez nadměrné stimulace, obsahu plného znamení a zbytečného ponocování. Předem odhadni, jak se budeš cítit a co podle tebe ztratíš. Ráno porovnej očekávání se skutečností a ohodnoť intenzitu svých pocitů. Pokud ti to prospívá, zkus podobných večerů více. Cílem je zjistit, jaký vliv mají podněty a odpočinek na tvoje prožívání.",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -14644,7 +14636,7 @@
     "cluster_id": "cl_0056",
     "text": "Zkus si pravidelně dopřávat činnost, při které nemusíš být nejlepší, vést ostatní ani získávat obdiv. Může to být společná hra, sport, dobrovolnická aktivita nebo práce v týmu. V bezpečném prostředí si vyzkoušej roli rovnocenného účastníka, který také naslouchá, přijímá návrhy a nechává prostor druhým.",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -14652,7 +14644,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když požádám o blízkost nebo pomoc jako obyčejný člověk, nebudu pro druhé dost zajímavý.“ Vyber si bezpečného člověka a požádej ho o něco malého, třeba o deset minut společnosti nebo pomoc s běžnou věcí. Předem si napiš, jakou reakci očekáváš. Postupně můžeš zkoušet otevřenější žádosti o podporu nebo blízkost. Potom porovnej očekávání se skutečností a všimni si, jaké to bylo projevit potřebu bez snahy zapůsobit.",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -14660,7 +14652,7 @@
     "cluster_id": "cl_0056",
     "text": "Každý den si dopřej jednu obyčejnou činnost, kterou nemusíš nikomu ukazovat ani nijak hodnotit. Uvař si jídlo, pečuj o rostliny, ukliď malý kousek domova nebo se projdi. Zkus si všimnout, jestli v takových chvílích můžeš prožívat spokojenost i bez výjimečnosti a obdivu.",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -14668,7 +14660,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když připustím, že je můj mimořádný prožitek jen myšlenka, ztratím něco důležitého.“ Vyber si jednu myšlenku, se kterou se silně ztotožňuješ, a zkus si říct: „Všímám si myšlenky, že…“ Potom minutu nic nerozhoduj a jen pozoruj, co se děje. Předem odhadni, co se podle tebe stane, když od myšlenky získáš odstup. Postupně můžeš zkoušet delší pozorování nebo zapisovat různé možné výklady. Nakonec porovnej očekávání se zkušeností. Nejde o popření myšlenky, ale o možnost nebýt jí okamžitě vedený.",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -14676,7 +14668,7 @@
     "cluster_id": "cl_0056",
     "text": "Vyber si jednu hodnotu, na které ti opravdu záleží, například laskavost, tvořivost, poctivost nebo péči o druhé. Proměň ji v jeden malý čin, který můžeš každý týden opakovat. Nehodnoť, zda jsi udělal něco mimořádného, ale zda jsi žil v souladu s tím, co je pro tebe důležité.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -14684,7 +14676,7 @@
     "cluster_id": "cl_0056",
     "text": "Domluv se s důvěryhodným člověkem, že ti může citlivě říct, když si všimne neobvyklých změn ve tvém spánku, energii, řeči, sebejistotě nebo jednání. Společně si předem ujasněte, které signály chcete sledovat a co uděláte, pokud začnou sílit. Smyslem není kontrolovat tě, ale pomoci ti včas rozpoznat změny, které se zevnitř mohou obtížně posuzovat.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -14692,7 +14684,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když se zeptám na upřímnou zpětnou vazbu, budu buď ponížený, nebo bezvýhradně obdivovaný.“ Vyber si důvěryhodného člověka a požádej ho o názor na jednu konkrétní věc, kterou jsi udělal. Zeptej se třeba: „Co ti přišlo užitečné a co bych mohl udělat jinak?“ Předem si napiš, jakou odpověď očekáváš. Postupně můžeš zkoušet další lidi nebo méně jisté situace. Potom porovnej předpověď se skutečností a všímej si, zda hodnocení může obsahovat i něco mezi obdivem a odmítnutím.",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -14700,7 +14692,7 @@
     "cluster_id": "cl_0056",
     "text": "Naplánuj si pravidelnou chvíli na hru nebo tvoření bez cíle něco dokázat. Můžeš kreslit, improvizovat, tančit, zpívat nebo si jen tak hrát. Zkus skončit dřív, než se z radosti stane další úkol, výkon nebo snaha být výjimečný.",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -14708,7 +14700,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když se nejdřív zaměřím na tělo, přehlédnu něco mimořádně důležitého.“ Při mírném nástupu silného prožitku si nejprve na chvíli všimni tepu, dechu, napětí a dalších tělesných pocitů. Potom se rozhlédni kolem sebe, opři chodidla o zem a zkus klidně dýchat. Předem odhadni, zda se prožitek bez okamžitého vysvětlování zesílí. Následně porovnej očekávání se skutečností a všimni si, co přišlo jako první: tělesné rozrušení, emoce, nebo myšlenka. Pokud tě pozorování těla rozrušuje, zůstaň raději u vnějších podnětů.",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -14716,7 +14708,7 @@
     "cluster_id": "cl_0056",
     "text": "Sepiš si tři lidi, na které se můžeš obrátit, pokud se začneš cítit nezvykle mocný, vyvolený nebo přesvědčený o mimořádném poslání. Připrav si jednoduchou větu, například: „Poslední dobou mám hodně intenzivní prožitky a potřeboval bych s někým probrat, co se děje.“ Pokud takového člověka nemáš, může být jedním z kontaktů odborník nebo krizová služba.",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -14724,7 +14716,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když nepřijdu s něčím mimořádným, druzí o mě nebudou stát.“ Zkus s bezpečným člověkem strávit chvíli obyčejným rozhovorem, aniž by ses snažil zaujmout, předvést své schopnosti nebo sdělit něco zásadního. Předem odhadni, jaký zájem očekáváš a jak se budeš cítit. Potom porovnej předpověď se skutečným průběhem. Všímej si, zda může blízkost vznikat i z prosté společné přítomnosti.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -14732,7 +14724,7 @@
     "cluster_id": "cl_0056",
     "text": "Experiment: „Když se vzdám mimořádného výkonu, ostatní mě přestanou respektovat.“ V bezpečné situaci zkus udělat něco přiměřeně dobře, aniž bys usiloval o nejlepší výsledek. Můžeš třeba přijmout obyčejnou roli ve společné činnosti nebo nechat někoho jiného převzít vedení. Předem si napiš, jakou reakci očekáváš. Potom sleduj skutečné chování druhých i svůj vlastní pocit hodnoty. Zkoumej, zda respekt skutečně vyžaduje výjimečnost.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -14740,7 +14732,7 @@
     "cluster_id": "cl_0056",
     "text": "Když potřebuješ podporu, zkus o ni požádat přímo, bez nutnosti vysvětlovat celý svůj příběh. Můžeš někoho poprosit o společné jídlo, klidnou procházku, chvíli společnosti nebo pomoc s běžným úkolem. I obyčejná potřeba si zaslouží pozornost.",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -14748,7 +14740,7 @@
     "cluster_id": "cl_0056",
     "text": "Několikrát denně se na chvíli vrať k tomu, co se děje tady a teď. Pojmenuj dnešní datum, místo, kde jsi, a činnost, kterou právě děláš. Rozhlédni se a všimni si pěti věcí, které vidíš, tří zvuků a kontaktu chodidel se zemí. Nemusíš nic zvláštního prožívat, stačí se zorientovat.",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -14756,7 +14748,7 @@
     "cluster_id": "cl_0056",
     "text": "Vytvoř si jednoduchou kartičku pro chvíle, kdy se tvoje prožívání začne nezvykle zesilovat. Napiš si na ni tři osobní varovné signály, tři věci, které ti pomáhají zpomalit a vrátit se k běžnému fungování, a dva kontakty, na které se můžeš obrátit. Ulož si ji do telefonu nebo na dostupné místo doma.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -14764,7 +14756,7 @@
     "cluster_id": "cl_0056",
     "text": "Zkus na čas vynechat alkohol, konopí, psychedelika a jiné psychoaktivní látky, omezit stimulanty a nadbytek kofeinu. Všímej si, zda se mění intenzita prožitků, naléhavost myšlenek nebo pocit neobvyklé jistoty. Předepsané léky nevysazuj bez domluvy s lékařem; při riziku abstinenčních příznaků řeš vysazení alkoholu či jiných látek odborně.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -14772,7 +14764,7 @@
     "cluster_id": "cl_0056",
     "text": "Pokud se pocity mimořádné moci, vyvolenosti nebo neobvyklé jistoty opakují, sílí nebo ovlivňují tvůj spánek, vztahy či rozhodování, objednej se k psychologovi nebo psychiatrovi. Můžeš mu ukázat své poznámky o spánku, energii a prožitcích. Předepsané léky neměň bez domluvy s lékařem.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -14780,7 +14772,7 @@
     "cluster_id": "cl_0056",
     "text": "Pokud několik nocí téměř nespíš, ztrácíš kontrolu nad svým jednáním, výrazně riskuješ, slyšíš hlasy přikazující ti něco udělat nebo hrozí ublížení tobě či někomu jinému, vyhledej okamžitě zdravotnickou nebo krizovou pomoc. Pokud možno nezůstávej sám; při bezprostředním ohrožení volej 155 nebo 112.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -15322,7 +15314,7 @@
   {
     "id": "refa_1916",
     "cluster_id": "cl_0059",
-    "text": "Když se objeví pocit viny, zkus nejdřív rozlišit, co se skutečně stalo. Ublížil jsi někomu, porušil jsi nějakou dohodu, nebo jsi jen nenaplnil jeho očekávání? Napiš si, za co opravdu neseš odpovědnost, co můžeš napravit a co už není tvoje starost. Něčí zklamání ještě nemusí znamenat tvoje provinění.",
+    "text": "Když se objeví pocit viny, zkus nejdřív rozlišit, co se skutečně stalo. Ublížil jsi někomu, porušil jsi nějakou dohodu, nebo jsi jen nenaplnil něčí očekávání? Napiš si, za co opravdu neseš odpovědnost, co můžeš napravit a co už není tvoje starost. Něčí zklamání ještě nemusí znamenat tvoje provinění.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -15338,7 +15330,7 @@
   {
     "id": "refa_1918",
     "cluster_id": "cl_0059",
-    "text": "Experiment: „Když někomu řeknu ne, zklamu ho a náš vztah tím utrpí.“ Vyber si drobnou prosbu od člověka, u kterého je bezpečné odmítnout. Předem si napiš, jakou reakci očekáváš a jak silnou vinu asi pocítíš. Pak slušně odmítni a porovnej své obavy s tím, co se skutečně stalo. Pokud to bude únosné, postupně zkoušej odmítat i významnější požadavky. Všímej si nejen reakcí druhých, ale také toho, jak se mění tvůj vztah k vlastnímu právu říkat ne.",
+    "text": "Experiment: „Když někomu řeknu ne, zklamu ho a náš vztah tím utrpí.“ Vyber si drobnou prosbu od člověka, u kterého je bezpečné odmítnout. Předem si napiš, jakou reakci očekáváš a jak silnou vinu asi pocítíš. Pak slušně odmítni a porovnej své obavy s tím, co se skutečně stalo. Postupně zkoušej odmítat i významnější požadavky, které narážejí na tvé hranice nebo vůli. Všímej si nejen reakcí druhých, ale také toho, jak se mění tvůj vztah k vlastnímu právu říkat ne.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -15618,7 +15610,7 @@
   {
     "id": "refa_1953",
     "cluster_id": "cl_0060",
-    "text": "Vytvoř si vlastní seznam věcí, které tě dokážou uklidnit nebo ti ulevit. Může to být procházka, pohyb, sprcha, hudba, ticho, rozhovor, teplá přikrývka nebo pobyt venku. Postupně je zkoušej a všímej si, co ti pomáhá při vzteku, úzkosti, smutku nebo zahlcení. Ne každá metoda funguje na každou emoci.",
+    "text": "Vytvoř si vlastní seznam věcí, které tě dokážou uklidnit nebo ti ulevit. Může to být procházka, pohyb, svalová relaxace, meditace, sprcha, hudba, ticho, rozhovor, teplá přikrývka nebo pobyt venku. Postupně je zkoušej a všímej si, co ti pomáhá při vzteku, úzkosti, smutku nebo zahlcení. Ne každá metoda funguje na každou emoci.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -15826,7 +15818,7 @@
   {
     "id": "refa_1979",
     "cluster_id": "cl_0061",
-    "text": "Při čekání na zprávu nebo výsledek si předem stanov, kdy má smysl věc znovu zkontrolovat. Do té doby se věnuj něčemu jinému. Pokud tě to táhne ke kontrole dřív, všimni si nutkání a zkus ho nechat odeznít bez okamžité reakce.",
+    "text": "Při čekání na zprávu nebo výsledek si předem stanov, kdy má opravdu smysl věc znovu zkontrolovat. Do té doby se věnuj něčemu jinému. Pokud tě to táhne ke kontrole dřív, všimni si nutkání a zkus ho nechat odeznít bez okamžité reakce.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -15858,7 +15850,7 @@
   {
     "id": "refa_1984",
     "cluster_id": "cl_0061",
-    "text": "Když musíš čekat, zkus místo otázky „Kdy už?“ položit jinou: „Jak chci prožít následujících deset minut?“ Můžeš pozorovat okolí, odpočívat nebo dělat něco příjemného. Čekání nemusí být jen prázdný prostor mezi dvěma událostmi.",
+    "text": "Když musíš čekat, zkus místo otázky „Kdy už to bude?“ položit jinou: „Jak chci prožít následujících deset minut?“ Můžeš pozorovat okolí, odpočívat nebo dělat něco příjemného. Čekání nemusí být jen prázdný prostor mezi dvěma událostmi.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -16058,7 +16050,7 @@
   {
     "id": "refa_2008",
     "cluster_id": "cl_0062",
-    "text": "Když se přistihneš při zasnění nebo odběhnutí myšlenek, nevyčítej si to. Jen si všimni, kam tě mysl odvedla, a vrať se k nejbližšímu konkrétnímu kroku. Soustředění není schopnost nikdy neodběhnout, ale také schopnost vracet se.",
+    "text": "Když se přistihneš při zasnění nebo odběhnutí myšlenek, nevyčítej si to. Jen si všimni, kam tě mysl odvedla, a vrať se k nejbližšímu konkrétnímu kroku. Soustředění není jen schopností neodbíhat, ale také schopností se vracet.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -16066,7 +16058,7 @@
   {
     "id": "refa_2009",
     "cluster_id": "cl_0062",
-    "text": "Odstraň během soustředěné práce jeden nejsilnější zdroj vyrušení – třeba telefon z dosahu, nepotřebné karty prohlížeče nebo upozornění. Nesnaž se vytvořit dokonale sterilní svět.",
+    "text": "Odstraň během soustředěné práce jeden nejsilnější zdroj vyrušení – třeba telefon, nepotřebné karty prohlížeče nebo upozornění. Nesnaž se ale vytvořit dokonale sterilní svět.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -16082,7 +16074,7 @@
   {
     "id": "refa_2011",
     "cluster_id": "cl_0062",
-    "text": "Při práci měj vedle sebe „parkoviště myšlenek“. Když tě napadne něco nesouvisejícího, jednou větou to zapiš a vrať se, místo abys to šel hned řešit.",
+    "text": "Při práci měj vedle sebe „parkoviště myšlenek“. Když tě napadne něco nesouvisejícího, jednou větou to zapiš a vrať se k rozdělané práci, místo abys to šel hned řešit.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -16090,7 +16082,7 @@
   {
     "id": "refa_2012",
     "cluster_id": "cl_0062",
-    "text": "Rozděl dlouhé soustředění do krátkých bloků s vědomými pauzami. Začni třeba 15 minutami práce a třemi minutami odpočinku a délku upravuj podle skutečné zkušenosti.",
+    "text": "Rozděl dlouhé soustředění do krátkých bloků s vědomými pauzami. Začni třeba 15 minutami práce a třemi minutami odpočinku a délku upravuj podle zkušenosti.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -16314,7 +16306,7 @@
   {
     "id": "refa_2041",
     "cluster_id": "cl_0063",
-    "text": "U opakovaných problémových impulzů uprav prostředí místo spoléhání na pevnou vůli. Znesnadni okamžitý přístup k tomu, co tě láká: vypni upozornění, odlož telefon mimo dosah nebo vlož další krok mezi nutkání a možnost jednat.",
+    "text": "U opakovaných problémových impulzů uprav prostředí místo spoléhání se na pevnou vůli. Znesnadni okamžitý přístup k tomu, co tě láká: vypni upozornění, odlož telefon mimo dosah nebo vlož další krok mezi nutkání a možnost jednat.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -16562,7 +16554,7 @@
   {
     "id": "refa_2071",
     "cluster_id": "cl_0064",
-    "text": "Vyber jednu drobnou povinnost, kterou dlouhodobě odkládáš, a zmenši ji na první pětiminutový krok. Cílem není všechno dokončit, ale vyzkoušet si, že můžeš začít i bez dlouhého přemlouvání a výčitek.",
+    "text": "Vyber jednu drobnou povinnost, kterou dlouhodobě odkládáš, a zmenši ji na první pětiminutový krok. Cílem není všechno dokončit na jeden zátah, ale vyzkoušet si, že můžeš začít i bez dlouhého přemlouvání a výčitek.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -16586,7 +16578,7 @@
   {
     "id": "refa_2074",
     "cluster_id": "cl_0064",
-    "text": "Po dobu týdne si každý večer vyber jednu situaci, kdy ses cítil nezodpovědný, a rozliš čtyři věci: za co jsi skutečně odpovídal, co bylo mimo tvou kontrolu, co jsi mohl ovlivnit a jakou odpovědnost sis možná přisoudil navíc.",
+    "text": "Po dobu jednoho týdne si každý večer vyber jednu situaci, kdy ses cítil nezodpovědný, a rozliš čtyři věci: za co jsi skutečně odpovídal, co bylo mimo tvou kontrolu, co jsi mohl ovlivnit a jakou odpovědnost sis možná přisoudil navíc.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -16594,7 +16586,7 @@
   {
     "id": "refa_2075",
     "cluster_id": "cl_0064",
-    "text": "Trénuj včasné přiznání problému. Jakmile zjistíš, že něco nestihneš, ozvi se dřív, než tě stud přiměje vyhýbat se komunikaci. Vysvětli situaci a nabídni realistické řešení místo dalšího slibu, který možná nesplníš.",
+    "text": "Trénuj včasné přiznání problému. Jakmile zjistíš, že něco nestihneš, ozvi se dřív, než tě stud přiměje vyhýbat se komunikaci. Vysvětli situaci a nabídni realistické řešení místo dalšího slibu, který nejspíš nedokážeš splnit.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -16794,7 +16786,7 @@
   {
     "id": "refa_2100",
     "cluster_id": "cl_0065",
-    "text": "Když něco odkládáš, nastav si pět minut práce a potom smíš skončit bez výčitek. Trénuj začínání, ne dokončování; právě práh mezi úmyslem a akcí bývá často nejtěžší.",
+    "text": "Když něco odkládáš, nastav si pět minut práce s dovolením potom skončit bez výčitek. Trénuj začínání, ne dokončování; právě práh mezi úmyslem a akcí bývá často nejtěžší překročit.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -16834,7 +16826,7 @@
   {
     "id": "refa_2105",
     "cluster_id": "cl_0065",
-    "text": "Připrav prostředí tak, aby žádoucí činnost vyžadovala méně kroků než únik: nachystej pomůcky, zavři rušivé aplikace, dej telefon mimo dosah. Nenechávej všechno na okamžité síle vůle.",
+    "text": "Připrav prostředí tak, aby žádoucí činnost vyžadovala méně kroků než únik: nachystej pomůcky, zavři rušivé aplikace, dej telefon mimo dosah. Nenechávej všechno na síle vůle.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -17554,7 +17546,7 @@
   {
     "id": "refa_2195",
     "cluster_id": "cl_0068",
-    "text": "U odkládaného úkolu zmenši první krok až do absurdna: otevřít dokument, obout boty, napsat jednu větu. Cílem není úkol dokončit, ale snížit práh zahájení.",
+    "text": "U odkládaného úkolu zmenši první krok až do absurdna: otevřít dokument, obout boty, napsat jednu větu. Cílem není úkol dokončit, ale snížit práh před zahájením.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -17834,7 +17826,7 @@
   {
     "id": "refa_2230",
     "cluster_id": "cl_0069",
-    "text": "Experiment: „Aby moje ne platilo, musím být tvrdý nebo vzdorovitý.“ Zkus v bezpečné situaci odmítnout drobnou žádost klidně a bez zbytečného vysvětlování. Předem odhadni, jak druhý zareaguje a jestli tvoje odmítnutí přijme. Potom porovnej očekávání se skutečností. Pokud budeš chtít, postupně zkoušej důležitější hranice. Sleduj, kdy klidné odmítnutí stačí a kdy je potřeba větší důraznost.",
+    "text": "Experiment: „Aby moje ne platilo, musím být tvrdý nebo vzdorovat.“ Zkus v bezpečné situaci odmítnout drobnou žádost klidně a bez zbytečného vysvětlování. Předem odhadni, jak druhý zareaguje a jestli tvoje odmítnutí přijme. Potom porovnej očekávání se skutečností. Pokud budeš chtít, postupně zkoušej důležitější hranice. Sleduj, kdy klidné odmítnutí stačí a kdy je potřeba větší důraznost.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -18538,7 +18530,7 @@
   {
     "id": "refa_2318",
     "cluster_id": "cl_0072",
-    "text": "Vyber jedno drobné rozhodnutí denně, které uděláš čistě podle sebe: tempo, program, jídlo, oblečení, cestu nebo způsob práce. Vědomě registruj zkušenost „můžu volit“.",
+    "text": "Vyber jedno drobné rozhodnutí denně, které uděláš čistě podle sebe: tempo, program, jídlo, oblečení, cestu nebo způsob práce. Vědomě registruj zkušenost „můžu volit sám za sebe“.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -18546,7 +18538,7 @@
   {
     "id": "refa_2319",
     "cluster_id": "cl_0072",
-    "text": "Když přijde sevření, nedělej okamžitě velká rozhodnutí. Dej tělu prostor pohybem, změnou prostředí nebo několika pomalými výdechy a teprve potom zkoumej možnosti.",
+    "text": "Když přijde pocit sevření, nedělej okamžitě velká rozhodnutí. Dej tělu prostor pohybem, změnou prostředí nebo několika pomalými výdechy a teprve potom zkoumej možnosti.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -18562,7 +18554,7 @@
   {
     "id": "refa_2322",
     "cluster_id": "cl_0072",
-    "text": "U jednoho dlouhodobého omezení sepiš alespoň pět možností včetně nedokonalých, dočasných a kompromisních. Mozek v sevření často falešně redukuje situaci na dvě špatné varianty.",
+    "text": "U jednoho dlouhodobého omezení sepiš alespoň pět možností včetně nedokonalých, dočasných a kompromisních. Mozek v sevření často falešně redukuje situaci na dvě špatné varianty v protipólech.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -19802,7 +19794,7 @@
   {
     "id": "refa_2476",
     "cluster_id": "cl_0077",
-    "text": "V bezpečných vztazích si občas dovol říct přesně to, co se děje: „Teď jsem nějak znejistěl a začal se hlídat.“ Zkoušej zkušenost, že i nepřirozenost může být sdělena autenticky.",
+    "text": "V bezpečných vztazích si občas dovol říct přesně to, co se děje: „Teď jsem nějak znejistěl a začal se hlídat.“ Zkoušej zkušenost, že i pocit nepřirozenosti můžeš sdílet autenticky.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -20082,7 +20074,7 @@
   {
     "id": "refa_2511",
     "cluster_id": "cl_0078",
-    "text": "Experiment: „Když se cítím přehlížený, znamená to, že mě druhý nebere vážně.“ V mírně nepříjemné, ale bezpečné situaci se zkus klidně zeptat, jak druhý svůj výrok nebo chování myslel. Předem si poznamenej, co podle tebe jeho chování znamenalo a jak moc jsi o tom přesvědčený. Potom porovnej svůj původní výklad s tím, co ses dozvěděl. Nemusíš jeho vysvětlení automaticky přijmout; cílem je získat víc informací.",
+    "text": "Experiment: „Když se cítím přehlížený, znamená to, že mě druhý nebere vážně.“ V mírně nepříjemné, ale bezpečné situaci se zkus klidně zeptat, jak ten na druhé straně svůj výrok nebo chování myslel. Předem si poznamenej, co podle tebe jeho chování znamenalo a jak moc jsi o tom přesvědčený. Potom porovnej svůj původní výklad s tím, co ses dozvěděl. Nemusíš jeho vysvětlení automaticky přijmout; cílem je získat víc informací.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -20306,7 +20298,7 @@
   {
     "id": "refa_2540",
     "cluster_id": "cl_0079",
-    "text": "Když se začneš izolovat, zkus úplnou samotu občas nahradit drobným kontaktem s někým, s kým se cítíš bezpečně. Stačí krátká zpráva, telefonát nebo společná procházka. Nemusíš být zábavný, předstírat dobrou náladu ani vysvětlovat víc, než chceš.",
+    "text": "Když se začneš izolovat, zkus úplnou samotu občas nahradit aspoň drobným kontaktem s někým, s kým se cítíš bezpečně. Stačí krátká zpráva, telefonát nebo společná procházka. Nemusíš být zábavný, předstírat dobrou náladu ani vysvětlovat víc, než chceš.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -20514,7 +20506,7 @@
   {
     "id": "refa_2565",
     "cluster_id": "cl_0080",
-    "text": "Když se přistihneš při nekonečném přemýšlení, zeptej se: „Přináší mi to ještě něco nového, nebo už jen opakuju stejné myšlenky?“ Pokud nepřichází nové informace ani konkrétní řešení, zkus přemýšlení přerušit a věnovat se něčemu jinému. Nemusíš pokračovat jen proto, že problém ještě není uzavřený.",
+    "text": "Když se přistihneš při nekonečném přemýšlení, zeptej se: „Přináší mi to ještě něco nového, nebo už jen opakuju stejné myšlenky?“ Pokud nepřichází nové informace ani konkrétní řešení, zkus přemýšlení přerušit a věnovat se něčemu jinému. Nemusíš pokračovat jen proto, že se ti problém jeví jako neuzavřený.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -20522,7 +20514,7 @@
   {
     "id": "refa_2566",
     "cluster_id": "cl_0080",
-    "text": "Když se zasekneš v otázce „proč“, zkus ji změnit na „co teď“. Místo dalšího hledání příčin si vyber jeden malý krok, který můžeš skutečně udělat. A pokud teď nic změnit nemůžeš, dovol si problém na chvíli odložit.",
+    "text": "Když se zasekneš v otázce „proč?“, zkus ji změnit na „co teď?“. Místo dalšího hledání příčin a odpovědí si vyber jeden malý krok, který můžeš skutečně udělat. A pokud teď nic změnit nemůžeš, dovol si problém na chvíli odložit.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -20530,7 +20522,7 @@
   {
     "id": "refa_2567",
     "cluster_id": "cl_0080",
-    "text": "Když tě hloubání vtáhne, na dvě minuty přesuň pozornost k tělu a okolí. Vnímej chodidla na zemi, dech, napětí ve svalech nebo zvuky kolem sebe. Myšlenky nemusíš zahánět. Jen jim na chvíli přestaň věnovat veškerou pozornost.",
+    "text": "Když tě hloubání vtáhne, na dvě minuty přesuň pozornost k tělu a okolí. Vnímej chodidla na zemi, dech, napětí ve svalech nebo zvuky kolem sebe. Myšlenky nemusíš zahánět. Jen jim na chvíli přestaň věnovat veškerou pozornost a stále se od nich vracej k tělu nebo světu.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -20546,7 +20538,7 @@
   {
     "id": "refa_2569",
     "cluster_id": "cl_0080",
-    "text": "Když objevíš pod hloubáním nějakou emoci, zkus ji chvíli jen vnímat. Pojmenuj si, co cítíš: „Bojím se“, „Jsem zklamaný“, „Stydím se“. Všimni si, kde se ten pocit ozývá v těle. Nemusíš hned hledat jeho příčinu ani řešení. Někdy přemýšlení pomáhá vyhýbat se něčemu, co je těžké přímo prožívat.",
+    "text": "Když objevíš pod hloubáním nějakou emoci, zkus ji chvíli jen vnímat. Pojmenuj si, co cítíš: „Bojím se“, „Jsem zklamaný“, „Stydím se“. Všimni si, kde se ten pocit ozývá v těle. Nemusíš hned hledat jeho příčinu ani řešení. Někdy přemýšlení pomáhá vyhýbat se něčemu, co je těžké přijmout a přímo prožívat.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -20794,7 +20786,7 @@
   {
     "id": "refa_2600",
     "cluster_id": "cl_0081",
-    "text": "Experiment: „Raději to nezkusím, stejně to nevyjde.“ Vyber si jednu bezpečnou drobnost, kterou bys kvůli očekávanému neúspěchu obvykle vzdal. Předem si napiš, co očekáváš a čeho se obáváš. Pak to zkus a porovnej předpověď se skutečným výsledkem. Všimni si také, jak jsi situaci zvládl a co nového ses dozvěděl. Postupně můžeš zkoušet i významnější věci, na kterých ti záleží.",
+    "text": "Experiment: „Raději to nezkusím, stejně to nevyjde.“ Vyber si jednu bezpečnou drobnost, kterou bys kvůli očekávanému neúspěchu nejspíš vzdal. Předem si napiš, co očekáváš a čeho se obáváš. Pak to zkus a porovnej předpověď se skutečným výsledkem. Všimni si také, jak jsi situaci zvládl a co nového ses dozvěděl. Postupně můžeš zkoušet i významnější věci, na kterých ti záleží.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -21026,7 +21018,7 @@
   {
     "id": "refa_2629",
     "cluster_id": "cl_0082",
-    "text": "Když tě všechno štve, zkontroluj nejdřív základní věci: spánek, hlad, únavu, pohyb, bolest, množství podnětů, pracovní zátěž nebo nedostatek času pro sebe. Pokud něco zjevně chybí, zkus se o to postarat dřív, než začneš hledat hlubší příčiny své nálady.",
+    "text": "Když tě všechno štve, zkontroluj nejdřív základní věci: spánek, hlad, únavu, pohyb, bolest, množství podnětů, pracovní zátěž, málo kontaktu s lidmi nebo naopak nedostatek času pro sebe. Pokud něco zjevně chybí, zkus se o to postarat dřív, než začneš hledat hlubší příčiny své nálady.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -21034,7 +21026,7 @@
   {
     "id": "refa_2630",
     "cluster_id": "cl_0082",
-    "text": "Když tě přepadne otrávenost, odlož na chvíli velké soudy o sobě, vztazích a životě. Náladu ber jako důležitou informaci, ale ne jako ideální chvíli pro definitivní závěry.",
+    "text": "Když tě přepadne otrávenost, odlož na chvíli velké soudy o sobě, vztazích a životě. Momentální horší náladu ber jako důležitou informaci, ale ne jako ideální chvíli pro definitivní závěry.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -21570,7 +21562,7 @@
   {
     "id": "refa_2697",
     "cluster_id": "cl_0084",
-    "text": "Když se chceš stáhnout, dopřej si třeba deset minut samoty. Potom se zeptej: „Ještě si odpočívám, nebo už se schovávám před něčím, čeho se bojím?“ Podle odpovědi si nech další prostor, nebo zkus malý krok zpátky ke kontaktu.",
+    "text": "Když se chceš stáhnout, dopřej si třeba deset minut samoty. Potom se zeptej: „Ještě odpočívám, nebo už se schovávám před něčím, čeho se bojím?“ Podle odpovědi si nech další prostor, nebo zkus malý krok zpátky ke kontaktu.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -21586,7 +21578,7 @@
   {
     "id": "refa_2699",
     "cluster_id": "cl_0084",
-    "text": "Trénuj vyjadřování potřeby samoty, aniž bys musel úplně zmizet. Můžeš třeba říct: „Jsem teď zahlcený a potřebuju chvíli pro sebe. Není to proti tobě.“ Dáváš tak prostor sobě, ale zároveň pomáháš druhému porozumět tomu, co se děje.",
+    "text": "Trénuj vyjadřování potřeby samoty, aniž bys musel úplně zmizet. Můžeš třeba říct: „Jsem teď zahlcený a potřebuju chvíli pro sebe. Nesouvisí to s tebou.“ Dáváš tak prostor sobě, ale zároveň pomáháš druhému porozumět tomu, co se děje.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -21786,7 +21778,7 @@
   {
     "id": "refa_2724",
     "cluster_id": "cl_0085",
-    "text": "Rozlišuj mezi „nemůžu to říct“, „bojím se to říct“, „ještě nevím, co si myslím“ a „tady není bezpečné to říct“. Zkus si v konkrétní situaci ujasnit, co z toho platí. Každá možnost totiž potřebuje trochu jiné řešení.",
+    "text": "Rozlišuj mezi „nemůžu to říct“, „bojím se to říct“, „ještě nevím, co říct“ a „tady není bezpečné to říct“. Zkus si v konkrétní situaci ujasnit, co z toho platí. Každá možnost potřebuje trochu jiné řešení.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -22082,7 +22074,7 @@
   {
     "id": "refa_2762",
     "cluster_id": "cl_0086",
-    "text": "Když cítíš, že se při hovoru uzavíráš do sebe, opři chodidla o zem a pomalu vydechni. Pak si polož jednoduchou otázku: „Chci teď opravdu mlčet, nebo mě umlčel strach?“ Nemusíš hned promluvit. Důležité je získat možnost volby.",
+    "text": "Když cítíš, že se při hovoru uzavíráš do sebe, opři chodidla o zem a pomalu vydechni. Pak si polož jednoduchou otázku: „Chci teď opravdu mlčet, nebo mě umlčel strach?“ Nemusíš hned promluvit, jen si dáváš možnost volby.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -22314,7 +22306,7 @@
   {
     "id": "refa_2790",
     "cluster_id": "cl_0087",
-    "text": "Když se začneš od někoho odtahovat, zkus rozlišit, jestli potřebuješ více prostoru, nebo chceš přerušit i emoční kontakt. Někdy může stačit říct si o chvíli samoty, kratší rozhovor nebo méně intenzivní kontakt, aniž by ses musel úplně uzavřít.",
+    "text": "Když se začneš od někoho odtahovat, zkus rozlišit, jestli potřebuješ více prostoru, nebo chceš přerušit i emoční kontakt. Někdy stačí požádat o chvíli samoty, kratší rozhovor nebo méně intenzivní kontakt, aniž by ses musel úplně uzavřít.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -22530,7 +22522,7 @@
   {
     "id": "refa_2817",
     "cluster_id": "cl_0088",
-    "text": "Když analyzuješ emočně náročnou situaci, nejdřív jednou větou pojmenuj emoci a potřebu: „Cítím… a potřeboval bych…“ Teprve potom se pusť do vysvětlování.",
+    "text": "Když analyzuješ emočně náročnou situaci, nejdřív jednou větou pojmenuj emoci a potřebu: „Cítím… a potřeboval bych…“ Teprve potom se pusť do vysvětlování. Ale třeba ani nebudeš muset.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -23074,7 +23066,7 @@
   {
     "id": "refa_2885",
     "cluster_id": "cl_0090",
-    "text": "Když se vůči někomu zatvrdíš, zeptej se: „Potřebuju teď ochranu, hranici, odstup, nebo se bojím něčeho cítit?“ Podle odpovědi jednej; ne každý chlad potřebuje rozpustit.",
+    "text": "Když se vůči někomu zatvrdíš, zeptej se: „Potřebuju teď ochranu, hranici, odstup, nebo se bojím něco cítit?“ Podle odpovědi jednej; ne každý chlad potřebuje rozpustit.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -23562,7 +23554,7 @@
   {
     "id": "refa_2946",
     "cluster_id": "cl_0092",
-    "text": "Vyber jednu pravidelnou činnost, která tě dlouhodobě vyčerpává, a hledej méně náročnou variantu: kratší, jednodušší, méně častou, sdílenou s někým nebo provedenou pouze „dost dobře“.",
+    "text": "Vyber jednu pravidelnou činnost, která tě dlouhodobě vyčerpává, a hledej méně náročnou variantu: kratší, jednodušší, méně častou, sdílenou s někým nebo provedenou jen „dost dobře“.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -23786,7 +23778,7 @@
   {
     "id": "refa_2975",
     "cluster_id": "cl_0093",
-    "text": "Experiment: „Když nutkání neposlechnu, bude jen sílit.“ Vyber si bezpečné, mírné nutkání a odlož reakci nejprve o pět minut. Předem odhadni, jak silné bude na konci této doby. Během čekání se věnuj běžné činnosti a nesnaž se nutkání zahnat ani se v duchu ujišťovat. Potom porovnej očekávání se skutečným průběhem. Postupně můžeš odklad prodlužovat na deset, dvacet nebo třicet minut. Všímej si, zda nutkání opravdu neustále sílí, nebo jeho intenzita kolísá, i když mu nevyhovíš.",
+    "text": "Experiment: „Když nutkání neposlechnu, bude jen sílit.“ Vyber si bezpečné, mírné nutkání a odlož reakci nejprve o pět minut. Předem odhadni, jak silné bude nutkání na konci této doby. Během čekání se věnuj běžné činnosti a nesnaž se nutkání zahnat ani se v duchu ujišťovat. Potom porovnej očekávání se skutečným průběhem. Postupně můžeš odklad prodlužovat na deset, dvacet nebo třicet minut. Všímej si, zda nutkání opravdu neustále sílí, nebo jeho intenzita kolísá, i když mu nevyhovíš.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -23794,7 +23786,7 @@
   {
     "id": "refa_2977",
     "cluster_id": "cl_0093",
-    "text": "Když hledáš jistotu, stanov si předem přiměřenou hranici: jedna kontrola, jeden důvěryhodný zdroj nebo jedno dostatečně promyšlené rozhodnutí. Jakmile ji splníš, zkus nepokračovat jen proto, že se znovu ozvala nejistota. U důležitých rozhodnutí a bezpečnostních záležitostí samozřejmě zachovej potřebnou pečlivost.",
+    "text": "Když hledáš jistotu, stanov si předem přiměřenou hranici: jedna kontrola, jeden důvěryhodný zdroj nebo jedno dostatečně promyšlené rozhodnutí. Jakmile ji splníš, zkus nepokračovat jen proto, že se znovu ozvala nejistota. U důležitých rozhodnutí a v otázkách bezpečí samozřejmě zachovej potřebnou pečlivost.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -24298,7 +24290,7 @@
   {
     "id": "refa_3038",
     "cluster_id": "cl_0095",
-    "text": "Když automaticky přijímáš nový požadavek, zkus odpovědět: „Podívám se, co mám, a ozvu se.“ Získáš čas rozhodnout se, jestli na něj skutečně máš kapacitu.",
+    "text": "Když automaticky přijímáš nový požadavek, zkus odpovědět: „Zamyslím se, co zvládnu, a brzy se ozvu.“ Získáš čas rozhodnout se, jestli na něj skutečně máš kapacitu.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -24592,19 +24584,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_3076",
-    "cluster_id": "cl_0096",
-    "text": "Experiment: „Když nezasáhnu, něco se pokazí.“ Vyber drobnost, kterou běžně preventivně hlídáš, a jednou ji nech bez kontroly. Začni něčím téměř bez následků, později zkoušej významnější, ale stále bezpečné situace. Předem napiš, co očekáváš a jak moc tomu věříš. Potom zaznamenej skutečný průběh. Sleduj také, zda případný problém opravdu vyžadoval právě tvůj zásah.",
-    "tier": "free",
-    "sort_order": 6,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_3077",
     "cluster_id": "cl_0096",
-    "text": "Zkus občas vyslovit svou kapacitu dřív, než ji překročíš: „Tohle zvládnu, ale na další věc už nemám prostor.“ Nečekej, až budeš úplně vyčerpaný. Hranice se dají nastavovat i v době, kdy ještě máš sílu.",
+    "text": "Zkus občas upozornit na svou kapacitu dřív, než ji překročíš: „Tohle zvládnu, ale na další věc už nemám prostor.“ Nečekej, až budeš úplně vyčerpaný. Hranice se dají nastavovat i v době, kdy ještě máš sílu.",
     "tier": "free",
-    "sort_order": 7,
+    "sort_order": 6,
     "added_at": "2026-10-16"
   },
   {
@@ -24612,7 +24596,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když odpočívám před dokončením povinností, jsem nezodpovědný.“ Přeruš bezpečný nedokončený úkol a dopřej si deset minut příjemné činnosti. Postupně pauzu prodlužuj nebo ji zařazuj dříve. Předem zaznamenej očekávanou vinu, ztrátu výkonu či následky. Potom porovnej, co se skutečně stalo s úkolem, výkonem i tvým stavem. Zkoumej, zda odpočinek a odpovědnost mohou existovat současně.",
     "tier": "free",
-    "sort_order": 8,
+    "sort_order": 7,
     "added_at": "2026-10-16"
   },
   {
@@ -24620,7 +24604,7 @@
     "cluster_id": "cl_0096",
     "text": "Když někdo projeví nespokojenost, nezačínej automaticky napravovat situaci. Nejdřív zvaž, jestli jsi skutečně udělal něco nefér, nebo se druhému jen nelíbí tvoje rozhodnutí. Nespokojenost druhého ještě neznamená, že jsi udělal něco špatně.",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 8,
     "added_at": "2026-10-16"
   },
   {
@@ -24628,7 +24612,7 @@
     "cluster_id": "cl_0096",
     "text": "U společného úkolu si předem s druhým ujasni, kdo za co odpovídá. Pokud se práce začne nenápadně přesouvat na tebe, vrať se k původní domluvě. Nemusíš automaticky přebírat to, co druhý nestíhá nebo dělá jinak než ty.",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -24636,7 +24620,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně někoho požádej o konkrétní drobnou pomoc místo automatického zvládnutí všeho sám. Vyber si člověka, u kterého je pro tebe žádost bezpečná. Zkus pomoc přijmout, aniž bys ji hned oplácel nebo vysvětloval, proč ji vlastně nepotřebuješ.",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -24644,7 +24628,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když něco neudělám já, nikdo jiný se toho neujme.“ Vyber drobnou situaci, ve které obvykle automaticky přebíráš iniciativu, přestože to není výhradně tvoje povinnost. Předem odhadni, co se stane, když tentokrát chvíli počkáš. Pak dej ostatním prostor, aby sami zareagovali. Postupně můžeš zkoušet delší čekání nebo přenechat bezpečný úkol úplně druhým. Porovnej očekávání se skutečností, včetně toho, co zůstalo neudělané a zda to mělo závažné následky.",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -24652,7 +24636,7 @@
     "cluster_id": "cl_0096",
     "text": "Když cítíš vinu po stanovení hranice, nepovažuj ji automaticky za důkaz provinění. Řekni si: „Tohle může být nepohodlí z nového chování,“ a chvíli nic nenapravuj.",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -24660,7 +24644,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když něco neudělám dokonale, znamená to, že jsem nezodpovědný.“ Vyber bezpečný úkol, u kterého není dokonalost nutná, a předem si stanov, co znamená dostatečně dobrý výsledek. Dokonči ho podle tohoto kritéria, bez obvyklého dolaďování. Předem odhadni možné následky, kritiku i vlastní nepohodlí. Potom porovnej předpověď se skutečností. Postupně můžeš zkoušet i úkoly, jejichž výsledek uvidí druzí. Zkoumej rozdíl mezi skutečnou odpovědností a nárokem na bezchybnost.",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -24668,7 +24652,7 @@
     "cluster_id": "cl_0096",
     "text": "Týden si všímej, kdo ti skutečně předává odpovědnost a kdy ji přebíráš sám, aniž tě o to někdo požádal. Zapisuj si zvlášť „druhý to ode mě očekával“ a „já jsem předpokládal, že se to ode mě očekává“. Možná objevíš povinnosti, které sis přidělil sám.",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -24676,7 +24660,7 @@
     "cluster_id": "cl_0096",
     "text": "Vyber si jednu pravidelnou činnost, kterou běžně děláš „pro jistotu“, a zvaž, zda je skutečně potřebná. Pokud ne, na týden ji vypusť a pozoruj důsledky. Vybírej pouze věci, jejichž vynechání nemůže ohrozit bezpečnost, zdraví ani důležité závazky.",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -24684,7 +24668,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když si vezmu čas pro sebe, zanedbávám ostatní.“ Vyber jednu drobnou vlastní potřebu a dej jí přednost před něčím, co může bezpečně počkat. Může to být odpočinek, procházka nebo chvíle o samotě. Předem si poznamenej, co podle tebe ostatním způsobíš a jak silnou vinu očekáváš. Potom porovnej představy se skutečnými následky. Postupně zkoušej věnovat vlastním potřebám více prostoru a sleduj, zda tím opravdu někoho zanedbáváš.",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -24692,7 +24676,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně vědomě přenech někomu drobnou odpovědnost, která mu skutečně patří. Pokud je potřeba, jasně se domluvte, co má udělat. Potom se snaž nepřipomínat, nekontrolovat ani neopravovat jeho postup, pokud nehrozí významné následky. Dej druhému možnost zvládnout věc po svém.",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -24700,7 +24684,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když musím něco zařídit, musím reagovat okamžitě.“ Vyber bezpečnou, nenaléhavou záležitost a předem odhadni, co se stane, když svou reakci odložíš o deset minut. Během čekání si všímej nutkání okamžitě jednat. Potom porovnej očekávání se skutečností. Postupně můžeš odklad prodlužovat. Sleduj, které věci skutečně vyžadují rychlou reakci a u kterých naléhavost existovala hlavně v tvém prožívání.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -24708,7 +24692,7 @@
     "cluster_id": "cl_0096",
     "text": "Zaveď si předem definované kritérium dokončení. Než začneš úkol, rozhodni, co znamená „hotovo“, aby tvoje nespokojenost nemohla během práce donekonečna posouvat cílovou čáru.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -24716,7 +24700,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když přiznám, že něco nevím, ostatní mi přestanou důvěřovat.“ V bezpečné situaci místo předstírání jistoty řekni „nevím“ nebo „potřebuju si to ověřit“. Začni u drobnosti a postupně zkoušej i situace, ve kterých ti na názoru druhých více záleží. Předem odhadni jejich reakci a potom ji porovnej se skutečností. Všímej si, zda přiznaná nejistota důvěru skutečně poškodila.",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -24724,7 +24708,7 @@
     "cluster_id": "cl_0096",
     "text": "Když ucítíš tlak „musím“, na půl minuty povol ramena, čelist a břicho a několikrát pomalu vydechni. Všimni si, co se děje v těle, a teprve potom rozhodni, zda situace opravdu vyžaduje tvoji akci.",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -24732,7 +24716,7 @@
     "cluster_id": "cl_0096",
     "text": "Sepiš si vlastní definici „dostatečně zodpovědného člověka“ tak, aby zahrnovala chyby, odpočinek, žádání o pomoc, odmítnutí i respektování odpovědnosti druhých. Pak podle ní posuzuj i sebe.",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -24740,7 +24724,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Musím předem vědět, co ode mě druzí potřebují.“ V jedné běžné situaci, kdy začneš odhadovat, co bys měl pro druhého udělat, se místo automatického jednání přímo zeptej: „Co ode mě teď vlastně potřebuješ?“ Předem si poznamenej svůj odhad a potom ho porovnej s odpovědí. Postupně to zkoušej v různých vztazích. Všímej si, kdy se tvoje představa povinnosti shoduje se skutečným přáním druhého a kdy si přiděluješ více odpovědnosti, než od tebe očekává.",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -24748,7 +24732,7 @@
     "cluster_id": "cl_0096",
     "text": "Na konci týdne si polož otázku: „Co jsem tento týden nesl, přestože to nemuselo být moje?“ Vyber jednu opakující se položku a pro příští týden jí nastav konkrétní hranici.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -24756,7 +24740,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou denně ukonči nějakou činnost ve chvíli, kdy je dost dobrá, nikoli maximálně dotažená. Ušetřený čas úmyslně nepoužívej na další povinnost.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -24764,7 +24748,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nebudu hlídat atmosféru, vznikne konflikt.“ V bezpečném rozhovoru jednou neuhlazuj drobné napětí, neměň téma ani automaticky neusmiřuj druhé. Začni krátkým tichem či mírným nesouhlasem, později nech větší prostor autentické rozdílnosti. Předem odhadni, co se pokazí a jak nepříjemné to bude. Potom sleduj, zda vztah napětí unesl a zda druzí dokázali situaci zvládnout i bez tebe. Nezkoušej to v prostředí, kde by konflikt mohl vést k ohrožení.",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -24772,7 +24756,7 @@
     "cluster_id": "cl_0096",
     "text": "Při přetížení si rozděl starosti na „moje odpovědnost“, „sdílená odpovědnost“ a „není moje odpovědnost“. U sdílených věcí si ujasni svůj díl a zbytek nech na ostatních. Ne všechno, na čem ti záleží, musíš také sám zařídit.",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -24780,7 +24764,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nebudu kontrolovat, napětí bude nesnesitelné.“ Vyber jednu bezpečnou věc, kterou máš nutkání znovu zkontrolovat, přestože jsi ji už přiměřeně ověřil. Předem odhadni, jak silné bude napětí a jak dlouho vydrží. Další kontrolu odlož o pět minut a sleduj, jak se nepříjemný pocit mění. Postupně můžeš interval prodlužovat nebo nadbytečnou kontrolu vynechat. Porovnej očekávání se skutečností a všímej si, zda kontrolování přináší trvalý klid, nebo jen krátkou úlevu.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -24788,7 +24772,7 @@
     "cluster_id": "cl_0096",
     "text": "Když tě přepadne „musím to zařídit“, zeptej se: „Co se skutečně stane, když teď deset minut nezasáhnu?“ Pokud nejde o nic naléhavého, odlož reakci a sleduj, jestli se pocit naléhavosti změní.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -24796,7 +24780,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nebudu druhým připomínat jejich povinnosti, ponesu odpovědnost za výsledek.“ Vyber bezpečnou situaci, ve které má druhý jasně svou povinnost. Předem odhadni, co se stane, když tentokrát vynecháš jedno obvyklé připomenutí. Potom sleduj, zda druhý úkol splnil, jaké byly skutečné následky a jak ses vyrovnal s nejistotou. Postupně můžeš zkoušet méně připomínání i v dalších nerizikových situacích. Rozlišuj mezi tím, co můžeš ovlivnit, a tím, za co skutečně odpovídáš.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -24804,7 +24788,7 @@
     "cluster_id": "cl_0096",
     "text": "Vyber si jednu oblast života a stanov jí „rozpočet odpovědnosti“: předem určený čas nebo energii, kterou jí tento týden věnuješ. Po vyčerpání rozpočtu další zlepšování odlož, pokud nejde o skutečně naléhavou věc.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -24812,7 +24796,7 @@
     "cluster_id": "cl_0096",
     "text": "Když tě někdo požádá o něco, co nechceš nebo nemůžeš udělat, zkus v bezpečné situaci říct: „Tohle teď nemůžu převzít.“ Nech větu chvíli stát bez dlouhého vysvětlování. Všímej si, jaké pocity to v tobě vyvolává a jestli je opravdu nutné se obhajovat.",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -24820,7 +24804,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když polevím v kontrole, něco důležitého přehlédnu.“ Vyber drobný bezpečný úkol a předem napiš, co se podle tebe pokazí, když ho zkontroluješ méně pečlivě než obvykle. Potom vynech jednu nadbytečnou kontrolu. Postupně můžeš zkoušet i další situace, ve kterých je menší kontrola přiměřená. Porovnej očekávané a skutečné následky, včetně toho, co se případně podařilo zvládnout ostatním bez tvého dohledu.",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
@@ -24828,7 +24812,7 @@
     "cluster_id": "cl_0096",
     "text": "Každý večer si poznamenej jednu věc, kterou jsi dnes neohlídal, a co se skutečně stalo. Všímej si nejen případných problémů, ale také situací, které se obešly bez tvého zásahu. Nesnaž se dokázat, že kontrola nikdy není potřebná; hledej, kdy potřebná je a kdy ne.",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 34,
     "added_at": "2026-10-16"
   },
   {
@@ -24836,7 +24820,7 @@
     "cluster_id": "cl_0096",
     "text": "U každého nového „musím“ se zastav a přepiš ho na přesnější větu: „Chci“, „Bylo by užitečné“, „Někdo to ode mě očekává“ nebo „Opravdu musím“. Sleduj, kolik povinností změnilo kategorii.",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 35,
     "added_at": "2026-10-16"
   },
   {
@@ -24844,7 +24828,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když přestanu všechno připomínat, druzí své úkoly neudělají.“ Vyber drobný společný úkol, u kterého je jasné, co má druhý udělat. Předem si poznamenej, co očekáváš, když mu to tentokrát nepřipomeneš. Potom nech věc na něm a sleduj skutečný průběh. Začni maličkostí bez vážných následků, postupně můžeš zkoušet opakované situace. Zajímej se také o to, jak zvládáš vlastní nutkání zasáhnout a co ses dozvěděl o spolehlivosti druhého.",
     "tier": "free",
-    "sort_order": 37,
+    "sort_order": 36,
     "added_at": "2026-10-16"
   },
   {
@@ -24852,7 +24836,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně si naplánuj čas, který nemusí přinést žádný užitek ani výsledek. Nevydělávej si na něj předchozí produktivitou. Zkus si dovolit odpočívat i tehdy, když ještě nemáš všechno hotové.",
     "tier": "free",
-    "sort_order": 38,
+    "sort_order": 37,
     "added_at": "2026-10-16"
   },
   {
@@ -24860,7 +24844,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když odložím řešení, všechno nakonec stejně zůstane na mně.“ Vyber bezpečnou situaci, ve které obvykle rychle přebíráš řešení. Předem si poznamenej, co podle tebe nastane, když tentokrát chvíli počkáš. Začni deseti minutami, postupně můžeš odklad prodlužovat podle povahy úkolu. Potom sleduj, co se vyřešilo bez tebe, co převzali ostatní a co skutečně zůstalo na tobě. Pokud se ukáže, že práce opravdu zůstává na tobě, ber to jako informaci pro změnu domluvy nebo rozdělení povinností.",
     "tier": "free",
-    "sort_order": 39,
+    "sort_order": 38,
     "added_at": "2026-10-16"
   },
   {
@@ -24868,7 +24852,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně někomu otevřeně řekni, že něco nezvládáš, nevíš nebo potřebuješ pomoc. Vyber si bezpečnou situaci a zkus svou žádost hned nekompenzovat nabídkou protislužby. Dej si možnost zažít, že i ty můžeš potřebovat podporu.",
     "tier": "free",
-    "sort_order": 40,
+    "sort_order": 39,
     "added_at": "2026-10-16"
   },
   {
@@ -24876,7 +24860,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když řeknu ne, druzí budou zklamaní a náš vztah to neunese.“ V bezpečném vztahu odmítni malou prosbu nebo navrhni alternativu, která ti více vyhovuje. Předem odhadni, jak druhý zareaguje a jak dlouho tě bude trápit případný pocit viny. Postupně zkoušej jasnější odmítnutí i v situacích, kde je očekávání druhého silnější. Porovnej předpověď se skutečným průběhem a všímej si, zda může vztah pokračovat i přes rozdílná přání.",
     "tier": "free",
-    "sort_order": 41,
+    "sort_order": 40,
     "added_at": "2026-10-16"
   },
   {
@@ -24884,7 +24868,7 @@
     "cluster_id": "cl_0096",
     "text": "Všímej si situací, kdy automaticky přebíráš iniciativu, protože ostatní jsou pomalejší, méně pečliví nebo mají jiné priority. Občas záměrně vyčkej a nech prostor, aby zareagovali oni.",
     "tier": "free",
-    "sort_order": 42,
+    "sort_order": 41,
     "added_at": "2026-10-16"
   },
   {
@@ -24892,7 +24876,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nechám úkol jen dostatečně dobrý, následky budou nepřijatelné.“ Vyber bezpečný úkol a předem si stanov, jaký výsledek je skutečně dostačující. Odhadni, co se stane, když vynecháš další dolaďování. Začni maličkostí a postupně zkoušej ukončovat práci dříve nebo omezovat nadbytečné kontroly. Potom porovnej očekávané následky se skutečností. Všímej si také, kolik času a energie tě snaha o dokonalost stojí.",
     "tier": "free",
-    "sort_order": 43,
+    "sort_order": 42,
     "added_at": "2026-10-16"
   },
   {
@@ -24900,7 +24884,7 @@
     "cluster_id": "cl_0096",
     "text": "Každé ráno si vyber nejvýš tři hlavní věci, za které dnes skutečně přebíráš odpovědnost. Ostatní úkoly rozděl na nezbytné závazky, které také musíš respektovat, a věci, které mohou počkat. Zkus si vědomě určit, čemu dnes svou energii nedáš.",
     "tier": "free",
-    "sort_order": 44,
+    "sort_order": 43,
     "added_at": "2026-10-16"
   },
   {
@@ -24908,7 +24892,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když si dovolím naplnit vlastní potřebu, budu sobecký.“ Vyber drobnou potřebu, kterou obvykle odsouváš, a jednou jí dej přednost před méně naléhavou povinností. Předem si poznamenej, co podle tebe způsobíš sobě nebo druhým. Potom porovnej očekávání se skutečným dopadem. Postupně můžeš zkoušet významnější vlastní potřeby. Sleduj, zda je možné brát ohled na sebe i na ostatní současně.",
     "tier": "free",
-    "sort_order": 45,
+    "sort_order": 44,
     "added_at": "2026-10-16"
   },
   {
@@ -24916,7 +24900,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně vědomě předej někomu úkol, který běžně děláš sám, pokud je to v daném vztahu nebo prostředí možné. Domluvte se na výsledku a nech druhému prostor pro vlastní postup. Neopravuj ho jen proto, že bys to udělal jinak.",
     "tier": "free",
-    "sort_order": 46,
+    "sort_order": 45,
     "added_at": "2026-10-16"
   },
   {
@@ -24924,7 +24908,7 @@
     "cluster_id": "cl_0096",
     "text": "Týden si zachycuj okamžiky, kdy se objeví „měl bych“. Zapiš si, co pocit povinnosti spustilo, čí očekávání vnímáš, co automaticky uděláš a čeho se bojíš, kdybys tentokrát nevyhověl. Na konci týdne hledej opakující se vzorce.",
     "tier": "free",
-    "sort_order": 47,
+    "sort_order": 46,
     "added_at": "2026-10-16"
   },
   {
@@ -24932,7 +24916,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nechám věci na ostatních, budu je muset později napravovat.“ Vyber bezpečný společný úkol, ve kterém má druhý jasně svůj díl. Předem odhadni, co se stane, když ho nebudeš průběžně kontrolovat. Potom mu nech prostor pracovat po svém. Sleduj skutečný výsledek, případné nedostatky i to, zda jejich náprava opravdu musí připadnout tobě. Pokud se obava potvrdí, zvaž, jak změnit domluvu místo automatického přebírání práce.",
     "tier": "free",
-    "sort_order": 48,
+    "sort_order": 47,
     "added_at": "2026-10-16"
   },
   {
@@ -24940,7 +24924,7 @@
     "cluster_id": "cl_0096",
     "text": "Vyhraď si každý den krátký čas, během kterého nebudeš nic zařizovat, zlepšovat ani dohánět. Nejde o odměnu po práci, ale o nácvik zkušenosti, že odpočinek nemusí být ničím zasloužený.",
     "tier": "free",
-    "sort_order": 49,
+    "sort_order": 48,
     "added_at": "2026-10-16"
   },
   {
@@ -24948,7 +24932,7 @@
     "cluster_id": "cl_0096",
     "text": "Když ucítíš tlak odpovědnosti, na minutu přestaň řešit obsah problému a najdi jeho tělesnou stopu. Povol čelist, ramena a břicho, několikrát pomalu vydechni a teprve potom rozhoduj, zda je potřeba jednat.",
     "tier": "free",
-    "sort_order": 50,
+    "sort_order": 49,
     "added_at": "2026-10-16"
   },
   {
@@ -24956,7 +24940,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když si odpočinu dřív, než všechno dokončím, ztratím kontrolu nad povinnostmi.“ Předem si poznamenej, co očekáváš, když si uprostřed bezpečné nedokončené práce dopřeješ pět minut odpočinku. Potom si pauzu skutečně udělej. Postupně ji prodlužuj nebo zařazuj častěji. Porovnej očekávanou vinu, pokles výkonu či chaos se skutečností a všímej si, zda odpočinek může tvému fungování také prospět.",
     "tier": "free",
-    "sort_order": 51,
+    "sort_order": 50,
     "added_at": "2026-10-16"
   },
   {
@@ -24964,7 +24948,7 @@
     "cluster_id": "cl_0096",
     "text": "Večer si zapisuj nejen, co zůstalo nehotové, ale také tři věci, které už byly dostatečné. Nemusí jít o velké úspěchy. Zkus si postupně zvykat, že den nemusíš hodnotit jen podle toho, co ještě zbývá.",
     "tier": "free",
-    "sort_order": 52,
+    "sort_order": 51,
     "added_at": "2026-10-16"
   },
   {
@@ -24972,7 +24956,7 @@
     "cluster_id": "cl_0096",
     "text": "Vytvoř si seznam věcí, za které nejsi automaticky odpovědný: cizí emoce, rozhodnutí druhých, následky jejich vlastních voleb, předvídání všeho nebo zajišťování spokojenosti všech. U každé položky zvaž, kde přesto máš nějaký skutečný závazek nebo možnost pomoci. Cílem není přestat se zajímat o druhé, ale rozlišovat péči od přehnané odpovědnosti.",
     "tier": "free",
-    "sort_order": 53,
+    "sort_order": 52,
     "added_at": "2026-10-16"
   },
   {
@@ -24980,7 +24964,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně si nech od někoho pomoct s něčím, co bys zvládl sám. Zkus nepřebírat řízení, nekontrolovat každý detail a pomoc okamžitě neoplatit. Všímej si, jaké to je, když nemusíš být vždycky ten, kdo všechno zvládá.",
     "tier": "free",
-    "sort_order": 54,
+    "sort_order": 53,
     "added_at": "2026-10-16"
   },
   {
@@ -24988,7 +24972,7 @@
     "cluster_id": "cl_0096",
     "text": "Vyber si pravidelně chvíli, kdy nebudeš pro nikoho nic zařizovat ani plnit očekávání. Dělej něco jen proto, že tě to baví. Když se objeví nutkání tento čas ospravedlnit, všimni si ho a zkus se vrátit k tomu, co právě děláš.",
     "tier": "free",
-    "sort_order": 55,
+    "sort_order": 54,
     "added_at": "2026-10-16"
   },
   {
@@ -24996,7 +24980,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když nebudu všechno kontrolovat, nedokážu snést nejistotu.“ Vyber bezpečnou situaci, ve které obvykle kontroluješ něco navíc, abys získal jistotu. Předem odhadni, jak nepříjemné bude kontrolu vynechat. Potom jednu nadbytečnou kontrolu odlož a pozoruj, jak se napětí vyvíjí, aniž bys ho okamžitě zaháněl. Postupně můžeš zkoušet delší intervaly. Porovnej očekávání se skutečným průběhem a všímej si, co se učíš o své schopnosti nejistotu unést.",
     "tier": "free",
-    "sort_order": 56,
+    "sort_order": 55,
     "added_at": "2026-10-16"
   },
   {
@@ -25004,7 +24988,7 @@
     "cluster_id": "cl_0096",
     "text": "Naplánuj si týdně jednu příjemnou činnost, kterou nebudeš muset ničím vykoupit. Když se objeví pocit, že bys místo ní měl něco dělat, ber ho jako součást cvičení.",
     "tier": "free",
-    "sort_order": 57,
+    "sort_order": 56,
     "added_at": "2026-10-16"
   },
   {
@@ -25012,7 +24996,7 @@
     "cluster_id": "cl_0096",
     "text": "Sepiš si několik vlastností, podle kterých chceš poznávat dobrého člověka, kromě spolehlivosti a zodpovědnosti. Každý týden vědomě udělej něco, co posílí jednu z těchto dalších částí identity.",
     "tier": "free",
-    "sort_order": 58,
+    "sort_order": 57,
     "added_at": "2026-10-16"
   },
   {
@@ -25020,7 +25004,7 @@
     "cluster_id": "cl_0096",
     "text": "Experiment: „Když se nepřizpůsobím a nechám v rozhovoru drobné napětí, druhý se na mě rozzlobí.“ V bezpečném rozhovoru zkus jednou neuhnout od mírného nesouhlasu nebo hned nezahlazovat nepříjemné ticho. Předem odhadni reakci druhého a vlastní nepohodlí. Potom sleduj, co se skutečně stalo a zda bylo nutné napětí okamžitě odstranit. Postupně můžeš zkoušet otevřeněji vyjadřovat rozdílné názory, pokud je vztah dostatečně bezpečný.",
     "tier": "free",
-    "sort_order": 59,
+    "sort_order": 58,
     "added_at": "2026-10-16"
   },
   {
@@ -25028,7 +25012,7 @@
     "cluster_id": "cl_0096",
     "text": "Jednou týdně udělej něco, co nemá měřitelný výsledek ani užitek: hraj si, toulej se, tvoř, poslouchej hudbu. Když mysl nabídne produktivnější alternativu, vrať se k činnosti právě proto, že nemusí k ničemu sloužit.",
     "tier": "free",
-    "sort_order": 60,
+    "sort_order": 59,
     "added_at": "2026-10-16"
   },
   {
@@ -25290,7 +25274,7 @@
   {
     "id": "refa_3162",
     "cluster_id": "cl_0098",
-    "text": "Rozděluj úkoly podle významu: některé zaslouží špičkovou péči, jiné pouze funkční výsledek. Trénuj záměrně investovat rozdílné množství energie podle skutečných následků.",
+    "text": "Rozděluj úkoly podle významu: některé zaslouží špičkovou péči, jiné pouze funkční výsledek. Trénuj investování energie podle skutečných následků.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -25298,7 +25282,7 @@
   {
     "id": "refa_3163",
     "cluster_id": "cl_0098",
-    "text": "Když se za chybu kritizuješ, zkus místo odsuzování sebe sama hledat užitečnou informaci. Místo „Tohle jsem podělal, jsem neschopný“ si řekni: „Tady jsem něco přehlédl. Co se z toho můžu naučit?“",
+    "text": "Když se za chybu kritizuješ, zkus místo odsuzování sebe sama hledat užitečnou informaci. Místo „Tohle jsem pokazil, takže jsem opět ten neschopný“ si řekni: „Tady jsem něco přehlédl. Co se z toho můžu naučit?“",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -25306,7 +25290,7 @@
   {
     "id": "refa_3165",
     "cluster_id": "cl_0098",
-    "text": "Když ucítíš perfekcionistické napětí, na minutu přestaň pracovat a všimni si, kde ho cítíš v těle. Uvolni čelist, ramena a ruce, několikrát pomalu vydechni a teprve potom se rozhodni, zda opravdu potřebuješ pokračovat.",
+    "text": "Když ucítíš to známé perfekcionistické napětí, na minutu přestaň pracovat a všimni si, kde ho cítíš v těle. Uvolni čelist, ramena a ruce, několikrát pomalu vydechni a teprve potom se rozhodni, zda opravdu potřebuješ pokračovat.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -26522,7 +26506,7 @@
   {
     "id": "refa_3317",
     "cluster_id": "cl_0103",
-    "text": "Po skutečném provinění zkus tři kroky: uznej svůj podíl bez výmluv, podle možností naprav, co se stalo, a vezmi si z toho poučení do budoucna. Čtvrtý krok – ještě se za to dlouho nenávidět – už není nutný.",
+    "text": "Po skutečném provinění zkus tři kroky: uznej svůj podíl bez výmluv, naprav, co můžeš napravit, a vezmi si z toho poučení do budoucna. Čtvrtý krok – ještě se za to dlouho nenávidět – už není nutný.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -26746,7 +26730,7 @@
   {
     "id": "refa_3344",
     "cluster_id": "cl_0104",
-    "text": "Zaveď si pravidlo tří nádechů: když ucítíš chuť okamžitě odporovat, třikrát se pomalu nadechni a teprve potom se rozhodni, jestli opravdu potřebuješ reagovat.",
+    "text": "Zaveď si pravidlo tří nádechů a výdechů: když ucítíš chuť okamžitě odporovat, třikrát se pomalu nadechni a vydechni, a teprve potom se rozhodni, jestli opravdu potřebuješ reagovat.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -26754,7 +26738,7 @@
   {
     "id": "refa_3345",
     "cluster_id": "cl_0104",
-    "text": "Nauč se poznávat první tělesné známky toho, že se chystáš do boje – sevřenou čelist, tlak na hrudi, zrychlenou řeč nebo napětí. Ber je jako varování, že se v tobě něco rozjíždí, ne jako povel k útoku.",
+    "text": "Nauč se poznávat první tělesné známky toho, že se chystáš do boje – sevřenou čelist, teoání v krku, tlak na hrudi, zrychlenou řeč nebo napětí. Ber je jako varování, že se v tobě něco rozjíždí, ne jako povel k útoku.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -27306,7 +27290,7 @@
   {
     "id": "refa_3414",
     "cluster_id": "cl_0106",
-    "text": "Při silném vzteku nejdřív pomoz svému tělu zklidnit se. Pokud můžeš, na chvíli odejdi ze situace, zpomal výdech, projdi se nebo vědomě uvolni ruce a čelist. K rozhodování se vrať, až budeš mít větší prostor volit, jak zareaguješ.",
+    "text": "Při silném vzteku nejdřív pomoz svému tělu ke zklidnění. Pokud můžeš, na chvíli odejdi ze situace, zpomal výdech, projdi se nebo vědomě uvolni ruce a čelist. K rozhodování se vrať, až budeš mít větší prostor volit, jak zareaguješ.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -27578,7 +27562,7 @@
   {
     "id": "refa_3449",
     "cluster_id": "cl_0107",
-    "text": "Každý den udělej jednu drobnou věc, která o tebe pečuje, aniž by sis ji musel zasloužit. Může to být odpočinek, dobré jídlo, procházka nebo chvíle radosti. Základní péče o sebe nemusí být odměnou za bezchybnost.",
+    "text": "Každý den udělej jednu drobnou věc, kterou o sebe pečuješ, aniž by sis ji musel zasloužit. Může to být odpočinek, dobré jídlo, procházka nebo chvíle radosti. Základní péče o sebe nemusí být odměnou za bezchybnost.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -28066,7 +28050,7 @@
   {
     "id": "refa_3509",
     "cluster_id": "cl_0109",
-    "text": "Rozlišuj odpuštění, smíření a nastavení hranic. Můžeš přestat živit křivdu, aniž bys obnovil vztah, omluvil špatné jednání nebo dovolil, aby se opakovalo. Nemusíš odpustit ani se smířit, abys mohl začít žít dál.",
+    "text": "Rozlišuj odpuštění, smíření a nastavení hranic. Můžeš přestat živit křivdu, aniž bys obnovil vztah, omluvil špatné jednání nebo dovolil, aby se opakovalo. Nemusíš odpustit ani se smířit, abys mohl žít dál.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -28554,7 +28538,7 @@
   {
     "id": "refa_3571",
     "cluster_id": "cl_0111",
-    "text": "U nejasného zadání nebo komunikace si místo domýšlení polož jednu upřesňující otázku: „Co přesně ode mě potřebuješ jako první?“ Jasnější vymezení problému často výrazně sníží množství možností, které musí mysl současně zpracovávat.",
+    "text": "U nejasného zadání nebo komunikace si místo domýšlení polož jednu upřesňující otázku: „Co přesně ode mě potřebuješ jako první věc?“ Jasnější vymezení problému často výrazně sníží množství možností, které musí mysl současně zpracovávat.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -28762,7 +28746,7 @@
   {
     "id": "refa_3596",
     "cluster_id": "cl_0112",
-    "text": "Vytvoř si seznam „tohle vím“: hodnoty, preference, hranice a potřeby, kterými sis poměrně jistý. Nehledej úplný portrét osobnosti; sbírej malé spolehlivé body.",
+    "text": "Vytvoř si seznam „tohle vím“: hodnoty, preference, hranice a potřeby, kterými jsi si poměrně jistý. Nehledej úplný portrét osobnosti; sbírej malé spolehlivé body.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -29002,7 +28986,7 @@
   {
     "id": "refa_3626",
     "cluster_id": "cl_0113",
-    "text": "Rozděl si činnosti do tří skupin: potěšení, zaujetí a smysl. Každý den zkus jednu drobnost z některé z nich a sleduj, na co ještě dokážeš reagovat. Nemusí tě to bavit; důležité je zjistit, co ti alespoň trochu sedí.",
+    "text": "Rozděl si činnosti do tří skupin: potěšení, zaujetí a smysl. Každý den zkus jednu drobnost z některé z nich a sleduj, na co dokážeš reagovat. Nemusí tě to bavit; důležité je zjistit, co ti alespoň trochu sedí.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -29714,7 +29698,7 @@
   {
     "id": "refa_3715",
     "cluster_id": "cl_0116",
-    "text": "Když se ti nic nechce, zkus nejdřív rozlišit, co se vlastně děje: nemáš energii, nudíš se, bojíš se neúspěchu, nevidíš v činnosti smysl, nebo jen nevíš, jak začít? Každý z těchto stavů potřebuje trochu jinou odpověď.",
+    "text": "Když se ti do ničeho nechce, zkus nejdřív rozlišit, co se vlastně děje: nemáš energii, nudíš se, bojíš se neúspěchu, nevidíš v činnosti smysl, nebo jen nevíš, jak začít? Každý z těchto stavů potřebuje trochu jinou odpověď.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -29746,7 +29730,7 @@
   {
     "id": "refa_3720",
     "cluster_id": "cl_0116",
-    "text": "Sepiš deset činností, které tě někdy těšily, a označ ty, které tě dnes lákají alespoň na 2 z 10. Vyber jednu z nich a vyzkoušej ji, i když se ti do ní příliš nechce. Nemusíš čekat na silnou chuť; někdy stačí slabá jiskra zvědavosti.",
+    "text": "Sepiš deset činností, které tě někdy v minulosti těšily, a označ ty, které tě dnes lákají alespoň na 2 z 10. Vyber jednu z nich a vyzkoušej ji, i když se ti do ní příliš nechce. Nemusíš čekat na silnou chuť; někdy stačí slabá jiskra zvědavosti.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -29754,7 +29738,7 @@
   {
     "id": "refa_3722",
     "cluster_id": "cl_0116",
-    "text": "Když plánuješ den, rozděl si činnosti na „musím“, „chci“ a „možná bych chtěl“. Pokud dlouhodobě převažují povinnosti, vyber jednu, kterou můžeš zmenšit, delegovat, odmítnout nebo dělat méně často. Někdy nepotřebuješ víc motivace, ale méně věcí, které tě vyčerpávají.",
+    "text": "Když plánuješ den, rozděl si činnosti na „musím“, „chci“ a „možná bych chtěl“. Pokud dlouhodobě převažují povinnosti, vyber jednu, kterou můžeš zjednodušit, delegovat, odmítnout nebo dělat méně často. Někdy nepotřebuješ víc motivace, ale méně věcí, které tě vyčerpávají.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"

@@ -1674,7 +1674,7 @@
   {
     "id": "refq_0214",
     "cluster_id": "cl_0006",
-    "text": "Co přesně tě bolí, když máš pocit, že tě někdo nemá rád? Co ti v tu chvíli nejvíc chybí?",
+    "text": "Co přesně tě bolí, když máš pocit, že tě někdo nemá rád? Co konkrétně ti v tu chvíli nejvíc chybí?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -1714,7 +1714,7 @@
   {
     "id": "refq_0220",
     "cluster_id": "cl_0006",
-    "text": "Čí odmítnutí tě zasahuje nejvíc? Proč má právě názor tohoto člověka pro tebe takovou váhu?",
+    "text": "Čí odmítnutí tě zasahuje nejvíc? Proč má právě názor tohoto člověka pro tebe takovou váhu? Může ti připomínat někoho z dětství?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -2074,7 +2074,7 @@
   {
     "id": "refq_0264",
     "cluster_id": "cl_0007",
-    "text": "Když říkáš, že se cítíš mrtvý, co přesně tím myslíš? Co v sobě postrádáš?",
+    "text": "Když říkáš, že se cítíš mrtvý, co přesně tím myslíš? Co konkrétně postrádáš venku nebo v sobě?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -2090,7 +2090,7 @@
   {
     "id": "refq_0266",
     "cluster_id": "cl_0007",
-    "text": "Kdyby tvoje apatie byla způsobem, jak se před něčím chránit, před čím by tě mohla chránit?",
+    "text": "Kdyby tvoje apatie byla způsobem, jak se před něčím chránit, před čím by tě mohla chránit? Co může být pod ní za pocity?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -2098,7 +2098,7 @@
   {
     "id": "refq_0267",
     "cluster_id": "cl_0007",
-    "text": "Co v současném životě děláš už jen ze setrvačnosti, přestože v tobě něco říká, že takhle dál nechceš?",
+    "text": "Co v současném životě děláš už jen ze setrvačnosti, přestože v tobě něco říká, že takhle to dál nechceš?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -2362,7 +2362,7 @@
   {
     "id": "refq_0300",
     "cluster_id": "cl_0008",
-    "text": "Co v tu chvíli nejvíc potřebuješ: pozornost, přijetí, ocenění, blízkost, ochranu, nebo možnost být sám sebou?",
+    "text": "Co nejvíc potřebuješ ve chvíli, kdy se cítíš zbytečný: pozornost, přijetí, ocenění, blízkost, ochranu, nebo možnost být sám sebou?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -2378,7 +2378,7 @@
   {
     "id": "refq_0302",
     "cluster_id": "cl_0008",
-    "text": "Co pro tebe vlastně znamená být potřebný a proč právě podle tohohle měřítka posuzuješ svou hodnotu?",
+    "text": "Co pro tebe vlastně znamená být potřebný a proč právě podle tohoto měřítka posuzuješ svou hodnotu?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -2762,7 +2762,7 @@
   {
     "id": "refq_0353",
     "cluster_id": "cl_0009",
-    "text": "Co ti brání říct někomu blízkému jednoduše: „Je mi dneska samotno, nechceš se vidět nebo si zavolat?“",
+    "text": "Co ti brání říct někomu blízkému jednoduše: „Dneska se cítim osamocený, nechceš se vidět nebo si zavolat?“",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -2994,7 +2994,7 @@
   {
     "id": "refq_0379",
     "cluster_id": "cl_0010",
-    "text": "Ve kterých chvílích tvoje potřeba blízkosti nejsilněji narůstá? Co se v tobě tehdy děje?",
+    "text": "Ve kterých chvílích tvoje potřeba blízkosti nejsilněji narůstá? Co se v tobě děje?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -3426,7 +3426,7 @@
   {
     "id": "refq_0433",
     "cluster_id": "cl_0012",
-    "text": "Čeho přesně se snažíš svou opatrností zabránit – a co by se podle tebe mohlo stát, kdybys na chvíli polevil?",
+    "text": "Před čím přesně se snažíš svou opatrností ochránit – a co by se podle tebe mohlo stát, kdybys na chvíli polevil?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -3690,7 +3690,7 @@
   {
     "id": "refq_0466",
     "cluster_id": "cl_0013",
-    "text": "Když začneš někoho podezírat, hledáš stejně pozorně důkazy proti svému podezření jako důkazy, které ho potvrzují?",
+    "text": "Když začneš někoho podezírat, protože tvůj strach má důkazy, hledáš stejně pozorně i důkazy proti svému podezření?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -3698,7 +3698,7 @@
   {
     "id": "refq_0467",
     "cluster_id": "cl_0013",
-    "text": "Co bys potřeboval začít víc věřit sám sobě, abys nemusel mít takovou jistotu o úmyslech druhých?",
+    "text": "Co bys potřeboval víc věřit sám sobě, abys nemusel mít nedůvěru k druhým?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -3706,7 +3706,7 @@
   {
     "id": "refq_0468",
     "cluster_id": "cl_0013",
-    "text": "Jaký je rozdíl mezi zdravou opatrností a samotou za hradbou, která už tě nejen chrání, ale také vězní?",
+    "text": "Jaký je rozdíl mezi zdravou opatrností a hradbou, která už tě nejen chrání, ale také vězní?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -3714,7 +3714,7 @@
   {
     "id": "refq_0469",
     "cluster_id": "cl_0013",
-    "text": "Co se v tobě stane ve chvíli, kdy je k tobě někdo laskavý, otevřený nebo upřímně blízký? Dokážeš to přijmout, nebo začneš hledat háček?",
+    "text": "Co se v tobě stane ve chvíli, kdy je někdo laskavý, otevřený nebo upřímně blízký? Dokážeš to přijmout, nebo začneš hledat háček?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -4306,7 +4306,7 @@
   {
     "id": "refq_0543",
     "cluster_id": "cl_0015",
-    "text": "Co si vyčítáš, že jsi měl poznat dřív? A mohl jsi to opravdu vědět z toho, co jsi tehdy věděl?",
+    "text": "Co si vyčítáš, že jsi měl poznat dřív? A mohl jsi to opravdu tušit z toho, co jsi tehdy věděl?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -4850,7 +4850,7 @@
   {
     "id": "refq_0611",
     "cluster_id": "cl_0017",
-    "text": "Kdybys věděl, že můžeš bez následků říct ne, co bys v téhle situaci doopravdy chtěl?",
+    "text": "Kdybys věděl, že můžeš bez následků říct \"ne\", co bys v téhle situaci doopravdy chtěl?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -5946,7 +5946,7 @@
   {
     "id": "refq_0748",
     "cluster_id": "cl_0021",
-    "text": "Co tě při odmítnutí bolí nejvíc – ztráta konkrétního člověka nebo možnosti, o kterou jsi stál, či to, co si kvůli odmítnutí začneš myslet o sobě?",
+    "text": "Co tě při odmítnutí bolí nejvíc – ztráta konkrétního člověka nebo něčeho, o co jsi stál, nebo to, co si kvůli odmítnutí začneš myslet o sobě?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -5954,7 +5954,7 @@
   {
     "id": "refq_0749",
     "cluster_id": "cl_0021",
-    "text": "Kdy se z konkrétního „tenhle člověk mě nechce“ stává v tvé hlavě mnohem větší „se mnou je něco špatně“?",
+    "text": "Kdy a jak se z konkrétního „tenhle člověk mě nechce“ stává mnohem větší „se mnou je něco špatně“?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -5970,7 +5970,7 @@
   {
     "id": "refq_0752",
     "cluster_id": "cl_0021",
-    "text": "Co v tu chvíli nejvíc potřebuješ – blízkost, ujištění o vlastní hodnotě, bezpečí, pocit výjimečnosti, někam patřit, nebo něco úplně jiného?",
+    "text": "Co ve chvíli odmítnutí nejvíc potřebuješ – blízkost, ujištění o vlastní hodnotě, bezpečí, pocit výjimečnosti, někam patřit, nebo něco úplně jiného?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -6210,7 +6210,7 @@
   {
     "id": "refq_0781",
     "cluster_id": "cl_0022",
-    "text": "Když se cítíš divný, co tě na tom nejvíc bolí? To, že jsi jiný, nebo obava, že tě kvůli tomu druzí nepřijmou?",
+    "text": "Když se cítíš divný, co tě na tom nejvíc bolí? To, že jsi v některých ohledech jiný, nebo obava, že tě kvůli tomu druzí nepřijmou?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -6514,7 +6514,7 @@
   {
     "id": "refq_0820",
     "cluster_id": "cl_0023",
-    "text": "Co přesně se stalo – a co už k tomu možná přidal tvůj strach, že tebou druzí pohrdají?",
+    "text": "Co přesně se stalo – a co k tomu přidal tvůj strach z toho, že tebou druzí pohrdají?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -6538,7 +6538,7 @@
   {
     "id": "refq_0823",
     "cluster_id": "cl_0023",
-    "text": "Co by se změnilo, kdybys místo otázky „Co je se mnou špatně?“ začal zkoumat „Je způsob, jakým se mnou tenhle člověk zachází, vůbec v pořádku?“",
+    "text": "Co by se změnilo, kdybys místo otázky „Co je se mnou špatně?“ začal zkoumat „Je způsob, jakým se mnou tenhle člověk zachází, v pořádku?“",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -6810,7 +6810,7 @@
   {
     "id": "refq_0857",
     "cluster_id": "cl_0024",
-    "text": "Co přesně se podle tebe tahle situace snaží „dokázat“ o tom, jaký jsi člověk — a opravdu z ní takový závěr vyplývá?",
+    "text": "Co přesně se podle tebe ta situace snaží „dokázat“ o tom, jaký jsi člověk — a opravdu z ní takový závěr vyplývá?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -6834,7 +6834,7 @@
   {
     "id": "refq_0860",
     "cluster_id": "cl_0024",
-    "text": "Kdyby přesně tohle zažil člověk, kterého máš rád, změnilo by to tvoje mínění o jeho hodnotě stejně dramaticky, jako to mění mínění o sobě?",
+    "text": "Kdyby přesně tohle zažil člověk, kterého máš rád, změnilo by to tvoje mínění o jeho hodnotě?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -7074,7 +7074,7 @@
   {
     "id": "refq_0889",
     "cluster_id": "cl_0025",
-    "text": "Co konkrétně na sobě považuješ za „vadné“ — a proč by právě tahle vlastnost nebo potíž měla vypovídat o celé tvé hodnotě?",
+    "text": "Co konkrétně na sobě považuješ za „vadné“ — a proč by právě tahle vlastnost nebo potíž měla být vadná a vypovídat o celé tvé hodnotě?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -7114,7 +7114,7 @@
   {
     "id": "refq_0894",
     "cluster_id": "cl_0025",
-    "text": "Když někdo překročí tvoji hranici, kritizuje tě nebo s tebou zachází necitlivě, začneš hledat chybu v sobě, nebo dokážeš zpochybnit i jeho chování?",
+    "text": "Když někdo překročí tvou hranici, kritizuje tě nebo s tebou zachází necitlivě, začneš hledat chybu v sobě, nebo dokážeš zpochybnit i jeho chování?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -7130,7 +7130,7 @@
   {
     "id": "refq_0896",
     "cluster_id": "cl_0025",
-    "text": "Co děláš, když se začneš cítit vadný? Stáhneš se, přizpůsobíš se, začneš dokazovat svou hodnotu nebo se ještě víc hlídat? Jak tvoje reakce ovlivňuje to, co prožíváš dál?",
+    "text": "Co děláš, když se začneš cítit vadný? Stáhneš se, přizpůsobíš se, začneš dokazovat svou hodnotu nebo se ještě víc hlídáš? Jak tvoje reakce ovlivňuje to, co prožíváš dál?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -7658,7 +7658,7 @@
   {
     "id": "refq_0962",
     "cluster_id": "cl_0027",
-    "text": "Vedle kterých lidí se cítíš hloupější a vedle kterých naopak schopnější? Co ti tenhle rozdíl napovídá?",
+    "text": "Vedle kterých lidí se cítíš hloupější a vedle kterých naopak chytřejší? Co ti tenhle rozdíl napovídá?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -7962,7 +7962,7 @@
   {
     "id": "refq_1000",
     "cluster_id": "cl_0028",
-    "text": "Kdyby se to, čeho se bojíš, skutečně ukázalo, znamenalo by to, že jsi podvodník, nebo jen že máš svoje omezení a nedostatky jako každý jiný?",
+    "text": "Kdyby se to, čeho odhalení se bojíš, skutečně ukázalo, znamenalo by to, že jsi podvodník, nebo jen že máš svoje omezení a nedostatky jako každý jiný?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -8466,7 +8466,7 @@
   {
     "id": "refq_1063",
     "cluster_id": "cl_0030",
-    "text": "Ve kterých situacích se cítíš méněcenný nejsilněji – a co mají tyhle situace společného?",
+    "text": "Ve kterých situacích se cítíš nejvíc méněcenný – a co mají tyhle situace společného?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -8786,7 +8786,7 @@
   {
     "id": "refq_1104",
     "cluster_id": "cl_0031",
-    "text": "Dokážeš rozlišit mezi tím, že máš někdy závistivé, agresivní nebo sobecké pocity, a tím, že jsi špatný člověk?",
+    "text": "Dokážeš rozlišit mezi tím, že máš někdy závistivé, agresivní nebo sobecké pocity, a nálepkou \"špatný člověk\"?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -9114,7 +9114,7 @@
   {
     "id": "refq_1144",
     "cluster_id": "cl_0032",
-    "text": "Kdy ses začal dívat na sebe tak tvrdě? Připomíná ti tvůj dnešní pohled na sebe někoho z minulosti?",
+    "text": "Kdy ses na sebe začal dívat tak tvrdě? Připomíná ti tvůj dnešní pohled na sebe někoho z minulosti?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -9122,7 +9122,7 @@
   {
     "id": "refq_1145",
     "cluster_id": "cl_0032",
-    "text": "Co bys řekl člověku, kterého miluješ, kdyby o sobě s naprostým přesvědčením říkal přesně to, co si říkáš ty?",
+    "text": "Co bys řekl člověku, kterého miluješ, kdyby o sobě s naprostým přesvědčením říkal přesně to, co si říkáš ty o sobě?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -9658,7 +9658,7 @@
   {
     "id": "refq_1213",
     "cluster_id": "cl_0034",
-    "text": "Co by se změnilo, kdybys nemusel být dokonale samostatný, ale mohl se svobodně rozhodovat, co zvládneš sám a s čím chceš pomoct?",
+    "text": "Co by se změnilo, kdybys nemusel být dokonale samostatný, ale mohl ses svobodně rozhodovat o tom, co zvládneš sám a s čím chceš pomoct?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -9882,7 +9882,7 @@
   {
     "id": "refq_1240",
     "cluster_id": "cl_0035",
-    "text": "Ve kterých situacích se nejvíc cítíš nezralý nebo jako malé dítě? Co mají tyhle situace společného?",
+    "text": "Ve kterých situacích se cítíš nezralý nebo jako malé dítě? Co mají tyhle situace společného?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -9906,7 +9906,7 @@
   {
     "id": "refq_1243",
     "cluster_id": "cl_0035",
-    "text": "Dokážeš rozlišit mezi tím, že jsi udělal chybu, že jsi něco nevěděl a že jsi nezralý? Co pro tebe tyhle rozdíly znamenají?",
+    "text": "Dokážeš rozlišit mezi tím, kdy jsi udělal chybu, kdy jsi něco nevěděl a prohlášením, že jsi nezralý? Co pro tebe tyhle rozdíly znamenají?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -10226,7 +10226,7 @@
   {
     "id": "refq_1283",
     "cluster_id": "cl_0036",
-    "text": "Co ti nerozhodnutí umožňuje odložit nebo se čemu vyhnout – konfliktu, závazku, ztrátě jiné možnosti, odpovědnosti, nebo něčemu úplně jinému?",
+    "text": "Čemu se odkládáním rozhodnutí vyhýbáš – konfliktu, závazku, ztrátě jiné možnosti, odpovědnosti, nebo něčemu úplně jinému?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -10466,17 +10466,9 @@
   {
     "id": "refq_1313",
     "cluster_id": "cl_0037",
-    "text": "Co se děje těsně předtím, než se začneš cítit neschopný – jsi unavený, pod tlakem, srovnáváš se s druhými, nevíš přesně, co se od tebe čeká, nebo je za tím něco jiného?",
+    "text": "Co se děje těsně předtím, než se začneš cítit neschopný – jsi unavený, pod tlakem, srovnáváš se s druhými, nevíš přesně, co se od tebe čeká, nebo je za tím něco jiného? Kdy se naopak cítíš schopný a jistý – a co je v těchto situacích jinak?",
     "tier": "free",
     "sort_order": 6,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "refq_1315",
-    "cluster_id": "cl_0037",
-    "text": "Kdy se naopak cítíš schopný a jistý – a co je v těchto situacích jinak?",
-    "tier": "free",
-    "sort_order": 7,
     "added_at": "2026-10-16"
   },
   {
@@ -10484,15 +10476,15 @@
     "cluster_id": "cl_0037",
     "text": "Když se ti něco podaří, dokážeš úspěch připsat svým schopnostem, nebo ho spíš vysvětluješ štěstím, okolnostmi či tím, že to vlastně nebylo nic těžkého?",
     "tier": "free",
-    "sort_order": 8,
+    "sort_order": 7,
     "added_at": "2026-10-16"
   },
   {
     "id": "refq_1317",
     "cluster_id": "cl_0037",
-    "text": "Jaké svoje schopnosti přehlížíš jen proto, že věci, které zvládáš, už považuješ za samozřejmost?",
+    "text": "Jaké své schopnosti přehlížíš jen proto, že věci, které zvládáš, už považuješ za samozřejmost?",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 8,
     "added_at": "2026-10-16"
   },
   {
@@ -10500,7 +10492,7 @@
     "cluster_id": "cl_0037",
     "text": "Pomáhá ti přísnost vůči sobě skutečně podávat lepší výkony, nebo tě spíš svazuje a bere ti odvahu zkoušet nové věci?",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -10508,7 +10500,7 @@
     "cluster_id": "cl_0037",
     "text": "Co bys řekl někomu, koho máš rád, kdyby udělal přesně stejnou chybu jako ty? A proč bys měl sebe posuzovat jinak?",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -10516,7 +10508,7 @@
     "cluster_id": "cl_0037",
     "text": "Co by se změnilo, kdybys místo „Jsem dost schopný?“ začal častěji přemýšlet „Co se tady ještě potřebuju naučit?“",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -10524,7 +10516,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdy ses začal učit, že udělat chybu, něco nevědět nebo si nebýt jistý znamená, že s tebou není něco v pořádku?",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -10532,7 +10524,7 @@
     "cluster_id": "cl_0037",
     "text": "Co vlastně potřebuješ ve chvíli, kdy se cítíš neschopný – povzbuzení, pomoc, čas, jasnější zadání, odpočinek, nebo něco úplně jiného?",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -10540,7 +10532,7 @@
     "cluster_id": "cl_0037",
     "text": "Co obvykle uděláš, když začneš pochybovat o svých schopnostech? Snažíš se ještě víc, všechno kontroluješ, hledáš ujištění, nebo se raději stáhneš? A jaký dopad to na tebe má?",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -10548,7 +10540,7 @@
     "cluster_id": "cl_0037",
     "text": "Čeho se nejvíc bojíš, když si představíš, že ostatní zjistí, že něco neumíš nebo nezvládáš?",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -10556,7 +10548,7 @@
     "cluster_id": "cl_0037",
     "text": "Co je pro tebe na představě, že tě druzí budou považovat za neschopného, nejbolestivější – kritika, ztráta respektu, odmítnutí, stud, nebo něco jiného?",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -10564,7 +10556,7 @@
     "cluster_id": "cl_0037",
     "text": "Jsou lidé, v jejichž přítomnosti si najednou připadáš méně schopný? Co se v tobě vedle nich mění?",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -10572,7 +10564,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdo nebo co v tvém současném prostředí posiluje pocit, že nejsi dost schopný? Nakolik ten pocit souvisí s tebou a nakolik s podmínkami, ve kterých se nacházíš?",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -10580,7 +10572,7 @@
     "cluster_id": "cl_0037",
     "text": "Kolik věcí, které dnes zvládáš bez problémů, ti kdysi nešlo? Co ti to říká o tvé schopnosti učit se?",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -10588,7 +10580,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdybys mohl být v něčem úplně obyčejně průměrný, co by sis konečně dovolil dělat s větší lehkostí nebo radostí?",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -10596,7 +10588,7 @@
     "cluster_id": "cl_0037",
     "text": "Čí hlas, tón nebo očekávání ti připomíná tvůj vnitřní kritik, když si připadáš neschopný? Nakolik s jeho hodnocením skutečně souhlasíš?",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -10604,7 +10596,7 @@
     "cluster_id": "cl_0037",
     "text": "Dovolíš si před druhými něco nevědět, udělat chybu nebo požádat o pomoc? Co by pro tebe znamenalo nemuset vždycky působit kompetentně?",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -10612,7 +10604,7 @@
     "cluster_id": "cl_0037",
     "text": "Co bys dělal jinak, kdybys už nemusel nikomu dokazovat, že jsi schopný?",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -10620,7 +10612,7 @@
     "cluster_id": "cl_0037",
     "text": "Kterých důležitých věcí se vzdáváš nebo je odkládáš, protože se bojíš, že je nezvládneš?",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -10628,7 +10620,7 @@
     "cluster_id": "cl_0037",
     "text": "Jak poznáš první okamžik, kdy se obyčejná nejistota mění ve stud a pocit neschopnosti? Co se v tu chvíli děje v tvém těle a co by ti mohlo pomoct?",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -10636,7 +10628,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdybys přestal považovat pocit neschopnosti za důkaz, že něco nezvládneš, co by sis dovolil vyzkoušet?",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -10644,7 +10636,7 @@
     "cluster_id": "cl_0037",
     "text": "Co by se změnilo, kdybys připustil, že se někdy můžeš cítit neschopný, aniž by to znamenalo, že skutečně neschopný jsi?",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -10652,7 +10644,7 @@
     "cluster_id": "cl_0037",
     "text": "Když se ti něco nepovede, co si o sobě začneš říkat – a nakolik tyhle závěry odpovídají tomu, co se skutečně stalo?",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -10660,7 +10652,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdyby tě pocit neschopnosti měl před něčím chránit, před čím by to mohlo být?",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -10668,7 +10660,7 @@
     "cluster_id": "cl_0037",
     "text": "Kdyby se tvůj pocit neschopnosti mohl vyjádřit jinak než sebekritikou, o co by tě požádal?",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -10676,7 +10668,7 @@
     "cluster_id": "cl_0037",
     "text": "Které svoje hodnoty někdy odsouváš stranou, abys působil schopně – třeba zvědavost, odvahu, tvořivost, upřímnost nebo ochotu spolupracovat?",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -10684,7 +10676,7 @@
     "cluster_id": "cl_0037",
     "text": "Co kdyby tvoje pochybnosti o vlastních schopnostech někdy souvisely právě s tím, že už toho víš dost na to, abys dokázal vidět, jak jsou některé věci složité?",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -10692,7 +10684,7 @@
     "cluster_id": "cl_0037",
     "text": "Jaký malý krok bys mohl udělat už tento týden, i kdybys neměl jistotu, že ho zvládneš dobře?",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
@@ -10746,7 +10738,7 @@
   {
     "id": "refq_1348",
     "cluster_id": "cl_0038",
-    "text": "Jaké důkazy o svých nedostatcích bereš vážně, zatímco svoje úspěchy přičítáš náhodě, štěstí nebo nízkým nárokům ostatních?",
+    "text": "Jaké důkazy o svých nedostatcích bereš možná až příliš vážně? A které své úspěchy máš tendenci přičítat spíše náhodě, štěstí nebo nízkým nárokům ostatních?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -10754,7 +10746,7 @@
   {
     "id": "refq_1349",
     "cluster_id": "cl_0038",
-    "text": "Kdy se naopak tvoje pochybnosti zmenšují nebo mizí? Co ti to říká o podmínkách, ve kterých si dokážeš věřit?",
+    "text": "Kdy se tvé pochybnosti o sobě zmenšují nebo mizí? Co ti to říká o podmínkách, ve kterých si dokážeš věřit?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -10978,7 +10970,7 @@
   {
     "id": "refq_1377",
     "cluster_id": "cl_0039",
-    "text": "Co by se změnilo, kdybys teď nemusel vyřešit celý problém, ale stačilo by svou situaci alespoň trochu zlepšit?",
+    "text": "Co by se změnilo, kdybys teď nemusel vyřešit celý problém, ale stačilo by svou situaci alespoň malinko zlepšit?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -11002,7 +10994,7 @@
   {
     "id": "refq_1381",
     "cluster_id": "cl_0039",
-    "text": "Co od sebe právě teď očekáváš? Nemůže být tvůj cíl tak náročný, že vedle něj všechny menší možnosti vypadají bezcenně?",
+    "text": "Co od sebe právě teď očekáváš? Nemůže být tvůj cíl tak náročný, že vedle něj všechny ostatní možnosti vypadají bezcenně?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -11250,7 +11242,7 @@
   {
     "id": "refq_1413",
     "cluster_id": "cl_0040",
-    "text": "Co se obvykle děje těsně předtím, než začneš hledat cestu ven? Je nějaký okamžik, kdy bys ještě mohl zareagovat jinak?",
+    "text": "Co se obvykle děje těsně předtím, než začneš hledat cestu ven? Nabízí se někdy okamžik, kdy bys ještě mohl zareagovat jinak?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -11258,7 +11250,7 @@
   {
     "id": "refq_1414",
     "cluster_id": "cl_0040",
-    "text": "Jak poznáš rozdíl mezi rozumným ústupem a vyhýbáním, kvůli kterému se tvůj život postupně zmenšuje?",
+    "text": "Jak poznáš rozdíl mezi rozumným ústupem a vyhýbáním, které tvůj život zmenšuje?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -11274,7 +11266,7 @@
   {
     "id": "refq_1416",
     "cluster_id": "cl_0040",
-    "text": "Kdybys své vyhýbání přestal považovat za zbabělost, před čím se tě možná snaží chránit?",
+    "text": "Kdybys své vyhýbání přestal považovat za zbabělost, před čím se tě asi snaží chránit?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -11498,7 +11490,7 @@
   {
     "id": "refq_1442",
     "cluster_id": "cl_0041",
-    "text": "Před čím konkrétně mě můj pocit ohrožení právě teď chce chránit?",
+    "text": "Před čím konkrétně mě můj pocit ohrožení právě teď chce chránit? Před něčím vnějším nebo ořed jiným hlubším pocitem?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -11530,7 +11522,7 @@
   {
     "id": "refq_1448",
     "cluster_id": "cl_0041",
-    "text": "Co dělám pro svůj pocit bezpečí, co mi krátkodobě ulevuje, ale dlouhodobě může můj strach udržovat?",
+    "text": "Co dělám pro svůj pocit bezpečí a co mi krátkodobě ulevuje, ale dlouhodobě může můj strach udržovat?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -11546,7 +11538,7 @@
   {
     "id": "refq_1450",
     "cluster_id": "cl_0041",
-    "text": "Kolik je v mém dnešním strachu reakce na současnou situaci a kolik mi připomíná něco, co jsem prožíval už dřív?",
+    "text": "Kolik je v mém dnešním strachu reakce na současnou situaci a kolik mi připomíná něco, co jsem prožíval už dřív, možná už jako dítě?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -11778,7 +11770,7 @@
   {
     "id": "refq_1477",
     "cluster_id": "cl_0042",
-    "text": "Co v tu chvíli nejvíc potřebuješ, abys ses cítil bezpečněji?",
+    "text": "Co ve chvíli zranitelnosti nejvíc potřebuješ, abys ses cítil bezpečněji?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -11786,7 +11778,7 @@
   {
     "id": "refq_1478",
     "cluster_id": "cl_0042",
-    "text": "Kdy ses naposledy cítil zranitelný, něco tě skutečně zasáhlo – a ty ses přesto postupně zotavil?",
+    "text": "Kdy ses naposledy cítil zranitelný, něco tě skutečně zasáhlo, ale ty ses přesto postupně zotavil?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -11802,7 +11794,7 @@
   {
     "id": "refq_1480",
     "cluster_id": "cl_0042",
-    "text": "Co pro tebe znamená být silný – a není tvoje představa síly přísnější, než bys požadoval od někoho jiného?",
+    "text": "Co pro tebe znamená být silný? A není tvoje představa síly přísnější, než bys požadoval od někoho jiného?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -11818,7 +11810,7 @@
   {
     "id": "refq_1482",
     "cluster_id": "cl_0042",
-    "text": "Jsou lidé, vedle kterých se cítíš výrazně bezpečněji nebo zranitelněji? Čím to je?",
+    "text": "Jsou lidé, vedle kterých se cítíš výrazně bezpečněji nebo zranitelněji? Čím vším to může být?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -12034,7 +12026,7 @@
   {
     "id": "refq_1509",
     "cluster_id": "cl_0043",
-    "text": "Není někdy tvoje úzkost oprávněným signálem, že je toho na tebe příliš – nároků, odpovědnosti, nejistoty, konfliktů nebo nedostatku odpočinku?",
+    "text": "Není někdy tvoje úzkost oprávněným signálem, že je toho teď na tebe prostě moc? Jak by sis mohl co nejdřív aspoň trochu ulevit od nároků, odpovědnosti, nejistoty, konfliktů nebo nedostatku odpočinku?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -12322,7 +12314,7 @@
   {
     "id": "refq_1545",
     "cluster_id": "cl_0044",
-    "text": "Které tvoje obavy upozorňují na skutečné nebezpečí nebo na něco v životě, co potřebuje změnu?",
+    "text": "Které tvé obavy upozorňují na skutečné nebezpečí a které na něco v životě, co potřebuje změnu?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -12546,7 +12538,7 @@
   {
     "id": "refq_1573",
     "cluster_id": "cl_0045",
-    "text": "Co se právě teď skutečně děje a co zatím existuje jen v tvých obavách?",
+    "text": "Co se právě teď skutečně děje a co existuje jen v tvých obavách?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -12850,7 +12842,7 @@
   {
     "id": "refq_1612",
     "cluster_id": "cl_0046",
-    "text": "Kdy se naopak dokážeš pohnout poměrně snadno? Co je tehdy jinak?",
+    "text": "Kdy se dokážeš pohnout poměrně snadno? Co je v takových situacích jinak?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -12858,7 +12850,7 @@
   {
     "id": "refq_1614",
     "cluster_id": "cl_0046",
-    "text": "Před čím tě tvoje zaseknutí možná chrání, i když ti zároveň komplikuje život?",
+    "text": "Před čím tě tvoje zaseknutí chrání, i když ti zároveň komplikuje život?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -12874,7 +12866,7 @@
   {
     "id": "refq_1616",
     "cluster_id": "cl_0046",
-    "text": "Co potřebuješ říct, odmítnout, požadovat nebo vyjasnit, ale místo toho zůstáváš zablokovaný?",
+    "text": "Co potřebuješ říct, odmítnout, požadovat nebo vyjasnit, abys nezůstával zablokovaný?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -13122,7 +13114,7 @@
   {
     "id": "refq_1645",
     "cluster_id": "cl_0047",
-    "text": "Co děláš ve chvíli, kdy se začneš bát, že blázníš? Pomáhají ti tvoje reakce, nebo některé z nich strach ještě zesilují?",
+    "text": "Co děláš ve chvíli, kdy se začneš bát, že se blázníš? Pomáhají ti tvoje reakce, nebo některé z nich strach ještě zesilují?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -13418,7 +13410,7 @@
   {
     "id": "refq_1682",
     "cluster_id": "cl_0048",
-    "text": "Čí hlas ti připomíná způsob, jakým se sebou mluvíš, když tě někdo kritizuje?",
+    "text": "Čí hlas z minulosti ti připomíná způsob, jakým se sebou mluvíš, když tě někdo kritizuje?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -13642,7 +13634,7 @@
   {
     "id": "refq_1710",
     "cluster_id": "cl_0049",
-    "text": "Když si říkáš „nejsem dost dobrý“, dost dobrý pro koho, pro co a podle jakého měřítka?",
+    "text": "Když si říkáš „nejsem dost dobrý“: dost dobrý pro koho, pro co a podle jakého měřítka?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -13698,7 +13690,7 @@
   {
     "id": "refq_1717",
     "cluster_id": "cl_0049",
-    "text": "Jsou ve tvém životě lidé nebo prostředí, které tě opakovaně shazují nebo na tebe kladou nesplnitelné nároky? Co z tvého pocitu nedostatečnosti může souviset právě s nimi?",
+    "text": "Jsou ve tvém životě lidé, kteří tě opakovaně shazují nebo na tebe kladou nesplnitelné nároky? Co z tvého pocitu nedostatečnosti může souviset právě s nimi? A před čím se tím oni sami chrání?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -13914,7 +13906,7 @@
   {
     "id": "refq_1744",
     "cluster_id": "cl_0050",
-    "text": "Co přesně podle tebe chyba vypovídá o člověku – a platí stejné měřítko i pro lidi, kterých si vážíš?",
+    "text": "Jsi stejně přísný i k lidem, které máš rád nebo kterých si vážíš?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -14242,7 +14234,7 @@
   {
     "id": "refq_1785",
     "cluster_id": "cl_0051",
-    "text": "Kdyby ses přestal trestat za neúspěchy, čeho se bojíš, že by se stalo? Ztratil bys motivaci, přestal se snažit, nebo by se mohlo změnit něco úplně jiného?",
+    "text": "Kdyby ses přestal trestat za neúspěchy, co by se stalo? Ztratil bys motivaci, přestal se snažit, nebo by se mohlo změnit něco úplně jiného?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -14698,7 +14690,7 @@
   {
     "id": "refq_1842",
     "cluster_id": "cl_0053",
-    "text": "Ve kterých situacích se v tobě nejvíc probouzí hrdost a co mají tyhle situace společného?",
+    "text": "Ve kterých situacích se v tobě nejvíc probouzí pýcha a co mají tyhle situace společného?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -14706,7 +14698,7 @@
   {
     "id": "refq_1843",
     "cluster_id": "cl_0053",
-    "text": "Před čím tě tvoje hrdost chrání? Jaký pocit by se mohl objevit, kdybys ji na chvíli odložil?",
+    "text": "Před čím tě tvoje pýcha chrání? Jaký pocit by se mohl objevit, kdybys ji na chvíli odložil?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -14722,7 +14714,7 @@
   {
     "id": "refq_1845",
     "cluster_id": "cl_0053",
-    "text": "Co nejhoršího by se podle tebe stalo, kdybys přiznal, že ses spletl, něco nezvládáš nebo potřebuješ pomoc?",
+    "text": "Co nejhoršího by se podle tebe stalo, kdybys přiznal, že ses spletl, že něco nezvládáš nebo potřebuješ pomoc?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -14738,7 +14730,7 @@
   {
     "id": "refq_1847",
     "cluster_id": "cl_0053",
-    "text": "Kdy svou hrdostí chráníš skutečnou důstojnost a kdy spíš představu, jak tě mají druzí vidět?",
+    "text": "Kdy svou pýchou chráníš skutečnou důstojnost a kdy spíš představu, jak tě mají druzí vidět?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -14946,7 +14938,7 @@
   {
     "id": "refq_1873",
     "cluster_id": "cl_0054",
-    "text": "Co ti tvoje touha mít stále víc dává? Jakou důležitou potřebu se možná snaží naplnit?",
+    "text": "Co ti tvoje touha mít stále víc dává? Jakou důležitou vnitřní potřebu se snaží naplnit?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -15488,19 +15480,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_1941",
-    "cluster_id": "cl_0056",
-    "text": "Jak se podobné pocity v minulosti měnily, když ses dobře vyspal, najedl, zklidnil nebo si promluvil s někým, komu důvěřuješ?",
-    "tier": "free",
-    "sort_order": 6,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refq_1942",
     "cluster_id": "cl_0056",
     "text": "Jakou cenu za svůj pocit výjimečnosti platíš, když ho prožíváš, a jakou teprve později, když zeslábne?",
     "tier": "free",
-    "sort_order": 7,
+    "sort_order": 6,
     "added_at": "2026-10-16"
   },
   {
@@ -15508,7 +15492,7 @@
     "cluster_id": "cl_0056",
     "text": "Co pro tebe znamená být obyčejným člověkem? Je na té představě něco, co tě zneklidňuje?",
     "tier": "free",
-    "sort_order": 8,
+    "sort_order": 7,
     "added_at": "2026-10-16"
   },
   {
@@ -15516,7 +15500,7 @@
     "cluster_id": "cl_0056",
     "text": "Co bys dnes udělal jinak, kdybys připustil, že ani velmi silný pocit jistoty nemusí znamenat, že máš pravdu?",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 8,
     "added_at": "2026-10-16"
   },
   {
@@ -15524,7 +15508,7 @@
     "cluster_id": "cl_0056",
     "text": "Kdo tě zná natolik dobře, aby si všiml změn v tvém prožívání? Dokázal bys mu otevřeně říct, co se s tebou právě děje?",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -15532,7 +15516,7 @@
     "cluster_id": "cl_0056",
     "text": "Co ti pocit výjimečnosti dovoluje dělat, říkat nebo necítit, co by sis bez něj možná nedovolil?",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -15540,7 +15524,7 @@
     "cluster_id": "cl_0056",
     "text": "Jak bys vnímal svou hodnotu, kdyby vůbec nezáleželo na tom, jestli jsi výjimečnější, mocnější nebo důležitější než ostatní?",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -15548,7 +15532,7 @@
     "cluster_id": "cl_0056",
     "text": "Které první tělesné signály ti napovídají, že pocit výjimečnosti začíná sílit, ještě než tě úplně pohltí?",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -15556,7 +15540,7 @@
     "cluster_id": "cl_0056",
     "text": "Co pro tebe znamená, když s tebou někdo nesouhlasí? Proč může být v takové chvíli těžké přijmout, že druhý člověk vidí věci jinak?",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -15564,7 +15548,7 @@
     "cluster_id": "cl_0056",
     "text": "Jak bys mohl ověřit své současné přesvědčení, aniž bys předem předpokládal, že je pravdivé?",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -15572,7 +15556,7 @@
     "cluster_id": "cl_0056",
     "text": "Kdy ses poprvé setkal s představou, že být obyčejný znamená být bezcenný, přehlížený nebo v nebezpečí?",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -15580,7 +15564,7 @@
     "cluster_id": "cl_0056",
     "text": "Jaký nejmenší krok můžeš právě teď udělat, aby ses cítil bezpečněji, klidněji a pevněji zakotvený v realitě?",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -15588,7 +15572,7 @@
     "cluster_id": "cl_0056",
     "text": "Které běžné věci ti dávají pocit smyslu a naplnění, i když při nich nemusíš být nijak výjimečný?",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -15596,7 +15580,7 @@
     "cluster_id": "cl_0056",
     "text": "Co by se stalo, kdybys s uskutečněním svého důležitého poslání nebo rozhodnutí počkal dva dny? Co tě nutí jednat právě teď?",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -15604,7 +15588,7 @@
     "cluster_id": "cl_0056",
     "text": "Kdyby někdo, koho máš rád, tvrdil s naprostou jistotou něco podobného jako ty, jak bys mu pomohl ověřit, co je skutečné?",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -15612,7 +15596,7 @@
     "cluster_id": "cl_0056",
     "text": "Jaké rozhodnutí bys mohl bezpečně odložit, dokud se pořádně nevyspíš a neprobereš ho s někým, komu důvěřuješ?",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -15620,7 +15604,7 @@
     "cluster_id": "cl_0056",
     "text": "Čí uznání možná stále hledáš, i když už ten člověk není součástí tvého života nebo ti ho nikdy nedokázal dát?",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -15628,7 +15612,7 @@
     "cluster_id": "cl_0056",
     "text": "Co bys tehdy potřeboval slyšet nebo zažít, abys nemusel svou hodnotu dokazovat tím, že jsi výjimečný?",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -15636,7 +15620,7 @@
     "cluster_id": "cl_0056",
     "text": "Jaké své hodnoty si chceš uchovat i ve chvílích, kdy se cítíš mimořádně výjimečný nebo vyvolený? Odpovídá jim to, jak se právě chováš?",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -15644,7 +15628,7 @@
     "cluster_id": "cl_0056",
     "text": "Co se snaží získat ta část tebe, která touží stát nad ostatními? Existuje způsob, jak její potřebu naplnit, aniž by ses musel nad někoho povyšovat?",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -15652,7 +15636,7 @@
     "cluster_id": "cl_0056",
     "text": "Všímáš si, jestli pocit výjimečnosti sílí spíš během dlouhé samoty, nebo po intenzivním kontaktu s lidmi? Co ti to může napovědět?",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -15660,7 +15644,7 @@
     "cluster_id": "cl_0056",
     "text": "Které činnosti, prostředí, média, rozhovory nebo lidé tvůj pocit výjimečnosti zesilují? Co mají společného?",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -15668,7 +15652,7 @@
     "cluster_id": "cl_0056",
     "text": "Co by se změnilo, kdybys část sebe, která se cítí všemocná, nemusel ani poslouchat, ani potlačovat, ale mohl jí naslouchat se zvědavostí a pochopením?",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -15676,7 +15660,7 @@
     "cluster_id": "cl_0056",
     "text": "Jaké hranice bys chtěl, aby ti pomohl udržet někdo moudrý a laskavý, kdyby tvůj vlastní úsudek nebyl právě teď úplně spolehlivý?",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -15684,7 +15668,7 @@
     "cluster_id": "cl_0056",
     "text": "Jaký plán by sis mohl předem domluvit s někým důvěryhodným, abyste společně včas rozpoznali, kdy tě pocit výjimečnosti začíná příliš ovládat?",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -15692,7 +15676,7 @@
     "cluster_id": "cl_0056",
     "text": "Kde si myslíš, že pravidla platící pro ostatní pro tebe neplatí?",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -16578,7 +16562,7 @@
   {
     "id": "refq_2077",
     "cluster_id": "cl_0060",
-    "text": "Co se ti tvoje silné emoce možná snaží říct? Jakou bolest, potřebu nebo přání vyjadřují?",
+    "text": "Co se ti tvé silné emoce snaží říct? Jakou bolest, potřebu nebo přání vyjadřují?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -17090,7 +17074,7 @@
   {
     "id": "refq_2142",
     "cluster_id": "cl_0062",
-    "text": "Co od sebe vlastně očekáváš, když si říkáš, že by ses měl umět soustředit? Jsou tvoje očekávání realistická?",
+    "text": "Co od sebe vlastně očekáváš, když si říkáš, že by ses měl umět soustředit? Jsou tvà očekávání realistická?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -17114,7 +17098,7 @@
   {
     "id": "refq_2145",
     "cluster_id": "cl_0062",
-    "text": "Co se s tvou schopností soustředit děje, když jsi pod tlakem, že musíš podat dobrý výkon?",
+    "text": "Co se s tvou schopností soustředění děje, když jsi pod tlakem a \"musíš\" podat dobrý výkon?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -17122,7 +17106,7 @@
   {
     "id": "refq_2146",
     "cluster_id": "cl_0062",
-    "text": "Neutíká někdy tvoje pozornost právě od něčeho, co je ti nepříjemné cítit?",
+    "text": "Neutíká někdy tvoje pozornost právě od něčeho, co je ti nepříjemné cítit? Co by to mohlo být?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -17570,7 +17554,7 @@
   {
     "id": "refq_2201",
     "cluster_id": "cl_0064",
-    "text": "Když si říkáš „jsem nezodpovědný“, jaké konkrétní chování tím vlastně označuješ — a co už do tohohle hodnocení přidává tvoje mysl?",
+    "text": "Když si říkáš „jsem nezodpovědný“, jaké konkrétní chování tím vlastně označuješ — a co už do tohoto hodnocení přidává tvoje mysl?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -17842,7 +17826,7 @@
   {
     "id": "refq_2235",
     "cluster_id": "cl_0065",
-    "text": "Jak se mění tvoje chuť něco udělat ve chvíli, kdy se z „chci“ stane „musím“?",
+    "text": "Jak se mění tvoje motivace něco udělat ve chvíli, kdy se z „chuti“ stane „musím“?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -18338,7 +18322,7 @@
   {
     "id": "refq_2297",
     "cluster_id": "cl_0067",
-    "text": "Co se v tobě děje těsně předtím, než si řekneš „seru na to, nějak to dopadne“?",
+    "text": "Co se v tobě děje těsně předtím, než si řekneš „kašlu na to, nějak to dopadne“?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -18362,7 +18346,7 @@
   {
     "id": "refq_2300",
     "cluster_id": "cl_0067",
-    "text": "Kdybys přestal riskovat tak jako dosud, o co cenného by ses bál, že přijdeš?",
+    "text": "Kdybys přestal riskovat tak jako dosud, o co cenného bys přišel? Proč je to tak cenné?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -19394,7 +19378,7 @@
   {
     "id": "refq_2429",
     "cluster_id": "cl_0071",
-    "text": "Kdy ses naučil, že je bezpečnější přizpůsobit se než riskovat nesouhlas, konflikt nebo zklamání druhého?",
+    "text": "Kdy ses naučil, že je bezpečnější přizpůsobit se než riskovat nesouhlas, konflikt nebo zklamání druhého? Kolik ti bylo let?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -19906,7 +19890,7 @@
   {
     "id": "refq_2493",
     "cluster_id": "cl_0073",
-    "text": "Ve kterých situacích se cítíš nesvobodně nejsilněji? Když ti někdo něco přikazuje, něco od tebe očekává, kontroluje tě, potřebuje tě, nebo třeba jen automaticky počítá s tvou ochotou?",
+    "text": "Ve kterých situacích se cítíš nejvíc uvězněný? Když ti někdo něco přikazuje, něco od tebe očekává, kontroluje tě, potřebuje tě, nebo třeba jen automaticky počítá s tvou ochotou?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -20114,7 +20098,7 @@
   {
     "id": "refq_2519",
     "cluster_id": "cl_0074",
-    "text": "Co přesně se bojíš, že se stane, když se tentokrát nepřizpůsobíš?",
+    "text": "Čeho se přesně bojíš, že se stane, když se tentokrát nepřizpůsobíš?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -20170,7 +20154,7 @@
   {
     "id": "refq_2527",
     "cluster_id": "cl_0074",
-    "text": "Kdyby ses zachoval stejně ohleduplně k sobě jako k druhému, co bys teď udělal jinak?",
+    "text": "Kdyby ses mohl zachovat stejně ohleduplně k sobě jako k druhému, co bys teď udělal jinak?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -20666,7 +20650,7 @@
   {
     "id": "refq_2588",
     "cluster_id": "cl_0076",
-    "text": "Kdybys věděl, že tě nikdo nebude hodnotit, obdivovat ani s tebou porovnávat, o které své dnešní cíle bys pořád skutečně stál?",
+    "text": "Kdybys věděl, že tě nikdo nebude hodnotit, obdivovat ani se s tebou porovnávat, o které své dnešní cíle bys pořád skutečně stál?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -21458,7 +21442,7 @@
   {
     "id": "refq_2689",
     "cluster_id": "cl_0079",
-    "text": "Kterým svým myšlenkám věříš hlavně tehdy, když je ti zle, a věříš jim stejně přesvědčivě i ve svých dobrých dnech?",
+    "text": "Kterým svým myšlenkám věříš hlavně tehdy, když je ti zle? Věříš jim stejně přesvědčivě i ve svých dobrých dnech?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -22202,7 +22186,7 @@
   {
     "id": "refq_2780",
     "cluster_id": "cl_0082",
-    "text": "Co přesně tě teď štve? Je to opravdu všechno, nebo se několik konkrétních věcí slilo do pocitu, že je protivný celý svět?",
+    "text": "Co přesně tě teď štve? Opravdu všechno, nebo se několik konkrétních věcí slilo do pocitu, že je protivný celý svět?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -23010,7 +22994,7 @@
   {
     "id": "refq_2881",
     "cluster_id": "cl_0085",
-    "text": "Kdy ses naučil, že je bezpečnější mlčet, ustoupit nebo si nechat svůj názor pro sebe než se otevřeně projevit?",
+    "text": "V kolika letech ses začal učit, že je bezpečnější mlčet, ustoupit nebo si nechat svůj názor pro sebe než se otevřeně projevit?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -23242,7 +23226,7 @@
   {
     "id": "refq_2910",
     "cluster_id": "cl_0086",
-    "text": "Čeho se svým mlčením snažíš nejčastěji vyhnout – konfliktu, odmítnutí, zesměšnění, nepochopení, nebo pocitu, že jsi příliš?",
+    "text": "Čeho se svým mlčením snažíš nejčastěji vyhnout – konfliktu, odmítnutí, zesměšnění, nepochopení, nebo pocitu, že je tě příliš?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -24050,7 +24034,7 @@
   {
     "id": "refq_3011",
     "cluster_id": "cl_0089",
-    "text": "Je ti skutečně jedno, co se děje, nebo už sis přestal dovolovat doufat, že by to mohlo dopadnout jinak?",
+    "text": "Je ti skutečně jedno, co se děje, nebo si nedovoluješ doufat, že by to mohlo dopadnout jinak?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -24058,7 +24042,7 @@
   {
     "id": "refq_3012",
     "cluster_id": "cl_0089",
-    "text": "Co ti tvoje schopnost nebrat si věci příliš k srdci v životě usnadnila a o co tě možná připravila?",
+    "text": "Co ti tvoje schopnost nebrat si věci příliš k srdci v životě usnadňuje a o co tě možná okrádá?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -24082,7 +24066,7 @@
   {
     "id": "refq_3015",
     "cluster_id": "cl_0089",
-    "text": "Kdyby tě tvoje lhostejnost měla před něčím chránit, před čím by to mohlo být?",
+    "text": "Kdyby tě tvoje lhostejnost měla před něčím chránit, před čím asi?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -24298,7 +24282,7 @@
   {
     "id": "refq_3043",
     "cluster_id": "cl_0090",
-    "text": "Dokážeš rozlišit chvíle, kdy skutečně nic necítíš, od chvílí, kdy něco cítíš, ale automaticky to utlumíš, zpochybníš nebo převedeš do přemýšlení?",
+    "text": "Dokážeš rozlišit chvíle, kdy skutečně nic necítíš, od chvil, kdy něco cítíš, ale automaticky to utlumíš, zpochybníš nebo převedeš do přemýšlení?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -25066,7 +25050,7 @@
   {
     "id": "refq_3138",
     "cluster_id": "cl_0093",
-    "text": "Co přesně se bojíš, že se stane, když tuhle věc přestaneš řešit právě teď?",
+    "text": "Čeho přesně se bojíš, když tuhle věc přestaneš řešit právě teď? Co se má stát?",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16"
@@ -25114,7 +25098,7 @@
   {
     "id": "refq_3144",
     "cluster_id": "cl_0093",
-    "text": "Ve kterých situacích se tvoje mysl nejčastěji na něco zasekne a co mají tyhle chvíle společného – únavu, samotu, stres, konflikt, nudu, odpovědnost nebo něco jiného?",
+    "text": "Ve kterých situacích se tvoje mysl nejčastěji na něcmčem zasekne a co mají tyhle chvíle společného – únavu, samotu, stres, konflikt, nudu, odpovědnost nebo něco jiného?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -25306,7 +25290,7 @@
   {
     "id": "refq_3168",
     "cluster_id": "cl_0094",
-    "text": "Co přesně se bojíš, že by se stalo, kdybys na sebe přestal tolik tlačit?",
+    "text": "Co přesně by se stalo, kdybys na sebe přestal tolik tlačit? Čeho konkrétně se bojíš?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -25874,7 +25858,7 @@
   {
     "id": "refq_3239",
     "cluster_id": "cl_0096",
-    "text": "Co se děje těsně předtím, než se z obyčejného „bylo by dobré“ stane v tvé hlavě naléhavé „musím“?",
+    "text": "Co se děje těsně předtím, než se z obyčejného „bylo by to dobré“ stane v tvé hlavě naléhavé „musím“?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
@@ -26874,7 +26858,7 @@
   {
     "id": "refq_3364",
     "cluster_id": "cl_0099",
-    "text": "Co přesně potřebuju, aby druhý uznal, pochopil nebo napravil? Dokázal bych mu to říct přímo, bez obviňování?",
+    "text": "Co přesně potřebuju, aby druhý něco uznal, pochopil nebo napravil? Dokázal bych mu to říct přímo, bez obviňování?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -27386,7 +27370,7 @@
   {
     "id": "refq_3428",
     "cluster_id": "cl_0101",
-    "text": "Kterou tvoji důležitou hodnotu nebo osobní hranici to, co tě znechucuje, narušuje?",
+    "text": "Kterou tvoji důležitou hodnotu nebo osobní hranici narušuje to, co tě znechucuje?",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16"
@@ -27658,7 +27642,7 @@
   {
     "id": "refq_3462",
     "cluster_id": "cl_0102",
-    "text": "Jaké nároky na sebe kladeš, které by ti připadaly nespravedlivé, kdybys je kladl na někoho, koho máš rád?",
+    "text": "Které z tvých nároků na sebe by ti připadaly nespravedlivé, kdybys je měl na někoho, koho máš rád?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -27666,7 +27650,7 @@
   {
     "id": "refq_3463",
     "cluster_id": "cl_0102",
-    "text": "Co se obvykle stane těsně předtím, než začneš hledat chyby na sobě, druhých nebo na tom, co se kolem tebe děje?",
+    "text": "Co se obvykle stane těsně předtím, než začneš hledat chyby na sobě, druhých nebo na tom, co se kolem tebe děje? Co se v tobě v tu chvíli děje? Co cítíš?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -28418,7 +28402,7 @@
   {
     "id": "refq_3557",
     "cluster_id": "cl_0105",
-    "text": "Když druhému způsobím bolest, přinese mi to opravdu to, co jsem potřeboval, nebo jen krátkou úlevu následovanou další vzdáleností?",
+    "text": "Když druhému způsobím bolest, přinese mi to opravdu to, co jsem potřeboval, nebo jen krátkou úlevu následovanou větší vzdáleností?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -28874,7 +28858,7 @@
   {
     "id": "refq_3614",
     "cluster_id": "cl_0107",
-    "text": "Co přesně doufáš, že se díky tomu, že se potrestáš, změní k lepšímu?",
+    "text": "Co přesně doufáš, že se sebetrestáním změní k lepšímu?",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16"
@@ -28906,7 +28890,7 @@
   {
     "id": "refq_3619",
     "cluster_id": "cl_0107",
-    "text": "Trestáš se skutečně za to, že jsi udělal něco špatně, nebo někdy už jen proto, že se sám cítíš špatně?",
+    "text": "Trestáš se skutečně za to, že jsi udělal něco špatně, nebo někdy už jen proto, že se sám cítíš špatný? Rozlišuj mezi těmito dvěma zásadně rozdílnými věcmi.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -28914,7 +28898,7 @@
   {
     "id": "refq_3620",
     "cluster_id": "cl_0107",
-    "text": "Co by se mohlo objevit pod potřebou potrestat se, kdybys ji na chvíli odložil – smutek, strach, stud, bezmoc, vztek nebo potřeba útěchy?",
+    "text": "Co by se mohlo objevit pod potřebou potrestat se, kdybys ji odložil – smutek, strach, stud, bezmoc, vztek nebo potřeba útěchy?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -28922,7 +28906,7 @@
   {
     "id": "refq_3621",
     "cluster_id": "cl_0107",
-    "text": "Kdyby ses za tohle nepotrestal, čeho by ses bál, že by to o tobě znamenalo?",
+    "text": "Kdyby ses za tohle nepotrestal, čeho by ses bál, že by to o tobě vypovídalo?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -29170,7 +29154,7 @@
   {
     "id": "refq_3653",
     "cluster_id": "cl_0108",
-    "text": "Jak by ses chtěl zachovat právě teď, aby sis zítra mohl říct: „Byl jsem kurevsky naštvaný, ale pořád jsem to byl já, kdo rozhodoval“?",
+    "text": "Jak by ses chtěl zachovat právě teď, aby sis zítra mohl říct: „Byl jsem neskutečně naštvaný, ale pořád jsem to byl já, kdo rozhodoval“?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -29394,7 +29378,7 @@
   {
     "id": "refq_3680",
     "cluster_id": "cl_0109",
-    "text": "Co by pro tebe znamenalo, kdyby ten druhý nikdy nepochopil, co ti udělal, a ty přesto mohl žít dobře?",
+    "text": "Co by pro tebe znamenalo, kdyby ten druhý nikdy nepochopil, co ti udělal, a tys přesto mohl jít dál?",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16"
@@ -29418,7 +29402,7 @@
   {
     "id": "refq_3683",
     "cluster_id": "cl_0109",
-    "text": "Jaký díl odpovědnosti skutečně patří tobě, jaký druhému člověku a jaký možná prostě okolnostem?",
+    "text": "Jaký díl odpovědnosti skutečně patří tobě, jaký druhému člověku a jaký prostě okolnostem?",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16"
@@ -30394,7 +30378,7 @@
   {
     "id": "refq_3805",
     "cluster_id": "cl_0113",
-    "text": "Co ti bere energii, aniž by sis toho už všiml, protože se to stalo normální součástí tvého života?",
+    "text": "Co ti bere energii, aniž by sis toho všiml, protože se to stalo normální součástí tvého života?",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16"
@@ -30402,7 +30386,7 @@
   {
     "id": "refq_3806",
     "cluster_id": "cl_0113",
-    "text": "Kdyby cílem příštích dní nebylo „zase být šťastný“, ale vytvořit podmínky, ve kterých se živost může začít vracet, co konkrétně bys změnil?",
+    "text": "Kdyby cílem příštích dní nebylo „být zase šťastný“, ale vytvořit podmínky, ve kterých se živost může začít vracet, co konkrétně bys změnil?",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16"
@@ -30858,7 +30842,7 @@
   {
     "id": "refq_3863",
     "cluster_id": "cl_0115",
-    "text": "Co je pro tebe natolik důležité, že právě jeho absence nebo ohrožení dokáže vyvolat pocit „na ničem nezáleží“?",
+    "text": "Co je pro tebe natolik důležité, že právě absence nebo ohrožení té věci dokáže vyvolat pocit „na ničem nezáleží“?",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16"
