@@ -1846,7 +1846,28 @@
       "ztráta váhy"
     ],
     "mark": "E",
-    "reframings": [],
+    "reframings": [
+      {
+        "id": "sitr_0688",
+        "text": "Strach z hubnutí může souviset s obavou ze ztráty zdraví, síly nebo kontroly nad vlastním tělem. Někdy ale vychází také z předchozích zkušeností s nemocí nebo z nepříjemných poznámek okolí. Zkus si všimnout, čeho konkrétně se na představě nižší váhy obáváš."
+      },
+      {
+        "id": "sitr_0689",
+        "text": "Tělesná hmotnost může kolísat v závislosti na stresu, chuti k jídlu, pohybu nebo zdravotním stavu. Menší změna váhy nemusí automaticky znamenat nemoc. Pokud ale hubneš neúmyslně, výrazně nebo bez zjevné příčiny, je důležité poradit se s lékařem."
+      },
+      {
+        "id": "sitr_0690",
+        "text": "Možná máš pocit, že když zhubneš, přestaneš být přitažlivý nebo tě ostatní budou vnímat jako slabého či nemocného. Tvoje hodnota ani přitažlivost se ale neodvíjejí pouze od tělesné hmotnosti. Změna vzhledu nemusí znamenat ztrátu toho, kým jsi."
+      },
+      {
+        "id": "sitr_0691",
+        "text": "Někdy může být určitá tělesná hmotnost součástí představy o vlastní identitě, síle nebo bezpečí. Její změna pak může vyvolávat úzkost, i když sama o sobě nepředstavuje ohrožení. Můžeš postupně zkoumat, jaký význam pro tebe tvoje váha má."
+      },
+      {
+        "id": "sitr_0692",
+        "text": "Pokud tě strach z hubnutí vede k nutkavému vážení, přejídání ze strachu nebo neustálému sledování tělesných změn, může se z péče o zdraví stát zdroj další úzkosti. Psychoterapie ti může pomoci najít klidnější vztah k vlastnímu tělu, aniž bys musel ignorovat jeho skutečné potřeby."
+      }
+    ],
     "fear_ids": [
       "fear_0063",
       "fear_0159",
