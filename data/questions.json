@@ -13,7 +13,7 @@
   },
   {
     "id": "quest_0002",
-    "text": "Co by se změnilo, kdybych věřil(a), že už teď jsem dost?",
+    "text": "Co by se změnilo, kdybych věřil(a), že už teď jsem dost dobrý / dobrá?",
     "tags": [
       "identita",
       "přijetí",
@@ -39,7 +39,7 @@
   },
   {
     "id": "quest_0004",
-    "text": "Kdyby o sobě blízký přítel mluvil tak, jako o sobě mluvím já, co bych mu na to řekl(a)?",
+    "text": "Kdyby o sobě blízký přítel mluvil tak, jako o sobě mluvím já, co bych mu řekl(a)?",
     "tags": [
       "identita",
       "sebeláska",
@@ -51,7 +51,7 @@
   },
   {
     "id": "quest_0005",
-    "text": "Jaká očekávání na sebe kladu, která bych nikdy nekladl(a) na někoho, na kom mi záleží?",
+    "text": "Jaká očekávání na sebe kladu, ale nikdy bych je nekladl(a) na někoho, na kom mi záleží?",
     "tags": [
       "identita",
       "sebeláska",
@@ -64,7 +64,7 @@
   },
   {
     "id": "quest_0006",
-    "text": "Co všechno jsem přestál(a) a překonal(a), co si málokdy přiznám k dobru?",
+    "text": "Co všechno jsem přestál(a) a překonal(a), ale málokdy si to přiznám k dobru?",
     "tags": [
       "identita",
       "minulost",
@@ -368,7 +368,7 @@
   },
   {
     "id": "quest_0031",
-    "text": "Kdo je ten nejradostnější člověk, jakého jsem kdy potkal(a)?",
+    "text": "Kdo je nejradostnější člověk, jakého jsem kdy potkal(a)?",
     "tags": [
       "štěstí",
       "vztahy"
@@ -391,7 +391,7 @@
   },
   {
     "id": "quest_0033",
-    "text": "Za co z věcí, které mám právě teď kolem sebe, jsem vděčný / vděčná?",
+    "text": "Za co z toho, co mám právě teď kolem sebe, jsem vděčný / vděčná?",
     "tags": [
       "vděčnost",
       "štěstí",
@@ -524,7 +524,7 @@
   },
   {
     "id": "quest_0044",
-    "text": "Co bych nejvíc litoval(a), že jsem někomu nikdy neřekl(a)?",
+    "text": "Čeho bych nejvíc litoval(a), kdybych to někomu nikdy neřekl(a)?",
     "tags": [
       "vztahy",
       "komunikace",
@@ -560,7 +560,7 @@
   },
   {
     "id": "quest_0047",
-    "text": "Je v mém životě někdo, kdo by si zasloužil omluvu?",
+    "text": "Je v mém životě někdo, komu bych se měl(a) omluvit?",
     "tags": [
       "vztahy",
       "odpovědnost",
@@ -837,7 +837,7 @@
   },
   {
     "id": "quest_0071",
-    "text": "Jaký sen si netroufám sledovat ze strachu, že selžu?",
+    "text": "Jaký sen si netroufám uskutečnit ze strachu, že selžu?",
     "tags": [
       "odvaha",
       "strach",
@@ -1019,7 +1019,7 @@
   },
   {
     "id": "quest_0086",
-    "text": "Kdyby se můj zbývající čas zdvojnásobil, co bych začal(a)?",
+    "text": "Kdyby se můj zbývající čas zdvojnásobil, co bych začal(a) dělat?",
     "tags": [
       "smrt",
       "motivace",
@@ -1211,7 +1211,7 @@
   },
   {
     "id": "quest_0102",
-    "text": "Jak by vypadal můj život, kdyby odrážel mé pravé já?",
+    "text": "Jak by vypadal můj život, kdyby odrážel mé skutečné já?",
     "tags": [
       "autenticita",
       "hodnoty",
@@ -1223,7 +1223,7 @@
   },
   {
     "id": "quest_0103",
-    "text": "Kdy jsem na sebe byl(a) naposledy hluboce hrdý / hrdá?",
+    "text": "Kdy jsem na sebe byl(a) naposledy opravdu hrdý / hrdá?",
     "tags": [
       "uznání",
       "hodnoty",
@@ -1292,7 +1292,7 @@
   },
   {
     "id": "quest_0109",
-    "text": "Kdybych měl(a) být zapamatován(a) jen pro jedinou věc, jakou bych si vybral(a)?",
+    "text": "Kdyby si mě lidé měli pamatovat jen kvůli jediné věci, jakou bych si vybral(a)?",
     "tags": [
       "smysl života",
       "hodnoty",
@@ -1425,7 +1425,7 @@
   },
   {
     "id": "quest_0120",
-    "text": "Jaké byly nejvíc proměňující okamžiky mého života?",
+    "text": "Které okamžiky mě v životě nejvíc změnily?",
     "tags": [
       "růst",
       "minulost",
@@ -1713,7 +1713,7 @@
   },
   {
     "id": "quest_0143",
-    "text": "Která část mého těla je teď nejuvolněnější a která toho nejvíc drží?",
+    "text": "Která část mého těla je teď nejuvolněnější a ve které cítím největší napětí?",
     "tags": [
       "tělo",
       "přítomnost",
@@ -1809,7 +1809,7 @@
   },
   {
     "id": "quest_0151",
-    "text": "Jak to v mém těle vypadá, když přijímám lásku a péči?",
+    "text": "Co cítím v těle, když přijímám lásku a péči?",
     "tags": [
       "tělo",
       "láska",
@@ -1897,7 +1897,7 @@
   },
   {
     "id": "quest_0158",
-    "text": "V čím domě mi bývalo líp než ve vlastním?",
+    "text": "U koho doma mi bývalo líp než ve vlastním?",
     "tags": [
       "dětství",
       "bezpečí",
@@ -1909,7 +1909,7 @@
   },
   {
     "id": "quest_0159",
-    "text": "Co jsem jako dítě dělal(a) s úplně prázdnou sobotou?",
+    "text": "Co jsem jako dítě dělal(a), když jsem měl(a) celou sobotu volnou?",
     "tags": [
       "dětství",
       "volný čas",
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "quest_0179",
-    "text": "Je nejtěžší odpovědnost, kterou nesu, opravdu moje, nebo jsem ji převzal(a) z cizích očekávání?",
+    "text": "Je nejtěžší odpovědnost, kterou nesu, opravdu moje, nebo jsem ji převzal(a) kvůli očekáváním druhých?",
     "tags": [
       "odpovědnost",
       "hranice",
@@ -2187,7 +2187,7 @@
   },
   {
     "id": "quest_0181",
-    "text": "Jaká pravidla dodržuji, aniž bych si je kdy zpochybnil(a)?",
+    "text": "Jaká pravidla dodržuji, aniž bych je kdy zpochybnil(a)?",
     "tags": [
       "svoboda",
       "hodnoty",
@@ -2366,7 +2366,7 @@
   },
   {
     "id": "quest_0227",
-    "text": "Kdy jsem naposledy odložil(a) okamžitou slast — mobil, alkohol, cukr — kvůli svému dlouhodobému zdraví?",
+    "text": "Kdy jsem naposledy odložil(a) okamžité potěšení — mobil, alkohol, cukr — kvůli svému dlouhodobému zdraví?",
     "tags": [
       "návyky",
       "fyzické zdraví",
