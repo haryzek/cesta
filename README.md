@@ -477,12 +477,12 @@ Vlastní proměnné nad rámec handoffu: `--tone`/`--tone-soft` (barva sekce), `
 ### Obal aplikace
 
 - **Hlavička** je vždy nahoře: vlevo hamburger (otevře menu se seznamem sekcí), uprostřed název „Moje cesta", vpravo srdíčko (vstup do Oblíbených) — **obrysové, plné jen když jsem v Oblíbených** (dřív se plnilo, když bylo cokoli uloženo; ten signál nikomu nic neříkal). U hamburgeru se při novém obsahu zobrazí badge s počtem novinek; v menu je počet novinek i na řádku dotčené sekce. Klik na název i na název v menu vede na úvod.
-- **Úvodní stránka** — nadpis „Dnešní inspirace" + náhodný citát, pod tím **8 dlaždic** po párech v pořadí registru: Moje cesta / Cvičení, Přerámování / Otázky, Inspirace / Články, Tělesné příznaky / První pomoc. **První pomoc je dole u palce** (pořadí 12. 9. 2026 — lidé appku nepoužívají primárně pro krizi, ale když ji potřebují, má být na dosah). **O appce dlaždici nemá** (`tile:false`), jen řádek v menu — devátá dlaždice by trčela sama. Dlaždice vyplní zbytek výšky okna; pod 700px se samy zúží, aby se vešly bez scrollování.
+- **Úvodní stránka** — štítek „Dnešní inspirace" + náhodný citát s autorem, pod tím **8 dlaždic** po párech v pořadí registru: Moje cesta / Cvičení, Přerámování / Otázky, Inspirace / Články, Tělesné příznaky / První pomoc. **První pomoc je dole u palce** (pořadí 12. 9. 2026 — lidé appku nepoužívají primárně pro krizi, ale když ji potřebují, má být na dosah). **O appce dlaždici nemá** (`tile:false`), jen řádek v menu — devátá dlaždice by trčela sama. Dlaždice vyplní zbytek výšky okna; pod 700px se samy zúží, aby se vešly bez scrollování.
 - **Menu** (z hamburgeru) — sekce v pořadí registru s oddělovacími linkami (`sep` na položce): Moje cesta, Cvičení | Přerámování, Otázky, Inspirace, Články | Tělesné příznaky, První pomoc | Oblíbené (s počtem), Tmavý/Světlý režim, O appce.
 
 ### Dnešní inspirace
 
-Na úvodce je jeden náhodný citát ze sekce Inspirace, **jeden na den** — opakované otevření appky ho nemění. Uvádí se jen text (bez autora a roku, ty se zobrazují jen v sekci Inspirace).
+Na úvodce je jeden náhodný citát ze sekce Inspirace, **jeden na den** — opakované otevření appky ho nemění. Pod textem autor · rok stejným stylem jako na kartě Inspirace (`.mc-card-author`; bez autora řádek chybí) — od 12. 11. 2026, dřív záměrně jen text. „Dnešní inspirace" je malý štítek (`.mc-eyebrow` v tónu), ne H1, aby nevypadal jako název appky. Blok je odsazený zleva i zprava na linku textů v dlaždicích: `calc(var(--gutter) + 1px + var(--tile-pad))`, `--tile-pad` = vnitřní padding dlaždice (15px, pod 700px výšky 13px).
 
 Losuje se z těch, které uživatel ještě neviděl; po vyčerpání všech se kolo restartuje. Stav drží `USER.daily = { date, id, seen[] }` v `localStorage`. Datum je lokální, ne UTC — jinak by se citát měnil ve dvě ráno. Když položka zmizí z dat, přelosuje se.
 

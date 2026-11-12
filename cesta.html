@@ -66,6 +66,9 @@
     /* Jednotná osa zarovnání — dřív si každý blok odsazoval po svém
        (18/16/14px), takže nic nesedělo na jednu linku. */
     --gutter:20px;
+    /* Vnitřní boční padding dlaždice — z něj se počítá i odsazení bloku nad dlaždicemi,
+       aby text začínal na stejné lince jako texty v dlaždicích. */
+    --tile-pad:15px;
 
     --serif:'Fraunces',Georgia,'Times New Roman',ui-serif,serif;
     --sans:'Public Sans',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
@@ -189,21 +192,24 @@
   /* Na nízkém displeji ubereme dlaždici na výšce, ať se všechny čtyři řady
      vejdou bez scrollování. */
   @media (max-height:700px){
-    #mc-root[data-page="home"] .mc-tile{ gap:6px; padding:12px 13px; }
+    #mc-root[data-page="home"]{ --tile-pad:13px; }
+    #mc-root[data-page="home"] .mc-tile{ gap:6px; padding:12px var(--tile-pad); }
     #mc-root[data-page="home"] .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
     #mc-root[data-page="home"] .mc-tile-ic svg{ width:17px; height:17px; }
     #mc-root[data-page="home"] .mc-home-intro{ padding-top:16px; padding-bottom:10px; }
   }
 
-  .mc-home-intro{ padding:24px var(--gutter) 14px; }
-  .mc-home-intro h1{ font-size:25px; font-variation-settings:'opsz' 48; }
-  .mc-home-intro h1{ color:var(--tone); }
+  /* Text nad dlaždicemi začíná na lince textů v dlaždicích (gutter + rámeček + padding), zprava stejně. */
+  .mc-home-intro{ padding:24px calc(var(--gutter) + 1px + var(--tile-pad)) 14px; }
+  /* „Dnešní inspirace“ je štítek, ne nadpis appky — hlavní slovo má citát. */
+  .mc-home-intro .mc-eyebrow{ color:var(--tone); margin-bottom:0; }
   .mc-home-intro p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
   /* Citát dne — velikost jako názvy dlaždic, ale tenký řez. */
   .mc-home-intro p.mc-daily{ font-family:var(--serif); font-weight:400; font-size:17px; line-height:1.5;
-    font-variation-settings:'opsz' 24; color:var(--body); margin-top:14px; }
+    font-variation-settings:'opsz' 24; color:var(--body); margin-top:8px; }
+  .mc-home-intro .mc-card-author{ margin-top:6px; }
   .mc-tiles{ display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 var(--gutter); }
-  .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px 15px;
+  .mc-tile{ display:flex; flex-direction:column; gap:9px; min-height:118px; padding:16px var(--tile-pad);
     background:var(--surface); border:1px solid var(--border); border-radius:16px; cursor:pointer; text-align:left;
     transition:border-color .15s ease,transform .1s ease,background .15s ease; position:relative; }
   @media (hover:hover){ .mc-tile:hover{ border-color:var(--accent); background:var(--surface-2); } }
@@ -1307,9 +1313,12 @@
 
   function viewHome(){
     var insp=dailyInspiration();
-    var h='<div class="mc-home-intro"><h1>Dnešní inspirace</h1>';
-    // Jen text — autor a rok se na úvodce záměrně neuvádí.
-    if(insp) h+='<p class="mc-daily">„'+esc(insp.text)+'“</p>';
+    var h='<div class="mc-home-intro"><div class="mc-eyebrow">Dnešní inspirace</div>';
+    // Autor a rok stejně jako na kartě Inspirace (od 12. 11. 2026, dřív záměrně bez nich).
+    if(insp){
+      h+='<p class="mc-daily">„'+esc(insp.text)+'“</p>';
+      if(insp.author) h+='<div class="mc-card-author">'+esc(insp.author)+(insp.year?' <span class="yr">· '+esc(insp.year)+'</span>':'')+'</div>';
+    }
     h+='</div><div class="mc-tiles">';
     SECTIONS.filter(function(s){return s.tile;}).forEach(function(s){
       h+='<button class="mc-tile mc-in" data-tone="'+(s.tone||"accent")+'" onclick="MC.open(\''+s.key+'\')"><span class="mc-tile-ic">'+IC[s.icon]+'</span><span class="mc-tile-name">'+esc(s.label)+'</span></button>';
