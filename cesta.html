@@ -866,7 +866,10 @@
   }
   function admList(map,store){ return map[store]=map[store]||[]; }
   function isDeleted(store,id){ return (ADMIN.deleted[store]||[]).indexOf(id)>-1; }
-  function isTop(store,id){ return (ADMIN.top[store]||[]).indexOf(id)>-1; }
+  // ★ = Bob přečetl a schválil. Buď v adminu v telefonu (ADMIN.top), nebo trvale v datech (pole
+  // approved = datum, od 12. 11. 2026). Datovou hvězdičku vidí jen zapnutý admin, uživatel nikdy.
+  function isApproved(store,id){ if(!ADMIN.on) return false; var it=admItem(store,id); return !!(it&&it.approved); }
+  function isTop(store,id){ return (ADMIN.top[store]||[]).indexOf(id)>-1||isApproved(store,id); }
   function admEdit(store,id){ return (ADMIN.edits[store]||{})[id]; }
   // Filtr živých položek — volá se na každém místě, kde se koncový obsah vypisuje.
   function alive(store,items){ var d=ADMIN.deleted[store]; if(!d||!d.length) return items; return items.filter(function(it){ return d.indexOf(it.id)<0; }); }
@@ -1051,10 +1054,10 @@
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
     itemIndex.hlasky={};
-    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, meta:p.text, source:x.source }; }); });
+    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, meta:p.text, source:x.source, approved:x.approved }; }); });
     // Přerámování situací jako položky (ID sitr_NNNN) — kvůli adminu.
     itemIndex.sitref={};
-    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, meta:s.name }; }); });
+    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, meta:s.name, approved:r.approved }; }); });
     buildLegacyKeys(); migrateStoredKeys();
     applyEdits();
     bySection={}; byChain={};
@@ -1184,8 +1187,8 @@
   }
   // Řez pro první verzi: z každého klastru jen top N živých položek (pořadí =
   // pořadí ve zdroji). Uživatel ho má vždycky, Bob ho v adminu může vypnout.
-  // Bolístky: prvních 139 podle sort_order (Bob prošel 124 + 15 vybraných 10. 11. 2026), zbytek ve frontě.
-  var RF_CUT={ reframings:15, questions_rf:8, actions:7 }, PAIN_CUT=5, PAIN_LIST_CUT=139;
+  // Bolístky: všech 175 (fronta 139 + 36 zrušena 12. 11. 2026, Bob prošel všechny), pod každou top 5 hlášek.
+  var RF_CUT={ reframings:15, questions_rf:8, actions:7 }, PAIN_CUT=5;
   function cutOn(){ return !ADMIN.on||ADMIN.cut!==false; }
   function rfList(typeKey,cid){
     var l=alive(storeOf(typeKey),(byCluster[typeKey][cid]||[]).slice());
@@ -1435,7 +1438,6 @@
     h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
     h+=searchBox("Hledejte větu…","rfPainSearch",rf.painSearch);
     var list=flat.pains;
-    if(cutOn()) list=list.slice(0,PAIN_LIST_CUT);
     if(rf.painSearch.trim()){ var q=deburr(rf.painSearch); list=list.filter(function(p){ return deburr(p.text).indexOf(q)>-1; }); }
     var shown=list.slice(0,rf.painLimit);
     h+='<div class="mc-namelist mc-mirror">';
@@ -1826,7 +1828,7 @@
     // Řez tripletu
     var cut=ADMIN.cut!==false;
     h+='<div class="mc-fav-group"><h2>Řez přerámování</h2>';
-    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7 a 5 hlášek, 139 bolístek':'Vypnuto: celá zásoba')+'</button></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab'+(cut?'':' ghost')+'" onclick="MC.admCut()">'+(cut?'Zapnuto: jen top 15 / 8 / 7 a 5 hlášek':'Vypnuto: celá zásoba')+'</button></div>';
     h+='<p class="mc-adm-note">Z každého pocitu jen prvních 15 přerámování, 8 otázek a 7 úkolů. Uživatelé řez mají vždycky, vypnout jde jen tady v adminu.</p></div>';
     // Koš
     h+='<div class="mc-fav-group"><h2>Koš <span class="c">'+nDel+'</span></h2>';
@@ -2084,7 +2086,9 @@
     // admin
     admin:function(){ ADMIN.on=!ADMIN.on; state.adminEdit=null; saveAdmin(false); render(); },
     admPage:function(){ state.menuOpen=false; state.detail=null; state.page="admin"; state.section=null; scrollTop(); render(); },
-    admTop:function(store,id){ var a=admList(ADMIN.top,store), i=a.indexOf(id); if(i>-1) a.splice(i,1); else a.push(id); saveAdmin(true); render(); },
+    admTop:function(store,id){
+      if(isApproved(store,id)){ toast("Schváleno v datech ("+admItem(store,id).approved+"), tady nejde odebrat"); return; }
+      var a=admList(ADMIN.top,store), i=a.indexOf(id); if(i>-1) a.splice(i,1); else a.push(id); saveAdmin(true); render(); },
     admDel:function(store,id){ admList(ADMIN.deleted,store).push(id); saveAdmin(true); toast("Smazáno",{store:store,id:id}); render(); },
     admUndo:function(){ var u=state.toast&&state.toast.undo; if(!u) return; MC.admRestore(u.store,u.id); state.toast=null; clearTimeout(toastTimer); render(); },
     admRestore:function(store,id){ var a=admList(ADMIN.deleted,store), i=a.indexOf(id); if(i>-1) a.splice(i,1); saveAdmin(true); render(); },
