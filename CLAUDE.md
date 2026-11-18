@@ -98,7 +98,7 @@ Konzoli si přepni na UTF-8 (`PYTHONIOENCODING=utf-8`), jinak lint spadne na emo
 Rozcestník tří karet s větou „kdy sem“: **Jádrové pocity** / **Strachy** / **Bolístky**. Plný popis toku v README „Sekce aplikace → Přerámování“. Co musíš mít v hlavě:
 
 - **Strachy (přestavěno 21. 10. 2026):** jen konkrétní strachy (`situations`), záložka Jádrové strachy zrušená. Konkrétní strach → `mark` P/E/K → „Co je pod tím?“ → **jádrové pocity** (stejná komponenta jako brána Jádrové pocity, výběr jednoho i víc) → triplet. Pocity = součet `FEAR_POS_WEIGHTS=[5,4,3,2,1]` přes `fear_ids` → `cluster_ids`, **ukazují se všechny seřazené**, ne top N (Bobovo rozhodnutí). Merged remízu řeší `rank` (pořadí pod strachem). `K` pocity nenabízí. Dřívější kanon → rovnou mix 3 pocitů (`FEAR_CLUSTERS`) je pryč: u hrozeb nesedl a uživatel si pocit nevybral. **Nový jádrový strach do appky = nový záznam v `brany_reframings.md` na konci** (ID se počítají pořadím, vložení doprostřed by posunulo `sit_` ID a rozbilo oblíbené/admin). `rf.origin` říká, kam vede Zpět.
-- **Bolístky:** **bez kategorií** — `smer` i `oblast` se nezobrazují (rozhodnuto 12. 9.). Hlášky bez tripletu, vědomě; ID `hl_NNNN` pro oblíbené/viděné. `source` k/n zobrazit až při škrtání.
+- **Bolístky:** **bez kategorií** — `smer` i `oblast` se nezobrazují (rozhodnuto 12. 9.). Hlášky jsou vlastní přerámování; **od 18. 11. 2026 má 111 ze 175 bolístek `cluster_ids` (1–2 jádrové pocity)** a pod hláškami blok „Co může být pod tím?“ → triplet (stejná komponenta `feelingPicker` jako u strachů). Vazba jen tam, kde pocit jasně trčí; nadávání na svět a citlivé věci bez vazby. Zdroj vazeb `bolistky_wip/pocity_k_bolistkam.py` (tabulka, pustit znovu po úpravě, pak build). Vyhýbá se pocitům s plackou, kde by nesedla (*zneužitý*, *bez naděje*, *mrtvý*); ID `hl_NNNN` pro oblíbené/viděné. `source` k/n zobrazit až při škrtání.
 - **Provizorní admin — nasazen 12. 9. 2026** (README „Provizorní admin“): přepínač dole v menu, ✎/★/✕ na kartách, vlastní klíč `mc_admin_v1`, denní snapshoty, export/import. `alive()` filtruje smazané na každém výpisu, `applyEdits()` propisuje edity do objektů. Propsání do zdrojů: `apply_admin.py` (past č. 14).
 - **Datový objem:** triplet 4,2 MB + pains 1 MB, appka tahá všech 16 souborů najednou s `no-cache`. Přes Pages gzip ~1,3 MB — na hotelové wifi znát. Lazy load tripletu až po vstupu do sekce je legitimní krok, až to začne bolet.
 
@@ -150,7 +150,7 @@ Všech 16 JSONů leží v **`data/`** a všechny jsou ploché listy (žádný ob
 Kdo má co:
 - **`schemas`** mají: clusters (5), articles, exercises (3). **Nemají**: feelings, crisis, body, triplet, sections, chains, questions, inspirations (obojí shozeno 11. 9. 2026 — univerzálky mimo doporučování).
 - **datum** má většina (`added_at`); articles má navíc `published_at`. **Nemají**: crisis, body (jsou to malé stabilní sady, které se nebudou rozšiřovat — je to záměr, ne opomenutí).
-- **`cluster_id`** mají: feelings, triplet (ref/refq/refa). **`cluster_ids`** (5) má fears; situations se na klastry vážou přes `fear_ids`; pains vazbu vědomě nemají.
+- **`cluster_id`** mají: feelings, triplet (ref/refq/refa). **`cluster_ids`** (5) má fears; situations se na klastry vážou přes `fear_ids`; pains mají volitelné `cluster_ids` (1–2, od 18. 11. 2026).
 
 ---
 

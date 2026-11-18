@@ -1547,17 +1547,20 @@
     }
     if(s.mark==="K") return h;
     var cids=situationFeelings(s);
-    if(cids.length){
-      h+='<div class="mc-under"><h2>Co je pod tím?</h2><p>Pod strachem bývá hlubší pocit. Vyberte jeden nebo víc, které sedí — a podívejte se na ně jinak.</p></div>';
-      h+='<ul class="mc-list">';
-      cids.forEach(function(c){
-        var on=!!rf.sitSel[c];
-        h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'"><span class="mc-check '+(on?"on":"")+'" onclick="MC.rfSitToggle(\''+c+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="mc-feeling-name" onclick="MC.rfSitOpen(\''+c+'\')">'+esc(clusterName[c]||"")+'</span><span class="mc-feeling-go" onclick="MC.rfSitOpen(\''+c+'\')">›</span></li>';
-      });
-      h+='</ul>';
-      var n=Object.keys(rf.sitSel).length;
-      if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfSitOpen()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
-    }
+    if(cids.length) h+=feelingPicker("Co je pod tím?","Pod strachem bývá hlubší pocit. Vyberte jeden nebo víc, které sedí — a podívejte se na ně jinak.",cids,rf.sitSel,"rfSitToggle","rfSitOpen");
+    return h;
+  }
+  // Výběr jádrových pocitů pod strachem / bolístkou → triplet. Klik na jméno = jeden pocit,
+  // zaškrtnuté + tlačítko = víc najednou (merged).
+  function feelingPicker(title,text,cids,sel,toggleFn,openFn){
+    var h='<div class="mc-under"><h2>'+esc(title)+'</h2><p>'+esc(text)+'</p></div><ul class="mc-list">';
+    cids.forEach(function(c){
+      var on=!!sel[c];
+      h+='<li class="mc-feeling mc-in '+(on?"checked":"")+'"><span class="mc-check '+(on?"on":"")+'" onclick="MC.'+toggleFn+'(\''+c+'\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="mc-feeling-name" onclick="MC.'+openFn+'(\''+c+'\')">'+esc(clusterName[c]||"")+'</span><span class="mc-feeling-go" onclick="MC.'+openFn+'(\''+c+'\')">›</span></li>';
+    });
+    h+='</ul>';
+    var n=Object.keys(sel).length;
+    if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.'+openFn+'()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+(n<5?" pocity)":" pocitů)"))+'</button></div>';
     return h;
   }
 
@@ -1584,12 +1587,14 @@
     var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; }));
     if(cutOn()) all=all.slice(0,PAIN_CUT);
     var list=unseenOnly("pains",all);
+    // Jádrové pocity pod bolístkou (od 18. 11. 2026) — jen kde je vazba jasná (cluster_ids v datech), měkčí titulek než u strachů.
+    var under=(p.cluster_ids&&p.cluster_ids.length)?feelingPicker("Co může být pod tím?","Za bolístkou může být hlubší pocit. Pokud některý sedí, vyberte ho a podívejte se na něj jinak.",p.cluster_ids,rf.painSel||{},"rfPainToggle","rfPainOpen"):"";
     h+=listTools("pains",all.length,list.length);
-    if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,swipeItems("pains","pain:"+p.id,all),null);
-    if(!list.length) return h+allSeen();
+    if(viewMode()==="swipe") return h+swipeView("pains","pain:"+p.id,swipeItems("pains","pain:"+p.id,all),null)+under;
+    if(!list.length) return h+allSeen()+under;
     h+='<ul class="mc-cards">';
     list.forEach(function(x){ h+='<li class="mc-card mc-in">'+admText("pains",x.id,x.text,"mc-card-text")+adminBar("pains",x.id)+heartBtn("pains",x.id,isFav("pains",x.id))+'</li>'; });
-    return h+'</ul>';
+    return h+'</ul>'+under;
   }
 
   function viewRfFeelings(){
@@ -1613,7 +1618,7 @@
     h+='</ul>';
     if(!rf.search.trim()&&!rf.showSecondary&&secondaryFeelings().length>0) h+='<button class="mc-more" onclick="MC.rfSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
     var n=Object.keys(rf.selected).length;
-    if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfOpenSelected()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+" pocitů)")+'</button></div>';
+    if(n>0) h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfOpenSelected()">'+(n===1?"Zobrazit přerámování":"Zobrazit přerámování ("+n+(n<5?" pocity)":" pocitů)"))+'</button></div>';
     return h;
   }
   function viewRfDetail(){
@@ -2254,7 +2259,18 @@
     },
     rfPainSearch:function(v){ state.rf.painSearch=v; state.rf.painLimit=30; render(); refocus(v); },
     rfPainMore:function(){ state.rf.painLimit+=30; render(); },
-    rfPain:function(id){ state.rf.pain=id; state.rf.view="pain"; scrollTop(); render(); },
+    rfPain:function(id){ state.rf.pain=id; state.rf.painSel={}; state.rf.view="pain"; scrollTop(); render(); },
+    rfPainToggle:function(cid){ var rf=state.rf, sel=rf.painSel||(rf.painSel={}); if(sel[cid]) delete sel[cid]; else sel[cid]=1; render(); },
+    rfPainOpen:function(cid){
+      var rf=state.rf, p=itemIndex.pains[rf.pain]; if(!p||!p.cluster_ids) return;
+      var order=p.cluster_ids, sel=rf.painSel||{};
+      var cids=cid?[cid]:order.filter(function(c){ return sel[c]; });
+      if(!cids.length) return;
+      rf.detailMode=cids.length===1?"single":"merged";
+      rf.detailClusters=cids.map(function(c){ return {cluster_id:c,count:1,rank:order.indexOf(c)}; });
+      rf.detailTitle=p.text; rf.origin="pain";
+      enterRfDetail();
+    },
     rfType:function(t){ state.rf.activeType=t; state.rf.pageLimit=50; scrollTop(); render(); },
     rfMore:function(){ state.rf.pageLimit+=50; render(); },
     // obsahové sekce

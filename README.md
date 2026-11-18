@@ -427,7 +427,7 @@ Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build
 | reframings / _questions / _actions | — | `added_at` | `cluster_id` |
 | fears | — | `added_at` | `cluster_ids` (5) |
 | situations | — | `added_at` | přes `fear_ids` |
-| pains | — | `added_at` | — (vědomě bez vazby) |
+| pains | — | `added_at` | `cluster_ids` 1–2, volitelně (od 18. 11. 2026, jen jasné vazby) |
 | inspirations | — | `added_at` | — |
 | questions | — | `added_at` | — |
 
@@ -545,7 +545,7 @@ Sekce má po vstupu **tři karty** (rozcestník) — tři způsoby, jak člověk
 |---|---|---|---|
 | **Jádrové pocity** | *„Vím, jak se občas cítím“* | `feelings` → `clusters` | triplet (single / merged mód, viz níže) |
 | **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → (`fears`) → `clusters` | přerámování strachu → volba pocitů → triplet |
-| **Bolístky** | *„Něco mě štve nebo trápí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
+| **Bolístky** | *„Něco mě štve nebo trápí“* | `pains` | hlášky — vlastní přerámování; u 111 bolístek pod nimi „Co může být pod tím?“ → jádrové pocity → triplet |
 
 **Brána Strachy** (přestavěno 21. 10. 2026) — search nahoře (názvy i `aliases`; „maturita“ najde zkoušku), pod ním **seznam 10 kategorií s počtem** (`group`) → klik → konkrétní strachy skupiny. Kanon se nikde nezobrazuje.
 

@@ -8,6 +8,10 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0095",
+      "cl_0094"
+    ],
     "hlasky": [
       {
         "id": "hl_0007",
@@ -964,6 +968,10 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0049",
+      "cl_0037"
+    ],
     "hlasky": [
       {
         "id": "hl_0170",
@@ -1238,6 +1246,10 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_0218",
@@ -1649,6 +1661,9 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0033"
+    ],
     "hlasky": [
       {
         "id": "hl_0291",
@@ -1781,6 +1796,10 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0030",
+      "cl_0005"
+    ],
     "hlasky": [
       {
         "id": "hl_0316",
@@ -1918,6 +1937,10 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0025",
+      "cl_0026"
+    ],
     "hlasky": [
       {
         "id": "hl_0339",
@@ -2055,6 +2078,10 @@
     "tier": "free",
     "sort_order": 16,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026",
+      "cl_0025"
+    ],
     "hlasky": [
       {
         "id": "hl_0363",
@@ -2192,6 +2219,9 @@
     "tier": "free",
     "sort_order": 17,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0049"
+    ],
     "hlasky": [
       {
         "id": "hl_0387",
@@ -2324,6 +2354,9 @@
     "tier": "free",
     "sort_order": 18,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026"
+    ],
     "hlasky": [
       {
         "id": "hl_0411",
@@ -2461,6 +2494,9 @@
     "tier": "free",
     "sort_order": 19,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026"
+    ],
     "hlasky": [
       {
         "id": "hl_0437",
@@ -2725,6 +2761,9 @@
     "tier": "free",
     "sort_order": 21,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_0481",
@@ -2862,6 +2901,9 @@
     "tier": "free",
     "sort_order": 22,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0052"
+    ],
     "hlasky": [
       {
         "id": "hl_0505",
@@ -2999,6 +3041,9 @@
     "tier": "free",
     "sort_order": 23,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0068"
+    ],
     "hlasky": [
       {
         "id": "hl_0529",
@@ -3415,6 +3460,10 @@
     "tier": "free",
     "sort_order": 26,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0021",
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_0602",
@@ -3552,6 +3601,10 @@
     "tier": "free",
     "sort_order": 27,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0021"
+    ],
     "hlasky": [
       {
         "id": "hl_0629",
@@ -3826,6 +3879,9 @@
     "tier": "free",
     "sort_order": 29,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_0674",
@@ -3963,6 +4019,10 @@
     "tier": "free",
     "sort_order": 30,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0005",
+      "cl_0030"
+    ],
     "hlasky": [
       {
         "id": "hl_0698",
@@ -4100,6 +4160,10 @@
     "tier": "free",
     "sort_order": 31,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0108",
+      "cl_0102"
+    ],
     "hlasky": [
       {
         "id": "hl_0722",
@@ -4237,6 +4301,10 @@
     "tier": "free",
     "sort_order": 32,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0049",
+      "cl_0103"
+    ],
     "hlasky": [
       {
         "id": "hl_0746",
@@ -4374,6 +4442,10 @@
     "tier": "free",
     "sort_order": 33,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0051",
+      "cl_0049"
+    ],
     "hlasky": [
       {
         "id": "hl_0770",
@@ -4516,6 +4588,9 @@
     "tier": "free",
     "sort_order": 34,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0115"
+    ],
     "hlasky": [
       {
         "id": "hl_0796",
@@ -4659,6 +4734,9 @@
     "tier": "free",
     "sort_order": 35,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0065"
+    ],
     "hlasky": [
       {
         "id": "hl_0819",
@@ -5076,6 +5154,9 @@
     "tier": "free",
     "sort_order": 38,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_0891",
@@ -5746,6 +5827,9 @@
     "tier": "free",
     "sort_order": 43,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0051"
+    ],
     "hlasky": [
       {
         "id": "hl_1012",
@@ -5878,6 +5962,10 @@
     "tier": "free",
     "sort_order": 44,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0094",
+      "cl_0103"
+    ],
     "hlasky": [
       {
         "id": "hl_1036",
@@ -6015,6 +6103,10 @@
     "tier": "free",
     "sort_order": 45,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0033",
+      "cl_0112"
+    ],
     "hlasky": [
       {
         "id": "hl_1059",
@@ -6152,6 +6244,9 @@
     "tier": "free",
     "sort_order": 46,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0115"
+    ],
     "hlasky": [
       {
         "id": "hl_1083",
@@ -6284,6 +6379,10 @@
     "tier": "free",
     "sort_order": 47,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0046",
+      "cl_0051"
+    ],
     "hlasky": [
       {
         "id": "hl_1107",
@@ -6421,6 +6520,9 @@
     "tier": "free",
     "sort_order": 48,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0062"
+    ],
     "hlasky": [
       {
         "id": "hl_1131",
@@ -6563,6 +6665,9 @@
     "tier": "free",
     "sort_order": 49,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0092"
+    ],
     "hlasky": [
       {
         "id": "hl_1156",
@@ -6700,6 +6805,9 @@
     "tier": "free",
     "sort_order": 50,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0030"
+    ],
     "hlasky": [
       {
         "id": "hl_1180",
@@ -6837,6 +6945,9 @@
     "tier": "free",
     "sort_order": 51,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0046"
+    ],
     "hlasky": [
       {
         "id": "hl_1205",
@@ -7106,6 +7217,9 @@
     "tier": "free",
     "sort_order": 53,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0095"
+    ],
     "hlasky": [
       {
         "id": "hl_1251",
@@ -7503,6 +7617,9 @@
     "tier": "free",
     "sort_order": 56,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0024"
+    ],
     "hlasky": [
       {
         "id": "hl_1323",
@@ -8036,6 +8153,9 @@
     "tier": "free",
     "sort_order": 60,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026"
+    ],
     "hlasky": [
       {
         "id": "hl_1419",
@@ -8168,6 +8288,10 @@
     "tier": "free",
     "sort_order": 61,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026",
+      "cl_0024"
+    ],
     "hlasky": [
       {
         "id": "hl_1443",
@@ -8295,6 +8419,9 @@
     "tier": "free",
     "sort_order": 62,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0026"
+    ],
     "hlasky": [
       {
         "id": "hl_1469",
@@ -8823,6 +8950,9 @@
     "tier": "free",
     "sort_order": 66,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0040"
+    ],
     "hlasky": [
       {
         "id": "hl_1565",
@@ -9356,6 +9486,10 @@
     "tier": "free",
     "sort_order": 70,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0072",
+      "cl_0046"
+    ],
     "hlasky": [
       {
         "id": "hl_1661",
@@ -9625,6 +9759,10 @@
     "tier": "free",
     "sort_order": 72,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0077",
+      "cl_0024"
+    ],
     "hlasky": [
       {
         "id": "hl_1709",
@@ -9742,6 +9880,10 @@
     "tier": "free",
     "sort_order": 73,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_1733",
@@ -9879,6 +10021,10 @@
     "tier": "free",
     "sort_order": 74,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0113",
+      "cl_0079"
+    ],
     "hlasky": [
       {
         "id": "hl_1757",
@@ -10016,6 +10162,10 @@
     "tier": "free",
     "sort_order": 75,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0108"
+    ],
     "hlasky": [
       {
         "id": "hl_1781",
@@ -10143,6 +10293,9 @@
     "tier": "free",
     "sort_order": 76,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0064"
+    ],
     "hlasky": [
       {
         "id": "hl_1806",
@@ -10285,6 +10438,10 @@
     "tier": "free",
     "sort_order": 77,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0115"
+    ],
     "hlasky": [
       {
         "id": "hl_1830",
@@ -10422,6 +10579,9 @@
     "tier": "free",
     "sort_order": 78,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0037"
+    ],
     "hlasky": [
       {
         "id": "hl_1854",
@@ -10549,6 +10709,10 @@
     "tier": "free",
     "sort_order": 79,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0073",
+      "cl_0071"
+    ],
     "hlasky": [
       {
         "id": "hl_1878",
@@ -10686,6 +10850,9 @@
     "tier": "free",
     "sort_order": 80,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0028"
+    ],
     "hlasky": [
       {
         "id": "hl_1902",
@@ -10813,6 +10980,9 @@
     "tier": "free",
     "sort_order": 81,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0029"
+    ],
     "hlasky": [
       {
         "id": "hl_1926",
@@ -10950,6 +11120,9 @@
     "tier": "free",
     "sort_order": 82,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_1950",
@@ -11087,6 +11260,10 @@
     "tier": "free",
     "sort_order": 83,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009",
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_1974",
@@ -11224,6 +11401,9 @@
     "tier": "free",
     "sort_order": 84,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_1998",
@@ -11615,6 +11795,9 @@
     "tier": "free",
     "sort_order": 87,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0103"
+    ],
     "hlasky": [
       {
         "id": "hl_2070",
@@ -11752,6 +11935,9 @@
     "tier": "free",
     "sort_order": 88,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008"
+    ],
     "hlasky": [
       {
         "id": "hl_2094",
@@ -11874,6 +12060,9 @@
     "tier": "free",
     "sort_order": 89,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0115"
+    ],
     "hlasky": [
       {
         "id": "hl_2118",
@@ -12006,6 +12195,10 @@
     "tier": "free",
     "sort_order": 90,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0114",
+      "cl_0115"
+    ],
     "hlasky": [
       {
         "id": "hl_2142",
@@ -12143,6 +12336,9 @@
     "tier": "free",
     "sort_order": 91,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0116"
+    ],
     "hlasky": [
       {
         "id": "hl_2166",
@@ -12260,6 +12456,10 @@
     "tier": "free",
     "sort_order": 92,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0115",
+      "cl_0008"
+    ],
     "hlasky": [
       {
         "id": "hl_2190",
@@ -12397,6 +12597,10 @@
     "tier": "free",
     "sort_order": 93,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0080",
+      "cl_0103"
+    ],
     "hlasky": [
       {
         "id": "hl_2215",
@@ -12534,6 +12738,10 @@
     "tier": "free",
     "sort_order": 94,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0116",
+      "cl_0114"
+    ],
     "hlasky": [
       {
         "id": "hl_2238",
@@ -12798,6 +13006,10 @@
     "tier": "free",
     "sort_order": 96,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0028",
+      "cl_0035"
+    ],
     "hlasky": [
       {
         "id": "hl_2286",
@@ -12935,6 +13147,9 @@
     "tier": "free",
     "sort_order": 97,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0102"
+    ],
     "hlasky": [
       {
         "id": "hl_2310",
@@ -13057,6 +13272,9 @@
     "tier": "free",
     "sort_order": 98,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0024"
+    ],
     "hlasky": [
       {
         "id": "hl_2334",
@@ -13194,6 +13412,10 @@
     "tier": "free",
     "sort_order": 99,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0102"
+    ],
     "hlasky": [
       {
         "id": "hl_2362",
@@ -13321,6 +13543,9 @@
     "tier": "free",
     "sort_order": 100,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_2382",
@@ -13453,6 +13678,9 @@
     "tier": "free",
     "sort_order": 101,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_2406",
@@ -13737,6 +13965,10 @@
     "tier": "free",
     "sort_order": 103,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0075",
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2456",
@@ -13864,6 +14096,9 @@
     "tier": "free",
     "sort_order": 104,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2481",
@@ -13981,6 +14216,10 @@
     "tier": "free",
     "sort_order": 105,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0002"
+    ],
     "hlasky": [
       {
         "id": "hl_2504",
@@ -14210,6 +14449,10 @@
     "tier": "free",
     "sort_order": 107,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0021",
+      "cl_0008"
+    ],
     "hlasky": [
       {
         "id": "hl_2552",
@@ -14337,6 +14580,9 @@
     "tier": "free",
     "sort_order": 108,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_2576",
@@ -14439,6 +14685,10 @@
     "tier": "free",
     "sort_order": 109,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2603",
@@ -14566,6 +14816,9 @@
     "tier": "free",
     "sort_order": 110,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2625",
@@ -14673,6 +14926,9 @@
     "tier": "free",
     "sort_order": 111,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_2649",
@@ -14805,6 +15061,10 @@
     "tier": "free",
     "sort_order": 112,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078",
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_2673",
@@ -14937,6 +15197,10 @@
     "tier": "free",
     "sort_order": 113,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0075",
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_2700",
@@ -15064,6 +15328,10 @@
     "tier": "free",
     "sort_order": 114,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078",
+      "cl_0073"
+    ],
     "hlasky": [
       {
         "id": "hl_2721",
@@ -15196,6 +15464,10 @@
     "tier": "free",
     "sort_order": 115,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0048",
+      "cl_0049"
+    ],
     "hlasky": [
       {
         "id": "hl_2744",
@@ -15328,6 +15600,10 @@
     "tier": "free",
     "sort_order": 116,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0103",
+      "cl_0048"
+    ],
     "hlasky": [
       {
         "id": "hl_2768",
@@ -15602,6 +15878,10 @@
     "tier": "free",
     "sort_order": 118,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0002"
+    ],
     "hlasky": [
       {
         "id": "hl_2816",
@@ -15739,6 +16019,9 @@
     "tier": "free",
     "sort_order": 119,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008"
+    ],
     "hlasky": [
       {
         "id": "hl_2841",
@@ -15866,6 +16149,10 @@
     "tier": "free",
     "sort_order": 120,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0019",
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_2864",
@@ -15988,6 +16275,9 @@
     "tier": "free",
     "sort_order": 121,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_2889",
@@ -16110,6 +16400,10 @@
     "tier": "free",
     "sort_order": 122,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078",
+      "cl_0109"
+    ],
     "hlasky": [
       {
         "id": "hl_2912",
@@ -16232,6 +16526,10 @@
     "tier": "free",
     "sort_order": 123,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0109",
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2936",
@@ -16364,6 +16662,9 @@
     "tier": "free",
     "sort_order": 124,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078"
+    ],
     "hlasky": [
       {
         "id": "hl_2961",
@@ -16496,6 +16797,9 @@
     "tier": "free",
     "sort_order": 125,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0075"
+    ],
     "hlasky": [
       {
         "id": "hl_4187",
@@ -16568,6 +16872,10 @@
     "tier": "free",
     "sort_order": 126,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001",
+      "cl_0003"
+    ],
     "hlasky": [
       {
         "id": "hl_3730",
@@ -16680,6 +16988,10 @@
     "tier": "free",
     "sort_order": 127,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0112"
+    ],
     "hlasky": [
       {
         "id": "hl_3872",
@@ -16817,6 +17129,9 @@
     "tier": "free",
     "sort_order": 128,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0041"
+    ],
     "hlasky": [
       {
         "id": "hl_2984",
@@ -16954,6 +17269,10 @@
     "tier": "free",
     "sort_order": 129,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0002"
+    ],
     "hlasky": [
       {
         "id": "hl_3705",
@@ -17071,6 +17390,9 @@
     "tier": "free",
     "sort_order": 130,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_3057",
@@ -17198,6 +17520,9 @@
     "tier": "free",
     "sort_order": 131,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0019"
+    ],
     "hlasky": [
       {
         "id": "hl_3035",
@@ -17325,6 +17650,9 @@
     "tier": "free",
     "sort_order": 132,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_3920",
@@ -17452,6 +17780,9 @@
     "tier": "free",
     "sort_order": 133,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_3968",
@@ -17584,6 +17915,9 @@
     "tier": "free",
     "sort_order": 134,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_4017",
@@ -17716,6 +18050,9 @@
     "tier": "free",
     "sort_order": 135,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0072"
+    ],
     "hlasky": [
       {
         "id": "hl_4112",
@@ -18117,6 +18454,9 @@
     "tier": "free",
     "sort_order": 138,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0072"
+    ],
     "hlasky": [
       {
         "id": "hl_4137",
@@ -18254,6 +18594,9 @@
     "tier": "free",
     "sort_order": 139,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0005"
+    ],
     "hlasky": [
       {
         "id": "hl_3128",
@@ -18665,6 +19008,9 @@
     "tier": "free",
     "sort_order": 142,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0019"
+    ],
     "hlasky": [
       {
         "id": "hl_3104",
@@ -19756,6 +20102,9 @@
     "tier": "free",
     "sort_order": 150,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0095"
+    ],
     "hlasky": [
       {
         "id": "hl_3320",
@@ -21512,6 +21861,10 @@
     "tier": "free",
     "sort_order": 163,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0002",
+      "cl_0021"
+    ],
     "hlasky": [
       {
         "id": "hl_3632",
@@ -21649,6 +22002,9 @@
     "tier": "free",
     "sort_order": 164,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008"
+    ],
     "hlasky": [
       {
         "id": "hl_3656",
@@ -21786,6 +22142,10 @@
     "tier": "free",
     "sort_order": 165,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0078",
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_3680",
@@ -21923,6 +22283,9 @@
     "tier": "free",
     "sort_order": 166,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0019"
+    ],
     "hlasky": [
       {
         "id": "hl_3776",
@@ -22060,6 +22423,9 @@
     "tier": "free",
     "sort_order": 167,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0113"
+    ],
     "hlasky": [
       {
         "id": "hl_3800",
@@ -22334,6 +22700,10 @@
     "tier": "free",
     "sort_order": 169,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0008",
+      "cl_0001"
+    ],
     "hlasky": [
       {
         "id": "hl_3848",
@@ -22471,6 +22841,9 @@
     "tier": "free",
     "sort_order": 170,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0052"
+    ],
     "hlasky": [
       {
         "id": "hl_3896",
@@ -22608,6 +22981,9 @@
     "tier": "free",
     "sort_order": 171,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0009"
+    ],
     "hlasky": [
       {
         "id": "hl_3944",
@@ -22745,6 +23121,9 @@
     "tier": "free",
     "sort_order": 172,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0020"
+    ],
     "hlasky": [
       {
         "id": "hl_3992",
@@ -23019,6 +23398,10 @@
     "tier": "free",
     "sort_order": 174,
     "added_at": "2026-09-11",
+    "cluster_ids": [
+      "cl_0030",
+      "cl_0051"
+    ],
     "hlasky": [
       {
         "id": "hl_4088",
