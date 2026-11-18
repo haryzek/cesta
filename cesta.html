@@ -1393,7 +1393,8 @@
   function viewRfFearGroup(){
     var rf=state.rf;
     var h='<button class="mc-back" onclick="MC.rfGate(\'fears\')">← Strachy</button>';
-    h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.fearGroup)+'</div></div>';
+    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">'+esc(rf.fearGroup)+'</div></div>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">Čeho se bojím?</div></div>';
     var list=flat.situations.filter(function(x){ return x.group===rf.fearGroup; });
     return h+nameList(list,function(it){ return "MC.rfSituation('"+it.id+"')"; });
   }
