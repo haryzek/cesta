@@ -452,8 +452,10 @@
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
   @media (hover:hover){ .mc-sec-link:hover{ color:var(--text); } }
   .mc-sec-link .l{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); }
-  .mc-extra{ padding-bottom:0; }
-  .mc-extra + .mc-detail-body{ padding-top:0; }
+  /* Nadpis oddílu nad Info / Teorie / Praxe cvičení — o stupeň nad ## v textu */
+  .mc-tab-sec{ padding:22px var(--gutter) 0; font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.2;
+    letter-spacing:-0.01em; font-variation-settings:'opsz' 36; color:var(--text); text-wrap:balance; }
+  .mc-tab-sec + .mc-detail-body{ padding-top:0; }
 
   /* Náročnost — pilulka (nízká / střední / vysoká) */
   .mc-diff{ display:inline-block; padding:3px 10px; border-radius:999px; font-family:var(--sans); font-size:12px; font-weight:600; line-height:1.4; }
@@ -842,7 +844,7 @@
     questions:{ dataKey:"questions", label:"Podnětné otázky", text:true },
     // Dlouhý obsah se edituje v detailu po polích (surový markdown).
     articles:{ dataKey:"articles", label:"Články", text:false, title:"title", fields:[["title","Název"],["perex","Perex"],["body","Text"]] },
-    exercises:{ dataKey:"exercises", label:"Cvičení", text:false, title:"name", fields:[["name","Název"],["perex","Perex"],["body","Postup"],["warning","Varování"],["diary_exercise","Deník cvičení"],["info_extra","Info navíc"],["theory_extra","Teorie navíc"]] },
+    exercises:{ dataKey:"exercises", label:"Cvičení", text:false, title:"name", fields:[["name","Název"],["perex","Perex"],["body","Postup"],["warning","Varování"],["diary_exercise","Deník cvičení"]] },
     crisis:{ dataKey:"crisis", label:"První pomoc", text:false, title:"name", fields:[["name","Název"],["body","Text"]] },
     body:{ dataKey:"body", label:"Tělesné příznaky", text:false, title:"name", fields:[["name","Název"],["body","Text"]] },
     sections:{ dataKey:"sections", label:"Oddíly", text:false, title:"title", fields:[["title","Název"],["perex","Perex"],["info","Info"],["theory","Teorie"],["practice","Praxe"],["diary_exercise","Deník oddílu"],["diary_practice","Deník praxe"]] }
@@ -1708,15 +1710,17 @@
     var title=item[cfg.titleField]||item.name||"";
     var store=cfg.store, on=isFav(store,d.id);
     // Cvičení: taby Postup / Info / Teorie / Praxe. Info/Teorie/Praxe se u
-    // cvičení dědí z oddílu (v datech jsou vždy null), info_extra/theory_extra
-    // se předřadí nad oddílový text. Tab se kreslí jen když má obsah.
+    // cvičení dědí z oddílu (v datech jsou vždy null), nad text jde název
+    // oddílu, ať je jasné, že platí pro celou kapitolu. Doplňky ke cvičení
+    // (dřív info_extra/theory_extra) žijí od 18. 11. 2026 v body.
+    // Tab se kreslí jen když má obsah.
     var isEx=!!cfg.info, sec=isEx&&item.section_id?itemIndex.sections[item.section_id]:null;
     var tabs=[];
     if(isEx){
       tabs.push({key:"body",label:"Postup"});
       var src={ info:item.info||(sec&&sec.info), theory:item.theory||(sec&&sec.theory), practice:item.practice||(sec&&sec.practice) };
-      if(src.info) tabs.push({key:"info",label:"Info",src:src.info,extra:item.info_extra});
-      if(src.theory) tabs.push({key:"theory",label:"Teorie",src:src.theory,extra:item.theory_extra});
+      if(src.info) tabs.push({key:"info",label:"Info",src:src.info});
+      if(src.theory) tabs.push({key:"theory",label:"Teorie",src:src.theory});
       if(src.practice) tabs.push({key:"practice",label:"Praxe",src:src.practice,practice:true});
     }
     var hasTabs=tabs.length>1;
@@ -1725,17 +1729,18 @@
     var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
     // Pořadí podle mockupu: tag pilulky nad H1, pak titulek, pak perex.
     // Čas u cvičení nese box náročnosti pod taby, takže pilulku nedubluje.
+    // Štítky cvičení jsou jen na kartách v seznamu, v detailu se neopakují.
     var pills=[];
     if(cfg.timeField&&item[cfg.timeField]&&!isEx) pills.push(timeTag(item[cfg.timeField]));
-    if(item.tags&&item.tags.length) item.tags.forEach(function(t){ pills.push('<span class="mc-tag">'+esc(t)+'</span>'); });
+    if(item.tags&&item.tags.length&&!isEx) item.tags.forEach(function(t){ pills.push('<span class="mc-tag">'+esc(t)+'</span>'); });
     if(pills.length) h+='<div class="mc-detail-meta"><div class="mc-tag-row">'+pills.join("")+'</div></div>';
 
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
+    // Most z cvičení do jeho oddílu v Moje cesta — hned pod názvem, nad perexem.
+    if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
     if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
     if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+admPanel(admDetailTargets(store,item,sec,tab),false)+'</div>';
-    // Most z cvičení do jeho oddílu v Moje cesta.
-    if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
 
     if(hasTabs){
       h+='<div class="mc-tabbar">';
@@ -1744,7 +1749,7 @@
     }
     var cur=tabs.filter(function(t){return t.key===tab;})[0];
     if(cur&&cur.key!=="body"){
-      if(cur.extra) h+='<div class="mc-detail-body mc-md mc-extra">'+md(cur.extra)+'</div>';
+      if(sec) h+='<div class="mc-tab-sec">'+esc(sec.title)+'</div>';
       if(cur.practice) h+=renderPractice(cur.src,sec&&sec.diary_practice,title);
       else h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(cur.src,title))+'</div>';
     } else {
@@ -1918,7 +1923,7 @@
     return { store:store, id:item.id, field:field, label:(shared?"Oddíl · ":"")+(f?f[1]:field), shared:shared||null };
   }
   // Co se dá upravit na detailu: u cvičení podle tabu, oddílová pole s varováním.
-  var ADM_EX_TABS={ body:{ ex:["name","perex","body","warning","diary_exercise"], sec:["diary_exercise"] }, info:{ ex:["info_extra"], sec:["info"] }, theory:{ ex:["theory_extra"], sec:["theory"] }, practice:{ ex:[], sec:["practice","diary_practice"] } };
+  var ADM_EX_TABS={ body:{ ex:["name","perex","body","warning","diary_exercise"], sec:["diary_exercise"] }, info:{ ex:[], sec:["info"] }, theory:{ ex:[], sec:["theory"] }, practice:{ ex:[], sec:["practice","diary_practice"] } };
   function admDetailTargets(store,item,sec,tab){
     var cfg=ADMIN_STORES[store]; if(!cfg||!cfg.fields) return [];
     if(store!=="exercises") return cfg.fields.map(function(f){ return admTarget(store,item,f[0]); });
