@@ -497,8 +497,8 @@ Napříč sekcemi se opakují tři tvary:
 
 ### Filtrování obsahových sekcí (Cvičení, Otázky, Inspirace, Články)
 
-- **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam od nejnovějších; v submenu je zvýrazněné „Nejnovější". Žádná tagová brána, žádné tlačítko „Zobrazit".
-- **Submenu:** Nejnovější / (Redakce — jen Cvičení a Články) / Pro vás (jen když existuje profil) / tlačítko Filtr hned vedle; **u vět (Inspirace, Otázky) vpravo u okraje dvě ikonky**: oko (jen nové) a seznam/karty — viz „Proud karet".
+- **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam; u Cvičení a Článků je od 18. 11. 2026 výchozí „Redakce“, u vět „Nejnovější“. Žádná tagová brána, žádné tlačítko „Zobrazit".
+- **Submenu:** (Redakce — jen Cvičení a Články, první a výchozí) / Nejnovější / Pro vás (jen když existuje profil) / tlačítko Filtr hned vedle; **u vět (Inspirace, Otázky) vpravo u okraje dvě ikonky**: oko (jen nové) a seznam/karty — viz „Proud karet".
 - **Filtr** je jedno tlačítko → rozbalí panel: nahoře keyword pole, pod ním pilulky — nejdřív `duration` (jen Cvičení), pak tagy. Bez nadpisů „Štítky"/„Délka", délku odliší accentový tón a mono písmo. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka. Enter v poli zavře klávesnici (blur) — filtruje se průběžně, není co odesílat.
 - **Tagy i délky se sčítají (OR), keyword se s nimi násobí (AND).** Víc zaškrtnutých tagů = širší výběr, ne užší; položka projde, když sedí na kterýkoli z nich. Původně byly tagy AND, ale u pár tagů na položku to vracelo skoro vždycky prázdno. Keyword zůstává AND — ten zužuje záměrně. Délka je multiple-choice stejně jako tagy.
 - **OR říká, co projde; priorita tagů v datech říká pořadí (12. 9. 2026).** Každý zaškrtnutý tag přičte položce váhu podle své pozice v jejím `tags`: `TAG_VAHY = [6, 5, 4, 3, 2, 1]` (první tag 6, šestý a další 1). Řadí se skóre ↓ → počet shod ↓ → `added_at` ↓ → `id`. Zaškrtnu `strach` + `tělo` → nahoře cvičení, kde jsou to témata, dole ta, co se strachu dotýkají na tie-breaku. Bez zaškrtnutého tagu se nic nemění (Nejnovější je Nejnovější); v Redakci s tagem přebije skóre náhodné pořadí. `TAG_VAHY` je jediná laditelná konstanta filtru — lineární je bezpečný start, strmější (`[8,5,3,2,1,1]`) by nechal dominovat první tag.
@@ -617,10 +617,10 @@ dokud existuje klastr s nevyčerpaným seznamem:
 
 ### Články
 
-Submenu: Nejnovější / Redakce / Filtr (Pro vás až s profilem; řádek doporučených tagů je budoucnost).
+Submenu: Redakce / Nejnovější / Filtr (Pro vás až s profilem; řádek doporučených tagů je budoucnost).
 
-- **Nejnovější** (výchozí): perexy od nejnovějších.
-- **Redakce:** perexy článků s `quality` = 5, při každém zobrazení náhodné pořadí.
+- **Redakce** (výchozí od 18. 11. 2026): perexy článků s `quality` = 5, náhodné pořadí zamíchané jednou za návštěvu (srdíčko ho nepřemíchá). V „jen oblíbené“ se nefiltruje.
+- **Nejnovější:** perexy od nejnovějších.
 - **Pro vás:** jen pokud existuje profil uživatele; doporučené články podle priority (viz doporučování).
 
 Radiobutton „Nepřečtené" filtruje jen nepřečtené články. Přečtené se drží v `localStorage`.

@@ -726,7 +726,7 @@
   var CONTENT = {
     crisis:       { dataKey:"crisis",       store:"crisis",       label:"První pomoc",       render:"doclist", titleField:"name", alpha:false, search:false },
     body:         { dataKey:"body",         store:"body",         label:"Tělesné příznaky",  render:"doclist", titleField:"name", alpha:true,  search:true  },
-    exercises:    { dataKey:"exercises",    store:"exercises",    label:"Cvičení",           render:"cards",   titleField:"name",  timeField:"duration",     redakce:true, info:true },
+    exercises:    { dataKey:"exercises",    store:"exercises",    label:"Cvičení",           render:"cards",   titleField:"name",  timeField:"duration",     redakce:true, redakceOrder:"journey", info:true },
     articles:     { dataKey:"articles",     store:"articles",     label:"Články",            render:"cards",   titleField:"title", timeField:"reading_time", redakce:true, readable:true },
     inspirations: { dataKey:"inspirations", store:"inspirations", label:"Inspirace",         render:"quotes",  redakce:false },
     questions:    { dataKey:"questions",    store:"questions",    label:"Otázky",            render:"quotes",  redakce:false }
@@ -829,7 +829,8 @@
     detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
   };
   function secState(key){
-    if(!state.sec[key]) state.sec[key]={ mode:"new", filterOpen:false, kw:"", tags:[], durs:[], search:"", favOnly:false };
+    // Výchozí režim: Redakce, kde ji sekce má (od 18. 11. 2026), jinak Nejnovější.
+    if(!state.sec[key]) state.sec[key]={ mode:(CONTENT[key]&&CONTENT[key].redakce)?"edit":"new", filterOpen:false, kw:"", tags:[], durs:[], search:"", favOnly:false };
     return state.sec[key];
   }
 
@@ -1251,7 +1252,20 @@
   function contentList(key){
     var cfg=CONTENT[key], s=secState(key), items=alive(cfg.store,(flat[cfg.dataKey]||[]).slice());
     if(s.favOnly) items=items.filter(function(it){ return isFav(cfg.store,it.id); });
-    if(s.mode==="edit" && cfg.redakce){ items=items.filter(function(it){ return it.quality===5; }); shuffle(items); }
+    // V „jen oblíbené“ se Redakce nefiltruje — uložené musí být vidět všechny.
+    if(s.mode==="edit" && cfg.redakce && !s.favOnly){
+      items=items.filter(function(it){ return it.quality===5; });
+      if(cfg.redakceOrder==="journey"){
+        // Cvičení: pořadí cvičebnice — oddíl, pak pořadí v oddílu (stejně jako Moje cesta).
+        var so=function(it){ var sec=itemIndex.sections[it.section_id]; return sec?sec.sort_order:999; };
+        items.sort(function(a,b){ return so(a)-so(b) || a.sort_order-b.sort_order; });
+      } else {
+        // Zamíchat jednou za návštěvu a držet — jinak by se seznam přemíchal při každém render (srdíčko apod.).
+        var ids=items.map(function(it){ return it.id; }).sort().join(",");
+        if(!s.shuf||s.shufKey!==ids){ s.shuf={}; shuffle(items.slice()).forEach(function(it,i){ s.shuf[it.id]=i; }); s.shufKey=ids; }
+        items.sort(function(a,b){ return s.shuf[a.id]-s.shuf[b.id]; });
+      }
+    }
     else { items.sort(function(a,b){ return String(b.added_at||"").localeCompare(String(a.added_at||"")) || b.sort_order-a.sort_order; }); }
     if(s.kw.trim()){
       var q=deburr(s.kw);
@@ -1733,8 +1747,8 @@
     var h=secHead(key,cfg.label,null,USER.favorites[cfg.store].length);
     if(s.favOnly&&!USER.favorites[cfg.store].length) return h+favEmpty();
     h+='<div class="mc-submenu">';
-    h+='<button class="'+(s.mode==="new"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'new\')">Nejnovější</button>';
     if(cfg.redakce) h+='<button class="'+(s.mode==="edit"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'edit\')">Redakce</button>';
+    h+='<button class="'+(s.mode==="new"?"active":"")+'" onclick="MC.secMode(\''+key+'\',\'new\')">Nejnovější</button>';
     var fc=activeFilterCount(key);
     h+='<button class="mc-filter-btn '+(s.filterOpen?"active":"")+'" onclick="MC.secFilter(\''+key+'\')">'+IC.filter+'Filtr'+(fc>0?'<span class="fc">'+fc+'</span>':'')+'</button>';
     var items=contentList(key), all=items;
@@ -1783,7 +1797,8 @@
     if(it.tags&&it.tags.length) h+=tagRow(it.tags,2);
     h+='<div class="mc-card-meta">';
     if(cfg.timeField) h+=minutes(it[cfg.timeField]);
-    if(cfg.redakce&&it.quality===5) h+='<span class="m" style="color:var(--accent)">'+IC.star+'Redakce</span>';
+    // Štítek Redakce jen mimo režim Redakce — tam je jasné, kde jsem.
+    if(cfg.redakce&&it.quality===5&&secState(key).mode!=="edit") h+='<span class="m" style="color:var(--accent)">'+IC.star+'Redakce</span>';
     if(isTop(store,it.id)) h+='<span class="m mc-top">'+IC.star+'Top</span>';
     h+='</div>';
     h+=adminBar(store,it.id)+heartBtn(store,it.id,on,true)+'</li>';
