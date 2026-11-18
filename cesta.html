@@ -1425,7 +1425,7 @@
     } else if(s.reframings&&s.reframings.length){
       var refs=alive("situations",(s.reframings||[]).map(function(r){ return itemIndex.sitref[r.id]; }));
       h+='<ul class="mc-cards">';
-      refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text"+(s.mark==="E"?" lead":""))+adminBar("situations",r.id)+'</li>'; });
+      refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text")+adminBar("situations",r.id)+'</li>'; });
       h+='</ul>';
     }
     if(s.mark==="K") return h;
