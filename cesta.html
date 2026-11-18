@@ -666,6 +666,19 @@
   .mc-about{ padding:14px var(--gutter) 0; font-family:var(--serif); font-size:16.5px; line-height:1.7; color:var(--body); }
   .mc-about p{ margin:0 0 14px; }
   .mc-about strong{ color:var(--text); }
+  .mc-about .mc-tel{ color:var(--accent); white-space:nowrap; }
+  .mc-about .mc-about-h{ margin:26px 0 12px; font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.2;
+    font-variation-settings:'opsz' 36; color:var(--text); }
+  /* Úvodní souhlas: celá obrazovka místo appky, checkboxy až pod textem */
+  .mc-consent{ max-width:560px; margin:0 auto; padding:32px 0 40px; }
+  .mc-consent > .mc-detail-title{ padding:0 var(--gutter); }
+  .mc-consent-checks{ display:flex; flex-direction:column; gap:10px; padding:6px var(--gutter) 18px; }
+  .mc-consent-row{ display:flex; align-items:center; gap:12px; width:100%; padding:12px 14px; text-align:left; cursor:pointer;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    font-family:var(--sans); font-size:15px; line-height:1.4; color:var(--text); }
+  .mc-consent-row[aria-pressed="true"]{ border-color:var(--tone); background:var(--tone-soft); }
+  .mc-consent > .mc-fab{ display:block; width:calc(100% - 2 * var(--gutter)); margin:0 var(--gutter); }
+  .mc-consent > .mc-fab:disabled{ opacity:.35; cursor:not-allowed; }
 
   @keyframes mcIn{ from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
   .mc-in{ animation:mcIn .2s ease forwards; }
@@ -1266,8 +1279,32 @@
   function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
 
   // ===================== RENDER — obal =====================
+  // ---- Úvodní souhlas (18. 11. 2026). Při prvním otevření nepřeskočitelná obrazovka:
+  // appka nenahrazuje odbornou pomoc + 18+. Checkboxy až pod textem (= musí doscrollovat),
+  // tlačítko aktivní až po obou. Uloženo s verzí: změna textu → zvednout CONSENT_VER.
+  var CONSENT_KEY="mc_consent", CONSENT_VER=1;
+  function hasConsent(){
+    if(state.consentOk) return true;
+    try{ var c=JSON.parse(localStorage.getItem(CONSENT_KEY)||"null"); return !!(c&&c.v>=CONSENT_VER); }catch(e){ return false; }
+  }
+  function disclaimerHtml(){
+    return '<p>Moje cesta je průvodce pro zamyšlení a péči o sebe. Nabízí přerámování, cvičení, články a inspiraci, které vám mohou pomoci lépe porozumět sobě a svým pocitům.</p>'+
+      '<p><strong>Aplikace neléčí a nenahrazuje odbornou pomoc.</strong> Není náhradou psychoterapie, lékařského vyšetření, léčby ani odborné literatury. Neslouží k diagnostice ani k řešení vážných psychických nebo zdravotních potíží.</p>'+
+      '<p><strong>Pokud prožíváte vážné psychické potíže, máte zdravotní problém nebo vám jde o život, obraťte se vždy na lékaře, psychologa nebo psychoterapeuta. V akutní krizi volejte <span class="mc-tel">155</span> nebo Linku první psychické pomoci <span class="mc-tel">116 123</span> (nonstop, zdarma).</strong></p>'+
+      '<p><strong>Cvičení a techniky děláte na vlastní zodpovědnost.</strong> Pokud se při nich necítíte dobře, přerušte je.</p>'+
+      '<p><strong>Aplikace je určena dospělým od 18 let.</strong> Mladší mohou kdykoli zavolat na Linku bezpečí <span class="mc-tel">116 111</span>.</p>';
+  }
+  function viewConsent(){
+    var c=state.consentChecks||{}, ok=c.help&&c.age;
+    var row=function(k,label){ return '<button class="mc-consent-row" onclick="MC.consentToggle(\''+k+'\')" aria-pressed="'+(c[k]?"true":"false")+'"><span class="mc-check '+(c[k]?"on":"")+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>'+label+'</span></button>'; };
+    return '<div class="mc-consent"><div class="mc-detail-title">Než začnete</div><div class="mc-about">'+disclaimerHtml()+'</div>'+
+      '<div class="mc-consent-checks">'+row("help","Rozumím, že aplikace nenahrazuje odbornou pomoc.")+row("age","Je mi alespoň 18 let.")+'</div>'+
+      '<button class="mc-fab" '+(ok?"":"disabled")+' onclick="MC.consentAccept()">Vstoupit do aplikace</button></div>';
+  }
+
   function render(){
     var root=document.getElementById("mc-root");
+    if(!hasConsent()){ root.setAttribute("data-tone","accent"); root.setAttribute("data-page","consent"); root.innerHTML=viewConsent(); return; }
     // Tón podle otevřené sekce; na home a v detailu se drží tón té sekce,
     // odkud se přišlo. Home sama je neutrální (accent).
     var cur=sectionByKey(state.page==="favorites"?"favorites":state.section);
@@ -1933,6 +1970,7 @@
       '<p><strong>Moje cesta</strong> je psychoterapeutická appka. Vyberte jádrový pocit — a dostanete přerámování, otázky a úkoly, které vám pomůžou podívat se na to, co prožíváte, jinak.</p>'+
       '<p>Vedle přerámování tu najdete <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
       '<p>Co vás osloví, uložte si srdíčkem do <strong>Oblíbených</strong> — máte to pak po ruce.</p>'+
+      '<div class="mc-about-h">Než začnete</div>'+disclaimerHtml()+
       '<p style="color:var(--soft); font-size:14px; font-family:var(--sans)">Autor obsahu: Robert Řeřicha, psychoterapeut.</p>'+
       '</div>';
   }
@@ -2092,6 +2130,13 @@
   // ===================== HANDLERY =====================
   window.MC = {
     menu:function(open){ state.menuOpen=!!open; render(); },
+    consentToggle:function(k){ var c=state.consentChecks||(state.consentChecks={}); c[k]=!c[k]; render(); },
+    consentAccept:function(){
+      var c=state.consentChecks||{}; if(!(c.help&&c.age)) return;
+      state.consentOk=true;
+      try{ localStorage.setItem(CONSENT_KEY,JSON.stringify({v:CONSENT_VER,date:new Date().toISOString().slice(0,10)})); }catch(e){}
+      scrollTop(); render();
+    },
     home:function(){ state.page="home"; state.section=null; state.detail=null; state.menuOpen=false; scrollTop(); render(); },
     open:function(key){
       state.menuOpen=false; state.detail=null;
