@@ -79,9 +79,7 @@ Excel už jen orientace).
       a kategorie byly potřeba (12. 9. rozhodnuto: zatím bez kategorií).
 - [x] **Obsahová kontrola cvičení a oddílů** — Bobova redakce 13.–18. 11. 2026 (cvičení, Info / Teorie / Praxe oddílů).
 - [x] **Perexy a texty článků** — zůstávají jako kopie z blogu, bez redakce (Bob, 18. 11. 2026).
-- [ ] **Tělesné příznaky — 26 nových prověřit** (napsané podle šablony 26. 8.,
-      Bob je obsahově neviděl). Odborná medicínská kontrola všech 31 hotová
-      16. 10. 2026 (`local/kontrola/telo_odborna_kontrola.md`), Bobovo čtení zbývá.
+- [x] **Tělesné příznaky — všech 31 přečtených Bobem** (odborná kontrola 16. 10. 2026, Bobovo čtení hotové 11/2026).
 - [ ] **Ženské verze vět (rozhodnuto 16. 10. 2026) — až po ořezu tripletu na
       top 20.** Pole `text_f` ve zdroji = ženská verze (jen kde se liší) → build `text_f`
       + lint „D vypadá rodově a F chybí“; v appce volba oslovení žena / muž,
