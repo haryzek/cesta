@@ -18176,19 +18176,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refq_2215",
-    "cluster_id": "cl_0064",
-    "text": "Jak by vypadal dostatečně zodpovědný, ale pořád lidský život — takový, ve kterém se na tebe dá spolehnout, a přitom smíš občas něco posrat?",
-    "tier": "free",
-    "sort_order": 15,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refq_2216",
     "cluster_id": "cl_0064",
     "text": "Které závazky ve svém životě plníš především ze strachu, studu nebo viny — a které proto, že ti na nich skutečně záleží?",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -18196,7 +18188,7 @@
     "cluster_id": "cl_0064",
     "text": "Není někdy problém ani tak v tom, že děláš málo, jako spíš v tom, že od sebe očekáváš příliš mnoho?",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -18204,7 +18196,7 @@
     "cluster_id": "cl_0064",
     "text": "Když si představíš, že přiznáš „Ano, tentokrát jsem byl nezodpovědný“ a dál se za to nebudeš trestat, co je na té představě nejtěžší?",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -18212,7 +18204,7 @@
     "cluster_id": "cl_0064",
     "text": "Jsou kolem tebe lidé, kteří tě považují za zodpovědného hlavně tehdy, když dáváš jejich potřebám přednost před vlastními? Co by se stalo, kdybys jejich měřítko přestal automaticky přijímat?",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -18220,7 +18212,7 @@
     "cluster_id": "cl_0064",
     "text": "Co by se změnilo, kdybys nemusel nikomu dokazovat, že jsi zodpovědný člověk? Které závazky by sis ponechal a které už bys nepřijímal?",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -18228,7 +18220,7 @@
     "cluster_id": "cl_0064",
     "text": "Může být některé tvoje zanedbávání projevem odporu vůči životu přeplněnému povinnostmi, které sis možná ani svobodně nezvolil?",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -18236,7 +18228,7 @@
     "cluster_id": "cl_0064",
     "text": "Může být některé tvoje zanedbávání způsobem, jak si dopřát svobodu, kterou si nedokážeš dovolit otevřeně?",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -18244,7 +18236,7 @@
     "cluster_id": "cl_0064",
     "text": "Kdybys měl příští měsíc zlepšit svou spolehlivost jedinou změnou, která by neznamenala větší tlak na sebe, co bys změnil ve svém prostředí, závazcích nebo způsobu fungování?",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -18252,7 +18244,7 @@
     "cluster_id": "cl_0064",
     "text": "Co se v dětství nebo dospívání dělo, když jsi něco zapomněl, nedokončil, pokazil nebo někoho zklamal?",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -18260,7 +18252,7 @@
     "cluster_id": "cl_0064",
     "text": "Kdy ses začal učit, že nesplněná povinnost nevypovídá jen o tom, co jsi udělal, ale také o tom, jaký jsi člověk?",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -18268,7 +18260,7 @@
     "cluster_id": "cl_0064",
     "text": "Kdo ve tvém životě určoval, za co máš nést odpovědnost? Kolik z tehdejších pravidel stále dodržuješ, aniž bys je jako dospělý znovu posoudil?",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -18276,7 +18268,7 @@
     "cluster_id": "cl_0064",
     "text": "U kterých lidí nebo v jakých rolích se nejčastěji cítíš nezodpovědný — a před kým naopak skoro vůbec nemusíš dokazovat, že se na tebe dá spolehnout?",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -18284,7 +18276,7 @@
     "cluster_id": "cl_0064",
     "text": "Kdyby stejnou chybu udělal někdo, koho máš rád a považuješ ho za spolehlivého člověka, změnilo by to tvůj názor na jeho charakter?",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -18292,7 +18284,7 @@
     "cluster_id": "cl_0064",
     "text": "Kolik důkazů o své spolehlivosti přehlížíš ve chvíli, kdy něco zapomeneš, odložíš nebo pokazíš?",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -18300,7 +18292,7 @@
     "cluster_id": "cl_0064",
     "text": "Jak v těle poznáš okamžik, kdy se z prostého „něco jsem zanedbal“ stane bolestivé „jsem nezodpovědný člověk“? Co se v tu chvíli změní?",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {

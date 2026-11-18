@@ -2863,19 +2863,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_0351",
-    "cluster_id": "cl_0009",
-    "text": "Experiment: „Mezi cizími lidmi se budu cítit ještě osamělejší.“ Vyber si příjemné veřejné místo, třeba kavárnu, park nebo knihovnu, a strav tam deset minut. Předem odhadni, jak osaměle a napjatě se budeš cítit. Potom si všimni skutečného průběhu. Pokud budeš chtít, postupně pobyt prodlužuj nebo přidej pozdrav či krátký rozhovor. Zkoumej, zda ti přítomnost druhých někdy přináší alespoň malý pocit sounáležitosti.",
-    "tier": "free",
-    "sort_order": 28,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_0352",
     "cluster_id": "cl_0009",
     "text": "Experiment: „Opuštěnost přichází náhodně a nemůžu ji nijak ovlivnit.“ Předem si napiš, kdy podle tebe pocit nejčastěji přichází. Dva týdny si stručně zaznamenávej jeho intenzitu, okolnosti, únavu, předchozí kontakt s lidmi a svou reakci. Začni jedním záznamem denně, případně přidávej záznamy jednotlivých epizod. Potom porovnej své předpoklady s tím, co jsi skutečně vypozoroval. Hledej spouštěče, výjimky i věci, které ti pomáhají.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -2883,7 +2875,7 @@
     "cluster_id": "cl_0009",
     "text": "Experiment: „Když kontakt neudržuju já, vztah zmizí.“ Vyber si bezpečný vztah, ve kterém obvykle iniciuješ většinu kontaktu. Pokud to nenaruší žádnou domluvu, zkus jednou ponechat druhému trochu více prostoru. Předem odhadni, co se stane a jak budeš snášet čekání. Potom porovnej očekávání se skutečností. Nejde o zkoušku lásky ani trestání druhého mlčením, ale o poznávání vzájemnosti vztahu. Jednorázový výsledek nepovažuj za definitivní důkaz.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -3373,19 +3365,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_0413",
-    "cluster_id": "cl_0011",
-    "text": "Když se objeví sebeodsouzení typu „jsem nevěrný hajzl“, převeď identitu na popis chování: co přesně jsi udělal, co tomu předcházelo a co příště můžeš udělat jinak. Převzít odpovědnost za své jednání neznamená odsoudit celého sebe.",
-    "tier": "free",
-    "sort_order": 30,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_0414",
     "cluster_id": "cl_0011",
     "text": "Pokud se vzorec opakuje navzdory následkům, prozkoumej ho v terapii bez předem stanoveného cíle „udělat ze sebe monogamního člověka“. Cílem může být svobodnější, vědomější a poctivější rozhodování.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -3393,7 +3377,7 @@
     "cluster_id": "cl_0011",
     "text": "Experiment: „Když někoho silně chci, nedokážu si zachovat vlastní hranice.“ V méně náročné situaci, kdy tě někdo přitahuje, si předem urči jednu hranici, kterou chceš dodržet. Může jít třeba o to, jak osobní rozhovor povedeš nebo zda budeš pokračovat v kontaktu. Předem odhadni, jak obtížné bude hranici udržet. Potom porovnej očekávání se skutečností a všimni si, co ti pomáhalo nebo překáželo. Nejde o potlačování touhy, ale o možnost svobodně rozhodovat, jak s ní naložíš.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -5676,19 +5660,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_0693",
-    "cluster_id": "cl_0020",
-    "text": "Vytvoř si několik míst, kam se rád vracíš, i když tam chodíš sám: kavárnu, park, knihovnu, sportoviště nebo jiné příjemné prostředí. Všímej si, jestli ti opakované návštěvy postupně přinášejí pocit známosti, bezpečí nebo příslušnosti.",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_0694",
     "cluster_id": "cl_0020",
     "text": "Jednou týdně se zeptej sám sebe: „Kde jsem se tento týden cítil nejméně oddělený?“ Nemusíš hledat okamžik dokonalé blízkosti. Zkus si vybavit i malé rozdíly a zjistit, co je umožnilo.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -5696,7 +5672,7 @@
     "cluster_id": "cl_0020",
     "text": "Vyber si jednu hodnotu, kterou chceš ve vztazích žít, třeba otevřenost, laskavost, odvahu nebo zvědavost. Každý týden podle ní udělej jednu konkrétní věc, i když se zrovna necítíš s lidmi propojený. Všímej si, jaké je jednat podle toho, na čem ti záleží, místo podle momentálního pocitu odcizení.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -18315,19 +18291,11 @@
     "approved": "2026-11-12"
   },
   {
-    "id": "refa_2231",
-    "cluster_id": "cl_0069",
-    "text": "Překládej automatické „Nasrat!“ do přesnější věty: „Potřebuju mít možnost volby“, „Vadí mi ten tón“, „S tímhle nesouhlasím“ nebo „Potřebuju čas“. Zkus si všimnout, jestli se s přesnějším pojmenováním mění i intenzita odporu.",
-    "tier": "free",
-    "sort_order": 8,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_2232",
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když někomu vyhovím, ztrácím kus své svobody.“ Vyber si drobnou žádost, které chceš skutečně vyhovět, ale přesto v tobě vyvolává odpor. Předem odhadni, nakolik se budeš cítit podřízený. Potom žádosti dobrovolně vyhov a všimni si, jak se skutečně cítíš. Zkus rozlišit, jestli ses rozhodl svobodně, nebo ses přizpůsobil proti své vůli. Postupně můžeš zkoušet i významnější situace, ale jen tam, kde je souhlas opravdu tvou volbou.",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 8,
     "added_at": "2026-10-16"
   },
   {
@@ -18335,7 +18303,7 @@
     "cluster_id": "cl_0069",
     "text": "Když tě dráždí tón druhého, odděl způsob podání od obsahu. Zkus si říct: „Nelíbí se mi, jak to říká. Ale co si vlastně myslím o tom, co říká?“ Můžeš odmítnout způsob komunikace, aniž bys musel automaticky odmítnout samotný návrh.",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 9,
     "added_at": "2026-10-16"
   },
   {
@@ -18343,7 +18311,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Mám jen dvě možnosti: podřídit se, nebo se vzepřít.“ Při drobné neshodě zkus navrhnout třetí možnost, která bude alespoň částečně vyhovovat oběma. Předem si poznamenej, jestli očekáváš odmítnutí, konflikt nebo pocit, že ustupuješ. Potom porovnej očekávání se skutečností. Pokud ti to bude dávat smysl, zkoušej postupně i důležitější rozhodnutí. Cílem není vždy dosáhnout kompromisu, ale zjistit, kdy ti vyjednávání dává více možností.",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 10,
     "added_at": "2026-10-16"
   },
   {
@@ -18351,7 +18319,7 @@
     "cluster_id": "cl_0069",
     "text": "Po konfliktu si krátce zapiš, co tvůj vzdor ochránil a co tě stál. Pomohl ti ubránit důležitou hranici, nebo tě připravil o něco, na čem ti záleželo? Někdy může platit obojí. Nejde o odsuzování vzdoru, ale o poznání, kdy ti slouží a kdy už ne.",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 11,
     "added_at": "2026-10-16"
   },
   {
@@ -18359,7 +18327,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když se hned nebráním, druhý mě převálcuje.“ U malé žádosti řekni: „Rozmyslím si to.“ Předem odhadni, jestli druhý začne naléhat a nakolik se budeš cítit bezmocný. Potom sleduj, co se skutečně stalo a jak ses cítil. Začni v bezpečném vztahu a postupně zkoušej náročnější situace. Všímej si, kdy ti pauza pomáhá rozhodovat svobodněji a kdy je naopak potřeba hranici vyjádřit okamžitě.",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 12,
     "added_at": "2026-10-16"
   },
   {
@@ -18367,7 +18335,7 @@
     "cluster_id": "cl_0069",
     "text": "Vyber si jednu hodnotu, kterou chceš při nesouhlasu zachovávat, například férovost, svobodu, pevnost nebo otevřenost. Až příště ucítíš vzdor, zeptej se: „Jak bych teď mohl jednat, abych zůstal věrný sám sobě?“",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 13,
     "added_at": "2026-10-16"
   },
   {
@@ -18375,7 +18343,7 @@
     "cluster_id": "cl_0069",
     "text": "Všímej si rozdílu mezi příkazem, žádostí, doporučením a pouhým názorem druhého. Když máš pocit, že tě někdo tlačí, zkus si ověřit, co skutečně požaduje a jakou máš možnost volby. Někdy může být tlak menší, než se zprvu zdá, jindy se naopak potvrdí.",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 14,
     "added_at": "2026-10-16"
   },
   {
@@ -18383,7 +18351,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když po mně někdo něco chce, snaží se mě řídit.“ Při bezpečné, ale nejasně formulované žádosti se zeptej: „Je to něco, co bys ocenil, nebo na tom opravdu trváš?“ Předem si poznamenej, co podle tebe druhý zamýšlí a jak moc jsi si tím jistý. Potom porovnej svůj odhad s jeho odpovědí i následným chováním. Postupně můžeš zkoušet i méně jednoznačné situace. Ne každá žádost je nátlak, ale některé jím skutečně být mohou.",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 15,
     "added_at": "2026-10-16"
   },
   {
@@ -18391,7 +18359,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když po odmítnutí změním názor, znamená to, že jsem prohrál.“ Vzpomeň si na drobnou situaci, kdy jsi něco odmítl, ale později sis uvědomil, že bys vlastně rád souhlasil. Pokud je to stále aktuální a bezpečné, zkus druhému říct, že ses rozhodl jinak. Předem odhadni, jak se budeš cítit a jak druhý zareaguje. Potom porovnej očekávání se skutečností. Sleduj, zda změna názoru opravdu znamenala ztrátu svobody nebo respektu.",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 16,
     "added_at": "2026-10-16"
   },
   {
@@ -18399,7 +18367,7 @@
     "cluster_id": "cl_0069",
     "text": "Zkus někdy otevřeně říct blízkému člověku, že když na tebe někdo tlačí, míváš chuť automaticky vzdorovat. Vysvětli mu, že se ti lépe rozhoduje, když máš prostor a můžeš o věcech mluvit jako o možnostech, ne jako o příkazech. Zeptej se také, jak tvoje reakce působí na něj.",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -18407,7 +18375,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když nesouhlasím, musím se hned bránit.“ Při drobné neshodě zkus před vyjádřením svého postoje položit jednu upřímnou otázku: „Jak to myslíš?“ nebo „Proč je to pro tebe důležité?“ Předem odhadni, jestli tím oslabíš svou pozici nebo ztratíš možnost prosadit svůj názor. Potom sleduj, co se skutečně stalo. Postupně můžeš zkoušet i náročnější rozhovory. Zvědavost nemusí znamenat souhlas.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -18415,7 +18383,7 @@
     "cluster_id": "cl_0069",
     "text": "Když někdo něco žádá, zkus si před odpovědí položit otázku: „Co bych chtěl udělat, kdyby tenhle požadavek nikdy nevyslovil?“ Pomůže ti rozpoznat, jestli odmítáš samotnou věc, nebo hlavně to, že s ní přišel někdo jiný.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -18423,7 +18391,7 @@
     "cluster_id": "cl_0069",
     "text": "Zmapuj si lidi a situace, u kterých se vzdor objevuje nejsilněji. Všímej si, kdo v tobě odpor vyvolává, jakým způsobem s tebou mluví a co je pro tebe v tu chvíli ohrožené. Hledej také výjimky. Možná zjistíš, že nevzdoruješ autoritám obecně, ale určitým způsobům zacházení.",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -18431,7 +18399,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když přijmu pomoc nebo radu, dávám druhému moc nade mnou.“ Vyber si drobnou nabídku pomoci od člověka, kterému důvěřuješ, a pokud ji skutečně chceš, zkus ji přijmout bez okamžitého oplácení nebo dokazování soběstačnosti. Předem odhadni, jak nepříjemné to bude a nakolik se budeš cítit závislý. Potom porovnej očekávání se zkušeností. Postupně můžeš přijímat i významnější pomoc, pokud přitom zůstávají respektované tvoje hranice.",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -18439,7 +18407,7 @@
     "cluster_id": "cl_0069",
     "text": "Trénuj klidné „ne“ u drobností, kde máš skutečně možnost odmítnout. Zkus se neomlouvat víc, než je potřeba, neútočit a nepouštět se automaticky do dlouhého obhajování. Všímej si, jaké to je udržet hranici bez boje.",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -18447,7 +18415,7 @@
     "cluster_id": "cl_0069",
     "text": "Jednou denně udělej něco čistě proto, že sis to sám vybral, bez užitku, výkonu či schválení druhých. Posiluj zkušenost autonomie, která nepotřebuje nikoho porážet.",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -18455,7 +18423,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Když nesouhlas ukončím bez posledního slova, znamená to porážku.“ V bezpečné a nepříliš důležité debatě zkus vědomě nepřidat další protiargument, přestože tě to láká. Předem odhadni, jak silné bude napětí, pocit prohry nebo nutkání pokračovat. Potom sleduj, jak se tyto pocity vyvíjejí a co se skutečně stalo s tvou sebeúctou i vztahem. Postupně můžeš zkoušet náročnější rozhovory, ale neukončuj předčasně situace, ve kterých potřebuješ hájit důležitou hranici.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -18463,7 +18431,7 @@
     "cluster_id": "cl_0069",
     "text": "Jednou denně vědomě udělej malý kompromis, který skutečně považuješ za přijatelný. Sleduj, zda ses tím opravdu stal méně svobodným.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -18471,7 +18439,7 @@
     "cluster_id": "cl_0069",
     "text": "Nacvič si větu, která oddělí hranici od útoku: „Chci se o tom bavit, ale potřebuju mít prostor rozhodnout se sám.“ Zkus ji použít ve chvíli, kdy začínáš cítit tlak, ale ještě nejsi natolik rozčilený, že se ti těžko hledají slova.",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -18479,7 +18447,7 @@
     "cluster_id": "cl_0069",
     "text": "Týden si veď stručný deník vzdoru. U každé výraznější situace zaznamenej, co se stalo, jak silný byl odpor na škále 0–10, co tě napadlo, jak jsi reagoval a jak to dopadlo. Na konci týdne hledej opakující se vzorce i výjimky, kdy se ti podařilo reagovat jinak.",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -18487,7 +18455,7 @@
     "cluster_id": "cl_0069",
     "text": "Experiment: „Můj odpor závisí hlavně na tom, co po mně druhý chce.“ Pokud máš bezpečný vztah, ve kterém se o tom dá otevřeně mluvit, domluv se s druhým, že si společně všimnete několika běžných žádostí formulovaných různým způsobem. Někdy může jít o přímý pokyn, jindy o prosbu s možností volby. Předem odhadni, jak silný odpor čekáš, a potom zaznamenej skutečnou reakci. Porovnej, jakou roli hrál obsah, tón, osoba i tvoje momentální rozpoložení. Nejde o zkoušení druhého ani o povinnost snášet nepříjemné zacházení.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -18495,7 +18463,7 @@
     "cluster_id": "cl_0069",
     "text": "Najdi několik pravidel, závazků nebo autorit, které respektuješ dobrovolně. Zkus pojmenovat, čím se liší od těch, vůči kterým se bouříš. Je to smysluplností pravidel, důvěrou, možností spolurozhodovat, nebo způsobem, jakým s tebou druzí jednají?",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -27673,19 +27641,11 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "refa_3372",
-    "cluster_id": "cl_0104",
-    "text": "Po konfliktu, který tě mrzí, si napiš dvě věty: co ses snažil chránit a co bys příště chtěl udělat jinak. Vynech soudy typu „jsem kretén“. Zkoumej, co tě vedlo k určitému jednání a jak můžeš příště postupovat lépe, aniž bys popíral své potřeby.",
-    "tier": "free",
-    "sort_order": 29,
-    "added_at": "2026-10-16"
-  },
-  {
     "id": "refa_3373",
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když se sám nepřipomenu, nikdo si mě nevšimne.“ V jedné běžné a bezpečné situaci, ve které obvykle aktivně získáváš pozornost, trochu uber a pozoruj, co se stane. Předem odhadni, zda se druzí sami ozvou nebo navážou kontakt. Potom porovnej předpověď s výsledkem. Pokud to bude užitečné, zkoušej podobný postup v dalších vztazích, ale neber výsledek jako rozsudek o své hodnotě. Sleduj, jak se liší lidé a situace.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -27693,7 +27653,7 @@
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když nebudu bojovat, nikdo nebude respektovat moje hranice.“ Vyber si situaci, ve které potřebuješ něco odmítnout nebo prosadit, a zkus to sdělit klidně, stručně a jednoznačně, bez útoku a dlouhého obhajování. Předem si zapiš, jakou reakci očekáváš. Potom sleduj, zda druhý tvou hranici respektoval, jak ses cítil a co by případně bylo potřeba udělat dál. Nejde o to ustupovat, ale zjistit, zda lze pevnost oddělit od agresivity.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -27701,7 +27661,7 @@
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když se vzdám posledního slova, budu poražený.“ V rozhovoru o méně důležité věci zkus vědomě skončit bez poslední odpovědi, i když bys ještě mohl něco dodat. Předem si všimni, co očekáváš, že tím ztratíš. Potom sleduj, jak ses cítil, zda se něco změnilo ve vztahu a jestli bylo opravdu nutné pokračovat. Postupně můžeš zkusit i situace, ve kterých je pro tebe těžší snést neuzavřený spor.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -27709,7 +27669,7 @@
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když přiznám, že mě něco zranilo, druhý získá nade mnou moc.“ V bezpečném vztahu zkus při mírném konfliktu místo útoku pojmenovat, co se tě dotklo, například: „Tohle mě zamrzelo.“ Předem si zapiš, jakou reakci čekáš a čeho se obáváš. Potom porovnej očekávání se skutečností a všimni si, jaké to bylo mluvit otevřeněji. Pokud to bude užitečné, postupně zkoušej i citlivější témata. Nemusíš se takto otevírat člověku, který by tvoji zranitelnost mohl zneužít.",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -27717,7 +27677,7 @@
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když nechám druhého domluvit, přijdu o možnost obhájit se.“ V rozhovoru, ve kterém cítíš chuť okamžitě oponovat, nech druhého dokončit myšlenku a teprve potom odpověz. Předem odhadni, zda bude těžké udržet se a zda tím ztratíš prostor pro vlastní názor. Potom si všimni, co se skutečně stalo a jestli jsi dokázal svůj pohled vyjádřit stejně dobře, nebo dokonce lépe.",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
@@ -27725,7 +27685,7 @@
     "cluster_id": "cl_0104",
     "text": "Experiment: „Když připustím, že má druhý v něčem pravdu, musím uznat, že se mýlím celý.“ Při příštím nesouhlasu zkus pojmenovat jednu konkrétní část názoru druhého, se kterou souhlasíš, a zároveň jasně řekni, v čem se dál rozcházíte. Předem odhadni, jak nepříjemné to pro tebe bude a co podle tebe druhý udělá. Potom porovnej očekávání se zkušeností. Sleduj, zda lze uznat dílčí pravdu druhého, aniž bys musel popřít vlastní pohled.",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 34,
     "added_at": "2026-10-16"
   },
   {

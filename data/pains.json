@@ -600,11 +600,6 @@
         "source": "k"
       },
       {
-        "id": "hl_0109",
-        "text": "Možná porovnáváš dnešní realitu s minulostí, kterou znáš hlavně z jejích nejhezčích vzpomínek. Minulost měla taky dost svinstva; jen už neposílá notifikace.",
-        "source": "k"
-      },
-      {
         "id": "hl_0112",
         "text": "Možná tě nedrtí jen to, že svět obsahuje špatné věci, ale bezmoc vůči jejich množství. Pak může pomoct zmenšit mapu: co je dnes skutečně ve tvém dosahu?",
         "source": "k"
@@ -680,11 +675,6 @@
         "source": "n"
       },
       {
-        "id": "hl_0119",
-        "text": "Na světě žijí miliardy lidí a ty jsi dnes potkal jen hrstku z nich — to je, jako bys odsoudil celou knihovnu podle jedné blbé stránky.",
-        "source": "n"
-      },
-      {
         "id": "hl_0120",
         "text": "A promiň, z jaké dodávky jsi přišel ty, že se do toho zkaženého světa nepočítáš? Buď jsme v tom všichni, nebo je to s námi o chlup lepší, než tvrdíš.",
         "source": "n"
@@ -721,7 +711,7 @@
       },
       {
         "id": "hl_0128",
-        "text": "I tvoje generace měla idioty, flákače a sobce. Jen už jim není dvacet, takže se nám hůř vybavují v původním balení.",
+        "text": "I tvoje generace měla hlupáky, flákače a sobce. Jen už jim není dvacet, takže se nám hůř vybavují v původním balení.",
         "source": "k",
         "approved": "2026-11-12"
       },
@@ -872,11 +862,6 @@
         "text": "Porovnávat svoje peníze s bohatšími lidmi je hra, ve které lze téměř vždycky prohrát. Nad každým drahým autem existuje ještě dražší auto a nad ním člověk, kterého štve jeho jachta.",
         "source": "k",
         "approved": "2026-11-12"
-      },
-      {
-        "id": "hl_0148",
-        "text": "Nemusíš se za touhu po penězích stydět ani ji duchovně převychovávat. Důležité je spíš vědět, kolik by znamenalo „dost“.",
-        "source": "k"
       },
       {
         "id": "hl_0149",
@@ -1773,11 +1758,6 @@
       {
         "id": "hl_0308",
         "text": "Možná se bojíš vybrat špatně. Ale nevybrat nic je taky volba a občas je dobré ji přestat vydávat za neutralitu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_0309",
-        "text": "Starý kovboj by asi řekl, že z rozcestníku ještě nikdo nedojel do cíle tím, že na něm dokonale promyslel všechny cesty. Některé odpovědi jsou pár kilometrů odsud.",
         "source": "k"
       },
       {
@@ -5216,11 +5196,6 @@
         "id": "hl_0912",
         "text": "Představ si, že máš sto přátel — a teď si zkus vybavit, kolik z nich by přijelo ve tři ráno. Možná ti nechybí počet, ale hloubka.",
         "source": "n"
-      },
-      {
-        "id": "hl_0914",
-        "text": "Starý kovboj by řekl: nepočítej stádo, hlídej si ty koně, co s tebou přejeli řeku.",
-        "source": "n"
       }
     ]
   },
@@ -6251,11 +6226,6 @@
       {
         "id": "hl_1094",
         "text": "Kdyby tvoje práce zítra zmizela, komu nebo čemu by to skutečně vadilo? Odpověď může ukázat její význam i její prázdná místa bez zbytečné romantiky.",
-        "source": "k"
-      },
-      {
-        "id": "hl_1095",
-        "text": "Práce má dnes trochu přehnanou pověst místa, kde má člověk najít identitu, poslání, komunitu i seberealizaci. Výplatní páska možná na takovou duchovní zátěž nebyla navržena.",
         "source": "k"
       },
       {
@@ -9722,11 +9692,6 @@
         "source": "k"
       },
       {
-        "id": "hl_1722",
-        "text": "Nemusíš začít publikovat „autentický bordel“, pokud nechceš. Autenticita není nový povinný estetický žánr.",
-        "source": "k"
-      },
-      {
         "id": "hl_1723",
         "text": "Zkus si doma všimnout věcí, které na fotografii nevypadají nijak, ale v životě mají hodnotu: pohodlí, používané věci, rozečtená kniha, hrnek po snídani. Domov nemusí vypadat mrtvě, aby vypadal dobře.",
         "source": "k"
@@ -12006,11 +11971,6 @@
         "source": "k"
       },
       {
-        "id": "hl_2133",
-        "text": "Vědecká nejistota není duchovní poušť. „Nevím“ může být překvapivě úrodná věta, pokud v ní člověk nezůstane jen cynicky stát.",
-        "source": "k"
-      },
-      {
         "id": "hl_2134",
         "text": "Kdybys mohl z víry získat jedinou věc bez nutnosti přijmout její metafyziku, co by to bylo? Odpověď může ukázat, co vlastně hledáš.",
         "source": "k"
@@ -12681,11 +12641,6 @@
         "source": "k"
       },
       {
-        "id": "hl_2256",
-        "text": "Starý kovboj by možná řekl, že nepotřebuješ vidět celé údolí, abys věděl, kam dnes otočit koně. Jedna další dobrá cesta stačí.",
-        "source": "k"
-      },
-      {
         "id": "hl_2257",
         "text": "Budoucnost nemusí mít jeden majestátní maják. Někdy úplně stačí několik malých světel, kvůli kterým se vyplatí jít dál.",
         "source": "k"
@@ -12805,11 +12760,6 @@
       {
         "id": "hl_2276",
         "text": "Když tě něco současného štve, zkus nejdřív najít jeho nejlepší možné vysvětlení. Teprve potom se rozhodni, jestli ti to pořád připadá pitomé.",
-        "source": "k"
-      },
-      {
-        "id": "hl_2279",
-        "text": "Starý kovboj by nejspíš připomněl, že svět byl vždycky trochu šílený; jen měl v různých dekádách jiný klobouk.",
         "source": "k"
       },
       {
@@ -14610,7 +14560,7 @@
   {
     "id": "pain_0110",
     "src_id": "h_071",
-    "text": "Ten puberťák se mnou mluví, jako bych byl idiot.",
+    "text": "Ten puberťák se mnou mluví, jako bych byl hlupák.",
     "smer": "na blízké",
     "oblast": "děti",
     "tier": "free",
@@ -14637,7 +14587,7 @@
       },
       {
         "id": "hl_2645",
-        "text": "Mluví s tebou hnusně, ale pořád s tebou mluví. Mnohem horší varianta může být zavřený pokoj a úplné ticho.",
+        "text": "Mluví s tebou ošklivě, ale pořád s tebou mluví. Mnohem horší varianta může být zavřený pokoj a úplné ticho.",
         "source": "n",
         "approved": "2026-11-12"
       },
@@ -14653,11 +14603,6 @@
         "source": "k"
       },
       {
-        "id": "hl_2636",
-        "text": "Je rozdíl mezi nesouhlasem a neúctou. Dospívající má právo myslet si, že se pleteš; nemusí k tomu potřebovat dělat z tebe idiota.",
-        "source": "k"
-      },
-      {
         "id": "hl_2640",
         "text": "Pokud tě něčím skutečně opraví a má pravdu, klidně ji uznej. Autorita, která přežije větu „jo, tady máš pravdu“, bývá pevnější než ta, která musí vyhrát vždycky.",
         "source": "k"
@@ -14665,11 +14610,6 @@
       {
         "id": "hl_2642",
         "text": "Dnes tě může považovat za člověka, který „vůbec nechápe“. Za pár let může některým tvým větám začít rozumět nápadně víc; puberta není konečné hlasování o hodnotě rodiče.",
-        "source": "k"
-      },
-      {
-        "id": "hl_2626",
-        "text": "Nemusíš na každé protočení očí reagovat jako na zásadní výchovnou událost. Ale je v pořádku mít hranici, za kterou už tón nebo urážka nejsou přijatelné.",
         "source": "k"
       },
       {
@@ -14698,11 +14638,6 @@
         "source": "k"
       },
       {
-        "id": "hl_2637",
-        "text": "Zeptej se sám sebe, co tě zraňuje víc: jeho tón, nebo skutečnost, že už tvoje autorita není automatická? Druhá věc může bolet, i když ji žádná výchovná technika úplně nezruší.",
-        "source": "k"
-      },
-      {
         "id": "hl_2638",
         "text": "Možná je užitečné dovolit mu občas vyhrát věcný spor. Když nemusí bojovat o právo mít vlastní názor, může mít menší potřebu dokazovat převahu v každé větě.",
         "source": "k"
@@ -14723,18 +14658,8 @@
         "source": "k"
       },
       {
-        "id": "hl_2644",
-        "text": "V jeho očích idiot fakt jsi — puberta je období, kdy rodiče záhadně zhloupnou, a kolem pětadvacítky syna zase stejně záhadně zmoudří, aniž bys pro to musel hnout prstem.",
-        "source": "n"
-      },
-      {
         "id": "hl_2646",
         "text": "Obrácení očí v sloup je pubertální pozdrav, něco jako podání ruky — neznamená to o tobě víc, než znamená štěkot o pošťákovi.",
-        "source": "n"
-      },
-      {
-        "id": "hl_2647",
-        "text": "Jednou mu bude pětadvacet, u piva prohodí „tati, tenkrát jsem byl blbec já“ — a ty budeš rád, žes těch pár let vydržel dělat idiota, aby on mohl dorůst.",
         "source": "n"
       }
     ]
@@ -16292,11 +16217,6 @@
         "source": "n"
       },
       {
-        "id": "hl_2934",
-        "text": "Starý kovboj si značkoval dobytek ne z pýchy, ale protože bez značky si ho přivlastnil kdekdo — pošli shrnutí mailem, napiš se pod výstup, nech stopu. Mlčení tvoje autorství neochrání, papírová stopa ano.",
-        "source": "n"
-      },
-      {
         "id": "hl_2935",
         "text": "Ta věta říká „klidně“ — a to je přesné: klid má on a vztek máš ty. Trochu spravedlnosti by bylo, kdyby se o ten vztek začal dělit tím, že mu přestaneš dělat neviditelného dodavatele.",
         "source": "n"
@@ -16625,11 +16545,6 @@
       {
         "id": "hl_4195",
         "text": "Kdyby tvoje tělo umělo psát do kalendáře, už dávno by si tam červeně vyblokovalo středu odpoledne — a tebe by na tu schůzku pozvalo jen jako hosta.",
-        "source": "n"
-      },
-      {
-        "id": "hl_4197",
-        "text": "Starý kovboj by řekl: kůň, který jen vozí náklad a nikdy se nepase, ti jednou lehne uprostřed cesty — a bude mu fuk, co máš v diáři.",
         "source": "n"
       },
       {
@@ -17492,11 +17407,6 @@
         "source": "k"
       },
       {
-        "id": "hl_3933",
-        "text": "Není potřeba dělat z ticha duchovní úkol. Pokud ti rádio, podcast nebo televize dělají společnost, klidně je používej vědomě místo pocitu, že „zase utíkáš“.",
-        "source": "k"
-      },
-      {
         "id": "hl_3934",
         "text": "Kdyby stejný byt byl v úterý večer stejně tichý, bolelo by to stejně? Pokud ne, možná je kus té tíhy specificky nedělní a stojí za to řešit právě ji.",
         "source": "k"
@@ -18047,11 +17957,6 @@
       {
         "id": "hl_3770",
         "text": "„Vždycky se mi něco stane“ často přeskočí všechny dny, kdy se nestalo vůbec nic. Nuda má bohužel mizernou paměťovou reklamu.",
-        "source": "k"
-      },
-      {
-        "id": "hl_3771",
-        "text": "Nemusíš vyřešit, jestli jsi smolař. Stačí u příštího problému zjistit, jestli je v něm něco k poučení, nebo jestli si zaslouží pouze stručné „no tak tohle bylo fakt na hovno“.",
         "source": "k"
       },
       {
@@ -19136,11 +19041,6 @@
         "source": "k"
       },
       {
-        "id": "hl_3193",
-        "text": "Starý kovboj by nejspíš nechápal, proč se hroutíme, když se stránka načítá čtyři vteřiny. Pak bychom mu ukázali navigaci, pračku a antibiotika a rychle by přestal idealizovat staré časy.",
-        "source": "k"
-      },
-      {
         "id": "hl_3194",
         "text": "Některé nejlepší věci mají pořád drzost trvat dlouho. Dovednost, vztah ani dobré rozhodnutí zatím nikdo nepřesvědčil, že žijeme v éře expresního doručení.",
         "source": "k"
@@ -19609,7 +19509,7 @@
       },
       {
         "id": "hl_3295",
-        "text": "Zboží v e-shopu tě nemůže překvapit, růst ani si tě oblíbit zpátky. A přesně v tomhle místě každé srovnání člověka se zbožím spadne na hubu.",
+        "text": "Zboží v e-shopu tě nemůže překvapit, růst ani si tě oblíbit zpátky. A přesně v tomhle místě každé srovnání člověka se zbožím neobstojí.",
         "source": "n",
         "approved": "2026-11-12"
       },
@@ -20299,11 +20199,6 @@
         "approved": "2026-11-12"
       },
       {
-        "id": "hl_3397",
-        "text": "Možná se na poradách mluví dlouho právě proto, že nikdo nemá mandát rozhodnout. Pak problém není množství kecání, ale chybějící odpovědnost.",
-        "source": "k"
-      },
-      {
         "id": "hl_3409",
         "text": "Zkus po meetingu poslat tři řádky: co se rozhodlo, kdo co udělá, do kdy. Pokud je druhý řádek pravidelně prázdný, problém je najednou velmi viditelný.",
         "source": "k"
@@ -20372,11 +20267,6 @@
         "id": "hl_3410",
         "text": "Možná tě nejvíc vyčerpává pocit bezmoci, že musíš sedět u cizího chaosu. I malá aktivní otázka může vrátit kus pocitu, že čas není úplně mimo tvoji kontrolu.",
         "source": "k"
-      },
-      {
-        "id": "hl_3412",
-        "text": "Hodina kecání, kde se nic nedomluví, není selhání meetingu — je to jeho tichý účel, protože nedomluvit nic je často přesně to, co si půlka místnosti přeje.",
-        "source": "n"
       },
       {
         "id": "hl_3413",
@@ -21191,11 +21081,6 @@
         "source": "k"
       },
       {
-        "id": "hl_3552",
-        "text": "Starý kovboj by nejspíš řekl, že sobečtí byli lidé vždycky a stejně tak lidé, kteří sousedovi vytáhli vůz z bláta. Jen dnes máme o obou skupinách podstatně víc zpráv.",
-        "source": "k"
-      },
-      {
         "id": "hl_3554",
         "text": "Paradoxně může věta „každý myslí jen na sebe“ vést k tomu, že se také stáhneš a přestaneš nabízet kontakt. Pesimismus pak začne vyrábět přesně ten svět, kterého se bojí.",
         "source": "k"
@@ -21607,11 +21492,6 @@
         "source": "k"
       },
       {
-        "id": "hl_3627",
-        "text": "Starý kovboj by možná řekl, že člověk může celý život hnát koně a jednoho dne zjistit, že vlastně neví, kam tak pospíchal. Občas sesednout není úplně špatný nápad.",
-        "source": "k"
-      },
-      {
         "id": "hl_3628",
         "text": "Je v tom malý paradox: kdo vzdychá, že si dnes nikdo nesedne, sedí u toho vzdychání o samotě. Přitom stačí si sednout první a říct: pojď, posedíme.",
         "source": "n"
@@ -21619,11 +21499,6 @@
       {
         "id": "hl_3629",
         "text": "Taková blízkost dnes opravdu chybí — a přitom když dva lidé tři týdny přesouvají kafe ve zprávách, vlastně si celou dobu píšou. Pokec už dávno běží, jen ve špatném formátu.",
-        "source": "n"
-      },
-      {
-        "id": "hl_3630",
-        "text": "Kdyby uměla mluvit lavička před domem, řekla by ti: pořád tu jsem, dřevo mám stejné jako tenkrát. Chybí jen zadek, a ten máš ty.",
         "source": "n"
       }
     ]
