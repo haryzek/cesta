@@ -447,6 +447,8 @@
 
   /* ===== MOJE CESTA — oddíly ===== */
   .mc-card-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); margin-bottom:6px; }
+  .mc-card-eyebrow.mc-guide-ic{ display:flex; }
+  .mc-card-eyebrow.mc-guide-ic svg{ width:16px; height:16px; }
   .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
   .mc-sec-link{ display:inline-flex; align-items:center; gap:8px; margin:10px var(--gutter) 0; padding:0; background:none; border:none;
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
@@ -1659,6 +1661,9 @@
       return h+nameList(exs,function(e){ return "MC.detail('exercises','"+e.id+"')"; },function(e){ var s=itemIndex.sections[e.section_id]; return s?'<span class="m">Oddíl '+("0"+s.sort_order).slice(-2)+' · '+esc(s.title)+'</span>':""; });
     }
     h+='<ul class="mc-cards">';
+    // Návod jako první karta — bez čísla, s ikonkou, ať je jasné, že to není oddíl.
+    h+='<li class="mc-card clickable mc-in" onclick="MC.open(\'guide\')"><div class="mc-card-eyebrow mc-guide-ic">'+IC.guide+'</div>'+
+       '<div class="mc-card-title">Jak s appkou pracovat</div><div class="mc-card-text">Kde začít, jak číst přerámování a jak cvičit.</div><span class="mc-card-go">›</span></li>';
     flat.sections.forEach(function(s){
       var n=(bySection[s.id]||[]).length;
       h+='<li class="mc-card clickable mc-in" onclick="MC.journeySection(\''+s.id+'\')">';
