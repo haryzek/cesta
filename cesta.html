@@ -478,6 +478,20 @@
   .mc-box .b-list li{ margin:4px 0; }
   .mc-box .b-list button{ background:none; border:none; padding:0; cursor:pointer; font-family:var(--sans); font-size:14px; color:var(--text); text-align:left; }
   .mc-box .b-list li.cur button{ color:var(--accent); font-weight:600; }
+  /* Placka „obraťte se na odborníka“ — vážná témata, vždy nahoře, nejde zavřít.
+     Tlustý lem v accentu místo plochy: výrazné, ale ne poplach. */
+  .mc-alert{ display:flex; gap:12px; margin:12px var(--gutter) 4px; padding:14px 16px; background:var(--surface);
+    border:3px solid var(--accent); border-radius:14px; }
+  .mc-alert .a-ic{ flex-shrink:0; color:var(--accent); display:flex; padding-top:1px; }
+  .mc-alert .a-ic svg{ width:22px; height:22px; }
+  .mc-alert .a-body{ flex:1; min-width:0; }
+  .mc-alert .a-text{ font-family:var(--sans); font-size:15px; line-height:1.5; color:var(--text); }
+  .mc-alert .a-tels{ display:flex; flex-direction:column; gap:6px; margin-top:10px; }
+  .mc-alert .a-tel{ font-family:var(--sans); font-size:14px; line-height:1.4; color:var(--soft); text-decoration:none; }
+  .mc-alert .a-tel b{ font-size:18px; font-weight:700; color:var(--accent); margin-right:8px; white-space:nowrap; }
+  .mc-alert .a-go{ margin-top:10px; padding:0; background:none; border:none; cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:600; color:var(--accent); }
+  .mc-alert + .mc-alert{ margin-top:8px; }
   .mc-warn{ display:flex; align-items:center; gap:12px; padding:12px 16px; }
   .mc-warn .b-ic{ flex-shrink:0; width:30px; height:30px; border-radius:9px; background:var(--accent-dim); color:var(--accent); display:flex; align-items:center; justify-content:center; }
   .mc-warn .b-ic svg{ width:16px; height:16px; }
@@ -1342,6 +1356,50 @@
   }
   // Rozcestník tří bran. Názvy samy o sobě uživatel v akutním módu
   // nerozliší — každá nese větu „kdy sem".
+  // ---- Placky „obraťte se na odborníka“ (18. 11. 2026, návrh local/kontrola/placky_upozorneni.md)
+  // Jen tam, kde je vysoká šance na vážný problém. Téma = text + čísla (ověřená 18. 11. 2026),
+  // mapa ID → témata. Kreslí se úplně nahoře pod Zpět a nejde zavřít.
+  var ALERTS={
+    suicide:{ text:"Pokud myslíte na to, že si ublížíte nebo že nechcete žít, nezůstávejte v tom sami.",
+      tels:[["116 123","Linka první psychické pomoci, nonstop, zdarma"],["155","při bezprostředním ohrožení"]], crisis:"crisis_0011" },
+    violence:{ text:"Pokud jste zažili sexuální nebo fyzické násilí, nezůstávejte v tom sami. Obraťte se na odborníka.",
+      tels:[["116 006","Linka pomoci obětem kriminality a domácího násilí, nonstop, zdarma"],["158","policie, v akutním ohrožení"]] },
+    bullying:{ text:"Pokud zažíváte šikanu, nezůstávejte v tom sami. Obraťte se na odborníka nebo na někoho, komu věříte.",
+      tels:[["116 006","Linka pomoci obětem kriminality a domácího násilí, nonstop, zdarma"],["116 111","Linka bezpečí pro děti a mladé do 26 let, nonstop, zdarma"]] },
+    depression:{ text:"Pokud vás smutek, prázdnota nebo ztráta radosti drží déle než dva týdny, obraťte se na psychiatra nebo psychologa. Deprese se dá léčit. Když se objeví myšlenky na smrt, volejte:",
+      tels:[["116 123","Linka první psychické pomoci, nonstop, zdarma"]] },
+    addiction:{ text:"Pokud máte pocit, že vás alkohol, cigarety, drogy, hraní nebo jiná závislost ovládá, nemusíte to zvládat sami.",
+      tels:[["800 350 000","Národní linka pro odvykání, pracovní dny 10–18 h, zdarma"]] },
+    eating:{ text:"Pokud se vaše myšlenky točí hlavně kolem jídla, váhy nebo vzhledu, nebo hubnete bez zjevné příčiny, obraťte se na lékaře. S poruchami příjmu potravy pomáhá Centrum Anabell (anabell.cz).",
+      tels:[] }
+  };
+  var ALERT_MAP={
+    cl_0107:["suicide"], cl_0083:["suicide"], sit_0072:["suicide"],
+    cl_0018:["violence"], cl_0017:["violence"], sit_0092:["violence"], sit_0028:["violence"], sit_0027:["bullying"],
+    cl_0079:["depression"], cl_0113:["depression"], cl_0007:["depression"], sit_0064:["depression"],
+    pain_0074:["depression"], pain_0159:["depression"], pain_0034:["depression"],
+    art_0011:["depression"], art_0065:["depression"], art_0089:["depression"], art_0100:["depression"], art_0110:["depression"],
+    sit_0068:["addiction"], pain_0054:["addiction"], pain_0055:["addiction"], pain_0036:["addiction"], pain_0056:["addiction"],
+    sit_0071:["eating"], sit_0048:["eating"]
+  };
+  function alertTopics(ids){
+    var seen={}, out=[];
+    (ids||[]).forEach(function(id){ (ALERT_MAP[id]||[]).forEach(function(t){ if(!seen[t]&&ALERTS[t]){ seen[t]=1; out.push(t); } }); });
+    return out;
+  }
+  function alertBoxes(ids){
+    return alertTopics(ids).map(function(t){
+      var a=ALERTS[t], h='<div class="mc-alert" role="note"><span class="a-ic">'+IC.warn+'</span><div class="a-body"><div class="a-text">'+esc(a.text)+'</div>';
+      if(a.tels.length){
+        h+='<div class="a-tels">';
+        a.tels.forEach(function(x){ h+='<a class="a-tel" href="tel:'+x[0].replace(/\D/g,"")+'"><b>'+esc(x[0])+'</b>'+esc(x[1])+'</a>'; });
+        h+='</div>';
+      }
+      if(a.crisis) h+='<button class="a-go" onclick="MC.detail(\'crisis\',\''+a.crisis+'\')">Otevřít První pomoc ›</button>';
+      return h+'</div></div>';
+    }).join("");
+  }
+
   function viewRfGates(){
     var n=favCountOf(RF_STORES);
     var h=secHead("reframing","Přerámování","Pojmenujte, co se s vámi děje — a podívejte se na to jinak.",n);
@@ -1417,10 +1475,11 @@
     var rf=state.rf, s=itemIndex.situations[rf.situation];
     if(!s) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfSitBack()">← Zpět</button>';
+    var al=alertBoxes([s.id]); h+=al;
     h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">'+esc(s.group)+'</div></div>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.name)+'</div></div>';
     if(s.mark==="K"){
-      h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
+      if(!al) h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
       h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.open(\'crisis\')">Otevřít První pomoc</button></div>';
     } else if(s.reframings&&s.reframings.length){
       var refs=alive("situations",(s.reframings||[]).map(function(r){ return itemIndex.sitref[r.id]; }));
@@ -1462,7 +1521,7 @@
   function viewRfPain(){
     var rf=state.rf, p=itemIndex.pains[rf.pain];
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
-    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
+    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>'+alertBoxes([p.id]);
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
     var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; }));
     if(cutOn()) all=all.slice(0,PAIN_CUT);
@@ -1501,6 +1560,7 @@
   }
   function viewRfDetail(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět</button>';
+    h+=alertBoxes(rf.detailClusters.map(function(c){ return c.cluster_id; }));
     var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
     // Ze strachu: titulek = strach, pod ním vybrané jádrové pocity.
     if(rf.detailTitle) h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.detailTitle)+'</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
@@ -1726,7 +1786,7 @@
     var hasTabs=tabs.length>1;
     var tab=tabs.some(function(t){return t.key===d.tab;})?d.tab:"body";
 
-    var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>';
+    var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button>'+alertBoxes([d.id]);
     // Pořadí podle mockupu: tag pilulky nad H1, pak titulek, pak perex.
     // Čas u cvičení nese box náročnosti pod taby, takže pilulku nedubluje.
     // Štítky cvičení jsou jen na kartách v seznamu, v detailu se neopakují.
