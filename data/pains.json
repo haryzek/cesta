@@ -239,8 +239,9 @@
       },
       {
         "id": "hl_0035",
-        "text": "„Manžel mě štve“ je strašně široký trestní paragraf. Za co přesně ho dnes soudíme?",
-        "source": "k"
+        "text": "„Partner mě štve“ je strašně široký trestní paragraf. Za co přesně ho dnes soudíme?",
+        "source": "k",
+        "text_f": "„Manžel mě štve“ je strašně široký trestní paragraf. Za co přesně ho dnes soudíme?"
       },
       {
         "id": "hl_0037",
@@ -1368,8 +1369,9 @@
       },
       {
         "id": "hl_0239",
-        "text": "Ocet je mimochodem v každé domácnosti a vydrží věčnost — jako symbol zkázy sis vybral(a) překvapivě žádanou surovinu.",
-        "source": "n"
+        "text": "Ocet je mimochodem v každé domácnosti a vydrží věčnost — jako symbol zkázy sis vybral překvapivě žádanou surovinu.",
+        "source": "n",
+        "text_f": "Ocet je mimochodem v každé domácnosti a vydrží věčnost — jako symbol zkázy sis vybrala překvapivě žádanou surovinu."
       },
       {
         "id": "hl_0241",
@@ -2366,15 +2368,17 @@
       },
       {
         "id": "hl_0412",
-        "text": "Můžeš chtít své tělo změnit, aniž bys ho mezitím nenáviděl(a). Změna a respekt se nevylučují.",
+        "text": "Můžeš chtít své tělo změnit, aniž bys ho mezitím nenáviděl. Změna a respekt se nevylučují.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Můžeš chtít své tělo změnit, aniž bys ho mezitím nenáviděla. Změna a respekt se nevylučují."
       },
       {
         "id": "hl_0415",
-        "text": "Nemusíš čekat na jiné tělo, abys měl(a) právo hezky se obléct, nechat se vyfotit nebo se cítit přitažlivě. Život nezačíná až po zhubnutí.",
+        "text": "Nemusíš čekat na jiné tělo, abys měl právo hezky se obléct, nechat se vyfotit nebo se cítit přitažlivě. Život nezačíná až po zhubnutí.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš čekat na jiné tělo, abys měla právo hezky se obléct, nechat se vyfotit nebo se cítit přitažlivě. Život nezačíná až po zhubnutí."
       },
       {
         "id": "hl_0417",
@@ -2390,13 +2394,15 @@
       },
       {
         "id": "hl_0419",
-        "text": "Zkus místo „jsem tlustý(á)“ chvíli říkat „nelíbí se mi teď moje váha“. Je v tom méně identity a víc prostoru něco se sebou laskavě dělat.",
-        "source": "k"
+        "text": "Zkus místo „jsem tlustý“ chvíli říkat „nelíbí se mi teď moje váha“. Je v tom méně identity a víc prostoru něco se sebou laskavě dělat.",
+        "source": "k",
+        "text_f": "Zkus místo „jsem tlustá“ chvíli říkat „nelíbí se mi teď moje váha“. Je v tom méně identity a víc prostoru něco se sebou laskavě dělat."
       },
       {
         "id": "hl_0421",
-        "text": "Možná na sebe používáš metr, který bys na člověka, kterého máš rád(a), nikdy nevytáhl(a). To stojí za malé podezření.",
-        "source": "k"
+        "text": "Možná na sebe používáš metr, který bys na člověka, kterého máš rád, nikdy nevytáhl. To stojí za malé podezření.",
+        "source": "k",
+        "text_f": "Možná na sebe používáš metr, který bys na člověka, kterého máš ráda, nikdy nevytáhla. To stojí za malé podezření."
       },
       {
         "id": "hl_0416",
@@ -2410,13 +2416,15 @@
       },
       {
         "id": "hl_0418",
-        "text": "Můžeš mít nadváhu a pořád být krásný(á), přitažlivý(á) nebo milovaný(á). Tyhle věci se navzájem nevylučují.",
-        "source": "k"
+        "text": "Můžeš mít nadváhu a pořád být krásný, přitažlivý nebo milovaný. Tyhle věci se navzájem nevylučují.",
+        "source": "k",
+        "text_f": "Můžeš mít nadváhu a pořád být krásná, přitažlivá nebo milovaná. Tyhle věci se navzájem nevylučují."
       },
       {
         "id": "hl_0410",
-        "text": "Možná máš opravdu vyšší váhu, než by sis přál(a), a může ti to vadit. Ale popis těla nemusí automaticky přejít v rozsudek nad tebou.",
-        "source": "k"
+        "text": "Možná máš opravdu vyšší váhu, než by sis přál, a může ti to vadit. Ale popis těla nemusí automaticky přejít v rozsudek nad tebou.",
+        "source": "k",
+        "text_f": "Možná máš opravdu vyšší váhu, než by sis přála, a může ti to vadit. Ale popis těla nemusí automaticky přejít v rozsudek nad tebou."
       },
       {
         "id": "hl_0413",
@@ -2445,8 +2453,9 @@
       },
       {
         "id": "hl_0424",
-        "text": "Pokud chceš zhubnout, zkus si položit otázku: co bych dělal(a) jinak, kdybych své tělo nechtěl(a) potrestat, ale podpořit? Odpověď bývá použitelnější.",
-        "source": "k"
+        "text": "Pokud chceš zhubnout, zkus si položit otázku: co bych dělal jinak, kdybych své tělo nechtěl potrestat, ale podpořit? Odpověď bývá použitelnější.",
+        "source": "k",
+        "text_f": "Pokud chceš zhubnout, zkus si položit otázku: co bych dělala jinak, kdybych své tělo nechtěla potrestat, ale podpořit? Odpověď bývá použitelnější."
       },
       {
         "id": "hl_0425",
@@ -2460,8 +2469,9 @@
       },
       {
         "id": "hl_0428",
-        "text": "Když si řekneš „jsem tlustý(á)“ desetkrát denně, tělo se tím nezmění — jen v něm bude hůř bydlet. To je drahá metoda bez velkého efektu.",
-        "source": "k"
+        "text": "Když si řekneš „jsem tlustý“ desetkrát denně, tělo se tím nezmění — jen v něm bude hůř bydlet. To je drahá metoda bez velkého efektu.",
+        "source": "k",
+        "text_f": "Když si řekneš „jsem tlustá“ desetkrát denně, tělo se tím nezmění — jen v něm bude hůř bydlet. To je drahá metoda bez velkého efektu."
       },
       {
         "id": "hl_0429",
@@ -2632,9 +2642,10 @@
     "hlasky": [
       {
         "id": "hl_0458",
-        "text": "Pokud jsi děti chtěl(a) a nemáš je, může to být skutečná a hluboká ztráta. Zasloužíš si pochopení a soucit i od sebe samotného, nikoli další výčitky.",
+        "text": "Pokud jsi děti chtěl a nemáš je, může to být skutečná a hluboká ztráta. Zasloužíš si pochopení a soucit i od sebe samotného, nikoli další výčitky.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud jsi děti chtěla a nemáš je, může to být skutečná a hluboká ztráta. Zasloužíš si pochopení a soucit i od sebe samotného, nikoli další výčitky."
       },
       {
         "id": "hl_0464",
@@ -2644,9 +2655,10 @@
       },
       {
         "id": "hl_0463",
-        "text": "Tvoje hodnota jako člověka nezávisí na tom, jestli ses stal(a) rodičem. Rodičovství je jednou z mnoha životních cest, nikoli povinnou podmínkou naplněného života. Každá cesta má své možnosti, radosti i ztráty.",
+        "text": "Tvoje hodnota jako člověka nezávisí na tom, jestli ses stal rodičem. Rodičovství je jednou z mnoha životních cest, nikoli povinnou podmínkou naplněného života. Každá cesta má své možnosti, radosti i ztráty.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Tvoje hodnota jako člověka nezávisí na tom, jestli ses stala rodičem. Rodičovství je jednou z mnoha životních cest, nikoli povinnou podmínkou naplněného života. Každá cesta má své možnosti, radosti i ztráty."
       },
       {
         "id": "hl_0465",
@@ -2667,8 +2679,9 @@
       },
       {
         "id": "hl_0467",
-        "text": "Život bez dětí nemusí být náhradní verze života. Může být skutečný, plný a vlastní — i když jsi původně chtěl(a) jiný.",
-        "source": "k"
+        "text": "Život bez dětí nemusí být náhradní verze života. Může být skutečný, plný a vlastní — i když jsi původně chtěl jiný.",
+        "source": "k",
+        "text_f": "Život bez dětí nemusí být náhradní verze života. Může být skutečný, plný a vlastní — i když jsi původně chtěla jiný."
       },
       {
         "id": "hl_0475",
@@ -2687,8 +2700,9 @@
       },
       {
         "id": "hl_0460",
-        "text": "Nemít děti neznamená, že tvůj život je neúplný. Může ale znamenat, že mu chybí něco, co sis opravdu přál(a).",
-        "source": "k"
+        "text": "Nemít děti neznamená, že tvůj život je neúplný. Může ale znamenat, že mu chybí něco, co sis opravdu přál.",
+        "source": "k",
+        "text_f": "Nemít děti neznamená, že tvůj život je neúplný. Může ale znamenat, že mu chybí něco, co sis opravdu přála."
       },
       {
         "id": "hl_0461",
@@ -2697,8 +2711,9 @@
       },
       {
         "id": "hl_0462",
-        "text": "Možná tě kromě dětí samotných bolí i představa rodiny, budoucnosti nebo role, kterou sis pro sebe představoval(a). Každá z těch ztrát může mít vlastní váhu.",
-        "source": "k"
+        "text": "Možná tě kromě dětí samotných bolí i představa rodiny, budoucnosti nebo role, kterou sis pro sebe představoval. Každá z těch ztrát může mít vlastní váhu.",
+        "source": "k",
+        "text_f": "Možná tě kromě dětí samotných bolí i představa rodiny, budoucnosti nebo role, kterou sis pro sebe představovala. Každá z těch ztrát může mít vlastní váhu."
       },
       {
         "id": "hl_0466",
@@ -2717,8 +2732,9 @@
       },
       {
         "id": "hl_0470",
-        "text": "Nemusíš být vděčný(á) za bezdětnost jen proto, že má svoje výhody. Člověk může ocenit jednu část života a zároveň truchlit nad jinou.",
-        "source": "k"
+        "text": "Nemusíš být vděčný za bezdětnost jen proto, že má svoje výhody. Člověk může ocenit jednu část života a zároveň truchlit nad jinou.",
+        "source": "k",
+        "text_f": "Nemusíš být vděčná za bezdětnost jen proto, že má svoje výhody. Člověk může ocenit jednu část života a zároveň truchlit nad jinou."
       },
       {
         "id": "hl_0471",
@@ -2727,8 +2743,9 @@
       },
       {
         "id": "hl_0473",
-        "text": "Možná sis kdysi představoval(a), že v určitém věku budeš rodič. Kalendář ale není smlouva, kterou jsi porušil(a).",
-        "source": "k"
+        "text": "Možná sis kdysi představoval, že v určitém věku budeš rodič. Kalendář ale není smlouva, kterou jsi porušil.",
+        "source": "k",
+        "text_f": "Možná sis kdysi představovala, že v určitém věku budeš rodič. Kalendář ale není smlouva, kterou jsi porušila."
       },
       {
         "id": "hl_0477",
@@ -4428,8 +4445,9 @@
       },
       {
         "id": "hl_0766",
-        "text": "Neříkáš „dneska jsem to nezvládl(a)“ — říkáš „jsem“. Z jednoho večera u telky jsi udělal(a) diagnózu na celý život. Kdo ti tu známku napsal?",
-        "source": "n"
+        "text": "Neříkáš „dneska jsem to nezvládl“ — říkáš „jsem“. Z jednoho večera u telky jsi udělal diagnózu na celý život. Kdo ti tu známku napsal?",
+        "source": "n",
+        "text_f": "Neříkáš „dneska jsem to nezvládla“ — říkáš „jsem“. Z jednoho večera u telky jsi udělala diagnózu na celý život. Kdo ti tu známku napsal?"
       }
     ]
   },
@@ -7663,8 +7681,9 @@
       },
       {
         "id": "hl_1343",
-        "text": "Ve slově „zase“ se schovává jedna nespravedlnost: počítá, kolikrát jsi začal(a), ale nikde nepočítá, kolikrát jsi přestal(a). Ten druhý údaj je přitom taky rekord.",
-        "source": "n"
+        "text": "Ve slově „zase“ se schovává jedna nespravedlnost: počítá, kolikrát jsi začal, ale nikde nepočítá, kolikrát jsi přestal. Ten druhý údaj je přitom taky rekord.",
+        "source": "n",
+        "text_f": "Ve slově „zase“ se schovává jedna nespravedlnost: počítá, kolikrát jsi začala, ale nikde nepočítá, kolikrát jsi přestala. Ten druhý údaj je přitom taky rekord."
       },
       {
         "id": "hl_1324",
@@ -7723,13 +7742,15 @@
       },
       {
         "id": "hl_1344",
-        "text": "Stydíš se to říct nahlas — a přitom jsi to právě řekl(a). Ta část, která to nechce dusit potmě, je evidentně silnější, než se zdálo.",
-        "source": "n"
+        "text": "Stydíš se to říct nahlas — a přitom jsi to právě řekl. Ta část, která to nechce dusit potmě, je evidentně silnější, než se zdálo.",
+        "source": "n",
+        "text_f": "Stydíš se to říct nahlas — a přitom jsi to právě řekla. Ta část, která to nechce dusit potmě, je evidentně silnější, než se zdálo."
       },
       {
         "id": "hl_1345",
-        "text": "Schovávání je náročnější sport než samotné kouření: větrat, žvýkat, hlídat kabát, plánovat trasy. Kdyby se tohle dalo psát do životopisu, měl(a) bys tam sekci navíc.",
-        "source": "n"
+        "text": "Schovávání je náročnější sport než samotné kouření: větrat, žvýkat, hlídat kabát, plánovat trasy. Kdyby se tohle dalo psát do životopisu, měl bys tam sekci navíc.",
+        "source": "n",
+        "text_f": "Schovávání je náročnější sport než samotné kouření: větrat, žvýkat, hlídat kabát, plánovat trasy. Kdyby se tohle dalo psát do životopisu, měla bys tam sekci navíc."
       },
       {
         "id": "hl_1346",
@@ -10148,8 +10169,9 @@
       },
       {
         "id": "hl_1780",
-        "text": "Co tě bavilo kdysi, dávno — ne abys to hned dělal(a), jen si vzpomenout, jaké to bylo?",
-        "source": "n"
+        "text": "Co tě bavilo kdysi, dávno — ne abys to hned dělal, jen si vzpomenout, jaké to bylo?",
+        "source": "n",
+        "text_f": "Co tě bavilo kdysi, dávno — ne abys to hned dělala, jen si vzpomenout, jaké to bylo?"
       }
     ]
   },
@@ -10209,8 +10231,9 @@
       },
       {
         "id": "hl_1804",
-        "text": "Omluva dítěti může mít dvě věty: „Promiň, to bylo moc. Tys za to nemohl(a).“ Víc nepotřebuje — tvou celovečerní zpověď unese hůř než ten křik.",
-        "source": "n"
+        "text": "Omluva dítěti může mít dvě věty: „Promiň, to bylo moc. Tys za to nemohl.“ Víc nepotřebuje — tvou celovečerní zpověď unese hůř než ten křik.",
+        "source": "n",
+        "text_f": "Omluva dítěti může mít dvě věty: „Promiň, to bylo moc. Tys za to nemohla.“ Víc nepotřebuje — tvou celovečerní zpověď unese hůř než ten křik."
       },
       {
         "id": "hl_1782",
@@ -11106,8 +11129,9 @@
       },
       {
         "id": "hl_1949",
-        "text": "Je docela výkon, že sis i z odpočinku dokázal(a) udělat další kolonku, ve které selháváš — tohle umí málokdo.",
-        "source": "n"
+        "text": "Je docela výkon, že sis i z odpočinku dokázal udělat další kolonku, ve které selháváš — tohle umí málokdo.",
+        "source": "n",
+        "text_f": "Je docela výkon, že sis i z odpočinku dokázala udělat další kolonku, ve které selháváš — tohle umí málokdo."
       }
     ]
   },
@@ -11377,8 +11401,9 @@
       },
       {
         "id": "hl_1995",
-        "text": "„Úplně sám(a)“ — a přitom tě dnes někdo pustil ve dveřích, někdo ti kývl, někdo si tě pamatuje z krámu; nejsou to blízcí, ale mezi „úplně sám(a)“ a „bez blízkých lidí“ je rozdíl, který stojí za to vidět.",
-        "source": "n"
+        "text": "„Úplně sám“ — a přitom tě dnes někdo pustil ve dveřích, někdo ti kývl, někdo si tě pamatuje z krámu; nejsou to blízcí, ale mezi „úplně sám“ a „bez blízkých lidí“ je rozdíl, který stojí za to vidět.",
+        "source": "n",
+        "text_f": "„Úplně sama“ — a přitom tě dnes někdo pustil ve dveřích, někdo ti kývl, někdo si tě pamatuje z krámu; nejsou to blízcí, ale mezi „úplně sama“ a „bez blízkých lidí“ je rozdíl, který stojí za to vidět."
       },
       {
         "id": "hl_1996",
@@ -11387,8 +11412,9 @@
       },
       {
         "id": "hl_1997",
-        "text": "Kdy sis naposledy s někým doopravdy popovídal(a) — a kdo tehdy udělal první krok? Někdy věta „jsem úplně sám(a)“ v tichosti znamená „už dlouho jsem se neodvážil(a) jít první“ a to je jiná, řešitelnější věc.",
-        "source": "n"
+        "text": "Kdy sis naposledy s někým doopravdy popovídal — a kdo tehdy udělal první krok? Někdy věta „jsem úplně sám“ v tichosti znamená „už dlouho jsem se neodvážil jít první“ a to je jiná, řešitelnější věc.",
+        "source": "n",
+        "text_f": "Kdy sis naposledy s někým doopravdy popovídala — a kdo tehdy udělal první krok? Někdy věta „jsem úplně sama“ v tichosti znamená „už dlouho jsem se neodvážila jít první“ a to je jiná, řešitelnější věc."
       }
     ]
   },
@@ -11644,8 +11670,9 @@
       },
       {
         "id": "hl_2043",
-        "text": "„Nechal(a) jsem to být“ — a přitom o tom právě teď mluvíš; něco v tobě to být nenechalo.",
-        "source": "n"
+        "text": "„Nechal jsem to být“ — a přitom o tom právě teď mluvíš; něco v tobě to být nenechalo.",
+        "source": "n",
+        "text_f": "„Nechala jsem to být“ — a přitom o tom právě teď mluvíš; něco v tobě to být nenechalo."
       },
       {
         "id": "hl_2044",
@@ -12714,8 +12741,9 @@
       },
       {
         "id": "hl_2235",
-        "text": "Ta lepší verze, cos měl(a) udělat, existuje jen v tvé hlavě — a tam nikdy neprší. Ve skutečnosti by i ona měla svoje kazy, jen je nevidíš, protože se nikdy nestala.",
-        "source": "n"
+        "text": "Ta lepší verze, cos měl udělat, existuje jen v tvé hlavě — a tam nikdy neprší. Ve skutečnosti by i ona měla svoje kazy, jen je nevidíš, protože se nikdy nestala.",
+        "source": "n",
+        "text_f": "Ta lepší verze, cos měla udělat, existuje jen v tvé hlavě — a tam nikdy neprší. Ve skutečnosti by i ona měla svoje kazy, jen je nevidíš, protože se nikdy nestala."
       },
       {
         "id": "hl_2236",
@@ -13664,8 +13692,9 @@
       },
       {
         "id": "hl_2404",
-        "text": "Kdyby ten mobil uměl mluvit, řekl by: „Já za nic nemůžu, já jen svítím“ — a měl by pravdu jen napůl; svítí přesně tak, aby ses nepodíval(a) vedle sebe.",
-        "source": "n"
+        "text": "Kdyby ten mobil uměl mluvit, řekl by: „Já za nic nemůžu, já jen svítím“ — a měl by pravdu jen napůl; svítí přesně tak, aby ses nepodíval vedle sebe.",
+        "source": "n",
+        "text_f": "Kdyby ten mobil uměl mluvit, řekl by: „Já za nic nemůžu, já jen svítím“ — a měl by pravdu jen napůl; svítí přesně tak, aby ses nepodívala vedle sebe."
       }
     ]
   },
@@ -13959,7 +13988,7 @@
   {
     "id": "pain_0103",
     "src_id": "h_064",
-    "text": "Všechno v té domácnosti musím tahat já — a on si myslí, že „pomáhá“.",
+    "text": "Všechno v té domácnosti musím tahat já — a partner si myslí, že „pomáhá“.",
     "smer": "na blízké",
     "oblast": "partner",
     "tier": "free",
@@ -14007,8 +14036,9 @@
       },
       {
         "id": "hl_2471",
-        "text": "Pokud on něco udělá jinak, než bys udělala ty, nemusí to automaticky znamenat špatně. Skutečné předání odpovědnosti někdy vyžaduje pustit i část kontroly.",
-        "source": "k"
+        "text": "Pokud partner něco udělá jinak, než bys to udělal ty, nemusí to automaticky znamenat špatně. Skutečné předání odpovědnosti někdy vyžaduje pustit i část kontroly.",
+        "source": "k",
+        "text_f": "Pokud on něco udělá jinak, než bys udělala ty, nemusí to automaticky znamenat špatně. Skutečné předání odpovědnosti někdy vyžaduje pustit i část kontroly."
       },
       {
         "id": "hl_2476",
@@ -14017,13 +14047,15 @@
       },
       {
         "id": "hl_2457",
-        "text": "Neměla bys být vedoucí domácnosti, která druhému rozdává úkoly, pokud jste oba její dospělí obyvatelé. Je fér chtít, aby část věcí viděl, plánoval a dotahoval sám.",
-        "source": "k"
+        "text": "Neměl bys být vedoucím domácnosti, který druhému rozdává úkoly, pokud jste oba její dospělí obyvatelé. Je fér chtít, aby část věcí sám viděl, plánoval a dotahoval.",
+        "source": "k",
+        "text_f": "Neměla bys být vedoucí domácnosti, která druhému rozdává úkoly, pokud jste oba její dospělí obyvatelé. Je fér chtít, aby část věcí viděl, plánoval a dotahoval sám."
       },
       {
         "id": "hl_2459",
-        "text": "Je možné, že on skutečně věří, že přispívá dost. Pak je potřeba dostat rozdíl mezi vašimi představami z pocitů do konkrétních činností.",
-        "source": "k"
+        "text": "Je možné, že partner skutečně věří, že přispívá dost. Pak je potřeba dostat rozdíl mezi vašimi představami z pocitů do konkrétních činností.",
+        "source": "k",
+        "text_f": "Je možné, že on skutečně věří, že přispívá dost. Pak je potřeba dostat rozdíl mezi vašimi představami z pocitů do konkrétních činností."
       },
       {
         "id": "hl_2462",
@@ -14052,8 +14084,9 @@
       },
       {
         "id": "hl_2472",
-        "text": "Kdyby ses na týden přestala starat o věci, které automaticky zachraňuješ, co by se skutečně stalo? Odpověď může ukázat, co neseš z nutnosti a co už ze zvyku.",
-        "source": "k"
+        "text": "Kdyby ses na týden přestal starat o věci, které automaticky zachraňuješ, co by se skutečně stalo? Odpověď může ukázat, co neseš z nutnosti a co už ze zvyku.",
+        "source": "k",
+        "text_f": "Kdyby ses na týden přestala starat o věci, které automaticky zachraňuješ, co by se skutečně stalo? Odpověď může ukázat, co neseš z nutnosti a co už ze zvyku."
       },
       {
         "id": "hl_2473",
@@ -14072,20 +14105,24 @@
       },
       {
         "id": "hl_2477",
-        "text": "Kdo „pomáhá“, ten si myslí, že šéfová jsi ty. Otázka za milion: chceš tu funkci vůbec, nebo ti ji někdo přidělil, aniž by ses hlásila?",
-        "source": "n"
+        "text": "Kdo „pomáhá“, ten si myslí, že šéf jsi ty. Otázka za milion: chceš tu funkci vůbec, nebo ti ji někdo přidělil, aniž by ses hlásil?",
+        "source": "n",
+        "text_f": "Kdo „pomáhá“, ten si myslí, že šéfová jsi ty. Otázka za milion: chceš tu funkci vůbec, nebo ti ji někdo přidělil, aniž by ses hlásila?"
       },
       {
         "id": "hl_2478",
-        "text": "Manažerka domácnosti, plánovačka, skladnice, dispečerka — a k tomu ještě výkonná síla. To není stížnost, to je popis pracovní pozice, kterou nikdo nevypsal a ty jsi na ni kývla mlčky.",
-        "source": "n"
+        "text": "Manažer domácnosti, plánovač, skladník, dispečer — a k tomu ještě výkonná síla. To není stížnost, to je popis pracovní pozice, kterou nikdo nevypsal a ty jsi na ni mlčky kývl.",
+        "source": "n",
+        "text_f": "Manažerka domácnosti, plánovačka, skladnice, dispečerka — a k tomu ještě výkonná síla. To není stížnost, to je popis pracovní pozice, kterou nikdo nevypsal a ty jsi na ni kývla mlčky."
       },
       {
         "id": "hl_2479",
-        "text": "Předat znamená i snést, že to bude udělané jinak a hůř než po tvém. Jestli mu úkoly bereš z ruky, protože „to radši udělám sama pořádně“, pak systém, na který nadáváš, zároveň spoluřídíš.",
-        "source": "n"
+        "text": "Předat znamená i snést, že to bude udělané jinak a hůř než po tvém. Jestli partnerovi úkoly bereš z ruky, protože „to radši udělám sám pořádně“, pak systém, na který nadáváš, zároveň spoluřídíš.",
+        "source": "n",
+        "text_f": "Předat znamená i snést, že to bude udělané jinak a hůř než po tvém. Jestli mu úkoly bereš z ruky, protože „to radši udělám sama pořádně“, pak systém, na který nadáváš, zároveň spoluřídíš."
       }
-    ]
+    ],
+    "text_f": "Všechno v té domácnosti musím tahat já — a on si myslí, že „pomáhá“."
   },
   {
     "id": "pain_0104",
@@ -14210,7 +14247,7 @@
   {
     "id": "pain_0105",
     "src_id": "h_066",
-    "text": "Jsem pro ni už jen kolega na děti a hypotéku.",
+    "text": "Jsme už jen kolegové na děti a hypotéku.",
     "smer": "na blízké",
     "oblast": "partner",
     "tier": "free",
@@ -14223,7 +14260,7 @@
     "hlasky": [
       {
         "id": "hl_2504",
-        "text": "Je přirozené chtít být pro druhého znovu partnerem, ne jen spoluorganizátorem života. Mluvíš s ní o tom otevřeně?",
+        "text": "Je přirozené chtít být pro druhého znovu partnerem, ne jen spoluorganizátorem života. Mluvíte spolu o tom otevřeně?",
         "source": "k",
         "approved": "2026-11-12"
       },
@@ -14235,13 +14272,13 @@
       },
       {
         "id": "hl_2507",
-        "text": "Nemusíš svůj pocit formulovat jako obžalobu „Už mě nemiluješ“. Můžeš jí jednoduše říct, že ti chybí být spolu i jinak než jako rodiče a správci domácnosti.",
+        "text": "Nemusíš svůj pocit formulovat jako obžalobu „Už mě nemiluješ“. Stačí jednoduše říct, že ti chybí být spolu i jinak než jako rodiče a správci domácnosti.",
         "source": "k",
         "approved": "2026-11-12"
       },
       {
         "id": "hl_2516",
-        "text": "Zkus si pojmenovat, co by pro tebe znamenalo být znovu jejím partnerem: dotek, zájem, sex, společný čas, flirt, důvěrný rozhovor? Bez konkrétní představy se cesta zpět hledá těžko.",
+        "text": "Zkus si pojmenovat, co by pro tebe znamenalo být si znovu partnery: dotek, zájem, sex, společný čas, flirt, důvěrný rozhovor? Bez konkrétní představy se cesta zpět hledá těžko.",
         "source": "k",
         "approved": "2026-11-12"
       },
@@ -14283,7 +14320,7 @@
       },
       {
         "id": "hl_2519",
-        "text": "Je možné, že i ona tě vnímá hlavně přes úkoly, protože právě tak se navzájem poslední dobou potkáváte. Změna nemusí začít čekáním, až tě začne vidět jinak, ale tím, že do kontaktu přineseš něco jiného než logistiku.",
+        "text": "Je možné, že i partner tě vnímá hlavně přes úkoly, protože právě tak se poslední dobou potkáváte. Změna nemusí začít čekáním, až tě začne vidět jinak, ale tím, že do kontaktu přineseš něco jiného než logistiku.",
         "source": "k"
       },
       {
@@ -14298,12 +14335,12 @@
       },
       {
         "id": "hl_2522",
-        "text": "Možná tě nejvíc děsí, že jsi pro ni zaměnitelný za kohokoli, kdo dobře zvládá rodinnou logistiku. To je bolest, kterou stojí za to říct přímo, ne ji schovávat za hádku o nákup.",
+        "text": "Možná tě nejvíc děsí, že jsi pro partnera zaměnitelný za kohokoli, kdo dobře zvládá rodinnou logistiku. To je bolest, kterou stojí za to říct přímo, ne ji schovávat za hádku o nákup.",
         "source": "k"
       },
       {
         "id": "hl_2524",
-        "text": "Kolega na děti a hypotéku — tedy člověk, se kterým táhne to nejtěžší, co má, a kterému svěřila celý svůj život. To není málo; jen to teď necítíš jako lásku, protože to nikdo z vás neříká nahlas.",
+        "text": "Kolegové na děti a hypotéku — tedy dva lidé, kteří spolu táhnou to nejtěžší, co mají, a svěřili si navzájem celý život. To není málo; jen to teď necítíte jako lásku, protože to nikdo z vás neříká nahlas.",
         "source": "n"
       },
       {
@@ -14336,9 +14373,10 @@
       },
       {
         "id": "hl_2534",
-        "text": "Možná začínáš své potřeby zmenšovat, abys předešla dalšímu uražení. To může přinést méně hádek, ale také méně skutečné blízkosti.",
+        "text": "Možná začínáš své potřeby zmenšovat, abys předešel dalšímu uražení. To může přinést méně hádek, ale také méně skutečné blízkosti.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Možná začínáš své potřeby zmenšovat, abys předešla dalšímu uražení. To může přinést méně hádek, ale také méně skutečné blízkosti."
       },
       {
         "id": "hl_2541",
@@ -14679,7 +14717,7 @@
   {
     "id": "pain_0109",
     "src_id": "h_070",
-    "text": "Doma jsem stejně neviditelná — nikdo si nevšimne, co všechno udělám, dokud to neudělám.",
+    "text": "Doma jsem stejně neviditelný(á) — nikdo si nevšimne, co všechno udělám, dokud to neudělám.",
     "smer": "na blízké",
     "oblast": "partner / děti",
     "tier": "free",
@@ -14704,9 +14742,10 @@
       },
       {
         "id": "hl_2607",
-        "text": "Pokud se cítíš přehlížená, stojí za to mluvit nejen o úkolech, ale i o tom, co prožíváš. Mezi „Jsem vyčerpaná“ a „Cítím se neviditelná“ je velký rozdíl.",
+        "text": "Pokud se cítíš přehlížený, stojí za to mluvit nejen o úkolech, ale i o tom, co prožíváš. Mezi „Jsem vyčerpaný“ a „Cítím se neviditelný“ je velký rozdíl.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud se cítíš přehlížená, stojí za to mluvit nejen o úkolech, ale i o tom, co prožíváš. Mezi „Jsem vyčerpaná“ a „Cítím se neviditelná“ je velký rozdíl."
       },
       {
         "id": "hl_2602",
@@ -14716,9 +14755,10 @@
       },
       {
         "id": "hl_2604",
-        "text": "To, že jsi spolehlivá, může paradoxně způsobit, že ostatní tvoji práci přestanou vnímat a začnou na ni automaticky spoléhat. Spolehlivost ale není souhlas s tím, že všechno bude navždy samozřejmostí.",
+        "text": "To, že jsi spolehlivý, může paradoxně způsobit, že ostatní tvoji práci přestanou vnímat a začnou na ni automaticky spoléhat. Spolehlivost ale není souhlas s tím, že všechno bude navždy samozřejmostí.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "To, že jsi spolehlivá, může paradoxně způsobit, že ostatní tvoji práci přestanou vnímat a začnou na ni automaticky spoléhat. Spolehlivost ale není souhlas s tím, že všechno bude navždy samozřejmostí."
       },
       {
         "id": "hl_2615",
@@ -14727,13 +14767,15 @@
       },
       {
         "id": "hl_2618",
-        "text": "Je úplně možné být milovaná a zároveň doma nedoceněná. Právě proto není nutné zpochybňovat celý vztah, aby sis směla stěžovat na jeho nespravedlivou část.",
-        "source": "k"
+        "text": "Je úplně možné být milovaný a zároveň doma nedoceněný. Právě proto není nutné zpochybňovat celý vztah, aby sis směl stěžovat na jeho nespravedlivou část.",
+        "source": "k",
+        "text_f": "Je úplně možné být milovaná a zároveň doma nedoceněná. Právě proto není nutné zpochybňovat celý vztah, aby sis směla stěžovat na jeho nespravedlivou část."
       },
       {
         "id": "hl_2619",
-        "text": "Neviditelná nemusíš být ty; možná je neviditelná hlavně práce, kterou děláš. Ten rozdíl je důležitý, protože práci lze zviditelnit a rozdělit, aniž bys musela dokazovat vlastní existenci.",
-        "source": "k"
+        "text": "Neviditelný nemusíš být ty; možná je neviditelná hlavně práce, kterou děláš. Ten rozdíl je důležitý, protože práci lze zviditelnit a rozdělit, aniž bys musel dokazovat vlastní existenci.",
+        "source": "k",
+        "text_f": "Neviditelná nemusíš být ty; možná je neviditelná hlavně práce, kterou děláš. Ten rozdíl je důležitý, protože práci lze zviditelnit a rozdělit, aniž bys musela dokazovat vlastní existenci."
       },
       {
         "id": "hl_2606",
@@ -14742,8 +14784,9 @@
       },
       {
         "id": "hl_2608",
-        "text": "Nemusíš všechno přestat dělat, aby sis konečně zasloužila pozornost. Ale může být zdravé přestat automaticky zachraňovat každou věc, kterou by mohl nést někdo jiný.",
-        "source": "k"
+        "text": "Nemusíš všechno přestat dělat, aby sis konečně zasloužil pozornost. Ale může být zdravé přestat automaticky zachraňovat každou věc, kterou by mohl nést někdo jiný.",
+        "source": "k",
+        "text_f": "Nemusíš všechno přestat dělat, aby sis konečně zasloužila pozornost. Ale může být zdravé přestat automaticky zachraňovat každou věc, kterou by mohl nést někdo jiný."
       },
       {
         "id": "hl_2609",
@@ -14762,8 +14805,9 @@
       },
       {
         "id": "hl_2612",
-        "text": "Možná nepotřebuješ častější „děkuju“. Pokud po poděkování stejně vstaneš a uděláš dalších šest věcí sama, uznání bez sdílené práce bude chutnat dost naprázdno.",
-        "source": "k"
+        "text": "Možná nepotřebuješ častější „děkuju“. Pokud po poděkování stejně vstaneš a uděláš dalších šest věcí sám, uznání bez sdílené práce bude chutnat dost naprázdno.",
+        "source": "k",
+        "text_f": "Možná nepotřebuješ častější „děkuju“. Pokud po poděkování stejně vstaneš a uděláš dalších šest věcí sama, uznání bez sdílené práce bude chutnat dost naprázdno."
       },
       {
         "id": "hl_2613",
@@ -14777,8 +14821,9 @@
       },
       {
         "id": "hl_2616",
-        "text": "Kdyby sis na jeden den dala zákaz dělat věci jen proto, že „jinak je nikdo neudělá“, co bys pustila jako první? Odpověď může ukázat největší zdroj hořkosti.",
-        "source": "k"
+        "text": "Kdyby sis na jeden den dal zákaz dělat věci jen proto, že „jinak je nikdo neudělá“, co bys pustil jako první? Odpověď může ukázat největší zdroj hořkosti.",
+        "source": "k",
+        "text_f": "Kdyby sis na jeden den dala zákaz dělat věci jen proto, že „jinak je nikdo neudělá“, co bys pustila jako první? Odpověď může ukázat největší zdroj hořkosti."
       },
       {
         "id": "hl_2617",
@@ -14805,7 +14850,8 @@
         "text": "Představ si opak: rodina ti každé ráno tleská za vyždímaný hadr. Zní to absurdně — což prozrazuje, že netoužíš po potlesku, ale po tom, aby námaha nebyla samozřejmost, a to je požadavek, který se splnit dá.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Doma jsem stejně neviditelná — nikdo si nevšimne, co všechno udělám, dokud to neudělám."
   },
   {
     "id": "pain_0110",
@@ -15191,7 +15237,7 @@
   {
     "id": "pain_0113",
     "src_id": "h_074",
-    "text": "Všechno jsem jim dala, a teď na mě nemají ani hodinu za měsíc.",
+    "text": "Všechno jsem jim dal(a), a teď na mě nemají ani hodinu za měsíc.",
     "smer": "na blízké",
     "oblast": "děti",
     "tier": "free",
@@ -15210,21 +15256,24 @@
       },
       {
         "id": "hl_2701",
-        "text": "Můžeš jim říct, že ti chybí, bez účetnického výčtu všeho, co jsi pro ně udělala. „Chci vás vídat“ má větší šanci vás sblížit než „Po tom všem mi dlužíte aspoň...“",
+        "text": "Můžeš jim říct, že ti chybí, bez účetnického výčtu všeho, co jsi pro ně udělal. „Chci vás vídat“ má větší šanci vás sblížit než „Po tom všem mi dlužíte aspoň...“",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Můžeš jim říct, že ti chybí, bez účetnického výčtu všeho, co jsi pro ně udělala. „Chci vás vídat“ má větší šanci vás sblížit než „Po tom všem mi dlužíte aspoň...“"
       },
       {
         "id": "hl_2709",
-        "text": "Pokud jsi dětem opravdu dávala téměř všechno, možná teď bolestivě zjišťuješ, jak málo vlastních opěrných bodů ti zůstalo. Není pozdě začít další část života stavět tak, aby nestála jen na jejich dostupnosti.",
+        "text": "Pokud jsi dětem opravdu dával téměř všechno, možná teď bolestivě zjišťuješ, jak málo vlastních opěrných bodů ti zůstalo. Není pozdě začít další část života stavět tak, aby nestála jen na jejich dostupnosti.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud jsi dětem opravdu dávala téměř všechno, možná teď bolestivě zjišťuješ, jak málo vlastních opěrných bodů ti zůstalo. Není pozdě začít další část života stavět tak, aby nestála jen na jejich dostupnosti."
       },
       {
         "id": "hl_2703",
-        "text": "Nemusíš z jejich nepřítomnosti vyvozovat, že celé tvoje mateřství bylo k ničemu. Smysl toho, cos jim dala, se neměří počtem hodin, které ti teď vrátí.",
+        "text": "Nemusíš z jejich nepřítomnosti vyvozovat, že celé tvoje rodičovství bylo k ničemu. Smysl toho, cos jim dal, se neměří počtem hodin, které ti teď vrátí.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš z jejich nepřítomnosti vyvozovat, že celé tvoje mateřství bylo k ničemu. Smysl toho, cos jim dala, se neměří počtem hodin, které ti teď vrátí."
       },
       {
         "id": "hl_2717",
@@ -15234,8 +15283,9 @@
       },
       {
         "id": "hl_2713",
-        "text": "Kdyby sis od nich mohla vyžádat jednu realistickou pravidelnou věc, co by to bylo? Jedna předvídatelná kotva může dát víc klidu než opakované čekání, kdo se kdy ozve.",
-        "source": "k"
+        "text": "Kdyby sis od nich mohl vyžádat jednu realistickou pravidelnou věc, co by to bylo? Jedna předvídatelná kotva může dát víc klidu než opakované čekání, kdo se kdy ozve.",
+        "source": "k",
+        "text_f": "Kdyby sis od nich mohla vyžádat jednu realistickou pravidelnou věc, co by to bylo? Jedna předvídatelná kotva může dát víc klidu než opakované čekání, kdo se kdy ozve."
       },
       {
         "id": "hl_2704",
@@ -15254,8 +15304,9 @@
       },
       {
         "id": "hl_2699",
-        "text": "Nemusíš předstírat, že ti jejich nepřítomnost nevadí, abys nebyla „náročná matka“. Touha vídat svoje děti je úplně legitimní.",
-        "source": "k"
+        "text": "Nemusíš předstírat, že ti jejich nepřítomnost nevadí, abys nebyl „náročný rodič“. Touha vídat svoje děti je úplně legitimní.",
+        "source": "k",
+        "text_f": "Nemusíš předstírat, že ti jejich nepřítomnost nevadí, abys nebyla „náročná matka“. Touha vídat svoje děti je úplně legitimní."
       },
       {
         "id": "hl_2702",
@@ -15274,13 +15325,15 @@
       },
       {
         "id": "hl_2707",
-        "text": "Zkus na chvíli odložit větu „po tom všem, co jsem pro vás udělala“ a nechat jen „chybíte mi“. Druhá věta říká přesně, co potřebuješ, aniž druhé okamžitě staví před soud.",
-        "source": "k"
+        "text": "Zkus na chvíli odložit větu „po tom všem, co jsem pro vás udělal“ a nechat jen „chybíte mi“. Druhá věta říká přesně, co potřebuješ, aniž druhé okamžitě staví před soud.",
+        "source": "k",
+        "text_f": "Zkus na chvíli odložit větu „po tom všem, co jsem pro vás udělala“ a nechat jen „chybíte mi“. Druhá věta říká přesně, co potřebuješ, aniž druhé okamžitě staví před soud."
       },
       {
         "id": "hl_2708",
-        "text": "Co přesně by pro tebe znamenalo cítit se méně opuštěná — hodina osobně, telefon, společný oběd, pravidelná zpráva? Čím konkrétnější potřeba, tím větší šance, že na ni někdo dokáže reagovat.",
-        "source": "k"
+        "text": "Co přesně by pro tebe znamenalo cítit se méně opuštěný — hodina osobně, telefon, společný oběd, pravidelná zpráva? Čím konkrétnější potřeba, tím větší šance, že na ni někdo dokáže reagovat.",
+        "source": "k",
+        "text_f": "Co přesně by pro tebe znamenalo cítit se méně opuštěná — hodina osobně, telefon, společný oběd, pravidelná zpráva? Čím konkrétnější potřeba, tím větší šance, že na ni někdo dokáže reagovat."
       },
       {
         "id": "hl_2710",
@@ -15294,8 +15347,9 @@
       },
       {
         "id": "hl_2712",
-        "text": "Nemusíš schvalovat současnou míru kontaktu, abys zkusila zjistit, co ji opravdu způsobuje. „Nemají na mě čas“ může mít jinou odpověď než „nestojí o mě“.",
-        "source": "k"
+        "text": "Nemusíš schvalovat současnou míru kontaktu, abys zkusil zjistit, co ji opravdu způsobuje. „Nemají na mě čas“ může mít jinou odpověď než „nestojí o mě“.",
+        "source": "k",
+        "text_f": "Nemusíš schvalovat současnou míru kontaktu, abys zkusila zjistit, co ji opravdu způsobuje. „Nemají na mě čas“ může mít jinou odpověď než „nestojí o mě“."
       },
       {
         "id": "hl_2714",
@@ -15304,20 +15358,23 @@
       },
       {
         "id": "hl_2715",
-        "text": "To, cos dětem dala, není bezcenné jen proto, že se ti to nevrací ve stejné měně. Ale máš plné právo přestat předstírat, že ti současná podoba vztahu stačí.",
-        "source": "k"
+        "text": "To, cos dětem dal, není bezcenné jen proto, že se ti to nevrací ve stejné měně. Ale máš plné právo přestat předstírat, že ti současná podoba vztahu stačí.",
+        "source": "k",
+        "text_f": "To, cos dětem dala, není bezcenné jen proto, že se ti to nevrací ve stejné měně. Ale máš plné právo přestat předstírat, že ti současná podoba vztahu stačí."
       },
       {
         "id": "hl_2716",
-        "text": "Vzpomeň si, kolik hodin měsíčně jsi ve třiceti měla ty na svoji mámu — a přitom jsi ji milovala celou dobu.",
-        "source": "n"
+        "text": "Vzpomeň si, kolik hodin měsíčně jsi ve třiceti měl ty na svoje rodiče — a přitom jsi je miloval celou dobu.",
+        "source": "n",
+        "text_f": "Vzpomeň si, kolik hodin měsíčně jsi ve třiceti měla ty na svoji mámu — a přitom jsi ji milovala celou dobu."
       },
       {
         "id": "hl_2719",
         "text": "Ta prázdná hodina v kalendáři je taky prostor, který smí být tvůj — ne jako náhrada za ně, ale jako něco, co ti nikdo nemůže vzít.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Všechno jsem jim dala, a teď na mě nemají ani hodinu za měsíc."
   },
   {
     "id": "pain_0114",
@@ -16507,8 +16564,9 @@
       },
       {
         "id": "hl_2933",
-        "text": "Když šéf říká „my jsme to zvládli“, překládá se to takhle: ty jsi to zvládl(a), on byl mezitím na poradě.",
-        "source": "n"
+        "text": "Když šéf říká „my jsme to zvládli“, překládá se to takhle: ty jsi to zvládl, on byl mezitím na poradě.",
+        "source": "n",
+        "text_f": "Když šéf říká „my jsme to zvládli“, překládá se to takhle: ty jsi to zvládla, on byl mezitím na poradě."
       },
       {
         "id": "hl_2935",
@@ -16768,8 +16826,9 @@
       },
       {
         "id": "hl_2980",
-        "text": "Ty uvozovky sis tam dala sama — a přesně ty říkají všechno. Rada, kterou si nikdo neobjednal, je recenze, a recenze vlastního domova se poslouchá blbě i od kritika s dobrým srdcem.",
-        "source": "n"
+        "text": "Ty uvozovky sis tam dal sám — a přesně ty říkají všechno. Rada, kterou si nikdo neobjednal, je recenze, a recenze vlastního domova se poslouchá blbě i od kritika s dobrým srdcem.",
+        "source": "n",
+        "text_f": "Ty uvozovky sis tam dala sama — a přesně ty říkají všechno. Rada, kterou si nikdo neobjednal, je recenze, a recenze vlastního domova se poslouchá blbě i od kritika s dobrým srdcem."
       },
       {
         "id": "hl_2981",
@@ -16783,8 +16842,9 @@
       },
       {
         "id": "hl_2983",
-        "text": "A kde je v tom celém tvůj muž? Je to jeho máma — možná část téhle pošty už dávno neměla chodit na tvoje jméno.",
-        "source": "n"
+        "text": "A kde je v tom celém tvůj partner? Je to jeho máma — možná část téhle pošty už dávno neměla chodit na tvoje jméno.",
+        "source": "n",
+        "text_f": "A kde je v tom celém tvůj muž? Je to jeho máma — možná část téhle pošty už dávno neměla chodit na tvoje jméno."
       }
     ]
   },
@@ -17123,7 +17183,7 @@
   {
     "id": "pain_0125",
     "src_id": "h_086",
-    "text": "Manžel se mě před svojí mámou nikdy nezastane.",
+    "text": "Partner se mě před svojí mámou nikdy nezastane.",
     "smer": "na blízké",
     "oblast": "tchán/tchyně / partner",
     "tier": "free",
@@ -17135,9 +17195,10 @@
     "hlasky": [
       {
         "id": "hl_2984",
-        "text": "To může bolet víc než samotné chování jeho mámy, protože od partnera člověk čeká pocit „Jsme v tom spolu“. Když mlčí, můžeš se vedle něj cítit překvapivě sama.",
+        "text": "To může bolet víc než samotné chování jeho mámy, protože od partnera člověk čeká pocit „Jsme v tom spolu“. Když mlčí, můžeš se vedle něj cítit překvapivě sám.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "To může bolet víc než samotné chování jeho mámy, protože od partnera člověk čeká pocit „Jsme v tom spolu“. Když mlčí, můžeš se vedle něj cítit překvapivě sama."
       },
       {
         "id": "hl_2985",
@@ -17159,14 +17220,16 @@
       },
       {
         "id": "hl_2995",
-        "text": "Zkus mu bez výčitek navrhnout jednu konkrétní větu, kterou bys příště chtěla slyšet z jeho úst. Třeba: „Mami, tohle je naše rozhodnutí.“",
+        "text": "Zkus mu bez výčitek navrhnout jednu konkrétní větu, kterou bys příště chtěl slyšet z jeho úst. Třeba: „Mami, tohle je naše rozhodnutí.“",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Zkus mu bez výčitek navrhnout jednu konkrétní větu, kterou bys příště chtěla slyšet z jeho úst. Třeba: „Mami, tohle je naše rozhodnutí.“"
       },
       {
         "id": "hl_2991",
-        "text": "Je možné, že vůbec netuší, jak silně tě jeho pasivita zasahuje. „Vadí mi tvoje máma“ a „bolí mě, že v těch chvílích zůstanu sama“ jsou dvě velmi odlišná sdělení.",
-        "source": "k"
+        "text": "Je možné, že vůbec netuší, jak silně tě jeho pasivita zasahuje. „Vadí mi tvoje máma“ a „bolí mě, že v těch chvílích zůstanu sám“ jsou dvě velmi odlišná sdělení.",
+        "source": "k",
+        "text_f": "Je možné, že vůbec netuší, jak silně tě jeho pasivita zasahuje. „Vadí mi tvoje máma“ a „bolí mě, že v těch chvílích zůstanu sama“ jsou dvě velmi odlišná sdělení."
       },
       {
         "id": "hl_2989",
@@ -17185,8 +17248,9 @@
       },
       {
         "id": "hl_3006",
-        "text": "Zkus místo výčitky návod: jedna doslovná věta, kterou by ti stačilo od něj slyšet — muži pracují líp s návodem než s nápovědou.",
-        "source": "n"
+        "text": "Zkus místo výčitky návod: jedna doslovná věta, kterou by ti od něj stačilo slyšet. S návodem se pracuje líp než s nápovědou.",
+        "source": "n",
+        "text_f": "Zkus místo výčitky návod: jedna doslovná věta, kterou by ti stačilo od něj slyšet — muži pracují líp s návodem než s nápovědou."
       },
       {
         "id": "hl_2988",
@@ -17195,8 +17259,9 @@
       },
       {
         "id": "hl_2992",
-        "text": "Pokud jeho máma překračuje hranice a on pokaždé čeká, že si to vyřešíš sama, je pochopitelné, že začneš cítit křivdu i vůči němu. Problém pak už není jen mezi tebou a tchyní.",
-        "source": "k"
+        "text": "Pokud jeho máma překračuje hranice a on pokaždé čeká, že si to vyřešíš sám, je pochopitelné, že začneš cítit křivdu i vůči němu. Problém pak už není jen mezi tebou a tchyní.",
+        "source": "k",
+        "text_f": "Pokud jeho máma překračuje hranice a on pokaždé čeká, že si to vyřešíš sama, je pochopitelné, že začneš cítit křivdu i vůči němu. Problém pak už není jen mezi tebou a tchyní."
       },
       {
         "id": "hl_2993",
@@ -17205,8 +17270,9 @@
       },
       {
         "id": "hl_2994",
-        "text": "Když tchyně něco vypálí a manžel náhle začne intenzivně studovat strukturu ubrusu, není divu, že se necítíš zrovna jako součást sehraného týmu.",
-        "source": "k"
+        "text": "Když tchyně něco vypálí a partner náhle začne intenzivně studovat strukturu ubrusu, není divu, že se necítíš zrovna jako součást sehraného týmu.",
+        "source": "k",
+        "text_f": "Když tchyně něco vypálí a manžel náhle začne intenzivně studovat strukturu ubrusu, není divu, že se necítíš zrovna jako součást sehraného týmu."
       },
       {
         "id": "hl_2996",
@@ -17215,8 +17281,9 @@
       },
       {
         "id": "hl_2997",
-        "text": "Kdy přesně potřebuješ, aby zasáhl, a kdy si dokážeš hranici říct sama? Přesnost mu může pomoct pochopit, že po něm nechceš permanentní osobní stráž.",
-        "source": "k"
+        "text": "Kdy přesně potřebuješ, aby zasáhl, a kdy si dokážeš hranici říct sám? Přesnost mu může pomoct pochopit, že po něm nechceš permanentní osobní stráž.",
+        "source": "k",
+        "text_f": "Kdy přesně potřebuješ, aby zasáhl, a kdy si dokážeš hranici říct sama? Přesnost mu může pomoct pochopit, že po něm nechceš permanentní osobní stráž."
       },
       {
         "id": "hl_2998",
@@ -17225,13 +17292,15 @@
       },
       {
         "id": "hl_2999",
-        "text": "Nemusí své mámě říct „moje žena má vždycky pravdu“. Úplně stačí dát najevo „tohle je naše věc a nebudeme ji před tebou rozebírat“.",
-        "source": "k"
+        "text": "Nemusí své mámě říkat, že máš vždycky pravdu. Úplně stačí dát najevo „tohle je naše věc a nebudeme ji před tebou rozebírat“.",
+        "source": "k",
+        "text_f": "Nemusí své mámě říct „moje žena má vždycky pravdu“. Úplně stačí dát najevo „tohle je naše věc a nebudeme ji před tebou rozebírat“."
       },
       {
         "id": "hl_3000",
-        "text": "Pokud pokaždé musíš být ta nepříjemná ty, zatímco on zůstává hodný syn, systém je pro něj docela výhodně nastavený. Má klid na obou stranách, jen účet chodí tobě.",
-        "source": "k"
+        "text": "Pokud pokaždé musíš být za toho nepříjemného ty, zatímco on zůstává hodný syn, systém je pro něj docela výhodně nastavený. Má klid na obou stranách, jen účet chodí tobě.",
+        "source": "k",
+        "text_f": "Pokud pokaždé musíš být ta nepříjemná ty, zatímco on zůstává hodný syn, systém je pro něj docela výhodně nastavený. Má klid na obou stranách, jen účet chodí tobě."
       },
       {
         "id": "hl_3001",
@@ -17240,8 +17309,9 @@
       },
       {
         "id": "hl_3003",
-        "text": "Dobrý syn nemusí být syn bez hranic. A dobrý manžel nemusí vyhlásit matce válku — jen občas potřebuje přestat dělat Švýcarsko.",
-        "source": "k"
+        "text": "Dobrý syn nemusí být syn bez hranic. A dobrý partner nemusí vyhlásit matce válku — jen občas potřebuje přestat dělat Švýcarsko.",
+        "source": "k",
+        "text_f": "Dobrý syn nemusí být syn bez hranic. A dobrý manžel nemusí vyhlásit matce válku — jen občas potřebuje přestat dělat Švýcarsko."
       },
       {
         "id": "hl_3004",
@@ -17258,7 +17328,8 @@
         "text": "Domluvte se dopředu na signálu — jeden pohled, jedno slovo — protože v tu chvíli u stolu on nemyslí, on přežívá.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Manžel se mě před svojí mámou nikdy nezastane."
   },
   {
     "id": "pain_0155",
@@ -17288,15 +17359,17 @@
       },
       {
         "id": "hl_3715",
-        "text": "Zkus mu říct, kolik společného času bys potřebovala a jak by mohl vypadat. „Jednou týdně bych se s tebou ráda prošla po městě“ se řeší líp než obecné „Nikdy nejsme spolu“.",
+        "text": "Zkus mu říct, kolik společného času bys potřeboval a jak by mohl vypadat. „Jednou týdně bych se s tebou rád prošel po městě“ se řeší líp než obecné „Nikdy nejsme spolu“.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Zkus mu říct, kolik společného času bys potřebovala a jak by mohl vypadat. „Jednou týdně bych se s tebou ráda prošla po městě“ se řeší líp než obecné „Nikdy nejsme spolu“."
       },
       {
         "id": "hl_3723",
-        "text": "Vztah nemusí být vždycky na prvním místě před vším ostatním. Pokud je ale dlouhodobě až za vším ostatním, není divu, že se v něm začneš cítit sama.",
+        "text": "Vztah nemusí být vždycky na prvním místě před vším ostatním. Pokud je ale dlouhodobě až za vším ostatním, není divu, že se v něm začneš cítit sám.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Vztah nemusí být vždycky na prvním místě před vším ostatním. Pokud je ale dlouhodobě až za vším ostatním, není divu, že se v něm začneš cítit sama."
       },
       {
         "id": "hl_3725",
@@ -17306,8 +17379,9 @@
       },
       {
         "id": "hl_3721",
-        "text": "Možná partner vůbec nevnímá, že tvoje stížnost není zákaz kola ani kamarádů. Je to žádost, aby ses občas necítila jako poslední položka po vybití baterky.",
-        "source": "k"
+        "text": "Možná partner vůbec nevnímá, že tvoje stížnost není zákaz kola ani kamarádů. Je to žádost, aby ses občas necítil jako poslední položka po vybití baterky.",
+        "source": "k",
+        "text_f": "Možná partner vůbec nevnímá, že tvoje stížnost není zákaz kola ani kamarádů. Je to žádost, aby ses občas necítila jako poslední položka po vybití baterky."
       },
       {
         "id": "hl_3707",
@@ -17384,7 +17458,7 @@
   {
     "id": "pain_0128",
     "src_id": "h_090",
-    "text": "Měla jsem narozeniny a půlka lidí si vzpomněla, až jim to připomněla sociální síť. Půlka ani pak.",
+    "text": "Měl(a) jsem narozeniny a půlka lidí si vzpomněla, až jim to připomněla sociální síť. Půlka ani pak.",
     "smer": "na blízké",
     "oblast": "mikro-bodnutí",
     "tier": "free",
@@ -17414,9 +17488,10 @@
       },
       {
         "id": "hl_3077",
-        "text": "Existuje i jiný, možná důležitější seznam než seznam gratulantů: seznam lidí, kteří by ti přijeli pomoct, i kdybys jim zavolala uprostřed noci.",
+        "text": "Existuje i jiný, možná důležitější seznam než seznam gratulantů: seznam lidí, kteří by ti přijeli pomoct, i kdybys jim zavolal uprostřed noci.",
         "source": "n",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Existuje i jiný, možná důležitější seznam než seznam gratulantů: seznam lidí, kteří by ti přijeli pomoct, i kdybys jim zavolala uprostřed noci."
       },
       {
         "id": "hl_3069",
@@ -17436,8 +17511,9 @@
       },
       {
         "id": "hl_3073",
-        "text": "Co by ti vlastně udělalo narozeniny hezké, kdyby ses nemusela spoléhat na spontánní paměť ostatních? Odpověď může vrátit část dne do tvých rukou.",
-        "source": "k"
+        "text": "Co by ti vlastně udělalo narozeniny hezké, kdyby ses nemusel spoléhat na spontánní paměť ostatních? Odpověď může vrátit část dne do tvých rukou.",
+        "source": "k",
+        "text_f": "Co by ti vlastně udělalo narozeniny hezké, kdyby ses nemusela spoléhat na spontánní paměť ostatních? Odpověď může vrátit část dne do tvých rukou."
       },
       {
         "id": "hl_3059",
@@ -17456,8 +17532,9 @@
       },
       {
         "id": "hl_3064",
-        "text": "Možná tě nejvíc nezranilo zapomenutí, ale kolik lidí sis myslela, že tě má skutečně v hlavě. To je bolest, která stojí za uznání.",
-        "source": "k"
+        "text": "Možná tě nejvíc nezranilo zapomenutí, ale kolik lidí sis myslel, že tě má skutečně v hlavě. To je bolest, která stojí za uznání.",
+        "source": "k",
+        "text_f": "Možná tě nejvíc nezranilo zapomenutí, ale kolik lidí sis myslela, že tě má skutečně v hlavě. To je bolest, která stojí za uznání."
       },
       {
         "id": "hl_3065",
@@ -17471,8 +17548,9 @@
       },
       {
         "id": "hl_3067",
-        "text": "Kdybys nevěděla, kdo si datum pamatoval bez připomínky, hodnotila bys jejich přání jinak? Možná technologie dodala informaci, kterou dřív člověk vůbec neměl.",
-        "source": "k"
+        "text": "Kdybys nevěděl, kdo si datum pamatoval bez připomínky, hodnotil bys jejich přání jinak? Možná technologie dodala informaci, kterou dřív člověk vůbec neměl.",
+        "source": "k",
+        "text_f": "Kdybys nevěděla, kdo si datum pamatoval bez připomínky, hodnotila bys jejich přání jinak? Možná technologie dodala informaci, kterou dřív člověk vůbec neměl."
       },
       {
         "id": "hl_3068",
@@ -17486,8 +17564,9 @@
       },
       {
         "id": "hl_3071",
-        "text": "Je možné, že několik konkrétních lidí tě zklamalo oprávněně. Nemusíš jejich zapomenutí omlouvat jen proto, abys byla velkorysá.",
-        "source": "k"
+        "text": "Je možné, že několik konkrétních lidí tě zklamalo oprávněně. Nemusíš jejich zapomenutí omlouvat jen proto, abys byl velkorysý.",
+        "source": "k",
+        "text_f": "Je možné, že několik konkrétních lidí tě zklamalo oprávněně. Nemusíš jejich zapomenutí omlouvat jen proto, abys byla velkorysá."
       },
       {
         "id": "hl_3072",
@@ -17501,15 +17580,18 @@
       },
       {
         "id": "hl_3078",
-        "text": "Ruku na srdce: gratulovala jsi letos všem svým lidem bez nápovědy kalendáře? Jestli ne, tak vítej v klubu — a to není výčitka, to je úleva, protože stejný metr platí i pro ně.",
-        "source": "n"
+        "text": "Ruku na srdce: gratuloval jsi letos všem svým lidem bez nápovědy kalendáře? Jestli ne, tak vítej v klubu — a to není výčitka, to je úleva, protože stejný metr platí i pro ně.",
+        "source": "n",
+        "text_f": "Ruku na srdce: gratulovala jsi letos všem svým lidem bez nápovědy kalendáře? Jestli ne, tak vítej v klubu — a to není výčitka, to je úleva, protože stejný metr platí i pro ně."
       },
       {
         "id": "hl_3079",
-        "text": "„Všechno nej!“ odeslané těsně před půlnocí mezi mytím nádobí a spánkem — o tenhle žánr světové literatury jsi zas tolik nepřišla.",
-        "source": "n"
+        "text": "„Všechno nej!“ odeslané těsně před půlnocí mezi mytím nádobí a spánkem — o tenhle žánr světové literatury jsi zas tolik nepřišel.",
+        "source": "n",
+        "text_f": "„Všechno nej!“ odeslané těsně před půlnocí mezi mytím nádobí a spánkem — o tenhle žánr světové literatury jsi zas tolik nepřišla."
       }
-    ]
+    ],
+    "text_f": "Měla jsem narozeniny a půlka lidí si vzpomněla, až jim to připomněla sociální síť. Půlka ani pak."
   },
   {
     "id": "pain_0127",
@@ -17896,8 +17978,9 @@
       },
       {
         "id": "hl_3990",
-        "text": "Kdyby ta neodeslaná zpráva uměla mluvit, řekla by: nenech mě v konceptech — i kdybys mě poslal(a) člověku, se kterým sis rok nepsal(a); dobré zprávy jsou nejlepší záminka, jak oživit staré kontakty.",
-        "source": "n"
+        "text": "Kdyby ta neodeslaná zpráva uměla mluvit, řekla by: nenech mě v konceptech — i kdybys mě poslal člověku, se kterým sis rok nepsal; dobré zprávy jsou nejlepší záminka, jak oživit staré kontakty.",
+        "source": "n",
+        "text_f": "Kdyby ta neodeslaná zpráva uměla mluvit, řekla by: nenech mě v konceptech — i kdybys mě poslala člověku, se kterým sis rok nepsala; dobré zprávy jsou nejlepší záminka, jak oživit staré kontakty."
       },
       {
         "id": "hl_3991",
@@ -18166,8 +18249,9 @@
       },
       {
         "id": "hl_4133",
-        "text": "Rozlož si to: hypotéka je smlouva, ne pouto na duši — dá se refinancovat, byt se dá i prodat; práce se dá změnit i se závazky, lidi to dělají; děti jsou jediná položka bez výpovědní lhůty — a zrovna ta je ta, kterou bys nevypověděl(a) stejně.",
-        "source": "n"
+        "text": "Rozlož si to: hypotéka je smlouva, ne pouto na duši — dá se refinancovat, byt se dá i prodat; práce se dá změnit i se závazky, lidi to dělají; děti jsou jediná položka bez výpovědní lhůty — a zrovna ta je ta, kterou bys nevypověděl stejně.",
+        "source": "n",
+        "text_f": "Rozlož si to: hypotéka je smlouva, ne pouto na duši — dá se refinancovat, byt se dá i prodat; práce se dá změnit i se závazky, lidi to dělají; děti jsou jediná položka bez výpovědní lhůty — a zrovna ta je ta, kterou bys nevypověděla stejně."
       },
       {
         "id": "hl_4134",
@@ -18176,8 +18260,9 @@
       },
       {
         "id": "hl_4135",
-        "text": "Kdyby ta hypotéka uměla mluvit, řekla by: já jsem sedmnáct řádků v bance, ne mříž — z té klece, co cítíš, jsem postavila jen zdi; strop sis tam domyslel(a) sám (sama).",
-        "source": "n"
+        "text": "Kdyby ta hypotéka uměla mluvit, řekla by: já jsem sedmnáct řádků v bance, ne mříž — z té klece, co cítíš, jsem postavila jen zdi; strop sis tam domyslel sám.",
+        "source": "n",
+        "text_f": "Kdyby ta hypotéka uměla mluvit, řekla by: já jsem sedmnáct řádků v bance, ne mříž — z té klece, co cítíš, jsem postavila jen zdi; strop sis tam domyslela sama."
       }
     ]
   },
@@ -18298,8 +18383,9 @@
       },
       {
         "id": "hl_3772",
-        "text": "Kdyby sis vedl(a) deník smůly i štěstí se stejnou pečlivostí, sloupec štěstí by nejspíš vyhrál — jen se o něm nemluví u piva, protože je to špatná historka.",
-        "source": "n"
+        "text": "Kdyby sis vedl deník smůly i štěstí se stejnou pečlivostí, sloupec štěstí by nejspíš vyhrál — jen se o něm nemluví u piva, protože je to špatná historka.",
+        "source": "n",
+        "text_f": "Kdyby sis vedla deník smůly i štěstí se stejnou pečlivostí, sloupec štěstí by nejspíš vyhrál — jen se o něm nemluví u piva, protože je to špatná historka."
       },
       {
         "id": "hl_3773",
@@ -18994,8 +19080,9 @@
       },
       {
         "id": "hl_3103",
-        "text": "Stát nachystaný(á) v botách a číst „nezlob se, dneska to nedám“ je zážitek, ze kterého se dá časem udělat aspoň dobrá historka — ale nejdřív si klidně chvíli zanadávej.",
-        "source": "n"
+        "text": "Stát nachystaný v botách a číst „nezlob se, dneska to nedám“ je zážitek, ze kterého se dá časem udělat aspoň dobrá historka — ale nejdřív si klidně chvíli zanadávej.",
+        "source": "n",
+        "text_f": "Stát nachystaná v botách a číst „nezlob se, dneska to nedám“ je zážitek, ze kterého se dá časem udělat aspoň dobrá historka — ale nejdřív si klidně chvíli zanadávej."
       }
     ]
   },
@@ -19261,8 +19348,9 @@
       },
       {
         "id": "hl_3172",
-        "text": "Nikdo na nikoho — to je hodně velký vzorek. Kdy naposledy jsi ty sám (sama) někomu napsal(a) „nezajdem na pivo“?",
-        "source": "n"
+        "text": "Nikdo na nikoho — to je hodně velký vzorek. Kdy naposledy jsi ty sám někomu napsal „nezajdem na pivo“?",
+        "source": "n",
+        "text_f": "Nikdo na nikoho — to je hodně velký vzorek. Kdy naposledy jsi ty sama někomu napsala „nezajdem na pivo“?"
       },
       {
         "id": "hl_3173",
@@ -22128,15 +22216,16 @@
       },
       {
         "id": "hl_3678",
-        "text": "Experiment na jeden měsíc: zavolej, kdy sám(a) chceš, a přestaň u toho počítat — možná zjistíš, že tě netrápí volání, ale to počítadlo.",
-        "source": "n"
+        "text": "Experiment na jeden měsíc: zavolej, kdy sám chceš, a přestaň u toho počítat — možná zjistíš, že tě netrápí volání, ale to počítadlo.",
+        "source": "n",
+        "text_f": "Experiment na jeden měsíc: zavolej, kdy sama chceš, a přestaň u toho počítat — možná zjistíš, že tě netrápí volání, ale to počítadlo."
       }
     ]
   },
   {
     "id": "pain_0154",
     "src_id": "k_007",
-    "text": "Doma jsem něco jako služka — všimnou si mě, jen když dojde jídlo.",
+    "text": "Doma jsem něco jako personál — všimnou si mě, jen když dojde jídlo.",
     "smer": "na blízké",
     "oblast": null,
     "tier": "free",
@@ -22149,9 +22238,10 @@
     "hlasky": [
       {
         "id": "hl_3680",
-        "text": "Tohle nezní jen jako únava z domácích prací, ale jako bolest z toho, že tvoje péče je vidět hlavně ve chvíli, kdy něco chybí. Být potřebná jako funkce není totéž jako být vnímaná jako člověk.",
+        "text": "Tohle nezní jen jako únava z domácích prací, ale jako bolest z toho, že tvoje péče je vidět hlavně ve chvíli, kdy něco chybí. Být potřebný jako funkce není totéž jako být vnímaný jako člověk.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Tohle nezní jen jako únava z domácích prací, ale jako bolest z toho, že tvoje péče je vidět hlavně ve chvíli, kdy něco chybí. Být potřebná jako funkce není totéž jako být vnímaná jako člověk."
       },
       {
         "id": "hl_3681",
@@ -22161,21 +22251,24 @@
       },
       {
         "id": "hl_3682",
-        "text": "Možná ti nechybí poděkování za každý nákup, ale obyčejný zájem o tebe samotnou, nejen o to, co pro ostatní obstaráváš. To je mnohem hlubší potřeba než pochvala za domácnost.",
+        "text": "Možná ti nechybí poděkování za každý nákup, ale obyčejný zájem o tebe samotného, nejen o to, co pro ostatní obstaráváš. To je mnohem hlubší potřeba než pochvala za domácnost.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Možná ti nechybí poděkování za každý nákup, ale obyčejný zájem o tebe samotnou, nejen o to, co pro ostatní obstaráváš. To je mnohem hlubší potřeba než pochvala za domácnost."
       },
       {
         "id": "hl_3685",
-        "text": "Nemusíš čekat, až se ostatní sami dovtípí. Můžeš jim říct, že tě vyčerpává být doma hlavně tou, která zajišťuje provoz, a že potřebuješ spravedlivější rozdělení povinností i více osobního zájmu.",
+        "text": "Nemusíš čekat, až se ostatní sami dovtípí. Můžeš jim říct, že tě vyčerpává být doma hlavně tím, kdo zajišťuje provoz, a že potřebuješ spravedlivější rozdělení povinností i více osobního zájmu.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš čekat, až se ostatní sami dovtípí. Můžeš jim říct, že tě vyčerpává být doma hlavně tou, která zajišťuje provoz, a že potřebuješ spravedlivější rozdělení povinností i více osobního zájmu."
       },
       {
         "id": "hl_3689",
-        "text": "Doma bys měla mít své místo nejen jako člověk, který zásobuje lednici, ale také jako někdo, kdo může být unavený, potřebovat péči a mít svůj vlastní život.",
+        "text": "Doma bys měl mít své místo nejen jako člověk, který zásobuje lednici, ale také jako někdo, kdo může být unavený, potřebovat péči a mít svůj vlastní život.",
         "source": "k",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Doma bys měla mít své místo nejen jako člověk, který zásobuje lednici, ale také jako někdo, kdo může být unavený, potřebovat péči a mít svůj vlastní život."
       },
       {
         "id": "hl_3683",
@@ -22199,8 +22292,9 @@
       },
       {
         "id": "hl_3691",
-        "text": "Zkus si sepsat, co všechno doma skutečně držíš v hlavě a děláš. Ne proto, abys vystavila fakturu, ale aby i tobě samotné bylo jasné, proč jsi tak unavená.",
-        "source": "k"
+        "text": "Zkus si sepsat, co všechno doma skutečně držíš v hlavě a děláš. Ne proto, abys vystavil fakturu, ale aby i tobě samotnému bylo jasné, proč jsi tak unavený.",
+        "source": "k",
+        "text_f": "Zkus si sepsat, co všechno doma skutečně držíš v hlavě a děláš. Ne proto, abys vystavila fakturu, ale aby i tobě samotné bylo jasné, proč jsi tak unavená."
       },
       {
         "id": "hl_3684",
@@ -22209,8 +22303,9 @@
       },
       {
         "id": "hl_3687",
-        "text": "Možná ses stala tak spolehlivou, že tvoje péče zmizela z dohledu jako elektřina ze zásuvky. To ale neznamená, že ji musíš dál poskytovat bez hranic.",
-        "source": "k"
+        "text": "Možná ses stal tak spolehlivým, že tvoje péče zmizela z dohledu jako elektřina ze zásuvky. To ale neznamená, že ji musíš dál poskytovat bez hranic.",
+        "source": "k",
+        "text_f": "Možná ses stala tak spolehlivou, že tvoje péče zmizela z dohledu jako elektřina ze zásuvky. To ale neznamená, že ji musíš dál poskytovat bez hranic."
       },
       {
         "id": "hl_3688",
@@ -22224,8 +22319,9 @@
       },
       {
         "id": "hl_3692",
-        "text": "Možná tě ostatní nevnímají jako služku úmyslně; prostě si zvykli na systém, který jim velmi pohodlně slouží. Systémy se ale mění až ve chvíli, kdy přestanou být neviditelné.",
-        "source": "k"
+        "text": "Možná tě ostatní nevnímají jako personál úmyslně; prostě si zvykli na systém, který jim velmi pohodlně slouží. Systémy se ale mění až ve chvíli, kdy přestanou být neviditelné.",
+        "source": "k",
+        "text_f": "Možná tě ostatní nevnímají jako služku úmyslně; prostě si zvykli na systém, který jim velmi pohodlně slouží. Systémy se ale mění až ve chvíli, kdy přestanou být neviditelné."
       },
       {
         "id": "hl_3693",
@@ -22254,25 +22350,30 @@
       },
       {
         "id": "hl_3700",
-        "text": "Malý pokus: přestaň na týden dělat jednu jedinou věc, třeba doplňovat pití do lednice — a sleduj, jak rychle se „samo od sebe“ ukáže jako „díky mamce“.",
-        "source": "n"
+        "text": "Malý pokus: přestaň na týden dělat jednu jedinou věc, třeba doplňovat pití do lednice — a sleduj, jak rychle se ukáže, že se to „samo od sebe“ nedělalo.",
+        "source": "n",
+        "text_f": "Malý pokus: přestaň na týden dělat jednu jedinou věc, třeba doplňovat pití do lednice — a sleduj, jak rychle se „samo od sebe“ ukáže jako „díky mamce“."
       },
       {
         "id": "hl_3701",
-        "text": "Služka má aspoň výplatu, pracovní dobu a volný den — ty jedeš nonstop zadarmo; už jen to srovnání ukazuje, že tvůj vztek je zdravý.",
-        "source": "n"
+        "text": "Personál má aspoň výplatu, pracovní dobu a volný den — ty jedeš nonstop zadarmo; už jen to srovnání ukazuje, že tvůj vztek je zdravý.",
+        "source": "n",
+        "text_f": "Služka má aspoň výplatu, pracovní dobu a volný den — ty jedeš nonstop zadarmo; už jen to srovnání ukazuje, že tvůj vztek je zdravý."
       },
       {
         "id": "hl_3702",
-        "text": "Všimni si, že „všimnou si mě, jen když dojde jídlo“ znamená i tohle: jsi pro ně tak spolehlivá, že tě mají za přírodní zákon. Je to křivda — a zároveň nechtěná poklona.",
-        "source": "n"
+        "text": "Všimni si, že „všimnou si mě, jen když dojde jídlo“ znamená i tohle: jsi pro ně tak spolehlivý, že tě mají za přírodní zákon. Je to křivda — a zároveň nechtěná poklona.",
+        "source": "n",
+        "text_f": "Všimni si, že „všimnou si mě, jen když dojde jídlo“ znamená i tohle: jsi pro ně tak spolehlivá, že tě mají za přírodní zákon. Je to křivda — a zároveň nechtěná poklona."
       },
       {
         "id": "hl_3703",
-        "text": "A až zase někdo zavolá „mami, kde je…“, zkus místo skoku odpovědět „nevím, hledej“ — svět se nezboří a hledání buduje charakter.",
-        "source": "n"
+        "text": "A až zase někdo zavolá „kde je…?“, zkus místo skoku odpovědět „nevím, hledej“ — svět se nezboří a hledání buduje charakter.",
+        "source": "n",
+        "text_f": "A až zase někdo zavolá „mami, kde je…“, zkus místo skoku odpovědět „nevím, hledej“ — svět se nezboří a hledání buduje charakter."
       }
-    ]
+    ],
+    "text_f": "Doma jsem něco jako služka — všimnou si mě, jen když dojde jídlo."
   },
   {
     "id": "pain_0158",
@@ -22817,13 +22918,15 @@
       },
       {
         "id": "hl_3868",
-        "text": "Otoč to: pracoviště, které se bez tebe týden nezhroutí, je pracoviště, kde si můžeš dovolit být nemocný(á), vzít si dovolenou a jednou i odejít — nepostradatelnost je zlatá klec, gratuluju ke klíči.",
-        "source": "n"
+        "text": "Otoč to: pracoviště, které se bez tebe týden nezhroutí, je pracoviště, kde si můžeš dovolit být nemocný, vzít si dovolenou a jednou i odejít — nepostradatelnost je zlatá klec, gratuluju ke klíči.",
+        "source": "n",
+        "text_f": "Otoč to: pracoviště, které se bez tebe týden nezhroutí, je pracoviště, kde si můžeš dovolit být nemocná, vzít si dovolenou a jednou i odejít — nepostradatelnost je zlatá klec, gratuluju ke klíči."
       },
       {
         "id": "hl_3869",
-        "text": "Zkus si vybavit, kdy naposledy někdo z kolegů marodil ty — a jestli sis toho všiml(a) víc než mlhavě; nejspíš ne, a nebylo to tím, že by ti na nich nezáleželo.",
-        "source": "n"
+        "text": "Zkus si vybavit, kdy naposledy někdo z kolegů marodil ty — a jestli sis toho všiml víc než mlhavě; nejspíš ne, a nebylo to tím, že by ti na nich nezáleželo.",
+        "source": "n",
+        "text_f": "Zkus si vybavit, kdy naposledy někdo z kolegů marodil ty — a jestli sis toho všimla víc než mlhavě; nejspíš ne, a nebylo to tím, že by ti na nich nezáleželo."
       },
       {
         "id": "hl_3871",
@@ -22897,8 +23000,9 @@
       },
       {
         "id": "hl_3918",
-        "text": "Zkus večer místo „co jsem udělal(a)“ otázku „komu jsem dneska pomohl(a)“ — na tu bývá odpověď skoro vždycky, a hřeje víc.",
-        "source": "n"
+        "text": "Zkus večer místo „co jsem udělal“ otázku „komu jsem dneska pomohl“ — na tu bývá odpověď skoro vždycky, a hřeje víc.",
+        "source": "n",
+        "text_f": "Zkus večer místo „co jsem udělala“ otázku „komu jsem dneska pomohla“ — na tu bývá odpověď skoro vždycky, a hřeje víc."
       },
       {
         "id": "hl_3900",
@@ -22957,8 +23061,9 @@
       },
       {
         "id": "hl_3916",
-        "text": "Rozdíl mezi „makám“ a „udělal(a) jsem“ dělá často jedna věc: dokončování — deset rozdělaných věcí unaví víc a zapíše se míň než dvě dotažené; zkus zítra jednu věc dotáhnout schválně.",
-        "source": "n"
+        "text": "Rozdíl mezi „makám“ a „udělal jsem“ dělá často jedna věc: dokončování — deset rozdělaných věcí unaví víc a zapíše se míň než dvě dotažené; zkus zítra jednu věc dotáhnout schválně.",
+        "source": "n",
+        "text_f": "Rozdíl mezi „makám“ a „udělala jsem“ dělá často jedna věc: dokončování — deset rozdělaných věcí unaví víc a zapíše se míň než dvě dotažené; zkus zítra jednu věc dotáhnout schválně."
       },
       {
         "id": "hl_3917",
@@ -23037,8 +23142,9 @@
       },
       {
         "id": "hl_3967",
-        "text": "A jedno kafe si zajdi klidně sám (sama) — s knížkou, u okna; není to náhražka, je to trénink, že tvůj čas má hodnotu i bez svědků.",
-        "source": "n"
+        "text": "A jedno kafe si zajdi klidně sám — s knížkou, u okna; není to náhražka, je to trénink, že tvůj čas má hodnotu i bez svědků.",
+        "source": "n",
+        "text_f": "A jedno kafe si zajdi klidně sama — s knížkou, u okna; není to náhražka, je to trénink, že tvůj čas má hodnotu i bez svědků."
       },
       {
         "id": "hl_3949",
@@ -23525,8 +23631,9 @@
       },
       {
         "id": "hl_4111",
-        "text": "Sraz je mimochodem soutěž, do které ses nikdy nepřihlásil(a) — a nejlepší na neohlášených soutěžích je, že se z nich dá kdykoli odstoupit; přijeď příště jen za lidmi, které máš rád(a), a zbytek nech soutěžit.",
-        "source": "n"
+        "text": "Sraz je mimochodem soutěž, do které ses nikdy nepřihlásil — a nejlepší na neohlášených soutěžích je, že se z nich dá kdykoli odstoupit; přijeď příště jen za lidmi, které máš rád, a zbytek nech soutěžit.",
+        "source": "n",
+        "text_f": "Sraz je mimochodem soutěž, do které ses nikdy nepřihlásila — a nejlepší na neohlášených soutěžích je, že se z nich dá kdykoli odstoupit; přijeď příště jen za lidmi, které máš ráda, a zbytek nech soutěžit."
       }
     ]
   },
