@@ -543,9 +543,9 @@ Sekce má po vstupu **tři karty** (rozcestník) — tři způsoby, jak člověk
 
 | brána | jazyk uživatele | data | kam vede |
 |---|---|---|---|
-| **Jádrové pocity** | *„Vím, co cítím“* | `feelings` → `clusters` | triplet (single / merged mód, viz níže) |
+| **Jádrové pocity** | *„Vím, jak se občas cítím“* | `feelings` → `clusters` | triplet (single / merged mód, viz níže) |
 | **Strachy** | *„Bojím se něčeho konkrétního“* | `situations` → (`fears`) → `clusters` | přerámování strachu → volba pocitů → triplet |
-| **Bolístky** | *„Mám v hlavě větu, která bolí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
+| **Bolístky** | *„Něco mě štve nebo trápí“* | `pains` | hlášky — vlastní přerámování, **bez tripletu** |
 
 **Brána Strachy** (přestavěno 21. 10. 2026) — search nahoře (názvy i `aliases`; „maturita“ najde zkoušku), pod ním **seznam 10 kategorií s počtem** (`group`) → klik → konkrétní strachy skupiny. Kanon se nikde nezobrazuje.
 
