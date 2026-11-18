@@ -54,7 +54,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 - **Oblíbené per sekce** — pilulka „♡ N“ u H1, přepínač; globální srdíčko plné jen v Oblíbených; `favGroups(stores)` sdílené.
 - **Proud karet + paměť viděného** — swipe (scroll-snap) pro triplet, hlášky, Inspirace, Otázky; `USER.seen` se plní **jen ve swipe a srdíčkem**, seznam nikdy nepíše; oko = „jen nové“ (globální `USER.onlyNew`), karty/seznam globální `mc_view`; předěl „Stačí pro dnes?“ každých `SWIPE_BREAK=10`.
 - **Provizorní admin** — smazat / upravit / Top nad koncovým obsahem, `mc_admin_v1`, Záloha a koš.
-- **Pořadí sekcí** — jeden registr `SECTIONS` řídí dlaždice i menu (pole `sep` = linka v menu): Moje cesta, Cvičení | Přerámování, Otázky, Inspirace, Články | Tělo, První pomoc | Oblíbené, režim, O appce. O appce je `tile:false`.
+- **Pořadí sekcí** — jeden registr `SECTIONS` řídí dlaždice i menu (pole `sep` = linka v menu): Moje cesta, Cvičení | Přerámování, Otázky, Inspirace, Články | Tělo, První pomoc | Oblíbené, režim, Jak na to, O appce. Jak na to a O appce jsou `tile:false`. **Jak na to** (18. 11. 2026) = návod a tipy, první verze, text v `GUIDE_MD` (markdown); odkaz i z O appce. Když se mění chování appky, zkontroluj, jestli návod pořád sedí.
 
 **Redakce (18. 11. 2026):** u Cvičení a Článků je „Redakce“ první a výchozí pilulka. Všech 71 cvičení z cvičebnice má `quality: 5` (v dávkách, lint povoluje 1–5); Redakce cvičení jde **v pořadí cvičebnice** (`redakceOrder:"journey"` = oddíl `sort_order`, pak `sort_order` v oddílu, stejně jako Moje cesta). Nové cvičení z jiných směrů = jiná quality, do Redakce jen Bobovou volbou. Články: `quality` 5 (35), zamíchané jednou za návštěvu. Štítek „★ Redakce“ na kartě jen v Nejnovějších.
 

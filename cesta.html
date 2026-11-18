@@ -667,6 +667,8 @@
   .mc-about p{ margin:0 0 14px; }
   .mc-about strong{ color:var(--text); }
   .mc-about .mc-tel{ color:var(--accent); white-space:nowrap; }
+  .mc-about .a-guide{ padding:0; background:none; border:none; cursor:pointer; text-align:left;
+    font-family:var(--sans); font-size:15px; font-weight:600; color:var(--tone); }
   .mc-about .mc-about-h{ margin:26px 0 12px; font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.2;
     font-variation-settings:'opsz' 36; color:var(--text); }
   /* Úvodní souhlas: celá obrazovka místo appky, checkboxy až pod textem */
@@ -776,6 +778,7 @@
     questions:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>',
     inspirations:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5 3.6 3.6M20.4 20.4 19 19M19 5l1.4-1.4M3.6 20.4 5 19"/><circle cx="12" cy="12" r="4"/></svg>',
     articles:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>',
+    guide:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg>',
     about:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>',
     favorites:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
     filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.5 10 19 14 21 14 12.5 22 3"/></svg>',
@@ -803,7 +806,8 @@
     { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent", sep:true },
     { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true, tone:"accent" },
     { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent", sep:true },
-    // O appce jen v menu — dlaždice jedou po párech a devátá by zůstala sama.
+    // Jak na to a O appce jen v menu — dlaždice jedou po párech a devátá by zůstala sama.
+    { key:"guide",        label:"Jak na to",        icon:"guide",        kind:"guide",     tile:false, tone:"teal" },
     { key:"about",        label:"O appce",          icon:"about",        kind:"about",     tile:false, tone:"teal" }
   ];
   function sectionByKey(k){ for(var i=0;i<SECTIONS.length;i++){ if(SECTIONS[i].key===k) return SECTIONS[i]; } return null; }
@@ -1337,6 +1341,7 @@
       else if(sec&&sec.kind==="journey") h+=viewJourney();
       else if(sec&&sec.kind==="favorites") h+=viewFavorites();
       else if(sec&&sec.kind==="about") h+=viewAbout();
+      else if(sec&&sec.kind==="guide") h+=viewGuide();
       else if(sec&&sec.kind==="content") h+=viewContent(sec.key);
       else h+='<div class="mc-empty">—</div>';
     }
@@ -1366,7 +1371,7 @@
     var lightNow=theme()==="light";
     SECTIONS.forEach(function(s){
       if(s.sep) h+='<div class="mc-menu-sep"></div>';
-      if(s.kind==="about") h+='<button class="mc-menu-item" onclick="MC.theme()"><span class="mi-ic">'+(lightNow?IC.moon:IC.sun)+'</span><span class="mi-label">'+(lightNow?"Tmavý režim":"Světlý režim")+'</span></button>';
+      if(s.kind==="guide") h+='<button class="mc-menu-item" onclick="MC.theme()"><span class="mi-ic">'+(lightNow?IC.moon:IC.sun)+'</span><span class="mi-label">'+(lightNow?"Tmavý režim":"Světlý režim")+'</span></button>';
       var active=s.kind==="favorites"?state.page==="favorites":(state.page==="section"&&state.section===s.key);
       var badge=s.kind==="favorites"&&favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'';
       h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span>'+badge+'</button>';
@@ -1978,6 +1983,52 @@
   }
 
   // ===================== RENDER — O appce =====================
+  // Návod a tipy (18. 11. 2026, první verze — počítá se s přepsáním). Markdown přes md().
+  var GUIDE_MD=[
+    "Moje cesta má víc dveří. Tady je, kudy kam a jak z appky dostat co nejvíc.",
+    "## Kde začít",
+    "* **Je vám zle teď hned?** Otevřete **První pomoc**. Najdete tam, co dělat v krizi, a kontakty, kam zavolat.",
+    "* **Chcete se na to, co prožíváte, podívat jinak?** Jděte do **Přerámování**.",
+    "* **Chcete na sobě pracovat soustavně?** Začněte v **Moje cesta** prvním oddílem a postupujte v pořadí.",
+    "* **Máte jen chvilku?** Zkuste **Inspiraci** nebo **Otázky**.",
+    "* **Trápí vás tělo?** V **Tělesných příznacích** najdete, co se s ním při úzkosti a stresu děje a kdy jít k lékaři.",
+    "## Přerámování: tři brány",
+    "* **Jádrové pocity:** když víte, jak se cítíte, třeba odmítnutý nebo bezmocný. Vybrat můžete jeden pocit i víc.",
+    "* **Strachy:** když se bojíte něčeho konkrétního. Appka vám pomůže najít, jaký pocit je pod tím.",
+    "* **Bolístky:** každodenní věci, které štvou nebo bolí. Najděte větu, která vám mluví z duše.",
+    "",
+    "U každého pocitu najdete **přerámování** (jiný pohled na věc), **otázky** k zamyšlení a **úkoly**, které můžete vyzkoušet v praxi.",
+    "## Jak číst přerámování",
+    "* **Nespěchejte.** Přečtěte si větu a nechte ji chvíli působit.",
+    "* **Nemusí sedět všechno.** Stačí jedna věta, která se vás dotkne.",
+    "* **Co vás osloví, uložte si srdíčkem** a vracejte se k tomu, když to potřebujete.",
+    "* **Nevadí, když vám věta zpočátku nepřijde pravdivá.** Nový pohled často potřebuje čas.",
+    "* **Méně je víc.** Po deseti kartách se appka zeptá, jestli to pro dnešek stačí. Klidně to tak berte.",
+    "## Cvičení",
+    "* V **Redakci** jdou cvičení v pořadí, ve kterém na sebe navazují, od jednoduchých dechových cvičení po náročnější.",
+    "* Pod názvem cvičení je odkaz na jeho **oddíl**. Taby **Info, Teorie a Praxe** platí pro celý oddíl, proto se u cvičení ze stejného oddílu opakují.",
+    "* **Víc než délka pomáhá pravidelnost.** Krátké cvičení každý den udělá víc než dlouhé jednou za měsíc.",
+    "* Na konci cvičení najdete **otázky do deníku**. Odpovědi si zapisujte, třeba do sešitu. Časem uvidíte, co se mění.",
+    "* Cvičení děláte na vlastní zodpovědnost. Když se při něm necítíte dobře, přerušte ho.",
+    "## Praktické tipy",
+    "* **Srdíčko** ukládá do **Oblíbených**. V každé sekci je u nadpisu pilulka se srdíčkem a počtem, která ukáže jen uložené z té sekce.",
+    "* U Přerámování, Inspirace a Otázek můžete přepnout mezi **seznamem** a **kartami**. Karty listujete prstem jednu po druhé.",
+    "* **Oko** skryje to, co jste už viděli v kartách.",
+    "* **Filtr** hledá podle slova nebo podle štítků.",
+    "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
+    "* **Tmavý režim** zapnete v menu.",
+    "## Vaše data",
+    "* Oblíbené a to, co jste viděli, se ukládá **jen ve vašem telefonu**, ne na internet. Nikdo jiný to nevidí.",
+    "* Když vymažete data prohlížeče nebo změníte telefon, uložené položky zmizí.",
+    "## A hlavně",
+    "Appka je průvodce, ne léčba. Pokud jde o vážné potíže, obraťte se na odborníka. Kontakty najdete v **První pomoci**."
+  ].join("\n");
+  function viewGuide(){
+    return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
+      '<div class="mc-detail-head"><div class="mc-detail-title">Jak na to</div></div>'+
+      '<div class="mc-detail-body mc-md">'+md(GUIDE_MD)+'</div>';
+  }
+
   function viewAbout(){
     return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
       '<div class="mc-detail-head"><div class="mc-detail-title">O aplikaci</div></div>'+
@@ -1986,6 +2037,7 @@
       '<p>Vedle přerámování tu najdete <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
       '<p>Co vás osloví, uložte si srdíčkem do <strong>Oblíbených</strong> — máte to pak po ruce.</p>'+
       '<div class="mc-about-h">Než začnete</div>'+disclaimerHtml()+
+      '<p><button class="a-guide" onclick="MC.open(\'guide\')">Jak s appkou pracovat — návod a tipy ›</button></p>'+
       '<p style="color:var(--soft); font-size:14px; font-family:var(--sans)">Autor obsahu: Robert Řeřicha, psychoterapeut.</p>'+
       '</div>';
   }
