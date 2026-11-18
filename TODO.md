@@ -73,23 +73,12 @@ Excel už jen orientace).
       počet na klastr dluh — je to zásoba. Škrtat jen za kvalitu, ne za objem.
 - [ ] **Ověřit 44× `[ověřit]` v přerámováních situací** — čísla a tvrzení,
       seznam `local/data_wip/strachy_wip/overit.md`. Před ostrým nasazením.
-- [ ] **Bob čte top 5 hlášek u bolístek 125–139** (1–124 hotové 10. 11. 2026, export v `local/.backups/`; 140–175 schované, `PAIN_LIST_CUT`)
-- [ ] Původně: **Bob čte top 5 hlášek** (875 vět, vybral Claude 6. 11. 2026, v topu 840 `k` / 35 `n`,
-      zbytek ve frontě; překlep ve frontě: `hl_3200` „prázzdně“) — smazáním se doplní náhradník, pak
-      výsledek propsat do zdrojů. Sledovat, jestli náš hlas (`n`) přežívá.
+- [x] **Bob přečetl top 5 hlášek u všech 175 bolístek** (revize přes texťák 12. 11. 2026, fronta zrušená)
 - [ ] **Sjednotit `oblast` u bolístek** (89 hodnot, guláš) na ~15 kategorií —
       až po škrtání, a jen kdyby se zrcadlo 175 vět ukázalo jako moc dlouhé
       a kategorie byly potřeba (12. 9. rozhodnuto: zatím bez kategorií).
-- [ ] **Obsahová kontrola cvičení, dávka po dávce.** 71 cvičení je strukturálně
-      čistých, ale věcně a jazykově neprověřených. Kontroluje se samonosnost,
-      věrnost Bobovým formulacím, úplnost postupů, kvalita deníkových otázek
-      a tónová pestrost. Strojově to nejde. Doporučené pořadí: oddíl 04 jako
-      etalon, pak 05–11. Práce na několik sezení. **Nově k posouzení při
-      klikání:** Info/Teorie/Praxe jsou oddílové, takže u všech 18 cvičení
-      Relaxace stejné — jestli to při používání působí jako „říká mi to pořád
-      totéž“, je to signál k domluvě, ne bug.
-- [ ] **Zadat, jestli projet perexy článků.** U cvičení se to udělalo (8 přepsaných
-      z 71). U 112 článků se perexy zatím nikdo nedíval stejným metrem.
+- [x] **Obsahová kontrola cvičení a oddílů** — Bobova redakce 13.–18. 11. 2026 (cvičení, Info / Teorie / Praxe oddílů).
+- [x] **Perexy a texty článků** — zůstávají jako kopie z blogu, bez redakce (Bob, 18. 11. 2026).
 - [ ] **Tělesné příznaky — 26 nových prověřit** (napsané podle šablony 26. 8.,
       Bob je obsahově neviděl). Odborná medicínská kontrola všech 31 hotová
       16. 10. 2026 (`local/kontrola/telo_odborna_kontrola.md`), Bobovo čtení zbývá.

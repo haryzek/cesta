@@ -809,7 +809,7 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Vizuál — karty proudu | 🔄 funkční, čekají na design pass (písmo, plocha, tón) |
 | Triplet přerámování | ✅ kompletní 116/116 klastrů (5415 R / 3875 Q / 3747 A), přeřazený a učesaný 15.–16. 10., škrtání v appce |
 | Strachy, situace, bolístky | ✅ nasazené v datech i appce; 44× `[ověřit]`, škrtání hlášek na 15 čeká |
-| Ostatní obsah (články 112, cvičení 71, inspirace 202, otázky 251, krizovka 12, tělo 31) | ✅ nasazený, obsahově neprověřený (viz TODO) |
+| Ostatní obsah (články 112, cvičení 71, oddíly 11, inspirace 202, otázky 196, krizovka 12, tělo 31) | ✅ nasazený; cvičení, oddíly, otázky a inspirace zrevidované Bobem 11/2026, články = kopie z blogu |
 | Embed kompletní verze do Miowebu | 🔲 neověřeno (nově i výška proudu karet) |
 | Provizorní admin (škrtání v appce) | 🔲 na závěr před road tripem |
 | Admin nástroj | 🔲 k přestavbě od základu (stávající je zastaralý) |
