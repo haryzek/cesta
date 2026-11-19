@@ -661,7 +661,7 @@ Cvičebnice po oddílech — první dlaždice appky. Seznam 11 oddílů jako kar
 
 ### Inspirace a Podnětné otázky
 
-Submenu: Nejnovější / Filtr, vpravo oko („jen nové") a přepínač seznam/karty. „Nejnovější" řadí od nejnovějších; s tagy ve filtru řadí priorita tagů. Umí proud karet a paměť viděného. („Pro vás" a řádek doporučených tagů jsou budoucnost — obě sady jsou bez `schemas`, doporučování se jich netýká.)
+Submenu: Nejnovější / Filtr, vpravo oko („jen nové") a přepínač seznam/karty (výchozí karty od 19. 11. 2026, dřív seznam). „Nejnovější" řadí od nejnovějších; s tagy ve filtru řadí priorita tagů. Umí proud karet a paměť viděného. („Pro vás" a řádek doporučených tagů jsou budoucnost — obě sady jsou bez `schemas`, doporučování se jich netýká.)
 
 ### První pomoc v krizi, Tělesné příznaky
 
