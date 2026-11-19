@@ -454,10 +454,10 @@
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
   @media (hover:hover){ .mc-sec-link:hover{ color:var(--text); } }
   .mc-sec-link .l{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); }
-  /* Nadpis oddílu nad Info / Teorie / Praxe cvičení — o stupeň nad ## v textu */
-  .mc-tab-sec{ padding:22px var(--gutter) 0; font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.2;
-    letter-spacing:-0.01em; font-variation-settings:'opsz' 36; color:var(--text); text-wrap:balance; }
-  .mc-tab-sec + .mc-detail-body{ padding-top:0; }
+  /* Nadpis oddílu nad Info / Teorie / Praxe cvičení — barvou sekce, o špetku větší než ## (20 px), s odstupem od prvního ## */
+  .mc-tab-sec{ padding:24px var(--gutter) 0; font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.2;
+    letter-spacing:-0.01em; font-variation-settings:'opsz' 36; color:var(--tone); text-wrap:balance; }
+  .mc-tab-sec + .mc-detail-body{ padding-top:16px; }
 
   /* Náročnost — pilulka (nízká / střední / vysoká) */
   .mc-diff{ display:inline-block; padding:3px 10px; border-radius:999px; font-family:var(--sans); font-size:12px; font-weight:600; line-height:1.4; }
