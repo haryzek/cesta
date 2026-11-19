@@ -310,7 +310,7 @@ Tři seznamy navázané vždy na jeden konkrétní klastr (ne na jednotlivý poc
 
 Citáty, rady, moudra. `author` smí být `null` (lidová moudra, přísloví, vlastní výroky bez atribuce), `year` smí být `null`. **Bez pole `schemas`** — rozhodnuto 11. 9. 2026: citáty jsou lidsky univerzální, stejná logika jako u otázek; půl na půl (21 se schématy, 181 bez) by dělalo náhodný výběr tvářící se jako cílený. Inspirace tím stojí mimo doporučování.
 
-Nasazeno 11. 9. 2026: **202 citátů** = 21 původních (přetagovaných) + 181 ze sklizně (`local/data_wip/inspirations_wip/sklizen.json`, prompt `local/_prompty/citaty.md`; pole `pole`/`zdroj`/`poznamka` ze sklizně se do dat nepřenáší). ID `inspir_0022`… navazují na původní.
+Nasazeno 11. 9. 2026: **202 citátů** = 21 původních (přetagovaných) + 181 ze sklizně (`local/data_wip/inspirations_wip/old/sklizen.json`, prompt `local/_prompty/citaty.md`; pole `pole`/`zdroj`/`poznamka` ze sklizně se do dat nepřenáší). ID `inspir_0022`… navazují na původní.
 
 **Tagování:** stejná pravidla jako u otázek — seřazeno podle priority, první tag = téma citátu. Citáty jsou krátké, typicky **2–3 tagy** (průměr 2,8), strop 6. Pouštějí se „Chci pracovat na" + „Vztahy", z „Emoce" jen když je emoce jádrem (strach, smutek, stud…), z „Co se při tom dělá" jen `přítomnost` / `mindfulness` / `tělo`. „Stavy a potíže" nikdy. Kvůli ~12 citátům čistě o kamarádech byl 11. 9. 2026 rozsloučen tag `přátelství` (dřív mapovaný na `vztahy`).
 
@@ -329,7 +329,7 @@ Nasazeno 11. 9. 2026: **202 citátů** = 21 původních (přetagovaných) + 181 
 
 ### 11. Podnětné otázky — `questions.json`
 
-Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítím nejvíc sám / sama sebou?"). **Bez pole `schemas`** — otázky vědomě stojí mimo doporučování, univerzálky nemají komu cílit. Nasazeno 11. 9. 2026: **251 otázek** = 193 ze sklizně (`local/data_wip/questions_wip/sklizen.json`, prompt `local/_prompty/otazky.md`) + 58 přepsaných z původní schema-sady (zkráceno, ich-forma, 5 dubletů sklizně vyhozeno). ID přečíslována od `quest_0001`.
+Univerzální seberozvojové otázky v samomluvě / ich-formě („Kdy se cítím nejvíc sám / sama sebou?"). **Bez pole `schemas`** — otázky vědomě stojí mimo doporučování, univerzálky nemají komu cílit. Nasazeno 11. 9. 2026: **251 otázek** = 193 ze sklizně (`local/data_wip/questions_wip/old/sklizen.json`, prompt `local/_prompty/otazky.md`) + 58 přepsaných z původní schema-sady (zkráceno, ich-forma, 5 dubletů sklizně vyhozeno). ID přečíslována od `quest_0001`.
 
 **Tagování (rozhodnuto 11. 9. 2026):** 3–6 tagů, typicky 4, **seřazených podle priority** — první tag je téma, ve kterém otázka leží, další dva nesou váhu, zbytek je tie-break. Pouštějí se skupiny „Chci pracovat na" a „Vztahy", z „Emoce" jen když je emoce jádrem otázky (strach, vina, stud…), z „Co se při tom dělá" jen `tělo` / `přítomnost` / `mindfulness` / `dýchání`. „Stavy a potíže" se u otázek nepoužívají vůbec — člověk, který klikne „panická ataka", je v akutním módu a seberozvojovka mu nepomůže. Důvod stropu: u OR filtru dělá přesnost málo tagů na položce, ne hodně; a tag na pozici 7+ nemá v žádném skórování váhu, která by ho odlišila od nuly (stejná logika jako `VAHY_POZIC` u doporučování). Appka zatím pořadí nečte (filtr je čistě OR), řazení výsledků podle váhy shodných tagů je budoucí krok.
 
@@ -412,7 +412,7 @@ Hlášky mají `source`: **`k`** = Karolínka (3480, 20 na bolístku, základ �
 }
 ```
 
-Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build `build_pains.py`. Každá hláška má trvalé ID `hl_NNNN`, věta pod konkrétním strachem `sitr_NNNN`; ID nenesou pořadí a build je nečísluje. Dřívější skládání z `brana4_bolistky.json`, `hlasky_karolinka.md`, `hlasky_davka01–18*.json` a `vyber_nase.json` je historie (`old/build_pains_do_2026-11-06.py`). **Řez hlášek:** výběr 6. 11. 2026 (Claude, `bolistky_wip/vyber5/vyber.txt` + `aplikuj_vyber.py`): pod každou bolístkou je **pořadí = top 5, pak 5 náhradníků, pak zbytek**. Appka ukazuje jen prvních 5 živých (`PAIN_CUT` v `cesta.html`, stejný přepínač v adminu jako řez tripletu), smazaná věta se doplní zespodu. Bob ještě čte a čistí. Staré adresy `pain_id:index` a `sit_id:index` převádí `local/data_wip/legacy_keys.json`, appka je ve své paměti a při importu starého exportu přepíše sama.
+Zdroj pravdy od 6. 11. 2026: `local/data_wip/bolistky_wip/pains_src.json`, build `build_pains.py`. Každá hláška má trvalé ID `hl_NNNN`, věta pod konkrétním strachem `sitr_NNNN`; ID nenesou pořadí a build je nečísluje. Dřívější skládání z `brana4_bolistky.json`, `hlasky_karolinka.md`, `hlasky_davka01–18*.json` a `vyber_nase.json` je historie (dnes vše v `bolistky_wip/old/`, `old/build_pains_do_2026-11-06.py`). **Řez hlášek:** výběr 6. 11. 2026 (Claude, `bolistky_wip/old/vyber5/vyber.txt` + `aplikuj_vyber.py`): pod každou bolístkou je **pořadí = top 5, pak 5 náhradníků, pak zbytek**. Appka ukazuje jen prvních 5 živých (`PAIN_CUT` v `cesta.html`, stejný přepínač v adminu jako řez tripletu), smazaná věta se doplní zespodu. Bob ještě čte a čistí. Staré adresy `pain_id:index` a `sit_id:index` převádí `local/data_wip/legacy_keys.json`, appka je ve své paměti a při importu starého exportu přepíše sama.
 
 ### Shrnutí polí
 
