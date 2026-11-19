@@ -14,6 +14,8 @@ Webová psychoterapeutická aplikace. Uživatel vybere jádrový pocit → dosta
 - Pages: `https://haryzek.github.io/cesta/`
 - GitHub slouží jako záloha a remote pracovní prostředí, není to veřejně sdílený projekt.
 
+**Úkoly, nápady a poznámky** (včetně strategie, biznisu a proma) žijí v jediném souboru **`local/TODO.md`** — soukromý, ve veřejném repu není. Bobova část (rozhoduje on) + Claudova část (mechanika). Novou Bobovu poznámku: doptat se, čemu nerozumíš, pak zařadit do kategorie se zdrojem a datem. Žádný druhý seznam úkolů nezakládej.
+
 Projekt se jmenuje **Moje cesta**. Nikam nedávej žádný jiný název značky ani kurzu — do repa, kódu ani dokumentů. Náhoda je blbec, drž se „Moje cesta".
 
 ---
