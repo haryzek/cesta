@@ -873,7 +873,7 @@
   },
   {
     "id": "feel_0409",
-    "name": "důvěřivý",
+    "name": "přehnaně důvěřivý",
     "cluster_id": "cl_0035",
     "main": "0",
     "tier": "premium",
@@ -1377,7 +1377,7 @@
   },
   {
     "id": "feel_0368",
-    "name": "hrdý",
+    "name": "přehnaně hrdý",
     "cluster_id": "cl_0053",
     "main": "0",
     "tier": "premium",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": "feel_0228",
-    "name": "výjimečný",
+    "name": "přehnaně výjimečný",
     "cluster_id": "cl_0056",
     "main": "cl_0056",
     "tier": "free",
@@ -1609,7 +1609,7 @@
   },
   {
     "id": "feel_0313",
-    "name": "emocionální",
+    "name": "přehnaně emocionální",
     "cluster_id": "cl_0060",
     "main": "0",
     "tier": "premium",
@@ -1673,7 +1673,7 @@
   },
   {
     "id": "feel_0404",
-    "name": "snící",
+    "name": "přehnaně snící",
     "cluster_id": "cl_0062",
     "main": "0",
     "tier": "premium",
@@ -1913,7 +1913,7 @@
   },
   {
     "id": "feel_0279",
-    "name": "poslušný",
+    "name": "přehnaně poslušný",
     "cluster_id": "cl_0070",
     "main": "cl_0070",
     "tier": "free",
@@ -2041,7 +2041,7 @@
   },
   {
     "id": "feel_0401",
-    "name": "ohleduplný",
+    "name": "přehnaně ohleduplný",
     "cluster_id": "cl_0074",
     "main": "0",
     "tier": "premium",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": "feel_0344",
-    "name": "soutěživý",
+    "name": "přehnaně soutěživý",
     "cluster_id": "cl_0076",
     "main": "cl_0076",
     "tier": "free",
@@ -2073,7 +2073,7 @@
   },
   {
     "id": "feel_0290",
-    "name": "toužící po úspěchu",
+    "name": "přehnaně toužící po úspěchu",
     "cluster_id": "cl_0076",
     "main": "0",
     "tier": "premium",
@@ -2417,7 +2417,7 @@
   },
   {
     "id": "feel_0412",
-    "name": "racionální",
+    "name": "přehnaně racionální",
     "cluster_id": "cl_0088",
     "main": "cl_0088",
     "tier": "free",
@@ -2425,7 +2425,7 @@
   },
   {
     "id": "feel_0364",
-    "name": "analyzující",
+    "name": "přehnaně analyzující",
     "cluster_id": "cl_0088",
     "main": "0",
     "tier": "premium",
@@ -2433,7 +2433,7 @@
   },
   {
     "id": "feel_0526",
-    "name": "hloubavý",
+    "name": "přehnaně hloubavý",
     "cluster_id": "cl_0088",
     "main": "0",
     "tier": "premium",
@@ -2657,7 +2657,7 @@
   },
   {
     "id": "feel_0393",
-    "name": "zodpovědný",
+    "name": "přehnaně zodpovědný",
     "cluster_id": "cl_0096",
     "main": "cl_0096",
     "tier": "free",

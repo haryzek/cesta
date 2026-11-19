@@ -661,7 +661,7 @@
   },
   {
     "id": "cl_0056",
-    "name": "výjimečný",
+    "name": "přehnaně výjimečný",
     "schemas": [
       "ENTGRAND",
       "APPREC",
@@ -829,7 +829,7 @@
   },
   {
     "id": "cl_0070",
-    "name": "poslušný",
+    "name": "přehnaně poslušný",
     "schemas": [
       "SUBJUG",
       "SELFSAC",
@@ -901,7 +901,7 @@
   },
   {
     "id": "cl_0076",
-    "name": "soutěživý",
+    "name": "přehnaně soutěživý",
     "schemas": [
       "APPREC",
       "ENTGRAND",
@@ -1045,7 +1045,7 @@
   },
   {
     "id": "cl_0088",
-    "name": "racionální",
+    "name": "přehnaně racionální",
     "schemas": [
       "EMOINH",
       "USHYPER",
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "cl_0096",
-    "name": "zodpovědný",
+    "name": "přehnaně zodpovědný",
     "schemas": [
       "USHYPER",
       "SELFSAC",
