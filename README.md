@@ -818,8 +818,8 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 
 ## Poznámky k obsahu
 
-Nevyřízené úkoly, nápady a otevřená rozhodnutí **nejsou tady — jsou v `local/TODO.md`** (soukromé, mimo veřejné repo).
-Tenhle dokument popisuje, jak věci jsou; `local/TODO.md`, co se má stát.
+Nevyřízené úkoly, nápady a otevřená rozhodnutí **nejsou tady — jsou v `local/TODO-napadnik.md`** (soukromé, mimo veřejné repo).
+Tenhle dokument popisuje, jak věci jsou; `local/TODO-napadnik.md`, co se má stát.
 
 ### Stav pročištění obsahu (18. 7. 2026)
 
@@ -860,7 +860,7 @@ cesta/
 
 Dělení jde podle toho, kdo soubor mění: do `data/` se sahá při plnění obsahu, do `assets/` skoro nikdy. `manifest.json` je konfigurace aplikace, ne obsah — proto zůstává v kořeni, kde ho čekají prohlížeče. `tagy.json` v kořeni je autorský nástroj, ne obsah — na Pages se nevozí.
 
-**`cesta_admin.html` je v `local/.old/`**, ne v kořeni. Je zastaralý a rozešel se s datovým modelem, takže by vedle živých souborů jen mátl; k přestavbě od nuly (viz `local/TODO.md`).
+**`cesta_admin.html` je v `local/.old/`**, ne v kořeni. Je zastaralý a rozešel se s datovým modelem, takže by vedle živých souborů jen mátl; k přestavbě od nuly (viz `local/TODO-napadnik.md`).
 
 ### Jediný HTML soubor aplikace
 
