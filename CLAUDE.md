@@ -111,7 +111,7 @@ Rozcestník tří karet s větou „kdy sem“: **Jádrové pocity** / **Strachy
 - **`cesta.html` — jediný živý HTML soubor.** Všechny sekce naživo nad daty v `data/`. `MC_BASE="./data/"`. Meta hlavičky pro mobil (viewport, PWA manifest, vypnutá cache) — Mioweb je ignoruje. **Veškerá práce jde sem.**
 - **`cesta_prototyp.html`** — **smazaný 14. 8. 2026.** Starší obal pro Mioweb, mrtvá větev. Zůstává v historii gitu.
 - **`sw.js` — service worker, offline režim.** Precachuje obal (index, cesta.html, manifest, ikony) i všech 16 JSONů; HTML a data pak jedou **network-first s 4s timeoutem** a fallbackem do cache (online se chová jako dřív — push je hned vidět), fonty a obrázky **cache-first**. Odpověď vrácenou z cache označí hlavičkou `X-MC-Source: cache` — admin podle ní hlásí „z offline cache“ vedle data dat (`Last-Modified` = čas deploye). Registruje se z `cesta.html` (`initSW`) jen přes https/localhost, uvnitř Miowebu registrace tiše selže a nevadí. **Když saháš do `sw.js` nebo do seznamu precache, bumpni `VERSION`** — jinak si prohlížeč nechá starou verzi. **Nový JSON v `data/` = přidat do `DATA_FILES` v `sw.js`**, jinak offline chybí. První návštěva online stáhne ~1,3 MB gzip, pak appka jede bez signálu.
-- **`cesta_admin.html`** — zastaralý, k přestavbě od základu (viz past č. 1). **Odsunutý do `local/.old/`**, ať neleží vedle živých souborů a nemate.
+- **`cesta_admin.html`** — zastaralý, k přestavbě od základu (viz past č. 1). **Odsunutý do `local/archiv/prototypy/`**, ať neleží vedle živých souborů a nemate.
 
 Appka stojí na **registru sekcí** — jeden `SECTIONS = [...]` řídí dlaždice, menu (pořadí, linky přes `sep`) i router. Nová sekce = výměna rendereru, obal se nesahá.
 
@@ -160,7 +160,7 @@ Kdo má co:
 
 ## Pasti (na tyhle si dej pozor)
 
-1. **`cesta_admin.html` je zastaralý a rozešel se s realitou.** Leží v `local/.old/`, ne v kořeni. Nepoužívej ho jako zdroj pravdy o datovém modelu. Konkrétně: má špatné prefixy (`mic`/`quote`/`q`/`symptoms` místo `art`/`inspir`/`quest`/`body`), třímístný padding místo čtyřmístného, zná jen 9 sekcí a **vůbec nezná `reframing_questions` ani `reframing_actions`**. Vznikl jako rychlý test „projde to do Miowebu", design i data jsou mimo. Bude se přepisovat od nuly. Zdroj pravdy je README + reálné JSONy, ne admin.
+1. **`cesta_admin.html` je zastaralý a rozešel se s realitou.** Leží v `local/archiv/prototypy/`, ne v kořeni. Nepoužívej ho jako zdroj pravdy o datovém modelu. Konkrétně: má špatné prefixy (`mic`/`quote`/`q`/`symptoms` místo `art`/`inspir`/`quest`/`body`), třímístný padding místo čtyřmístného, zná jen 9 sekcí a **vůbec nezná `reframing_questions` ani `reframing_actions`**. Vznikl jako rychlý test „projde to do Miowebu", design i data jsou mimo. Bude se přepisovat od nuly. Zdroj pravdy je README + reálné JSONy, ne admin.
 
 2. **Dva různé GitHub účty v historii.** Aktivní a správné je `haryzek/cesta`. Kdekoli narazíš na `bobrerichacz/stesti_naproti_app` nebo podobné, je to starý/vedlejší pozůstatek — ignoruj, drž `haryzek/cesta`. (Prototyp má v `MC_BASE` správně `haryzek.github.io/cesta/`.)
 
@@ -193,7 +193,7 @@ Kdo má co:
 
 ## Design
 
-Nasazený 17. 7. 2026, vznikl v konverzaci s Claude Chat. **Zdroj pravdy je `<style>` blok v `cesta.html`** — nic jiného. Původní handoff a mockup jsou překonané: handoff leží jako historie v `local/_design/.old/design-handoff.md`, screeny a mockup `exercise.html` už neexistují a nejsou potřeba, nasazený design je lepší než ony. **Není finální** — základ je odladěný, ale barvy čeká „overhaul do veselejší atmosféry" a karty Přerámování doladění.
+Nasazený 17. 7. 2026, vznikl v konverzaci s Claude Chat. **Zdroj pravdy je `<style>` blok v `cesta.html`** — nic jiného. Původní handoff a mockup jsou překonané: handoff leží jako historie v `local/archiv/design/old/design-handoff.md`, screeny a mockup `exercise.html` už neexistují a nejsou potřeba, nasazený design je lepší než ony. **Není finální** — základ je odladěný, ale barvy čeká „overhaul do veselejší atmosféry" a karty Přerámování doladění.
 
 **Dvě témata, light + dark.** Přepínač je dole v hamburger menu, volba v `localStorage` (`mc_theme`). Dokud si uživatel nevybere, jede se podle systému. `data-theme` se píše na `#mc-root`, **ne na `<html>`** — uvnitř Miowebu nad ním nemáme kontrolu.
 
@@ -205,7 +205,7 @@ Nasazený 17. 7. 2026, vznikl v konverzaci s Claude Chat. **Zdroj pravdy je `<st
 
 **Klíčové proměnné:** `--tone`/`--tone-soft` (barva sekce), `--on-accent` (text NA accent ploše — v light světlý, v dark tmavý), `--heart` (srdíčko, v light světlejší než accent). `--empty`/`--done`/`--missed` nemají v kódu jediné použití, jsou to zbytky.
 
-**Detail cvičení** (k SPEC od 12. 9. 2026): tabbar Postup / Info / Teorie / Praxe, box náročnosti (`.mc-strip`, návrh `local/_design/box_náročnosti.jpg`), box řetězu a warning (`.mc-box`), číslované kroky (past č. 6), přílohy (`.mc-attach`) a **journal-card** z polí deníku — tealová karta (klidová barva proti postupu). Detail obsahu se sází přes `.mc-detail-head`; nadpis mimo tuhle hlavičku ztratí gutter a přilepí se k okraji (opakovaná chyba). **Proud karet** (`.mc-swipe`) je funkční, design pass čeká.
+**Detail cvičení** (k SPEC od 12. 9. 2026): tabbar Postup / Info / Teorie / Praxe, box náročnosti (`.mc-strip`, návrh `local/archiv/design/box_náročnosti.jpg`), box řetězu a warning (`.mc-box`), číslované kroky (past č. 6), přílohy (`.mc-attach`) a **journal-card** z polí deníku — tealová karta (klidová barva proti postupu). Detail obsahu se sází přes `.mc-detail-head`; nadpis mimo tuhle hlavičku ztratí gutter a přilepí se k okraji (opakovaná chyba). **Proud karet** (`.mc-swipe`) je funkční, design pass čeká.
 
 ---
 

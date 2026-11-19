@@ -453,7 +453,7 @@ Vizuální hodnoty (barvy, fonty) žijí v `<style>` bloku `cesta.html`; tady je
 
 ### Design systém
 
-Nasazený 17. 7. 2026. **Zdroj pravdy je `<style>` blok v `cesta.html`** — nic jiného. Původní handoff a mockup jsou překonané: handoff leží jako historie v `local/_design/.old/`, screeny a mockup už neexistují a nejsou potřeba. **Není finální** — barvy čeká „overhaul do veselejší atmosféry", karty Přerámování doladění.
+Nasazený 17. 7. 2026. **Zdroj pravdy je `<style>` blok v `cesta.html`** — nic jiného. Původní handoff a mockup jsou překonané: handoff leží jako historie v `local/archiv/design/old/`, screeny a mockup už neexistují a nejsou potřeba. **Není finální** — barvy čeká „overhaul do veselejší atmosféry", karty Přerámování doladění.
 
 **Dvě témata (light + dark).** Přepínač dole v hamburger menu, volba v `localStorage` (`mc_theme`); dokud si uživatel nevybere, jede se podle systému (`prefers-color-scheme`). `data-theme` se píše na `#mc-root`, ne na `<html>` — uvnitř Miowebu nad ním nemáme kontrolu.
 
@@ -849,16 +849,19 @@ cesta/
 ├── CLAUDE.md                pracovní brífink pro Claude Code
 └── local/                   osobní podklady a rozpracovaná data (mimo hlavní repo; vlastní
                              git → soukromé haryzek/cesta-local, od 22. 10. 2026)
-    ├── data_wip/            zdrojáky obsahu před nasazením do data/
+    ├── TODO-napadnik.md     úkoly, nápady, strategie (mapa složky: local/README.md)
+    ├── data_wip/            zdrojáky obsahu před nasazením do data/ (+ tagy.json)
     ├── _prompty/            prompty pro generování obsahu
-    ├── _design/             podklady k designu
-    ├── .backups/            ruční snapshoty
-    └── .old/                překonané soubory včetně cesta_admin.html
+    ├── kontrola/            odborné kontroly a přehledy
+    ├── tests/               headless testy appky
+    ├── poznamky/            poznámky, konkurence, podklady
+    ├── archiv/              všechno překonané (prototypy vč. cesta_admin.html, design, …)
+    └── .backups/            ruční snapshoty
 ```
 
-Dělení jde podle toho, kdo soubor mění: do `data/` se sahá při plnění obsahu, do `assets/` skoro nikdy. `manifest.json` je konfigurace aplikace, ne obsah — proto zůstává v kořeni, kde ho čekají prohlížeče. `tagy.json` v kořeni je autorský nástroj, ne obsah — na Pages se nevozí.
+Dělení jde podle toho, kdo soubor mění: do `data/` se sahá při plnění obsahu, do `assets/` skoro nikdy. `manifest.json` je konfigurace aplikace, ne obsah — proto zůstává v kořeni, kde ho čekají prohlížeče. `tagy.json` je autorský nástroj, ne obsah — proto od 19. 11. 2026 leží v `local/data_wip/`.
 
-**`cesta_admin.html` je v `local/.old/`**, ne v kořeni. Je zastaralý a rozešel se s datovým modelem, takže by vedle živých souborů jen mátl; k přestavbě od nuly (viz `local/TODO-napadnik.md`).
+**`cesta_admin.html` je v `local/archiv/prototypy/`**, ne v kořeni. Je zastaralý a rozešel se s datovým modelem, takže by vedle živých souborů jen mátl; k přestavbě od nuly (viz `local/TODO-napadnik.md`).
 
 ### Jediný HTML soubor aplikace
 

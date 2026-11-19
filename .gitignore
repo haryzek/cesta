@@ -4,8 +4,6 @@
 # osobní / lokální bordýlek
 *.bak
 
-# scratch prototypy — hrací písek, nepatří na web
-_scratch/
 
 # systémové smetí
 .DS_Store
