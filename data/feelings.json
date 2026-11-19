@@ -1433,7 +1433,7 @@
   },
   {
     "id": "feel_0228",
-    "name": "přehnaně výjimečný",
+    "name": "výjimečný",
     "cluster_id": "cl_0056",
     "main": "cl_0056",
     "tier": "free",
@@ -1673,7 +1673,7 @@
   },
   {
     "id": "feel_0404",
-    "name": "přehnaně snící",
+    "name": "zasněný",
     "cluster_id": "cl_0062",
     "main": "0",
     "tier": "premium",
