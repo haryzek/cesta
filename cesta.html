@@ -258,7 +258,9 @@
      Dřív viselo počítadlo na right:30px, tedy mimo osu ostatního obsahu. */
   .mc-search-tools{ position:absolute; right:8px; top:50%; transform:translateY(-50%);
     display:flex; align-items:center; gap:6px; }
-  .mc-reset{ margin-left:2px; }
+  /* Reset výběru vlevo od počítadla, v barvě lupy, větší než křížek — ať je čitelný */
+  .mc-search-clear.mc-reset{ width:28px; height:28px; color:var(--soft); }
+  .mc-search-clear.mc-reset svg{ width:19px; height:19px; }
   .mc-count-pill{ background:var(--tone); color:var(--on-accent); font-family:var(--mono); font-size:11px;
     font-weight:700; min-width:20px; text-align:center; padding:3px 7px; border-radius:6px; pointer-events:none; }
   .mc-search-clear{ display:flex; align-items:center; justify-content:center; width:22px; height:22px; padding:0;
@@ -1666,7 +1668,7 @@
     h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
     // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
-    if(nSel>0) h+='<span class="mc-count-pill">'+nSel+'</span><button class="mc-search-clear mc-reset" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 3 3 9 9 9"/></svg></button>';
+    if(nSel>0) h+='<button class="mc-search-clear mc-reset" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 3 3 9 9 9"/></svg></button><span class="mc-count-pill">'+nSel+'</span>';
     if(rf.search.trim()) h+='<button class="mc-search-clear" onclick="MC.rfSearch(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>';
     h+='</div></div>';
     h+='<ul class="mc-list">';
