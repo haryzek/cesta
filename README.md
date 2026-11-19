@@ -52,7 +52,7 @@ Napříč všemi soubory platí:
 - **ID** je permanentní totožnost položky. Formát `prefix_NNNN` se čtyřmístným zero-paddingem (např. `ref_0001`). ID se nikdy nemění a nenese žádnou informaci o pořadí. V ostré verzi ho přiděluje admin při vytvoření položky.
 - **`sort_order`** určuje pořadí. U tripletu přerámování je lokální v rámci clusteru (restartuje na 1, hustě 1..N bez děr). U plochých typů obsahu je globální v rámci souboru.
 - **`tier`** je vždy `free` nebo `premium`.
-- **Tagy** jsou vždy lowercase a berou se **výhradně** z `tagy.json` v kořeni repa — viz Tagy níže.
+- **Tagy** jsou vždy lowercase a berou se **výhradně** z `local/data_wip/tagy.json` (soukromá složka, mimo veřejné repo) — viz Tagy níže.
 - **Tagy jsou v datech seřazené podle priority** (první = téma položky, 2.–3. nesou váhu, zbytek tie-break) a **appka to čte**: filtr (12. 9. 2026) skóruje položky vahou podle pozice zaškrtnutého tagu — viz Filtrování níže.
 - **`schemas`** nese kódy Youngových schémat (viz EMS model níže), **seřazené podle priority**. U clusterů je jich pět, u obsahu tři — a není to nedůslednost, ale rozdíl rolí:
   - **Cluster je zdroj profilu.** Kliknutí na pocit nasype váhu do všech pěti schémat (5,4,3,2,1), takže se čte i pátá pozice. Pět je tam potřeba.
@@ -60,9 +60,9 @@ Napříč všemi soubory platí:
 
   Nenafukuj počet u obsahu. Měření nad reálnými daty (14. 8. 2026) ukázalo, že pozice 4–5 nenesou informaci, ale výplň: u cvičení seděl na páté pozici 18× USHYPER, u clusterů 23× DEFSH — generátor plnil prázdný slot generickým kódem. Nutit model k pěti tvrzením tam, kde jsou obhajitelná dvě, navíc ředí kvalitu prvních dvou pozic. Cvičení a články se proto 14. 8. 2026 ořezaly z 5 na 3; pozice 1–2 se nezměnily ani u jedné položky, takže výstup doporučovadla je identický.
 
-### Tagy — `tagy.json`
+### Tagy — `local/data_wip/tagy.json`
 
-Kanonický slovník tagů leží v **`tagy.json` v kořeni repa a je jediný zdroj pravdy**. Není to obsahový soubor, na Pages se nevozí — slouží autorské práci a lintům. Obsahuje plochý seznam platných tagů, jejich rozdělení do skupin (jen pro orientaci a barvy ve filtru, **nejsou to kategorie v JSONu**) a mapu `slouceno` se zaniklými názvy a jejich náhradami.
+Kanonický slovník tagů leží v **`local/data_wip/tagy.json` a je jediný zdroj pravdy** (do 19. 11. 2026 ležel v kořeni repa). Není to obsahový soubor, appka ho nenačítá a na Pages nejde — slouží autorské práci, promptům a lintům. Obsahuje plochý seznam platných tagů, jejich rozdělení do skupin (jen pro orientaci a barvy ve filtru, **nejsou to kategorie v JSONu**) a mapu `slouceno` se zaniklými názvy a jejich náhradami.
 
 **Slovník je společný pro celou appku** — články, cvičení, inspirace i podnětné otázky sdílejí jednu sadu. Tag je pro uživatele téma, ne vlastnost obsahového typu; oddělené slovníky per typ vedly k tomu, že stejná věc měla různá jména (`expozice` u cvičení vs. `expozice strachu` u článků) a uživatel ji přes sekce nenašel.
 
@@ -843,7 +843,6 @@ cesta/
 ├── cesta.html     ★ aplikace — jediný živý HTML soubor
 ├── manifest.json            PWA (spuštění z plochy mobilu)
 ├── sw.js                    service worker — offline režim (precache obalu i dat)
-├── tagy.json                kanonický slovník tagů — jediný zdroj pravdy
 ├── data/                    16 datových JSONů (obsah aplikace)
 ├── assets/                  ikony
 ├── README.md                tento dokument — jak věci JSOU

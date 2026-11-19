@@ -93,7 +93,7 @@ Praktický důsledek: dokud jsme v prototypu, ID v JSONech zůstávají. Až se 
 python 02_build_exercises.py cviceni_davky exercises.json && python 03_lint_exercises.py exercises.json && cp exercises.json ../../../data/
 ```
 
-Lint musí projít na nulu. Kontroluje pole, ID, `sort_order` per oddíl, řetězy, počet schémat (3) a tagy — ty čte z `tagy.json` v kořeni, vlastní kopii seznamu vědomě nedrží. `01_fix_davky.py` je **jednorázová oprava z 14. 8. 2026, znovu ji nespouštěj** — je hotová a její tabulky by přepsaly dnešní stav.
+Lint musí projít na nulu. Kontroluje pole, ID, `sort_order` per oddíl, řetězy, počet schémat (3) a tagy — ty čte z `local/data_wip/tagy.json`, vlastní kopii seznamu vědomě nedrží. `01_fix_davky.py` je **jednorázová oprava z 14. 8. 2026, znovu ji nespouštěj** — je hotová a její tabulky by přepsaly dnešní stav.
 
 Konzoli si přepni na UTF-8 (`PYTHONIOENCODING=utf-8`), jinak lint spadne na emoji ve výpisu.
 
@@ -127,7 +127,7 @@ Na mobilu: `https://haryzek.github.io/cesta/` → rozcestník → „Moje cesta"
 - **`approved`** = datum, kdy Bob položku přečetl a schválil (od 12. 11. 2026; triplet, hlášky, věty pod strachy). Appka z něj kreslí ★ **jen v zapnutém adminu**, uživatel ho nevidí; v adminu ho nejde odklepnout (mění se ve zdroji). Plní se ze ★ adminu nebo z revize přes texťák (`mark_approved.py`).
 - **`sort_order`** = pořadí. U tripletu **lokální per cluster** (restart na 1, hustě 1..N bez děr). U plochého obsahu globální v souboru.
 - **`tier`** = `free` nebo `premium`, nikdy nic jiného.
-- **Tagy** vždy lowercase a **výhradně z `tagy.json`** v kořeni repa. Nikdy nezakládej druhou kopii seznamu.
+- **Tagy** vždy lowercase a **výhradně z `local/data_wip/tagy.json`**. Nikdy nezakládej druhou kopii seznamu.
 - **`schemas`** = EMS kódy. **Cluster má 5, obsah má 3.** (README kdysi místy mluvil o 5 i u obsahu — to je opravené, reálná data mají u obsahu 3. Drž 3.)
 
 Prefixy ID podle souborů: `cl_`, `feel_`, `crisis_`, `body_`, `art_`, `ex_`, `sec_`, `chain_`, `ref_`, `refq_`, `refa_`, `inspir_`, `quest_`, `fear_`, `sit_`, `pain_`, `hl_` (hláška pod bolístkou), `sitr_` (věta pod konkrétním strachem). Poslední dvě od 6. 11. 2026 místo klíčů podle pořadí; nová věta bez ID: `build_pains` dá max+1 sám, `build_fears` se zastaví a chce ji doplnit ručně. Před ostrým vydáním se dá celá databáze jednou přečíslovat načisto (Bob, 6. 11.), po vydání už ID nikdy.
@@ -177,7 +177,7 @@ Kdo má co:
 
 8. **Neupravuj `data/exercises.json` přímo** (a totéž triplet, fears, situations, pains — všechno jsou výstupy buildů, viz tabulka). Je to výstup buildu ze 17 dávek (viz „Zdrojáky obsahu a rebuild"). Oprava zapsaná do `data/` vypadá, že funguje — a zmizí při prvním rebuildu. Uprav dávku, přebuilduj, prožeň lintem, zkopíruj. Totéž platí pro `data/sections.json` a `data/chains.json`, jen tam je zdrojem JSON v `local/data_wip/`, ne dávky.
 
-9. **Slovník tagů má jednu jedinou kopii — `tagy.json` v kořeni.** Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací, článků a cvičení 97). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
+9. **Slovník tagů má jednu jedinou kopii — `local/data_wip/tagy.json`.** **Od 19. 11. 2026 už není v kořeni repa** (appka ho nenačítá, slouží jen lintu, promptům a tagování, takže patří k soukromým zdrojům; v hlavním repu zůstává jen v historii gitu). Dřív žil ve třech (`local/_tags/*.txt`, SPEC §12, natvrdo v lintu), kopie se rozešly a slovník se kvůli tomu **dvakrát rozjel** — nejdřív u cvičení, pak u článků; konsolidace 14. 8. 2026 srazila 93 tagů na 56 (k 11. 9. 2026 po přetagování otázek, inspirací, článků a cvičení 97). Když budeš potřebovat seznam tagů, načti ho ze souboru. **Nikdy ho nikam neopisuj**, ani do promptu, ani do skriptu.
 10. **Paměť viděného píše jen swipe.** `markSeen` se volá z `bindSwipe` (karta na obrazovce) a z `toggleFav`. Nikdy ji nevolej ze seznamu — „proscrolloval“ není „přečetl“, a při „jen nové“ by uživateli mizel obsah, kterej neviděl. Proud si při „jen nové“ snímkuje seznam (`state.swipe.key/ids`), jinak by karty mizely pod rukama.
 
 11. **Dlaždice jedou po párech (grid 2 sloupce).** Devátá sekce s `tile:true` by trčela sama. Když přibude sekce, buď ji dej do menu (`tile:false`, jako O appce), nebo přidej dvě.
