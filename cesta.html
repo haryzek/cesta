@@ -395,6 +395,15 @@
   .mc-swipe-card .sc-actions{ display:flex; gap:8px; justify-content:center; margin-top:24px; flex-wrap:wrap; }
   .mc-swipe-card .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
   .mc-fab.ghost{ background:transparent; color:var(--text); border:1px solid var(--border); }
+  /* Připomínka zálohy — pop-up uprostřed při vstupu (jednou za měsíc) */
+  .mc-modal-backdrop{ position:fixed; inset:0; z-index:60; background:#000a; animation:mcFade .18s ease forwards; }
+  .mc-modal{ position:fixed; z-index:61; left:50%; top:50%; transform:translate(-50%,-50%); width:calc(100% - 2*var(--gutter)); max-width:360px;
+    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:24px 22px 18px; text-align:center; box-shadow:0 20px 60px #0006; }
+  .mc-modal-ic{ width:46px; height:46px; margin:0 auto 12px; border-radius:50%; background:var(--tone-soft); color:var(--tone); display:flex; align-items:center; justify-content:center; }
+  .mc-modal-ic svg{ width:22px; height:22px; }
+  .mc-modal h2{ font-family:var(--serif); font-weight:600; font-size:21px; line-height:1.2; font-variation-settings:'opsz' 36; color:var(--text); margin:0 0 8px; }
+  .mc-modal p{ font-size:14.5px; line-height:1.5; color:var(--soft); margin:0 0 16px; }
+  .mc-modal .mc-fab{ display:block; width:100%; margin-top:8px; }
 
   /* ===== ADMIN (provizorní) ===== */
   .mc-adm{ display:flex; align-items:center; gap:4px; margin-top:10px; padding-top:8px; border-top:1px dashed var(--border); }
@@ -1337,6 +1346,7 @@
     else if(state.page==="home"){ h+=viewHome(); }
     else if(state.page==="favorites"){ h+=viewFavorites(); }
     else if(state.page==="admin"){ h+=viewAdmin(); }
+    else if(state.page==="settings"){ h+=viewSettings(); }
     else {
       var sec=sectionByKey(state.section);
       if(sec&&sec.kind==="reframing") h+=viewReframing();
@@ -1348,6 +1358,7 @@
       else h+='<div class="mc-empty">—</div>';
     }
     if(state.menuOpen) h+=viewMenu();
+    if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
     h+=viewToast();
     root.innerHTML=h;
     var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
@@ -1378,8 +1389,9 @@
       var badge=s.kind==="favorites"&&favCount()>0?'<span class="mi-badge">'+favCount()+'</span>':'';
       h+='<button class="mc-menu-item '+(active?"active":"")+'" onclick="MC.open(\''+s.key+'\')"><span class="mi-ic">'+IC[s.icon]+'</span><span class="mi-label">'+esc(s.label)+'</span>'+badge+'</button>';
     });
-    // Admin úplně dole — přepínač; když je zapnutý, pod ním řádek do panelu.
+    // Pod poslední linkou: Nastavení (záloha), pod ním Admin — přepínač; když je zapnutý, pod ním řádek do panelu.
     h+='<div class="mc-menu-sep"></div>';
+    h+='<button class="mc-menu-item '+(state.page==="settings"?"active":"")+'" onclick="MC.settings()"><span class="mi-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><span class="mi-label">Nastavení</span></button>';
     h+='<button class="mc-menu-item adm '+(ADMIN.on?"active":"")+'" onclick="MC.admin()"><span class="mi-ic">'+IC.admin+'</span><span class="mi-label">Admin '+(ADMIN.on?"zapnutý":"vypnutý")+'</span></button>';
     if(ADMIN.on) h+='<button class="mc-menu-item adm '+(state.page==="admin"?"active":"")+'" onclick="MC.admPage()"><span class="mi-ic"></span><span class="mi-label">Záloha a koš</span>'+(ADMIN.dirty?'<span class="mi-badge">'+ADMIN.dirty+'</span>':'')+'</button>';
     h+='</nav>'; return h;
@@ -2031,7 +2043,7 @@
     "* **Tmavý režim** zapnete v menu.",
     "## Vaše data",
     "* Oblíbené a to, co jste viděli, se ukládá **jen ve vašem telefonu**, ne na internet. Nikdo jiný to nevidí.",
-    "* Když vymažete data prohlížeče nebo změníte telefon, uložené položky zmizí.",
+    "* Když vymažete data prohlížeče nebo změníte telefon, uložené položky zmizí. Proto si je občas **zazálohujte**: v menu **Nastavení → Uložit zálohu** (pošlete si soubor do mailu nebo na Disk). Na novém telefonu je vrátíte přes **Obnovit ze zálohy**. Jednou za měsíc vám appka sama připomene.",
     "## A hlavně",
     "Appka je průvodce, ne léčba. Pokud jde o vážné potíže, obraťte se na odborníka. Kontakty najdete v **První pomoci**."
   ].join("\n");
@@ -2340,6 +2352,11 @@
       var e=state.adminEdit; if(!e||!e.field) return; var it=admItem(e.store,e.id); if(!it) return;
       var o=admOrig(it,e.field); admSetField(e.store,e.id,e.field,o==null?"":String(o)); saveAdmin(true); toast("Vráceno na původní"); render();
     },
+    settings:function(){ state.menuOpen=false; state.detail=null; state.page="settings"; state.section=null; scrollTop(); render(); },
+    backupSave:function(){ backupSave(); },
+    backupRestore:function(){ backupRestore(); },
+    nagSave:function(){ state.nag=false; backupSave(); },
+    nagLater:function(){ var b=loadBackup(); b.snooze=new Date(Date.now()+BACKUP_DAYS*864e5).toISOString(); saveBackupInfo(b); state.nag=false; render(); },
     admExport:function(){
       var json=admExportJson(), name="cesta_admin_"+today()+".json";
       try{ var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json],{type:"application/json"})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); }catch(e){}
@@ -2402,6 +2419,83 @@
   function refocus(v){ var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } }
   function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
 
+  // ===================== ZÁLOHA UŽIVATELSKÝCH DAT =====================
+  // Oblíbené, přečtené a nastavení žijí jen v localStorage tohoto prohlížeče.
+  // Záloha = soubor mimo prohlížeč (sdílet do mailu / na Disk, jinak stáhnout).
+  // Při vstupu jednou za BACKUP_DAYS pop-up, když je co zálohovat (aspoň 1 oblíbená).
+  var BACKUP_KEY="mc_backup", BACKUP_DAYS=30;
+  function loadBackup(){ try{ return JSON.parse(localStorage.getItem(BACKUP_KEY))||{}; }catch(e){ return {}; } }
+  function saveBackupInfo(b){ try{ localStorage.setItem(BACKUP_KEY,JSON.stringify(b)); }catch(e){} }
+  function daysSince(iso){ return iso?Math.floor((Date.now()-new Date(iso).getTime())/864e5):null; }
+  function backupJson(){
+    var t=null,v=null; try{ t=localStorage.getItem(THEME_KEY); v=localStorage.getItem(VIEW_KEY); }catch(e){}
+    return JSON.stringify({ app:"moje-cesta", v:1, exported:new Date().toISOString(), user:USER, theme:t, view:v });
+  }
+  function backupDone(){ var b=loadBackup(); b.last=new Date().toISOString(); b.snooze=null; saveBackupInfo(b); }
+  function shouldNag(){
+    if(!hasConsent()||favCount()<1) return false;
+    var b=loadBackup(), d=daysSince(b.last||b.first);
+    if(d==null||d<BACKUP_DAYS) return false;
+    return !(b.snooze&&Date.now()<new Date(b.snooze).getTime());
+  }
+  function initBackup(){
+    // Požádat prohlížeč, ať data appky nemaže sám, když dochází místo.
+    try{ if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(function(){}); }catch(e){}
+    var b=loadBackup(); if(!b.first){ b.first=new Date().toISOString(); saveBackupInfo(b); }
+    state.nag=shouldNag();
+  }
+  function backupSave(){
+    var name="moje-cesta-zaloha-"+today()+".json", json=backupJson();
+    function fin(ok){ if(ok){ backupDone(); toast("Záloha uložena"); } render(); }
+    function download(){
+      try{ var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json],{type:"application/json"})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); fin(true); }
+      catch(e){ fin(false); }
+    }
+    try{
+      var file=new File([json],name,{type:"application/json"});
+      if(navigator.canShare&&navigator.canShare({files:[file]})){
+        navigator.share({files:[file],title:"Záloha Moje cesta"}).then(function(){ fin(true); },function(err){ if(err&&err.name==="AbortError") fin(false); else download(); });
+        return;
+      }
+    }catch(e){}
+    download();
+  }
+  function backupRestore(){
+    var inp=document.createElement("input"); inp.type="file"; inp.accept=".json,application/json,text/plain";
+    inp.onchange=function(){
+      var f=inp.files&&inp.files[0]; if(!f) return;
+      var rd=new FileReader();
+      rd.onload=function(){
+        var d=null; try{ d=JSON.parse(rd.result); }catch(e){}
+        if(!d||d.app!=="moje-cesta"||!d.user||!d.user.favorites){ toast("Tohle není záloha Moje cesta"); render(); return; }
+        var dt=d.exported?new Date(d.exported):null;
+        if(!window.confirm("Obnovit zálohu"+(dt?" z "+dt.getDate()+". "+(dt.getMonth()+1)+". "+dt.getFullYear():"")+"?\n\nOblíbené a přečtené v tomto telefonu se nahradí zálohou.")) return;
+        try{ localStorage.setItem(STORE_KEY,JSON.stringify(d.user)); if(d.theme) localStorage.setItem(THEME_KEY,d.theme); if(d.view) localStorage.setItem(VIEW_KEY,d.view); }catch(e){}
+        USER=loadUser(); applyTheme(); backupDone(); toast("Záloha obnovena"); render();
+      };
+      rd.readAsText(f);
+    };
+    inp.click();
+  }
+  function viewSettings(){
+    var b=loadBackup(), d=daysSince(b.last);
+    var h='<button class="mc-back" onclick="MC.home()">← Domů</button>';
+    h+='<div class="mc-detail-head"><div class="mc-detail-title">Nastavení</div></div>';
+    h+='<div class="mc-detail-body"><div class="mc-fav-group"><h2>Záloha</h2>';
+    h+='<p class="mc-adm-note">Oblíbené, přečtené a vaše nastavení jsou uložené jen v tomto telefonu. Když si vymažete data prohlížeče nebo změníte telefon, zmizí. Záloha je malý soubor, který si uložíte jinam — třeba pošlete do mailu nebo na Disk. Obnovit ji jde kdykoli tady.</p>';
+    h+='<div class="mc-box"><span class="b-text">'+(b.last?'Poslední záloha: '+(d===0?'dnes':'před '+d+' '+(d===1?'dnem':'dny')):'Zatím žádná záloha')+' · oblíbených: '+favCount()+'</span></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.backupSave()">Uložit zálohu</button><button class="mc-fab ghost" onclick="MC.backupRestore()">Obnovit ze zálohy</button></div>';
+    h+='</div></div>';
+    return h;
+  }
+  function viewNag(){
+    var b=loadBackup(), d=daysSince(b.last);
+    return '<div class="mc-modal-backdrop"></div><div class="mc-modal" role="dialog" aria-modal="true">'+
+      '<div class="mc-modal-ic">'+IC.favorites+'</div><h2>Zazálohujte si svou cestu</h2>'+
+      '<p>'+(b.last?'Poslední záloha je '+d+' dní stará. ':'Zatím nemáte žádnou zálohu. ')+'Vaše oblíbené ('+favCount()+') a přečtené jsou jen v tomto telefonu. Jedním klepnutím si je uložíte jinam.</p>'+
+      '<button class="mc-fab" onclick="MC.nagSave()">Uložit zálohu</button><button class="mc-fab ghost" onclick="MC.nagLater()">Teď ne</button></div>';
+  }
+
   // ===================== OFFLINE (service worker) =====================
   // Appka přidaná na plochu musí jet bez signálu. SW precachuje obal i všech
   // 16 JSONů; data pak jedou network-first s fallbackem do cache.
@@ -2419,6 +2513,7 @@
 
   applyTheme();
   initSW();
+  initBackup();
   load();
 })();
 </script>
