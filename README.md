@@ -847,7 +847,6 @@ cesta/
 ├── assets/                  ikony
 ├── README.md                tento dokument — jak věci JSOU
 ├── CLAUDE.md                pracovní brífink pro Claude Code
-├── _scratch/                hrací písek (mimo git) — v tests/ headless testy appky (jsdom)
 └── local/                   osobní podklady a rozpracovaná data (mimo hlavní repo; vlastní
                              git → soukromé haryzek/cesta-local, od 22. 10. 2026)
     ├── data_wip/            zdrojáky obsahu před nasazením do data/
@@ -873,7 +872,7 @@ Aplikace stojí na **registru sekcí** — jeden `SECTIONS = [...]` řídí úvo
 
 **Lokálně:** `python -m http.server 8777` v kořeni → `http://localhost:8777/cesta.html`. Otevření souboru z disku nefunguje (fetch potřebuje HTTP).
 
-**Headless testy:** `_scratch/tests/` (mimo git) — jsdom načte `cesta.html`, `fetch` čte z `data/`, testy klikají přes `window.MC.*` a kontrolují DOM. `node test.js` atd., viz README tam. Nemá layout — swipe a výšky ověří jen mobil.
+**Headless testy:** `local/tests/` (soukromé repo, do 19. 11. 2026 `_scratch/tests/`) — jsdom načte `cesta.html`, `fetch` čte z `data/`, testy klikají přes `window.MC.*` a kontrolují DOM. `node test.js` atd., viz README tam. Nemá layout — swipe a výšky ověří jen mobil.
 
 **Na mobilu:** `https://haryzek.github.io/cesta/` → „Moje cesta" → v Chrome „Přidat na plochu". HTML i JSONy jedou přes service worker network-first, takže po pushi stačí appku zavřít a znovu otevřít; bez signálu jede z cache (viz „Offline režim“).
 

@@ -241,7 +241,7 @@ Když sáhneš do těchhle algoritmů, přečti si v README i „proč" — jsou
 
 Router se dá ovládat z konzole: `MC.open("exercises")`, `MC.home()`, `MC.detail(...)` — rychlejší než klikat.
 
-Screenshot ani localhost v Browser pane v tomhle setupu nefungují. **Testuj headless v Node:** `_scratch/tests/` (mimo git, jsdom) — načte `cesta.html`, `fetch` nahradí čtením z `data/`, klikne přes `window.MC.*` a zkontroluje DOM. `node test.js`, `test_rf.js`, `test_fav.js`, `test_swipe.js`; jsdom potřebuje `url: "http://localhost/"`, jinak nemá `localStorage`. Bar je: nula ERR, `window errors: none`. Layout (scroll-snap, výšky) jsdom nemá — to ověří Bob na mobilu.
+Screenshot ani localhost v Browser pane v tomhle setupu nefungují. **Testuj headless v Node:** `local/tests/` (od 19. 11. 2026, dřív `_scratch/tests/`; soukromé repo `cesta-local`, `node_modules` mimo git — po čistém klonu `npm i`; jsdom) — načte `cesta.html`, `fetch` nahradí čtením z `data/`, klikne přes `window.MC.*` a zkontroluje DOM. `node test.js`, `test_rf.js`, `test_fav.js`, `test_swipe.js`; jsdom potřebuje `url: "http://localhost/"`, jinak nemá `localStorage`. Bar je: nula ERR, `window errors: none`. Layout (scroll-snap, výšky) jsdom nemá — to ověří Bob na mobilu.
 
 Service worker se registruje i na `localhost:8777`. Data jedou network-first, takže při vývoji ho nepoznáš — ale po vypnutí serveru appka jede dál z cache (nemysli si, že server běží), a při ladění samotného `sw.js` je potřeba v DevTools → Application → Service Workers „Update on reload“. jsdom SW nemá, `initSW` se v testech vrátí naprázdno.
 
