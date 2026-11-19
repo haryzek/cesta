@@ -20433,11 +20433,20 @@
     "approved": "2026-11-12"
   },
   {
+    "id": "ref_5416",
+    "cluster_id": "cl_0049",
+    "text": "Možná nadešel čas vyměnit zklamání ze sebe za oprávněný smutek a rozloučit se s fantazií o finální verzi sebe. Ta nikdy nepřijde. Ale ty jsi tu už teď.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-11-19",
+    "approved": "2026-11-19"
+  },
+  {
     "id": "ref_2550",
     "cluster_id": "cl_0049",
     "text": "Pod větou „nejsem dost dobrý“ někdy leží mnohem zranitelnější věta: „Bojím se, že když nebudu dost dobrý, nebudu milovaný.“ Právě tahle druhá věta potřebuje víc laskavosti než argumentů.",
     "tier": "free",
-    "sort_order": 5,
+    "sort_order": 6,
     "added_at": "2026-10-16"
   },
   {
@@ -20445,7 +20454,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš se nejdřív opravit, abys k sobě mohl být laskavý. Právě ve chvíli, kdy si připadáš nedostatečný, potřebuješ svou laskavost nejvíc.",
     "tier": "free",
-    "sort_order": 6,
+    "sort_order": 7,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20454,7 +20463,7 @@
     "cluster_id": "cl_0049",
     "text": "Možná sis kdysi zvykl věřit, že uznání přijde, až budeš dost dobrý. Jenže laťka, která rozhoduje o tvé hodnotě, se dá posouvat donekonečna.",
     "tier": "free",
-    "sort_order": 7,
+    "sort_order": 8,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20463,7 +20472,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš si svoje místo mezi lidmi zasloužit dokonalostí. Patříš sem i se vším, co neumíš, nezvládáš a ještě nemáš vyřešené. Tak jako každý jiný člověk.",
     "tier": "free",
-    "sort_order": 8,
+    "sort_order": 9,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20472,7 +20481,7 @@
     "cluster_id": "cl_0049",
     "text": "Když se cítíš nedostatečný, tvoje mysl začne sbírat hlavně důkazy proti tobě. To ale není celý obraz. Tvoje pozornost se jen na chvíli zúžila na všechno, co ti na sobě vadí.",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 10,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20481,7 +20490,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš být mimořádný, aby tě někdo mohl milovat, chtít mít vedle sebe nebo si tě vážit. Blízkost nevzniká z bezchybného výkonu.",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 11,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20490,7 +20499,7 @@
     "cluster_id": "cl_0049",
     "text": "Pocit nedostatečnosti často vynechává jednu zásadní otázku: „Nedostatečný vzhledem k čemu?“ Bez konkrétního měřítka je to rozsudek, který zní přesně, ale vlastně nic určitého neříká.",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 12,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20499,7 +20508,7 @@
     "cluster_id": "cl_0049",
     "text": "I kdyby někdo byl schopnější, chytřejší nebo úspěšnější než ty, nic ti tím neubývá. Lidská hodnota není pořadník.",
     "tier": "free",
-    "sort_order": 12,
+    "sort_order": 13,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20508,7 +20517,7 @@
     "cluster_id": "cl_0049",
     "text": "Ta část tebe, která tě neustále poměřuje, nemusí být nepřítel. Třeba se jen zoufale snaží zajistit, aby tě nikdo neodmítl, neponížil nebo nepřehlédl.",
     "tier": "free",
-    "sort_order": 13,
+    "sort_order": 14,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20517,7 +20526,7 @@
     "cluster_id": "cl_0049",
     "text": "Možná nejsi tam, kde sis představoval, že už budeš. To může bolet. Ale nenaplněná představa o vlastním životě ještě neznamená, že jsi selhal.",
     "tier": "free",
-    "sort_order": 14,
+    "sort_order": 15,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20526,7 +20535,7 @@
     "cluster_id": "cl_0049",
     "text": "Zkus na chvíli pustit otázku „Jsem dost dobrý?“ a všimnout si, jak přísné měřítko v ní vlastně je. Možná by ti víc pomohla jiná otázka: „Můžu být takový, jaký teď jsem, a přesto stát na své straně?“",
     "tier": "free",
-    "sort_order": 15,
+    "sort_order": 16,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -20535,7 +20544,7 @@
     "cluster_id": "cl_0049",
     "text": "To, co na sobě považuješ za „málo“, může být pro někoho úplně dost. Tvůj vnitřní metr není jediný metr, který existuje.",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 17,
     "added_at": "2026-10-16"
   },
   {
@@ -20543,7 +20552,7 @@
     "cluster_id": "cl_0049",
     "text": "Možná právě teď porovnáváš svoje zákulisí s cizím pódiem. O druhých většinou nevidíš jejich pochybnosti, chyby ani cenu, kterou za svoje schopnosti platí.",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 18,
     "added_at": "2026-10-16"
   },
   {
@@ -20551,7 +20560,7 @@
     "cluster_id": "cl_0049",
     "text": "Kdybys byl malé dítě, které ti právě řeklo „nejsem dost dobrý“, asi bys nezačal vyjmenovávat jeho nedostatky. Možná bys ho objal a řekl mu: „Nemusíš mi nic dokazovat, abys byl důležitý.“",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 19,
     "added_at": "2026-10-16"
   },
   {
@@ -20559,7 +20568,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš být nejlepší verzí sebe sama každý den. Někdy úplně stačí být dnešní verzí sebe a zacházet s ní slušně.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 20,
     "added_at": "2026-10-16"
   },
   {
@@ -20567,7 +20576,7 @@
     "cluster_id": "cl_0049",
     "text": "Možná ses kdysi naučil, že „dost dobrý“ znamená splnit určitou laťku. Jenže tu laťku někdo vytvořil. Není to přírodní zákon ani objektivní měřítko tvé hodnoty.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 21,
     "added_at": "2026-10-16"
   },
   {
@@ -20575,7 +20584,7 @@
     "cluster_id": "cl_0049",
     "text": "To, že tě nedokonalost tolik bolí, může také znamenat, že ti záleží na růstu, kvalitě a tom, co přinášíš světu. Možná v té bolesti není jen pocit nedostatečnosti, ale i něco, na čem ti opravdu záleží.",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -20583,7 +20592,7 @@
     "cluster_id": "cl_0049",
     "text": "Být v něčem obyčejný není životní prohra. Většina krásných a důležitých věcí v lidském životě vůbec nepotřebuje výjimečnost.",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -20591,7 +20600,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš dnes dokazovat, že na něco máš. Na chvíli můžeš přestat skládat zkoušku ze své vlastní hodnoty.",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -20599,7 +20608,7 @@
     "cluster_id": "cl_0049",
     "text": "To, že si připadáš nedostatečný, ještě není objektivní rozsudek o tom, jaký jsi. Je to bolestivý pocit, který na chvíli získal hlas soudce.",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -20607,7 +20616,7 @@
     "cluster_id": "cl_0049",
     "text": "Zkus si vybavit chvíle, kdy tvoje přítomnost, práce, péče, odvaha nebo obyčejná lidskost někomu stačila. Ne chvíle, kdy jsi byl nejlepší. I tyhle zkušenosti patří do obrazu toho, jaký jsi.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -20615,7 +20624,7 @@
     "cluster_id": "cl_0049",
     "text": "Každý člověk, kterého obdivuješ, je v obrovském množství lidských schopností naprosto průměrný, podprůměrný nebo bezradný. Výjimečnost v několika oblastech nikdy neznamenala celkovou nadřazenost člověka.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -20623,7 +20632,7 @@
     "cluster_id": "cl_0049",
     "text": "Můžeš být v něčem průměrný a v něčem skvělý, někde zkušený a jinde úplný začátečník. Nemusíš z téhle lidské směsi vyrábět jeden konečný verdikt o sobě.",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -20631,7 +20640,7 @@
     "cluster_id": "cl_0049",
     "text": "Možná největší trik otázky „Jsem dost dobrý?“ spočívá v představě, že někde existuje komise, která zná správnou odpověď. Jenže žádná definitivní stupnice lidské hodnoty neexistuje.",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -20639,7 +20648,7 @@
     "cluster_id": "cl_0049",
     "text": "Nedokonalost není něco, co musíš před světem úspěšně zamaskovat. Je to součást toho, že jsi skutečný člověk, ne projekt určený k bezchybné prezentaci.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -20647,7 +20656,7 @@
     "cluster_id": "cl_0049",
     "text": "Tvoje mysl není nestranná hodnotící komise. Když uvěříš, že jsi nedostatečný, začneš snáz nacházet důkazy, které to potvrzují, a přehlížet ty ostatní.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -20655,7 +20664,7 @@
     "cluster_id": "cl_0049",
     "text": "Představ si svoje osmdesátileté já, jak se dívá na dnešní trápení. Možná by ti neřeklo „měl jsi víc makat“, ale spíš „proboha, byl jsi živý – proč sis tolik času myslel, že musíš nejdřív získat povolení být spokojený?“",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -20663,7 +20672,7 @@
     "cluster_id": "cl_0049",
     "text": "Jednou zemřeš a svět nebude dělat závěrečnou inventuru toho, zda jsi byl dost nadprůměrný. Možná je škoda utratit kus krátkého života dokazováním, že máš právo ho vůbec žít.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
@@ -20671,7 +20680,7 @@
     "cluster_id": "cl_0049",
     "text": "Tvoje tělo nečeká, až budeš dost dobrý. Srdce bije, plíce dýchají, rány se hojí a tělo se tě snaží udržet naživu. Jako by tvoje existence už dávno měla právo pokračovat.",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 34,
     "added_at": "2026-10-16"
   },
   {
@@ -20679,7 +20688,7 @@
     "cluster_id": "cl_0049",
     "text": "Kdybys byl skutečně dokonalý, neměl by ses kam vyvíjet, nic objevovat ani se od nikoho učit. Nedokonalost není porucha lidského systému; je to jedna z podmínek růstu.",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 35,
     "added_at": "2026-10-16"
   },
   {
@@ -20687,7 +20696,7 @@
     "cluster_id": "cl_0049",
     "text": "Za padesát let bude většina dnešních žebříčků, srovnávání a drobných selhání úplně bezvýznamná. To, co dnes působí jako rozsudek nad tebou, může být z dálky jen malá nerovnost v krajině života.",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 36,
     "added_at": "2026-10-16"
   },
   {
@@ -20695,7 +20704,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš odstranit všechny svoje slabiny, aby sis mohl vážit sám sebe. Sebeúcta není odměna za bezchybnost.",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 37,
     "added_at": "2026-10-16"
   },
   {
@@ -20703,7 +20712,7 @@
     "cluster_id": "cl_0049",
     "text": "Nemusíš být výjimečný, abys byl dost dobrý. Tvoje hodnota nezačíná tam, kde přestáváš být průměrný.",
     "tier": "free",
-    "sort_order": 37,
+    "sort_order": 38,
     "added_at": "2026-10-16"
   },
   {
@@ -20711,7 +20720,7 @@
     "cluster_id": "cl_0049",
     "text": "Tvůj pes by nejspíš vůbec nechápal otázku, jestli jsi dost dobrý člověk. Zajímal by ho tvůj hlas, pach, blízkost a to, že jsi přišel domů. Možná tím nevědomky ví o hodnotě vztahu něco, co lidské ego zbytečně komplikuje.",
     "tier": "free",
-    "sort_order": 38,
+    "sort_order": 39,
     "added_at": "2026-10-16"
   },
   {
@@ -20719,17 +20728,8 @@
     "cluster_id": "cl_0049",
     "text": "Z pohledu vesmíru je docela komické, že kousek živé hmoty na malé planetě úzkostlivě řeší, jestli je dost dobrý. Vesmír po tobě žádný výkonnostní posudek nechce.",
     "tier": "free",
-    "sort_order": 39,
-    "added_at": "2026-10-16"
-  },
-  {
-    "id": "ref_5416",
-    "cluster_id": "cl_0049",
-    "text": "Možná nadešel čas vyměnit zklamání ze sebe za oprávněný smutek a rozloučit se s fantazií o finální verzi sebe. Ta nikdy nepřijde. Ale ty jsi tu už teď.",
-    "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-11-19",
-    "approved": "2026-11-19"
+    "added_at": "2026-10-16"
   },
   {
     "id": "ref_2584",
