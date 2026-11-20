@@ -389,7 +389,8 @@
   /* Počítadlo + bublinka zpětné vazby vlevo dole (od 20. 11. 2026), stejná barva */
   .mc-swipe-card .sc-foot-l{ position:absolute; left:14px; bottom:9px; display:flex; align-items:center; gap:4px; color:var(--muted); }
   .mc-swipe-card .sc-foot-l .sc-count{ position:static; }
-  .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:32px; height:32px; color:var(--muted); opacity:1; }
+  .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:28px; height:28px; color:var(--muted); opacity:.6; }
+  .mc-swipe-card .sc-foot-l .sc-fb svg{ width:15px; height:15px; }
   .mc-swipe-card .sc-body .mc-heart{ top:auto; bottom:9px; right:10px; }
   .mc-swipe-card .sc-body .mc-heart svg{ width:24px; height:24px; }
   /* Terčík u experimentů — výška pod řádkem, aby nerozhodil řádkování */
@@ -410,25 +411,27 @@
      Nahoře jen Zpět, pod ním záložky jako v papírovém zápisníku, karta přes celou plochu,
      dole switch „Jen nové“ a přepnutí na seznam. Bez scrollu. */
   .mc-folder .mc-swipe-wrap{ padding:0; }
-  .mc-folder .mc-swipe{ height:calc(100vh - 222px); height:calc(100svh - 222px); min-height:380px; max-height:none; }
+  .mc-folder .mc-swipe{ height:calc(100vh - 176px); height:calc(100svh - 176px); min-height:380px; max-height:none; }
   .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:6px; }
-  .mc-folder .mc-swipe-card .sc-body{ border-top-left-radius:0; }
-  .mc-ftabs{ display:flex; gap:4px; padding:6px var(--gutter) 0; position:relative; z-index:2; margin-bottom:-1px; }
+  .mc-folder .mc-swipe-card .sc-body{ border-top-right-radius:0; }
+  .mc-ftabs{ display:flex; align-items:flex-end; justify-content:flex-end; gap:4px; padding:14px var(--gutter) 0; position:relative; z-index:2; margin-bottom:-1px; }
+  .mc-fback{ margin-right:auto; align-self:center; background:none; border:none; padding:0 0 4px; cursor:pointer;
+    color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; }
   .mc-ftabs button{ font-family:var(--sans); font-size:13px; font-weight:600; padding:8px 14px 9px; cursor:pointer;
     background:var(--surface-2); color:var(--muted); border:1px solid var(--border); border-bottom-color:var(--border);
     border-radius:12px 12px 0 0; }
   .mc-ftabs button.active{ background:var(--surface); color:var(--tone); border-bottom-color:var(--surface); }
-  .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:6px var(--gutter) 10px; }
-  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
+  .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:4px var(--gutter) 6px; }
+  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
   .mc-sfoot .cnt{ font-family:var(--mono); font-size:11px; color:var(--muted); }
   .mc-sfoot .sp{ flex:1; }
   .mc-switch{ position:relative; width:44px; height:26px; border-radius:13px; border:none; padding:0; cursor:pointer;
     background:var(--border); transition:background .15s ease; flex-shrink:0; }
   .mc-switch::after{ content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
     background:#fff; box-shadow:0 1px 3px #0004; transition:transform .15s ease; }
-  .mc-switch.on{ background:var(--tone); }
+  .mc-switch.on{ background:var(--accent); }
   .mc-switch.on::after{ transform:translateX(18px); }
-  .mc-sfoot .mc-pill.ic{ padding:6px 8px; }
+  .mc-sfoot .mc-pill.ic{ padding:6px 8px; margin-right:0; }
   /* Placka jako první karta: víc témat = jedna karta, čísla bez duplicit */
   .mc-swipe-card.alert .sc-body{ border:2px solid var(--accent); text-align:left; justify-content:center; padding:26px 22px 26px; }
   .sc-alert-ic{ color:var(--accent); display:flex; margin-bottom:10px; }
@@ -441,7 +444,7 @@
   .sc-alert-go{ margin-top:16px; padding:0; background:none; border:none; cursor:pointer; color:var(--accent);
     font-family:var(--sans); font-size:14px; font-weight:600; text-align:left; }
   /* Návod s palcem — jen při úplně prvním vstupu */
-  .mc-swipe-card.tutor .sc-body{ background:var(--tone-soft); border-color:var(--tone); }
+  .mc-swipe-card.tutor .sc-body{ overflow:hidden; }
   .sc-tutor-t{ font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.25; color:var(--tone); font-variation-settings:'opsz' 36; }
   .sc-tutor-p{ margin:10px 0 0; font-size:15.5px; line-height:1.5; color:var(--text); }
   .sc-thumb{ position:absolute; left:50%; bottom:-6px; width:74px; margin-left:-37px; color:var(--muted); opacity:.75;
@@ -1680,7 +1683,7 @@
     var rf=state.rf, all=currentRfList(), store=storeOf(rf.activeType), list=unseenOnly(store,all);
     var rfKey="rf:"+rf.activeType+":"+cids.join(",");
     var metaFn=function(it){ return esc((rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||"")); };
-    var h='<div class="mc-folder">'+folderTabs(TYPES,rf.activeType,"rfType");
+    var h='<div class="mc-folder">'+folderTabs(TYPES,rf.activeType,"rfType",["rfBack()","Zpět"]);
     var items=swipeItems(store,rfKey,all);
     if(!items.length) h+=alertBoxes(cids)+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
     else h+=swipeView(store,rfKey,items,metaFn,function(it){ return (rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||""); },softCutOf(),preCards(cids));
@@ -1705,9 +1708,10 @@
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
     if(viewMode()==="swipe"){
+      h="";
       var allS=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; })); if(cutOn()) allS=allS.slice(0,PAIN_CUT);
       var itemsS=swipeItems("pains","pain:"+p.id,allS), underS=(p.cluster_ids&&p.cluster_ids.length)?feelingPicker("Co může být pod tím?","Za bolístkou může být hlubší pocit. Pokud některý sedí, vyberte ho a podívejte se na něj jinak.",p.cluster_ids,rf.painSel||{},"rfPainToggle","rfPainOpen"):"";
-      h+='<div class="mc-folder">'+folderTabs([{key:"pains",label:"Hlášky"}],"pains",null);
+      h+='<div class="mc-folder">'+folderTabs([{key:"pains",label:"Hlášky"}],"pains",null,["rfGate('pains')","Bolístky"]);
       if(!itemsS.length) h+=alertBoxes([p.id])+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
       else h+=swipeView("pains","pain:"+p.id,itemsS,function(){ return esc(cutText(p.text,70)); },function(){ return p.text; },0,preCards([p.id]));
       return h+swipeFoot(unseenOnly("pains",allS).length)+'</div>'+underS;
@@ -1754,7 +1758,7 @@
   function viewRfDetail(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět</button>';
     var cids=rf.detailClusters.map(function(c){ return c.cluster_id; });
-    if(viewMode()==="swipe") return h+rfFolder(cids);
+    if(viewMode()==="swipe") return rfFolder(cids);
     h+=alertBoxes(cids);
     var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
     // Ze strachu: titulek = strach, pod ním vybrané jádrové pocity.
@@ -2580,8 +2584,8 @@
   // ===================== ZÁPISNÍK (karty odpovědí, od 20. 11. 2026) =====================
   // Čistá stránka v režimu karet: záložky jako v zápisníku, spodní lišta se switchem „Jen nové“,
   // placka s čísly jako první karta (víc témat = jedna karta), návod s palcem jen poprvé.
-  function folderTabs(tabs,active,handler){
-    var h='<div class="mc-ftabs" role="tablist">';
+  function folderTabs(tabs,active,handler,back){
+    var h='<div class="mc-ftabs" role="tablist">'+(back?'<button class="mc-fback" onclick="MC.'+back[0]+'">← '+esc(back[1])+'</button>':'');
     tabs.forEach(function(t){ h+='<button role="tab" class="'+(t.key===active?"active":"")+'"'+(handler?' onclick="MC.'+handler+'(\''+t.key+'\')"':'')+'>'+esc(t.label)+'</button>'; });
     return h+'</div>';
   }
@@ -2608,7 +2612,7 @@
   }
   var TUTOR_KEY="mc_tutorial";
   function tutorDone(){ try{ return localStorage.getItem(TUTOR_KEY)==="1"; }catch(e){ return true; } }
-  var THUMB_SVG='<svg viewBox="0 0 80 110" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 110V46a14 14 0 0 1 28 0v64"/><path d="M28 44a8 8 0 0 1 16 0v8H28z"/><path d="M50 74c6-6 16-6 20 2l-10 34"/></svg>';
+  var THUMB_SVG='<svg viewBox="0 0 80 110" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 110V44a16 16 0 0 1 32 0v66"/><path d="M31 42a9 9 0 0 1 18 0v9H31z"/></svg>';
   function tutorCard(){
     return '<div class="mc-swipe-card tutor"><div class="sc-body"><div class="sc-tutor-t">Jak na to</div><p class="sc-tutor-p">Posuňte prstem doleva — přijde další odpověď. Doprava se vrátíte zpátky.</p><p class="sc-tutor-p">Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
   }
