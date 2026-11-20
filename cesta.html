@@ -389,9 +389,9 @@
   /* Počítadlo a srdíčko dole v rozích — srdíčko blíž palci. */
   .mc-swipe-card .sc-count{ position:absolute; bottom:18px; left:18px; font-family:var(--mono); font-size:11px; color:var(--muted); }
   /* Počítadlo + bublinka zpětné vazby vlevo dole (od 20. 11. 2026), stejná barva */
-  .mc-swipe-card .sc-foot-l{ position:absolute; left:14px; bottom:9px; display:flex; align-items:center; gap:4px; color:var(--muted); }
+  .mc-swipe-card .sc-foot-l{ position:absolute; left:14px; bottom:9px; height:34px; display:flex; align-items:center; gap:4px; color:var(--muted); }
   .mc-swipe-card .sc-foot-l .sc-count{ position:static; }
-  .mc-swipe-card .sc-foot-l .sc-count{ font-size:13px; }
+  .mc-swipe-card .sc-foot-l .sc-count{ font-family:var(--sans); font-size:13px; font-variant-numeric:tabular-nums; }
   .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:34px; height:34px; color:var(--muted); opacity:.6; }
   .mc-swipe-card .sc-foot-l .sc-fb svg{ width:22px; height:22px; }
   .mc-swipe-card .sc-body .mc-heart{ top:auto; bottom:9px; right:10px; }
@@ -415,18 +415,18 @@
      dole switch „Jen nové“ a přepnutí na seznam. Bez scrollu. */
   .mc-folder .mc-swipe-wrap{ padding:0; }
   .mc-folder .mc-swipe{ height:calc(100vh - 180px); height:calc(100svh - 180px); min-height:380px; max-height:none; }
-  .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:6px; }
-  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:14px var(--gutter) 10px; }
+  .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:0; }
+  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:12px var(--gutter); }
   .mc-fback{ margin-right:auto; background:none; border:none; padding:0; cursor:pointer;
     color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
   .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
-  .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:4px var(--gutter) 6px; }
-  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
-  .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
+  .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:10px var(--gutter); }
+  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:color-mix(in srgb, var(--soft) 45%, var(--muted)); line-height:26px; display:flex; align-items:center; gap:4px; }
+  .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:inherit; }
   .mc-sfoot .mc-switch{ margin-left:15px; }
   .mc-sfoot .sp{ flex:1; }
   .mc-switch{ position:relative; width:44px; height:26px; border-radius:13px; border:none; padding:0; cursor:pointer;
-    background:color-mix(in srgb, var(--border) 60%, var(--surface)); transition:background .15s ease; flex-shrink:0; }
+    background:color-mix(in srgb, var(--muted) 38%, var(--surface)); transition:background .15s ease; flex-shrink:0; }
   .mc-switch::after{ content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
     background:#fff; box-shadow:0 1px 3px #0004; transition:transform .15s ease; }
   .mc-switch.on{ background:color-mix(in srgb, var(--accent) 45%, var(--surface)); }
@@ -474,6 +474,8 @@
   .mc-swipe.hint .mc-swipe-card{ animation:mcPeek 1.3s ease .45s 1; }
   .mc-swipe-card .sc-actions{ display:flex; gap:8px; justify-content:center; margin-top:24px; flex-wrap:wrap; }
   .mc-swipe-card .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
+  .mc-swipe-card .sc-actions.col{ flex-direction:column; align-items:center; gap:10px; }
+  .mc-swipe-card .sc-act-row{ display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
   .mc-fab.ghost{ background:transparent; color:var(--text); border:1px solid var(--border); }
   /* Připomínka zálohy — pop-up uprostřed při vstupu (jednou za měsíc) */
   .mc-modal-backdrop{ position:fixed; inset:0; z-index:60; background:#000a; animation:mcFade .18s ease forwards; }
@@ -2340,16 +2342,16 @@
       // Triplet a bolístky (fbName): pocit / bolístka ve spodním řádku vedle počítadla, ne pod textem —
       // při listování se neopakuje přilepený k větě (20. 11. 2026). Bublinka je ve spodní liště stránky.
       var fm=fbName&&meta?meta(it):"";
-      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-foot-l"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+
+      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-foot-l"><span class="sc-count">'+(i+1)+'\u202F/\u202F'+list.length+'</span>'+
         (fm?'<span class="sc-fmeta">'+fm+'</span>':'')+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
       h+=admText(store,it.id,it.text,"sc-text "+size)+(meta&&!fbName?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
       if(softCut && i+1===softCut && i<list.length-1) h+=softBreakHtml(true);
       else if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
     var nxt=SWIPE_NEXT;
-    h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"To je všechno nové. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions">'+
+    h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"Nic nového. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions col">'+
       (nxt?'<button class="mc-fab" onclick="MC.rfType(\''+nxt.key+'\')">Pokračovat na '+nxt.label+' ›</button>':'')+
-      '<button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab '+(nxt?"ghost":"")+'" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div>';
+      '<div class="sc-act-row"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab '+(nxt?"ghost":"")+'" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div></div>';
     return h+'</div></div>';
   }
   // Po překreslení: obnovit pozici a označovat viděné podle karty na obrazovce.
