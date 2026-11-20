@@ -419,8 +419,9 @@
     color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
   .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
   .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:4px var(--gutter) 6px; }
-  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--muted); }
-  .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--muted); }
+  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
+  .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
+  .mc-sfoot .mc-switch{ margin-left:15px; }
   .mc-sfoot .sp{ flex:1; }
   .mc-switch{ position:relative; width:44px; height:26px; border-radius:13px; border:none; padding:0; cursor:pointer;
     background:color-mix(in srgb, var(--border) 60%, var(--surface)); transition:background .15s ease; flex-shrink:0; }
@@ -429,6 +430,10 @@
   .mc-switch.on{ background:color-mix(in srgb, var(--accent) 45%, var(--surface)); }
   .mc-switch.on::after{ transform:translateX(18px); }
   /* Seznam: jen tři čárky bez obrysu, výška jako switch, na ose srdíčka v kartě */
+  .mc-sfoot .mc-fbf{ width:26px; height:26px; padding:0; margin-right:14px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
+  .mc-sfoot .mc-fbf svg{ width:26px; height:26px; display:block; }
+  .mc-swipe-card .sc-foot-l{ right:56px; }
+  .mc-swipe-card .sc-foot-l .sc-fmeta{ margin-left:10px; font-family:var(--sans); font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
   .mc-sfoot .mc-tolist{ width:26px; height:26px; padding:0; margin-right:16px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
   .mc-sfoot .mc-tolist svg{ width:26px; height:26px; display:block; }
   /* Placka jako první karta: víc témat = jedna karta, čísla bez duplicit */
@@ -449,6 +454,11 @@
   .sc-thumb{ position:absolute; left:50%; bottom:-6px; width:74px; margin-left:-37px; color:var(--muted); opacity:.75;
     animation:mcThumb 2.4s ease-in-out .6s infinite; }
   .sc-thumb svg{ width:100%; display:block; }
+  .sc-tutor-up{ display:flex; justify-content:center; color:var(--tone); margin-bottom:12px; animation:mcUp 1.4s ease-in-out infinite; }
+  .sc-tutor-up svg{ width:30px; height:30px; }
+  @keyframes mcUp{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
+  @keyframes mcPulse{ 0%{ box-shadow:0 0 0 0 color-mix(in srgb, var(--tone) 55%, transparent); } 100%{ box-shadow:0 0 0 9px transparent; } }
+  .mc-submenu-triplet.pulse button:not(.active){ animation:mcPulse 1.3s ease-out infinite; border-color:var(--tone); color:var(--tone); }
   @keyframes mcThumb{ 0%,100%{ transform:translateX(0); } 30%{ transform:translateX(-46px); } 60%{ transform:translateX(38px); } }
   /* Měkký řez — výraznější než „Stačí pro dnes?“ */
   .mc-swipe-card.break.soft .sc-body{ background:var(--tone-soft); border:1.5px solid var(--tone); border-style:solid; }
@@ -1683,11 +1693,14 @@
     var rfKey="rf:"+rf.activeType+":"+cids.join(",");
     var metaFn=function(it){ return esc((rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||"")); };
     var h='<div class="mc-folder">'+folderTabs(TYPES,rf.activeType,"rfType",["rfBack()","Zpět"]);
+    var ti=TYPES.map(function(t){ return t.key; }).indexOf(rf.activeType), nx=TYPES[ti+1]||null;
+    SWIPE_NEXT=nx?{key:nx.key,label:nx.label}:null;
     var items=swipeItems(store,rfKey,all);
-    if(!items.length) h+=alertBoxes(cids)+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
-    else h+=swipeView(store,rfKey,items,metaFn,function(it){ return (rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||""); },softCutOf(),preCards(cids));
-    return h+swipeFoot(list.length)+'</div>';
+    if(!items.length) h+=alertBoxes(cids)+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>')+(nx?'<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.rfType(\''+nx.key+'\')">Pokračovat na '+nx.label+' ›</button></div>':'');
+    else h+=swipeView(store,rfKey,items,metaFn,function(it){ return (rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||""); },softCutOf(),preCards(cids,true));
+    h+=swipeFoot(list.length)+'</div>'; SWIPE_NEXT=null; return h;
   }
+  var SWIPE_NEXT=null;
   function viewRfPains(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
     h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
@@ -2167,7 +2180,7 @@
     "* **Filtr** hledá podle slova nebo podle štítků.",
     "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
     "* **Tmavý režim** zapnete v menu.",
-    "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí. V kartách můžete napsat i ke konkrétní větě, ikonkou bublinky vpravo nahoře.",
+    "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí. V kartách můžete napsat i ke konkrétní větě — bublinkou dole vedle přepnutí na seznam.",
     "## Vaše data",
     "* Oblíbené a to, co jste viděli, se ukládá **jen ve vašem telefonu**, ne na internet. Nikdo jiný to nevidí.",
     "* Když vymažete data prohlížeče nebo změníte telefon, uložené položky zmizí. Proto si je občas **zazálohujte**: v menu **Nastavení → Uložit zálohu** (pošlete si soubor do mailu nebo na Disk). Na novém telefonu je vrátíte přes **Obnovit ze zálohy**. Jednou za měsíc vám appka sama připomene.",
@@ -2322,13 +2335,19 @@
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
       // Počítadlo vlevo nahoře a srdíčko vpravo nahoře v kartě — nic mimo ni.
       if(fbName) FB_ITEMS[it.id]={ store:store, text:it.text, name:fbName(it) };
+      // Triplet a bolístky (fbName): pocit / bolístka ve spodním řádku vedle počítadla, ne pod textem —
+      // při listování se neopakuje přilepený k větě (20. 11. 2026). Bublinka je ve spodní liště stránky.
+      var fm=fbName&&meta?meta(it):"";
       h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-foot-l"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+
-        (fbName?'<button class="sc-fb" onclick="MC.fbItem(\''+it.id+'\')" aria-label="Napsat k téhle větě">'+FB_ICON+'</button>':'')+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
-      h+=admText(store,it.id,it.text,"sc-text "+size)+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
+        (fm?'<span class="sc-fmeta">'+fm+'</span>':'')+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
+      h+=admText(store,it.id,it.text,"sc-text "+size)+(meta&&!fbName?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
       if(softCut && i+1===softCut && i<list.length-1) h+=softBreakHtml(true);
       else if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
-    h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"To je všechno nové. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div>';
+    var nxt=SWIPE_NEXT;
+    h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"To je všechno nové. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions">'+
+      (nxt?'<button class="mc-fab" onclick="MC.rfType(\''+nxt.key+'\')">Pokračovat na '+nxt.label+' ›</button>':'')+
+      '<button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab '+(nxt?"ghost":"")+'" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div>';
     return h+'</div></div>';
   }
   // Po překreslení: obnovit pozici a označovat viděné podle karty na obrazovce.
@@ -2345,6 +2364,8 @@
         var fc=document.querySelector(".mc-newc")||document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
       }
       if(i>0){ countSwipeVisit(); try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
+      // Druhá návodná karta: tlačítka Otázky / Úkoly nahoře pulzují, dokud je karta na obrazovce.
+      var tb=document.querySelector(".mc-ftabs .mc-submenu-triplet"); if(tb) tb.classList.toggle("pulse",!!(c&&c.classList.contains("tutor2")));
     }
     el.scrollLeft=state.swipe.index*w();
     var t; el.addEventListener("scroll",function(){ clearTimeout(t); t=setTimeout(update,80); });
@@ -2513,6 +2534,7 @@
     },
     feedback:function(){ state.menuOpen=false; fbGeneral(); render(); },
     fbItem:function(id){ fbItem(id); },
+    fbCurrent:function(){ var el=document.getElementById("mc-swipe"), c=el&&el.children[state.swipe.index], id=c&&c.getAttribute("data-id"); if(id&&FB_ITEMS[id]) fbItem(id); else fbGeneral(); },
     settings:function(){ state.menuOpen=false; state.detail=null; state.page="settings"; state.section=null; scrollTop(); render(); },
     backupSave:function(){ backupSave(); },
     backupRestore:function(){ backupRestore(); },
@@ -2594,7 +2616,7 @@
     // Switch vlevo (lícuje s levým okrajem karty), vpravo od něj „Jen nové (N)“.
     return '<div class="mc-sfoot"><button class="mc-switch '+(on?"on":"")+'" role="switch" aria-checked="'+(on?"true":"false")+'" aria-label="Jen nové — skrýt viděné" onclick="MC.onlyNew()"></button>'+
       '<span class="lbl">Jen nové'+(on?' <span class="cnt">(<span class="mc-newc">'+nNew+'</span>)</span>':'')+'</span>'+
-      '<span class="sp"></span><button class="mc-tolist" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="22" y2="7"/><line x1="4" y1="13" x2="22" y2="13"/><line x1="4" y1="19" x2="22" y2="19"/></svg></button></div>';
+      '<span class="sp"></span><button class="mc-fbf" onclick="MC.fbCurrent()" aria-label="Napsat k téhle větě">'+FB_ICON+'</button><button class="mc-tolist" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="22" y2="7"/><line x1="4" y1="13" x2="22" y2="13"/><line x1="4" y1="19" x2="22" y2="19"/></svg></button></div>';
   }
   var ALERT_GENERIC="To, co teď prožíváte, nemusíte zvládat sami. Tady jsou lidé, kteří pomohou:";
   function alertCard(ids){
@@ -2617,8 +2639,12 @@
   function tutorCard(){
     return '<div class="mc-swipe-card tutor"><div class="sc-body"><div class="sc-tutor-t">Jak na to</div><p class="sc-tutor-p">Posuňte prstem doleva — přijde další odpověď. Doprava se vrátíte zpátky.</p><p class="sc-tutor-p">Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
   }
-  function preCards(alertIds){
-    return alertCard(alertIds)+(tutorDone()?"":tutorCard());
+  var ARROW_UP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="4"/><polyline points="5 11 12 4 19 11"/></svg>';
+  function tutorCard2(){
+    return '<div class="mc-swipe-card tutor tutor2"><div class="sc-body"><span class="sc-tutor-up" aria-hidden="true">'+ARROW_UP+'</span><div class="sc-tutor-t">Nejen přerámování</div><p class="sc-tutor-p">Nahoře najdete i <b>Otázky</b>, které vám pomůžou se zamyslet, a <b>Úkoly</b>, které můžete hned vyzkoušet.</p></div></div>';
+  }
+  function preCards(alertIds,withTypes){
+    return alertCard(alertIds)+(tutorDone()?"":tutorCard()+(withTypes?tutorCard2():""));
   }
   function cutText(t,n){ return t.length>n?t.slice(0,n-1).replace(/\s+\S*$/,"")+"…":t; }
 
