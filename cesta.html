@@ -389,8 +389,9 @@
   /* Počítadlo + bublinka zpětné vazby vlevo dole (od 20. 11. 2026), stejná barva */
   .mc-swipe-card .sc-foot-l{ position:absolute; left:14px; bottom:9px; display:flex; align-items:center; gap:4px; color:var(--muted); }
   .mc-swipe-card .sc-foot-l .sc-count{ position:static; }
-  .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:28px; height:28px; color:var(--muted); opacity:.6; }
-  .mc-swipe-card .sc-foot-l .sc-fb svg{ width:15px; height:15px; }
+  .mc-swipe-card .sc-foot-l .sc-count{ font-size:13px; }
+  .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:34px; height:34px; color:var(--muted); opacity:.6; }
+  .mc-swipe-card .sc-foot-l .sc-fb svg{ width:22px; height:22px; }
   .mc-swipe-card .sc-body .mc-heart{ top:auto; bottom:9px; right:10px; }
   .mc-swipe-card .sc-body .mc-heart svg{ width:24px; height:24px; }
   /* Terčík u experimentů — výška pod řádkem, aby nerozhodil řádkování */
@@ -411,27 +412,25 @@
      Nahoře jen Zpět, pod ním záložky jako v papírovém zápisníku, karta přes celou plochu,
      dole switch „Jen nové“ a přepnutí na seznam. Bez scrollu. */
   .mc-folder .mc-swipe-wrap{ padding:0; }
-  .mc-folder .mc-swipe{ height:calc(100vh - 176px); height:calc(100svh - 176px); min-height:380px; max-height:none; }
+  .mc-folder .mc-swipe{ height:calc(100vh - 180px); height:calc(100svh - 180px); min-height:380px; max-height:none; }
   .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:6px; }
-  .mc-folder .mc-swipe-card .sc-body{ border-top-right-radius:0; }
-  .mc-ftabs{ display:flex; align-items:flex-end; justify-content:flex-end; gap:4px; padding:14px var(--gutter) 0; position:relative; z-index:2; margin-bottom:-1px; }
-  .mc-fback{ margin-right:auto; align-self:center; background:none; border:none; padding:0 0 4px; cursor:pointer;
-    color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; }
-  .mc-ftabs button{ font-family:var(--sans); font-size:13px; font-weight:600; padding:8px 14px 9px; cursor:pointer;
-    background:var(--surface-2); color:var(--muted); border:1px solid var(--border); border-bottom-color:var(--border);
-    border-radius:12px 12px 0 0; }
-  .mc-ftabs button.active{ background:var(--surface); color:var(--tone); border-bottom-color:var(--surface); }
+  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:14px var(--gutter) 10px; }
+  .mc-fback{ margin-right:auto; background:none; border:none; padding:0; cursor:pointer;
+    color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
+  .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
   .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:4px var(--gutter) 6px; }
-  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
-  .mc-sfoot .cnt{ font-family:var(--mono); font-size:11px; color:var(--muted); }
+  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--muted); }
+  .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--muted); }
   .mc-sfoot .sp{ flex:1; }
   .mc-switch{ position:relative; width:44px; height:26px; border-radius:13px; border:none; padding:0; cursor:pointer;
-    background:var(--border); transition:background .15s ease; flex-shrink:0; }
+    background:color-mix(in srgb, var(--border) 60%, var(--surface)); transition:background .15s ease; flex-shrink:0; }
   .mc-switch::after{ content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
     background:#fff; box-shadow:0 1px 3px #0004; transition:transform .15s ease; }
-  .mc-switch.on{ background:var(--accent); }
+  .mc-switch.on{ background:color-mix(in srgb, var(--accent) 45%, var(--surface)); }
   .mc-switch.on::after{ transform:translateX(18px); }
-  .mc-sfoot .mc-pill.ic{ padding:6px 8px; margin-right:0; }
+  /* Seznam: jen tři čárky bez obrysu, výška jako switch, na ose srdíčka v kartě */
+  .mc-sfoot .mc-tolist{ width:26px; height:26px; padding:0; margin-right:16px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
+  .mc-sfoot .mc-tolist svg{ width:26px; height:26px; display:block; }
   /* Placka jako první karta: víc témat = jedna karta, čísla bez duplicit */
   .mc-swipe-card.alert .sc-body{ border:2px solid var(--accent); text-align:left; justify-content:center; padding:26px 22px 26px; }
   .sc-alert-ic{ color:var(--accent); display:flex; margin-bottom:10px; }
@@ -2584,16 +2583,18 @@
   // ===================== ZÁPISNÍK (karty odpovědí, od 20. 11. 2026) =====================
   // Čistá stránka v režimu karet: záložky jako v zápisníku, spodní lišta se switchem „Jen nové“,
   // placka s čísly jako první karta (víc témat = jedna karta), návod s palcem jen poprvé.
+  // Horní řádek karet (20. 11. 2026 po zkoušce oušek): Zpět vlevo, vpravo tlačítka typů jako dřív.
   function folderTabs(tabs,active,handler,back){
-    var h='<div class="mc-ftabs" role="tablist">'+(back?'<button class="mc-fback" onclick="MC.'+back[0]+'">← '+esc(back[1])+'</button>':'');
-    tabs.forEach(function(t){ h+='<button role="tab" class="'+(t.key===active?"active":"")+'"'+(handler?' onclick="MC.'+handler+'(\''+t.key+'\')"':'')+'>'+esc(t.label)+'</button>'; });
+    var h='<div class="mc-ftabs">'+(back?'<button class="mc-fback" onclick="MC.'+back[0]+'">← '+esc(back[1])+'</button>':'');
+    if(tabs.length>1){ h+='<div class="mc-submenu-triplet in">'; tabs.forEach(function(t){ h+='<button class="'+(t.key===active?"active":"")+'"'+(handler?' onclick="MC.'+handler+'(\''+t.key+'\')"':'')+'>'+esc(t.label)+'</button>'; }); h+='</div>'; }
     return h+'</div>';
   }
   function swipeFoot(nNew){
     var on=USER.onlyNew;
-    return '<div class="mc-sfoot"><span class="lbl">Jen nové</span><button class="mc-switch '+(on?"on":"")+'" role="switch" aria-checked="'+(on?"true":"false")+'" aria-label="Jen nové — skrýt viděné" onclick="MC.onlyNew()"></button>'+
-      (on?'<span class="cnt"><span class="mc-newc">'+nNew+'</span> nových</span>':'<span class="cnt">ukazuji vše</span>')+
-      '<span class="sp"></span><button class="mc-pill ic" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam">'+IC.list+'</button></div>';
+    // Switch vlevo (lícuje s levým okrajem karty), vpravo od něj „Jen nové (N)“.
+    return '<div class="mc-sfoot"><button class="mc-switch '+(on?"on":"")+'" role="switch" aria-checked="'+(on?"true":"false")+'" aria-label="Jen nové — skrýt viděné" onclick="MC.onlyNew()"></button>'+
+      '<span class="lbl">Jen nové'+(on?' <span class="cnt">(<span class="mc-newc">'+nNew+'</span>)</span>':'')+'</span>'+
+      '<span class="sp"></span><button class="mc-tolist" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="22" y2="7"/><line x1="4" y1="13" x2="22" y2="13"/><line x1="4" y1="19" x2="22" y2="19"/></svg></button></div>';
   }
   var ALERT_GENERIC="To, co teď prožíváte, nemusíte zvládat sami. Tady jsou lidé, kteří pomohou:";
   function alertCard(ids){
