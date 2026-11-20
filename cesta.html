@@ -386,6 +386,10 @@
     background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:32px 24px 48px; text-align:center; }
   /* Počítadlo a srdíčko dole v rozích — srdíčko blíž palci. */
   .mc-swipe-card .sc-count{ position:absolute; bottom:18px; left:18px; font-family:var(--mono); font-size:11px; color:var(--muted); }
+  /* Počítadlo + bublinka zpětné vazby vlevo dole (od 20. 11. 2026), stejná barva */
+  .mc-swipe-card .sc-foot-l{ position:absolute; left:14px; bottom:9px; display:flex; align-items:center; gap:4px; color:var(--muted); }
+  .mc-swipe-card .sc-foot-l .sc-count{ position:static; }
+  .mc-swipe-card .sc-foot-l .sc-fb{ position:static; width:32px; height:32px; color:var(--muted); opacity:1; }
   .mc-swipe-card .sc-body .mc-heart{ top:auto; bottom:9px; right:10px; }
   .mc-swipe-card .sc-body .mc-heart svg{ width:24px; height:24px; }
   /* Terčík u experimentů — výška pod řádkem, aby nerozhodil řádkování */
@@ -402,6 +406,48 @@
   .mc-swipe-card .sc-text.sm{ font-size:17px; line-height:1.5; font-variation-settings:'opsz' 24; }
   .mc-swipe-card .sc-meta{ margin-top:18px; font-family:var(--mono); font-size:11px; color:var(--soft); }
   .mc-swipe-card.break .sc-body{ background:var(--surface-2); border-style:dashed; }
+  /* ===== Zápisník: čistá stránka odpovědí v režimu karet (od 20. 11. 2026) =====
+     Nahoře jen Zpět, pod ním záložky jako v papírovém zápisníku, karta přes celou plochu,
+     dole switch „Jen nové“ a přepnutí na seznam. Bez scrollu. */
+  .mc-folder .mc-swipe-wrap{ padding:0; }
+  .mc-folder .mc-swipe{ height:calc(100vh - 222px); height:calc(100svh - 222px); min-height:380px; max-height:none; }
+  .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:6px; }
+  .mc-folder .mc-swipe-card .sc-body{ border-top-left-radius:0; }
+  .mc-ftabs{ display:flex; gap:4px; padding:6px var(--gutter) 0; position:relative; z-index:2; margin-bottom:-1px; }
+  .mc-ftabs button{ font-family:var(--sans); font-size:13px; font-weight:600; padding:8px 14px 9px; cursor:pointer;
+    background:var(--surface-2); color:var(--muted); border:1px solid var(--border); border-bottom-color:var(--border);
+    border-radius:12px 12px 0 0; }
+  .mc-ftabs button.active{ background:var(--surface); color:var(--tone); border-bottom-color:var(--surface); }
+  .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:6px var(--gutter) 10px; }
+  .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
+  .mc-sfoot .cnt{ font-family:var(--mono); font-size:11px; color:var(--muted); }
+  .mc-sfoot .sp{ flex:1; }
+  .mc-switch{ position:relative; width:44px; height:26px; border-radius:13px; border:none; padding:0; cursor:pointer;
+    background:var(--border); transition:background .15s ease; flex-shrink:0; }
+  .mc-switch::after{ content:""; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
+    background:#fff; box-shadow:0 1px 3px #0004; transition:transform .15s ease; }
+  .mc-switch.on{ background:var(--tone); }
+  .mc-switch.on::after{ transform:translateX(18px); }
+  .mc-sfoot .mc-pill.ic{ padding:6px 8px; }
+  /* Placka jako první karta: víc témat = jedna karta, čísla bez duplicit */
+  .mc-swipe-card.alert .sc-body{ border:2px solid var(--accent); text-align:left; justify-content:center; padding:26px 22px 26px; }
+  .sc-alert-ic{ color:var(--accent); display:flex; margin-bottom:10px; }
+  .sc-alert-ic svg{ width:26px; height:26px; }
+  .sc-alert-t{ font-family:var(--sans); font-size:16.5px; line-height:1.5; color:var(--text); }
+  .sc-alert-n{ margin-top:8px; font-family:var(--sans); font-size:14px; line-height:1.45; color:var(--soft); }
+  .sc-alert-tels{ display:flex; flex-direction:column; gap:10px; margin-top:16px; }
+  .sc-alert-tels a{ font-family:var(--sans); font-size:14px; line-height:1.35; color:var(--soft); text-decoration:none; }
+  .sc-alert-tels a b{ display:block; font-size:22px; font-weight:700; color:var(--accent); letter-spacing:.01em; }
+  .sc-alert-go{ margin-top:16px; padding:0; background:none; border:none; cursor:pointer; color:var(--accent);
+    font-family:var(--sans); font-size:14px; font-weight:600; text-align:left; }
+  /* Návod s palcem — jen při úplně prvním vstupu */
+  .mc-swipe-card.tutor .sc-body{ background:var(--tone-soft); border-color:var(--tone); }
+  .sc-tutor-t{ font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.25; color:var(--tone); font-variation-settings:'opsz' 36; }
+  .sc-tutor-p{ margin:10px 0 0; font-size:15.5px; line-height:1.5; color:var(--text); }
+  .sc-thumb{ position:absolute; left:50%; bottom:-6px; width:74px; margin-left:-37px; color:var(--muted); opacity:.75;
+    animation:mcThumb 2.4s ease-in-out .6s infinite; }
+  .sc-thumb svg{ width:100%; display:block; }
+  @keyframes mcThumb{ 0%,100%{ transform:translateX(0); } 30%{ transform:translateX(-46px); } 60%{ transform:translateX(38px); } }
   /* Měkký řez — výraznější než „Stačí pro dnes?“ */
   .mc-swipe-card.break.soft .sc-body{ background:var(--tone-soft); border:1.5px solid var(--tone); border-style:solid; }
   .sc-soft-t{ font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.2; color:var(--tone); font-variation-settings:'opsz' 36; }
@@ -871,7 +917,7 @@
 
   // ===================== UŽIVATELSKÁ DATA =====================
   var USER=loadUser();
-  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{},daily:null,seen:{},onlyNew:false}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
+  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{},daily:null,seen:{},onlyNew:true}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
   function loadUser(){
     var u=emptyUser();
     try{ var d=JSON.parse(localStorage.getItem(STORE_KEY));
@@ -885,6 +931,8 @@
         u.onlyNew=!!d.onlyNew;
       }
     }catch(e){}
+    // „Jen nové“ je od 20. 11. 2026 výchozí zapnuté — jednou přepnout i stávajícím uživatelům.
+    try{ if(!localStorage.getItem("mc_onlynew_v2")){ u.onlyNew=true; localStorage.setItem("mc_onlynew_v2","1"); } }catch(e){}
     return u;
   }
   function saveUser(){ try{ localStorage.setItem(STORE_KEY,JSON.stringify(USER)); }catch(e){} }
@@ -1627,6 +1675,17 @@
   }
 
   // ---- Brána Bolístky: jedno zrcadlo vět (bez kategorií) → hlášky
+  // Režim karet: zápisník — bez nadpisu, záložky, karta, spodní lišta.
+  function rfFolder(cids){
+    var rf=state.rf, all=currentRfList(), store=storeOf(rf.activeType), list=unseenOnly(store,all);
+    var rfKey="rf:"+rf.activeType+":"+cids.join(",");
+    var metaFn=function(it){ return esc((rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||"")); };
+    var h='<div class="mc-folder">'+folderTabs(TYPES,rf.activeType,"rfType");
+    var items=swipeItems(store,rfKey,all);
+    if(!items.length) h+=alertBoxes(cids)+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
+    else h+=swipeView(store,rfKey,items,metaFn,function(it){ return (rf.detailTitle?rf.detailTitle+" → ":"")+(clusterName[it.cluster_id]||""); },softCutOf(),preCards(cids));
+    return h+swipeFoot(list.length)+'</div>';
+  }
   function viewRfPains(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
     h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
@@ -1644,7 +1703,16 @@
   function viewRfPain(){
     var rf=state.rf, p=itemIndex.pains[rf.pain];
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
-    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>'+alertBoxes([p.id]);
+    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
+    if(viewMode()==="swipe"){
+      var allS=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; })); if(cutOn()) allS=allS.slice(0,PAIN_CUT);
+      var itemsS=swipeItems("pains","pain:"+p.id,allS), underS=(p.cluster_ids&&p.cluster_ids.length)?feelingPicker("Co může být pod tím?","Za bolístkou může být hlubší pocit. Pokud některý sedí, vyberte ho a podívejte se na něj jinak.",p.cluster_ids,rf.painSel||{},"rfPainToggle","rfPainOpen"):"";
+      h+='<div class="mc-folder">'+folderTabs([{key:"pains",label:"Hlášky"}],"pains",null);
+      if(!itemsS.length) h+=alertBoxes([p.id])+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
+      else h+=swipeView("pains","pain:"+p.id,itemsS,function(){ return esc(cutText(p.text,70)); },function(){ return p.text; },0,preCards([p.id]));
+      return h+swipeFoot(unseenOnly("pains",allS).length)+'</div>'+underS;
+    }
+    h+=alertBoxes([p.id]);
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(p.text)+'</div></div>';
     var all=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; }));
     if(cutOn()) all=all.slice(0,PAIN_CUT);
@@ -1685,7 +1753,9 @@
   }
   function viewRfDetail(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfBack()">← Zpět</button>';
-    h+=alertBoxes(rf.detailClusters.map(function(c){ return c.cluster_id; }));
+    var cids=rf.detailClusters.map(function(c){ return c.cluster_id; });
+    if(viewMode()==="swipe") return h+rfFolder(cids);
+    h+=alertBoxes(cids);
     var names=rf.detailClusters.map(function(c){ return clusterName[c.cluster_id]; });
     // Ze strachu: titulek = strach, pod ním vybrané jádrové pocity.
     if(rf.detailTitle) h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(rf.detailTitle)+'</div></div><div class="mc-detail-sub">'+esc(names.join(" · "))+'</div>';
@@ -2090,7 +2160,7 @@
     "* **Srdíčko** ukládá do **Oblíbených**. V každé sekci je u nadpisu pilulka se srdíčkem a počtem, která ukáže jen uložené z té sekce.",
     "* U Přerámování, Inspirace a Otázek se věty ukazují jako **karty** — listujete prstem jednu po druhé. Kdo chce, přepne si ikonkou na **seznam**.",
     "* Když vyberete víc pocitů najednou, appka je promíchá tak, aby se nejdřív ukázalo to nejsilnější z každého. Po čtyřiceti pěti větách se zastaví a nabídne, ať si zbytek necháte na jindy — klidně ale pokračujte. Výběr zrušíte šipkou vedle hledání.",
-    "* **Oko** skryje to, co jste už viděli v kartách.",
+    "* Přepínač **Jen nové** pod kartami skryje to, co jste už viděli. Je zapnutý — appka si pamatuje, co jste četli. Vypnete ho, když se chcete vrátit ke všemu.",
     "* **Filtr** hledá podle slova nebo podle štítků.",
     "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
     "* **Tmavý režim** zapnete v menu.",
@@ -2238,19 +2308,19 @@
     var keep=state.swipe.key===key?state.swipe.ids:[];
     return all.filter(function(it){ return !isSeen(store,it.id)||keep.indexOf(it.id)>-1; });
   }
-  function swipeView(store,key,items,meta,fbName,softCut){
+  function swipeView(store,key,items,meta,fbName,softCut,pre){
     var sw=state.swipe;
     if(sw.key!==key){ sw.key=key; sw.ids=items.map(function(it){ return it.id; }); sw.index=0; }
     var idx={}; items.forEach(function(it){ idx[it.id]=it; });
     var list=sw.ids.map(function(id){ return idx[id]; }).filter(Boolean);
     if(!list.length) return USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>';
-    var h='<div class="mc-swipe-wrap"><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">';
+    var h='<div class="mc-swipe-wrap"><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">'+(pre||"");
     list.forEach(function(it,i){
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
       // Počítadlo vlevo nahoře a srdíčko vpravo nahoře v kartě — nic mimo ni.
       if(fbName) FB_ITEMS[it.id]={ store:store, text:it.text, name:fbName(it) };
-      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+heartBtn(store,it.id,isFav(store,it.id))+
-        (fbName?'<button class="sc-fb" onclick="MC.fbItem(\''+it.id+'\')" aria-label="Napsat k téhle větě">'+FB_ICON+'</button>':'');
+      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-foot-l"><span class="sc-count">'+(i+1)+' / '+list.length+'</span>'+
+        (fbName?'<button class="sc-fb" onclick="MC.fbItem(\''+it.id+'\')" aria-label="Napsat k téhle větě">'+FB_ICON+'</button>':'')+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
       h+=admText(store,it.id,it.text,"sc-text "+size)+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
       if(softCut && i+1===softCut && i<list.length-1) h+=softBreakHtml(true);
       else if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
@@ -2269,19 +2339,22 @@
       var c=cards[i];
       // Číslo u oka („jen nové“) se přepíše za živa — bez překreslení, aby karty neposkakovaly.
       if(c&&c.getAttribute("data-id")&&markSeen(store,c.getAttribute("data-id"))&&USER.onlyNew){
-        var fc=document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
+        var fc=document.querySelector(".mc-newc")||document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
       }
-      if(i>0) setHintDone();
+      if(i>0){ countSwipeVisit(); try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
     }
     el.scrollLeft=state.swipe.index*w();
     var t; el.addEventListener("scroll",function(){ clearTimeout(t); t=setTimeout(update,80); });
     update();
-    // Výzva ke swipování: první karta krátce vykoukne doleva, dokud člověk poprvé sám neswipne.
-    if(!hintDone()&&state.swipe.index===0&&cards.length>1){ el.classList.add("hint"); setTimeout(function(){ el.classList.remove("hint"); },1900); }
+    // Výzva ke swipování: karta krátce vykoukne doleva — jednou za vstup (ne při každém překreslení),
+    // dokud člověk sám neswipne aspoň ve 3 různých návštěvách.
+    var hk=state.swipe.key;
+    if(!hintDone()&&state.swipe.index===0&&cards.length>1&&!HINTED[hk]){ HINTED[hk]=1; el.classList.add("hint"); setTimeout(function(){ el.classList.remove("hint"); },1900); }
   }
-  var HINT_KEY="mc_swipe_hint";
-  function hintDone(){ try{ return localStorage.getItem(HINT_KEY)==="1"; }catch(e){ return true; } }
-  function setHintDone(){ try{ localStorage.setItem(HINT_KEY,"1"); }catch(e){} }
+  var HINT_KEY="mc_swipe_visits", HINTED={}, COUNTED={};
+  function swipeVisits(){ try{ return parseInt(localStorage.getItem(HINT_KEY),10)||0; }catch(e){ return 3; } }
+  function hintDone(){ return swipeVisits()>=3; }
+  function countSwipeVisit(){ var k=state.swipe.key; if(COUNTED[k]) return; COUNTED[k]=1; try{ localStorage.setItem(HINT_KEY,String(swipeVisits()+1)); }catch(e){} }
   function swipeStep(d){ var el=document.getElementById("mc-swipe"); if(el) el.scrollBy({left:d*el.clientWidth,behavior:"smooth"}); }
   function favCountOf(stores){ return stores.reduce(function(n,s){ return n+USER.favorites[s].length; },0); }
   function heartBtn(store,id,on,stop){
@@ -2503,6 +2576,46 @@
   // Po překreslení vrátí kurzor do hledacího pole (render ho nahradil).
   function refocus(v){ var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } }
   function scrollTop(){ var r=document.getElementById("mc-root"); if(r&&r.scrollIntoView) r.scrollIntoView({block:"start"}); }
+
+  // ===================== ZÁPISNÍK (karty odpovědí, od 20. 11. 2026) =====================
+  // Čistá stránka v režimu karet: záložky jako v zápisníku, spodní lišta se switchem „Jen nové“,
+  // placka s čísly jako první karta (víc témat = jedna karta), návod s palcem jen poprvé.
+  function folderTabs(tabs,active,handler){
+    var h='<div class="mc-ftabs" role="tablist">';
+    tabs.forEach(function(t){ h+='<button role="tab" class="'+(t.key===active?"active":"")+'"'+(handler?' onclick="MC.'+handler+'(\''+t.key+'\')"':'')+'>'+esc(t.label)+'</button>'; });
+    return h+'</div>';
+  }
+  function swipeFoot(nNew){
+    var on=USER.onlyNew;
+    return '<div class="mc-sfoot"><span class="lbl">Jen nové</span><button class="mc-switch '+(on?"on":"")+'" role="switch" aria-checked="'+(on?"true":"false")+'" aria-label="Jen nové — skrýt viděné" onclick="MC.onlyNew()"></button>'+
+      (on?'<span class="cnt"><span class="mc-newc">'+nNew+'</span> nových</span>':'<span class="cnt">ukazuji vše</span>')+
+      '<span class="sp"></span><button class="mc-pill ic" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam">'+IC.list+'</button></div>';
+  }
+  var ALERT_GENERIC="To, co teď prožíváte, nemusíte zvládat sami. Tady jsou lidé, kteří pomohou:";
+  function alertCard(ids){
+    var topics=alertTopics(ids); if(!topics.length) return "";
+    var one=topics.length===1, tels=[], seenTel={}, crisis=null, notes=[];
+    topics.forEach(function(t){ var a=ALERTS[t];
+      a.tels.forEach(function(x){ if(!seenTel[x[0]]){ seenTel[x[0]]=1; tels.push(x); } });
+      if(a.crisis&&!crisis) crisis=a.crisis;
+      if(!a.tels.length&&!one) notes.push(a.text);
+    });
+    var h='<div class="mc-swipe-card alert"><div class="sc-body"><span class="sc-alert-ic">'+IC.warn+'</span><div class="sc-alert-t">'+esc(one?ALERTS[topics[0]].text:ALERT_GENERIC)+'</div>';
+    notes.forEach(function(n){ h+='<div class="sc-alert-n">'+esc(n)+'</div>'; });
+    if(tels.length){ h+='<div class="sc-alert-tels">'; tels.forEach(function(x){ h+='<a href="tel:'+x[0].replace(/\D/g,"")+'"><b>'+esc(x[0])+'</b>'+esc(x[1])+'</a>'; }); h+='</div>'; }
+    if(crisis) h+='<button class="sc-alert-go" onclick="MC.detail(\'crisis\',\''+crisis+'\')">Otevřít První pomoc ›</button>';
+    return h+'</div></div>';
+  }
+  var TUTOR_KEY="mc_tutorial";
+  function tutorDone(){ try{ return localStorage.getItem(TUTOR_KEY)==="1"; }catch(e){ return true; } }
+  var THUMB_SVG='<svg viewBox="0 0 80 110" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 110V46a14 14 0 0 1 28 0v64"/><path d="M28 44a8 8 0 0 1 16 0v8H28z"/><path d="M50 74c6-6 16-6 20 2l-10 34"/></svg>';
+  function tutorCard(){
+    return '<div class="mc-swipe-card tutor"><div class="sc-body"><div class="sc-tutor-t">Jak na to</div><p class="sc-tutor-p">Posuňte prstem doleva — přijde další odpověď. Doprava se vrátíte zpátky.</p><p class="sc-tutor-p">Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
+  }
+  function preCards(alertIds){
+    return alertCard(alertIds)+(tutorDone()?"":tutorCard());
+  }
+  function cutText(t,n){ return t.length>n?t.slice(0,n-1).replace(/\s+\S*$/,"")+"…":t; }
 
   // ===================== ZPĚTNÁ VAZBA (mailto) =====================
   // V1 bez serveru: otevře mailovou appku s předvyplněným textem (rozhodnuto 19. 11. 2026,
