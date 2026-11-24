@@ -128,6 +128,9 @@
     display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-weight:700; }
   .mc-tag.time svg{ width:12px; height:12px; }
   .mc-tag.more{ background:transparent; color:var(--muted); padding:5px 4px; }
+  .mc-tag-row.fit{ flex-wrap:nowrap; overflow:hidden; }
+  .mc-tag-row.fit .mc-tag{ flex-shrink:0; white-space:nowrap; }
+  .mc-tag-row.fit .mc-tag[hidden]{ display:none; }
 
   .mc-loading,.mc-error{ padding:56px 24px; text-align:center; color:var(--soft); font-size:14px; line-height:1.7; }
   .mc-error strong{ color:var(--text); font-family:var(--serif); font-weight:600; }
@@ -1222,16 +1225,32 @@
   function esc(s){ var d=document.createElement("div"); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
   function deburr(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
   function minutes(n){ return '<span class="m">'+IC.clock+(n||0)+' min</span>'; }
-  // Tag pilulky. V kartách seznamu se řada ořezává (limit), ať karta nenaroste
-  // do plotu — v detailu se ukazují všechny.
+  // Tag pilulky. V kartách seznamu jeden řádek: ukáže se jich tolik, kolik se vejde
+  // (fitTags po vykreslení), zbytek jako „+N“ (od 24. 11. 2026, dřív pevně 2). V detailu všechny.
   function tagRow(tags,limit){
     if(!tags||!tags.length) return "";
-    var show=limit?tags.slice(0,limit):tags, rest=limit?tags.length-show.length:0;
-    var h='<div class="mc-tag-row">';
-    show.forEach(function(t){ h+='<span class="mc-tag">'+esc(t)+'</span>'; });
-    if(rest>0) h+='<span class="mc-tag more">+'+rest+'</span>';
+    var h='<div class="mc-tag-row'+(limit?' fit':'')+'">';
+    tags.forEach(function(t){ h+='<span class="mc-tag">'+esc(t)+'</span>'; });
+    if(limit) h+='<span class="mc-tag more" hidden></span>';
     return h+'</div>';
   }
+  function fitTags(){
+    var rows=document.querySelectorAll(".mc-tag-row.fit");
+    for(var r=0;r<rows.length;r++){
+      var row=rows[r], tags=row.querySelectorAll(".mc-tag:not(.more)"), more=row.querySelector(".more"), W=row.clientWidth;
+      for(var i=0;i<tags.length;i++) tags[i].hidden=false;
+      more.hidden=true;
+      if(!W||row.scrollWidth<=W) continue;
+      // Schovávat od konce, dokud se nevejdou viditelné + „+N“.
+      var n=tags.length;
+      while(n>1){
+        n--; tags[n].hidden=true; more.hidden=false; more.textContent="+"+(tags.length-n);
+        if(row.scrollWidth<=W) break;
+      }
+    }
+  }
+  var fitT; window.addEventListener("resize",function(){ clearTimeout(fitT); fitT=setTimeout(fitTags,100); });
+  try{ if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitTags); }catch(e){}
   function timeTag(n){ return '<span class="mc-tag time">'+IC.clock+(n||0)+' min</span>'; }
 
   // ===================== MARKDOWN ===================== (identický s produkcí)
@@ -1475,6 +1494,7 @@
     if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
     h+=viewToast();
     root.innerHTML=h;
+    fitTags();
     var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
     bindSwipe();
     var s=document.getElementById("mc-search");
