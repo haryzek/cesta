@@ -571,10 +571,6 @@
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
   @media (hover:hover){ .mc-sec-link:hover{ color:var(--text); } }
   .mc-sec-link .l{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); }
-  /* Nadpis oddílu nad Info / Teorie / Praxe cvičení — barvou sekce, o špetku větší než ## (20 px), s odstupem od prvního ## */
-  .mc-tab-sec{ padding:24px var(--gutter) 0; font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.2;
-    letter-spacing:-0.01em; font-variation-settings:'opsz' 36; color:var(--tone); text-wrap:balance; }
-  .mc-tab-sec + .mc-detail-body{ padding-top:16px; }
 
   /* Náročnost — pilulka (nízká / střední / vysoká) */
   .mc-diff{ display:inline-block; padding:3px 10px; border-radius:999px; font-family:var(--sans); font-size:12px; font-weight:600; line-height:1.4; }
@@ -678,12 +674,13 @@
   /* ===== TABBAR (Postup / Info) =====
      Dřív rozbalovací toggle „▸ K čemu to je". Mockup má dva taby, aktivní
      s tmavým pozadím; Info nese tečku, že tam něco je. */
-  .mc-tabbar{ display:flex; gap:6px; padding:18px var(--gutter) 4px; }
-  .mc-tab{ flex:1; text-align:center; padding:11px 0; border-radius:12px; border:none; cursor:pointer;
-    font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); background:transparent;
-    transition:background .15s ease,color .15s ease; }
-  @media (hover:hover){ .mc-tab:hover{ color:var(--text); } }
-  .mc-tab.active{ background:var(--text); color:var(--bg); }
+  /* Od 24. 11. 2026 čtyři tlačítka: nevybrané bílé s rámečkem, vybrané tmavé. */
+  .mc-tabbar{ display:flex; gap:8px; padding:18px var(--gutter) 4px; }
+  .mc-tab{ flex:1; text-align:center; padding:10px 0; border-radius:12px; border:1px solid var(--border); cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); background:var(--surface);
+    transition:background .15s ease,color .15s ease,border-color .15s ease; }
+  @media (hover:hover){ .mc-tab:hover{ color:var(--text); border-color:var(--muted); } }
+  .mc-tab.active{ background:var(--text); border-color:var(--text); color:var(--bg); }
   .mc-tab .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--accent);
     margin-left:5px; vertical-align:middle; }
   .mc-tab.active .dot{ background:var(--bg); }
@@ -2069,7 +2066,6 @@
     }
     var cur=tabs.filter(function(t){return t.key===tab;})[0];
     if(cur&&cur.key!=="body"){
-      if(sec) h+='<div class="mc-tab-sec">'+esc(sec.title)+'</div>';
       if(cur.practice) h+=renderPractice(cur.src,sec&&sec.diary_practice,title);
       else h+='<div class="mc-detail-body mc-md">'+md(stripDupHeading(cur.src,title))+'</div>';
     } else {
