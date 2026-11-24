@@ -432,6 +432,9 @@
     color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
   .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
   .mc-sfoot{ display:flex; align-items:center; gap:10px; padding:10px var(--gutter); }
+  .mc-sfoot .sp{ flex:1; }
+  .mc-sfoot .mc-fbf{ width:26px; height:26px; padding:0; margin-right:16px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
+  .mc-sfoot .mc-fbf svg{ width:26px; height:26px; display:block; }
   .mc-sfoot .lbl{ font-family:var(--sans); font-size:14px; font-weight:600; color:color-mix(in srgb, var(--soft) 45%, var(--muted)); line-height:26px; display:flex; align-items:center; gap:4px; }
   .mc-sfoot .cnt{ font-family:var(--sans); font-size:14px; font-weight:600; color:inherit; }
   .mc-sfoot .mc-switch{ margin-left:15px; }
@@ -2170,7 +2173,7 @@
       var h='<div class="mc-folder">'+folderTabs(rf?TYPES:[],type,"favType",["favTile(null)","Oblíbené"]);
       if(!entries.length) h+='<div class="mc-empty">Nic tu není.</div>';
       else { SWIPE_FAV=true; h+=swipeView("fav",key,entries,function(it){ return esc(favLabel(it,t==="all")); },function(it){ return favLabel(it,true); }); SWIPE_FAV=false; }
-      return h+'</div>';
+      return h+'<div class="mc-sfoot"><span class="sp"></span><button class="mc-fbf" onclick="MC.fbCurrent()" aria-label="Napsat k téhle větě">'+FB_ICON+'</button></div></div>';
     }
     var h2='<button class="mc-back" onclick="MC.favTile(null)">← Oblíbené</button>';
     h2+='<div class="mc-sec-head"><div class="mc-sec-row"><h1>'+esc(p.label)+'</h1>'+viewToggle()+'</div></div>';
@@ -2290,7 +2293,7 @@
     "* **Filtr** hledá podle slova nebo podle štítků.",
     "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
     "* **Tmavý režim** zapnete v menu.",
-    "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí.",
+    "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí. Ke konkrétní větě napíšete bublinkou vpravo pod kartami.",
     "## Vaše data",
     "* Oblíbené a to, co jste viděli, se ukládá **jen ve vašem telefonu**, ne na internet. Nikdo jiný to nevidí.",
     "* Když vymažete data prohlížeče nebo změníte telefon, uložené položky zmizí. Proto si je občas **zazálohujte**: v menu **Nastavení → Uložit zálohu** (pošlete si soubor do mailu nebo na Disk). Na novém telefonu je vrátíte přes **Obnovit ze zálohy**. Jednou za měsíc vám appka sama připomene.",
@@ -2436,6 +2439,7 @@
     list.forEach(function(it,i){
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
       var st=it._st||store;   // smíšený proud (Oblíbené) nese úložiště u každé karty
+      FB_ITEMS[it.id]={ store:st, text:it.text, name:fbName?fbName(it):(it.author||"") };
       // Triplet a bolístky (fbName, 24. 11. 2026): velké srdíčko v toku hned pod textem (pevná mezera,
       // na dosah palce), admin až pod ním; vlevo dole počítadlo, vpravo dole pocit / bolístka.
       // Ostatní proudy (Otázky, Inspirace) mají srdíčko po staru vpravo dole.
@@ -2692,6 +2696,8 @@
     admCut:function(){ ADMIN.cut=ADMIN.cut===false; saveAdmin(false); state.swipe.key=null; state.swipe.ids=[]; render(); },
     viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeNext:function(){ swipeStep(1); },
+    fbItem:function(id){ fbItem(id); },
+    fbCurrent:function(){ var el=document.getElementById("mc-swipe"), c=el&&el.children[state.swipe.index], id=c&&c.getAttribute("data-id"); if(id&&FB_ITEMS[id]) fbItem(id); else fbGeneral(); },
     favTile:function(t){ state.fav.tile=t; if(t==="reframing") state.fav.type="reframings"; state.swipe.key=null; state.swipe.ids=[]; scrollTop(); render(); },
     favType:function(k){ state.fav.type=k; state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeClose:function(){ if(state.page==="favorites"){ MC.favTile(null); return; } if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
@@ -2722,9 +2728,10 @@
   }
   function swipeFoot(nNew){
     var on=USER.onlyNew;
-    // Pod kartami jen „Jen nové (N)“ — switch vlevo lícuje s levým okrajem karty.
+    // Pod kartami vlevo „Jen nové (N)“ (switch lícuje s levým okrajem karty), vpravo bublinka
+    // = mail k větě na obrazovce (vrácena 24. 11. 2026 na místo tří čárek).
     return '<div class="mc-sfoot"><button class="mc-switch '+(on?"on":"")+'" role="switch" aria-checked="'+(on?"true":"false")+'" aria-label="Jen nové — skrýt viděné" onclick="MC.onlyNew()"></button>'+
-      '<span class="lbl">Jen nové'+(on?' <span class="cnt">(<span class="mc-newc">'+nNew+'</span>)</span>':'')+'</span></div>';
+      '<span class="lbl">Jen nové'+(on?' <span class="cnt">(<span class="mc-newc">'+nNew+'</span>)</span>':'')+'</span><span class="sp"></span><button class="mc-fbf" onclick="MC.fbCurrent()" aria-label="Napsat k téhle větě">'+FB_ICON+'</button></div>';
   }
 
   var ALERT_GENERIC="To, co teď prožíváte, nemusíte zvládat sami. Tady jsou lidé, kteří pomohou:";
@@ -2762,6 +2769,8 @@
   // texty Bob). Obecná z menu, k jedné větě ikonkou v proudu karet (triplet, bolístky).
   var FEEDBACK_MAIL="robert.rericha@stestinaproti.cz";
   var FB_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><line x1="9" y1="10.5" x2="15" y2="10.5"/><line x1="9" y1="14" x2="13" y2="14"/></svg>';
+  var FB_ITEMS={};
+  var FB_TYPE={ reframings:"přerámování", reframing_questions:"otázka", reframing_actions:"úkol", pains:"bolístka", situations:"věta pod strachem", inspirations:"inspirace", questions:"podnětná otázka" };
   var FB_END="Děkuji za zpětnou vazbu. Každá zpráva mi pomáhá vytvářet appku, která pro vás bude mít smysl.\n\nAť se vám daří.\n\nRobert Řeřicha";
   function openMail(subject,body){
     location.href="mailto:"+FEEDBACK_MAIL+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body.replace(/\n/g,"\r\n"));
@@ -2779,6 +2788,19 @@
       FB_END+"\n\n—\n(appka: Moje cesta · sekce: "+sec+")");
   }
 
+
+  function fbItem(id){
+    var it=FB_ITEMS[id]; if(!it) return;
+    var typ=FB_TYPE[it.store]||it.store;
+    openMail("Moje cesta – zpětná vazba",
+      "Dobrý den,\n\n"+
+      "píšu k téhle větě:\n\n"+
+      "„"+it.text+"“\n\n\n"+
+      "Co na ní nesedí? (třeba nerozumím, zní necitlivě, nehodí se k tomu, co prožívám, chyba v textu):\n\n\n"+
+      "Jak by to podle vás znělo líp? (nepovinné):\n\n\n"+
+      "Nebo vám naopak hodně pomohla? I to mě zajímá:\n\n\n"+
+      FB_END+"\n\n—\n(appka: Moje cesta · "+typ+" · "+it.name+" · ID "+id+")");
+  }
 
   // ===================== ZÁLOHA UŽIVATELSKÝCH DAT =====================
   // Oblíbené, přečtené a nastavení žijí jen v localStorage tohoto prohlížeče.
