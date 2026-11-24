@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta name="theme-color" content="#15120E">
@@ -318,10 +318,20 @@
     font-weight:700; padding:0 6px; border-radius:6px; }
 
   /* ===== FILTER PANEL ===== */
-  .mc-filter{ margin:10px var(--gutter) 0; padding:14px; background:var(--surface); border:1px solid var(--border); border-radius:14px; }
-  .mc-filter .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
-    background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:12px; }
-  .mc-filter .fkw:focus{ border-color:var(--tone); }
+  /* Panel filtru přes celou obrazovku (od 24. 11. 2026): hlavička, rolovací tělo, přilepená lišta dole. */
+  .mc-fsheet{ position:fixed; top:0; bottom:0; left:0; right:0; max-width:520px; margin:0 auto; z-index:45; background:var(--bg);
+    display:flex; flex-direction:column; animation:mcFade .15s ease forwards; }
+  .mc-fsheet .fs-head{ display:flex; align-items:center; justify-content:space-between; padding:14px calc(var(--gutter) - 8px) 6px var(--gutter);
+    border-bottom:1px solid var(--border); }
+  .mc-fsheet .fs-head h2{ margin:0; color:var(--tone); }
+  .mc-fsheet .fs-body{ flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:16px var(--gutter) 24px; }
+  .mc-fsheet .fs-foot{ display:flex; gap:10px; padding:12px var(--gutter) calc(12px + env(safe-area-inset-bottom)); border-top:1px solid var(--border); background:var(--bg); }
+  .mc-fsheet .fs-foot .mc-fab{ flex:1; min-width:0; }
+  .mc-fsheet .fs-foot .mc-fab.ghost{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; }
+  .mc-fsheet .fs-foot .mc-fab:disabled{ opacity:.45; cursor:default; }
+  .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
+    background:var(--surface); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:14px; }
+  .fkw:focus{ border-color:var(--tone); }
     .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
   .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
@@ -1535,10 +1545,13 @@
     }
     if(!STREAM_SEEN) state.onDecided=null;   // mimo proud → při příštím vstupu se rozhodne znovu
     if(FILL&&!state.detail) root.setAttribute("data-page","fill");
+    if(!state.detail&&state.page==="section"&&CONTENT[state.section]&&CONTENT[state.section].render!=="doclist"&&secState(state.section).filterOpen) h+=viewFilterPanel(state.section);
     if(state.menuOpen) h+=viewMenu();
     if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
     h+=viewToast();
+    var fsb=document.querySelector(".mc-fsheet .fs-body"), fsTop=fsb?fsb.scrollTop:0;
     root.innerHTML=h;
+    fsb=document.querySelector(".mc-fsheet .fs-body"); if(fsb) fsb.scrollTop=fsTop;
     fitTags();
     var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
     bindSwipe();
@@ -1660,7 +1673,7 @@
   }
   function searchBox(placeholder,handler,value){
     var h='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="'+esc(placeholder)+'" oninput="MC.'+handler+'(this.value)" onkeydown="MC.searchKey(event)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="'+esc(placeholder)+'" enterkeyhint="search" oninput="MC.'+handler+'(this.value)" onkeydown="MC.searchKey(event)">';
     if(value&&value.trim()) h+='<div class="mc-search-tools"><button class="mc-search-clear" onclick="MC.'+handler+'(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
     return h+'</div>';
   }
@@ -1820,7 +1833,7 @@
     h+='<div class="mc-sec-head"><h1>Jádrové pocity</h1><p>Vyberte, jak se cítíte — a podívejte se na to jinak.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" enterkeyhint="search" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
     // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
     if(nSel>0) h+='<button class="mc-search-clear mc-reset" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 3 3 9 9 9"/></svg></button><button class="mc-count-pill" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů ('+nSel+')">'+nSel+'</button>';
@@ -1958,7 +1971,7 @@
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
     var h=secHead(key,cfg.label,null);
     if(cfg.search){
-      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
+      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" enterkeyhint="search" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
     }
     h+='<div class="mc-namelist">';
@@ -1980,7 +1993,6 @@
     h+='<button class="mc-filter-btn '+(s.filterOpen?"active":"")+'" onclick="MC.secFilter(\''+key+'\')">'+IC.filter+'Filtr'+(fc>0?'<span class="fc">'+fc+'</span>':'')+'</button>';
     var items=contentList(key);
     h+='</div>';
-    if(s.filterOpen) h+=viewFilterPanel(key);
     h+='<ul class="mc-cards">';
     if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
     else items.forEach(function(it){ h+=contentCard(key,cfg,it); });
@@ -1994,7 +2006,6 @@
     var cfg=CONTENT[key], s=secState(key), fc=activeFilterCount(key), all=contentList(key);
     var h='<div class="mc-sec-head"><div class="mc-sec-row"><h1>'+esc(cfg.label)+'</h1><div class="mc-submenu mc-head-tools">'+
       '<button class="mc-filter-btn '+(s.filterOpen?"active":"")+'" onclick="MC.secFilter(\''+key+'\')">'+IC.filter+'Filtr'+(fc>0?'<span class="fc">'+fc+'</span>':'')+'</button>'+viewToggle()+'</div></div></div>';
-    if(s.filterOpen) h+=viewFilterPanel(key);
     if(viewMode()==="swipe"){
       var qKey=key+":"+s.mode+":"+s.kw+":"+s.tags.join(",");
       if(!all.length) return h+'<div class="mc-empty">Nic neodpovídá filtru.</div>';
@@ -2008,23 +2019,26 @@
     return h+'</ul>';
   }
 
+  // Filtr na dva kroky (od 24. 11. 2026, Bob): panel přes celou obrazovku — nahoře Filtr a křížek,
+  // klíčové slovo, délka, štítky; dole přilepená lišta Zrušit filtry + Zobrazit (N) s živým počtem.
+  // Zobrazit panel zavře a ukáže výsledky od začátku. Výběr se propisuje hned (počet), panel jen zakrývá.
   function viewFilterPanel(key){
-    var cfg=CONTENT[key], s=secState(key);
-    var h='<div class="mc-filter">';
-    // Enter zavře klávesnici (blur) — na mobilu jinak není jak ji schovat.
-    h+='<input class="fkw" placeholder="Klíčové slovo…" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.searchKey(event)">';
-    // Délka nahoře, štítky pod ní. Nadpisy „Štítky"/„Délka" pryč — pilulky se
-    // vysvětlují samy, délku odliší accentový tón.
+    var cfg=CONTENT[key], s=secState(key), n=contentList(key).length, fc=activeFilterCount(key);
+    var h='<div class="mc-fsheet" role="dialog" aria-label="Filtr"><div class="fs-head"><h2>Filtr</h2>'+
+      '<button class="mc-icon-btn" onclick="MC.filterShow(\''+key+'\')" aria-label="Zavřít filtr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div><div class="fs-body">';
+    // Klávesa s lupou (enterkeyhint) = zavřít klávesnici a zobrazit výsledky.
+    h+='<input class="fkw" placeholder="Klíčové slovo…" enterkeyhint="search" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.filterKey(event,\''+key+'\')">';
     var chips='';
     if(cfg.timeField==="duration"){
       durationBuckets().forEach(function(b,i){ chips+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
     }
-    var tags=allTags(cfg.dataKey);
-    tags.forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
+    allTags(cfg.dataKey).forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
     if(chips) h+='<div class="mc-chips">'+chips+'</div>';
-    if(activeFilterCount(key)>0) h+='<div class="mc-filter-foot"><button class="mc-filter-clear" onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button></div>';
-    return h+'</div>';
+    h+='</div><div class="fs-foot"><button class="mc-fab ghost" '+(fc?'':'disabled ')+'onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button>'+
+      '<button class="mc-fab" '+(n?'':'disabled ')+'onclick="MC.filterShow(\''+key+'\')">'+(n?'Zobrazit ('+n+')':'Nic neodpovídá')+'</button></div></div>';
+    return h;
   }
+
 
   function contentCard(key,cfg,it){
     var title=it[cfg.titleField]||"";
@@ -2334,7 +2348,7 @@
     "* U Přerámování, Inspirace a Otázek se věty ukazují jako **karty** — listujete prstem jednu po druhé. Kdo chce, přepne si tlačítkem vpravo nahoře na **seznam** — v seznamu je vždycky všechno.",
     "* Když vyberete víc pocitů najednou, appka je promíchá tak, aby se nejdřív ukázalo to nejsilnější z každého. Po čtyřiceti pěti větách se zastaví a nabídne, ať si zbytek necháte na jindy — klidně ale pokračujte. Výběr zrušíte šipkou vedle hledání.",
     "* Přepínač **Jen nové** pod kartami ukáže jen to, co jste ještě neviděli; číslo v závorce říká, kolik toho zbývá. Zapíná se sám, když je tu něco nového. Až uvidíte všechno, nabídneme vám projít si to znovu — opakování pomáhá.",
-    "* **Filtr** hledá podle slova nebo podle štítků.",
+    "* **Filtr** hledá podle slova nebo podle štítků. Vyberte, co chcete, a ťukněte na **Zobrazit**.",
     "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
     "* **Tmavý režim** zapnete v menu.",
     "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí. Ke konkrétní větě napíšete bublinkou vpravo pod kartami.",
@@ -2640,7 +2654,9 @@
     // obsahové sekce
     secMode:function(key,m){ secState(key).mode=m; scrollTop(); render(); },
     secFilter:function(key){ var s=secState(key); s.filterOpen=!s.filterOpen; render(); },
-    secKw:function(key,v){ secState(key).kw=v; render(); var i=document.querySelector(".mc-filter .fkw"); if(i){ i.focus(); i.value=v; i.setSelectionRange(v.length,v.length); } },
+    secKw:function(key,v){ secState(key).kw=v; render(); var i=document.querySelector(".mc-fsheet .fkw"); if(i){ i.focus(); i.value=v; i.setSelectionRange(v.length,v.length); } },
+    filterShow:function(key){ secState(key).filterOpen=false; scrollTop(); render(); },
+    filterKey:function(e,key){ if(e&&e.key==="Enter"){ e.preventDefault(); if(e.target&&e.target.blur) e.target.blur(); MC.filterShow(key); } },
     secTag:function(key,t){ var s=secState(key),i=s.tags.indexOf(t); if(i>-1)s.tags.splice(i,1); else s.tags.push(t); render(); },
     secDur:function(key,i){ var s=secState(key), p=s.durs.indexOf(i); if(p>-1) s.durs.splice(p,1); else s.durs.push(i); render(); },
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
