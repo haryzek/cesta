@@ -437,8 +437,11 @@
   /* Seznam: jen tři čárky bez obrysu, výška jako switch, na ose srdíčka v kartě */
   .mc-sfoot .mc-fbf{ width:26px; height:26px; padding:0; margin-right:14px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
   .mc-sfoot .mc-fbf svg{ width:26px; height:26px; display:block; }
-  .mc-swipe-card .sc-foot-l{ right:56px; }
-  .mc-swipe-card .sc-foot-l .sc-fmeta{ margin-left:10px; font-family:var(--sans); font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+  .mc-swipe-card .sc-foot-r{ position:absolute; right:16px; bottom:9px; height:34px; max-width:62%; display:block; line-height:34px;
+    font-family:var(--sans); font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mc-swipe-card .sc-heart{ display:flex; justify-content:center; margin-top:20px; }
+  .mc-swipe-card .sc-body .sc-heart .mc-heart{ position:static; padding:8px; }
+  .mc-swipe-card .sc-body .sc-heart .mc-heart svg{ width:34px; height:34px; }
   .mc-sfoot .mc-tolist{ width:26px; height:26px; padding:0; margin-right:16px; background:none; border:none; cursor:pointer; color:var(--muted); display:flex; }
   .mc-sfoot .mc-tolist svg{ width:26px; height:26px; display:block; }
   /* Placka jako první karta: víc témat = jedna karta, čísla bez duplicit */
@@ -2365,14 +2368,18 @@
     var h='<div class="mc-swipe-wrap"><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">'+(pre||"");
     list.forEach(function(it,i){
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
-      // Počítadlo vlevo nahoře a srdíčko vpravo nahoře v kartě — nic mimo ni.
       if(fbName) FB_ITEMS[it.id]={ store:store, text:it.text, name:fbName(it) };
-      // Triplet a bolístky (fbName): pocit / bolístka ve spodním řádku vedle počítadla, ne pod textem —
-      // při listování se neopakuje přilepený k větě (20. 11. 2026). Bublinka je ve spodní liště stránky.
-      var fm=fbName&&meta?meta(it):"";
-      h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body"><span class="sc-foot-l"><span class="sc-count">'+(i+1)+'\u202F/\u202F'+list.length+'</span>'+
-        (fm?'<span class="sc-fmeta">'+fm+'</span>':'')+'</span>'+heartBtn(store,it.id,isFav(store,it.id));
-      h+=admText(store,it.id,it.text,"sc-text "+size)+(meta&&!fbName?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
+      // Triplet a bolístky (fbName, 24. 11. 2026): velké srdíčko v toku hned pod textem (pevná mezera,
+      // na dosah palce), admin až pod ním; vlevo dole počítadlo, vpravo dole pocit / bolístka.
+      // Ostatní proudy (Otázky, Inspirace) mají srdíčko po staru vpravo dole.
+      var fm=fbName&&meta?meta(it):"", cnt='<span class="sc-foot-l"><span class="sc-count">'+(i+1)+' / '+list.length+'</span></span>';
+      if(fbName){
+        h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body">'+cnt+(fm?'<span class="sc-foot-r">'+fm+'</span>':'');
+        h+=admText(store,it.id,it.text,"sc-text "+size)+'<div class="sc-heart">'+heartBtn(store,it.id,isFav(store,it.id))+'</div>'+adminBar(store,it.id)+'</div></div>';
+      } else {
+        h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body">'+cnt+heartBtn(store,it.id,isFav(store,it.id));
+        h+=admText(store,it.id,it.text,"sc-text "+size)+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
+      }
       if(softCut && i+1===softCut && i<list.length-1) h+=softBreakHtml(true);
       else if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
