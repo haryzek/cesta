@@ -2047,7 +2047,7 @@
     h+='<input class="fkw" placeholder="Klíčové slovo…" enterkeyhint="search" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.filterKey(event,\''+key+'\')">';
     var chips='';
     if(cfg.timeField==="duration"){
-      var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(''+key+'','+i+')">'+b.label+'</button>'; });
+      var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
       h+='<div class="mc-chips mc-dur-row">'+dur+'</div>';   // délka zvlášť nahoře, štítky pod ní (24. 11. 2026)
     }
     allTags(cfg.dataKey).forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
