@@ -490,7 +490,7 @@ Losuje se z těch, které uživatel ještě neviděl; po vyčerpání všech se 
 
 Napříč sekcemi se opakují tři tvary:
 
-1. **Seznam** — nadpis sekce + položky pod sebou (buttony nebo boxy). **Vpravo od H1 pilulka „♡ N"** = přepínač „jen oblíbené" v téhle sekci (viz Oblíbené).
+1. **Seznam** — nadpis sekce + položky pod sebou (buttony nebo boxy). Do oblíbených se jde jen srdíčkem v hlavičce (pilulka „♡ N“ u H1 zrušená 24. 11. 2026).
 2. **Detail** — nadpis a na stejném řádku vpravo u okraje ikony: šipka „Zpět" a (kde dává smysl) srdíčko. Pod tím obsah (markdown nebo boxy). Srdíčko má dva stavy (uloženo / neuloženo).
 3. **Filtrovaný seznam** (obsahové sekce s tagy) — viz níže.
 4. **Proud karet** (věty: triplet, hlášky, Inspirace, Otázky) — swipe místo seznamu, viz „Proud karet a paměť viděného".
@@ -498,7 +498,7 @@ Napříč sekcemi se opakují tři tvary:
 ### Filtrování obsahových sekcí (Cvičení, Otázky, Inspirace, Články)
 
 - **Obsah první, filtr druhý.** Po vstupu je rovnou vidět seznam; u Cvičení a Článků je od 18. 11. 2026 výchozí „Redakce“, u vět „Nejnovější“. Žádná tagová brána, žádné tlačítko „Zobrazit".
-- **Submenu:** (Redakce — jen Cvičení a Články, první a výchozí) / Nejnovější / Pro vás (jen když existuje profil) / tlačítko Filtr hned vedle; **u vět (Inspirace, Otázky) vpravo u okraje dvě ikonky**: oko (jen nové) a seznam/karty — viz „Proud karet".
+- **Submenu:** (Redakce — jen Cvičení a Články, první a výchozí) / Nejnovější / Pro vás (jen když existuje profil) / tlačítko Filtr hned vedle; **u vět (Inspirace, Otázky) vpravo u okraje přepínač karty / seznam** — viz „Proud karet".
 - **Filtr** je jedno tlačítko → rozbalí panel: nahoře keyword pole, pod ním pilulky — nejdřív `duration` (jen Cvičení), pak tagy. Bez nadpisů „Štítky"/„Délka", délku odliší accentový tón a mono písmo. Filtruje se in-place, submenu zůstává, žádná druhá obrazovka. Enter v poli zavře klávesnici (blur) — filtruje se průběžně, není co odesílat.
 - **Tagy i délky se sčítají (OR), keyword se s nimi násobí (AND).** Víc zaškrtnutých tagů = širší výběr, ne užší; položka projde, když sedí na kterýkoli z nich. Původně byly tagy AND, ale u pár tagů na položku to vracelo skoro vždycky prázdno. Keyword zůstává AND — ten zužuje záměrně. Délka je multiple-choice stejně jako tagy.
 - **OR říká, co projde; priorita tagů v datech říká pořadí (12. 9. 2026).** Každý zaškrtnutý tag přičte položce váhu podle své pozice v jejím `tags`: `TAG_VAHY = [6, 5, 4, 3, 2, 1]` (první tag 6, šestý a další 1). Řadí se skóre ↓ → počet shod ↓ → `added_at` ↓ → `id`. Zaškrtnu `strach` + `tělo` → nahoře cvičení, kde jsou to témata, dole ta, co se strachu dotýkají na tie-breaku. Bez zaškrtnutého tagu se nic nemění (Nejnovější je Nejnovější); v Redakci s tagem přebije skóre náhodné pořadí. `TAG_VAHY` je jediná laditelná konstanta filtru — lineární je bezpečný start, strmější (`[8,5,3,2,1,1]`) by nechal dominovat první tag.
@@ -515,7 +515,8 @@ Pro **věty** — triplet přerámování, hlášky bolístek, Inspirace, Podně
 - **Měkký odchod:** každých `SWIPE_BREAK = 10` karet vložený předěl „Stačí pro dnes?" (*Zavřít / Ještě pár*), na konci „To je všechno nové. Zítra zas." + *Zobrazit i viděné*. Appka sama nabízí odchod — jinak lidé swipují do konce s pocitem nedokoukaného seriálu.
 - **Přepínač seznam / karty** = ikonka vpravo v řádku submenu; volba je **globální** v `localStorage` (`mc_view`) — je to vkus, ne kontext. Seznam je default.
 - **Paměť „viděl jsem"** (`USER.seen[store] = [id…]`) **se plní jen v proudu karet** (karta na obrazovce = přečtená) a srdíčkem. **Seznam ji nikdy nepíše** — proscrollovat 50 karet není vidět je; IntersectionObserver v seznamu byl zvážen a zamítnut (odhad, ne důkaz). Nové položky v datech jsou automaticky neviděné, žádná migrace.
-- **Přepínač „jen nové"** = ikona oka vedle přepínače karet: otevřené oko = vidím všechno, škrtnuté = viděné schované (s mini badge počtu nových). Globální (`USER.onlyNew`), pořád na očích, klik přepíná. Když jsou nové vyčerpané: „Všechno z tohohle už jste viděli · Zobrazit i viděné". Proud si při „jen nové" **snímkuje** seznam při vstupu (`state.swipe`), jinak by karty mizely pod rukama, jak se označují za viděné.
+- **Přepínač karty / seznam** (od 24. 11. 2026) = jedno tlačítko `viewToggle()`, pořád stejné a **pořád nahoře vpravo** (v zápisníku za Úkoly, v Otázkách / Inspiraci za Filtrem, v Moje oblíbené v horní liště i u H1 seznamu). Ikona ukazuje, kam se přepne. Tři čárky pod kartami a bublinka zpětné vazby ke kartě jsou pryč.
+- **„Jen nové“ jen v kartách** (od 24. 11. 2026): switch „Jen nové (N)“ ve spodní liště pod kartami (`swipeFoot`, i u Otázek a Inspirace). **Seznam je vždycky kompletní** (`unseenOnly` mimo karty nefiltruje) — rychle se jím scrolluje a slouží jako přehled všeho. Globální (`USER.onlyNew`). Když jsou nové vyčerpané: „Všechno z tohohle už jste viděli · Zobrazit i viděné". Proud si při „jen nové" **snímkuje** seznam při vstupu (`state.swipe`), jinak by karty mizely pod rukama, jak se označují za viděné.
 
 ### Navigace a stav
 
@@ -661,7 +662,7 @@ Cvičebnice po oddílech — první dlaždice appky. Seznam 11 oddílů jako kar
 
 ### Inspirace a Podnětné otázky
 
-Submenu: Nejnovější / Filtr, vpravo oko („jen nové") a přepínač seznam/karty (výchozí karty od 19. 11. 2026, dřív seznam). „Nejnovější" řadí od nejnovějších; s tagy ve filtru řadí priorita tagů. Umí proud karet a paměť viděného. („Pro vás" a řádek doporučených tagů jsou budoucnost — obě sady jsou bez `schemas`, doporučování se jich netýká.)
+Submenu: Nejnovější / Filtr, vpravo přepínač karty / seznam; „Jen nové“ pod kartami (výchozí karty od 19. 11. 2026, dřív seznam). „Nejnovější" řadí od nejnovějších; s tagy ve filtru řadí priorita tagů. Umí proud karet a paměť viděného. („Pro vás" a řádek doporučených tagů jsou budoucnost — obě sady jsou bez `schemas`, doporučování se jich netýká.)
 
 ### První pomoc v krizi, Tělesné příznaky
 
@@ -673,7 +674,7 @@ Napříč sekcemi: klepnutí na srdíčko u položky ji uloží (a označí za v
 
 - **Moje oblíbené** (srdíčko v hlavičce, od 24. 11. 2026) — dlaždice jako na homepage, s počty (velké číslo vpravo nahoře, prázdná dlaždice zašedlá s 0 a nejde otevřít). Nahoře **pakl čtyř dlaždic s větami** na podbarvení `--pack` (o kus tmavší než pozadí, přesahuje dlaždice): **Všechny karty** (proud napříč triplet / hlášky / věty pod strachy / Otázky / Inspirace, zamíchaný při každém vstupu, popisek vpravo dole říká odkud) · **Přerámování** (záložky Přerámování / Otázky / Úkoly; v Přerámování i hlášky a věty pod strachy) · **Otázky** · **Inspirace**. Vstup rovnou do karet (podle `mc_view`), tři čárky → seznam po skupinách, ikona karet u H1 zpátky. **„Jen nové“ tu není** (uložené už člověk viděl), odebrané srdíčko nechá kartu v proudu do dalšího vstupu. Pod paklem nízké dlaždice **Cvičení · Články · Tělesné příznaky · První pomoc** → stejné karty / řádky jako v sekci, jen uložené. Kód: `viewFavorites`, `favCards`, `favMaterial`, `FAV_PACK` / `FAV_MAT`; smíšený proud nese úložiště u každé karty (`_st`, `data-store`).
 - **Věty pod konkrétním strachem** jdou uložit od 24. 11. 2026 (store `situations`, ID `sitr_NNNN`).
-- **Per sekce** — pilulka **„♡ N“ vpravo od H1** v každé sekci kromě O appce: přepínač „jen oblíbené“, zapnutý = plný; seznam ukáže jen uložené, filtr / keyword / Redakce se s tím násobí (AND), perex sekce se schová. Stav drží relace (`secState.favOnly`). Prázdný stav: „V téhle sekci zatím nic uloženého.“ Pilulka je menší a obrysová, ať se nečte jako „uložit celou sekci“ — počet ji vysvětlí. Přerámování → skupiny po typech (viz brány), Moje cesta → uložená cvičení s oddílem.
+- **Per sekce** — pilulka „♡ N“ u H1 v každé sekci (12. 9. 2026) je **od 24. 11. 2026 zrušená**: po Moje oblíbené byla jen druhými dveřmi k témuž.
 
 Položky, které mají vlastní detail (První pomoc, Tělesné příznaky, Články, Cvičení), jsou odsud **prokliknutelné** — `FAV_VIEW` má u nich `detail:true`. Přerámování, hlášky, Inspirace a Podnětné otázky detail nemají ani ve svých sekcích, takže odkaz nemají ani tady.
 
