@@ -259,7 +259,8 @@
   .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
   /* Řádek H1 + přepínač „jen oblíbené". Srdíčko menší a obrysové, ať se
      nečte jako „uložit sekci"; plné jen když je přepnuté. */
-  .mc-sec-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  /* flex-wrap: na úzkém displeji (≈320 px) tlačítka spadnou pod nadpis, vpravo zarovnaná. */
+  .mc-sec-row{ display:flex; align-items:center; justify-content:space-between; gap:8px 12px; flex-wrap:wrap; }
 
   /* ===== SEARCH ===== */
   /* Obalovač má nesymetrické odsazení (20px nahoře, 2px dole), takže top:50%
