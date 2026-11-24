@@ -671,12 +671,13 @@ Prostý seznam → klik → strukturovaný text → možnost uložit do oblíben
 
 Napříč sekcemi: klepnutí na srdíčko u položky ji uloží (a označí za viděnou). Dvě cesty k uloženému (12. 9. 2026):
 
-- **Globální feed** (srdíčko v hlavičce) — všechno po typech, včetně skupiny „Bolístky“ (hlášky, s větou bolístky jako meta).
+- **Moje oblíbené** (srdíčko v hlavičce, od 24. 11. 2026) — dlaždice jako na homepage, s počty (velké číslo vpravo nahoře, prázdná dlaždice zašedlá s 0 a nejde otevřít). Nahoře **pakl čtyř dlaždic s větami** na podbarvení `--pack` (o kus tmavší než pozadí, přesahuje dlaždice): **Všechny karty** (proud napříč triplet / hlášky / věty pod strachy / Otázky / Inspirace, zamíchaný při každém vstupu, popisek vpravo dole říká odkud) · **Přerámování** (záložky Přerámování / Otázky / Úkoly; v Přerámování i hlášky a věty pod strachy) · **Otázky** · **Inspirace**. Vstup rovnou do karet (podle `mc_view`), tři čárky → seznam po skupinách, ikona karet u H1 zpátky. **„Jen nové“ tu není** (uložené už člověk viděl), odebrané srdíčko nechá kartu v proudu do dalšího vstupu. Pod paklem nízké dlaždice **Cvičení · Články · Tělesné příznaky · První pomoc** → stejné karty / řádky jako v sekci, jen uložené. Kód: `viewFavorites`, `favCards`, `favMaterial`, `FAV_PACK` / `FAV_MAT`; smíšený proud nese úložiště u každé karty (`_st`, `data-store`).
+- **Věty pod konkrétním strachem** jdou uložit od 24. 11. 2026 (store `situations`, ID `sitr_NNNN`).
 - **Per sekce** — pilulka **„♡ N“ vpravo od H1** v každé sekci kromě O appce: přepínač „jen oblíbené“, zapnutý = plný; seznam ukáže jen uložené, filtr / keyword / Redakce se s tím násobí (AND), perex sekce se schová. Stav drží relace (`secState.favOnly`). Prázdný stav: „V téhle sekci zatím nic uloženého.“ Pilulka je menší a obrysová, ať se nečte jako „uložit celou sekci“ — počet ji vysvětlí. Přerámování → skupiny po typech (viz brány), Moje cesta → uložená cvičení s oddílem.
 
 Položky, které mají vlastní detail (První pomoc, Tělesné příznaky, Články, Cvičení), jsou odsud **prokliknutelné** — `FAV_VIEW` má u nich `detail:true`. Přerámování, hlášky, Inspirace a Podnětné otázky detail nemají ani ve svých sekcích, takže odkaz nemají ani tady.
 
-Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` musí odpovídat rendereru sekce — Podnětné otázky jsou `quote`, ne `text`). Skupiny kreslí jedna funkce `favGroups(stores)` pro globální feed i sekční přepínač.
+Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` musí odpovídat rendereru sekce — Podnětné otázky jsou `quote`, ne `text`). Skupiny kreslí jedna funkce `favGroups(stores)` pro seznamy v Moje oblíbené i sekční přepínač (u jediné skupiny bez nadpisu).
 
 ---
 

@@ -51,7 +51,7 @@
      --on-accent (text NA accent ploše — v dark tmavý, v light světlý; dřív
      bylo natvrdo #15120E, což by na světlé terakotě nebylo vidět). */
   #mc-root {
-    --bg:#1C1914; --surface:#262119; --surface-2:#2E281E; --border:#3A3226;
+    --bg:#1C1914; --surface:#262119; --surface-2:#2E281E; --border:#3A3226; --pack:#14110D;
     --text:#F2EBDC; --body:#F2EBDC; --soft:#B5AA96; --muted:#7C7264;
     --accent:#E08252; --accent-dim:#3D2A1F; --on-accent:#1C1914; --heart:#E08252;
     --teal:#6FBBA6; --teal-soft:#223832; --teal-deep:#16332F;
@@ -82,7 +82,7 @@
   /* --surface je čistě bílá, ne krémová jako v handoffu — karty a dlaždice
      potřebovaly víc kontrastu proti pozadí stránky. */
   #mc-root[data-theme="light"] {
-    --bg:#F6F1E7; --surface:#FFFFFF; --surface-2:#FBF5EA; --border:#E8DFCE;
+    --bg:#F6F1E7; --surface:#FFFFFF; --surface-2:#FBF5EA; --border:#E8DFCE; --pack:#EBE3D3;
     --text:#2B241C; --body:#2B241C; --soft:#6B6053; --muted:#9C9385;
     --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8; --heart:#D98763;
     --teal:#3E7266; --teal-soft:#DCEAE5; --teal-deep:#1F4F49;
@@ -225,6 +225,22 @@
   .mc-tile-ic svg{ width:20px; height:20px; display:block; }
   .mc-tile-name{ margin-top:auto; font-family:var(--serif); font-weight:600; font-size:17px;
     font-variation-settings:'opsz' 24; color:var(--text); line-height:1.2; letter-spacing:-0.01em; }
+  /* Moje oblíbené (24. 11. 2026): pakl karet na podbarvení o kus tmavším než pozadí stránky,
+     přesahuje dlaždice ze všech stran; počty velkým Fraunces vpravo nahoře. Materiály pod
+     paklem nízké, v jednom řádku. Prázdná dlaždice zašedlá s nulou. */
+  .mc-fav-pack{ margin:8px calc(var(--gutter) - 10px) 16px; padding:10px; background:var(--pack); border-radius:24px; }
+  .mc-fav-pack .mc-tiles{ padding:0; }
+  .mc-tile-num{ position:absolute; top:12px; right:15px; font-family:var(--serif); font-weight:600; font-size:34px; line-height:1;
+    font-variation-settings:'opsz' 72; letter-spacing:-0.02em; color:var(--accent); }
+  .mc-tile[data-tone="teal"] .mc-tile-num{ color:var(--teal); }
+  .mc-tile.empty{ opacity:.45; cursor:default; }
+  .mc-tile.empty:active{ transform:none; }
+  .mc-fav-mat .mc-tile{ min-height:0; flex-direction:row; align-items:center; gap:10px; padding:12px var(--tile-pad); }
+  .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; flex-shrink:0; }
+  .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
+  .mc-fav-mat .mc-tile-name{ margin-top:0; flex:1; min-width:0; font-size:15px; }
+  .mc-fav-mat .mc-tile-num{ position:static; font-size:20px; font-variation-settings:'opsz' 24; }
+  .mc-sec-row .mc-tocards{ margin-left:auto; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
     background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px; font-weight:700;
     border-radius:9px; display:flex; align-items:center; justify-content:center; }
@@ -842,7 +858,7 @@
 
   var STORE_KEY = "mc_kompletni_v1";
   var FAV_STORES = ["crisis","body","articles","exercises",
-                    "reframings","reframing_questions","reframing_actions","pains","inspirations","questions"];
+                    "reframings","reframing_questions","reframing_actions","pains","situations","inspirations","questions"];
   // mapování store -> {dataKey, jak zobrazit v oblíbených}
   // detail:true = položka má vlastní stránku, na kterou se dá z oblíbených
   // prokliknout. Přerámování, Inspirace a Otázky detail nemají ani ve svých
@@ -860,6 +876,8 @@
     // Hlášky mají vlastní ID (hl_NNNN), index itemIndex.hlasky se staví
     // v prepare(). Meta pod hláškou nese větu bolístky.
     { store:"pains",               dataKey:"hlasky",       label:"Bolístky",             kind:"text" },
+    // Věty pod konkrétním strachem (sitr_NNNN, od 24. 11. 2026); meta = jméno strachu.
+    { store:"situations",          dataKey:"sitref",       label:"Strachy",              kind:"text" },
     { store:"inspirations",        dataKey:"inspirations", label:"Inspirace",            kind:"quote" },
     { store:"questions",           dataKey:"questions",    label:"Podnětné otázky",      kind:"quote" }
   ];
@@ -934,6 +952,7 @@
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
     journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
     swipe:{ key:null, ids:[], index:0 },           // snímek proudu karet (viz swipeView)
+    fav:{ tile:null, type:"reframings" },          // Moje oblíbené: otevřená dlaždice + typ tripletu
     adminEdit:null,                                // { store, id } — otevřená inline editace
     toast:null,                                    // { text, undo:{store,id} } — 3 s dole
     detail:null     // { type, id, tab:"body"|"info"|"theory"|"practice", chainOpen }
@@ -1693,7 +1712,7 @@
     } else if(s.reframings&&s.reframings.length){
       var refs=alive("situations",(s.reframings||[]).map(function(r){ return itemIndex.sitref[r.id]; }));
       h+='<ul class="mc-cards">';
-      refs.forEach(function(r){ h+='<li class="mc-card mc-in nofav">'+admText("situations",r.id,r.text,"mc-card-text")+adminBar("situations",r.id)+'</li>'; });
+      refs.forEach(function(r){ h+='<li class="mc-card mc-in">'+admText("situations",r.id,r.text,"mc-card-text")+adminBar("situations",r.id)+heartBtn("situations",r.id,isFav("situations",r.id))+'</li>'; });
       h+='</ul>';
     }
     if(s.mark==="K") return h;
@@ -2111,10 +2130,97 @@
   }
 
   // ===================== RENDER — Oblíbené =====================
+  // ===================== RENDER — Moje oblíbené (24. 11. 2026) =====================
+  // Dlaždice jako na homepage. Nahoře podbarvený pakl čtyř dlaždic s větami (karty):
+  // Všechny karty (zamíchaný proud napříč) · Přerámování (triplet + hlášky + věty pod strachy)
+  // · Otázky · Inspirace. Pod ním materiály: Cvičení · Články · Tělo · První pomoc → seznam
+  // jako v sekci, jen uložené. „Jen nové“ tu není — uložené už člověk viděl.
+  var FAV_SENT=["reframings","reframing_questions","reframing_actions","pains","situations","inspirations","questions"];
+  var FAV_PACK=[
+    { key:"all",          label:"Všechny karty", icon:"cards",        stores:FAV_SENT },
+    { key:"reframing",    label:"Přerámování",   icon:"reframing",    stores:["reframings","reframing_questions","reframing_actions","pains","situations"] },
+    { key:"questions",    label:"Otázky",        icon:"questions",    stores:["questions"] },
+    { key:"inspirations", label:"Inspirace",     icon:"inspirations", stores:["inspirations"] }
+  ];
+  var FAV_MAT=[
+    { key:"exercises", label:"Cvičení",          icon:"exercises", tone:"teal" },
+    { key:"articles",  label:"Články",           icon:"articles",  tone:"teal" },
+    { key:"body",      label:"Tělesné příznaky", icon:"body",      tone:"accent" },
+    { key:"crisis",    label:"První pomoc",      icon:"crisis",    tone:"accent" }
+  ];
+  var FAV_RF_TABS={ reframings:["reframings","pains","situations"], questions_rf:["reframing_questions"], actions:["reframing_actions"] };
+  var SWIPE_FAV=false, FAV_ENTRY={};
+  function favDataKey(store){ for(var i=0;i<FAV_VIEW.length;i++){ if(FAV_VIEW[i].store===store) return FAV_VIEW[i].dataKey; } }
+  // Uložené věty jako položky proudu: kopie s úložištěm (_st), nejnovější první v rámci typu.
+  function favEntries(stores){
+    var out=[];
+    stores.forEach(function(st){
+      var dk=favDataKey(st);
+      alive(st,USER.favorites[st].slice().reverse().map(function(id){ return (itemIndex[dk]||{})[id]; }).filter(Boolean)).forEach(function(it){
+        var e={ id:it.id, text:it.text||"", cluster_id:it.cluster_id, meta:it.meta, author:it.author, _st:st };
+        FAV_ENTRY[it.id]=e; out.push(e);
+      });
+    });
+    return out;
+  }
+  function favLabel(it,typed){
+    var st=it._st, cl=clusterName[it.cluster_id]||"";
+    if(st==="reframings") return cl;
+    if(st==="reframing_questions") return typed?"Otázka · "+cl:cl;
+    if(st==="reframing_actions") return typed?"Úkol · "+cl:cl;
+    if(st==="pains") return cutText(it.meta||"",60);
+    if(st==="situations") return it.meta||"";
+    if(st==="inspirations") return it.author||"Inspirace";
+    return typed?"Podnětná otázka":"";
+  }
+  function favTileHtml(t,n,tone,onclick){
+    return '<button class="mc-tile mc-in'+(n?'':' empty')+'" data-tone="'+tone+'" '+(n?'onclick="'+onclick+'"':'disabled')+'><span class="mc-tile-ic">'+IC[t.icon]+'</span><span class="mc-tile-num">'+n+'</span><span class="mc-tile-name">'+esc(t.label)+'</span></button>';
+  }
   function viewFavorites(){
-    var h='<div class="mc-sec-head"><h1>Oblíbené</h1></div>';
+    var h='<div class="mc-sec-head"><h1>Moje oblíbené</h1></div>';
     if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepněte na srdíčko u věty, která vás osloví, a najdete ji tady.</div>';
-    return h+favGroups(null);
+    var t=state.fav.tile;
+    if(t){ for(var i=0;i<FAV_MAT.length;i++){ if(FAV_MAT[i].key===t) return favMaterial(FAV_MAT[i]); } return favCards(t); }
+    h+='<div class="mc-fav-pack"><div class="mc-tiles">';
+    FAV_PACK.forEach(function(p){ h+=favTileHtml(p,favCountOf(p.stores),"teal","MC.favTile('"+p.key+"')"); });
+    h+='</div></div><div class="mc-tiles mc-fav-mat">';
+    FAV_MAT.forEach(function(m){ h+=favTileHtml(m,USER.favorites[m.key].length,m.tone,"MC.favTile('"+m.key+"')"); });
+    return h+'</div>';
+  }
+  function favCards(t){
+    var p=FAV_PACK.filter(function(x){ return x.key===t; })[0]; if(!p) return '<div class="mc-empty">—</div>';
+    var rf=t==="reframing", type=state.fav.type, stores=rf?FAV_RF_TABS[type]:p.stores;
+    var key="fav:"+t+(rf?":"+type:""), entries=favEntries(stores);
+    if(viewMode()==="swipe"){
+      // Všechny karty: zamíchat při každém vstupu (snímek drží pořadí, dokud se proud nezmění).
+      if(t==="all"&&state.swipe.key!==key) entries=shuffle(entries);
+      // Odebrané srdíčko: karta zůstává až do dalšího vstupu, ať proud pod rukou neposkočí.
+      if(state.swipe.key===key){ var have={}; entries.forEach(function(e){ have[e.id]=1; }); state.swipe.ids.forEach(function(id){ if(!have[id]&&FAV_ENTRY[id]) entries.push(FAV_ENTRY[id]); }); }
+      var h='<div class="mc-folder">'+folderTabs(rf?TYPES:[],type,"favType",["favTile(null)","Oblíbené"]);
+      if(!entries.length) h+='<div class="mc-empty">Nic tu není.</div>';
+      else { SWIPE_FAV=true; h+=swipeView("fav",key,entries,function(it){ return esc(favLabel(it,t==="all")); },function(it){ return favLabel(it,true); }); SWIPE_FAV=false; }
+      return h+favFoot()+'</div>';
+    }
+    var h2='<button class="mc-back" onclick="MC.favTile(null)">← Oblíbené</button>';
+    h2+='<div class="mc-sec-head"><div class="mc-sec-row"><h1>'+esc(p.label)+'</h1><button class="mc-pill ic mc-tocards" onclick="MC.viewMode(\'swipe\')" aria-label="Karty">'+IC.cards+'</button></div></div>';
+    if(rf){ h2+='<div class="mc-submenu-triplet">'; TYPES.forEach(function(x){ h2+='<button class="'+(type===x.key?"active":"")+'" onclick="MC.favType(\''+x.key+'\')">'+x.label+'</button>'; }); h2+='</div>'; }
+    var g=favGroups(stores);
+    return h2+(g||'<div class="mc-empty">Nic tu není.</div>');
+  }
+  // Spodní lišta proudu v Oblíbených: bez „Jen nové“, jen bublinka a přepnutí na seznam.
+  function favFoot(){
+    return '<div class="mc-sfoot"><span class="sp"></span><button class="mc-fbf" onclick="MC.fbCurrent()" aria-label="Napsat k téhle větě">'+FB_ICON+'</button><button class="mc-tolist" onclick="MC.viewMode(\'list\')" aria-label="Zobrazit jako seznam"><svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="22" y2="7"/><line x1="4" y1="13" x2="22" y2="13"/><line x1="4" y1="19" x2="22" y2="19"/></svg></button></div>';
+  }
+  // Materiály: stejné karty / řádky jako v sekci, jen uložené (nejnovější první).
+  function favMaterial(m){
+    var cfg=CONTENT[m.key];
+    var items=alive(cfg.store,USER.favorites[cfg.store].slice().reverse().map(function(id){ return (itemIndex[cfg.dataKey]||{})[id]; }).filter(Boolean));
+    var h='<button class="mc-back" onclick="MC.favTile(null)">← Oblíbené</button><div class="mc-sec-head"><h1>'+esc(m.label)+'</h1></div>';
+    if(!items.length) return h+'<div class="mc-empty">Nic tu není.</div>';
+    if(cfg.render==="cards"){ h+='<ul class="mc-cards">'; items.forEach(function(it){ h+=contentCard(m.key,cfg,it); }); return h+'</ul>'; }
+    h+='<div class="mc-namelist">';
+    items.forEach(function(it){ h+='<button class="mc-name-item mc-in" onclick="MC.detail(\''+cfg.dataKey+'\',\''+it.id+'\')"><span class="n">'+esc(it.name)+'</span><span class="go">›</span></button>'; });
+    return h+'</div>';
   }
   // Skupiny oblíbených po typech; stores = omezení na vybrané (sekční
   // přepínač), null = všechny (globální feed).
@@ -2124,7 +2230,7 @@
       if(stores&&stores.indexOf(fv.store)<0) return;
       var items=alive(fv.store,USER.favorites[fv.store].slice().reverse().map(function(id){ return (itemIndex[fv.dataKey]||{})[id]; }).filter(Boolean));
       if(items.length===0) return;
-      h+='<div class="mc-fav-group"><h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2><ul class="mc-cards" style="padding-left:0;padding-right:0">';
+      h+='<div class="mc-fav-group">'+(stores&&stores.length===1?'':'<h2>'+esc(fv.label)+' <span class="c">'+items.length+'</span></h2>')+'<ul class="mc-cards" style="padding-left:0;padding-right:0">';
       items.forEach(function(it){
         h+='<li class="mc-card mc-in'+(fv.detail?' clickable':'')+'"'+
            (fv.detail?' onclick="MC.detail(\''+fv.dataKey+'\',\''+it.id+'\')"':'')+'>';
@@ -2138,7 +2244,7 @@
     });
     return h;
   }
-  var RF_STORES=["reframings","reframing_questions","reframing_actions","pains"];
+  var RF_STORES=["reframings","reframing_questions","reframing_actions","pains","situations"];
 
   // ===================== RENDER — Admin: záloha a koš =====================
   function viewAdmin(){
@@ -2209,7 +2315,7 @@
     "* Na konci cvičení najdete **otázky do deníku**. Odpovědi si zapisujte, třeba do sešitu. Časem uvidíte, co se mění.",
     "* Cvičení děláte na vlastní zodpovědnost. Když se při něm necítíte dobře, přerušte ho.",
     "## Praktické tipy",
-    "* **Srdíčko** ukládá do **Oblíbených**. V každé sekci je u nadpisu pilulka se srdíčkem a počtem, která ukáže jen uložené z té sekce.",
+    "* **Srdíčko** ukládá do **Oblíbených**. V každé sekci je u nadpisu pilulka se srdíčkem a počtem, která ukáže jen uložené z té sekce. Srdíčko vpravo nahoře otevře **Moje oblíbené** — tam si uložené věty projdete v kartách, všechny najednou nebo po druzích.",
     "* U Přerámování, Inspirace a Otázek se věty ukazují jako **karty** — listujete prstem jednu po druhé. Kdo chce, přepne si ikonkou na **seznam**.",
     "* Když vyberete víc pocitů najednou, appka je promíchá tak, aby se nejdřív ukázalo to nejsilnější z každého. Po čtyřiceti pěti větách se zastaví a nabídne, ať si zbytek necháte na jindy — klidně ale pokračujte. Výběr zrušíte šipkou vedle hledání.",
     "* Přepínač **Jen nové** pod kartami skryje to, co jste už viděli. Je zapnutý — appka si pamatuje, co jste četli. Vypnete ho, když se chcete vrátit ke všemu.",
@@ -2369,14 +2475,15 @@
     var h='<div class="mc-swipe-wrap"><div class="mc-swipe" id="mc-swipe" data-store="'+store+'">'+(pre||"");
     list.forEach(function(it,i){
       var size=it.text.length<90?"xl":it.text.length<180?"lg":it.text.length<320?"md":"sm";
-      if(fbName) FB_ITEMS[it.id]={ store:store, text:it.text, name:fbName(it) };
+      var st=it._st||store;   // smíšený proud (Oblíbené) nese úložiště u každé karty
+      if(fbName) FB_ITEMS[it.id]={ store:st, text:it.text, name:fbName(it) };
       // Triplet a bolístky (fbName, 24. 11. 2026): velké srdíčko v toku hned pod textem (pevná mezera,
       // na dosah palce), admin až pod ním; vlevo dole počítadlo, vpravo dole pocit / bolístka.
       // Ostatní proudy (Otázky, Inspirace) mají srdíčko po staru vpravo dole.
       var fm=fbName&&meta?meta(it):"", cnt='<span class="sc-foot-l"><span class="sc-count">'+(i+1)+' / '+list.length+'</span></span>';
       if(fbName){
-        h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body">'+cnt+(fm?'<span class="sc-foot-r">'+fm+'</span>':'');
-        h+=admText(store,it.id,it.text,"sc-text "+size)+'<div class="sc-heart">'+heartBtn(store,it.id,isFav(store,it.id))+'</div>'+adminBar(store,it.id)+'</div></div>';
+        h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"'+(it._st?' data-store="'+st+'"':'')+'><div class="sc-body">'+cnt+(fm?'<span class="sc-foot-r">'+fm+'</span>':'');
+        h+=admText(st,it.id,it.text,"sc-text "+size)+'<div class="sc-heart">'+heartBtn(st,it.id,isFav(st,it.id))+'</div>'+adminBar(st,it.id)+'</div></div>';
       } else {
         h+='<div class="mc-swipe-card" data-id="'+esc(it.id)+'"><div class="sc-body">'+cnt+heartBtn(store,it.id,isFav(store,it.id));
         h+=admText(store,it.id,it.text,"sc-text "+size)+(meta?'<div class="sc-meta">'+meta(it)+'</div>':'')+adminBar(store,it.id)+'</div></div>';
@@ -2385,6 +2492,7 @@
       else if((i+1)%SWIPE_BREAK===0 && i<list.length-1) h+='<div class="mc-swipe-card break"><div class="sc-body"><div class="sc-text lg">Stačí pro dnes?</div><div class="sc-actions"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button><button class="mc-fab" onclick="MC.swipeNext()">Ještě pár</button></div></div></div>';
     });
     var nxt=SWIPE_NEXT;
+    if(SWIPE_FAV){ h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">To je všechno.</div><div class="sc-actions col"><div class="sc-act-row"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button></div></div></div></div>'; return h+'</div></div>'; }
     h+='<div class="mc-swipe-card break end"><div class="sc-body"><div class="sc-text lg">'+(USER.onlyNew?"Nic nového. Zítra zas.":"To je všechno.")+'</div><div class="sc-actions col">'+
       (nxt?'<button class="mc-fab" onclick="MC.rfType(\''+nxt.key+'\')">Pokračovat na '+nxt.label+' ›</button>':'')+
       '<div class="sc-act-row"><button class="mc-fab ghost" onclick="MC.swipeClose()">Zavřít</button>'+(USER.onlyNew?'<button class="mc-fab '+(nxt?"ghost":"")+'" onclick="MC.onlyNew()">Zobrazit i viděné</button>':'')+'</div></div></div></div>';
@@ -2400,7 +2508,7 @@
       state.swipe.index=i;
       var c=cards[i];
       // Číslo u oka („jen nové“) se přepíše za živa — bez překreslení, aby karty neposkakovaly.
-      if(c&&c.getAttribute("data-id")&&markSeen(store,c.getAttribute("data-id"))&&USER.onlyNew){
+      if(c&&c.getAttribute("data-id")&&markSeen(c.getAttribute("data-store")||store,c.getAttribute("data-id"))&&USER.onlyNew){
         var fc=document.querySelector(".mc-newc")||document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
       }
       if(i>0){ countSwipeVisit(); try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
@@ -2439,7 +2547,7 @@
     home:function(){ state.page="home"; state.section=null; state.detail=null; state.menuOpen=false; scrollTop(); render(); },
     open:function(key){
       state.menuOpen=false; state.detail=null;
-      if(key==="favorites"){ state.page="favorites"; state.section=null; }
+      if(key==="favorites"){ state.page="favorites"; state.section=null; state.fav.tile=null; }
       else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="gates"; if(key==="journey") state.journey.sectionId=null; }
       scrollTop(); render();
     },
@@ -2628,7 +2736,9 @@
     admCut:function(){ ADMIN.cut=ADMIN.cut===false; saveAdmin(false); state.swipe.key=null; state.swipe.ids=[]; render(); },
     viewMode:function(m){ try{ localStorage.setItem(VIEW_KEY,m); }catch(e){} state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeNext:function(){ swipeStep(1); },
-    swipeClose:function(){ if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
+    favTile:function(t){ state.fav.tile=t; if(t==="reframing") state.fav.type="reframings"; state.swipe.key=null; state.swipe.ids=[]; scrollTop(); render(); },
+    favType:function(k){ state.fav.type=k; state.swipe.key=null; state.swipe.ids=[]; render(); },
+    swipeClose:function(){ if(state.page==="favorites"){ MC.favTile(null); return; } if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
     // Enter v hledání zavře klávesnici. Na mobilu jinak není jak ji schovat —
     // filtruje se průběžně, takže není co odesílat.
     searchKey:function(e){ if(e&&e.key==="Enter"){ e.preventDefault(); if(e.target&&e.target.blur) e.target.blur(); } },
@@ -2697,7 +2807,7 @@
   var FEEDBACK_MAIL="robert.rericha@stestinaproti.cz";
   var FB_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><line x1="9" y1="10.5" x2="15" y2="10.5"/><line x1="9" y1="14" x2="13" y2="14"/></svg>';
   var FB_ITEMS={};
-  var FB_TYPE={ reframings:"přerámování", reframing_questions:"otázka", reframing_actions:"úkol", pains:"bolístka" };
+  var FB_TYPE={ reframings:"přerámování", reframing_questions:"otázka", reframing_actions:"úkol", pains:"bolístka", situations:"věta pod strachem", inspirations:"inspirace", questions:"podnětná otázka" };
   var FB_END="Děkuji za zpětnou vazbu. Každá zpráva mi pomáhá vytvářet appku, která pro vás bude mít smysl.\n\nAť se vám daří.\n\nRobert Řeřicha";
   function openMail(subject,body){
     location.href="mailto:"+FEEDBACK_MAIL+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body.replace(/\n/g,"\r\n"));
