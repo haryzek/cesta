@@ -636,7 +636,8 @@
   .mc-card-title{ font-family:var(--serif); font-weight:600; font-size:18px; font-variation-settings:'opsz' 24;
     letter-spacing:-0.01em; color:var(--text); line-height:1.25; margin-bottom:6px; }
   .mc-card-text{ font-family:var(--sans); font-size:14.5px; line-height:1.55; color:var(--soft); }
-  /* Citát je display text, ne perex — zůstává ve Fraunces. */
+  /* .lead = Fraunces (dnes jen věta pod branou). Citáty a otázky jedou od 24. 11. 2026 stejným písmem
+     jako přerámování (.mc-card-text), ať se v Oblíbených nemění styl. */
   .mc-card-text.lead{ font-family:var(--serif); font-weight:400; font-size:17px; line-height:1.5;
     font-variation-settings:'opsz' 24; color:var(--text); }
   .mc-card-author{ margin-top:9px; font-family:var(--sans); font-size:12.5px; color:var(--accent); }
@@ -2005,7 +2006,7 @@
 
   function quoteCard(cfg,it){
     var store=cfg.store, on=isFav(store,it.id);
-    var h='<li class="mc-card mc-in">'+admText(store,it.id,it.text,"mc-card-text lead");
+    var h='<li class="mc-card mc-in">'+admText(store,it.id,it.text,"mc-card-text");
     if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>';
     if(it.tags&&it.tags.length) h+=tagRow(it.tags,2);
     h+=adminBar(store,it.id)+heartBtn(store,it.id,on)+'</li>';
@@ -2129,7 +2130,7 @@
            (fv.detail?' onclick="MC.detail(\''+fv.dataKey+'\',\''+it.id+'\')"':'')+'>';
         if(fv.kind==="title") h+='<div class="mc-card-title">'+esc(it.title||"")+'</div>'+(it.perex?'<div class="mc-card-text">'+esc(it.perex)+'</div>':'');
         else if(fv.kind==="name") h+='<div class="mc-card-title">'+esc(it.name||"")+'</div>';
-        else if(fv.kind==="quote"){ h+='<div class="mc-card-text lead">'+esc(it.text||"")+'</div>'; if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>'; }
+        else if(fv.kind==="quote"){ h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; if(it.author) h+='<div class="mc-card-author">'+esc(it.author)+(it.year?' <span class="yr">· '+esc(it.year)+'</span>':'')+'</div>'; }
         else { h+='<div class="mc-card-text">'+esc(it.text||"")+'</div>'; var meta=it.cluster_id?clusterName[it.cluster_id]:it.meta; if(meta) h+='<div class="mc-card-meta">'+esc(meta)+'</div>'; }
         h+=heartBtn(fv.store,it.id,true,!!fv.detail)+'</li>';
       });
