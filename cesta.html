@@ -610,6 +610,7 @@
   .mc-detail-heart.on .hf{ display:block; }
   .mc-detail-meta{ padding:10px var(--gutter) 0; }
   .mc-detail-perex{ padding:10px var(--gutter) 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
+  .mc-detail-perex.ex{ padding-top:16px; }
   .mc-detail-body{ padding:18px var(--gutter) 0; }
 
   .mc-submenu-triplet{ display:flex; gap:5px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
@@ -2025,7 +2026,9 @@
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
     // Most z cvičení do jeho oddílu v Moje cesta — hned pod názvem, nad perexem.
     if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
-    if(item.perex) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
+    // U cvičení jde perex do Postupu pod box náročnosti (24. 11. 2026) — taby jsou hned pod oddílem
+    // a při přepínání Info / Teorie / Praxe se úvod neopakuje. Ostatní typy (články…) ho mají nahoře.
+    if(item.perex&&!isEx) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
     if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+admPanel(admDetailTargets(store,item,sec,tab),false)+'</div>';
 
     if(hasTabs){
@@ -2048,6 +2051,7 @@
         h+='</div>';
         if(item.difficulty) h+='<span class="s-sep"></span><div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
         h+='</div>';
+        if(item.perex) h+='<div class="mc-detail-perex ex">'+esc(item.perex)+'</div>';
         // Box řetězu — jediný nosič návaznosti. Rozklik ukáže celý řetěz.
         if(item.chain_id && byChain[item.chain_id]){
           var ch=itemIndex.chains[item.chain_id], list=byChain[item.chain_id];
