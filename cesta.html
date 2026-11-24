@@ -635,8 +635,6 @@
   .mc-detail-heart.on .he{ display:none; }
   .mc-detail-heart.on .hf{ display:block; }
   .mc-detail-meta{ padding:10px var(--gutter) 0; }
-  .mc-detail-perex{ padding:10px var(--gutter) 0; font-family:var(--sans); font-size:15px; line-height:1.55; color:var(--soft); }
-  .mc-detail-perex.ex{ padding-top:16px; }
   .mc-detail-body{ padding:18px var(--gutter) 0; }
 
   .mc-submenu-triplet{ display:flex; gap:5px; padding:14px var(--gutter) 4px; flex-wrap:wrap; }
@@ -707,7 +705,8 @@
   .mc-strip.ex .s-ic svg{ width:calc(var(--n) * 8px + 4px); height:calc(var(--n) * 8px + 4px); }
   .mc-strip .s-rows{ flex:1; min-width:0; display:flex; flex-direction:column; }
   .mc-strip .s-rows .s-value{ line-height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  .mc-strip .s-sep{ align-self:stretch; width:1px; background:var(--border); flex-shrink:0; }
+  /* Svislá linka přes celou výšku boxu, od horního k dolnímu okraji (záporný margin = padding boxu). */
+  .mc-strip .s-sep{ align-self:stretch; width:1px; margin:-14px 0; background:var(--border); flex-shrink:0; }
   .mc-strip .s-diff{ text-align:left; flex-shrink:0; }
   .mc-strip .s-diff .s-label{ margin-bottom:6px; }
 
@@ -1887,7 +1886,6 @@
     var h='<button class="mc-back" onclick="MC.journeyBack()">← Oddíly</button>';
     h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">Oddíl '+("0"+s.sort_order).slice(-2)+'</div></div>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.title)+'</div></div>';
-    if(s.perex) h+='<div class="mc-detail-perex">'+esc(s.perex)+'</div>';
     var tabs=journeyTabs(s);
     if(tabs.length<=1){
       // Oddíly bez cvičení — jen text. Když zbyde jediný tab, nekreslí se.
@@ -2058,11 +2056,10 @@
 
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
-    // Most z cvičení do jeho oddílu v Moje cesta — hned pod názvem, nad perexem.
+    // Most z cvičení do jeho oddílu v Moje cesta — hned pod názvem.
     if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
-    // U cvičení jde perex do Postupu pod box náročnosti (24. 11. 2026) — taby jsou hned pod oddílem
-    // a při přepínání Info / Teorie / Praxe se úvod neopakuje. Ostatní typy (články…) ho mají nahoře.
-    if(item.perex&&!isEx) h+='<div class="mc-detail-perex">'+esc(item.perex)+'</div>';
+    // Perex je upoutávka na kartu, v detailu se nekreslí (od 24. 11. 2026, Bob) — článek jede rovnou
+    // textem, cvičení začíná „Než začneme“, oddíl svým obsahem.
     if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+admPanel(admDetailTargets(store,item,sec,tab),false)+'</div>';
 
     if(hasTabs){
@@ -2085,7 +2082,6 @@
         h+='</div>';
         if(item.difficulty) h+='<span class="s-sep"></span><div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
         h+='</div>';
-        if(item.perex) h+='<div class="mc-detail-perex ex">'+esc(item.perex)+'</div>';
         // Box řetězu — jediný nosič návaznosti. Rozklik ukáže celý řetěz.
         if(item.chain_id && byChain[item.chain_id]){
           var ch=itemIndex.chains[item.chain_id], list=byChain[item.chain_id];
