@@ -236,16 +236,17 @@
   .mc-tile.empty{ opacity:.45; cursor:default; }
   .mc-tile.empty:active{ transform:none; }
   /* Rozložení na výšku displeje (24. 11. 2026): jedna mezera --fg všude — nadpis → text → podbarvení
-     paklu → materiály → spodek obrazovky. Pakl a materiály si dělí zbytek výšky 3 : 2 (dlaždice paklu
+     paklu → materiály → spodek obrazovky. Pakl a materiály si dělí zbytek výšky 5 : 4 (dlaždice paklu
      vyšší, materiály nižší, v řadě stejně vysoké). Selektory s #mc-root, ať je nepřebije .mc-sec-head
      (dřív kvůli tomu text ležel na paklu). Minima jsou nízká, aby se to vešlo i s lištou prohlížeče. */
-  #mc-root[data-page="favhome"]{ --fg:20px; display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:var(--fg); }
-  #mc-root[data-page="favhome"] .mc-fav-intro{ padding:20px var(--gutter) var(--fg); }
+  /* box-sizing: root ho jinak nemá (reset jen potomkům) a spodní mezera by ležela pod okrajem obrazovky. */
+  #mc-root[data-page="favhome"]{ --fg:18px; box-sizing:border-box; display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:var(--fg); }
+  #mc-root[data-page="favhome"] .mc-fav-intro{ padding:var(--fg) var(--gutter); }
   #mc-root[data-page="favhome"] .mc-fav-intro p{ margin-top:var(--fg); }
-  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:var(--fg); flex:3 1 0; display:flex; flex-direction:column; }
+  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:var(--fg); flex:5 1 0; display:flex; flex-direction:column; }
   #mc-root[data-page="favhome"] .mc-fav-pack .mc-tiles{ flex:1; grid-template-rows:repeat(2,minmax(84px,1fr)); }
   #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile{ min-height:0; overflow:hidden; }
-  #mc-root[data-page="favhome"] .mc-fav-mat{ flex:2 1 0; grid-template-rows:repeat(2,minmax(76px,1fr)); }
+  #mc-root[data-page="favhome"] .mc-fav-mat{ flex:4 1 0; grid-template-rows:repeat(2,minmax(76px,1fr)); }
   #mc-root[data-page="favhome"] .mc-fav-mat .mc-tile{ overflow:hidden; }
   /* Nízký displej: menší ikona a padding v paklu (jako na homepage), ať se dlaždice vejde do 84 px. */
   @media (max-height:760px){
