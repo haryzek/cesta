@@ -235,18 +235,22 @@
   .mc-tile[data-tone="teal"] .mc-tile-num{ color:var(--teal); }
   .mc-tile.empty{ opacity:.45; cursor:default; }
   .mc-tile.empty:active{ transform:none; }
-  /* Úvodní text: od H1 a od paklu se vzduchem (víc vzduchu 24. 11. 2026). */
-  .mc-fav-intro{ padding-bottom:26px; }
+  /* Rozložení na výšku displeje (24. 11. 2026): nadpis → 14 px → text → 28 px → pakl → 28 px → materiály
+     → gutter dole. Pakl a materiály si dělí zbytek výšky 3 : 2 (dlaždice paklu vyšší, materiály nižší,
+     všechny v řadě stejně vysoké). Na nízkém displeji drží minimum a stránka se roluje. */
+  #mc-root[data-page="favhome"]{ display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:var(--gutter); }
+  .mc-fav-intro{ padding-bottom:28px; }
   .mc-fav-intro p{ margin-top:14px; }
-  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:26px; }
-  /* Pakl nechává velké dlaždice; materiály pod ním nižší, všechny stejně vysoké (stejný design, menší ikona a číslo). */
-  .mc-fav-mat{ grid-template-rows:repeat(2,84px); padding-bottom:var(--gutter); }
-  .mc-fav-mat .mc-tile{ min-height:84px; gap:6px; padding:12px var(--tile-pad); }
+  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:28px; flex:3 1 0; display:flex; flex-direction:column; }
+  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tiles{ flex:1; grid-template-rows:repeat(2,minmax(104px,1fr)); }
+  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile{ min-height:0; }
+  #mc-root[data-page="favhome"] .mc-fav-mat{ flex:2 1 0; grid-template-rows:repeat(2,minmax(76px,1fr)); }
+  .mc-fav-mat{ grid-template-rows:repeat(2,84px); }
+  .mc-fav-mat .mc-tile{ min-height:0; gap:6px; padding:12px var(--tile-pad); }
   .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
   .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
   .mc-fav-mat .mc-tile-num{ font-size:26px; top:11px; right:14px; }
   .mc-fav-mat .mc-tile-name{ font-size:16px; }
-  #mc-root[data-page="favhome"]{ padding-bottom:0; }
   .mc-sec-row .mc-vt{ margin-left:auto; }
   .mc-ftabs .mc-vt{ flex-shrink:0; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
@@ -307,7 +311,7 @@
   /* Otázky / Inspirace: Filtr a přepínač v řádku s nadpisem, přicvaknuté k pravé hraně. */
   .mc-sec-row .mc-head-tools{ padding:0; flex-wrap:nowrap; margin-left:auto; }
   /* Karty Otázek a Inspirace bez scrollu stránky — stejně jako zápisník přerámování. */
-  .mc-qfold .mc-swipe-wrap{ padding-top:12px; }
+  .mc-qfold .mc-swipe-wrap{ padding-top:14px; }
   .mc-qfold .mc-swipe{ height:calc(100vh - 200px); height:calc(100svh - 200px); min-height:360px; }
   .mc-submenu .mc-filter-btn svg{ width:15px; height:15px; }
   .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px;
@@ -445,7 +449,15 @@
   .mc-folder .mc-swipe-wrap{ padding:0; }
   .mc-folder .mc-swipe{ height:calc(100vh - 180px); height:calc(100svh - 180px); min-height:380px; max-height:none; }
   .mc-folder .mc-swipe-card{ padding-top:0; padding-bottom:0; }
-  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:12px var(--gutter); }
+  /* Od 24. 11. 2026: blok s kartami (.mc-folder) má výšku okna bez horní lišty (69 px) — hlavička
+     (Zpět + záložky / nadpis s tlačítky) nahoře, karta vyplní zbytek, spodní lišta se stejným
+     odstupem od karty i od spodku obrazovky. Bez scrollu stránky. Odstup hlavička → karta 16 px všude. */
+  #mc-root[data-page="fill"]{ padding-bottom:0; }
+  #mc-root[data-page="fill"] .mc-folder{ min-height:calc(100vh - 69px); min-height:calc(100dvh - 69px); display:flex; flex-direction:column; }
+  #mc-root[data-page="fill"] .mc-folder .mc-swipe-wrap{ flex:1; min-height:0; display:flex; flex-direction:column; }
+  #mc-root[data-page="fill"] .mc-folder .mc-swipe{ flex:1; height:auto; min-height:300px; max-height:none; }
+  #mc-root[data-page="fill"] .mc-sfoot{ padding:14px var(--gutter); }
+  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:12px var(--gutter) 16px; }
   .mc-fback{ margin-right:auto; background:none; border:none; padding:0; cursor:pointer;
     color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
   .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
@@ -1505,7 +1517,7 @@
     // Úvodka se roztahuje na výšku okna, aby dlaždice vyplnily zbytek plochy
     // pod citátem — ten má proměnnou délku, takže se to musí počítat samo.
     root.setAttribute("data-page",state.detail?"":state.page==="home"?"home":(state.page==="favorites"&&!state.fav.tile&&favCount()>0)?"favhome":"");
-    var h=viewTopbar(); STREAM_SEEN=false;
+    var h=viewTopbar(); STREAM_SEEN=false; FILL=false;
     if(state.detail){ h+=viewContentDetail(); }
     else if(state.page==="home"){ h+=viewHome(); }
     else if(state.page==="favorites"){ h+=viewFavorites(); }
@@ -1522,6 +1534,7 @@
       else h+='<div class="mc-empty">—</div>';
     }
     if(!STREAM_SEEN) state.onDecided=null;   // mimo proud → při příštím vstupu se rozhodne znovu
+    if(FILL&&!state.detail) root.setAttribute("data-page","fill");
     if(state.menuOpen) h+=viewMenu();
     if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
     h+=viewToast();
@@ -1986,7 +1999,9 @@
     if(viewMode()==="swipe"){
       var qKey=key+":"+s.mode+":"+s.kw+":"+s.tags.join(",");
       if(!all.length) return h+'<div class="mc-empty">Nic neodpovídá filtru.</div>';
-      return h+'<div class="mc-folder mc-qfold">'+swipeView(cfg.store,qKey,swipeItems(cfg.store,qKey,all),function(it){ return it.author?esc(it.author):""; })+swipeFoot(unseenCount(cfg.store,all))+'</div>';
+      h='<div class="mc-folder mc-qfold">'+h;   // hlavička uvnitř bloku, ať blok i s ní vyplní okno
+      // Autor citátu vpravo dole (jako pocit u přerámování) — na kartě jen text a srdíčko.
+      return h+swipeView(cfg.store,qKey,swipeItems(cfg.store,qKey,all),function(it){ return it.author?esc(it.author):""; },function(it){ return it.author||""; })+swipeFoot(unseenCount(cfg.store,all))+'</div>';
     }
     h+='<ul class="mc-cards">';
     if(!all.length) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
@@ -2471,7 +2486,9 @@
     var keep=state.swipe.key===key?state.swipe.ids:[];
     return all.filter(function(it){ return !isSeen(store,it.id)||keep.indexOf(it.id)>-1; });
   }
+  var FILL=false;
   function swipeView(store,key,items,meta,fbName,softCut,pre){
+    FILL=true;
     var sw=state.swipe;
     if(sw.key!==key){ sw.key=key; sw.ids=(sw.shuffle?shuffle(items.slice()):items).map(function(it){ return it.id; }); sw.index=0; sw.shuffle=false; }
     var idx={}; items.forEach(function(it){ idx[it.id]=it; });
