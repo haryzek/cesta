@@ -235,16 +235,25 @@
   .mc-tile[data-tone="teal"] .mc-tile-num{ color:var(--teal); }
   .mc-tile.empty{ opacity:.45; cursor:default; }
   .mc-tile.empty:active{ transform:none; }
-  /* Rozložení na výšku displeje (24. 11. 2026): nadpis → 14 px → text → 28 px → pakl → 28 px → materiály
-     → gutter dole. Pakl a materiály si dělí zbytek výšky 3 : 2 (dlaždice paklu vyšší, materiály nižší,
-     všechny v řadě stejně vysoké). Na nízkém displeji drží minimum a stránka se roluje. */
-  #mc-root[data-page="favhome"]{ display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:var(--gutter); }
-  .mc-fav-intro{ padding-bottom:28px; }
-  .mc-fav-intro p{ margin-top:14px; }
-  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:28px; flex:3 1 0; display:flex; flex-direction:column; }
-  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tiles{ flex:1; grid-template-rows:repeat(2,minmax(104px,1fr)); }
-  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile{ min-height:0; }
+  /* Rozložení na výšku displeje (24. 11. 2026): jedna mezera --fg všude — nadpis → text → podbarvení
+     paklu → materiály → spodek obrazovky. Pakl a materiály si dělí zbytek výšky 3 : 2 (dlaždice paklu
+     vyšší, materiály nižší, v řadě stejně vysoké). Selektory s #mc-root, ať je nepřebije .mc-sec-head
+     (dřív kvůli tomu text ležel na paklu). Minima jsou nízká, aby se to vešlo i s lištou prohlížeče. */
+  #mc-root[data-page="favhome"]{ --fg:20px; display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:var(--fg); }
+  #mc-root[data-page="favhome"] .mc-fav-intro{ padding:20px var(--gutter) var(--fg); }
+  #mc-root[data-page="favhome"] .mc-fav-intro p{ margin-top:var(--fg); }
+  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:var(--fg); flex:3 1 0; display:flex; flex-direction:column; }
+  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tiles{ flex:1; grid-template-rows:repeat(2,minmax(84px,1fr)); }
+  #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile{ min-height:0; overflow:hidden; }
   #mc-root[data-page="favhome"] .mc-fav-mat{ flex:2 1 0; grid-template-rows:repeat(2,minmax(76px,1fr)); }
+  #mc-root[data-page="favhome"] .mc-fav-mat .mc-tile{ overflow:hidden; }
+  /* Nízký displej: menší ikona a padding v paklu (jako na homepage), ať se dlaždice vejde do 84 px. */
+  @media (max-height:760px){
+    #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile{ gap:6px; padding:12px var(--tile-pad); }
+    #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
+    #mc-root[data-page="favhome"] .mc-fav-pack .mc-tile-ic svg{ width:17px; height:17px; }
+    #mc-root[data-page="favhome"] .mc-fav-mat .mc-tile{ padding:10px var(--tile-pad); gap:4px; }
+  }
   .mc-fav-mat{ grid-template-rows:repeat(2,84px); }
   .mc-fav-mat .mc-tile{ min-height:0; gap:6px; padding:12px var(--tile-pad); }
   .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
@@ -311,7 +320,7 @@
   /* Otázky / Inspirace: Filtr a přepínač v řádku s nadpisem, přicvaknuté k pravé hraně. */
   .mc-sec-row .mc-head-tools{ padding:0; flex-wrap:nowrap; margin-left:auto; }
   /* Karty Otázek a Inspirace bez scrollu stránky — stejně jako zápisník přerámování. */
-  .mc-qfold .mc-swipe-wrap{ padding-top:14px; }
+  .mc-qfold .mc-swipe-wrap{ padding-top:0; }
   .mc-qfold .mc-swipe{ height:calc(100vh - 200px); height:calc(100svh - 200px); min-height:360px; }
   .mc-submenu .mc-filter-btn svg{ width:15px; height:15px; }
   .mc-submenu .mc-filter-btn .fc{ background:var(--accent); color:var(--on-accent); font-family:var(--mono); font-size:10px;
@@ -466,8 +475,12 @@
   #mc-root[data-page="fill"] .mc-folder{ min-height:calc(100vh - 69px); min-height:calc(100dvh - 69px); display:flex; flex-direction:column; }
   #mc-root[data-page="fill"] .mc-folder .mc-swipe-wrap{ flex:1; min-height:0; display:flex; flex-direction:column; }
   #mc-root[data-page="fill"] .mc-folder .mc-swipe{ flex:1; height:auto; min-height:300px; max-height:none; }
-  #mc-root[data-page="fill"] .mc-sfoot{ padding:14px var(--gutter); }
-  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:12px var(--gutter) 16px; }
+  /* Symetrie (24. 11. 2026): řádek nad kartou (Zpět + záložky + přepínač, u Otázek a Inspirace nadpis
+     + Filtr + přepínač) i lišta pod kartou mají nad sebou a pod sebou stejných 16 px — vycentrované
+     ve volném prostoru mezi horní lištou appky / spodkem obrazovky a kartou. */
+  #mc-root[data-page="fill"] .mc-sfoot{ padding:16px var(--gutter); }
+  .mc-ftabs{ display:flex; align-items:center; gap:8px; padding:16px var(--gutter); }
+  .mc-qfold .mc-sec-head{ padding:16px var(--gutter); }
   .mc-fback{ margin-right:auto; background:none; border:none; padding:0; cursor:pointer;
     color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; white-space:nowrap; }
   .mc-submenu-triplet.in{ padding:0; flex-wrap:nowrap; }
