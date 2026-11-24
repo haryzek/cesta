@@ -235,11 +235,20 @@
   .mc-tile[data-tone="teal"] .mc-tile-num{ color:var(--teal); }
   .mc-tile.empty{ opacity:.45; cursor:default; }
   .mc-tile.empty:active{ transform:none; }
-  .mc-fav-mat .mc-tile{ min-height:0; flex-direction:row; align-items:center; gap:10px; padding:12px var(--tile-pad); }
-  .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; flex-shrink:0; }
-  .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
-  .mc-fav-mat .mc-tile-name{ margin-top:0; flex:1; min-width:0; font-size:15px; }
-  .mc-fav-mat .mc-tile-num{ position:static; font-size:20px; font-variation-settings:'opsz' 24; }
+  /* Úvodní text: od H1 a od paklu se vzduchem. */
+  .mc-fav-intro{ padding-bottom:14px; }
+  .mc-fav-intro p{ margin-top:10px; }
+  /* Stránka s dlaždicemi vyplní výšku displeje jako homepage: pakl má pevnou výšku, materiály
+     pod ním si vezmou zbytek (stejný design, jen nižší). Když místo nestačí, stránka se roluje. */
+  #mc-root[data-page="favhome"]{ display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:0; }
+  #mc-root[data-page="favhome"] .mc-fav-mat{ flex:1; grid-template-rows:repeat(2,minmax(96px,1fr)); padding-bottom:var(--gutter); }
+  .mc-fav-mat .mc-tile{ min-height:96px; }
+  @media (max-height:700px){
+    #mc-root[data-page="favhome"] .mc-fav-mat{ grid-template-rows:repeat(2,minmax(84px,1fr)); }
+    .mc-fav-mat .mc-tile{ min-height:84px; gap:6px; padding:12px var(--tile-pad); }
+    .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
+    .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
+  }
   .mc-sec-row .mc-vt{ margin-left:auto; }
   .mc-ftabs .mc-vt{ flex-shrink:0; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
@@ -1483,7 +1492,7 @@
     root.setAttribute("data-tone",(cur&&cur.tone)||"accent");
     // Úvodka se roztahuje na výšku okna, aby dlaždice vyplnily zbytek plochy
     // pod citátem — ten má proměnnou délku, takže se to musí počítat samo.
-    root.setAttribute("data-page",(!state.detail&&state.page==="home")?"home":"");
+    root.setAttribute("data-page",state.detail?"":state.page==="home"?"home":(state.page==="favorites"&&!state.fav.tile&&favCount()>0)?"favhome":"");
     var h=viewTopbar();
     if(state.detail){ h+=viewContentDetail(); }
     else if(state.page==="home"){ h+=viewHome(); }
@@ -2155,6 +2164,7 @@
     if(favCount()===0) return h+'<div class="mc-empty"><div class="e-ic">♡</div>Zatím tu nic není.<br>Klepněte na srdíčko u věty, která vás osloví, a najdete ji tady.</div>';
     var t=state.fav.tile;
     if(t){ for(var i=0;i<FAV_MAT.length;i++){ if(FAV_MAT[i].key===t) return favMaterial(FAV_MAT[i]); } return favCards(t); }
+    h='<div class="mc-sec-head mc-fav-intro"><h1>Moje oblíbené</h1><p>Co vás oslovilo, máte tady po ruce. Vracejte se sem klidně denně, třeba v tramvaji nebo ve frontě. Co potkáváte často, usadí se vám v hlavě i v těle.</p></div>';
     h+='<div class="mc-fav-pack"><div class="mc-tiles">';
     FAV_PACK.forEach(function(p){ h+=favTileHtml(p,favCountOf(p.stores),"teal","MC.favTile('"+p.key+"')"); });
     h+='</div></div><div class="mc-tiles mc-fav-mat">';
