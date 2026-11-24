@@ -671,12 +671,17 @@
   .mc-strip .s-label{ font-family:var(--sans); font-size:11px; text-transform:uppercase; letter-spacing:0.06em;
     color:var(--muted); font-weight:600; margin-bottom:1px; }
   .mc-strip .s-value{ font-family:var(--sans); font-size:14px; font-weight:600; color:var(--text); }
-  /* Box náročnosti: vlevo řádky Trvání / Praxe, vpravo pilulka náročnosti */
-  .mc-strip .s-rows{ flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; }
-  .mc-strip .s-rows > div{ display:flex; gap:8px; align-items:baseline; }
-  .mc-strip .s-rows .s-label{ margin:0; min-width:56px; }
-  .mc-strip .s-diff{ text-align:right; flex-shrink:0; }
-  .mc-strip .s-diff .s-label{ margin-bottom:4px; }
+  /* Box náročnosti (24. 11. 2026): hodiny v boxu vysokém jako řádky textu, řádky bez popisků
+     (trvání / frekvence / doba praxe — každý zvlášť, ať se nic nezalamuje), svislá linka,
+     vpravo „Náročnost“ a pod ní pilulka zarovnaná doleva. */
+  .mc-strip.ex{ align-items:center; gap:12px; }
+  .mc-strip.ex .s-ic{ width:calc(var(--n) * 20px); height:calc(var(--n) * 20px); border-radius:12px; }
+  .mc-strip.ex .s-ic svg{ width:calc(var(--n) * 8px + 4px); height:calc(var(--n) * 8px + 4px); }
+  .mc-strip .s-rows{ flex:1; min-width:0; display:flex; flex-direction:column; }
+  .mc-strip .s-rows .s-value{ line-height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mc-strip .s-sep{ align-self:stretch; width:1px; background:var(--border); flex-shrink:0; }
+  .mc-strip .s-diff{ text-align:left; flex-shrink:0; }
+  .mc-strip .s-diff .s-label{ margin-bottom:6px; }
 
   /* ===== JOURNAL CARD (Zápis do deníku) =====
      Reflexe po cvičení — odlišená teal kartou (klidová/čtecí barva) proti
@@ -2037,12 +2042,11 @@
       if(isEx){
         // Box náročnosti: Trvání (jedna performance) · Praxe (frequency /
         // training_period) · Náročnost. Návrh local/_design/box_náročnosti.jpg.
-        var praxe=[item.frequency,item.training_period].filter(Boolean).join(" / ");
-        h+='<div class="mc-strip"><div class="s-ic">'+IC.clock+'</div><div class="s-rows">';
-        if(item.duration) h+='<div><span class="s-label">Trvání:</span><span class="s-value">'+esc(item.duration)+' min</span></div>';
-        if(praxe) h+='<div><span class="s-label">Praxe:</span><span class="s-value">'+esc(praxe)+'</span></div>';
+        var lines=[item.duration?item.duration+" min":"",item.frequency,item.training_period].filter(Boolean);
+        h+='<div class="mc-strip ex" style="--n:'+Math.max(2,lines.length)+'"><div class="s-ic">'+IC.clock+'</div><div class="s-rows">';
+        lines.forEach(function(l){ h+='<div class="s-value">'+esc(l)+'</div>'; });
         h+='</div>';
-        if(item.difficulty) h+='<div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
+        if(item.difficulty) h+='<span class="s-sep"></span><div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
         h+='</div>';
         // Box řetězu — jediný nosič návaznosti. Rozklik ukáže celý řetěz.
         if(item.chain_id && byChain[item.chain_id]){
