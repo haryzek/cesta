@@ -337,15 +337,16 @@
   .mc-fsheet .fs-body{ flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:16px var(--gutter) 24px; }
   .mc-fsheet .fs-foot{ display:flex; gap:10px; padding:12px var(--gutter) calc(12px + env(safe-area-inset-bottom)); border-top:1px solid var(--border); background:var(--bg); }
   .mc-fsheet .fs-foot .mc-fab{ flex:1; min-width:0; }
-  .mc-fsheet .fs-foot .mc-fab.ghost{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; }
+  .mc-fsheet .fs-foot .mc-fab.ghost{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; border:1.5px solid var(--soft); color:var(--text); background:var(--surface); }
   .mc-fsheet .fs-foot .mc-fab:disabled{ opacity:.45; cursor:default; }
   .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
     background:var(--surface); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:14px; }
   .fkw:focus{ border-color:var(--tone); }
     .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
-  .mc-chip{ background:var(--surface-2); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
+  .mc-chip{ background:var(--surface); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
-  .mc-chip.dur{ background:var(--accent-dim); border-color:transparent; color:var(--accent); font-family:var(--mono); font-weight:700; }
+  .mc-chip.dur{ background:var(--surface); color:var(--accent); font-family:var(--mono); font-weight:700; }
+  .mc-dur-row{ margin-bottom:18px; }
   @media (hover:hover){ .mc-chip:hover{ border-color:var(--soft); } }
   .mc-chip.on,.mc-chip.dur.on{ background:var(--tone); border-color:var(--tone); color:var(--on-accent); font-weight:700; }
   .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
@@ -2046,7 +2047,8 @@
     h+='<input class="fkw" placeholder="Klíčové slovo…" enterkeyhint="search" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.filterKey(event,\''+key+'\')">';
     var chips='';
     if(cfg.timeField==="duration"){
-      durationBuckets().forEach(function(b,i){ chips+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
+      var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(''+key+'','+i+')">'+b.label+'</button>'; });
+      h+='<div class="mc-chips mc-dur-row">'+dur+'</div>';   // délka zvlášť nahoře, štítky pod ní (24. 11. 2026)
     }
     allTags(cfg.dataKey).forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
     if(chips) h+='<div class="mc-chips">'+chips+'</div>';
