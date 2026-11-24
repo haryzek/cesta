@@ -1700,7 +1700,7 @@
   function viewRfFearGroup(){
     var rf=state.rf;
     var h='<button class="mc-back" onclick="MC.rfGate(\'fears\')">← Strachy</button>';
-    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">'+esc(rf.fearGroup)+'</div></div>';
+    // Kategorie pod Zpět se neopakuje (24. 11. 2026) — uživatel ji právě vybral.
     h+='<div class="mc-detail-head"><div class="mc-detail-title">Čeho se bojím?</div></div>';
     var list=flat.situations.filter(function(x){ return x.group===rf.fearGroup; });
     return h+nameList(list,function(it){ return "MC.rfSituation('"+it.id+"')"; });
@@ -1723,7 +1723,6 @@
     if(!s) return '<div class="mc-empty">Nenalezeno.</div>';
     var h='<button class="mc-back" onclick="MC.rfSitBack()">← Zpět</button>';
     var al=alertBoxes([s.id]); h+=al;
-    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">'+esc(s.group)+'</div></div>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.name)+'</div></div>';
     if(s.mark==="K"){
       if(!al) h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
