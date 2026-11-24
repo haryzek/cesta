@@ -235,20 +235,18 @@
   .mc-tile[data-tone="teal"] .mc-tile-num{ color:var(--teal); }
   .mc-tile.empty{ opacity:.45; cursor:default; }
   .mc-tile.empty:active{ transform:none; }
-  /* Úvodní text: od H1 a od paklu se vzduchem. */
-  .mc-fav-intro{ padding-bottom:14px; }
-  .mc-fav-intro p{ margin-top:10px; }
-  /* Stránka s dlaždicemi vyplní výšku displeje jako homepage: pakl má pevnou výšku, materiály
-     pod ním si vezmou zbytek (stejný design, jen nižší). Když místo nestačí, stránka se roluje. */
-  #mc-root[data-page="favhome"]{ display:flex; flex-direction:column; min-height:100vh; min-height:100dvh; padding-bottom:0; }
-  #mc-root[data-page="favhome"] .mc-fav-mat{ flex:1; grid-template-rows:repeat(2,minmax(96px,1fr)); padding-bottom:var(--gutter); }
-  .mc-fav-mat .mc-tile{ min-height:96px; }
-  @media (max-height:700px){
-    #mc-root[data-page="favhome"] .mc-fav-mat{ grid-template-rows:repeat(2,minmax(84px,1fr)); }
-    .mc-fav-mat .mc-tile{ min-height:84px; gap:6px; padding:12px var(--tile-pad); }
-    .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
-    .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
-  }
+  /* Úvodní text: od H1 a od paklu se vzduchem (víc vzduchu 24. 11. 2026). */
+  .mc-fav-intro{ padding-bottom:26px; }
+  .mc-fav-intro p{ margin-top:14px; }
+  #mc-root[data-page="favhome"] .mc-fav-pack{ margin-top:0; margin-bottom:26px; }
+  /* Pakl nechává velké dlaždice; materiály pod ním nižší, všechny stejně vysoké (stejný design, menší ikona a číslo). */
+  .mc-fav-mat{ grid-template-rows:repeat(2,84px); padding-bottom:var(--gutter); }
+  .mc-fav-mat .mc-tile{ min-height:84px; gap:6px; padding:12px var(--tile-pad); }
+  .mc-fav-mat .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
+  .mc-fav-mat .mc-tile-ic svg{ width:17px; height:17px; }
+  .mc-fav-mat .mc-tile-num{ font-size:26px; top:11px; right:14px; }
+  .mc-fav-mat .mc-tile-name{ font-size:16px; }
+  #mc-root[data-page="favhome"]{ padding-bottom:0; }
   .mc-sec-row .mc-vt{ margin-left:auto; }
   .mc-ftabs .mc-vt{ flex-shrink:0; }
   .mc-tile-badge{ position:absolute; top:12px; right:12px; min-width:18px; height:18px; padding:0 5px;
