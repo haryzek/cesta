@@ -1542,7 +1542,10 @@
       var q=deburr(s.kw);
       // Hledá v obsahu: název / titulek, text věty, perex, autor citátu a štítky (od 25. 11. 2026 i autor
       // a štítky). Plný text článků a postupů vědomě ne — běžná slova by vrátila skoro všechno.
-      items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex,it.author].concat(it.tags||[]).filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
+      // Skloňování: z každého slova se hledá kmen (delší slovo bez 2 posledních písmen, kratší bez 1),
+      // „motivace“ → „motiva“ najde i motivací / motivaci. Víc slov = musí sedět všechna.
+      var stems=q.split(/\s+/).filter(Boolean).map(function(w){ return w.length>=6?w.slice(0,-2):w.length>=4?w.slice(0,-1):w; });
+      items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex,it.author].concat(it.tags||[]).filter(Boolean).join(" ")); return stems.every(function(st){ return hay.indexOf(st)>-1; }); });
     }
     // Tagy se sčítají (OR): víc zaškrtnutých = širší výběr, ne užší. Dřív AND,
     // což u pár tagů vracelo skoro vždycky prázdno. OR říká CO projde; pořadí
@@ -1644,7 +1647,7 @@
     if(s){ var v=(state.section==="reframing")?state.rf.search:(secState(state.section||"").search); if(v){ s.value=v; } }
   }
 
-  var STILL={};
+  var STILL={}, TYPE_T=null;
   function setStill(el,attr,on){ if(on) el.setAttribute(attr,""); else el.removeAttribute(attr); }
 
   function viewTopbar(){
@@ -1761,7 +1764,7 @@
   }
   function searchBox(placeholder,handler,value){
     var h='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="'+esc(placeholder)+'" enterkeyhint="search" oninput="MC.'+handler+'(this.value)" onkeydown="MC.searchKey(event)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="'+esc(placeholder)+'" enterkeyhint="search" oninput="MC.typed(\''+handler+'\',this.value)" onkeydown="MC.searchKey(event)">';
     if(value&&value.trim()) h+='<div class="mc-search-tools"><button class="mc-search-clear" onclick="MC.'+handler+'(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>';
     return h+'</div>';
   }
@@ -1927,7 +1930,7 @@
     h+='<div class="mc-sec-head"><h1>Jak se cítím?</h1><p>Podívejte se na to z jiné perspektivy.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
-    h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" enterkeyhint="search" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
+    h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" enterkeyhint="search" oninput="MC.typed(\'rfSearch\',this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
     if(rf.search.trim()) h+='<button class="mc-search-clear" onclick="MC.rfSearch(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>';
     h+='</div></div>';
@@ -2063,7 +2066,7 @@
     if(cfg.alpha) items.sort(function(a,b){ return a.name.localeCompare(b.name,"cs"); });
     var h=secHead(key,cfg.label,null);
     if(cfg.search){
-      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" enterkeyhint="search" oninput="MC.secSearch(this.value)" onkeydown="MC.searchKey(event)"></div>';
+      h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" enterkeyhint="search" oninput="MC.typed(\'secSearch\',this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
     }
     h+='<div class="mc-namelist">';
@@ -2119,7 +2122,7 @@
     var h='<div class="mc-fsheet" role="dialog" aria-label="Filtr"><div class="fs-head"><h2>Filtr</h2>'+
       '<button class="mc-icon-btn" onclick="MC.filterShow(\''+key+'\')" aria-label="Zavřít filtr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div><div class="fs-body">';
     // Klávesa s lupou (enterkeyhint) = zavřít klávesnici a zobrazit výsledky.
-    h+='<div class="mc-search-wrap fs-search"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input class="mc-search fkw" placeholder="Klíčové slovo…" enterkeyhint="search" value="'+esc(s.kw)+'" oninput="MC.secKw(\''+key+'\',this.value)" onkeydown="MC.filterKey(event,\''+key+'\')"></div>';
+    h+='<div class="mc-search-wrap fs-search"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input class="mc-search fkw" placeholder="Klíčové slovo…" enterkeyhint="search" value="'+esc(s.kw)+'" oninput="MC.kwInput(\''+key+'\',this.value)" onkeydown="MC.filterKey(event,\''+key+'\')"></div>';
     var chips='';
     if(cfg.timeField==="duration"){
       var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
@@ -2690,6 +2693,17 @@
       scrollTop(); render();
     },
     // Přerámování
+    // Psaní do hledání (25. 11. 2026): seznam se překreslí až po krátké pauze, ne po každé klávese —
+    // překreslení vymění pole pod rukou a klávesnice na Androidu pak zadrhává (hlavně při mazání).
+    typed:function(name,v){ clearTimeout(TYPE_T); TYPE_T=setTimeout(function(){ MC[name](v); },250); },
+    // Klíčové slovo ve filtru: nepřekreslovat vůbec, jen za živa přepsat Zobrazit (N) a Zrušit filtry.
+    kwInput:function(key,v){
+      secState(key).kw=v;
+      var n=contentList(key).length, fc=activeFilterCount(key);
+      var b=document.querySelector(".mc-fsheet .fs-foot .mc-fab:not(.mc-clear)"), c=document.querySelector(".mc-fsheet .fs-foot .mc-clear");
+      if(b){ b.disabled=!n; b.textContent=n?"Zobrazit ("+n+")":"Nic neodpovídá"; }
+      if(c) c.disabled=!fc;
+    },
     rfSearch:function(v){ state.rf.search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     rfSecondary:function(){ state.rf.showSecondary=!state.rf.showSecondary; render(); },
     rfToggle:function(id){
