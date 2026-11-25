@@ -578,9 +578,14 @@
   .mc-soft{ list-style:none; margin:14px 0; padding:22px 20px; border-radius:16px; background:var(--tone-soft); border:1.5px solid var(--tone); text-align:center; }
   .mc-soft .sc-actions{ display:flex; gap:8px; justify-content:center; margin-top:18px; flex-wrap:wrap; }
   .mc-soft .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
+  /* Karta Jak cvičit nad seznamem cvičení (stejný vzhled jako měkký řez, text vlevo). */
+  .mc-soft.mc-intro{ text-align:left; margin-top:0; }
+  .mc-intro-list{ margin:10px 0 0; padding-left:18px; list-style:disc; }
+  .mc-intro-list li{ margin-top:6px; font-size:14.5px; line-height:1.5; color:var(--text); }
+  .mc-soft.mc-intro .sc-actions{ justify-content:flex-start; margin-top:16px; }
   /* Výzva ke swipování */
   @keyframes mcPeek{ 0%{ transform:none; } 35%{ transform:translateX(-64px); } 60%{ transform:translateX(-64px); } 100%{ transform:none; } }
-  .mc-swipe.hint .mc-swipe-card{ animation:mcPeek 1.3s ease .45s 1; }
+  .mc-swipe.hint .mc-swipe-card{ animation:mcPeek 1.2s ease .45s 1; }   /* o ~8 % rychlejší (25. 11. 2026) */
   .mc-swipe-card .sc-actions{ display:flex; gap:8px; justify-content:center; margin-top:24px; flex-wrap:wrap; }
   .mc-swipe-card .sc-actions .mc-fab{ width:auto; padding:12px 22px; }
   .mc-swipe-card .sc-actions.col{ flex-direction:column; align-items:center; gap:10px; }
@@ -2144,6 +2149,12 @@
       h+='<nav class="mc-jump">'+groups.map(function(g){ var sec=itemIndex.sections[g.id]; return '<button onclick="MC.jumpTo(\'exg-'+g.id+'\')">'+esc(jumpLabel(sec?sec.title:""))+'</button>'; }).join('<span class="dot">·</span>')+'</nav>';
     }
     h+='<ul class="mc-cards">';
+    // Jak cvičit (25. 11. 2026): jednou při prvním vstupu do Cvičení, karta nahoře nad seznamem.
+    if(key==="exercises"&&!secTutorDone("exercises")) h+='<li class="mc-soft mc-intro"><div class="sc-soft-t">Jak cvičit</div><ul class="mc-intro-list">'+
+      '<li>V Redakci jsou cvičení v pořadí cvičebnice. Začněte nahoře, u relaxace.</li>'+
+      '<li>Jedno cvičení opakované víckrát dá víc než deset vyzkoušených.</li>'+
+      '<li>U každého cvičení vidíte náročnost a čas, na konci je deník.</li></ul>'+
+      '<div class="sc-actions"><button class="mc-fab" onclick="MC.exIntroOk()">Rozumím</button><button class="mc-fab ghost" onclick="MC.open(\'guide\')">Celý návod ›</button></div></li>';
     if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
     else { var last=null; items.forEach(function(it){
       if(grouped&&it.section_id!==last){ last=it.section_id; var sec=itemIndex.sections[last], g=groups.filter(function(x){ return x.id===last; })[0];
@@ -2166,7 +2177,7 @@
       if(!all.length) return h+'<div class="mc-empty">Nic neodpovídá filtru.</div>';
       h='<div class="mc-folder mc-qfold">'+h;   // hlavička uvnitř bloku, ať blok i s ní vyplní okno
       // Autor citátu vpravo dole (jako pocit u přerámování) — na kartě jen text a srdíčko.
-      return h+swipeView(cfg.store,qKey,swipeItems(cfg.store,qKey,all),function(it){ return it.author?esc(it.author):""; },function(it){ return it.author||""; })+swipeFoot(unseenCount(cfg.store,all))+'</div>';
+      return h+swipeView(cfg.store,qKey,swipeItems(cfg.store,qKey,all),function(it){ return it.author?esc(it.author):""; },function(it){ return it.author||""; },0,secTutorDone(key)?"":quoteTutorCard(key))+swipeFoot(unseenCount(cfg.store,all))+'</div>';
     }
     h+='<ul class="mc-cards">';
     if(!all.length) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
@@ -2732,7 +2743,7 @@
       if(c&&c.getAttribute("data-id")&&markSeen(c.getAttribute("data-store")||store,c.getAttribute("data-id"))){
         var fc=document.querySelector(".mc-newc")||document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
       }
-      if(i>0){ try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
+      if(i>0){ try{ var tc=el.querySelector(".mc-swipe-card.tutor"); if(tc) localStorage.setItem(tc.getAttribute("data-tkey")||TUTOR_KEY,"1"); }catch(e){} }
       // Druhá návodná karta: tlačítka Otázky / Úkoly nahoře pulzují, dokud je karta na obrazovce.
       var tb=document.querySelector(".mc-ftabs .mc-submenu-triplet"); if(tb) tb.classList.toggle("pulse",!!(c&&c.classList.contains("tutor2")));
       var sb=document.querySelector(".mc-sfoot .mc-switch"); if(sb) sb.classList.toggle("pulse",!!(c&&c.classList.contains("tutor3")));
@@ -2859,6 +2870,7 @@
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
+    exIntroOk:function(){ try{ localStorage.setItem(TUTOR_SEC.exercises,"1"); }catch(e){} render(); },
     jumpTo:function(id){ var el=document.getElementById(id); if(el&&el.scrollIntoView) el.scrollIntoView({behavior:"smooth",block:"start"}); },
     deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
     deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
@@ -2959,7 +2971,7 @@
       if(!window.confirm("Vymazat všechna oblíbená a paměť viděného?")) return;
       USER=emptyUser(); saveUser(); state.swipe.key=null; state.swipe.ids=[];
       // Čistý start i pro návod a výzvu ke swipování (ať jde návod znovu vyzkoušet).
-      try{ localStorage.removeItem(TUTOR_KEY); localStorage.removeItem("mc_swipe_visits"); }catch(e){} HINTED={};
+      try{ localStorage.removeItem(TUTOR_KEY); localStorage.removeItem("mc_swipe_visits"); Object.keys(TUTOR_SEC).forEach(function(k){ localStorage.removeItem(TUTOR_SEC[k]); }); }catch(e){} HINTED={};
       toast("Oblíbené, viděné a návod vynulovány"); render();
     },
     admReset:function(){
@@ -3042,6 +3054,17 @@
   }
   function tutorCard3(){
     return '<div class="mc-swipe-card tutor tutor3"><div class="sc-body"><div class="sc-tutor-t">Jen nové</div><p class="sc-tutor-p">Přepínač dole ukazuje jen karty, které jste ještě neviděli. Číslo říká, kolik jich zbývá.</p><p class="sc-tutor-p">Až uvidíte všechno, můžete si to projít znovu.</p><span class="sc-tutor-dl" aria-hidden="true">'+ARROW_UP+'</span></div></div>';
+  }
+  // Návodné karty Otázek a Inspirace (25. 11. 2026): první karta, jednou za sekci (vlastní klíč);
+  // učí i swipe, protože kdo přijde rovnou sem, návod z přerámování neviděl. Jádro = Bobovo „Jak číst“.
+  // Texty jsou návrh, Bob je ladí s Karolínkou.
+  var TUTOR_SEC={ questions:"mc_tutor_questions", inspirations:"mc_tutor_inspirations", exercises:"mc_tutor_exercises" };
+  function secTutorDone(k){ try{ return localStorage.getItem(TUTOR_SEC[k])==="1"; }catch(e){ return true; } }
+  function quoteTutorCard(k){
+    var t=k==="questions"
+      ?'<div class="sc-tutor-t">Otázky k zamyšlení</div><p class="sc-tutor-p">Nemají správné odpovědi. Vyberte si jednu, která vás zaujme, a chvíli s ní zůstaňte. Klidně celý den.</p>'
+      :'<div class="sc-tutor-t">Jak číst</div><p class="sc-tutor-p">Pomalu, klidně nahlas. Stačí pár vět, které necháte doznít.</p>';
+    return '<div class="mc-swipe-card tutor" data-tkey="'+TUTOR_SEC[k]+'"><div class="sc-body">'+t+'<p class="sc-tutor-p">Posuňte prstem doleva a přijde další. Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
   }
   function preCards(alertIds,withTypes){
     return alertCard(alertIds)+(tutorDone()?"":tutorCard()+(withTypes?tutorCard2():"")+tutorCard3());
