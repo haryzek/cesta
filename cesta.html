@@ -651,6 +651,11 @@
   .mc-card-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--tone); margin-bottom:6px; }
   .mc-card-eyebrow.mc-guide-ic{ display:flex; }
   .mc-card-eyebrow.mc-guide-ic svg{ width:16px; height:16px; }
+  /* Moje cesta (25. 11. 2026): číslo oddílu a žárovka velkým zeleným Fraunces jako počty v Moje oblíbené, počet cvičení červeně. */
+  .mc-card-eyebrow.jnum{ font-family:var(--serif); font-weight:600; font-size:30px; line-height:1; letter-spacing:-0.02em;
+    font-variation-settings:'opsz' 72; color:var(--teal); margin-bottom:8px; }
+  .mc-card-eyebrow.mc-guide-ic.jnum svg{ width:28px; height:28px; }
+  .mc-card-meta .jcount{ color:var(--accent); font-weight:700; }
   .mc-card-go{ position:absolute; top:16px; right:16px; font-family:var(--mono); color:var(--soft); font-size:18px; opacity:.5; }
   .mc-sec-link{ display:inline-flex; align-items:center; gap:8px; margin:10px var(--gutter) 0; padding:0; background:none; border:none;
     cursor:pointer; font-family:var(--sans); font-size:13.5px; color:var(--soft); text-align:left; }
@@ -2027,15 +2032,15 @@
     var h=secHead("journey","Moje cesta","Cvičebnice krok za krokem — oddíly, jejich cvičení, teorie a praxe.");
     h+='<ul class="mc-cards">';
     // Návod jako první karta — bez čísla, s ikonkou, ať je jasné, že to není oddíl.
-    h+='<li class="mc-card clickable mc-in" onclick="MC.open(\'guide\')"><div class="mc-card-eyebrow mc-guide-ic">'+IC.guide+'</div>'+
+    h+='<li class="mc-card clickable mc-in" onclick="MC.open(\'guide\')"><div class="mc-card-eyebrow mc-guide-ic jnum">'+IC.guide+'</div>'+
        '<div class="mc-card-title">Jak s appkou pracovat</div><div class="mc-card-text">Kde začít, jak číst přerámování a jak cvičit.</div><span class="mc-card-go">›</span></li>';
     flat.sections.forEach(function(s){
       var n=(bySection[s.id]||[]).length;
       h+='<li class="mc-card clickable mc-in" onclick="MC.journeySection(\''+s.id+'\')">';
-      h+='<div class="mc-card-eyebrow">'+("0"+s.sort_order).slice(-2)+'</div>';
+      h+='<div class="mc-card-eyebrow jnum">'+("0"+s.sort_order).slice(-2)+'</div>';
       h+='<div class="mc-card-title">'+esc(s.title)+'</div>';
       if(s.perex) h+='<div class="mc-card-text">'+esc(s.perex)+'</div>';
-      h+='<div class="mc-card-meta">'+(n?'<span class="m">'+n+' cvičení</span>':'<span class="m">text</span>')+'</div>';
+      h+='<div class="mc-card-meta">'+(n?'<span class="m jcount">'+n+' cvičení</span>':'<span class="m">text</span>')+'</div>';
       h+='<span class="mc-card-go">›</span></li>';
     });
     return h+'</ul>';
@@ -2048,7 +2053,7 @@
     var j=state.journey, s=itemIndex.sections[j.sectionId];
     if(!s) return '<div class="mc-empty">Oddíl nenalezen.</div>';
     var h='<button class="mc-back" onclick="MC.journeyBack()">← Oddíly</button>';
-    h+='<div class="mc-detail-meta"><div class="mc-card-eyebrow">Oddíl '+("0"+s.sort_order).slice(-2)+'</div></div>';
+    // Číslo oddílu pod Zpět se neopakuje (25. 11. 2026) — je na kartě, odkud člověk přišel.
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.title)+'</div></div>';
     var tabs=journeyTabs(s);
     if(tabs.length<=1){
