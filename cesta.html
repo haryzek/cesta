@@ -1562,6 +1562,7 @@
     }
     if(!STREAM_SEEN) state.onDecided=null;   // mimo proud → při příštím vstupu se rozhodne znovu
     if(FILL&&!state.detail) root.setAttribute("data-page","fill");
+    if(!FILL) HINTED={};   // odchod z karet → při dalším vstupu první karta zase krátce vykoukne
     if(!state.detail&&state.page==="section"&&CONTENT[state.section]&&CONTENT[state.section].render!=="doclist"&&secState(state.section).filterOpen) h+=viewFilterPanel(state.section);
     if(state.menuOpen) h+=viewMenu();
     if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
@@ -2568,7 +2569,7 @@
       if(c&&c.getAttribute("data-id")&&markSeen(c.getAttribute("data-store")||store,c.getAttribute("data-id"))){
         var fc=document.querySelector(".mc-newc")||document.querySelector(".mc-pill .fc"); if(fc) fc.textContent=Math.max(0,(parseInt(fc.textContent,10)||0)-1);
       }
-      if(i>0){ countSwipeVisit(); try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
+      if(i>0){ try{ if(el.querySelector(".mc-swipe-card.tutor")) localStorage.setItem(TUTOR_KEY,"1"); }catch(e){} }
       // Druhá návodná karta: tlačítka Otázky / Úkoly nahoře pulzují, dokud je karta na obrazovce.
       var tb=document.querySelector(".mc-ftabs .mc-submenu-triplet"); if(tb) tb.classList.toggle("pulse",!!(c&&c.classList.contains("tutor2")));
       var sb=document.querySelector(".mc-sfoot .mc-switch"); if(sb) sb.classList.toggle("pulse",!!(c&&c.classList.contains("tutor3")));
@@ -2576,15 +2577,14 @@
     el.scrollLeft=state.swipe.index*w();
     var t; el.addEventListener("scroll",function(){ clearTimeout(t); t=setTimeout(update,80); });
     update();
-    // Výzva ke swipování: karta krátce vykoukne doleva — jednou za vstup (ne při každém překreslení),
-    // dokud člověk sám neswipne aspoň ve 3 různých návštěvách.
+    // Výzva ke swipování: první karta krátce vykoukne doleva při KAŽDÉM vstupu do proudu karet
+    // (od 25. 11. 2026, dřív jen do 3 návštěv) — i když je první kartou placka s čísly nebo návod.
+    // Jednou za vstup, ne při každém překreslení (HINTED, maže se odchodem z karet).
     var hk=state.swipe.key;
-    if(!hintDone()&&state.swipe.index===0&&cards.length>1&&!HINTED[hk]){ HINTED[hk]=1; el.classList.add("hint"); setTimeout(function(){ el.classList.remove("hint"); },1900); }
+    if(state.swipe.index===0&&cards.length>1&&!HINTED[hk]){ HINTED[hk]=1; el.classList.add("hint"); setTimeout(function(){ el.classList.remove("hint"); },1900); }
   }
-  var HINT_KEY="mc_swipe_visits", HINTED={}, COUNTED={};
-  function swipeVisits(){ try{ return parseInt(localStorage.getItem(HINT_KEY),10)||0; }catch(e){ return 3; } }
-  function hintDone(){ return swipeVisits()>=3; }
-  function countSwipeVisit(){ var k=state.swipe.key; if(COUNTED[k]) return; COUNTED[k]=1; try{ localStorage.setItem(HINT_KEY,String(swipeVisits()+1)); }catch(e){} }
+  // HINTED = proudy, kde už kvrdlání v téhle návštěvě proběhlo; render ho maže, jakmile se z karet odejde.
+  var HINTED={};
   function swipeStep(d){ var el=document.getElementById("mc-swipe"); if(el) el.scrollBy({left:d*el.clientWidth,behavior:"smooth"}); }
   function favCountOf(stores){ return stores.reduce(function(n,s){ return n+USER.favorites[s].length; },0); }
   function heartBtn(store,id,on,stop){
@@ -2777,7 +2777,7 @@
       if(!window.confirm("Vymazat všechna oblíbená a paměť viděného?")) return;
       USER=emptyUser(); saveUser(); state.swipe.key=null; state.swipe.ids=[];
       // Čistý start i pro návod a výzvu ke swipování (ať jde návod znovu vyzkoušet).
-      try{ localStorage.removeItem(TUTOR_KEY); localStorage.removeItem(HINT_KEY); }catch(e){} HINTED={}; COUNTED={};
+      try{ localStorage.removeItem(TUTOR_KEY); localStorage.removeItem("mc_swipe_visits"); }catch(e){} HINTED={};
       toast("Oblíbené, viděné a návod vynulovány"); render();
     },
     admReset:function(){
