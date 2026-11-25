@@ -659,9 +659,24 @@
 
   /* Náročnost — pilulka (nízká / střední / vysoká) */
   .mc-diff{ display:inline-block; padding:3px 10px; border-radius:999px; font-family:var(--sans); font-size:12px; font-weight:600; line-height:1.4; }
+  /* Náročnost (25. 11. 2026, decentněji): nízká teal, střední okrová, vysoká jemná červená — všechny jen podklad + písmo. */
   .mc-diff.low{ background:var(--teal-soft); color:var(--teal); }
-  .mc-diff.mid{ background:var(--accent-dim); color:var(--accent); }
-  .mc-diff.high{ background:var(--accent); color:var(--on-accent); }
+  .mc-diff.mid{ background:var(--g-vz-bg); color:var(--g-vz-tx); }
+  .mc-diff.high{ background:var(--accent-dim); color:var(--accent); }
+  /* Cvičení v Redakci: řádek skoků na skupiny a nadpisy skupin v seznamu. */
+  .mc-jump{ display:flex; flex-wrap:wrap; align-items:center; gap:2px 6px; padding:12px var(--gutter) 0; }
+  .mc-jump button{ background:none; border:none; padding:2px 0; cursor:pointer; font-family:var(--sans); font-size:13px; font-weight:600; color:var(--tone); }
+  .mc-jump .dot{ color:var(--muted); }
+  .mc-ex-group{ list-style:none; margin:22px 0 10px; font-family:var(--sans); font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--soft); scroll-margin-top:84px; }
+  .mc-ex-group:first-child{ margin-top:0; }
+  .mc-ex-group .c{ color:var(--muted); font-family:var(--mono); letter-spacing:0; }
+  /* Moje cesta, seznam cvičení oddílu: vlevo pilulka + „náročnost“, vpravo čas, vykřičník za názvem. */
+  .mc-name-item .nb:has(.ex-sub){ flex:1; }
+  .ex-sub .d{ gap:6px; }
+  .ex-sub .dl{ font-family:var(--sans); font-size:12px; color:var(--soft); }
+  .ex-sub .t{ margin-left:auto; }
+  .mc-name-item .n-warn{ display:inline-flex; vertical-align:-2px; margin-left:6px; color:var(--accent); }
+  .mc-name-item .n-warn svg{ width:15px; height:15px; }
 
   /* Boxy pod taby: řetěz a upozornění (stejný rámeček jako .mc-strip) */
   .mc-box{ margin:10px var(--gutter) 0; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
@@ -2055,8 +2070,9 @@
   function viewSectionExercises(s){
     var h='<div class="mc-namelist">';
     alive("exercises",bySection[s.id]||[]).forEach(function(e){
-      h+='<button class="mc-name-item mc-in" onclick="MC.detail(\'exercises\',\''+e.id+'\')"><span class="nb"><span class="n">'+esc(e.name)+'</span>'+
-         '<span class="sub">'+minutes(e.duration)+diffPill(e.difficulty)+(e.chain_id?'<span class="m">'+IC.chain+e.chain_order+'/'+(byChain[e.chain_id]||[]).length+'</span>':'')+(e.warning?'<span class="m warn">'+IC.warn+'</span>':'')+'</span></span><span class="go">›</span></button>';
+      // Řádek (25. 11. 2026): vlevo pilulka + „náročnost“, vpravo čas; vykřičník (upozornění) hned za názvem.
+      h+='<button class="mc-name-item mc-in" onclick="MC.detail(\'exercises\',\''+e.id+'\')"><span class="nb"><span class="n">'+esc(e.name)+(e.warning?'<span class="n-warn" aria-label="Má upozornění">'+IC.warn+'</span>':'')+'</span>'+
+         '<span class="sub ex-sub">'+(e.difficulty?'<span class="m d">'+diffPill(e.difficulty)+'<span class="dl">náročnost</span></span>':'')+(e.chain_id?'<span class="m">'+IC.chain+e.chain_order+'/'+(byChain[e.chain_id]||[]).length+'</span>':'')+'<span class="t">'+minutes(e.duration)+'</span></span></span><span class="go">›</span></button>';
     });
     return h+'</div>';
   }
@@ -2111,12 +2127,24 @@
     h+='<button class="mc-filter-btn '+(s.filterOpen?"active":"")+'" onclick="MC.secFilter(\''+key+'\')">'+IC.filter+'Filtr'+(fc>0?'<span class="fc">'+fc+'</span>':'')+'</button>';
     var items=contentList(key);
     h+='</div>';
+    // Cvičení v Redakci (25. 11. 2026): seznam po oddílech s nadpisy skupin a nahoře řádek skoků
+    // (Relaxace · Meditace · …) — ťuknutí odscrolluje ke skupině. Pořadí Redakce = pořadí cvičebnice.
+    var grouped=key==="exercises"&&s.mode==="edit"&&items.length>0, groups=[];
+    if(grouped){
+      items.forEach(function(it){ var g=groups[groups.length-1]; if(!g||g.id!==it.section_id) groups.push(g={id:it.section_id,n:0}); g.n++; });
+      h+='<nav class="mc-jump">'+groups.map(function(g){ var sec=itemIndex.sections[g.id]; return '<button onclick="MC.jumpTo(\'exg-'+g.id+'\')">'+esc(jumpLabel(sec?sec.title:""))+'</button>'; }).join('<span class="dot">·</span>')+'</nav>';
+    }
     h+='<ul class="mc-cards">';
     if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
-    else items.forEach(function(it){ h+=contentCard(key,cfg,it); });
+    else { var last=null; items.forEach(function(it){
+      if(grouped&&it.section_id!==last){ last=it.section_id; var sec=itemIndex.sections[last], g=groups.filter(function(x){ return x.id===last; })[0];
+        h+='<li class="mc-ex-group" id="exg-'+last+'">'+esc(sec?sec.title:"")+' <span class="c">'+(g?g.n:"")+'</span></li>'; }
+      h+=contentCard(key,cfg,it); }); }
     h+='</ul>';
     return h;
   }
+  // Krátký název oddílu do řádku skoků: „Relaxace a pocit bezpečí“ → „Relaxace“.
+  function jumpLabel(t){ return String(t).split(" a ")[0]; }
   // Otázky a Inspirace (od 24. 11. 2026): Filtr a přepínač karty / seznam v řádku s nadpisem,
   // přicvaknuté vpravo. „Nejnovější“ tu nebylo z čeho vybírat (jediný režim), tak zmizelo.
   // Karty jako zápisník přerámování: bez scrollu stránky, srdíčko pod textem, dole „Jen nové“.
@@ -2822,6 +2850,7 @@
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
+    jumpTo:function(id){ var el=document.getElementById(id); if(el&&el.scrollIntoView) el.scrollIntoView({behavior:"smooth",block:"start"}); },
     deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
     deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
     // Lehčí cesta: oddíl 04 Relaxace a pocit bezpečí (bezpečné místo, dech).
