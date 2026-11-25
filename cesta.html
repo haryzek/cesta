@@ -1540,7 +1540,9 @@
     else { items.sort(function(a,b){ return String(b.added_at||"").localeCompare(String(a.added_at||"")) || b.sort_order-a.sort_order; }); }
     if(s.kw.trim()){
       var q=deburr(s.kw);
-      items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex].filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
+      // Hledá v obsahu: název / titulek, text věty, perex, autor citátu a štítky (od 25. 11. 2026 i autor
+      // a štítky). Plný text článků a postupů vědomě ne — běžná slova by vrátila skoro všechno.
+      items=items.filter(function(it){ var hay=deburr([it.title,it.name,it.text,it.perex,it.author].concat(it.tags||[]).filter(Boolean).join(" ")); return hay.indexOf(q)>-1; });
     }
     // Tagy se sčítají (OR): víc zaškrtnutých = širší výběr, ne užší. Dřív AND,
     // což u pár tagů vracelo skoro vždycky prázdno. OR říká CO projde; pořadí
