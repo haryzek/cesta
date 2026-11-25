@@ -292,12 +292,6 @@
      Dřív viselo počítadlo na right:30px, tedy mimo osu ostatního obsahu. */
   .mc-search-tools{ position:absolute; right:8px; top:50%; transform:translateY(-50%);
     display:flex; align-items:center; gap:6px; }
-  /* Reset výběru vlevo od počítadla, v barvě lupy, větší než křížek — ať je čitelný */
-  .mc-search-clear.mc-reset{ width:28px; height:28px; color:var(--muted); }
-  button.mc-count-pill{ border:none; cursor:pointer; pointer-events:auto; }
-  .mc-search-clear.mc-reset svg{ width:19px; height:19px; }
-  .mc-count-pill{ background:var(--tone); color:var(--on-accent); font-family:var(--mono); font-size:11px;
-    font-weight:700; min-width:20px; text-align:center; padding:3px 7px; border-radius:6px; pointer-events:none; }
   .mc-search-clear{ display:flex; align-items:center; justify-content:center; width:22px; height:22px; padding:0;
     background:none; border:none; cursor:pointer; color:var(--muted); border-radius:50%; transition:color .12s ease; }
   @media (hover:hover){ .mc-search-clear:hover{ color:var(--text); } }
@@ -337,7 +331,13 @@
   .mc-fsheet .fs-body{ flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:16px var(--gutter) 24px; }
   .mc-fsheet .fs-foot{ display:flex; gap:10px; padding:12px var(--gutter) calc(12px + env(safe-area-inset-bottom)); border-top:1px solid var(--border); background:var(--bg); }
   .mc-fsheet .fs-foot .mc-fab{ flex:1; min-width:0; }
-  .mc-fsheet .fs-foot .mc-fab.ghost{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; border:1.5px solid var(--soft); color:var(--text); background:var(--surface); }
+  .mc-fsheet .fs-foot .mc-fab.ghost{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; }
+  /* Zrušit filtry / Zrušit výběr (25. 11. 2026): v klidu obrys jako pilulky filtru, když má smysl, bílé pozadí. */
+  #mc-root .mc-clear{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; background:transparent; border:1px solid var(--border); color:var(--text); }
+  #mc-root .mc-clear:disabled{ opacity:1; color:var(--muted); cursor:default; }
+  #mc-root .mc-clear:not(:disabled){ background:var(--surface); }
+  .mc-fab-row{ display:flex; gap:10px; width:100%; max-width:484px; pointer-events:auto; }
+  .mc-fab-row .mc-fab{ flex:1; min-width:0; }
   .mc-fsheet .fs-foot .mc-fab:disabled{ opacity:.45; cursor:default; }
   .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
     background:var(--surface); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:14px; }
@@ -360,6 +360,7 @@
     background:linear-gradient(to top,var(--bg) 58%,transparent); }
   .mc-fab{ pointer-events:auto; max-width:484px; width:100%; background:var(--accent); color:var(--on-accent); border:none;
     border-radius:12px; padding:14px; font-family:var(--sans); font-size:15px; font-weight:700; cursor:pointer;
+    border:1px solid transparent;   /* stejná výška s obrysovými tlačítky vedle (dřív o 2 px nižší) */
     transition:transform .12s ease,filter .15s ease; }
   @media (hover:hover){ .mc-fab:hover{ filter:brightness(1.06); } }
   .mc-fab:active{ transform:scale(.98); }
@@ -1780,8 +1781,14 @@
     });
     h+='</ul>';
     var n=Object.keys(sel).length;
-    if(n>0){ var na=answersForClusters(Object.keys(sel)); h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.'+openFn+'()">Přerámovat ('+na+' '+plOdpoved(na)+')</button></div>'; }
+    if(n>0) h+=fabPair("selReset('"+(toggleFn==="rfSitToggle"?"sit":"pain")+"')",openFn+"()",answersForClusters(Object.keys(sel)));
     return h;
+  }
+  // Spodní dvojice tlačítek při výběru pocitů (od 25. 11. 2026, stejný vzor jako filtr):
+  // vlevo Zrušit výběr, vpravo pod pravým palcem Přerámovat (N). Nahoře v hledání už reset není.
+  function fabPair(clearCall,openCall,n){
+    return '<div class="mc-fab-wrap"><div class="mc-fab-row"><button class="mc-fab mc-clear" onclick="MC.'+clearCall+'">Zrušit výběr</button>'+
+      '<button class="mc-fab" onclick="MC.'+openCall+'">Přerámovat ('+n+')</button></div></div>';
   }
   function answersForClusters(cids){
     if(!cids.length) return 0;
@@ -1854,8 +1861,6 @@
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
     h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" enterkeyhint="search" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
     h+='<div class="mc-search-tools">';
-    // Počítadlo ukazuje vybrané, ne celkový počet — celek uživatel vidí v seznamu.
-    if(nSel>0) h+='<button class="mc-search-clear mc-reset" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 3 3 9 9 9"/></svg></button><button class="mc-count-pill" onclick="MC.rfReset()" aria-label="Zrušit výběr pocitů ('+nSel+')">'+nSel+'</button>';
     if(rf.search.trim()) h+='<button class="mc-search-clear" onclick="MC.rfSearch(\'\')" aria-label="Zrušit hledání"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>';
     h+='</div></div>';
     h+='<ul class="mc-list">';
@@ -1867,7 +1872,7 @@
     h+='</ul>';
     if(!rf.search.trim()&&!rf.showSecondary&&secondaryFeelings().length>0) h+='<button class="mc-more" onclick="MC.rfSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
     var n=Object.keys(rf.selected).length;
-    if(n>0){ var na=selAnswerCount(); h+='<div class="mc-fab-wrap"><button class="mc-fab" onclick="MC.rfOpenSelected()">Přerámovat ('+na+' '+plOdpoved(na)+')</button></div>'; }
+    if(n>0) h+=fabPair("selReset('feel')","rfOpenSelected()",selAnswerCount());
     return h;
   }
   function viewRfDetail(){
@@ -2054,7 +2059,7 @@
     }
     allTags(cfg.dataKey).forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
     if(chips) h+='<div class="mc-chips">'+chips+'</div>';
-    h+='</div><div class="fs-foot"><button class="mc-fab ghost" '+(fc?'':'disabled ')+'onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button>'+
+    h+='</div><div class="fs-foot"><button class="mc-fab ghost mc-clear" '+(fc?'':'disabled ')+'onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button>'+
       '<button class="mc-fab" '+(n?'':'disabled ')+'onclick="MC.filterShow(\''+key+'\')">'+(n?'Zobrazit ('+n+')':'Nic neodpovídá')+'</button></div></div>';
     return h;
   }
@@ -2619,11 +2624,14 @@
       if(after>MANY_ANSWERS&&before<=MANY_ANSWERS) toast("Bude toho hodně ("+after+" "+plOdpoved(after)+"). Doporučujeme vybrat méně pocitů — ale klidně pokračujte.");
       render();
     },
-    rfReset:function(){
-      var prev=state.rf.selected; if(!Object.keys(prev).length) return;
-      state.rf.selected={}; toast("Výběr zrušen",{call:"rfResetUndo",sel:prev}); render();
+    rfReset:function(){ MC.selReset("feel"); },
+    rfResetUndo:function(){ MC.selResetUndo(); },
+    selReset:function(kind){
+      var rf=state.rf, k=kind==="sit"?"sitSel":kind==="pain"?"painSel":"selected", prev=rf[k]||{};
+      if(!Object.keys(prev).length) return;
+      rf[k]={}; toast("Výběr zrušen",{call:"selResetUndo",k:k,sel:prev}); render();
     },
-    rfResetUndo:function(){ var u=state.toast&&state.toast.undo; if(!u||!u.sel) return; state.rf.selected=u.sel; state.toast=null; clearTimeout(toastTimer); render(); },
+    selResetUndo:function(){ var u=state.toast&&state.toast.undo; if(!u||!u.sel) return; state.rf[u.k||"selected"]=u.sel; state.toast=null; clearTimeout(toastTimer); render(); },
     rfSoftOpen:function(){ var rf=state.rf, key="rf:"+rf.activeType+":"+rf.detailClusters.map(function(c){return c.cluster_id;}).join(","); rf.softOpen[key]=true; render(); },
     rfSingle:function(cid){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cid,count:1}]; state.rf.detailTitle=null; state.rf.origin="feelings"; enterRfDetail(); },
     rfOpenSelected:function(){
