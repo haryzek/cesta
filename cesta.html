@@ -683,6 +683,17 @@
   .mc-alert{ display:flex; gap:12px; margin:12px var(--gutter) 4px; padding:14px 16px; background:var(--surface);
     border:3px solid var(--accent); border-radius:14px; }
   .mc-alert .a-ic{ flex-shrink:0; color:var(--accent); display:flex; padding-top:1px; }
+  /* Brána před hlubokými cvičeními — stejný rámeček jako placky, přes celou stránku (25. 11. 2026). */
+  .mc-deep{ margin:10px var(--gutter) 0; padding:16px 16px 14px; background:var(--surface); border:3px solid var(--accent); border-radius:16px; }
+  .mc-deep .dg-eyebrow{ font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+  .mc-deep .dg-name{ margin-top:6px; font-family:var(--serif); font-weight:600; font-size:19px; line-height:1.25; font-variation-settings:'opsz' 24; color:var(--text); }
+  .mc-deep .dg-h{ margin-top:12px; font-family:var(--serif); font-weight:600; font-size:17px; font-variation-settings:'opsz' 24; color:var(--accent); }
+  .mc-deep p{ margin-top:6px; font-size:14px; line-height:1.45; color:var(--text); }
+  .mc-deep .mc-consent-row{ margin-top:12px; padding:9px 12px; font-size:14px; }
+  .mc-deep .mc-fab{ display:block; width:100%; margin-top:12px; }
+  .mc-deep .mc-fab:disabled{ opacity:.35; cursor:not-allowed; }
+  .mc-deep .dg-light{ display:block; margin:10px auto 0; background:none; border:none; cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:600; color:var(--soft); }
   .mc-alert .a-ic svg{ width:22px; height:22px; }
   .mc-alert .a-body{ flex:1; min-width:0; }
   .mc-alert .a-text{ font-family:var(--sans); font-size:15px; line-height:1.5; color:var(--text); }
@@ -2182,6 +2193,25 @@
   }
 
   // ===================== RENDER — obsahový detail =====================
+  // ===================== BRÁNA PŘED HLUBOKÝMI CVIČENÍMI (25. 11. 2026) =====================
+  // Cvičení, která otevírají traumatické vzpomínky. Místo obsahu karta přes celou stránku: k čemu
+  // cvičení je, co sami ano (3–5 z 10), co sami ne, checkbox a Pokračovat; nebo cesta k lehčímu.
+  // Při každém otevření (rozhoduje, jak je člověku dnes). Text je návrh, Bob ho ještě ladí.
+  var DEEP_EX={ ex_0064:1, ex_0065:1 };
+  function viewDeepGate(title,sec,d){
+    var on=!!d.deepCheck;
+    var h='<button class="mc-back" onclick="MC.detailBack()">← Zpět</button><div class="mc-deep">';
+    if(sec) h+='<div class="dg-eyebrow">Oddíl '+("0"+sec.sort_order).slice(-2)+' · '+esc(sec.title)+'</div>';
+    h+='<div class="dg-name">'+esc(title)+'</div><div class="dg-h">Než začnete</div>';
+    h+='<p>Toto cvičení otevírá bolestné vzpomínky a silné emoce. Nejbezpečnější je projít ho s terapeutem, který vás povede a pomůže zastavit, když toho bude moc.</p>';
+    h+='<p><b>Sami</b> se pusťte jen do toho, co vás dnes trápí zhruba na 3 až 5 z 10: třeba hádka, zklamání nebo trapná chvíle. Ne do toho nejtěžšího.</p>';
+    h+='<p><b>Sami ne</b>, pokud jde o zneužívání, znásilnění či jiné násilí, válku nebo dramatickou ztrátu blízkého. Ani když se vám vzpomínky vracejí v nočních můrách či záblescích a cítíte se pak jako mimo sebe.</p>';
+    h+='<button class="mc-consent-row" onclick="MC.deepCheck()" aria-pressed="'+(on?"true":"false")+'"><span class="mc-check '+(on?"on":"")+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Rozumím a vybírám si něco, co zvládnu.</span></button>';
+    h+='<button class="mc-fab" '+(on?"":"disabled ")+'onclick="MC.deepOk()">Pokračovat na cvičení</button>';
+    h+='<button class="dg-light" onclick="MC.deepLighter()">Raději něco lehčího ›</button>';
+    return h+'</div>';
+  }
+
   function viewContentDetail(){
     var d=state.detail, item=(itemIndex[d.type]||{})[d.id];
     var cfg=null; Object.keys(CONTENT).forEach(function(k){ if(CONTENT[k].dataKey===d.type) cfg=CONTENT[k]; });
@@ -2194,6 +2224,7 @@
     // (dřív info_extra/theory_extra) žijí od 18. 11. 2026 v body.
     // Tab se kreslí jen když má obsah.
     var isEx=!!cfg.info, sec=isEx&&item.section_id?itemIndex.sections[item.section_id]:null;
+    if(isEx&&DEEP_EX[d.id]&&!d.deepOk) return viewDeepGate(title,sec,d);
     var tabs=[];
     if(isEx){
       tabs.push({key:"body",label:"Postup"});
@@ -2791,6 +2822,10 @@
     secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
+    deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
+    deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
+    // Lehčí cesta: oddíl 04 Relaxace a pocit bezpečí (bezpečné místo, dech).
+    deepLighter:function(){ MC.journeySection("sec_0004"); },
     detail:function(type,id){ state.detail={ type:type, id:id, tab:"body", chainOpen:false }; state.adminEdit=null; scrollTop(); render(); },
     detailBack:function(){ state.detail=null; state.adminEdit=null; scrollTop(); render(); },
     detailTab:function(t){ if(state.detail) state.detail.tab=t; scrollTop(); render(); },
