@@ -211,6 +211,8 @@
     #mc-root[data-page="home"] .mc-tile{ gap:6px; padding:12px var(--tile-pad); }
     #mc-root[data-page="home"] .mc-tile-ic{ width:32px; height:32px; border-radius:9px; }
     #mc-root[data-page="home"] .mc-tile-ic svg{ width:17px; height:17px; }
+    /* „Přerámování myšlenek“ jde na dva řádky (25. 11. 2026) — na nízkém displeji o kousek menší název, ať se neořízne. */
+    #mc-root[data-page="home"] .mc-tile-name{ font-size:15.5px; line-height:1.15; }
     #mc-root[data-page="home"] .mc-home-intro{ padding-top:16px; padding-bottom:10px; }
   }
 
@@ -442,7 +444,9 @@
   /* Zrcadlo bolístek: věty, ne názvy — sans, menší, bez serifové váhy */
   .mc-under{ margin:26px var(--gutter) 0; padding-top:18px; border-top:1px solid var(--border); }
   .mc-under h2{ color:var(--tone); }
-  .mc-under p{ color:var(--soft); font-size:14.5px; line-height:1.55; margin:6px 0 12px; }
+  .mc-under p{ color:var(--soft); font-size:14.5px; line-height:1.55; margin:14px 0 0; }
+  /* Podsekce (25. 11. 2026): nadpis → 14 → text → 14 → obsah, stejně rozložené jako hlavička stránky (tam 18). */
+  .mc-under + .mc-list{ padding-top:14px; }
   .mc-fab-wrap.static{ position:static; padding:16px var(--gutter) 0; background:none; pointer-events:auto; }
 
   /* ===== LIŠTA „jen nové" / seznam–karty ===== */
@@ -588,8 +592,8 @@
     background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:24px 22px 18px; text-align:center; box-shadow:0 20px 60px #0006; }
   .mc-modal-ic{ width:46px; height:46px; margin:0 auto 12px; border-radius:50%; background:var(--tone-soft); color:var(--tone); display:flex; align-items:center; justify-content:center; }
   .mc-modal-ic svg{ width:22px; height:22px; }
-  .mc-modal h2{ font-family:var(--serif); font-weight:600; font-size:21px; line-height:1.2; font-variation-settings:'opsz' 36; color:var(--text); margin:0 0 8px; }
-  .mc-modal p{ font-size:14.5px; line-height:1.5; color:var(--soft); margin:0 0 16px; }
+  .mc-modal h2{ font-family:var(--serif); font-weight:600; font-size:21px; line-height:1.2; font-variation-settings:'opsz' 36; color:var(--text); margin:0 0 14px; }
+  .mc-modal p{ font-size:14.5px; line-height:1.5; color:var(--soft); margin:0 0 14px; }
   .mc-modal .mc-fab{ display:block; width:100%; margin-top:8px; }
 
   /* ===== ADMIN (provizorní) ===== */
@@ -637,6 +641,8 @@
   .mc-box.adm-export{ padding:12px 16px; }
   .mc-adm-actions{ display:flex; gap:8px; flex-wrap:wrap; margin:12px var(--gutter) 0; }
   .mc-adm-actions .mc-fab{ width:auto; flex:1; padding:12px 14px; font-size:14px; }
+  .mc-set h2{ margin-bottom:0; }
+  .mc-set > .mc-adm-note, .mc-set > .mc-box, .mc-set > .mc-adm-actions{ margin:14px 0 0; }
   .mc-adm-note{ margin:10px var(--gutter) 0; font-family:var(--sans); font-size:13px; color:var(--muted); line-height:1.5; }
   .mc-adm-h3{ font-family:var(--sans); font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 8px; }
   .mc-card.del .mc-card-text{ color:var(--muted); }
@@ -1006,7 +1012,9 @@
   var SECTIONS = [
     { key:"journey",      label:"Moje cesta",       icon:"journey",      kind:"journey",   tile:true, tone:"teal" },
     { key:"exercises",    label:"Cvičení",          icon:"exercises",    kind:"content",   tile:true, tone:"teal" },
-    { key:"reframing",    label:"Přerámování",      icon:"reframing",    kind:"reframing", tile:true, tone:"teal", sep:true },
+    // „Přerámování myšlenek“ (25. 11. 2026): samotné „přerámování“ lidi neznají. Uvnitř (záložky
+    // Přerámování / Otázky / Úkoly, Oblíbené, Zpět) zůstává krátké — tam jde o typ odpovědi.
+    { key:"reframing",    label:"Přerámování myšlenek", icon:"reframing", kind:"reframing", tile:true, tone:"teal", sep:true },
     { key:"questions",    label:"Otázky",           icon:"questions",    kind:"content",   tile:true, tone:"teal" },
     { key:"inspirations", label:"Inspirace",        icon:"inspirations", kind:"content",   tile:true, tone:"teal" },
     { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true, tone:"teal" },
@@ -1759,7 +1767,7 @@
   }
 
   function viewRfGates(){
-    var h=secHead("reframing","Přerámování","Myšlenky jako „nikdo mě nemá rád“ nebo „všechno pokazím“ často vypadají jako fakta, i když jsou jen jedním z možných pohledů. Tady najdete věty, otázky a malé úkoly, které vám pomůžou podívat se na to, co prožíváte, z jiné perspektivy.");
+    var h=secHead("reframing","Přerámování myšlenek","Myšlenky jako „nikdo mě nemá rád“ nebo „všechno pokazím“ často vypadají jako fakta, i když jsou jen jedním z možných pohledů. Tady najdete věty, otázky a malé úkoly, které vám pomůžou podívat se na to, co prožíváte, z jiné perspektivy.");
     h+='<ul class="mc-cards mc-gates">';
     GATES.forEach(function(g){
       h+='<li class="mc-card clickable mc-in" onclick="MC.rfGate(\''+g.key+'\')"><div class="mc-card-title">'+esc(g.label)+'</div><div class="mc-card-text lead gate-hint">„'+esc(g.hint)+'“</div><span class="mc-card-go">›</span></li>';
@@ -2426,11 +2434,11 @@
     "Moje cesta má víc dveří. Tady je, kudy kam a jak z appky dostat co nejvíc.",
     "## Kde začít",
     "* **Je vám zle teď hned?** Otevřete **První pomoc**. Najdete tam, co dělat v krizi, a kontakty, kam zavolat.",
-    "* **Chcete se na to, co prožíváte, podívat jinak?** Jděte do **Přerámování**.",
+    "* **Chcete se na to, co prožíváte, podívat jinak?** Jděte do **Přerámování myšlenek**.",
     "* **Chcete na sobě pracovat soustavně?** Začněte v **Moje cesta** prvním oddílem a postupujte v pořadí.",
     "* **Máte jen chvilku?** Zkuste **Inspiraci** nebo **Otázky**.",
     "* **Trápí vás tělo?** V **Tělesných příznacích** najdete, co se s ním při úzkosti a stresu děje a kdy jít k lékaři.",
-    "## Přerámování: tři brány",
+    "## Přerámování myšlenek: tři brány",
     "Myšlenky jako „nikdo mě nemá rád“ nebo „všechno pokazím“ často vypadají jako fakta, i když jsou jen jedním z možných pohledů. Tady najdete věty, otázky a malé úkoly, které vám pomůžou podívat se na to, co prožíváte, z jiné perspektivy.",
     "",
     "* **Jádrové pocity:** když víte, jak se cítíte, třeba odmítnutý nebo bezmocný. Vybrat můžete jeden pocit i víc.",
@@ -3067,7 +3075,7 @@
     var b=loadBackup(), d=daysSince(b.last);
     var h='<button class="mc-back" onclick="MC.home()">← Domů</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">Nastavení</div></div>';
-    h+='<div class="mc-detail-body"><div class="mc-fav-group"><h2>Záloha</h2>';
+    h+='<div class="mc-detail-body"><div class="mc-fav-group mc-set"><h2>Záloha</h2>';
     h+='<p class="mc-adm-note">Oblíbené, přečtené a vaše nastavení jsou uložené jen v tomto telefonu. Když si vymažete data prohlížeče nebo změníte telefon, zmizí. Záloha je malý soubor, který si uložíte jinam — třeba pošlete do mailu nebo na Disk. Obnovit ji jde kdykoli tady.</p>';
     h+='<div class="mc-box"><span class="b-text">'+(b.last?'Poslední záloha: '+(d===0?'dnes':'před '+d+' '+(d===1?'dnem':'dny')):'Zatím žádná záloha')+' · oblíbených: '+favCount()+'</span></div>';
     h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.backupSave()">Uložit zálohu</button><button class="mc-fab ghost" onclick="MC.backupRestore()">Obnovit ze zálohy</button></div>';
