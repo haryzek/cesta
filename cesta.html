@@ -646,7 +646,7 @@
   .mc-adm-actions{ display:flex; gap:8px; flex-wrap:wrap; margin:12px var(--gutter) 0; }
   .mc-adm-actions .mc-fab{ width:auto; flex:1; padding:12px 14px; font-size:14px; }
   .mc-set h2{ margin-bottom:0; }
-  .mc-set > .mc-adm-note, .mc-set > .mc-box, .mc-set > .mc-adm-actions{ margin:14px 0 0; }
+  .mc-set > .mc-adm-note, .mc-set > .mc-box, .mc-set > .mc-adm-actions, .mc-set > .mc-gender{ margin:14px 0 0; }
   .mc-adm-note{ margin:10px var(--gutter) 0; font-family:var(--sans); font-size:13px; color:var(--muted); line-height:1.5; }
   .mc-adm-h3{ font-family:var(--sans); font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 8px; }
   .mc-card.del .mc-card-text{ color:var(--muted); }
@@ -920,6 +920,14 @@
   /* Úvodní souhlas: celá obrazovka místo appky, checkboxy až pod textem */
   .mc-consent{ max-width:560px; margin:0 auto; padding:32px 0 40px; }
   .mc-consent > .mc-detail-title{ padding:0 var(--gutter); }
+  .mc-consent-text{ font-size:14.5px; line-height:1.5; padding-top:10px; }
+  .mc-consent-text p{ margin:0 0 8px; }
+  .mc-gender-q{ padding:6px var(--gutter) 8px; font-family:var(--sans); font-size:14.5px; font-weight:700; color:var(--text); }
+  .mc-consent > .mc-gender{ padding:0 var(--gutter) 12px; }
+  .mc-gender{ display:flex; gap:10px; }
+  .mc-gbtn{ flex:1; padding:11px 0; background:var(--surface); border:1px solid var(--border); border-radius:12px; cursor:pointer;
+    font-family:var(--sans); font-size:15px; font-weight:700; color:var(--text); }
+  .mc-gbtn.on{ border-color:var(--tone); background:var(--tone-soft); color:var(--tone); }
   .mc-consent-checks{ display:flex; flex-direction:column; gap:10px; padding:6px var(--gutter) 18px; }
   .mc-consent-row{ display:flex; align-items:center; gap:12px; width:100%; padding:12px 14px; text-align:left; cursor:pointer;
     background:var(--surface); border:1px solid var(--border); border-radius:12px;
@@ -1332,6 +1340,24 @@
     }).catch(showError);
   }
 
+  // ===================== OSLOVENÍ (25. 11. 2026) =====================
+  // USER.profile.gender = "m" | "f" (volba na úvodní obrazovce, změna v Nastavení). Ženské znění:
+  // hlášky a názvy bolístek z pole text_f (kde je), Otázky (ich-forma) se rozepíšou samy —
+  // „věřil(a)“ → věřil / věřila, „sám / sama“ → sám / sama. Bez volby zůstává text, jak je.
+  function genderOf(){ return (USER.profile&&USER.profile.gender)||""; }
+  function genderize(t,g){
+    if(!g||!t) return t;
+    return String(t).replace(/(\S+) \/ (\S+?)([?!.,…]*)(?=\s|$)/g,function(m,a,b,p){ return (g==="f"?b:a)+p; })
+      .replace(/([A-Za-zÁ-žá-ž]+)\(a\)/g,function(m,a){ return g==="f"?a+"a":a; });
+  }
+  function applyGender(){
+    var g=genderOf();
+    Object.keys(itemIndex.hlasky||{}).forEach(function(id){ var e=itemIndex.hlasky[id]; if(e._t0==null) e._t0=e.text; e.text=(g==="f"&&e.text_f)||e._t0; });
+    (flat.pains||[]).forEach(function(p){ if(p._t0==null) p._t0=p.text; p.text=(g==="f"&&p.text_f)||p._t0; });
+    Object.keys(itemIndex.hlasky||{}).forEach(function(id){ var e=itemIndex.hlasky[id], p=itemIndex.pains[e.pain_id]; if(p) e.meta=p.text; });
+    (flat.questions||[]).forEach(function(q){ if(q._t0==null) q._t0=q.text; q.text=genderize(q._t0,g); });
+  }
+  function setGender(g){ USER.profile=USER.profile||{}; USER.profile.gender=g; saveUser(); applyGender(); }
   function prepare(){
     DB.clusters.forEach(function(c){ clusterName[c.id]=c.name; clusterSort[c.id]=c.sort_order; });
     TYPES.forEach(function(t){
@@ -1355,12 +1381,13 @@
       itemIndex[dk]={}; flat[dk].forEach(function(it){ itemIndex[dk][it.id]=it; });
     });
     itemIndex.hlasky={};
-    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, meta:p.text, source:x.source, approved:x.approved }; }); });
+    (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, text_f:x.text_f, pain_id:p.id, meta:p.text, source:x.source, approved:x.approved }; }); });
     // Přerámování situací jako položky (ID sitr_NNNN) — kvůli adminu.
     itemIndex.sitref={};
     (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, meta:s.name, approved:r.approved }; }); });
     buildLegacyKeys(); migrateStoredKeys();
     applyEdits();
+    applyGender();
     bySection={}; byChain={};
     (DB.exercises||[]).forEach(function(e){
       if(e.section_id) (bySection[e.section_id]=bySection[e.section_id]||[]).push(e);
@@ -1619,7 +1646,8 @@
   // ---- Úvodní souhlas (18. 11. 2026). Při prvním otevření nepřeskočitelná obrazovka:
   // appka nenahrazuje odbornou pomoc + 18+. Checkboxy až pod textem (= musí doscrollovat),
   // tlačítko aktivní až po obou. Uloženo s verzí: změna textu → zvednout CONSENT_VER.
-  var CONSENT_KEY="mc_consent", CONSENT_VER=1;
+  // v2 (25. 11. 2026): kratší text na jednu obrazovku + volba oslovení Muž / Žena (všem znovu jednou).
+  var CONSENT_KEY="mc_consent", CONSENT_VER=2;
   function hasConsent(){
     if(state.consentOk) return true;
     try{ var c=JSON.parse(localStorage.getItem(CONSENT_KEY)||"null"); return !!(c&&c.v>=CONSENT_VER); }catch(e){ return false; }
@@ -1631,13 +1659,26 @@
       '<p><strong>Cvičení a techniky děláte na vlastní zodpovědnost.</strong> Pokud se při nich necítíte dobře, přerušte je.</p>'+
       '<p><strong>Aplikace je určena dospělým od 18 let.</strong> Mladší mohou kdykoli zavolat na Linku bezpečí <span class="mc-tel">116 111</span>.</p>';
   }
+  // Úvodní obrazovka: zhuštěné znění (celé je v O appce) — vejde se i s volbou oslovení bez scrollu.
+  function consentHtml(){
+    return '<p>Moje cesta je průvodce pro zamyšlení a péči o sebe. <strong>Neléčí a nenahrazuje odbornou pomoc.</strong> S vážnými potížemi se obraťte na lékaře, psychologa nebo psychoterapeuta.</p>'+
+      '<p><strong>V akutní krizi volejte <span class="mc-tel">155</span> nebo Linku první psychické pomoci <span class="mc-tel">116 123</span></strong> (nonstop, zdarma).</p>'+
+      '<p>Cvičení děláte na vlastní zodpovědnost. Když vám při nich není dobře, přerušte je.</p>'+
+      '<p>Aplikace je pro dospělé od 18 let. Mladší mohou volat Linku bezpečí <span class="mc-tel">116 111</span>.</p>';
+  }
+  function genderButtons(cur,fn){
+    var b=function(g,l){ return '<button class="mc-gbtn'+(cur===g?' on':'')+'" aria-pressed="'+(cur===g?"true":"false")+'" onclick="MC.'+fn+'(\''+g+'\')">'+l+'</button>'; };
+    return '<div class="mc-gender">'+b("m","Muž")+b("f","Žena")+'</div>';
+  }
   function viewConsent(){
-    var c=state.consentChecks||{}, ok=c.help&&c.age;
+    var c=state.consentChecks||{}, g=state.consentGender, ok=c.help&&c.age&&g;
     var row=function(k,label){ return '<button class="mc-consent-row" onclick="MC.consentToggle(\''+k+'\')" aria-pressed="'+(c[k]?"true":"false")+'"><span class="mc-check '+(c[k]?"on":"")+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>'+label+'</span></button>'; };
-    return '<div class="mc-consent"><div class="mc-detail-title">Než začnete</div><div class="mc-about">'+disclaimerHtml()+'</div>'+
+    return '<div class="mc-consent"><div class="mc-detail-title">Než začnete</div><div class="mc-about mc-consent-text">'+consentHtml()+'</div>'+
+      '<div class="mc-gender-q">Jak vás máme oslovovat?</div>'+genderButtons(g,"consentGender")+
       '<div class="mc-consent-checks">'+row("help","Rozumím, že aplikace nenahrazuje odbornou pomoc.")+row("age","Je mi alespoň 18 let.")+'</div>'+
       '<button class="mc-fab" '+(ok?"":"disabled")+' onclick="MC.consentAccept()">Vstoupit do aplikace</button></div>';
   }
+
 
   function render(){
     var root=document.getElementById("mc-root");
@@ -2770,9 +2811,11 @@
   window.MC = {
     menu:function(open){ state.menuOpen=!!open; render(); },
     consentToggle:function(k){ var c=state.consentChecks||(state.consentChecks={}); c[k]=!c[k]; render(); },
+    consentGender:function(g){ state.consentGender=g; render(); },
+    setGender:function(g){ setGender(g); toast(g==="f"?"Budeme vás oslovovat v ženském rodě":"Budeme vás oslovovat v mužském rodě"); render(); },
     consentAccept:function(){
-      var c=state.consentChecks||{}; if(!(c.help&&c.age)) return;
-      state.consentOk=true;
+      var c=state.consentChecks||{}; if(!(c.help&&c.age&&state.consentGender)) return;
+      state.consentOk=true; setGender(state.consentGender);
       try{ localStorage.setItem(CONSENT_KEY,JSON.stringify({v:CONSENT_VER,date:new Date().toISOString().slice(0,10)})); }catch(e){}
       scrollTop(); render();
     },
@@ -3185,7 +3228,8 @@
     var b=loadBackup(), d=daysSince(b.last);
     var h='<button class="mc-back" onclick="MC.home()">← Domů</button>';
     h+='<div class="mc-detail-head"><div class="mc-detail-title">Nastavení</div></div>';
-    h+='<div class="mc-detail-body"><div class="mc-fav-group mc-set"><h2>Záloha</h2>';
+    h+='<div class="mc-detail-body"><div class="mc-fav-group mc-set"><h2>Oslovení</h2><p class="mc-adm-note">Podle toho vám píšeme v mužském, nebo v ženském rodě.</p>'+genderButtons(genderOf(),"setGender")+'</div>';
+    h+='<div class="mc-fav-group mc-set"><h2>Záloha</h2>';
     h+='<p class="mc-adm-note">Oblíbené, přečtené a vaše nastavení jsou uložené jen v tomto telefonu. Když si vymažete data prohlížeče nebo změníte telefon, zmizí. Záloha je malý soubor, který si uložíte jinam — třeba pošlete do mailu nebo na Disk. Obnovit ji jde kdykoli tady.</p>';
     h+='<div class="mc-box"><span class="b-text">'+(b.last?'Poslední záloha: '+(d===0?'dnes':'před '+d+' '+(d===1?'dnem':'dny')):'Zatím žádná záloha')+' · oblíbených: '+favCount()+'</span></div>';
     h+='<div class="mc-adm-actions"><button class="mc-fab" onclick="MC.backupSave()">Uložit zálohu</button><button class="mc-fab ghost" onclick="MC.backupRestore()">Obnovit ze zálohy</button></div>';
