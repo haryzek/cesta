@@ -583,6 +583,7 @@
   .mc-intro-list{ margin:10px 0 0; padding-left:18px; list-style:disc; }
   .mc-intro-list li{ margin-top:6px; font-size:14.5px; line-height:1.5; color:var(--text); }
   .mc-soft.mc-intro .sc-actions{ justify-content:flex-start; margin-top:16px; }
+  .mc-soft .sc-actions .mc-fab.ghost{ border:1.5px solid var(--tone); color:var(--tone); background:transparent; }
   /* Výzva ke swipování */
   @keyframes mcPeek{ 0%{ transform:none; } 35%{ transform:translateX(-64px); } 60%{ transform:translateX(-64px); } 100%{ transform:none; } }
   .mc-swipe.hint .mc-swipe-card{ animation:mcPeek 1.2s ease .45s 1; }   /* o ~8 % rychlejší (25. 11. 2026) */
@@ -1687,6 +1688,7 @@
     STILL={ sig:sig, fs:fsOpen, menu:state.menuOpen, nag:!!state.nag };
     root.innerHTML=h;
     fsb=document.querySelector(".mc-fsheet .fs-body"); if(fsb) fsb.scrollTop=fsTop;
+    if(atCrossEntry()){ var bb=root.querySelector(".mc-back,.mc-fback"); if(bb){ bb.textContent="← Zpět"; bb.setAttribute("onclick","MC.goBack()"); } }
     fitTags();
     syncBack();
     var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
@@ -1801,7 +1803,7 @@
         a.tels.forEach(function(x){ h+='<a class="a-tel" href="tel:'+x[0].replace(/\D/g,"")+'"><b>'+esc(x[0])+'</b>'+esc(x[1])+'</a>'; });
         h+='</div>';
       }
-      if(a.crisis) h+='<button class="a-go" onclick="MC.detail(\'crisis\',\''+a.crisis+'\')">Otevřít První pomoc ›</button>';
+      if(a.crisis) h+='<button class="a-go" onclick="MC.cross(\'detail\',\'crisis\',\''+a.crisis+'\')">Otevřít První pomoc ›</button>';
       return h+'</div></div>';
     }).join("");
   }
@@ -1882,7 +1884,7 @@
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(s.name)+'</div></div>';
     if(s.mark==="K"){
       if(!al) h+='<div class="mc-box mc-warn"><span class="b-ic">'+IC.warn+'</span><span class="b-text">Tohle není na přerámování. Když je vám takhle, je tu první pomoc.</span></div>';
-      h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.open(\'crisis\')">Otevřít První pomoc</button></div>';
+      h+='<div class="mc-fab-wrap static"><button class="mc-fab" onclick="MC.cross(\'open\',\'crisis\')">Otevřít První pomoc</button></div>';
     } else if(s.reframings&&s.reframings.length){
       var refs=alive("situations",(s.reframings||[]).map(function(r){ return itemIndex.sitref[r.id]; }));
       h+='<ul class="mc-cards">';
@@ -2041,7 +2043,7 @@
     var h=secHead("journey","Moje cesta","Cvičebnice krok za krokem — oddíly, jejich cvičení, teorie a praxe.");
     h+='<ul class="mc-cards">';
     // Návod jako první karta — bez čísla, s ikonkou, ať je jasné, že to není oddíl.
-    h+='<li class="mc-card clickable mc-in" onclick="MC.open(\'guide\')"><div class="mc-card-eyebrow mc-guide-ic jnum">'+IC.guide+'</div>'+
+    h+='<li class="mc-card clickable mc-in" onclick="MC.cross(\'open\',\'guide\')"><div class="mc-card-eyebrow mc-guide-ic jnum">'+IC.guide+'</div>'+
        '<div class="mc-card-title">Jak s appkou pracovat</div><div class="mc-card-text">Kde začít, jak číst přerámování a jak cvičit.</div><span class="mc-card-go">›</span></li>';
     flat.sections.forEach(function(s){
       var n=(bySection[s.id]||[]).length;
@@ -2154,7 +2156,7 @@
       '<li>V Redakci jsou cvičení v pořadí cvičebnice. Začněte nahoře, u relaxace.</li>'+
       '<li>Jedno cvičení opakované víckrát dá víc než deset vyzkoušených.</li>'+
       '<li>U každého cvičení vidíte náročnost a čas, na konci je deník.</li></ul>'+
-      '<div class="sc-actions"><button class="mc-fab" onclick="MC.exIntroOk()">Rozumím</button><button class="mc-fab ghost" onclick="MC.open(\'guide\')">Celý návod ›</button></div></li>';
+      '<div class="sc-actions"><button class="mc-fab" onclick="MC.exIntroOk()">Rozumím</button><button class="mc-fab ghost" onclick="MC.cross(\'open\',\'guide\')">Celý návod ›</button></div></li>';
     if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá filtru.</div>';
     else { var last=null; items.forEach(function(it){
       if(grouped&&it.section_id!==last){ last=it.section_id; var sec=itemIndex.sections[last], g=groups.filter(function(x){ return x.id===last; })[0];
@@ -2296,7 +2298,7 @@
     h+='<div class="mc-detail-head"><div class="mc-detail-title">'+esc(title)+'</div>';
     h+='<button class="mc-detail-heart '+(on?"on":"")+'" onclick="MC.fav(\''+store+'\',\''+d.id+'\')" aria-label="Uložit"><svg class="he" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg class="hf" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button></div>';
     // Most z cvičení do jeho oddílu v Moje cesta — hned pod názvem.
-    if(sec) h+='<button class="mc-sec-link" onclick="MC.journeySection(\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
+    if(sec) h+='<button class="mc-sec-link" onclick="MC.cross(\'journeySection\',\''+sec.id+'\')"><span class="l">Oddíl '+("0"+sec.sort_order).slice(-2)+'</span>'+esc(sec.title)+' ›</button>';
     // Perex je upoutávka na kartu, v detailu se nekreslí (od 24. 11. 2026, Bob) — článek jede rovnou
     // textem, cvičení začíná „Než začneme“, oddíl svým obsahem.
     if(ADMIN.on) h+='<div class="mc-adm-detail">'+adminBar(store,d.id)+admPanel(admDetailTargets(store,item,sec,tab),false)+'</div>';
@@ -2567,7 +2569,7 @@
       '<p>Vedle přerámování tu najdete <strong>mikročlánky</strong>, <strong>cvičení</strong>, <strong>inspirace</strong>, <strong>podnětné otázky</strong>, encyklopedii <strong>tělesných příznaků</strong> a <strong>první pomoc</strong> v psychické krizi.</p>'+
       '<p>Co vás osloví, uložte si srdíčkem do <strong>Oblíbených</strong> — máte to pak po ruce.</p>'+
       '<div class="mc-about-h">Než začnete</div>'+disclaimerHtml()+
-      '<p><button class="a-guide" onclick="MC.open(\'guide\')">Jak s appkou pracovat — návod a tipy ›</button></p>'+
+      '<p><button class="a-guide" onclick="MC.cross(\'open\',\'guide\')">Jak s appkou pracovat — návod a tipy ›</button></p>'+
       '<p style="color:var(--soft); font-size:14px; font-family:var(--sans)">Autor obsahu: Robert Řeřicha, psychoterapeut.</p>'+
       '</div>';
   }
@@ -2776,9 +2778,9 @@
       try{ localStorage.setItem(CONSENT_KEY,JSON.stringify({v:CONSENT_VER,date:new Date().toISOString().slice(0,10)})); }catch(e){}
       scrollTop(); render();
     },
-    home:function(){ state.page="home"; state.section=null; state.detail=null; state.menuOpen=false; scrollTop(); render(); },
+    home:function(){ RET=[]; state.page="home"; state.section=null; state.detail=null; state.menuOpen=false; scrollTop(); render(); },
     open:function(key){
-      state.menuOpen=false; state.detail=null;
+      RET=[]; state.menuOpen=false; state.detail=null;
       if(key==="favorites"){ state.page="favorites"; state.section=null; state.fav.tile=null; }
       else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="gates"; if(key==="journey") state.journey.sectionId=null; }
       scrollTop(); render();
@@ -2875,7 +2877,15 @@
     deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
     deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
     // Lehčí cesta: oddíl 04 Relaxace a pocit bezpečí (bezpečné místo, dech).
-    deepLighter:function(){ MC.journeySection("sec_0004"); },
+    deepLighter:function(){ MC.cross("journeySection","sec_0004"); },
+    // Skok do jiné sekce (25. 11. 2026): zapamatuje, odkud člověk přišel; Zpět (gesto i tlačítko
+    // na cílové stránce) ho tam vrátí — i se scrollem. Menu, dlaždice a Domů zásobník mažou.
+    cross:function(fn,a,b){
+      var snap={ nav:JSON.parse(JSON.stringify({ page:state.page, section:state.section, detail:state.detail, rf:state.rf, journey:state.journey, fav:state.fav })), y:window.scrollY||0 };
+      MC[fn](a,b);
+      RET.push({ snap:snap, entry:navSig() });
+      render();   // ať tlačítko Zpět na cílové stránce už ví o návratu
+    },
     detail:function(type,id){ state.detail={ type:type, id:id, tab:"body", chainOpen:false }; state.adminEdit=null; scrollTop(); render(); },
     detailBack:function(){ state.detail=null; state.adminEdit=null; scrollTop(); render(); },
     detailTab:function(t){ if(state.detail) state.detail.tab=t; scrollTop(); render(); },
@@ -3039,7 +3049,7 @@
     var h='<div class="mc-swipe-card alert"><div class="sc-body"><span class="sc-alert-ic">'+IC.warn+'</span><div class="sc-alert-t">'+esc(one?ALERTS[topics[0]].text:ALERT_GENERIC)+'</div>';
     notes.forEach(function(n){ h+='<div class="sc-alert-n">'+esc(n)+'</div>'; });
     if(tels.length){ h+='<div class="sc-alert-tels">'; tels.forEach(function(x){ h+='<a href="tel:'+x[0].replace(/\D/g,"")+'"><b>'+esc(x[0])+'</b>'+esc(x[1])+'</a>'; }); h+='</div>'; }
-    if(crisis) h+='<button class="sc-alert-go" onclick="MC.detail(\'crisis\',\''+crisis+'\')">Otevřít První pomoc ›</button>';
+    if(crisis) h+='<button class="sc-alert-go" onclick="MC.cross(\'detail\',\'crisis\',\''+crisis+'\')">Otevřít První pomoc ›</button>';
     return h+'</div></div>';
   }
   var TUTOR_KEY="mc_tutorial";
@@ -3207,11 +3217,22 @@
   // ← Zpět na obrazovce. Jen z domovské obrazovky odchází z appky. Princip: dokud je kam se
   // vracet, drží appka v historii prohlížeče jeden „strážní“ krok; gesto ho spotřebuje a appka
   // místo opuštění stránky udělá backTarget(). Uvnitř Miowebu to funguje stejně (stejná URL).
+  // Návraty po skoku do jiné sekce (MC.cross): {snap, entry}; entry = podpis cílové stránky.
+  var RET=[];
+  function navSig(){ return [state.page,state.section,state.rf.view,state.rf.situation,state.rf.pain,
+    state.detail?state.detail.type+":"+state.detail.id:"",state.fav.tile,state.journey.sectionId].join("|"); }
+  function restoreSnap(r){
+    var n=r.snap.nav; state.page=n.page; state.section=n.section; state.detail=n.detail; state.rf=n.rf; state.journey=n.journey; state.fav=n.fav;
+    state.menuOpen=false; state.swipe.key=null; state.swipe.ids=[]; render();
+    try{ window.scrollTo(0,r.snap.y||0); }catch(e){}
+  }
+  function atCrossEntry(){ return RET.length&&navSig()===RET[RET.length-1].entry; }
   function backTarget(){
     if(state.menuOpen) return function(){ MC.menu(false); };
     if(!state.detail&&state.page==="section"&&CONTENT[state.section]&&state.sec[state.section]&&state.sec[state.section].filterOpen) return function(){ MC.filterShow(state.section); };
     if(state.adminEdit) return function(){ MC.admEditClose(); };
     if(state.nag) return function(){ state.nag=false; render(); };
+    if(atCrossEntry()) return function(){ restoreSnap(RET.pop()); };
     if(state.detail) return function(){ MC.detailBack(); };
     if(state.page==="favorites") return state.fav.tile?function(){ MC.favTile(null); }:function(){ MC.home(); };
     if(state.page==="admin"||state.page==="settings") return function(){ MC.home(); };
