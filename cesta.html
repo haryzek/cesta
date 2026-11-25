@@ -268,9 +268,13 @@
     border-radius:9px; display:flex; align-items:center; justify-content:center; }
 
   /* ===== SECTION HEADER ===== */
-  .mc-sec-head{ padding:24px var(--gutter) 2px; }
+  .mc-sec-head{ padding:18px var(--gutter) 2px; }
   .mc-sec-head h1{ color:var(--tone); }
-  .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:8px; }
+  .mc-sec-head p{ color:var(--soft); font-size:15px; line-height:1.55; margin-top:18px; }
+  /* Rytmus jako Moje oblíbené (25. 11. 2026): horní lišta → 18 → nadpis → 18 → text → 18 → obsah. */
+  .mc-sec-head:has(> p){ padding-bottom:0; }
+  .mc-sec-head:has(> p) + :is(.mc-cards,.mc-list,.mc-namelist){ padding-top:18px; }
+  .mc-sec-head:has(> p) + .mc-search-wrap{ margin-top:18px; }
   /* Řádek H1 + přepínač „jen oblíbené". Srdíčko menší a obrysové, ať se
      nečte jako „uložit sekci"; plné jen když je přepnuté. */
   /* flex-wrap: na úzkém displeji (≈320 px) tlačítka spadnou pod nadpis, vpravo zarovnaná. */
@@ -366,8 +370,9 @@
   .mc-fab:active{ transform:scale(.98); }
 
   /* ===== FEELING LIST ===== */
-  .mc-list{ padding:20px var(--gutter) 0; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:8px; align-content:start; }
-  .mc-feeling{ display:flex; align-items:center; gap:7px; padding:9px 4px 9px 10px; background:var(--surface);
+  /* Hustší seznamy (25. 11. 2026): nižší boxy, rozestup 7 px — víc na stránku. Checkbox beze změny. */
+  .mc-list{ padding:20px var(--gutter) 0; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:7px; align-content:start; }
+  .mc-feeling{ display:flex; align-items:center; gap:7px; padding:6px 4px 6px 10px; background:var(--surface);
     border:1px solid var(--border); border-radius:11px; transition:border-color .15s ease,background .15s ease; min-width:0; }
   .mc-feeling.checked{ border-color:var(--tone); background:var(--tone-soft); }
   .mc-check{ flex-shrink:0; width:20px; height:20px; border-radius:6px; border:1px solid var(--border);
@@ -389,7 +394,7 @@
   /* ===== NAME LIST (crisis, body) ===== */
   .mc-namelist{ padding:24px var(--gutter) 0; }
   .mc-name-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
-    padding:15px 17px; background:var(--surface); border:1px solid var(--border); border-radius:14px; margin-bottom:8px;
+    padding:11px 17px; background:var(--surface); border:1px solid var(--border); border-radius:14px; margin-bottom:7px;
     cursor:pointer; text-align:left; transition:border-color .15s ease,background .15s ease; }
   @media (hover:hover){ .mc-name-item:hover{ border-color:var(--accent); background:var(--surface-2); } }
   .mc-name-item .n{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24;
@@ -409,7 +414,6 @@
   .mc-card.nofav{ padding-right:20px; }
   .mc-name-item .sub-n{ margin-left:auto; font-family:var(--mono); font-size:11px; color:var(--soft); }
   /* Zrcadlo bolístek: věty, ne názvy — sans, menší, bez serifové váhy */
-  .mc-mirror .mc-name-item .n{ font-family:var(--sans); font-weight:500; font-size:15px; line-height:1.4; }
   .mc-under{ margin:26px var(--gutter) 0; padding-top:18px; border-top:1px solid var(--border); }
   .mc-under h2{ color:var(--tone); }
   .mc-under p{ color:var(--soft); font-size:14.5px; line-height:1.55; margin:6px 0 12px; }
