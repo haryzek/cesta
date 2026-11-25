@@ -362,19 +362,20 @@
   .mc-chip{ background:var(--surface); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
   .mc-chip.dur{ background:var(--surface); color:var(--accent); font-family:var(--mono); font-weight:700; }
-  /* Skupiny ve filtru: malý nadpis v barvě skupiny, pilulky s jemným podkladem, vybraná sytá. */
+  /* Skupiny ve filtru: malý nadpis jednou tlumenou barvou, pilulky s jemným podkladem skupiny a jednotným obrysem, vybraná sytá. */
   .fs-group + .fs-group{ margin-top:20px; }
   .fs-gh{ margin-bottom:8px; font-family:var(--sans); font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--soft); }
-  .fs-group.g-dur .fs-gh{ color:var(--accent); }
-  .mc-chip[class*=" g-"]{ border-color:transparent; }
-  .mc-chip.g-st{ background:var(--g-st-bg); color:var(--g-st-tx); }  .fs-group.g-st .fs-gh{ color:var(--g-st-tx); }
-  .mc-chip.g-em{ background:var(--g-em-bg); color:var(--g-em-tx); }  .fs-group.g-em .fs-gh{ color:var(--g-em-tx); }
-  .mc-chip.g-co{ background:var(--g-co-bg); color:var(--g-co-tx); }  .fs-group.g-co .fs-gh{ color:var(--g-co-tx); }
-  .mc-chip.g-vz{ background:var(--g-vz-bg); color:var(--g-vz-tx); }  .fs-group.g-vz .fs-gh{ color:var(--g-vz-tx); }
-  .mc-chip.g-ch{ background:var(--g-ch-bg); color:var(--g-ch-tx); }  .fs-group.g-ch .fs-gh{ color:var(--g-ch-tx); }
-  .mc-chip.g-st.on{ background:var(--g-st-on); }  .mc-chip.g-em.on{ background:var(--g-em-on); }
-  .mc-chip.g-co.on{ background:var(--g-co-on); }  .mc-chip.g-vz.on{ background:var(--g-vz-on); }
-  .mc-chip.g-ch.on{ background:var(--g-ch-on); }
+  .mc-chip[class*=" g-"]{ border-color:var(--border); }   /* jednotný jemný obrys, barva jen v podkladu (25. 11. 2026) */
+  .mc-chip.g-st{ background:var(--g-st-bg); color:var(--g-st-tx); }
+  .mc-chip.g-em{ background:var(--g-em-bg); color:var(--g-em-tx); }
+  .mc-chip.g-co{ background:var(--g-co-bg); color:var(--g-co-tx); }
+  .mc-chip.g-vz{ background:var(--g-vz-bg); color:var(--g-vz-tx); }
+  .mc-chip.g-ch{ background:var(--g-ch-bg); color:var(--g-ch-tx); }
+  .mc-chip.g-st.on{ background:var(--g-st-on); border-color:var(--g-st-on); }
+  .mc-chip.g-em.on{ background:var(--g-em-on); border-color:var(--g-em-on); }
+  .mc-chip.g-co.on{ background:var(--g-co-on); border-color:var(--g-co-on); }
+  .mc-chip.g-vz.on{ background:var(--g-vz-on); border-color:var(--g-vz-on); }
+  .mc-chip.g-ch.on{ background:var(--g-ch-on); border-color:var(--g-ch-on); }
   .mc-chip[class*=" g-"].on{ color:var(--on-accent); }
   @media (hover:hover){ .mc-chip:hover{ border-color:var(--soft); } }
   .mc-chip.on,.mc-chip.dur.on{ background:var(--tone); border-color:var(--tone); color:var(--on-accent); font-weight:700; }
