@@ -147,7 +147,7 @@
   .mc-topbar-title{ flex:1; text-align:center; font-family:var(--serif); font-weight:600; font-size:19px;
     font-variation-settings:'opsz' 36; color:var(--text); letter-spacing:-0.01em; cursor:pointer; line-height:1.1; }
   .mc-topbar-title .mc-mark{ color:var(--accent); font-style:italic; }
-  .mc-heart-top.on{ color:var(--heart); }
+  .mc-heart-top,.mc-heart-top.on{ color:var(--heart); }   /* obrys taky barvou srdíčka, jako v kartách (25. 11. 2026) */
   .mc-heart-top .hf{ display:none; }
   .mc-heart-top.on .he{ display:none; }
   .mc-heart-top.on .hf{ display:block; }
@@ -286,7 +286,9 @@
      výš. Odsazení proto řeší margin a wrap sám těsně obepíná input. */
   .mc-search-wrap{ margin:20px var(--gutter) 2px; position:relative; display:flex; }
   .mc-search{ width:100%; padding:11px 68px 11px 40px; font-family:var(--sans); font-size:15px; color:var(--text);
-    background:var(--bg); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
+    background:var(--field); border:1px solid var(--border); border-radius:10px; outline:none; transition:border-color .15s ease; }
+  /* Pole hledání drobounce světlejší než pozadí appky (25. 11. 2026) — ne bílé, jen prosvětlené. */
+  #mc-root{ --field:color-mix(in srgb, var(--bg) 55%, var(--surface)); }
   .mc-search::placeholder{ color:var(--muted); }
   .mc-search:focus{ border-color:var(--accent); }
   /* Lupa a reset výběru: stejná velikost i barva jako placeholder (20. 11. 2026) */
@@ -344,7 +346,7 @@
   .mc-fab-row .mc-fab{ flex:1; min-width:0; }
   .mc-fsheet .fs-foot .mc-fab:disabled{ opacity:.45; cursor:default; }
   .fkw{ width:100%; padding:10px 12px; font-family:var(--sans); font-size:15px; color:var(--text);
-    background:var(--surface); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:14px; }
+    background:var(--field); border:1px solid var(--border); border-radius:10px; outline:none; margin-bottom:14px; }
   .fkw:focus{ border-color:var(--tone); }
     .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
   .mc-chip{ background:var(--surface); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
