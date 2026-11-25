@@ -1570,6 +1570,7 @@
     root.innerHTML=h;
     fsb=document.querySelector(".mc-fsheet .fs-body"); if(fsb) fsb.scrollTop=fsTop;
     fitTags();
+    syncBack();
     var ta=document.getElementById("mc-adm-ta"); if(ta&&!ta.value.length) ta.focus();
     bindSwipe();
     var s=document.getElementById("mc-search");
@@ -2367,6 +2368,7 @@
     "* Když vyberete víc pocitů najednou, appka je promíchá tak, aby se nejdřív ukázalo to nejsilnější z každého. Po čtyřiceti pěti větách se zastaví a nabídne, ať si zbytek necháte na jindy — klidně ale pokračujte. Výběr zrušíte šipkou vedle hledání.",
     "* Přepínač **Jen nové** pod kartami ukáže jen to, co jste ještě neviděli; číslo v závorce říká, kolik toho zbývá. Zapíná se sám, když je tu něco nového. Až uvidíte všechno, nabídneme vám projít si to znovu — opakování pomáhá.",
     "* **Filtr** hledá podle slova nebo podle štítků. Vyberte, co chcete, a ťukněte na **Zobrazit**.",
+    "* Gesto **zpět** na telefonu funguje jako šipka Zpět v appce — zavře okno nebo vás vrátí o krok. Z appky odejdete až z úvodní obrazovky.",
     "* **Přidejte si appku na plochu telefonu.** V Chrome přes menu ⋮ → Přidat na plochu, v Safari přes Sdílet → Přidat na plochu. Pak funguje i bez internetu.",
     "* **Tmavý režim** zapnete v menu.",
     "* **Napište nám** (v menu) — co se líbí, co chybí, co nesedí. Ke konkrétní větě napíšete bublinkou vpravo pod kartami.",
@@ -2794,6 +2796,7 @@
     swipeNext:function(){ swipeStep(1); },
     fbItem:function(id){ fbItem(id); },
     fbCurrent:function(){ var el=document.getElementById("mc-swipe"), c=el&&el.children[state.swipe.index], id=c&&c.getAttribute("data-id"); if(id&&FB_ITEMS[id]) fbItem(id); else fbGeneral(); },
+    goBack:function(){ var t=backTarget(); if(t) t(); return !!t; },
     favTile:function(t){ state.fav.tile=t; if(t==="reframing") state.fav.type="reframings"; state.swipe.key=null; state.swipe.ids=[]; scrollTop(); render(); },
     favType:function(k){ state.fav.type=k; state.swipe.key=null; state.swipe.ids=[]; render(); },
     swipeClose:function(){ if(state.page==="favorites"){ MC.favTile(null); return; } if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
@@ -2993,9 +2996,56 @@
     }catch(e){}
   }
 
+  // ===================== GESTO ZPĚT (Android, šipka prohlížeče) =====================
+  // Od 25. 11. 2026: gesto zpět dělá totéž co nejbližší „Zpět“ v appce — nejdřív zavře vrstvu
+  // (menu, filtr, okno se zálohou, úpravu v adminu), pak vede po stejných cílech jako tlačítka
+  // ← Zpět na obrazovce. Jen z domovské obrazovky odchází z appky. Princip: dokud je kam se
+  // vracet, drží appka v historii prohlížeče jeden „strážní“ krok; gesto ho spotřebuje a appka
+  // místo opuštění stránky udělá backTarget(). Uvnitř Miowebu to funguje stejně (stejná URL).
+  function backTarget(){
+    if(state.menuOpen) return function(){ MC.menu(false); };
+    if(!state.detail&&state.page==="section"&&CONTENT[state.section]&&state.sec[state.section]&&state.sec[state.section].filterOpen) return function(){ MC.filterShow(state.section); };
+    if(state.adminEdit) return function(){ MC.admEditClose(); };
+    if(state.nag) return function(){ state.nag=false; render(); };
+    if(state.detail) return function(){ MC.detailBack(); };
+    if(state.page==="favorites") return state.fav.tile?function(){ MC.favTile(null); }:function(){ MC.home(); };
+    if(state.page==="admin"||state.page==="settings") return function(){ MC.home(); };
+    if(state.page==="section"){
+      if(state.section==="reframing"){
+        var v=state.rf.view;
+        if(v==="detail") return function(){ MC.rfBack(); };
+        if(v==="fearGroup") return function(){ MC.rfGate("fears"); };
+        if(v==="situation") return function(){ MC.rfSitBack(); };
+        if(v==="pain") return function(){ MC.rfGate("pains"); };
+        if(v==="feelings"||v==="fears"||v==="pains") return function(){ MC.rfGate(null); };
+      }
+      if(state.section==="journey"&&state.journey.sectionId) return function(){ MC.journeyBack(); };
+      return function(){ MC.home(); };
+    }
+    return null;   // domovská obrazovka (a souhlas) → gesto opouští appku
+  }
+  var BACK_SKIP=false;
+  function syncBack(){
+    try{
+      var hs=history.state, guard=!!(hs&&hs.mcGuard);
+      if(backTarget()&&hasConsent()){ if(!guard) history.pushState({mcGuard:1},""); }
+      // Doma zbytečný strážný krok uklidit, ať gesto odchází hned napoprvé.
+      else if(guard){ BACK_SKIP=true; history.back(); }
+    }catch(e){}
+  }
+  function initBack(){
+    try{ if(!(history.state&&history.state.mcGuard)) history.replaceState({mcBase:1},""); }catch(e){}
+    window.addEventListener("popstate",function(){
+      if(BACK_SKIP){ BACK_SKIP=false; return; }
+      var t=backTarget();
+      if(t) t(); else syncBack();
+    });
+  }
+
   applyTheme();
   initSW();
   initBackup();
+  initBack();
   load();
 })();
 </script>

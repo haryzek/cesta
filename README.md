@@ -522,6 +522,7 @@ Pro **věty** — triplet přerámování, hlášky bolístek, Inspirace, Podně
 ### Navigace a stav
 
 - **Šipka „Zpět" vede tam, odkud jsem přišel**, ne na fixní seznam. Do téhož detailu se dá dojít ze seznamu, z Oblíbených i z „Pro vás"; detail si pamatuje návratový bod. V Přerámování vede Zpět z tripletu na pocity / skupinu strachů / situaci podle toho, odkud se přišlo (`rf.origin`).
+- **Gesto zpět (Android, šipka prohlížeče) = nejbližší „Zpět“ v appce** (od 25. 11. 2026, `backTarget()` + `syncBack()`): nejdřív zavře vrstvu (menu, filtr, okno se zálohou, úprava v adminu), pak vede po stejných cílech jako tlačítka ← Zpět (detail → seznam, triplet → pocity / strach, situace → skupina → strachy → brány, bolístka → bolístky, oddíl → oddíly, dlaždice Oblíbených → Moje oblíbené, sekce → domů). Jen z domovské obrazovky odchází z appky. Mechanika: dokud je kam se vracet, drží appka v historii prohlížeče jeden strážný krok (`{mcGuard:1}`, stejná URL), gesto ho spotřebuje (`popstate`) a appka udělá `backTarget()`; doma se strážný krok uklidí, ať gesto odchází napoprvé. Test `local/tests/test_back.js`.
 - **Výběr pocitů v Přerámování se drží v rámci relace** — přežije přepnutí sekce, ale neukládá se (refresh = čistý stůl). Že něco visí vybráno, je vidět na spodním tlačítku „Zobrazit přerámování (N)".
 - **Tělesné příznaky** se řadí abecedně (ne podle `sort_order`).
 
