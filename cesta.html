@@ -679,14 +679,17 @@
   .mc-name-item .nb:has(.ex-sub){ flex:1; }
   .ex-sub .d{ gap:6px; }
   .ex-sub .dl{ font-family:var(--sans); font-size:12px; color:var(--soft); }
-  .ex-sub .t{ margin-left:auto; }
+  /* Čas hned za náročností (25. 11. 2026, řetěz z řádku pryč): hodiny vysoké jako pilulka, písmo jako „náročnost“. */
+  .ex-sub{ gap:14px; }
+  .ex-sub .t .m{ gap:5px; font-family:var(--sans); font-size:12px; color:var(--soft); }
+  .ex-sub .t svg{ width:18px; height:18px; }
   .mc-name-item .n-warn{ display:inline-flex; vertical-align:-2px; margin-left:6px; color:var(--accent); }
   .mc-name-item .n-warn svg{ width:15px; height:15px; }
 
   /* Boxy pod taby: řetěz a upozornění (stejný rámeček jako .mc-strip) */
   .mc-box{ margin:10px var(--gutter) 0; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
   .mc-box .b-head{ display:flex; align-items:center; gap:12px; width:100%; padding:12px 16px; background:none; border:none; cursor:pointer; text-align:left; }
-  .mc-box .b-num{ font-family:var(--mono); font-size:12px; color:var(--accent); background:var(--accent-dim); padding:4px 8px; border-radius:8px; }
+  .mc-box .b-num{ flex-shrink:0; width:40px; text-align:center; font-family:var(--mono); font-size:12px; font-weight:700; color:var(--accent); background:var(--accent-dim); padding:4px 0; border-radius:8px; }
   .mc-box .b-text{ flex:1; font-family:var(--sans); font-size:14px; color:var(--text); line-height:1.45; }
   .mc-box .b-chev{ color:var(--soft); display:flex; transition:transform .15s ease; }
   .mc-box .b-chev svg{ width:16px; height:16px; }
@@ -814,8 +817,9 @@
      (trvání / frekvence / doba praxe — každý zvlášť, ať se nic nezalamuje), svislá linka,
      vpravo „Náročnost“ a pod ní pilulka zarovnaná doleva. */
   .mc-strip.ex{ align-items:center; gap:12px; }
-  .mc-strip.ex .s-ic{ width:calc(var(--n) * 20px); height:calc(var(--n) * 20px); border-radius:12px; }
-  .mc-strip.ex .s-ic svg{ width:calc(var(--n) * 8px + 4px); height:calc(var(--n) * 8px + 4px); }
+  /* Hodiny vždy jedna velikost 40 px (25. 11. 2026), i když jsou vedle tři řádky. */
+  .mc-strip.ex .s-ic{ width:40px; height:40px; border-radius:12px; }
+  .mc-strip.ex .s-ic svg{ width:20px; height:20px; }
   .mc-strip .s-rows{ flex:1; min-width:0; display:flex; flex-direction:column; }
   .mc-strip .s-rows .s-value{ line-height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   /* Svislá linka přes celou výšku boxu, od horního k dolnímu okraji (záporný margin = padding boxu). */
@@ -2075,9 +2079,9 @@
   function viewSectionExercises(s){
     var h='<div class="mc-namelist">';
     alive("exercises",bySection[s.id]||[]).forEach(function(e){
-      // Řádek (25. 11. 2026): vlevo pilulka + „náročnost“, vpravo čas; vykřičník (upozornění) hned za názvem.
+      // Řádek (25. 11. 2026): pilulka + „náročnost“, hned za ní čas; vykřičník (upozornění) za názvem. Řetěz jen v detailu.
       h+='<button class="mc-name-item mc-in" onclick="MC.detail(\'exercises\',\''+e.id+'\')"><span class="nb"><span class="n">'+esc(e.name)+(e.warning?'<span class="n-warn" aria-label="Má upozornění">'+IC.warn+'</span>':'')+'</span>'+
-         '<span class="sub ex-sub">'+(e.difficulty?'<span class="m d">'+diffPill(e.difficulty)+'<span class="dl">náročnost</span></span>':'')+(e.chain_id?'<span class="m">'+IC.chain+e.chain_order+'/'+(byChain[e.chain_id]||[]).length+'</span>':'')+'<span class="t">'+minutes(e.duration)+'</span></span></span><span class="go">›</span></button>';
+         '<span class="sub ex-sub">'+(e.difficulty?'<span class="m d">'+diffPill(e.difficulty)+'<span class="dl">náročnost</span></span>':'')+'<span class="t">'+minutes(e.duration)+'</span></span></span><span class="go">›</span></button>';
     });
     return h+'</div>';
   }
@@ -2300,7 +2304,7 @@
         // Box náročnosti: Trvání (jedna performance) · Praxe (frequency /
         // training_period) · Náročnost. Návrh local/_design/box_náročnosti.jpg.
         var lines=[item.duration?item.duration+" min":"",item.frequency,item.training_period].filter(Boolean);
-        h+='<div class="mc-strip ex" style="--n:'+Math.max(2,lines.length)+'"><div class="s-ic">'+IC.clock+'</div><div class="s-rows">';
+        h+='<div class="mc-strip ex"><div class="s-ic">'+IC.clock+'</div><div class="s-rows">';
         lines.forEach(function(l){ h+='<div class="s-value">'+esc(l)+'</div>'; });
         h+='</div>';
         if(item.difficulty) h+='<span class="s-sep"></span><div class="s-diff"><div class="s-label">Náročnost</div>'+diffPill(item.difficulty)+'</div>';
