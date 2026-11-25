@@ -557,9 +557,8 @@
   .mc-swipe-card.tutor .sc-body{ overflow:hidden; }
   .sc-tutor-t{ font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.25; color:var(--tone); font-variation-settings:'opsz' 36; }
   .sc-tutor-p{ margin:10px 0 0; font-size:15.5px; line-height:1.5; color:var(--text); }
-  .sc-thumb{ position:absolute; left:50%; bottom:-6px; width:74px; margin-left:-37px; color:var(--muted); opacity:.75;
-    animation:mcThumb 2.4s ease-in-out .6s infinite; }
-  .sc-thumb svg{ width:100%; display:block; }
+  .sc-hand{ display:block; width:84px; margin:22px auto 0; color:var(--muted); opacity:.8; }
+  .sc-hand svg{ width:100%; display:block; }
   .sc-tutor-up{ display:flex; justify-content:center; color:var(--tone); margin-bottom:12px; animation:mcUp 1.4s ease-in-out infinite; }
   .sc-tutor-up svg{ width:30px; height:30px; }
   @keyframes mcUp{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
@@ -570,7 +569,6 @@
   .sc-tutor-dl{ position:absolute; left:16px; bottom:14px; color:var(--tone); animation:mcDl 1.4s ease-in-out infinite; }
   .sc-tutor-dl svg{ width:30px; height:30px; display:block; transform:rotate(-135deg); }
   @keyframes mcDl{ 0%,100%{ transform:translate(0,0); } 50%{ transform:translate(-6px,6px); } }
-  @keyframes mcThumb{ 0%,100%{ transform:translateX(0); } 30%{ transform:translateX(-46px); } 60%{ transform:translateX(38px); } }
   /* Měkký řez — výraznější než „Stačí pro dnes?“ */
   .mc-swipe-card.break.soft .sc-body{ background:var(--tone-soft); border:1.5px solid var(--tone); border-style:solid; }
   .sc-soft-t{ font-family:var(--serif); font-weight:600; font-size:24px; line-height:1.2; color:var(--tone); font-variation-settings:'opsz' 36; }
@@ -3054,9 +3052,15 @@
   }
   var TUTOR_KEY="mc_tutorial";
   function tutorDone(){ try{ return localStorage.getItem(TUTOR_KEY)==="1"; }catch(e){ return true; } }
-  var THUMB_SVG='<svg viewBox="0 0 80 110" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 110V44a16 16 0 0 1 32 0v66"/><path d="M31 42a9 9 0 0 1 18 0v9H31z"/></svg>';
+  // Ruka s šipkou doleva (25. 11. 2026, podle Bobovy předlohy local/pictures/swipe.jpg): statická,
+  // šedý obrys. Pohyb naznačuje samotná karta (kvrdlání), ne animovaný prst.
+  var HAND_SVG='<svg viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">'+
+    '<path d="M25 30a14 14 0 1 1 26 0"/>'+
+    '<path d="M31 78V29a7 7 0 0 1 14 0v28a6 6 0 0 1 12 0v5a6 6 0 0 1 12 0v4a6 6 0 0 1 12 0v22c0 15-12 27-28 27h-6c-9 0-15-4-20-11L12 82c-3-4-1-9 3-11 5-2 10 1 13 5l3 4"/>'+
+    '<path d="M45 57v11M57 62v9M69 66v8"/>'+
+    '<path d="M90 18H64M73 9l-9 9 9 9"/></svg>';
   function tutorCard(){
-    return '<div class="mc-swipe-card tutor"><div class="sc-body"><div class="sc-tutor-t">Jak na to</div><p class="sc-tutor-p">Posuňte prstem doleva — přijde další odpověď. Doprava se vrátíte zpátky.</p><p class="sc-tutor-p">Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
+    return '<div class="mc-swipe-card tutor"><div class="sc-body"><div class="sc-tutor-t">Jak na to</div><p class="sc-tutor-p">Posuňte prstem doleva — přijde další odpověď. Doprava se vrátíte zpátky.</p><p class="sc-tutor-p">Co vás osloví, uložte srdíčkem.</p><span class="sc-hand" aria-hidden="true">'+HAND_SVG+'</span></div></div>';
   }
   var ARROW_UP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="4"/><polyline points="5 11 12 4 19 11"/></svg>';
   function tutorCard2(){
@@ -3074,7 +3078,7 @@
     var t=k==="questions"
       ?'<div class="sc-tutor-t">Otázky k zamyšlení</div><p class="sc-tutor-p">Nemají správné odpovědi. Vyberte si jednu, která vás zaujme, a chvíli s ní zůstaňte. Klidně celý den.</p>'
       :'<div class="sc-tutor-t">Jak číst</div><p class="sc-tutor-p">Pomalu, klidně nahlas. Stačí pár vět, které necháte doznít.</p>';
-    return '<div class="mc-swipe-card tutor" data-tkey="'+TUTOR_SEC[k]+'"><div class="sc-body">'+t+'<p class="sc-tutor-p">Posuňte prstem doleva a přijde další. Co vás osloví, uložte srdíčkem.</p><span class="sc-thumb" aria-hidden="true">'+THUMB_SVG+'</span></div></div>';
+    return '<div class="mc-swipe-card tutor" data-tkey="'+TUTOR_SEC[k]+'"><div class="sc-body">'+t+'<p class="sc-tutor-p">Posuňte prstem doleva a přijde další. Co vás osloví, uložte srdíčkem.</p><span class="sc-hand" aria-hidden="true">'+HAND_SVG+'</span></div></div>';
   }
   function preCards(alertIds,withTypes){
     return alertCard(alertIds)+(tutorDone()?"":tutorCard()+(withTypes?tutorCard2():"")+tutorCard3());
