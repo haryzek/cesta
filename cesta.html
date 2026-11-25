@@ -1716,7 +1716,7 @@
   function fearMatches(q,x){ return deburr(x.name).indexOf(q)>-1 || (x.aliases||[]).some(function(a){ return deburr(a).indexOf(q)>-1; }); }
   function viewRfFears(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
-    h+='<div class="mc-sec-head"><h1>Strachy</h1><p>Čeho se bojíte? Najděte to, co je vám nejblíž.</p></div>';
+    h+='<div class="mc-sec-head"><h1>Čeho se bojím?</h1><p>Najděte strach, který je vám nejblíž.</p></div>';
     h+=searchBox("Hledejte strach…","rfFearSearch",rf.fearSearch);
     if(rf.fearSearch.trim()){
       // Aliasy se hledají, nezobrazují.
@@ -1817,7 +1817,7 @@
   var SWIPE_NEXT=null;
   function viewRfPains(){
     var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
-    h+='<div class="mc-sec-head"><h1>Bolístky</h1><p>Věty, které si říkáme. Najděte tu svou.</p></div>';
+    h+='<div class="mc-sec-head"><h1>Co mě štve?</h1><p>Najděte větu, která mluví za vás.</p></div>';
     h+=searchBox("Hledejte větu…","rfPainSearch",rf.painSearch);
     var list=flat.pains;
     if(rf.painSearch.trim()){ var q=deburr(rf.painSearch); list=list.filter(function(p){ return deburr(p.text).indexOf(q)>-1; }); }
@@ -1860,7 +1860,7 @@
   function viewRfFeelings(){
     var rf=state.rf, feelings=visibleFeelings(), total=mainFeelings().length+secondaryFeelings().length;
     var h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
-    h+='<div class="mc-sec-head"><h1>Jádrové pocity</h1><p>Vyberte, jak se cítíte — a podívejte se na to jinak.</p></div>';
+    h+='<div class="mc-sec-head"><h1>Jak se cítím?</h1><p>Podívejte se na to z jiné perspektivy.</p></div>';
     var nSel=Object.keys(rf.selected).length;
     h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
     h+='<input id="mc-search" class="mc-search" placeholder="Hledejte pocit…" enterkeyhint="search" oninput="MC.rfSearch(this.value)" onkeydown="MC.searchKey(event)">';
