@@ -1086,7 +1086,7 @@
     rf:{ view:"gates", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50,
          origin:"feelings", detailTitle:null,
          fearGroup:null, fearSearch:"", situation:null, sitSel:{},
-         painSearch:"", pain:null, painLimit:30, softOpen:{} },
+         painSearch:"", pain:null, painCat:null, painLimit:30, softOpen:{} },
     sec:{},         // key -> { mode, filterOpen, kw, tags:[], dur, search }
     journey:{ sectionId:null, tab:"exercises" },   // Moje cesta: otevřený oddíl + tab
     swipe:{ key:null, ids:[], index:0 },           // snímek proudu karet (viz swipeView)
@@ -1975,10 +1975,28 @@
     h+=swipeFoot(unseenCount(store,all))+'</div>'; SWIPE_NEXT=null; return h;
   }
   var SWIPE_NEXT=null;
+  // Bolístky po kategoriích (25. 11. 2026, jako Strachy): kategorie s počty → bolístky kategorie → hlášky.
+  // Hledání nahoře hledá napříč všemi. Kategorii má každá bolístka ve zdroji (pole `kategorie`).
+  var PAIN_CATS=["Láska a vztahy","Rodina a děti","Lidé kolem mě","Práce a peníze","Tělo a zdraví","Vztah k sobě","Smysl a čas","Dnešní svět"];
   function viewRfPains(){
-    var rf=state.rf, h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
+    var rf=state.rf, h;
+    if(rf.painCat&&!rf.painSearch.trim()){
+      h='<button class="mc-back" onclick="MC.rfPainCat(null)">← Bolístky</button>';
+      h+='<div class="mc-detail-head"><div class="mc-detail-title">Co mě štve?</div></div><div class="mc-namelist mc-mirror">';
+      flat.pains.filter(function(p){ return p.kategorie===rf.painCat; }).forEach(function(p){ h+='<button class="mc-name-item mc-in" onclick="MC.rfPain(\''+p.id+'\')"><span class="n">'+esc(p.text)+'</span><span class="go">›</span></button>'; });
+      return h+'</div>';
+    }
+    h='<button class="mc-back" onclick="MC.rfGate(null)">← Přerámování</button>';
     h+='<div class="mc-sec-head"><h1>Co mě štve?</h1><p>Najděte větu, která mluví za vás.</p></div>';
     h+=searchBox("Hledejte větu…","rfPainSearch",rf.painSearch);
+    if(!rf.painSearch.trim()){
+      h+='<div class="mc-namelist">';
+      PAIN_CATS.forEach(function(c){
+        var n=flat.pains.filter(function(p){ return p.kategorie===c; }).length; if(!n) return;
+        h+='<button class="mc-name-item mc-in" onclick="MC.rfPainCat(\''+c+'\')"><span class="n">'+esc(c)+'</span><span class="sub-n">'+n+'</span><span class="go">›</span></button>';
+      });
+      return h+'</div>';
+    }
     var list=flat.pains;
     if(rf.painSearch.trim()){ var q=deburr(rf.painSearch); list=list.filter(function(p){ return deburr(p.text).indexOf(q)>-1; }); }
     var shown=list.slice(0,rf.painLimit);
@@ -1992,12 +2010,12 @@
   function viewRfPain(){
     var rf=state.rf, p=itemIndex.pains[rf.pain];
     if(!p) return '<div class="mc-empty">Nenalezeno.</div>';
-    var h='<button class="mc-back" onclick="MC.rfGate(\'pains\')">← Bolístky</button>';
+    var h='<button class="mc-back" onclick="MC.rfPainBack()">← Bolístky</button>';
     if(viewMode()==="swipe"){
       h="";
       var allS=alive("pains",(p.hlasky||[]).map(function(x){ return itemIndex.hlasky[x.id]; })); if(cutOn()) allS=allS.slice(0,PAIN_CUT);
       var itemsS=swipeItems("pains","pain:"+p.id,allS), underS=(p.cluster_ids&&p.cluster_ids.length)?feelingPicker("Co může být pod tím?","Za bolístkou může být hlubší pocit. Pokud některý sedí, vyberte ho a podívejte se na něj jinak.",p.cluster_ids,rf.painSel||{},"rfPainToggle","rfPainOpen"):"";
-      h+='<div class="mc-folder">'+folderTabs([{key:"pains",label:"Hlášky"}],"pains",null,["rfGate('pains')","Bolístky"]);
+      h+='<div class="mc-folder">'+folderTabs([{key:"pains",label:"Hlášky"}],"pains",null,["rfPainBack()","Bolístky"]);
       if(!itemsS.length) h+=alertBoxes([p.id])+(USER.onlyNew?allSeen():'<div class="mc-empty">Nic tu není.</div>');
       else h+=swipeView("pains","pain:"+p.id,itemsS,function(){ return esc(cutText(p.text,70)); },function(){ return p.text; },0,preCards([p.id]));
       return h+swipeFoot(unseenCount("pains",allS))+'</div>'+underS;
@@ -2868,7 +2886,7 @@
     },
     rfBack:function(){ state.rf.view=state.rf.origin||"feelings"; scrollTop(); render(); },
     // brány
-    rfGate:function(g){ var rf=state.rf; rf.view=g||"gates"; if(g==="fears"){ rf.fearGroup=null; } if(g==="pains"){ rf.pain=null; } scrollTop(); render(); },
+    rfGate:function(g){ var rf=state.rf; rf.view=g||"gates"; if(g==="fears"){ rf.fearGroup=null; } if(g==="pains"){ rf.pain=null; rf.painCat=null; } scrollTop(); render(); },
     rfFearSearch:function(v){ state.rf.fearSearch=v; render(); refocus(v); },
     rfFearGroup:function(g){ state.rf.fearGroup=g; state.rf.view="fearGroup"; scrollTop(); render(); },
     rfSituation:function(id){ state.rf.situation=id; state.rf.sitSel={}; state.rf.view="situation"; scrollTop(); render(); },
@@ -2888,6 +2906,9 @@
     },
     rfPainSearch:function(v){ state.rf.painSearch=v; state.rf.painLimit=30; render(); refocus(v); },
     rfPainMore:function(){ state.rf.painLimit+=30; render(); },
+    rfPainCat:function(c){ state.rf.painCat=c; scrollTop(); render(); },
+    // Z bolístky zpět: do její kategorie (když jsme přišli z kategorie), jinak na rozcestník bolístek.
+    rfPainBack:function(){ state.rf.view="pains"; state.rf.pain=null; scrollTop(); render(); },
     rfPain:function(id){ state.rf.pain=id; state.rf.painSel={}; state.rf.view="pain"; scrollTop(); render(); },
     rfPainToggle:function(cid){ var rf=state.rf, sel=rf.painSel||(rf.painSel={}); if(sel[cid]) delete sel[cid]; else sel[cid]=1; render(); },
     rfPainOpen:function(cid){
@@ -3044,7 +3065,7 @@
     goBack:function(){ var t=backTarget(); if(t) t(); return !!t; },
     favTile:function(t){ state.fav.tile=t; if(t==="reframing") state.fav.type="reframings"; state.swipe.key=null; state.swipe.ids=[]; scrollTop(); render(); },
     favType:function(k){ state.fav.type=k; state.swipe.key=null; state.swipe.ids=[]; render(); },
-    swipeClose:function(){ if(state.page==="favorites"){ MC.favTile(null); return; } if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfGate("pains"); else MC.home(); } else MC.home(); },
+    swipeClose:function(){ if(state.page==="favorites"){ MC.favTile(null); return; } if(state.section==="reframing"){ var rf=state.rf; if(rf.view==="detail") MC.rfBack(); else if(rf.view==="pain") MC.rfPainBack(); else MC.home(); } else MC.home(); },
     // Enter v hledání zavře klávesnici. Na mobilu jinak není jak ji schovat —
     // filtruje se průběžně, takže není co odesílat.
     searchKey:function(e){ if(e&&e.key==="Enter"){ e.preventDefault(); if(e.target&&e.target.blur) e.target.blur(); } },
@@ -3290,7 +3311,8 @@
         if(v==="detail") return function(){ MC.rfBack(); };
         if(v==="fearGroup") return function(){ MC.rfGate("fears"); };
         if(v==="situation") return function(){ MC.rfSitBack(); };
-        if(v==="pain") return function(){ MC.rfGate("pains"); };
+        if(v==="pain") return function(){ MC.rfPainBack(); };
+        if(v==="pains"&&state.rf.painCat&&!state.rf.painSearch.trim()) return function(){ MC.rfPainCat(null); };
         if(v==="feelings"||v==="fears"||v==="pains") return function(){ MC.rfGate(null); };
       }
       if(state.section==="journey"&&state.journey.sectionId) return function(){ MC.journeyBack(); };
