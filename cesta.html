@@ -55,6 +55,12 @@
     --text:#F2EBDC; --body:#F2EBDC; --soft:#B5AA96; --muted:#7C7264;
     --accent:#E08252; --accent-dim:#3D2A1F; --on-accent:#1C1914; --heart:#E08252;
     --teal:#6FBBA6; --teal-soft:#223832; --teal-deep:#16332F;
+    /* Skupiny štítků ve filtru (25. 11. 2026): podklad / písmo / vybraný */
+    --g-st-bg:#232D3A; --g-st-tx:#A9BEDA; --g-st-on:#8FAAD0;
+    --g-em-bg:#35242C; --g-em-tx:#DDA6BD; --g-em-on:#D08EAB;
+    --g-co-bg:#223832; --g-co-tx:#8CC9B6; --g-co-on:#6FBBA6;
+    --g-vz-bg:#352C1C; --g-vz-tx:#DDBE80; --g-vz-on:#D2AC5E;
+    --g-ch-bg:#25301F; --g-ch-tx:#AFCB9F; --g-ch-on:#97B886;
     --empty:#3A3226; --done:#6FBBA6; --missed:#E08252;
 
     /* Tón sekce: akční sekce (První pomoc, Tělo, Přerámování, Cvičení) jedou
@@ -87,6 +93,11 @@
     --text:#2B241C; --body:#2B241C; --soft:#6B6053; --muted:#9C9385;
     --accent:#B8562E; --accent-dim:#F0DCCD; --on-accent:#FFFDF8; --heart:#D98763;
     --teal:#3E7266; --teal-soft:#DCEAE5; --teal-deep:#1F4F49;
+    --g-st-bg:#E7EDF5; --g-st-tx:#3F5B80; --g-st-on:#5877A0;
+    --g-em-bg:#F5E6EC; --g-em-tx:#8B4766; --g-em-on:#A85F80;
+    --g-co-bg:#DCEAE5; --g-co-tx:#2F6457; --g-co-on:#3E7266;
+    --g-vz-bg:#F5EBD6; --g-vz-tx:#7E5C1E; --g-vz-on:#A57D35;
+    --g-ch-bg:#E6EEE0; --g-ch-tx:#4B6840; --g-ch-on:#66855A;
     --empty:#E8DFCE; --done:#3E7266; --missed:#B8562E;
   }
 
@@ -351,7 +362,20 @@
   .mc-chip{ background:var(--surface); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
   .mc-chip.dur{ background:var(--surface); color:var(--accent); font-family:var(--mono); font-weight:700; }
-  .mc-dur-row{ margin-bottom:18px; }
+  /* Skupiny ve filtru: malý nadpis v barvě skupiny, pilulky s jemným podkladem, vybraná sytá. */
+  .fs-group + .fs-group{ margin-top:20px; }
+  .fs-gh{ margin-bottom:8px; font-family:var(--sans); font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--soft); }
+  .fs-group.g-dur .fs-gh{ color:var(--accent); }
+  .mc-chip[class*=" g-"]{ border-color:transparent; }
+  .mc-chip.g-st{ background:var(--g-st-bg); color:var(--g-st-tx); }  .fs-group.g-st .fs-gh{ color:var(--g-st-tx); }
+  .mc-chip.g-em{ background:var(--g-em-bg); color:var(--g-em-tx); }  .fs-group.g-em .fs-gh{ color:var(--g-em-tx); }
+  .mc-chip.g-co{ background:var(--g-co-bg); color:var(--g-co-tx); }  .fs-group.g-co .fs-gh{ color:var(--g-co-tx); }
+  .mc-chip.g-vz{ background:var(--g-vz-bg); color:var(--g-vz-tx); }  .fs-group.g-vz .fs-gh{ color:var(--g-vz-tx); }
+  .mc-chip.g-ch{ background:var(--g-ch-bg); color:var(--g-ch-tx); }  .fs-group.g-ch .fs-gh{ color:var(--g-ch-tx); }
+  .mc-chip.g-st.on{ background:var(--g-st-on); }  .mc-chip.g-em.on{ background:var(--g-em-on); }
+  .mc-chip.g-co.on{ background:var(--g-co-on); }  .mc-chip.g-vz.on{ background:var(--g-vz-on); }
+  .mc-chip.g-ch.on{ background:var(--g-ch-on); }
+  .mc-chip[class*=" g-"].on{ color:var(--on-accent); }
   @media (hover:hover){ .mc-chip:hover{ border-color:var(--soft); } }
   .mc-chip.on,.mc-chip.dur.on{ background:var(--tone); border-color:var(--tone); color:var(--on-accent); font-weight:700; }
   .mc-filter-foot{ display:flex; justify-content:flex-end; margin-top:12px; }
@@ -876,7 +900,8 @@
     crisis:"crisis.json", body:"body.json", exercises:"exercises.json",
     sections:"sections.json", chains:"chains.json",
     fears:"fears.json", situations:"situations.json", pains:"pains.json",
-    inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json"
+    inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json",
+    tag_groups:"tag_groups.json"   // {tag: skupina}, generuje local/data_wip/build_tag_groups.py ze slovníku
   };
   // Náročnost cvičení → tón pilulky (viz .mc-diff)
   var DIFF_CLASS = { "nízká":"low", "střední":"mid", "vysoká":"high" };
@@ -1459,6 +1484,22 @@
   function storeOf(typeKey){ for(var i=0;i<TYPES.length;i++){ if(TYPES[i].key===typeKey) return TYPES[i].store; } }
 
   // ===================== FILTR obsahových sekcí =====================
+  // Skupiny štítků ve filtru (25. 11. 2026). Klíč = skupina ve slovníku (data/tag_groups.json),
+  // label = nadpis pro lidi (hlasem uživatele, jako brány přerámování), pořadí = pořadí ve filtru:
+  // malé ostré skupiny napřed, obr „Na čem chci pracovat“ na konec. Barvy v CSS (--g-*).
+  var TAG_GROUPS_UI=[
+    { key:"st", group:"Stavy a potíže",     label:"S čím zápasím" },
+    { key:"em", group:"Emoce",              label:"Co prožívám" },
+    { key:"co", group:"Co se při tom dělá", label:"Čím si pomůžu" },
+    { key:"vz", group:"Vztahy",             label:"Já a druzí" },
+    { key:"ch", group:"Chci pracovat na",   label:"Na čem chci pracovat" },
+    { key:"ot", group:null,                 label:"Další" }
+  ];
+  function tagGroupKey(t){
+    var g=(DB&&DB.tag_groups||{})[t];
+    for(var i=0;i<TAG_GROUPS_UI.length;i++){ if(TAG_GROUPS_UI[i].group===g) return TAG_GROUPS_UI[i].key; }
+    return "ot";
+  }
   function allTags(dataKey){
     var set={}; (flat[dataKey]||[]).forEach(function(it){ (it.tags||[]).forEach(function(t){ set[t]=1; }); });
     return Object.keys(set).sort();
@@ -2060,10 +2101,17 @@
     var chips='';
     if(cfg.timeField==="duration"){
       var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
-      h+='<div class="mc-chips mc-dur-row">'+dur+'</div>';   // délka zvlášť nahoře, štítky pod ní (24. 11. 2026)
+      h+='<div class="fs-group g-dur"><div class="fs-gh">Kolik mám času</div><div class="mc-chips">'+dur+'</div></div>';   // délka zvlášť nahoře (24. 11. 2026)
     }
-    allTags(cfg.dataKey).forEach(function(t){ chips+='<button class="mc-chip '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
-    if(chips) h+='<div class="mc-chips">'+chips+'</div>';
+    // Štítky po skupinách slovníku (25. 11. 2026): nadpis hlasem uživatele + vlastní jemná barva skupiny.
+    var byG={};
+    allTags(cfg.dataKey).forEach(function(t){ var g=tagGroupKey(t); (byG[g]=byG[g]||[]).push(t); });
+    TAG_GROUPS_UI.forEach(function(G){
+      var tags=byG[G.key]; if(!tags||!tags.length) return;
+      chips='';
+      tags.forEach(function(t){ chips+='<button class="mc-chip g-'+G.key+' '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
+      h+='<div class="fs-group g-'+G.key+'"><div class="fs-gh">'+esc(G.label)+'</div><div class="mc-chips">'+chips+'</div></div>';
+    });
     h+='</div><div class="fs-foot"><button class="mc-fab ghost mc-clear" '+(fc?'':'disabled ')+'onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button>'+
       '<button class="mc-fab" '+(n?'':'disabled ')+'onclick="MC.filterShow(\''+key+'\')">'+(n?'Zobrazit ('+n+')':'Nic neodpovídá')+'</button></div></div>';
     return h;

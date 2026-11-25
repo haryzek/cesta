@@ -3,13 +3,13 @@
 
    Strategie:
    - PRECACHE při instalaci: obal (cesta.html, index.html, manifest, ikony)
-     + všech 16 JSONů z data/. Jeden nákup, pak je všechno offline.
+     + všech 17 JSONů z data/ (16 obsahových + tag_groups). Jeden nákup, pak je všechno offline.
    - HTML a JSON: network-first s timeoutem → při výpadku sáhne do cache.
      Online se tím chová jako dřív (no-cache), Bobův push je hned vidět.
    - Assety a fonty (Google Fonts): cache-first, na pozadí se obnoví.
    VERSION bumpni, když měníš tenhle soubor nebo seznam PRECACHE. */
 
-var VERSION  = "mc-v3";
+var VERSION  = "mc-v4";
 var SHELL    = "mc-shell-" + VERSION;
 var RUNTIME  = "mc-runtime-" + VERSION;
 var NET_TIMEOUT = 4000;
@@ -18,7 +18,7 @@ var DATA_FILES = [
   "clusters.json","feelings.json","reframings.json","reframing_questions.json",
   "reframing_actions.json","crisis.json","body.json","exercises.json",
   "sections.json","chains.json","fears.json","situations.json","pains.json",
-  "inspirations.json","questions.json","articles.json"
+  "inspirations.json","questions.json","articles.json","tag_groups.json"
 ];
 
 var PRECACHE = ["./","./index.html","./cesta.html","./manifest.json",
