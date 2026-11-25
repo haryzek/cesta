@@ -885,6 +885,11 @@
 
   @keyframes mcIn{ from{opacity:0; transform:translateY(5px);} to{opacity:1; transform:translateY(0);} }
   .mc-in{ animation:mcIn .2s ease forwards; }
+  /* Překreslení téže obrazovky / už otevřené vrstvy = bez animace (render() nastaví data-*-still). */
+  #mc-root[data-still] .mc-in,
+  #mc-root[data-fs-still] .mc-fsheet,
+  #mc-root[data-menu-still] .mc-menu, #mc-root[data-menu-still] .mc-menu-backdrop,
+  #mc-root[data-nag-still] .mc-modal-backdrop{ animation:none; }
   @keyframes mcFade{ from{opacity:0;} to{opacity:1;} }
   @keyframes mcSlide{ from{transform:translateX(-100%);} to{transform:translateX(0);} }
 </style>
@@ -1616,6 +1621,17 @@
     if(state.nag&&!state.detail&&state.page==="home") h+=viewNag();
     h+=viewToast();
     var fsb=document.querySelector(".mc-fsheet .fs-body"), fsTop=fsb?fsb.scrollTop:0;
+    // Animace jen při příchodu / otevření, ne při překreslení téže obrazovky (25. 11. 2026):
+    // dřív každé ťuknutí (pilulka, zaškrtnutí pocitu) přehrálo najetí položek i fade panelu = problikávání.
+    var sig=[state.page,state.section,state.rf.view,state.rf.activeType,state.rf.situation,state.rf.pain,
+      state.detail?state.detail.type+":"+state.detail.id+":"+state.detail.tab:"",state.fav.tile,state.fav.type,
+      state.journey.sectionId,state.journey.tab,viewMode()].join("|");
+    var fsOpen=h.indexOf('class="mc-fsheet"')>-1;
+    setStill(root,"data-still",sig===STILL.sig);
+    setStill(root,"data-fs-still",fsOpen&&STILL.fs);
+    setStill(root,"data-menu-still",state.menuOpen&&STILL.menu);
+    setStill(root,"data-nag-still",!!state.nag&&STILL.nag);
+    STILL={ sig:sig, fs:fsOpen, menu:state.menuOpen, nag:!!state.nag };
     root.innerHTML=h;
     fsb=document.querySelector(".mc-fsheet .fs-body"); if(fsb) fsb.scrollTop=fsTop;
     fitTags();
@@ -1625,6 +1641,9 @@
     var s=document.getElementById("mc-search");
     if(s){ var v=(state.section==="reframing")?state.rf.search:(secState(state.section||"").search); if(v){ s.value=v; } }
   }
+
+  var STILL={};
+  function setStill(el,attr,on){ if(on) el.setAttribute(attr,""); else el.removeAttribute(attr); }
 
   function viewTopbar(){
     // Plné jen v Oblíbených — „máš něco uloženo" nikomu nic neříkalo.
