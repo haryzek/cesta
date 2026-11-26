@@ -893,6 +893,8 @@
   .mc-md li::marker{ color:var(--accent); }
   .mc-md strong{ color:var(--text); font-weight:700; }
   .mc-md strong.mc-tel{ color:var(--tone); }
+  #mc-root a.mc-tel-link, #mc-root a.mc-tel{ color:inherit; text-decoration:none; white-space:nowrap; }
+  #mc-root a.mc-tel{ font-weight:inherit; }
   .mc-md em{ color:var(--soft); font-style:italic; }
 
   /* ===== FAVORITES ===== */
@@ -1440,7 +1442,7 @@
   function mdInline(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,function(_,t){
     // Bold, který je čistě telefonní číslo (číslice a mezery, ≥3 cifry),
     // dostane tón sekce — telefonní čísla v krizovce mají vyčnívat červeně.
-    return /^[\d\s]+$/.test(t)&&(t.replace(/\D/g,"").length>=3) ? '<strong class="mc-tel">'+t+'</strong>' : '<strong>'+t+'</strong>';
+    return /^[\d\s]+$/.test(t)&&(t.replace(/\D/g,"").length>=3) ? '<a class="mc-tel-link" href="tel:'+t.replace(/\D/g,"")+'"><strong class="mc-tel">'+t+'</strong></a>' : '<strong>'+t+'</strong>';
   }).replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>"); }
   // Těla v datech začínají nadpisem, který opakuje název položky — ten je ale
   // už v titulku detailu, takže by se název ukázal dvakrát pod sebou.
@@ -1655,16 +1657,16 @@
   function disclaimerHtml(){
     return '<p>Moje cesta je průvodce pro zamyšlení a péči o sebe. Nabízí přerámování, cvičení, články a inspiraci, které vám mohou pomoci lépe porozumět sobě a svým pocitům.</p>'+
       '<p><strong>Aplikace neléčí a nenahrazuje odbornou pomoc.</strong> Není náhradou psychoterapie, lékařského vyšetření, léčby ani odborné literatury. Neslouží k diagnostice ani k řešení vážných psychických nebo zdravotních potíží.</p>'+
-      '<p><strong>Pokud prožíváte vážné psychické potíže, máte zdravotní problém nebo vám jde o život, obraťte se vždy na lékaře, psychologa nebo psychoterapeuta. V akutní krizi volejte <span class="mc-tel">155</span> nebo Linku první psychické pomoci <span class="mc-tel">116 123</span> (nonstop, zdarma).</strong></p>'+
+      '<p><strong>Pokud prožíváte vážné psychické potíže, máte zdravotní problém nebo vám jde o život, obraťte se vždy na lékaře, psychologa nebo psychoterapeuta. V akutní krizi volejte <a class="mc-tel" href="tel:155">155</a> nebo Linku první psychické pomoci <a class="mc-tel" href="tel:116123">116 123</a> (nonstop, zdarma).</strong></p>'+
       '<p><strong>Cvičení a techniky děláte na vlastní zodpovědnost.</strong> Pokud se při nich necítíte dobře, přerušte je.</p>'+
-      '<p><strong>Aplikace je určena dospělým od 18 let.</strong> Mladší mohou kdykoli zavolat na Linku bezpečí <span class="mc-tel">116 111</span>.</p>';
+      '<p><strong>Aplikace je určena dospělým od 18 let.</strong> Mladší mohou kdykoli zavolat na Linku bezpečí <a class="mc-tel" href="tel:116111">116 111</a>.</p>';
   }
   // Úvodní obrazovka: zhuštěné znění (celé je v O appce) — vejde se i s volbou oslovení bez scrollu.
   function consentHtml(){
     return '<p>Moje cesta je průvodce pro zamyšlení a péči o sebe. <strong>Neléčí a nenahrazuje odbornou pomoc.</strong> S vážnými potížemi se obraťte na lékaře, psychologa nebo psychoterapeuta.</p>'+
-      '<p><strong>V akutní krizi volejte <span class="mc-tel">155</span> nebo Linku první psychické pomoci <span class="mc-tel">116 123</span></strong> (nonstop, zdarma).</p>'+
+      '<p><strong>V akutní krizi volejte <a class="mc-tel" href="tel:155">155</a> nebo Linku první psychické pomoci <a class="mc-tel" href="tel:116123">116 123</a></strong> (nonstop, zdarma).</p>'+
       '<p>Cvičení děláte na vlastní zodpovědnost. Když vám při nich není dobře, přerušte je.</p>'+
-      '<p>Aplikace je pro dospělé od 18 let. Mladší mohou volat Linku bezpečí <span class="mc-tel">116 111</span>.</p>';
+      '<p>Aplikace je pro dospělé od 18 let. Mladší mohou volat Linku bezpečí <a class="mc-tel" href="tel:116111">116 111</a>.</p>';
   }
   function genderButtons(cur,fn){
     var b=function(g,l){ return '<button class="mc-gbtn'+(cur===g?' on':'')+'" aria-pressed="'+(cur===g?"true":"false")+'" onclick="MC.'+fn+'(\''+g+'\')">'+l+'</button>'; };
