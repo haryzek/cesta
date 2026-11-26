@@ -2699,6 +2699,7 @@
     // Reset — testovací fáze: po přečíslování ID visí srdíčka/viděné/edity na cizích položkách.
     h+='<div class="mc-fav-group"><h2>Reset</h2>';
     h+='<div class="mc-adm-actions"><button class="mc-fab ghost" onclick="MC.userReset()">Vymazat oblíbené, viděné a návod</button><button class="mc-fab ghost" onclick="MC.admReset()">Vynulovat admin</button></div>';
+    h+='<div class="mc-adm-actions"><button class="mc-fab ghost" onclick="MC.firstRun()">Začít jako nový uživatel</button></div>';
     h+='<p class="mc-adm-note">Maže jen data téhle appky v tomhle prohlížeči. Vynulování adminu zahodí smazané, úpravy i Top — denní snapshoty zůstanou.</p>';
     return h+'</div>';
   }
@@ -3255,6 +3256,18 @@
       // Čistý start i pro návod a výzvu ke swipování (ať jde návod znovu vyzkoušet).
       try{ localStorage.removeItem(TUTOR_KEY); localStorage.removeItem("mc_swipe_visits"); Object.keys(TUTOR_SEC).forEach(function(k){ localStorage.removeItem(TUTOR_SEC[k]); }); }catch(e){} HINTED={};
       toast("Oblíbené, viděné a návod vynulovány"); render();
+    },
+    // Stav prvního spuštění (26. 11. 2026, Bob): smaže všechna uživatelská mc_* data v telefonu
+    // (souhlas a oslovení, oblíbené, viděné, výběr pocitů, návody, režim, téma, kraj…) a načte appku znovu.
+    // Admin (úpravy, smazané, Top, jeho zálohy) a pojistné snímky mc_pred_id_* zůstávají.
+    firstRun:function(){
+      if(!window.confirm("Vrátit appku do stavu prvního spuštění?\n\nSmaže se souhlas a oslovení, oblíbené, viděné, výběr pocitů, návody i nastavení zobrazení. Admin (úpravy, smazané, Top) zůstane.")) return;
+      try{
+        var keep=/^(mc_admin_v1|mc_admin_bak_|mc_pred_id_)/, ks=[];
+        for(var i=0;i<localStorage.length;i++){ var k=localStorage.key(i); if(k&&k.indexOf("mc_")===0&&!keep.test(k)) ks.push(k); }
+        ks.forEach(function(k){ localStorage.removeItem(k); });
+      }catch(e){}
+      try{ window.scrollTo(0,0); location.reload(); }catch(e){}
     },
     admReset:function(){
       if(!window.confirm("Vynulovat admin? Smazané, úpravy i Top se zahodí. Nejdřív radši Export.")) return;
