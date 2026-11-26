@@ -17040,74 +17040,128 @@
     "added_at": "2026-10-16"
   },
   {
-    "id": "ref_2129",
+    "id": "ref_2134",
     "cluster_id": "cl_0039",
-    "text": "To, že teď nevidíš cestu ven, ještě neznamená, že žádná není. Zoufalství umí zúžit výhled tak, že jiné možnosti na chvíli prostě nevidíš.",
+    "text": "To, že nad něčím nemáš žádnou moc, ještě neznamená, že nemáš moc vůbec nad ničím. I v těžké situaci může existovat něco, o čem pořád rozhoduješ ty.",
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
   {
-    "id": "ref_2130",
+    "id": "ref_2129",
     "cluster_id": "cl_0039",
-    "text": "Nemusíš teď vyřešit celý svůj život ani celý problém. Stačí zvládnout tuhle chvíli a udělat jeden jediný nejbližší krok, i kdyby mělo jít o malý krůček.",
+    "text": "To, že teď nevidíš cestu ven, ještě neznamená, že žádná není. Zoufalství umí zúžit výhled tak, že jiné možnosti na chvíli prostě nevidíš.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
   {
-    "id": "ref_2132",
+    "id": "ref_5417",
     "cluster_id": "cl_0039",
-    "text": "To, že něco nezvládneš sám, neznamená, že je to nezvládnutelné. Některé situace jsou prostě nad síly jednoho člověka.",
+    "text": "Bezmoc ve strachu často znamená „nemůžu odejít“, ale někdy si to možná jen zakazuješ. A když odejít opravdu nejde, pořád můžeš zklidnit dech, nasměrovat pozornost jinam a ovlivnit, co si v duchu říkáš.",
     "tier": "free",
     "sort_order": 3,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2133",
-    "cluster_id": "cl_0039",
-    "text": "Možná teď opravdu nemůžeš změnit to, co se stalo. Pořád ale můžeš postupně hledat, co uděláš s tím, co ti zůstalo.",
-    "tier": "free",
-    "sort_order": 4,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2134",
-    "cluster_id": "cl_0039",
-    "text": "To, že nad něčím nemáš žádnou moc, ještě neznamená, že nemáš moc vůbec nad ničím. I v těžké situaci může existovat něco, o čem pořád rozhoduješ ty.",
-    "tier": "free",
-    "sort_order": 5,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2135",
-    "cluster_id": "cl_0039",
-    "text": "Když už nemáš sílu bojovat, nemusíš bojovat. Můžeš se na chvíli jen chránit, odpočívat a nechat dnešek být dneškem. Odpočinek slouží k nabrání sil.",
-    "tier": "free",
-    "sort_order": 6,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
   },
   {
     "id": "ref_2136",
     "cluster_id": "cl_0039",
     "text": "Bezmoc je stav, který prožíváš, ne tvoje identita. Můžeš se cítit naprosto bezmocný, a přitom nebýt bezmocným člověkem.",
     "tier": "free",
-    "sort_order": 7,
+    "sort_order": 4,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
   {
-    "id": "ref_2137",
+    "id": "ref_5418",
     "cluster_id": "cl_0039",
-    "text": "Tohle je chvíle, kdy potřebuješ oporu, ne další nároky na sebe. Nemusíš dokazovat svou hodnotu tím, že všechno uneseš bez pomoci.",
+    "text": "Strach spustí v těle poplach: srdce buší, svaly ztuhnou, dech se zrychlí. Tělo tím neselhává, snaží se tě chránit. A nejsilnější vlna poplachu po čase odezní sama, i když ji nebudeš nijak přemáhat.",
+    "tier": "free",
+    "sort_order": 5,
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
+  },
+  {
+    "id": "ref_2130",
+    "cluster_id": "cl_0039",
+    "text": "Nemusíš teď vyřešit celý svůj život ani celý problém. Stačí zvládnout tuhle chvíli a udělat jeden jediný nejbližší krok, i kdyby mělo jít o malý krůček.",
+    "tier": "free",
+    "sort_order": 6,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_5419",
+    "cluster_id": "cl_0039",
+    "text": "Pokud ti opravdu hrozí nebezpečí, říct si o pomoc není slabost, ale ten nejrozumnější krok. Zavolej 158 nebo se ozvi někomu blízkému – i to je jednání, nikoli bezmoc.",
+    "tier": "free",
+    "sort_order": 7,
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
+  },
+  {
+    "id": "ref_2144",
+    "cluster_id": "cl_0039",
+    "text": "Je v pořádku, že tě něco přesahuje. Člověk nemusí být silnější než všechno, co ho v životě potká.",
     "tier": "free",
     "sort_order": 8,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_5420",
+    "cluster_id": "cl_0039",
+    "text": "Nemusíš se strachu nejdřív úplně zbavit, abys situací prošel. Můžeš jít krůček po krůčku kupředu. Je docela možné, že se s každým dalším krokem budeš třást o něco méně.",
+    "tier": "free",
+    "sort_order": 9,
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
+  },
+  {
+    "id": "ref_2145",
+    "cluster_id": "cl_0039",
+    "text": "Tvoje tělo neříká „všechno je ztracené“. Říká jen: „Je toho teď na mě moc. Potřebuju bezpečí, oporu a chvíli, kdy nemusím nic řešit.“",
+    "tier": "free",
+    "sort_order": 10,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_5421",
+    "cluster_id": "cl_0039",
+    "text": "Kontrolu teď možná drží někdo jiný – pilot, lékař, řidič. Bezpečí nemusí stát jen na tobě, a to může být i úleva.",
+    "tier": "free",
+    "sort_order": 11,
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
+  },
+  {
+    "id": "ref_2148",
+    "cluster_id": "cl_0039",
+    "text": "I když nemůžeš ovlivnit výsledek, můžeš ovlivnit, jak se k sobě během toho všeho budeš chovat. Nemusíš být sám pro sebe člověkem, který tě nechá na holičkách.",
+    "tier": "free",
+    "sort_order": 12,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_5422",
+    "cluster_id": "cl_0039",
+    "text": "Bezmoc, kterou jsi kdysi zažil, umí v podobné situaci ožít, jako by se to dělo znovu. Dnes ale nejsi tím, kým jsi tehdy byl – jsi starší, zkušenější, poznal jsi nové lidi a máš víc možností než tenkrát.",
+    "tier": "free",
+    "sort_order": 13,
+    "added_at": "2026-11-26",
+    "approved": "2026-11-26"
+  },
+  {
+    "id": "ref_2135",
+    "cluster_id": "cl_0039",
+    "text": "Když už nemáš sílu bojovat, nemusíš bojovat. Můžeš se na chvíli jen chránit, odpočívat a nechat dnešek být dneškem. Odpočinek slouží k nabrání sil.",
+    "tier": "free",
+    "sort_order": 14,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -17116,7 +17170,34 @@
     "cluster_id": "cl_0039",
     "text": "Zoufalství ti může našeptávat, že už to takhle bude navždy. Dnešní stav mysli ale není spolehlivou předpovědí budoucnosti.",
     "tier": "free",
-    "sort_order": 9,
+    "sort_order": 15,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_2132",
+    "cluster_id": "cl_0039",
+    "text": "To, že něco nezvládneš sám, neznamená, že je to nezvládnutelné. Některé situace jsou prostě nad síly jednoho člověka.",
+    "tier": "free",
+    "sort_order": 16,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_2133",
+    "cluster_id": "cl_0039",
+    "text": "Možná teď opravdu nemůžeš změnit to, co se stalo. Pořád ale můžeš postupně hledat, co uděláš s tím, co ti zůstalo.",
+    "tier": "free",
+    "sort_order": 17,
+    "added_at": "2026-10-16",
+    "approved": "2026-11-12"
+  },
+  {
+    "id": "ref_2137",
+    "cluster_id": "cl_0039",
+    "text": "Tohle je chvíle, kdy potřebuješ oporu, ne další nároky na sebe. Nemusíš dokazovat svou hodnotu tím, že všechno uneseš bez pomoci.",
+    "tier": "free",
+    "sort_order": 18,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -17125,7 +17206,7 @@
     "cluster_id": "cl_0039",
     "text": "Nemusíš mít řešení, abys měl naději. Někdy se nové možnosti objeví až ve chvíli, kdy nejhorší vlna trochu opadne.",
     "tier": "free",
-    "sort_order": 10,
+    "sort_order": 19,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -17134,7 +17215,7 @@
     "cluster_id": "cl_0039",
     "text": "Když jsi vyčerpaný, i malá překážka může vypadat jako neproniknutelná zeď. Možná teď nepotřebuješ větší sílu, ale trochu klidu, který ti uleví.",
     "tier": "free",
-    "sort_order": 11,
+    "sort_order": 20,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -17143,34 +17224,7 @@
     "cluster_id": "cl_0039",
     "text": "To, že jsi vyzkoušel několik cest a nefungovaly, neznamená, že nefunguje nic.",
     "tier": "free",
-    "sort_order": 12,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2145",
-    "cluster_id": "cl_0039",
-    "text": "Tvoje tělo neříká „všechno je ztracené“. Říká jen: „Je toho teď na mě moc. Potřebuju bezpečí, oporu a chvíli, kdy nemusím nic řešit.“",
-    "tier": "free",
-    "sort_order": 13,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2148",
-    "cluster_id": "cl_0039",
-    "text": "I když nemůžeš ovlivnit výsledek, můžeš ovlivnit, jak se k sobě během toho všeho budeš chovat. Nemusíš být sám pro sebe člověkem, který tě nechá na holičkách.",
-    "tier": "free",
-    "sort_order": 14,
-    "added_at": "2026-10-16",
-    "approved": "2026-11-12"
-  },
-  {
-    "id": "ref_2144",
-    "cluster_id": "cl_0039",
-    "text": "Je v pořádku, že tě něco přesahuje. Člověk nemusí být silnější než všechno, co ho v životě potká.",
-    "tier": "free",
-    "sort_order": 15,
+    "sort_order": 21,
     "added_at": "2026-10-16",
     "approved": "2026-11-12"
   },
@@ -17179,7 +17233,7 @@
     "cluster_id": "cl_0039",
     "text": "Zoufalství může být oprávněnou reakcí na situaci, ve které tvoje současné možnosti nestačí. Neznamená to ale, že už neexistují jiné možnosti, pomoc, kterou můžeš získat, nebo okolnosti, které se mohou změnit.",
     "tier": "free",
-    "sort_order": 16,
+    "sort_order": 22,
     "added_at": "2026-10-16"
   },
   {
@@ -17187,7 +17241,7 @@
     "cluster_id": "cl_0039",
     "text": "Nemusíš dnes vědět, co bude dál. Nejistota je nepříjemná, ale není totéž co bezvýchodnost.",
     "tier": "free",
-    "sort_order": 17,
+    "sort_order": 23,
     "added_at": "2026-10-16"
   },
   {
@@ -17195,7 +17249,7 @@
     "cluster_id": "cl_0039",
     "text": "Některé věci se nezačnou měnit velkým rozhodnutím, ale drobným pohybem, který skoro nevypadá důležitě. I ten ti může vrátit kousek pocitu, že zase něco můžeš.",
     "tier": "free",
-    "sort_order": 18,
+    "sort_order": 24,
     "added_at": "2026-10-16"
   },
   {
@@ -17203,7 +17257,7 @@
     "cluster_id": "cl_0039",
     "text": "Možná tě bezmoc chrání před ještě bolestivější možností: znovu doufat, něco zkusit a být zklamaný. Rezignace někdy není slabost, ale brnění proti další ráně.",
     "tier": "free",
-    "sort_order": 19,
+    "sort_order": 25,
     "added_at": "2026-10-16"
   },
   {
@@ -17211,7 +17265,7 @@
     "cluster_id": "cl_0039",
     "text": "Nemusíš ze sebe zoufalství okamžitě dostat. Můžeš ho chvíli nést s vědomím, že právě prožíváš těžký stav, nikoli konečnou pravdu o svém životě.",
     "tier": "free",
-    "sort_order": 20,
+    "sort_order": 26,
     "added_at": "2026-10-16"
   },
   {
@@ -17219,7 +17273,7 @@
     "cluster_id": "cl_0039",
     "text": "Když jsi ve velkém stresu, mozek se soustředí hlavně na hrozby a hůř hledá nové možnosti. Pocit „není žádná cesta“ tak může být nejsilnější právě ve chvíli, kdy máš nejhorší podmínky nějakou cestu uvidět.",
     "tier": "free",
-    "sort_order": 21,
+    "sort_order": 27,
     "added_at": "2026-10-16"
   },
   {
@@ -17227,7 +17281,7 @@
     "cluster_id": "cl_0039",
     "text": "Nemusíš vědět, jak se dostaneš až na druhý břeh. Pro tuto chvíli stačí najít místo, kam bezpečně položit příští krok.",
     "tier": "free",
-    "sort_order": 22,
+    "sort_order": 28,
     "added_at": "2026-10-16"
   },
   {
@@ -17235,7 +17289,7 @@
     "cluster_id": "cl_0039",
     "text": "Někdo, kdo tě má rád, možná vůbec nepotřebuje slyšet tvoje řešení. Možná mu stačí vědět, že je ti těžko, aby chtěl přijít blíž a kus té tíhy chvíli nést s tebou.",
     "tier": "free",
-    "sort_order": 23,
+    "sort_order": 29,
     "added_at": "2026-10-16"
   },
   {
@@ -17243,7 +17297,7 @@
     "cluster_id": "cl_0039",
     "text": "Bezmoc někdy vzniká tam, kde ses naučil, že snažit se nemá cenu. Závěr, který kdysi dával smysl, ale nemusí platit pro všechny další situace v tvém životě.",
     "tier": "free",
-    "sort_order": 24,
+    "sort_order": 30,
     "added_at": "2026-10-16"
   },
   {
@@ -17251,7 +17305,7 @@
     "cluster_id": "cl_0039",
     "text": "Je skoro komické, jak sebevědomě dokáže zoufalý mozek prohlásit „už nikdy nebude líp“, když nemá ponětí ani o tom, co bude příští úterý. Možná mu nemusíš věřit každou tiskovou zprávu.",
     "tier": "free",
-    "sort_order": 25,
+    "sort_order": 31,
     "added_at": "2026-10-16"
   },
   {
@@ -17259,7 +17313,7 @@
     "cluster_id": "cl_0039",
     "text": "Možná teď nemáš kontrolu nad situací, ale to není totéž jako nemít vůbec žádný vliv. I malý prostor, ve kterém můžeš rozhodovat, se počítá.",
     "tier": "free",
-    "sort_order": 26,
+    "sort_order": 32,
     "added_at": "2026-10-16"
   },
   {
@@ -17267,7 +17321,7 @@
     "cluster_id": "cl_0039",
     "text": "Někdy není bezmoc výzvou k většímu úsilí, ale signálem, že je potřeba změnit podmínky, požádat o pomoc nebo přestat vynakládat síly na něco, co změnit nemůžeš.",
     "tier": "free",
-    "sort_order": 27,
+    "sort_order": 33,
     "added_at": "2026-10-16"
   },
   {
@@ -17275,7 +17329,7 @@
     "cluster_id": "cl_0039",
     "text": "Buddhistický pohled připomíná, že ani tenhle stav není pevná věc. Zoufalství vzniká, mění intenzitu, chvíli trvá a zase se proměňuje. Právě proto není totožné s tebou.",
     "tier": "free",
-    "sort_order": 28,
+    "sort_order": 34,
     "added_at": "2026-10-16"
   },
   {
@@ -17283,7 +17337,7 @@
     "cluster_id": "cl_0039",
     "text": "Možná se v tobě ozývá část, která pořád očekává svět, ve kterém nikdo nepomůže a nic nepůjde změnit. Pokud tenhle pocit znáš už dlouho, stojí za to prozkoumat, jestli dnes opravdu platí stejná pravidla jako tehdy.",
     "tier": "free",
-    "sort_order": 29,
+    "sort_order": 35,
     "added_at": "2026-10-16"
   },
   {
@@ -17291,7 +17345,7 @@
     "cluster_id": "cl_0039",
     "text": "To, že zoufale hledáš cestu ven, může znamenat, že nějaká část tebe ještě nechce rezignovat. I když zatím nenachází odpověď, její snaha si zaslouží uznání.",
     "tier": "free",
-    "sort_order": 30,
+    "sort_order": 36,
     "added_at": "2026-10-16"
   },
   {
@@ -17299,7 +17353,7 @@
     "cluster_id": "cl_0039",
     "text": "Představ si sebe za deset let, jak se díváš na dnešní chvíli. Možná si nebudeš pamatovat jen to, jak bezvýchodná byla, ale taky tu podivnou skutečnost, že život potom pokračoval někam, co jsi tehdy vůbec nedokázal předvídat.",
     "tier": "free",
-    "sort_order": 31,
+    "sort_order": 37,
     "added_at": "2026-10-16"
   },
   {
@@ -17307,7 +17361,7 @@
     "cluster_id": "cl_0039",
     "text": "Lidé jsou podivná zvířata: chtějí mít kontrolu nad životem, který je z velké části nekontrolovatelný. Možná nepotřebuješ získat moc nad vším, ale naučit se rozeznávat těch pár centimetrů světa, které právě teď posunout můžeš.",
     "tier": "free",
-    "sort_order": 32,
+    "sort_order": 38,
     "added_at": "2026-10-16"
   },
   {
@@ -17315,7 +17369,7 @@
     "cluster_id": "cl_0039",
     "text": "Kdybych mohla promluvit k té zoufalé části v tobě, nechtěla bych ji přesvědčovat, že se plete. Řekla bych jí: „Vidím, jak moc je ti těžko. Nemusíš na to být úplně sám.“",
     "tier": "free",
-    "sort_order": 33,
+    "sort_order": 39,
     "added_at": "2026-10-16"
   },
   {
@@ -17323,7 +17377,7 @@
     "cluster_id": "cl_0039",
     "text": "Už jsi možná v životě zažil chvíle, kdy jsi nevěděl, co dál, a přesto nějaké dál přišlo. Nemusíš ho teď vidět, aby mohlo existovat.",
     "tier": "free",
-    "sort_order": 34,
+    "sort_order": 40,
     "added_at": "2026-10-16"
   },
   {
@@ -17331,7 +17385,7 @@
     "cluster_id": "cl_0039",
     "text": "Bezmoc je pocit, ne rozsudek nad tím, co skutečně můžeš ovlivnit. Když je ti těžko, rozdíl mezi těmito dvěma věcmi se snadno ztratí.",
     "tier": "free",
-    "sort_order": 35,
+    "sort_order": 41,
     "added_at": "2026-10-16"
   },
   {
@@ -17339,7 +17393,7 @@
     "cluster_id": "cl_0039",
     "text": "V pocitu „nemůžu nic“ bývá zvláštní logický trik: z několika věcí, které opravdu ovlivnit nemůžeš, mysl udělá závěr, že nemůžeš ovlivnit vůbec nic.",
     "tier": "free",
-    "sort_order": 36,
+    "sort_order": 42,
     "added_at": "2026-10-16"
   },
   {
@@ -17347,7 +17401,7 @@
     "cluster_id": "cl_0039",
     "text": "Stoik v zákopu by ti možná řekl: „Nemusíš ovládat válku, počasí ani zítřek. Zjisti, co můžeš udělat právě teď, a zbytek na chvíli nech být.“",
     "tier": "free",
-    "sort_order": 37,
+    "sort_order": 43,
     "added_at": "2026-10-16"
   },
   {
@@ -17355,7 +17409,7 @@
     "cluster_id": "cl_0039",
     "text": "Skála by tvoje zoufalství neposuzovala ani neopravovala. Jen by ti připomněla, že některé bouře se nepřemáhají silou. Někdy je potřeba najít závětří a počkat, až poleví.",
     "tier": "free",
-    "sort_order": 38,
+    "sort_order": 44,
     "added_at": "2026-10-16"
   },
   {
@@ -17363,7 +17417,7 @@
     "cluster_id": "cl_0039",
     "text": "Jednou zemřeš a spousta dnešních problémů se tím dostane do poněkud brutální perspektivy. Dokud jsi ale tady, příběh ještě nemá poslední stránku a dnešní zoufalství nemusí psát jeho závěr.",
     "tier": "free",
-    "sort_order": 39,
+    "sort_order": 45,
     "added_at": "2026-10-16"
   },
   {
