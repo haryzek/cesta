@@ -777,11 +777,13 @@ Oblíbené a přečtené:
   },
   "read": ["art_0003", "art_0005"],
   "seen": { "reframings": ["ref_0001", "ref_0002"], "pains": ["hl_0001"] },
-  "onlyNew": false
+  "onlyNew": false,
+  "rfSel": ["feel_0001", "feel_0042"],
+  "since": "2026-11-26"
 }
 ```
 
-`seen` = paměť viděného per store (plní jen proud karet a srdíčko), `onlyNew` = přepínač „jen nové“. Vedle toho v `localStorage` samostatně `mc_theme` (světlý/tmavý) a `mc_view` (seznam/karty). Paměť je per doména — Pages a Mioweb si ji nesdílí, stejně jako oblíbené.
+`seen` = paměť viděného per store (plní jen proud karet a srdíčko), `onlyNew` = přepínač „jen nové“. `rfSel` = uložený výběr v bráně Jádrové pocity (od 26. 11. 2026; po návratu do appky je zaškrtnutý, Zrušit ho maže; výběr pod strachem a bolístkou se neukládá). `since` = den, kdy uživatel začal (u stávajících den nasazení 26. 11. 2026): přerámování s `added_at > since`, viditelné po řezu a neviděné = pilulka „N nové“ v tlačítku Přerámovat. Vedle toho v `localStorage` samostatně `mc_theme` (světlý/tmavý) a `mc_view` (seznam/karty). Paměť je per doména — Pages a Mioweb si ji nesdílí, stejně jako oblíbené.
 
 Notifikace nového obsahu — počet položek, kde `added_at > last_seen[kategorie]`, je číslo na badge; klik na kategorii aktualizuje timestamp:
 

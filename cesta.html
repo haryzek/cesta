@@ -356,6 +356,10 @@
   #mc-root .mc-clear{ flex:0 0 auto; width:auto; padding-left:18px; padding-right:18px; background:transparent; border:1px solid var(--border); color:var(--text); }
   #mc-root .mc-clear:disabled{ opacity:1; color:var(--muted); cursor:default; }
   #mc-root .mc-clear:not(:disabled){ background:var(--surface); }
+  /* Zrušit u výběru pocitů (26. 11. 2026): světle červená, bílá na pozadí appky zanikala. */
+  #mc-root .mc-clear.sel, #mc-root .mc-clear.sel:not(:disabled){ background:var(--accent-dim); border-color:var(--accent-dim); color:var(--accent); }
+  .mc-newpill{ display:inline-block; margin-left:8px; padding:2px 8px; border-radius:999px; background:var(--on-accent); color:var(--accent);
+    font-size:12px; font-weight:700; line-height:1.4; vertical-align:1px; }
   .mc-fab-row{ display:flex; gap:10px; width:100%; max-width:484px; pointer-events:auto; }
   .mc-fab-row .mc-fab{ flex:1; min-width:0; }
   .mc-fsheet .fs-foot .mc-fab:disabled{ opacity:.45; cursor:default; }
@@ -1169,7 +1173,7 @@
 
   // ===================== UŽIVATELSKÁ DATA =====================
   var USER=loadUser();
-  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{},daily:null,seen:{},onlyNew:true}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
+  function emptyUser(){ var u={favorites:{},read:[],last_seen:{},profile:{},daily:null,seen:{},onlyNew:true,rfSel:[],since:null}; FAV_STORES.forEach(function(s){u.favorites[s]=[];}); return u; }
   function loadUser(){
     var u=emptyUser();
     try{ var d=JSON.parse(localStorage.getItem(STORE_KEY));
@@ -1181,8 +1185,13 @@
         if(d.daily&&typeof d.daily==="object") u.daily=d.daily;
         if(d.seen&&typeof d.seen==="object") u.seen=d.seen;
         u.onlyNew=!!d.onlyNew;
+        if(Array.isArray(d.rfSel)) u.rfSel=d.rfSel;
+        if(typeof d.since==="string") u.since=d.since;
       }
     }catch(e){}
+    // „Nové“ přerámování (26. 11. 2026) = přidané do appky po tomhle dni a ještě neviděné.
+    // Stávajícím uživatelům se začátek počítá ode dne, kdy tahle verze poprvé naběhla.
+    if(!u.since){ u.since=new Date().toISOString().slice(0,10); try{ var dd=JSON.parse(localStorage.getItem(STORE_KEY)); if(dd&&typeof dd==="object"){ dd.since=u.since; localStorage.setItem(STORE_KEY,JSON.stringify(dd)); } else localStorage.setItem(STORE_KEY,JSON.stringify(u)); }catch(e){} }
     // „Jen nové“ je od 20. 11. 2026 výchozí zapnuté — jednou přepnout i stávajícím uživatelům.
     try{ if(!localStorage.getItem("mc_onlynew_v2")){ u.onlyNew=true; localStorage.setItem("mc_onlynew_v2","1"); } }catch(e){}
     return u;
@@ -1401,7 +1410,7 @@
       return fetch(MC_BASE+FILES[k],{cache:"no-cache"}).then(function(r){ if(!r.ok) throw new Error(FILES[k]+" → HTTP "+r.status); noteData(r); return r.json(); });
     })).then(function(arrs){
       DB={}; keys.forEach(function(k,i){ DB[k]=arrs[i]; });
-      prepare(); render();
+      prepare(); restoreSel(); render();
     }).catch(showError);
   }
 
@@ -1615,6 +1624,21 @@
     Object.keys(sel).forEach(function(k){ var c=sel[k].cluster_id; counts[c]=(counts[c]||0)+1; });
     return Object.keys(counts).map(function(c){ return {cluster_id:c,count:counts[c]}; });
   }
+  // Výběr jádrových pocitů se pamatuje (26. 11. 2026, Bob + kamarádka): po návratu do appky je
+  // zaškrtnutý jako předvýběr, Zrušit ho smaže. Jen brána Jádrové pocity — výběr pod strachem
+  // a bolístkou patří k jedné situaci a neukládá se.
+  function restoreSel(){
+    var sel={}; (USER.rfSel||[]).forEach(function(id){ var f=itemIndex.feelings&&itemIndex.feelings[id]; if(!f) f=(DB.feelings||[]).filter(function(x){ return x.id===id; })[0]; if(f) sel[id]=f; });
+    state.rf.selected=sel;
+  }
+  function saveSel(){ USER.rfSel=Object.keys(state.rf.selected||{}); saveUser(); }
+  // Nové ve vybraných pocitech: viditelné přerámování (po řezu) přidané po USER.since a neviděné.
+  function selNewCount(){
+    var since=USER.since||"9999", st=storeOf("reframings"), n=0;
+    selClusters().forEach(function(c){ rfList("reframings",c.cluster_id).forEach(function(it){ if((it.added_at||"")>since&&!isSeen(st,it.id)) n++; }); });
+    return n;
+  }
+  function plNove(n){ return n===1?"nová":(n>=2&&n<=4?"nové":"nových"); }
   function selAnswerCount(){
     var cwc=selClusters(); if(!cwc.length) return 0;
     if(cwc.length===1) return rfList("reframings",cwc[0].cluster_id).length;
@@ -2027,9 +2051,11 @@
   }
   // Spodní dvojice tlačítek při výběru pocitů (od 25. 11. 2026, stejný vzor jako filtr):
   // vlevo Zrušit výběr, vpravo pod pravým palcem Přerámovat (N). Nahoře v hledání už reset není.
-  function fabPair(clearCall,openCall,n){
-    return '<div class="mc-fab-wrap"><div class="mc-fab-row"><button class="mc-fab mc-clear" onclick="MC.'+clearCall+'">Zrušit výběr</button>'+
-      '<button class="mc-fab" onclick="MC.'+openCall+'">Přerámovat ('+n+')</button></div></div>';
+  // Od 26. 11. 2026: krátce „Zrušit“ ve světle červené (bílé zanikalo), u jádrových pocitů v tlačítku
+  // pilulka „N nové“ — jen když něco nového opravdu je.
+  function fabPair(clearCall,openCall,n,nNew){
+    return '<div class="mc-fab-wrap"><div class="mc-fab-row"><button class="mc-fab mc-clear sel" onclick="MC.'+clearCall+'">Zrušit</button>'+
+      '<button class="mc-fab" onclick="MC.'+openCall+'">Přerámovat ('+n+')'+(nNew>0?'<span class="mc-newpill">'+nNew+' '+plNove(nNew)+'</span>':'')+'</button></div></div>';
   }
   function answersForClusters(cids){
     if(!cids.length) return 0;
@@ -2131,7 +2157,7 @@
     h+='</ul>';
     if(!rf.search.trim()&&!rf.showSecondary&&secondaryFeelings().length>0) h+='<button class="mc-more" onclick="MC.rfSecondary()">Další pocity ('+secondaryFeelings().length+')</button>';
     var n=Object.keys(rf.selected).length;
-    if(n>0) h+=fabPair("selReset('feel')","rfOpenSelected()",selAnswerCount());
+    if(n>0) h+=fabPair("selReset('feel')","rfOpenSelected()",selAnswerCount(),selNewCount());
     return h;
   }
   function viewRfDetail(){
@@ -3017,16 +3043,16 @@
       if(sel[id]) delete sel[id]; else { var f=DB.feelings.filter(function(x){return x.id===id;})[0]; if(f) sel[id]=f; }
       var after=selAnswerCount();
       if(after>MANY_ANSWERS&&before<=MANY_ANSWERS) toast("Bude toho hodně ("+after+" "+plOdpoved(after)+"). Doporučujeme vybrat méně pocitů — ale klidně pokračujte.");
-      render();
+      saveSel(); render();
     },
     rfReset:function(){ MC.selReset("feel"); },
     rfResetUndo:function(){ MC.selResetUndo(); },
     selReset:function(kind){
       var rf=state.rf, k=kind==="sit"?"sitSel":kind==="pain"?"painSel":"selected", prev=rf[k]||{};
       if(!Object.keys(prev).length) return;
-      rf[k]={}; toast("Výběr zrušen",{call:"selResetUndo",k:k,sel:prev}); render();
+      rf[k]={}; if(k==="selected") saveSel(); toast("Výběr zrušen",{call:"selResetUndo",k:k,sel:prev}); render();
     },
-    selResetUndo:function(){ var u=state.toast&&state.toast.undo; if(!u||!u.sel) return; state.rf[u.k||"selected"]=u.sel; state.toast=null; clearTimeout(toastTimer); render(); },
+    selResetUndo:function(){ var u=state.toast&&state.toast.undo; if(!u||!u.sel) return; state.rf[u.k||"selected"]=u.sel; if((u.k||"selected")==="selected") saveSel(); state.toast=null; clearTimeout(toastTimer); render(); },
     rfSoftOpen:function(){ var rf=state.rf, key="rf:"+rf.activeType+":"+rf.detailClusters.map(function(c){return c.cluster_id;}).join(","); rf.softOpen[key]=true; render(); },
     rfSingle:function(cid){ state.rf.detailMode="single"; state.rf.detailClusters=[{cluster_id:cid,count:1}]; state.rf.detailTitle=null; state.rf.origin="feelings"; enterRfDetail(); },
     rfOpenSelected:function(){
