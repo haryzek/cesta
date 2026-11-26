@@ -780,8 +780,7 @@
   .ct-links{ display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:14px; }
   .ct-link, .ct-in{ color:var(--accent); font-weight:600; text-decoration:none; overflow-wrap:anywhere; }
   .ct-note{ margin-top:12px; font-size:13.5px; }
-  .ct-h{ margin:30px 0 12px; font-family:var(--serif); font-weight:600; font-size:20px; font-variation-settings:'opsz' 36; color:var(--tone); }
-  .ct-top{ margin-bottom:26px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+  .ct-top{ margin-bottom:20px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
   .ct-t{ display:flex; align-items:center; gap:14px; padding:13px 16px; }
   .ct-t + .ct-t{ border-top:1px solid var(--border); }
   .ct-nums{ flex-shrink:0; width:98px; display:flex; flex-direction:column; gap:6px; }
@@ -791,7 +790,7 @@
   .ct-tb{ flex:1; min-width:0; display:flex; flex-direction:column; }
   .ct-tn{ font-size:14.5px; font-weight:600; line-height:1.35; color:var(--text); }
   .ct-tm{ margin-top:3px; font-size:12.5px; line-height:1.45; color:var(--soft); }
-  .ct-roll + .ct-roll{ margin-top:10px; }
+  .ct-roll + .ct-roll, .ct-kraje + .ct-roll{ margin-top:10px; }
   .ct-chats{ margin:6px 0 0; }
   .ct-chat{ display:flex; align-items:center; gap:10px; padding:12px 4px; border-bottom:1px solid var(--border); text-decoration:none; }
   .ct-chat .go{ color:var(--accent); font-size:20px; }
@@ -2730,7 +2729,12 @@
     }
     var top=all.filter(function(x){ return x.group==="top"; }), chats=all.filter(function(x){ return x.group==="chat"; });
     var h='<button class="mc-back" onclick="MC.home()">← Domů</button>'+secHead("contacts","Důležité kontakty",null);
-    h+='<div class="mc-ct">';
+    // Pořadí (Bob, 26. 11.): rovnou panel nejdůležitějších čísel bez nadpisu, pod ním roleta krajů, pak chaty.
+    h+='<div class="mc-ct"><div class="ct-top">';
+    top.forEach(function(t){
+      h+='<div class="ct-t"><div class="ct-nums">'+ctTels(t.tels,true)+'</div><div class="ct-tb"><div class="ct-tn">'+esc(t.name)+'</div><div class="ct-tm">'+esc([t.who,t.provoz].filter(Boolean).join(" · "))+'</div></div></div>';
+    });
+    h+='</div>';
     h+=ctRoll("centers","Krizová centra podle krajů",cs.centers);
     if(cs.centers){
       h+='<div class="ct-kraje">';
@@ -2739,11 +2743,6 @@
       });
       h+='</div>';
     }
-    h+='<div class="ct-h">Nejdůležitější čísla</div><div class="ct-top">';
-    top.forEach(function(t){
-      h+='<div class="ct-t"><div class="ct-nums">'+ctTels(t.tels,true)+'</div><div class="ct-tb"><div class="ct-tn">'+esc(t.name)+'</div><div class="ct-tm">'+esc([t.who,t.provoz].filter(Boolean).join(" · "))+'</div></div></div>';
-    });
-    h+='</div>';
     h+=ctRoll("chats","Chatové poradny",cs.chats);
     if(cs.chats){
       h+='<div class="ct-chats">';
