@@ -28,7 +28,7 @@ Repozitář je veřejný (vyžaduje to Pages) — u prototypových dat je to př
 
 Appka přidaná na plochu jede i bez signálu (hotel, letadlo, metro). Stará se o to service worker `sw.js` v kořeni:
 
-- **Precache při instalaci:** obal (`./`, `index.html`, `cesta.html`, `manifest.json`, ikony) + všech 17 JSONů z `data/` (16 obsahových + generovaný `tag_groups.json`; `VERSION` mc-v4). První návštěva online stáhne ~1,3 MB gzip, pak je všechno v cache. Jeden 404 instalaci neshodí (soubory se přidávají po jednom).
+- **Precache při instalaci:** obal (`./`, `index.html`, `cesta.html`, `manifest.json`, ikony) + všech 18 JSONů z `data/` (16 obsahových + generovaný `tag_groups.json` + `contacts.json`; `VERSION` mc-v5). První návštěva online stáhne ~1,3 MB gzip, pak je všechno v cache. Jeden 404 instalaci neshodí (soubory se přidávají po jednom).
 - **HTML a JSON: network-first se 4s timeoutem** (`NET_TIMEOUT`), při výpadku nebo timeoutu sáhne do cache. Online se appka chová jako dřív — push je po zavření a otevření hned vidět. Navigace bez cache spadne aspoň na `cesta.html`.
 - **Fonty (Google Fonts) a obrázky: cache-first**, na pozadí se obnoví.
 - **Verze:** konstanta `VERSION` (teď `mc-v2`) je v názvu cache, při aktivaci se smažou všechny `mc-*` cache jiné verze. **Když měníš `sw.js` nebo seznam precache, bumpni `VERSION`.** Nový JSON v `data/` = přidat do `DATA_FILES`, jinak offline chybí.
@@ -694,6 +694,8 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 - **Cvičení v Redakci** po oddílech s nadpisy a řádkem skoků; **Moje cesta**: velká zelená čísla oddílů, počet cvičení červeně, v seznamu cvičení „náročnost“ + čas, řetěz jen v detailu.
 - **Placka vlna 2**: Rodičovská linka 606 021 021 u bolístek o dětech.
 - **Sekce „Přerámování myšlenek“** (název sekce; uvnitř krátké „Přerámování“).
+- **Důležité kontakty** (26. 11. 2026): `data/contacts.json` (`group` top / center / chat, zdroj `local/kontakty/kontakty.md`, build `build_contacts.py`), v menu pod První pomocí a zeleným boxem nahoře v První pomoci. Roleta krizových center po krajích (kraj si appka pamatuje), nejdůležitější čísla, roleta chatů; čísla `tel:`, adresy do mapy.
+- **Klikací čísla** (26. 11. 2026): každé `**číslo**` v markdownu je odkaz `tel:` (krizovka, tělo), stejně čísla v souhlasu a O appce.
 
 ## Provizorní admin (12. 9. 2026)
 
@@ -817,7 +819,7 @@ Veškeré výpočty (interleaving, skórování, agregace profilu) jsou nad daty
 | Klastry (116) + pocity (399) | ✅ kompletní mapa s ID a schématy |
 | Technické ověření v Miowebu | ✅ hotovo (duben 2026) |
 | Frontend — obal + registr sekcí | ✅ funkční, 8 dlaždic + menu z jednoho registru |
-| Frontend — všechny sekce | ✅ živé v `cesta.html` nad všemi 17 JSONy (12. 9. 2026, doplňováno do 25. 11. 2026): Moje cesta, Cvičení s detailem k SPEC, Přerámování se třemi branami, oblíbené per sekce, proud karet s pamětí viděného |
+| Frontend — všechny sekce | ✅ živé v `cesta.html` nad všemi 18 JSONy (12. 9. 2026, doplňováno do 25. 11. 2026): Moje cesta, Cvičení s detailem k SPEC, Přerámování se třemi branami, oblíbené per sekce, proud karet s pamětí viděného |
 | Spuštění na mobilu | ✅ PWA přes GitHub Pages (červenec 2026) |
 | Design systém (light/dark, Fraunces, tóny sekcí) | ✅ nasazený 17. 7. 2026, základ odladěný; tóny přerozdělené 12. 9. 2026 |
 | Vizuál — barvy | 🔄 z handoffu, čeká „overhaul do veselejší atmosféry" |

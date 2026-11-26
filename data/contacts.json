@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "cont_0001",
+    "group": "top",
+    "kraj": null,
+    "name": "Záchranná služba / tísňová linka",
+    "who": "všichni, při ohrožení života",
+    "provoz": "nonstop, zdarma",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "155",
+        "label": ""
+      },
+      {
+        "n": "112",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 1
+  },
+  {
+    "id": "cont_0002",
+    "group": "top",
+    "kraj": null,
+    "name": "Linka bezpečí",
+    "who": "děti, mladí a studující do 26 let",
+    "provoz": "nonstop, zdarma",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "116 111",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 2
+  },
+  {
+    "id": "cont_0003",
+    "group": "top",
+    "kraj": null,
+    "name": "Linka první psychické pomoci",
+    "who": "dospělí",
+    "provoz": "nonstop, zdarma (v noci v pohotovostním režimu)",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "116 123",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 3
+  },
+  {
+    "id": "cont_0004",
+    "group": "top",
+    "kraj": null,
+    "name": "Linka pro rodinu a školu",
+    "who": "děti, rodiče, pedagogové",
+    "provoz": "nonstop, zdarma (v noci v pohotovostním režimu)",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "116 000",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 4
+  },
+  {
+    "id": "cont_0005",
+    "group": "top",
+    "kraj": null,
+    "name": "Modrá linka",
+    "who": "všichni",
+    "provoz": "nonstop",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "608 902 410",
+        "label": ""
+      },
+      {
+        "n": "731 197 477",
+        "label": "záložní"
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 5
+  },
+  {
+    "id": "cont_0006",
+    "group": "top",
+    "kraj": null,
+    "name": "Pražská linka důvěry",
+    "who": "dospělí",
+    "provoz": "nonstop",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "222 580 697",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 6
+  },
+  {
+    "id": "cont_0007",
+    "group": "top",
+    "kraj": null,
+    "name": "Linka důvěry Dětského krizového centra",
+    "who": "děti, mladí a jejich blízcí",
+    "provoz": "nonstop, zdarma",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "241 484 149",
+        "label": ""
+      },
+      {
+        "n": "777 715 215",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 7
+  },
+  {
+    "id": "cont_0008",
+    "group": "top",
+    "kraj": null,
+    "name": "Linka Anabell (poruchy příjmu potravy)",
+    "who": "lidé s PPP a jejich blízcí",
+    "provoz": "Po, St, Čt, Pá 8–16; Út 10–18",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "774 467 293",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": null,
+    "note": null,
+    "sort_order": 8
+  },
+  {
+    "id": "cont_0009",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Centrum krizové intervence – Psychiatrická nemocnice Bohnice",
+    "who": null,
+    "provoz": "NONSTOP, bez objednání (tým ve všední dny 8:00–16:00, mimo to slouží lékař nebo psycholog)",
+    "adresa": "Ústavní 91, 181 02 Praha 8",
+    "tels": [
+      {
+        "n": "284 016 110",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "bohnice.cz/odborna-pracoviste/centrum-krizove-intervence",
+      "note": null
+    },
+    "note": "pro dospělé od 18 let; telefonickou krizovou intervenci neposkytuje; mimo pracovní dobu poplatek 90 Kč",
+    "sort_order": 9
+  },
+  {
+    "id": "cont_0010",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Centrum krizové péče – Všeobecná fakultní nemocnice",
+    "who": null,
+    "provoz": "krizová telefonní linka Po–Pá 8:00–15:00",
+    "adresa": "Ke Karlovu 11, 128 08 Praha 2, budova D1 (přízemí)",
+    "tels": [
+      {
+        "n": "605 851 658",
+        "label": "krizová linka"
+      },
+      {
+        "n": "224 961 111",
+        "label": "informace"
+      }
+    ],
+    "email": "ckp@vfn.cz",
+    "web": {
+      "url": "vfn.cz",
+      "note": "Psychiatrická klinika – specializovaná centra"
+    },
+    "note": null,
+    "sort_order": 10
+  },
+  {
+    "id": "cont_0011",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Krizové centrum RIAPS",
+    "who": null,
+    "provoz": "NONSTOP",
+    "adresa": "Chelčického 39, 130 00 Praha 3",
+    "tels": [
+      {
+        "n": "222 586 768",
+        "label": ""
+      }
+    ],
+    "email": "riaps@csspraha.cz",
+    "web": {
+      "url": "csspraha.cz/kc-riaps",
+      "note": null
+    },
+    "note": "jen osobní pomoc, telefonickou a internetovou krizovou pomoc zajišťuje Pražská linka důvěry; mimo pracovní dobu poplatek 90 Kč",
+    "sort_order": 11
+  },
+  {
+    "id": "cont_0012",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Dětské krizové centrum",
+    "who": null,
+    "provoz": "okamžitá krizová pomoc Út, St, Čt 16:00–18:00; ambulance Po 8–16, Út–Čt 8–18, Pá 8–14",
+    "adresa": "Cílkova 796/7, 142 00 Praha 12 – Kamýk",
+    "tels": [
+      {
+        "n": "241 480 511",
+        "label": "objednání"
+      },
+      {
+        "n": "777 664 672",
+        "label": ""
+      }
+    ],
+    "email": "ambulance@ditekrize.cz",
+    "web": {
+      "url": "ditekrize.cz",
+      "note": null
+    },
+    "note": "pro ohrožené děti a jejich blízké; detašované pracoviště Roztylské nám. 2772/44, Praha 4, tel. 776 660 168",
+    "sort_order": 12
+  },
+  {
+    "id": "cont_0013",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Krizová pomoc dětem – Zahrada pro duši",
+    "who": null,
+    "provoz": "ověřte telefonicky",
+    "adresa": "Dům tří přání, Na Rovnosti 2244/5, 130 00 Praha 3",
+    "tels": [
+      {
+        "n": "607 199 291",
+        "label": ""
+      }
+    ],
+    "email": "krizovapomoc@zahradaprodusi.cz",
+    "web": {
+      "url": "zahradaprodusi.cz/dum-tri-prani",
+      "note": null
+    },
+    "note": "děti a dospívající 6–18 let, ambulantně, pobytově i terénně; nahradila dřívější krizovou pomoc Domu Přemysla Pittra",
+    "sort_order": 13
+  },
+  {
+    "id": "cont_0014",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Centrum LOCIKA",
+    "who": null,
+    "provoz": "Po–Čt 8:00–18:00, Pá 8:00–16:00; osobně jen v rámci krizové intervence",
+    "adresa": "Umělecká 588/6, 170 00 Praha 7",
+    "tels": [
+      {
+        "n": "734 441 233",
+        "label": ""
+      }
+    ],
+    "email": "info@centrumlocika.cz",
+    "web": {
+      "url": "centrumlocika.cz",
+      "note": null
+    },
+    "note": "děti, které zažívají domácí násilí, a jejich rodiče",
+    "sort_order": 14
+  },
+  {
+    "id": "cont_0015",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Modré dveře – krizová pomoc (Praha-Krč)",
+    "who": null,
+    "provoz": "Po–Pá 8:00–16:00, lze přijít bez objednání",
+    "adresa": "Hornokrčská 707/7, 140 00 Praha 4 – Krč",
+    "tels": [
+      {
+        "n": "725 515 934",
+        "label": "objednání, po telefonu se pomoc neposkytuje"
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "modredvere.cz/cz/praha-krizova-pomoc",
+      "note": null
+    },
+    "note": "všechny věkové kategorie, zdarma, anonymně",
+    "sort_order": 15
+  },
+  {
+    "id": "cont_0016",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "Modré dveře – krizová pomoc (Říčany)",
+    "who": null,
+    "provoz": "Po 8:00–18:00, Út–Pá 8:00–16:00 (poslední klient hodinu před koncem)",
+    "adresa": "Tyrše a Fügnera 105/7, 251 01 Říčany – Radošovice",
+    "tels": [
+      {
+        "n": "725 515 905",
+        "label": "objednání"
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "modredvere.cz/cz/ricany-krizova-pomoc",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 16
+  },
+  {
+    "id": "cont_0017",
+    "group": "center",
+    "kraj": "Praha a Středočeský kraj",
+    "name": "SOS centrum – Diakonie ČCE, středisko Praha",
+    "who": null,
+    "provoz": "Po–Čt 9:00–20:00, Pá 9:00–17:00",
+    "adresa": "Varšavská 37, 120 00 Praha 2",
+    "tels": [
+      {
+        "n": "777 734 173",
+        "label": ""
+      },
+      {
+        "n": "222 514 040",
+        "label": ""
+      }
+    ],
+    "email": "sos@diakonie-praha.cz",
+    "web": {
+      "url": "praha.diakonie.cz/sos-centrum",
+      "note": null
+    },
+    "note": "doporučují předem se objednat telefonicky",
+    "sort_order": 17
+  },
+  {
+    "id": "cont_0018",
+    "group": "center",
+    "kraj": "Jihočeský kraj",
+    "name": "Krizové a poradenské centrum Vrba (Prachatice)",
+    "who": null,
+    "provoz": "Po 8–17; Út 8–12; St–Pá 8–17",
+    "adresa": "Vodňanská 51, 383 01 Prachatice",
+    "tels": [
+      {
+        "n": "724 363 580",
+        "label": ""
+      }
+    ],
+    "email": "vrba@cckpt.cz",
+    "web": {
+      "url": "cckpt.cz/krizove-centrum",
+      "note": null
+    },
+    "note": "provozuje Český červený kříž; nahradilo krizové centrum Portus, které skončilo 30. 6. 2025",
+    "sort_order": 18
+  },
+  {
+    "id": "cont_0019",
+    "group": "center",
+    "kraj": "Jihočeský kraj",
+    "name": "Krizové centrum České Budějovice",
+    "who": null,
+    "provoz": "Po, Út 8–17; St 8–18; Čt 8–16; Pá 8–14",
+    "adresa": "Nová 1871/5, 370 01 České Budějovice",
+    "tels": [
+      {
+        "n": "776 763 176",
+        "label": ""
+      }
+    ],
+    "email": "pomoc@ditevkrizi.cz",
+    "web": {
+      "url": "kccb.cz",
+      "note": null
+    },
+    "note": "dříve Krizové centrum pro děti a rodinu na Jiráskově nábřeží",
+    "sort_order": 19
+  },
+  {
+    "id": "cont_0020",
+    "group": "center",
+    "kraj": "Jihočeský kraj",
+    "name": "THEIA – krizové centrum, o.p.s.",
+    "who": null,
+    "provoz": "Po 8–18; Út 8–14; St 8–16; Čt 8–14; Pá jen na objednání",
+    "adresa": "Mánesova 11/3b, 370 01 České Budějovice",
+    "tels": [
+      {
+        "n": "728 008 771",
+        "label": ""
+      },
+      {
+        "n": "704 259 358",
+        "label": ""
+      }
+    ],
+    "email": "pomoc@theia.cz",
+    "web": {
+      "url": "theia.cz",
+      "note": null
+    },
+    "note": "pobočky Písek (Roháčova 2572, tel. 602 728 064), Jindřichův Hradec, Český Krumlov, Strakonice, Blatná",
+    "sort_order": 20
+  },
+  {
+    "id": "cont_0021",
+    "group": "center",
+    "kraj": "Jihomoravský kraj",
+    "name": "Krizové centrum Psychiatrické kliniky FN Brno",
+    "who": null,
+    "provoz": "NONSTOP",
+    "adresa": "Jihlavská 20, 625 00 Brno, pavilon G",
+    "tels": [
+      {
+        "n": "532 232 078",
+        "label": "nonstop"
+      },
+      {
+        "n": "547 212 333",
+        "label": "anonymní telefonická pomoc"
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "fnbrno.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 21
+  },
+  {
+    "id": "cont_0022",
+    "group": "center",
+    "kraj": "Jihomoravský kraj",
+    "name": "Krizové centrum pro děti a dospívající",
+    "who": null,
+    "provoz": "ambulance Po–Pá 8:00–20:00 (na objednání); pobytová část nonstop",
+    "adresa": "Hapalova 4, 621 00 Brno",
+    "tels": [
+      {
+        "n": "541 229 298",
+        "label": ""
+      },
+      {
+        "n": "723 006 004",
+        "label": ""
+      }
+    ],
+    "email": "KCHapalova@cssbrno.cz",
+    "web": {
+      "url": "krizovecentrum.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 22
+  },
+  {
+    "id": "cont_0023",
+    "group": "center",
+    "kraj": "Jihomoravský kraj",
+    "name": "Okno dokořán Blansko – krizová pomoc",
+    "who": null,
+    "provoz": "ověřte telefonicky",
+    "adresa": "Komenského 2366/19, 678 01 Blansko",
+    "tels": [
+      {
+        "n": "516 417 351",
+        "label": ""
+      }
+    ],
+    "email": "krizovapomoc@blansko.charita.cz",
+    "web": {
+      "url": "blansko.charita.cz",
+      "note": null
+    },
+    "note": "na stejné adrese nonstop Linka důvěry Blansko, tel. 737 234 078, 516 410 668",
+    "sort_order": 23
+  },
+  {
+    "id": "cont_0024",
+    "group": "center",
+    "kraj": "Jihomoravský kraj",
+    "name": "SPONDEA – krizová pomoc",
+    "who": null,
+    "provoz": "Po–Čt 8:00–18:00, Pá 8:00–16:00",
+    "adresa": "Sýpka 25, 613 00 Brno – Černá Pole",
+    "tels": [
+      {
+        "n": "608 118 088",
+        "label": ""
+      }
+    ],
+    "email": "krizovapomoc@spondea.cz",
+    "web": {
+      "url": "spondea.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 24
+  },
+  {
+    "id": "cont_0025",
+    "group": "center",
+    "kraj": "Karlovarský kraj",
+    "name": "Krizová pomoc Cheb – Diecézní charita Plzeň",
+    "who": null,
+    "provoz": "NONSTOP",
+    "adresa": "Koželužská 1802/19, 350 02 Cheb",
+    "tels": [
+      {
+        "n": "731 433 007",
+        "label": ""
+      },
+      {
+        "n": "731 433 079",
+        "label": ""
+      }
+    ],
+    "email": "charitabetlem@dchp.charita.cz",
+    "web": {
+      "url": "dchp.cz",
+      "note": null
+    },
+    "note": "pobytová služba – krizové ubytování až na 7 dní (děti jen s dospělým doprovodem)",
+    "sort_order": 25
+  },
+  {
+    "id": "cont_0026",
+    "group": "center",
+    "kraj": "Karlovarský kraj",
+    "name": "Res vitae – Linka důvěry a krizové centrum (Karlovy Vary)",
+    "who": null,
+    "provoz": "Po–Pá 19:00–7:00 (linka důvěry i krizové centrum); krizové centrum osobně bez objednání",
+    "adresa": "Blahoslavova 659/18, 360 09 Karlovy Vary – Drahovice",
+    "tels": [
+      {
+        "n": "353 588 080",
+        "label": ""
+      },
+      {
+        "n": "723 963 356",
+        "label": ""
+      }
+    ],
+    "email": "info@resvitae.cz",
+    "web": {
+      "url": "resvitae.cz",
+      "note": null
+    },
+    "note": "pro dospělé od 18 let",
+    "sort_order": 26
+  },
+  {
+    "id": "cont_0027",
+    "group": "center",
+    "kraj": "Královéhradecký kraj",
+    "name": "NOMIA, z.ú.",
+    "who": null,
+    "provoz": "konzultace po domluvě",
+    "adresa": "třída Edvarda Beneše 575/90, 500 12 Hradec Králové",
+    "tels": [
+      {
+        "n": "606 824 104",
+        "label": ""
+      }
+    ],
+    "email": "poradna@nomiahk.cz",
+    "web": {
+      "url": "nomiahk.cz",
+      "note": null
+    },
+    "note": "zaměření hlavně na děti s traumatem a domácí násilí",
+    "sort_order": 27
+  },
+  {
+    "id": "cont_0028",
+    "group": "center",
+    "kraj": "Královéhradecký kraj",
+    "name": "CDZ RIAPS Trutnov – telefonická krizová pomoc",
+    "who": null,
+    "provoz": "krizová linka NONSTOP",
+    "adresa": "Procházkova 818, 541 01 Trutnov",
+    "tels": [
+      {
+        "n": "702 256 762",
+        "label": "nonstop"
+      },
+      {
+        "n": "727 915 571",
+        "label": "centrum"
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "riaps.cz/cdz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 28
+  },
+  {
+    "id": "cont_0029",
+    "group": "center",
+    "kraj": "Liberecký kraj",
+    "name": "Linka důvěry Liberec – CIPS LK",
+    "who": null,
+    "provoz": "NONSTOP, jen telefonicky a e-mailem",
+    "adresa": null,
+    "tels": [
+      {
+        "n": "606 450 044",
+        "label": ""
+      },
+      {
+        "n": "485 177 177",
+        "label": ""
+      }
+    ],
+    "email": "pomoc@linka-duvery.cz",
+    "web": {
+      "url": "linka-duvery.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 29
+  },
+  {
+    "id": "cont_0030",
+    "group": "center",
+    "kraj": "Liberecký kraj",
+    "name": "Intervenční centrum Liberec – CIPS LK",
+    "who": null,
+    "provoz": "ověřte telefonicky",
+    "adresa": "Tanvaldská 269, 463 11 Liberec 30",
+    "tels": [
+      {
+        "n": "482 311 632",
+        "label": ""
+      },
+      {
+        "n": "776 776 501",
+        "label": ""
+      }
+    ],
+    "email": "info.ic@cipslk.cz",
+    "web": {
+      "url": "cipslk.cz",
+      "note": null
+    },
+    "note": "pro osoby ohrožené domácím násilím; pracoviště i v České Lípě, Jilemnici a Frýdlantu",
+    "sort_order": 30
+  },
+  {
+    "id": "cont_0031",
+    "group": "center",
+    "kraj": "Moravskoslezský kraj",
+    "name": "Krizové centrum Ostrava (KCO)",
+    "who": null,
+    "provoz": "NONSTOP, bez objednání",
+    "adresa": "Ruská 94/29, 703 00 Ostrava – Vítkovice",
+    "tels": [
+      {
+        "n": "596 110 882-3",
+        "label": ""
+      },
+      {
+        "n": "732 957 193",
+        "label": ""
+      }
+    ],
+    "email": "krizovecentrum@kriceos.cz",
+    "web": {
+      "url": "kriceos.cz",
+      "note": null
+    },
+    "note": "terénní tým 725 075 824-5, Bruntálsko 725 075 432",
+    "sort_order": 31
+  },
+  {
+    "id": "cont_0032",
+    "group": "center",
+    "kraj": "Moravskoslezský kraj",
+    "name": "Krizové centrum pro děti a rodinu – Centrum sociálních služeb Ostrava",
+    "who": null,
+    "provoz": "bez objednání Po a Čt 8:00–17:00; po objednání Po–Pá 6:00–18:00",
+    "adresa": "Syllabova 1161/19, 703 00 Ostrava – Vítkovice",
+    "tels": [
+      {
+        "n": "778 111 281",
+        "label": ""
+      }
+    ],
+    "email": "kcd@css-ostrava.cz",
+    "web": {
+      "url": "css-ostrava.cz",
+      "note": null
+    },
+    "note": "děti mohou přijít i samy a anonymně",
+    "sort_order": 32
+  },
+  {
+    "id": "cont_0033",
+    "group": "center",
+    "kraj": "Olomoucký kraj",
+    "name": "Krizová pomoc – Charita Olomouc",
+    "who": null,
+    "provoz": "Po–Pá 8:00–18:00; So, Ne a svátky 8:00–16:00",
+    "adresa": "třída Svobody 77/43, 779 00 Olomouc (vchod z ulice Křivá)",
+    "tels": [
+      {
+        "n": "734 435 078",
+        "label": ""
+      }
+    ],
+    "email": "krizovapomoc@olomouc.charita.cz",
+    "web": {
+      "url": "olomouc.charita.cz",
+      "note": null
+    },
+    "note": "ambulantně, pobytově i terénně, pro lidi z celé ČR",
+    "sort_order": 33
+  },
+  {
+    "id": "cont_0034",
+    "group": "center",
+    "kraj": "Pardubický kraj",
+    "name": "Krizové centrum Chrudim – Centrum J. J. Pestalozziho",
+    "who": null,
+    "provoz": "Po, St 7:30–17:00; Út 7:30–15:30; Čt 7:30–16:00; Pá 7:30–14:30",
+    "adresa": "Štěpánkova 108, 537 01 Chrudim",
+    "tels": [
+      {
+        "n": "601 001 056",
+        "label": ""
+      },
+      {
+        "n": "725 838 213",
+        "label": ""
+      }
+    ],
+    "email": "kc@pestalozzi.cz",
+    "web": {
+      "url": "pestalozzi.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 34
+  },
+  {
+    "id": "cont_0035",
+    "group": "center",
+    "kraj": "Pardubický kraj",
+    "name": "Krizové centrum Svitavy – Centrum J. J. Pestalozziho",
+    "who": null,
+    "provoz": "Po, St 7:30–17:00; Út 7:30–15:30; Čt 7:30–16:00; Pá 7:30–14:30",
+    "adresa": "Milady Horákové 10, 568 02 Svitavy",
+    "tels": [
+      {
+        "n": "461 321 100",
+        "label": ""
+      },
+      {
+        "n": "725 719 029",
+        "label": ""
+      }
+    ],
+    "email": "kcsvi@pestalozzi.cz",
+    "web": {
+      "url": "pestalozzi.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 35
+  },
+  {
+    "id": "cont_0036",
+    "group": "center",
+    "kraj": "Pardubický kraj",
+    "name": "Krizové centrum Žamberk – Centrum J. J. Pestalozziho",
+    "who": null,
+    "provoz": "Po, St 7:30–17:00; Út 7:30–15:30; Čt 7:30–16:00; Pá 7:30–14:30",
+    "adresa": "Masarykovo nám. 86, 564 01 Žamberk",
+    "tels": [
+      {
+        "n": "725 838 127",
+        "label": ""
+      },
+      {
+        "n": "725 838 129",
+        "label": ""
+      }
+    ],
+    "email": "kcza@pestalozzi.cz",
+    "web": {
+      "url": "pestalozzi.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 36
+  },
+  {
+    "id": "cont_0037",
+    "group": "center",
+    "kraj": "Pardubický kraj",
+    "name": "Krizová pomoc – Cesta pro rodinu (Žamberk)",
+    "who": null,
+    "provoz": "NONSTOP",
+    "adresa": "Čs. armády 728, 564 01 Žamberk",
+    "tels": [
+      {
+        "n": "465 321 295",
+        "label": ""
+      }
+    ],
+    "email": "krize@cestaprorodinu.cz",
+    "web": {
+      "url": "cestaprorodinu.cz/krizova-pomoc",
+      "note": null
+    },
+    "note": "jen pro těhotné ženy a rodiče s dětmi",
+    "sort_order": 37
+  },
+  {
+    "id": "cont_0038",
+    "group": "center",
+    "kraj": "Pardubický kraj",
+    "name": "Krizové centrum Pardubice – SKP-CENTRUM",
+    "who": null,
+    "provoz": "Po, Út 9–12 telefonicky, 12–16 osobně; St 9–17; Čt 9–15; Pá 9–13 osobně",
+    "adresa": "Bělehradská 513, 530 09 Pardubice",
+    "tels": [
+      {
+        "n": "608 432 117",
+        "label": ""
+      }
+    ],
+    "email": "kc.pardubice@skp-centrum.cz",
+    "web": {
+      "url": "skp-centrum.cz",
+      "note": null
+    },
+    "note": "lze přijít bez objednání, ale doporučují se objednat",
+    "sort_order": 38
+  },
+  {
+    "id": "cont_0039",
+    "group": "center",
+    "kraj": "Plzeňský kraj",
+    "name": "PLUS pro lidi v krizové situaci – Diakonie ČCE, středisko Západní Čechy",
+    "who": null,
+    "provoz": "Po–Čt 8:00–17:00, Pá 8:00–14:00",
+    "adresa": "Resslova 12, 301 00 Plzeň",
+    "tels": [
+      {
+        "n": "733 414 421",
+        "label": ""
+      }
+    ],
+    "email": "plus@diakoniezapad.cz",
+    "web": {
+      "url": "zapad.diakonie.cz",
+      "note": null
+    },
+    "note": "bez objednání; terénní krizová pomoc po celém kraji",
+    "sort_order": 39
+  },
+  {
+    "id": "cont_0040",
+    "group": "center",
+    "kraj": "Kraj Vysočina",
+    "name": "Krizové centrum Jihlava – Centrum J. J. Pestalozziho",
+    "who": null,
+    "provoz": "Po, St 7:30–17:00; Út 7:30–15:30; Čt 7:30–16:00; Pá 7:30–14:30",
+    "adresa": "Štefánikovo nám. 1972/2, 586 01 Jihlava",
+    "tels": [
+      {
+        "n": "601 100 000",
+        "label": ""
+      },
+      {
+        "n": "727 803 665",
+        "label": ""
+      }
+    ],
+    "email": "kcji@pestalozzi.cz",
+    "web": {
+      "url": "pestalozzi.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 40
+  },
+  {
+    "id": "cont_0041",
+    "group": "center",
+    "kraj": "Kraj Vysočina",
+    "name": "Krizové centrum Chotěboř – Centrum J. J. Pestalozziho",
+    "who": null,
+    "provoz": "Po, St 7:30–17:00; Út 7:30–15:30; Čt 7:30–16:00; Pá 7:30–14:30",
+    "adresa": "Obolecká 476, 583 01 Chotěboř",
+    "tels": [
+      {
+        "n": "727 821 987",
+        "label": ""
+      },
+      {
+        "n": "601 516 909",
+        "label": ""
+      }
+    ],
+    "email": "kccho@pestalozzi.cz",
+    "web": {
+      "url": "pestalozzi.cz",
+      "note": null
+    },
+    "note": "v akutní krizi pomoc okamžitě",
+    "sort_order": 41
+  },
+  {
+    "id": "cont_0042",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Centrum krizové péče – Masarykova nemocnice Ústí nad Labem",
+    "who": null,
+    "provoz": "NONSTOP, bez objednání; telefon Po–Pá 7:00–15:30",
+    "adresa": "Sociální péče 3316/12a, 400 11 Ústí nad Labem (u urgentního příjmu)",
+    "tels": [
+      {
+        "n": "705 588 381",
+        "label": ""
+      }
+    ],
+    "email": "ckp.ul@kzcr.eu",
+    "web": {
+      "url": "kzcr.eu",
+      "note": null
+    },
+    "note": "s sebou kartičku pojištěnce; nepomáhá lidem pod vlivem alkoholu či drog",
+    "sort_order": 42
+  },
+  {
+    "id": "cont_0043",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Centrum krizové intervence Ústí nad Labem – Spirála",
+    "who": null,
+    "provoz": "linka pomoci NONSTOP; ambulance bez objednání; krizové lůžko nonstop",
+    "adresa": "K Chatám 22, 403 40 Ústí nad Labem – Skorotice",
+    "tels": [
+      {
+        "n": "475 603 390",
+        "label": ""
+      }
+    ],
+    "email": "vedouci.cki@spirala-ul.cz",
+    "web": {
+      "url": "spirala-ul.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 43
+  },
+  {
+    "id": "cont_0044",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Triangl – krizové centrum pro děti (Spirála)",
+    "who": null,
+    "provoz": "Út, St, Čt 10:00–18:00 bez objednání",
+    "adresa": "K Chatám 22, 403 40 Ústí nad Labem – Skorotice",
+    "tels": [
+      {
+        "n": "475 603 390",
+        "label": "nonstop linka"
+      },
+      {
+        "n": "472 743 835",
+        "label": ""
+      },
+      {
+        "n": "606 034 334",
+        "label": "objednání, St, Čt 8–10"
+      }
+    ],
+    "email": "deti@spirala-ul.cz",
+    "web": {
+      "url": "spirala-ul.cz",
+      "note": null
+    },
+    "note": "děti 6–18 let, mohou přijít samy a anonymně",
+    "sort_order": 44
+  },
+  {
+    "id": "cont_0045",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Centrum krizové intervence Rumburk – Spirála",
+    "who": null,
+    "provoz": "ambulance 10:00–16:00 jen po objednání",
+    "adresa": "Máchova 492/30, 408 01 Rumburk (budova Generali České pojišťovny, 1. patro)",
+    "tels": [
+      {
+        "n": "475 603 390",
+        "label": ""
+      }
+    ],
+    "email": "vedouci.cki@spirala-ul.cz",
+    "web": {
+      "url": "spirala-ul.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 45
+  },
+  {
+    "id": "cont_0046",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Centrum krizové intervence Louny – Spirála",
+    "who": null,
+    "provoz": "ambulance jen po objednání, Út 10:00–16:00",
+    "adresa": "Pod Nemocnicí 2503, 440 01 Louny (Poliklinika Louny)",
+    "tels": [
+      {
+        "n": "475 603 390",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "spirala-ul.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 46
+  },
+  {
+    "id": "cont_0047",
+    "group": "center",
+    "kraj": "Ústecký kraj",
+    "name": "Most k naději – Linka duševní tísně a krizová poradna",
+    "who": null,
+    "provoz": "linka NONSTOP",
+    "adresa": "P. Jilemnického 1929, 434 01 Most",
+    "tels": [
+      {
+        "n": "476 701 444",
+        "label": ""
+      }
+    ],
+    "email": null,
+    "web": {
+      "url": "mostknadeji.eu",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 47
+  },
+  {
+    "id": "cont_0048",
+    "group": "center",
+    "kraj": "Zlínský kraj",
+    "name": "Krizová pomoc – Poradenské a krizové centrum (Zlín)",
+    "who": null,
+    "provoz": "ověřte telefonicky",
+    "adresa": "Divadelní 3354, 760 01 Zlín (vchod zezadu od kašny, 1. patro)",
+    "tels": [
+      {
+        "n": "730 166 862",
+        "label": ""
+      }
+    ],
+    "email": "kp@pkcentrum.cz",
+    "web": {
+      "url": "pkcentrum.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 48
+  },
+  {
+    "id": "cont_0049",
+    "group": "chat",
+    "kraj": null,
+    "name": "Nepanikář",
+    "who": null,
+    "provoz": "Po–Pá 16–22",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "nepanikar.eu/poradna",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 49
+  },
+  {
+    "id": "cont_0050",
+    "group": "chat",
+    "kraj": null,
+    "name": "Linka bezpečí",
+    "who": null,
+    "provoz": "denně 9–13 a 15–19",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "linkabezpeci.cz/chat",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 50
+  },
+  {
+    "id": "cont_0051",
+    "group": "chat",
+    "kraj": null,
+    "name": "Linka první psychické pomoci",
+    "who": null,
+    "provoz": "Út–Čt 13–18; Pá–Po a svátky 8–13",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "linkapsychickepomoci.cz/chat",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 51
+  },
+  {
+    "id": "cont_0052",
+    "group": "chat",
+    "kraj": null,
+    "name": "Linka pro rodinu a školu",
+    "who": null,
+    "provoz": "Po–Pá 15–18; So, Ne a svátky 10–13",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "linkaztracenedite.cz/chat",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 52
+  },
+  {
+    "id": "cont_0053",
+    "group": "chat",
+    "kraj": null,
+    "name": "Modrá linka",
+    "who": null,
+    "provoz": "Po, St, Čt, Ne 18:30–21:30",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "chat.modralinka.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 53
+  },
+  {
+    "id": "cont_0054",
+    "group": "chat",
+    "kraj": null,
+    "name": "Chat Pražské linky důvěry",
+    "who": null,
+    "provoz": "Po–Čt 9–21; Pá 9–15; So 14–20",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "chat-pomoc.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 54
+  },
+  {
+    "id": "cont_0055",
+    "group": "chat",
+    "kraj": null,
+    "name": "E-linka (Linka důvěry DKC, iPoradna)",
+    "who": null,
+    "provoz": "Po, St, Pá 14–18; So, Ne 9–13 a 14–18",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "iporadna.cz/elinka-chatova-poradna",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 55
+  },
+  {
+    "id": "cont_0056",
+    "group": "chat",
+    "kraj": null,
+    "name": "Chat Anabell",
+    "who": null,
+    "provoz": "Po, St 17–20",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "anabell.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 56
+  },
+  {
+    "id": "cont_0057",
+    "group": "chat",
+    "kraj": null,
+    "name": "ModroChat (Modré dveře)",
+    "who": null,
+    "provoz": "Po–Pá 10–12; Út 18–20",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "modredvere.cz",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 57
+  },
+  {
+    "id": "cont_0058",
+    "group": "chat",
+    "kraj": null,
+    "name": "Chat krizových služeb Most k naději",
+    "who": null,
+    "provoz": "viz web",
+    "adresa": null,
+    "tels": null,
+    "email": null,
+    "web": {
+      "url": "mostknadeji.eu/chat-krizovych-sluzeb",
+      "note": null
+    },
+    "note": null,
+    "sort_order": 58
+  }
+]

@@ -739,6 +739,60 @@
   .mc-attach .a-title{ font-family:var(--serif); font-weight:600; font-size:16px; font-variation-settings:'opsz' 24; color:var(--tone); margin-bottom:8px; }
   .mc-attach .mc-md{ font-size:14.5px; }
 
+  /* ===== DŮLEŽITÉ KONTAKTY (26. 11. 2026) ===== */
+  /* Box v První pomoci: rozcestník, jiný typ informace než stavy → zelený (teal) i na červené stránce. */
+  .mc-ct-box{ display:flex; align-items:center; gap:12px; width:calc(100% - 2 * var(--gutter)); margin:4px var(--gutter) 14px; padding:14px 16px;
+    background:var(--teal-soft); border:1.5px solid var(--teal); border-radius:16px; text-align:left; cursor:pointer; font-family:var(--sans); }
+  .mc-ct-box .b-ic{ flex-shrink:0; color:var(--teal); display:flex; }
+  .mc-ct-box .b-ic svg{ width:24px; height:24px; }
+  .mc-ct-box .b-t{ flex:1; min-width:0; }
+  .mc-ct-box .b-t b{ display:block; font-family:var(--serif); font-weight:600; font-size:17px; font-variation-settings:'opsz' 24; color:var(--text); }
+  .mc-ct-box .b-t span{ display:block; margin-top:2px; font-size:13.5px; line-height:1.4; color:var(--soft); }
+  .mc-ct-box .go{ flex-shrink:0; font-size:22px; color:var(--teal); }
+  .mc-ct{ padding:6px var(--gutter) 28px; font-family:var(--sans); }
+  .ct-roll{ display:flex; align-items:center; gap:10px; width:100%; padding:14px 16px; background:var(--surface); border:1px solid var(--border);
+    border-radius:14px; cursor:pointer; font-family:var(--sans); font-size:16px; font-weight:600; color:var(--text); text-align:left; }
+  .ct-roll span:first-child{ flex:1; }
+  .ct-roll .chev, .ct-kraj .chev{ color:var(--accent); font-size:20px; line-height:1; transition:transform .15s ease; }
+  .ct-roll.open .chev, .ct-kraj.open .chev{ transform:rotate(90deg); }
+  .ct-roll + .ct-roll, .ct-chats + .ct-foot{ margin-top:8px; }
+  .ct-kraje{ margin:4px 0 6px; }
+  .ct-kraj{ display:flex; align-items:center; gap:10px; width:100%; padding:12px 4px; background:none; border:none; border-bottom:1px solid var(--border);
+    cursor:pointer; font-family:var(--sans); font-size:15px; color:var(--text); text-align:left; }
+  .ct-kraj span:first-child{ flex:1; }
+  .ct-kraj.open{ font-weight:600; }
+  .ct-kraj .c{ font-family:var(--mono); font-size:12px; color:var(--soft); }
+  .ct-list{ padding:4px 0 10px; }
+  .ct-c{ margin-top:8px; padding:12px 14px; background:var(--surface); border:1px solid var(--border); border-radius:12px; }
+  .ct-name{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24; line-height:1.3; color:var(--text); }
+  .ct-row{ display:block; margin-top:3px; font-size:13.5px; line-height:1.45; color:var(--soft); }
+  .ct-prov{ color:var(--text); }
+  .ct-adr{ text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; }
+  .ct-tels{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .ct-tel{ display:inline-flex; align-items:center; gap:6px; padding:6px 11px; border:1px solid var(--accent); border-radius:999px;
+    color:var(--accent); text-decoration:none; font-size:14px; }
+  .ct-tel svg{ width:14px; height:14px; flex-shrink:0; }
+  .ct-tel b{ font-weight:700; white-space:nowrap; }
+  .ct-tel i{ font-style:normal; font-size:12px; color:var(--soft); }
+  .ct-links{ display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:8px; }
+  .ct-link, .ct-in{ color:var(--accent); font-weight:600; text-decoration:none; word-break:break-all; }
+  .ct-note{ font-size:13px; }
+  .ct-h{ margin:22px 0 8px; font-family:var(--serif); font-weight:600; font-size:19px; font-variation-settings:'opsz' 36; color:var(--tone); }
+  .ct-top{ margin-bottom:22px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+  .ct-t{ display:flex; align-items:center; gap:12px; padding:11px 14px; }
+  .ct-t + .ct-t{ border-top:1px solid var(--border); }
+  .ct-nums{ flex-shrink:0; width:112px; display:flex; flex-direction:column; gap:4px; }
+  .ct-tel.big{ display:flex; flex-direction:column; align-items:flex-start; gap:0; padding:0; border:none; border-radius:0; }
+  .ct-tel.big b{ font-size:18px; color:var(--accent); }
+  .ct-tel.big i{ font-size:11.5px; }
+  .ct-tb{ flex:1; min-width:0; display:flex; flex-direction:column; }
+  .ct-tn{ font-size:14.5px; font-weight:600; line-height:1.3; color:var(--text); }
+  .ct-tm{ margin-top:2px; font-size:12.5px; line-height:1.35; color:var(--soft); }
+  .ct-chats{ margin:4px 0 6px; }
+  .ct-chat{ display:flex; align-items:center; gap:10px; padding:11px 4px; border-bottom:1px solid var(--border); text-decoration:none; }
+  .ct-chat .go{ color:var(--accent); font-size:20px; }
+  .ct-foot{ margin:18px 0 0; font-size:12.5px; line-height:1.45; color:var(--muted); }
+
   /* ===== BACK / DETAIL ===== */
   .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:20px var(--gutter) 0; background:none; border:none;
     padding:0; color:var(--accent); font-family:var(--sans); font-size:13px; font-weight:600; cursor:pointer; transition:opacity .15s ease; }
@@ -962,7 +1016,8 @@
     sections:"sections.json", chains:"chains.json",
     fears:"fears.json", situations:"situations.json", pains:"pains.json",
     inspirations:"inspirations.json", questions:"questions.json", articles:"articles.json",
-    tag_groups:"tag_groups.json"   // {tag: skupina}, generuje local/data_wip/build_tag_groups.py ze slovníku
+    tag_groups:"tag_groups.json",  // {tag: skupina}, generuje local/data_wip/build_tag_groups.py ze slovníku
+    contacts:"contacts.json"       // Důležité kontakty (26. 11. 2026), build local/kontakty/build_contacts.py
   };
   // Náročnost cvičení → tón pilulky (viz .mc-diff)
   var DIFF_CLASS = { "nízká":"low", "střední":"mid", "vysoká":"high" };
@@ -1024,6 +1079,7 @@
 
   // ===================== IKONY =====================
   var IC = {
+    phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>',
     crisis:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M12 8v4M12 16h.01"/></svg>',
     body:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.5 5.5 0 0 0-8.8-1.4 5.5 5.5 0 0 0-8.8 6.6C4.8 13.5 12 20 12 20s7.2-6.5 8.8-9.2a5.5 5.5 0 0 0 0-5.2z"/></svg>',
     reframing:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>',
@@ -1069,6 +1125,8 @@
     { key:"articles",     label:"Články",           icon:"articles",     kind:"content",   tile:true, tone:"teal" },
     { key:"body",         label:"Tělesné příznaky", icon:"body",         kind:"content",   tile:true, tone:"accent", sep:true },
     { key:"crisis",       label:"První pomoc",      icon:"crisis",       kind:"content",   tile:true, tone:"accent" },
+    // Důležité kontakty (26. 11. 2026) jen v menu (dlaždice po párech); vstup i boxem nahoře v První pomoci.
+    { key:"contacts",     label:"Důležité kontakty", icon:"phone",       kind:"contacts",  tile:false, tone:"accent" },
     { key:"favorites",    label:"Oblíbené",         icon:"favorites",    kind:"favorites", tile:false, tone:"accent", sep:true },
     // Jak na to a O appce jen v menu — dlaždice jedou po párech a devátá by zůstala sama.
     { key:"guide",        label:"Jak na to",        icon:"guide",        kind:"guide",     tile:false, tone:"teal" },
@@ -1083,6 +1141,7 @@
 
   var state = {
     page:"home", section:null, menuOpen:false,
+    contacts:{ centers:!!ctKrajSaved(), kraj:ctKrajSaved(), chats:false },
     // view: gates | feelings | fears | fearGroup | situation | pains | pain | detail (triplet)
     // origin = view, kam vede Zpět z tripletu (pocity / skupina strachů / situace)
     rf:{ view:"gates", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50,
@@ -1705,6 +1764,7 @@
       else if(sec&&sec.kind==="favorites") h+=viewFavorites();
       else if(sec&&sec.kind==="about") h+=viewAbout();
       else if(sec&&sec.kind==="guide") h+=viewGuide();
+      else if(sec&&sec.kind==="contacts") h+=viewContacts();
       else if(sec&&sec.kind==="content") h+=viewContent(sec.key);
       else h+='<div class="mc-empty">—</div>';
     }
@@ -2183,6 +2243,8 @@
       h+='<div class="mc-search-wrap"><svg class="mc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="mc-search" class="mc-search" placeholder="Hledejte příznak…" enterkeyhint="search" oninput="MC.typed(\'secSearch\',this.value)" onkeydown="MC.searchKey(event)"></div>';
       if(s.search.trim()){ var q=deburr(s.search); items=items.filter(function(it){ return deburr(it.name).indexOf(q)>-1; }); }
     }
+    // Rozcestník na kontakty (26. 11. 2026): jiný typ informace než stavy pod ním → zelený box, pořád.
+    if(key==="crisis") h+='<button class="mc-ct-box" onclick="MC.cross(\'open\',\'contacts\')"><span class="b-ic">'+IC.phone+'</span><span class="b-t"><b>Důležité kontakty</b><span>Krizové linky a krizová centra ve vašem kraji</span></span><span class="go">›</span></button>';
     h+='<div class="mc-namelist">';
     if(items.length===0) h+='<div class="mc-empty">Nic neodpovídá hledání.</div>';
     else items.forEach(function(it){
@@ -2620,6 +2682,66 @@
       '<div class="mc-detail-body mc-md">'+md(GUIDE_MD)+'</div>';
   }
 
+  // ===================== DŮLEŽITÉ KONTAKTY (26. 11. 2026) =====================
+  // Data: data/contacts.json (group top / center / chat), zdroj local/kontakty/kontakty.md.
+  // Nahoře roleta Krizová centra → kraje → centra, pod ní nejdůležitější čísla, dole roleta chatů.
+  // Otevřený kraj si appka pamatuje (mc_ct_kraj), příště je roleta rovnou otevřená na něm.
+  function ctTelHref(n){ return "tel:"+String(n).replace(/-\d$/,"").replace(/\D/g,""); }
+  function ctTels(tels,big){
+    return (tels||[]).map(function(t){
+      return '<a class="ct-tel'+(big?" big":"")+'" href="'+ctTelHref(t.n)+'">'+(big?"":IC.phone)+'<b>'+esc(t.n)+'</b>'+(t.label?'<i>'+esc(t.label)+'</i>':'')+'</a>';
+    }).join("");
+  }
+  // Čísla v poznámce taky klikací.
+  function ctLinkNums(t){ return esc(t).replace(/(\d{3} \d{3} \d{3})(-\d)?/g,function(m,n){ return '<a class="ct-in" href="'+ctTelHref(n)+'">'+m+'</a>'; }); }
+  function ctWeb(w){ if(!w) return ""; return '<a class="ct-link" href="https://'+esc(w.url)+'" target="_blank" rel="noopener">'+esc(w.url.replace(/\/.*$/,""))+' ›</a>'; }
+  function ctCenter(c){
+    var h='<div class="ct-c"><div class="ct-name">'+esc(c.name)+'</div>';
+    if(c.provoz) h+='<div class="ct-row ct-prov">'+esc(c.provoz)+'</div>';
+    if(c.adresa) h+='<a class="ct-row ct-adr" href="https://mapy.cz/zakladni?q='+encodeURIComponent(c.adresa)+'" target="_blank" rel="noopener">'+esc(c.adresa)+'</a>';
+    h+='<div class="ct-tels">'+ctTels(c.tels)+'</div>';
+    var l=[]; if(c.email) l.push('<a class="ct-link" href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>'); if(c.web) l.push(ctWeb(c.web));
+    if(l.length) h+='<div class="ct-row ct-links">'+l.join("")+'</div>';
+    if(c.note) h+='<div class="ct-row ct-note">'+ctLinkNums(c.note)+'</div>';
+    return h+'</div>';
+  }
+  function ctRoll(id,label,open){
+    return '<button class="ct-roll'+(open?" open":"")+'" onclick="MC.ctRoll(\''+id+'\')"><span>'+esc(label)+'</span><span class="chev">›</span></button>';
+  }
+  function viewContacts(){
+    var all=DB.contacts||[], cs=state.contacts;
+    var top=all.filter(function(x){ return x.group==="top"; }), chats=all.filter(function(x){ return x.group==="chat"; });
+    var kraje=[], byK={};
+    all.forEach(function(x){ if(x.group!=="center") return; if(!byK[x.kraj]){ byK[x.kraj]=[]; kraje.push(x.kraj); } byK[x.kraj].push(x); });
+    var h='<button class="mc-back" onclick="MC.home()">← Domů</button>'+secHead("contacts","Důležité kontakty",null);
+    h+='<div class="mc-ct">';
+    h+=ctRoll("centers","Krizová centra podle krajů",cs.centers);
+    if(cs.centers){
+      h+='<div class="ct-kraje">';
+      kraje.forEach(function(k,i){
+        var on=cs.kraj===k;
+        h+='<button class="ct-kraj'+(on?" open":"")+'" onclick="MC.ctKraj('+i+')"><span>'+esc(k)+'</span><span class="c">'+byK[k].length+'</span><span class="chev">›</span></button>';
+        if(on) h+='<div class="ct-list">'+byK[k].map(ctCenter).join("")+'</div>';
+      });
+      h+='</div>';
+    }
+    h+='<div class="ct-h">Nejdůležitější čísla</div><div class="ct-top">';
+    top.forEach(function(t){
+      h+='<div class="ct-t"><div class="ct-nums">'+ctTels(t.tels,true)+'</div><div class="ct-tb"><div class="ct-tn">'+esc(t.name)+'</div><div class="ct-tm">'+esc([t.who,t.provoz].filter(Boolean).join(" · "))+'</div></div></div>';
+    });
+    h+='</div>';
+    h+=ctRoll("chats","Chatové poradny",cs.chats);
+    if(cs.chats){
+      h+='<div class="ct-chats">';
+      chats.forEach(function(c){ h+='<a class="ct-chat" href="https://'+esc(c.web.url)+'" target="_blank" rel="noopener"><span class="ct-tb"><span class="ct-tn">'+esc(c.name)+'</span><span class="ct-tm">'+esc(c.provoz)+'</span></span><span class="go">›</span></a>'; });
+      h+='</div>';
+    }
+    h+='<p class="ct-foot">Ověřeno k 26. 11. 2026. Provoz center se mění, před cestou si ho ověřte telefonicky. Chaty potřebují internet.</p>';
+    return h+'</div>';
+  }
+  function ctKraje(){ var k=[]; (DB.contacts||[]).forEach(function(x){ if(x.group==="center"&&k.indexOf(x.kraj)<0) k.push(x.kraj); }); return k; }
+  function ctKrajSaved(){ try{ var k=localStorage.getItem("mc_ct_kraj"); return k||null; }catch(e){ return null; } }
+
   function viewAbout(){
     return '<button class="mc-back" onclick="MC.home()">← Domů</button>'+
       '<div class="mc-detail-head"><div class="mc-detail-title">O aplikaci</div></div>'+
@@ -2937,6 +3059,8 @@
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
     exIntroOk:function(){ try{ localStorage.setItem(TUTOR_SEC.exercises,"1"); }catch(e){} render(); },
+    ctRoll:function(id){ state.contacts[id]=!state.contacts[id]; render(); },
+    ctKraj:function(i){ var c=state.contacts, k=ctKraje()[i]; c.kraj=c.kraj===k?null:k; try{ if(c.kraj) localStorage.setItem("mc_ct_kraj",c.kraj); }catch(e){} render(); },
     jumpTo:function(id){ var el=document.getElementById(id); if(el&&el.scrollIntoView) el.scrollIntoView({behavior:"smooth",block:"start"}); },
     deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
     deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
