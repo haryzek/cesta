@@ -694,7 +694,7 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 - **Cvičení v Redakci** po oddílech s nadpisy a řádkem skoků; **Moje cesta**: velká zelená čísla oddílů, počet cvičení červeně, v seznamu cvičení „náročnost“ + čas, řetěz jen v detailu.
 - **Placka vlna 2**: Rodičovská linka 606 021 021 u bolístek o dětech.
 - **Sekce „Přerámování myšlenek“** (název sekce; uvnitř krátké „Přerámování“).
-- **Důležité kontakty** (26. 11. 2026): `data/contacts.json` (`group` top / center / chat, zdroj `local/kontakty/kontakty.md`, build `build_contacts.py`), v menu pod První pomocí a zeleným boxem nahoře v První pomoci. Roleta krizových center po krajích (kraj si appka pamatuje), nejdůležitější čísla, roleta chatů; čísla `tel:`, adresy do mapy.
+- **Důležité kontakty** (26. 11. 2026): `data/contacts.json` (`group` top / center / chat, zdroj `local/kontakty/kontakty.md`, build `build_contacts.py`), v menu pod První pomocí a zeleným boxem nahoře v První pomoci. Roleta se seznamem krajů, kraj = samostatná stránka se Zpět (naposledy otevřený je tučně), nejdůležitější čísla, roleta chatů; čísla `tel:`, adresy do mapy.
 - **Klikací čísla** (26. 11. 2026): každé `**číslo**` v markdownu je odkaz `tel:` (krizovka, tělo), stejně čísla v souhlasu a O appce.
 
 ## Provizorní admin (12. 9. 2026)

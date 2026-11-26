@@ -740,58 +740,62 @@
   .mc-attach .mc-md{ font-size:14.5px; }
 
   /* ===== DŮLEŽITÉ KONTAKTY (26. 11. 2026) ===== */
-  /* Box v První pomoci: rozcestník, jiný typ informace než stavy → zelený (teal) i na červené stránce. */
-  .mc-ct-box{ display:flex; align-items:center; gap:12px; width:calc(100% - 2 * var(--gutter)); margin:4px var(--gutter) 14px; padding:14px 16px;
+  /* Box v První pomoci: rozcestník, jiný typ informace než stavy → zelený (teal) i na červené stránce.
+     Odsazení od nadpisu jako seznamy jinde (20–24 px). */
+  .mc-ct-box{ display:flex; align-items:center; gap:14px; width:calc(100% - 2 * var(--gutter)); margin:22px var(--gutter) 0; padding:16px 18px;
     background:var(--teal-soft); border:1.5px solid var(--teal); border-radius:16px; text-align:left; cursor:pointer; font-family:var(--sans); }
   .mc-ct-box .b-ic{ flex-shrink:0; color:var(--teal); display:flex; }
   .mc-ct-box .b-ic svg{ width:24px; height:24px; }
   .mc-ct-box .b-t{ flex:1; min-width:0; }
   .mc-ct-box .b-t b{ display:block; font-family:var(--serif); font-weight:600; font-size:17px; font-variation-settings:'opsz' 24; color:var(--text); }
-  .mc-ct-box .b-t span{ display:block; margin-top:2px; font-size:13.5px; line-height:1.4; color:var(--soft); }
+  .mc-ct-box .b-t span{ display:block; margin-top:4px; font-size:13.5px; line-height:1.45; color:var(--soft); }
   .mc-ct-box .go{ flex-shrink:0; font-size:22px; color:var(--teal); }
-  .mc-ct{ padding:6px var(--gutter) 28px; font-family:var(--sans); }
-  .ct-roll{ display:flex; align-items:center; gap:10px; width:100%; padding:14px 16px; background:var(--surface); border:1px solid var(--border);
+  .mc-ct{ padding:22px var(--gutter) 32px; font-family:var(--sans); }
+  .ct-roll{ display:flex; align-items:center; gap:10px; width:100%; padding:15px 16px; background:var(--surface); border:1px solid var(--border);
     border-radius:14px; cursor:pointer; font-family:var(--sans); font-size:16px; font-weight:600; color:var(--text); text-align:left; }
   .ct-roll span:first-child{ flex:1; }
-  .ct-roll .chev, .ct-kraj .chev{ color:var(--accent); font-size:20px; line-height:1; transition:transform .15s ease; }
-  .ct-roll.open .chev, .ct-kraj.open .chev{ transform:rotate(90deg); }
-  .ct-roll + .ct-roll, .ct-chats + .ct-foot{ margin-top:8px; }
-  .ct-kraje{ margin:4px 0 6px; }
-  .ct-kraj{ display:flex; align-items:center; gap:10px; width:100%; padding:12px 4px; background:none; border:none; border-bottom:1px solid var(--border);
+  .ct-roll .chev{ color:var(--accent); font-size:20px; line-height:1; transition:transform .15s ease; }
+  .ct-roll.open .chev{ transform:rotate(90deg); }
+  .ct-kraje{ margin:6px 0 0; }
+  .ct-kraj{ display:flex; align-items:center; gap:10px; width:100%; padding:13px 4px; background:none; border:none; border-bottom:1px solid var(--border);
     cursor:pointer; font-family:var(--sans); font-size:15px; color:var(--text); text-align:left; }
   .ct-kraj span:first-child{ flex:1; }
-  .ct-kraj.open{ font-weight:600; }
+  .ct-kraj.last span:first-child{ font-weight:600; }
   .ct-kraj .c{ font-family:var(--mono); font-size:12px; color:var(--soft); }
-  .ct-list{ padding:4px 0 10px; }
-  .ct-c{ margin-top:8px; padding:12px 14px; background:var(--surface); border:1px solid var(--border); border-radius:12px; }
-  .ct-name{ font-family:var(--serif); font-weight:600; font-size:16.5px; font-variation-settings:'opsz' 24; line-height:1.3; color:var(--text); }
-  .ct-row{ display:block; margin-top:3px; font-size:13.5px; line-height:1.45; color:var(--soft); }
+  .ct-kraj .chev{ color:var(--accent); font-size:20px; line-height:1; }
+  /* Karta centra: vzdušnější řádkování, každé číslo na vlastním řádku (pilulka jen s číslem, popisek vedle). */
+  .ct-c{ padding:16px 16px 18px; background:var(--surface); border:1px solid var(--border); border-radius:14px; }
+  .ct-c + .ct-c{ margin-top:12px; }
+  .ct-name{ font-family:var(--serif); font-weight:600; font-size:17px; font-variation-settings:'opsz' 24; line-height:1.3; color:var(--text); margin-bottom:8px; }
+  .ct-row{ display:block; margin-top:5px; font-size:14px; line-height:1.55; color:var(--soft); }
   .ct-prov{ color:var(--text); }
   .ct-adr{ text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; }
-  .ct-tels{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
-  .ct-tel{ display:inline-flex; align-items:center; gap:6px; padding:6px 11px; border:1px solid var(--accent); border-radius:999px;
-    color:var(--accent); text-decoration:none; font-size:14px; }
+  .ct-tels{ display:flex; flex-direction:column; gap:8px; margin-top:14px; }
+  .ct-tl{ display:flex; align-items:center; flex-wrap:wrap; gap:4px 10px; }
+  .ct-tel{ display:inline-flex; align-items:center; gap:7px; padding:7px 13px; border:1px solid var(--accent); border-radius:999px;
+    color:var(--accent); text-decoration:none; font-size:15px; }
   .ct-tel svg{ width:14px; height:14px; flex-shrink:0; }
   .ct-tel b{ font-weight:700; white-space:nowrap; }
-  .ct-tel i{ font-style:normal; font-size:12px; color:var(--soft); }
-  .ct-links{ display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:8px; }
-  .ct-link, .ct-in{ color:var(--accent); font-weight:600; text-decoration:none; word-break:break-all; }
-  .ct-note{ font-size:13px; }
-  .ct-h{ margin:22px 0 8px; font-family:var(--serif); font-weight:600; font-size:19px; font-variation-settings:'opsz' 36; color:var(--tone); }
-  .ct-top{ margin-bottom:22px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
-  .ct-t{ display:flex; align-items:center; gap:12px; padding:11px 14px; }
+  .ct-tl .lb{ font-size:13px; line-height:1.4; color:var(--soft); }
+  .ct-links{ display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:14px; }
+  .ct-link, .ct-in{ color:var(--accent); font-weight:600; text-decoration:none; overflow-wrap:anywhere; }
+  .ct-note{ margin-top:12px; font-size:13.5px; }
+  .ct-h{ margin:30px 0 12px; font-family:var(--serif); font-weight:600; font-size:20px; font-variation-settings:'opsz' 36; color:var(--tone); }
+  .ct-top{ margin-bottom:26px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+  .ct-t{ display:flex; align-items:center; gap:14px; padding:13px 16px; }
   .ct-t + .ct-t{ border-top:1px solid var(--border); }
-  .ct-nums{ flex-shrink:0; width:112px; display:flex; flex-direction:column; gap:4px; }
-  .ct-tel.big{ display:flex; flex-direction:column; align-items:flex-start; gap:0; padding:0; border:none; border-radius:0; }
+  .ct-nums{ flex-shrink:0; width:112px; display:flex; flex-direction:column; gap:6px; }
+  .ct-tel.big{ display:flex; flex-direction:column; align-items:flex-start; gap:1px; padding:0; border:none; border-radius:0; }
   .ct-tel.big b{ font-size:18px; color:var(--accent); }
-  .ct-tel.big i{ font-size:11.5px; }
+  .ct-tel.big i{ font-style:normal; font-size:11.5px; color:var(--soft); }
   .ct-tb{ flex:1; min-width:0; display:flex; flex-direction:column; }
-  .ct-tn{ font-size:14.5px; font-weight:600; line-height:1.3; color:var(--text); }
-  .ct-tm{ margin-top:2px; font-size:12.5px; line-height:1.35; color:var(--soft); }
-  .ct-chats{ margin:4px 0 6px; }
-  .ct-chat{ display:flex; align-items:center; gap:10px; padding:11px 4px; border-bottom:1px solid var(--border); text-decoration:none; }
+  .ct-tn{ font-size:14.5px; font-weight:600; line-height:1.35; color:var(--text); }
+  .ct-tm{ margin-top:3px; font-size:12.5px; line-height:1.45; color:var(--soft); }
+  .ct-roll + .ct-roll{ margin-top:10px; }
+  .ct-chats{ margin:6px 0 0; }
+  .ct-chat{ display:flex; align-items:center; gap:10px; padding:12px 4px; border-bottom:1px solid var(--border); text-decoration:none; }
   .ct-chat .go{ color:var(--accent); font-size:20px; }
-  .ct-foot{ margin:18px 0 0; font-size:12.5px; line-height:1.45; color:var(--muted); }
+  .ct-foot{ margin:24px 0 0; font-size:12.5px; line-height:1.5; color:var(--muted); }
 
   /* ===== BACK / DETAIL ===== */
   .mc-back{ display:inline-flex; align-items:center; gap:5px; margin:20px var(--gutter) 0; background:none; border:none;
@@ -1141,7 +1145,7 @@
 
   var state = {
     page:"home", section:null, menuOpen:false,
-    contacts:{ centers:!!ctKrajSaved(), kraj:ctKrajSaved(), chats:false },
+    contacts:{ centers:false, kraj:null, chats:false, last:ctKrajSaved() },
     // view: gates | feelings | fears | fearGroup | situation | pains | pain | detail (triplet)
     // origin = view, kam vede Zpět z tripletu (pocity / skupina strachů / situace)
     rf:{ view:"gates", showSecondary:false, selected:{}, detailClusters:[], detailMode:"single", activeType:"reframings", search:"", pageLimit:50,
@@ -2684,12 +2688,15 @@
 
   // ===================== DŮLEŽITÉ KONTAKTY (26. 11. 2026) =====================
   // Data: data/contacts.json (group top / center / chat), zdroj local/kontakty/kontakty.md.
-  // Nahoře roleta Krizová centra → kraje → centra, pod ní nejdůležitější čísla, dole roleta chatů.
-  // Otevřený kraj si appka pamatuje (mc_ct_kraj), příště je roleta rovnou otevřená na něm.
+  // Stránka: roleta Krizová centra podle krajů (jen seznam krajů) → Nejdůležitější čísla → roleta chatů.
+  // Kraj = vlastní stránka se Zpět (state.contacts.kraj, v navSig i backTarget). Naposledy otevřený
+  // kraj (mc_ct_kraj) je v seznamu zvýrazněný.
   function ctTelHref(n){ return "tel:"+String(n).replace(/-\d$/,"").replace(/\D/g,""); }
+  // Velká čísla nahoře: číslo + popisek pod ním. U center: pilulka jen s číslem, popisek vedle jako text.
   function ctTels(tels,big){
     return (tels||[]).map(function(t){
-      return '<a class="ct-tel'+(big?" big":"")+'" href="'+ctTelHref(t.n)+'">'+(big?"":IC.phone)+'<b>'+esc(t.n)+'</b>'+(t.label?'<i>'+esc(t.label)+'</i>':'')+'</a>';
+      if(big) return '<a class="ct-tel big" href="'+ctTelHref(t.n)+'"><b>'+esc(t.n)+'</b>'+(t.label?'<i>'+esc(t.label)+'</i>':'')+'</a>';
+      return '<div class="ct-tl"><a class="ct-tel" href="'+ctTelHref(t.n)+'">'+IC.phone+'<b>'+esc(t.n)+'</b></a>'+(t.label?'<span class="lb">'+esc(t.label)+'</span>':'')+'</div>';
     }).join("");
   }
   // Čísla v poznámce taky klikací.
@@ -2708,20 +2715,27 @@
   function ctRoll(id,label,open){
     return '<button class="ct-roll'+(open?" open":"")+'" onclick="MC.ctRoll(\''+id+'\')"><span>'+esc(label)+'</span><span class="chev">›</span></button>';
   }
-  function viewContacts(){
-    var all=DB.contacts||[], cs=state.contacts;
-    var top=all.filter(function(x){ return x.group==="top"; }), chats=all.filter(function(x){ return x.group==="chat"; });
+  var CT_FOOT='<p class="ct-foot">Ověřeno k 26. 11. 2026. Provoz center se mění, před cestou si ho ověřte telefonicky.</p>';
+  function ctByKraj(){
     var kraje=[], byK={};
-    all.forEach(function(x){ if(x.group!=="center") return; if(!byK[x.kraj]){ byK[x.kraj]=[]; kraje.push(x.kraj); } byK[x.kraj].push(x); });
+    (DB.contacts||[]).forEach(function(x){ if(x.group!=="center") return; if(!byK[x.kraj]){ byK[x.kraj]=[]; kraje.push(x.kraj); } byK[x.kraj].push(x); });
+    return { kraje:kraje, byK:byK };
+  }
+  function ctKraje(){ return ctByKraj().kraje; }
+  function viewContacts(){
+    var all=DB.contacts||[], cs=state.contacts, g=ctByKraj();
+    if(cs.kraj&&g.byK[cs.kraj]){
+      return '<button class="mc-back" onclick="MC.ctKrajBack()">← Kontakty</button>'+secHead("contacts",cs.kraj,null)+
+        '<div class="mc-ct"><div class="ct-list">'+g.byK[cs.kraj].map(ctCenter).join("")+'</div>'+CT_FOOT+'</div>';
+    }
+    var top=all.filter(function(x){ return x.group==="top"; }), chats=all.filter(function(x){ return x.group==="chat"; });
     var h='<button class="mc-back" onclick="MC.home()">← Domů</button>'+secHead("contacts","Důležité kontakty",null);
     h+='<div class="mc-ct">';
     h+=ctRoll("centers","Krizová centra podle krajů",cs.centers);
     if(cs.centers){
       h+='<div class="ct-kraje">';
-      kraje.forEach(function(k,i){
-        var on=cs.kraj===k;
-        h+='<button class="ct-kraj'+(on?" open":"")+'" onclick="MC.ctKraj('+i+')"><span>'+esc(k)+'</span><span class="c">'+byK[k].length+'</span><span class="chev">›</span></button>';
-        if(on) h+='<div class="ct-list">'+byK[k].map(ctCenter).join("")+'</div>';
+      g.kraje.forEach(function(k,i){
+        h+='<button class="ct-kraj'+(cs.last===k?" last":"")+'" onclick="MC.ctKraj('+i+')"><span>'+esc(k)+'</span><span class="c">'+g.byK[k].length+'</span><span class="chev">›</span></button>';
       });
       h+='</div>';
     }
@@ -2736,10 +2750,9 @@
       chats.forEach(function(c){ h+='<a class="ct-chat" href="https://'+esc(c.web.url)+'" target="_blank" rel="noopener"><span class="ct-tb"><span class="ct-tn">'+esc(c.name)+'</span><span class="ct-tm">'+esc(c.provoz)+'</span></span><span class="go">›</span></a>'; });
       h+='</div>';
     }
-    h+='<p class="ct-foot">Ověřeno k 26. 11. 2026. Provoz center se mění, před cestou si ho ověřte telefonicky. Chaty potřebují internet.</p>';
+    h+=CT_FOOT.replace("telefonicky.","telefonicky. Chaty potřebují internet.");
     return h+'</div>';
   }
-  function ctKraje(){ var k=[]; (DB.contacts||[]).forEach(function(x){ if(x.group==="center"&&k.indexOf(x.kraj)<0) k.push(x.kraj); }); return k; }
   function ctKrajSaved(){ try{ var k=localStorage.getItem("mc_ct_kraj"); return k||null; }catch(e){ return null; } }
 
   function viewAbout(){
@@ -2965,7 +2978,7 @@
     open:function(key){
       RET=[]; state.menuOpen=false; state.detail=null;
       if(key==="favorites"){ state.page="favorites"; state.section=null; state.fav.tile=null; }
-      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="gates"; if(key==="journey") state.journey.sectionId=null; }
+      else { state.page="section"; state.section=key; if(key==="reframing") state.rf.view="gates"; if(key==="journey") state.journey.sectionId=null; if(key==="contacts") state.contacts.kraj=null; }
       scrollTop(); render();
     },
     // Přerámování
@@ -3060,7 +3073,8 @@
     // detail
     exIntroOk:function(){ try{ localStorage.setItem(TUTOR_SEC.exercises,"1"); }catch(e){} render(); },
     ctRoll:function(id){ state.contacts[id]=!state.contacts[id]; render(); },
-    ctKraj:function(i){ var c=state.contacts, k=ctKraje()[i]; c.kraj=c.kraj===k?null:k; try{ if(c.kraj) localStorage.setItem("mc_ct_kraj",c.kraj); }catch(e){} render(); },
+    ctKraj:function(i){ var c=state.contacts, k=ctKraje()[i]; if(!k) return; c.kraj=k; c.last=k; try{ localStorage.setItem("mc_ct_kraj",k); }catch(e){} scrollTop(); render(); },
+    ctKrajBack:function(){ state.contacts.kraj=null; scrollTop(); render(); },
     jumpTo:function(id){ var el=document.getElementById(id); if(el&&el.scrollIntoView) el.scrollIntoView({behavior:"smooth",block:"start"}); },
     deepCheck:function(){ var d=state.detail; if(!d) return; d.deepCheck=!d.deepCheck; render(); },
     deepOk:function(){ var d=state.detail; if(!d||!d.deepCheck) return; d.deepOk=true; scrollTop(); render(); },
@@ -3415,7 +3429,7 @@
   // Návraty po skoku do jiné sekce (MC.cross): {snap, entry}; entry = podpis cílové stránky.
   var RET=[];
   function navSig(){ return [state.page,state.section,state.rf.view,state.rf.situation,state.rf.pain,
-    state.detail?state.detail.type+":"+state.detail.id:"",state.fav.tile,state.journey.sectionId].join("|"); }
+    state.detail?state.detail.type+":"+state.detail.id:"",state.fav.tile,state.journey.sectionId,state.contacts.kraj].join("|"); }
   function restoreSnap(r){
     var n=r.snap.nav; state.page=n.page; state.section=n.section; state.detail=n.detail; state.rf=n.rf; state.journey=n.journey; state.fav=n.fav;
     state.menuOpen=false; state.swipe.key=null; state.swipe.ids=[]; render();
@@ -3442,6 +3456,7 @@
         if(v==="feelings"||v==="fears"||v==="pains") return function(){ MC.rfGate(null); };
       }
       if(state.section==="journey"&&state.journey.sectionId) return function(){ MC.journeyBack(); };
+      if(state.section==="contacts"&&state.contacts.kraj) return function(){ MC.ctKrajBack(); };
       return function(){ MC.home(); };
     }
     return null;   // domovská obrazovka (a souhlas) → gesto opouští appku

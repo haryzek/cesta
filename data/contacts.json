@@ -314,7 +314,7 @@
     "tels": [
       {
         "n": "725 515 934",
-        "label": "objednání, po telefonu se pomoc neposkytuje"
+        "label": "objednání"
       }
     ],
     "email": null,
@@ -322,7 +322,7 @@
       "url": "modredvere.cz/cz/praha-krizova-pomoc",
       "note": null
     },
-    "note": "všechny věkové kategorie, zdarma, anonymně",
+    "note": "všechny věkové kategorie, zdarma, anonymně; telefon jen k objednání, po telefonu se pomoc neposkytuje",
     "sort_order": 15
   },
   {
@@ -458,7 +458,7 @@
       },
       {
         "n": "547 212 333",
-        "label": "anonymní telefonická pomoc"
+        "label": "anonymní linka"
       }
     ],
     "email": null,
@@ -1020,7 +1020,7 @@
       },
       {
         "n": "606 034 334",
-        "label": "objednání, St, Čt 8–10"
+        "label": "objednání, St a Čt 8–10"
       }
     ],
     "email": "deti@spirala-ul.cz",
