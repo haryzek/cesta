@@ -215,7 +215,7 @@ Nasazený 17. 7. 2026, vznikl v konverzaci s Claude Chat. **Zdroj pravdy je `<st
 
 **Fonty:** Fraunces (nadpisy, titulky, citáty) + Public Sans (UI a běžný text) + mono (metadata, čísla). Fraunces je variabilní font — **vždy nastav `font-variation-settings:'opsz'`** podle velikosti (72 pro H1, 36 pro H2, 24 pro titulky), jinak vypadá placatě. Váha nadpisů 600, ne 400 (to bylo pro Georgii).
 
-**Osa `--gutter: 20px`.** Všechno boční odsazení jede přes ni. Nepřidávej vlastní hodnoty.
+**Osa `--gutter: 20px`.** Všechno boční odsazení jede přes ni. Nepřidávej vlastní hodnoty. **Úzké telefony (od 26. 11. 2026):** blok `@media (max-width:360px)` na konci `<style>` — gutter 16 px, H1 a `.mc-detail-title` 26 px (do 330 px 24), o stupeň menší velké texty karet a titulky návodných karet, pilulka „N nové“ jako odznak v rohu tlačítka. Nad 360 px se nic nemění. Nová velká typografie = pamatovat i na tenhle blok.
 
 **Klíčové proměnné:** `--tone`/`--tone-soft` (barva sekce), `--on-accent` (text NA accent ploše — v light světlý, v dark tmavý), `--heart` (srdíčko, v light světlejší než accent). `--empty`/`--done`/`--missed` nemají v kódu jediné použití, jsou to zbytky.
 

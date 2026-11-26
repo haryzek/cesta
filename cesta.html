@@ -1009,6 +1009,32 @@
   #mc-root[data-nag-still] .mc-modal-backdrop{ animation:none; }
   @keyframes mcFade{ from{opacity:0;} to{opacity:1;} }
   @keyframes mcSlide{ from{transform:translateX(-100%);} to{transform:translateX(0);} }
+
+  /* ===== ÚZKÉ TELEFONY (26. 11. 2026) =====
+     Do ~360 px (malé Androidy, iPhone SE 1. gen. 320 px): užší okraje, o stupeň menší nadpisy a velké
+     texty karet, ať se řádek nadpisu s tlačítky nelámal a karta se vešla bez scrollu. Nad 360 px beze změny. */
+  @media (max-width:360px){
+    #mc-root{ --gutter:16px; }
+    #mc-root h1{ font-size:26px; }
+    .mc-detail-title{ font-size:26px; }
+    .sc-tutor-t, .sc-soft-t{ font-size:21px; }
+    .mc-card-eyebrow.jnum{ font-size:26px; }
+    .mc-tile-num{ font-size:30px; }
+    .mc-swipe-card .sc-text.xl{ font-size:26px; }
+    .mc-swipe-card .sc-text.lg{ font-size:21px; }
+    .mc-swipe-card .sc-text.md{ font-size:18.5px; }
+    .mc-swipe-card .sc-text.sm{ font-size:16px; }
+    .ct-nums{ width:90px; }
+    .ct-c{ padding:14px 14px 16px; }
+    /* Pilulka „N nové“ by tlačítko Přerámovat zalomila na dva řádky → odznak v rohu tlačítka. */
+    .mc-fab-row .mc-fab{ position:relative; }
+    #mc-root .mc-fab-row .mc-clear{ padding-left:14px; padding-right:14px; }
+    .mc-newpill{ position:absolute; top:-9px; right:-4px; margin:0; padding:1px 7px; font-size:11px; box-shadow:0 0 0 2px var(--bg); }
+  }
+  @media (max-width:330px){
+    #mc-root h1{ font-size:24px; }
+    .mc-detail-title{ font-size:24px; }
+  }
 </style>
 
 <script>
