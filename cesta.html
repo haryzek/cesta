@@ -363,7 +363,8 @@
     .mc-chips{ display:flex; flex-wrap:wrap; gap:6px; }
   .mc-chip{ background:var(--surface); border:1px solid var(--border); color:var(--body); font-family:var(--sans);
     font-size:12.5px; font-weight:500; padding:5px 11px; border-radius:20px; cursor:pointer; transition:all .12s ease; }
-  .mc-chip.dur{ background:var(--surface); color:var(--accent); font-family:var(--mono); font-weight:700; }
+  /* Čas a náročnost (26. 11. 2026): bílé pilulky stejného písma jako štítky — systémové parametry. */
+  .mc-chip.dur{ background:var(--surface); }
   /* Skupiny ve filtru: malý nadpis jednou tlumenou barvou, pilulky s jemným podkladem skupiny a jednotným obrysem, vybraná sytá. */
   .fs-group + .fs-group{ margin-top:20px; }
   .fs-gh{ margin-bottom:8px; font-family:var(--sans); font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--soft); }
@@ -1162,7 +1163,7 @@
   };
   function secState(key){
     // Výchozí režim: Redakce, kde ji sekce má (od 18. 11. 2026), jinak Nejnovější.
-    if(!state.sec[key]) state.sec[key]={ mode:(CONTENT[key]&&CONTENT[key].redakce)?"edit":"new", filterOpen:false, kw:"", tags:[], durs:[], search:"" };
+    if(!state.sec[key]) state.sec[key]={ mode:(CONTENT[key]&&CONTENT[key].redakce)?"edit":"new", filterOpen:false, kw:"", tags:[], durs:[], diffs:[], search:"" };
     return state.sec[key];
   }
 
@@ -1639,6 +1640,15 @@
     { key:"ch", group:"Chci pracovat na",   label:"Na čem chci pracovat" },
     { key:"ot", group:null,                 label:"Další" }
   ];
+  // Bloky ve filtru (26. 11. 2026): po Kolik mám času a Náročnosti jdou S čím zápasím (+ emoce na konci),
+  // Na čem chci pracovat (+ Já a druzí na konci), Čím si pomůžu. Slovník a barvy skupin zůstávají.
+  var FILTER_BLOCKS=[
+    { label:"S čím zápasím",        keys:["st","em"] },
+    { label:"Na čem chci pracovat", keys:["ch","vz"] },
+    { label:"Čím si pomůžu",        keys:["co"] },
+    { label:"Další",                keys:["ot"] }
+  ];
+  var FILTER_DIFFS=["nízká","střední","vysoká"];
   function tagGroupKey(t){
     var g=(DB&&DB.tag_groups||{})[t];
     for(var i=0;i<TAG_GROUPS_UI.length;i++){ if(TAG_GROUPS_UI[i].group===g) return TAG_GROUPS_UI[i].key; }
@@ -1659,7 +1669,7 @@
     return {score:score, hits:hits};
   }
   function durationBuckets(){ return [ {label:"do 5 min",max:5}, {label:"6–15 min",min:6,max:15}, {label:"16+ min",min:16} ]; }
-  function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; return n; }
+  function activeFilterCount(key){ var s=secState(key), n=0; if(s.kw.trim())n++; n+=s.tags.length; n+=s.durs.length; n+=(s.diffs||[]).length; return n; }
   function contentList(key){
     var cfg=CONTENT[key], s=secState(key), items=alive(cfg.store,(flat[cfg.dataKey]||[]).slice());
     if(s.mode==="edit" && cfg.redakce){
@@ -1702,6 +1712,8 @@
       items=items.filter(function(it){ var v=it[cfg.timeField]||0;
         return bs.some(function(b){ return (b.min==null||v>=b.min)&&(b.max==null||v<=b.max); }); });
     }
+    // Náročnost (26. 11. 2026, jen Cvičení): OR mezi úrovněmi, AND s ostatním filtrem.
+    if(s.diffs&&s.diffs.length&&key==="exercises") items=items.filter(function(it){ return s.diffs.indexOf(it.difficulty)>-1; });
     return items;
   }
   function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
@@ -2325,14 +2337,20 @@
       var dur=''; durationBuckets().forEach(function(b,i){ dur+='<button class="mc-chip dur '+(s.durs.indexOf(i)>-1?"on":"")+'" onclick="MC.secDur(\''+key+'\','+i+')">'+b.label+'</button>'; });
       h+='<div class="fs-group g-dur"><div class="fs-gh">Kolik mám času</div><div class="mc-chips">'+dur+'</div></div>';   // délka zvlášť nahoře (24. 11. 2026)
     }
+    // Náročnost (26. 11. 2026): bílé pilulky jako čas — „systémové“ parametry, ne témata.
+    if(key==="exercises"){
+      var df=''; FILTER_DIFFS.forEach(function(d){ df+='<button class="mc-chip dur '+((s.diffs||[]).indexOf(d)>-1?"on":"")+'" onclick="MC.secDiff(\''+key+'\',\''+d+'\')">'+d+'</button>'; });
+      h+='<div class="fs-group g-dur"><div class="fs-gh">Náročnost</div><div class="mc-chips">'+df+'</div></div>';
+    }
     // Štítky po skupinách slovníku (25. 11. 2026): nadpis hlasem uživatele + vlastní jemná barva skupiny.
     var byG={};
     allTags(cfg.dataKey).forEach(function(t){ var g=tagGroupKey(t); (byG[g]=byG[g]||[]).push(t); });
-    TAG_GROUPS_UI.forEach(function(G){
-      var tags=byG[G.key]; if(!tags||!tags.length) return;
+    // Bloky (26. 11. 2026, Bob): Emoce v závěsu za S čím zápasím, Já a druzí za Na čem chci pracovat;
+    // pilulky si drží barvu své skupiny, nadpis je jeden za blok.
+    FILTER_BLOCKS.forEach(function(B){
       chips='';
-      tags.forEach(function(t){ chips+='<button class="mc-chip g-'+G.key+' '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; });
-      h+='<div class="fs-group g-'+G.key+'"><div class="fs-gh">'+esc(G.label)+'</div><div class="mc-chips">'+chips+'</div></div>';
+      B.keys.forEach(function(gk){ (byG[gk]||[]).forEach(function(t){ chips+='<button class="mc-chip g-'+gk+' '+(s.tags.indexOf(t)>-1?"on":"")+'" onclick="MC.secTag(\''+key+'\',\''+esc(t).replace(/'/g,"\\'")+'\')">'+esc(t)+'</button>'; }); });
+      if(chips) h+='<div class="fs-group g-'+B.keys[0]+'"><div class="fs-gh">'+esc(B.label)+'</div><div class="mc-chips">'+chips+'</div></div>';
     });
     h+='</div><div class="fs-foot"><button class="mc-fab ghost mc-clear" '+(fc?'':'disabled ')+'onclick="MC.secClear(\''+key+'\')">Zrušit filtry</button>'+
       '<button class="mc-fab" '+(n?'':'disabled ')+'onclick="MC.filterShow(\''+key+'\')">'+(n?'Zobrazit ('+n+')':'Nic neodpovídá')+'</button></div></div>';
@@ -3067,7 +3085,8 @@
     filterKey:function(e,key){ if(e&&e.key==="Enter"){ e.preventDefault(); if(e.target&&e.target.blur) e.target.blur(); MC.filterShow(key); } },
     secTag:function(key,t){ var s=secState(key),i=s.tags.indexOf(t); if(i>-1)s.tags.splice(i,1); else s.tags.push(t); render(); },
     secDur:function(key,i){ var s=secState(key), p=s.durs.indexOf(i); if(p>-1) s.durs.splice(p,1); else s.durs.push(i); render(); },
-    secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; render(); },
+    secDiff:function(key,d){ var s=secState(key); s.diffs=s.diffs||[]; var p=s.diffs.indexOf(d); if(p>-1) s.diffs.splice(p,1); else s.diffs.push(d); render(); },
+    secClear:function(key){ var s=secState(key); s.kw=""; s.tags=[]; s.durs=[]; s.diffs=[]; render(); },
     secSearch:function(v){ secState(state.section).search=v; render(); var s=document.getElementById("mc-search"); if(s){ s.focus(); s.value=v; s.setSelectionRange(v.length,v.length); } },
     // detail
     exIntroOk:function(){ try{ localStorage.setItem(TUTOR_SEC.exercises,"1"); }catch(e){} render(); },
