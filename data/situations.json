@@ -68,7 +68,8 @@
       {
         "id": "sitr_0007",
         "text": "Strach z veřejného vystupování patří mezi velmi rozšířené obavy. Pokud ho prožíváš, neznamená to, že jsi slabý nebo neschopný. Podobnou nervozitu zažívají i zkušení řečníci.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Strach z veřejného vystupování patří mezi velmi rozšířené obavy. Pokud ho prožíváš, neznamená to, že jsi slabá nebo neschopná. Podobnou nervozitu zažívají i zkušení řečníci."
       },
       {
         "id": "sitr_0008",
@@ -78,7 +79,8 @@
       {
         "id": "sitr_0009",
         "text": "Veřejné vystupování je dovednost, kterou lze rozvíjet. S každou další zkušeností může růst tvoje jistota, i když určitá nervozita zůstane. Nemusíš se strachu úplně zbavit, abys dokázal dobře vystoupit.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Veřejné vystupování je dovednost, kterou lze rozvíjet. S každou další zkušeností může růst tvoje jistota, i když určitá nervozita zůstane. Nemusíš se strachu úplně zbavit, abys dokázala dobře vystoupit."
       }
     ],
     "fear_ids": [
@@ -107,7 +109,8 @@
       {
         "id": "sitr_0010",
         "text": "Pohovor není soud, ale oboustranné setkání. Zaměstnavatel hledá někoho, kdo mu pomůže, a ty zjišťuješ, jestli ti nabízená práce vyhovuje. Nejsi jen ten, kdo je hodnocený — i ty si vybíráš.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pohovor není soud, ale oboustranné setkání. Zaměstnavatel hledá někoho, kdo mu pomůže, a ty zjišťuješ, jestli ti nabízená práce vyhovuje. Nejsi jen ta, která je hodnocená — i ty si vybíráš."
       },
       {
         "id": "sitr_0011",
@@ -160,7 +163,8 @@
       {
         "id": "sitr_0016",
         "text": "Nemusíš se vyjadřovat ke každému tématu ani mluvit jen proto, abys byl vidět. Jedna promyšlená poznámka může mít větší hodnotu než několik příspěvků, kterými se snažíš pouze zapůsobit.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš se vyjadřovat ke každému tématu ani mluvit jen proto, abys byla vidět. Jedna promyšlená poznámka může mít větší hodnotu než několik příspěvků, kterými se snažíš pouze zapůsobit."
       },
       {
         "id": "sitr_0017",
@@ -208,7 +212,8 @@
       {
         "id": "sitr_0021",
         "text": "Kritika v práci se zpravidla týká konkrétního výkonu nebo úkolu, nikoliv tvé hodnoty jako člověka. I když ji prožíváš jako osobní odmítnutí, můžeš se pokusit oddělit to, co jsi udělal, od toho, kdo jsi.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Kritika v práci se zpravidla týká konkrétního výkonu nebo úkolu, nikoliv tvé hodnoty jako člověka. I když ji prožíváš jako osobní odmítnutí, můžeš se pokusit oddělit to, co jsi udělala, od toho, kdo jsi."
       },
       {
         "id": "sitr_0022",
@@ -333,12 +338,14 @@
       {
         "id": "sitr_0032",
         "text": "Prohra je přirozenou součástí sportu. I nejlepší sportovci pravidelně prohrávají a dělají chyby. Nemusíš pokaždé zvítězit, abys byl dobrým sportovcem.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Prohra je přirozenou součástí sportu. I nejlepší sportovci pravidelně prohrávají a dělají chyby. Nemusíš pokaždé zvítězit, abys byla dobrou sportovkyní."
       },
       {
         "id": "sitr_0033",
         "text": "Pod tlakem důležitého zápasu se může změnit tvoje soustředění, koordinace i jistota pohybu. Pokud hraješ hůř než na tréninku, nemusí to znamenat, že jsi špatně připravený. Zvládání soutěžního stresu je také dovednost.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pod tlakem důležitého zápasu se může změnit tvoje soustředění, koordinace i jistota pohybu. Pokud hraješ hůř než na tréninku, nemusí to znamenat, že jsi špatně připravená. Zvládání soutěžního stresu je také dovednost."
       },
       {
         "id": "sitr_0034",
@@ -377,7 +384,8 @@
       {
         "id": "sitr_0036",
         "text": "Rodilí mluvčí jsou na cizince, kteří dělají chyby, většinou zvyklí. Obvykle jim záleží hlavně na tom, abyste si rozuměli, ne na dokonalé gramatice. Nemusíš mluvit bezchybně, aby ses domluvil.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Rodilí mluvčí jsou na cizince, kteří dělají chyby, většinou zvyklí. Obvykle jim záleží hlavně na tom, abyste si rozuměli, ne na dokonalé gramatice. Nemusíš mluvit bezchybně, aby ses domluvila."
       },
       {
         "id": "sitr_0037",
@@ -421,7 +429,8 @@
       {
         "id": "sitr_0040",
         "text": "Výpadek paměti může být běžnou reakcí na stres. Silná nervozita někdy dočasně ztěžuje vybavování informací, které jinak dobře znáš. Neznamená to, že jsi hloupý nebo nepřipravený.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Výpadek paměti může být běžnou reakcí na stres. Silná nervozita někdy dočasně ztěžuje vybavování informací, které jinak dobře znáš. Neznamená to, že jsi hloupá nebo nepřipravená."
       },
       {
         "id": "sitr_0041",
@@ -431,7 +440,8 @@
       {
         "id": "sitr_0042",
         "text": "Pomáhá mít připravenou jednoduchou větu, například „Kde jsem to skončil?“ nebo krátce shrnout předchozí myšlenku. Několik klíčových slov na papíře ti může pomoci znovu najít nit.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pomáhá mít připravenou jednoduchou větu, například „Kde jsem to skončila?“ nebo krátce shrnout předchozí myšlenku. Několik klíčových slov na papíře ti může pomoci znovu najít nit."
       },
       {
         "id": "sitr_0043",
@@ -470,7 +480,8 @@
       {
         "id": "sitr_0045",
         "text": "Mlčení a vyhýbání se komunikaci mohou situaci zkomplikovat víc než samotné zpoždění. Když včas řekneš „Nestíhám, potřeboval bych čas do pátku“, dáváš druhým možnost hledat řešení společně s tebou.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Mlčení a vyhýbání se komunikaci mohou situaci zkomplikovat víc než samotné zpoždění. Když včas řekneš „Nestíhám, potřebovala bych čas do pátku“, dáváš druhým možnost hledat řešení společně s tebou."
       },
       {
         "id": "sitr_0046",
@@ -480,7 +491,8 @@
       {
         "id": "sitr_0047",
         "text": "Jeden nesplněný úkol neurčuje tvoji hodnotu ani celkovou spolehlivost. Důležité je, jak se k situaci postavíš a co si z ní odneseš. Nemusíš být bezchybný, aby ti ostatní mohli důvěřovat.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Jeden nesplněný úkol neurčuje tvoji hodnotu ani celkovou spolehlivost. Důležité je, jak se k situaci postavíš a co si z ní odneseš. Nemusíš být bezchybná, aby ti ostatní mohli důvěřovat."
       }
     ],
     "fear_ids": [
@@ -551,12 +563,14 @@
       {
         "id": "sitr_0052",
         "text": "Vědět, že přijde něco bolestného nebo těžkého, a nemoci tomu zabránit, patří k nejnáročnějším lidským zkušenostem. Nemusíš v takové situaci hledat pozitivní stránku ani předstírat, že jsi silný.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Vědět, že přijde něco bolestného nebo těžkého, a nemoci tomu zabránit, patří k nejnáročnějším lidským zkušenostem. Nemusíš v takové situaci hledat pozitivní stránku ani předstírat, že jsi silná."
       },
       {
         "id": "sitr_0053",
         "text": "Strach, smutek, vztek, vyčerpání i chvíle, kdy necítíš téměř nic, mohou být přirozenou reakcí na očekávanou ztrátu nebo utrpení. Nemusíš prožívat jednu správnou emoci ani být statečný každou chvíli.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Strach, smutek, vztek, vyčerpání i chvíle, kdy necítíš téměř nic, mohou být přirozenou reakcí na očekávanou ztrátu nebo utrpení. Nemusíš prožívat jednu správnou emoci ani být statečná každou chvíli."
       },
       {
         "id": "sitr_0656",
@@ -566,7 +580,8 @@
       {
         "id": "sitr_0657",
         "text": "Pokud čekáš na vážnou nemoc, ztrátu nebo jinou těžkou událost, nemusíš na své obavy zůstávat sám. Rozhovor s blízkým člověkem, psychoterapeutem nebo ošetřujícím lékařem ti může pomoci nést nejistotu a najít potřebnou podporu.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud čekáš na vážnou nemoc, ztrátu nebo jinou těžkou událost, nemusíš na své obavy zůstávat sama. Rozhovor s blízkým člověkem, psychoterapeutem nebo ošetřujícím lékařem ti může pomoci nést nejistotu a najít potřebnou podporu."
       }
     ],
     "fear_ids": [
@@ -730,12 +745,14 @@
       {
         "id": "sitr_0067",
         "text": "Oslovit někoho neznámého bývá nepříjemné pro mnoho lidí. Ti, kteří to zvládají s lehkostí, často získali jistotu postupnou zkušeností. Nemusíš být přirozeně sebevědomý, abys dokázal udělat první krok.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Oslovit někoho neznámého bývá nepříjemné pro mnoho lidí. Ti, kteří to zvládají s lehkostí, často získali jistotu postupnou zkušeností. Nemusíš být přirozeně sebevědomá, abys dokázala udělat první krok."
       },
       {
         "id": "sitr_0068",
         "text": "Druhá strana může být stejně nervózní jako ty a někdy dokonce uvítá, že první krok udělal někdo jiný. Nemusíš předpokládat, že jsi jediný, kdo se v takové chvíli cítí nejistě.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Druhá strana může být stejně nervózní jako ty a někdy dokonce uvítá, že první krok udělal někdo jiný. Nemusíš předpokládat, že jsi jediná, kdo se v takové chvíli cítí nejistě."
       },
       {
         "id": "sitr_0069",
@@ -821,7 +838,8 @@
       {
         "id": "sitr_0076",
         "text": "Strach z telefonování je poměrně rozšířený, zvlášť v době, kdy jsme zvyklí komunikovat zprávami. Pokud se před hovorem cítíš nervózně, neznamená to, že jsi neschopný nebo nějak zvláštní.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Strach z telefonování je poměrně rozšířený, zvlášť v době, kdy jsme zvyklí komunikovat zprávami. Pokud se před hovorem cítíš nervózně, neznamená to, že jsi neschopná nebo nějak zvláštní."
       },
       {
         "id": "sitr_0077",
@@ -871,7 +889,8 @@
       {
         "id": "sitr_0082",
         "text": "Nemůžeš plně ovlivnit, jak druhý člověk na nepříjemnou zprávu zareaguje. Můžeš ale ovlivnit, jakým způsobem mu ji sdělíš. Jeho bolest nemusí znamenat, že jsi udělal něco špatně, a přesto si zaslouží tvoji citlivost.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemůžeš plně ovlivnit, jak druhý člověk na nepříjemnou zprávu zareaguje. Můžeš ale ovlivnit, jakým způsobem mu ji sdělíš. Jeho bolest nemusí znamenat, že jsi udělala něco špatně, a přesto si zaslouží tvoji citlivost."
       },
       {
         "id": "sitr_0083",
@@ -904,17 +923,20 @@
       {
         "id": "sitr_0084",
         "text": "Návštěva má obvykle poměrně jasný průběh a konec. Víš, kam jdeš, s kým se setkáš a přibližně jak dlouho tam budeš. Nemusíš mít pod kontrolou každou chvíli, abys situaci zvládl.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Návštěva má obvykle poměrně jasný průběh a konec. Víš, kam jdeš, s kým se setkáš a přibližně jak dlouho tam budeš. Nemusíš mít pod kontrolou každou chvíli, abys situaci zvládla."
       },
       {
         "id": "sitr_0085",
         "text": "Hostitel i host mohou mít obavy, aby nevzniklo trapné ticho nebo nepříjemná situace. Oběma ale většinou záleží na tom, aby setkání proběhlo příjemně. Nemusíš nést odpovědnost za celou atmosféru sám.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Hostitel i host mohou mít obavy, aby nevzniklo trapné ticho nebo nepříjemná situace. Oběma ale většinou záleží na tom, aby setkání proběhlo příjemně. Nemusíš nést odpovědnost za celou atmosféru sama."
       },
       {
         "id": "sitr_0086",
         "text": "Většina lidí nepřichází na návštěvu hodnotit, jak dokonale máš uklizeno nebo co jsi uvařil. Často si mnohem víc zapamatují, jak se u tebe cítili, než drobné nedostatky. Nemusíš být dokonalým hostitelem.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Většina lidí nepřichází na návštěvu hodnotit, jak dokonale máš uklizeno nebo co jsi uvařila. Často si mnohem víc zapamatují, jak se u tebe cítili, než drobné nedostatky. Nemusíš být dokonalou hostitelkou."
       },
       {
         "id": "sitr_0087",
@@ -953,12 +975,14 @@
       {
         "id": "sitr_0089",
         "text": "Nemusíš mluvit se všemi ani být celý večer zábavný a společenský. Jeden příjemný rozhovor může úplně stačit. A je v pořádku část času jen pozorovat dění kolem sebe.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš mluvit se všemi ani být celý večer zábavná a společenská. Jeden příjemný rozhovor může úplně stačit. A je v pořádku část času jen pozorovat dění kolem sebe."
       },
       {
         "id": "sitr_0090",
         "text": "Odejít ze společenské akce dřív je naprosto přijatelné. Nemusíš zůstávat jen proto, abys někoho nezklamal. Zároveň můžeš zkusit chvíli vydržet i s nervozitou a zjistit, jestli postupně nezeslábne.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Odejít ze společenské akce dřív je naprosto přijatelné. Nemusíš zůstávat jen proto, abys někoho nezklamala. Zároveň můžeš zkusit chvíli vydržet i s nervozitou a zjistit, jestli postupně nezeslábne."
       },
       {
         "id": "sitr_0091",
@@ -988,7 +1012,8 @@
       {
         "id": "sitr_0092",
         "text": "Na pohřbu se od tebe obvykle neočekává žádný zvláštní výkon. Nemusíš pronášet dokonalá slova ani vědět, jak se správně chovat. Často je nejdůležitější prostě přijít a být přítomen.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Na pohřbu se od tebe obvykle neočekává žádný zvláštní výkon. Nemusíš pronášet dokonalá slova ani vědět, jak se správně chovat. Často je nejdůležitější prostě přijít a být přítomna."
       },
       {
         "id": "sitr_0093",
@@ -1020,7 +1045,8 @@
       {
         "id": "sitr_0094",
         "text": "Když svůj problém vyslovíš nahlas, můžeš ho začít vnímat jasněji a s větším odstupem. To, co v hlavě působilo jako nepřehledná hrozba, někdy získá konkrétnější podobu. Nemusíš na všechno přicházet sám.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Když svůj problém vyslovíš nahlas, můžeš ho začít vnímat jasněji a s větším odstupem. To, co v hlavě působilo jako nepřehledná hrozba, někdy získá konkrétnější podobu. Nemusíš na všechno přicházet sama."
       },
       {
         "id": "sitr_0095",
@@ -1063,7 +1089,8 @@
       {
         "id": "sitr_0098",
         "text": "Upřímnost může být pro vztah náročná, ale také ho může posílit. Pokud se bojíš říct, co skutečně cítíš nebo potřebuješ, možná stojí za to zamyslet se, kolik prostoru v tom vztahu máš být sám sebou.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Upřímnost může být pro vztah náročná, ale také ho může posílit. Pokud se bojíš říct, co skutečně cítíš nebo potřebuješ, možná stojí za to zamyslet se, kolik prostoru v tom vztahu máš být sama sebou."
       },
       {
         "id": "sitr_0099",
@@ -1106,7 +1133,8 @@
       {
         "id": "sitr_0102",
         "text": "Lidé často přijímají odmítnutí lépe, než se obáváš. Někteří mohou být zklamaní nebo nespokojení, ale to ještě neznamená, že jsi udělal něco špatně. Máš právo odmítnout i za cenu toho, že se to druhému nebude líbit.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Lidé často přijímají odmítnutí lépe, než se obáváš. Někteří mohou být zklamaní nebo nespokojení, ale to ještě neznamená, že jsi udělala něco špatně. Máš právo odmítnout i za cenu toho, že se to druhému nebude líbit."
       },
       {
         "id": "sitr_0103",
@@ -1121,7 +1149,8 @@
       {
         "id": "sitr_0105",
         "text": "Pokud někdo opakovaně nerespektuje tvoje odmítnutí, může to vypovídat o jeho obtížích přijímat hranice druhých. Nemusíš ustupovat jen proto, abys předešel jeho nespokojenosti. Zdravý vztah potřebuje prostor i pro nesouhlas.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud někdo opakovaně nerespektuje tvoje odmítnutí, může to vypovídat o jeho obtížích přijímat hranice druhých. Nemusíš ustupovat jen proto, abys předešla jeho nespokojenosti. Zdravý vztah potřebuje prostor i pro nesouhlas."
       }
     ],
     "fear_ids": [
@@ -1149,17 +1178,20 @@
       {
         "id": "sitr_0106",
         "text": "Šikana není obyčejné nedorozumění ani tvoje selhání. Je to opakované ubližování nebo zneužívání převahy, za které nese odpovědnost ten, kdo ho působí. Nemusíš hledat chybu v sobě, abys vysvětlil, proč se to děje.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Šikana není obyčejné nedorozumění ani tvoje selhání. Je to opakované ubližování nebo zneužívání převahy, za které nese odpovědnost ten, kdo ho působí. Nemusíš hledat chybu v sobě, abys vysvětlila, proč se to děje."
       },
       {
         "id": "sitr_0107",
         "text": "Pokud se kvůli šikaně cítíš zahanbený, bezmocný, vzteklý nebo osamělý, jsou to pochopitelné reakce na ubližování. Nic z toho neznamená, že jsi slabý nebo že si takové zacházení zasloužíš.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Pokud se kvůli šikaně cítíš zahanbená, bezmocná, vzteklá nebo osamělá, jsou to pochopitelné reakce na ubližování. Nic z toho neznamená, že jsi slabá nebo že si takové zacházení zasloužíš."
       },
       {
         "id": "sitr_0658",
         "text": "Nemusíš šikanu zvládnout sám ani dokazovat svou sílu tím, že ji vydržíš. Svěřit se někomu důvěryhodnému, vyhledat podporu nebo požádat o zásah je způsob, jak chránit sebe a své hranice. Odpovědnost za zastavení šikany neleží jen na tobě.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš šikanu zvládnout sama ani dokazovat svou sílu tím, že ji vydržíš. Svěřit se někomu důvěryhodnému, vyhledat podporu nebo požádat o zásah je způsob, jak chránit sebe a své hranice. Odpovědnost za zastavení šikany neleží jen na tobě."
       }
     ],
     "fear_ids": [
@@ -1184,12 +1216,14 @@
       {
         "id": "sitr_0108",
         "text": "Obtěžování znamená, že někdo nerespektuje tvoje hranice. Není to něco, co sis zasloužil svým vzhledem, oblečením nebo chováním. Odpovědnost za překročení hranic nese ten, kdo to udělal.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Obtěžování znamená, že někdo nerespektuje tvoje hranice. Není to něco, co sis zasloužila svým vzhledem, oblečením nebo chováním. Odpovědnost za překročení hranic nese ten, kdo to udělal."
       },
       {
         "id": "sitr_0109",
         "text": "Při obtěžování se mohou mísit strach, odpor, stud i pochybnosti, jestli nepřeháníš. Takový zmatek je pochopitelný, zvlášť když tě situace zaskočila. Nemusíš mít ve svých pocitech okamžitě jasno, aby sis mohl říct, že něco nebylo v pořádku.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Při obtěžování se mohou mísit strach, odpor, stud i pochybnosti, jestli nepřeháníš. Takový zmatek je pochopitelný, zvlášť když tě situace zaskočila. Nemusíš mít ve svých pocitech okamžitě jasno, aby sis mohla říct, že něco nebylo v pořádku."
       },
       {
         "id": "sitr_0659",
@@ -1219,7 +1253,8 @@
       {
         "id": "sitr_0110",
         "text": "Komfortní zóna není nic špatného. Je to prostor známých a předvídatelných situací, ve kterých se cítíš bezpečněji. Nemusíš ji neustále opouštět, abys rostl nebo žil hodnotný život.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Komfortní zóna není nic špatného. Je to prostor známých a předvídatelných situací, ve kterých se cítíš bezpečněji. Nemusíš ji neustále opouštět, abys rostla nebo žila hodnotný život."
       },
       {
         "id": "sitr_0111",
@@ -1229,7 +1264,8 @@
       {
         "id": "sitr_0112",
         "text": "Nemusíš překonávat „sám sebe“ ani měnit celý svůj život najednou. Stačí si vybrat jednu konkrétní situaci, kterou chceš zkusit zvládnout trochu jinak. I malá změna může být důležitým začátkem.",
-        "approved": "2026-11-12"
+        "approved": "2026-11-12",
+        "text_f": "Nemusíš překonávat „sama sebe“ ani měnit celý svůj život najednou. Stačí si vybrat jednu konkrétní situaci, kterou chceš zkusit zvládnout trochu jinak. I malá změna může být důležitým začátkem."
       },
       {
         "id": "sitr_0113",
