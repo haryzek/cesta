@@ -1450,6 +1450,13 @@
     return String(t).replace(/(\S+) \/ (\S+?)([?!.,…]*)(?=\s|$)/g,function(m,a,b,p){ return (g==="f"?b:a)+p; })
       .replace(/([A-Za-zÁ-žá-ž]+)\(a\)/g,function(m,a){ return g==="f"?a+"a":a; });
   }
+  function genderizeParen(t,g){
+    if(!g||!t) return t;
+    var f=g==="f";
+    return String(t).replace(/\bdošel \(došla\)/g,f?"došla":"došel").replace(/\bsám \(sama\)/g,f?"sama":"sám")
+      .replace(/([A-Za-zÁ-žá-ž]+)ý\(á\)/g,function(m,a){ return a+(f?"á":"ý"); })
+      .replace(/([A-Za-zÁ-žá-ž]+)\(a\)/g,function(m,a){ return f?a+"a":a; });
+  }
   // Ženská verze z text_f (27. 11. 2026 i triplet a věty pod strachy): ručně upravený text v adminu
   // má přednost (edit je mužský text, ženská verze by ho schovala).
   function pickGender(e,store,g){
@@ -1469,6 +1476,11 @@
     // Deník (ich-forma) se rozepisuje sám jako Otázky: „cítil(a)“, „sám / sama“.
     (DB.exercises||[]).concat(DB.sections||[]).forEach(function(x){ ["diary_exercise","diary_practice"].forEach(function(k){
       if(!x[k]) return; var o="_"+k; if(x[o]==null) x[o]=x[k]; x[k]=genderize(x[o],g); }); });
+    // Postup, perex a přílohy cvičení (28. 11. 2026): jen závorky „(a)“, „ý(á)“, „došel (došla)“, „sám (sama)“ — lomítka ne.
+    (DB.exercises||[]).forEach(function(x){
+      ["body","perex"].forEach(function(k){ if(!x[k]) return; var o="_"+k; if(x[o]==null) x[o]=x[k]; x[k]=genderizeParen(x[o],g); });
+      (x.attachments||[]).forEach(function(a){ if(!a.body) return; if(a._body==null) a._body=a.body; a.body=genderizeParen(a._body,g); });
+    });
   }
   function setGender(g){ USER.profile=USER.profile||{}; USER.profile.gender=g; saveUser(); applyGender(); }
   function prepare(){
