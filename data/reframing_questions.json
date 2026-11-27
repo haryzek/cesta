@@ -23003,7 +23003,8 @@
     "text": "Co by se změnilo, kdybys při setkání s druhými věnoval méně pozornosti tomu, jak působíš, a víc tomu, co skutečně cítíš a potřebuješ?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys při setkání s druhými věnovala méně pozornosti tomu, jak působíš, a víc tomu, co skutečně cítíš a potřebuješ?"
   },
   {
     "id": "refq_2626",
@@ -23011,7 +23012,8 @@
     "text": "Čeho se bojíš, že by se stalo, kdybys přestal kontrolovat, jak působíš?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čeho se bojíš, že by se stalo, kdybys přestala kontrolovat, jak působíš?"
   },
   {
     "id": "refq_2627",
@@ -23019,7 +23021,8 @@
     "text": "Kdy ses mohl naučit, že nestačí prostě být sám sebou, ale musíš se zároveň hlídat, abys byl přijatelný pro ostatní?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses mohla naučit, že nestačí prostě být sama sebou, ale musíš se zároveň hlídat, abys byla přijatelná pro ostatní?"
   },
   {
     "id": "refq_2628",
@@ -23035,7 +23038,8 @@
     "text": "Co by se změnilo, kdybys připustil, že můžeš být sám sebou i tehdy, když jsi nejistý, rozpačitý nebo se trochu hlídáš?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys připustila, že můžeš být sama sebou i tehdy, když jsi nejistá, rozpačitá nebo se trochu hlídáš?"
   },
   {
     "id": "refq_2630",
@@ -23043,7 +23047,8 @@
     "text": "Když se cítíš nepřirozeně, co se v tu chvíli děje ve tvém těle? Podle čeho poznáš, že ses začal hlídat?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš nepřirozeně, co se v tu chvíli děje ve tvém těle? Podle čeho poznáš, že ses začala hlídat?"
   },
   {
     "id": "refq_2631",
@@ -23051,7 +23056,8 @@
     "text": "Co by pro tebe bylo nejtěžší na tom, kdybys druhým dovolil vidět tě takového, jaký právě jsi, bez snahy něco vylepšovat?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by pro tebe bylo nejtěžší na tom, kdybys druhým dovolila vidět tě takovou, jaká právě jsi, bez snahy něco vylepšovat?"
   },
   {
     "id": "refq_2632",
@@ -23059,7 +23065,8 @@
     "text": "Co ses možná kdysi snažil ochránit tím, že ses naučil přizpůsobovat, kontrolovat nebo předvídat, jak budeš působit?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co ses možná kdysi snažila ochránit tím, že ses naučila přizpůsobovat, kontrolovat nebo předvídat, jak budeš působit?"
   },
   {
     "id": "refq_2633",
@@ -23067,7 +23074,8 @@
     "text": "Kdyby ses nemusel bát zesměšnění, odmítnutí nebo opuštění, co bys své opatrnější, kontrolující části dovolil dělat jinak?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses nemusela bát zesměšnění, odmítnutí nebo opuštění, co bys své opatrnější, kontrolující části dovolila dělat jinak?"
   },
   {
     "id": "refq_2634",
@@ -23075,7 +23083,8 @@
     "text": "Jak poznáváš, že jsi autentický? Nejsou tvoje nároky na vlastní přirozenost někdy příliš přísné?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak poznáváš, že jsi autentická? Nejsou tvoje nároky na vlastní přirozenost někdy příliš přísné?"
   },
   {
     "id": "refq_2635",
@@ -23099,7 +23108,8 @@
     "text": "Které situace tě dokážou natolik pohltit, že úplně zapomeneš sledovat sám sebe? Co mají společného?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které situace tě dokážou natolik pohltit, že úplně zapomeneš sledovat sama sebe? Co mají společného?"
   },
   {
     "id": "refq_2638",
@@ -23107,7 +23117,8 @@
     "text": "Kdybys přestal hodnotit, jak přirozeně se cítíš, a začal víc sledovat, jestli jednáš v souladu se svými hodnotami, co bys dělal jinak?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys přestala hodnotit, jak přirozeně se cítíš, a začala víc sledovat, jestli jednáš v souladu se svými hodnotami, co bys dělala jinak?"
   },
   {
     "id": "refq_2639",
@@ -23115,7 +23126,8 @@
     "text": "Když si říkáš „jsem nepřirozený“, popisuješ tím konkrétní chování, nebo z několika okamžiků vyvozuješ závěr o tom, jaký jsi člověk?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když si říkáš „jsem nepřirozená“, popisuješ tím konkrétní chování, nebo z několika okamžiků vyvozuješ závěr o tom, jaký jsi člověk?"
   },
   {
     "id": "refq_2640",
@@ -23123,7 +23135,8 @@
     "text": "Co konkrétně by podle tebe druzí uviděli, kdybys byl úplně spontánní? Proč by pro tebe bylo těžké jim to ukázat?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co konkrétně by podle tebe druzí uviděli, kdybys byla úplně spontánní? Proč by pro tebe bylo těžké jim to ukázat?"
   },
   {
     "id": "refq_2641",
@@ -23131,7 +23144,8 @@
     "text": "Jaký jeden malý projev sebe sama si obvykle nedovolíš, ale mohl bys ho bezpečně vyzkoušet a zjistit, co se stane?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaký jeden malý projev sebe samé si obvykle nedovolíš, ale mohla bys ho bezpečně vyzkoušet a zjistit, co se stane?"
   },
   {
     "id": "refq_2642",
@@ -23155,7 +23169,8 @@
     "text": "Kdybys nemusel působit přirozeně, jak by ses právě teď choval?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nemusela působit přirozeně, jak by ses právě teď chovala?"
   },
   {
     "id": "refq_2643",
@@ -23163,7 +23178,8 @@
     "text": "Kdyby pocit nepřirozenosti nemusel hned zmizet, co dalšího bys pod ním mohl objevit?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby pocit nepřirozenosti nemusel hned zmizet, co dalšího bys pod ním mohla objevit?"
   },
   {
     "id": "refq_2644",
@@ -23179,7 +23195,8 @@
     "text": "Musíš být za všech okolností stejný, abys byl sám sebou? Co když je přirozené, že se v různých vztazích projevují různé stránky tvé osobnosti?",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Musíš být za všech okolností stejná, abys byla sama sebou? Co když je přirozené, že se v různých vztazích projevují různé stránky tvé osobnosti?"
   },
   {
     "id": "refq_2646",
@@ -23187,7 +23204,8 @@
     "text": "Kdybys potkal člověka, který je trochu křečovitý, hledá slova a občas se chová nepřirozeně, posuzoval bys ho stejně přísně jako sebe?",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys potkala člověka, který je trochu křečovitý, hledá slova a občas se chová nepřirozeně, posuzovala bys ho stejně přísně jako sebe?"
   },
   {
     "id": "refq_2647",
@@ -23195,7 +23213,8 @@
     "text": "Nepleteš si někdy autenticitu s pocitem přirozenosti? Můžeš být věrný sám sobě, i když se při tom cítíš nezvykle nebo rozpačitě?",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nepleteš si někdy autenticitu s pocitem přirozenosti? Můžeš být věrná sama sobě, i když se při tom cítíš nezvykle nebo rozpačitě?"
   },
   {
     "id": "refq_2648",
@@ -23203,7 +23222,8 @@
     "text": "Kolik času a energie věnuješ pozorování sebe sama zvenčí? Čemu bys chtěl tuhle pozornost věnovat místo toho?",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolik času a energie věnuješ pozorování sebe samé zvenčí? Čemu bys chtěla tuhle pozornost věnovat místo toho?"
   },
   {
     "id": "refq_2649",
@@ -23302,7 +23322,8 @@
     "text": "Kdyby s někým, koho máš rád, zacházeli stejně jako s tebou, co by sis o té situaci myslel? A co bys tomu člověku poradil?",
     "tier": "free",
     "sort_order": 9,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby s někým, koho máš ráda, zacházeli stejně jako s tebou, co by sis o té situaci myslela? A co bys tomu člověku poradila?"
   },
   {
     "id": "refq_2661",
@@ -23318,7 +23339,8 @@
     "text": "Co bys potřeboval změnit ve svých vztazích, abys nemusel o respekt neustále bojovat?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys potřebovala změnit ve svých vztazích, abys nemusela o respekt neustále bojovat?"
   },
   {
     "id": "refq_2663",
@@ -23326,7 +23348,8 @@
     "text": "Kdy ses naposledy zachoval způsobem, za který si sám sebe vážíš, přestože to nikdo neviděl ani neocenil?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses naposledy zachovala způsobem, za který si sama sebe vážíš, přestože to nikdo neviděl ani neocenil?"
   },
   {
     "id": "refq_2664",
@@ -23334,7 +23357,8 @@
     "text": "Co se v tobě odehrává těsně předtím, než se začneš cítit nerespektovaný? Jaká myšlenka, emoce nebo tělesný pocit přichází jako první?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co se v tobě odehrává těsně předtím, než se začneš cítit nerespektovaná? Jaká myšlenka, emoce nebo tělesný pocit přichází jako první?"
   },
   {
     "id": "refq_2665",
@@ -23350,7 +23374,8 @@
     "text": "Kdybys měl svou důstojnost pevně ukotvenou v sobě, co bys prožíval jinak, když se k tobě někdo zachová bez respektu?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys měla svou důstojnost pevně ukotvenou v sobě, co bys prožívala jinak, když se k tobě někdo zachová bez respektu?"
   },
   {
     "id": "refq_2667",
@@ -23358,7 +23383,8 @@
     "text": "Nestává se někdy, že ve snaze získat respekt druhých uděláš něco, kvůli čemu si pak sám sebe vážíš méně?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nestává se někdy, že ve snaze získat respekt druhých uděláš něco, kvůli čemu si pak sama sebe vážíš méně?"
   },
   {
     "id": "refq_2668",
@@ -23366,7 +23392,8 @@
     "text": "Co tě drží ve vztazích nebo prostředích, kde se opakovaně setkáváš s neúctou? A co bys potřeboval, abys mohl něco změnit?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co tě drží ve vztazích nebo prostředích, kde se opakovaně setkáváš s neúctou? A co bys potřebovala, abys mohla něco změnit?"
   },
   {
     "id": "refq_2669",
@@ -23374,7 +23401,8 @@
     "text": "Kdybys přestal usilovat o respekt lidí, kteří ti ho dlouhodobě nedávají, kam jinam bys mohl věnovat svou energii?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys přestala usilovat o respekt lidí, kteří ti ho dlouhodobě nedávají, kam jinam bys mohla věnovat svou energii?"
   },
   {
     "id": "refq_2670",
@@ -23382,7 +23410,8 @@
     "text": "Kdybys už nemusel nikoho přesvědčovat, aby tě respektoval, jak by ses chtěl zachovat podle svých vlastních hodnot? Jaký malý krok bys mohl udělat už teď?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys už nemusela nikoho přesvědčovat, aby tě respektoval, jak by ses chtěla zachovat podle svých vlastních hodnot? Jaký malý krok bys mohla udělat už teď?"
   },
   {
     "id": "refq_2671",
@@ -23390,7 +23419,8 @@
     "text": "Připomíná ti pocit, že tě druzí neberou vážně, něco z dřívějšího období tvého života? Co jsi tehdy potřeboval?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Připomíná ti pocit, že tě druzí neberou vážně, něco z dřívějšího období tvého života? Co jsi tehdy potřebovala?"
   },
   {
     "id": "refq_2672",
@@ -23398,7 +23428,8 @@
     "text": "Čí respekt nebo uznání jsi v minulosti nejvíc postrádal? A co pro tebe znamenalo, když nepřicházely?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čí respekt nebo uznání jsi v minulosti nejvíc postrádala? A co pro tebe znamenalo, když nepřicházely?"
   },
   {
     "id": "refq_2673",
@@ -23406,7 +23437,8 @@
     "text": "Může být část tvé dnešní potřeby získat respekt spojená s někým, od koho ses ho kdysi nedočkal?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Může být část tvé dnešní potřeby získat respekt spojená s někým, od koho ses ho kdysi nedočkala?"
   },
   {
     "id": "refq_2674",
@@ -23422,7 +23454,8 @@
     "text": "Co by se změnilo, kdybys respekt druhých nevnímal jako potvrzení své hodnoty, ale také jako informaci o tom, jak s tebou daný člověk zachází?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys respekt druhých nevnímala jako potvrzení své hodnoty, ale také jako informaci o tom, jak s tebou daný člověk zachází?"
   },
   {
     "id": "refq_2676",
@@ -23430,7 +23463,8 @@
     "text": "Všiml sis někdy, že tě stejné chování od jednoho člověka hluboce zasáhne, zatímco od jiného ti téměř nevadí? Čím to může být?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Všimla sis někdy, že tě stejné chování od jednoho člověka hluboce zasáhne, zatímco od jiného ti téměř nevadí? Čím to může být?"
   },
   {
     "id": "refq_2677",
@@ -23438,7 +23472,8 @@
     "text": "Co by pro tebe bylo těžké přijmout, kdyby ses smířil s tím, že od některých lidí možná nikdy nezískáš respekt, po kterém toužíš?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by pro tebe bylo těžké přijmout, kdyby ses smířila s tím, že od některých lidí možná nikdy nezískáš respekt, po kterém toužíš?"
   },
   {
     "id": "refq_2678",
@@ -23446,7 +23481,8 @@
     "text": "Kolik uznání od druhých bys potřeboval, aby ses cítil dostatečně hodnotný? A může ti ho vnější uznání vůbec trvale zajistit?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolik uznání od druhých bys potřebovala, aby ses cítila dostatečně hodnotná? A může ti ho vnější uznání vůbec trvale zajistit?"
   },
   {
     "id": "refq_2679",
@@ -23462,7 +23498,8 @@
     "text": "Když tě někdo nerespektuje, co si v tu chvíli začneš myslet sám o sobě?",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když tě někdo nerespektuje, co si v tu chvíli začneš myslet sama o sobě?"
   },
   {
     "id": "refq_2680",
@@ -23486,7 +23523,8 @@
     "text": "Kdyby ses na týden přestal tolik zabývat tím, jestli tě ostatní dostatečně respektují, čeho jiného by sis mohl začít všímat?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses na týden přestala tolik zabývat tím, jestli tě ostatní dostatečně respektují, čeho jiného by sis mohla začít všímat?"
   },
   {
     "id": "refq_2683",
@@ -23577,7 +23615,8 @@
     "text": "Je něco, co jsi ztratil, oplakáváš nebo sis přál a nedostal, ale nikdy sis nedovolil to opravdu odtruchlit?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je něco, co jsi ztratil, oplakáváš nebo sis přála a nedostala, ale nikdy sis nedovolil to opravdu odtruchlit?"
   },
   {
     "id": "refq_2695",
@@ -23593,7 +23632,8 @@
     "text": "Kterou svou potřebu se snažíš překonat, umlčet nebo si rozumově vymluvit, místo abys připustil, že je oprávněná?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kterou svou potřebu se snažíš překonat, umlčet nebo si rozumově vymluvit, místo abys připustila, že je oprávněná?"
   },
   {
     "id": "refq_2697",
@@ -23601,7 +23641,8 @@
     "text": "Je možné, že část tvého smutku souvisí s tím, že žiješ jinak, než bys skutečně chtěl?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je možné, že část tvého smutku souvisí s tím, že žiješ jinak, než bys skutečně chtěla?"
   },
   {
     "id": "refq_2698",
@@ -23625,7 +23666,8 @@
     "text": "Kdyby ses nemusel bát následků, co bys ve svém životě ukončil, odmítl, změnil nebo konečně začal?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses nemusela bát následků, co bys ve svém životě ukončila, odmítla, změnila nebo konečně začala?"
   },
   {
     "id": "refq_2701",
@@ -23633,7 +23675,8 @@
     "text": "Kdyby stejnými slovy o sobě a svém životě mluvil někdo, koho miluješ, čemu z toho bys nevěřil a co bys mu chtěl připomenout?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby stejnými slovy o sobě a svém životě mluvil někdo, koho miluješ, čemu z toho bys nevěřila a co bys mu chtěla připomenout?"
   },
   {
     "id": "refq_2702",
@@ -23657,7 +23700,8 @@
     "text": "Co ses o sobě, lidech nebo životě naučil v dobách, kdy ti bylo těžko? A nemůže se stát, že některé tehdejší závěry dnes považuješ za obecně platné pravdy?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co ses o sobě, lidech nebo životě naučila v dobách, kdy ti bylo těžko? A nemůže se stát, že některé tehdejší závěry dnes považuješ za obecně platné pravdy?"
   },
   {
     "id": "refq_2705",
@@ -23681,7 +23725,8 @@
     "text": "Je možné, že ses kdysi naučil očekávat od života zklamání, a proto dnes raději předem tlumíš naději, touhu nebo nadšení, aby případná ztráta tolik nebolela?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je možné, že ses kdysi naučila očekávat od života zklamání, a proto dnes raději předem tlumíš naději, touhu nebo nadšení, aby případná ztráta tolik nebolela?"
   },
   {
     "id": "refq_2708",
@@ -23697,7 +23742,8 @@
     "text": "Kdyby sis měsíc zapisoval, kdy je ti nejhůř a kdy překvapivě o něco líp, jaké souvislosti bys očekával a jaké by tě naopak mohly překvapit?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby sis měsíc zapisovala, kdy je ti nejhůř a kdy překvapivě o něco líp, jaké souvislosti bys očekávala a jaké by tě naopak mohly překvapit?"
   },
   {
     "id": "refq_2710",
@@ -23705,7 +23751,8 @@
     "text": "Kdybys věděl, že tenhle stav za týden pomine, co bys dnes dělal jinak a co by sis naopak dovolil nedělat?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věděla, že tenhle stav za týden pomine, co bys dnes dělala jinak a co by sis naopak dovolila nedělat?"
   },
   {
     "id": "refq_2711",
@@ -23713,7 +23760,8 @@
     "text": "Kde v těle svou melancholii vnímáš nejsilněji a co se stane, když tomu místu chvíli věnuješ pozornost, aniž by ses snažil něco změnit?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kde v těle svou melancholii vnímáš nejsilněji a co se stane, když tomu místu chvíli věnuješ pozornost, aniž by ses snažila něco změnit?"
   },
   {
     "id": "refq_2712",
@@ -23729,7 +23777,8 @@
     "text": "Kdybys na chvíli přestal věřit tomu, co ti o tvém životě vypráví dnešní nálada, co by možná přestalo vypadat jako nezpochybnitelný fakt?",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys na chvíli přestala věřit tomu, co ti o tvém životě vypráví dnešní nálada, co by možná přestalo vypadat jako nezpochybnitelný fakt?"
   },
   {
     "id": "refq_2687",
@@ -23737,7 +23786,8 @@
     "text": "Kdyby ses necítil povinen být v pořádku, co bys právě teď potřeboval?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses necítila povinna být v pořádku, co bys právě teď potřebovala?"
   },
   {
     "id": "refq_2713",
@@ -23820,7 +23870,8 @@
     "text": "Co ti posledních deset minut přemýšlení skutečně přineslo? Dozvěděl ses něco nového, nebo se jen znovu vracíš ke stejným myšlenkám?",
     "tier": "free",
     "sort_order": 9,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co ti posledních deset minut přemýšlení skutečně přineslo? Dozvěděla ses něco nového, nebo se jen znovu vracíš ke stejným myšlenkám?"
   },
   {
     "id": "refq_2724",
@@ -23828,7 +23879,8 @@
     "text": "Co bys právě teď potřeboval víc než další přemýšlení?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys právě teď potřebovala víc než další přemýšlení?"
   },
   {
     "id": "refq_2725",
@@ -23868,7 +23920,8 @@
     "text": "Co by se stalo, kdybys dnes nemusel najít odpověď a dovolil si nechat tuhle věc nevyřešenou?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se stalo, kdybys dnes nemusela najít odpověď a dovolila si nechat tuhle věc nevyřešenou?"
   },
   {
     "id": "refq_2730",
@@ -23884,7 +23937,8 @@
     "text": "Není pro tebe někdy snazší něco donekonečna analyzovat než si připustit prosté „mrzí mě to“, „bojím se“, „jsem naštvaný“ nebo „nevím“?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Není pro tebe někdy snazší něco donekonečna analyzovat než si připustit prosté „mrzí mě to“, „bojím se“, „jsem naštvaná“ nebo „nevím“?"
   },
   {
     "id": "refq_2732",
@@ -23892,7 +23946,8 @@
     "text": "Co bys mohl skutečně udělat, abys svou situaci změnil? A pokud teď nic udělat nemůžeš, co ti přináší další přemýšlení?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys mohl skutečně udělat, abys svou situaci změnila? A pokud teď nic udělat nemůžeš, co ti přináší další přemýšlení?"
   },
   {
     "id": "refq_2733",
@@ -23900,7 +23955,8 @@
     "text": "Kdy ses možná naučil, že musíš věci důkladně pochopit, předvídat nebo rozebrat, abys byl v bezpečí?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses možná naučila, že musíš věci důkladně pochopit, předvídat nebo rozebrat, abys byla v bezpečí?"
   },
   {
     "id": "refq_2734",
@@ -23916,7 +23972,8 @@
     "text": "Kdybys věděl, že už žádná další myšlenka nepřinese definitivní odpověď, co bys právě teď dělal místo přemýšlení?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věděla, že už žádná další myšlenka nepřinese definitivní odpověď, co bys právě teď dělala místo přemýšlení?"
   },
   {
     "id": "refq_2736",
@@ -23932,7 +23989,8 @@
     "text": "Když se v myšlenkách vracíš k rozhovoru nebo chování druhého člověka, hledáš někdy odpověď, na kterou by ses mohl zeptat přímo jeho?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se v myšlenkách vracíš k rozhovoru nebo chování druhého člověka, hledáš někdy odpověď, na kterou by ses mohla zeptat přímo jeho?"
   },
   {
     "id": "refq_2738",
@@ -23948,7 +24006,8 @@
     "text": "Které věci ve svém životě jsi nakonec zvládl, přestože jsi je předem nedokázal dokonale pochopit ani kontrolovat?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které věci ve svém životě jsi nakonec zvládl, přestože jsi je předem nedokázala dokonale pochopit ani kontrolovat?"
   },
   {
     "id": "refq_2740",
@@ -23980,7 +24039,8 @@
     "text": "Kterému pocitu bys možná musel čelit, kdybys přestal přemýšlet?",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kterému pocitu bys možná musela čelit, kdybys přestala přemýšlet?"
   },
   {
     "id": "refq_2717",
@@ -23996,7 +24056,8 @@
     "text": "Co bys mohl příště během prvních pěti minut hloubání udělat jinak, abys zjistil, jestli potřebuješ dál přemýšlet, nebo spíš jinak zacházet se svou nejistotou?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys mohla příště během prvních pěti minut hloubání udělat jinak, abys zjistila, jestli potřebuješ dál přemýšlet, nebo spíš jinak zacházet se svou nejistotou?"
   },
   {
     "id": "refq_2744",
@@ -24004,7 +24065,8 @@
     "text": "Kdybys dnešní večer nemusel věnovat přemýšlení o tom, co tě trápí, čemu důležitému bys chtěl ten čas věnovat?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys dnešní večer nemusela věnovat přemýšlení o tom, co tě trápí, čemu důležitému bys chtěla ten čas věnovat?"
   },
   {
     "id": "refq_2745",
@@ -24012,7 +24074,8 @@
     "text": "Kdybys mohl své hloubání na chvíli pozorovat z odstupu, co bys řekl, že se ti snaží zajistit nebo před čím tě chce ochránit?",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys mohla své hloubání na chvíli pozorovat z odstupu, co bys řekla, že se ti snaží zajistit nebo před čím tě chce ochránit?"
   },
   {
     "id": "refq_2746",
@@ -24028,7 +24091,8 @@
     "text": "Kdyby za tebou se stejnými myšlenkami přišel někdo, koho máš rád, doporučil bys mu další hodinu přemýšlení, nebo něco jiného?",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby za tebou se stejnými myšlenkami přišel někdo, koho máš ráda, doporučila bys mu další hodinu přemýšlení, nebo něco jiného?"
   },
   {
     "id": "refq_2749",
@@ -24121,7 +24185,8 @@
     "text": "Kolikrát ses už trápil něčím, co nakonec dopadlo lépe, jednodušeji nebo úplně jinak, než jsi čekal?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolikrát ses už trápila něčím, co nakonec dopadlo lépe, jednodušeji nebo úplně jinak, než jsi čekala?"
   },
   {
     "id": "refq_2759",
@@ -24137,7 +24202,8 @@
     "text": "Co by se změnilo, kdybys svou schopnost vidět rizika využíval hlavně k tomu, aby ses na ně připravil, a ne k předpovídání špatné budoucnosti?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys svou schopnost vidět rizika využívala hlavně k tomu, aby ses na ně připravila, a ne k předpovídání špatné budoucnosti?"
   },
   {
     "id": "refq_2761",
@@ -24145,7 +24211,8 @@
     "text": "Které dobré možnosti ve svém životě možná předem odmítáš, abys nemusel prožívat nejistotu, naději a případné zklamání?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které dobré možnosti ve svém životě možná předem odmítáš, abys nemusela prožívat nejistotu, naději a případné zklamání?"
   },
   {
     "id": "refq_2762",
@@ -24193,7 +24260,8 @@
     "text": "Jaký malý krok bys dnes udělal, kdybys nemusel dokazovat, že budoucnost bude dobrá, a stačilo ti uznat, že je pořád otevřená?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaký malý krok bys dnes udělala, kdybys nemusela dokazovat, že budoucnost bude dobrá, a stačilo ti uznat, že je pořád otevřená?"
   },
   {
     "id": "refq_2768",
@@ -24209,7 +24277,8 @@
     "text": "Kdybys své pesimistické předpovědi pravidelně zapisoval a později porovnával se skutečností, jak přesný bys podle sebe byl?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys své pesimistické předpovědi pravidelně zapisovala a později porovnávala se skutečností, jak přesný bys podle sebe byla?"
   },
   {
     "id": "refq_2770",
@@ -24217,7 +24286,8 @@
     "text": "Které důležité věci ve svém životě dáváš kvůli očekávání špatného výsledku méně prostoru, než by sis přál? Vztahům, tvořivosti, odvaze, zvědavosti, svobodě, nebo něčemu jinému?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které důležité věci ve svém životě dáváš kvůli očekávání špatného výsledku méně prostoru, než by sis přála? Vztahům, tvořivosti, odvaze, zvědavosti, svobodě, nebo něčemu jinému?"
   },
   {
     "id": "refq_2771",
@@ -24233,7 +24303,8 @@
     "text": "Kdyby ti stejnou situaci popsal člověk, kterého máš rád, považoval bys jeho nejčernější scénář za nejrealističtější?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ti stejnou situaci popsal člověk, kterého máš ráda, považovala bys jeho nejčernější scénář za nejrealističtější?"
   },
   {
     "id": "refq_2773",
@@ -24241,7 +24312,8 @@
     "text": "Když se ohlédneš za obdobím, kdy ses učil očekávat spíš špatné věci, poznáváš ve svém dnešním pohledu na svět také postoje někoho jiného?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se ohlédneš za obdobím, kdy ses učila očekávat spíš špatné věci, poznáváš ve svém dnešním pohledu na svět také postoje někoho jiného?"
   },
   {
     "id": "refq_2774",
@@ -24257,7 +24329,8 @@
     "text": "Je pro tebe důležité být člověkem, který vidí věci takové, jaké skutečně jsou? A mohl bys někdy právě kvůli tomu odmítat optimističtější pohled jako naivní?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je pro tebe důležité být člověkem, který vidí věci takové, jaké skutečně jsou? A mohla bys někdy právě kvůli tomu odmítat optimističtější pohled jako naivní?"
   },
   {
     "id": "refq_2776",
@@ -24265,7 +24338,8 @@
     "text": "Když si představíš, že ses dlouhá léta chránil před bolestí tím, že sis ji prožíval už předem, co bys chtěl odteď dělat jinak?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když si představíš, že ses dlouhá léta chránila před bolestí tím, že sis ji prožívala už předem, co bys chtěla odteď dělat jinak?"
   },
   {
     "id": "refq_2748",
@@ -24289,7 +24363,8 @@
     "text": "Co bys mohl ztratit, kdyby ses přestal připravovat na nejhorší a dovolil si víc naděje?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys mohl ztratit, kdyby ses přestala připravovat na nejhorší a dovolila si víc naděje?"
   },
   {
     "id": "refq_2779",
@@ -24388,7 +24463,8 @@
     "text": "Co děláš, když jsi otrávený, co ti sice na chvíli uleví, ale nakonec ti náladu ještě zhorší?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co děláš, když jsi otrávená, co ti sice na chvíli uleví, ale nakonec ti náladu ještě zhorší?"
   },
   {
     "id": "refq_2791",
@@ -24396,7 +24472,8 @@
     "text": "Co bys přestal dělat, kdybys nemusel nikomu dokazovat, že jsi rozumný, hodný, výkonný nebo spolehlivý?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys přestala dělat, kdybys nemusela nikomu dokazovat, že jsi rozumná, hodná, výkonná nebo spolehlivá?"
   },
   {
     "id": "refq_2792",
@@ -24404,7 +24481,8 @@
     "text": "Není tvoje otrávenost někdy důsledkem toho, že jsi včas neřekl, co už nechceš nebo co ti vadí?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Není tvoje otrávenost někdy důsledkem toho, že jsi včas neřekla, co už nechceš nebo co ti vadí?"
   },
   {
     "id": "refq_2793",
@@ -24412,7 +24490,8 @@
     "text": "Kdybys mohl změnit jednu jedinou věc ve svém životě, aniž by ses musel snažit změnit svou náladu, co by to bylo?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys mohla změnit jednu jedinou věc ve svém životě, aniž by ses musela snažit změnit svou náladu, co by to bylo?"
   },
   {
     "id": "refq_2794",
@@ -24420,7 +24499,8 @@
     "text": "Kdy naposledy tě něco skutečně vtáhlo natolik, že jsi na svou otrávenost zapomněl? Co ti to říká o tom, co ti možná chybí?",
     "tier": "free",
     "sort_order": 14,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy naposledy tě něco skutečně vtáhlo natolik, že jsi na svou otrávenost zapomněla? Co ti to říká o tom, co ti možná chybí?"
   },
   {
     "id": "refq_2795",
@@ -24436,7 +24516,8 @@
     "text": "Kterým svým myšlenkám věříš hlavně tehdy, když jsi otrávený, ale v lepší náladě by ti připadaly přehnané nebo nespravedlivé?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kterým svým myšlenkám věříš hlavně tehdy, když jsi otrávená, ale v lepší náladě by ti připadaly přehnané nebo nespravedlivé?"
   },
   {
     "id": "refq_2797",
@@ -24452,7 +24533,8 @@
     "text": "Co by ses mohl dozvědět, kdybys týden nesledoval jen to, kdy jsi otrávený, ale hlavně okamžiky, kdy otrávený nejsi?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by ses mohl dozvědět, kdybys týden nesledovala jen to, kdy jsi otrávený, ale hlavně okamžiky, kdy otrávená nejsi?"
   },
   {
     "id": "refq_2799",
@@ -24484,7 +24566,8 @@
     "text": "Když jsi otrávený mezi lidmi, dáváš jim najevo, co potřebuješ, nebo čekáš, že to sami poznají? A co se v tobě děje, když to nepoznají?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když jsi otrávená mezi lidmi, dáváš jim najevo, co potřebuješ, nebo čekáš, že to sami poznají? A co se v tobě děje, když to nepoznají?"
   },
   {
     "id": "refq_2803",
@@ -24500,7 +24583,8 @@
     "text": "Kdybys svou otrávenost bral jako informaci, kterou stojí za to pochopit, a ne jako problém, kterého se musíš zbavit, co bys udělal jinak?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys svou otrávenost brala jako informaci, kterou stojí za to pochopit, a ne jako problém, kterého se musíš zbavit, co bys udělala jinak?"
   },
   {
     "id": "refq_2805",
@@ -24508,7 +24592,8 @@
     "text": "Kdyby ses příští měsíc nesnažil být hlavně v dobré náladě, ale žít způsobem, který ti připadá opravdový a smysluplný, co bys změnil?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses příští měsíc nesnažila být hlavně v dobré náladě, ale žít způsobem, který ti připadá opravdový a smysluplný, co bys změnila?"
   },
   {
     "id": "refq_2806",
@@ -24516,7 +24601,8 @@
     "text": "Všiml sis, jestli ti svět připadá protivnější v určitou denní dobu nebo když jsi unavený, hladový, zahlcený či máš málo pohybu?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Všimla sis, jestli ti svět připadá protivnější v určitou denní dobu nebo když jsi unavená, hladová, zahlcená či máš málo pohybu?"
   },
   {
     "id": "refq_2807",
@@ -24524,7 +24610,8 @@
     "text": "Co by se změnilo, kdybys od lidí, práce a běžného života přestal očekávat, že tě musí neustále něčím zaujmout nebo vytáhnout ze špatné nálady?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys od lidí, práce a běžného života přestala očekávat, že tě musí neustále něčím zaujmout nebo vytáhnout ze špatné nálady?"
   },
   {
     "id": "refq_2808",
@@ -24548,7 +24635,8 @@
     "text": "Jak lidé kolem tebe reagovali, když jsi byl jako dítě nebo dospívající otrávený a nechtěl jsi nic řešit? Co ses tehdy mohl naučit o tom, jak zacházet se svou nepohodou?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak lidé kolem tebe reagovali, když jsi byla jako dítě nebo dospívající otrávená a nechtěla jsi nic řešit? Co ses tehdy mohla naučit o tom, jak zacházet se svou nepohodou?"
   },
   {
     "id": "refq_2810",
