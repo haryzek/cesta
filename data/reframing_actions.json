@@ -16403,7 +16403,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne netrpělivost, pojmenuj si, co přesně chceš urychlit a jestli s tím můžeš něco udělat. Pokud ano, zvaž konkrétní krok. Pokud ne, zkus si říct: „Teď už jsem udělala, co bylo v mých silách.“"
   },
   {
     "id": "refa_1978",
@@ -16412,7 +16413,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „potřebuju to hned“, zkus ji změnit na „moc bych chtěla, aby to bylo hned“. Všimni si, jestli se něco změní, když z naléhavé nutnosti uděláš silné přání."
   },
   {
     "id": "refa_1979",
@@ -16686,7 +16688,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Při práci měj vedle sebe „parkoviště myšlenek“. Když tě napadne něco nesouvisejícího, jednou větou to zapiš a vrať se k rozdělané práci, místo abys to šla hned řešit."
   },
   {
     "id": "refa_2012",
@@ -16915,7 +16918,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si týden jednoduchý záznam impulzů: co se stalo, co jsi cítila, jak silné bylo nutkání od 0 do 10, co jsi udělala a co následovalo. Hledej opakující se souvislosti, ne důkazy toho, že je s tebou něco špatně."
   },
   {
     "id": "refa_2041",
@@ -16933,7 +16937,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když impulzu podlehneš, zkus místo sebeobviňování krátký rozbor: Co ho spustilo? Kdy jsem ještě mohla zabrzdit? Co příště udělám jinak? Pokud jsi někomu ublížila nebo způsobila škodu, zkus ji napravit. Pak už se k sobě nemusíš dál vracet s výčitkami."
   },
   {
     "id": "refa_2043",
@@ -17160,7 +17165,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když něco zanedbáš, nahraď „jsem nezodpovědná“ konkrétním popisem: „Neudělala jsem X, protože Y.“ Potom si polož otázku: „Co s tím můžu udělat teď?“"
   },
   {
     "id": "refa_2070",
@@ -17187,7 +17193,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Před přijetím nového závazku se na chvíli zastav a zeptej se: „Mám na to skutečně čas a energii?“ Raději řekni upřímné ne než ano, které později nebudeš schopná dodržet."
   },
   {
     "id": "refa_2073",
@@ -17205,7 +17212,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po dobu jednoho týdne si každý večer vyber jednu situaci, kdy ses cítila nezodpovědná, a rozliš čtyři věci: za co jsi skutečně odpovídala, co bylo mimo tvou kontrolu, co jsi mohla ovlivnit a jakou odpovědnost sis možná přisoudila navíc."
   },
   {
     "id": "refa_2075",
@@ -17442,7 +17450,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber si každý den jedinou malou věc, kterou opravdu chceš splnit. Raději pravidelně zažívej „dokázala jsem to“, než abys vytvářela ambiciózní plány, jejichž nesplnění živí obraz vlastní nedisciplinovanosti."
   },
   {
     "id": "refa_2104",
@@ -17662,7 +17671,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když přijde silné nutkání dopřát si nějaký požitek, zkus se na chvíli zastavit. Zeptej se sama sebe: „Chci si něco příjemného užít, nebo se potřebuju zbavit nepříjemného pocitu?“ Obojí je v pořádku, ale každá z těchto potřeb může vyžadovat něco jiného."
   },
   {
     "id": "refa_2131",
@@ -17671,7 +17681,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zaveď si „pauzu před požitkem“: když přijde silné nutkání, zkus ho několik minut jen pozorovat, aniž bys na něj hned reagovala. Všímej si, jak se mění jeho intenzita a co se děje v tvém těle. Pak se rozhodni, co uděláš. Cílem není zákaz, ale získat větší svobodu mezi impulzem a jednáním."
   },
   {
     "id": "refa_2133",
@@ -17680,7 +17691,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Týden si zapisuj nejsilnější chutě na stimulaci: co jim předcházelo, jak byly intenzivní na škále 0–10, co jsi udělala a jak ses cítila hodinu poté. Hledej opakující se spouštěče. Objevuje se touha po požitku častěji při stresu, nudě, únavě, osamělosti, nebo třeba po nějakém úspěchu?"
   },
   {
     "id": "refa_2134",
@@ -18215,7 +18227,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Týden si místo „jsem líná“ zapisuj, co se skutečně děje: „Odkládám odpověď“, „Hodinu scrolluju“, „Potřebuju ležet“. Když oddělíš svoje chování od toho, jaká údajně jsi, můžeš začít řešit konkrétní problém místo boje se sebou samou."
   },
   {
     "id": "refa_2198",
@@ -18224,7 +18237,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez biče nic neudělám.“ Vyber si malý úkol, který obvykle provázíš výčitkami a tlakem na sebe. Předem odhadni, kolik toho zvládneš bez sebepeskujících myšlenek. Tentokrát se zkus povzbudit laskavě, jako bys povzbuzovala někoho blízkého. Začni pěti minutami a postupně zkoušej delší nebo náročnější činnosti. Porovnávej, kolik jsi udělala, jaký odpor jsi cítil a jak ti při tom bylo. Zjišťuj, jestli ti sebekritika skutečně pomáhá, nebo tě spíš brzdí."
   },
   {
     "id": "refa_2199",
@@ -18242,7 +18256,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po dobu týdne si všímej, co předchází chvílím, kdy si připadáš líná. Bývá to náročný úkol, konflikt, únava, nuda, zahlcení nebo třeba dlouhá práce? Zapisuj si krátce okolnosti a hledej, jestli se některé spouštěče opakují."
   },
   {
     "id": "refa_2201",
@@ -18435,7 +18450,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když ucítíš vzdor, dej si před reakcí krátkou pauzu a zeptej se sama sebe: „Vadí mi to, co po mně druhý chce, nebo hlavně pocit, že mi někdo něco nařizuje?“ Obojí může být oprávněné, ale každé si žádá jinou reakci."
   },
   {
     "id": "refa_2225",
@@ -18471,7 +18487,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkoušej formulovat hranice dřív, než se nahromadí vztek: „Tohle mi nevyhovuje“, „Potřebuju jiný způsob“ nebo „O tomhle se chci rozhodnout sama.“"
   },
   {
     "id": "refa_2229",
@@ -18489,7 +18506,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Aby moje ne platilo, musím být tvrdá nebo vzdorovat.“ Zkus v bezpečné situaci odmítnout drobnou žádost klidně a bez zbytečného vysvětlování. Předem odhadni, jak druhý zareaguje a jestli tvoje odmítnutí přijme. Potom porovnej očekávání se skutečností. Pokud budeš chtít, postupně zkoušej důležitější hranice. Sleduj, kdy klidné odmítnutí stačí a kdy je potřeba větší důraznost."
   },
   {
     "id": "refa_2232",
@@ -18719,7 +18737,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj mezi žádostí, přáním, očekáváním a skutečnou povinností. Kdykoliv ucítíš „musím“, zastav se a zkus určit, do které kategorie situace opravdu patří. Je to něco, k čemu ses zavázala, nebo něco, co od tebe druhý pouze očekává?"
   },
   {
     "id": "refa_2260",
@@ -18728,7 +18747,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Moje přání a preference druhé obtěžují.“ Vyslov jednu malou preferenci, třeba kam bys chtěla jít nebo kdy se sejít. Začni u člověka, se kterým se cítíš bezpečně, a postupně zkoušej důležitější přání. Předem si poznamenej, jakou reakci očekáváš a jak nepříjemné ti to bude. Potom porovnej očekávání se skutečností. Všímej si také, jaké to je dát vlastnímu přání prostor."
   },
   {
     "id": "refa_2261",
