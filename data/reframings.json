@@ -10830,7 +10830,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být zklamaná a zároveň zůstat na své straně. Nemusíš se přidat k odmítnutí tím, že začneš odmítat ještě sama sebe."
   },
   {
     "id": "ref_1340",
@@ -10839,7 +10840,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si odmítnutí vysvětlit tím nejkrutějším způsobem. „Nechce mě“ a „nejsem dost dobrá“ jsou dvě úplně jiné věty."
   },
   {
     "id": "ref_1341",
@@ -10848,7 +10850,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Odmítnutí bolí právě proto, že ti na něčem záleželo. Ta bolest není důkazem tvé slabosti, ale toho, že ses odvážila něco chtít, nabídnout nebo se k někomu přiblížit."
   },
   {
     "id": "ref_1342",
@@ -10866,7 +10869,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že sis přála být přijatá, není trapné ani ponižující. Chtít někam patřit a být pro někoho důležitý je jedna z nejlidštějších věcí vůbec."
   },
   {
     "id": "ref_1346",
@@ -10875,7 +10879,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být pro každého ta pravá, aby s tebou bylo všechno v pořádku. Ani ty přece necítíš blízkost, přitažlivost nebo souznění ke každému dobrému člověku."
   },
   {
     "id": "ref_1348",
@@ -10920,7 +10925,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se po odmítnutí rychle oklepat ani dělat, že ti na tom nezáleží. Můžeš chvíli truchlit nad tím, co sis přála, aniž bys ztrácela naději na něco jiného."
   },
   {
     "id": "ref_1353",
@@ -10929,7 +10935,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš respektovat právo druhého říct „ne“, aniž by ses kvůli tomu zmenšila. Jeho hranice nemusí být útokem na tvoji hodnotu."
   },
   {
     "id": "ref_1354",
@@ -10938,7 +10945,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby se ti malé dítě svěřilo, že ho někdo odmítl, asi bys mu neřekla: „Tak vidíš, nejsi dost dobrý.“ Zkus se sebou nezacházet způsobem, který by ti připadal krutý vůči někomu, koho máš ráda."
   },
   {
     "id": "ref_1358",
@@ -10947,7 +10955,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Čím víc potřebuješ být přijatá právě tímhle člověkem, abys mohla přijmout sama sebe, tím větší moc nad sebou mu dáváš. Co kdyby jeho „ano“ nemuselo být podmínkou tvého vlastního „ano“ sobě?"
   },
   {
     "id": "ref_1356",
@@ -11175,7 +11184,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nepotřebuješ být méně zvláštní. Možná potřebuješ být méně krutá k tomu, co je na tobě jedinečné."
   },
   {
     "id": "ref_1385",
@@ -11193,7 +11203,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se zmenšovat, uhlazovat ani předělávat na přijatelnější verzi sebe, abys měla právo být mezi lidmi."
   },
   {
     "id": "ref_1387",
@@ -11211,7 +11222,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš divná, můžeš mít dojem, že tě ostatní vidí stejně. Jenže to, co si o sobě myslíš ty, nemusí být vůbec to, co vidí oni."
   },
   {
     "id": "ref_1389",
@@ -11220,7 +11232,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být pochopená všemi. Někdy úplně stačí pár lidí, před kterými nemusíš vysvětlovat, proč jsi právě taková."
   },
   {
     "id": "ref_1390",
@@ -11229,7 +11242,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Až zase přijde „se mnou je něco špatně“, zkus za tu větu přidat malé „podle koho?“. Někdy se tím z rozsudku stane jen názor, který sis kdysi osvojila."
   },
   {
     "id": "ref_1391",
@@ -11247,7 +11261,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si vybírat mezi tím být sama sebou a patřit mezi lidi. V dobrých vztazích můžeš zažívat obojí zároveň."
   },
   {
     "id": "ref_1393",
@@ -11256,7 +11271,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš divná, neznamená to, že jsi divná. Pocit nepatřičnosti není důkaz, že nikam nepatříš."
   },
   {
     "id": "ref_1394",
@@ -11265,7 +11281,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná hledáš potvrzení své normálnosti u lidí, jejichž představa normálnosti ti nikdy neseděla. Nemusíš projít jejich testem, abys byla v pořádku."
   },
   {
     "id": "ref_1395",
@@ -11274,7 +11291,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvoje odlišnost není celý tvůj příběh. Vedle ní máš úplně obyčejné lidské potřeby: být viděná, přijatá, milovaná a mít někde svoje místo."
   },
   {
     "id": "ref_1397",
@@ -11283,7 +11301,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že být jiná znamená riskovat odmítnutí nebo samotu. To ale neznamená, že každá tvoje odlišnost představuje nebezpečí i dnes."
   },
   {
     "id": "ref_1396",
@@ -11508,7 +11527,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus oddělit dvě věci, které bolest snadno slepí dohromady: „Někdo mnou pohrdá“ a „jsem opovrženíhodná“. První může být skutečnost, druhé je závěr, který z ní vůbec neplyne."
   },
   {
     "id": "ref_1426",
@@ -11526,7 +11546,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být bezchybná, aby sis zasloužila respekt. Můžeš udělat chybu, ztrapnit se, nevědět si rady nebo být jiná než ostatní, a přesto si nezasloužíš pohrdání."
   },
   {
     "id": "ref_1428",
@@ -11535,7 +11556,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se ti někdo vysmívá, neznamená to, že jsi směšná. Výsměch je způsob, jak s tebou někdo zachází, ne popis toho, kdo jsi."
   },
   {
     "id": "ref_1429",
@@ -11553,7 +11575,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš vyhrát spor, mít dokonale pohotovou odpověď ani druhého usadit, abys získala zpátky svou důstojnost."
   },
   {
     "id": "ref_1431",
@@ -11607,7 +11630,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být oblíbená ani respektovaná každým člověkem. Důležité je neztratit respekt sama k sobě kvůli těm, kteří ti ho odmítají dát."
   },
   {
     "id": "ref_1439",
@@ -11616,7 +11640,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit ponížení tě může nutit schovat se a zmizet. Ale to, že se někdo pokusil udělat tě menší, neznamená, že se skutečně musíš zmenšit."
   },
   {
     "id": "ref_1442",
@@ -11869,7 +11894,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš litovat svého chování, aniž bys zavrhla sama sebe. Stud říká „já jsem špatná“, ale odpovědnost může říct „tohle chci napravit“."
   },
   {
     "id": "ref_1471",
@@ -11887,7 +11913,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se za svůj stud ještě navíc stydět. Je to přirozená lidská reakce na chvíli, kdy ses cítila odhalená, odmítnutá nebo ponížená."
   },
   {
     "id": "ref_1475",
@@ -11932,7 +11959,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V pocitu zahanbení často chybí jedna zásadní otázka: podle čích měřítek ses vlastně zesměšnila nebo provinila? Máš své vlastní svědomí."
   },
   {
     "id": "ref_1480",
@@ -11941,7 +11969,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdybys ukázala něco, co bys raději neukázala, pořád jsi mnohem víc než tahle jedna odkrytá část sebe."
   },
   {
     "id": "ref_1481",
@@ -11950,7 +11979,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdy stud obsahuje kus pravdy: možná ses opravdu zachovala způsobem, který není v souladu s tím, kým chceš být. To ale neznamená, že tě ten okamžik definuje. Tvé hodnoty přesahují jednu chvíli."
   },
   {
     "id": "ref_1482",
@@ -11959,7 +11989,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co na sobě právě nedokážeš unést, bys u člověka, kterého máš ráda, nejspíš přijala s překvapivou něhou. Zkus si kousek té něhy nechat i pro sebe."
   },
   {
     "id": "ref_1483",
@@ -11968,7 +11999,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se před sebou schovávat jen proto, že ses před někým necítila dobře. Právě teď potřebuješ stát na své straně."
   },
   {
     "id": "ref_1485",
@@ -11977,7 +12009,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná máš pocit, že teď všichni vidí právě to, co bys nejradši ukryla. Lidé tě ale často vidí mnohem celistvěji, než jak se v tuhle chvíli vidíš ty."
   },
   {
     "id": "ref_1484",
@@ -12178,7 +12211,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že si připadáš vadná, ještě neznamená, že vadná jsi. Pocit může znít jako rozsudek, ale není důkazem."
   },
   {
     "id": "ref_1509",
@@ -12187,7 +12221,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se nejdřív opravit, abys měla právo na blízkost, respekt a přijetí. Tvoje hodnota nezačíná až ve chvíli, kdy budeš „v pořádku“."
   },
   {
     "id": "ref_1510",
@@ -12205,7 +12240,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses někdy naučila dívat na sebe očima někoho, kdo tě nechápal, odmítal nebo kritizoval. Nemusíš se na sebe těma očima dívat celý život."
   },
   {
     "id": "ref_1512",
@@ -12214,7 +12250,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být jako ostatní, abys byla v pořádku. Odlišnost není porucha a neexistuje jediný správný způsob, jak být člověkem."
   },
   {
     "id": "ref_1513",
@@ -12223,7 +12260,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se ozve „jsem vadná“ nebo „nenormální“, zkus za tím slyšet spíš „bojím se, že taková, jaká jsem, nebudu přijatá“. Se strachem z odmítnutí se dá zacházet mnohem laskavěji než s domnělou vadou."
   },
   {
     "id": "ref_1517",
@@ -12241,7 +12279,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby za tebou přišlo malé dítě a pošeptalo ti do ucha, že je asi nějak vadné, nejspíš bys na něm nezačala hledat závady. Právě takový shovívavý přístup si zaslouží ta část tebe, která pořád věří své vadnosti."
   },
   {
     "id": "ref_1520",
@@ -12250,7 +12289,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Existují lidé, vedle kterých tvoje „divnost“ přestává být divnou. Někdy problém není v tom, jaká jsi, ale v prostředí, ve kterém se snažíš vtěsnat do příliš úzké formy."
   },
   {
     "id": "ref_1521",
@@ -12259,7 +12299,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „jsem vadná“ se z několika jedinečných vlastností, potíží nebo zkušeností dělá závěr o celé osobě. To je trochu jako najít prasklinu v jedné cihle a prohlásit celý dům za vadný."
   },
   {
     "id": "ref_1522",
@@ -12286,7 +12327,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Některé tvoje zvláštnosti mohly vzniknout jako důmyslné způsoby, jak zvládat těžké situace. Co dnes vypadá jako vada, mohlo být kdysi tím nejlepším řešením, které jsi měla. Musí platit ještě dnes?"
   },
   {
     "id": "ref_1529",
@@ -12522,7 +12564,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš ošklivá nebo odpudivá, ještě neznamená, že taková skutečně jsi. Pocit může znít jako rozsudek, i když vůbec nemusí odpovídat skutečnosti."
   },
   {
     "id": "ref_1552",
@@ -12540,7 +12583,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš čekat, až budeš se svým vzhledem spokojená, abys mohla flirtovat, milovat, být viděná nebo se nechat obejmout. Život nemusí stát před dveřmi, dokud se sebou nebudeš hotová."
   },
   {
     "id": "ref_1555",
@@ -12549,7 +12593,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Některým lidem se líbit nebudeš. To ale není důkaz, že jsi nepřitažlivá. Nikdo se nelíbí všem, a přesto po sobě lidé touží a milují se."
   },
   {
     "id": "ref_1556",
@@ -12567,7 +12612,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo nechce, může tě hned napadnout: „Protože jsem ošklivá.“ Jenže odmítnutí může mít spoustu příčin a tvoje nejbolestivější vysvětlení nemusí být to pravdivé."
   },
   {
     "id": "ref_1558",
@@ -12576,7 +12622,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Přitažlivost není vlastnost uložená v tvém obličeji jako barva očí. Vzniká také v očích toho, kdo se na tebe dívá. Proto můžeš jednoho člověka nechat chladným a pro jiného být neodolatelná."
   },
   {
     "id": "ref_1559",
@@ -12585,7 +12632,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se na sebe dívat a říkat si „jsem krásná“, pokud tomu nevěříš. Pro začátek úplně stačí: „Tohle je moje tělo a dnes proti němu nemusím bojovat.“"
   },
   {
     "id": "ref_1560",
@@ -12603,7 +12651,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pod větou „jsem nepřitažlivá“ může být schované mnohem zranitelnější „bojím se, že mě nikdo nebude chtít“. A strach, že nebudeš chtěná, potřebuje spíš bezpečí a blízkost než další kontrolu v zrcadle."
   },
   {
     "id": "ref_1562",
@@ -12612,7 +12661,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná je pravda, že nesplňuješ některé ideály krásy. Jenže z toho vůbec neplyne, že nejsi přitažlivá. Přitažlivost není totéž co splňování ideálu."
   },
   {
     "id": "ref_1563",
@@ -12630,7 +12680,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vidíš každý svůj nedostatek pod lupou, zatímco ostatní tě vnímají jako celek. Lidé se na tebe nedívají z těch pěti centimetrů, ze kterých se možná někdy zkoumáš ty sama."
   },
   {
     "id": "ref_1569",
@@ -12639,7 +12690,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je možné, že se hodnotíš podle měřítek, která bys nikdy tak krutě nepoužila na člověka, kterého máš ráda. Zkus si na chvíli nedopřát obdiv, ale obyčejnou lidskou spravedlnost."
   },
   {
     "id": "ref_1564",
@@ -12848,7 +12900,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že něčemu nerozumíš, neznamená, že jsi hloupá. Znamená to jen, že stojíš před něčím, co zatím neznáš nebo neumíš."
   },
   {
     "id": "ref_1591",
@@ -12857,7 +12910,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „jsem hloupá“ není měření inteligence. Je to bolestivý prožitek, který se může ozvat právě tehdy, když se cítíš nejistě, zahanbeně nebo ohroženě."
   },
   {
     "id": "ref_1592",
@@ -12866,7 +12920,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „jsem hloupá“ chybí to nejdůležitější: v čem, oproti komu, za jakých okolností a podle jakého měřítka? Bez toho to není závěr, ale nálepka."
   },
   {
     "id": "ref_1593",
@@ -12893,7 +12948,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi v něčem tak schopná, jak by sis přála. I to se dá přijmout, aniž by ses kvůli tomu musela ponižovat nebo se přestat mít ráda."
   },
   {
     "id": "ref_1597",
@@ -12911,7 +12967,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dokazovat, že jsi chytrá. Můžeš se ptát, tápat, plést se a měnit názor. Právě tohle často dělají lidé, kteří opravdu přemýšlejí."
   },
   {
     "id": "ref_1599",
@@ -12929,7 +12986,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdybys nebyla nijak výjimečně chytrá ani talentovaná, pořád můžeš mít krásný, zajímavý a smysluplný život. Tvoje právo být tady nikdy nebylo podmíněné přijímací zkouškou z inteligence."
   },
   {
     "id": "ref_1601",
@@ -12938,7 +12996,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když něco neumíš, nemusíš z věty „tohle mi nejde“ vyrábět větu „jsem neschopná“. První popisuje jednu dovednost, druhá odsuzuje celého člověka."
   },
   {
     "id": "ref_1602",
@@ -12965,7 +13024,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být mimořádně talentovaná, aby mělo cenu něco tvořit. Radost, zvědavost a chuť něco dělat nepotřebují povolení od žádné poroty."
   },
   {
     "id": "ref_1608",
@@ -12974,7 +13034,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že chyba znamená ostudu. Jenže chyba často znamená prostě to, že ses pustila do něčeho, co ještě bezpečně neovládáš."
   },
   {
     "id": "ref_1606",
@@ -13208,7 +13269,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být tak dobrá, jak si o tobě možná někdo myslí, abys nebyla podvodnice. Můžeš být prostě obyčejně nedokonalý člověk."
   },
   {
     "id": "ref_1635",
@@ -13226,7 +13288,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co jsi dokázala, nevzniklo omylem. Možná v tom bylo štěstí, pomoc druhých nebo dobré okolnosti, ale byla jsi u toho taky ty."
   },
   {
     "id": "ref_1638",
@@ -13235,7 +13298,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš znát odpověď na všechno, abys měla právo něco umět. Skutečná kompetence zahrnuje i schopnost říct „nevím“."
   },
   {
     "id": "ref_1639",
@@ -13244,7 +13308,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někdy improvizuješ, tápeš nebo se učíš za pochodu, z tebe nedělá podvodnici. Takhle ve skutečnosti vypadá velká část dospělého života."
   },
   {
     "id": "ref_1640",
@@ -13253,7 +13318,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo oceňuje, nemusíš jeho úsudek okamžitě opravovat směrem dolů. Možná na tobě opravdu vidí něco, co ty sama nedokážeš dobře zahlédnout."
   },
   {
     "id": "ref_1641",
@@ -13262,7 +13328,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „jen kdyby věděli, jaká opravdu jsem“ předpokládá, že existuje nějaké tajné, horší pravé já. Možná ale jen znáš své zákulisí a porovnáváš ho s tím, co ostatní ukazují na jevišti."
   },
   {
     "id": "ref_1642",
@@ -13280,7 +13347,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná sis zvykla považovat všechno, co ti jde snadno, za bezcenné. Jenže právě to, co je pro tebe samozřejmé, může být jedna z věcí, které opravdu umíš."
   },
   {
     "id": "ref_1645",
@@ -13289,7 +13357,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být nejlepší člověk v místnosti, abys v ní měla co dělat. Tvoje hodnota nezačíná až tam, kde končí schopnosti ostatních."
   },
   {
     "id": "ref_1647",
@@ -13307,7 +13376,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se předem shazovat, aby tě případné odhalení méně bolelo. Můžeš nechat své schopnosti a činy mluvit samy za sebe, místo abys nad sebou vynášela rozsudek předem."
   },
   {
     "id": "ref_1653",
@@ -13316,7 +13386,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Strach z odhalení tě může chránit před něčím ještě citlivějším: před touhou být viděna, oceněna a přijímána taková, jaká opravdu jsi. Možná pod tím strachem není podvodnice, ale někdo, komu na přijetí hluboce záleží."
   },
   {
     "id": "ref_1654",
@@ -13325,7 +13396,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš vyřešit otázku „jsem skutečně dost dobrá?“ jednou provždy. Můžeš dnes prostě udělat další poctivý krok, přiznat, co nevíš, nabídnout, co umíš, a nechat svou hodnotu chvíli na pokoji."
   },
   {
     "id": "ref_1648",
@@ -13526,7 +13598,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být zábavná, vtipná ani fascinující, aby s tebou bylo dobře. Někdy je nejpříjemnější právě člověk, vedle kterého nemusíš nic předstírat."
   },
   {
     "id": "ref_1676",
@@ -13535,7 +13608,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že si teď připadáš nezajímavá, ještě neznamená, že nezajímavá jsi. Pocit může znít jako rozsudek, i když je to jen momentální pohled na sebe."
   },
   {
     "id": "ref_1678",
@@ -13544,7 +13618,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Nudím ho“ a „jsem nudná“ jsou dvě úplně jiné věty. První může být občas pravda o konkrétní chvíli a konkrétním člověku. Druhá z ní dělá rozsudek nad celou tvojí osobností."
   },
   {
     "id": "ref_1679",
@@ -13553,7 +13628,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná se tolik snažíš nebýt nudná, že přestáváš být sama sebou. Zkus na chvíli pustit úkol někoho zaujmout a prostě s ním být."
   },
   {
     "id": "ref_1681",
@@ -13571,7 +13647,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít pořád co říct. Ticho není důkaz, že jsi prázdná."
   },
   {
     "id": "ref_1684",
@@ -13580,7 +13657,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někdo vedle tebe působí charismatičtěji nebo zábavněji, neznamená, že jsi méně hodnotná. Lidé spolu nesoutěží o titul nejzajímavějšího člověka v místnosti."
   },
   {
     "id": "ref_1685",
@@ -13598,7 +13676,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš ze sebe dělat někoho většího, barevnějšího nebo hlučnějšího, aby sis zasloužila zájem. I teď jsi člověkem, kterého stojí za to poznávat."
   },
   {
     "id": "ref_1687",
@@ -13616,7 +13695,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses někdy naučila, že pozornost druhých si musíš zasloužit tím, že budeš vtipná, chytrá nebo výjimečná. Jenže zájem a blízkost nejsou odměnou za dobře odehrané představení."
   },
   {
     "id": "ref_1689",
@@ -13643,7 +13723,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „jsem nezajímavá“ chybí několik důležitých údajů: pro koho, kdy, v jaké situaci a podle jakého měřítka? Bez nich je to spíš pocit převlečený za objektivní pravdu."
   },
   {
     "id": "ref_1694",
@@ -13869,7 +13950,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Může být pravda, že v něčem zaostáváš, něco jsi nezvládla nebo tě někde neoceňují. Z toho ale neplyne, že jsi méně hodnotný člověk."
   },
   {
     "id": "ref_1717",
@@ -13878,7 +13960,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být výjimečná, úspěšná ani obdivovaná, abys měla hodnotu. Svoje místo mezi lidmi si nemusíš zasloužit výkonem."
   },
   {
     "id": "ref_1719",
@@ -13887,7 +13970,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se cítíš méněcenná, ještě neznamená, že taková jsi. Pocit může být velmi silný, aniž by vypovídal pravdu o tvé hodnotě."
   },
   {
     "id": "ref_1720",
@@ -13905,7 +13989,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se cítit hodnotná, abys se sebou mohla zacházet jako s někým, kdo má hodnotu. Někdy laskavější zacházení přijde dřív než laskavější pocit."
   },
   {
     "id": "ref_1722",
@@ -13914,7 +13999,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se vedle někoho cítíš malá, ještě to neznamená, že on je větší a ty menší. Díváš na sebe jeho očima, aniž bys kdy mohla vědět, co vidí."
   },
   {
     "id": "ref_1723",
@@ -13923,7 +14009,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš vyhrát žádné srovnání, abys byla dost dobrá. Lidská hodnota není žebříček, na kterém může být nahoře jen pár lidí."
   },
   {
     "id": "ref_1724",
@@ -13932,7 +14019,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Právě teď nepotřebuješ dokázat, že jsi dost dobrá. Zkus na chvíli přestat vést soudní proces proti sobě."
   },
   {
     "id": "ref_1725",
@@ -13941,7 +14029,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „jsem méněcenná“ chybí jedna zásadní otázka: méněcenná podle jakého měřítka? Jakmile to měřítko pojmenuješ, může se z absolutního rozsudku stát jen konkrétní srovnání."
   },
   {
     "id": "ref_1726",
@@ -13950,7 +14039,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se zvětšovat, abys přestala být malá. Potřebuješ jen přestat sama sebe zmenšovat."
   },
   {
     "id": "ref_1727",
@@ -13959,7 +14049,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se ti něco nepovede, může se z „tohle jsem nezvládla“ snadno stát „jsem nula“. Jenže neúspěch vypovídá o tom, co se stalo, ne o celé tvé osobnosti."
   },
   {
     "id": "ref_1728",
@@ -13977,7 +14068,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo neocení, přehlédne nebo ti nevěnuje pozornost, ještě nic nedokazuje o tvé hodnotě. Může to prostě znamenat, že jsi od něj nedostala něco, co potřebuješ."
   },
   {
     "id": "ref_1732",
@@ -13986,7 +14078,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že máš cenu hlavně tehdy, když jsi chytrá, užitečná, zajímavá nebo úspěšná. Ale co když to nikdy nebyly podmínky tvé hodnoty, jen podmínky něčího uznání?"
   },
   {
     "id": "ref_1731",

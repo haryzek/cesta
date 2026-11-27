@@ -5768,7 +5768,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo odmítne, napiš si dvě věci: Co jsem tím skutečně ztratila? A co mi zůstává? Do druhé odpovědi zahrň své schopnosti, vztahy, možnosti i to, čeho si na sobě vážíš. Odmítnutí může bolet, aniž by ti vzalo všechno ostatní."
   },
   {
     "id": "refa_0700",
@@ -5777,7 +5778,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po bolestivém odmítnutí udělej něco, čím zůstaneš na své straně: zavolej blízkému člověku, projdi se, dej si dobré jídlo nebo odpočívej. Neposiluj cizí odmítnutí trestáním sebe samé."
   },
   {
     "id": "refa_0701",
@@ -5786,7 +5788,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když někdo nereaguje podle tvého přání, nevyvozuj hned, že tě odmítá. Zvaž i jiná vysvětlení. Pokud je to vhodné, zeptej se přímo, co se děje, místo abys hádala, co si druhý myslí."
   },
   {
     "id": "refa_0702",
@@ -6004,7 +6007,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když přijde myšlenka „jsem divná“, zkus ji nahradit přesnějším popisem: „Teď se liším v názoru“, „Nepochopili můj humor“ nebo „Jsem nervózní“. Všimni si, jestli se něco změní, když místo odsuzující nálepky pojmenuješ konkrétní skutečnost."
   },
   {
     "id": "refa_0729",
@@ -6013,7 +6017,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po společenských situacích se neptej jen „Jak jsem působila?“, ale také „Jak mi bylo s nimi?“ Přesuneš tím část pozornosti z vlastní přijatelnosti na to, jak ti ve vztahu k ostatním skutečně je."
   },
   {
     "id": "refa_0730",
@@ -6022,7 +6027,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se mezi lidmi začneš příliš hlídat, zkus na chvíli obrátit pozornost ven. Poslouchej, co druhý říká, všímej si jeho výrazů a zajímej se o něj. Sleduj, jestli se tvůj pocit nepatřičnosti změní, když přestaneš tolik kontrolovat sama sebe."
   },
   {
     "id": "refa_0731",
@@ -6031,7 +6037,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po situaci, kdy ses cítila divně, odděl fakta od domněnek. Napiš si, co se skutečně stalo, a vedle toho, co sis z toho vyvodila. Které závěry jsou podložené a které jsou zatím jen možným vysvětlením?"
   },
   {
     "id": "refa_0732",
@@ -6040,7 +6047,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne pocit, že jsi divná, na chvíli přestaň řešit, co to znamená. Povol čelist a ramena, několikrát pomalu vydechni, vnímej chodidla na zemi a rozhlédni se kolem. Teprve až se trochu uklidníš, zkus situaci vyhodnotit."
   },
   {
     "id": "refa_0733",
@@ -6049,7 +6057,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si, před kterými lidmi se automaticky přizpůsobuješ, abys působila normálně. V bezpečném vztahu zkus postupně ubrat jednu drobnou věc, kterou obvykle kontroluješ nebo skrýváš. Sleduj, jaké to je být o něco přirozenější."
   },
   {
     "id": "refa_0734",
@@ -6251,7 +6260,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když zachytíš úšklebek, ironii nebo šeptání, pojmenuj nejdřív pouze to, co jsi skutečně viděla nebo slyšela. Pak odděl svou interpretaci „pohrdají mnou“ od toho, co opravdu víš. Nevidíš ostatním do hlavy."
   },
   {
     "id": "refa_0759",
@@ -6296,7 +6306,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus zachytit okamžik, kdy začneš sama se sebou mluvit stejně pohrdavě jako někdo, kdo tě shodil. Zastav se a zeptej se: „Opravdu si tohle o sobě myslím já, nebo jsem právě převzala cizí zacházení se mnou?“ Zkus si odpovědět způsobem, který tě nebude dál ponižovat."
   },
   {
     "id": "refa_0765",
@@ -6506,7 +6517,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když uděláš chybu, zkus místo automatického sebepotrestání tři kroky: uznej, co se stalo, případně naprav škodu a potom vědomě ukonči výčitky. Převzít odpovědnost neznamená ponižovat sama sebe."
   },
   {
     "id": "refa_0790",
@@ -6524,7 +6536,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když ukážu svou nedokonalost, druzí ke mně ztratí respekt.“ Předem odhadni reakci druhých i sílu svého studu. Začni drobným přiznáním bezpečnému člověku, třeba že něco nevíš. Postupně můžeš zkoušet přiznat nejistotu nebo chybu i v dalších situacích. Po každém pokusu porovnej očekávání se skutečnou reakcí a všimni si, jak ses se studem dokázala vyrovnat."
   },
   {
     "id": "refa_0793",
@@ -6785,7 +6798,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdykoli se objeví myšlenka „jsem vadná“, zkus ji přeformulovat na „část mě se právě cítí vadná“. Všímej si, jestli ti tahle malá změna pomůže získat odstup od pocitu, který tě jinak úplně pohltí."
   },
   {
     "id": "refa_0824",
@@ -6794,7 +6808,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se začneš hodnotit jako „vadná“ nebo „nenormální“, zkus místo toho pojmenovat konkrétní problém: „V téhle situaci nevím, jak reagovat“ nebo „Tohle mi jde hůř než ostatním“. Uč se rozlišovat mezi tím, co se ti nedaří, a tím, kým jsi."
   },
   {
     "id": "refa_0825",
@@ -6803,7 +6818,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když něco pokazíš, zkus na chvíli odložit hodnocení sebe samé. Popiš jen to, co se stalo, proč k tomu mohlo dojít, jaké to mělo následky a co případně můžeš napravit. Můžeš udělat chybu, aniž bys sama byla chybou."
   },
   {
     "id": "refa_0826",
@@ -6812,7 +6828,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou denně zachyť některou ze svých sebekritických myšlenek a zkus na ni odpovědět tak, jak bys odpověděla člověku, kterého máš ráda a respektuješ ho. Nemusíš se chválit ani přesvědčovat, že jsi skvělá. Jen k sobě samé zkus být spravedlivý."
   },
   {
     "id": "refa_0827",
@@ -6839,7 +6856,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když ukážu svou nedokonalost, druzí mě odmítnou.“ Vyber si bezpečného člověka a zkus před ním přiznat drobnou chybu nebo něco, co ti nejde. Předem odhadni jeho reakci. Pokud budeš chtít, postupně zkoušej sdílet i osobnější nejistoty nebo nedokonalosti. Po každém pokusu porovnej očekávání se skutečností. Nejde o to získat vždy přijetí, ale zjistit, jak lidé skutečně reagují, když nejsi dokonalá."
   },
   {
     "id": "refa_0830",
@@ -7040,7 +7058,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem odpudivá“, zkus ji nahradit přesnější větou: „Právě teď se cítím nepřitažlivě.“ Všimni si rozdílu mezi tím, co prožíváš, a tím, co o sobě považuješ za pravdu."
   },
   {
     "id": "refa_0855",
@@ -7049,7 +7068,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Najdi jednu věc, kterou kvůli obavám ze vzhledu odkládáš, a rozděl ji na několik malých kroků. Začni tím nejlehčím, aniž bys čekala, až se budeš cítit dost atraktivně."
   },
   {
     "id": "refa_0856",
@@ -7067,7 +7087,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne pocit, že vypadáš špatně, zkus se hned nepouštět do kontroly nebo napravování vzhledu. Na chvíli se zastav, všimni si, co cítíš, a dovol nepříjemnému pocitu chvíli existovat. Nemusíš ho okamžitě vyřešit, abys mohla pokračovat v tom, co právě děláš."
   },
   {
     "id": "refa_0858",
@@ -7303,7 +7324,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nahrazuj „jsem hloupá“ přesnějším popisem: „Tomuhle nerozumím“, „Chybí mi zkušenost“, „Teď se nedokážu soustředit“. Uč se rozlišovat mezi tím, co právě nezvládáš, a tím, jaký jsi člověk."
   },
   {
     "id": "refa_0888",
@@ -7330,7 +7352,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když přiznám, že něco nevím, ostatní si mě přestanou vážit.“ Předem odhadni, jak pravděpodobné to podle tebe je. Začni u člověka, se kterým se cítíš bezpečně, a zeptej se na něco, čemu nerozumíš. Postupně to můžeš zkoušet i mezi méně známými lidmi nebo ve skupině. Po každém pokusu porovnej očekávanou reakci se skutečnou. Všimni si také, jak ses cítila a zda bylo přiznání nevědomosti opravdu tak nepříjemné, jak jsi čekala."
   },
   {
     "id": "refa_0891",
@@ -7339,7 +7362,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po situaci, kdy ses cítila hloupá, si zapiš nejen to, co se nepovedlo, ale také co jsi udělala dobře, co jsi věděla a co ti pomohlo. Nejde o hledání útěchy za každou cenu, ale o to, abys viděla celou situaci, nejen její nejhorší část."
   },
   {
     "id": "refa_0892",
@@ -7348,7 +7372,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se přestanu kritizovat, přestanu se zlepšovat.“ Vyber činnost, při které se často shazuješ, a předem odhadni, jak se ti bude dařit bez sebekritiky. Deset minut pracuj tak, že si chyby pouze věcně uvědomíš a pokračuješ bez nadávání sobě samé. Postupně můžeš dobu prodlužovat. Porovnej své soustředění, vytrvalost, chuť pokračovat a výsledky s tím, jak obvykle pracuješ pod tlakem vlastního kritického hlasu."
   },
   {
     "id": "refa_0893",
@@ -7357,7 +7382,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě zaplaví pocit, že jsi hloupá, věnuj nejdřív minutu svému tělu. Všimni si napětí, opři chodidla o zem a několikrát pomalu vydechni. Teprve potom se vrať k tomu, co se stalo. Nemusíš o sobě rozhodovat ve chvíli, kdy tě ovládá stud."
   },
   {
     "id": "refa_0894",
@@ -7550,7 +7576,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem podvodnice“, zkus ji zpřesnit: „Právě se bojím, že nejsem tak schopná, jak ode mě druzí očekávají.“ Všimni si, jestli se něco změní, když místo rozsudku nad sebou pojmenuješ konkrétní obavu."
   },
   {
     "id": "refa_0917",
@@ -7559,7 +7586,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po situaci, ve které ses cítila jako podvodnice, si rozděl zápis na tři části: co se skutečně stalo, co sis o tom domyslela a čeho ses bála. Zkus rozlišit fakta od vlastních interpretací a obav."
   },
   {
     "id": "refa_0918",
@@ -7568,7 +7596,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si „účetnictví reality“: zapisuj si konkrétní situace, kdy jsi něco zvládla, někomu pomohla nebo dostala pozitivní zpětnou vazbu. Nepřidávej hodnocení, jen pozorovatelná fakta."
   },
   {
     "id": "refa_0919",
@@ -7595,7 +7624,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Při úspěchu zkus automaticky nepřisuzovat všechno štěstí nebo okolnostem. Sepiš možné příčiny výsledku: přípravu, vlastní schopnosti, pomoc druhých, okolnosti i náhodu. Každé přiznej přiměřený podíl, aniž bys svůj přínos zveličovala nebo zmenšovala."
   },
   {
     "id": "refa_0922",
@@ -7797,7 +7827,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se během rozhovoru začneš bát, že jsi nudná, všimni si, jak moc sleduješ sama sebe. Zkus na chvíli přestat hodnotit svůj výkon a vrať pozornost k druhému člověku. Co ti právě říká? Co tě na něm skutečně zajímá?"
   },
   {
     "id": "refa_0947",
@@ -7806,7 +7837,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem nudná“, zkus ji zpřesnit: „Teď mám strach, že tohoto člověka nezajímám.“ Všimni si rozdílu mezi tím, co právě prožíváš, a tím, co o sobě považuješ za pravdu."
   },
   {
     "id": "refa_0948",
@@ -7824,7 +7856,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když budu sama sebou, nebudu pro druhé zajímavá.“ V bezpečném rozhovoru vyslov jednu skutečnou preferenci nebo názor, který bys jinak přizpůsobila druhému. Předem si poznamenej, jakou reakci očekáváš. Potom ji porovnej s tím, co se skutečně stalo. Postupně můžeš zkoušet osobnější témata a méně známé lidi. Sleduj také, jaké je být ve vztahu o něco opravdovější."
   },
   {
     "id": "refa_0950",
@@ -7833,7 +7866,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po setkání se místo otázky „Byla jsem dost zajímavá?“ zeptej: „Byla jsem sama sebou? Zajímal mě druhý člověk? Bylo mi s ním dobře?“ Zkus hodnotit kvalitu vzájemného kontaktu, ne svůj společenský výkon."
   },
   {
     "id": "refa_0951",
@@ -7842,7 +7876,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se během rozhovoru začneš cítit nezajímavá, na chvíli si uvědom chodidla na zemi, uvolni ramena a pomalu vydechni. Nemusíš hned řešit, jak na druhého působíš. Nejdřív si dopřej trochu klidu, abys mohla být v rozhovoru přirozeněji přítomná."
   },
   {
     "id": "refa_0952",
@@ -7851,7 +7886,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když řeknu něco obyčejného, druhého to nebude zajímat.“ V bezpečném rozhovoru se poděl o úplně běžný zážitek nebo názor, aniž by ses ho snažila udělat zajímavějším. Předem odhadni, jak druhý zareaguje, a potom porovnej očekávání se skutečností. Postupně zkoušej spontánnější sdílení i s dalšími lidmi. Všímej si také, jaké je nemuset druhého neustále bavit."
   },
   {
     "id": "refa_0953",
@@ -8060,7 +8096,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví „jsem méněcenná“, zkus si říct přesněji: „Vedle tohoto člověka se teď cítím méně schopná v této konkrétní věci.“ Všimni si rozdílu mezi pocitem, že jsi méněcenná jako člověk, a skutečností, že se v něčem můžeš lišit od druhých."
   },
   {
     "id": "refa_0979",
@@ -8078,7 +8115,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Při srovnávání změň otázku „Kdo z nás je lepší?“ na „V čem se lišíme?“ Zkus popsat rozdíly ve schopnostech, vzhledu, penězích či postavení, aniž bys z nich vyvozovala celkovou hodnotu člověka."
   },
   {
     "id": "refa_0981",
@@ -8096,7 +8134,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den udělej jednu drobnost čistě podle vlastní preference, aniž bys ji musela obhajovat. Třeba si vyber, co budeš jíst, jak strávíš volnou chvíli nebo co si pustíš. Zkoušej brát vlastní přání stejně vážně jako přání druhých."
   },
   {
     "id": "refa_0984",
