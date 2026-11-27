@@ -1000,7 +1000,8 @@
         "text": "Kdyby chtění fungovalo jako platba, jsme všichni za vodou — takže si dovol tu touhu mít, a pak z ní udělej jeden malý krok s datem, jinak zůstane jen povzdechem.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Chtěla bych mít víc peněz."
   },
   {
     "id": "pain_0008",
@@ -1294,7 +1295,8 @@
         "text": "Nemuset nic opravovat, moct se kdykoli sebrat a odejít, neplatit bance — nájemní život má výhody, o kterých majitelé domů potichu sní.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Chtěla bych mít dům."
   },
   {
     "id": "pain_0010",
@@ -2358,7 +2360,8 @@
       {
         "id": "hl_0393",
         "text": "Možná tě víc než samotné centimetry bolí pocit, že nesplňuješ nějaký obraz „správného chlapa“. Ten obraz ale není zákon přírody.",
-        "source": "k"
+        "source": "k",
+        "text_f": "Možná tě víc než samotné centimetry bolí pocit, že nesplňuješ nějaký obraz toho, jak má vypadat „správná ženská“. Ten obraz ale není zákon přírody."
       },
       {
         "id": "hl_0396",
@@ -2450,7 +2453,8 @@
         "text": "Tělo ti dnes celý den slouží, dýchá, nese tě — a jediné, co po něm chceš, je jiná cifra; zkus mu na chvíli poděkovat místo měření.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Nejsem dost vysoká."
   },
   {
     "id": "pain_0018",
@@ -2600,7 +2604,8 @@
         "text": "Hubnoucí průmysl je jediný obor, kde produkt nefunguje, a zákazník se za to ještě omluví a koupí si další — ten stud, co teď cítíš, je jeho nejlepší zboží; nemusíš ho dnes brát.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Jsem tlustá."
   },
   {
     "id": "pain_0019",
@@ -2747,7 +2752,8 @@
         "text": "Srovnáváš se s fotkami, které prošly světlem, úhlem, filtrem a pečlivým výběrem z hromady pokusů. To není prohraný souboj — to je zápas s hologramem.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Nejsem dost hezká."
   },
   {
     "id": "pain_0020",
@@ -4657,7 +4663,8 @@
         "source": "n",
         "text_f": "Neříkáš „dneska jsem to nezvládla“ — říkáš „jsem“. Z jednoho večera u telky jsi udělala diagnózu na celý život. Kdo ti tu známku napsal?"
       }
-    ]
+    ],
+    "text_f": "Jsem špatná máma."
   },
   {
     "id": "pain_0033",
@@ -5251,7 +5258,8 @@
         "text": "Silná vůle je v tomhle přeceňovaný hráč; prostředí, samota a stres hrajou větší roli — a s prostředím se hýbe snáz než s charakterem.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Přijdu si závislá, ale nevím, co s tím."
   },
   {
     "id": "pain_0037",
@@ -5400,7 +5408,8 @@
         "text": "Povinná družnost je teambuilding duše: všichni vědí, že má utužovat, a všichni z něj odcházejí unavenější. Choď mezi lidi, když chceš, ne když se to má.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Měla bych trávit více času s lidmi."
   },
   {
     "id": "pain_0038",
@@ -6390,7 +6399,8 @@
         "text": "Existuje někde smlouva, podle které se volný večer musí obhájit? Protože jestli ne, tak si tu kontrolu vystavuješ i platíš ve vlastní režii.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Neumím vypnout. I když odpočívám, mám výčitky, že bych měla něco dělat."
   },
   {
     "id": "pain_0045",
@@ -8125,7 +8135,8 @@
         "text": "Kdyby platilo to nejhorší, co si o sobě myslíš, znamenalo by to zhroucení kvůli krabičce cigaret — a to je při vší úctě dost velké přehánění.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Zase jsem začala kouřit a stydím se to říct nahlas."
   },
   {
     "id": "pain_0057",
@@ -8410,7 +8421,8 @@
         "text": "Představ si člověka, který si za celý život nekoupil jedinou nepotřebnou věc. Dokonale racionální, dokonale uklizený a nejspíš dost nudný na kafe.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Kupuju zbytečnosti na netu, abych si udělala radost."
   },
   {
     "id": "pain_0059",
@@ -8690,7 +8702,8 @@
       {
         "id": "hl_1440",
         "text": "Někde se tiše ustanovilo, že chlap smí veřejně prožívat leda sestup svého klubu. To není tvoje vada, to je špatně nastavený metr, a měřit se jím nemusíš.",
-        "source": "n"
+        "source": "n",
+        "text_f": "Někde se tiše ustanovilo, že o padajících vlasech se u žen nahlas nemluví. To není tvoje vada, to je špatně nastavený metr, a měřit se jím nemusíš."
       },
       {
         "id": "hl_1441",
@@ -10680,7 +10693,8 @@
         "source": "n",
         "text_f": "Co tě bavilo kdysi, dávno — ne abys to hned dělala, jen si vzpomenout, jaké to bylo?"
       }
-    ]
+    ],
+    "text_f": "Nepamatuju si, kdy jsem se naposled fakt radovala."
   },
   {
     "id": "pain_0075",
@@ -10825,7 +10839,8 @@
         "text": "„Už nikdy nezařvat“ je moc velká otázka na jeden večer. Menší a lepší zní: co uděláš zítra u snídaně?",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Zase jsem na děti řvala a pak si to celý večer vyčítala."
   },
   {
     "id": "pain_0076",
@@ -10978,7 +10993,8 @@
         "text": "Sliby sobě se podepisují večer, kdy je člověk plný odhodlání — a plnit je má ráno někdo úplně jiný, ospalý a bez nadšení, kdo u podpisu vůbec nebyl.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Slibuju a neplním — hlavně sama sobě."
   },
   {
     "id": "pain_0077",
@@ -11127,7 +11143,8 @@
         "text": "I většina slavných děl jednou zapadne, a přesto stálo za to je udělat. Trvanlivost není měřítko smyslu — jinak by nejcennější věcí na světě byl igelitový pytlík.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Nic jsem nevytvořila, po mně tu nic nezůstane."
   },
   {
     "id": "pain_0078",
@@ -11704,7 +11721,8 @@
         "source": "n",
         "text_f": "Je docela výkon, že sis i z odpočinku dokázala udělat další kolonku, ve které selháváš — tohle umí málokdo."
       }
-    ]
+    ],
+    "text_f": "Nemám žádný koníček, o kterém bych mohla vyprávět."
   },
   {
     "id": "pain_0082",
@@ -11851,7 +11869,8 @@
         "text": "A víš, co je na tom nejlepší? „Dlouho jsme se neslyšeli“ je nejsnadnější první věta na světě — půlku zprávy máš napsanou dřív, než vezmeš telefon.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Neozvala jsem se kamarádům tak dlouho, že už je blbé se ozvat."
   },
   {
     "id": "pain_0083",
@@ -12004,7 +12023,8 @@
         "source": "n",
         "text_f": "Kdy sis naposledy s někým doopravdy popovídala — a kdo tehdy udělal první krok? Někdy věta „jsem úplně sama“ v tichosti znamená „už dlouho jsem se neodvážila jít první“ a to je jiná, řešitelnější věc."
       }
-    ]
+    ],
+    "text_f": "Bydlím ve městě plným lidí a stejně jsem úplně sama."
   },
   {
     "id": "pain_0084",
@@ -12279,7 +12299,8 @@
         "text": "Je docela možné, že na druhé straně postele leží někdo, kdo si říká úplně tu samou větu — a taky mlčí.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Sex u nás doma umřel a já to nechala být."
   },
   {
     "id": "pain_0086",
@@ -13408,7 +13429,8 @@
         "text": "Je v tom paradox: kdo pořád přemítá, co měl udělat jinak, právě teď promeškává chvíle, které bude za deset let chtít udělat jinak.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Pořád se v hlavě vracím k tomu, co jsem měla udělat jinak."
   },
   {
     "id": "pain_0094",
@@ -13552,7 +13574,8 @@
         "text": "Velký sen umí být i tyran — pohání dopředu, ale taky umí sežrat každé obyčejné teď; život bez něj není nutně chudší, někdy je jen tišší.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Nemám žádný sen, na který bych se těšila."
   },
   {
     "id": "pain_0095",
@@ -13838,7 +13861,8 @@
         "text": "Dítě si na dospělého hraje odpoledne a pak jde spát. Ty tu roli táhneš roky včetně přesčasů — to už dávno není hra, to je kvalifikace.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Pořád si připadám jako dítě, co si hraje na dospělou."
   },
   {
     "id": "pain_0097",
@@ -14975,7 +14999,7 @@
         "text": "Je přirozené chtít být pro druhého znovu partnerem, ne jen spoluorganizátorem života. Mluvíte spolu o tom otevřeně?",
         "source": "k",
         "approved": "2026-11-12",
-        "text_f": "Je přirozené chtít být pro druhého znovu partnerkou, ne jen spoluorganizátorem života. Mluvíte spolu o tom otevřeně?"
+        "text_f": "Je přirozené chtít být pro druhého znovu partnerkou, ne jen spoluorganizátorkou života. Mluvíte spolu o tom otevřeně?"
       },
       {
         "id": "hl_2505",
@@ -15690,7 +15714,8 @@
         "text": "Obrácení očí v sloup je pubertální pozdrav, něco jako podání ruky — neznamená to o tobě víc, než znamená štěkot o pošťákovi.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Ten puberťák se mnou mluví, jako bych byla hloupá."
   },
   {
     "id": "pain_0111",
@@ -16560,7 +16585,8 @@
         "text": "Co by rodičům udělalo větší radost než tvoje špatné svědomí? Skoro cokoliv — svědomí si nech, radost jim vez s sebou.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Rodiče stárnou a já se u nich stavím míň, než bych měla — a štve mě, že mi to i vyčítají."
   },
   {
     "id": "pain_0117",
@@ -16850,7 +16876,8 @@
         "text": "Smíš odstoupit z konkurzu na zlaté dítě; ta soutěž byla stejně zmanipulovaná od začátku.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Bratr je u rodičů za zlatého a já za tu problémovou."
   },
   {
     "id": "pain_0119",
@@ -17122,7 +17149,8 @@
         "text": "Za pár let se ti začnou vynořovat s kruhy pod očima a hladoví po jednom souvislém dospělém rozhovoru — a budeš to ty, kdo bude vybírat, kdy má čas.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Jak si všichni pořídili děti, přestala jsem pro ně existovat."
   },
   {
     "id": "pain_0121",
@@ -20138,7 +20166,8 @@
         "source": "n",
         "text_f": "Co kdyby ses místo počítání zmeškaných historek stala autorkou té příští — stačí navrhnout akci a najednou jsi to ty, kdo drží pero?"
       }
-    ]
+    ],
+    "text_f": "Ve skupině se všichni smějí něčemu, co já nezažila — zase."
   },
   {
     "id": "pain_0132",
@@ -23945,7 +23974,8 @@
         "text": "Být postradatelný v práci je normální stav devíti z deseti rolí — smutný není ten fakt, ale to, kolik sebeúcty jsme se naučili věšet zrovna na tenhle hřebík.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Byla jsem týden marod a v práci si toho nikdo nevšiml — jede to i beze mě."
   },
   {
     "id": "pain_0163",
@@ -24097,7 +24127,8 @@
         "text": "Praktický šťouch: zaveď si poslední pracovní čtvrthodinu jako rituál zavírání — sepsat, co je hotovo, co zítra první; den se zavře jako kniha, ne jako utečená voda.",
         "source": "n"
       }
-    ]
+    ],
+    "text_f": "Celý den makám a večer nedokážu říct, co jsem vlastně udělala."
   },
   {
     "id": "pain_0165",
