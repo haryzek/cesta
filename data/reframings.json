@@ -3767,12 +3767,12 @@
   {
     "id": "ref_0464",
     "cluster_id": "cl_0008",
-    "text": "„Nikdo mě právě teď nepotřebuje“ a „jsem zbytečný“ jsou dvě úplně jiné věty. Mezi nimi je obrovský logický skok, který bolest způsobuje bolest tak rychle, že si ho ani nevšimneš.",
+    "text": "„Nikdo mě právě teď nepotřebuje“ a „jsem zbytečný“ jsou dvě úplně jiné věty. Mezi nimi je obrovský logický skok, který bolest udělá tak rychle, že si ho ani nevšimneš.",
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
     "approved": "2026-11-12",
-    "text_f": "„Nikdo mě právě teď nepotřebuje“ a „jsem zbytečná“ jsou dvě úplně jiné věty. Mezi nimi je obrovský logický skok, který bolest způsobuje bolest tak rychle, že si ho ani nevšimneš."
+    "text_f": "„Nikdo mě právě teď nepotřebuje“ a „jsem zbytečná“ jsou dvě úplně jiné věty. Mezi nimi je obrovský logický skok, který bolest udělá tak rychle, že si ho ani nevšimneš."
   },
   {
     "id": "ref_0468",
@@ -6623,7 +6623,7 @@
   {
     "id": "ref_0796",
     "cluster_id": "cl_0013",
-    "text": "Nechtěj po sobě, abys se otevíral jako člověk, který nikdy nebyl zraněný.",
+    "text": "Nechtěj po sobě, aby ses otevíral jako člověk, který nikdy nebyl zraněný.",
     "tier": "free",
     "sort_order": 85,
     "added_at": "2026-10-16",
@@ -11991,7 +11991,7 @@
   {
     "id": "ref_1434",
     "cluster_id": "cl_0023",
-    "text": "Nemusíš dokazovat svou hodnotu někomu, kdo je rozhodnutý ji nevidět. Je to jeho problem, ne tvuj.",
+    "text": "Nemusíš dokazovat svou hodnotu někomu, kdo je rozhodnutý ji nevidět. Je to jeho problém, ne tvůj.",
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
@@ -14484,12 +14484,12 @@
   {
     "id": "ref_1722",
     "cluster_id": "cl_0030",
-    "text": "Když se vedle někoho cítíš malý, ještě to neznamená, že on je větší a ty menší. Díváš na sebe jeho očima, aniž bys kdy mohl vědět, co vidí.",
+    "text": "Když se vedle někoho cítíš malý, ještě to neznamená, že on je větší a ty menší. Díváš se na sebe jeho očima, aniž bys kdy mohl vědět, co vidí.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
     "approved": "2026-11-12",
-    "text_f": "Když se vedle někoho cítíš malá, ještě to neznamená, že on je větší a ty menší. Díváš na sebe jeho očima, aniž bys kdy mohla vědět, co vidí."
+    "text_f": "Když se vedle někoho cítíš malá, ještě to neznamená, že on je větší a ty menší. Díváš se na sebe jeho očima, aniž bys kdy mohla vědět, co vidí."
   },
   {
     "id": "ref_1723",
@@ -14898,12 +14898,12 @@
   {
     "id": "ref_1771",
     "cluster_id": "cl_0031",
-    "text": "V pocitu „jsem špatný“ může být signàlem, že na sobě opravdu vidíš něco, co nechceš dál živit. Chybou je ale představa, že tahle jedna pravda má právo spolknout všechny ostatní pravdy o tobě.",
+    "text": "V pocitu „jsem špatný“ může být signál, že na sobě opravdu vidíš něco, co nechceš dál živit. Chybou je ale představa, že tahle jedna pravda má právo spolknout všechny ostatní pravdy o tobě.",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
     "approved": "2026-11-12",
-    "text_f": "V pocitu „jsem špatná“ může být signàlem, že na sobě opravdu vidíš něco, co nechceš dál živit. Chybou je ale představa, že tahle jedna pravda má právo spolknout všechny ostatní pravdy o tobě."
+    "text_f": "V pocitu „jsem špatná“ může být signál, že na sobě opravdu vidíš něco, co nechceš dál živit. Chybou je ale představa, že tahle jedna pravda má právo spolknout všechny ostatní pravdy o tobě."
   },
   {
     "id": "ref_1773",
@@ -20496,7 +20496,7 @@
   {
     "id": "ref_2424",
     "cluster_id": "cl_0046",
-    "text": "Když máš pocit „nemůžu se pohnout“, zkus od sebe rozlišit dvě věci: „Teď nevím jak“ a „Žádný způsob neexistuje“. Mezi nimi je prooastný rozdíl.",
+    "text": "Když máš pocit „nemůžu se pohnout“, zkus od sebe rozlišit dvě věci: „Teď nevím jak“ a „Žádný způsob neexistuje“. Mezi nimi je propastný rozdíl.",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
@@ -20505,7 +20505,7 @@
   {
     "id": "ref_2425",
     "cluster_id": "cl_0046",
-    "text": "Možná se nesnažíš vyhnout samotnému kroku kupředu, ale tomu, co by mohl přinést. Bojíš se pocitu strachu, zklamání, chyby nebo ztrátěly něčeho důležitého? Když pochopíš, čeho se vlastně bojíš, může být snazší najít cestu dál.",
+    "text": "Možná se nesnažíš vyhnout samotnému kroku kupředu, ale tomu, co by mohl přinést. Bojíš se pocitu strachu, zklamání, chyby nebo ztráty něčeho důležitého? Když pochopíš, čeho se vlastně bojíš, může být snazší najít cestu dál.",
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
@@ -24823,7 +24823,7 @@
   {
     "id": "ref_2928",
     "cluster_id": "cl_0058",
-    "text": "Jedna neuctivá myšlenka z tebe nedělá neuctivého člověka. Myšlenky přicházejí samy a mnohem důležitější ony samotné je to, jak s nimi naložíš.",
+    "text": "Jedna neuctivá myšlenka z tebe nedělá neuctivého člověka. Myšlenky přicházejí samy a mnohem důležitější než ony samotné je to, jak s nimi naložíš.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
@@ -25590,7 +25590,7 @@
   {
     "id": "ref_3017",
     "cluster_id": "cl_0060",
-    "text": "Možná nejsi nevyrovnaný,ale spíš unavený, zraněný nebo už příliš dlouho držíš něco, co je těžké unést.",
+    "text": "Možná nejsi nevyrovnaný, ale spíš unavený, zraněný nebo už příliš dlouho držíš něco, co je těžké unést.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
@@ -26342,7 +26342,7 @@
   {
     "id": "ref_3105",
     "cluster_id": "cl_0062",
-    "text": "Nemusíš čekat, až se budeš cítit dokonale soustředěný. Můžeš začít maličkým krokem, i kdyži hlava pořád trochu poletuje.",
+    "text": "Nemusíš čekat, až se budeš cítit dokonale soustředěný. Můžeš začít maličkým krokem, i když hlava pořád trochu poletuje.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
@@ -26428,7 +26428,7 @@
   {
     "id": "ref_3117",
     "cluster_id": "cl_0062",
-    "text": "Nemusíš následovat každou myšlenku, která ti proběhne hlavou. Můžeš si jí všimnout a nechat ji odjejít, aniž bys šel s ní.",
+    "text": "Nemusíš následovat každou myšlenku, která ti proběhne hlavou. Můžeš si jí všimnout a nechat ji odejít, aniž bys šel s ní.",
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
@@ -26765,7 +26765,7 @@
   {
     "id": "ref_3156",
     "cluster_id": "cl_0063",
-    "text": "Pocit, že nad sebou nemáš kontrolu, může vzniknout z několika okamžiků, kdy tvà sebekontrola selhala. Jenže selhání kontroly není důkazem její neexistence. Vzpomeň si i na chvíle, kdy ses dokázal zastavit, počkat nebo změnit rozhodnutí.",
+    "text": "Pocit, že nad sebou nemáš kontrolu, může vzniknout z několika okamžiků, kdy tvá sebekontrola selhala. Jenže selhání kontroly není důkazem její neexistence. Vzpomeň si i na chvíle, kdy ses dokázal zastavit, počkat nebo změnit rozhodnutí.",
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
@@ -29188,7 +29188,7 @@
   {
     "id": "ref_3445",
     "cluster_id": "cl_0070",
-    "text": "Když se snažíš udržet vztah tím, že se vzdáváš sám sebe, můžeš postupně ztrácet právě tu blízkost, po které toužíš. Skutečná blízkost nyvyžaduje, aby se jeden neúměrně přizpůsoboval druhému.",
+    "text": "Když se snažíš udržet vztah tím, že se vzdáváš sám sebe, můžeš postupně ztrácet právě tu blízkost, po které toužíš. Skutečná blízkost nevyžaduje, aby se jeden neúměrně přizpůsoboval druhému.",
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
@@ -31661,7 +31661,7 @@
   {
     "id": "ref_3735",
     "cluster_id": "cl_0077",
-    "text": "Nemusíš přesně vědět, kdo je tvoje skutečné já. Člověk není jedna pevná verze sebe sama, kterou musí objevit a pak se jí sjálopevně držet.",
+    "text": "Nemusíš přesně vědět, kdo je tvoje skutečné já. Člověk není jedna pevná verze sebe sama, kterou musí objevit a pak se jí pevně držet.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
@@ -32353,7 +32353,7 @@
   {
     "id": "ref_3816",
     "cluster_id": "cl_0079",
-    "text": "Nemusíš dnes vyřešit celý svůj život. Když je ti hidně těžko, úplně stačí udělat dnešek o trochu snesitelnějším.",
+    "text": "Nemusíš dnes vyřešit celý svůj život. Když je ti hodně těžko, úplně stačí udělat dnešek o trochu snesitelnějším.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
@@ -32362,7 +32362,7 @@
   {
     "id": "ref_3817",
     "cluster_id": "cl_0079",
-    "text": "Možná ten smutek nemusíš hned odstranit, ale nejdřív mu naslouchat. Může se za ním skrývat únava, osamělost, nenaplněná potřeba, ztráta nebo něco, po čem už oříliš dlouho toužíš.",
+    "text": "Možná ten smutek nemusíš hned odstranit, ale nejdřív mu naslouchat. Může se za ním skrývat únava, osamělost, nenaplněná potřeba, ztráta nebo něco, po čem už příliš dlouho toužíš.",
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
@@ -32435,7 +32435,7 @@
   {
     "id": "ref_3826",
     "cluster_id": "cl_0079",
-    "text": "Tvůj mozek má při špatné náladě tendenci snadněji vytahovat další špatné věci a hůř nacházet ty dobré. Ten černý archiv, který se ti právě otevírá není kompletní dokumentace tvého života.",
+    "text": "Tvůj mozek má při špatné náladě tendenci snadněji vytahovat další špatné věci a hůř nacházet ty dobré. Ten černý archiv, který se ti právě otevírá, není kompletní dokumentace tvého života.",
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
@@ -32736,7 +32736,7 @@
   {
     "id": "ref_3866",
     "cluster_id": "cl_0080",
-    "text": "Když se na stejnou věc díváš pořád dokola, nemusíš ji vidět přesněji. Když v galerii stojíš oříliš blízko obrazu, přestáváš vidět celek.",
+    "text": "Když se na stejnou věc díváš pořád dokola, nemusíš ji vidět přesněji. Když v galerii stojíš příliš blízko obrazu, přestáváš vidět celek.",
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
@@ -33386,7 +33386,7 @@
   {
     "id": "ref_3940",
     "cluster_id": "cl_0082",
-    "text": "Nemusíš se z té mizerné nálady hned vytahovat. Někdy trochu poleví právě ve chvíli, kdy přestaneš bojovat a trvat ja tom, že by ti mělo být jinak.",
+    "text": "Nemusíš se z té mizerné nálady hned vytahovat. Někdy trochu poleví právě ve chvíli, kdy přestaneš bojovat a trvat na tom, že by ti mělo být jinak.",
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
@@ -33701,7 +33701,7 @@
   {
     "id": "ref_3979",
     "cluster_id": "cl_0083",
-    "text": "Beznaděj může obsahovat velmi přesnou zprávu: „Takhle už dál nemůžu.“ Nemusí z ní ale vyplývat „nejde to jinak a nikdy to nepujde“.",
+    "text": "Beznaděj může obsahovat velmi přesnou zprávu: „Takhle už dál nemůžu.“ Nemusí z ní ale vyplývat „nejde to jinak a nikdy to nepůjde“.",
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
@@ -35540,7 +35540,7 @@
   {
     "id": "ref_4194",
     "cluster_id": "cl_0088",
-    "text": "Když se snažíš všechno rozebrat, můžeš se tím chránit před něčím, co je těžší jednpduše cítit. Nemusíš se té ochrany vzdávat. Můžeš ji jen na chvíli trochu povolit.",
+    "text": "Když se snažíš všechno rozebrat, můžeš se tím chránit před něčím, co je těžší jednoduše cítit. Nemusíš se té ochrany vzdávat. Můžeš ji jen na chvíli trochu povolit.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
@@ -37004,7 +37004,7 @@
   {
     "id": "ref_4363",
     "cluster_id": "cl_0092",
-    "text": "Možná nejsi líný ani neschopný. Možná jen hodnotíš sbé vyčerpané já podle měřítek člověka, který má dost sil.",
+    "text": "Možná nejsi líný ani neschopný. Možná jen hodnotíš své vyčerpané já podle měřítek člověka, který má dost sil.",
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
@@ -39343,7 +39343,7 @@
   {
     "id": "ref_4642",
     "cluster_id": "cl_0098",
-    "text": "Možná se teď nesnažíš o dokonalost proto, že ji opravdu potřebuješ, ale proto, že ti dává pocit bezpečí. Jenže pocit bezpečí většinou nazávisí na tom, jestli je všechno dotažené.",
+    "text": "Možná se teď nesnažíš o dokonalost proto, že ji opravdu potřebuješ, ale proto, že ti dává pocit bezpečí. Jenže pocit bezpečí většinou nezávisí na tom, jestli je všechno dotažené.",
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
@@ -41806,7 +41806,7 @@
   {
     "id": "ref_4936",
     "cluster_id": "cl_0105",
-    "text": "Když se přistihneš, že chceš druhého zranit, nemusíš před sebou utéct ani se odsoudit. Můžeš si říct: „Vidím, co se ve mně děje, ale nemusím tomu předat velení“",
+    "text": "Když se přistihneš, že chceš druhého zranit, nemusíš před sebou utéct ani se odsoudit. Můžeš si říct: „Vidím, co se ve mně děje, ale nemusím tomu předat velení.“",
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
@@ -42132,7 +42132,7 @@
   {
     "id": "ref_4972",
     "cluster_id": "cl_0106",
-    "text": "To, že někdo udělal něco špatného, neznamená, že ho musíš vnitřně zničit, abys sis zachoval sebeúctu. Můžeš odsoudit jeho čin a přitom nepřestat vidět člověka.",
+    "text": "To, že někdo udělal něco špatného, neznamená, že ho musíš vnitřně zničit, aby sis zachoval sebeúctu. Můžeš odsoudit jeho čin a přitom nepřestat vidět člověka.",
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
