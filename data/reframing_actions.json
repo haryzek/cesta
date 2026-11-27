@@ -6,7 +6,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem neviditelná“, zkus ji zpřesnit: „Právě teď se cítím neviděná v téhle konkrétní situaci.“ Pocit může být skutečný, aniž by vypovídal o celém tvém životě."
   },
   {
     "id": "refa_0002",
@@ -24,7 +25,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den se na chvíli zastav a zeptej se sama sebe: Co teď cítím, co potřebuju, co nechci a co by mi udělalo radost? Zkus své odpovědi brát vážně, i když na ně nikdo jiný zrovna nereaguje."
   },
   {
     "id": "refa_0004",
@@ -42,7 +44,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou týdně vyslov malé přání nebo potřebu, kterou bys jinak potlačila: navrhni místo setkání, požádej o pomoc nebo řekni, co by ti udělalo radost. Sleduj, co se stane, když druhým dáš možnost reagovat na to, co skutečně chceš."
   },
   {
     "id": "refa_0006",
@@ -51,7 +54,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když něco potřebuju, budu na obtíž.“ Požádej někoho, komu důvěřuješ, o drobnou věc, kterou může snadno odmítnout. Předem si napiš, jakou reakci očekáváš a jak moc se jí bojíš. Potom zaznamenej, co se skutečně stalo a jak ses cítila. Pokud to pro tebe bude únosné, můžeš později zkusit vyslovit osobnější přání. I odmítnutí ti může něco říct o možnostech konkrétního člověka, nemusí však nic vypovídat o tvé hodnotě."
   },
   {
     "id": "refa_0007",
@@ -60,7 +64,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si, s kým se po setkání cítíš víc živá a s kým spíš vyčerpaná nebo jako bys v něm mizela. Zkus rozpoznat, co je na těchto vztazích odlišné a kde můžeš být přirozeněji sama sebou."
   },
   {
     "id": "refa_0028",
@@ -501,7 +506,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když přijde „jsem nemilovatelná“, přeformuluj ho na „právě se cítím nemilovatelná“. Sleduj, jestli ten malý rozdíl mezi identitou a momentálním prožitkem něco změní."
   },
   {
     "id": "refa_0063",
@@ -510,7 +516,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Začni si všímat situací, které spouštějí pocit „nejsem milovatelná“. Zapisuj si stručně: co se stalo, jak sis to vyložila, co jsi cítila a co jsi potom udělala. Po čase hledej opakující se souvislosti."
   },
   {
     "id": "refa_0064",
@@ -519,7 +526,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě pocit nemilovatelnosti zaplaví, polož si ruku tam, kde ho cítíš nejsilněji, pokud je ti to příjemné. Chvíli nic neopravuj a zkus k sobě mluvit stejně laskavě, jako bys mluvila k někomu, koho máš ráda."
   },
   {
     "id": "refa_0065",
@@ -528,7 +536,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zmapuj si své vztahy podle toho, vedle koho se cítíš přijímaná, nejistá nebo odmítaná. Zkoumej, jestli pocit nemilovatelnosti není výrazně silnější u určitých lidí nebo v určitých situacích."
   },
   {
     "id": "refa_0066",
@@ -546,7 +555,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo odmítne nebo se vzdálí, napiš si alespoň tři možná vysvětlení, která nejsou „nejsem dost dobrá“. Nemusíš jim věřit; jen nedovol první interpretaci stát se automaticky rozsudkem."
   },
   {
     "id": "refa_0068",
@@ -812,7 +822,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou denně si polož otázku: „Co bych dnes potřebovala, abych se cítila opečovaná?“ Vyber jednu malou potřebu a zkus ji naplnit sama nebo o ni někoho požádat."
   },
   {
     "id": "refa_0101",
@@ -848,7 +859,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si situací, které v tobě vyvolávají pocit zanedbání. Stručně si zapisuj, co se stalo, co sis z toho vyvodila, co jsi potřebovala a jak jsi reagovala. Po týdnu zkus najít opakující se situace a vzorce."
   },
   {
     "id": "refa_0105",
@@ -866,7 +878,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo zklame, zkus rozlišit, co se skutečně stalo a jaký závěr sis z toho udělala. „Tenhle člověk mi teď nedal, co jsem potřebovala“ nemusí znamenat „Na nikoho se nemůžu spolehnout“. Nezlehčuj zklamání, ale nedovol jedné zkušenosti rozhodovat za všechny ostatní."
   },
   {
     "id": "refa_0107",
@@ -1099,7 +1112,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne trápení, dej si deset minut, kdy ho nebudeš opravovat ani rozebírat. Jen si zkus pojmenovat, co tě bolí a co bys právě potřebovala."
   },
   {
     "id": "refa_0137",
@@ -1402,7 +1416,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když někomu něco závidíš, zkus zjistit, po čem vlastně toužíš ty sama. Dokonči větu: „Tohle mi ukazuje, že bych ve svém životě chtěla víc…“ Závist ti může pomoci objevit přání, která sis dosud nepřipouštěla."
   },
   {
     "id": "refa_0173",
@@ -1411,7 +1426,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber si jednu věc, kterou někomu závidíš, a udělej malý krok k tomu, abys ji mohla mít nebo zažívat i ty. Závidíš někomu přátele, tvorbu, kondici nebo odvahu? Nemusíš dosáhnout téhož. Důležité je začít se přibližovat tomu, po čem sama toužíš."
   },
   {
     "id": "refa_0174",
@@ -1429,7 +1445,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si krátký deník závisti: co ji spustilo, komu jsi záviděla, co přesně, čeho ses bála a po čem jsi ve skutečnosti toužila. Hledej opakující se motivy."
   },
   {
     "id": "refa_0176",
@@ -1447,7 +1464,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když druhému něco přeju nebo ocením jeho úspěch, sama tím ztrácím na hodnotě.“ Vyber si někoho, komu dokážeš upřímně ocenit drobný úspěch. Předem si všimni, čeho se obáváš a jak se asi budeš cítit. Pak mu uznání vyjádři a sleduj, co se skutečně stalo s tvým pocitem vlastní hodnoty a se závistí. Postupně můžeš zkoušet i situace, ve kterých je pro tebe cizí úspěch citlivějším tématem."
   },
   {
     "id": "refa_0178",
@@ -1729,7 +1747,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo znejistí, zkus rozlišit, co se skutečně stalo a co si o tom domýšlíš. Zeptej se sama sebe: „Co opravdu vím a co si jen myslím?“ Nejasná reakce druhého ještě nemusí znamenat odmítnutí."
   },
   {
     "id": "refa_0213",
@@ -1756,7 +1775,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když budu sama sebou a projevím nesouhlas, druzí mě přestanou mít rádi.“ Začni drobnou volbou nebo odlišným názorem u člověka, se kterým se cítíš bezpečně. Předem odhadni jeho reakci a potom ji porovnej se skutečností. Postupně můžeš zkoušet významnější preference, odmítnutí nebo laskavý nesouhlas. Všímej si také toho, zda vztah dokáže unést případné napětí."
   },
   {
     "id": "refa_0216",
@@ -1774,7 +1794,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se přestanu zavděčovat, druzí o mě ztratí zájem.“ V bezpečném vztahu jednou vynech drobnou snahu zalíbit se, například automatický souhlas nebo přehnanou ochotu. Předem si napiš, jakou reakci očekáváš. Potom sleduj, co se skutečně stalo a jak ses cítila. Postupně můžeš zkoušet být přirozenější i v dalších situacích. Cílem není druhé testovat, ale zjistit, co se děje, když nemusíš neustále usilovat o jejich přízeň."
   },
   {
     "id": "refa_0218",
@@ -1783,7 +1804,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj „udělala jsem něco, co druhému vadilo“ od „jsem člověk, který druhým vadí“. První může vést k opravě nebo omluvě; druhé je rozsudek."
   },
   {
     "id": "refa_0219",
@@ -2051,7 +2073,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den si všimni jedné chvíle, kdy ses cítila aspoň o trochu živější. Nehledej nutně radost; může to být zájem, chuť, teplo, zvědavost, úleva nebo krátké zaujetí."
   },
   {
     "id": "refa_0253",
@@ -2311,7 +2334,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví pocit „jsem zbytečná“, zkus ho pojmenovat přesněji: „Právě se cítím zbytečná.“ Nejsi ten pocit; je to prožitek, který se objevil a může zase odeznít."
   },
   {
     "id": "refa_0284",
@@ -2320,7 +2344,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zbytečná, nedělej hned něco pro získání potvrzení. Dej si deset minut, všímej si pocitu v těle a teprve potom se rozhodni, co skutečně potřebuješ."
   },
   {
     "id": "refa_0285",
@@ -2329,7 +2354,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyslov jednou denně nahlas jednu svou drobnou potřebu. Například: „Dneska bych potřebovala klid“, „Nechci to řešit hned“ nebo „Bylo by mi příjemné, kdybys mi odepsal.“ Cílem není, aby ti všichni vyhověli, ale aby ses přestala schovávat sama před sebou."
   },
   {
     "id": "refa_0286",
@@ -2338,7 +2364,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pošli někomu zprávu jen proto, že chceš kontakt. Bez omluvy, bez výkonu, bez praktického důvodu. Třeba: „Vzpomněla jsem si na tebe.“ Můžeš být s někým v kontaktu, i když pro něj zrovna nic neděláš."
   },
   {
     "id": "refa_0287",
@@ -2347,7 +2374,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když řeknu, co potřebuji, budu na obtíž.“ Vyber si bezpečného člověka a vyslov jednu malou, konkrétní potřebu, například že by sis ráda chvíli popovídala. Začni něčím, co může druhý snadno odmítnout, a postupně zkoušej osobnější prosby. Předem si zaznamenej, jakou reakci očekáváš a jak silná je tvoje obava. Potom porovnej očekávání se skutečností. I případné odmítnutí může mít mnoho důvodů a samo o sobě neznamená, že jsi zbytečná."
   },
   {
     "id": "refa_0288",
@@ -2356,7 +2384,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když nejsem užitečná, přestanu být důležitý.“ V bezpečném vztahu jednou vědomě nenabídni drobnou pomoc, kterou bys normálně automaticky poskytla. Předem odhadni, co se stane. Pokud to bude snesitelné, postupně zkoušej podobné situace častěji. Potom porovnej svou předpověď se skutečnou reakcí druhého. Sleduj, jestli blízkost opravdu závisela na tvé užitečnosti, nebo může pokračovat i tehdy, když zrovna nic neposkytuješ."
   },
   {
     "id": "refa_0289",
@@ -2646,7 +2675,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Začni rozlišovat „jsem sama“ od „cítím se opuštěná“. Kdykoli ten pocit přijde, pojmenuj konkrétně, co ti právě chybí: kontakt, dotek, sdílení, zájem, bezpečí nebo určitý člověk?"
   },
   {
     "id": "refa_0325",
@@ -2664,7 +2694,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když potřebuješ blízkost, zkus ji někdy přiznat místo čekání, zda si jí někdo všimne: „Mám dneska chuť nebýt sama, nechceš něco podniknout?“"
   },
   {
     "id": "refa_0327",
@@ -2903,7 +2934,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si krátký záznam situací, kdy se v tobě probouzí citová závislost. Co se stalo? Co sis vyložila jako ohrožení vztahu? Co jsi cítila, co jsi udělala a co následovalo? Po několika dnech hledej opakující se spouštěče a reakce, ne svoje chyby."
   },
   {
     "id": "refa_0358",
@@ -2921,7 +2953,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vrať do svého života jednu oblast, kterou jsi kvůli vztahu omezila – přátelství, koníček, pohyb, práci nebo čas o samotě. Začni třeba půlhodinou týdně, kterou budeš věnovat právě jí. Postupně jí můžeš dávat víc prostoru."
   },
   {
     "id": "refa_0360",
@@ -2930,7 +2963,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když řeknu, co opravdu chci, druhý mě odmítne nebo se naštve.“ Vyber si bezpečnou situaci, ve které by ses obvykle přizpůsobila, a tentokrát řekni, co by sis skutečně přála. Začni drobnou volbou, později můžeš zkusit důležitější přání nebo hranici. Předem odhadni reakci druhého a svoji úzkost. Potom porovnej očekávání se skutečností a všimni si, jak ses cítila, když ses nemusela vzdát svého přání."
   },
   {
     "id": "refa_0361",
@@ -2939,7 +2973,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Trénuj přímé žádosti místo náznaků, zkoušení druhého nebo čekání, jestli sám pozná, co potřebuješ. Zkus třeba říct: „Dneska bych potřebovala trochu blízkosti. Měl bys na mě chvíli čas?“ Nech druhému prostor odpovědět po svém."
   },
   {
     "id": "refa_0362",

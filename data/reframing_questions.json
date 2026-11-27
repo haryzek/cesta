@@ -15,7 +15,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš neviditelná, po čem ve skutečnosti nejvíc toužíš — po pozornosti, blízkosti, zájmu, ocenění, pochopení, nebo po ujištění, že pro někoho něco znamenáš?"
   },
   {
     "id": "refq_0003",
@@ -24,7 +25,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jsou vztahy, ve kterých se cítíš více viděná než v jiných — co ti ten rozdíl říká o tom, nakolik je problém v tobě a nakolik vzniká mezi tebou a konkrétními lidmi?"
   },
   {
     "id": "refq_0004",
@@ -33,7 +35,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co obvykle uděláš ve chvíli, kdy se začneš cítit neviditelná — přiblížíš se k lidem, nebo se ještě víc stáhneš?"
   },
   {
     "id": "refq_0005",
@@ -42,7 +45,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak by se stejná situace změnila, kdybys místo „nezajímám ho“ připustila také možnost „nevím, co se právě děje v jeho světě“?"
   },
   {
     "id": "refq_0006",
@@ -60,7 +64,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš přehlížená, opravdu tě druzí minuli, nebo ses stáhla ještě dřív, než tě mohli potkat?"
   },
   {
     "id": "refq_0052",
@@ -510,7 +515,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses poprvé začala cítit jako někdo, koho není možné doopravdy milovat? Čí pohled na tebe se tehdy mohl stát tvým vlastním?"
   },
   {
     "id": "refq_0064",
@@ -519,7 +525,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co když pocit, že nejsi milovatelný, nevypovídá o tom, jaká jsi, ale o tom, jakou lásku jsi kdysi dostávala nebo nedostávala?"
   },
   {
     "id": "refq_0065",
@@ -528,7 +535,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby malé dítě prožilo přesně to, co jsi prožila ty, považovala bys ho za nemilovatelné, nebo za dítě, kterému něco důležitého chybělo?"
   },
   {
     "id": "refq_0066",
@@ -537,7 +545,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jaké podmínky podle tebe musíš splnit, aby tě někdo mohl milovat? A kde ses naučila, že láska má právě takové podmínky?"
   },
   {
     "id": "refq_0067",
@@ -546,7 +555,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Které svoje části před druhými schováváš ze strachu, že by tě kvůli nim nemilovali? Nemůže právě tohle schovávání bránit tomu, aby ses cítila skutečně milovaná?"
   },
   {
     "id": "refq_0068",
@@ -564,7 +574,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Které zkušenosti ze svého života musíš přehlédnout nebo znehodnotit, aby přesvědčení „jsem nemilovatelná“ mohlo dál existovat?"
   },
   {
     "id": "refq_0070",
@@ -814,7 +825,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zanedbávaná, co ti v tu chvíli nejvíc chybí – zájem, pozornost, pomoc, blízkost, ochrana, nebo prostě pocit, že na to nejsi sama?"
   },
   {
     "id": "refq_0103",
@@ -832,7 +844,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nejvíc zanedbávaná – když se ti někdo neozve, nevšimne si tvého trápení, nedodrží slib, upřednostní někoho jiného, nebo když zůstaneš s problémem sama?"
   },
   {
     "id": "refq_0105",
@@ -850,7 +863,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zanedbávaná, co obvykle uděláš – stáhneš se, ochladneš, začneš se víc snažit, rozzlobíš se, nebo čekáš, až si tě druhý všimne? A jak tvoje reakce ovlivňuje to, co se děje dál?"
   },
   {
     "id": "refq_0107",
@@ -868,7 +882,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Dokážeš rozlišit, kdy tě někdo skutečně zanedbává a kdy se v tobě probouzí strach, že pro druhého nejsi dost důležitá?"
   },
   {
     "id": "refq_0109",
@@ -877,7 +892,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak snadno dokážeš druhému říct, že potřebuješ jeho blízkost nebo pomoc, aniž by ses cítila slabá, náročná nebo trapná?"
   },
   {
     "id": "refq_0111",
@@ -1135,7 +1151,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys právě teď nejvíc potřebovala – od sebe, od druhých nebo od života?"
   },
   {
     "id": "refq_0144",
@@ -1153,7 +1170,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně bys potřebovala, aby někdo pochopil nebo uznal, když se začneš litovat?"
   },
   {
     "id": "refq_0146",
@@ -1162,7 +1180,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys nemusela nikomu dokazovat, že máš právo být zraněná, o co by sis dokázala přímo říct?"
   },
   {
     "id": "refq_0147",
@@ -1180,7 +1199,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys se sebou mluvila stejně laskavě jako s někým, koho miluješ a kdo prožil něco opravdu těžkého, co bys mu nikdy nevyčítala?"
   },
   {
     "id": "refq_0149",
@@ -1438,7 +1458,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně druhému člověku závidíš – a co ti to říká o tom, po čem sama toužíš?"
   },
   {
     "id": "refq_0183",
@@ -1501,7 +1522,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby člověk, kterému závidíš, nebyl tvým soupeřem, ale inspirací, co by sis od něj chtěla vzít pro svůj vlastní život?"
   },
   {
     "id": "refq_0190",
@@ -1755,7 +1777,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "U kterých lidí nebo skupin se cítíš nejvíc neoblíbená? Co mají tyhle situace společného?"
   },
   {
     "id": "refq_0220",
@@ -2094,7 +2117,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naposledy cítila skutečně živá a co tehdy bylo ve tvém životě jinak?"
   },
   {
     "id": "refq_0261",
@@ -2130,7 +2154,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když říkáš, že se cítíš mrtvá, co přesně tím myslíš? Co konkrétně postrádáš venku nebo v sobě?"
   },
   {
     "id": "refq_0265",
@@ -2139,7 +2164,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys dnes potřebovala, kdybys od sebe nemusela očekávat žádný výkon ani nadšení?"
   },
   {
     "id": "refq_0266",
@@ -2422,7 +2448,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co nejvíc potřebuješ ve chvíli, kdy se cítíš zbytečná: pozornost, přijetí, ocenění, blízkost, ochranu, nebo možnost být sama sebou?"
   },
   {
     "id": "refq_0301",
@@ -2431,7 +2458,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zbytečná, co se právě stalo? Co konkrétního tvoje mysl proměnila v rozsudek nad tebou jako celým člověkem?"
   },
   {
     "id": "refq_0302",
@@ -2440,7 +2468,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co pro tebe vlastně znamená být potřebná a proč právě podle tohoto měřítka posuzuješ svou hodnotu?"
   },
   {
     "id": "refq_0303",
@@ -2449,7 +2478,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby tě nikdo k ničemu nepotřeboval, ale několik lidí tě prostě chtělo mít ve svém životě, byla bys pořád zbytečná?"
   },
   {
     "id": "refq_0304",
@@ -2458,7 +2488,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Platí stejné měřítko hodnoty i pro lidi, které máš ráda? Musí být také užiteční, abys je měla ráda, nebo jsi na sebe přísnější než na ně?"
   },
   {
     "id": "refq_0305",
@@ -2467,7 +2498,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Není za pocitem „jsem zbytečná“ ve skutečnosti přesnější a zranitelnější věta, třeba „chci někomu chybět“, „chci být vybraná“ nebo „chci vědět, že na mně někomu záleží“?"
   },
   {
     "id": "refq_0306",
@@ -2476,7 +2508,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jakou cenu platíš za to, že se snažíš být potřebná, místo abys mohla být prostě sama sebou?"
   },
   {
     "id": "refq_0307",
@@ -2774,7 +2807,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš opuštěná, co ti v tu chvíli nejvíc chybí — blízkost konkrétního člověka, dotek, zájem, bezpečí, sdílení, nebo pocit, že někam patříš?"
   },
   {
     "id": "refq_0344",
@@ -2819,7 +2853,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Které podoby blízkosti tě skutečně naplňují a které jen na chvíli přehluší samotu, aniž by ses cítila s někým opravdu spojená?"
   },
   {
     "id": "refq_0351",
@@ -2837,7 +2872,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co ti brání říct někomu blízkému jednoduše: „Dneska se cítím osamocená, nechceš se vidět nebo si zavolat?“"
   },
   {
     "id": "refq_0352",
@@ -3055,7 +3091,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když máš pocit, že bez druhého nemůžeš být v pořádku, co ti podle tebe dává, co si sama nedokážeš dopřát?"
   },
   {
     "id": "refq_0378",
@@ -3082,7 +3119,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co všechno jsi ochotná potlačit, přehlédnout nebo se toho vzdát, abys nepřišla o blízkost?"
   },
   {
     "id": "refq_0381",
@@ -3091,7 +3129,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když potřebuješ od druhého ujištění, co bys od něj vlastně chtěla slyšet nebo pocítit?"
   },
   {
     "id": "refq_0382",

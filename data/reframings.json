@@ -42,7 +42,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdy se cítíš neviditelná jen proto, že tě nevidí ten, od koho to tvoje duše pořád ještě čeká. A to je velký rozdíl."
   },
   {
     "id": "ref_0007",
@@ -78,7 +79,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo zapomněl zahrnout, neznamená, že se máš vyškrtnout i ty sama."
   },
   {
     "id": "ref_0011",
@@ -105,7 +107,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dnes rozhodnout, jestli jsi pro lidi důležitá. Stačí nechat bolest projít, aniž bys z ní udělala rozsudek nad sebou."
   },
   {
     "id": "ref_0037",
@@ -114,7 +117,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co vypadá jako skromnost, může být někdy způsob, jak sama sebe vymazat."
   },
   {
     "id": "ref_0052",
@@ -1165,7 +1169,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná je pravda, že jsi někdy nedostala tolik lásky, kolik jsi potřebovala. Ale „nedostala jsem lásku“ a „nejde mě milovat“ jsou dvě úplně jiné věty."
   },
   {
     "id": "ref_0151",
@@ -1174,7 +1179,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být dokonalejší, zajímavější ani jednodušší, aby sis zasloužila lásku. Nemusíš si ji odpracovat."
   },
   {
     "id": "ref_0152",
@@ -1183,7 +1189,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš nemilovaná, ještě neznamená, že nemilovaná opravdu jsi. Pocit umí být strašně přesvědčivý, ale není to rozsudek."
   },
   {
     "id": "ref_0155",
@@ -1201,7 +1208,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Milovatelnost není vlastnost jako výška nebo barva očí. Je to možnost vztahu, která vzniká mezi dvěma konkrétními lidmi – ne nálepka, kterou nosíš sama v sobě."
   },
   {
     "id": "ref_0157",
@@ -1228,7 +1236,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jestli teď nedokážeš uvěřit, že jsi milovatelná, nemusíš. Zkus si jen na chvíli přestat dokazovat, že nejsi."
   },
   {
     "id": "ref_0160",
@@ -1237,7 +1246,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila hledat chybu v sobě, když láska nepřicházela. Dnes už nemusíš každou samotu vysvětlovat tím, že s tebou musí být něco špatně."
   },
   {
     "id": "ref_0161",
@@ -1246,7 +1256,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo opustil, neznamená, že odešel proto, že jsi nemilovatelná. Lidé odcházejí i od těch, které milují."
   },
   {
     "id": "ref_0162",
@@ -1255,7 +1266,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že ti někdo říká, že tě miluje, ještě neznamená, že se vedle něj musíš cítit milovaná. Můžeš potřebovat, aby se jeho láska projevovala jinak."
   },
   {
     "id": "ref_0163",
@@ -1264,7 +1276,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se předělávat do podoby, kterou by konečně někdo mohl milovat. Mnohem důležitější je najít vztahy, ve kterých můžeš být víc sama sebou, ne míň."
   },
   {
     "id": "ref_0164",
@@ -1291,7 +1304,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „jsem nemilovatelná“ může mít chytrý ochranný účel: když s odmítnutím počítáš předem, nemusíš tolik riskovat naději. Jenže ochrana před zklamáním tě může zároveň chránit i před blízkostí."
   },
   {
     "id": "ref_0165",
@@ -1614,7 +1628,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si péči zasloužit tím, že budeš hodná, užitečná, nenáročná nebo pořád v pohodě. Potřebovat druhého člověka je obyčejně lidské."
   },
   {
     "id": "ref_0206",
@@ -1623,7 +1638,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co ti chybělo od druhých, se nestane nedůležitým jen proto, že ses naučila přežít bez toho."
   },
   {
     "id": "ref_0208",
@@ -1632,7 +1648,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš svoje potřeby zmenšovat, aby ses vešla do života lidí, kteří pro ně mají málo místa."
   },
   {
     "id": "ref_0209",
@@ -1641,7 +1658,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš zanedbaná, ještě neznamená, že jsi všem lhostejná. Ten pocit především říká, že ti něco důležitého chybí."
   },
   {
     "id": "ref_0210",
@@ -1650,7 +1668,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdy bylo snazší uvěřit, že jsi zanedbatelná, než si připustit bolestivější pravdu: někdo, koho jsi potřebovala, ti nedokázal dát potřebnou péči."
   },
   {
     "id": "ref_0211",
@@ -1668,7 +1687,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš všechno zvládat sama jen proto, že jsi to zvládala dlouho. I silný člověk smí chtít, aby se někdo na chvíli postaral o něj."
   },
   {
     "id": "ref_0213",
@@ -1686,7 +1706,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses naučila být tak soběstačná, že ostatní ani netuší, kdy je potřebuješ. Paradoxně právě tvoje schopnost všechno zvládnout může někdy přispívat k samotě, která tě potom bolí."
   },
   {
     "id": "ref_0215",
@@ -1695,7 +1716,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná tě nebolí jen to, co se děje teď. Možná se ozývají i všechny chvíle, kdy sis přála, aby si tě někdo všiml, a nikdo nepřišel."
   },
   {
     "id": "ref_0217",
@@ -1722,7 +1744,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být člověk, který byl zanedbáván, aniž by ses stala „tou zanedbanou“. Je to část tvého příběhu, ne tvoje identita."
   },
   {
     "id": "ref_0221",
@@ -1955,7 +1978,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná jsi v minulosti opravdu prožila více bolesti, než bylo fér. Nemusíš to zlehčovat jen proto, abys vypadala silně."
   },
   {
     "id": "ref_0261",
@@ -1973,7 +1997,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si zasloužit soucit tím, že budeš trpět ještě víc. Můžeš být k sobě laskavá už teď."
   },
   {
     "id": "ref_0263",
@@ -1991,7 +2016,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvůj pocit říká: „Už nemůžu.“ Možná přesnější věta zní: „Takhle, sama a bez doplnění sil, už nemůžu.“"
   },
   {
     "id": "ref_0265",
@@ -2018,7 +2044,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je možné, že máš pravdu: něco bylo opravdu nespravedlivé, něco jsi opravdu ztratila a něco jsi opravdu neměla nést. Ale z toho ještě neplyne, že jsi člověk navždy odsouzený k trápení."
   },
   {
     "id": "ref_0269",
@@ -2361,7 +2388,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někomu závidíš, z tebe nedělá špatného člověka. Možná tě jen bolí, že má něco, po čem sama toužíš."
   },
   {
     "id": "ref_0311",
@@ -2379,7 +2407,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná tě cizí úspěch bolí hlavně proto, že ti připomíná něco, co chybí tobě. Zkus na chvíli obrátit pozornost od druhého k sobě: co bys právě teď potřebovala ty?"
   },
   {
     "id": "ref_0313",
@@ -2388,7 +2417,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být lepší než druzí, abys měla svou hodnotu. Život není soutěž, ve které smí být spokojený jen vítěz."
   },
   {
     "id": "ref_0314",
@@ -2397,7 +2427,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někomu závidíš, neznamená, že mu nepřeješ nic dobrého. Můžeš mít z druhého radost a zároveň cítit bolest z toho, co sama nemáš."
   },
   {
     "id": "ref_0315",
@@ -2415,7 +2446,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Závist může být smutek nad tím, co ti chybělo, co přišlo pozdě nebo co jsi nedostala, když jsi to potřebovala. Možná ji nepotřebuješ umlčet, ale vyslechnout."
   },
   {
     "id": "ref_0317",
@@ -2433,7 +2465,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když někomu závidíš, zkus se neptat jen „proč on, a ne já?“, ale také „co mi jeho život ukazuje o tom, co bych chtěla pro sebe?“"
   },
   {
     "id": "ref_0319",
@@ -2451,7 +2484,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někomu právě teď nedokážeš přát jeho štěstí, neznamená, že jsi bezcitná. Možná tvoje vlastní bolest potřebuje nejdřív trochu prostoru, než ho dokážeš dopřát druhému."
   },
   {
     "id": "ref_0321",
@@ -2460,7 +2494,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít všechno, co obdivuješ u druhých. Některé věci můžeš prostě ocenit, aniž bys kvůli nim musela opustit svůj vlastní život."
   },
   {
     "id": "ref_0325",
@@ -2478,7 +2513,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Závist může ukazovat na přání, které sis dlouho nedovolila mít. Možná tě nebolí jen to, že něco má druhý, ale také to, že sis sama přestala věřit, že bys to mohl mít."
   },
   {
     "id": "ref_0333",
@@ -2784,7 +2820,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdyby tě někdo opravdu neměl rád, pořád je to jen vztah jednoho člověka k tobě, ne objektivní zpráva o tom, jaká jsi."
   },
   {
     "id": "ref_0363",
@@ -2793,7 +2830,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Neoblíbený“ není vlastnost člověka, ale něco, co vzniká mezi tebou a konkrétními lidmi. Nenech bolest, aby z „tady mě neberou“ udělala „taková jsem“."
   },
   {
     "id": "ref_0365",
@@ -2865,7 +2903,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být příjemná, zajímavá nebo bezchybná každou minutu, aby tě druzí měli rádi. Blízkost unese i tvoje horší dny."
   },
   {
     "id": "ref_0375",
@@ -2874,7 +2913,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná teď vidíš hlavně lidi, kteří tě nepřijímají, a přehlížíš ty, vedle kterých můžeš být sama sebou."
   },
   {
     "id": "ref_0376",
@@ -2883,7 +2923,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být oblíbená u lidí, u kterých by tě jejich přijetí stálo vlastní důstojnost. Nemusíš se líbit všem."
   },
   {
     "id": "ref_0379",
@@ -2892,7 +2933,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Nemají mě rádi“ zní jako informace o druhých, ale někdy je to hlavně zpráva o tom, jak se právě cítíš. Je rozdíl mezi „cítím se odmítaná“ a „jsem odmítaná“."
   },
   {
     "id": "ref_0380",
@@ -3192,7 +3234,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se nutit něco cítit. I prázdnota a apatie jsou stavy, kterými můžeš procházet, aniž bys je musela hned měnit."
   },
   {
     "id": "ref_0415",
@@ -3201,7 +3244,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi mrtvá uvnitř, jen strašně unavená. A únava nepotřebuje výčitky, ale odpočinek."
   },
   {
     "id": "ref_0418",
@@ -3210,7 +3254,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dokazovat, že jsi v pořádku, tím, že budeš aktivní, nadšená nebo produktivní. Tvoje hodnota nezávisí na tom, kolik energie dnes máš."
   },
   {
     "id": "ref_0419",
@@ -3237,7 +3282,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že si teď nedokážeš představit, že bys znovu cítila radost, zájem nebo energii, není důkaz, že se už nikdy nevrátí."
   },
   {
     "id": "ref_0422",
@@ -3246,7 +3292,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná teď nepotřebuješ další tlak, abys „zase začala žít“, ale někoho, kdo s tebou chvíli vydrží i v tomhle prázdnu."
   },
   {
     "id": "ref_0423",
@@ -3273,7 +3320,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit mrtvosti se snadno promění v přesvědčení o sobě: „Jsem mrtvá uvnitř.“ Přesnější možná je: „Právě teď skoro necítím, že žiju.“"
   },
   {
     "id": "ref_0426",
@@ -3581,7 +3629,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se bez tebe druzí dokážou obejít, není důkaz, že jsi nedůležitá. Láska ani blízkost nejsou totéž co závislost."
   },
   {
     "id": "ref_0464",
@@ -3590,7 +3639,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Nikdo mě právě teď nepotřebuje“ a „jsem zbytečná“ jsou dvě úplně jiné věty. Mezi nimi je obrovský logický skok, který bolest způsobuje bolest tak rychle, že si ho ani nevšimneš."
   },
   {
     "id": "ref_0468",
@@ -3599,7 +3649,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Jsem zbytečná“ zní jako popis toho, kdo jsi, ale může to být jen popis toho, jak se právě cítíš. Nejsi zbytečnost; jsi člověk, který právě prožívá pocit zbytečnosti."
   },
   {
     "id": "ref_0469",
@@ -3608,7 +3659,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi potřebná tam, kde by sis přála být potřebná. To bolí, ale není to totéž jako nebýt potřebná nikde."
   },
   {
     "id": "ref_0470",
@@ -3617,7 +3669,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být nenahraditelná. Lidé nejsou cenní proto, že za ně neexistuje náhrada, ale proto, že každý vztah s nimi je jedinečný."
   },
   {
     "id": "ref_0471",
@@ -3635,7 +3688,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být důležitá pro všechny. Stačí, že můžeš být skutečná v několika vztazích, které jsou skutečné i pro tebe."
   },
   {
     "id": "ref_0473",
@@ -3644,7 +3698,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být něčí první volba, střed vesmíru ani člověk, bez kterého se všechno zastaví. Můžeš být důležitá mnohem tišším způsobem."
   },
   {
     "id": "ref_0474",
@@ -3689,7 +3744,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila poznávat svou hodnotu podle toho, jak moc jsi potřebná. Ale tvoje hodnota se neztrácí ve chvíli, kdy pro nikoho nic neděláš."
   },
   {
     "id": "ref_0481",
@@ -3698,7 +3754,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě bolí představa, že jsi zbytečná, samo ukazuje, jak moc toužíš být ve spojení, přispívat a mít pro druhé význam. Pod tou bolestí není prázdnota, ale velmi lidská potřeba vztahu."
   },
   {
     "id": "ref_0482",
@@ -3707,7 +3764,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě nikdo právě teď nepotřebuje, neznamená, že jsi nepotřebná. Znamená to, že máš volný prostor, se kterým můžeš naložit po svém."
   },
   {
     "id": "ref_0478",
@@ -4268,7 +4326,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš opuštěná, neznamená, že budeš opuštěná navždy. Tohle je těžká chvíle, ne rozsudek nad celým tvým životem."
   },
   {
     "id": "ref_0548",
@@ -4304,7 +4363,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že člověk, kterého bys teď potřebovala, není nablízku, neznamená, že nejsi pro nikoho důležitá. Nepřítomnost není totéž co nezájem."
   },
   {
     "id": "ref_0552",
@@ -4331,7 +4391,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se za svou osamělost stydět ani ji před sebou zlehčovat. Můžeš prostě uznat: „Jo, teď bych potřebovala někoho vedle sebe.“"
   },
   {
     "id": "ref_0556",
@@ -4636,7 +4697,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš přestat někoho potřebovat, abys byla svobodná. Svoboda může znamenat, že ho potřebuješ, miluješ, a přesto kvůli němu neopustíš sama sebe."
   },
   {
     "id": "ref_0593",
@@ -4654,7 +4716,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se druhý vzdálí, může se v tobě ozvat panika, jako bys ztrácela něco životně důležitého. Ten pocit je skutečný, ale nemusí znamenat, že skutečně ztrácíš bezpečí nebo sama sebe."
   },
   {
     "id": "ref_0595",
@@ -4663,7 +4726,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se za svoje lpění na vztahu stydět. Možná se v něm skrývá docela obyčejná lidská touha mít někoho, u koho můžeš konečně povolit a nebýt na všechno sama."
   },
   {
     "id": "ref_0596",
@@ -4681,7 +4745,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si zasloužit blízkost tím, že budeš stále k dispozici, přizpůsobíš se nebo odhadneš každou potřebu druhého. Můžeš být milovaná i jako člověk, který má vlastní přání, hranice a život."
   },
   {
     "id": "ref_0598",
@@ -4726,7 +4791,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdyby vztah jednou skončil, neznamenalo by to konec tvé schopnosti milovat, být milovaná nebo znovu někam patřit. Bolest by byla skutečná, ale nebyla by koncem tebe."
   },
   {
     "id": "ref_0605",
@@ -4753,7 +4819,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Samota a opuštěnost nejsou totéž. Můžeš být chvíli sama a přitom zůstávat spojená s lidmi, kteří tě mají rádi."
   },
   {
     "id": "ref_0607",
