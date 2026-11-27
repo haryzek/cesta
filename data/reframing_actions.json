@@ -18941,7 +18941,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Před odpovědí na požadavek si dopřej několik vteřin pauzu. Zeptej se sama sebe: „Co chce ten druhý? Co chci já? A dá se najít řešení, které bude přijatelné pro oba?“"
   },
   {
     "id": "refa_2285",
@@ -18986,7 +18987,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když odmítnu, musím se dlouze obhajovat.“ Vyber si bezpečnou situaci, ve které můžeš odmítnout drobný požadavek. Předem odhadni, jak druhý zareaguje a jak silnou vinu pocítíš. Zkus odpovědět stručně, bez zbytečných omluv a vysvětlování. Postupně můžeš zkoušet i důležitější situace. Porovnej očekávání se skutečností a všimni si, zda tvoje odmítnutí skutečně potřebovalo tolik obhajování, kolik sis myslela."
   },
   {
     "id": "refa_2291",
@@ -18995,7 +18997,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si, kdy po vyhovění druhému cítíš vztek, hořkost nebo odpor. Neodsuzuj se za tyhle pocity. Zkus zjistit, jestli jsi neustoupila v něčem, co pro tebe bylo důležité. Co jsi vlastně chtěla? A jak bys to příště mohla dát najevo dřív?"
   },
   {
     "id": "refa_2292",
@@ -19204,7 +19207,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber jednu oblast života, ve které se cítíš svázaná, a napiš, co tě konkrétně omezuje. U každého omezení rozliš, co je momentálně neměnné, co můžeš změnit a co zatím nevíš. Pak si vyber jednu věc z posledních dvou skupin, kterou začneš řešit."
   },
   {
     "id": "refa_2317",
@@ -19222,7 +19226,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber jedno drobné rozhodnutí denně, které uděláš čistě podle sebe: tempo, program, jídlo, oblečení, cestu nebo způsob práce. Vědomě registruj zkušenost „můžu volit sama za sebe“."
   },
   {
     "id": "refa_2319",
@@ -19258,7 +19263,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou týdně si všimni něčeho, co děláš hlavně proto, abys nezklamala druhé. Zvaž, zda je to skutečný závazek, nebo automatické sebeomezení."
   },
   {
     "id": "refa_2324",
@@ -19451,7 +19457,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozděl si svá „musím“ do tří skupin: co opravdu musíš, co děláš kvůli obavám z následků odmítnutí a co děláš automaticky, aniž by ses rozhodovala. U posledních dvou skupin hledej prostor pro vlastní volbu. I rozhodnutí něco přijmout může být svobodnější, když víš proč."
   },
   {
     "id": "refa_2347",
@@ -19469,7 +19476,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Týden si zapisuj chvíle, kdy se cítíš nesvobodně: co po tobě bylo žádáno, co jsi chtěla ty, co jsi nakonec udělala a kde jsi ve skutečnosti měla nějakou volbu. Všímej si také situací, kdy tvoje možnosti skutečně omezují okolnosti nebo druzí lidé."
   },
   {
     "id": "refa_2349",
@@ -19487,7 +19495,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber jednu oblast, kde máš reálně málo svobody, a místo boje s tím, co změnit nemůžeš, hledej malé možnosti rozhodování uvnitř omezení: kdy, jak, s kým, jak dlouho nebo za jakých podmínek. Nemusíš mít pod kontrolou všechno, aby ses mohla alespoň v něčem rozhodovat sama."
   },
   {
     "id": "refa_2351",
@@ -19496,7 +19505,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když nastavím hranici, vyvolám konflikt.“ Zkus v bezpečném vztahu sdělit drobnou hranici, například kdy máš čas nebo co už nechceš dělat. Předem odhadni reakci druhého a intenzitu své úzkosti. Potom porovnej očekávání se skutečností. Postupně můžeš zkoušet osobnější hranice, ale ne v situacích, kde by ti hrozilo nebezpečí. I nesouhlas druhého můžeš zvládnout, aniž bys svou hranici musela automaticky opustit."
   },
   {
     "id": "refa_2352",
@@ -19707,7 +19717,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo o něco požádá a ty si nejsi jistá, co chceš, zkus říct: „Rozmyslím si to a dám ti vědět.“ Nemusíš odpovídat hned. Dej si čas zjistit, co vyhovuje i tobě."
   },
   {
     "id": "refa_2378",
@@ -19743,7 +19754,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus občas místo úplného ustoupení navrhnout kompromis: „Tohle mi nevyhovuje, ale mohla bych…“ Hledej řešení, ve kterém mají místo potřeby obou stran."
   },
   {
     "id": "refa_2383",
@@ -19752,7 +19764,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Před setkáním, při kterém se často přizpůsobuješ, si pojmenuj jednu věc, kterou bys tentokrát chtěla udělat podle sebe. Může to být drobná preference, vlastní názor nebo hranice. Připrav si i jednoduchou větu, kterou to vyjádříš."
   },
   {
     "id": "refa_2384",
@@ -19984,7 +19997,8 @@
     "text": "Experiment: „Když odmítnu, náš vztah se poškodí.“ Vyber si bezpečného člověka a drobnou žádost, kterou bys obvykle přijal, přestože se ti nechce. Tentokrát zdvořile odmítni. Předem si poznamenej, jakou reakci očekáváš a čeho se obáváš. Potom porovnej předpověď se skutečností. Pokud budeš chtít, postupně zkoušej odmítat i významnější žádosti. Nejde o to dokázat, že odmítnutí nikdy nevadí, ale zjistit, jaké následky skutečně má a co dokážeš zvládnout.",
     "tier": "free",
     "sort_order": 3,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Experiment: „Když odmítnu, náš vztah se poškodí.“ Vyber si bezpečného člověka a drobnou žádost, kterou bys obvykle přijala, přestože se ti nechce. Tentokrát zdvořile odmítni. Předem si poznamenej, jakou reakci očekáváš a čeho se obáváš. Potom porovnej předpověď se skutečností. Pokud budeš chtít, postupně zkoušej odmítat i významnější žádosti. Nejde o to dokázat, že odmítnutí nikdy nevadí, ale zjistit, jaké následky skutečně má a co dokážeš zvládnout."
   },
   {
     "id": "refa_2412",
@@ -19992,7 +20006,8 @@
     "text": "Když se po stanovení hranice objeví pocit viny, zkus s ním několik minut vydržet, aniž bys své rozhodnutí okamžitě měnil. Připomeň si, že pocit viny ještě nemusí znamenat, že děláš něco špatného. Pokud jsi nikomu skutečně neublížil, nemusíš ho napravovat dalším ústupkem.",
     "tier": "free",
     "sort_order": 4,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se po stanovení hranice objeví pocit viny, zkus s ním několik minut vydržet, aniž bys své rozhodnutí okamžitě měnil. Připomeň si, že pocit viny ještě nemusí znamenat, že děláš něco špatného. Pokud jsi nikomu skutečně neublížila, nemusíš ho napravovat dalším ústupkem."
   },
   {
     "id": "refa_2413",
@@ -20000,7 +20015,8 @@
     "text": "Vyber si každý den jednu drobnou vlastní potřebu a zacházej s ní stejně vážně, jako kdyby ti ji sdělil někdo, koho máš rád. Může to být odpočinek, klid, jídlo, čas o samotě nebo něco, na co máš prostě chuť. Zkus si ji splnit bez pocitu, že si to nejdřív musíš zasloužit.",
     "tier": "free",
     "sort_order": 5,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Vyber si každý den jednu drobnou vlastní potřebu a zacházej s ní stejně vážně, jako kdyby ti ji sdělil někdo, koho máš ráda. Může to být odpočinek, klid, jídlo, čas o samotě nebo něco, na co máš prostě chuť. Zkus si ji splnit bez pocitu, že si to nejdřív musíš zasloužit."
   },
   {
     "id": "refa_2414",
@@ -20008,7 +20024,8 @@
     "text": "Experiment: „Když řeknu, co potřebuju, budu druhé obtěžovat.“ Začni tím, že bezpečnému člověku sdělíš drobné přání, třeba kam bys chtěl jít nebo co by ti udělalo radost. Předem odhadni jeho reakci i své vlastní nepohodlí. Potom porovnej očekávání se skutečností. Postupně můžeš zkoušet vyjadřovat i důležitější potřeby. Všímej si, zda je možné být ve vztahu otevřený, aniž bys musel své potřeby schovávat.",
     "tier": "free",
     "sort_order": 6,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Experiment: „Když řeknu, co potřebuju, budu druhé obtěžovat.“ Začni tím, že bezpečnému člověku sdělíš drobné přání, třeba kam bys chtěla jít nebo co by ti udělalo radost. Předem odhadni jeho reakci i své vlastní nepohodlí. Potom porovnej očekávání se skutečností. Postupně můžeš zkoušet vyjadřovat i důležitější potřeby. Všímej si, zda je možné být ve vztahu otevřená, aniž bys musela své potřeby schovávat."
   },
   {
     "id": "refa_2415",
@@ -20258,7 +20275,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozděl své cíle na dvě skupiny: „Chci to pro sebe“ a „Chci tím něco dokázat“. U druhé skupiny se zamysli, komu se snažíš něco dokázat a co by pro tebe znamenalo, kdybys toho nedosáhla."
   },
   {
     "id": "refa_2446",
@@ -20267,7 +20285,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber si jednu činnost, kterou budeš pravidelně dělat jen pro radost. Vědomě u ní nesleduj výkon, pořadí, statistiky ani srovnání s ostatními. Všímej si, jaké to je dělat něco, aniž bys v tom musela být dobrá."
   },
   {
     "id": "refa_2447",
@@ -20276,7 +20295,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když neuspěješ, popiš událost čistě fakticky, bez hodnocení sebe samé. Místo „jsem neschopná“ si například řekni „tentokrát jsem skončila čtvrtá“. Zkus oddělit to, jak něco dopadlo, od toho, jakou máš hodnotu."
   },
   {
     "id": "refa_2448",
@@ -20285,7 +20305,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když nejsem mezi nejlepšími, budu se cítit méněcenná a neunesu to.“ Vyber si nenáročnou aktivitu s někým, kdo ji ovládá lépe než ty. Nesnaž se za každou cenu vyhrát ani si porážku vynahradit jiným úspěchem. Předem odhadni, jak nepříjemné to bude na škále 0–10 a čeho se obáváš. Potom porovnej očekávání se skutečností. Jak dlouho nepříjemné pocity trvaly? Co ti pomohlo je zvládnout? Pokud budeš chtít, postupně zkoušej náročnější situace."
   },
   {
     "id": "refa_2449",
@@ -20496,7 +20517,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se přistihneš, že kontroluješ, jak působíš, zkus přesunout pozornost od sebe k tomu, co se právě děje. Opravdu poslouchej druhého, všímej si okolí nebo se ponoř do společné činnosti. Nemusíš neustále sledovat sama sebe, abys mohla být přirozeně v kontaktu."
   },
   {
     "id": "refa_2475",
@@ -20505,7 +20527,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nahraď otázku „Působím přirozeně?“ otázkou „Jsem teď pravdivá v něčem, na čem mi záleží?“ Uč se rozlišovat autenticitu od příjemného pocitu spontánnosti."
   },
   {
     "id": "refa_2476",
@@ -20514,7 +20537,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V bezpečných vztazích si občas dovol říct přesně to, co se děje: „Teď jsem nějak znejistěla a začala se hlídat.“ Zkoušej zkušenost, že i pocit nepřirozenosti můžeš sdílet autenticky."
   },
   {
     "id": "refa_2477",
@@ -20532,7 +20556,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se přestanu hlídat, budu působit divně.“ Před krátkým rozhovorem s někým, u koho se cítíš bezpečně, odhadni, co se stane, když budeš o trochu méně kontrolovat svůj hlas, gesta nebo formulace. Zkus to nejprve na dvě minuty. Postupně můžeš rozhovor prodlužovat nebo zkoušet méně známé lidi. Potom porovnej své očekávání s tím, jak druhý skutečně reagoval a jak ses cítila ty. Nejde o to působit dokonale přirozeně, ale zjistit, co se stane, když trochu povolíš kontrolu."
   },
   {
     "id": "refa_2479",
@@ -20550,7 +20575,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Najdi lidi a prostředí, kde se přirozeně méně hlídáš. Zkus trávit víc času tam, kde se cítíš uvolněně a přijímaně. Ne vždycky musíš měnit sebe; někdy potřebuješ prostředí, ve kterém můžeš být víc sama sebou."
   },
   {
     "id": "refa_2481",
@@ -20787,7 +20813,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když si řeknu o respektující zacházení, druhý mě odmítne nebo si mě bude vážit ještě méně.“ Vyber si bezpečného člověka a požádej ho o drobnou změnu, například aby tě nechal domluvit. Předem si poznamenej, jakou reakci očekáváš a čeho se obáváš. Potom porovnej očekávání se skutečným průběhem. Pokud budeš chtít, postupně zkoušej důležitější hranice. Všímej si také toho, jaké to pro tebe je ozvat se sama za sebe, bez ohledu na reakci druhého."
   },
   {
     "id": "refa_2510",
@@ -20805,7 +20832,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se cítím přehlížená, znamená to, že mě druhý nebere vážně.“ V mírně nepříjemné, ale bezpečné situaci se zkus klidně zeptat, jak ten na druhé straně svůj výrok nebo chování myslel. Předem si poznamenej, co podle tebe jeho chování znamenalo a jak moc jsi o tom přesvědčená. Potom porovnej svůj původní výklad s tím, co ses dozvěděl. Nemusíš jeho vysvětlení automaticky přijmout; cílem je získat víc informací."
   },
   {
     "id": "refa_2512",
@@ -21034,7 +21062,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se začneš izolovat, zkus úplnou samotu občas nahradit aspoň drobným kontaktem s někým, s kým se cítíš bezpečně. Stačí krátká zpráva, telefonát nebo společná procházka. Nemusíš být zábavná, předstírat dobrou náladu ani vysvětlovat víc, než chceš."
   },
   {
     "id": "refa_2541",
@@ -21281,7 +21310,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když objevíš pod hloubáním nějakou emoci, zkus ji chvíli jen vnímat. Pojmenuj si, co cítíš: „Bojím se“, „Jsem zklamaná“, „Stydím se“. Všimni si, kde se ten pocit ozývá v těle. Nemusíš hned hledat jeho příčinu ani řešení. Někdy přemýšlení pomáhá vyhýbat se něčemu, co je těžké přijmout a přímo prožívat."
   },
   {
     "id": "refa_2570",
@@ -21299,7 +21329,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Musím myšlenku dokončit, než se můžu věnovat něčemu jinému.“ Uprostřed mírného hloubání zkus na pět minut přejít k činnosti, na které ti záleží, aniž bys myšlenku předtím uzavřela. Předem odhadni, jak těžké bude se soustředit a co se stane s nedokončenou myšlenkou. Potom porovnej očekávání se zkušeností. Postupně můžeš dobu prodlužovat. Zkoumej, zda opravdu potřebuješ mít v hlavě jasno, abys mohla pokračovat v životě."
   },
   {
     "id": "refa_2572",
