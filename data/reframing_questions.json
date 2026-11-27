@@ -3653,7 +3653,8 @@
     "text": "Kdybys věděl, že tě nový člověk nebude obdivovat ani po tobě toužit, přitahoval by tě stejně?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věděla, že tě nový člověk nebude obdivovat ani po tobě toužit, přitahoval by tě stejně?"
   },
   {
     "id": "refq_0424",
@@ -3669,7 +3670,8 @@
     "text": "Čeho se obáváš, když si představíš, že bys byl citově závislý na jediném člověku, kterého miluješ?",
     "tier": "free",
     "sort_order": 14,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čeho se obáváš, když si představíš, že bys byla citově závislá na jediném člověku, kterého miluješ?"
   },
   {
     "id": "refq_0426",
@@ -3677,7 +3679,8 @@
     "text": "Co bys musel prožít nebo vydržet, kdybys tentokrát neodešel za někým novým?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys musela prožít nebo vydržet, kdybys tentokrát neodešla za někým novým?"
   },
   {
     "id": "refq_0427",
@@ -3693,7 +3696,8 @@
     "text": "Kdy se v tobě nejsilněji ozývá touha po svobodě? Může to někdy být právě ve chvíli, kdy začínáš mít něco, o co bys nerad přišel?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy se v tobě nejsilněji ozývá touha po svobodě? Může to někdy být právě ve chvíli, kdy začínáš mít něco, o co bys nerada přišla?"
   },
   {
     "id": "refq_0429",
@@ -3709,7 +3713,8 @@
     "text": "Kolikrát sis už myslel, že problém je v konkrétním partnerovi, a přesto se podobný příběh opakoval i v dalším vztahu?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolikrát sis už myslela, že problém je v konkrétním partnerovi, a přesto se podobný příběh opakoval i v dalším vztahu?"
   },
   {
     "id": "refq_0431",
@@ -3717,7 +3722,8 @@
     "text": "Kdybys měl jistotu, že rozhodnutím pro jednoho člověka nepřijdeš o všechny ostatní životní možnosti, změnilo by to něco na tvé ochotě se zavázat?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys měla jistotu, že rozhodnutím pro jednoho člověka nepřijdeš o všechny ostatní životní možnosti, změnilo by to něco na tvé ochotě se zavázat?"
   },
   {
     "id": "refq_0432",
@@ -3725,7 +3731,8 @@
     "text": "Jak by vypadal tvůj vztahový a sexuální život, kdybys ho nemusel řídit ani očekáváním druhých, ani okamžitými impulzy, ale mohl ho utvářet podle vlastních hodnot?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak by vypadal tvůj vztahový a sexuální život, kdybys ho nemusela řídit ani očekáváním druhých, ani okamžitými impulzy, ale mohla ho utvářet podle vlastních hodnot?"
   },
   {
     "id": "refq_0414",
@@ -3825,7 +3832,8 @@
     "text": "Ve kterých situacích dokážeš být přirozeně uvolněný a co je v nich jiné?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ve kterých situacích dokážeš být přirozeně uvolněná a co je v nich jiné?"
   },
   {
     "id": "refq_0443",
@@ -3841,7 +3849,8 @@
     "text": "Kdy ses naučil, že je lepší mít se na pozoru než se uvolnit?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses naučila, že je lepší mít se na pozoru než se uvolnit?"
   },
   {
     "id": "refq_0445",
@@ -3857,7 +3866,8 @@
     "text": "Nakolik tě chrání samotná opatrnost a nakolik by tě někdy lépe ochránilo, kdybys jasně vyjádřil své hranice, položil otázku nebo řekl ne?",
     "tier": "free",
     "sort_order": 14,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nakolik tě chrání samotná opatrnost a nakolik by tě někdy lépe ochránilo, kdybys jasně vyjádřila své hranice, položila otázku nebo řekla ne?"
   },
   {
     "id": "refq_0447",
@@ -3873,7 +3883,8 @@
     "text": "Co by se změnilo, kdybys nemusel zabránit každému problému, ale mohl věřit, že na něj dokážeš reagovat, až přijde?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys nemusela zabránit každému problému, ale mohla věřit, že na něj dokážeš reagovat, až přijde?"
   },
   {
     "id": "refq_0449",
@@ -3881,7 +3892,8 @@
     "text": "Jaký malý krok směrem k něčemu, na čem ti záleží, bys mohl udělat i se svou opatrností, aniž bys čekal, až úplně zmizí?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaký malý krok směrem k něčemu, na čem ti záleží, bys mohla udělat i se svou opatrností, aniž bys čekala, až úplně zmizí?"
   },
   {
     "id": "refq_0450",
@@ -3913,7 +3925,8 @@
     "text": "Kdyby ses nemusel zbavit své opatrnosti, ale jen ji trochu zmírnit, co by sis dovolil udělat?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses nemusela zbavit své opatrnosti, ale jen ji trochu zmírnit, co by sis dovolila udělat?"
   },
   {
     "id": "refq_0454",
@@ -3953,7 +3966,8 @@
     "text": "Kterým lidem, situacím nebo zkušenostem bys dnes mohl důvěřovat víc, než ti dovolují tvoje dřívější zkušenosti?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kterým lidem, situacím nebo zkušenostem bys dnes mohla důvěřovat víc, než ti dovolují tvoje dřívější zkušenosti?"
   },
   {
     "id": "refq_0459",
@@ -3961,7 +3975,8 @@
     "text": "Když se objeví varovný hlas, který ti říká, abys neriskoval, nedůvěřoval nebo se příliš neuvolnil, připomíná ti někoho z minulosti?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se objeví varovný hlas, který ti říká, abys neriskovala, nedůvěřovala nebo se příliš neuvolnila, připomíná ti někoho z minulosti?"
   },
   {
     "id": "refq_0460",
@@ -3969,7 +3984,8 @@
     "text": "Může se za tvou snahou předvídat nebezpečí někdy skrývat pochybnost, že by sis s ním dokázal poradit, kdyby skutečně přišlo?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Může se za tvou snahou předvídat nebezpečí někdy skrývat pochybnost, že by sis s ním dokázala poradit, kdyby skutečně přišlo?"
   },
   {
     "id": "refq_0461",
@@ -3985,7 +4001,8 @@
     "text": "Co bys poradil člověku, kterého máš rád, kdyby se kvůli stejným obavám připravoval o něco, po čem touží?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys poradila člověku, kterého máš ráda, kdyby se kvůli stejným obavám připravoval o něco, po čem touží?"
   },
   {
     "id": "refq_0463",
@@ -3993,7 +4010,8 @@
     "text": "Až se jednou ohlédneš za svým životem, čeho bys litoval víc – chyb, které jsi udělal, protože ses odvážil, nebo věcí, které jsi nikdy nezkusil, protože sis dával příliš velký pozor?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Až se jednou ohlédneš za svým životem, čeho bys litovala víc – chyb, které jsi udělala, protože ses odvážila, nebo věcí, které jsi nikdy nezkusila, protože sis dávala příliš velký pozor?"
   },
   {
     "id": "refq_0464",
@@ -4099,7 +4117,8 @@
     "text": "Co tě děsí víc: samotná zrada, nebo to, jak by ses cítil, kdybys zjistil, že ses v někom spletl?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co tě děsí víc: samotná zrada, nebo to, jak by ses cítila, kdybys zjistila, že ses v někom spletla?"
   },
   {
     "id": "refq_0476",
@@ -4123,7 +4142,8 @@
     "text": "Kdy ses naučil, že je bezpečnější být ve střehu než být otevřený?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses naučila, že je bezpečnější být ve střehu než být otevřená?"
   },
   {
     "id": "refq_0479",
@@ -4147,7 +4167,8 @@
     "text": "Co by se změnilo, kdybys důvěru nevnímal jako skok do neznáma, ale jako něco, co můžeš druhému svěřovat po malých dávkách?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys důvěru nevnímala jako skok do neznáma, ale jako něco, co můžeš druhému svěřovat po malých dávkách?"
   },
   {
     "id": "refq_0482",
@@ -4187,7 +4208,8 @@
     "text": "Kdy ses poprvé naučil, že je bezpečnější pochybovat o lidech než jim věřit?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses poprvé naučila, že je bezpečnější pochybovat o lidech než jim věřit?"
   },
   {
     "id": "refq_0487",
@@ -4195,7 +4217,8 @@
     "text": "Co bys musel cítit, kdybys na chvíli nemusel být ve střehu?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys musela cítit, kdybys na chvíli nemusela být ve střehu?"
   },
   {
     "id": "refq_0488",
@@ -4219,7 +4242,8 @@
     "text": "Co by se změnilo, kdybys připustil, že ses někdy mohl splést nejen tím, že jsi někomu věřil příliš, ale také tím, že jsi mu věřil příliš málo?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys připustila, že ses někdy mohla splést nejen tím, že jsi někomu věřila příliš, ale také tím, že jsi mu věřila příliš málo?"
   },
   {
     "id": "refq_0491",
@@ -4227,7 +4251,8 @@
     "text": "Co bys potřeboval zažít, abys mohl druhým důvěřovat o něco víc, aniž by ses přitom vzdal vlastní opatrnosti?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys potřebovala zažít, abys mohla druhým důvěřovat o něco víc, aniž by ses přitom vzdala vlastní opatrnosti?"
   },
   {
     "id": "refq_0492",
@@ -4267,7 +4292,8 @@
     "text": "Co bys potřeboval, abys dokázal připustit možnost, že tě někdo zklame, a přesto se nemusel předem uzavřít všem lidem?",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys potřebovala, abys dokázala připustit možnost, že tě někdo zklame, a přesto se nemusela předem uzavřít všem lidem?"
   },
   {
     "id": "refq_0497",
@@ -4291,7 +4317,8 @@
     "text": "Jaké chování druhého člověka by pro tebe představovalo dostatečnou nápravu poté, co tvoji důvěru narušil – a za jakých okolností bys mu vůbec dokázal dát další šanci?",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaké chování druhého člověka by pro tebe představovalo dostatečnou nápravu poté, co tvoji důvěru narušil – a za jakých okolností bys mu vůbec dokázala dát další šanci?"
   },
   {
     "id": "refq_0500",
@@ -4299,7 +4326,8 @@
     "text": "Kdybys nemusel svou nedůvěru ani poslouchat, ani potlačovat, ale mohl ji chvíli jen pozorovat, co dalšího bys pod ní nebo vedle ní objevil?",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nemusela svou nedůvěru ani poslouchat, ani potlačovat, ale mohla ji chvíli jen pozorovat, co dalšího bys pod ní nebo vedle ní objevila?"
   },
   {
     "id": "refq_0501",
@@ -4307,7 +4335,8 @@
     "text": "Jak by vypadal vztah, ve kterém bys mohl být zároveň opatrný, svobodný a blízký – a co z toho můžeš začít vytvářet už teď?",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak by vypadal vztah, ve kterém bys mohla být zároveň opatrná, svobodná a blízká – a co z toho můžeš začít vytvářet už teď?"
   },
   {
     "id": "refq_0502",
@@ -4323,7 +4352,8 @@
     "text": "Kolikrát ses už připravoval na podraz, který nakonec vůbec nepřišel?",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolikrát ses už připravovala na podraz, který nakonec vůbec nepřišel?"
   },
   {
     "id": "refq_0504",
@@ -4331,7 +4361,8 @@
     "text": "Kdyby ses už nebál, že budeš za hlupáka, když někomu uvěříš a on tě zklame, dovolil by sis důvěřovat o něco víc?",
     "tier": "free",
     "sort_order": 41,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses už nebála, že budeš za hlupačku, když někomu uvěříš a on tě zklame, dovolila by sis důvěřovat o něco víc?"
   },
   {
     "id": "refq_0505",

@@ -5373,7 +5373,8 @@
     "text": "Možná ses zatím nenaučil, jak zacházet s touhou po něčem novém, když začne přehlušovat všechno ostatní. To ale neznamená, že se to nemůžeš naučit.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses zatím nenaučila, jak zacházet s touhou po něčem novém, když začne přehlušovat všechno ostatní. To ale neznamená, že se to nemůžeš naučit."
   },
   {
     "id": "ref_0649",
@@ -5389,7 +5390,8 @@
     "text": "Nemusíš dnes vyřešit, jestli jsi „věrný“, nebo „nevěrný člověk“. Stačí se podívat na jednu konkrétní chvíli a rozhodnout se, kým v ní chceš být.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš dnes vyřešit, jestli jsi „věrná“, nebo „nevěrný člověk“. Stačí se podívat na jednu konkrétní chvíli a rozhodnout se, kým v ní chceš být."
   },
   {
     "id": "ref_0653",
@@ -5397,7 +5399,8 @@
     "text": "Jestli ses znovu zachoval stejně, neznamená to, že jsi odsouzený ten vzorec opakovat navždy. Opakování je informace o něčem, co zatím potřebuješ pochopit, ne proroctví.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jestli ses znovu zachovala stejně, neznamená to, že jsi odsouzená ten vzorec opakovat navždy. Opakování je informace o něčem, co zatím potřebuješ pochopit, ne proroctví."
   },
   {
     "id": "ref_0654",
@@ -5405,7 +5408,8 @@
     "text": "Možná sis kdysi spojil skutečnou blízkost se ztrátou svobody. Dnes už ale nemusíš volit jen mezi útěkem a uvězněním. Ve vztahu můžeš být někomu blízko, a přitom zůstat sám sebou.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná sis kdysi spojila skutečnou blízkost se ztrátou svobody. Dnes už ale nemusíš volit jen mezi útěkem a uvězněním. Ve vztahu můžeš být někomu blízko, a přitom zůstat sama sebou."
   },
   {
     "id": "ref_0655",
@@ -5445,7 +5449,8 @@
     "text": "Jestli tě děsí představa, že bys měl zůstat s jedním člověkem „navždy“, nemusíš dnes slibovat navždy. Věrnost se stejně nedělá na třicet let dopředu; dělá se v jednotlivých dnech.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jestli tě děsí představa, že bys měla zůstat s jedním člověkem „navždy“, nemusíš dnes slibovat navždy. Věrnost se stejně nedělá na třicet let dopředu; dělá se v jednotlivých dnech."
   },
   {
     "id": "ref_0660",
@@ -5453,7 +5458,8 @@
     "text": "Ta část tebe, která chce znovu a znovu někam jinam, nemusí být tvůj nepřítel. Možná se jen zoufale snaží zajistit, aby ses nikdy necítil uvězněný, závislý nebo vydaný někomu napospas.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ta část tebe, která chce znovu a znovu někam jinam, nemusí být tvůj nepřítel. Možná se jen zoufale snaží zajistit, aby ses nikdy necítila uvězněná, závislá nebo vydaná někomu napospas."
   },
   {
     "id": "ref_0661",
@@ -5461,7 +5467,8 @@
     "text": "I když ses zachoval způsobem, který není v souladu s tvými hodnotami, bolest z toho může znamenat, že ti na těch hodnotách pořád záleží.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I když ses zachovala způsobem, který není v souladu s tvými hodnotami, bolest z toho může znamenat, že ti na těch hodnotách pořád záleží."
   },
   {
     "id": "ref_0662",
@@ -5469,7 +5476,8 @@
     "text": "Nemusíš svou nestálou část ze sebe vyhánět. Můžeš se jí zkusit zeptat, čeho se bojí, že by se stalo, kdybys tentokrát opravdu zůstal.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš svou nestálou část ze sebe vyhánět. Můžeš se jí zkusit zeptat, čeho se bojí, že by se stalo, kdybys tentokrát opravdu zůstala."
   },
   {
     "id": "ref_0663",
@@ -5477,7 +5485,8 @@
     "text": "Možná v tobě kdysi vzniklo přesvědčení, že je bezpečnější nebýt na nikoho příliš navázaný. Pokud ano, možná potřebuješ postupně zažít, že můžeš někoho milovat a pořád zůstat sám sebou.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná v tobě kdysi vzniklo přesvědčení, že je bezpečnější nebýt na nikoho příliš navázaná. Pokud ano, možná potřebuješ postupně zažít, že můžeš někoho milovat a pořád zůstat sama sebou."
   },
   {
     "id": "ref_0664",
@@ -5509,7 +5518,8 @@
     "text": "Jednoho dne se možná ohlédneš a nebude tě nejvíc zajímat, kolik lidí tě chtělo. Spíš jestli ses někdy odvážil být někde opravdu přítomný, i když už vyprchalo vzrušení z nového.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednoho dne se možná ohlédneš a nebude tě nejvíc zajímat, kolik lidí tě chtělo. Spíš jestli ses někdy odvážila být někde opravdu přítomná, i když už vyprchalo vzrušení z nového."
   },
   {
     "id": "ref_0668",
@@ -5517,7 +5527,8 @@
     "text": "Člověk, který tě opravdu miluje, si nemusí přát, abys už nikdy po nikom jiném nezatoužil. Možná si ze všeho nejvíc přeje, abys před sebou samým nemusel pořád někam utíkat.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě opravdu miluje, si nemusí přát, abys už nikdy po nikom jiném nezatoužila. Možná si ze všeho nejvíc přeje, abys před sebou samou nemusela pořád někam utíkat."
   },
   {
     "id": "ref_0632",
@@ -5541,7 +5552,8 @@
     "text": "To, co jsi udělal, a to, kdo jsi, nejsou jedna a tatáž věc. I když něčeho lituješ, nemusíš z toho dělat rozsudek nad celým sebou.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, co jsi udělala, a to, kdo jsi, nejsou jedna a tatáž věc. I když něčeho lituješ, nemusíš z toho dělat rozsudek nad celým sebou."
   },
   {
     "id": "ref_0670",
@@ -5557,7 +5569,8 @@
     "text": "A možná je na tom všem i něco trochu komického: mozek dostane dávku dopaminu a během pěti minut svolá tiskovou konferenci, že jsi potkal osudovou bytost. Nemusíš věřit každé tiskové zprávě, kterou tvoje nervová soustava vydá.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "A možná je na tom všem i něco trochu komického: mozek dostane dávku dopaminu a během pěti minut svolá tiskovou konferenci, že jsi potkala osudovou bytost. Nemusíš věřit každé tiskové zprávě, kterou tvoje nervová soustava vydá."
   },
   {
     "id": "ref_0672",
@@ -5737,7 +5750,8 @@
     "text": "Když jsi ostražitý, neznamená to automaticky, že svět je nebezpečný. Znamená to především, že nějaká část tebe právě považuje za důležité svět bedlivě sledovat.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když jsi ostražitá, neznamená to automaticky, že svět je nebezpečný. Znamená to především, že nějaká část tebe právě považuje za důležité svět bedlivě sledovat."
   },
   {
     "id": "ref_0693",
@@ -5753,7 +5767,8 @@
     "text": "Možná se tvoje ostražitost bojí, že bez ní budeš bezbranný. Jenže chránit se neznamená jen nepřetržitě hlídat. Patří k tomu i schopnost odejít, říct ne, změnit názor a poradit si, když se něco pokazí.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se tvoje ostražitost bojí, že bez ní budeš bezbranná. Jenže chránit se neznamená jen nepřetržitě hlídat. Patří k tomu i schopnost odejít, říct ne, změnit názor a poradit si, když se něco pokazí."
   },
   {
     "id": "ref_0695",
@@ -5809,7 +5824,8 @@
     "text": "Nemusíš se rozhodnout dřív, než jsi připravený. Opatrnost může znamenat dát si čas, ne nutně říct ne.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se rozhodnout dřív, než jsi připravená. Opatrnost může znamenat dát si čas, ne nutně říct ne."
   },
   {
     "id": "ref_0702",
@@ -5825,7 +5841,8 @@
     "text": "Tvoje opatrnost nejspíš nevznikla proto, že by s tebou bylo něco špatně. Možná ses jen někdy naučil, že je rozumnější nejdřív prověřit terén a teprve potom se uvolnit.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje opatrnost nejspíš nevznikla proto, že by s tebou bylo něco špatně. Možná ses jen někdy naučila, že je rozumnější nejdřív prověřit terén a teprve potom se uvolnit."
   },
   {
     "id": "ref_0704",
@@ -5841,7 +5858,8 @@
     "text": "Je zvláštní chtít od života záruku bezpečí, když život sám žádnou takovou smlouvu nenabízí. Můžeš však získat něco užitečnějšího: důvěru, že nepotřebuješ znát budoucnost, abys dokázal žít přítomnost.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je zvláštní chtít od života záruku bezpečí, když život sám žádnou takovou smlouvu nenabízí. Můžeš však získat něco užitečnějšího: důvěru, že nepotřebuješ znát budoucnost, abys dokázala žít přítomnost."
   },
   {
     "id": "ref_0706",
@@ -5857,7 +5875,8 @@
     "text": "Kdybys mohl promluvit k tomu mladšímu sobě, který se naučil mít oči pořád otevřené, možná by nepotřeboval slyšet „neboj se“. Spíš: „Vidím, proč si dáváš pozor. Teď už na to ale nemusíš být sám.“",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys mohla promluvit k té mladší sobě, která se naučila mít oči pořád otevřené, možná by nepotřebovala slyšet „neboj se“. Spíš: „Vidím, proč si dáváš pozor. Teď už na to ale nemusíš být sama.“"
   },
   {
     "id": "ref_0681",
@@ -5873,7 +5892,8 @@
     "text": "Jednou se možná ohlédneš a zjistíš, že většina katastrof, na které ses tak pečlivě připravoval, nikdy nepřišla. A některé z nejlepších věcí přišly právě proto, že ses odvážil nevědět předem, jak dopadnou.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednou se možná ohlédneš a zjistíš, že většina katastrof, na které ses tak pečlivě připravovala, nikdy nepřišla. A některé z nejlepších věcí přišly právě proto, že ses odvážila nevědět předem, jak dopadnou."
   },
   {
     "id": "ref_0709",
@@ -5881,7 +5901,8 @@
     "text": "Kdyby tě někdo, kdo tě opravdu miluje, viděl pořád ve střehu, nejspíš by nechtěl, abys byl méně chytrý nebo obezřetný. Chtěl by, aby sis taky někdy mohl sundat brnění a sakra si odpočinout.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě někdo, kdo tě opravdu miluje, viděl pořád ve střehu, nejspíš by nechtěl, abys byla méně chytrá nebo obezřetná. Chtěl by, aby sis taky někdy mohla sundat brnění a sakra si odpočinout."
   },
   {
     "id": "ref_0711",
@@ -6037,7 +6058,8 @@
     "text": "Když nedůvěra křičí, možná potřebuje slyšet: „Děkuju, že mě chráníš. Teď se ale rozhlédnu i sám.“",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když nedůvěra křičí, možná potřebuje slyšet: „Děkuju, že mě chráníš. Teď se ale rozhlédnu i sama.“"
   },
   {
     "id": "ref_0730",
@@ -6077,7 +6099,8 @@
     "text": "Nemusíš nikoho pustit do středu svého života jen proto, že nechceš být podezíravý.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš nikoho pustit do středu svého života jen proto, že nechceš být podezíravá."
   },
   {
     "id": "ref_0735",
@@ -6085,7 +6108,8 @@
     "text": "Důvěra není jen dar druhým. Je to také prostor, který dáváš sobě, abys nemusel pořád žít ve střehu.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Důvěra není jen dar druhým. Je to také prostor, který dáváš sobě, abys nemusela pořád žít ve střehu."
   },
   {
     "id": "ref_0736",
@@ -6101,7 +6125,8 @@
     "text": "Čím víc věříš, že bys další zranění nepřežil, tím víc potřebuješ držet všechny venku.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čím víc věříš, že bys další zranění nepřežila, tím víc potřebuješ držet všechny venku."
   },
   {
     "id": "ref_0738",
@@ -6173,7 +6198,8 @@
     "text": "Kdyby ses své nedůvěry trochu pustil, možná by se ukázalo, jak moc jsi toužil někomu věřit.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses své nedůvěry trochu pustila, možná by se ukázalo, jak moc jsi toužila někomu věřit."
   },
   {
     "id": "ref_0747",
@@ -6189,7 +6215,8 @@
     "text": "Tehdy jsi možná nemohl odejít, bránit se ani pojmenovat, co se děje. Dnes už máš víc možností než jen nevěřit.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tehdy jsi možná nemohla odejít, bránit se ani pojmenovat, co se děje. Dnes už máš víc možností než jen nevěřit."
   },
   {
     "id": "ref_0713",
@@ -6213,7 +6240,8 @@
     "text": "Pokud ses naučil nedůvěřovat už v dětství, nemusí to být cynismus. Může to být způsob, jak ses přizpůsobil prostředí, ve kterém nebylo bezpečí samozřejmostí.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pokud ses naučila nedůvěřovat už v dětství, nemusí to být cynismus. Může to být způsob, jak ses přizpůsobila prostředí, ve kterém nebylo bezpečí samozřejmostí."
   },
   {
     "id": "ref_0750",
@@ -6221,7 +6249,8 @@
     "text": "To, že jsi kdysi nemohl důvěřovat nejbližším lidem, neznamená, že blízkost sama je lež.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že jsi kdysi nemohla důvěřovat nejbližším lidem, neznamená, že blízkost sama je lež."
   },
   {
     "id": "ref_0751",
@@ -6229,7 +6258,8 @@
     "text": "Někdo ti tehdy měl říct: „To, že se bojíš věřit, není tvoje porucha. Možná ses jen naučil chránit v prostředí, kde to bylo potřeba.“",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdo ti tehdy měl říct: „To, že se bojíš věřit, není tvoje porucha. Možná ses jen naučila chránit v prostředí, kde to bylo potřeba.“"
   },
   {
     "id": "ref_0752",
@@ -6237,7 +6267,8 @@
     "text": "Nejsi hloupý, když se bojíš věřit. Pokud tě někdo naučil, že láska znamená nebezpečí, odpovědnost za to neleží na tobě.",
     "tier": "free",
     "sort_order": 41,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nejsi hloupá, když se bojíš věřit. Pokud tě někdo naučil, že láska znamená nebezpečí, odpovědnost za to neleží na tobě."
   },
   {
     "id": "ref_0753",
@@ -6285,7 +6316,8 @@
     "text": "Tvoje budoucí já ti možná nepoděkuje za to, že jsi zabránil každému riziku, ale za to, že ses naučil rozeznávat skutečné nebezpečí od starých stínů.",
     "tier": "free",
     "sort_order": 47,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já ti možná nepoděkuje za to, že jsi zabránila každému riziku, ale za to, že ses naučila rozeznávat skutečné nebezpečí od starých stínů."
   },
   {
     "id": "ref_0759",
@@ -6389,7 +6421,8 @@
     "text": "Místo „už nikdy nebudu tak hloupý, abych věřil“ zkus „už nikdy nebudu věřit bez hranic“.",
     "tier": "free",
     "sort_order": 60,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Místo „už nikdy nebudu tak hloupá, abych věřila“ zkus „už nikdy nebudu věřit bez hranic“."
   },
   {
     "id": "ref_0772",
@@ -6437,7 +6470,8 @@
     "text": "Když si dovolíš nevědět, místo abys musel hned podezírat, vznikne prostor pro skutečnost.",
     "tier": "free",
     "sort_order": 66,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když si dovolíš nevědět, místo abys musela hned podezírat, vznikne prostor pro skutečnost."
   },
   {
     "id": "ref_0778",
@@ -6453,7 +6487,8 @@
     "text": "Nemusíš odpustit těm, kteří tě naučili nedůvěřovat, abys přestal žít podle jejich lekce.",
     "tier": "free",
     "sort_order": 68,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš odpustit těm, kteří tě naučili nedůvěřovat, abys přestala žít podle jejich lekce."
   },
   {
     "id": "ref_0780",
@@ -6493,7 +6528,8 @@
     "text": "Někdy je lepší riskovat, že se v reálném vztahu zklameš, než se nikdy neukázat takový, jaký jsi.",
     "tier": "free",
     "sort_order": 73,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy je lepší riskovat, že se v reálném vztahu zklameš, než se nikdy neukázat taková, jaká jsi."
   },
   {
     "id": "ref_0785",
@@ -6501,7 +6537,8 @@
     "text": "Možná nikdy nebudeš důvěřovat snadno, a to je v pořádku. Důležité je, aby ses učil důvěřovat přesněji.",
     "tier": "free",
     "sort_order": 74,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nikdy nebudeš důvěřovat snadno, a to je v pořádku. Důležité je, aby ses učila důvěřovat přesněji."
   },
   {
     "id": "ref_0786",
@@ -6589,7 +6626,8 @@
     "text": "Nechtěj po sobě, abys se otevíral jako člověk, který nikdy nebyl zraněný.",
     "tier": "free",
     "sort_order": 85,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nechtěj po sobě, aby ses otevírala jako člověk, který nikdy nebyl zraněný."
   },
   {
     "id": "ref_0797",
@@ -6597,7 +6635,8 @@
     "text": "Chtěj po sobě jen to, abys každou novou tvář automaticky nezaměňoval za starou ránu.",
     "tier": "free",
     "sort_order": 86,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Chtěj po sobě jen to, abys každou novou tvář automaticky nezaměňovala za starou ránu."
   },
   {
     "id": "ref_0798",
@@ -6605,7 +6644,8 @@
     "text": "Nemusíš být pyšný na to, že nikomu nevěříš. Můžeš být hrdý na to, že se učíš důvěřovat pomalu a poctivě.",
     "tier": "free",
     "sort_order": 87,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být pyšná na to, že nikomu nevěříš. Můžeš být hrdá na to, že se učíš důvěřovat pomalu a poctivě."
   },
   {
     "id": "ref_0799",
@@ -6653,7 +6693,8 @@
     "text": "Možná potřebuješ slyšet: „Už nejsem vydaný napospas tomu, komu důvěřuju.“",
     "tier": "free",
     "sort_order": 93,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná potřebuješ slyšet: „Už nejsem vydaná napospas tomu, komu důvěřuju.“"
   },
   {
     "id": "ref_0805",
@@ -6661,7 +6702,8 @@
     "text": "Nedůvěra někdy stojí na hluboké víře ve vlastní bezmoc, kterou sis odnesl z minulosti.",
     "tier": "free",
     "sort_order": 94,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nedůvěra někdy stojí na hluboké víře ve vlastní bezmoc, kterou sis odnesla z minulosti."
   },
   {
     "id": "ref_0806",
@@ -6677,7 +6719,8 @@
     "text": "Když se bojíš uvěřit, nejde jen o druhého člověka. Může jít i o strach, že bys znovu neunesl vlastní zklamání.",
     "tier": "free",
     "sort_order": 96,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se bojíš uvěřit, nejde jen o druhého člověka. Může jít i o strach, že bys znovu neunesla vlastní zklamání."
   },
   {
     "id": "ref_0808",
@@ -6853,7 +6896,8 @@
     "text": "Člověk, který tě má rád, nemusí chtít, abys mu věřil hned. Potřebuje ale příležitost ukázat, že není odpovědný za činy někoho jiného.",
     "tier": "free",
     "sort_order": 118,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má rád, nemusí chtít, abys mu věřila hned. Potřebuje ale příležitost ukázat, že není odpovědný za činy někoho jiného."
   },
   {
     "id": "ref_0830",
@@ -6861,7 +6905,8 @@
     "text": "Hvězdy neprověřují jedna druhou, než začnou svítit. A možná i ty můžeš někdy prostě být, aniž bys musel celý svět vyslýchat.",
     "tier": "free",
     "sort_order": 119,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Hvězdy neprověřují jedna druhou, než začnou svítit. A možná i ty můžeš někdy prostě být, aniž bys musela celý svět vyslýchat."
   },
   {
     "id": "ref_0831",
@@ -6877,7 +6922,8 @@
     "text": "Když se naučíš vydržet strach z důvěry, aniž bys ho hned proměnil v obvinění, získáš větší svobodu.",
     "tier": "free",
     "sort_order": 121,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se naučíš vydržet strach z důvěry, aniž bys ho hned proměnila v obvinění, získáš větší svobodu."
   },
   {
     "id": "ref_0833",
@@ -6909,7 +6955,8 @@
     "text": "Člověk hodný důvěry tě nebude nutit, abys mu věřil rychleji, než ti dovolují vlastní zkušenosti.",
     "tier": "free",
     "sort_order": 125,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk hodný důvěry tě nebude nutit, abys mu věřila rychleji, než ti dovolují vlastní zkušenosti."
   },
   {
     "id": "ref_0837",
@@ -6981,7 +7028,8 @@
     "text": "Můžeš být laskavý a zároveň opatrný. Důvěra nevyžaduje otevřené dveře bez zámku.",
     "tier": "free",
     "sort_order": 134,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš být laskavá a zároveň opatrná. Důvěra nevyžaduje otevřené dveře bez zámku."
   },
   {
     "id": "ref_0846",
@@ -7037,7 +7085,8 @@
     "text": "Když se cítíš ohrožený, zpomal. Podezíravost miluje rychlé závěry.",
     "tier": "free",
     "sort_order": 141,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš ohrožená, zpomal. Podezíravost miluje rychlé závěry."
   },
   {
     "id": "ref_0853",
@@ -7133,7 +7182,8 @@
     "text": "Za sto let budou dnešní podezření nejspíš pryč jako prach. Zůstane otázka, jestli jsi dokázal někde prožít důvěru.",
     "tier": "free",
     "sort_order": 153,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Za sto let budou dnešní podezření nejspíš pryč jako prach. Zůstane otázka, jestli jsi dokázala někde prožít důvěru."
   },
   {
     "id": "ref_0865",
@@ -7149,7 +7199,8 @@
     "text": "Člověk, který tě má rád, nechce rozbít tvoje hranice. Může si jen přát, abys za nimi nezůstal uvězněný.",
     "tier": "free",
     "sort_order": 155,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má rád, nechce rozbít tvoje hranice. Může si jen přát, abys za nimi nezůstala uvězněná."
   },
   {
     "id": "ref_0867",
@@ -7189,7 +7240,8 @@
     "text": "Místo „musím být pořád ve střehu“ zkus „můžu být pozorný, aniž bych byl nepřetržitě napjatý“.",
     "tier": "free",
     "sort_order": 160,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Místo „musím být pořád ve střehu“ zkus „můžu být pozorná, aniž bych byla nepřetržitě napjatá“."
   },
   {
     "id": "ref_0872",
@@ -7309,7 +7361,8 @@
     "text": "Někdy nejvíc potřebuješ někoho, kdo neřekne „věř mi“, ale „budu tady dost dlouho, aby sis to mohl ověřit“.",
     "tier": "free",
     "sort_order": 175,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy nejvíc potřebuješ někoho, kdo neřekne „věř mi“, ale „budu tady dost dlouho, aby sis to mohla ověřit“."
   },
   {
     "id": "ref_0887",
@@ -7349,7 +7402,8 @@
     "text": "Dospělá část v tobě už může říct: „I když mě někdo zklame, nemusím kvůli tomu ztratit sám sebe.“",
     "tier": "free",
     "sort_order": 180,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Dospělá část v tobě už může říct: „I když mě někdo zklame, nemusím kvůli tomu ztratit sama sebe.“"
   },
   {
     "id": "ref_0892",
@@ -7429,7 +7483,8 @@
     "text": "Na konci života tě možná nebude tolik mrzet, že jsi nebyl podezíravější, jako chvíle, kdy sis bezpečné lidi nepustil blíž.",
     "tier": "free",
     "sort_order": 190,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Na konci života tě možná nebude tolik mrzet, že jsi nebyla podezíravější, jako chvíle, kdy sis bezpečné lidi nepustila blíž."
   },
   {
     "id": "ref_0902",
@@ -7437,7 +7492,8 @@
     "text": "Kdyby ti na ničem nezáleželo, nemusel bys být podezíravý. Možná hlídáš bránu právě proto, že je za ní něco cenného.",
     "tier": "free",
     "sort_order": 191,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ti na ničem nezáleželo, nemusela bys být podezíravá. Možná hlídáš bránu právě proto, že je za ní něco cenného."
   },
   {
     "id": "ref_0903",
@@ -7445,7 +7501,8 @@
     "text": "Kdybys věřil všem bez rozdílu, nebyla by to důvěra, ale ztráta orientace.",
     "tier": "free",
     "sort_order": 192,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věřila všem bez rozdílu, nebyla by to důvěra, ale ztráta orientace."
   },
   {
     "id": "ref_0904",
@@ -7565,7 +7622,8 @@
     "text": "Na konci života se možná nebudeš ptát, jestli jsi všechny lidi dokonale prověřil, ale jestli jsi někoho pustil dost blízko, abys nemusel být pořád jen hlídačem vlastního bunkru.",
     "tier": "free",
     "sort_order": 207,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Na konci života se možná nebudeš ptát, jestli jsi všechny lidi dokonale prověřila, ale jestli jsi někoho pustila dost blízko, abys nemusela být pořád jen hlídačkou vlastního bunkru."
   },
   {
     "id": "ref_0919",
@@ -7789,7 +7847,8 @@
     "text": "To, že jsi přežil díky opatrnosti, neznamená, že podle ní musíš prožít celý život.",
     "tier": "free",
     "sort_order": 235,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že jsi přežila díky opatrnosti, neznamená, že podle ní musíš prožít celý život."
   },
   {
     "id": "ref_0947",
@@ -7805,7 +7864,8 @@
     "text": "Možná nemáš problém s důvěrou jako takovou, ale dlouho jsi neměl dost dobrých lidí, se kterými by ses ji mohl bezpečně učit.",
     "tier": "free",
     "sort_order": 237,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nemáš problém s důvěrou jako takovou, ale dlouho jsi neměla dost dobrých lidí, se kterými by ses ji mohla bezpečně učit."
   },
   {
     "id": "ref_0949",
@@ -7813,7 +7873,8 @@
     "text": "Když se objeví podezření, zeptej se, jestli mluví současná situace, nebo stará zkušenost, ve které ses necítil bezpečně.",
     "tier": "free",
     "sort_order": 238,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se objeví podezření, zeptej se, jestli mluví současná situace, nebo stará zkušenost, ve které ses necítila bezpečně."
   },
   {
     "id": "ref_0950",
@@ -7893,7 +7954,8 @@
     "text": "Nedůvěra říká „buď sám a budeš v bezpečí“, ale zapomíná, že dlouhá samota má také zuby.",
     "tier": "free",
     "sort_order": 248,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nedůvěra říká „buď sama a budeš v bezpečí“, ale zapomíná, že dlouhá samota má také zuby."
   },
   {
     "id": "ref_0960",
@@ -8021,7 +8083,8 @@
     "text": "Možná nevěříš lidem také proto, že zatím nevěříš, že bys zvládl následky jejich nedokonalosti.",
     "tier": "free",
     "sort_order": 264,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nevěříš lidem také proto, že zatím nevěříš, že bys zvládla následky jejich nedokonalosti."
   },
   {
     "id": "ref_0976",
@@ -8085,7 +8148,8 @@
     "text": "Tvoje nedůvěra není nutně chyba charakteru. Možná se jedna část tebe kdysi naučila, že pochybovat je bezpečnější než být zaskočený, a od té doby poctivě drží službu.",
     "tier": "free",
     "sort_order": 272,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje nedůvěra není nutně chyba charakteru. Možná se jedna část tebe kdysi naučila, že pochybovat je bezpečnější než být zaskočená, a od té doby poctivě drží službu."
   },
   {
     "id": "ref_0984",
@@ -8125,7 +8189,8 @@
     "text": "Můžeš chránit své hranice, aniž bys musel předem obvinit celý svět.",
     "tier": "free",
     "sort_order": 277,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš chránit své hranice, aniž bys musela předem obvinit celý svět."
   },
   {
     "id": "ref_0989",
@@ -8173,7 +8238,8 @@
     "text": "Tvoje budoucí já ti možná řekne: „Děkuju, že jsi mě chránil. Ještě víc ti ale děkuju, že jsi mě kvůli tomu nepohřbil zaživa.“",
     "tier": "free",
     "sort_order": 283,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já ti možná řekne: „Děkuju, že jsi mě chránila. Ještě víc ti ale děkuju, že jsi mě kvůli tomu nepohřbila zaživa.“"
   },
   {
     "id": "ref_0995",
@@ -8229,7 +8295,8 @@
     "text": "Možná nejsi jen pozorovatel v nebezpečném světě. Jsi také součástí vztahů, ve kterých se dá důvěře znovu učit.",
     "tier": "free",
     "sort_order": 290,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nejsi jen pozorovatelka v nebezpečném světě. Jsi také součástí vztahů, ve kterých se dá důvěře znovu učit."
   },
   {
     "id": "ref_1002",
@@ -8269,7 +8336,8 @@
     "text": "Podezření je signál, ne důkaz. Můžeš mu naslouchat, aniž bys mu hned svěřil konečný rozsudek.",
     "tier": "free",
     "sort_order": 295,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Podezření je signál, ne důkaz. Můžeš mu naslouchat, aniž bys mu hned svěřila konečný rozsudek."
   },
   {
     "id": "ref_1007",
@@ -8309,7 +8377,8 @@
     "text": "Nemusíš odhalit všechny skryté úmysly, abys byl v bezpečí. Můžeš sledovat, co se skutečně děje, a reagovat podle toho.",
     "tier": "free",
     "sort_order": 300,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš odhalit všechny skryté úmysly, abys byla v bezpečí. Můžeš sledovat, co se skutečně děje, a reagovat podle toho."
   },
   {
     "id": "ref_1012",
@@ -8341,7 +8410,8 @@
     "text": "Když někomu uvěříš a on tě zklame, neznamená to, že jsi byl hloupý. Odpovědnost za zneužití důvěry nese ten, kdo ji zneužil.",
     "tier": "free",
     "sort_order": 304,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když někomu uvěříš a on tě zklame, neznamená to, že jsi byla hloupá. Odpovědnost za zneužití důvěry nese ten, kdo ji zneužil."
   },
   {
     "id": "ref_1016",
@@ -8357,7 +8427,8 @@
     "text": "Možná ses naučil být pořád o krok napřed, protože kdysi nebylo bezpečné polevit. Teď můžeš zkoumat, jestli opravdu musíš držet hlídku nepřetržitě.",
     "tier": "free",
     "sort_order": 306,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses naučila být pořád o krok napřed, protože kdysi nebylo bezpečné polevit. Teď můžeš zkoumat, jestli opravdu musíš držet hlídku nepřetržitě."
   },
   {
     "id": "ref_1018",
@@ -8397,7 +8468,8 @@
     "text": "Nemusíš věřit všem lidem, abys mezi nimi mohl žít bezpečněji. Stačí postupně poznávat ty, kteří ti svým chováním dávají dobrý důvod důvěřovat jim.",
     "tier": "free",
     "sort_order": 311,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš věřit všem lidem, abys mezi nimi mohla žít bezpečněji. Stačí postupně poznávat ty, kteří ti svým chováním dávají dobrý důvod důvěřovat jim."
   },
   {
     "id": "ref_1023",
@@ -8405,7 +8477,8 @@
     "text": "To, že část tebe nikomu nevěří, neznamená, že je s tebou něco špatně. Možná se kdysi naučila, že pochybovat je bezpečnější než být zaskočený, a od té doby jen poctivě drží službu.",
     "tier": "free",
     "sort_order": 312,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že část tebe nikomu nevěří, neznamená, že je s tebou něco špatně. Možná se kdysi naučila, že pochybovat je bezpečnější než být zaskočená, a od té doby jen poctivě drží službu."
   },
   {
     "id": "ref_1024",
@@ -8413,7 +8486,8 @@
     "text": "Kdybys mi jako dítě řekl, že lidem nevěříš, nenutila bych tě věřit. Řekla bych ti: „Dávej si čas. Budu se k tobě chovat tak, abys mohl sám poznat, jestli jsem bezpečná.“",
     "tier": "free",
     "sort_order": 313,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys mi jako dítě řekla, že lidem nevěříš, nenutila bych tě věřit. Řekla bych ti: „Dávej si čas. Budu se k tobě chovat tak, abys mohla sama poznat, jestli jsem bezpečná.“"
   },
   {
     "id": "ref_1025",
@@ -8421,7 +8495,8 @@
     "text": "Možná ses kdysi potřeboval naučit číst mezi řádky, protože samotná slova nestačila. Dnes už ale nemusíš předpokládat skrytý význam všude, kde chybí jistota.",
     "tier": "free",
     "sort_order": 314,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi potřebovala naučit číst mezi řádky, protože samotná slova nestačila. Dnes už ale nemusíš předpokládat skrytý význam všude, kde chybí jistota."
   },
   {
     "id": "ref_1026",
@@ -8469,7 +8544,8 @@
     "text": "To, že dokážeš rozpoznat možnost zrady, může být známkou toho, že už nejsi tak bezbranný jako kdysi. Vidíš riziko, můžeš si nastavit hranice a můžeš odejít.",
     "tier": "free",
     "sort_order": 320,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že dokážeš rozpoznat možnost zrady, může být známkou toho, že už nejsi tak bezbranná jako kdysi. Vidíš riziko, můžeš si nastavit hranice a můžeš odejít."
   },
   {
     "id": "ref_1032",
@@ -8477,7 +8553,8 @@
     "text": "Tvoje bezpečí nestojí jen na tom, zda správně odhadneš druhé. Záleží také na tom, jestli dokážeš věřit vlastnímu úsudku, opravovat ho a chránit se, když se někdo ukáže jiný, než sis myslel.",
     "tier": "free",
     "sort_order": 321,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje bezpečí nestojí jen na tom, zda správně odhadneš druhé. Záleží také na tom, jestli dokážeš věřit vlastnímu úsudku, opravovat ho a chránit se, když se někdo ukáže jiný, než sis myslela."
   },
   {
     "id": "ref_1033",
@@ -8501,7 +8578,8 @@
     "text": "Kdyby tě měl někdo opravdu rád, nemusel by po tobě chtít, abys mu věřil navzdory svým pochybnostem. Mohl by ti dát příležitost zasloužit si důvěru tím, jak se k tobě dlouhodobě chová.",
     "tier": "free",
     "sort_order": 324,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě měl někdo opravdu rád, nemusel by po tobě chtít, abys mu věřila navzdory svým pochybnostem. Mohl by ti dát příležitost zasloužit si důvěru tím, jak se k tobě dlouhodobě chová."
   },
   {
     "id": "ref_1036",
@@ -8517,7 +8595,8 @@
     "text": "Tvoje tělo možná neříká „tenhle člověk je nebezpečný“. Možná jen říká „pozor, něco mi připomnělo dobu, kdy jsem v bezpečí nebyl“.",
     "tier": "free",
     "sort_order": 326,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje tělo možná neříká „tenhle člověk je nebezpečný“. Možná jen říká „pozor, něco mi připomnělo dobu, kdy jsem v bezpečí nebyla“."
   },
   {
     "id": "ref_1039",
@@ -8533,7 +8612,8 @@
     "text": "Kdybys nevěřil opravdu nikomu, nemohl bys normálně fungovat ani jeden den. Už samotný život mezi lidmi obsahuje stovky drobných sázek na to, že většina cizích lidí většinu času neudělá to nejhorší, co by mohla.",
     "tier": "free",
     "sort_order": 328,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nevěřila opravdu nikomu, nemohla bys normálně fungovat ani jeden den. Už samotný život mezi lidmi obsahuje stovky drobných sázek na to, že většina cizích lidí většinu času neudělá to nejhorší, co by mohla."
   },
   {
     "id": "ref_1041",
