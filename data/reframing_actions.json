@@ -26981,7 +26981,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus rozlišovat mezi „tohle odmítám“ a „tohle je celé odporné“. Pojmenuj přesně, která vlastnost, čin nebo okolnost ti vadí, místo abys odsoudila všechno najednou."
   },
   {
     "id": "refa_3255",
@@ -26990,7 +26991,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když cítím silné znechucení, můj první soud musí být správný.“ V bezpečné situaci, která v tobě vyvolává mírný odpor, odlož svůj závěr o dvě minuty. Předem si poznamenej, nakolik jsi přesvědčená o jeho správnosti (0–10). Během čekání zkus rozlišit, co skutečně víš a co si domýšlíš. Potom svou jistotu zhodnoť znovu. Postupně můžeš zkoušet i náročnější situace. Sleduj, kdy se tvůj první soud potvrdí, kdy se změní a co nového ses dozvěděla."
   },
   {
     "id": "refa_3256",
@@ -26999,7 +27001,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkoumej, jestli se pod znechucením neskrývá ještě jiný pocit. Zkus dokončit větu: „Kdybych teď necítila odpor, možná bych cítila…“ Může to být strach, smutek, stud, zranění nebo bezmoc. Nic si nevnucuj, jen chvíli zkoumej, co se v tobě skutečně odehrává."
   },
   {
     "id": "refa_3257",
@@ -27008,7 +27011,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud se znechucení obrací proti tobě, zkus místo „jsem odporná“ přesně pojmenovat, co ti na sobě vadí. Rozlišuj mezi tím, co můžeš změnit nebo napravit, a tím, co se můžeš postupně učit přijímat. Nemusíš odmítat celou sebe kvůli jedné vlastnosti, zkušenosti nebo chybě."
   },
   {
     "id": "refa_3258",
@@ -27262,7 +27266,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez kritiky polevím a budu podávat horší výkon.“ Vyber si menší úkol a tentokrát se při práci nepoháněj výčitkami. Místo nich používej věcné povzbuzení, jako bys pomáhala někomu, na kom ti záleží. Předem odhadni, jak to ovlivní tvoji motivaci, výkon a chybovost. Po dokončení porovnej očekávání se skutečností. Pokud ti to bude vyhovovat, zkus stejný přístup i u náročnějších úkolů."
   },
   {
     "id": "refa_3289",
@@ -27482,7 +27487,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví výčitky, zkus oddělit to, co jsi udělala, od toho, jaký jsi člověk. Doplň dvě věty: „Mrzí mě, že jsem udělala…“ a „To ze mě ještě nedělá…“ Všimni si, jak na tebe obě věty působí. Můžeš uznat chybu, aniž bys kvůli ní odsoudila sama sebe."
   },
   {
     "id": "refa_3317",
@@ -27500,7 +27506,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se odsuzuješ, představ si, že stejnou chybu udělal člověk, kterého máš ráda. Co bys mu řekla? Jak bys posoudila jeho odpovědnost? Porovnej to s tím, jak zacházíš sama se sebou. Pokud na sebe používáš přísnější metr, zkus najít spravedlivější pohled."
   },
   {
     "id": "refa_3319",
@@ -27509,7 +27516,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když někoho zklamu, znamená to, že jsem udělala něco špatně.“ V bezpečné situaci odmítni drobnou prosbu, kterou nechceš nebo nemůžeš splnit. Předem odhadni, jak druhý zareaguje, jak silnou vinu pocítíš a co bude následovat. Potom porovnej očekávání se skutečností. Zvaž, zda jeho případná nespokojenost skutečně znamená, že ses provinila. Postupně můžeš zkoušet i důležitější preference a hranice."
   },
   {
     "id": "refa_3320",
@@ -27518,7 +27526,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si automatických omluv. Než řekneš „promiň“, na okamžik se zastav a zeptej se, zda jsi skutečně něco způsobila, nebo se jen cítíš nepříjemně, protože má někdo jiné přání, potřeby či očekávání. Omlouvej se za své chyby, ne automaticky za svou existenci."
   },
   {
     "id": "refa_3323",
@@ -27527,7 +27536,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Napiš si několik pravidel, podle kterých tě posuzuje tvůj vnitřní soudce. Třeba „nesmím nikoho zklamat“, „musím všechno napravit“ nebo „slušný člověk nesmí myslet na sebe“. U každého pravidla zvaž, zda je spravedlivé, realistické a zda bys podle něj posuzovala i někoho, koho máš ráda."
   },
   {
     "id": "refa_3321",
@@ -27747,7 +27757,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud cítíš, že už nedokážeš mluvit klidně, přeruš rozhovor větou: „Teď už nejsem schopná mluvit rozumně. Potřebuju pauzu a vrátím se k tomu později.“ Pak se k tématu opravdu vrať, až se uklidníš."
   },
   {
     "id": "refa_3349",
@@ -27765,7 +27776,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo naštve, zkus nejprve vlastními slovy shrnout, jak jeho stanovisku rozumíš. Zeptej se, jestli jsi ho pochopila správně, a teprve potom řekni, s čím nesouhlasíš. Nemusíš jeho názor přijmout, abys mu mohla porozumět."
   },
   {
     "id": "refa_3352",
@@ -27774,7 +27786,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Trénuj přímé pojmenování toho, co se v tobě děje. Místo ironie, obvinění nebo rýpnutí zkus říct: „Tohle mě naštvalo“, „Cítím se přehlížená“ nebo „Potřebuju, abys mě vyslechl.“ Nemusíš potlačit svůj nesouhlas, jen ho můžeš vyjádřit způsobem, který druhému umožní lépe pochopit, co se tě dotklo."
   },
   {
     "id": "refa_3351",
@@ -28017,7 +28030,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když chceš říct něco zraňujícího, zeptej se sama sebe: „Chci něco sdělit, nebo chci způsobit bolest?“ Pokud platí druhá možnost, odlož rozhovor a nejdřív zkus pojmenovat, co tě zranilo a co právě potřebuješ."
   },
   {
     "id": "refa_3382",
@@ -28035,7 +28049,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po konfliktu si stručně zapiš, co ho spustilo, co jsi nejdřív cítila, jaký útočný impuls se objevil, co jsi udělala a jaký to mělo následek. Hledej opakující se souvislosti, ne důvody, proč se odsoudit."
   },
   {
     "id": "refa_3385",
@@ -28044,7 +28059,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez tvrdosti moje hranice neplatí.“ Vyber si jednu méně závažnou situaci a vyjádři svou hranici klidně, stručně a bez výhrůžek či trestu. Předem odhadni, jak pravděpodobné je, že ji druhý bude respektovat, a čeho se obáváš. Potom zaznamenej, co se skutečně stalo a jak ses cítila. Postupně můžeš zkoušet důležitější hranice. Pokud druhý hranici nerespektuje, není to důkaz, že musíš být tvrdší; může být potřeba zvolit jiný způsob ochrany sebe."
   },
   {
     "id": "refa_3386",
@@ -28053,7 +28069,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud jsi někomu ublížila, zkus to napravit bez obhajování: pojmenuj, co konkrétně jsi udělala, uznej dopad na druhého a řekni, co příště uděláš jinak. Nevyžaduj okamžité odpuštění ani ujištění, že je všechno v pořádku."
   },
   {
     "id": "refa_3387",
@@ -28278,7 +28295,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když ucítíš potřebu někoho potrestat, odlož důležitá rozhodnutí, zprávy i konfrontace, dokud největší vlna vzteku nepoleví. Nemusíš svůj hněv popírat ani odpouštět; jde o to, abys v afektu neudělala něco, čeho budeš později litovat."
   },
   {
     "id": "refa_3414",
@@ -28296,7 +28314,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nauč se rozlišovat mezi agresí a krutostí. Agrese může znamenat, že se bráníš, odmítáš něco nepřijatelného nebo chráníš své hranice. Krutost k tomu přidává přání, aby druhého tvoje reakce bolela. Zkus si všímat chvíle, kdy se jedno mění v druhé, a hledat způsob, jak se pevně postavit za sebe, aniž bys druhého záměrně zraňovala."
   },
   {
     "id": "refa_3416",
@@ -28305,7 +28324,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vytvoř si osobní pravidla pro chvíle, kdy tě přemůže vztek. Vyber si tři věci, které nechceš dělat ani v největším afektu, například ponižovat druhého, vyhrožovat mu nebo útočit na jeho citlivá místa. Pravidla si napiš a měj je po ruce, abys je mohla použít právě tehdy, kdy je nejtěžší se jimi řídit."
   },
   {
     "id": "refa_3417",
@@ -28314,7 +28334,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když chceš druhého potrestat, zeptej se sama sebe: „Co bych od něj potřebovala, kdybych mu nemohla nijak ublížit?“ Zkus odpověď převést do konkrétní žádosti, jasné hranice nebo přiměřeného důsledku. Možná zjistíš, že pod touhou po trestu je potřeba respektu, uznání, bezpečí nebo nápravy."
   },
   {
     "id": "refa_3418",
@@ -28323,7 +28344,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Trénuj pevné věty, které chrání tvoje hranice, aniž by druhého ponižovaly: „Tohle nechci.“ „Takhle se mnou nemluv.“ „Potřebuju, abys to udělal jinak.“ „Teď odcházím a vrátím se k tomu později.“ Zkus si je několikrát vyslovit nahlas, abys je v náročné chvíli nemusela teprve hledat."
   },
   {
     "id": "refa_3419",
@@ -28332,7 +28354,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po konfliktu si odděleně napiš tři věci: co druhý skutečně udělal, jak sis jeho jednání vyložila a co jsi při tom cítila. Například: „Neodpověděl mi. Vyložila jsem si to tak, že mnou pohrdá. Cítila jsem vztek a ponížení.“ Nejde o to omlouvat druhého, ale rozlišit skutečnost od významu, který jí přisuzuješ."
   },
   {
     "id": "refa_3420",
@@ -28534,7 +28557,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj mezi „udělala jsem něco špatně“ a „jsem špatná“. První věta označuje konkrétní jednání, které můžeš napravit. Druhá z něj dělá rozsudek nad celým člověkem, který ti neukazuje žádnou cestu dál."
   },
   {
     "id": "refa_3445",
@@ -28561,7 +28585,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví nutkání potrestat se, zkus 90 sekund nic nepodnikat a pojmenovat, co právě cítíš: stud, vztek, strach, bezmoc, smutek, závist nebo vinu. Nemusíš emoci odstranit ani se jí poddat. Zkus ji chvíli unést, aniž bys ji obrátila proti sobě."
   },
   {
     "id": "refa_3449",
@@ -28570,7 +28595,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den udělej jednu drobnou věc, kterou o sebe pečuješ, aniž by sis ji musela zasloužit. Může to být odpočinek, dobré jídlo, procházka nebo chvíle radosti. Základní péče o sebe nemusí být odměnou za bezchybnost."
   },
   {
     "id": "refa_3451",
@@ -28808,7 +28834,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nacvičuj pomalé dýchání s výdechem delším než nádech po dobu několika minut. Nejde o to hněv potlačit, ale snížit tělesné napětí, abys měla větší prostor rozhodnout se, jak zareaguješ."
   },
   {
     "id": "refa_3479",
@@ -29028,7 +29055,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj, co se skutečně stalo, co sis o tom vyložila a co zatím nevíš. Sepiš si konkrétní událost, svou interpretaci, pocity a potřeby. Pomůže ti to oddělit oprávněnou bolest od závěrů, které mohou být jen jedním z možných vysvětlení."
   },
   {
     "id": "refa_3505",
@@ -29046,7 +29074,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozděl si situaci na tři části: moje odpovědnost, odpovědnost druhého a okolnosti. Nepřebírej vinu za to, co jsi nemohla ovlivnit, ale ani nepřehlížej svůj skutečný podíl. Obojí může platit současně."
   },
   {
     "id": "refa_3507",
@@ -29064,7 +29093,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když cítíš hořkost, zkus pojmenovat, co se pod ní skrývá: „Jsem zklamaná“, „Cítím se ponížená“ nebo „Tohle mě bolí“. Všímej si, jestli se ti po pojmenování zranitelnějšího pocitu lépe rozpoznává, co potřebuješ, a jestli se tím mění i tvoje chuť obviňovat."
   },
   {
     "id": "refa_3509",
@@ -29073,7 +29103,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj odpuštění, smíření a nastavení hranic. Můžeš přestat živit křivdu, aniž bys obnovila vztah, omluvila špatné jednání nebo dovolila, aby se opakovalo. Nemusíš odpustit ani se smířit, abys mohla žít dál."
   },
   {
     "id": "refa_3510",
@@ -29266,7 +29297,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě něco urazí, dej si před reakcí deset minut. Ne proto, abys pocit potlačila, ale aby o tvé odpovědi rozhodoval i klidnější kus tebe."
   },
   {
     "id": "refa_3534",
@@ -29275,7 +29307,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zapiš si stručně: Co se stalo? Co jsem v tom slyšela? Co jsem cítila? Co skutečně vím? Oddělíš tak samotnou událost od významu, který jí přisuzuješ."
   },
   {
     "id": "refa_3535",
@@ -29284,7 +29317,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus uraženost přeložit do zranitelnější věty: „Zabolelo mě, že…“ nebo „Potřebovala jsem od něj…“. Možná tak objevíš skutečný problém, se kterým můžeš něco udělat."
   },
   {
     "id": "refa_3536",
@@ -29302,7 +29336,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když je tvoje hranice skutečně překročená, řekni to jednoduše: „Tohle mi nebylo příjemné.“ Můžeš se ozvat důstojně a přímo, aniž bys musela mlčet, oplácet nebo dlouze dokazovat, kdo má pravdu."
   },
   {
     "id": "refa_3539",
