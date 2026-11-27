@@ -38114,7 +38114,8 @@
     "text": "Možná tě přetížení chrání před ještě nepříjemnějším pocitem: že když přestaneš něco dělat, nebudeš dost užitečný, důležitý nebo v bezpečí. Tenhle strach nemusíš přehlušovat další prací. Můžeš mu zkusit porozumět.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tě přetížení chrání před ještě nepříjemnějším pocitem: že když přestaneš něco dělat, nebudeš dost užitečná, důležitá nebo v bezpečí. Tenhle strach nemusíš přehlušovat další prací. Můžeš mu zkusit porozumět."
   },
   {
     "id": "ref_4501",
@@ -38122,7 +38123,8 @@
     "text": "Kontrola ti slibuje klid, až bude všechno pod kontrolou. Jenže čím víc věcí se snažíš uhlídat, tím víc toho musíš hlídat, aby sis ten klid konečně dovolil.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kontrola ti slibuje klid, až bude všechno pod kontrolou. Jenže čím víc věcí se snažíš uhlídat, tím víc toho musíš hlídat, aby sis ten klid konečně dovolila."
   },
   {
     "id": "ref_4502",
@@ -38162,7 +38164,8 @@
     "text": "Nemusíš mít celý život srovnaný, abys mohl být v klidu právě v téhle minutě. Některé starosti můžou na chvíli zůstat stranou.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš mít celý život srovnaný, abys mohla být v klidu právě v téhle minutě. Některé starosti můžou na chvíli zůstat stranou."
   },
   {
     "id": "ref_4507",
@@ -38170,7 +38173,8 @@
     "text": "Možná ses kdysi naučil, že bezpečí získáš tím, že všechno uhlídáš, předvídáš a zvládneš. Pokud ti tahle strategie dnes bere síly, můžeš postupně zkoušet, co skutečně potřebuje tvůj dohled a co už můžeš nechat být.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že bezpečí získáš tím, že všechno uhlídáš, předvídáš a zvládneš. Pokud ti tahle strategie dnes bere síly, můžeš postupně zkoušet, co skutečně potřebuje tvůj dohled a co už můžeš nechat být."
   },
   {
     "id": "ref_4508",
@@ -38178,7 +38182,8 @@
     "text": "Tvoje budoucí já ti možná nebude děkovat za každou drobnost, kterou jsi dnes stihl. Dost možná ti poděkuje hlavně za věci, kterým jsi dokázal říct „tohle za můj čas nestojí“.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já ti možná nebude děkovat za každou drobnost, kterou jsi dnes stihla. Dost možná ti poděkuje hlavně za věci, kterým jsi dokázala říct „tohle za můj čas nestojí“."
   },
   {
     "id": "ref_4509",
@@ -38194,7 +38199,8 @@
     "text": "Nemusíš předvídat všechny možné problémy, abys byl v bezpečí. Spoustu věcí můžeš řešit až tehdy, pokud skutečně nastanou.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš předvídat všechny možné problémy, abys byla v bezpečí. Spoustu věcí můžeš řešit až tehdy, pokud skutečně nastanou."
   },
   {
     "id": "ref_4511",
@@ -38202,7 +38208,8 @@
     "text": "Zkus na chvíli připustit kacířskou možnost, že něco nestihneš, někdo bude nespokojený a svět poběží dál. Možná zjistíš, že následky nejsou zdaleka tak hrozné, jak sis představoval.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus na chvíli připustit kacířskou možnost, že něco nestihneš, někdo bude nespokojený a svět poběží dál. Možná zjistíš, že následky nejsou zdaleka tak hrozné, jak sis představovala."
   },
   {
     "id": "ref_4512",
@@ -38218,7 +38225,8 @@
     "text": "Kdyby ses na dnešní seznam úkolů podíval za dvacet let, spousta věcí, které teď vypadají nesnesitelně naléhavě, by ti nejspíš připadala nepodstatná. Možná jim nemusíš přisuzovat větší význam, než skutečně mají.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses na dnešní seznam úkolů podívala za dvacet let, spousta věcí, které teď vypadají nesnesitelně naléhavě, by ti nejspíš připadala nepodstatná. Možná jim nemusíš přisuzovat větší význam, než skutečně mají."
   },
   {
     "id": "ref_4514",
@@ -38424,7 +38432,8 @@
     "text": "Nemusíš napravovat každou situaci, ve které se někdo trápí. Někdy je dost být přítomný a nechat druhého, aby našel vlastní cestu.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš napravovat každou situaci, ve které se někdo trápí. Někdy je dost být přítomná a nechat druhého, aby našel vlastní cestu."
   },
   {
     "id": "ref_4536",
@@ -38432,7 +38441,8 @@
     "text": "Možná po sobě chceš víc, než bys kdy chtěl po někom, koho máš rád. Zkus si na chvíli nabídnout stejnou shovívavost.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná po sobě chceš víc, než bys kdy chtěla po někom, koho máš ráda. Zkus si na chvíli nabídnout stejnou shovívavost."
   },
   {
     "id": "ref_4537",
@@ -38440,7 +38450,8 @@
     "text": "Nemusíš zachránit všechno, co vidíš, že se pokazilo. Některé věci mohou zůstat nedokonalé, aniž bys selhal.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš zachránit všechno, co vidíš, že se pokazilo. Některé věci mohou zůstat nedokonalé, aniž bys selhala."
   },
   {
     "id": "ref_4538",
@@ -38448,7 +38459,8 @@
     "text": "Nemusíš se rozhodovat jen podle otázky „Co bych měl?“. Zkus někdy přidat i otázku „Co skutečně chci a co je pro mě únosné?“",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se rozhodovat jen podle otázky „Co bych měla?“. Zkus někdy přidat i otázku „Co skutečně chci a co je pro mě únosné?“"
   },
   {
     "id": "ref_4539",
@@ -38464,7 +38476,8 @@
     "text": "Možná nepotřebuješ ještě víc disciplíny, ale méně vnitřního dozoru. Nemusíš nad sebou stát celý den jako přísný vedoucí.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nepotřebuješ ještě víc disciplíny, ale méně vnitřního dozoru. Nemusíš nad sebou stát celý den jako přísná vedoucí."
   },
   {
     "id": "ref_4541",
@@ -38496,7 +38509,8 @@
     "text": "Nemusíš být pořád ten, kdo myslí dopředu, hlídá detaily a zachraňuje situaci. Svět se může chvíli obejít i bez tvé pohotovosti.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být pořád ta, která myslí dopředu, hlídá detaily a zachraňuje situaci. Svět se může chvíli obejít i bez tvé pohotovosti."
   },
   {
     "id": "ref_4545",
@@ -38512,7 +38526,8 @@
     "text": "Možná ses kdysi naučil, že když nebudeš všechno hlídat, předvídat a zařizovat, něco se pokazí a vina zůstane na tobě. Pokud to tak bylo, možná jsi tehdy potřeboval slyšet: „Nemusíš být dospělý za všechny ostatní.“",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že když nebudeš všechno hlídat, předvídat a zařizovat, něco se pokazí a vina zůstane na tobě. Pokud to tak bylo, možná jsi tehdy potřebovala slyšet: „Nemusíš být dospělá za všechny ostatní.“"
   },
   {
     "id": "ref_4547",
@@ -38536,7 +38551,8 @@
     "text": "Můžeš udělat chybu a pořád být dobrý a spolehlivý člověk. Jedna chyba nemaže všechno, co jsi dosud zvládl.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš udělat chybu a pořád být dobrý a spolehlivý člověk. Jedna chyba nemaže všechno, co jsi dosud zvládla."
   },
   {
     "id": "ref_4550",
@@ -38560,7 +38576,8 @@
     "text": "Když se cítíš zodpovědný i za věci, které nemůžeš ovlivnit, nemusí to být známka mimořádné svědomitosti. Možná se tvůj vnitřní alarm spouští i tam, kde žádná tvoje povinnost není.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš zodpovědná i za věci, které nemůžeš ovlivnit, nemusí to být známka mimořádné svědomitosti. Možná se tvůj vnitřní alarm spouští i tam, kde žádná tvoje povinnost není."
   },
   {
     "id": "ref_4553",
@@ -38584,7 +38601,8 @@
     "text": "To, že jsi mohl něco ovlivnit, ještě neznamená, že bylo tvou povinností to ovlivnit. Mezi těmito dvěma věcmi je obrovský rozdíl.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že jsi mohla něco ovlivnit, ještě neznamená, že bylo tvou povinností to ovlivnit. Mezi těmito dvěma věcmi je obrovský rozdíl."
   },
   {
     "id": "ref_4526",
@@ -38592,7 +38610,8 @@
     "text": "Tvoje hodnota není součtem věcí, které držíš pohromadě. Kdybys dnes nic nevyřešil, nepřestal bys být tím, kým jsi.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje hodnota není součtem věcí, které držíš pohromadě. Kdybys dnes nic nevyřešila, nepřestala bys být tím, kým jsi."
   },
   {
     "id": "ref_4528",
@@ -38624,7 +38643,8 @@
     "text": "Možná ses naučil být zodpovědný dřív nebo víc, než bylo zdravé. Pokud ti to kdysi pomáhalo získat bezpečí, uznání nebo předvídatelnost, neznamená to, že za ně musíš platit stejnou cenu i dnes.",
     "tier": "free",
     "sort_order": 41,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses naučila být zodpovědná dřív nebo víc, než bylo zdravé. Pokud ti to kdysi pomáhalo získat bezpečí, uznání nebo předvídatelnost, neznamená to, že za ně musíš platit stejnou cenu i dnes."
   },
   {
     "id": "ref_4558",
@@ -38648,7 +38668,8 @@
     "text": "Představ si, že ti o svých povinnostech a obavách vypráví někdo, koho miluješ. Nejspíš bys mu neřekl: „Ano, musíš všechno uhlídat.“ Spíš bys mu pomohl poznat, co je skutečně jeho odpovědnost.",
     "tier": "free",
     "sort_order": 44,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si, že ti o svých povinnostech a obavách vypráví někdo, koho miluješ. Nejspíš bys mu neřekla: „Ano, musíš všechno uhlídat.“ Spíš bys mu pomohla poznat, co je skutečně jeho odpovědnost."
   },
   {
     "id": "ref_4561",
@@ -38656,7 +38677,8 @@
     "text": "Někdy můžeš být tak zaměstnaný odpovědností za všechno, že ti nezbývají síly na to, co je opravdu důležité. I zodpovědnost potřebuje hranice, jinak se mění v nekonečnou službu.",
     "tier": "free",
     "sort_order": 45,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy můžeš být tak zaměstnaná odpovědností za všechno, že ti nezbývají síly na to, co je opravdu důležité. I zodpovědnost potřebuje hranice, jinak se mění v nekonečnou službu."
   },
   {
     "id": "ref_4562",
@@ -38680,7 +38702,8 @@
     "text": "Když něco dnes nestihneš, nemusí to znamenat, že jsi selhal. Možná měl jen den příliš málo hodin na všechno, co jsi od sebe očekával.",
     "tier": "free",
     "sort_order": 48,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když něco dnes nestihneš, nemusí to znamenat, že jsi selhala. Možná měl jen den příliš málo hodin na všechno, co jsi od sebe očekávala."
   },
   {
     "id": "ref_4565",
@@ -38688,7 +38711,8 @@
     "text": "Možná nejsi nespokojený proto, že je všechno špatně, ale proto, že tvoje mysl automaticky hledá, co ještě chybí. To, co už je dobré, tím nepřestává být dobré.",
     "tier": "free",
     "sort_order": 49,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nejsi nespokojená proto, že je všechno špatně, ale proto, že tvoje mysl automaticky hledá, co ještě chybí. To, co už je dobré, tím nepřestává být dobré."
   },
   {
     "id": "ref_4566",
@@ -38736,7 +38760,8 @@
     "text": "Možná ses kdysi naučil, že klid přichází až ve chvíli, kdy je všechno zařízené, správně a pod kontrolou. Dnes si ale můžeš dovolit odpočívat i uprostřed nedokončených věcí.",
     "tier": "free",
     "sort_order": 55,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že klid přichází až ve chvíli, kdy je všechno zařízené, správně a pod kontrolou. Dnes si ale můžeš dovolit odpočívat i uprostřed nedokončených věcí."
   },
   {
     "id": "ref_4572",
@@ -38744,7 +38769,8 @@
     "text": "Kdyby za tebou přišlo dítě a řeklo, že nesmí odpočívat, protože ještě není všechno hotové, nejspíš bys ho neposlal zpátky do práce. Možná si stejnou laskavost zaslouží i ta část tebe, která pořád věří, že musí.",
     "tier": "free",
     "sort_order": 56,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby za tebou přišlo dítě a řeklo, že nesmí odpočívat, protože ještě není všechno hotové, nejspíš bys ho neposlala zpátky do práce. Možná si stejnou laskavost zaslouží i ta část tebe, která pořád věří, že musí."
   },
   {
     "id": "ref_4573",
@@ -38752,7 +38778,8 @@
     "text": "Tvoje budoucí já ti možná nebude vděčné za každou věc, kterou jsi dotáhl ještě o deset procent dál. Možná ti bude mnohem vděčnější za chvíle, kdy ses dokázal zastavit a skutečně žít.",
     "tier": "free",
     "sort_order": 57,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já ti možná nebude vděčné za každou věc, kterou jsi dotáhla ještě o deset procent dál. Možná ti bude mnohem vděčnější za chvíle, kdy ses dokázala zastavit a skutečně žít."
   },
   {
     "id": "ref_4574",
@@ -38776,7 +38803,8 @@
     "text": "Když tě trápí možnost, že jsi něco zanedbal, může to znamenat, že ti na věcech opravdu záleží. Samotná úzkost ale ještě neříká nic o tom, zda jsi skutečně něco zanedbal.",
     "tier": "free",
     "sort_order": 60,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když tě trápí možnost, že jsi něco zanedbala, může to znamenat, že ti na věcech opravdu záleží. Samotná úzkost ale ještě neříká nic o tom, zda jsi skutečně něco zanedbala."
   },
   {
     "id": "ref_4577",
@@ -38792,7 +38820,8 @@
     "text": "Nemusíš být tím, kdo drží všechno pohromadě. Svět se nemusí rozpadnout jen proto, že na chvíli přestaneš podpírat jeho strop.",
     "tier": "free",
     "sort_order": 62,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být tou, která drží všechno pohromadě. Svět se nemusí rozpadnout jen proto, že na chvíli přestaneš podpírat jeho strop."
   },
   {
     "id": "ref_4579",
@@ -38808,7 +38837,8 @@
     "text": "Tvoje budoucí já ti možná nebude vděčné za všechny katastrofy, kterým ses pokusil zabránit. Možná ti nejvíc poděkuje za chvíle, kdy ses naučil říct: „Tohle už nést nemusím.“",
     "tier": "free",
     "sort_order": 64,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já ti možná nebude vděčné za všechny katastrofy, kterým ses pokusila zabránit. Možná ti nejvíc poděkuje za chvíle, kdy ses naučila říct: „Tohle už nést nemusím.“"
   },
   {
     "id": "ref_4581",
@@ -38848,7 +38878,8 @@
     "text": "Jednou budeš mít za sebou celý svůj seznam povinností, protože budeš mít za sebou celý život. Byla by škoda zjistit, že sis dovoloval žít hlavně v mezerách mezi úkoly.",
     "tier": "free",
     "sort_order": 69,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednou budeš mít za sebou celý svůj seznam povinností, protože budeš mít za sebou celý život. Byla by škoda zjistit, že sis dovolovala žít hlavně v mezerách mezi úkoly."
   },
   {
     "id": "ref_4586",
@@ -38864,7 +38895,8 @@
     "text": "Tělo by ti možná řeklo: „Mně je úplně jedno, kolik věcí ještě zbývá. Potřebuju jíst, spát, dýchat, hýbat se a občas nebýt ve střehu kvůli úkolům, které sis sám uložil.“",
     "tier": "free",
     "sort_order": 71,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tělo by ti možná řeklo: „Mně je úplně jedno, kolik věcí ještě zbývá. Potřebuju jíst, spát, dýchat, hýbat se a občas nebýt ve střehu kvůli úkolům, které sis sama uložila.“"
   },
   {
     "id": "ref_4589",
@@ -38880,7 +38912,8 @@
     "text": "Skála vedle cesty tě nebude soudit za to, kolik problémů jsi dnes vyřešil. Bude tam stejně tiše ležet a připomínat ti, že tvoje existence nepotřebuje být neustále ospravedlňována výkonem.",
     "tier": "free",
     "sort_order": 73,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Skála vedle cesty tě nebude soudit za to, kolik problémů jsi dnes vyřešila. Bude tam stejně tiše ležet a připomínat ti, že tvoje existence nepotřebuje být neustále ospravedlňována výkonem."
   },
   {
     "id": "ref_4591",
@@ -39052,7 +39085,8 @@
     "text": "Když jsou druzí jiní, než by sis přál, nemusí to znamenat, že tě zklamali. Mají svoje potřeby, možnosti a představy, stejně jako ty.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když jsou druzí jiní, než by sis přála, nemusí to znamenat, že tě zklamali. Mají svoje potřeby, možnosti a představy, stejně jako ty."
   },
   {
     "id": "ref_4612",
@@ -39068,7 +39102,8 @@
     "text": "To, že ti na něčem záleží, ještě neznamená, že to musí být dokonalé. Můžeš o něco pečovat, aniž bys nad tím musel neustále držet dohled.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že ti na něčem záleží, ještě neznamená, že to musí být dokonalé. Můžeš o něco pečovat, aniž bys nad tím musela neustále držet dohled."
   },
   {
     "id": "ref_4616",
@@ -39084,7 +39119,8 @@
     "text": "Možná sis zvykl věřit, že když přestaneš tlačit, všechno se začne zhoršovat. Nemusíš se vzdát své snahy. Můžeš jen zkusit, jestli je ten tlak opravdu pokaždé nutný.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná sis zvykla věřit, že když přestaneš tlačit, všechno se začne zhoršovat. Nemusíš se vzdát své snahy. Můžeš jen zkusit, jestli je ten tlak opravdu pokaždé nutný."
   },
   {
     "id": "ref_4618",
@@ -39116,7 +39152,8 @@
     "text": "Někdy se za náročností skrývá prosté přání: už nechci být zklamaný. Jenže snaha předejít každému zklamání tě může připravit i o spoustu radosti.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy se za náročností skrývá prosté přání: už nechci být zklamaná. Jenže snaha předejít každému zklamání tě může připravit i o spoustu radosti."
   },
   {
     "id": "ref_4622",
@@ -39132,7 +39169,8 @@
     "text": "Můžeš být náročný na věci, které jsou pro tebe důležité, a velkorysý k těm ostatním. Nemusíš na celý život používat stejně přísné měřítko.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš být náročný na věci, které jsou pro tebe důležité, a velkorysá k těm ostatním. Nemusíš na celý život používat stejně přísné měřítko."
   },
   {
     "id": "ref_4624",
@@ -39140,7 +39178,8 @@
     "text": "Představ si, že bys nikdy nic nechtěl zlepšit, nic nerozlišoval a s ničím nepohnul. Nejspíš bys tak žít nechtěl. Cílem tedy nemusí být zbavit se náročnosti, ale vrátit jí přiměřené místo.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si, že bys nikdy nic nechtěla zlepšit, nic nerozlišovala a s ničím nepohnula. Nejspíš bys tak žít nechtěla. Cílem tedy nemusí být zbavit se náročnosti, ale vrátit jí přiměřené místo."
   },
   {
     "id": "ref_4625",
@@ -39148,7 +39187,8 @@
     "text": "Možná ses někdy naučil, že vysoké nároky tě ochrání před zklamáním, chaosem nebo selháním. To, co ti pomáhalo cítit se bezpečněji, ti ale dnes může bránit užívat si věci, které jsou dost dobré.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses někdy naučila, že vysoké nároky tě ochrání před zklamáním, chaosem nebo selháním. To, co ti pomáhalo cítit se bezpečněji, ti ale dnes může bránit užívat si věci, které jsou dost dobré."
   },
   {
     "id": "ref_4626",
@@ -39156,7 +39196,8 @@
     "text": "Nemusíš čekat, až bude svět přesně podle tvých představ, abys v něm mohl najít klid. I nedokonalá chvíle může být krásná, když ji nemusíš neustále opravovat.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš čekat, až bude svět přesně podle tvých představ, abys v něm mohla najít klid. I nedokonalá chvíle může být krásná, když ji nemusíš neustále opravovat."
   },
   {
     "id": "ref_4627",
@@ -39164,7 +39205,8 @@
     "text": "Za deset let si pravděpodobně nebudeš pamatovat většinu drobných nedostatků, které tě dnes štvou. Možná si ale budeš pamatovat, jestli ses tehdy dokázal vůbec radovat.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Za deset let si pravděpodobně nebudeš pamatovat většinu drobných nedostatků, které tě dnes štvou. Možná si ale budeš pamatovat, jestli ses tehdy dokázala vůbec radovat."
   },
   {
     "id": "ref_4628",
@@ -39172,7 +39214,8 @@
     "text": "Tvoje budoucí já možná nebude litovat, že jsi měl vysoké standardy. Mohlo by ale litovat všech dobrých chvil, které jsi odmítl jako nedostatečně dobré.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já možná nebude litovat, že jsi měla vysoké standardy. Mohlo by ale litovat všech dobrých chvil, které jsi odmítla jako nedostatečně dobré."
   },
   {
     "id": "ref_4629",
@@ -39196,7 +39239,8 @@
     "text": "Kdybys jako dítě přišel za někým s pocitem, že nic není tak dobré, jak potřebuješ, možná by ti pomohlo slyšet: „Nemusíš hlídat, aby bylo všechno správně. Nemusíš mít všechno na starosti.“",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys jako dítě přišla za někým s pocitem, že nic není tak dobré, jak potřebuješ, možná by ti pomohlo slyšet: „Nemusíš hlídat, aby bylo všechno správně. Nemusíš mít všechno na starosti.“"
   },
   {
     "id": "ref_4632",
@@ -39220,7 +39264,8 @@
     "text": "Když něco nesplní tvoje očekávání, nemusí to znamenat, že je to špatné. Možná to jen dopadlo jinak, než sis představoval.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když něco nesplní tvoje očekávání, nemusí to znamenat, že je to špatné. Možná to jen dopadlo jinak, než sis představovala."
   },
   {
     "id": "ref_4603",
@@ -39228,7 +39273,8 @@
     "text": "Nemusíš si zasloužit dobrý život tím, že ho budeš neustále vylepšovat. Můžeš sám rozhodovat, kdy má smysl něco měnit a kdy už je čas přestat a začít si užívat.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš si zasloužit dobrý život tím, že ho budeš neustále vylepšovat. Můžeš sama rozhodovat, kdy má smysl něco měnit a kdy už je čas přestat a začít si užívat."
   },
   {
     "id": "ref_4633",
@@ -39400,7 +39446,8 @@
     "text": "Chyba není důkaz, že jsi selhal jako člověk. Je to obyčejná součást toho, že něco zkoušíš, učíš se a skutečně děláš.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Chyba není důkaz, že jsi selhala jako člověk. Je to obyčejná součást toho, že něco zkoušíš, učíš se a skutečně děláš."
   },
   {
     "id": "ref_4654",
@@ -39416,7 +39463,8 @@
     "text": "Představ si sebe za dvacet let. Dost možná nebudeš litovat drobných nedokonalostí, ale hodin života, které jsi obětoval tomu, aby žádné nebyly.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si sebe za dvacet let. Dost možná nebudeš litovat drobných nedokonalostí, ale hodin života, které jsi obětovala tomu, aby žádné nebyly."
   },
   {
     "id": "ref_4658",
@@ -39440,7 +39488,8 @@
     "text": "Možná ses kdysi naučil, že chyba znamená kritiku, zklamání nebo ztrátu přijetí. Pokud ano, stojí za to připomenout si, že dnes už nemusíš být tolik závislý na spokojenosti druhých se svým výkonem.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že chyba znamená kritiku, zklamání nebo ztrátu přijetí. Pokud ano, stojí za to připomenout si, že dnes už nemusíš být tolik závislá na spokojenosti druhých se svým výkonem."
   },
   {
     "id": "ref_4661",
@@ -39456,7 +39505,8 @@
     "text": "Kdyby za tebou přišlo dítě a řeklo: „Musím všechno dělat dokonale, jinak nejsem dost dobré,“ asi bys mu nepřidal další nároky. Možná si zasloužíš slyšet totéž, co bys řekl jemu.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby za tebou přišlo dítě a řeklo: „Musím všechno dělat dokonale, jinak nejsem dost dobré,“ asi bys mu nepřidala další nároky. Možná si zasloužíš slyšet totéž, co bys řekla jemu."
   },
   {
     "id": "ref_4664",
@@ -39488,7 +39538,8 @@
     "text": "Zkus dnes jednu méně důležitou věc nechat o kousek horší, než bys dokázal. Možná zjistíš, že to, co perfekcionismus označuje za nebezpečnou nedokonalost, je pro ostatní úplně normální.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus dnes jednu méně důležitou věc nechat o kousek horší, než bys dokázala. Možná zjistíš, že to, co perfekcionismus označuje za nebezpečnou nedokonalost, je pro ostatní úplně normální."
   },
   {
     "id": "ref_4668",
@@ -39520,7 +39571,8 @@
     "text": "Perfekcionismus má komickou pracovní smlouvu: dovolí ti být spokojený, jakmile už nebude existovat nic, co by šlo zlepšit. Gratuluju, právě sis sjednal nárok na spokojenost přibližně nikdy.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Perfekcionismus má komickou pracovní smlouvu: dovolí ti být spokojená, jakmile už nebude existovat nic, co by šlo zlepšit. Gratuluju, právě sis sjednal nárok na spokojenost přibližně nikdy."
   },
   {
     "id": "ref_4640",
@@ -39763,7 +39815,8 @@
     "text": "Kdybys nikdy nikoho nesoudil, nerozlišoval dobré od škodlivého a všechno přijímal, nebyla by to moudrost, ale slepota. Cílem není přijít o úsudek, ale nedělat z každého úsudku obžalobu.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nikdy nikoho nesoudila, nerozlišovala dobré od škodlivého a všechno přijímala, nebyla by to moudrost, ale slepota. Cílem není přijít o úsudek, ale nedělat z každého úsudku obžalobu."
   },
   {
     "id": "ref_4702",
@@ -39779,7 +39832,8 @@
     "text": "Možná ses kdysi naučil rychle rozpoznávat, kdo dělá něco špatně, protože chyby znamenaly nebezpečí, konflikt nebo odmítnutí. Pokud to tak bylo, nemusíš dnes automaticky zůstávat v roli soudce.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila rychle rozpoznávat, kdo dělá něco špatně, protože chyby znamenaly nebezpečí, konflikt nebo odmítnutí. Pokud to tak bylo, nemusíš dnes automaticky zůstávat v roli soudce."
   },
   {
     "id": "ref_4704",
@@ -39787,7 +39841,8 @@
     "text": "Když druhého odsoudíš jako špatného člověka, můžeš přehlédnout i to, co se v jeho chování dá pochopit, aniž bys s ním musel souhlasit.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když druhého odsoudíš jako špatného člověka, můžeš přehlédnout i to, co se v jeho chování dá pochopit, aniž bys s ním musela souhlasit."
   },
   {
     "id": "ref_4705",
@@ -39827,7 +39882,8 @@
     "text": "Když jsi byl malý, možná bys potřeboval slyšet: „Nemusíš rozhodovat, kdo je hodný a kdo špatný. Já se postarám o to, aby ses cítil v bezpečí.“",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když jsi byla malá, možná bys potřebovala slyšet: „Nemusíš rozhodovat, kdo je hodný a kdo špatný. Já se postarám o to, aby ses cítila v bezpečí.“"
   },
   {
     "id": "ref_4710",
@@ -39851,7 +39907,8 @@
     "text": "Tvoje budoucí já se možná nebude ptát: „Dokázal jsem, že jsem měl pravdu?“ Spíš: „Naložil jsem s tím tak, aby mi zbyl můj život?“",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já se možná nebude ptát: „Dokázala jsem, že jsem měl pravdu?“ Spíš: „Naložila jsem s tím tak, aby mi zbyl můj život?“"
   },
   {
     "id": "ref_4713",
@@ -39859,7 +39916,8 @@
     "text": "A je v tom i jeden komický paradox: můžeš odsuzovat druhé za to, že nejsou dost chápaví, spravedliví nebo lidští, a přitom se sám připravit právě o chápavost, spravedlnost a lidskost, které hájíš.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "A je v tom i jeden komický paradox: můžeš odsuzovat druhé za to, že nejsou dost chápaví, spravedliví nebo lidští, a přitom se sama připravit právě o chápavost, spravedlnost a lidskost, které hájíš."
   },
   {
     "id": "ref_4676",
@@ -40089,7 +40147,8 @@
     "text": "Možná tvoje mysl vytváří nepřítele, protože s nepřítelem se bojuje snáz než s bolestí, zklamáním nebo zradou. Zkus být chvíli zvědavý, co se skrývá o patro níž.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tvoje mysl vytváří nepřítele, protože s nepřítelem se bojuje snáz než s bolestí, zklamáním nebo zradou. Zkus být chvíli zvědavá, co se skrývá o patro níž."
   },
   {
     "id": "ref_4740",
@@ -40145,7 +40204,8 @@
     "text": "Nenávist někdy chrání člověka před bolestí, kterou zatím nedokáže unést. Až budeš připravený, můžeš se podívat i na to, co se pod ní skrývá. Nemusíš ji ze sebe násilím vytrhávat.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nenávist někdy chrání člověka před bolestí, kterou zatím nedokáže unést. Až budeš připravená, můžeš se podívat i na to, co se pod ní skrývá. Nemusíš ji ze sebe násilím vytrhávat."
   },
   {
     "id": "ref_4748",
@@ -40153,7 +40213,8 @@
     "text": "Ta část tebe, která chce druhému vrátit bolest, možná kdysi uvěřila, že bez tvrdosti zůstaneš bezbranný. Ale tvrdost nemusí být jediný způsob, jak se chránit.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ta část tebe, která chce druhému vrátit bolest, možná kdysi uvěřila, že bez tvrdosti zůstaneš bezbranná. Ale tvrdost nemusí být jediný způsob, jak se chránit."
   },
   {
     "id": "ref_4749",
@@ -40161,7 +40222,8 @@
     "text": "Když se cítíš ohrožený, tvoje mysl může začít rozdělovat svět na „my“ a „oni“, viníky a oběti, útok a obranu. Takové zjednodušení ti může pomáhat rychle reagovat, ale nemusí být nejpřesnějším obrazem skutečnosti.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš ohrožená, tvoje mysl může začít rozdělovat svět na „my“ a „oni“, viníky a oběti, útok a obranu. Takové zjednodušení ti může pomáhat rychle reagovat, ale nemusí být nejpřesnějším obrazem skutečnosti."
   },
   {
     "id": "ref_4750",
@@ -40177,7 +40239,8 @@
     "text": "Za pět let možná nebude nejdůležitější, jestli ten druhý dostal, co si zasloužil. Mnohem důležitější může být, jestli sis kvůli němu nenechal ukrást kus vlastního života.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Za pět let možná nebude nejdůležitější, jestli ten druhý dostal, co si zasloužil. Mnohem důležitější může být, jestli sis kvůli němu nenechala ukrást kus vlastního života."
   },
   {
     "id": "ref_4752",
@@ -40185,7 +40248,8 @@
     "text": "Tvoje budoucí já tě možná nebude prosit, abys byl hodnější. Možná ti jen řekne: „Nedávej tomu člověku víc let, než už ti vzal.“",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já tě možná nebude prosit, abys byla hodnější. Možná ti jen řekne: „Nedávej tomu člověku víc let, než už ti vzal.“"
   },
   {
     "id": "ref_4753",
@@ -40193,7 +40257,8 @@
     "text": "Kdybys jako dítě řekl, že někoho nenávidíš, nepotřeboval bys slyšet, že jsi zlý. Spíš bys potřeboval, aby se tě někdo zeptal: „Co se stalo? Co tě tak rozbolelo?“ Možná si podobné porozumění zasloužíš i dnes.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys jako dítě řekl, že někoho nenávidíš, nepotřeboval bys slyšet, že jsi zlá. Spíš bys potřeboval, aby se tě někdo zeptal: „Co se stalo? Co tě tak rozbolelo?“ Možná si podobné porozumění zasloužíš i dnes."
   },
   {
     "id": "ref_4754",
@@ -40201,7 +40266,8 @@
     "text": "Člověk, kterému na tobě záleží, by nejspíš nechtěl, abys svou bolest popíral. Možná by si ale přál, aby ti to, co ti někdo udělal, neubližovalo ještě další roky.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, kterému na tobě záleží, by nejspíš nechtěl, abys svou bolest popírala. Možná by si ale přál, aby ti to, co ti někdo udělal, neubližovalo ještě další roky."
   },
   {
     "id": "ref_4755",
@@ -40225,7 +40291,8 @@
     "text": "Nemusíš se za svoje temné pocity trestat. I velmi silný pocit můžeš prožívat, aniž by ses podle něj musel zachovat.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se za svoje temné pocity trestat. I velmi silný pocit můžeš prožívat, aniž by ses podle něj musela zachovat."
   },
   {
     "id": "ref_4729",
