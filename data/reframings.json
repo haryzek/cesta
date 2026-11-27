@@ -17766,7 +17766,8 @@
     "text": "Možná sis kdysi začal hlídat každou chybu, protože pochybovat o sobě bylo bezpečnější než riskovat kritiku, zklamání nebo odmítnutí. To, co dnes vypadá jako slabost, mohlo být tehdy docela chytré přizpůsobení.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná sis kdysi začala hlídat každou chybu, protože pochybovat o sobě bylo bezpečnější než riskovat kritiku, zklamání nebo odmítnutí. To, co dnes vypadá jako slabost, mohlo být tehdy docela chytré přizpůsobení."
   },
   {
     "id": "ref_2108",
@@ -17774,7 +17775,8 @@
     "text": "Nemusíš být nejjistější člověk v místnosti. Můžeš být nejistý a přesto schopný, kompetentní, zajímavý a hodný respektu.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být nejjistější člověk v místnosti. Můžeš být nejistá a přesto schopná, kompetentní, zajímavá a hodná respektu."
   },
   {
     "id": "ref_2109",
@@ -17790,7 +17792,8 @@
     "text": "Zkus si vzpomenout, kolikrát ses už bál, že něco nezvládneš, a přesto ses tím nějak prokousal. Tvoje minulost možná obsahuje víc důkazů ve tvůj prospěch, než teď vidíš.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vzpomenout, kolikrát ses už bála, že něco nezvládneš, a přesto ses tím nějak prokousala. Tvoje minulost možná obsahuje víc důkazů ve tvůj prospěch, než teď vidíš."
   },
   {
     "id": "ref_2111",
@@ -17806,7 +17809,8 @@
     "text": "Teď nemusíš dokazovat vůbec nic. Možná máš strach, že nebudeš stačit, a právě teď potřebuješ spíš trochu opory než další zkoušení sebe sama.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Teď nemusíš dokazovat vůbec nic. Možná máš strach, že nebudeš stačit, a právě teď potřebuješ spíš trochu opory než další zkoušení sebe samé."
   },
   {
     "id": "ref_2113",
@@ -17822,7 +17826,8 @@
     "text": "Hledej ve své minulosti ne chvíle, kdy ses cítil sebejistě, ale chvíle, kdy ses cítil nejistě a přesto jednal, učil se, rozhodl se nebo něco unesl. Právě ty ti mohou o tvých schopnostech říct mnohem víc.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Hledej ve své minulosti ne chvíle, kdy ses cítila sebejistě, ale chvíle, kdy ses cítila nejistě a přesto jednal, učil se, rozhodl se nebo něco unesl. Právě ty ti mohou o tvých schopnostech říct mnohem víc."
   },
   {
     "id": "ref_2115",
@@ -17830,7 +17835,8 @@
     "text": "Kdyby za tebou přišlo malé dítě a šeptalo ti „já to asi nezvládnu“, nejspíš bys ho nezačal zkoušet, co všechno umí. Spíš by potřebovalo slyšet: „Nemusíš vědět, jestli to zvládneš. Jsem tady a můžeme to zjistit.“",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby za tebou přišlo malé dítě a šeptalo ti „já to asi nezvládnu“, nejspíš bys ho nezačala zkoušet, co všechno umí. Spíš by potřebovalo slyšet: „Nemusíš vědět, jestli to zvládneš. Jsem tady a můžeme to zjistit.“"
   },
   {
     "id": "ref_2116",
@@ -17838,7 +17844,8 @@
     "text": "Možná se teď díváš na sebe očima své nejistoty. Zkus na chvíli připustit, že člověk, kterého ti ukazuje, vůbec nemusí odpovídat tomu, jaký skutečně jsi.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se teď díváš na sebe očima své nejistoty. Zkus na chvíli připustit, že člověk, kterého ti ukazuje, vůbec nemusí odpovídat tomu, jaká skutečně jsi."
   },
   {
     "id": "ref_2117",
@@ -17870,7 +17877,8 @@
     "text": "Kdyby sis věřil absolutně ve všem, nebylo by to zdravé sebevědomí, ale dost špatný odhad vlastních schopností. Trocha pochybností není závada. Problém nastává, když dostanou právo rozhodovat úplně o všem.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby sis věřila absolutně ve všem, nebylo by to zdravé sebevědomí, ale dost špatný odhad vlastních schopností. Trocha pochybností není závada. Problém nastává, když dostanou právo rozhodovat úplně o všem."
   },
   {
     "id": "ref_2121",
@@ -17886,7 +17894,8 @@
     "text": "Tvoje budoucí já se možná nebude divit tomu, kolikrát ses bál. Spíš mu může připadat zvláštní, jak často jsi považoval strach za spolehlivou předpověď budoucnosti.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já se možná nebude divit tomu, kolikrát ses bála. Spíš mu může připadat zvláštní, jak často jsi považovala strach za spolehlivou předpověď budoucnosti."
   },
   {
     "id": "ref_2123",
@@ -18090,7 +18099,8 @@
     "tier": "free",
     "sort_order": 16,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že něco nezvládneš sama, neznamená, že je to nezvládnutelné. Některé situace jsou prostě nad síly jednoho člověka."
   },
   {
     "id": "ref_2133",
@@ -18117,7 +18127,8 @@
     "tier": "free",
     "sort_order": 19,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít řešení, abys měla naději. Někdy se nové možnosti objeví až ve chvíli, kdy nejhorší vlna trochu opadne."
   },
   {
     "id": "ref_2141",
@@ -18126,7 +18137,8 @@
     "tier": "free",
     "sort_order": 20,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi vyčerpaná, i malá překážka může vypadat jako neproniknutelná zeď. Možná teď nepotřebuješ větší sílu, ale trochu klidu, který ti uleví."
   },
   {
     "id": "ref_2143",
@@ -18135,7 +18147,8 @@
     "tier": "free",
     "sort_order": 21,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že jsi vyzkoušela několik cest a nefungovaly, neznamená, že nefunguje nic."
   },
   {
     "id": "ref_2146",
@@ -18167,7 +18180,8 @@
     "text": "Možná tě bezmoc chrání před ještě bolestivější možností: znovu doufat, něco zkusit a být zklamaný. Rezignace někdy není slabost, ale brnění proti další ráně.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tě bezmoc chrání před ještě bolestivější možností: znovu doufat, něco zkusit a být zklamaná. Rezignace někdy není slabost, ale brnění proti další ráně."
   },
   {
     "id": "ref_2151",
@@ -18207,7 +18221,8 @@
     "text": "Bezmoc někdy vzniká tam, kde ses naučil, že snažit se nemá cenu. Závěr, který kdysi dával smysl, ale nemusí platit pro všechny další situace v tvém životě.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Bezmoc někdy vzniká tam, kde ses naučila, že snažit se nemá cenu. Závěr, který kdysi dával smysl, ale nemusí platit pro všechny další situace v tvém životě."
   },
   {
     "id": "ref_2156",
@@ -18263,7 +18278,8 @@
     "text": "Představ si sebe za deset let, jak se díváš na dnešní chvíli. Možná si nebudeš pamatovat jen to, jak bezvýchodná byla, ale taky tu podivnou skutečnost, že život potom pokračoval někam, co jsi tehdy vůbec nedokázal předvídat.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si sebe za deset let, jak se díváš na dnešní chvíli. Možná si nebudeš pamatovat jen to, jak bezvýchodná byla, ale taky tu podivnou skutečnost, že život potom pokračoval někam, co jsi tehdy vůbec nedokázala předvídat."
   },
   {
     "id": "ref_2163",
@@ -18279,7 +18295,8 @@
     "text": "Kdybych mohla promluvit k té zoufalé části v tobě, nechtěla bych ji přesvědčovat, že se plete. Řekla bych jí: „Vidím, jak moc je ti těžko. Nemusíš na to být úplně sám.“",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybych mohla promluvit k té zoufalé části v tobě, nechtěla bych ji přesvědčovat, že se plete. Řekla bych jí: „Vidím, jak moc je ti těžko. Nemusíš na to být úplně sama.“"
   },
   {
     "id": "ref_2165",
@@ -18287,7 +18304,8 @@
     "text": "Už jsi možná v životě zažil chvíle, kdy jsi nevěděl, co dál, a přesto nějaké dál přišlo. Nemusíš ho teď vidět, aby mohlo existovat.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Už jsi možná v životě zažila chvíle, kdy jsi nevěděla, co dál, a přesto nějaké dál přišlo. Nemusíš ho teď vidět, aby mohlo existovat."
   },
   {
     "id": "ref_2131",
@@ -18488,7 +18506,8 @@
     "text": "Pocit „jsem zbabělec“ zaměňuje chování za identitu. Můžeš v některých situacích utíkat, aniž by tě to určovalo jako člověka.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pocit „jsem zbabělá“ zaměňuje chování za identitu. Můžeš v některých situacích utíkat, aniž by tě to určovalo jako člověka."
   },
   {
     "id": "ref_2187",
@@ -18528,7 +18547,8 @@
     "text": "Nemusíš se poměřovat s představou člověka, který se nikdy nebojí. Nebát se není totéž co být silný.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se poměřovat s představou člověka, který se nikdy nebojí. Nebát se není totéž co být silná."
   },
   {
     "id": "ref_2195",
@@ -18536,7 +18556,8 @@
     "text": "I když ses dnes schoval, nic není ztracené. Příště můžeš zkusit udělat jeden malý krok jinak.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I když ses dnes schovala, nic není ztracené. Příště můžeš zkusit udělat jeden malý krok jinak."
   },
   {
     "id": "ref_2196",
@@ -18544,7 +18565,8 @@
     "text": "Možná ses naučil ustupovat v době, kdy ses ještě neuměl bránit, vyjednávat ani svobodně odejít. Pokud to tak bylo, připomeň si, že dnes už můžeš mít mnohem víc možností než tehdy.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses naučila ustupovat v době, kdy ses ještě neuměla bránit, vyjednávat ani svobodně odejít. Pokud to tak bylo, připomeň si, že dnes už můžeš mít mnohem víc možností než tehdy."
   },
   {
     "id": "ref_2197",
@@ -18576,7 +18598,8 @@
     "text": "Zkus si představit sebe za deset let, jak se díváš na dnešní strach. Možná pro tebe nebude nejdůležitější, že ses bál, ale jestli ses kvůli tomu vzdal něčeho, na čem ti opravdu záleželo.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si představit sebe za deset let, jak se díváš na dnešní strach. Možná pro tebe nebude nejdůležitější, že ses bála, ale jestli ses kvůli tomu vzdala něčeho, na čem ti opravdu záleželo."
   },
   {
     "id": "ref_2201",
@@ -18600,7 +18623,8 @@
     "text": "Člověk, který tě má opravdu rád, tě nejspíš nevnímá jen jako seznam situací, před kterými jsi utekl. Může vidět i všechno ostatní, co jsi zvládl a unesl.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má opravdu rád, tě nejspíš nevnímá jen jako seznam situací, před kterými jsi utekla. Může vidět i všechno ostatní, co jsi zvládla a unesla."
   },
   {
     "id": "ref_2206",
@@ -18608,7 +18632,8 @@
     "text": "Tvoje tělo neříká „jsi zbabělec“. Říká spíš „cítím nebezpečí, dostaň mě do bezpečí“. Ten ponižující komentář k tomu přidává až tvoje mysl.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje tělo neříká „jsi zbabělá“. Říká spíš „cítím nebezpečí, dostaň mě do bezpečí“. Ten ponižující komentář k tomu přidává až tvoje mysl."
   },
   {
     "id": "ref_2207",
@@ -18616,7 +18641,8 @@
     "text": "Strach přijde, tělo se stáhne, hlavou proběhne „uteč“ a časem se všechno zase změní. Nemusíš z několika minut strachu vytvářet celoživotní definici sebe sama.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Strach přijde, tělo se stáhne, hlavou proběhne „uteč“ a časem se všechno zase změní. Nemusíš z několika minut strachu vytvářet celoživotní definici sebe samé."
   },
   {
     "id": "ref_2172",
@@ -18632,7 +18658,8 @@
     "text": "To, že ses něčemu vyhnul, nevypovídá o celé tvé povaze. Jedna reakce v těžké chvíli z tebe nedělá zbabělého člověka.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že ses něčemu vyhnula, nevypovídá o celé tvé povaze. Jedna reakce v těžké chvíli z tebe nedělá zbabělého člověka."
   },
   {
     "id": "ref_2182",
@@ -18815,7 +18842,8 @@
     "text": "Možná se teď cítíš bezbranný. Ale pocit bezbrannosti nemusí odpovídat tvým skutečným možnostem. Máš zkušenosti a schopnosti, které ti mohou pomoci jednat i ve chvíli, kdy se bojíš.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se teď cítíš bezbranná. Ale pocit bezbrannosti nemusí odpovídat tvým skutečným možnostem. Máš zkušenosti a schopnosti, které ti mohou pomoci jednat i ve chvíli, kdy se bojíš."
   },
   {
     "id": "ref_2229",
@@ -18823,7 +18851,8 @@
     "text": "Nemusíš svou ostražitost zahánět ani se za ni stydět. Můžeš ocenit, že se tě snaží chránit, a zároveň sám posoudit, kolik pozornosti si současná situace skutečně zaslouží.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš svou ostražitost zahánět ani se za ni stydět. Můžeš ocenit, že se tě snaží chránit, a zároveň sama posoudit, kolik pozornosti si současná situace skutečně zaslouží."
   },
   {
     "id": "ref_2230",
@@ -18831,7 +18860,8 @@
     "text": "Nemusíš být neustále připravený na útok. Tam, kde je to bezpečné, můžeš zkusit na chvíli polevit v ostražitosti a zjistit, co se stane, když nebudeš všechno hlídat.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být neustále připravená na útok. Tam, kde je to bezpečné, můžeš zkusit na chvíli polevit v ostražitosti a zjistit, co se stane, když nebudeš všechno hlídat."
   },
   {
     "id": "ref_2231",
@@ -18839,7 +18869,8 @@
     "text": "I když právě nevíš, co udělat, neznamená to, že jsi bezbranný. Můžeš se zastavit, rozhlédnout, získat informace a najít jeden další bezpečný krok.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I když právě nevíš, co udělat, neznamená to, že jsi bezbranná. Můžeš se zastavit, rozhlédnout, získat informace a najít jeden další bezpečný krok."
   },
   {
     "id": "ref_2233",
@@ -18847,7 +18878,8 @@
     "text": "Možná v sobě nosíš přesvědčení, že svět je nebezpečný a ty nemáš dost prostředků se ochránit. Jenže právě tu druhou část stojí za to čas od času přehodnotit. Jaké možnosti a schopnosti máš dnes, které jsi dřív neměl?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná v sobě nosíš přesvědčení, že svět je nebezpečný a ty nemáš dost prostředků se ochránit. Jenže právě tu druhou část stojí za to čas od času přehodnotit. Jaké možnosti a schopnosti máš dnes, které jsi dřív neměla?"
   },
   {
     "id": "ref_2234",
@@ -18863,7 +18895,8 @@
     "text": "Tvůj strach si zaslouží pochopení, ne výsměch. Kdyby za tebou přišlo vyděšené dítě, nejspíš bys mu neříkal, že se bojí zbytečně. Spíš bys mu dal najevo: Jsem tady, vidím, že se bojíš, a pomůžu ti.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvůj strach si zaslouží pochopení, ne výsměch. Kdyby za tebou přišlo vyděšené dítě, nejspíš bys mu neříkala, že se bojí zbytečně. Spíš bys mu dala najevo: Jsem tady, vidím, že se bojíš, a pomůžu ti."
   },
   {
     "id": "ref_2236",
@@ -18871,7 +18904,8 @@
     "text": "Právě teď jsi tady. Rozhlédni se kolem sebe, vnímej svoje tělo a zkus zjistit, jestli je v této konkrétní chvíli dost bezpečno na to, abys mohl alespoň trochu povolit.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Právě teď jsi tady. Rozhlédni se kolem sebe, vnímej svoje tělo a zkus zjistit, jestli je v této konkrétní chvíli dost bezpečno na to, abys mohla alespoň trochu povolit."
   },
   {
     "id": "ref_2237",
@@ -18887,7 +18921,8 @@
     "text": "Část pravdy je, že nikdy nebudeš dokonale chráněný. Druhá část pravdy je, že nikdo není. A přesto můžeme mít dost bezpečí na to, abychom nemuseli strávit celý život v bunkru.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Část pravdy je, že nikdy nebudeš dokonale chráněná. Druhá část pravdy je, že nikdo není. A přesto můžeme mít dost bezpečí na to, abychom nemuseli strávit celý život v bunkru."
   },
   {
     "id": "ref_2239",
@@ -18911,7 +18946,8 @@
     "text": "Tohle sevření může být ozvěnou doby, kdy ses opravdu nemohl dostatečně chránit. Pokud je to tak, stojí za to připomenout si, co je dnes jinak a jaké možnosti máš nyní.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tohle sevření může být ozvěnou doby, kdy ses opravdu nemohla dostatečně chránit. Pokud je to tak, stojí za to připomenout si, co je dnes jinak a jaké možnosti máš nyní."
   },
   {
     "id": "ref_2242",
@@ -18943,7 +18979,8 @@
     "text": "Možná se jednou na dnešní strach podíváš jako na chvíli, kdy ses postupně učil rozlišovat mezi pocitem ohrožení a skutečným nebezpečím. Nemusíš to umět dokonale už dnes.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se jednou na dnešní strach podíváš jako na chvíli, kdy ses postupně učila rozlišovat mezi pocitem ohrožení a skutečným nebezpečím. Nemusíš to umět dokonale už dnes."
   },
   {
     "id": "ref_2246",
@@ -18959,7 +18996,8 @@
     "text": "Vesmír ti bohužel nevystavil záruční list. A nikomu jinému taky ne. Je to trochu děsivé, ale zároveň osvobozující: nemusíš dosáhnout nemožného stavu absolutního bezpečí, abys mohl začít žít.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Vesmír ti bohužel nevystavil záruční list. A nikomu jinému taky ne. Je to trochu děsivé, ale zároveň osvobozující: nemusíš dosáhnout nemožného stavu absolutního bezpečí, abys mohla začít žít."
   },
   {
     "id": "ref_2212",
@@ -18967,7 +19005,8 @@
     "text": "Nemusíš mít všechno pod kontrolou, abys mohl být v bezpečí. Můžeš se spolehnout i na svou schopnost reagovat na to, co skutečně přijde.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš mít všechno pod kontrolou, abys mohla být v bezpečí. Můžeš se spolehnout i na svou schopnost reagovat na to, co skutečně přijde."
   },
   {
     "id": "ref_2217",
@@ -18975,7 +19014,8 @@
     "text": "Nemusíš předvídat každý problém, abys ho dokázal zvládnout. Mnohé věci můžeš řešit až tehdy, pokud skutečně nastanou.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš předvídat každý problém, abys ho dokázala zvládnout. Mnohé věci můžeš řešit až tehdy, pokud skutečně nastanou."
   },
   {
     "id": "ref_2224",
@@ -18983,7 +19023,8 @@
     "text": "Když se cítíš malý proti něčemu velkému, zkus se podívat na skutečné rozměry situace. Tvůj strach může být obrovský, i když tvoje možnosti nejsou tak malé, jak se právě zdá.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš malá proti něčemu velkému, zkus se podívat na skutečné rozměry situace. Tvůj strach může být obrovský, i když tvoje možnosti nejsou tak malé, jak se právě zdá."
   },
   {
     "id": "ref_2248",
@@ -19158,7 +19199,8 @@
     "text": "Už jsi nejspíš zažil chvíle, kdy ses cítil stejně křehký jako teď, a přesto ses nějak dostal dál. Tvůj současný pocit bezbrannosti nemusí vypovídat o všem, co už jsi dokázal zvládnout.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Už jsi nejspíš zažila chvíle, kdy ses cítila stejně křehká jako teď, a přesto ses nějak dostala dál. Tvůj současný pocit bezbrannosti nemusí vypovídat o všem, co už jsi dokázala zvládnout."
   },
   {
     "id": "ref_2270",
@@ -19166,7 +19208,8 @@
     "text": "Když si říkáš „jsem slabý“, možná zaměňuješ pocit za skutečnost. To, že se cítíš slabý, ještě neznamená, že slabost je tvoje trvalá vlastnost.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když si říkáš „jsem slabá“, možná zaměňuješ pocit za skutečnost. To, že se cítíš slabá, ještě neznamená, že slabost je tvoje trvalá vlastnost."
   },
   {
     "id": "ref_2271",
@@ -19174,7 +19217,8 @@
     "text": "Síla nemusí vypadat jako tvrdost. Někdy vypadá jako člověk, který se třese, bojí nebo pláče, a přesto dokáže zůstat sám sobě oporou.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Síla nemusí vypadat jako tvrdost. Někdy vypadá jako člověk, který se třese, bojí nebo pláče, a přesto dokáže zůstat sama sobě oporou."
   },
   {
     "id": "ref_2272",
@@ -19182,7 +19226,8 @@
     "text": "Zkus si vybavit chvíle, kdy ses cítil slabý, a přesto ses nějak přizpůsobil, zotavil nebo pokračoval. Právě ty mohou o tvé odolnosti vypovídat víc než okamžiky, kdy bylo všechno snadné.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vybavit chvíle, kdy ses cítila slabá, a přesto ses nějak přizpůsobila, zotavila nebo pokračovala. Právě ty mohou o tvé odolnosti vypovídat víc než okamžiky, kdy bylo všechno snadné."
   },
   {
     "id": "ref_2273",
@@ -19190,7 +19235,8 @@
     "text": "Ta část tebe, která se cítí křehká, možná touží po někom silnějším, kdo ji ochrání. Zkus si představit, že k ní přichází tvoje dospělé já a říká: „Jsem tady. Nemusíš na to být sám.“",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ta část tebe, která se cítí křehká, možná touží po někom silnějším, kdo ji ochrání. Zkus si představit, že k ní přichází tvoje dospělé já a říká: „Jsem tady. Nemusíš na to být sama.“"
   },
   {
     "id": "ref_2274",
@@ -19206,7 +19252,8 @@
     "text": "Můžeš být citlivý a zároveň odolný. Jedno druhé nevylučuje.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš být citlivá a zároveň odolná. Jedno druhé nevylučuje."
   },
   {
     "id": "ref_2276",
@@ -19222,7 +19269,8 @@
     "text": "Možná sis kdysi musel dávat velký pozor, protože nebylo jisté, kdo tě ochrání. Dnes už ale můžeš mít i jiné možnosti. Nemusíš spoléhat jen na ochranu druhých, můžeš se postupně stávat oporou i sám sobě.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná sis kdysi musela dávat velký pozor, protože nebylo jisté, kdo tě ochrání. Dnes už ale můžeš mít i jiné možnosti. Nemusíš spoléhat jen na ochranu druhých, můžeš se postupně stávat oporou i sama sobě."
   },
   {
     "id": "ref_2278",
@@ -19238,7 +19286,8 @@
     "text": "Tvoje tělo se tě možná snaží chránit, když se stáhneš, ztuhneš nebo začneš být ostražitý. Není proti tobě. Jen někdy spouští obranu i tam, kde už není tolik potřebná.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje tělo se tě možná snaží chránit, když se stáhneš, ztuhneš nebo začneš být ostražitá. Není proti tobě. Jen někdy spouští obranu i tam, kde už není tolik potřebná."
   },
   {
     "id": "ref_2280",
@@ -19246,7 +19295,8 @@
     "text": "Kdybys byl dokonale nezranitelný, muselo by ti být jedno, koho ztratíš, kdo tě odmítne a co se s tebou stane. Jenže taková „síla“ by se dost podobala citové anestezii.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys byla dokonale nezranitelná, muselo by ti být jedno, koho ztratíš, kdo tě odmítne a co se s tebou stane. Jenže taková „síla“ by se dost podobala citové anestezii."
   },
   {
     "id": "ref_2281",
@@ -19254,7 +19304,8 @@
     "text": "Člověk, který tě má opravdu rád, možná nepotřebuje, abys před ním byl nezranitelný. Možná by si naopak přál, abys před ním nemusel předstírat, že nic nepotřebuješ.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má opravdu rád, možná nepotřebuje, abys před ním byla nezranitelná. Možná by si naopak přál, abys před ním nemusela předstírat, že nic nepotřebuješ."
   },
   {
     "id": "ref_2282",
@@ -19278,7 +19329,8 @@
     "text": "Zkus si všimnout, že právě prožíváš pocit křehkosti. Nemusíš z něj ale dělat definici sebe sama. Pocity přicházejí, mění se a odcházejí. Žádný z nich nemusí určovat, kdo jsi.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si všimnout, že právě prožíváš pocit křehkosti. Nemusíš z něj ale dělat definici sebe samé. Pocity přicházejí, mění se a odcházejí. Žádný z nich nemusí určovat, kdo jsi."
   },
   {
     "id": "ref_2285",
@@ -19294,7 +19346,8 @@
     "text": "Přiznat si vlastní křehkost může vyžadovat odvahu. Zvlášť pokud ses dlouho snažil působit silně. Nemusíš svou zranitelnost skrývat, abys dokázal, že něco vydržíš.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Přiznat si vlastní křehkost může vyžadovat odvahu. Zvlášť pokud ses dlouho snažila působit silně. Nemusíš svou zranitelnost skrývat, abys dokázala, že něco vydržíš."
   },
   {
     "id": "ref_2288",
@@ -19310,7 +19363,8 @@
     "text": "To, že tě něco hluboce zasáhne, neznamená, že jsi slabý. Některé věci prostě bolí, i když je dokážeme unést.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že tě něco hluboce zasáhne, neznamená, že jsi slabá. Některé věci prostě bolí, i když je dokážeme unést."
   },
   {
     "id": "ref_2264",
@@ -19334,7 +19388,8 @@
     "text": "Jednou zemřeš, stejně jako všichni ostatní. Z téhle perspektivy působí celoživotní snaha stát se nezranitelným trochu marně. Možná nejde o to, aby tě už nikdy nic nebolelo, ale abys mezitím nezapomněl žít.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednou zemřeš, stejně jako všichni ostatní. Z téhle perspektivy působí celoživotní snaha stát se nezranitelnou trochu marně. Možná nejde o to, aby tě už nikdy nic nebolelo, ale abys mezitím nezapomněla žít."
   },
   {
     "id": "ref_2291",
@@ -19342,7 +19397,8 @@
     "text": "A jestli ti mozek právě slavnostně oznamuje, že musíš být dokonale silný, aby ses mohl cítit bezpečně, požaduje po tobě něco, co v dějinách lidstva ještě nikdo nedokázal.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "A jestli ti mozek právě slavnostně oznamuje, že musíš být dokonale silná, aby ses mohla cítit bezpečně, požaduje po tobě něco, co v dějinách lidstva ještě nikdo nedokázal."
   },
   {
     "id": "ref_2292",
@@ -19489,7 +19545,8 @@
     "text": "Nemusíš věřit všemu, co ti úzkost právě našeptává. Když jsi rozrušený, mozek se víc soustředí na možné hrozby a snadněji vytváří černé scénáře.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš věřit všemu, co ti úzkost právě našeptává. Když jsi rozrušená, mozek se víc soustředí na možné hrozby a snadněji vytváří černé scénáře."
   },
   {
     "id": "ref_2310",
@@ -19521,7 +19578,8 @@
     "text": "Možná v sobě nosíš pravidlo, že musíš být dokonale připravený, abys byl v bezpečí. Jenže velkou část života zvládáš ne díky dokonalé přípravě, ale díky schopnosti přizpůsobit se za pochodu.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná v sobě nosíš pravidlo, že musíš být dokonale připravená, abys byla v bezpečí. Jenže velkou část života zvládáš ne díky dokonalé přípravě, ale díky schopnosti přizpůsobit se za pochodu."
   },
   {
     "id": "ref_2315",
@@ -19529,7 +19587,8 @@
     "text": "I kdyby ses zadrhl, znejistěl nebo nebyl ve své nejlepší formě, nemusí se stát nic hrozného. Nemusíš být dokonale klidný, abys byl dost dobrý.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I kdyby ses zadrhla, znejistěla nebo nebyla ve své nejlepší formě, nemusí se stát nic hrozného. Nemusíš být dokonale klidná, abys byla dost dobrá."
   },
   {
     "id": "ref_2317",
@@ -19545,7 +19604,8 @@
     "text": "Zkus si vzpomenout na chvíle, kdy ses něčeho bál mnohem víc, než nakonec odpovídalo skutečnosti. A také na chvíle, kdy jsi dokázal zvládnout něco nečekaného. I tyhle zkušenosti patří do tvé představy o budoucnosti.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vzpomenout na chvíle, kdy ses něčeho bála mnohem víc, než nakonec odpovídalo skutečnosti. A také na chvíle, kdy jsi dokázala zvládnout něco nečekaného. I tyhle zkušenosti patří do tvé představy o budoucnosti."
   },
   {
     "id": "ref_2319",
@@ -19569,7 +19629,8 @@
     "text": "To, co teď prožíváš, se může změnit. Možná ne tak rychle, jak by sis přál, ale ani silná úzkost nemusí mít pořád stejnou intenzitu. A tahle chvíle není celý tvůj život.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, co teď prožíváš, se může změnit. Možná ne tak rychle, jak by sis přála, ale ani silná úzkost nemusí mít pořád stejnou intenzitu. A tahle chvíle není celý tvůj život."
   },
   {
     "id": "ref_2322",
@@ -19577,7 +19638,8 @@
     "text": "Možná ses kdysi naučil být neustále ve střehu, protože klid nebyl úplně bezpečný. Pokud je to tak, tvoje dnešní úzkost může být ozvěnou tehdejší zkušenosti. Dnes už ale můžeš znovu zkoumat, co je skutečné nebezpečí a co jen nejistota.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila být neustále ve střehu, protože klid nebyl úplně bezpečný. Pokud je to tak, tvoje dnešní úzkost může být ozvěnou tehdejší zkušenosti. Dnes už ale můžeš znovu zkoumat, co je skutečné nebezpečí a co jen nejistota."
   },
   {
     "id": "ref_2323",
@@ -19593,7 +19655,8 @@
     "text": "Představ si sebe za deset let, jak se ohlížíš za dnešní starostí. Možná si už nebudeš pamatovat ani to, čeho ses tolik bál, natož katastrofu, kterou ti dnes mozek promítá v hlavní roli.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si sebe za deset let, jak se ohlížíš za dnešní starostí. Možná si už nebudeš pamatovat ani to, čeho ses tolik bála, natož katastrofu, kterou ti dnes mozek promítá v hlavní roli."
   },
   {
     "id": "ref_2325",
@@ -19633,7 +19696,8 @@
     "text": "Z perspektivy vesmíru je docela roztomilé, jak se několik kilogramů nervové tkáně na malé planetě snaží předem propočítat všechny varianty budoucnosti. Nemusíš vědět, co přijde, abys směl chvíli prostě být.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z perspektivy vesmíru je docela roztomilé, jak se několik kilogramů nervové tkáně na malé planetě snaží předem propočítat všechny varianty budoucnosti. Nemusíš vědět, co přijde, abys směla chvíli prostě být."
   },
   {
     "id": "ref_2294",
