@@ -18051,7 +18051,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se cítíš ohrožená, ještě neznamená, že ti skutečně něco hrozí. Strach je signál, který stojí za pozornost, ale sám o sobě není důkazem nebezpečí."
   },
   {
     "id": "ref_2211",
@@ -18060,7 +18061,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být zranitelná, a přitom nebýt bezmocná. To, že tě něco může zasáhnout, ještě neznamená, že se nedokážeš chránit."
   },
   {
     "id": "ref_2213",
@@ -18087,7 +18089,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se přestat bát, abys mohla být v bezpečí. Strach může přetrvávat i ve chvíli, kdy už nebezpečí pominulo."
   },
   {
     "id": "ref_2216",
@@ -18114,7 +18117,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš bezbranná, zkus si položit dvě otázky: Před čím konkrétně? A jaké mám právě teď možnosti? To, co působilo jako naprostá bezmoc, se může změnit v několik konkrétních problémů, se kterými už lze něco dělat."
   },
   {
     "id": "ref_2220",
@@ -18123,7 +18127,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je v pořádku potřebovat ochranu a oporu. Nemusíš všechno zvládat sama, abys mohla být silná."
   },
   {
     "id": "ref_2221",
@@ -18132,7 +18137,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Čím víc se snažíš odstranit každou možnost ohrožení, tím víc můžeš utvrzovat sama sebe v tom, že svět je nebezpečný. Někdy pocit bezpečí roste právě ze zkušenosti: Bála jsem se, a přesto jsem to zvládla."
   },
   {
     "id": "ref_2222",
@@ -18150,7 +18156,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být neprůstřelná, abys mohla žít svobodně. Dostatečné bezpečí je mnohem dosažitelnější než bezpečí absolutní."
   },
   {
     "id": "ref_2225",
@@ -18168,7 +18175,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus si vybavit situace, kdy ses obávala, že něco nezvládneš, a přesto ses přizpůsobila, požádala o pomoc, odešla nebo problém vyřešila. Nejsou důkazem, že se ti nemůže nic stát. Jsou připomínkou, že dokážeš reagovat."
   },
   {
     "id": "ref_2232",
@@ -18394,7 +18402,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš zranitelná, neznamená, že jsi slabá. Znamená to, že se tě něco dotklo na místě, které potřebuje trochu víc péče."
   },
   {
     "id": "ref_2253",
@@ -18412,7 +18421,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být nezranitelná, abys mohla žít svobodně. Důležitější je postupně získávat důvěru, že si dokážeš poradit i s tím, co tě někdy zraní."
   },
   {
     "id": "ref_2255",
@@ -18430,7 +18440,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš ze sebe právě teď dělat silnějšího člověka. Můžeš být chvíli křehká, a přesto zůstat stejně hodnotná a hodná péče."
   },
   {
     "id": "ref_2257",
@@ -18448,7 +18459,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být pořád silná, abys byla v bezpečí. I když se cítíš křehká, můžeš se chránit, rozhodovat a věci zvládat."
   },
   {
     "id": "ref_2259",
@@ -18475,7 +18487,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš malá a bezbranná, neznamená to, že taková jsi celá. Je to jeden tvůj momentální stav. Máš v sobě i jiné stránky, které se dokážou rozhodovat, chránit tě a jednat."
   },
   {
     "id": "ref_2263",
@@ -18484,7 +18497,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že svět je nebezpečnější, než dokážeš zvládnout. Tehdy to mohl být pochopitelný závěr. Nemusí ale přesně odpovídat světu, ve kterém žiješ dnes."
   },
   {
     "id": "ref_2265",
@@ -18511,7 +18525,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „jsem příliš křehká“ může zesílit právě ve chvíli, kdy jsi unavená, nejistá nebo přetížená. Není to rozsudek o tom, jaká jsi."
   },
   {
     "id": "ref_2268",
@@ -18520,7 +18535,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš vědět, že všechno dobře dopadne, abys mohla být o něco klidnější. Můžeš si připomenout, že případné těžkosti nemusíš řešit všechny najednou."
   },
   {
     "id": "ref_2269",
@@ -18730,7 +18746,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus se uklidnit, ale nemusíš se uklidnit dokonale, abys mohla pokračovat. Můžeš být nervózní a zároveň udělat další malý krok."
   },
   {
     "id": "ref_2295",
@@ -18766,7 +18783,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Úzkost často chce, abys utekla, všechno pojistil nebo se připravoval donekonečna. Někdy přinese největší úlevu zjištění, že její příkazy nemusíš poslouchat."
   },
   {
     "id": "ref_2301",
@@ -18793,7 +18811,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Úzkost chce nejdřív jistotu a teprve potom život. Jenže život takové pořadí nenabízí. Někdy musíš nejdřív vykročit, abys zjistila, že dokážeš přežít i nejistotu."
   },
   {
     "id": "ref_2305",
@@ -18811,7 +18830,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Úzkost umí působit naléhavě, jako bys musela něco okamžitě vyřešit. Někdy ale nemusíš dělat vůbec nic. Můžeš chvíli počkat, až vlna úzkosti zeslábne."
   },
   {
     "id": "ref_2308",
@@ -19066,7 +19086,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se nejdřív přestat bát, abys mohla být v bezpečí. Můžeš mít strach a zároveň být právě teď v pořádku."
   },
   {
     "id": "ref_2335",
@@ -19111,7 +19132,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš svůj strach zahnat ani přemoci. Můžeš ho chvíli nechat být vedle sebe, aniž bys mu svěřila řízení."
   },
   {
     "id": "ref_2343",
@@ -19129,7 +19151,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Bát se neznamená být slabá nebo zbabělá. Znamená to, že tvůj mozek právě vyhodnotil něco jako možné nebezpečí. A jeho odhad nemusí být správný."
   },
   {
     "id": "ref_2345",
@@ -19174,7 +19197,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Už jsi zvládla chvíle, kdy ses bála a nevěděla, co bude dál. Možná máš víc schopností zvládat nejistotu, než ti tvůj současný strach dovoluje vidět."
   },
   {
     "id": "ref_2350",
@@ -19419,7 +19443,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi vyděšená, mozek ti nabízí nejhorší možné pokračování příběhu. Představa budoucnosti ale není její předpověď."
   },
   {
     "id": "ref_2380",
@@ -19428,7 +19453,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být vyděšená, a přesto pomalu jednat. Strach nemusí určovat tempo tvých rozhodnutí."
   },
   {
     "id": "ref_2382",
@@ -19437,7 +19463,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Teď po sobě nemusíš chtít, aby ses přestala bát. Zkus se jen přestat děsit tím, jak moc se bojíš."
   },
   {
     "id": "ref_2383",
@@ -19490,7 +19517,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít všechno pod kontrolou, aby věci mohly dopadnout dobře. Mnohé se vyřeší i bez toho, abys teď všechno uhlídala."
   },
   {
     "id": "ref_2390",
@@ -19717,7 +19745,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že ses teď zasekla, neznamená, že zůstaneš nadobro zaseknutá. Je to jen dočasný stav, ne tvoje nová podoba."
   },
   {
     "id": "ref_2415",
@@ -19753,7 +19782,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi neschopná jednat, jen je toho na tebe právě teď příliš. Zastavení může být způsob, jak se tvoje tělo a mysl brání dalšímu přetížení."
   },
   {
     "id": "ref_2422",
@@ -19762,7 +19792,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tohle není chvíle, ve které musíš sama sebe soudit. Je to chvíle, ve které potřebuješ být na svojí straně."
   },
   {
     "id": "ref_2423",
@@ -19798,7 +19829,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvoje tempo nemusí odpovídat tempu ostatních ani představě, kde už jsi měla být. I pomalý pohyb je pohyb."
   },
   {
     "id": "ref_2427",
@@ -19825,7 +19857,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby k tobě přišlo vyděšené dítě a řeklo, že se nemůže pohnout z místa, asi bys na něj nekřičela, ať se konečně vzpamatuje. Zasloužíš si od sebe stejnou trpělivost."
   },
   {
     "id": "ref_2435",
@@ -20136,7 +20169,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít svou mysl dokonale pod kontrolou, abys byla v pořádku. Myšlenky můžou být chaotické, divné nebo děsivé, ale pořád jsou to jen myšlenky. Nejsi svými myšlenkami."
   },
   {
     "id": "ref_2468",
@@ -20145,7 +20179,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "„Jsem šílená“ promění přechodný stav v něco, co tě má definovat. Přesnější může být: „Právě prožívám stav, ve kterém své mysli nerozumím a bojím se jí.“"
   },
   {
     "id": "ref_2469",
@@ -20181,7 +20216,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V úsudku „cítím se šíleně, tedy jsem šílená“ je chyba: pocit není důkazem toho, jak si ho vysvětluješ. Stejně jako pocit ohrožení ještě nedokazuje, že ti něco hrozí."
   },
   {
     "id": "ref_2473",
@@ -20208,7 +20244,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ten pocit může napovídat, že tvoje mysl nefunguje tak klidně, jasně a předvídatelně jako obvykle. Z toho ale neplyne, že ses jako člověk rozpadla."
   },
   {
     "id": "ref_2477",
@@ -20226,7 +20263,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jestli se teď bojíš vlastní mysli, nemusíš v ní zůstávat uvězněná. Můžeš se opřít o tělo, místnost kolem sebe, známý hlas nebo člověka, kterému věříš."
   },
   {
     "id": "ref_2476",
@@ -20438,7 +20476,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kritika může být oprávněná, a přesto nemusí znamenat, že je s tebou něco špatně. Můžeš uznat svou chybu, aniž bys odsoudila sama sebe."
   },
   {
     "id": "ref_2506",
@@ -20447,7 +20486,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být bezchybná, aby ses mohla cítit bezpečně mezi lidmi. Chyba z tebe nedělá horšího člověka, jen člověka."
   },
   {
     "id": "ref_2507",
@@ -20483,7 +20523,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kritika se odehraje v určité chvíli, ale tvoje mysl z ní může vytvořit trvalý závěr: „Jsem špatná, neschopná, směšná.“ Jedna událost ani jedna chyba však neurčují, kdo jsi."
   },
   {
     "id": "ref_2511",
@@ -20492,7 +20533,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš přesvědčit každého, že jsi dost dobrá. Někteří lidé tě pochopí, někteří ne. Ani jedno neurčuje tvoji hodnotu."
   },
   {
     "id": "ref_2512",
@@ -20510,7 +20552,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se bojíš kritiky, můžeš paradoxně začít hodnotit sama sebe ještě přísněji než člověk před tebou. Ve snaze uniknout soudci si ho tak nastěhuješ přímo do vlastní hlavy."
   },
   {
     "id": "ref_2514",
@@ -20519,7 +20562,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít připravenou dokonalou obhajobu sebe samé. Někdy úplně stačí říct nebo jen vědět: „Já to vidím jinak.“"
   },
   {
     "id": "ref_2515",
@@ -20771,7 +20815,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit nedostatečnosti dělá zvláštní logický skok: z „nejsem tak dobrá, jak bych chtěla“ rovnou do „nejsem dost dobrá jako člověk“. Mezi těmito dvěma výroky ale žádná logická nutnost není."
   },
   {
     "id": "ref_2547",
@@ -20780,7 +20825,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná opravdu nejsi tak schopná, krásná, úspěšná nebo výjimečná, jak by sis někdy přála. To může být pravda, aniž by z toho vyplývalo cokoli ponižujícího o tvé hodnotě."
   },
   {
     "id": "ref_2548",
@@ -20789,7 +20835,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že na sobě vidíš nedostatky, ještě neznamená, že jsi nedostatečná. Možná se na sebe jen díváš mnohem přísnějšíma očima, než by ses dívala na kohokoli jiného."
   },
   {
     "id": "ref_5416",
@@ -20806,7 +20853,8 @@
     "text": "Pod větou „nejsem dost dobrý“ někdy leží mnohem zranitelnější věta: „Bojím se, že když nebudu dost dobrý, nebudu milovaný.“ Právě tahle druhá věta potřebuje víc laskavosti než argumentů.",
     "tier": "free",
     "sort_order": 6,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pod větou „nejsem dost dobrá“ někdy leží mnohem zranitelnější věta: „Bojím se, že když nebudu dost dobrá, nebudu milovaná.“ Právě tahle druhá věta potřebuje víc laskavosti než argumentů."
   },
   {
     "id": "ref_2551",
@@ -20815,7 +20863,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se nejdřív opravit, abys k sobě mohla být laskavá. Právě ve chvíli, kdy si připadáš nedostatečná, potřebuješ svou laskavost nejvíc."
   },
   {
     "id": "ref_2552",
@@ -20824,7 +20873,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná sis kdysi zvykla věřit, že uznání přijde, až budeš dost dobrá. Jenže laťka, která rozhoduje o tvé hodnotě, se dá posouvat donekonečna."
   },
   {
     "id": "ref_2553",
@@ -20842,7 +20892,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš nedostatečná, tvoje mysl začne sbírat hlavně důkazy proti tobě. To ale není celý obraz. Tvoje pozornost se jen na chvíli zúžila na všechno, co ti na sobě vadí."
   },
   {
     "id": "ref_2555",
@@ -20851,7 +20902,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být mimořádná, aby tě někdo mohl milovat, chtít mít vedle sebe nebo si tě vážit. Blízkost nevzniká z bezchybného výkonu."
   },
   {
     "id": "ref_2556",
@@ -20860,7 +20912,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit nedostatečnosti často vynechává jednu zásadní otázku: „Nedostatečná vzhledem k čemu?“ Bez konkrétního měřítka je to rozsudek, který zní přesně, ale vlastně nic určitého neříká."
   },
   {
     "id": "ref_2557",
@@ -20887,7 +20940,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi tam, kde sis představovala, že už budeš. To může bolet. Ale nenaplněná představa o vlastním životě ještě neznamená, že jsi selhala."
   },
   {
     "id": "ref_2560",
@@ -21097,7 +21151,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se trestat, abys dokázala, že svou chybu bereš vážně. Můžeš převzít odpovědnost a přitom zůstat na své straně."
   },
   {
     "id": "ref_2585",
@@ -21106,7 +21161,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že jsi udělala chybu, neznamená, že je s tebou něco špatně. Znamená to jen, že jsi člověk, který nemůže všechno vědět a předvídat."
   },
   {
     "id": "ref_2586",
@@ -21115,7 +21171,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná si teď vyčítáš, že jsi měla jednat jinak. Jenže tehdy jsi neměla k dispozici všechno, co víš dnes."
   },
   {
     "id": "ref_2587",
@@ -21151,7 +21208,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš litovat toho, co jsi udělala, aniž bys kvůli tomu musela zavrhnout sama sebe. To jsou dvě úplně jiné věci."
   },
   {
     "id": "ref_2592",
@@ -21160,7 +21218,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „zase jsem to pokazila“ může být mnohem větší než samotná chyba. Než uvěříš jeho verdiktu, podívej se ještě jednou na to, co se skutečně stalo."
   },
   {
     "id": "ref_2594",
@@ -21169,7 +21228,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ti nejlepší kamarád řekl, že něco pokazil, asi bys mu nepředložila obžalobu jeho charakteru. Zkus sobě nabídnout stejnou elementární férovost."
   },
   {
     "id": "ref_2597",
@@ -21187,7 +21247,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Chyba nemusí být důkazem, že ses do něčeho neměla pouštět. Někdy je prostě cenou za to, že ses vůbec odvážila jednat."
   },
   {
     "id": "ref_2599",
@@ -21196,7 +21257,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že chyba přináší kritiku, stud nebo průšvih. Ale ne každé dnešní zaváhání musí znamenat stejné ohrožení."
   },
   {
     "id": "ref_2600",
@@ -21205,7 +21267,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být dokonale připravená, abys mohla něco zvládnout. Spoustu věcí můžeš vyřešit až za pochodu."
   },
   {
     "id": "ref_2605",
@@ -21214,7 +21277,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná v tobě žije dítě, které potřebovalo slyšet: „Nemusíš všechno vědět a dělat správně, abych tě měla ráda.“ Teď mu tuhle zkušenost můžeš začít dávat sama."
   },
   {
     "id": "ref_2608",

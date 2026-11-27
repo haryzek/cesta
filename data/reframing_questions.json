@@ -12014,7 +12014,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítím ohrožená, co si automaticky představuju, že se stane – a jak často se moje obavy skutečně naplní?"
   },
   {
     "id": "refq_1448",
@@ -12032,7 +12033,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy se cítím nejvíc ohrožená – a co mají tyhle situace společného?"
   },
   {
     "id": "refq_1450",
@@ -12041,7 +12043,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kolik je v mém dnešním strachu reakce na současnou situaci a kolik mi připomíná něco, co jsem prožívala už dřív, možná už jako dítě?"
   },
   {
     "id": "refq_1451",
@@ -12258,7 +12261,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zranitelná, čeho konkrétně se bojíš, že by se ti mohlo stát?"
   },
   {
     "id": "refq_1476",
@@ -12276,7 +12280,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co ve chvíli zranitelnosti nejvíc potřebuješ, aby ses cítila bezpečněji?"
   },
   {
     "id": "refq_1478",
@@ -12285,7 +12290,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naposledy cítila zranitelná, něco tě skutečně zasáhlo, ale ty ses přesto postupně zotavila?"
   },
   {
     "id": "refq_1479",
@@ -12303,7 +12309,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co pro tebe znamená být silná? A není tvoje představa síly přísnější, než bys požadovala od někoho jiného?"
   },
   {
     "id": "refq_1481",
@@ -12312,7 +12319,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co děláš, když se cítíš zranitelná, abys získala pocit bezpečí? A pomáhá ti to i dlouhodobě?"
   },
   {
     "id": "refq_1482",
@@ -12539,7 +12547,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Není někdy tvoje úzkost oprávněným signálem, že je toho teď na tebe prostě moc? Jak by sis mohla co nejdřív aspoň trochu ulevit od nároků, odpovědnosti, nejistoty, konfliktů nebo nedostatku odpočinku?"
   },
   {
     "id": "refq_1510",
@@ -12566,7 +12575,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys v téhle situaci udělala, kdybys nemusela čekat, až tvoje úzkost odezní?"
   },
   {
     "id": "refq_1513",
@@ -12584,7 +12594,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co právě děláš, abys získala pocit jistoty? Uklidňuje tě to opravdu, nebo tím svůj mozek učíš, že bez jistoty nejsi v bezpečí?"
   },
   {
     "id": "refq_1515",
@@ -12821,7 +12832,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co právě teď potřebuješ, aby ses cítila bezpečněji? Ochranu, podporu, odpočinek, více informací, možnost rozhodovat o sobě, nebo něco jiného?"
   },
   {
     "id": "refq_1544",
@@ -12830,7 +12842,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses na svou situaci podívala bez pocitu strachu, vyhodnotila bys její nebezpečnost stejně?"
   },
   {
     "id": "refq_1545",
@@ -12857,7 +12870,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co ti v minulosti pomohlo zvládnout situace, kdy se něco, čeho ses bála, skutečně stalo?"
   },
   {
     "id": "refq_1548",
@@ -13364,7 +13378,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co čekáš, že musíš nejdřív cítit, vědět nebo vyřešit, abys mohla jednat? Je to opravdu nutné?"
   },
   {
     "id": "refq_1610",
@@ -13409,7 +13424,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co potřebuješ říct, odmítnout, požadovat nebo vyjasnit, abys nezůstávala zablokovaná?"
   },
   {
     "id": "refq_1617",
@@ -13627,7 +13643,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se v tobě vlastně odehrává, když máš pocit, že blázníš? Dokážeš svůj stav popsat bez slov jako „šílená“ nebo „nenormální“?"
   },
   {
     "id": "refq_1642",
@@ -14194,7 +14211,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si říkáš „nejsem dost dobrá“: dost dobrá pro koho, pro co a podle jakého měřítka?"
   },
   {
     "id": "refq_1711",
@@ -14203,7 +14221,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nejvíc nedostatečná a co mají tyhle situace společného?"
   },
   {
     "id": "refq_1712",
@@ -14221,7 +14240,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co musíš podle svých vnitřních pravidel splnit, abys konečně mohla říct „teď už jsem dost dobrá“? A co by se stalo, kdybys toho dosáhla?"
   },
   {
     "id": "refq_1714",
@@ -14239,7 +14259,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš nedostatečná, co v tu chvíli nejvíc potřebuješ – přijetí, uznání, pomoc, odpočinek, bezpečí, prostor k učení, nebo něco úplně jiného?"
   },
   {
     "id": "refq_1716",
@@ -14458,7 +14479,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když uděláš chybu, co si v tu chvíli začneš myslet sama o sobě?"
   },
   {
     "id": "refq_1743",
@@ -14476,7 +14498,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jsi stejně přísná i k lidem, které máš ráda nebo kterých si vážíš?"
   },
   {
     "id": "refq_1745",
@@ -14485,7 +14508,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kolik z toho, co si dnes vyčítáš, jsi mohla skutečně vědět ještě předtím, než ses dozvěděla, jak věci dopadly?"
   },
   {
     "id": "refq_1747",
@@ -14494,7 +14518,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses začala učit, že udělat chybu neznamená jen něco pokazit, ale také to, že je s tebou něco špatně?"
   },
   {
     "id": "refq_1748",
@@ -14503,7 +14528,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak poznáš rozdíl mezi tím, že jsi udělala chybu, a tím, že jsi jako člověk selhala?"
   },
   {
     "id": "refq_1749",

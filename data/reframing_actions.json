@@ -11035,7 +11035,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš ohrožená, nejdřív se zorientuj: Co se právě děje? Co mi skutečně hrozí? Jaké mám možnosti? Koho můžu požádat o pomoc? Rozlišuj mezi tím, co skutečně víš, a tím, čeho se obáváš. Pokud ti reálně hrozí nebezpečí, dej přednost vlastní ochraně."
   },
   {
     "id": "refa_1332",
@@ -11062,7 +11063,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si, kdy tvůj vnitřní alarm reaguje na skutečné nebezpečí a kdy spíš jen na něco nepříjemného. Po náročné situaci si zkus ujasnit, jestli ti opravdu něco hrozilo, nebo jsi čelila nejistotě, kritice, konfliktu či emocím druhého. I nepříjemná situace si zaslouží pozornost, ale nemusí vždy vyžadovat obranu."
   },
   {
     "id": "refa_1335",
@@ -11071,7 +11073,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne pocit bezbrannosti, zeptej se: „Co bych mohla udělat, kdyby se to, čeho se bojím, opravdu stalo?“ Najdi jeden až tři realistické kroky. Pokud teď není potřeba jednat, zkus se k těmto možnostem už nevracet a nepokračovat v rozvíjení dalších katastrofických scénářů."
   },
   {
     "id": "refa_1336",
@@ -11290,7 +11293,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem slabá“, zkus ji zpřesnit: „Teď se cítím zranitelná, protože…“ Připomeň si, že momentální pocit nevypovídá o celé tvé osobnosti."
   },
   {
     "id": "refa_1363",
@@ -11308,7 +11312,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zranitelná, zkus si položit otázku: „Co teď skutečně potřebuju?“ Možná je to odpočinek, blízkost, pomoc, ochrana nebo jen chvíle klidu. Vyber jednu drobnou věc, kterou si můžeš dopřát nebo o kterou můžeš požádat."
   },
   {
     "id": "refa_1365",
@@ -11317,7 +11322,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nacvičuj jednoduché hranice v méně konfliktních situacích: „Tohle mi nevyhovuje“, „Teď ne“, „Potřebuju čas.“ Všímej si, že se můžeš chránit, aniž by ses musela stáhnout nebo být tvrdá."
   },
   {
     "id": "refa_1366",
@@ -11578,7 +11584,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si, co děláš, abys předešla obávanému nebezpečí nebo zmírnil úzkost: nadměrně se připravuješ, kontroluješ, vyžaduješ ujištění, vyhýbáš se situacím nebo z nich unikáš? Vyber si jeden z těchto návyků a zkus ho v bezpečných situacích postupně omezovat."
   },
   {
     "id": "refa_1398",
@@ -11596,7 +11603,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si představuješ katastrofický scénář, napiš si tři možnosti: čeho se nejvíc bojíš, co je nejpravděpodobnější a co nepříjemného, ale zvládnutelného by se mohlo stát. U každé varianty zvaž, jak bys mohla reagovat. Nejde o záruku dobrého výsledku, ale o realističtější pohled na možnosti."
   },
   {
     "id": "refa_1401",
@@ -11614,7 +11622,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vyber si něco, na čem ti opravdu záleží, ale úzkost tě v tom omezuje – blízkost, svobodu, tvořivost, dobrodružství nebo práci. Každý týden udělej jeden malý krok tímto směrem. Nemusíš se nejdřív zbavit strachu, abys mohla žít podle svých hodnot."
   },
   {
     "id": "refa_1404",
@@ -11851,7 +11860,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den zkus udělat jednu drobnou, bezpečnou věc, kterou bys kvůli strachu nejraději odložila. Nemusíš se nejdřív přestat bát. Důležitá je zkušenost, že můžeš jednat i s obavami."
   },
   {
     "id": "refa_1432",
@@ -11869,7 +11879,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si krátký deník strachu. Zaznamenej situaci, čeho ses obávala, sílu strachu od 0 do 10, co se skutečně stalo a jak ses s tím vypořádala. Po čase hledej opakující se rozdíly mezi tím, co jsi předpovídala, a tím, co opravdu nastalo."
   },
   {
     "id": "refa_1435",
@@ -12113,7 +12124,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Musím paniku okamžitě odstranit, jinak se bude jen zhoršovat.“ Při mírné panice zkus na 30 sekund přestat bojovat s jejími projevy. Jen pozoruj, co se děje v těle, aniž by ses snažila pocity potlačit nebo vyvolat. Předem si řekni, čeho se obáváš. Pokud je to snesitelné, příště pozorování trochu prodluž. Potom porovnej očekávání se skutečností. Rostla panika neustále, nebo se její intenzita měnila? Cílem není vydržet co nejvíc, ale zjistit, co se děje, když se strachem chvíli nebojuješ."
   },
   {
     "id": "refa_1463",
@@ -12131,7 +12143,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nacvičuj rozlišování tří věcí: co právě skutečně pozoruješ, co si domýšlíš a co předpovídáš. Například: „Buší mi srdce“ je pozorování, „něco se mnou není v pořádku“ je výklad a „určitě zkolabuju“ je předpověď. Zkus je od sebe oddělit, místo abys začala jednat podle nejhoršího scénáře."
   },
   {
     "id": "refa_1465",
@@ -12140,7 +12153,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vytvoř si vlastní krátký plán pro chvíle paniky. Napiš si, jak obvykle poznáš její začátek, co ti pomáhá, co ji naopak zhoršuje a komu se můžeš ozvat. Přidej jednu větu, kterou bys v takové chvíli potřebovala slyšet. Plán si ulož do telefonu, abys ho měla po ruce, když bude těžké přemýšlet."
   },
   {
     "id": "refa_1466",
@@ -12149,7 +12163,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když neuteču, panika mě přemůže.“ Vyber si bezpečnou situaci, ze které kvůli úzkosti obvykle rychle odcházíš. Předem odhadni, co se stane, pokud zůstaneš o minutu déle. Začni mírně náročnou situací a postupně přidávej čas nebo obtížnost. Po každém pokusu porovnej očekávání se skutečným průběhem. Sleduj, jak se měnila intenzita strachu, co jsi dokázala zvládnout a zda bylo nutné odejít právě ve chvíli, kdy tě k tomu panika vybízela."
   },
   {
     "id": "refa_1467",
@@ -12368,7 +12383,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj „nemůžu“ od „nechci“, „bojím se“, „nevím jak“, „jsem vyčerpaná“ a „je toho moc“. Každá z těchto příčin potřebuje úplně jinou odpověď."
   },
   {
     "id": "refa_1494",
@@ -12386,7 +12402,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se zasekneš, zkus rozlišit, jestli potřebuješ odpočinek, nebo ti pomůže malý krok vpřed. Pokud jsi vyčerpaná, dopřej si skutečný odpočinek bez výčitek. Pokud máš sílu, vyber jednu drobnou činnost. Nemusíš zůstávat v mezistavu, kdy neodpočíváš, ale ani nic neděláš."
   },
   {
     "id": "refa_1499",
@@ -12621,7 +12638,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě vyděsí pocit, že se zblázníš, zkus ho nejdřív přesněji pojmenovat: „Mám teď pocit odpojení“, „Myšlenky mi běží jedna přes druhou“ nebo „Prožívám silnou úzkost“. Popisuj, co skutečně prožíváš, místo abys nad sebou vynášela rozsudek."
   },
   {
     "id": "refa_1525",
@@ -12657,7 +12675,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě vyděsí nějaká zvláštní nebo nechtěná myšlenka, nemusíš ji hned rozebírat, vyvracet ani zahánět. Zkus si říct: „Tohle je myšlenka, ne skutečnost ani příkaz.“ Potom se vrať k tomu, co jsi právě dělala. Nemusíš mít nad každou myšlenkou kontrolu."
   },
   {
     "id": "refa_1531",
@@ -12666,7 +12685,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si jednoduchý plán pro chvíle, kdy tě vlastní mysl vyděsí. Vyber tři konkrétní kroky, které ti obvykle pomáhají: třeba napít se, přejít do klidnějšího prostředí a věnovat se známé nenáročné činnosti. Měj plán po ruce, abys ve chvíli zahlcení nemusela složitě přemýšlet, co dělat."
   },
   {
     "id": "refa_1532",
@@ -12868,7 +12888,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po kritice si polož tři otázky: Co je na ní užitečné? Co je pouze názor druhého? S čím nesouhlasím? Zkus si vzít to, co ti může pomoct, aniž bys musela přijmout nebo odmítnout všechno."
   },
   {
     "id": "refa_1555",
@@ -12886,7 +12907,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Záměrně rozlišuj kritiku svého chování od hodnocení sebe jako člověka. Když tě napadne „jsem neschopná“, vrať se ke konkrétnímu „tohle se mi nepovedlo“ nebo „tenhle člověk nesouhlasí s mým postupem“. Jedna chyba ani cizí názor neurčují tvoji hodnotu."
   },
   {
     "id": "refa_1557",
@@ -12895,7 +12917,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se začneš cítit kritizovaná, všimni si, co automaticky děláš. Obhajuješ se, omlouváš, snažíš se zavděčit, útočíš, nebo se stáhneš? Zkus mezi pocitem a reakcí udělat krátkou pauzu. Nemusíš pokaždé jednat podle prvního impulsu."
   },
   {
     "id": "refa_1558",
@@ -13163,7 +13186,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „nejsem dost dobrá“, zkus ji zpřesnit: „Nejsem dost dobrá v čem? Podle jakého měřítka? A čí je to měřítko?“ Místo odsudku celé své osoby tak získáš konkrétní tvrzení, které můžeš prozkoumat."
   },
   {
     "id": "refa_1591",
@@ -13172,7 +13196,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když uděláš chybu, zkus se na chvíli vzdát soudů o sobě. Popiš jen to, co se skutečně stalo, co jsi mohla ovlivnit, co bylo mimo tvou kontrolu a co můžeš příště udělat jinak. Chyba je informace o konkrétní situaci, ne rozsudek o tvé hodnotě."
   },
   {
     "id": "refa_1592",
@@ -13181,7 +13206,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se ozve tvůj vnitřní kritik, napiš si, co ti vyčítá nebo co od tebe požaduje. Pak si představ, že stejnou věc říká někomu, koho máš ráda. Jak by asi na jeho slova odpověděl? Zkus podobně odpovědět i sobě. Užitečnou kritiku si můžeš ponechat, ponižování ne."
   },
   {
     "id": "refa_1593",
@@ -13199,7 +13225,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V oblasti, kde se cítíš nedostatečná, zkus rozlišit dvě věci: potřebuješ se naučit něco konkrétního, nebo se především trápíš tím, že nejsi taková, jaká bys podle sebe měla být? Pokud ti chybí dovednost, stanov si malý, uskutečnitelný krok k jejímu zlepšení. Pokud tě trápí hlavně sebehodnocení, zkus pracovat spíš se svými nároky než na dalším zdokonalování."
   },
   {
     "id": "refa_1596",
@@ -13217,7 +13244,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus týden sledovat, kdy se cítíš nedostatečná. Stručně si zapisuj, co se stalo, jak silný byl tvůj pocit, co jsi od sebe v tu chvíli požadovala a jak jsi reagovala. Na konci týdne hledej opakující se situace, přehnané nároky i chvíle, kdy ses za podobných okolností cítila lépe."
   },
   {
     "id": "refa_1598",
@@ -13410,7 +13438,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po chybě nahraď otázku „Jak jsem to mohla pokazit?“ otázkou „Co je teď nejrozumnější další krok?“ Zkus se místo sebeobviňování soustředit na to, co můžeš udělat právě teď."
   },
   {
     "id": "refa_1621",
@@ -13419,7 +13448,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když něco pokazíš, vědomě odděl čin od identity: „Tohle rozhodnutí nebylo dobré“ místo „Jsem neschopná.“ Sleduj, jak odlišně obě formulace působí."
   },
   {
     "id": "refa_1622",
@@ -13446,7 +13476,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez dokonalé přípravy to nezvládnu.“ Vyber si bezpečný běžný úkol a připravuj se na něj o něco kratší dobu než obvykle, třeba jen o pět minut. Předem si napiš, co očekáváš, že pokazíš, a jak závažné to bude. Potom porovnej předpověď se skutečností a všimni si také toho, co jsi dokázala vyřešit za pochodu. Pokud budeš chtít, postupně zkoušej méně zažité úkoly nebo ještě kratší přípravu."
   },
   {
     "id": "refa_1625",
@@ -13455,7 +13486,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě po chybě napadne „měla jsem to vědět“, vrať se v myšlenkách do okamžiku rozhodování. Jaké informace jsi tehdy skutečně měla? Co jsi nemohla předvídat? Zkus své tehdejší rozhodnutí posoudit bez ohledu na to, co ses dozvěděla potom."
   },
   {
     "id": "refa_1626",
@@ -13464,7 +13496,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Jedna chyba dokazuje mou neschopnost.“ Když uděláš drobnou chybu, všimni si, co o sobě automaticky usoudíš. Místo dalšího sebeposuzování se pokus situaci prakticky dokončit nebo napravit. Potom si napiš, co se skutečně stalo, jak jsi reagovala a co všechno tahle zkušenost vypovídá o tvých schopnostech. Začni maličkostmi, později můžeš zkoumat i významnější omyly."
   },
   {
     "id": "refa_1627",
