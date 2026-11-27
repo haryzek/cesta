@@ -42379,7 +42379,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi neschopná se soustředit, protože tvoje pozornost se snaží hlídat příliš mnoho věcí najednou. Můžeš jí pomoct tím, že jí na chvíli dáš jen jeden úkol."
   },
   {
     "id": "ref_5173",
@@ -42397,7 +42398,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít jasno, abys byla v bezpečí. Nejistota je nepříjemná, ale sama o sobě ještě neznamená, že se děje něco špatného."
   },
   {
     "id": "ref_5175",
@@ -42451,7 +42453,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se nejdřív přestat cítit chaoticky, abys mohla udělat něco malého a užitečného. Jeden jednoduchý krok často začne vytvářet řád dřív, než se dostaví pocit, že máš věci pod kontrolou."
   },
   {
     "id": "ref_5181",
@@ -42469,7 +42472,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se za svůj zmatek stydět. Můžeš být chytrá, schopná a zároveň se někdy úplně ztratit."
   },
   {
     "id": "ref_5185",
@@ -42478,7 +42482,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš dezorientovaná, vrať se na chvíli k tomu nejkonkrétnějšímu: kde jsi, co vidíš, co cítíš pod nohama a co právě potřebuje tvoje tělo. Svět může být na chvíli malý a jednoduchý."
   },
   {
     "id": "ref_5186",
@@ -42487,7 +42492,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I když máš pocit, že se ti všechno v hlavě rozsypalo, pořád v tobě zůstává část, která si toho chaosu všímá. O tuhle schopnost pozorovat vlastní prožívání se můžeš opřít, aniž bys musela všechno hned vyřešit."
   },
   {
     "id": "ref_5183",
@@ -42713,7 +42719,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít jednu jasnou a pevnou definici sebe samé. Jsi člověk, ne hotový životopis."
   },
   {
     "id": "ref_5213",
@@ -42722,7 +42729,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš svou identitu vymyslet. Můžeš ji postupně objevovat podle toho, co tě přitahuje, co odmítáš, co ti dává smysl a při čem se cítíš živá."
   },
   {
     "id": "ref_5214",
@@ -42731,7 +42739,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I když teď nedokážeš říct, kdo jsi, pořád můžeš vědět, co nechceš, co tě bolí, koho máš ráda nebo co je pro tebe důležité. I tohle jsou tvoje obrysy."
   },
   {
     "id": "ref_5215",
@@ -42740,7 +42749,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že jsi v různých vztazích trochu jiná, nemusí znamenat, že jsi falešná. Každý člověk má mnoho skutečných podob."
   },
   {
     "id": "ref_5216",
@@ -42767,7 +42777,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se rozhodnout jednou provždy, jaká jsi. Můžeš si dovolit být někdy odvážná, někdy nejistá, někdy společenská a jindy samotářská, aniž by jedna část rušila druhou."
   },
   {
     "id": "ref_5221",
@@ -42785,7 +42796,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se poznat dokonale, abys mohla stát na své straně. Můžeš se k sobě chovat jako k někomu, koho teprve poznáváš a kdo si zaslouží zvědavost místo výslechu."
   },
   {
     "id": "ref_5224",
@@ -42794,7 +42806,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když ses kdysi potřebovala stát tou, kterou druzí chtěli, nebyla to slabost. Mohl to být způsob, jak si zachovat vztah a bezpečí. Dnes můžeš pomalu zjišťovat, kdo jsi, když se přizpůsobovat nemusíš."
   },
   {
     "id": "ref_5227",
@@ -42803,7 +42816,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jestli ses celý život hodně přizpůsobovala, možná teď necítíš prázdné místo, ale prostor, který konečně přestává být zaplněný očekáváním ostatních."
   },
   {
     "id": "ref_5228",
@@ -42812,7 +42826,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná tě děsí, že bez jasné identity nemáš pevnou půdu pod nohama. Nemusíš ale znát celý svůj příběh, abys mohla udělat jeden krok, který ti připadá pravdivý."
   },
   {
     "id": "ref_5231",
@@ -43066,7 +43081,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se trestat ještě za to, že se necítíš dobře. Jedna bolest je dost; nemusíš k ní přidávat výčitku, že bys měla cítit něco jiného."
   },
   {
     "id": "ref_5257",
@@ -43129,7 +43145,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdy se chuť vrací až poté, co něco začneš dělat, ne předtím. Nemusíš tedy čekat na jiskru, abys udělala malý krok."
   },
   {
     "id": "ref_5266",
@@ -43138,7 +43155,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi prázdná, jen je tvůj systém unavený natolik, že stáhl hlasitost všeho, co normálně prožíváš."
   },
   {
     "id": "ref_5268",
@@ -43156,7 +43174,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby tě někdo, kdo tě má rád, viděl v tomhle stavu, nejspíš by po tobě nechtěl, abys okamžitě zase zářila. Chtěl by hlavně, abys svůj dnešní nedostatek radosti nezaměnila za nedostatek vlastní hodnoty."
   },
   {
     "id": "ref_5271",
@@ -43165,7 +43184,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že radost přichází hlavně za výkon, úspěch nebo splněná očekávání. Pak není divu, že když nemáš energii na výkon, jako by nebylo odkud brát ani radost."
   },
   {
     "id": "ref_5267",
@@ -43444,7 +43464,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvůj pocit říká „uvnitř nic není“, ale přesnější může být „já teď uvnitř nenacházím, čeho bych se chytila“. Mezi těmito dvěma větami je velký rozdíl."
   },
   {
     "id": "ref_5304",
@@ -43453,7 +43474,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdyby ses teď cítila jako pouhá schránka, pořád je tu tvoje tělo, dech a pozornost. Nemusíš v nich hned objevit smysl; můžeš je jen vnímat jako něco skutečného, co tě drží v přítomném okamžiku."
   },
   {
     "id": "ref_5305",
@@ -43480,7 +43502,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít právě teď žádný silný pocit, myšlenku ani přání, abys byla skutečná. Svou existenci nemusíš každou chvíli dokazovat."
   },
   {
     "id": "ref_5309",
@@ -43489,7 +43512,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Prázdnota někdy funguje jako anestetikum: spolu s bolestí utlumí i radost, touhu a pocit sebe samé. To, co prožíváš jako nepřítomnost života, tak může být také důsledkem ochranného znecitlivění."
   },
   {
     "id": "ref_5311",
@@ -43498,7 +43522,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila potlačovat vlastní potřeby, pocity nebo touhy, protože pro ně nebylo dost místa nebo nebylo bezpečné je projevit. Pokud se něco takového dělo, dnešní prázdnota může souviset i s tím, co ti tehdy pomáhalo zvládnout situaci."
   },
   {
     "id": "ref_5312",
@@ -43507,7 +43532,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdyby ses teď cítila úplně odpojená od sebe, nemusíš se za to obviňovat. Nemusíš se nejprve dát dohromady, abys k sobě mohla přistupovat s respektem."
   },
   {
     "id": "ref_5316",
@@ -43516,7 +43542,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby se ti dítě svěřilo, že uvnitř nic necítí, nesnažila by ses ho rychle „opravit“. Sedla by sis k němu a dal mu najevo, že i s takovým pocitem prázdnoty s tebou smí být. Mohla bys to nabídnout i sobě?"
   },
   {
     "id": "ref_5310",
@@ -43769,7 +43796,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš svůj život obhájit před nějakým kosmickým soudem. Nemusíš prokázat, že je k něčemu užitečný, aby sis směla vážit toho, že ho žiješ."
   },
   {
     "id": "ref_5346",
@@ -43796,7 +43824,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš teď vyřešit otázku, na kterou v tomhle stavu žádná odpověď nebude dost dobrá. Některé otázky mohou chvíli zůstat otevřené, aniž bys kvůli nim musela zastavit svůj život."
   },
   {
     "id": "ref_5349",
@@ -43832,7 +43861,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvoje současné prázdno nemusíš okamžitě zaplnit. Můžeš chvíli jen být vedle něj, aniž bys z něj musela vyvozovat rozsudek nad celým svým životem."
   },
   {
     "id": "ref_5355",
@@ -43841,7 +43871,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná jsi dlouho žila podle představ o tom, co má dávat životu smysl, ale ty ti přestaly stačit. Prázdné místo nemusí být jen ztráta. Může se stát prostorem, ve kterém postupně objevíš něco jiného."
   },
   {
     "id": "ref_5356",
@@ -43850,7 +43881,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš cítit význam svého života, abys mohla mít význam pro druhé. A nemusíš svou hodnotu právě teď vidět, aby ji druzí mohli vnímat. Zároveň je v pořádku, pokud ti jejich zájem momentálně nestačí."
   },
   {
     "id": "ref_5360",
@@ -44061,7 +44093,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nejsi líná jen proto, že se ti nechce. Za nezájmem může být únava, přesycení, odpor, ztráta smyslu, strach nebo potřeba změny. Každá z těch možností potřebuje něco jiného."
   },
   {
     "id": "ref_5379",
@@ -44070,7 +44103,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě teď nic moc nezajímá, neznamená, že ses stala člověkem bez zájmu. Jen se momentálně hůř potkáváš s tím, co tě dokáže rozhýbat."
   },
   {
     "id": "ref_5380",
@@ -44133,7 +44167,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná nejsi nemotivovaná, ale část tebe prostě odmítá dál investovat energii do věcí, které jí nepřipadají dost živé, smysluplné nebo bezpečné. I nezájem může být zpráva, ne porucha."
   },
   {
     "id": "ref_5392",
@@ -44151,7 +44186,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě něco nebaví, říká něco o tvém současném vztahu k této věci. Neříká to ale nic o tisících dalších věcí, lidí a zkušeností, se kterými ses ještě nepotkala."
   },
   {
     "id": "ref_5395",
@@ -44169,7 +44205,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná tě nezájem chrání před nepříjemnější otázkou: „Co vlastně doopravdy chci?“ Kdyby ses přestala nutit chtít správné věci, mohlo by se ukázat něco mnohem osobnějšího."
   },
   {
     "id": "ref_5401",
@@ -44178,7 +44215,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když ses kdysi naučila, že tvoje nadšení nikdo moc nesdílí, oceňuje se hlavně výkon nebo přichází zklamání, mohlo být bezpečnější přestat něco moc chtít. Dnes už ale nemusíš každou jiskru zadupat dřív, než zjistíš, kam vede."
   },
   {
     "id": "ref_5390",

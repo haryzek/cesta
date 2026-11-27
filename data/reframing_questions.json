@@ -31128,7 +31128,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kolik věcí se právě snažíš držet v hlavě najednou a co by se stalo, kdybys většinu z nich na chvíli pustila?"
   },
   {
     "id": "refq_3741",
@@ -31137,7 +31138,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys teď nemusela vyřešit všechno, jaká je jediná věc, kterou potřebuješ vědět nebo udělat právě teď?"
   },
   {
     "id": "refq_3742",
@@ -31155,7 +31157,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co kdyby tvůj chaos nebyl důkazem, že něco nezvládáš, ale signálem, že jsi právě překročila kapacitu své mysli?"
   },
   {
     "id": "refq_3744",
@@ -31366,7 +31369,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých chvílích se cítíš nejvíc jako ty sama, aniž by ses o to musela snažit?"
   },
   {
     "id": "refq_3770",
@@ -31375,7 +31379,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "S kterými lidmi se cítíš víc sama sebou a vedle kterých naopak ztrácíš kontakt s tím, co chceš, cítíš nebo si myslíš?"
   },
   {
     "id": "refq_3771",
@@ -31402,7 +31407,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys na chvíli přestala hledat odpověď na otázku „Kdo jsem?“, podle čeho bys mohla poznávat, co je opravdu tvoje?"
   },
   {
     "id": "refq_3774",
@@ -31411,7 +31417,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Které svoje vlastnosti považuješ za skutečně vlastní a které sis možná osvojila hlavně proto, abys někomu vyhověla, zapadl nebo obstál?"
   },
   {
     "id": "refq_3775",
@@ -31420,7 +31427,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naučila, že je bezpečnější přizpůsobit se než ukázat, co skutečně chceš, cítíš nebo si myslíš?"
   },
   {
     "id": "refq_3776",
@@ -31429,7 +31437,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy během dne se pocit „nevím, kdo jsem“ objevuje nejsilněji a co se děje těsně předtím, než se začneš sama sobě vzdalovat?"
   },
   {
     "id": "refq_3777",
@@ -31614,7 +31623,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Není tvoje „nic mě nebaví“ někdy spíš „jsem příliš vyčerpaná, přetížená nebo zklamaná, abych ještě něco chtěla“?"
   },
   {
     "id": "refq_3801",
@@ -31659,7 +31669,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co ti bere energii, aniž by sis toho všimla, protože se to stalo normální součástí tvého života?"
   },
   {
     "id": "refq_3806",
@@ -31668,7 +31679,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby cílem příštích dní nebylo „být zase šťastná“, ale vytvořit podmínky, ve kterých se živost může začít vracet, co konkrétně bys změnila?"
   },
   {
     "id": "refq_3807",
@@ -31677,7 +31689,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys nemusela čekat, až se ti bude chtít, co bys dnes mohla udělat, i kdyby tě to zatím nijak zvlášť netěšilo?"
   },
   {
     "id": "refq_3808",
@@ -31862,7 +31875,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když říkáš „jsem prázdná“, co přesně ti chybí: emoce, touhy, smysl, energie, pocit vlastní identity, blízkost k druhým, nebo něco úplně jiného?"
   },
   {
     "id": "refq_3830",
@@ -31880,7 +31894,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se dělo těsně předtím, než ses naposledy cítila prázdná? Co jsi tehdy prožívala a co jsi potřebovala?"
   },
   {
     "id": "refq_3832",
@@ -31898,7 +31913,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jsou lidé, vedle kterých se cítíš skutečnější, živější nebo víc sama sebou? Co se mezi vámi děje jinak?"
   },
   {
     "id": "refq_3834",
@@ -31907,7 +31923,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naposledy do něčeho tak ponořila, že jsi na svou prázdnotu úplně zapomněla? Co tě do toho vtáhlo?"
   },
   {
     "id": "refq_3835",
@@ -32110,7 +32127,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naposledy cítila skutečně živá, i když ses vůbec nezabývala otázkou, zda má život smysl?"
   },
   {
     "id": "refq_3861",
@@ -32155,7 +32173,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy tenhle pocit naopak na chvíli mizí, aniž bys ho musela nějak řešit, a co mají tyto okamžiky společného?"
   },
   {
     "id": "refq_3866",
@@ -32164,7 +32183,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys na měsíc přestala hledat smysl života a místo toho hledala jen věci, při kterých se cítíš o trochu živější, kam by tě to vedlo?"
   },
   {
     "id": "refq_3867",
@@ -32173,7 +32193,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby nikdo nikdy neviděl ani nehodnotil tvůj život, čemu bys přesto chtěla věnovat svůj čas?"
   },
   {
     "id": "refq_3868",
@@ -32376,7 +32397,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co tě naposledy spontánně vtáhlo natolik, že ses nemusela do ničeho nutit, a co bylo v té zkušenosti jinak?"
   },
   {
     "id": "refq_3892",
@@ -32385,7 +32407,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys na chvíli přestala řešit, co bys měla chtít, co bys skutečně chtěla?"
   },
   {
     "id": "refq_3893",
@@ -32403,7 +32426,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys svou motivaci neměřila intenzitou chuti, ale ochotou věnovat něčemu deset minut, co by najednou vypadalo jinak?"
   },
   {
     "id": "refq_3895",

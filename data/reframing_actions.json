@@ -29591,7 +29591,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj „musím udělat“ od „napadlo mě“. Nové nápady a úkoly během práce pouze zapisuj na odkládací seznam, místo abys okamžitě měnila směr."
   },
   {
     "id": "refa_3570",
@@ -29618,7 +29619,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si okamžiku, kdy z praktického problému vytvoříš soud o sobě: „Nevím, co dál“ se snadno mění v „jsem úplně neschopná“. Vrať se pokaždé k popisu konkrétní situace."
   },
   {
     "id": "refa_3573",
@@ -29811,7 +29813,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když přijde „nevím, kdo jsem“, nahraď na chvíli velkou otázku konkrétními: „Co teď cítím? Co potřebuju? Co nechci? Co bych si přála?“ Odpovědi nemusí být jisté."
   },
   {
     "id": "refa_3596",
@@ -29820,7 +29823,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vytvoř si seznam „tohle vím“: hodnoty, preference, hranice a potřeby, kterými jsi si poměrně jistá. Nehledej úplný portrét osobnosti; sbírej malé spolehlivé body."
   },
   {
     "id": "refa_3597",
@@ -29829,7 +29833,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si deset situací, ve kterých se cítíš nejvíc sama sebou. Hledej jejich společné znaky: lidi, prostředí, činnost, míru svobody, tempo, tělesný stav nebo způsob komunikace."
   },
   {
     "id": "refa_3598",
@@ -29838,7 +29843,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si dva týdny „deník vlastních stop“: každý večer si zapiš jednu věc, která tě přitahovala, jednu, která ti vadila, a jednu, kterou sis skutečně vybrala sama."
   },
   {
     "id": "refa_3599",
@@ -29847,7 +29853,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Nemusím znát správnou odpověď o sobě.“ Když přemýšlíš o tom, kdo jsi, zkus si u jedné otázky dovolit odpovědět „zatím nevím“ a dál odpověď nerozebírat. Předem odhadni, jak nepříjemná pro tebe nejistota bude. Začni u drobností a postupně můžeš zkusit i důležitější otázky. Potom si zaznamenej, co se skutečně dělo a zda se nejistota dala snést, aniž bys musela okamžitě najít definitivní odpověď."
   },
   {
     "id": "refa_3600",
@@ -29856,7 +29863,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou denně se u drobného rozhodnutí zastav a zeptej se: „Co bych zvolila, kdybych to nemusela nikomu vysvětlovat?“ Pak podle odpovědi jednej, pokud je to bezpečné."
   },
   {
     "id": "refa_3601",
@@ -29865,7 +29873,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Všímej si okamžiků, kdy automaticky přebíráš názor, náladu nebo preference druhého. Nezakazuj si to; jen si následně polož otázku, co sis myslela nebo chtěla ty."
   },
   {
     "id": "refa_3602",
@@ -30059,7 +30068,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez chuti nezačnu.“ Předem ohodnoť svou chuť do činnosti a odhadni, jak se budeš cítit po jejím dokončení. Pak se na pět minut pusť do něčeho, co tě dřív bavilo. Potom obě hodnoty znovu zaznamenej. Pokud ti to bude příjemné nebo snesitelné, postupně dobu prodlužuj a zkoušej různé činnosti. Sleduj, jestli se někdy zájem nebo motivace objeví až během činnosti, aniž bys po sobě vyžadovala radost."
   },
   {
     "id": "refa_3626",
@@ -30086,7 +30096,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Už mě netěší vůbec nic.“ Předem odhadni, jak příjemné pro tebe budou tři drobné činnosti, například poslech hudby, krátká procházka a něco dobrého k jídlu. Jednu z nich vyzkoušej alespoň na pět minut a potom zaznamenej, jak ses skutečně cítila. Všímej si i nepatrných rozdílů. Postupně zkoušej různé smyslové, pohybové, nové nebo společenské aktivity. Cílem není přinutit se k radosti, ale zjistit, jestli je všechno opravdu stejně prázdné, nebo se přece jen objevují výjimky."
   },
   {
     "id": "refa_3631",
@@ -30297,7 +30308,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve chvíli prázdnoty si pojmenuj pět konkrétních tělesných vjemů, aniž bys je hned vykládala. Vnímej třeba tlak chodidel, teplotu rukou, pohyb dechu nebo napětí v ramenou. Nemusíš hned vědět, kdo jsi nebo co cítíš. Pro začátek stačí znovu navázat kontakt s tím, co právě prožíváš."
   },
   {
     "id": "refa_3655",
@@ -30563,7 +30575,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si pět hodnot, podle kterých bys chtěla žít, i kdyby život neměl žádný objektivně daný účel. Ke každé najdi jeden drobný čin, kterým ji můžeš tento týden uskutečnit."
   },
   {
     "id": "refa_3687",
@@ -30572,7 +30585,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si dva týdny krátký „deník živosti“: každý večer si poznamenej tři chvíle, kdy ses cítila alespoň o trochu zaujatá, spojená s někým nebo něčím, klidný či živý. Nehledej velký smysl, jen drobné výjimky."
   },
   {
     "id": "refa_3688",
@@ -30808,7 +30822,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozděl úkol, do kterého se ti nechce, na směšně malý začátek: otevři dokument, obuj si boty nebo ukliď jednu věc. Až to uděláš, svobodně se rozhodni, jestli chceš pokračovat. Nemusíš se předem cítit motivovaná, abys mohla udělat první krok."
   },
   {
     "id": "refa_3718",
@@ -30817,7 +30832,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si týden „mapu živosti“: několikrát denně si poznamenej, co právě děláš a jakou při tom máš energii a zájem na škále 0–10. Hledej rozdíly mezi činnostmi, lidmi a situacemi. Nesnaž se dokázat, že jsi nemotivovaná; zkoumej, kdy se v tobě naopak objevuje aspoň malá jiskra."
   },
   {
     "id": "refa_3719",
@@ -30844,7 +30860,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když plánuješ den, rozděl si činnosti na „musím“, „chci“ a „možná bych chtěla“. Pokud dlouhodobě převažují povinnosti, vyber jednu, kterou můžeš zjednodušit, delegovat, odmítnout nebo dělat méně často. Někdy nepotřebuješ víc motivace, ale méně věcí, které tě vyčerpávají."
   },
   {
     "id": "refa_3723",
