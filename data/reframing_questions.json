@@ -25591,7 +25591,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by pro tebe mohlo být těžké nebo ohrožující na tom, kdybys k sobě opravdu pustila bolest druhého člověka?"
   },
   {
     "id": "refq_3077",
@@ -25839,7 +25840,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses nemusela před nikým obhajovat, co bys ze svého současného života okamžitě omezila, odložil nebo zrušil?"
   },
   {
     "id": "refq_3108",
@@ -25848,7 +25850,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak zacházíš se sebou, když jsi vyčerpaná – jako s někým, kdo potřebuje péči, nebo jako se zaměstnankyní, která zase nesplnila normu?"
   },
   {
     "id": "refq_3109",
@@ -25866,7 +25869,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jsi unavená ze života jako takového, nebo hlavně ze způsobu, jakým teď žiješ?"
   },
   {
     "id": "refq_3111",
@@ -26146,7 +26150,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co všechno ze svého života právě odsouváš stranou, abys mohla dál řešit jednu jedinou věc?"
   },
   {
     "id": "refq_3144",
@@ -26348,7 +26353,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně by se stalo, kdybys na sebe přestala tolik tlačit? Čeho konkrétně se bojíš?"
   },
   {
     "id": "refq_3169",
@@ -26384,7 +26390,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Podle čeho poznáš, že už ses snažila dost? Existuje vůbec chvíle, kdy si dokážeš říct „stačí“?"
   },
   {
     "id": "refq_3173",
@@ -26393,7 +26400,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys udělala chybu, co by podle tebe vypovídala o tobě jako o člověku?"
   },
   {
     "id": "refq_3174",
@@ -26637,7 +26645,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys na chvíli přestala řešit všechno, co „musíš“, co by skutečně mělo vážné následky a co by jen zůstalo nedodělané?"
   },
   {
     "id": "refq_3204",
@@ -26655,7 +26664,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jaké nároky na sebe považuješ za samozřejmé, přestože by ti připadaly nepřiměřené, kdybys je kladla na někoho, koho máš ráda?"
   },
   {
     "id": "refq_3206",
@@ -26664,7 +26674,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses nesnažila zvládnout víc, ale naopak snížit množství toho, co zvládat musíš, co bys změnila jako první?"
   },
   {
     "id": "refq_3207",
@@ -26673,7 +26684,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys své přetížení brala jako důležitou zprávu o tom, jak právě žiješ, co by ti říkalo?"
   },
   {
     "id": "refq_3208",
@@ -26691,7 +26703,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses směla starat jen o věci, které jsou skutečně tvoje odpovědnost, co by ti z nákladu odpadlo?"
   },
   {
     "id": "refq_3210",
@@ -26908,7 +26921,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Za co přesně jsi v téhle situaci skutečně zodpovědná – a co už sis ke své odpovědnosti jen přibalila?"
   },
   {
     "id": "refq_3237",
@@ -26917,7 +26931,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak poznáš, že už jsi udělala dost? Existuje vůbec hranice, za kterou si dovolíš přestat?"
   },
   {
     "id": "refq_3238",
@@ -26944,7 +26959,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Které tvoje potřeby pravidelně ustupují do pozadí, protože se cítíš zodpovědná za druhé lidi nebo za to, aby všechno fungovalo?"
   },
   {
     "id": "refq_3242",
@@ -26953,7 +26969,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kolik odpovědnosti přebíráš proto, že je skutečně tvoje, a kolik proto, aby ses nemusela potýkat s vinou, úzkostí nebo bezmocí?"
   },
   {
     "id": "refq_3243",
@@ -26971,7 +26988,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co děláš proto, že to opravdu chceš, a co hlavně proto, že by sis vyčítala, kdybys to neudělala?"
   },
   {
     "id": "refq_3245",
@@ -27420,7 +27438,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když dostaneš něco, po čem jsi toužila, dokážeš si to opravdu užít, nebo tvoje pozornost rychle přeskočí k tomu, co tomu ještě chybí?"
   },
   {
     "id": "refq_3300",
@@ -27429,7 +27448,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně se musí stát, abys mohla být spokojená? A jak dlouho ti ta spokojenost vydrží, když toho dosáhneš?"
   },
   {
     "id": "refq_3301",
@@ -27465,7 +27485,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Čeho se obáváš, že by se stalo, kdybys někdy řekla „tohle mi stačí“ a přestala chtít víc?"
   },
   {
     "id": "refq_3306",
@@ -27694,7 +27715,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co všechno jsi kvůli snaze dělat věci dokonale neudělala, nezačala, nedokončila nebo si neužila?"
   },
   {
     "id": "refq_3334",
@@ -27712,7 +27734,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys dělala jinak, kdyby tvoje hodnota nemohla být zvýšena úspěchem ani snížena chybou?"
   },
   {
     "id": "refq_3336",
@@ -27739,7 +27762,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naučila, že „mohla bych to udělat lépe“ znamená zároveň „musím to udělat lépe“?"
   },
   {
     "id": "refq_3338",
@@ -27958,7 +27982,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně potřebuju, aby druhý něco uznal, pochopil nebo napravil? Dokázala bych mu to říct přímo, bez obviňování?"
   },
   {
     "id": "refq_3365",
@@ -27985,7 +28010,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se obávám, že by se stalo, kdybych něčí chybu neodsoudila? Znamenalo by to pro mě, že mu všechno projde, že jsem slabá nebo že zrazuju sama sebe?"
   },
   {
     "id": "refq_3368",
@@ -28003,7 +28029,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybych na chvíli přestala hledat viníka, jaké jiné, možná ještě nepříjemnější pocity by se ve mně mohly objevit?"
   },
   {
     "id": "refq_3370",
@@ -28204,7 +28231,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně se stalo těsně předtím, než se v tobě objevila nepřátelskost, a co jsi cítila o pár vteřin dřív?"
   },
   {
     "id": "refq_3395",
@@ -28258,7 +28286,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jakého pocitu by ses možná dotkla, kdybys na chvíli přestala být naštvaná a nepřátelská?"
   },
   {
     "id": "refq_3402",
