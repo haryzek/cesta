@@ -1450,12 +1450,25 @@
     return String(t).replace(/(\S+) \/ (\S+?)([?!.,…]*)(?=\s|$)/g,function(m,a,b,p){ return (g==="f"?b:a)+p; })
       .replace(/([A-Za-zÁ-žá-ž]+)\(a\)/g,function(m,a){ return g==="f"?a+"a":a; });
   }
+  // Ženská verze z text_f (27. 11. 2026 i triplet a věty pod strachy): ručně upravený text v adminu
+  // má přednost (edit je mužský text, ženská verze by ho schovala).
+  function pickGender(e,store,g){
+    if(e._t0==null) e._t0=e.text;
+    var edited=store&&ADMIN.edits[store]&&ADMIN.edits[store][e.id];
+    if(edited){ var f=admFields(store,e.id); if(f&&f.text!=null){ e.text=f.text; return; } }
+    e.text=(g==="f"&&e.text_f)?e.text_f:e._t0;
+  }
   function applyGender(){
     var g=genderOf();
-    Object.keys(itemIndex.hlasky||{}).forEach(function(id){ var e=itemIndex.hlasky[id]; if(e._t0==null) e._t0=e.text; e.text=(g==="f"&&e.text_f)||e._t0; });
+    Object.keys(itemIndex.hlasky||{}).forEach(function(id){ pickGender(itemIndex.hlasky[id],"pains",g); });
     (flat.pains||[]).forEach(function(p){ if(p._t0==null) p._t0=p.text; p.text=(g==="f"&&p.text_f)||p._t0; });
     Object.keys(itemIndex.hlasky||{}).forEach(function(id){ var e=itemIndex.hlasky[id], p=itemIndex.pains[e.pain_id]; if(p) e.meta=p.text; });
     (flat.questions||[]).forEach(function(q){ if(q._t0==null) q._t0=q.text; q.text=genderize(q._t0,g); });
+    TYPES.forEach(function(t){ var st=storeOf(t.key); (DB[t.key]||[]).forEach(function(e){ pickGender(e,st,g); }); });
+    Object.keys(itemIndex.sitref||{}).forEach(function(id){ pickGender(itemIndex.sitref[id],"situations",g); });
+    // Deník (ich-forma) se rozepisuje sám jako Otázky: „cítil(a)“, „sám / sama“.
+    (DB.exercises||[]).concat(DB.sections||[]).forEach(function(x){ ["diary_exercise","diary_practice"].forEach(function(k){
+      if(!x[k]) return; var o="_"+k; if(x[o]==null) x[o]=x[k]; x[k]=genderize(x[o],g); }); });
   }
   function setGender(g){ USER.profile=USER.profile||{}; USER.profile.gender=g; saveUser(); applyGender(); }
   function prepare(){
@@ -1484,7 +1497,7 @@
     (DB.pains||[]).forEach(function(p){ (p.hlasky||[]).forEach(function(x){ itemIndex.hlasky[x.id]={ id:x.id, text:x.text, text_f:x.text_f, pain_id:p.id, meta:p.text, source:x.source, approved:x.approved }; }); });
     // Přerámování situací jako položky (ID sitr_NNNN) — kvůli adminu.
     itemIndex.sitref={};
-    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, meta:s.name, approved:r.approved }; }); });
+    (DB.situations||[]).forEach(function(s){ (s.reframings||[]).forEach(function(r){ itemIndex.sitref[r.id]={ id:r.id, text:r.text, text_f:r.text_f, meta:s.name, approved:r.approved }; }); });
     buildLegacyKeys(); migrateStoredKeys();
     applyEdits();
     applyGender();
