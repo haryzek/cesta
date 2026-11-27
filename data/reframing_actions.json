@@ -8362,7 +8362,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví pocit „jsem špatná“, zkus rozlišit tři věci: Co jsem skutečně udělala? Co teď cítím? Co si kvůli tomu myslím o sobě? Konkrétní chyba, nepříjemná emoce a hodnocení celé vlastní osobnosti nejsou totéž."
   },
   {
     "id": "refa_1011",
@@ -8389,7 +8390,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se za chybu nebudu trestat, přestanu být zodpovědná.“ Po drobném pochybení zkus vynechat obvyklé nadávání sobě a soustřeď se pouze na přiměřenou nápravu. Předem si napiš, čeho se obáváš, pokud se nebudeš trestat. Později porovnej své očekávání s tím, zda jsi chybu napravila, poučila se z ní a dokázala jednat zodpovědně. Postupně můžeš tento přístup zkoušet i u významnějších situací."
   },
   {
     "id": "refa_1015",
@@ -8705,7 +8707,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se přistihneš při sebeurážce, zkus ji nahradit přesnějším popisem toho, co prožíváš. Místo „jsem odporná“ si například řekni „stydím se za to, co jsem udělala“ nebo „teď se sebou nejsem spokojená“. Rozlišuj mezi tím, jaký jsi člověk, a tím, co právě cítíš nebo co se ti nepovedlo."
   },
   {
     "id": "refa_1053",
@@ -8714,7 +8717,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Při silné sebenenávisti se zeptej: „Co teď vlastně potřebuju? Útěchu, ochranu, odpočinek, nápravu, blízkost, nebo něco jiného?“ Zkus si alespoň malou část této potřeby dopřát. Nemusíš se nejdřív přestat nenávidět, abys mohla začít pečovat o sebe."
   },
   {
     "id": "refa_1054",
@@ -8723,7 +8727,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po chybě zkus na chvíli odložit odsuzování sebe samé a odpověz si na tři otázky: Co se skutečně stalo? Za co skutečně nesu odpovědnost? Co konkrétně můžu napravit nebo příště udělat jinak? Cílem není zbavit se odpovědnosti, ale převzít ji bez ponižování sebe samé."
   },
   {
     "id": "refa_1055",
@@ -8732,7 +8737,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když polevím v sebekritice, zhorším se.“ Po nějaké drobné chybě zkus místo obvyklého sebeobviňování přistoupit k věci klidně a věcně. Předem odhadni, jestli kvůli tomu budeš méně zodpovědná nebo se méně poučíš. Pak udělej, co je potřeba napravit, a porovnej své očekávání se skutečností. Postupně můžeš tento přístup zkoušet i u významnějších chyb. Sleduj, jestli k odpovědnosti skutečně potřebuješ tvrdost vůči sobě."
   },
   {
     "id": "refa_1056",
@@ -8741,7 +8747,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou denně pro sebe udělej něco drobného a pečujícího, aniž by sis to musela nejdřív zasloužit. Dej si dobré jídlo, odpočiň si, vyjdi na vzduch nebo si dopřej něco příjemného. Ber péči o sebe jako přirozenou potřebu, ne jako odměnu za dobré chování."
   },
   {
     "id": "refa_1057",
@@ -8750,7 +8757,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví sebenenávist, zkus si všimnout, jakým hlasem k sobě mluvíš. Představ si, že stejnými slovy někdo oslovuje člověka, na kterém ti záleží. Jak bys na to reagovala? Zkus pak sama sobě říct totéž, co bys řekla jemu. Nemusíš tomu hned věřit. Stačí vyzkoušet jiný způsob zacházení se sebou."
   },
   {
     "id": "refa_1058",
@@ -8759,7 +8767,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zaveď si pravidlo, že ve chvílích silné sebenenávisti nebudeš dělat zásadní rozhodnutí ani se trestat. Pokud můžeš, odlož rozhodnutí o vztazích, práci nebo jiných důležitých věcech, dokud intenzita emocí nepoleví. Pokud máš nutkání si ublížit, nezůstávej s ním sama a vyhledej odbornou pomoc."
   },
   {
     "id": "refa_1059",
@@ -8986,7 +8995,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si nevíš rady, zeptej se sama sebe: „Co z toho můžu ovlivnit a co ne?“ Vyber jednu věc, kterou ovlivnit můžeš, a zkus s ní něco udělat. U ostatních si dovol připustit, že jejich řešení nemusí zatím být ve tvých rukou."
   },
   {
     "id": "refa_1087",
@@ -9013,7 +9023,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "U problému, který přesahuje tvoje znalosti nebo možnosti, zkus požádat o konkrétní pomoc. Můžeš potřebovat radu, informace, praktickou pomoc nebo jen někoho, s kým si o situaci promluvíš. Nemusíš všechno zvládnout sama."
   },
   {
     "id": "refa_1091",
@@ -9022,7 +9033,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když máš několik možností a nedokážeš se rozhodnout, stanov si tři kritéria, která by mělo dostatečně dobré řešení splňovat. Pak podle nich vybírej. Nemusíš najít dokonalou možnost, aby ses mohla pohnout dál."
   },
   {
     "id": "refa_1092",
@@ -9240,7 +9252,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Než požádáš o radu, napiš si nejdřív vlastní odpověď: „Já bych udělala… protože…“ Teprve potom se případně poraď a porovnej svůj názor s názorem druhého."
   },
   {
     "id": "refa_1118",
@@ -9249,7 +9262,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě přepadne pocit „nevím, co dělat“, na chvíli se zastav, opři chodidla o zem a třikrát pomalu vydechni. Pak se zeptej sama sebe: „Jaký nejmenší krok teď dokážu udělat?“"
   },
   {
     "id": "refa_1119",
@@ -9258,7 +9272,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozděl úkol, který tě zahlcuje, na malé, konkrétní kroky. Než požádáš někoho, aby ho převzal za tebe, zkus udělat alespoň jeden první krok sama."
   },
   {
     "id": "refa_1121",
@@ -9267,7 +9282,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si tři oblasti: „Zvládám sama“, „Zvládám s podporou“ a „Zatím potřebuji pomoc“. Ke každé přidej konkrétní příklady. Seznam průběžně aktualizuj podle nových zkušeností, aby pocit „nezvládám nic“ nebyl jediným měřítkem tvých schopností."
   },
   {
     "id": "refa_1122",
@@ -9285,7 +9301,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Běžné věci sám nezvládám.“ Vyber si jednu bezpečnou povinnost, kterou za tebe obvykle někdo dělá nebo řídí. Předem odhadni, co se ti nepodaří. Začni samostatným dokončením jediného kroku a postupně přebírej další. Po každém pokusu porovnej své očekávání se skutečností. Zaznamenej si, co jsi zvládla, kde ses zasekla a co ses naučila."
   },
   {
     "id": "refa_1124",
@@ -9486,7 +9503,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví myšlenka „jsem nezralá“, zkus ji převést na popis konkrétního chování: „Uvěřila jsem příliš rychle“, „Nevěděla jsem, co dělat“ nebo „Jednala jsem impulzivně“. Místo odsuzování sebe samé se zaměř na to, co se můžeš naučit nebo příště udělat jinak."
   },
   {
     "id": "refa_1148",
@@ -9495,7 +9513,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Týden si zaznamenávej chvíle, kdy se cítíš nezralá. Poznamenej si, co se stalo, s kým jsi byla, co jsi cítila v těle, jak jsi reagovala a co následovalo. Hledej opakující se situace, ale také chvíle, kdy ses za podobných okolností cítila sebejistěji."
   },
   {
     "id": "refa_1149",
@@ -9504,7 +9523,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když uděláš chybu, kterou považuješ za naivní nebo dětinskou, napiš si tři věci: Co jsem nevěděla? Jaký signál jsem přehlédla? Co příště udělám jinak? Zkus z chyby vytěžit poučení, aniž by ses kvůli ní odsuzovala."
   },
   {
     "id": "refa_1150",
@@ -9513,7 +9533,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si krátký „deník dospělosti“: každý večer si vybav jednu situaci, ve které ses samostatně rozhodla, převzala odpovědnost, zvládla nejistotu, napravila chybu nebo nastavila hranici. Nemusí jít o velké věci. Všímej si konkrétních projevů své zralosti, které bys jinak možná přehlédla."
   },
   {
     "id": "refa_1151",
@@ -9531,7 +9552,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se cítím jako dítě, nedokážu se chovat dospěle.“ Vyber si mírně nepříjemnou situaci, ve které se obvykle cítíš malá nebo nejistá. Předem odhadni, nakolik tě tento pocit ovládne. Až se objeví, chvíli ho pozoruj, opři se chodidly o zem a vědomě zvol jednu klidnou reakci, třeba položit otázku, vyjádřit svůj názor nebo si vzít čas na rozmyšlenou. Potom porovnej očekávání se skutečným jednáním. Postupně můžeš zkoušet i náročnější situace. Zjišťuj, nakolik můžeš své chování ovlivnit, i když nepříjemný pocit přetrvává."
   },
   {
     "id": "refa_1153",
@@ -9777,7 +9799,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Bez pocitu jistoty se nedokážu dobře rozhodnout.“ Vyber si drobné, bezpečné rozhodnutí a udělej ho, i když si budeš jistá třeba jen na 60–70 %. Předem si poznamenej, jak moc se obáváš špatného výsledku nebo pozdější lítosti. Začni jednou volbou týdně a postupně zkoušej další. Po rozhodnutí porovnej své očekávání se skutečností. Sleduj, jestli pocit nejistoty opravdu předpovídá špatné rozhodnutí."
   },
   {
     "id": "refa_1183",
@@ -9996,7 +10019,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po chybě zkus místo „jsem neschopná“ přesně popsat, co se nepovedlo, proč k tomu došlo, co bylo mimo tvou kontrolu a co můžeš příště udělat jinak. Jedna chyba nevypovídá o všech tvých schopnostech."
   },
   {
     "id": "refa_1210",
@@ -10023,7 +10047,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si stručný záznam toho, co zvládáš. Každý večer si vybav jednu konkrétní situaci, kdy se ti něco podařilo, vyřešila jsi problém nebo ses něco naučila. Nemusí jít o nic mimořádného. Zapisuj, co se skutečně stalo, ne obecné pochvaly sebe samé."
   },
   {
     "id": "refa_1213",
@@ -10032,7 +10057,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když něco nezvládnu hned, znamená to, že na to nemám.“ Vyber si úkol, při kterém se snadno cítíš neschopná, a předem odhadni, jak si s ním poradíš. Rozděl ho na malé kroky a začni tím nejjednodušším. Postupně přidávej další. Porovnej své očekávání s tím, co jsi skutečně dokázala, a všimni si, jestli se tvůj pocit schopnosti během práce změnil."
   },
   {
     "id": "refa_1214",
@@ -10041,7 +10067,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Vytvoř si „mapu svých schopností“. Vyber jednu oblast, ve které se cítíš neschopná, a rozděl ji na konkrétní dovednosti. U každé si poznamenej, jestli ji zvládáš, teprve se ji učíš, nebo s ní potřebuješ pomoc. Místo jednoho velkého „na to nemám“ tak uvidíš, co už umíš a na čem můžeš pracovat."
   },
   {
     "id": "refa_1215",
@@ -10235,7 +10262,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Musím se nejdřív cítit sebejistě, abych něco dokázala.“ Vyber si bezpečnou činnost, kterou odkládáš kvůli pochybnostem, a udělej malý krok, i když si zatím nevěříš. Začni třeba jen dvěma minutami a postupně přidávej. Předem odhadni, nakolik tě nejistota zablokuje. Potom porovnej své očekávání s tím, co se ti skutečně podařilo udělat. Zkoumej, jestli sebedůvěra nemusí někdy přijít až díky zkušenosti."
   },
   {
     "id": "refa_1239",
@@ -10244,7 +10272,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si „deník zvládnutého“: každý večer si vybav jednu situaci, kterou jsi zvládla navzdory nejistotě. Zapiš si, co jsi udělala a jaké schopnosti nebo vlastní rozhodnutí ti k tomu pomohly. Nemusí jít o velkou věc, zahrnuj i úplné maličkosti."
   },
   {
     "id": "refa_1240",
@@ -10271,7 +10300,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se rozhodnu sama, udělám chybu.“ Vyber si malé rozhodnutí, které běžně konzultuješ nebo opakovaně ověřuješ. Předem si napiš, čeho se obáváš, a rozhodni se tentokrát podle vlastního úsudku. Začni maličkostmi s nepatrnými následky, postupně můžeš zkoušet složitější volby. Potom porovnej očekávání se skutečným výsledkem a všimni si i toho, jak ses vypořádala s případnou chybou."
   },
   {
     "id": "refa_1243",
@@ -10500,7 +10530,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud to jen trochu jde, odlož ve chvíli silné bezmoci velká rozhodnutí. Zeptej se sama sebe: „Co teď potřebuju zvládnout během příštích deseti minut?“ Soustřeď se jen na tenhle malý úsek času. Nemusíš vyřešit celý život, abys mohla udělat další krok."
   },
   {
     "id": "refa_1271",
@@ -10762,7 +10793,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj mezi bezpečným ústupem a vyhýbáním. Zeptej se: „Chrání mě odchod před skutečným nebezpečím nebo ubližováním, anebo hlavně před nepříjemným pocitem, který bych mohla dokázat chvíli unést?“"
   },
   {
     "id": "refa_1303",
@@ -10780,7 +10812,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každý den zkus udělat jednu malou, bezpečnou věc, kterou bys jinak odložila kvůli obavám. Může to být telefonát, otázka, rozhodnutí, nesouhlas nebo žádost. Za úspěch považuj už samotný pokus, ne jeho výsledek."
   },
   {
     "id": "refa_1305",
@@ -10798,7 +10831,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když hned neuteču, strach mě přemůže.“ Vyber si bezpečnou, mírně nepříjemnou situaci, ze které bys obvykle rychle odešla. Předem odhadni, jak silný bude strach a co se stane, když zůstaneš. Zkus odchod odložit o 30 sekund a sleduj, jak se strach vyvíjí. Postupně můžeš dobu prodlužovat. Porovnej svou předpověď se skutečností. Zjisti, jestli strach opravdu jen sílí, nebo se může také měnit a slábnout."
   },
   {
     "id": "refa_1307",
@@ -10807,7 +10841,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se něčemu vyhneš, nevyčítej si to. Zkus místo toho zjistit: „Čeho jsem se vlastně bála? Před čím mě ústup ochránil? O co jsem kvůli němu přišla? Co bych příště mohla udělat alespoň o trochu jinak?“"
   },
   {
     "id": "refa_1308",

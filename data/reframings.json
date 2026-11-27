@@ -14338,7 +14338,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se odsoudit, abys převzala odpovědnost. Můžeš říct „tohle jsem udělala špatně“ a zároveň odmítnout větu „proto jsem špatná celá“."
   },
   {
     "id": "ref_1765",
@@ -14356,7 +14357,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co když je pod pocitem „jsem špatná“ mnohem zranitelnější věta: „Bojím se, že kdybys mě opravdu poznal, přestal bys mě mít rád.“ Pak nejde jen o morálku, ale o strach ze ztráty lásky."
   },
   {
     "id": "ref_1767",
@@ -14365,7 +14367,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sebetrestání není totéž co svědomí. Svědomí ti může ukázat, co bys mohla změnit; sebetrestání tě jen přesvědčuje, že si změnu nezasloužíš."
   },
   {
     "id": "ref_1768",
@@ -14374,7 +14377,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být bezchybná, abys měla právo být mezi lidmi. Lidskost není odměna za dobré chování, kterou ti někdo může odebrat."
   },
   {
     "id": "ref_1769",
@@ -14392,7 +14396,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V pocitu „jsem špatná“ může být signàlem, že na sobě opravdu vidíš něco, co nechceš dál živit. Chybou je ale představa, že tahle jedna pravda má právo spolknout všechny ostatní pravdy o tobě."
   },
   {
     "id": "ref_1773",
@@ -14401,7 +14406,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co jsi udělala v nejhorší chvíli svého života, není úplný popis toho, kdo jsi. Patří k němu i všechno, co jsi udělala potom, co sis uvědomila a co ses rozhodla změnit."
   },
   {
     "id": "ref_1774",
@@ -14410,7 +14416,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jestli ses kdysi cítila špatná pokaždé, když jsi zlobila, odporovala, něco potřebovala nebo někoho zklamala, pak ses neučila morálce, ale studu. To, co bylo označeno za tvoji špatnost, mohla být někdy jen tvoje živost."
   },
   {
     "id": "ref_1776",
@@ -14419,7 +14426,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš pokažená od základu, zkus na chvíli nehledat důkaz své dobroty. Hledej jen důkaz, že jsi složitější než ten rozsudek."
   },
   {
     "id": "ref_1778",
@@ -14428,7 +14436,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdyby ses zachovala způsobem, který nechceš omlouvat, pořád existuje další krok. Můžeš něco pochopit, napravit, omluvit se, změnit nebo příště udělat jinak."
   },
   {
     "id": "ref_1779",
@@ -14446,7 +14455,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě trápí, jakým jsi člověkem, samo o sobě nedokazuje, že jsi dobrá. Ale může to znamenat, že ti na dobru skutečně záleží. A s tím se dá pracovat."
   },
   {
     "id": "ref_1782",
@@ -14455,7 +14465,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si říkáš „jsem špatná“, zkus tu větu dokončit: Špatná v čem? Kdy? Podle koho? Jakmile začneš být konkrétní, zjistíš, že odsuzuješ celého člověka kvůli něčemu, co je jen jeho částí."
   },
   {
     "id": "ref_1777",
@@ -14888,7 +14899,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se teď mít ráda. Pro tuhle chvíli úplně stačí, když proti sobě přestaneš bojovat."
   },
   {
     "id": "ref_1834",
@@ -14897,7 +14909,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I kdybys něco opravdu pokazila, můžeš za to nést odpovědnost, aniž bys ničila sama sebe. Chyba potřebuje nápravu, ne popravu."
   },
   {
     "id": "ref_1836",
@@ -14942,7 +14955,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se teď přesvědčovat, že jsi úžasná. Zkus jen připustit možnost, že rozsudek, který nad sebou právě vynášíš, je mnohem tvrdší než skutečnost."
   },
   {
     "id": "ref_1842",
@@ -14969,7 +14983,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se před sebou zmenšovat, ponižovat ani urážet, abys zůstala pokorná. Můžeš vidět svoje slabiny přesně a přitom si zachovat důstojnost."
   },
   {
     "id": "ref_1845",
@@ -14987,7 +15002,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby člověk, kterého máš ráda, prožíval přesně to, co ty, nejspíš bys ho nezačala ponižovat. Zkus se dnes k sobě nechovat způsobem, který bys u kohokoli jiného považovala za krutý."
   },
   {
     "id": "ref_1847",
@@ -14996,7 +15012,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „nenávidím se“ chybí důležitá informace: kdo přesně koho nenávidí? Jestli jedna část tebe soudí jinou, pak nejsi soudkyní ani odsouzenou, jsi tou, která ten boj pozoruje."
   },
   {
     "id": "ref_1848",
@@ -15005,7 +15022,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dnes vyřešit svůj vztah k sobě na celý život. Stačí projít touhle vlnou, aniž bys uvěřila všemu, co se v ní mele."
   },
   {
     "id": "ref_1849",
@@ -15014,7 +15032,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když ses naučila nenávidět sama sebe, nezniklo to proto, že bys byla hodná nenávisti. Někdy se cizí odmítání, kritika nebo podmíněná láska postupně přestěhují dovnitř a začnou mluvit naším vlastním hlasem."
   },
   {
     "id": "ref_1850",
@@ -15199,7 +15218,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že teď nevíš, co dělat, neznamená, že jsi neschopná. Znamená to jen, že zatím neznáš řešení."
   },
   {
     "id": "ref_1874",
@@ -15208,7 +15228,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi zahlcená, snadno zaměníš „nevím, co dělat“ za „nedá se nic dělat“. Jenže to jsou dvě úplně odlišné věci."
   },
   {
     "id": "ref_1875",
@@ -15280,7 +15301,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi zahlcená, tvoje schopnost přemýšlet a hledat řešení může být dočasně omezená. To, že teď nic nevymyslíš, ještě neznamená, že na to nemáš."
   },
   {
     "id": "ref_1884",
@@ -15550,7 +15572,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že teď potřebuješ pomoc, neznamená, že jsi nesamostatná. Samostatnost není život bez opory, ale schopnost oporu využít a přitom neztratit vlastní směr."
   },
   {
     "id": "ref_1918",
@@ -15568,7 +15591,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš přestat pochybovat o sobě, abys mohla jednat samostatně. Můžeš pochybovat a přesto udělat vlastní rozhodnutí."
   },
   {
     "id": "ref_1920",
@@ -15595,7 +15619,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dokazovat svou samostatnost tím, že odmítneš pomoc. Můžeš říct „tohle zvládnu sama“ stejně svobodně jako „s tímhle mi prosím pomoz“."
   },
   {
     "id": "ref_1923",
@@ -15604,7 +15629,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit „tohle sama nezvládnu“ není rozsudek nad tvými schopnostmi. Strach dokáže být mnohem přesvědčivější než skutečnost."
   },
   {
     "id": "ref_1924",
@@ -15613,7 +15639,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses naučila víc důvěřovat úsudku druhých než svému. To ale neznamená, že vlastní úsudek nemáš. Možná jen potřebuje dostat víc prostoru."
   },
   {
     "id": "ref_1926",
@@ -15622,7 +15649,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš čekat, až si budeš úplně jistá. Spoustu věcí se naučíš právě tím, že něco zkusíš. A když se v něčem trochu spleteš, tak to pak zkusíš napravit a poučíš se z toho."
   },
   {
     "id": "ref_1927",
@@ -15631,7 +15659,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo umí vést, ještě neznamená, že musí řídit tvůj život. Radu můžeš přijmout, a přesto zůstat tou, která nakonec rozhoduje."
   },
   {
     "id": "ref_1928",
@@ -15640,7 +15669,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš z věty „často se opírám o druhé“ dělat závěr „jsem závislý člověk“. To, jak ses naučila fungovat, nemusí určovat, jak budeš fungovat celý život."
   },
   {
     "id": "ref_1929",
@@ -15667,7 +15697,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš zvládnout celý problém najednou. Stačí najít jeden malý krok, který dokážeš udělat sama. A pak třeba další."
   },
   {
     "id": "ref_1934",
@@ -15877,7 +15908,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se někdy cítíš jako dítě, neznamená, že jsi nezralá. I dospělý člověk má v sobě místa, která jsou zranitelná, hravá, bezradná nebo touží po bezpečí."
   },
   {
     "id": "ref_1958",
@@ -15886,7 +15918,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si říkáš „jsem nezralá“, možná z několika situací nebo vlastností děláš závěr o celé své osobnosti. Přesnější může být: „V některých věcech ještě nemám tolik zkušeností, kolik bych chtěla.“"
   },
   {
     "id": "ref_1959",
@@ -15895,7 +15928,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná je pravda, že někdy něčemu nebo někomu uvěříš příliš rychle nebo jednáš impulzivně. To ale neznamená, že jsi celkově nezralá. Znamená to, že se právě v těchto věcech můžeš učit větší opatrnosti."
   },
   {
     "id": "ref_1960",
@@ -15904,7 +15938,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být pořád vážná, rozumná a soběstačná, abys byla dospělá. Hravost, něha, spontánnost ani potřeba opory nejsou známky nezralosti."
   },
   {
     "id": "ref_1963",
@@ -15913,7 +15948,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná na sebe používáš slovo „dětinská“ pokaždé, když nejsi dokonale rozumná, kontrolovaná a sebejistá. Jenže takhle nevypadá dospělost. Takhle vypadá nemožný ideál."
   },
   {
     "id": "ref_1964",
@@ -15922,7 +15958,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se proměnit v podezíravého člověka, abys přestala být tak snadno zranitelná. Můžeš si zachovat otevřenost a zároveň se naučit ověřovat, nespěchat a říkat ne."
   },
   {
     "id": "ref_1966",
@@ -15931,7 +15968,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jedno špatné rozhodnutí není důkazem tvé nezralosti. Je to rozhodnutí, které jsi udělala s informacemi a zkušenostmi, jež jsi tehdy měla."
   },
   {
     "id": "ref_1967",
@@ -15940,7 +15978,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se teď cítíš malá a nezkušená, je to pocit, ne rozsudek nad tím, kým jsi. Nemusíš mu dokazovat opak. Můžeš ho prostě chvíli nechat být."
   },
   {
     "id": "ref_1968",
@@ -15949,7 +15988,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná jsi nebyla naivní. Možná jsi jen předpokládala, že druhý člověk bude stejně poctivý jako ty."
   },
   {
     "id": "ref_1970",
@@ -15967,7 +16007,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě někdo označí za naivní nebo dětinskou, ještě to neznamená, že tě vidí správně. Možná vidí jen jednu tvoji stránku, jednu situaci nebo něco, co mu na tobě nevyhovuje."
   },
   {
     "id": "ref_1972",
@@ -15976,7 +16017,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvůj mozek hodnotí minulá rozhodnutí pomocí informací, které získal až později. To je trochu podvod: soudíš se za to, že jsi tehdy nevěděla to, co víš dnes."
   },
   {
     "id": "ref_1975",
@@ -15985,7 +16027,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Některé věci ses možná nenaučila ve chvíli, kdy se je učili ostatní. To z tebe nedělá nedospělého člověka. Každý máme za sebou jiné zkušenosti a něco doháníme až později."
   },
   {
     "id": "ref_1978",
@@ -15994,7 +16037,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš všechno předvídat, abys byla dospělá. Zralost neznamená nikdy se nespálit, ale dokázat se z toho poučit."
   },
   {
     "id": "ref_1982",
@@ -16003,7 +16047,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ta část tebe, která se bojí, že jsi dětinská, se tě možná snaží chránit před dalším ztrapněním, zklamáním nebo zneužitím. Nemusíš s ní bojovat. Můžeš jí postupně ukazovat, že se dnes dokážeš chránit i jinak než neustálou sebekritikou."
   },
   {
     "id": "ref_1973",
@@ -16254,7 +16299,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si být stoprocentně jistá, abys mohla věřit vlastnímu úsudku. Důvěra v sebe znamená také věřit, že si poradíš, i když se ukáže, že ses spletla."
   },
   {
     "id": "ref_2005",
@@ -16263,7 +16309,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Každá volba něco otevírá a něco zavírá. Smutek nad tím, čeho ses vzdala, proto nemusí znamenat, že sis vybrala špatně."
   },
   {
     "id": "ref_2006",
@@ -16299,7 +16346,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš pořád znovu otevírat rozhodnutí, ke kterému ses už rozumně dopracovala. Nová pochybnost sama o sobě není nová informace."
   },
   {
     "id": "ref_2010",
@@ -16308,7 +16356,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná sis zvykla věřit pochybnostem víc než sobě. Ale pochybnost je jen jeden hlas v tobě, ne nejvyšší autorita."
   },
   {
     "id": "ref_2011",
@@ -16317,7 +16366,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš odstranit všechny námitky, abys mohla udělat krok. Některé pochybnosti můžeš prostě vzít s sebou."
   },
   {
     "id": "ref_2013",
@@ -16353,7 +16403,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila, že chyba něco stojí – kritiku, zklamání nebo ztrátu bezpečí. Dnes už ale nejsi odkázaná na bezchybnost. Můžeš se rozhodnout a případnou chybu potom unést nebo napravit."
   },
   {
     "id": "ref_2021",
@@ -16595,7 +16646,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se teď cítíš neschopná, ještě neznamená, že neschopná jsi. Pocit může znít jako rozsudek, ale není to totéž co skutečnost."
   },
   {
     "id": "ref_2047",
@@ -16613,7 +16665,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se ti něco nepovede, tvoje mysl možná okamžitě přeskočí od „tohle jsem nezvládla“ k „jsem neschopná“. Zkus zůstat u první věty. Ta může být pravdivá, ta druhá už je soud nad celým člověkem."
   },
   {
     "id": "ref_2049",
@@ -16631,7 +16684,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Na tvém pocitu může být kus pravdy. Možná na něco skutečně nestačíš, něco neumíš nebo jsi něco pokazila. To ale ještě neznamená, že jsi neschopný člověk. Každý má své schopnosti i jejich hranice."
   },
   {
     "id": "ref_2051",
@@ -16640,7 +16694,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses prostě dostala na hranici toho, co zatím umíš. A právě tam obvykle začíná učení."
   },
   {
     "id": "ref_2052",
@@ -16649,7 +16704,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být nejlepší, abys byla dost dobrá. Většinou je mnohem užitečnější dělat věci dost dobře než se trápit nedosažitelnou dokonalostí."
   },
   {
     "id": "ref_2053",
@@ -16658,7 +16714,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná od sebe očekáváš samozřejmost tam, kde bys druhému člověku přiznala právo tápat. Zkus si dát stejné podmínky jako jemu."
   },
   {
     "id": "ref_2056",
@@ -16667,7 +16724,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Teď nemusíš dokazovat, že jsi schopná. Stačí udělat jeden další rozumný krok. A potom třeba další."
   },
   {
     "id": "ref_2057",
@@ -16676,7 +16734,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Není tvým úkolem konečně dokázat, že jsi kompetentní. Větší svoboda je v tom, že můžeš být podle situace schopná, bezradná, zkušená, zmatená, brilantní i směšná – a přesto zůstáváš pořád stejně hodnotným člověkem."
   },
   {
     "id": "ref_2059",
@@ -16946,7 +17005,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si být jistá, abys mohla udělat další krok. Spousta důležitých věcí se dělá právě s pochybnostmi v zádech."
   },
   {
     "id": "ref_2091",
@@ -16991,7 +17051,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš čekat, až se budeš cítit sebevědomě, abys měla právo promluvit, rozhodnout se, něco zkusit nebo zaujmout místo ve světě."
   },
   {
     "id": "ref_2096",
@@ -17000,7 +17061,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses kdysi naučila pochybovat o sobě dřív, než to mohl udělat někdo jiný. Tohle zažité pravidlo tě mohlo chránit, ale dnes už nemusí rozhodovat za tebe."
   },
   {
     "id": "ref_2097",
@@ -17009,7 +17071,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si nevěříš, nemusíš se nutit do opačného extrému a přesvědčovat se, že jsi skvělá. Úplně stačí přestat automaticky předpokládat, že jsi horší."
   },
   {
     "id": "ref_2098",
@@ -17045,7 +17108,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná opravdu existují věci, ve kterých si zatím nemáš důvod věřit. To ale neznamená, že jsi neschopná. Znamená to jen, že máš své limity schopností a dovedností, stejně jako každý jiný člověk. A některé z nich můžeš postupně posouvat."
   },
   {
     "id": "ref_2103",
@@ -17300,7 +17364,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Bezmoc je stav, který prožíváš, ne tvoje identita. Můžeš se cítit naprosto bezmocná, a přitom nebýt bezmocným člověkem."
   },
   {
     "id": "ref_5418",
@@ -17345,7 +17410,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-11-26",
-    "approved": "2026-11-26"
+    "approved": "2026-11-26",
+    "text_f": "Nemusíš se strachu nejdřív úplně zbavit, abys situací prošla. Můžeš jít krůček po krůčku kupředu. Je docela možné, že se s každým dalším krokem budeš třást o něco méně."
   },
   {
     "id": "ref_2145",
@@ -17372,7 +17438,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I když nemůžeš ovlivnit výsledek, můžeš ovlivnit, jak se k sobě během toho všeho budeš chovat. Nemusíš být sama pro sebe člověkem, který tě nechá na holičkách."
   },
   {
     "id": "ref_5422",
@@ -17381,7 +17448,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-11-26",
-    "approved": "2026-11-26"
+    "approved": "2026-11-26",
+    "text_f": "Bezmoc, kterou jsi kdysi zažila, umí v podobné situaci ožít, jako by se to dělo znovu. Dnes ale nejsi tou, kterou jsi tehdy byla – jsi starší, zkušenější, poznala jsi nové lidi a máš víc možností než tenkrát."
   },
   {
     "id": "ref_2135",
@@ -17654,7 +17722,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se něčemu vyhýbáš, ještě neznamená, že jsi zbabělá. Zrovna teď je toho na tebe možná víc, než dokážeš unést."
   },
   {
     "id": "ref_2171",
@@ -17663,7 +17732,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdy je ústup zdravá ochrana a jindy tě strach zbytečně omezuje. Místo odsuzování sebe samé můžeš zkusit rozpoznat, o co jde právě teď."
   },
   {
     "id": "ref_2173",
@@ -17672,7 +17742,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se přestat bát, abys mohla žít svobodněji. Strach může mít svůj hlas, ale nemusí mít vždycky poslední slovo."
   },
   {
     "id": "ref_2174",
@@ -17708,7 +17779,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná se některým věcem vyhýbáš víc, než bys chtěla. To ale neznamená, že jsi zbabělá. Znamená to, že máš před sebou něco, s čím se můžeš postupně učit zacházet jinak."
   },
   {
     "id": "ref_2179",
@@ -17717,7 +17789,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve větě „jsem zbabělá“ chybí zásadní informace: před čím ustupuješ, proč, za jakých okolností a za jakou cenu bys měla zůstat. Bez kontextu je to rozsudek, ne popis reality."
   },
   {
     "id": "ref_2180",
@@ -17726,7 +17799,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš překonat celý strach najednou. Někdy stačí zůstat o malou chvíli déle tam, odkud bys normálně okamžitě utekla."
   },
   {
     "id": "ref_2181",
@@ -17735,7 +17809,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná neutíkáš proto, že jsi slabá, ale proto, že ses naučila považovat ústup za nejbezpečnější možnost. Co tě chránilo dřív, nemusí automaticky rozhodovat o tom, co uděláš dnes."
   },
   {
     "id": "ref_2183",
@@ -17744,7 +17819,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš každému strachu čelit okamžitě, abys byla statečná. Někdy je odvaha poznat, kdy potřebuješ čas, odstup nebo oporu."
   },
   {
     "id": "ref_2184",
@@ -17771,7 +17847,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si vyčítáš „zase jsem utekla“, vzpomeň si také na chvíle, kdy ses bála, a přesto něco zvládla. I ty patří k pravdě o tobě."
   },
   {
     "id": "ref_2194",
@@ -17780,7 +17857,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, před čím dnes utíkáš, nemusíš zvládnout hned. Můžeš se k tomu vrátit později, lépe připravená a s větší oporou."
   },
   {
     "id": "ref_2185",

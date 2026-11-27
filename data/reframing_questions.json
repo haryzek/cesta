@@ -9103,7 +9103,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Cítíš vinu za něco, co jsi udělala, nebo se stydíš za to, jaká jsi?"
   },
   {
     "id": "refq_1098",
@@ -9112,7 +9113,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Za co přesně se odsuzuješ? Za něco, čím jsi někomu ublížila, nebo třeba za svůj vztek, potřeby, touhy či nedokonalost?"
   },
   {
     "id": "refq_1099",
@@ -9121,7 +9123,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se v tobě ozve „jsem špatná“, co se obvykle stalo těsně předtím?"
   },
   {
     "id": "refq_1100",
@@ -9130,7 +9133,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak by ses dívala na jiného člověka, který by měl stejné pocity, myšlenky nebo chyby jako ty? Odsoudila bys ho stejně tvrdě?"
   },
   {
     "id": "refq_1101",
@@ -9148,7 +9152,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si o sobě myslíš, že jsi špatná, co všechno o sobě v tu chvíli přehlížíš?"
   },
   {
     "id": "refq_1103",
@@ -9157,7 +9162,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak by se změnil tvůj pohled na sebe, kdybys místo „jsem špatná“ přesně pojmenovala, co jsi udělala, cítila nebo chtěla?"
   },
   {
     "id": "refq_1104",
@@ -9499,7 +9505,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses na sebe začala dívat tak tvrdě? Připomíná ti tvůj dnešní pohled na sebe někoho z minulosti?"
   },
   {
     "id": "refq_1145",
@@ -9508,7 +9515,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys řekla člověku, kterého miluješ, kdyby o sobě s naprostým přesvědčením říkal přesně to, co si říkáš ty o sobě?"
   },
   {
     "id": "refq_1146",
@@ -9517,7 +9525,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co nejhoršího by se podle tebe mohlo stát, kdybys k sobě přestala být tak tvrdá?"
   },
   {
     "id": "refq_1147",
@@ -9526,7 +9535,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses nemusela začít mít ráda, ale stačilo by přestat si ubližovat, co bys mohla už zítra udělat jinak?"
   },
   {
     "id": "refq_1148",
@@ -9727,7 +9737,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš bezradná, co přesně v tuhle chvíli nevíš – a co naopak víš docela dobře?"
   },
   {
     "id": "refq_1173",
@@ -9736,7 +9747,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co ti teď nejvíc chybí, abys dokázala najít cestu dál – informace, podpora, síla, odvaha, čas, nebo něco úplně jiného?"
   },
   {
     "id": "refq_1174",
@@ -9745,7 +9757,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jaký nejmenší krok bys mohla udělat, i kdybys pořád nevěděla, co bude následovat?"
   },
   {
     "id": "refq_1175",
@@ -9754,7 +9767,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je tvoje situace skutečně neřešitelná, nebo jsi teď příliš zahlcená, vystrašená či vyčerpaná na to, abys dokázala vidět nějaké východisko?"
   },
   {
     "id": "refq_1177",
@@ -9772,7 +9786,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nejvíc bezradná – při konfliktech, nejistotě, rozhodování, tlaku druhých, nebo když máš nést odpovědnost?"
   },
   {
     "id": "refq_1180",
@@ -9781,7 +9796,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co obvykle uděláš, když se začneš cítit bezradná – stáhneš se, ztuhneš, horečně hledáš řešení, obrátíš se na někoho jiného, nebo reaguješ ještě jinak?"
   },
   {
     "id": "refq_1181",
@@ -9790,7 +9806,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses v minulosti cítila podobně bezradná a co ti tehdy pomohlo najít cestu dál?"
   },
   {
     "id": "refq_1182",
@@ -10007,7 +10024,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nejvíc nesamostatná a co mají tyto situace společného?"
   },
   {
     "id": "refq_1207",
@@ -10016,7 +10034,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si říkáš „sama to nezvládnu“, čeho konkrétně se obáváš, že se stane, pokud to přesto zkusíš?"
   },
   {
     "id": "refq_1208",
@@ -10043,7 +10062,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš nesamostatná, mění se ten pocit podle toho, s kým právě jsi? Vedle kterých lidí se naopak cítíš schopnější?"
   },
   {
     "id": "refq_1212",
@@ -10052,7 +10072,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když požádáš někoho o radu, víš už obvykle, co bys udělala ty sama, nebo se nejdřív snažíš zjistit, co si myslí druzí?"
   },
   {
     "id": "refq_1213",
@@ -10061,7 +10082,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by se změnilo, kdybys nemusela být dokonale samostatná, ale mohla ses svobodně rozhodovat o tom, co zvládneš sama a s čím chceš pomoct?"
   },
   {
     "id": "refq_1214",
@@ -10287,7 +10309,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nezralá nebo jako malé dítě? Co mají tyhle situace společného?"
   },
   {
     "id": "refq_1241",
@@ -10305,7 +10328,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co konkrétně na sobě považuješ za nezralé? A co z toho je skutečný problém, který bys chtěla změnit?"
   },
   {
     "id": "refq_1243",
@@ -10314,7 +10338,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Dokážeš rozlišit mezi tím, kdy jsi udělala chybu, kdy jsi něco nevěděla a prohlášením, že jsi nezralá? Co pro tebe tyhle rozdíly znamenají?"
   },
   {
     "id": "refq_1244",
@@ -10323,7 +10348,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš nezralá, hodnotíš své současné chování, nebo se v tobě probouzí starý pocit, že jsi jen dítě a ostatní vědí všechno líp?"
   },
   {
     "id": "refq_1245",
@@ -10350,7 +10376,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se děje mezi tebou a druhými těsně předtím, než se začneš cítit nezralá? Jak se k tobě chovají a jak na ně reaguješ?"
   },
   {
     "id": "refq_1248",
@@ -10599,7 +10626,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně si představuješ, že by se stalo, kdyby ses rozhodla špatně? A čeho z toho se bojíš nejvíc?"
   },
   {
     "id": "refq_1279",
@@ -10608,7 +10636,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys nemusela nikomu své rozhodnutí vysvětlovat ani obhajovat, co by sis vybrala?"
   },
   {
     "id": "refq_1280",
@@ -10653,7 +10682,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by sis vybrala, kdybys víc věřila své schopnosti zvládnout následky než své schopnosti předvídat budoucnost?"
   },
   {
     "id": "refq_1285",
@@ -10847,7 +10877,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když si říkáš „jsem neschopná“, co konkrétně se ti nepovedlo – a proč by to mělo znamenat, že jsi neschopná jako člověk?"
   },
   {
     "id": "refq_1309",
@@ -10856,7 +10887,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Není někdy za pocitem „jsem neschopná“ spíš to, že jsi přetížená, nemáš dost informací, potřebuješ podporu nebo se od tebe očekává příliš mnoho?"
   },
   {
     "id": "refq_1310",
@@ -10865,7 +10897,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Podle jakého měřítka posuzuješ své schopnosti – a požadovala bys totéž od člověka, kterého si vážíš?"
   },
   {
     "id": "refq_1311",
@@ -10874,7 +10907,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve kterých situacích se cítíš nejvíc neschopná – a co mají tyto situace společného?"
   },
   {
     "id": "refq_1312",
@@ -10883,7 +10917,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys musela umět nebo zvládat, aby ses konečně považovala za dost schopnou? Existuje vůbec hranice, za kterou bys už byla se sebou spokojená?"
   },
   {
     "id": "refq_1313",
@@ -10892,7 +10927,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se děje těsně předtím, než se začneš cítit neschopná – jsi unavená, pod tlakem, srovnáváš se s druhými, nevíš přesně, co se od tebe čeká, nebo je za tím něco jiného? Kdy se naopak cítíš schopná a jistá – a co je v těchto situacích jinak?"
   },
   {
     "id": "refq_1316",
@@ -11164,7 +11200,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys udělala jinak, kdybys dokázala rozlišit mezi „bojím se, že to nezvládnu“ a „nezvládnu to“?"
   },
   {
     "id": "refq_1348",
@@ -11411,7 +11448,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by se změnilo, kdybys teď nemusela vyřešit celý problém, ale stačilo by svou situaci alespoň malinko zlepšit?"
   },
   {
     "id": "refq_1378",
@@ -11672,7 +11710,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Čeho se bojíš, že by se stalo, kdybys neutekla, neschovala se nebo neustoupila?"
   },
   {
     "id": "refq_1412",
@@ -11681,7 +11720,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co je pro tebe na představě, že bys situaci čelila, nejtěžší – konflikt, odmítnutí, ponížení, bezmoc, selhání, nebo něco úplně jiného?"
   },
   {
     "id": "refq_1413",
@@ -11690,7 +11730,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se obvykle děje těsně předtím, než začneš hledat cestu ven? Nabízí se někdy okamžik, kdy bys ještě mohla zareagovat jinak?"
   },
   {
     "id": "refq_1414",
@@ -11717,7 +11758,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys své vyhýbání přestala považovat za zbabělost, před čím se tě asi snaží chránit?"
   },
   {
     "id": "refq_1417",
@@ -11726,7 +11768,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys ve svém životě chtěla udělat, kdyby ti v tom nebránil strach?"
   },
   {
     "id": "refq_1418",
