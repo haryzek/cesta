@@ -3194,7 +3194,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po každém silnějším pokušení si polož jedinou otázku: „Co jsem potřebovala pět minut předtím?“ Odpověď hledej dřív v emocích a potřebách než v morálním hodnocení sebe samé."
   },
   {
     "id": "refa_0388",
@@ -3212,7 +3213,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud žiješ ve vztahu, zkus pravidelně formulovat jednu potřebu, kterou bys dříve zatajila: více prostoru, sexu, něhy, dobrodružství, samoty či pozornosti. Nestálost někdy živí dlouhodobě nevyslovené potřeby."
   },
   {
     "id": "refa_0391",
@@ -3440,7 +3442,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj mezi nebezpečím a nepříjemností. Když tě něco zastaví, zeptej se, jestli ti skutečně něco hrozí, nebo je situace hlavně nová, nezvyklá či nejistá. I nepříjemnou situaci můžeš zvládnout, aniž by ses jí musela vyhnout."
   },
   {
     "id": "refa_0419",
@@ -3449,7 +3452,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si způsoby, kterými se snažíš předcházet problémům: kontrolování, vyptávání, hledání ujištění, odkládání, vyhýbání nebo vytváření záložních plánů. Vyber jeden, který bys mohla v bezpečné situaci trochu omezit. Všímej si, co se stane."
   },
   {
     "id": "refa_0420",
@@ -3669,7 +3673,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ve chvíli podezření si napiš tři sloupce: fakta, domněnky a strachy. Například: „Neodepsal“ je fakt. „Ignoruje mě“ je domněnka. „Jsem mu ukradená“ říká tvůj strach. Pomůže ti to oddělit, co skutečně víš, od toho, čeho se obáváš."
   },
   {
     "id": "refa_0447",
@@ -3981,7 +3986,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě něco znepokojí, rozlišuj mezi tím, co jsi skutečně zaznamenala, a tím, co si o tom myslíš. Například „ten člověk se na mě podíval“ je pozorování, zatímco „hlídá mě“ je možné vysvětlení. Nemusíš ho hned vyvracet ani přijímat. Stačí obojí vnímat."
   },
   {
     "id": "refa_0485",
@@ -4017,7 +4023,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš sledovaná, zkus na chvíli přesunout pozornost k něčemu, co tě zajímá: k hudbě, rozhovoru, práci nebo obyčejné činnosti. Nemusíš pocit zahánět ani se přesvědčovat, že je všechno v pořádku. Jen mu nemusíš věnovat veškerou svou pozornost."
   },
   {
     "id": "refa_0491",
@@ -4246,7 +4253,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Při zpětném sebeobviňování napiš vedle sebe „co jsem věděla tehdy“ a „co vím dnes“. Posuzuj svoje tehdejší rozhodnutí pouze podle informací, které jsi skutečně měla."
   },
   {
     "id": "refa_0517",
@@ -4482,7 +4490,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když tě něco zraní, napiš si tři oddělené věty: co se skutečně stalo, jak sis to vyložila a co jsi cítila. Pomůže ti to rozlišit samotnou událost od významu, který jí přikládáš."
   },
   {
     "id": "refa_0546",
@@ -4491,7 +4500,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po zranění se zeptej sama sebe, co právě potřebuješ: útěchu, vysvětlení, omluvu, nápravu, jasnější hranici, nebo odstup? Zkus si vybrat jeden konkrétní krok, který by ti mohl pomoct."
   },
   {
     "id": "refa_0548",
@@ -4536,7 +4546,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pokud se opakovaně ocitáš ve vztazích, kde je tvoje bolest zesměšňována, popírána nebo využívána proti tobě, nehledej řešení jen ve své citlivosti. Zkus si konkrétně pojmenovat, co se děje, co už nechceš přijímat a jak můžeš chránit sama sebe. Někdy je potřeba změnit vztah nebo z něj odejít, ne naučit se snášet další bolest."
   },
   {
     "id": "refa_0553",
@@ -4729,7 +4740,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Před každým důležitějším souhlasem si polož tři otázky: Chci to? Mám na to čas a energii? Souhlasila bych, i kdyby se druhý neurazil? Pokud si nejsi jistá, dopřej si čas na rozmyšlenou."
   },
   {
     "id": "refa_0576",
@@ -4738,7 +4750,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nacvič si několik jednoduchých vět, kterými získáš čas na rozhodnutí: „Rozmyslím si to.“ „Teď ti neodpovím.“ „Ozvu se zítra.“ Zkus je používat dřív, než automaticky řekneš ano, přestože si ještě nejsi jistá, co chceš."
   },
   {
     "id": "refa_0577",
@@ -4756,7 +4769,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Veď si krátký „deník hranic“. Když se cítíš využitá, zapiš si, co druhý skutečně udělal, co jsi chtěla ty, jak jsi zareagovala a čeho ses případně bála, kdybys odmítla. Po čase hledej opakující se situace a vzorce svého chování."
   },
   {
     "id": "refa_0579",
@@ -4783,7 +4797,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když řeknu ne, poškodím tím náš vztah.“ Vyber si bezpečného člověka a odmítni jednu drobnou žádost, které bys obvykle vyhověla proti své vůli. Předem si napiš, jakou reakci očekáváš a čeho se bojíš. Potom porovnej očekávání se skutečností. Pokud se na to budeš cítit, postupně zkoušej odmítat i významnější žádosti. Nesnaž se tímto způsobem testovat hranice u lidí, kterých se oprávněně bojíš."
   },
   {
     "id": "refa_0582",
@@ -5012,7 +5027,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví stud nebo sebeobviňování, zeptej se: „Za co přesně se teď činím odpovědnou?“ Odděl svoji odpovědnost za dnešní rozhodnutí od odpovědnosti druhých za jejich jednání. Pokud někdo překročil tvoje hranice nebo ti ublížil, odpovědnost za jeho jednání neneseš ty."
   },
   {
     "id": "refa_0610",
@@ -5021,7 +5037,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš zahnaná do kouta, zkus si vytvořit trochu prostoru. Pokud je to bezpečné, ustup o krok, opři chodidla o zem, rozhlédni se a vědomě udělej drobný pohyb podle vlastní volby. Všímej si, jestli ti to pomáhá znovu vnímat vlastní tělo a možnosti."
   },
   {
     "id": "refa_0611",
@@ -5223,7 +5240,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se objeví pocit „nepatřím sem“, zkus ho pojmenovat přesněji: „Právě teď se cítím vyloučená.“ Připomeň si, že pocit je skutečný, ale nemusí být úplným obrazem situace ani důkazem, že nikam nepatříš."
   },
   {
     "id": "refa_0636",
@@ -5232,7 +5250,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Sepiš si lidi a prostředí, kde se cítíš nejvíc a nejméně přijímaná. Zkoumej, čím se liší. Možná zjistíš, že tvůj pocit nevypovídá jen o tobě, ale také o tom, jak se k tobě druzí chovají."
   },
   {
     "id": "refa_0637",
@@ -5259,7 +5278,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Zkus někdy jednoduše vyjádřit, že se chceš přiblížit: „Můžu se přidat?“ nebo „Dejte mi příště vědět, ráda půjdu taky.“ Druhým tím dáváš možnost reagovat na přání, o kterém možná vůbec nevěděli."
   },
   {
     "id": "refa_0640",
@@ -5277,7 +5297,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se přidám k ostatním, budu působit jako vetřelec.“ Vyber si skupinu, ve které se cítíš relativně bezpečně. Předem odhadni, jak lidé zareagují, když se zapojíš. Začni krátkou poznámkou nebo otázkou v rozhovoru. Postupně můžeš zkusit delší zapojení nebo se přidat ke společné aktivitě. Po každém pokusu porovnej očekávání se skutečností. Všímej si nejen reakcí druhých, ale i toho, jak ses cítila ty."
   },
   {
     "id": "refa_0642",
@@ -5470,7 +5491,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Rozlišuj samotu, kterou sis vybrala, od izolace, do které ses propadla. Samotu si klidně dopřej. Z izolace zkus udělat jeden malý krok směrem k lidem."
   },
   {
     "id": "refa_0666",
@@ -5497,7 +5519,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jednou týdně někomu, komu důvěřuješ, řekni konkrétně, jaký kontakt by ti udělal dobře: „Pojď se projít“, „Potřebovala bych společnost“ nebo „Jen mě chvíli poslouchej.“ Dej druhému možnost poznat, co potřebuješ, místo abys čekala, že to sám vycítí."
   },
   {
     "id": "refa_0669",
@@ -5506,7 +5529,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Experiment: „Když se ozvu, nebudou o mě stát.“ Předem odhadni, jak druhý zareaguje, a pošli krátkou zprávu někomu, s kým se cítíš bezpečně. Porovnej očekávání se skutečnou reakcí. Postupně můžeš navrhnout setkání nebo oslovit někoho, u koho si nejsi přijetím tak jistá. Sleduj nejen odpovědi druhých, ale i to, jak zvládáš udělat první krok a snášet nejistotu."
   },
   {
     "id": "refa_0670",

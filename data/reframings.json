@@ -5029,7 +5029,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš ze sebe udělat člověka bez pokušení, abys mohla být spolehlivá. Spolehlivost se pozná právě podle toho, co děláš ve chvíli, kdy máš na výběr."
   },
   {
     "id": "ref_0635",
@@ -5047,7 +5048,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Svoboda není jen možnost od něčeho nebo někoho kdykoli odejít. Někdy je mnohem větší svobodou zjistit, že bys odejít mohla, ale nemusíš."
   },
   {
     "id": "ref_0637",
@@ -5056,7 +5058,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že jsi po něčem silně zatoužila, ještě neznamená, že to skutečně chceš mít ve svém životě. Touha ti říká, co tě přitahuje, ne nutně to, co je pro tebe dobré."
   },
   {
     "id": "ref_0638",
@@ -5065,7 +5068,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš litovat bolesti, kterou jsi někomu způsobila, a přitom k sobě neztratit úctu. Odpovědnost a sebeodsouzení nejsou totéž."
   },
   {
     "id": "ref_0639",
@@ -5083,7 +5087,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se za svou nestálost nenávidět, abys ji dokázala změnit. Mnohem víc se o sobě dozvíš, když se na ni podíváš se zvědavostí místo s odporem."
   },
   {
     "id": "ref_0641",
@@ -5110,7 +5115,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses naučila odcházet právě ve chvíli, kdy ti na někom začne opravdu záležet. Pak to, co vypadá jako nestálost, může být někdy způsob, jak se chránit před zranitelností."
   },
   {
     "id": "ref_0645",
@@ -5119,7 +5125,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že potřebuješ vzrušení, změnu nebo pocit živosti, není samo o sobě chyba. Důležité je hledat způsoby, jak tyhle potřeby naplňovat, aniž bys přitom ničila to, na čem ti záleží."
   },
   {
     "id": "ref_0646",
@@ -5137,7 +5144,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Ať už nakonec zjistíš, že chceš monogamii, jiný způsob vztahu, nebo potřebuješ nějakou dobu být sama, můžeš hledat takový život, ve kterém nemusíš lhát sobě ani druhým. To je důležitější než vejít se do nějaké správné škatulky."
   },
   {
     "id": "ref_0650",
@@ -5146,7 +5154,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Za větou „jsem prostě nestálá“ může chybět nejdůležitější informace: kdy, s kým a při jakých pocitech se v tobě potřeba odejít objevuje. Pokud má tvá nestálost své spouštěče, nemusí být neměnnou součástí tvé povahy."
   },
   {
     "id": "ref_0651",
@@ -5374,7 +5383,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být opatrná a zároveň zvědavá. Nemusíš si vybírat mezi úplným bezpečím a bezhlavým rizikem."
   },
   {
     "id": "ref_0675",
@@ -5392,7 +5402,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvoje opatrnost se tě snaží chránit, ne trápit. Můžeš jí být vděčná za její službu, a přitom jí nedovolit, aby řídila celý tvůj život."
   },
   {
     "id": "ref_0677",
@@ -5410,7 +5421,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se bojíš přestat být ostražitá, dává to smysl: právě ostražitost ti našeptává, že díky ní se nic nestalo. Jenže nevíš, kolikrát by se nic nestalo ani bez ní."
   },
   {
     "id": "ref_0679",
@@ -5419,7 +5431,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš mít všechno pod kontrolou, aby ses mohla cítit v bezpečí. Některé věci můžeš nechat chvíli otevřené a podívat se, co skutečně přijde."
   },
   {
     "id": "ref_0680",
@@ -5446,7 +5459,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když polevíš v ostražitosti, neznamená to, že jsi naivní nebo bezbranná. Znamená to jen, že si dovoluješ nebýt pořád ve střehu."
   },
   {
     "id": "ref_0684",
@@ -5692,7 +5706,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš věřit všem, abys přestala žít, jako bys byla obklopená nepřáteli."
   },
   {
     "id": "ref_0715",
@@ -5719,7 +5734,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se bojíš věřit, je pochopitelné. Neznamená to ale, že musíš navždy zůstat sama se svým strachem."
   },
   {
     "id": "ref_0719",
@@ -5728,7 +5744,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nikdo po tobě nechce, abys znovu věřila těm, kteří tě zklamali. Jde o to, aby za jejich činy nemuseli platit všichni ostatní."
   },
   {
     "id": "ref_0720",
@@ -5755,7 +5772,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš říct „nevím, jestli ti můžu věřit“, aniž bys musela říct „určitě mi chceš ublížit“."
   },
   {
     "id": "ref_0723",
@@ -5791,7 +5809,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Tvůj vnitřní hlídač není nepřítel. Jen se ještě nenaučil, že dnes už nejsi tak bezmocná jako kdysi."
   },
   {
     "id": "ref_0728",
@@ -8338,7 +8357,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co teď prožíváš, je skutečné, i když tvoje vysvětlení toho pocitu nemusí být přesné. Můžeš věřit svému prožitku, aniž bys musela věřit každé myšlence, která ho vysvětluje."
   },
   {
     "id": "ref_1044",
@@ -8392,7 +8412,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je v tom zvláštní paradox: čím víc kontroluješ okolí, abys získala jistotu, tím víc materiálu pro další pochybnosti najdeš. Úleva proto někdy nezačíná lepší kontrolou, ale ochotou chvíli nevědět."
   },
   {
     "id": "ref_1053",
@@ -8665,7 +8686,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si vyčítat, že jsi někomu dala důvěru, kterou si nakonec nezasloužil. Odpovědnost za její porušení nese ten, kdo ji porušil."
   },
   {
     "id": "ref_1085",
@@ -8701,7 +8723,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš odpustit, abys mohla jít dál. Úleva může přijít i bez odpuštění, třeba když přestaneš čekat, až minulost dostane spravedlivější konec."
   },
   {
     "id": "ref_1089",
@@ -8710,7 +8733,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že jsi něco nepoznala dřív, neznamená, že jsi to poznat měla. Zpětně bývají věci mnohem zřejmější než ve chvíli, kdy je žijeme."
   },
   {
     "id": "ref_1090",
@@ -8728,7 +8752,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jedna zrada nemusí změnit celý svět v nebezpečné místo. Můžeš se naučit být opatrnější, aniž bys musela přestat důvěřovat všem."
   },
   {
     "id": "ref_1092",
@@ -8764,7 +8789,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš zpochybnit všechny hezké chvíle jen proto, že teď víš něco bolestivého. To hezké mohlo být skutečné, i když celý vztah nebyl takový, jak sis myslela."
   },
   {
     "id": "ref_1096",
@@ -8773,7 +8799,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná tě nejvíc bolí, že člověk, kterému jsi věřila, nebyl takový, jakého jsi ho znala. I ztráta představy o někom blízkém je skutečná ztráta a zaslouží si čas."
   },
   {
     "id": "ref_1097",
@@ -8791,7 +8818,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná si říkáš: „Kdybych nebyla tak důvěřivá, nestalo by se to.“ Jenže jedinou jistou ochranou před zradou by bylo nikdy nikomu nevěřit. A za takovou jistotu bys zaplatila i ztrátou blízkosti."
   },
   {
     "id": "ref_1098",
@@ -9025,7 +9053,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, jak s tebou někdo zacházel, nevypovídá o tvé hodnotě. Můžeš být hluboce zraněná, a přitom nebýt o nic méně hodnotným člověkem než předtím."
   },
   {
     "id": "ref_1129",
@@ -9034,7 +9063,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš druhého omluvit ani mu odpustit, abys mohla najít klid. To, že tě něco přestane bolet, ještě neznamená, že to bylo v pořádku."
   },
   {
     "id": "ref_1131",
@@ -9052,7 +9082,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě něco zranilo, neznamená, že jsi slabá. Znamená to, že se to dotklo něčeho, na čem ti záleží."
   },
   {
     "id": "ref_1133",
@@ -9061,7 +9092,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Některé rány bolí nejvíc právě proto, že přicházejí od lidí, u kterých jsme čekali bezpečí. Když tě zraní někdo blízký, nebolí jen to, co udělal, ale i ztráta důvěry, kterou jsi v něj měla."
   },
   {
     "id": "ref_1134",
@@ -9070,7 +9102,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se tvářit, že se nic nestalo, jen abys vypadala silně. Někdy je zapotřebí odvahy právě k tomu, abys přiznala: „Jo, tohle mě fakt bolelo.“"
   },
   {
     "id": "ref_1135",
@@ -9079,7 +9112,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo zranil, neznamená, že jsi udělala chybu, když ses mu otevřela. Blízkost s sebou vždycky nese určitou zranitelnost. Bez ní bychom k sobě nikoho doopravdy nepustili."
   },
   {
     "id": "ref_1136",
@@ -9115,7 +9149,8 @@
     "tier": "free",
     "sort_order": 12,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš přestat cítit, abys byla v bezpečí. Můžeš se postupně učit chránit svoje hranice, aniž bys kolem sebe musela postavit zeď."
   },
   {
     "id": "ref_1140",
@@ -9124,7 +9159,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná teď potřebuješ méně přemýšlet o tom, proč ti druhý ublížil, a víc se zajímat o to, co potřebuješ ty sama, aby ti bylo líp."
   },
   {
     "id": "ref_1142",
@@ -9133,7 +9169,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi zraněná, může se snadno stát, že začneš hledat další důkazy, že nejsi dost důležitá, milovaná nebo respektovaná. Ale ne všechno, co ti bolest našeptává, musí být pravda."
   },
   {
     "id": "ref_1144",
@@ -9142,7 +9179,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že tě někdo zranil, neznamená, že jsi bezmocná. Nemůžeš změnit, co se již stalo, ale pořád můžeš ovlivnit, jak se k sobě zachováš teď a co dovolíš dál."
   },
   {
     "id": "ref_1141",
@@ -9400,7 +9438,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš dál dávat jen proto, že jsi dávala doteď. O tom, co ještě chceš a co už ne, se můžeš rozhodnout znovu."
   },
   {
     "id": "ref_1174",
@@ -9409,7 +9448,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že ses nechala do něčeho zatlačit, neznamená, že jsi slabá nebo hloupá. Možná jsi druhému věřila, chtěla jsi vyjít vstříc nebo jsi tehdy nemohla vědět, kam to povede."
   },
   {
     "id": "ref_1175",
@@ -9418,7 +9458,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když někdo reaguje špatně na tvoje „ne“, neznamená to, že jsi udělala něco špatného. Možná jen přestal dostávat něco, na co si zvykl."
   },
   {
     "id": "ref_1176",
@@ -9427,7 +9468,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš si být stoprocentně jistá, že tě někdo využívá, abys mohla zpomalit, odstoupit nebo si vzít čas na rozmyšlenou."
   },
   {
     "id": "ref_1177",
@@ -9445,7 +9487,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Máš právo změnit názor, i když jsi předtím souhlasila. Včerejší ano tě nezavazuje k dnešnímu ano."
   },
   {
     "id": "ref_1179",
@@ -9454,7 +9497,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Pocit viny po odmítnutí není důkaz, že jsi někomu ublížila. Někdy se ozývá jen proto, že děláš něco, na co nejsi zvyklá: chráníš sama sebe."
   },
   {
     "id": "ref_1182",
@@ -9463,7 +9507,8 @@
     "tier": "free",
     "sort_order": 9,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Můžeš být laskavá a zároveň říct ne. Tvoje hranice z tebe nedělají horšího člověka. Jen připomínají, že i na tobě záleží."
   },
   {
     "id": "ref_1183",
@@ -9481,7 +9526,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že máš pocit, že tě někdo využívá, ještě neznamená, že jsi bezmocná. Možná se právě ozývá část tebe, která si začíná všímat, že něco není v pořádku."
   },
   {
     "id": "ref_1185",
@@ -9499,7 +9545,8 @@
     "tier": "free",
     "sort_order": 13,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když jsi dlouho ustupovala, může ti první jasné „ne“ připadat skoro jako útok. Ale chránit vlastní prostor není totéž jako útočit na druhého."
   },
   {
     "id": "ref_1190",
@@ -9517,7 +9564,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš využívaná, nemusíš hned vyřešit celý vztah. Někdy stačí jediný malý krok, kterým získáš zpátky trochu prostoru."
   },
   {
     "id": "ref_1188",
@@ -9735,7 +9783,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že ses přizpůsobila, ztuhla, ustoupila nebo přestala odporovat, neznamená, že jsi souhlasila. Možná to byl v tu chvíli jediný způsob, jak situaci přežít."
   },
   {
     "id": "ref_1215",
@@ -9762,7 +9811,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses tehdy nemohla bránit tak, jak by sis dnes přála. V některých situacích člověk nedokáže víc než přežít. To není málo."
   },
   {
     "id": "ref_1218",
@@ -9771,7 +9821,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Někdo mohl získat moc nad tvým tělem nebo nad určitou situací. Nezískal tím ale právo rozhodovat o tom, kdo jsi. Pořád patříš sama sobě."
   },
   {
     "id": "ref_1219",
@@ -9816,7 +9867,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, co bylo narušeno, nemusí být navždy zničené. Pocit bezpečí, důvěra i vědomí, že patříš sama sobě, se můžou postupně vracet."
   },
   {
     "id": "ref_1225",
@@ -9843,7 +9895,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se dělat silnou tím, že si zakážeš cítit. Síla může být i v tom, že si dovolíš uznat, jak moc tě něco zasáhlo, a přesto se k sobě nebudeš chovat krutě."
   },
   {
     "id": "ref_1228",
@@ -9852,7 +9905,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že někdo nerespektoval tvoji vůli, neznamená, že jsi o ni přišla. Můžeš ji znovu objevovat v malých otázkách: Co chci já? Co nechci? Co si teď vyberu?"
   },
   {
     "id": "ref_1229",
@@ -10062,7 +10116,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš se měnit v někoho jiného, abys někam patřila. Přijetí, za které musíš zaplatit ztrátou sebe samé, je jen jiná podoba osamělosti."
   },
   {
     "id": "ref_1256",
@@ -10071,7 +10126,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Je v pořádku, že tě vyloučení bolí. Potřeba někam patřit je hluboce lidská a tvoje bolest neznamená, že jsi slabá nebo přecitlivělá."
   },
   {
     "id": "ref_1257",
@@ -10098,7 +10154,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se cítíš vyloučená, ještě neznamená, že nikam nepatříš. Pocit může být velmi skutečný, aniž by bylo pravdou všechno, co ti našeptává."
   },
   {
     "id": "ref_1261",
@@ -10134,7 +10191,8 @@
     "tier": "free",
     "sort_order": 10,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Být jiná neznamená být méně přijatelná. Právě to, čím se od některých lidí lišíš, tě může s jinými hluboce spojovat."
   },
   {
     "id": "ref_1266",
@@ -10170,7 +10228,8 @@
     "tier": "free",
     "sort_order": 14,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když máš pocit, že nikam nepatříš, zkus si všimnout, jestli ti ve skutečnosti nechybí něco konkrétnějšího: blízkost, bezpečí, zájem nebo někdo, vedle koho můžeš být sama sebou. S takovou potřebou se dá pracovat lépe než s rozsudkem nad celým životem."
   },
   {
     "id": "ref_1273",
@@ -10396,7 +10455,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná je pravda, že s některými lidmi opravdu nejsi propojená tak, jak bys potřebovala. Z toho ale neplyne, že nejsi schopná hlubokého spojení nebo že ho nikde nemůžeš najít."
   },
   {
     "id": "ref_1297",
@@ -10405,7 +10465,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš být společenská, veselá ani zajímavá, aby s tebou někdo chtěl být. Blízkost není odměna za dobrý výkon."
   },
   {
     "id": "ref_1298",
@@ -10414,7 +10475,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "To, že se cítíš jiná, neznamená, že jsi příliš jiná na to, aby ti někdo mohl být blízko. Opravdové spojení někdy vzniká právě tam, kde svou odlišnost nemusíš skrývat."
   },
   {
     "id": "ref_1299",
@@ -10441,7 +10503,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Nemusíš čekat na to, až budeš k někomu cítit blízkost, abys ho oslovila. Pocit spojení přichází často až po kontaktu, ne před ním."
   },
   {
     "id": "ref_1303",
@@ -10450,7 +10513,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná ses naučila držet si odstup, protože blízkost pro tebe někdy byla bolestivá nebo nejistá. To, co dnes prožíváš jako odcizení, mohlo být kdysi způsobem, jak se chránit."
   },
   {
     "id": "ref_1304",
@@ -10459,7 +10523,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Možná teď nepotřebuješ víc lidí, ale jen jedno místo nebo jednoho člověka, u kterého můžeš na chvíli přestat být sama proti celému světu."
   },
   {
     "id": "ref_1305",
@@ -10486,7 +10551,8 @@
     "tier": "free",
     "sort_order": 11,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš izolovaná, mysl snadno začne vyprávět příběh, že o tebe nikdo nestojí. Pocit ale není spolehlivý průzkum toho, co k tobě druzí skutečně cítí."
   },
   {
     "id": "ref_1309",
@@ -10522,7 +10588,8 @@
     "tier": "free",
     "sort_order": 15,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "I když se teď cítíš vzdálená sama sobě, neznamená to, že ses ztratila. Nemusíš se celá najít najednou; můžeš se k sobě vracet po malých kouscích."
   },
   {
     "id": "ref_1311",

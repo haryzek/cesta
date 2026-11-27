@@ -3382,7 +3382,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Po čem vlastně toužíš, když tě začne přitahovat někdo nový? Po sexu, vzrušení, obdivu, potvrzení vlastní hodnoty, svobodě, nebo třeba po jiné verzi sebe samé?"
   },
   {
     "id": "refq_0413",
@@ -3557,7 +3558,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Před čím přesně se snažíš svou opatrností ochránit – a co by se podle tebe mohlo stát, kdybys na chvíli polevila?"
   },
   {
     "id": "refq_0434",
@@ -3602,7 +3604,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se obvykle stane těsně předtím, než začneš být ostražitá – jaký signál, myšlenka, chování druhého nebo pocit v těle v tobě spustí poplach?"
   },
   {
     "id": "refq_0439",
@@ -3611,7 +3614,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys věděla, že případné potíže dokážeš zvládnout, potřebovala bys být pořád stejně opatrná?"
   },
   {
     "id": "refq_0440",
@@ -3620,7 +3624,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys dělala jinak, kdybys nepotřebovala mít předem jistotu, že všechno dobře dopadne?"
   },
   {
     "id": "refq_0441",
@@ -3822,7 +3827,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně očekáváš, že by ti druzí mohli udělat, kdybys jim začala víc důvěřovat?"
   },
   {
     "id": "refq_0466",
@@ -3840,7 +3846,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys potřebovala víc věřit sama sobě, abys nemusela mít nedůvěru k druhým?"
   },
   {
     "id": "refq_0468",
@@ -4175,7 +4182,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V jakých situacích se cítíš sledovaná nejsilněji? Co mají tyto situace společného?"
   },
   {
     "id": "refq_0509",
@@ -4211,7 +4219,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš sledovaná, jaké další vysvětlení toho, co pozoruješ, by mohlo připadat v úvahu?"
   },
   {
     "id": "refq_0513",
@@ -4446,7 +4455,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jaký závěr o sobě sis z té zrady vyvodila? A vyplývá skutečně z toho, co se stalo?"
   },
   {
     "id": "refq_0542",
@@ -4464,7 +4474,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co si vyčítáš, že jsi měla poznat dřív? A mohla jsi to opravdu tušit z toho, co jsi tehdy věděla?"
   },
   {
     "id": "refq_0544",
@@ -4482,7 +4493,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys potřebovala od člověka, který tě zradil, aby bylo možné obnovit důvěru? A dokázala bys mu to říct?"
   },
   {
     "id": "refq_0546",
@@ -4491,7 +4503,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Změnila ses po té zradě tak, že tě to opravdu chrání? Nebo i tak, že tím dál prodlužuješ moc člověka, který tě zradil?"
   },
   {
     "id": "refq_0547",
@@ -4500,7 +4513,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se začneš cítit zrazená, co obvykle uděláš jako první? A jak tvoje reakce ovlivní další vývoj vztahu?"
   },
   {
     "id": "refq_0548",
@@ -4726,7 +4740,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys od člověka, který ti ublížil, nejvíc potřebovala – omluvu, pochopení, změnu chování, nápravu, nebo ujištění, že pro něj něco znamenáš?"
   },
   {
     "id": "refq_0576",
@@ -4744,7 +4759,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jakou větu o sobě sis v okamžiku zranění automaticky řekla – a nakolik ji skutečně potvrzuje to, co se stalo?"
   },
   {
     "id": "refq_0578",
@@ -4753,7 +4769,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys teď potřebovala udělat, aby ses dokázala postavit na svou stranu?"
   },
   {
     "id": "refq_0579",
@@ -4780,7 +4797,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by se stalo, kdybys druhému řekla přímo „tohle mě zranilo“ – a čeho se na jeho reakci nejvíc obáváš?"
   },
   {
     "id": "refq_0583",
@@ -5022,7 +5040,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys věděla, že můžeš bez následků říct „ne“, co bys v téhle situaci doopravdy chtěla?"
   },
   {
     "id": "refq_0612",
@@ -5049,7 +5068,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Potřebuješ mít jistotu, že tě někdo využívá, abys měla právo chránit svůj čas, energii nebo vlastní potřeby?"
   },
   {
     "id": "refq_0616",
@@ -5058,7 +5078,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V jakých vztazích se cítíš nejčastěji využívaná? Co mají tito lidé nebo situace společného?"
   },
   {
     "id": "refq_0617",
@@ -5319,7 +5340,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když máš pocit, že jsi bezmocná, o čem můžeš v té konkrétní chvíli přesto rozhodnout sama?"
   },
   {
     "id": "refq_0648",
@@ -5337,7 +5359,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys potřebovala, aby ses ve vztahu s druhým člověkem cítila opravdu bezpečně?"
   },
   {
     "id": "refq_0650",
@@ -5355,7 +5378,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby tvoje „ne“ nepotřebovalo žádné vysvětlování ani souhlas druhého, co bys dnes dělala jinak?"
   },
   {
     "id": "refq_0652",
@@ -5589,7 +5613,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš vyloučená, co tě na tom nejvíc bolí? Že o tebe druzí nestojí, že mezi ně nepatříš, nebo že si kvůli tomu připadáš méně hodnotná?"
   },
   {
     "id": "refq_0681",
@@ -5607,7 +5632,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kde ve svém životě ses cítila přirozeně přijímaná, aniž ses musela snažit zapadnout? Co bylo v těch vztazích jiné?"
   },
   {
     "id": "refq_0685",
@@ -5616,7 +5642,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses přestala ptát „vezmou mě mezi sebe?“ a začala se ptát „je mi mezi nimi dobře?“, co by se změnilo?"
   },
   {
     "id": "refq_0686",
@@ -5625,7 +5652,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš vyloučená, co obvykle uděláš? Snažíš se přiblížit, zavděčit se, stáhneš se, rozzlobíš se, nebo reaguješ nějak jinak? Jaký vliv má tvoje reakce na další vývoj situace?"
   },
   {
     "id": "refq_0687",
@@ -5634,7 +5662,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Dokážeš rozlišit chvíle, kdy tě druzí skutečně vylučují, od těch, kdy si jen nejsi jistá, jestli tě přijímají?"
   },
   {
     "id": "refq_0688",
@@ -5643,7 +5672,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš vyčleněná, dokážeš dát druhým najevo, že bys chtěla být součástí skupiny, nebo čekáš, až tě sami pozvou?"
   },
   {
     "id": "refq_0689",
@@ -5652,7 +5682,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kolik ze sebe musíš potlačit, upravit nebo skrýt, abys někam zapadla? A cítíš se pak skutečně přijímaná?"
   },
   {
     "id": "refq_0690",
@@ -5885,7 +5916,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se cítíš odcizená, co ti vlastně nejvíc chybí – blízkost, porozumění, přijetí, pocit sounáležitosti, nebo kontakt se sebou samou?"
   },
   {
     "id": "refq_0718",
@@ -5894,7 +5926,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naposledy cítila s někým opravdu přirozeně? Co bylo v tom vztahu nebo okamžiku jiné?"
   },
   {
     "id": "refq_0719",
@@ -5903,7 +5936,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jsou prostředí nebo skupiny lidí, ve kterých se opakovaně cítíš jako cizinka, zatímco jinde tenhle pocit nemáš? Co ti ten rozdíl napovídá?"
   },
   {
     "id": "refq_0720",
@@ -5912,7 +5946,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co obvykle uděláš, když se začneš cítit odcizená? Jak tvoje reakce ovlivňuje vzdálenost mezi tebou a ostatními?"
   },
   {
     "id": "refq_0721",
@@ -5930,7 +5965,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Může být tvoje odcizení někdy přirozenou reakcí na vztahy nebo prostředí, ve kterých nemůžeš být dost sama sebou?"
   },
   {
     "id": "refq_0723",
