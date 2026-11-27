@@ -42563,7 +42563,8 @@
     "text": "Možná tě ten trestající hlas chce přimět, abys byl lepší a neopakoval stejné chyby. Jeho záměr může být ochranný, i když jeho způsob je krutý a nefunguje.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tě ten trestající hlas chce přimět, abys byla lepší a neopakovala stejné chyby. Jeho záměr může být ochranný, i když jeho způsob je krutý a nefunguje."
   },
   {
     "id": "ref_5023",
@@ -42579,7 +42580,8 @@
     "text": "Logika sebetrestu říká: „Když jsem způsobil bolest, musím vytvořit další bolest, aby se věci napravily.“ Jenže dvě bolesti se navzájem neodečtou. Většinou se prostě sečtou.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Logika sebetrestu říká: „Když jsem způsobila bolest, musím vytvořit další bolest, aby se věci napravily.“ Jenže dvě bolesti se navzájem neodečtou. Většinou se prostě sečtou."
   },
   {
     "id": "ref_5026",
@@ -42595,7 +42597,8 @@
     "text": "Možná ses kdysi naučil, že chyba znamená „jsem špatný“ a špatný člověk si zaslouží trest. Jenže dítě, které udělá něco špatně, pořád potřebuje vědět, že samo není špatné a že kvůli své chybě nepřijde o blízkost.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že chyba znamená „jsem špatná“ a špatný člověk si zaslouží trest. Jenže dítě, které udělá něco špatně, pořád potřebuje vědět, že samo není špatné a že kvůli své chybě nepřijde o blízkost."
   },
   {
     "id": "ref_5028",
@@ -42603,7 +42606,8 @@
     "text": "Kdybys byl dítě, které ti právě řeklo, že si zaslouží bolest, chtěl bys ho potrestat? Nebo by tě spíš zajímalo, co se mu stalo, že se naučilo být samo sobě nepřítelem?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys byla dítě, které ti právě řeklo, že si zaslouží bolest, chtěla bys ho potrestat? Nebo by tě spíš zajímalo, co se mu stalo, že se naučilo být samo sobě nepřítelem?"
   },
   {
     "id": "ref_5029",
@@ -42643,7 +42647,8 @@
     "text": "Tvoje chyba není totéž co ty. Sebetrest snadno promění „udělal jsem něco špatně“ v „jsem špatný“. Jenže čin je událost v čase, zatímco člověk je mnohem větší a proměnlivější příběh.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje chyba není totéž co ty. Sebetrest snadno promění „udělala jsem něco špatně“ v „jsem špatný“. Jenže čin je událost v čase, zatímco člověk je mnohem větší a proměnlivější příběh."
   },
   {
     "id": "ref_5034",
@@ -42667,7 +42672,8 @@
     "text": "Tvoje budoucí já nepotřebuje další jizvy jako důkaz, že dnešní bolest byla opravdová. Spíš ti jednou poděkuje za každý okamžik, kdy ses rozhodl už nic dalšího neničit.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já nepotřebuje další jizvy jako důkaz, že dnešní bolest byla opravdová. Spíš ti jednou poděkuje za každý okamžik, kdy ses rozhodla už nic dalšího neničit."
   },
   {
     "id": "ref_5037",
@@ -42675,7 +42681,8 @@
     "text": "Když se na svůj život podíváš s odstupem několika desetiletí, dnešní rozsudky nad sebou možná uvidíš jinak. Byla by škoda strávit velkou část života vykonáváním trestu, který sis sám vymyslel.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se na svůj život podíváš s odstupem několika desetiletí, dnešní rozsudky nad sebou možná uvidíš jinak. Byla by škoda strávit velkou část života vykonáváním trestu, který sis sama vymyslela."
   },
   {
     "id": "ref_5038",
@@ -42683,7 +42690,8 @@
     "text": "Z perspektivy konečnosti života je zvláštní, kolik času dokážeme věnovat dokazování, že nejsme hodni vlastního života. Jednou možná bude důležitější, jestli jsi opravdu žil, než jestli ses dostatečně potrestal.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z perspektivy konečnosti života je zvláštní, kolik času dokážeme věnovat dokazování, že nejsme hodni vlastního života. Jednou možná bude důležitější, jestli jsi opravdu žila, než jestli ses dostatečně potrestala."
   },
   {
     "id": "ref_5039",
@@ -42707,7 +42715,8 @@
     "text": "Kdyby tě viděl někdo, kdo tě má opravdu rád, nejspíš by ti neřekl: „Výborně, ještě si trochu ublíž.“ Spíš by chtěl, abys převzal odpovědnost tam, kde je to potřeba, a pak si dovolil znovu žít.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě viděl někdo, kdo tě má opravdu rád, nejspíš by ti neřekl: „Výborně, ještě si trochu ublíž.“ Spíš by chtěl, abys převzala odpovědnost tam, kde je to potřeba, a pak si dovolil znovu žít."
   },
   {
     "id": "ref_5012",
@@ -42747,7 +42756,8 @@
     "text": "Je v tom skoro komická účetní chyba: život tě praští, ty usoudíš, že správná reakce je praštit se ještě jednou sám, a čekáš, že se bilance zlepší. Možná dneska účetnictví zavři a nech ztrátu prostě přestat růst.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Je v tom skoro komická účetní chyba: život tě praští, ty usoudíš, že správná reakce je praštit se ještě jednou sama, a čekáš, že se bilance zlepší. Možná dneska účetnictví zavři a nech ztrátu prostě přestat růst."
   },
   {
     "id": "ref_5046",
@@ -42755,7 +42765,8 @@
     "text": "Nemusíš být svým vlastním žalářníkem jen proto, že se teď necítíš hoden svobody. Můžeš si dát čas, než se v tobě ozve spravedlivější hlas.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být svým vlastním žalářníkem jen proto, že se teď necítíš hodna svobody. Můžeš si dát čas, než se v tobě ozve spravedlivější hlas."
   },
   {
     "id": "ref_5048",
@@ -42913,7 +42924,8 @@
     "text": "Možná teď potřebuješ spíš prostor než řešení. Je v pořádku na chvíli odejít, přestat odpovídat a vrátit se k tomu, až budeš zase víc sám sebou.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná teď potřebuješ spíš prostor než řešení. Je v pořádku na chvíli odejít, přestat odpovídat a vrátit se k tomu, až budeš zase víc sama sebou."
   },
   {
     "id": "ref_5065",
@@ -42961,7 +42973,8 @@
     "text": "Když jsi rozzuřený, tvoje mysl ti nabízí zúžený výřez reality a vydává ho za celý obraz. To, co vidíš, nemusí být nepravdivé — jen toho právě vidíš zatraceně málo.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když jsi rozzuřená, tvoje mysl ti nabízí zúžený výřez reality a vydává ho za celý obraz. To, co vidíš, nemusí být nepravdivé — jen toho právě vidíš zatraceně málo."
   },
   {
     "id": "ref_5073",
@@ -42969,7 +42982,8 @@
     "text": "To, že tě něco rozčílilo, může být skutečně důležité. Zkus ale rozlišit, co se opravdu stalo, co si o tom vykládáš a co bys potřeboval změnit.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že tě něco rozčílilo, může být skutečně důležité. Zkus ale rozlišit, co se opravdu stalo, co si o tom vykládáš a co bys potřebovala změnit."
   },
   {
     "id": "ref_5074",
@@ -42993,7 +43007,8 @@
     "text": "Kdyby ses jako dítě rozzuřil, protože s tebou někdo zacházel nespravedlivě, nepotřeboval bys slyšet jen „uklidni se“. Možná bys potřeboval slyšet: „Vidím, že tě to ranilo. Pojď, zvládneme to spolu.“",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses jako dítě rozzuřila, protože s tebou někdo zacházel nespravedlivě, nepotřebovala bys slyšet jen „uklidni se“. Možná bys potřebovala slyšet: „Vidím, že tě to ranilo. Pojď, zvládneme to spolu.“"
   },
   {
     "id": "ref_5077",
@@ -43001,7 +43016,8 @@
     "text": "To, co tě rozčílilo, může mít kořeny v něčem, na čem ti hluboce záleží. Až budeš připravený, zkus hledat, jakou důležitou zprávu ti vztek přináší.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, co tě rozčílilo, může mít kořeny v něčem, na čem ti hluboce záleží. Až budeš připravená, zkus hledat, jakou důležitou zprávu ti vztek přináší."
   },
   {
     "id": "ref_5078",
@@ -43017,7 +43033,8 @@
     "text": "Představ si svoje budoucí já za deset let. Možná pro něj nebude nejdůležitější, jestli jsi tehdy vyhrál hádku, ale jestli ses zachoval způsobem, se kterým dokážeš žít.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si svoje budoucí já za deset let. Možná pro něj nebude nejdůležitější, jestli jsi tehdy vyhrála hádku, ale jestli ses zachovala způsobem, se kterým dokážeš žít."
   },
   {
     "id": "ref_5080",
@@ -43025,7 +43042,8 @@
     "text": "Člověk, který tě miluje, by nejspíš nechtěl, abys svůj hněv spolkl. Chtěl by, abys dokázal ochránit sebe, aniž bys při tom zbytečně zranil sebe nebo někoho dalšího.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě miluje, by nejspíš nechtěl, abys svůj hněv spolkla. Chtěl by, abys dokázala ochránit sebe, aniž bys při tom zbytečně zranila sebe nebo někoho dalšího."
   },
   {
     "id": "ref_5083",
@@ -43073,7 +43091,8 @@
     "text": "Z perspektivy smrti je překvapivě málo konfliktů hodných toho, abys jim odevzdal hodiny nebo roky svého života. To neznamená nechat si všechno líbit; znamená to pečlivě vybírat, čemu dáš kus svého konečného času.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z perspektivy smrti je překvapivě málo konfliktů hodných toho, abys jim odevzdala hodiny nebo roky svého života. To neznamená nechat si všechno líbit; znamená to pečlivě vybírat, čemu dáš kus svého konečného času."
   },
   {
     "id": "ref_5086",
@@ -43243,7 +43262,8 @@
     "text": "Hořkost někdy vyrůstá z bolesti, která příliš dlouho nedostávala uznání. Zkus nejdřív naslouchat bolesti, která je pod ní, místo abys bojoval sám se sebou za to, že jsi zahořklý.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Hořkost někdy vyrůstá z bolesti, která příliš dlouho nedostávala uznání. Zkus nejdřív naslouchat bolesti, která je pod ní, místo abys bojovala sama se sebou za to, že jsi zahořklá."
   },
   {
     "id": "ref_5108",
@@ -43315,7 +43335,8 @@
     "text": "Tvoje budoucí já si možná nebude pamatovat polovinu argumentů, které dnes v hlavě znovu soudíš. Bude ale žít s tím, kolik času a energie jsi jim odevzdal.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já si možná nebude pamatovat polovinu argumentů, které dnes v hlavě znovu soudíš. Bude ale žít s tím, kolik času a energie jsi jim odevzdala."
   },
   {
     "id": "ref_5118",
@@ -43363,7 +43384,8 @@
     "text": "Buddhistický pohled by si všiml, že rána možná vznikla jednou, ale mysl ji dokáže znovu otevřít pokaždé, když celý příběh přehraje. Nemusíš popírat původní bolest, abys odmítl vyrábět její další kopie.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Buddhistický pohled by si všiml, že rána možná vznikla jednou, ale mysl ji dokáže znovu otevřít pokaždé, když celý příběh přehraje. Nemusíš popírat původní bolest, abys odmítla vyrábět její další kopie."
   },
   {
     "id": "ref_5125",
@@ -43379,7 +43401,8 @@
     "text": "Nemusíš dokazovat, že máš právo být zraněný. Tvoje bolest nepotřebuje soudní rozsudek, aby byla skutečná.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš dokazovat, že máš právo být zraněná. Tvoje bolest nepotřebuje soudní rozsudek, aby byla skutečná."
   },
   {
     "id": "ref_5090",
@@ -43395,7 +43418,8 @@
     "text": "Spravedlnost a vnitřní klid nejsou totéž. Někdy můžeš přestat bojovat sám v sobě, i když venku zůstalo něco nespravedlivého.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Spravedlnost a vnitřní klid nejsou totéž. Někdy můžeš přestat bojovat sama v sobě, i když venku zůstalo něco nespravedlivého."
   },
   {
     "id": "ref_5094",
@@ -43411,7 +43435,8 @@
     "text": "A absurdní nihilista by se možná rozhlédl po miliardách galaxií a poznamenal: „Takže na kameni letícím vesmírem dvě opice nesouhlasily, kdo komu ublížil, a jedna kvůli tomu nespí. Velkolepé.“ A možná by ses na vteřinu musel usmát.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "A absurdní nihilista by se možná rozhlédl po miliardách galaxií a poznamenal: „Takže na kameni letícím vesmírem dvě opice nesouhlasily, kdo komu ublížil, a jedna kvůli tomu nespí. Velkolepé.“ A možná by ses na vteřinu musela usmát."
   },
   {
     "id": "ref_5127",
@@ -43570,7 +43595,8 @@
     "text": "Možná teď nepotřebuješ vyhrát spor, ale vrátit se sám k sobě. Tam nemusíš nikomu nic dokazovat.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná teď nepotřebuješ vyhrát spor, ale vrátit se sama k sobě. Tam nemusíš nikomu nic dokazovat."
   },
   {
     "id": "ref_5148",
@@ -43578,7 +43604,8 @@
     "text": "To, že tě někdo zasáhl, ještě neznamená, že ti chtěl ublížit. Mezi tím, jak jeho chování působilo na tebe, a tím, co zamýšlel, může být rozdíl. Stojí za to ho prozkoumat, aniž bys zlehčoval vlastní bolest.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že tě někdo zasáhl, ještě neznamená, že ti chtěl ublížit. Mezi tím, jak jeho chování působilo na tebe, a tím, co zamýšlel, může být rozdíl. Stojí za to ho prozkoumat, aniž bys zlehčovala vlastní bolest."
   },
   {
     "id": "ref_5149",
@@ -43602,7 +43629,8 @@
     "text": "Možná ses kdysi naučil, že ponížení musíš okamžitě odrazit, jinak budeš za slabého. Dnes už můžeš být zraněný a zároveň vědět, že tvoje hodnota nepotřebuje okamžitou obhajobu.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že ponížení musíš okamžitě odrazit, jinak budeš za slabou. Dnes už můžeš být zraněná a zároveň vědět, že tvoje hodnota nepotřebuje okamžitou obhajobu."
   },
   {
     "id": "ref_5152",
@@ -43666,7 +43694,8 @@
     "text": "Tvoje budoucí já by ti možná řeklo: „Jo, bolelo to. Ale jsem rád, že jsem kvůli pěti minutám cizího chování neodevzdal pět dní vlastního života.“",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já by ti možná řeklo: „Jo, bolelo to. Ale jsem ráda, že jsem kvůli pěti minutám cizího chování neodevzdala pět dní vlastního života.“"
   },
   {
     "id": "ref_5160",
@@ -43674,7 +43703,8 @@
     "text": "Někdy je uraženost způsob, jak si říct: „Nedovolím, aby se mnou někdo zacházel, jako bych nic neznamenal.“ Nemusíš tuhle část sebe umlčet, ale můžeš jí pomoci hledat účinnější způsob, jak chránit tvoje hranice.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy je uraženost způsob, jak si říct: „Nedovolím, aby se mnou někdo zacházel, jako bych nic neznamenala.“ Nemusíš tuhle část sebe umlčet, ale můžeš jí pomoci hledat účinnější způsob, jak chránit tvoje hranice."
   },
   {
     "id": "ref_5161",
@@ -43682,7 +43712,8 @@
     "text": "Kdyby se ti s podobnou situací svěřilo dítě, asi bys mu neřekl, že je směšně vztahovačné. Spíš bys uznal, že ho to zabolelo, a společně byste zkoumali, co se vlastně stalo. Stejnou trpělivost si můžeš dopřát i ty.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby se ti s podobnou situací svěřilo dítě, asi bys mu neřekla, že je směšně vztahovačné. Spíš bys uznala, že ho to zabolelo, a společně byste zkoumali, co se vlastně stalo. Stejnou trpělivost si můžeš dopřát i ty."
   },
   {
     "id": "ref_5162",
@@ -43690,7 +43721,8 @@
     "text": "Člověk, který tě má rád, nemusí řešit, jestli jsi v dané situaci vypadal dost důstojně. Může v tobě vidět člověka, kterého má rád, i když právě prožíváš chvíli, za kterou se stydíš.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má rád, nemusí řešit, jestli jsi v dané situaci vypadala dost důstojně. Může v tobě vidět člověka, kterého má rád, i když právě prožíváš chvíli, za kterou se stydíš."
   },
   {
     "id": "ref_5164",
@@ -43722,7 +43754,8 @@
     "text": "Nemusíš druhému dokazovat, že ti ublížil, aby tvoje bolest byla oprávněná. Ty sám víš, co se v tobě stalo.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš druhému dokazovat, že ti ublížil, aby tvoje bolest byla oprávněná. Ty sama víš, co se v tobě stalo."
   },
   {
     "id": "ref_5165",
@@ -43730,7 +43763,8 @@
     "text": "Stoik v zákopu by se možná zeptal jen na dvě věci: „Jednal jsem já sám čestně?“ a „Je teď něco rozumného, co můžu udělat?“ Pokud ne, cizí nevychovanost nemusíš nosit jako svůj osobní náklad.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Stoik v zákopu by se možná zeptal jen na dvě věci: „Jednal jsem já sama čestně?“ a „Je teď něco rozumného, co můžu udělat?“ Pokud ne, cizí nevychovanost nemusíš nosit jako svůj osobní náklad."
   },
   {
     "id": "ref_5168",
@@ -43879,7 +43913,8 @@
     "text": "Zmatek někdy nevzniká proto, že bys měl málo schopností, ale proto, že máš příliš mnoho možností, informací nebo protichůdných potřeb. To je úplně jiný problém.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zmatek někdy nevzniká proto, že bys měla málo schopností, ale proto, že máš příliš mnoho možností, informací nebo protichůdných potřeb. To je úplně jiný problém."
   },
   {
     "id": "ref_5184",
@@ -43927,7 +43962,8 @@
     "text": "Když se cítíš zahlcený, nemusíš mít pod kontrolou všechno, co se ti honí hlavou. Někdy stačí přestat se snažit uhlídat každou myšlenku a vrátit se k jedné věci, kterou můžeš ovlivnit.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš zahlcená, nemusíš mít pod kontrolou všechno, co se ti honí hlavou. Někdy stačí přestat se snažit uhlídat každou myšlenku a vrátit se k jedné věci, kterou můžeš ovlivnit."
   },
   {
     "id": "ref_5192",
@@ -43935,7 +43971,8 @@
     "text": "Možná nejsi chaotický, ale ostražitý. Ta část tebe, která zběsile přeskakuje mezi věcmi, se možná bojí, že když přestane všechno hlídat, něco důležitého přehlédne.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nejsi chaotická, ale ostražitá. Ta část tebe, která zběsile přeskakuje mezi věcmi, se možná bojí, že když přestane všechno hlídat, něco důležitého přehlédne."
   },
   {
     "id": "ref_5193",
@@ -43943,7 +43980,8 @@
     "text": "Možná ses kdysi musel rychle orientovat v prostředí, které bylo nepředvídatelné, zahlcující nebo plné protichůdných signálů. Jestli se tvoje mysl naučila sledovat všechno najednou, nebyla to hloupost. Možná to tehdy byla docela chytrá strategie.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi musela rychle orientovat v prostředí, které bylo nepředvídatelné, zahlcující nebo plné protichůdných signálů. Jestli se tvoje mysl naučila sledovat všechno najednou, nebyla to hloupost. Možná to tehdy byla docela chytrá strategie."
   },
   {
     "id": "ref_5194",
@@ -43967,7 +44005,8 @@
     "text": "Když máš pocit, že jsi úplně mimo, připomeň si jednu věc: abys mohl poznat, že jsi dezorientovaný, musí v tobě být něco, co tu dezorientaci dokáže rozpoznat. Nemusíš se ztotožnit se vším, co právě prožíváš.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když máš pocit, že jsi úplně mimo, připomeň si jednu věc: abys mohla poznat, že jsi dezorientovaná, musí v tobě být něco, co tu dezorientaci dokáže rozpoznat. Nemusíš se ztotožnit se vším, co právě prožíváš."
   },
   {
     "id": "ref_5197",
@@ -43991,7 +44030,8 @@
     "text": "Můžeš mít chaotické myšlenky, aniž bys byl chaotický člověk, stejně jako můžeš mít horečku, aniž by ses stal horečkou. Stav mysli není rozsudek nad tím, kdo jsi.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš mít chaotické myšlenky, aniž bys byla chaotický člověk, stejně jako můžeš mít horečku, aniž by ses stala horečkou. Stav mysli není rozsudek nad tím, kdo jsi."
   },
   {
     "id": "ref_5200",
@@ -44007,7 +44047,8 @@
     "text": "Nemusíš mít všechny informace ani všechny možnosti promyšlené, abys mohl udělat další krok. Někdy se potřebné jasno objeví teprve tehdy, když se rozhodneš na základě toho, co už víš.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš mít všechny informace ani všechny možnosti promyšlené, abys mohla udělat další krok. Někdy se potřebné jasno objeví teprve tehdy, když se rozhodneš na základě toho, co už víš."
   },
   {
     "id": "ref_5202",
@@ -44023,7 +44064,8 @@
     "text": "Za sto let nebude důležité, jestli ses dnes dokázal dokonale zorientovat. Důležitější může být, že sis nemusel ubližovat za to, že lidský mozek občas prostě nestíhá.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Za sto let nebude důležité, jestli ses dnes dokázala dokonale zorientovat. Důležitější může být, že sis nemusela ubližovat za to, že lidský mozek občas prostě nestíhá."
   },
   {
     "id": "ref_5204",
@@ -44031,7 +44073,8 @@
     "text": "Vesmír po tobě nevyžaduje, abys měl jasno. Galaxie se točí, hvězdy explodují a ty můžeš pět minut vůbec nevědět, co máš dělat, aniž by se narušil chod kosmu.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Vesmír po tobě nevyžaduje, abys měla jasno. Galaxie se točí, hvězdy explodují a ty můžeš pět minut vůbec nevědět, co máš dělat, aniž by se narušil chod kosmu."
   },
   {
     "id": "ref_5167",
@@ -44231,7 +44274,8 @@
     "text": "Možná ti nechybí identita, ale zkušenost, že smíš být někým i bez souhlasu druhých. Jestli ses hodně přizpůsoboval, vlastní obrysy se mohly naučit ustupovat do pozadí.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ti nechybí identita, ale zkušenost, že smíš být někým i bez souhlasu druhých. Jestli ses hodně přizpůsobovala, vlastní obrysy se mohly naučit ustupovat do pozadí."
   },
   {
     "id": "ref_5226",
@@ -44247,7 +44291,8 @@
     "text": "Když se cítíš od sebe odpojený, nemusíš okamžitě řešit celý svůj život. Zkus si všimnout jedné věci, která je teď opravdu tvoje – pocitu, názoru, chuti, hranice nebo přání.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš od sebe odpojená, nemusíš okamžitě řešit celý svůj život. Zkus si všimnout jedné věci, která je teď opravdu tvoje – pocitu, názoru, chuti, hranice nebo přání."
   },
   {
     "id": "ref_5230",
@@ -44263,7 +44308,8 @@
     "text": "Nemusím tě nutit, abys mi řekl, kdo jsi. Můžu s tebou chvíli jen být a společně si všímat toho, co máš rád, co tě bolí, co nechceš a po čem toužíš.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusím tě nutit, abys mi řekla, kdo jsi. Můžu s tebou chvíli jen být a společně si všímat toho, co máš ráda, co tě bolí, co nechceš a po čem toužíš."
   },
   {
     "id": "ref_5233",
@@ -44311,7 +44357,8 @@
     "text": "Představ si svoje budoucí já za deset let. Možná se na dnešní nejistotu nebude dívat jako na dobu, kdy jsi neměl identitu, ale jako na dobu, kdy ses přestal spokojovat s identitou, která ti už neseděla.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si svoje budoucí já za deset let. Možná se na dnešní nejistotu nebude dívat jako na dobu, kdy jsi neměla identitu, ale jako na dobu, kdy ses přestala spokojovat s identitou, která ti už neseděla."
   },
   {
     "id": "ref_5240",
@@ -44319,7 +44366,8 @@
     "text": "Možná se nemusíš tolik snažit najít své pravé já. Zkus spíš sledovat, při čem se cítíš živý, kdy se stahuješ a kdy jednáš v souladu s tím, na čem ti záleží.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se nemusíš tolik snažit najít své pravé já. Zkus spíš sledovat, při čem se cítíš živá, kdy se stahuješ a kdy jednáš v souladu s tím, na čem ti záleží."
   },
   {
     "id": "ref_5241",
@@ -44359,7 +44407,8 @@
     "text": "Kdyby tě teď objal někdo, kdo tě opravdu miluje, nejspíš by nepotřeboval, abys mu nejdřív předložil přesnou definici své identity. Poznával by tě v tisíci drobnostech, které ty možná při hledání velké odpovědi přehlížíš.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě teď objal někdo, kdo tě opravdu miluje, nejspíš by nepotřeboval, abys mu nejdřív předložila přesnou definici své identity. Poznával by tě v tisíci drobnostech, které ty možná při hledání velké odpovědi přehlížíš."
   },
   {
     "id": "ref_5246",
@@ -44383,7 +44432,8 @@
     "text": "To, že se teď sám sobě ztrácíš, neznamená, že jsi zmizel. Možná se jen hůř slyšíš přes všechno, co se v tobě a kolem tebe děje.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že se teď sama sobě ztrácíš, neznamená, že jsi zmizela. Možná se jen hůř slyšíš přes všechno, co se v tobě a kolem tebe děje."
   },
   {
     "id": "ref_5219",
@@ -44407,7 +44457,8 @@
     "text": "Možná ses dlouho učil vnímat hlavně to, co od tebe chtějí druzí. Pak dává smysl, že vlastní hlas potřebuje trochu času, aby zesílil.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses dlouho učila vnímat hlavně to, co od tebe chtějí druzí. Pak dává smysl, že vlastní hlas potřebuje trochu času, aby zesílil."
   },
   {
     "id": "ref_5250",
@@ -44423,7 +44474,8 @@
     "text": "Nemusíš být stejný člověk jako před pěti lety ani jako včera. Proměna identity není zrada sebe sama.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být stejný člověk jako před pěti lety ani jako včera. Proměna identity není zrada sebe samé."
   },
   {
     "id": "ref_5253",
@@ -44587,7 +44639,8 @@
     "text": "Nemusíš se stát někým jiným, aby ses zase cítil živý. Někdy se živost vrací pomalu, po drobných kouscích, téměř nepozorovaně.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se stát někým jiným, aby ses zase cítila živá. Někdy se živost vrací pomalu, po drobných kouscích, téměř nepozorovaně."
   },
   {
     "id": "ref_5273",
@@ -44595,7 +44648,8 @@
     "text": "Kdybys byl malé dítě a řekl mi, že tě už nic netěší, nenutila bych tě, abys byl veselý. Řekla bych ti: „Pojď ke mně, teď nemusíš nic dokazovat ani cítit správně.“",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys byla malé dítě a řekla mi, že tě už nic netěší, nenutila bych tě, abys byla veselá. Řekla bych ti: „Pojď ke mně, teď nemusíš nic dokazovat ani cítit správně.“"
   },
   {
     "id": "ref_5274",
@@ -44619,7 +44673,8 @@
     "text": "Možná ta část tebe, která všechno vypnula, není nepřítel. Možná jen stáhla rolety, protože už bylo příliš náročné pořád něco chtít, doufat, snažit se a být zklamaný.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ta část tebe, která všechno vypnula, není nepřítel. Možná jen stáhla rolety, protože už bylo příliš náročné pořád něco chtít, doufat, snažit se a být zklamaná."
   },
   {
     "id": "ref_5277",
@@ -44659,7 +44714,8 @@
     "text": "Neměř dnešek podle toho, kolik radosti jsi cítil. Možná je dnes úspěch už to, že ses k sobě nechoval jako k nepříteli.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Neměř dnešek podle toho, kolik radosti jsi cítila. Možná je dnes úspěch už to, že ses k sobě nechovala jako k nepříteli."
   },
   {
     "id": "ref_5282",
@@ -44699,7 +44755,8 @@
     "text": "A kdyby teď opravdu nebylo třeba nic opravovat? Možná můžeš na chvíli jen existovat bez povinnosti být nadšený, produktivní nebo šťastný a nechat život, aby si tě zase našel sám.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "A kdyby teď opravdu nebylo třeba nic opravovat? Možná můžeš na chvíli jen existovat bez povinnosti být nadšená, produktivní nebo šťastná a nechat život, aby si tě zase našel sám."
   },
   {
     "id": "ref_5288",
@@ -44723,7 +44780,8 @@
     "text": "To, že teď necítíš radost, neznamená, že jsi o schopnost radovat se přišel. Někdy se jen na čas stáhne někam, kam na ni nedosáhneš.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že teď necítíš radost, neznamená, že jsi o schopnost radovat se přišla. Někdy se jen na čas stáhne někam, kam na ni nedosáhneš."
   },
   {
     "id": "ref_5260",
@@ -44937,7 +44995,8 @@
     "text": "Možná se teď snažíš prázdnotu porazit, jako by byla nepřítelem. Co kdybys ji na chvíli bral jako stav, kterým procházíš, aniž bys z něj musel dělat svůj životní příběh?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se teď snažíš prázdnotu porazit, jako by byla nepřítelem. Co kdybys ji na chvíli brala jako stav, kterým procházíš, aniž bys z něj musela dělat svůj životní příběh?"
   },
   {
     "id": "ref_5314",
@@ -44945,7 +45004,8 @@
     "text": "Část pravdy může být, že právě teď opravdu necítíš nic pevného, co bys mohl nazvat sebou. Nevyplývá z toho ale, že žádné já nemáš nebo že jsi přestal existovat.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Část pravdy může být, že právě teď opravdu necítíš nic pevného, co bys mohla nazvat sebou. Nevyplývá z toho ale, že žádné já nemáš nebo že jsi přestala existovat."
   },
   {
     "id": "ref_5315",
@@ -44969,7 +45029,8 @@
     "text": "Tvoje identita není jen to, co právě cítíš. Patří k ní i tvoje vzpomínky, vztahy, rozhodnutí, hodnoty a způsoby, jakými ses dotkl světa, i když k nim teď nemáš živý přístup.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje identita není jen to, co právě cítíš. Patří k ní i tvoje vzpomínky, vztahy, rozhodnutí, hodnoty a způsoby, jakými ses dotkla světa, i když k nim teď nemáš živý přístup."
   },
   {
     "id": "ref_5319",
@@ -44977,7 +45038,8 @@
     "text": "Nemusíš teď hledat způsob, jak se znovu cítit živý. Možná pro začátek stačí všimnout si něčeho konkrétního kolem sebe, dotknout se něčeho příjemného nebo chvíli vnímat vlastní dech, aniž bys od toho čekal nějaký výsledek.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš teď hledat způsob, jak se znovu cítit živá. Možná pro začátek stačí všimnout si něčeho konkrétního kolem sebe, dotknout se něčeho příjemného nebo chvíli vnímat vlastní dech, aniž bys od toho čekala nějaký výsledek."
   },
   {
     "id": "ref_5320",
@@ -45001,7 +45063,8 @@
     "text": "Zkus si vzpomenout na chvíle, kdy tě něco dojalo, rozesmálo, naštvalo, vtáhlo nebo kdy jsi po něčem opravdu toužil. Nemusíš tím dokazovat, že tvoje prázdnota není skutečná. Jen si připomínáš, že nikdy nemusela být celým tvým příběhem.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vzpomenout na chvíle, kdy tě něco dojalo, rozesmálo, naštvalo, vtáhlo nebo kdy jsi po něčem opravdu toužila. Nemusíš tím dokazovat, že tvoje prázdnota není skutečná. Jen si připomínáš, že nikdy nemusela být celým tvým příběhem."
   },
   {
     "id": "ref_5323",
@@ -45017,7 +45080,8 @@
     "text": "Nejsi vymazaný jen proto, že se teď cítíš, jako by z tebe zmizely všechny barvy. I velmi slabé barvy jsou pořád barvy.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nejsi vymazaná jen proto, že se teď cítíš, jako by z tebe zmizely všechny barvy. I velmi slabé barvy jsou pořád barvy."
   },
   {
     "id": "ref_5325",
@@ -45025,7 +45089,8 @@
     "text": "Tvoje tělo by možná řeklo: „Nevím, o jaké prázdnotě mluvíš. Dýchám, držím tě pohromadě, opravuju tkáně a právě teď dělám milion věcí, abys mohl být tady.“",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje tělo by možná řeklo: „Nevím, o jaké prázdnotě mluvíš. Dýchám, držím tě pohromadě, opravuju tkáně a právě teď dělám milion věcí, abys mohla být tady.“"
   },
   {
     "id": "ref_5326",
@@ -45041,7 +45106,8 @@
     "text": "Někdo, kdo tě má rád, tě nemusí vnímat jako prázdného nebo vymazaného jen proto, že se tak právě cítíš. Možná pro něj pořád zaujímáš důležité místo, které teď sám v sobě nedokážeš najít.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdo, kdo tě má rád, tě nemusí vnímat jako prázdnou nebo vymazanou jen proto, že se tak právě cítíš. Možná pro něj pořád zaujímáš důležité místo, které teď sama v sobě nedokážeš najít."
   },
   {
     "id": "ref_5328",
@@ -45049,7 +45115,8 @@
     "text": "Nemusíš pořád něco cítit, prožívat nebo chtít, abys byl dostatečně skutečný. Ani nemusíš každou chvíli svého života proměnit v důkaz, že jsi někdo.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš pořád něco cítit, prožívat nebo chtít, abys byla dostatečně skutečná. Ani nemusíš každou chvíli svého života proměnit v důkaz, že jsi někdo."
   },
   {
     "id": "ref_5329",
@@ -45081,7 +45148,8 @@
     "text": "Možná tě neděsí jen samotná prázdnota, ale také představa, že bez jasného pocitu sebe sama přestáváš být tím, kým jsi. Jenže pocit identity není totéž co tvoje existence a nemusí být pořád stejně silný.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tě neděsí jen samotná prázdnota, ale také představa, že bez jasného pocitu sebe samé přestáváš být tím, kým jsi. Jenže pocit identity není totéž co tvoje existence a nemusí být pořád stejně silný."
   },
   {
     "id": "ref_5295",
@@ -45089,7 +45157,8 @@
     "text": "To, že se teď cítíš prázdný, neznamená, že v tobě nic není. Možná jen právě nemáš přístup k tomu, co v tobě obvykle žije.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že se teď cítíš prázdná, neznamená, že v tobě nic není. Možná jen právě nemáš přístup k tomu, co v tobě obvykle žije."
   },
   {
     "id": "ref_5297",
@@ -45105,7 +45174,8 @@
     "text": "Možná ses nevymazal. Možná se tvoje psychika stáhla do režimu, ve kterém toho cítíš co nejmíň, protože toho na tebe bylo příliš. Nemusí to tak být vždycky, ale stojí za to tuhle možnost připustit.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses nevymazala. Možná se tvoje psychika stáhla do režimu, ve kterém toho cítíš co nejmíň, protože toho na tebe bylo příliš. Nemusí to tak být vždycky, ale stojí za to tuhle možnost připustit."
   },
   {
     "id": "ref_5333",
@@ -45129,7 +45199,8 @@
     "text": "Buddhistická perspektiva nabízí zvláštní obrat: možná tě děsí, že nenacházíš pevné já, které bys mohl uchopit. Jenže člověk nemusí být neměnná věc; jsme také proud prožívání, který se neustále proměňuje.",
     "tier": "free",
     "sort_order": 41,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Buddhistická perspektiva nabízí zvláštní obrat: možná tě děsí, že nenacházíš pevné já, které bys mohla uchopit. Jenže člověk nemusí být neměnná věc; jsme také proud prožívání, který se neustále proměňuje."
   },
   {
     "id": "ref_5338",
@@ -45277,7 +45348,8 @@
     "text": "Smysl nemusí být velkolepý. Někdy ho najdeš v člověku, kterému na tobě záleží, v něčem, co vytváříš, ve chvíli krásy nebo v obyčejné zvědavosti, co bude dál.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Smysl nemusí být velkolepá. Někdy ho najdeš v člověku, kterému na tobě záleží, v něčem, co vytváříš, ve chvíli krásy nebo v obyčejné zvědavosti, co bude dál."
   },
   {
     "id": "ref_5353",
@@ -45285,7 +45357,8 @@
     "text": "Tvoje existence nemusí mít žádnou zvláštní funkci. Nejsi šroubovák ani pracovní pozice. Nemusíš mít úkol, který máš splnit, abys měl právo být tady.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje existence nemusí mít žádnou zvláštní funkci. Nejsi šroubovák ani pracovní pozice. Nemusíš mít úkol, který máš splnit, abys měla právo být tady."
   },
   {
     "id": "ref_5357",
@@ -45301,7 +45374,8 @@
     "text": "I den, ve kterém se nestalo nic velkého, může mít hodnotu. Nemusíš pořád někam směřovat, abys měl důvod být na světě.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I den, ve kterém se nestalo nic velkého, může mít hodnotu. Nemusíš pořád někam směřovat, abys měla důvod být na světě."
   },
   {
     "id": "ref_5359",
@@ -45317,7 +45391,8 @@
     "text": "Možná ses kdysi naučil, že život má smysl jen tehdy, když někam vede, něco dokazuje nebo přináší výsledek. Ale tvoje existence nemusí splnit žádnou podmínku, aby měla hodnotu.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že život má smysl jen tehdy, když někam vede, něco dokazuje nebo přináší výsledek. Ale tvoje existence nemusí splnit žádnou podmínku, aby měla hodnotu."
   },
   {
     "id": "ref_5362",
@@ -45381,7 +45456,8 @@
     "text": "Možná tě netrápí jen prázdnota, ale také představa, že bys ji měl co nejrychleji odstranit a najít konečnou odpověď. Co kdybys na chvíli nemusel nic vyřešit a dovolil si jen prožívat to, co právě je?",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná tě netrápí jen prázdnota, ale také představa, že bys ji měla co nejrychleji odstranit a najít konečnou odpověď. Co kdybys na chvíli nemusela nic vyřešit a dovolila si jen prožívat to, co právě je?"
   },
   {
     "id": "ref_5370",
@@ -45445,7 +45521,8 @@
     "text": "Nemusíš čekat, až znovu ucítíš smysl, abys mohl začít žít. Někdy uděláš první krok, něco zažiješ a pocit smyslu se dostaví až potom.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš čekat, až znovu ucítíš smysl, abys mohla začít žít. Někdy uděláš první krok, něco zažiješ a pocit smyslu se dostaví až potom."
   },
   {
     "id": "ref_5344",
@@ -45634,7 +45711,8 @@
     "text": "Tvoje motivace není morální kompas. Když v tobě právě nevzniká dost chuti a energie k akci, neznamená to, že jsi neschopný. Možná ti teď nic nenabízí dost přesvědčivý důvod vynaložit úsilí.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje motivace není morální kompas. Když v tobě právě nevzniká dost chuti a energie k akci, neznamená to, že jsi neschopná. Možná ti teď nic nenabízí dost přesvědčivý důvod vynaložit úsilí."
   },
   {
     "id": "ref_5398",
@@ -45650,7 +45728,8 @@
     "text": "Slyším tu část, která říká: „Stejně mě nic nebaví, tak proč se snažit.“ Nemusíš ji vyhánět. Můžeš být chvíli zvědavý na to, před čím tě tohle vypnutí chrání.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Slyším tu část, která říká: „Stejně mě nic nebaví, tak proč se snažit.“ Nemusíš ji vyhánět. Můžeš být chvíli zvědavá na to, před čím tě tohle vypnutí chrání."
   },
   {
     "id": "ref_5402",
@@ -45658,7 +45737,8 @@
     "text": "Tohle období nemusí být porucha tvého života. Může to být hluché místo mezi tím, co už tě přestalo živit, a tím, co jsi ještě neobjevil.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tohle období nemusí být porucha tvého života. Může to být hluché místo mezi tím, co už tě přestalo živit, a tím, co jsi ještě neobjevila."
   },
   {
     "id": "ref_5403",
@@ -45674,7 +45754,8 @@
     "text": "Kdyby tě někdo, kdo tě má rád, viděl takhle vypnutého, nejspíš by neřekl: „Tak se sakra snaž.“ Spíš by chtěl vědět, co tě unavilo, co ti schází a jestli někde pod tím vším ještě něco maličko chceš.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě někdo, kdo tě má rád, viděl takhle vypnutou, nejspíš by neřekl: „Tak se sakra snaž.“ Spíš by chtěl vědět, co tě unavilo, co ti schází a jestli někde pod tím vším ještě něco maličko chceš."
   },
   {
     "id": "ref_5405",
@@ -45698,7 +45779,8 @@
     "text": "Tvůj budoucí já tě možná nebude soudit za den, kdy ses k ničemu nemohl rozhoupat. Spíš ocení chvíle, kdy ses navzdory prázdné nádrži vydal o pár metrů směrem k něčemu živému.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvůj budoucí já tě možná nebude soudit za den, kdy ses k ničemu nemohla rozhoupat. Spíš ocení chvíle, kdy ses navzdory prázdné nádrži vydala o pár metrů směrem k něčemu živému."
   },
   {
     "id": "ref_5408",
@@ -45706,7 +45788,8 @@
     "text": "Teď po sobě nemusíš chtít, abys miloval život. Stačí mu na chvíli nechat otevřené dveře a dát mu šanci, aby tě něčím překvapil.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Teď po sobě nemusíš chtít, abys milovala život. Stačí mu na chvíli nechat otevřené dveře a dát mu šanci, aby tě něčím překvapil."
   },
   {
     "id": "ref_5409",
@@ -45714,7 +45797,8 @@
     "text": "Kdyby ses měl podívat na svůj život s vědomím, že tvůj čas není nekonečný, možná by ses přestal ptát, k čemu máš dost motivace, a začal se ptát, čemu chceš věnovat svůj čas. To jsou překvapivě odlišné otázky.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses měl podívat na svůj život s vědomím, že tvůj čas není nekonečný, možná by ses přestal ptát, k čemu máš dost motivace, a začala se ptát, čemu chceš věnovat svůj čas. To jsou překvapivě odlišné otázky."
   },
   {
     "id": "ref_5412",
@@ -45770,7 +45854,8 @@
     "text": "Možná nepotřebuješ další cíl. Možná potřebuješ chvíli prostoru, ve kterém po tobě nikdo — ani ty sám — nic nechce.",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nepotřebuješ další cíl. Možná potřebuješ chvíli prostoru, ve kterém po tobě nikdo — ani ty sama — nic nechce."
   },
   {
     "id": "ref_5388",
