@@ -687,7 +687,7 @@ Karta v oblíbených vypadá stejně jako ve své sekci (`kind` v `FAV_VIEW` mus
 ## Novinky 24.–25. 11. 2026 (souhrn, podrobně v CLAUDE.md)
 
 - **Úvodní obrazovka v2** (`CONSENT_VER=2`): zhuštěný text na jednu obrazovku (`consentHtml`, plné znění `disclaimerHtml` v O appce) a povinná volba oslovení **Muž / Žena** (`USER.profile.gender`; změna v Nastavení → Oslovení).
-- **Oslovení v obsahu** (`applyGender`): žena → hlášky a 6 názvů bolístek z `text_f`; Otázky se rozepisují samy („věřil(a)“, „sám / sama“). Triplet, věty pod strachy a Inspirace `text_f` zatím nemají (projekt Ženské verze, povinně před V1).
+- **Oslovení v obsahu** (`applyGender`): žena → triplet, věty pod strachy, hlášky a názvy bolístek z `text_f` (kompletní od 27. 11. 2026, `text_f` jen kde se liší; ruční edit v adminu má přednost); Otázky a deník se rozepisují samy („věřil(a)“, „sám / sama“). Inspirace (citáty autorů) vědomě beze změny.
 - **Brána před hlubokými cvičeními** (`DEEP_EX` = ex_0064, ex_0065): místo obsahu karta přes celou stránku — sami jen 3–5 z 10, co sami ne, checkbox, nebo „Raději něco lehčího ›“. Při každém otevření.
 - **Návrat po skoku do jiné sekce** (`MC.cross`, zásobník `RET`): návod z Cvičení / Moje cesty / O appce, „Otevřít První pomoc“, „Oddíl ›“ z cvičení, lehčí cvičení — Zpět (gesto i tlačítko „← Zpět“) vede tam, odkud člověk přišel, i se scrollem.
 - **Návodné karty** jednou za sekci: Otázky („Otázky k zamyšlení“), Inspirace („Jak číst“), nad Cvičeními „Jak cvičit“ (`TUTOR_SEC`); statická šedá ruka se šipkou doleva místo animovaného palce. Kvrdlání první karty při každém vstupu.
