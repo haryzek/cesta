@@ -22864,7 +22864,8 @@
     "tier": "free",
     "sort_order": 2,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys dělala jinak, kdybys nemusela věřit, že věci dopadnou dobře, ale dokázala připustit, že zatím nevíš, jak dopadnou?"
   },
   {
     "id": "refq_2751",
@@ -22873,7 +22874,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby ses na svůj pesimistický pohled nepodíval jako na realitu, ale jen jako na jednu z možných hypotéz, čeho dalšího by sis všimla?"
   },
   {
     "id": "refq_2752",
@@ -22891,7 +22893,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V jakých chvílích vidíš budoucnost nejčerněji? Když jsi unavená, osamělá, pod tlakem, po neúspěchu, nebo v úplně jiných situacích?"
   },
   {
     "id": "refq_2754",
@@ -22909,7 +22912,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy ses naučila, že je bezpečnější od života nic moc dobrého neočekávat?"
   },
   {
     "id": "refq_2756",
@@ -22918,7 +22922,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys riskovala, kdyby sis dovolila připustit, že něco může dopadnout dobře?"
   },
   {
     "id": "refq_2757",
@@ -23155,7 +23160,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys svou otrávenost nemusela hodnotit ani napravovat, co by ti možná chtěla říct?"
   },
   {
     "id": "refq_2786",
@@ -23173,7 +23179,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Na koho nebo na co jsi možná ve skutečnosti naštvaná, když máš pocit, že tě štvou všichni?"
   },
   {
     "id": "refq_2789",
@@ -23182,7 +23189,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V jakých prostředích, činnostech nebo společenských rolích býváš otrávená nejčastěji? Co mají tyhle situace společného?"
   },
   {
     "id": "refq_2788",
@@ -23394,7 +23402,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co kdyby tvoje beznaděj nevypovídala ani tak o budoucnosti jako o tom, jak moc jsi právě teď vyčerpaná?"
   },
   {
     "id": "refq_2814",
@@ -23403,7 +23412,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jaký nejmenší krok bys mohla udělat, aniž bys k němu potřebovala naději, motivaci nebo jistotu, že bude fungovat?"
   },
   {
     "id": "refq_2815",
@@ -23430,7 +23440,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys dnes nemusela rozhodovat, jestli ještě existuje naděje, a mohla tenhle závěr o měsíc odložit, co by se pro tebe změnilo?"
   },
   {
     "id": "refq_2818",
@@ -23675,7 +23686,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně se obáváš, že by se stalo, kdybys někomu ukázala o trochu víc toho, co skutečně cítíš?"
   },
   {
     "id": "refq_2849",
@@ -23693,7 +23705,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys svoji uzavřenost nevnímala jako vlastnost, ale jako reakci, na co by mohla být reakcí?"
   },
   {
     "id": "refq_2851",
@@ -23702,7 +23715,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Dokážeš rozlišit chvíle, kdy někoho nechceš pustit blíž, od těch, kdy bys chtěla, ale nevíš, jak to udělat bezpečně?"
   },
   {
     "id": "refq_2852",
@@ -23903,7 +23917,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co přesně se bojíš, že by se stalo, kdybys otevřeně řekla, co si myslíš nebo cítíš?"
   },
   {
     "id": "refq_2876",
@@ -23930,7 +23945,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys chtěla říct, kdybys nemusela mít strach, že se druhý urazí, rozzlobí nebo tě odmítne?"
   },
   {
     "id": "refq_2879",
@@ -23957,7 +23973,8 @@
     "tier": "free",
     "sort_order": 7,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "V kolika letech ses začala učit, že je bezpečnější mlčet, ustoupit nebo si nechat svůj názor pro sebe než se otevřeně projevit?"
   },
   {
     "id": "refq_2882",
@@ -24159,7 +24176,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdy je pro tebe mlčení příjemnou a svobodnou volbou a kdy máš pocit, že bys chtěla něco říct, ale nedokážeš to?"
   },
   {
     "id": "refq_2907",
@@ -24204,7 +24222,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdyby cílem nebylo stát se hovornější, ale svobodnější, ve kterých konkrétních chvílích by sis chtěla dovolit promluvit?"
   },
   {
     "id": "refq_2912",
@@ -24423,7 +24442,8 @@
     "tier": "free",
     "sort_order": 1,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Když se od někoho odtáhneš, co se v tobě odehrálo těsně předtím, než ses začala vzdalovat?"
   },
   {
     "id": "refq_2939",
@@ -24450,7 +24470,8 @@
     "tier": "free",
     "sort_order": 4,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co se skrývá pod tvou odtažitostí? Jaké pocity by se mohly objevit, kdybys na chvíli polevila?"
   },
   {
     "id": "refq_2942",
@@ -24468,7 +24489,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co od druhého člověka potřebuješ, aby sis vedle něj mohla dovolit být o něco otevřenější?"
   },
   {
     "id": "refq_2944",
@@ -24486,7 +24508,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co by se podle tebe mohlo stát, kdybys místo odstupu zůstala ještě chvíli skutečně v kontaktu?"
   },
   {
     "id": "refq_2946",
@@ -24747,7 +24770,8 @@
     "tier": "free",
     "sort_order": 5,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Podle čeho poznáš, že už jsi o nějakém problému přemýšlela dost?"
   },
   {
     "id": "refq_2978",
@@ -24756,7 +24780,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys možná začala cítit, kdybys na chvíli přestala všechno vysvětlovat a rozebírat?"
   },
   {
     "id": "refq_2979",
@@ -24774,7 +24799,8 @@
     "tier": "free",
     "sort_order": 8,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys v těžké chvíli potřebovala slyšet, kdybys k sobě přistupovala spíš jako laskavá přítelkyně než jako analytička, která musí všechno pochopit?"
   },
   {
     "id": "refq_2981",
@@ -25052,7 +25078,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Kdybys svou lhostejnost na chvíli neposuzovala a jen ji vnímal v těle, cítila bys spíš klid a uvolnění, nebo prázdno, ztuhnutí, únavu či odpojení?"
   },
   {
     "id": "refq_3015",
@@ -25273,7 +25300,8 @@
     "tier": "free",
     "sort_order": 3,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Jak se tvůj chlad mění podle toho, jestli jsi odpočatá nebo vyčerpaná, sama nebo s někým, v bezpečí nebo pod tlakem?"
   },
   {
     "id": "refq_3043",
@@ -25300,7 +25328,8 @@
     "tier": "free",
     "sort_order": 6,
     "added_at": "2026-10-16",
-    "approved": "2026-11-12"
+    "approved": "2026-11-12",
+    "text_f": "Co bys možná cítila, kdybys na chvíli odložila svůj obvyklý odstup, otupělost nebo zatvrzelost?"
   },
   {
     "id": "refq_3046",
