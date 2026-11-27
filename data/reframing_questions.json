@@ -10084,7 +10084,8 @@
     "text": "Jak poznáš rozdíl mezi tím, že jsi udělal něco špatného, a přesvědčením, že jsi špatný člověk?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak poznáš rozdíl mezi tím, že jsi udělala něco špatného, a přesvědčením, že jsi špatný člověk?"
   },
   {
     "id": "refq_1151",
@@ -10092,7 +10093,8 @@
     "text": "Jsou lidé, vedle kterých se nenávidíš výrazně víc nebo míň? Co ti ten rozdíl říká o vlivu vztahů na to, jak sám sebe vnímáš?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jsou lidé, vedle kterých se nenávidíš výrazně víc nebo míň? Co ti ten rozdíl říká o vlivu vztahů na to, jak sama sebe vnímáš?"
   },
   {
     "id": "refq_1152",
@@ -10116,7 +10118,8 @@
     "text": "Kdyby ses mohl dál učit ze svých chyb a nést za ně odpovědnost, ale nemusel se kvůli nim nenávidět, o co důležitého bys přišel?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses mohla dál učit ze svých chyb a nést za ně odpovědnost, ale nemusela se kvůli nim nenávidět, o co důležitého bys přišla?"
   },
   {
     "id": "refq_1155",
@@ -10148,7 +10151,8 @@
     "text": "Co by se změnilo, kdybys místo „jsem špatný“ dokázal říct „udělal jsem něco, s čím nejsem spokojený“?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys místo „jsem špatná“ dokázala říct „udělala jsem něco, s čím nejsem spokojená“?"
   },
   {
     "id": "refq_1159",
@@ -10188,7 +10192,8 @@
     "text": "Co by se v tvém životě změnilo, kdybys se sebou zacházel stejně ohleduplně jako s někým, koho miluješ? Co bys tím získal a čeho by ses možná musel vzdát?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se v tvém životě změnilo, kdybys se sebou zacházela stejně ohleduplně jako s někým, koho miluješ? Co bys tím získala a čeho by ses možná musela vzdát?"
   },
   {
     "id": "refq_1164",
@@ -10196,7 +10201,8 @@
     "text": "V jakých situacích se tvoje sebenenávist objevuje nejčastěji – po odmítnutí, kritice, selhání, konfliktu, srovnávání s druhými nebo když máš pocit, že jsi někoho zklamal? Co mají tyto chvíle společného?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "V jakých situacích se tvoje sebenenávist objevuje nejčastěji – po odmítnutí, kritice, selhání, konfliktu, srovnávání s druhými nebo když máš pocit, že jsi někoho zklamala? Co mají tyto chvíle společného?"
   },
   {
     "id": "refq_1165",
@@ -10204,7 +10210,8 @@
     "text": "Jakou cenu platíš za přesvědčení, že když na sebe budeš dost tvrdý, staneš se lepším člověkem?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jakou cenu platíš za přesvědčení, že když na sebe budeš dost tvrdá, staneš se lepším člověkem?"
   },
   {
     "id": "refq_1166",
@@ -10244,7 +10251,8 @@
     "text": "Až se jednou ohlédneš za celým svým životem, čeho bys mohl litovat víc – svých nedokonalostí, nebo času, který jsi strávil nenávistí k sobě?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Až se jednou ohlédneš za celým svým životem, čeho bys mohla litovat víc – svých nedokonalostí, nebo času, který jsi strávila nenávistí k sobě?"
   },
   {
     "id": "refq_1171",
@@ -10252,7 +10260,8 @@
     "text": "Co bys dnes udělal jinak, kdybys alespoň na chvíli připustil, že si možná nezasloužíš trest, ale pochopení?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys dnes udělala jinak, kdybys alespoň na chvíli připustila, že si možná nezasloužíš trest, ale pochopení?"
   },
   {
     "id": "refq_1172",
@@ -10339,7 +10348,8 @@
     "text": "Kdybys nemusel najít nejlepší možné řešení, ale jen takové, které je pro tuto chvíli dost dobré, co by se změnilo?",
     "tier": "free",
     "sort_order": 9,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nemusela najít nejlepší možné řešení, ale jen takové, které je pro tuto chvíli dost dobré, co by se změnilo?"
   },
   {
     "id": "refq_1183",
@@ -10347,7 +10357,8 @@
     "text": "Kdybys věděl, že požádat o pomoc není známkou selhání, na koho by ses obrátil a o co konkrétně bys ho požádal?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věděla, že požádat o pomoc není známkou selhání, na koho by ses obrátila a o co konkrétně bys ho požádala?"
   },
   {
     "id": "refq_1184",
@@ -10355,7 +10366,8 @@
     "text": "Stává se ti někdy, že vlastně víš, co bys chtěl udělat, ale bojíš se následků svého rozhodnutí?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Stává se ti někdy, že vlastně víš, co bys chtěla udělat, ale bojíš se následků svého rozhodnutí?"
   },
   {
     "id": "refq_1185",
@@ -10371,7 +10383,8 @@
     "text": "Kdybys teď nedokázal říct, kam chceš směřovat, dokázal bys alespoň pojmenovat, co už dál nechceš?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys teď nedokázala říct, kam chceš směřovat, dokázala bys alespoň pojmenovat, co už dál nechceš?"
   },
   {
     "id": "refq_1187",
@@ -10387,7 +10400,8 @@
     "text": "Čeho se nejvíc bojíš, když máš udělat rozhodnutí, které se může ukázat jako chybné? A jaké možnosti nápravy bys měl?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čeho se nejvíc bojíš, když máš udělat rozhodnutí, které se může ukázat jako chybné? A jaké možnosti nápravy bys měla?"
   },
   {
     "id": "refq_1189",
@@ -10403,7 +10417,8 @@
     "text": "Když se cítíš bezradný, připomíná ti to někdy starý, důvěrně známý pocit, že jsi na všechno sám?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš bezradná, připomíná ti to někdy starý, důvěrně známý pocit, že jsi na všechno sama?"
   },
   {
     "id": "refq_1191",
@@ -10411,7 +10426,8 @@
     "text": "Co bys potřeboval slyšet od člověka, kterému opravdu důvěřuješ, aby ses teď cítil alespoň o trochu bezpečněji?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys potřebovala slyšet od člověka, kterému opravdu důvěřuješ, aby ses teď cítila alespoň o trochu bezpečněji?"
   },
   {
     "id": "refq_1192",
@@ -10419,7 +10435,8 @@
     "text": "Jak bys poznal rozdíl mezi tím, co ve své situaci můžeš ovlivnit, a tím, co zkrátka nemáš ve své moci?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak bys poznala rozdíl mezi tím, co ve své situaci můžeš ovlivnit, a tím, co zkrátka nemáš ve své moci?"
   },
   {
     "id": "refq_1193",
@@ -10427,7 +10444,8 @@
     "text": "Kde ses naučil, že schopný dospělý člověk by si měl vždycky vědět rady?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kde ses naučila, že schopný dospělý člověk by si měl vždycky vědět rady?"
   },
   {
     "id": "refq_1194",
@@ -10443,7 +10461,8 @@
     "text": "Co by ses odvážil udělat, kdybys na chvíli připustil, že nejsi ztracený, ale jen zatím neznáš cestu?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by ses odvážila udělat, kdybys na chvíli připustila, že nejsi ztracená, ale jen zatím neznáš cestu?"
   },
   {
     "id": "refq_1196",
@@ -10451,7 +10470,8 @@
     "text": "Kdyby ses za rok ohlédl na dnešní situaci, za jaký malý krok bys byl svému dnešnímu já vděčný?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses za rok ohlédla na dnešní situaci, za jaký malý krok bys byla svému dnešnímu já vděčná?"
   },
   {
     "id": "refq_1197",
@@ -10459,7 +10479,8 @@
     "text": "Existují oblasti života, ve kterých se téměř nikdy necítíš bezradný? Co je tam jinak – v tobě, v okolnostech nebo v lidech kolem tebe?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Existují oblasti života, ve kterých se téměř nikdy necítíš bezradná? Co je tam jinak – v tobě, v okolnostech nebo v lidech kolem tebe?"
   },
   {
     "id": "refq_1198",
@@ -10475,7 +10496,8 @@
     "text": "Když se cítíš bezradný, může se za tím někdy skrývat těžší pocit – třeba strach z chyby, vina, osamělost, obava z konfliktu nebo ztráty?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš bezradná, může se za tím někdy skrývat těžší pocit – třeba strach z chyby, vina, osamělost, obava z konfliktu nebo ztráty?"
   },
   {
     "id": "refq_1200",
@@ -10483,7 +10505,8 @@
     "text": "Co se v tobě odehrává ve chvíli, kdy máš rozhodnout sám za sebe, ale někdo jiný od tebe očekává něco jiného?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co se v tobě odehrává ve chvíli, kdy máš rozhodnout sama za sebe, ale někdo jiný od tebe očekává něco jiného?"
   },
   {
     "id": "refq_1201",
@@ -10491,7 +10514,8 @@
     "text": "Když ses jako dítě cítil ztracený nebo bezradný, kdo ti pomáhal se zorientovat? A co ti tehdy případně chybělo?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když ses jako dítě cítila ztracená nebo bezradná, kdo ti pomáhal se zorientovat? A co ti tehdy případně chybělo?"
   },
   {
     "id": "refq_1176",
@@ -10499,7 +10523,8 @@
     "text": "Když se cítíš bezradný, co bys v tu chvíli nejvíc potřeboval – místo toho, abys po sobě chtěl okamžité řešení?",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš bezradná, co bys v tu chvíli nejvíc potřebovala – místo toho, abys po sobě chtěla okamžité řešení?"
   },
   {
     "id": "refq_1178",
@@ -10507,7 +10532,8 @@
     "text": "Co kdybys nemusel znát celou cestu dopředu, ale stačilo by ti vědět, kudy udělat první krok?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co kdybys nemusela znát celou cestu dopředu, ale stačilo by ti vědět, kudy udělat první krok?"
   },
   {
     "id": "refq_1202",
@@ -10515,7 +10541,8 @@
     "text": "Jak poznáš na svém těle okamžik, kdy se obyčejné „zatím nevím“ mění v zahlcující pocit „jsem úplně ztracený“? Co by ti v tu chvíli mohlo pomoct?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak poznáš na svém těle okamžik, kdy se obyčejné „zatím nevím“ mění v zahlcující pocit „jsem úplně ztracená“? Co by ti v tu chvíli mohlo pomoct?"
   },
   {
     "id": "refq_1203",
@@ -10523,7 +10550,8 @@
     "text": "Stává se, že čekáš, až si druzí sami všimnou tvé bezradnosti, místo abys jim řekl, s čím konkrétně potřebuješ pomoct?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Stává se, že čekáš, až si druzí sami všimnou tvé bezradnosti, místo abys jim řekla, s čím konkrétně potřebuješ pomoct?"
   },
   {
     "id": "refq_1204",
@@ -10539,7 +10567,8 @@
     "text": "Kdyby ses nemusel bezradnosti úplně zbavit, ale mohl se postupně naučit žít a rozhodovat i s určitou mírou nejistoty, co bys dělal jinak?",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses nemusela bezradnosti úplně zbavit, ale mohla se postupně naučit žít a rozhodovat i s určitou mírou nejistoty, co bys dělala jinak?"
   },
   {
     "id": "refq_1206",
@@ -10640,7 +10669,8 @@
     "text": "Kdybys věděl, že smíš udělat chybu a nikdo tě za ni nebude kritizovat, v čem by ses odvážil rozhodovat sám?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys věděla, že smíš udělat chybu a nikdo tě za ni nebude kritizovat, v čem by ses odvážila rozhodovat sama?"
   },
   {
     "id": "refq_1218",
@@ -10648,7 +10678,8 @@
     "text": "Které vztahy tvoji samostatnost podporují a ve kterých naopak zůstáváš nejistý, závislý nebo snadno ovlivnitelný?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které vztahy tvoji samostatnost podporují a ve kterých naopak zůstáváš nejistá, závislá nebo snadno ovlivnitelná?"
   },
   {
     "id": "refq_1219",
@@ -10664,7 +10695,8 @@
     "text": "Co bys mohl příště zkusit udělat podle vlastního úsudku, i kdyby sis nebyl úplně jistý, že to zvládneš?",
     "tier": "free",
     "sort_order": 14,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys mohla příště zkusit udělat podle vlastního úsudku, i kdyby sis nebyla úplně jistá, že to zvládneš?"
   },
   {
     "id": "refq_1221",
@@ -10672,7 +10704,8 @@
     "text": "Co se děje v tvém těle těsně předtím, než začneš hledat radu nebo vedení? Co bys prožíval, kdybys s tím pocitem chvíli zůstal?",
     "tier": "free",
     "sort_order": 15,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co se děje v tvém těle těsně předtím, než začneš hledat radu nebo vedení? Co bys prožívala, kdybys s tím pocitem chvíli zůstal?"
   },
   {
     "id": "refq_1222",
@@ -10680,7 +10713,8 @@
     "text": "Jaké schopnosti ses kdysi bál používat bez pomoci a dnes je používáš úplně samozřejmě?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaké schopnosti ses kdysi bála používat bez pomoci a dnes je používáš úplně samozřejmě?"
   },
   {
     "id": "refq_1223",
@@ -10696,7 +10730,8 @@
     "text": "Může se někdy stát, že požádáš o pomoc tak rychle, až si nedáš příležitost zjistit, co bys dokázal sám?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Může se někdy stát, že požádáš o pomoc tak rychle, až si nedáš příležitost zjistit, co bys dokázala sama?"
   },
   {
     "id": "refq_1225",
@@ -10704,7 +10739,8 @@
     "text": "Když někdo něco udělá za tebe, přestože bys to možná zvládl sám, cítíš jen úlevu a vděčnost, nebo také bezmoc, méněcennost či pochybnosti o sobě?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když někdo něco udělá za tebe, přestože bys to možná zvládla sama, cítíš jen úlevu a vděčnost, nebo také bezmoc, méněcennost či pochybnosti o sobě?"
   },
   {
     "id": "refq_1226",
@@ -10712,7 +10748,8 @@
     "text": "Připomíná ti pocit, že něco sám nezvládneš, nějakou zkušenost z dřívějšího období života?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Připomíná ti pocit, že něco sama nezvládneš, nějakou zkušenost z dřívějšího období života?"
   },
   {
     "id": "refq_1227",
@@ -10720,7 +10757,8 @@
     "text": "Jak se v minulosti zacházelo s tvými pokusy rozhodovat se samostatně? Dostával jsi prostor zkoušet věci po svém, nebo tě někdo často opravoval, kritizoval či přebíral iniciativu?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak se v minulosti zacházelo s tvými pokusy rozhodovat se samostatně? Dostávala jsi prostor zkoušet věci po svém, nebo tě někdo často opravoval, kritizoval či přebíral iniciativu?"
   },
   {
     "id": "refq_1228",
@@ -10728,7 +10766,8 @@
     "text": "Jak reagují druzí, když začneš být samostatnější a méně závislý na jejich vedení? Jak jejich reakce ovlivňují tvoji odvahu pokračovat?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak reagují druzí, když začneš být samostatnější a méně závislá na jejich vedení? Jak jejich reakce ovlivňují tvoji odvahu pokračovat?"
   },
   {
     "id": "refq_1229",
@@ -10744,7 +10783,8 @@
     "text": "Co by se ve tvých vztazích změnilo, kdybys méně potřeboval souhlas, radu nebo vedení druhých? Je na té představě něco, co tě zároveň láká i děsí?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se ve tvých vztazích změnilo, kdybys méně potřebovala souhlas, radu nebo vedení druhých? Je na té představě něco, co tě zároveň láká i děsí?"
   },
   {
     "id": "refq_1231",
@@ -10752,7 +10792,8 @@
     "text": "Existují situace, kdy něco běžně zvládáš sám, ale v přítomnosti určitého člověka začneš o svých schopnostech pochybovat?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Existují situace, kdy něco běžně zvládáš sama, ale v přítomnosti určitého člověka začneš o svých schopnostech pochybovat?"
   },
   {
     "id": "refq_1232",
@@ -10760,7 +10801,8 @@
     "text": "Kdybys člověku, kterého máš rád, přisoudil přesně stejné schopnosti, jaké máš ty, považoval bys ho za nesamostatného?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys člověku, kterého máš ráda, přisoudila přesně stejné schopnosti, jaké máš ty, považovala bys ho za nesamostatnou?"
   },
   {
     "id": "refq_1233",
@@ -10776,7 +10818,8 @@
     "text": "Kdybys měl měsíc každý den udělat jednu malou věc podle vlastního úsudku, aniž bys komukoli dokazoval svou samostatnost, co by sis vybral?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys měla měsíc každý den udělat jednu malou věc podle vlastního úsudku, aniž bys komukoli dokazovala svou samostatnost, co by sis vybrala?"
   },
   {
     "id": "refq_1211",
@@ -10792,7 +10835,8 @@
     "text": "Kdyby ses za rok ohlédl a zjistil, že už neměříš svou samostatnost počtem věcí, které zvládneš bez pomoci, ale svobodou rozhodovat se podle sebe, co by se v tvém životě změnilo?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses za rok ohlédla a zjistila, že už neměříš svou samostatnost počtem věcí, které zvládneš bez pomoci, ale svobodou rozhodovat se podle sebe, co by se v tvém životě změnilo?"
   },
   {
     "id": "refq_1236",
@@ -10909,7 +10953,8 @@
     "text": "Kdy ses poprvé začal cítit jako někdo nezralý, naivní nebo dětinský? Co tě tehdy vedlo k tomu, že ses tak začal vnímat?",
     "tier": "free",
     "sort_order": 9,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses poprvé začala cítit jako někdo nezralý, naivní nebo dětinský? Co tě tehdy vedlo k tomu, že ses tak začala vnímat?"
   },
   {
     "id": "refq_1249",
@@ -10925,7 +10970,8 @@
     "text": "Co nejhoršího by pro tebe znamenalo, kdyby někdo zjistil, že jsi v něčem nezkušený nebo naivní?",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co nejhoršího by pro tebe znamenalo, kdyby někdo zjistil, že jsi v něčem nezkušená nebo naivní?"
   },
   {
     "id": "refq_1251",
@@ -10973,7 +11019,8 @@
     "text": "Co bys mohl změnit ve způsobu, jakým druhým důvěřuješ, abys zůstal otevřený, ale zároveň se dokázal lépe chránit?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys mohla změnit ve způsobu, jakým druhým důvěřuješ, abys zůstala otevřená, ale zároveň se dokázala lépe chránit?"
   },
   {
     "id": "refq_1257",
@@ -10989,7 +11036,8 @@
     "text": "Kdybys nemusel dokazovat, že jsi dospělý a všechno zvládneš, co by sis dovolil dělat jinak?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys nemusela dokazovat, že jsi dospělá a všechno zvládneš, co by sis dovolila dělat jinak?"
   },
   {
     "id": "refq_1259",
@@ -10997,7 +11045,8 @@
     "text": "Kdybys svou zralost posuzoval podle toho, jak napravuješ chyby, nastavuješ hranice a učíš se, místo podle toho, jestli vůbec chybuješ, jak by ses hodnotil?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys svou zralost posuzovala podle toho, jak napravuješ chyby, nastavuješ hranice a učíš se, místo podle toho, jestli vůbec chybuješ, jak by ses hodnotila?"
   },
   {
     "id": "refq_1260",
@@ -11005,7 +11054,8 @@
     "text": "Co bys potřeboval slyšet od někoho blízkého ve chvíli, kdy se cítíš nezralý nebo neschopný?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys potřebovala slyšet od někoho blízkého ve chvíli, kdy se cítíš nezralá nebo neschopná?"
   },
   {
     "id": "refq_1261",
@@ -11013,7 +11063,8 @@
     "text": "Když se cítíš jako malé dítě, co bys od sebe v tu chvíli potřeboval? Přísnost, povzbuzení, pochopení, ochranu, nebo něco jiného?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš jako malé dítě, co bys od sebe v tu chvíli potřebovala? Přísnost, povzbuzení, pochopení, ochranu, nebo něco jiného?"
   },
   {
     "id": "refq_1262",
@@ -11029,7 +11080,8 @@
     "text": "Co by se změnilo, kdybys přestal považovat schopnost všechno vědět, zvládat a předvídat za podmínku dospělosti?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys přestala považovat schopnost všechno vědět, zvládat a předvídat za podmínku dospělosti?"
   },
   {
     "id": "refq_1264",
@@ -11037,7 +11089,8 @@
     "text": "Co bys ztratil, kdybys v sobě úplně potlačil všechno, co považuješ za dětské? O jaké schopnosti, radosti nebo možnosti by ses připravil?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys ztratila, kdybys v sobě úplně potlačila všechno, co považuješ za dětské? O jaké schopnosti, radosti nebo možnosti by ses připravila?"
   },
   {
     "id": "refq_1265",
@@ -11045,7 +11098,8 @@
     "text": "Jak by vypadala důvěra, která není ani slepá, ani podezíravá? Podle čeho by ses rozhodoval, komu a nakolik věřit?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak by vypadala důvěra, která není ani slepá, ani podezíravá? Podle čeho by ses rozhodovala, komu a nakolik věřit?"
   },
   {
     "id": "refq_1266",
@@ -11053,7 +11107,8 @@
     "text": "Co ti brání přijmout, že můžeš být v některých věcech zkušený a zodpovědný, a přitom si zachovat dětskou hravost, otevřenost nebo schopnost žasnout?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co ti brání přijmout, že můžeš být v některých věcech zkušená a zodpovědná, a přitom si zachovat dětskou hravost, otevřenost nebo schopnost žasnout?"
   },
   {
     "id": "refq_1267",
@@ -11061,7 +11116,8 @@
     "text": "Když se cítíš nezralý, jak se to projevuje v tvém těle? Co se stane, když ten pocit chvíli jen pozoruješ, aniž by ses za něj hodnotil?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš nezralá, jak se to projevuje v tvém těle? Co se stane, když ten pocit chvíli jen pozoruješ, aniž by ses za něj hodnotila?"
   },
   {
     "id": "refq_1268",
@@ -11077,7 +11133,8 @@
     "text": "Kdybys stejnou chybu viděl u člověka, kterého považuješ za zralého, změnil bys kvůli ní svůj názor na něj?",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys stejnou chybu viděla u člověka, kterého považuješ za zralou, změnila bys kvůli ní svůj názor na něj?"
   },
   {
     "id": "refq_1270",
@@ -11101,7 +11158,8 @@
     "text": "Když sám sebe označíš za naivního dřív, než to udělá někdo jiný, před čím se tím možná snažíš ochránit?",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když sama sebe označíš za naivního dřív, než to udělá někdo jiný, před čím se tím možná snažíš ochránit?"
   },
   {
     "id": "refq_1273",
@@ -11109,7 +11167,8 @@
     "text": "Kdy ses naučil spojovat chyby, důvěřivost nebo potřebu pomoci s představou, že jsi pořád ještě dítě?",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses naučila spojovat chyby, důvěřivost nebo potřebu pomoci s představou, že jsi pořád ještě dítě?"
   },
   {
     "id": "refq_1274",
@@ -11117,7 +11176,8 @@
     "text": "Kolikrát ses označil za naivního jen proto, že jsi věřil někomu, kdo se později zachoval nepoctivě?",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolikrát ses označila za naivní jen proto, že jsi věřila někomu, kdo se později zachoval nepoctivě?"
   },
   {
     "id": "refq_1275",
@@ -11125,7 +11185,8 @@
     "text": "Kdybys za svou důvěřivost přestal sám sebe trestat, jak by ses mohl lépe chránit před lidmi, kteří ji zneužívají?",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys za svou důvěřivost přestala sama sebe trestat, jak by ses mohla lépe chránit před lidmi, kteří ji zneužívají?"
   },
   {
     "id": "refq_1276",
@@ -11133,7 +11194,8 @@
     "text": "Co by se změnilo, kdybys přestal svou zralost poměřovat s lidmi, kteří působí sebejistěji nebo zkušeněji než ty?",
     "tier": "free",
     "sort_order": 37,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys přestala svou zralost poměřovat s lidmi, kteří působí sebejistěji nebo zkušeněji než ty?"
   },
   {
     "id": "refq_1277",
@@ -11141,7 +11203,8 @@
     "text": "Jak se můžeš naučit přijímat pomoc nebo vedení druhých, aniž bys kvůli tomu ztrácel pocit vlastní dospělosti?",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jak se můžeš naučit přijímat pomoc nebo vedení druhých, aniž bys kvůli tomu ztrácela pocit vlastní dospělosti?"
   },
   {
     "id": "refq_1278",
@@ -11264,7 +11327,8 @@
     "text": "Co by sis vybral, kdybys věděl, že si své rozhodnutí později nebudeš vyčítat?",
     "tier": "free",
     "sort_order": 14,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by sis vybrala, kdybys věděla, že si své rozhodnutí později nebudeš vyčítat?"
   },
   {
     "id": "refq_1292",
@@ -11288,7 +11352,8 @@
     "text": "Co by se změnilo, kdybys nepotřeboval rozhodovat se bez pochybností, ale dokázal se rozhodnout i s nimi?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys nepotřebovala rozhodovat se bez pochybností, ale dokázala se rozhodnout i s nimi?"
   },
   {
     "id": "refq_1295",
@@ -11296,7 +11361,8 @@
     "text": "Jaký nejmenší krok bys mohl udělat, abys místo dalšího přemýšlení získal skutečnou zkušenost?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaký nejmenší krok bys mohla udělat, abys místo dalšího přemýšlení získala skutečnou zkušenost?"
   },
   {
     "id": "refq_1296",
@@ -11304,7 +11370,8 @@
     "text": "Kdyby ses na své rozhodnutí díval jako na experiment, a ne jako na něco definitivního, co bys udělal jinak?",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses na své rozhodnutí dívala jako na experiment, a ne jako na něco definitivního, co bys udělala jinak?"
   },
   {
     "id": "refq_1297",
@@ -11328,7 +11395,8 @@
     "text": "Kdy ses začal učit, že vlastnímu úsudku nemůžeš úplně důvěřovat? Co tě k tomu vedlo?",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses začala učit, že vlastnímu úsudku nemůžeš úplně důvěřovat? Co tě k tomu vedlo?"
   },
   {
     "id": "refq_1300",
@@ -11336,7 +11404,8 @@
     "text": "Co ses v minulosti naučil o chybách? Byly přirozenou součástí života, nebo za ně přicházela kritika, stud či odmítnutí?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co ses v minulosti naučila o chybách? Byly přirozenou součástí života, nebo za ně přicházela kritika, stud či odmítnutí?"
   },
   {
     "id": "refq_1301",
@@ -11344,7 +11413,8 @@
     "text": "Kdyby za tebou se stejným dilematem přišel někdo, koho máš rád, co bys mu dovolil, co sobě nedovoluješ?",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby za tebou se stejným dilematem přišel někdo, koho máš ráda, co bys mu dovolila, co sobě nedovoluješ?"
   },
   {
     "id": "refq_1302",
@@ -11352,7 +11422,8 @@
     "text": "Kolikrát už ses rozhodl dostatečně dobře, přestože ses předtím cítil stejně nejistě jako teď?",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kolikrát už ses rozhodla dostatečně dobře, přestože ses předtím cítila stejně nejistě jako teď?"
   },
   {
     "id": "refq_1303",
@@ -11376,7 +11447,8 @@
     "text": "Máš někdy pocit, že když se rozhodneš správně, měl bys také cítit jistotu a klid? Co pro tebe znamená, když pochybnosti přetrvávají?",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Máš někdy pocit, že když se rozhodneš správně, měla bys také cítit jistotu a klid? Co pro tebe znamená, když pochybnosti přetrvávají?"
   },
   {
     "id": "refq_1306",
@@ -11486,7 +11558,8 @@
     "text": "Co bys řekl někomu, koho máš rád, kdyby udělal přesně stejnou chybu jako ty? A proč bys měl sebe posuzovat jinak?",
     "tier": "free",
     "sort_order": 10,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys řekla někomu, koho máš ráda, kdyby udělal přesně stejnou chybu jako ty? A proč bys měla sebe posuzovat jinak?"
   },
   {
     "id": "refq_1320",
@@ -11494,7 +11567,8 @@
     "text": "Co by se změnilo, kdybys místo „Jsem dost schopný?“ začal častěji přemýšlet „Co se tady ještě potřebuju naučit?“",
     "tier": "free",
     "sort_order": 11,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys místo „Jsem dost schopná?“ začala častěji přemýšlet „Co se tady ještě potřebuju naučit?“"
   },
   {
     "id": "refq_1321",
@@ -11502,7 +11576,8 @@
     "text": "Kdy ses začal učit, že udělat chybu, něco nevědět nebo si nebýt jistý znamená, že s tebou není něco v pořádku?",
     "tier": "free",
     "sort_order": 12,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdy ses začala učit, že udělat chybu, něco nevědět nebo si nebýt jistá znamená, že s tebou není něco v pořádku?"
   },
   {
     "id": "refq_1322",
@@ -11510,7 +11585,8 @@
     "text": "Co vlastně potřebuješ ve chvíli, kdy se cítíš neschopný – povzbuzení, pomoc, čas, jasnější zadání, odpočinek, nebo něco úplně jiného?",
     "tier": "free",
     "sort_order": 13,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co vlastně potřebuješ ve chvíli, kdy se cítíš neschopná – povzbuzení, pomoc, čas, jasnější zadání, odpočinek, nebo něco úplně jiného?"
   },
   {
     "id": "refq_1323",
@@ -11534,7 +11610,8 @@
     "text": "Co je pro tebe na představě, že tě druzí budou považovat za neschopného, nejbolestivější – kritika, ztráta respektu, odmítnutí, stud, nebo něco jiného?",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co je pro tebe na představě, že tě druzí budou považovat za neschopnou, nejbolestivější – kritika, ztráta respektu, odmítnutí, stud, nebo něco jiného?"
   },
   {
     "id": "refq_1326",
@@ -11542,7 +11619,8 @@
     "text": "Jsou lidé, v jejichž přítomnosti si najednou připadáš méně schopný? Co se v tobě vedle nich mění?",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jsou lidé, v jejichž přítomnosti si najednou připadáš méně schopná? Co se v tobě vedle nich mění?"
   },
   {
     "id": "refq_1327",
@@ -11550,7 +11628,8 @@
     "text": "Kdo nebo co v tvém současném prostředí posiluje pocit, že nejsi dost schopný? Nakolik ten pocit souvisí s tebou a nakolik s podmínkami, ve kterých se nacházíš?",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdo nebo co v tvém současném prostředí posiluje pocit, že nejsi dost schopná? Nakolik ten pocit souvisí s tebou a nakolik s podmínkami, ve kterých se nacházíš?"
   },
   {
     "id": "refq_1328",
@@ -11566,7 +11645,8 @@
     "text": "Kdybys mohl být v něčem úplně obyčejně průměrný, co by sis konečně dovolil dělat s větší lehkostí nebo radostí?",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys mohla být v něčem úplně obyčejně průměrný, co by sis konečně dovolila dělat s větší lehkostí nebo radostí?"
   },
   {
     "id": "refq_1330",
@@ -11574,7 +11654,8 @@
     "text": "Čí hlas, tón nebo očekávání ti připomíná tvůj vnitřní kritik, když si připadáš neschopný? Nakolik s jeho hodnocením skutečně souhlasíš?",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Čí hlas, tón nebo očekávání ti připomíná tvůj vnitřní kritik, když si připadáš neschopná? Nakolik s jeho hodnocením skutečně souhlasíš?"
   },
   {
     "id": "refq_1331",
@@ -11590,7 +11671,8 @@
     "text": "Co bys dělal jinak, kdybys už nemusel nikomu dokazovat, že jsi schopný?",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co bys dělala jinak, kdybys už nemusela nikomu dokazovat, že jsi schopná?"
   },
   {
     "id": "refq_1333",
@@ -11614,7 +11696,8 @@
     "text": "Kdybys přestal považovat pocit neschopnosti za důkaz, že něco nezvládneš, co by sis dovolil vyzkoušet?",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys přestala považovat pocit neschopnosti za důkaz, že něco nezvládneš, co by sis dovolila vyzkoušet?"
   },
   {
     "id": "refq_1336",
@@ -11622,7 +11705,8 @@
     "text": "Co by se změnilo, kdybys připustil, že se někdy můžeš cítit neschopný, aniž by to znamenalo, že skutečně neschopný jsi?",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co by se změnilo, kdybys připustila, že se někdy můžeš cítit neschopná, aniž by to znamenalo, že skutečně neschopný jsi?"
   },
   {
     "id": "refq_1314",
@@ -11654,7 +11738,8 @@
     "text": "Které svoje hodnoty někdy odsouváš stranou, abys působil schopně – třeba zvědavost, odvahu, tvořivost, upřímnost nebo ochotu spolupracovat?",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Které svoje hodnoty někdy odsouváš stranou, abys působila schopně – třeba zvědavost, odvahu, tvořivost, upřímnost nebo ochotu spolupracovat?"
   },
   {
     "id": "refq_1340",
@@ -11662,7 +11747,8 @@
     "text": "Co kdyby tvoje pochybnosti o vlastních schopnostech někdy souvisely právě s tím, že už toho víš dost na to, abys dokázal vidět, jak jsou některé věci složité?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Co kdyby tvoje pochybnosti o vlastních schopnostech někdy souvisely právě s tím, že už toho víš dost na to, abys dokázala vidět, jak jsou některé věci složité?"
   },
   {
     "id": "refq_1341",
@@ -11670,7 +11756,8 @@
     "text": "Jaký malý krok bys mohl udělat už tento týden, i kdybys neměl jistotu, že ho zvládneš dobře?",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jaký malý krok bys mohla udělat už tento týden, i kdybys neměla jistotu, že ho zvládneš dobře?"
   },
   {
     "id": "refq_1342",

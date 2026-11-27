@@ -15587,7 +15587,8 @@
     "text": "Ať se ti dnes hlavou honí cokoli, pořád jsi člověk, se kterým stojí za to zacházet opatrně. Včetně chvílí, kdy tomu sám vůbec nevěříš.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ať se ti dnes hlavou honí cokoli, pořád jsi člověk, se kterým stojí za to zacházet opatrně. Včetně chvílí, kdy tomu sama vůbec nevěříš."
   },
   {
     "id": "ref_1852",
@@ -15595,7 +15596,8 @@
     "text": "Možná ses naučil zacházet se sebou tvrdě, protože tvrdost kdysi vypadala jako způsob, jak se napravit nebo ochránit. Ale nemusíš být svým vlastním trestem.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses naučila zacházet se sebou tvrdě, protože tvrdost kdysi vypadala jako způsob, jak se napravit nebo ochránit. Ale nemusíš být svým vlastním trestem."
   },
   {
     "id": "ref_1853",
@@ -15603,7 +15605,8 @@
     "text": "I to, co na sobě nejvíc odmítáš, má nějaký příběh. Než to odsoudíš, můžeš se zkusit zeptat, odkud se to vzalo a co jsi tehdy potřeboval.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I to, co na sobě nejvíc odmítáš, má nějaký příběh. Než to odsoudíš, můžeš se zkusit zeptat, odkud se to vzalo a co jsi tehdy potřebovala."
   },
   {
     "id": "ref_1854",
@@ -15611,7 +15614,8 @@
     "text": "Kdyby ses mi jako dítě svěřil, že se nenávidíš, neptala bych se tě, co je s tebou špatně. Zajímalo by mě, co tě přivedlo k tomu, že se na sebe díváš takhle krutě.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses mi jako dítě svěřila, že se nenávidíš, neptala bych se tě, co je s tebou špatně. Zajímalo by mě, co tě přivedlo k tomu, že se na sebe díváš takhle krutě."
   },
   {
     "id": "ref_1855",
@@ -15643,7 +15647,8 @@
     "text": "Sebenávist může někdy chránit před ještě bolestivější možností: že jsi potřeboval lásku, přijetí nebo ochranu a nedostal jsi jich dost. Obvinit sebe může být snazší než připustit, jak bezmocný jsi tehdy byl.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Sebenávist může někdy chránit před ještě bolestivější možností: že jsi potřebovala lásku, přijetí nebo ochranu a nedostala jsi jich dost. Obvinit sebe může být snazší než připustit, jak bezmocná jsi tehdy byla."
   },
   {
     "id": "ref_1859",
@@ -15651,7 +15656,8 @@
     "text": "Možná v tobě žije část, která kdysi dospěla k závěru: „Když budu trestat sám sebe, ostatní mě nebudou muset tolik trestat.“ Možná tě tím chtěla chránit. Ale stojí za to zjistit, jestli ten bič ještě vůbec potřebuješ.",
     "tier": "free",
     "sort_order": 25,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná v tobě žije část, která kdysi dospěla k závěru: „Když budu trestat sama sebe, ostatní mě nebudou muset tolik trestat.“ Možná tě tím chtěla chránit. Ale stojí za to zjistit, jestli ten bič ještě vůbec potřebuješ."
   },
   {
     "id": "ref_1860",
@@ -15659,7 +15665,8 @@
     "text": "Slyším tě, i když mě odstrkuješ. Nemusíš se změnit, napravit ani začít mít rád, abych s tebou mohl chvíli zůstat.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Slyším tě, i když mě odstrkuješ. Nemusíš se změnit, napravit ani začít mít rád, abych s tebou mohla chvíli zůstat."
   },
   {
     "id": "ref_1861",
@@ -15667,7 +15674,8 @@
     "text": "Zkus hledat ve své minulosti chvíle, kdy jsi někomu pomohl, něco unesl, vytvořil, napravil, projevil něhu nebo se zachoval slušně, i když to bylo těžké. Když se nenávidíš, právě takové chvíle snadno mizí z obrazu, který o sobě máš.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus hledat ve své minulosti chvíle, kdy jsi někomu pomohla, něco unesla, vytvořila, napravila, projevila něhu nebo se zachoval slušně, i když to bylo těžké. Když se nenávidíš, právě takové chvíle snadno mizí z obrazu, který o sobě máš."
   },
   {
     "id": "ref_1862",
@@ -15683,7 +15691,8 @@
     "text": "To, že se trápíš tím, jaký jsi, může znamenat i něco, co sebenávist přehlíží: záleží ti na tom, jakým člověkem jsi. Samotné výčitky sice nedokazují dobrý charakter, ale rozhodně nejsou důkazem tvé špatnosti.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že se trápíš tím, jaká jsi, může znamenat i něco, co sebenávist přehlíží: záleží ti na tom, jakým člověkem jsi. Samotné výčitky sice nedokazují dobrý charakter, ale rozhodně nejsou důkazem tvé špatnosti."
   },
   {
     "id": "ref_1864",
@@ -15699,7 +15708,8 @@
     "text": "Buddhistický pohled by se mohl zeptat, kde přesně je to pevné, neměnné „já“, které má být nenáviděno. Najdeš vzpomínky, tělesné pocity, myšlenky a příběhy. Ale rozsudek „jsem špatný“ je jen další myšlenka mezi nimi, ne tvoje podstata.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Buddhistický pohled by se mohl zeptat, kde přesně je to pevné, neměnné „já“, které má být nenáviděno. Najdeš vzpomínky, tělesné pocity, myšlenky a příběhy. Ale rozsudek „jsem špatná“ je jen další myšlenka mezi nimi, ne tvoje podstata."
   },
   {
     "id": "ref_1867",
@@ -15715,7 +15725,8 @@
     "text": "Pes by neřešil, jestli sis zasloužil jeho blízkost podle své produktivity, vzhledu nebo včerejší chyby. Sedl by si vedle tebe, protože jsi tam. A možná je v tom jednodušší moudrost, než jakou dokáže vyrobit tvoje sebekritika.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pes by neřešil, jestli sis zasloužila jeho blízkost podle své produktivity, vzhledu nebo včerejší chyby. Sedl by si vedle tebe, protože jsi tam. A možná je v tom jednodušší moudrost, než jakou dokáže vyrobit tvoje sebekritika."
   },
   {
     "id": "ref_1835",
@@ -15723,7 +15734,8 @@
     "text": "To, že se teď nenávidíš, není objektivní zpráva o tom, jaký jsi. Je to stav, ve kterém se na sebe díváš těma nejkrutějšíma očima.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že se teď nenávidíš, není objektivní zpráva o tom, jaká jsi. Je to stav, ve kterém se na sebe díváš těma nejkrutějšíma očima."
   },
   {
     "id": "ref_1837",
@@ -15731,7 +15743,8 @@
     "text": "Zkus na chvíli oddělit větu „udělal jsem něco, co se mi nelíbí“ od věty „jsem odporný člověk“. Mezi těmi dvěma větami je obrovský rozdíl.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus na chvíli oddělit větu „udělala jsem něco, co se mi nelíbí“ od věty „jsem odporný člověk“. Mezi těmi dvěma větami je obrovský rozdíl."
   },
   {
     "id": "ref_1870",
@@ -15901,7 +15914,8 @@
     "text": "Nemusíš mít celý život vyřešený, abys mohl udělat jeden malý další krok.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš mít celý život vyřešený, abys mohla udělat jeden malý další krok."
   },
   {
     "id": "ref_1891",
@@ -15917,7 +15931,8 @@
     "text": "Možná se v tobě ozývá stará zkušenost, že když nevíš, co dělat, jsi na všechno sám. Dnes ale můžeš hledat informace, požádat o pomoc, chvíli počkat nebo zkusit vlastní cestu.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se v tobě ozývá stará zkušenost, že když nevíš, co dělat, jsi na všechno sama. Dnes ale můžeš hledat informace, požádat o pomoc, chvíli počkat nebo zkusit vlastní cestu."
   },
   {
     "id": "ref_1893",
@@ -15933,7 +15948,8 @@
     "text": "Když se cítíš ztracený, tvoje mysl chce okamžitě najít mapu. Někdy ale stačí chvíli zůstat na místě a rozhlédnout se.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš ztracená, tvoje mysl chce okamžitě najít mapu. Někdy ale stačí chvíli zůstat na místě a rozhlédnout se."
   },
   {
     "id": "ref_1895",
@@ -15949,7 +15965,8 @@
     "text": "Už ses možná cítil ztracený i dřív, a přesto ses nějak dostal dál. Ani tehdy jsi nemusel znát řešení předem.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Už ses možná cítila ztracená i dřív, a přesto ses nějak dostala dál. Ani tehdy jsi nemusela znát řešení předem."
   },
   {
     "id": "ref_1897",
@@ -15973,7 +15990,8 @@
     "text": "Pocit ztracenosti někdy vychází z představy, že existuje jediná správná cesta, kterou jsi měl najít. Možná ale žádnou předem danou cestu nehledáš. Možná ji právě vytváříš.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pocit ztracenosti někdy vychází z představy, že existuje jediná správná cesta, kterou jsi měla najít. Možná ale žádnou předem danou cestu nehledáš. Možná ji právě vytváříš."
   },
   {
     "id": "ref_1900",
@@ -15989,7 +16007,8 @@
     "text": "Bezradnost tě možná chrání před ukvapeným rozhodnutím ve chvíli, kdy nemáš dost informací. Nemusí tě zastavit navždy. Možná tě jen vybízí, abys zpomalil a lépe se zorientoval.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Bezradnost tě možná chrání před ukvapeným rozhodnutím ve chvíli, kdy nemáš dost informací. Nemusí tě zastavit navždy. Možná tě jen vybízí, abys zpomalila a lépe se zorientoval."
   },
   {
     "id": "ref_1902",
@@ -16005,7 +16024,8 @@
     "text": "Možná jsi někdy musel řešit věci, na které jsi ještě neměl být sám. Pokud ano, dnešní bezradnost nemusí být důkazem slabosti. Může připomínat chvíle, kdy ti měla být nabídnuta pomoc.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná jsi někdy musela řešit věci, na které jsi ještě neměla být sama. Pokud ano, dnešní bezradnost nemusí být důkazem slabosti. Může připomínat chvíle, kdy ti měla být nabídnuta pomoc."
   },
   {
     "id": "ref_1904",
@@ -16013,7 +16033,8 @@
     "text": "Kdyby ses na sebe podíval očima někoho, kdo tě má opravdu rád, možná bys neviděl neschopného člověka. Viděl bys někoho, kdo se ocitl v těžké situaci a zatím neví, jak z ní ven.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby ses na sebe podívala očima někoho, kdo tě má opravdu rád, možná bys neviděla neschopného člověka. Viděla bys někoho, kdo se ocitl v těžké situaci a zatím neví, jak z ní ven."
   },
   {
     "id": "ref_1905",
@@ -16029,7 +16050,8 @@
     "text": "To, co dnes vypadá jako slepá ulička, může být místo, odkud se budeš muset vydat jiným směrem, než sis původně představoval.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, co dnes vypadá jako slepá ulička, může být místo, odkud se budeš muset vydat jiným směrem, než sis původně představovala."
   },
   {
     "id": "ref_1907",
@@ -16045,7 +16067,8 @@
     "text": "Tvoje budoucí já možná nebude obdivovat, že jsi okamžitě znal odpověď. Možná bude nejvíc vděčné za to, že ses nevzdal ve chvíli, kdy jsi ji neznal.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já možná nebude obdivovat, že jsi okamžitě znala odpověď. Možná bude nejvíc vděčné za to, že ses nevzdala ve chvíli, kdy jsi ji neznala."
   },
   {
     "id": "ref_1879",
@@ -16053,7 +16076,8 @@
     "text": "Nemusíš mít jistotu, abys mohl jednat. Spousta cest se ukáže až potom, co uděláš první krok.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš mít jistotu, abys mohla jednat. Spousta cest se ukáže až potom, co uděláš první krok."
   },
   {
     "id": "ref_1909",
@@ -16085,7 +16109,8 @@
     "text": "Z buddhistického pohledu nemusíš odstranit nejistotu, abys s ní mohl být v míru. Můžeš si prostě všimnout „teď nevím“ a nemusíš z toho dělat závěr „jsem ztracený člověk“.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z buddhistického pohledu nemusíš odstranit nejistotu, abys s ní mohla být v míru. Můžeš si prostě všimnout „teď nevím“ a nemusíš z toho dělat závěr „jsem ztracený člověk“."
   },
   {
     "id": "ref_1914",
@@ -16101,7 +16126,8 @@
     "text": "Z pohledu vesmíru neexistuje žádná šipka ukazující, kde přesně ses měl ve svém životě právě teď nacházet. Pocit, že jsi ztracený, vzniká až ve vztahu k mapě, kterou sis ty nebo někdo jiný nakreslil.",
     "tier": "free",
     "sort_order": 42,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z pohledu vesmíru neexistuje žádná šipka ukazující, kde přesně ses měla ve svém životě právě teď nacházet. Pocit, že jsi ztracená, vzniká až ve vztahu k mapě, kterou sis ty nebo někdo jiný nakreslil."
   },
   {
     "id": "ref_1916",
@@ -16261,7 +16287,8 @@
     "text": "I když někdo nesouhlasí s tvým rozhodnutím, neznamená to, že ses rozhodl špatně. Nesouhlas druhého člověka nemusí být důvodem, abys opustil vlastní názor.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "I když někdo nesouhlasí s tvým rozhodnutím, neznamená to, že ses rozhodla špatně. Nesouhlas druhého člověka nemusí být důvodem, abys opustila vlastní názor."
   },
   {
     "id": "ref_1935",
@@ -16277,7 +16304,8 @@
     "text": "To, že ses dlouho o někoho opíral, neznamená, že bez něj neumíš stát. Některé svoje schopnosti možná teprve objevíš, až je začneš používat.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že ses dlouho o někoho opírala, neznamená, že bez něj neumíš stát. Některé svoje schopnosti možná teprve objevíš, až je začneš používat."
   },
   {
     "id": "ref_1937",
@@ -16301,7 +16329,8 @@
     "text": "Nemusíš se přes noc proměnit v člověka, který nikoho nepotřebuje. Stačí, když budeš postupně objevovat, kde už můžeš být sám sobě spolehlivou oporou.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš se přes noc proměnit v člověka, který nikoho nepotřebuje. Stačí, když budeš postupně objevovat, kde už můžeš být sama sobě spolehlivou oporou."
   },
   {
     "id": "ref_1940",
@@ -16309,7 +16338,8 @@
     "text": "Možná sis kdysi spojil bezpečí s tím, že někdo silnější ví, co dělat. Pokud ti to tehdy pomáhalo, dává smysl, že se k tomu vracíš. Nemusí to ale určovat, kolik toho dokážeš sám dnes.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná sis kdysi spojila bezpečí s tím, že někdo silnější ví, co dělat. Pokud ti to tehdy pomáhalo, dává smysl, že se k tomu vracíš. Nemusí to ale určovat, kolik toho dokážeš sama dnes."
   },
   {
     "id": "ref_1941",
@@ -16317,7 +16347,8 @@
     "text": "Zkus si vybavit situace, kdy ses rozhodl bez ujištění, vyřešil problém, naučil se něco nového nebo unesl následky vlastní volby. I jediná taková zkušenost zpochybňuje přesvědčení „sám nic nedokážu“.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vybavit situace, kdy ses rozhodla bez ujištění, vyřešila problém, naučila se něco nového nebo unesla následky vlastní volby. I jediná taková zkušenost zpochybňuje přesvědčení „sám nic nedokážu“."
   },
   {
     "id": "ref_1942",
@@ -16341,7 +16372,8 @@
     "text": "Možná jsi zvyklý hledat u druhých potvrzení, že se rozhoduješ správně. Jenže i když ti ho dají, nejistota se může vrátit. Vlastnímu úsudku se učíš důvěřovat také tím, že někdy rozhodneš bez záruky.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná jsi zvyklá hledat u druhých potvrzení, že se rozhoduješ správně. Jenže i když ti ho dají, nejistota se může vrátit. Vlastnímu úsudku se učíš důvěřovat také tím, že někdy rozhodneš bez záruky."
   },
   {
     "id": "ref_1945",
@@ -16349,7 +16381,8 @@
     "text": "Mozek si snadno osvojí postupy, které rychle přinášejí úlevu. Pokud tě uklidňuje přenechat rozhodnutí druhému, může se z toho stát návyk. Dobrá zpráva je, že zkušeností můžeš postupně posilovat i návyk rozhodovat sám.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Mozek si snadno osvojí postupy, které rychle přinášejí úlevu. Pokud tě uklidňuje přenechat rozhodnutí druhému, může se z toho stát návyk. Dobrá zpráva je, že zkušeností můžeš postupně posilovat i návyk rozhodovat sama."
   },
   {
     "id": "ref_1946",
@@ -16389,7 +16422,8 @@
     "text": "Člověk, který tě miluje, možná vůbec nepočítá, kolikrát ses potřeboval poradit. Může vidět i všechno, co neseš, zvládáš, zkoušíš a učíš se. Tedy části obrazu, které tvoje nejistota právě zastínila.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě miluje, možná vůbec nepočítá, kolikrát ses potřebovala poradit. Může vidět i všechno, co neseš, zvládáš, zkoušíš a učíš se. Tedy části obrazu, které tvoje nejistota právě zastínila."
   },
   {
     "id": "ref_1917",
@@ -16397,7 +16431,8 @@
     "text": "Nemusíš umět všechno sám, abys byl schopný člověk. Dospělost není zkouška, ve které se za každou žádost o pomoc strhávají body.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš umět všechno sama, abys byla schopná člověk. Dospělost není zkouška, ve které se za každou žádost o pomoc strhávají body."
   },
   {
     "id": "ref_1925",
@@ -16405,7 +16440,8 @@
     "text": "V tom pocitu možná kus pravdy je: některé věci opravdu zatím sám nezvládáš. Jenže to nevypovídá o všem ostatním, co už dávno zvládáš bez cizího vedení.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "V tom pocitu možná kus pravdy je: některé věci opravdu zatím sama nezvládáš. Jenže to nevypovídá o všem ostatním, co už dávno zvládáš bez cizího vedení."
   },
   {
     "id": "ref_1953",
@@ -16437,7 +16473,8 @@
     "text": "Jednou tady nebude nikdo z nás a většina dnešních rozhodnutí zmizí beze stopy. Možná proto nemusíš každou volbu dělat dokonale. Můžeš si dovolit ten krátký, podivný lidský život opravdu řídit sám, i když občas blbě.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednou tady nebude nikdo z nás a většina dnešních rozhodnutí zmizí beze stopy. Možná proto nemusíš každou volbu dělat dokonale. Můžeš si dovolit ten krátký, podivný lidský život opravdu řídit sama, i když občas blbě."
   },
   {
     "id": "ref_1957",
@@ -16594,7 +16631,8 @@
     "text": "Možná ses kdysi naučil, že být dospělý znamená být rozumný, soběstačný a nenechat se napálit. Jenže skutečná dospělost není bezchybnost. Patří k ní i schopnost zacházet se svými chybami bez ponižování sebe sama.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses kdysi naučila, že být dospělá znamená být rozumná, soběstačná a nenechat se napálit. Jenže skutečná dospělost není bezchybnost. Patří k ní i schopnost zacházet se svými chybami bez ponižování sebe samé."
   },
   {
     "id": "ref_1974",
@@ -16602,7 +16640,8 @@
     "text": "To, že jsi někomu důvěřoval a on tvou důvěru zneužil, není důkaz tvé nezralosti. Je to především informace o tom, jak se zachoval on.",
     "tier": "free",
     "sort_order": 17,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že jsi někomu důvěřovala a on tvou důvěru zneužil, není důkaz tvé nezralosti. Je to především informace o tom, jak se zachoval on."
   },
   {
     "id": "ref_1976",
@@ -16618,7 +16657,8 @@
     "text": "Můžeš mít v sobě dítě a přitom být dospělý. Dospělost nespočívá v tom, že se ho zbavíš, ale že se o něj dokážeš postarat.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš mít v sobě dítě a přitom být dospělá. Dospělost nespočívá v tom, že se ho zbavíš, ale že se o něj dokážeš postarat."
   },
   {
     "id": "ref_1979",
@@ -16626,7 +16666,8 @@
     "text": "Možná v sobě necítíš nedostatek dospělosti, ale přebytek živosti, kterou ses naučil podezírat. Ne všechno spontánní, hravé, idealistické nebo důvěřivé potřebuje opravu.",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná v sobě necítíš nedostatek dospělosti, ale přebytek živosti, kterou ses naučila podezírat. Ne všechno spontánní, hravé, idealistické nebo důvěřivé potřebuje opravu."
   },
   {
     "id": "ref_1980",
@@ -16682,7 +16723,8 @@
     "text": "Možná jsi v některých situacích skutečně méně zralý, než by sis přál. Ani to není důvod k pohrdání sebou. Zralost se dá rozvíjet, zatímco stud tě často jen drží na místě.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná jsi v některých situacích skutečně méně zralá, než by sis přála. Ani to není důvod k pohrdání sebou. Zralost se dá rozvíjet, zatímco stud tě často jen drží na místě."
   },
   {
     "id": "ref_1988",
@@ -16690,7 +16732,8 @@
     "text": "Tvoje budoucí já možná nebude chtít, abys dnes byl dokonale prozíravý. Spíš ocení, když se z dnešních zkušeností něco naučíš a přitom neztratíš schopnost věřit dobrým věcem.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Tvoje budoucí já možná nebude chtít, abys dnes byla dokonale prozíravá. Spíš ocení, když se z dnešních zkušeností něco naučíš a přitom neztratíš schopnost věřit dobrým věcem."
   },
   {
     "id": "ref_1989",
@@ -16706,7 +16749,8 @@
     "text": "Nemusíš si vybrat mezi tím být spontánní a být zodpovědný. Můžeš si zachovat radost, zvědavost i trochu bláznivosti a přitom nést odpovědnost za svá rozhodnutí.",
     "tier": "free",
     "sort_order": 30,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš si vybrat mezi tím být spontánní a být zodpovědná. Můžeš si zachovat radost, zvědavost i trochu bláznivosti a přitom nést odpovědnost za svá rozhodnutí."
   },
   {
     "id": "ref_1991",
@@ -16722,7 +16766,8 @@
     "text": "Člověk, který tě má opravdu rád, tě pravděpodobně neposuzuje jen podle tvých přešlapů. Může vidět i to, co zvládáš, jak přemýšlíš, jak se staráš o druhé a kam ses za život posunul.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Člověk, který tě má opravdu rád, tě pravděpodobně neposuzuje jen podle tvých přešlapů. Může vidět i to, co zvládáš, jak přemýšlíš, jak se staráš o druhé a kam ses za život posunula."
   },
   {
     "id": "ref_1993",
@@ -16730,7 +16775,8 @@
     "text": "Možná se někdy cítíš nezralý proto, že se srovnáváš s lidmi v oblastech, kde mají náskok. Jenže oni zase mohou být začátečníky tam, kde jsi ty už dávno doma.",
     "tier": "free",
     "sort_order": 33,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná se někdy cítíš nezralá proto, že se srovnáváš s lidmi v oblastech, kde mají náskok. Jenže oni zase mohou být začátečníky tam, kde jsi ty už dávno doma."
   },
   {
     "id": "ref_1994",
@@ -16754,7 +16800,8 @@
     "text": "To, že ses v někom spletl, nevypovídá o tvé hodnotě ani dospělosti. I velmi zkušení a obezřetní lidé se mohou nechat oklamat.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "To, že ses v někom spletla, nevypovídá o tvé hodnotě ani dospělosti. I velmi zkušení a obezřetní lidé se mohou nechat oklamat."
   },
   {
     "id": "ref_1962",
@@ -16770,7 +16817,8 @@
     "text": "Možná nepotřebuješ být „méně dítě“. Možná se potřebuješ naučit chránit své důvěřivé, živé a zranitelné stránky, místo aby ses za ně ponižoval.",
     "tier": "free",
     "sort_order": 38,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná nepotřebuješ být „méně dítě“. Možná se potřebuješ naučit chránit své důvěřivé, živé a zranitelné stránky, místo aby ses za ně ponižovala."
   },
   {
     "id": "ref_1969",
@@ -16778,7 +16826,8 @@
     "text": "Můžeš být v některých věcech zkušený a v jiných úplný začátečník. Dospělost neznamená mít celý život zvládnutý.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Můžeš být v některých věcech zkušená a v jiných úplná začátečnice. Dospělost neznamená mít celý život zvládnutý."
   },
   {
     "id": "ref_1996",
@@ -16786,7 +16835,8 @@
     "text": "Z buddhistické perspektivy nemusíš z každé chvíle nezralosti vytvářet trvalý obraz sebe sama. Objevila se naivita, nejistota nebo potřeba opory. To ještě neznamená, že jsi navždy „ten nezralý“.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Z buddhistické perspektivy nemusíš z každé chvíle nezralosti vytvářet trvalý obraz sebe samé. Objevila se naivita, nejistota nebo potřeba opory. To ještě neznamená, že jsi navždy „ta nezralá“."
   },
   {
     "id": "ref_1997",
@@ -16794,7 +16844,8 @@
     "text": "Za padesát let bude většina dnešních trapasů, omylů a naivních rozhodnutí nejspíš bezvýznamná. Důležitější může být, jestli ses díky nim naučil žít moudřeji, nebo ses jen naučil víc se stydět.",
     "tier": "free",
     "sort_order": 41,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Za padesát let bude většina dnešních trapasů, omylů a naivních rozhodnutí nejspíš bezvýznamná. Důležitější může být, jestli ses díky nim naučila žít moudřeji, nebo ses jen naučila víc se stydět."
   },
   {
     "id": "ref_1998",
@@ -16983,7 +17034,8 @@
     "text": "Někdy se nerozhoduješ mezi dobrou a špatnou cestou, ale mezi dvěma dobrými cestami, z nichž každá něco nabízí a něco stojí. Nemusíš jednu z nich prohlásit za špatnou, abys mohl vykročit po druhé.",
     "tier": "free",
     "sort_order": 19,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Někdy se nerozhoduješ mezi dobrou a špatnou cestou, ale mezi dvěma dobrými cestami, z nichž každá něco nabízí a něco stojí. Nemusíš jednu z nich prohlásit za špatnou, abys mohla vykročit po druhé."
   },
   {
     "id": "ref_2022",
@@ -17007,7 +17059,8 @@
     "text": "Pochybnost není důkaz, že jdeš špatně. Mysl dokáže vyrábět pochybnosti i několik minut poté, co ses rozhodl úplně rozumně.",
     "tier": "free",
     "sort_order": 22,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Pochybnost není důkaz, že jdeš špatně. Mysl dokáže vyrábět pochybnosti i několik minut poté, co ses rozhodla úplně rozumně."
   },
   {
     "id": "ref_2025",
@@ -17015,7 +17068,8 @@
     "text": "Ta část tebe, která všechno desetkrát prověřuje, tě možná chrání před výčitkou „měl jsem to vědět“. Můžeš ocenit její snahu a zároveň jí připomenout, že nikdo nemůže předem vědět všechno, co ukáže až budoucnost.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ta část tebe, která všechno desetkrát prověřuje, tě možná chrání před výčitkou „měla jsem to vědět“. Můžeš ocenit její snahu a zároveň jí připomenout, že nikdo nemůže předem vědět všechno, co ukáže až budoucnost."
   },
   {
     "id": "ref_2026",
@@ -17047,7 +17101,8 @@
     "text": "Možná zaměňuješ možnost chyby za důkaz, že ještě nejsi připravený. Jenže možnost chyby existuje téměř vždy. Kdybys ji musel před každým rozhodnutím vyloučit, sotva by ses někdy pohnul z místa.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná zaměňuješ možnost chyby za důkaz, že ještě nejsi připravená. Jenže možnost chyby existuje téměř vždy. Kdybys ji musela před každým rozhodnutím vyloučit, sotva by ses někdy pohnula z místa."
   },
   {
     "id": "ref_2030",
@@ -17055,7 +17110,8 @@
     "text": "Zkus si představit, že se nerozhoduješ jednou provždy, ale jen o dalším kroku. Možná nepotřebuješ znát celou cestu, abys zjistil, kudy pokračovat.",
     "tier": "free",
     "sort_order": 28,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si představit, že se nerozhoduješ jednou provždy, ale jen o dalším kroku. Možná nepotřebuješ znát celou cestu, abys zjistila, kudy pokračovat."
   },
   {
     "id": "ref_2031",
@@ -17087,7 +17143,8 @@
     "text": "Zkus si představit, co bys řekl někomu, koho máš rád a kdo stojí před stejným rozhodnutím. Nejspíš bys po něm nechtěl neomylnost. Proč ji tedy požaduješ po sobě?",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si představit, co bys řekla někomu, koho máš ráda a kdo stojí před stejným rozhodnutím. Nejspíš bys po něm nechtěla neomylnost. Proč ji tedy požaduješ po sobě?"
   },
   {
     "id": "ref_2035",
@@ -17103,7 +17160,8 @@
     "text": "Zkus si představit sebe za deset let. Možná nebudeš litovat tolik toho, že ses někdy rozhodl špatně, jako toho, že ses ze strachu rozhodovat přestal.",
     "tier": "free",
     "sort_order": 34,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si představit sebe za deset let. Možná nebudeš litovat tolik toho, že ses někdy rozhodla špatně, jako toho, že ses ze strachu rozhodovat přestala."
   },
   {
     "id": "ref_2037",
@@ -17111,7 +17169,8 @@
     "text": "Kdybys měl před sebou poslední rok života, možná by otázka nezněla „Která možnost je bezpečnější?“, ale „Kterou zkušenost bych opravdu chtěl prožít?“",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys měla před sebou poslední rok života, možná by otázka nezněla „Která možnost je bezpečnější?“, ale „Kterou zkušenost bych opravdu chtěla prožít?“"
   },
   {
     "id": "ref_2002",
@@ -17119,7 +17178,8 @@
     "text": "Rozhodnutí nemusí přijít s pocitem jistoty. Můžeš si být nejistý, a přesto se rozhodnout dobře.",
     "tier": "free",
     "sort_order": 36,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Rozhodnutí nemusí přijít s pocitem jistoty. Můžeš si být nejistá, a přesto se rozhodnout dobře."
   },
   {
     "id": "ref_2012",
@@ -17143,7 +17203,8 @@
     "text": "Stoik v zákopu by možná řekl: „Můžeš ovlivnit, jak poctivě se rozhoduješ, ale ne všechno, co z tvého rozhodnutí vzejde.“ Vyčítat si každý nepříznivý výsledek znamená požadovat po sobě kontrolu, kterou jsi nikdy neměl.",
     "tier": "free",
     "sort_order": 39,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Stoik v zákopu by možná řekl: „Můžeš ovlivnit, jak poctivě se rozhoduješ, ale ne všechno, co z tvého rozhodnutí vzejde.“ Vyčítat si každý nepříznivý výsledek znamená požadovat po sobě kontrolu, kterou jsi nikdy neměla."
   },
   {
     "id": "ref_2040",
@@ -17151,7 +17212,8 @@
     "text": "Kdybys musel být vždy rozhodný, nikdy nepochybovat a okamžitě vědět, co chceš, nebyla by to nutně zdravá sebedůvěra. Mohla by to být také neschopnost připustit vlastní omylnost.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys musela být vždy rozhodná, nikdy nepochybovat a okamžitě vědět, co chceš, nebyla by to nutně zdravá sebedůvěra. Mohla by to být také neschopnost připustit vlastní omylnost."
   },
   {
     "id": "ref_2042",
@@ -17326,7 +17388,8 @@
     "text": "Nemusíš všechno vědět, umět ani zvládnout napoprvé, abys byl schopný člověk. Ke skutečné kompetenci patří i umění přiznat si, co nevíš, učit se a poradit si.",
     "tier": "free",
     "sort_order": 16,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš všechno vědět, umět ani zvládnout napoprvé, abys byla schopná člověk. Ke skutečné kompetenci patří i umění přiznat si, co nevíš, učit se a poradit si."
   },
   {
     "id": "ref_2064",
@@ -17342,7 +17405,8 @@
     "text": "Možná jsi v něčem opravdu méně schopný než ostatní. Ale proč bys měl být ve všem stejně dobrý? Rozdíly ve schopnostech nejsou měřítkem lidské hodnoty.",
     "tier": "free",
     "sort_order": 18,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná jsi v něčem opravdu méně schopná než ostatní. Ale proč bys měla být ve všem stejně dobrá? Rozdíly ve schopnostech nejsou měřítkem lidské hodnoty."
   },
   {
     "id": "ref_2067",
@@ -17358,7 +17422,8 @@
     "text": "Nemusíš působit dokonale jistě, abys byl profesionál. Opravdová profesionalita někdy vypadá docela obyčejně: „Nevím, zjistím to.“",
     "tier": "free",
     "sort_order": 20,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš působit dokonale jistě, abys byla profesionálka. Opravdová profesionalita někdy vypadá docela obyčejně: „Nevím, zjistím to.“"
   },
   {
     "id": "ref_2069",
@@ -17366,7 +17431,8 @@
     "text": "Zkus si vzpomenout ne na výjimečné úspěchy, ale na obyčejné chvíle, kdy ses něco naučil, vyřešil problém, napravil chybu nebo sis dokázal poradit. I takové zkušenosti patří do pravdivého obrazu tvých schopností.",
     "tier": "free",
     "sort_order": 21,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Zkus si vzpomenout ne na výjimečné úspěchy, ale na obyčejné chvíle, kdy ses něco naučila, vyřešila problém, napravila chybu nebo sis dokázal poradit. I takové zkušenosti patří do pravdivého obrazu tvých schopností."
   },
   {
     "id": "ref_2070",
@@ -17382,7 +17448,8 @@
     "text": "Možná ses někdy naučil spojovat chyby s pocitem, že nejsi dost dobrý. Třeba na ně okolí reagovalo kritikou, zklamáním nebo zesměšněním. Ale chyba dnes nemusí znamenat totéž co tehdy. Může být prostě chybou.",
     "tier": "free",
     "sort_order": 23,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Možná ses někdy naučila spojovat chyby s pocitem, že nejsi dost dobrá. Třeba na ně okolí reagovalo kritikou, zklamáním nebo zesměšněním. Ale chyba dnes nemusí znamenat totéž co tehdy. Může být prostě chybou."
   },
   {
     "id": "ref_2072",
@@ -17390,7 +17457,8 @@
     "text": "Když se cítíš neschopný, nemusíš se hned přesvědčovat, že jsi skvělý. Můžeš si dovolit nevědět, jak dobrý vlastně jsi, a přesto pokračovat v tom, na čem ti záleží.",
     "tier": "free",
     "sort_order": 24,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Když se cítíš neschopná, nemusíš se hned přesvědčovat, že jsi skvělá. Můžeš si dovolit nevědět, jak dobrý vlastně jsi, a přesto pokračovat v tom, na čem ti záleží."
   },
   {
     "id": "ref_2073",
@@ -17406,7 +17474,8 @@
     "text": "Ta část tebe, která ti říká „jsi neschopný“, tě možná paradoxně chrání. Když tě zkritizuje první, cizí kritika tě tolik nepřekvapí. Jenže nemusíš sám sebe ponižovat, abys byl připravený na případné odmítnutí.",
     "tier": "free",
     "sort_order": 26,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Ta část tebe, která ti říká „jsi neschopná“, tě možná paradoxně chrání. Když tě zkritizuje první, cizí kritika tě tolik nepřekvapí. Jenže nemusíš sama sebe ponižovat, abys byla připravená na případné odmítnutí."
   },
   {
     "id": "ref_2075",
@@ -17414,7 +17483,8 @@
     "text": "Nemusíš být dobrý ve všem, co děláš. Některé věci můžeš dělat průměrně, některé špatně a některé se třeba nikdy nenaučíš. I tak můžeš žít dobrý a naplněný život.",
     "tier": "free",
     "sort_order": 27,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Nemusíš být dobrá ve všem, co děláš. Některé věci můžeš dělat průměrně, některé špatně a některé se třeba nikdy nenaučíš. I tak můžeš žít dobrý a naplněný život."
   },
   {
     "id": "ref_2076",
@@ -17430,7 +17500,8 @@
     "text": "Představ si sebe za deset let, jak se díváš na dnešní chybu. Dost možná si na ni ani nevzpomeneš. Ale způsob, jakým ses naučil zacházet se svou nedokonalostí, tě může provázet pořád.",
     "tier": "free",
     "sort_order": 29,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Představ si sebe za deset let, jak se díváš na dnešní chybu. Dost možná si na ni ani nevzpomeneš. Ale způsob, jakým ses naučila zacházet se svou nedokonalostí, tě může provázet pořád."
   },
   {
     "id": "ref_2079",
@@ -17446,7 +17517,8 @@
     "text": "Kdyby tě někdo, kdo tě má opravdu rád, viděl ve chvíli, kdy tápeš, nejspíš by podle ní neposuzoval celý tvůj život. Možná by ho spíš zajímalo, proč jsi na sebe v takové chvíli tak tvrdý.",
     "tier": "free",
     "sort_order": 31,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdyby tě někdo, kdo tě má opravdu rád, viděl ve chvíli, kdy tápeš, nejspíš by podle ní neposuzoval celý tvůj život. Možná by ho spíš zajímalo, proč jsi na sebe v takové chvíli tak tvrdá."
   },
   {
     "id": "ref_2081",
@@ -17454,7 +17526,8 @@
     "text": "Kdybys byl přesvědčený, že všechno umíš skvěle, nemusela by to být známka mimořádné kompetence. Možná bys jen netušil, kolik toho ještě nevíš.",
     "tier": "free",
     "sort_order": 32,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Kdybys byla přesvědčená, že všechno umíš skvěle, nemusela by to být známka mimořádné kompetence. Možná bys jen netušila, kolik toho ještě nevíš."
   },
   {
     "id": "ref_2082",
@@ -17478,7 +17551,8 @@
     "text": "„Nezvládl jsem to“ popisuje událost. „Jsem neschopný“ z ní dělá tvoji identitu. A právě v tomhle nenápadném posunu může vznikat spousta zbytečné bolesti.",
     "tier": "free",
     "sort_order": 35,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "„Nezvládla jsem to“ popisuje událost. „Jsem neschopná“ z ní dělá tvoji identitu. A právě v tomhle nenápadném posunu může vznikat spousta zbytečné bolesti."
   },
   {
     "id": "ref_2055",
@@ -17518,7 +17592,8 @@
     "text": "Vesmír starý miliardy let opravdu nevede tabulku, kolikrát ses zakoktal, nevěděl odpověď nebo něco podělal. Možná můžeš na chvíli vrátit svůj pracovní výkon do jeho přiměřené kosmické velikosti.",
     "tier": "free",
     "sort_order": 40,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Vesmír starý miliardy let opravdu nevede tabulku, kolikrát ses zakoktala, nevěděla odpověď nebo něco podělala. Možná můžeš na chvíli vrátit svůj pracovní výkon do jeho přiměřené kosmické velikosti."
   },
   {
     "id": "ref_2087",
@@ -17534,7 +17609,8 @@
     "text": "Jednou budeš na konci života a spousta dnešních pracovních přešlapů, trapasů a pochybností bude maličká proti otázce, jestli jsi skutečně žil. Byla by škoda strávit příliš mnoho času dokazováním, že máš právo na vlastní život.",
     "tier": "free",
     "sort_order": 42,
-    "added_at": "2026-10-16"
+    "added_at": "2026-10-16",
+    "text_f": "Jednou budeš na konci života a spousta dnešních pracovních přešlapů, trapasů a pochybností bude maličká proti otázce, jestli jsi skutečně žila. Byla by škoda strávit příliš mnoho času dokazováním, že máš právo na vlastní život."
   },
   {
     "id": "ref_2090",
